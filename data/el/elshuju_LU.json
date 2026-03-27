@@ -1,0 +1,66 @@
+{
+  "LU": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "LU_el_legal_basis_primary",
+        "additional_sources_key": "LU_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "freibetrag_note": "Vermögensfreibetrag: 30'000 (Alleinstehende) / 50'000 (Ehepaare) CHF. Die Eintrittsschwelle liegt bei 100k/200k CHF."
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "LU_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "Region 2: Stadt Luzern, Kriens, Horw, Ebikon, Emmen (Gemeinden mit Korrekturfaktor)"
+        },
+        "region_3": {
+          "name_key": "LU_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Region 3: Übrige Luzerner Gemeinden (Ländliche Region)"
+        }
+      },
+      "recognized_premiums_annual": {
+        "region2_medium": {
+          "adult": 6144,
+          "young_adult": 4536,
+          "child": 1464,
+          "note": "Standard-Prämie 2026 Kanton LU (Region 2)"
+        },
+        "region3_low": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380,
+          "note": "Standard-Prämie 2026 Kanton LU (Region 3)"
+        }
+      },
+      "application": {
+        "authority_key": "LU_el_application_authority",
+        "office_name_key": "LU_el_office_name",
+        "url": "https://www.was-luzern.ch",
+        "contact": {
+          "address_key": "LU_el_contact_address",
+          "phone": "+41 41 209 00 00",
+          "email": "info@was-luzern.ch"
+        },
+        "required_documents_key": "LU_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 1.55,
+        "communal_multiplier": 1.0,
+        "source": "WAS Luzern / ESTV Steuerfüsse 2026"
+      }
+    }
+  }
+}

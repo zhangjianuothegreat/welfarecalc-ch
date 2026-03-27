@@ -1,0 +1,65 @@
+{
+  "TG": {
+    "ipv": {
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "TG_ipv_legal_basis_primary",
+        "additional_sources_key": "TG_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "data_source": "Site officiel du Canton de Thurgau (https://gesundheit.tg.ch, mis à jour décembre 2025) ; Communiqué du Conseil d'État du 27.11.2025[](https://www.tg.ch)",
+      "formula_type": "tax_amount_category_fixed",
+      "official_url": "https://gesundheit.tg.ch/bevoelkerung/krankenversicherung/praemienverbilligung.html/5578",
+      "algorithm_description": "Système de classifications basierend auf einfacher satzbestimmender Steuer zu 100% (Kategorien A/B/C für Erwachsene, D für Kinder). Feste jährliche Beträge pro Kategorie. Kein Anspruch bei steuerbarem Vermögen >0 CHF. Reines Antragsprinzip.",
+      "asset_limit": 0,
+      "income_limits": {
+        "note": "Pas de limite fixe unique ; dépend des catégories basierend auf Steuerbetrag (z.B. ≤400 Fr. für A).",
+        "thresholds": {
+          "kat_A_max": 400,
+          "kat_B_max": 600,
+          "kat_C_max": 800
+        }
+      },
+      "ref_premium_average_monthly": {
+        "adult": 475.80,
+        "young_adult": 332.40,
+        "child": 111.00,
+        "overall_average_increase": "3.42%"
+      },
+      "subsidy_fixed_annual": {
+        "erwachsene_A": 3410,
+        "erwachsene_B": 2544,
+        "erwachsene_C": 1692,
+        "kinder_D": 1236,
+        "note": "Beträge angepasst um +0.4% für Erwachsene A (52.1% Abdeckung der kantonale Durchschnittsprämie)"
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 50
+      },
+      "special_rules": {
+        "franchise_adjustment": "Subsides réduits du même taux que le rabais pour franchise à option",
+        "social_assistance_el": "100% prime référence ou effective (limite prime moyenne cantonale OFSP)",
+        "automaticity": "Kein Automatizität; reines Antragsprinzip",
+        "fortune_in_income": "Steuerbares Vermögen ≤0 CHF (absolute Grenze, keine Anrechnung)"
+      },
+      "application": {
+        "method_key": "TG_ipv_application_method",
+        "authority_key": "TG_ipv_application_authority",
+        "office_name_key": "TG_ipv_office_name",
+        "url": "https://gesundheit.tg.ch/bevoelkerung/krankenversicherung/praemienverbilligung.html/5578",
+        "digital_portal": "https://ipv-tg.ch",
+        "contact": {
+          "address_key": "TG_ipv_contact_address",
+          "phone": "+41 58 345 51 51",
+          "email": "gesundheit@tg.ch",
+          "office_hours_key": "TG_ipv_office_hours"
+        },
+        "required_documents_key": "TG_ipv_required_documents_list"
+      },
+      "automated_processing": false,
+      "notification_potential": true
+    }
+  }
+}

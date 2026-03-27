@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Wszystkie poradniki | Świadczenia społeczne w Szwajcarii 2026 | WelfareCalc.ch</title>
+  <meta name="description" content="Pełny przegląd wszystkich poradników dotyczących szwajcarskich świadczeń społecznych 2026: zasiłki rodzinne, ulga w składkach, świadczenia uzupełniające, bezrobocie i macierzyństwo i więcej.">
+  <meta name="keywords" content="świadczenia społeczne Szwajcaria poradniki, zasiłki rodzinne, ulga w składkach, świadczenia uzupełniające, bezrobocie macierzyństwo">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://welfarecalc.ch/blog/pl/index.html" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/blog/de/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/blog/fr/index.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/blog/it/index.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/blog/en/index.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/blog/pl/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/blog/pl/index.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', system-ui, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    .site-title a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    .back-link a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      background: transparent;
+    }
+
+    .back-link a:hover {
+      background: #e6f0ff;
+    }
+
+    .blog-list {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      border: 1px solid #e0e8f0;
+    }
+
+    .blog-list h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #0050a4;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-list .subhead {
+      color: #4a5568;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .article-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .article-card {
+      border-bottom: 1px solid #e0e8f0;
+      padding-bottom: 1.5rem;
+    }
+
+    .article-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .article-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .article-card h2 a {
+      color: #0050a4;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .article-card h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-excerpt {
+      color: #2d3748;
+      margin-bottom: 0.75rem;
+    }
+
+    .read-more {
+      color: #0050a4;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+    }
+
+    footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+
+      .site-title {
+        font-size: 2rem;
+      }
+
+      .blog-list h1 {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+
+      .blog-list {
+        padding: 1.2rem;
+      }
+
+      .blog-list h1 {
+        font-size: 1.6rem;
+      }
+
+      .article-card h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/pl.html">🇨🇭 WelfareCalc.ch</a></h1>
+      <div class="back-link">
+        <a href="/pl.html">← Powrót do kalkulatora</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="blog-list">
+        <h1>📚 Wszystkie poradniki</h1>
+        <p class="subhead">Kompletna baza wiedzy o szwajcarskich świadczeniach społecznych 2026 – bezpłatnie, anonimowo i aktualnie.</p>
+
+        <div class="article-grid">
+
+          <!-- KOLEJNOŚĆ DOSTOSOWANA DO WERSJI NIEMIECKIEJ: ulga w składkach jako pierwsza (odpowiednik Prämienverbilligung) -->
+          <div class="article-card">
+            <h2><a href="ulga-skladkach-2026.html">Ulga w składkach 2026: jak zaoszczędzić na ubezpieczeniu zdrowotnym</a></h2>
+            <div class="article-meta">⏱️ 4 min. czytania</div>
+            <div class="article-excerpt">Składki na ubezpieczenie zdrowotne w 2026 roku znacznie wzrosną. Sprawdź teraz swoje prawo do ulgi w składkach (IPV/RIP) – terminy kantonalne, progi dochodowe i składanie wniosków.</div>
+            <a href="ulga-skladkach-2026.html" class="read-more">Czytaj dalej →</a>
+          </div>
+
+          <!-- Zasiłki rodzinne (odpowiednik Familienzulagen) -->
+          <div class="article-card">
+            <h2><a href="zasilki-rodzinne-2026.html">Zasiłki rodzinne 2026: zasiłki na dziecko i edukacyjne według kantonu</a></h2>
+            <div class="article-meta">⏱️ 5 min. czytania</div>
+            <div class="article-excerpt">Ile wynosi zasiłek na dziecko miesięcznie? Różnice kantonalne, wypłata zaległych świadczeń do 5 lat wstecz i kto może złożyć wniosek – w tym wskazówki dla osób niepracujących.</div>
+            <a href="zasilki-rodzinne-2026.html" class="read-more">Czytaj dalej →</a>
+          </div>
+
+          <!-- 7 ważnych świadczeń (odpowiednik Sozialleistungen-Überblick) -->
+          <div class="article-card">
+            <h2><a href="polish-article.html">7 ważnych szwajcarskich świadczeń społecznych 2026, które warto znać</a></h2>
+            <div class="article-meta">⏱️ 7 min. czytania</div>
+            <div class="article-excerpt">Pełny przegląd świadczeń AHV, IV, świadczeń uzupełniających, ulgi w składkach, zasiłków rodzinnych, zasiłku dla bezrobotnych i pomocy społecznej – z kalkulatorem pomocniczym.</div>
+            <a href="polish-article.html" class="read-more">Czytaj dalej →</a>
+          </div>
+
+          <!-- Świadczenia uzupełniające (odpowiednik Ergänzungsleistungen) -->
+          <div class="article-card">
+            <h2><a href="swiadczenia-uzupelniajace-2026.html">Świadczenia uzupełniające (PC) 2026: Twoja renta AHV nie wystarcza?</a></h2>
+            <div class="article-meta">⏱️ 5 min. czytania</div>
+            <div class="article-excerpt">Świadczenia uzupełniające pomagają, gdy renta AHV lub IV nie wystarcza na utrzymanie. Kto ma prawo? Jaka jest wysokość dodatku mieszkaniowego? Pokrycie składek na ubezpieczenie zdrowotne – proste wyjaśnienia.</div>
+            <a href="swiadczenia-uzupelniajace-2026.html" class="read-more">Czytaj dalej →</a>
+          </div>
+
+          <!-- Bezrobocie i macierzyństwo (odpowiednik ALV & Mutterschaft) -->
+          <div class="article-card">
+            <h2><a href="bezrobocie-macierzynstwo-2026.html">Bezrobocie i macierzyństwo 2026: Twoje prawa w przypadku ciąży i utraty pracy</a></h2>
+            <div class="article-meta">⏱️ 5 min. czytania</div>
+            <div class="article-excerpt">W ciąży i bezrobotna? Ochrona przed zwolnieniem, zasiłek macierzyński (EO) i co dzieje się po urlopie macierzyńskim – wszystkie prawa jasno wyjaśnione.</div>
+            <a href="bezrobocie-macierzynstwo-2026.html" class="read-more">Czytaj dalej →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>WelfareCalc.ch • Bezpłatny • Anonimowy • 2026</p>
+    <p style="margin-top: 0.6rem;">
+      <a href="/impressum.html">Impressum</a> •
+      <a href="/datenschutz.html">Ochrona danych</a> •
+      <a href="/haftung.html">Wyłączenie odpowiedzialności</a>
+    </p>
+    <p style="margin-top: 0.6rem;">
+      <a href="/pl.html">← Powrót do kalkulatora</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

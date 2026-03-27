@@ -1,0 +1,68 @@
+{
+  "BE": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_standard_be_2026",
+      "legal_basis": {
+        "primary_key": "BE_sh_legal_basis_primary",
+        "additional_sources_key": "BE_sh_legal_basis_additional",
+        "legal_source": "https://www.belex.sites.be.ch/app/fr/texts_of_law/860.1"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+      "grundbedarf_monthly": {
+        "size_1": 1061,
+        "size_2": 1624,
+        "size_3": 1974,
+        "size_4": 2271,
+        "size_5": 2568,
+        "per_additional": 216
+      },
+      "rent_max_monthly": {
+        "region_1": {
+          "size_1": 1200,
+          "size_2": 1450,
+          "size_3": 1650,
+          "size_4": 1850,
+          "size_5": 2100
+        },
+        "region_2": {
+          "size_1": 1100,
+          "size_2": 1300,
+          "size_3": 1500,
+          "size_4": 1700,
+          "size_5": 1900
+        },
+        "region_3": {
+          "size_1": 950,
+          "size_2": 1150,
+          "size_3": 1300,
+          "size_4": 1450,
+          "size_5": 1650
+        }
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "integration_extra_monthly": 100,
+      "application": {
+        "method_key": "BE_sh_application_method",
+        "authority_key": "BE_sh_authority",
+        "office_name_key": "BE_sh_office_name",
+        "contact": {
+          "address_key": "BE_sh_contact_address",
+          "phone": "+41 31 321 60 27",
+          "email": "sozialamt@bern.ch",
+          "office_hours_key": "BE_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "BE_sozialhilfe_required_documents_list"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "GE": {
+    "ipv": {
+      "formula_type": "GE_income_groups",
+      "official_authority": "Service de l'assurance-maladie (SAM)",
+      "asset_consumption_rate": 0.0666666667,
+      "high_income_threshold": 200000,
+      "high_wealth_threshold": 250000,
+      "income_groups": [
+        {
+          "adult_monthly": 348,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 294,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 240,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 196,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 164,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 120,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 85,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 55,
+          "young_monthly": 231,
+          "child_monthly": 132
+        },
+        {
+          "adult_monthly": 0,
+          "young_monthly": 106,
+          "child_monthly": 67
+        }
+      ],
+      "child_bonus_annual": 0,
+      "legal_basis": {
+        "primary_key": "GE_ipv_legal_basis_primary",
+        "additional_sources_key": "GE_ipv_legal_basis_additional",
+        "legal_source": "https://silgeneve.ch/legis/index.aspx"
+      },
+      "algorithm_description_key": "GE_ipv_algorithm_description",
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "rdu",
+            "description_key": "GE_ipv_step_1_desc",
+            "formula_key": "GE_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "einkommensgruppe",
+            "description_key": "GE_ipv_step_2_desc",
+            "formula_key": "GE_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "subvention_erwachsene",
+            "description_key": "GE_ipv_step_3_desc",
+            "formula_key": "GE_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "subvention_kinder_jugendliche",
+            "description_key": "GE_ipv_step_4_desc",
+            "formula_key": "GE_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "jahresbetrag",
+            "description_key": "GE_ipv_step_5_desc",
+            "formula_key": "GE_ipv_step_5_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "GE_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "GE_ipv_application_method",
+        "authority_key": "GE_ipv_application_authority",
+        "office_name_key": "GE_ipv_office_name",
+        "url": "https://www.ge.ch",
+        "contact": {
+          "address_key": "GE_ipv_contact_address",
+          "phone": "+41 22 546 19 00",
+          "email": "sam@etat.ge.ch",
+          "office_hours_key": "GE_ipv_office_hours"
+        },
+        "required_documents_key": "GE_ipv_required_documents_list"
+      }
+    }
+  }
+}

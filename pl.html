@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WelfareCalc.ch | Poradniki o świadczeniach w Szwajcarii dla Polaków | AHV, IV, EL</title>
+  <meta name="description" content="Polski przewodnik po szwajcarskich świadczeniach społecznych. Przeczytaj artykuły o ulgach w składkach, zasiłkach rodzinnych i świadczeniach uzupełniających. Skorzystaj z kalkulatora w 6 językach.">
+  <meta name="keywords" content="Polska Szwajcaria, świadczenia socjalne Szwajcaria, AHV po polsku, IPV, zasiłki rodzinne, kalkulator świadczeń">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://welfarecalc.ch/pl.html" />
+
+  <!-- Hreflang Tags (dla wszystkich 11 wersji językowych) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/de.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/en.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/fr.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/it.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/es.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/pt.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/pl.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/sq.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/hr.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/tr.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/ta.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/index.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <!-- Główny plik CSS (dla spójności z wersjami DE/EN/FR/IT/ES/PT) -->
+  <link rel="stylesheet" href="css/common.css">
+
+  <style>
+    /* Dodatkowe style, aby dopasować wygląd do wersji głównych (DE/EN/FR/IT/ES/PT) */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+    .main-content {
+      flex: 1;
+    }
+    /* GŁÓWNA ATRAKCJA: przewodnik po językach kalkulatora (umieszczony na górze) */
+    .language-guide {
+      background: linear-gradient(135deg, #e6f0ff 0%, #f0f7ff 100%);
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 1.5rem 0 2rem 0;
+      text-align: center;
+      border: 1px solid #0050a4;
+      box-shadow: 0 4px 12px rgba(0, 80, 164, 0.08);
+    }
+    .language-guide h2 {
+      font-family: 'Playfair Display', serif;
+      color: #0050a4;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .language-guide .subhead {
+      color: #2c5a8c;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .language-guide p {
+      color: #2c5a8c;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .language-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .lang-btn {
+      background: white;
+      color: #0050a4;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      border: 1px solid #0050a4;
+      display: inline-block;
+    }
+    .lang-btn:hover {
+      background: #0050a4;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 80, 164, 0.2);
+    }
+    .guide-note {
+      font-size: 0.85rem;
+      color: #5f7f9e;
+      margin-top: 1rem;
+      border-top: 1px solid #cddfe7;
+      padding-top: 1rem;
+      display: inline-block;
+    }
+    /* Sekcja z poradnikami (podstawowa treść) */
+    .blog-section {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 1rem 0 2rem 0;
+      border: 1px solid #e0e8f0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .blog-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e8f0;
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .blog-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .blog-card {
+      border-bottom: 1px solid #e8edf2;
+      padding-bottom: 1.5rem;
+    }
+    .blog-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .blog-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .blog-card h3 a {
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .blog-card h3 a:hover {
+      text-decoration: underline;
+    }
+    .blog-meta {
+      font-size: 0.85rem;
+      color: #5f7f9e;
+      margin-bottom: 0.5rem;
+    }
+    .blog-excerpt {
+      color: #4a5568;
+      line-height: 1.5;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0050a4;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .all-articles-link {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .all-articles-link a {
+      color: #0050a4;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px dotted #cddfe7;
+    }
+    .all-articles-link a:hover {
+      border-bottom-color: #0050a4;
+    }
+    /* Stopka */
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+    footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .language-guide h2 {
+        font-size: 2rem;
+      }
+      .blog-section h2 {
+        font-size: 1.8rem;
+      }
+    }
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .language-guide {
+        padding: 1.2rem;
+        margin: 1rem 0 1.5rem 0;
+      }
+      .language-guide h2 {
+        font-size: 1.4rem;
+      }
+      .language-guide .subhead {
+        font-size: 0.95rem;
+      }
+      .lang-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+      }
+      .blog-section {
+        padding: 1rem;
+      }
+      .blog-section h2 {
+        font-size: 1.3rem;
+      }
+      .blog-card h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">🇨🇭 WelfareCalc.ch</h1>
+    <div class="language-selector">
+      <a href="index.html">← Zmień język</a>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+
+    <!-- GŁÓWNY PRZEWODNIK JĘZYKOWY: umieszczony NAJPIERW, aby użytkownik od razu zobaczył kalkulator -->
+    <div class="language-guide">
+      <h2>🧮 Sprawdź swoje świadczenia</h2>
+      <div class="subhead">Kalkulator WelfareCalc – bezpłatny, anonimowy, w 6 językach</div>
+      <p>Oblicz swoje prawa do AHV, IV, świadczeń uzupełniających (EL) i ulg w składkach (IPV).<br>
+      <strong>Wybierz język, w którym chcesz przeprowadzić obliczenia:</strong></p>
+      <div class="language-buttons">
+        <a href="/de.html" class="lang-btn">🇩🇪 Deutsch</a>
+        <a href="/en.html" class="lang-btn">🇬🇧 English</a>
+        <a href="/fr.html" class="lang-btn">🇫🇷 Français</a>
+        <a href="/it.html" class="lang-btn">🇮🇹 Italiano</a>
+        <a href="/es.html" class="lang-btn">🇪🇸 Español</a>
+        <a href="/pt.html" class="lang-btn">🇵🇹 Português</a>
+      </div>
+      <div class="guide-note">
+        ✨ Kalkulator działa w 100% w Twojej przeglądarce – żadne dane nie są zapisywane. Uwzględnia różnice kantonalne (ZH, BE, GE, TI, VD itd.). Wynik w mniej niż 2 minuty.
+      </div>
+    </div>
+
+    <!-- BLOG SEKCJA: poradniki po polsku (umieszczone poniżej kalkulatora) -->
+    <div class="blog-section">
+      <h2>📘 Poradniki o szwajcarskich świadczeniach 2026</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h3><a href="blog/pl/ulga-skladkach-2026.html">🏥 Ulga w składkach 2026 (IPV/RIP) – jak obniżyć składki na ubezpieczenie zdrowotne?</a></h3>
+          <div class="blog-meta">📅 Aktualizacja marzec 2026 • 5 min czytania</div>
+          <div class="blog-excerpt">Składki na obowiązkowe ubezpieczenie zdrowotne w 2026 roku ponownie wzrosły. Sprawdź, czy przysługuje Ci indywidualna ulga w składkach (IPV) i jak złożyć wniosek w swoim kantonie, aby zaoszczędzić setki franków rocznie.</div>
+          <a href="blog/pl/ulga-skladkach-2026.html" class="read-more">Czytaj dalej →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/pl/zasilki-rodzinne-2026.html">👶 Zasiłki rodzinne 2026 – ile wynoszą i jak je otrzymać?</a></h3>
+          <div class="blog-meta">📅 Aktualizacja marzec 2026 • 6 min czytania</div>
+          <div class="blog-excerpt">Zasiłki na dziecko i zasiłki edukacyjne różnią się w zależności od kantonu. Dowiedz się, ile możesz otrzymywać miesięcznie, jak ubiegać się o zaległe świadczenia nawet do 5 lat wstecz i jakie są prawa osób niepracujących.</div>
+          <a href="blog/pl/zasilki-rodzinne-2026.html" class="read-more">Czytaj dalej →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/pl/swiadczenia-uzupelniajace-2026.html">💰 Świadczenia uzupełniające (EL/PC) 2026 – kiedy renta AHV/IV nie wystarcza?</a></h3>
+          <div class="blog-meta">📅 Aktualizacja marzec 2026 • 7 min czytania</div>
+          <div class="blog-excerpt">Świadczenia uzupełniające to kluczowe wsparcie dla emerytów, rencistów i osób z niepełnosprawnościami. Wyjaśniamy, kto ma prawo, jakie koszty są pokrywane (czynsz, składki zdrowotne) i jak złożyć wniosek.</div>
+          <a href="blog/pl/swiadczenia-uzupelniajace-2026.html" class="read-more">Czytaj dalej →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/pl/bezrobocie-macierzynstwo-2026.html">🤰 Bezrobocie i macierzyństwo 2026 – ochrona i zasiłki dla przyszłych mam</a></h3>
+          <div class="blog-meta">📅 Aktualizacja marzec 2026 • 5 min czytania</div>
+          <div class="blog-excerpt">Jesteś w ciąży i tracisz pracę? Wyjaśniamy, jakie masz prawa: ochrona przed zwolnieniem, zasiłek macierzyński (EO) i dalsze kroki po urlopie macierzyńskim. Praktyczne wskazówki dla kobiet w Szwajcarii.</div>
+          <a href="blog/pl/bezrobocie-macierzynstwo-2026.html" class="read-more">Czytaj dalej →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/pl/polish-article.html">📋 7 najważniejszych świadczeń społecznych w Szwajcarii 2026 – pełny przegląd</a></h3>
+          <div class="blog-meta">📅 Aktualizacja marzec 2026 • 10 min czytania</div>
+          <div class="blog-excerpt">Kompendium wiedzy o AHV, IV, świadczeniach uzupełniających, ulgach w składkach, zasiłkach rodzinnych, zasiłku dla bezrobotnych i pomocy społecznej. Zobacz, które świadczenia możesz łączyć i jak skorzystać z kalkulatora.</div>
+          <a href="blog/pl/polish-article.html" class="read-more">Czytaj dalej →</a>
+        </div>
+      </div>
+      <div class="all-articles-link">
+        <a href="blog/pl/index.html">📚 Zobacz wszystkie artykuły i poradniki →</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Bezpłatny • Anonimowy • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="impressum.html">Impressum</a> •
+    <a href="datenschutz.html">Ochrona danych</a> •
+    <a href="haftung.html">Wyłączenie odpowiedzialności</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="blog/pl/index.html">📚 Wszystkie poradniki po polsku</a>
+  </p>
+</footer>
+
+</body>
+</html>

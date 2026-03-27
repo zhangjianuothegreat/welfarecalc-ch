@@ -1,0 +1,25 @@
+{
+  "SG": {
+    "name": "St. Gallen",
+    "legal_basis": {
+      "primary_key": "SG_fa_legal_basis_primary",
+      "additional_sources_key": "SG_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "SG_fa_office_name",
+      "authority_key": "SG_fa_application_authority"
+    },
+    "application": {
+      "method_key": "SG_fa_application_method",
+      "url": "https://www.svasg.ch",
+      "required_documents_key": "SG_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "SG_fa_contact_address",
+      "phone": "+41 71 228 31 11",
+      "email": "familienzulagen@svasg.ch"
+    },
+    "notes_key": "SG_fa_special_notes"
+  }
+}

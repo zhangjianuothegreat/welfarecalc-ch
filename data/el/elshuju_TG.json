@@ -1,0 +1,61 @@
+{
+  "TG": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "TG_el_legal_basis_primary",
+        "additional_sources_key": "TG_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child": 50000,
+        "freibetrag_note": "Freibetrag für Eigenheim: 112'500 CHF (bei bewohnbaren Liegenschaften)"
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "TG_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "Region 2: Agglomeration (z.B. Frauenfeld, Arbon, Kreuzlingen) 2026"
+        },
+        "region_3": {
+          "name_key": "TG_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Region 3: Ländliche Gemeinden im Kanton TG 2026"
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified_TG_2026": {
+          "adult": 6636,
+          "young_adult": 4908,
+          "child": 1476,
+          "note": "Kantonale Durchschnittsprämie Thurgau 2026 inkl. 13. AHV-Neutralisierung"
+        }
+      },
+      "application": {
+        "authority_key": "TG_el_application_authority",
+        "office_name_key": "TG_el_office_name",
+        "url": "https://www.svztg.ch",
+        "contact": {
+          "address_key": "TG_el_contact_address",
+          "phone": "+41 58 225 75 75",
+          "email": "el@svztg.ch"
+        },
+        "required_documents_key": "TG_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 1.09,
+        "communal_multiplier": 1.48,
+        "source": "Steuerfüsse Kanton Thurgau 2025/2026 (Referenz Frauenfeld)"
+      }
+    }
+  }
+}

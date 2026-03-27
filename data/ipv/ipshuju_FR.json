@@ -1,0 +1,82 @@
+{
+  "FR": {
+    "ipv": {
+      "formula_type": "FR_lissage_model",
+      "legal_basis": {
+        "primary_key": "FR_ipv_legal_basis_primary",
+        "additional_sources_key": "FR_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.ecasfr.ch/rpi",
+      "algorithm_description_key": "FR_ipv_algorithm_description",
+      "asset_consumption_rate": 0.05,
+      "child_deduction": 5000,
+      "income_limits": {
+        "single": 42000,
+        "couple_no_child": 70000,
+        "per_child_add": 14000
+      },
+      "ref_premium_monthly": {
+        "adult": 569,
+        "young_adult": 415,
+        "child": 136
+      },
+      "min_rate_child": 0.8,
+      "min_rate_young_adult": 0.5,
+      "max_subsidy_rate": 0.65,
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "FR_ipv_step_1_desc",
+            "formula_key": "FR_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "income_limit",
+            "description_key": "FR_ipv_step_2_desc",
+            "formula_key": "FR_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "diff_percent_lissage_rate",
+            "description_key": "FR_ipv_step_3_desc",
+            "formula_key": "FR_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "category_subsidy",
+            "description_key": "FR_ipv_step_4_desc",
+            "formula_key": "FR_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "annual_benefit",
+            "description_key": "FR_ipv_final_step_desc",
+            "formula_key": "FR_ipv_final_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "FR_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "FR_ipv_application_method",
+        "authority_key": "FR_ipv_application_authority",
+        "office_name_key": "FR_ipv_office_name",
+        "url": "www.ecasfr.ch/rpi",
+        "contact": {
+          "address_key": "FR_ipv_contact_address",
+          "phone": "+41 26 305 45 01",
+          "email": "rpi.ipv@ecasfr.ch",
+          "office_hours_key": "FR_ipv_office_hours"
+        },
+        "required_docs_list": []
+      }
+    }
+  }
+}

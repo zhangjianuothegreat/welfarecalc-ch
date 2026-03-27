@@ -1,0 +1,25 @@
+{
+  "AG": {
+    "name": "Aargau",
+    "legal_basis": {
+      "primary_key": "AG_fa_legal_basis_primary",
+      "additional_sources_key": "AG_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "AG_fa_office_name",
+      "authority_key": "AG_fa_application_authority"
+    },
+    "application": {
+      "method_key": "AG_fa_application_method",
+      "url": "https://www.sva-aargau.ch/familienzulagen",
+      "required_documents_key": "AG_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "AG_fa_contact_address",
+      "phone": "+41 62 837 89 74",
+      "email": "familienzulagen@sva-ag.ch"
+    },
+    "notes_key": "AG_fa_special_notes"
+  }
+}

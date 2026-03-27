@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WelfareCalc.ch | Calculadora de Prestaciones Sociales Suizas – Gratis y Anónimo | AVS, AI, PC</title>
+  <meta name="description" content="Calcule sus prestaciones sociales suizas (AVS, AI, prestaciones complementarias) de forma gratuita y anónima. La calculadora todo en uno para 6 grupos objetivo en 6 idiomas.">
+
+  <!-- Canonical Tag: evita contenido duplicado por parámetros de URL -->
+  <link rel="canonical" href="https://welfarecalc.ch/es.html" />
+
+  <!-- Hreflang Tags para SEO multilingüe (alternativas de idioma de Google) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/de.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/en.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/fr.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/it.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/es.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/pt.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/pl.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/sq.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/hr.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/tr.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/ta.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/index.html" />
+
+  <!-- FAQ Schema (Datos estructurados para resultados enriquecidos) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué prestaciones sociales cubre la calculadora?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nuestra calculadora cubre AVS, AI, prestaciones complementarias, subsidio por desempleo, becas, reducción de primas del seguro médico y otras ayudas sociales cantonales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Es gratuita y anónima la calculadora?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, la calculadora es completamente gratuita y no requiere registro. No se almacenan datos personales. Sus datos permanecen anónimos y no se comparten con terceros."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Para quién es adecuada la calculadora de prestaciones sociales?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La calculadora es adecuada para personas solteras, familias, desempleados, estudiantes, jubilados, personas con bajos ingresos, personas con discapacidad, solicitantes de protección y mujeres embarazadas."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Bunny Fonts: Playfair Display + Lato (欧洲服务器，revDSG 合规) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <!-- CSS通用核心样式：与英语/德语/意大利语版完全相同的common.css，确保算法卡片、表单、结果展示全屏舒适，样式统一 -->
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- 额外微调：保证西班牙语版头图、布局与德语版视觉完全一致，仅语言本地化，不覆盖任何算法样式 -->
+  <style>
+    /* 保证与德语版完全相同的样式基底，common.css全权控制内部卡片、表格、按钮，无样式覆盖冲突 */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    /* 头部样式与德语版site-header完全一致，使用相同类名和结构 */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    /* 头部布局：与德语版保持完全相同的flex布局，确保品牌+语言切换器对齐 */
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+    /* 人群选择网格：与德语版/英语版完全相同 crowd-grid 样式，保证视觉统一及响应式 */
+    .crowd-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .crowd-btn {
+      background: white;
+      border: 1px solid #e0e8f0;
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0050a4;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.4;
+      background-color: #ffffff;
+    }
+    .crowd-btn:active {
+      transform: scale(0.98);
+      background: #f8f9fa;
+      border-color: #0050a4;
+    }
+    @media (hover: hover) {
+      .crowd-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 80, 164, 0.12);
+        border-color: #0050a4;
+      }
+    }
+    /* app-container 完全由 common.css 主导，保证算法界面宽大舒适，与多语言版本一致 */
+    .app-container {
+      margin-top: 1.8rem;
+      min-height: 400px;
+      width: 100%;
+    }
+
+    /* SEO-Blog-Bereich unterhalb der Crowd-Buttons – dezent, wird bei Rechnerstart ausgeblendet */
+    .blog-seo-links {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1rem 1.5rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #e8edf2;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: opacity 0.2s ease;
+    }
+    .blog-seo-links.hide-seo-links {
+      display: none;
+    }
+    .blog-seo-links .seo-headline {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #5f7f9e;
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .blog-seo-links .seo-headline span {
+      font-size: 1rem;
+    }
+    .blog-seo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .blog-seo-grid a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #2c5a8c;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #cddfe7;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .blog-seo-grid a:hover {
+      color: #003366;
+      border-bottom-color: #0050a4;
+    }
+    .blog-seo-more {
+      font-size: 0.85rem;
+      margin-left: 0.2rem;
+      font-weight: 600;
+      background: #f0f4fa;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+      white-space: nowrap;
+    }
+    @media (max-width: 680px) {
+      .blog-seo-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .blog-seo-grid a {
+        white-space: normal;
+        word-break: break-word;
+      }
+      .blog-seo-more {
+        display: inline-block;
+        margin-top: 0.2rem;
+      }
+      .blog-seo-links {
+        padding: 0.9rem 1rem;
+      }
+    }
+
+    /* Estilo del contenido estático SEO - se muestra antes de la carga dinámica, amigable para buscadores */
+    .seo-static-content {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      border: 1px solid #e0e8f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .seo-static-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+    }
+    .seo-static-content h2 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+    .seo-static-content p {
+      line-height: 1.6;
+      color: #4a5568;
+      margin-bottom: 0.5rem;
+    }
+    .seo-static-content ul {
+      margin: 1rem 0 0 1.5rem;
+      color: #4a5568;
+    }
+    .seo-static-content li {
+      margin: 0.5rem 0;
+    }
+    /* 优雅加载动画，与德语版风格统一，提升用户体验 */
+    .loading-placeholder {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: 'Lato', sans-serif;
+      color: #5a6e7c;
+      font-size: 1rem;
+    }
+    .loading-placeholder::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      border: 3px solid #e0e8f0;
+      border-top-color: #0050a4;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      vertical-align: middle;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+    /* Añadido: estilo para el título de instrucción de selección (consistente con de/fr/it/en) */
+    .crowd-instruction {
+      text-align: center;
+      margin: 2rem 0 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #0050a4;
+      line-height: 1.3;
+    }
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .crowd-btn {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        min-height: 120px;
+      }
+      .crowd-grid {
+        gap: 1.5rem;
+      }
+      .crowd-instruction {
+        font-size: 1.6rem;
+      }
+      .seo-static-content h1 {
+        font-size: 2.2rem;
+      }
+      .seo-static-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .crowd-btn {
+        font-size: 0.95rem;
+        padding: 1rem;
+        min-height: 85px;
+      }
+      .crowd-grid {
+        gap: 0.8rem;
+      }
+      .crowd-instruction {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 1rem;
+      }
+      .seo-static-content {
+        padding: 1rem;
+      }
+      .seo-static-content h1 {
+        font-size: 1.4rem;
+      }
+      .seo-static-content h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">🇨🇭 WelfareCalc.ch</h1>
+    <div class="language-selector">
+      <a href="index.html">← Cambiar idioma</a>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+
+    <!-- Título de instrucción para selección de grupo, con id para control JS -->
+    <h2 id="crowd-instruction-title" class="crowd-instruction">Por favor, seleccione su situación / grupo de personas</h2>
+
+    <!-- 人群选择按钮网格：与德语版完全相同的结构，但文本为西班牙语，data-crowd 键值保持一致以适配loader.js -->
+    <div id="crowd-selector" class="crowd-grid">
+      <button class="crowd-btn" data-crowd="single">Soltero/a</button>
+      <button class="crowd-btn" data-crowd="family">Familia</button>
+      <button class="crowd-btn" data-crowd="unemployed">Desempleado/a</button>
+      <button class="crowd-btn" data-crowd="student">Estudiante</button>
+      <button class="crowd-btn" data-crowd="retired">Jubilado/a</button>
+      <button class="crowd-btn" data-crowd="lowincome">Bajos ingresos</button>
+      <button class="crowd-btn" data-crowd="disabled">Personas con discapacidad</button>
+      <button class="crowd-btn" data-crowd="refugees">Solicitantes de protección</button>
+      <button class="crowd-btn" data-crowd="pregnant">Embarazada</button>
+    </div>
+
+    <!-- SEO-Blog-Bereich (nur im statischen Zustand sichtbar, wird bei Rechnerstart ausgeblendet) -->
+    <div id="blogSeoLinks" class="blog-seo-links">
+      <div class="seo-headline">
+        <span>📘</span> Guías sobre prestaciones sociales 2026
+      </div>
+      <div class="blog-seo-grid">
+        <a href="blog/es/asignaciones-familiares-2026.html">👶 Asignaciones familiares 2026 – por hijo y formación</a>
+        <a href="blog/es/reduccion-primas-2026.html">🏥 Reducción de primas (RIP) 2026</a>
+        <a href="blog/es/prestaciones-complementarias-2026.html">💰 Prestaciones complementarias (PC) 2026</a>
+        <a href="blog/es/prestaciones-sociales-2026.html">📋 7 prestaciones sociales suizas 2026</a>
+        <a href="blog/es/desempleo-maternidad-2026.html">🤰 Desempleo y maternidad 2026</a>
+        <a href="blog/es/index.html" class="blog-seo-more">📚 Todas las guías →</a>
+      </div>
+    </div>
+
+    <!-- Contenedor de carga dinámica de algoritmos - contiene contenido estático inicial compatible con SEO -->
+    <div id="app" class="app-container">
+      <div class="seo-static-content">
+        <h1>Calculadora de Prestaciones Sociales Suizas – Gratis y Anónima</h1>
+        <p>Nuestra herramienta le ayuda a determinar rápidamente su elegibilidad para AVS, AI, prestaciones complementarias y asistencia social. Seleccione su situación arriba para iniciar el cálculo personalizado.</p>
+        
+        <h2>¿Qué prestaciones se calculan?</h2>
+        <p>La calculadora de WelfareCalc.ch cubre las siguientes prestaciones sociales suizas (cálculo según las directrices más recientes, actualizado a 2026):</p>
+        <ul>
+          <li><strong>AVS/AI</strong> – Seguro de vejez y de supervivientes / Seguro de invalidez</li>
+          <li><strong>Prestaciones complementarias (PC)</strong> – para beneficiarios de AVS/AI con bajos ingresos</li>
+          <li><strong>Subsidio por desempleo</strong> – prestaciones por desempleo y compensación por trabajo reducido</li>
+          <li><strong>Reducción de primas (IPV)</strong> – reducción de primas del seguro de enfermedad</li>
+          <li><strong>Asistencia social</strong> – apoyo cantonal y municipal</li>
+          <li><strong>Becas y ayudas a la formación</strong> – para estudiantes y formación profesional</li>
+          <li><strong>Asignaciones familiares</strong> – asignaciones por hijos y por formación</li>
+        </ul>
+        
+        <h2>¿Para quién es adecuada la calculadora?</h2>
+        <p>La calculadora está optimizada para los siguientes grupos: personas solteras, familias, desempleados, estudiantes, jubilados, personas con bajos ingresos, personas con discapacidad, solicitantes de protección y mujeres embarazadas.</p>
+        
+        <h2>Gratuito, anónimo y conforme a la protección de datos</h2>
+        <p>El uso de WelfareCalc.ch es completamente <strong>gratuito</strong> y no requiere <strong>registro</strong>. No se almacenan datos personales. Sus datos permanecen anónimos y no se comparten con terceros.</p>
+        
+        <!-- Enlace a autoridad externa: Fuente oficial de la Oficina Federal de Seguros Sociales (OFAS) -->
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+          📌 Para información oficial, consulte también la 
+          <a href="https://www.bsv.admin.ch/bsv/es/home.html" rel="nofollow noopener" target="_blank">Oficina Federal de Seguros Sociales (OFAS)</a> 
+          sobre leyes y normativas vigentes.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Gratuito • Anónimo • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="impressum_es.html">Impreso</a> • 
+    <a href="datenschutz_es.html">Declaración de protección de datos</a> • 
+    <a href="haftung_es.html">Exclusión de responsabilidad</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="blog/es/index.html">📚 Guías & Blog</a>
+  </p>
+</footer>
+
+<!-- 加载器脚本 (与英语/德语/意大利语版路径相同，确保功能完整) -->
+<script src="js/loader.js"></script>
+
+<script>
+  (function() {
+    // Guardar el contenido SEO original para posible restauración (opcional)
+    let originalSEOContent = null;
+    // 获取需要隐藏的SEO/Blog元素 (当算法启动时全部隐藏)
+    const blogSeoSection = document.getElementById('blogSeoLinks');
+    
+    const hideAllSeoContent = () => {
+      if (blogSeoSection && !blogSeoSection.classList.contains('hide-seo-links')) {
+        blogSeoSection.classList.add('hide-seo-links');
+      }
+    };
+    
+    // 确保页面完全加载后设置语言为西班牙语（loader.js 会根据此配置渲染对应翻译文案，若支持内部多语言）
+    document.addEventListener('DOMContentLoaded', () => {
+      // Guardar la estructura HTML del contenido SEO original
+      const appContainer = document.getElementById('app');
+      if (appContainer) {
+        originalSEOContent = appContainer.innerHTML;
+      }
+      
+      // 调用 loader.js 暴露的 setLanguage 方法，使算法内部文本使用西班牙语（确保与德语版一致的多语言机制）
+      if (window.setLanguage && typeof window.setLanguage === 'function') {
+        window.setLanguage('es');
+      }
+
+      const crowdSelector = document.getElementById('crowd-selector');
+      const instructionTitle = document.getElementById('crowd-instruction-title');
+
+      if (!crowdSelector || !appContainer) return;
+
+      // 定义加载并渲染人群算法函数，与德语版完全相同的加载逻辑，保证加载动画和交互体验一致
+      const loadSelectedCrowd = (crowdType, buttonElement) => {
+        // 隐藏博客SEO区域
+        if (blogSeoSection) {
+          blogSeoSection.classList.add('hide-seo-links');
+        }
+        // 隐藏标题（核心修改：在用户点击后立即隐藏）
+        if (instructionTitle) {
+          instructionTitle.style.display = 'none';
+        }
+
+        // 显示优雅加载提示，样式与德语版完全一致，符合common.css设计系统
+        appContainer.innerHTML = '<div class="loading-placeholder">Cargando calculadora, espere por favor...</div>';
+       
+        // 平滑滚动至计算器区域，提升移动端体验，与德语版行为一致
+        appContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // 核心调用 window.loadCrowd (由 loader.js 提供)
+        if (window.loadCrowd && typeof window.loadCrowd === 'function') {
+          // loader.js 的 loadCrowd 负责异步获取对应人群的HTML/CSS/JS片段，并注入 #app 容器
+          // 所有样式依赖 common.css，保证与英语/德语/意大利语版视觉100%统一（全屏舒适，无压缩感）
+          window.loadCrowd(crowdType);
+         
+          // 轻微按钮防抖：避免快速重复点击导致多次加载，提高稳定性（与德语版实现细节相同）
+          if (buttonElement) {
+            buttonElement.disabled = true;
+            setTimeout(() => {
+              if (buttonElement) buttonElement.disabled = false;
+            }, 700);
+          }
+        } else {
+          console.error('loadCrowd 函数缺失，请确认 js/loader.js 已正确加载并暴露全局 loadCrowd 方法');
+          appContainer.innerHTML = '<div style="text-align:center; padding:2rem; color:#b91c1c; font-family: Lato, sans-serif;">❌ Error: No se pudo cargar la calculadora. Por favor, recargue la página.</div>';
+        }
+      };
+
+      // 事件委托处理人群按钮点击 (与德语版行为完全一致，确保用户体验)
+      crowdSelector.addEventListener('click', (event) => {
+        const btn = event.target.closest('.crowd-btn');
+        if (!btn) return;
+       
+        const crowdValue = btn.getAttribute('data-crowd');
+        if (!crowdValue) return;
+       
+        // 防止在加载尚未完成时重复点击同一个按钮（提升性能）
+        if (btn.disabled) return;
+       
+        // 执行人群加载函数
+        loadSelectedCrowd(crowdValue, btn);
+      });
+
+      // 初始状态与德语版保持一致：不自动加载任何人群，完全等待用户主动点击，避免无关请求
+      // 这样确保与英语/西班牙语/意大利语版多语言入口交互统一，无额外预设加载
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+{
+  "VD": {
+    "ipv": {
+      "formula_type": "VD_rdu_progressive_target_10_percent",
+      "legal_basis": {
+        "primary_key": "VD_ipv_legal_basis_primary",
+        "additional_sources_key": "VD_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie",
+      "source_note": "Alle Daten basierend auf Arrêté concernant les subsides aux primes de l'assurance-maladie obligatoire en 2026 und Notice explicative",
+      "algorithm_description_key": "VD_ipv_algorithm_description",
+      "asset_limit_single": 100000,
+      "asset_limit_couple": 160000,
+      "rdu_target_percentage": 0.10,
+      "rdu_subsidy_tiers": [
+        {
+          "rdu_max": 20000,
+          "rate": 0.9
+        },
+        {
+          "rdu_max": 35000,
+          "rate": 0.75
+        },
+        {
+          "rdu_max": 50000,
+          "rate": 0.55
+        },
+        {
+          "rdu_max": 65000,
+          "rate": 0.35
+        },
+        {
+          "rdu_max": 80000,
+          "rate": 0.15
+        },
+        {
+          "rdu_max": 9999999999,
+          "rate": 0
+        }
+      ],
+      "exemption_amounts": {
+        "single": 56000,
+        "couple": 112000,
+        "per_child": 15000
+      },
+      "ref_premium_annual_by_region": {
+        "region_1": 6520,
+        "region_2": 6110,
+        "source_note": "Prime de référence ajustée +4.9% pour 2026"
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5
+      },
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "VD_ipv_step_1_desc",
+            "formula_key": "VD_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "rdu",
+            "description_key": "VD_ipv_step_2_desc",
+            "formula_key": "VD_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "subsidy_rate",
+            "description_key": "VD_ipv_step_3_desc",
+            "formula_key": "VD_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "calculated_subsidy",
+            "description_key": "VD_ipv_step_4_desc",
+            "formula_key": "VD_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "annual_benefit",
+            "description_key": "VD_ipv_step_5_desc",
+            "formula_key": "VD_ipv_step_5_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "VD_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "VD_ipv_application_method",
+        "authority_key": "VD_ipv_application_authority",
+        "office_name_key": "VD_ipv_office_name",
+        "url": "https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie",
+        "digital_portal": "https://prestations.vd.ch/pub/samoa/001494",
+        "contact": {
+          "address_key": "VD_ipv_contact_address",
+          "phone": "+41 21 557 47 47",
+          "email": "info.ovam@vd.ch"
+        },
+        "required_documents_key": "VD_ipv_required_documents_list"
+      }
+    }
+  }
+}

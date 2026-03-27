@@ -1,0 +1,63 @@
+{
+  "BS": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_bs_2026",
+      "official_url": "https://www.bs.ch/themen/finanzielle-hilfe/leistungen/sozialhilfe",
+      "legal_basis": {
+        "primary_key": "BS_sh_legal_basis_primary",
+        "additional_sources_key": "BS_sh_legal_basis_additional",
+        "legal_source": "https://www.gesetzessammlung.bs.ch/app/de/texts_of_law/890.100"
+      },
+      "asset_freibetrag": {
+        "single": 8000,
+        "couple": 16000,
+        "per_child": 4000,
+        "max_total": 20000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "1p": 880,
+        "2p": 1210,
+        "3p": 1390,
+        "4p": 1650,
+        "5p_plus": 2160
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2,
+        "max_per_person": 400
+      },
+      "asset_consumption": {
+        "divisor_other": 7
+      },
+      "application": {
+        "authority_key": "BS_sh_authority",
+        "office_name_key": "BS_sh_office_name",
+        "url": "https://www.bs.ch",
+        "contact": {
+          "address_key": "BS_sh_contact_address",
+          "phone": "+41 61 267 33 00",
+          "email": "sozialhilfe@bs.ch",
+          "office_hours_key": "BS_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

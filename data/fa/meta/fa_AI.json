@@ -1,0 +1,25 @@
+{
+  "AI": {
+    "name": "Appenzell Innerrhoden",
+    "legal_basis": {
+      "primary_key": "AI_fa_legal_basis_primary",
+      "additional_sources_key": "AI_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "AI_fa_office_name",
+      "authority_key": "AI_fa_application_authority"
+    },
+    "application": {
+      "method_key": "AI_fa_application_method",
+      "url": "https://www.akai.ch/af",
+      "required_documents_key": "AI_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "AI_fa_contact_address",
+      "phone": "+41 71 788 93 30",
+      "email": "info@akai.ch"
+    },
+    "notes_key": "AI_fa_special_notes"
+  }
+}

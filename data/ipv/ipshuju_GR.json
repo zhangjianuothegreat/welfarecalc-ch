@@ -1,0 +1,63 @@
+{
+  "GR": {
+    "ipv": {
+      "formula_type": "retained_income",
+      "legal_basis": {
+        "primary_key": "GR_ipv_legal_basis_primary",
+        "additional_sources_key": "GR_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "basic_deduction": {
+        "single": 12000,
+        "couple": 18000,
+        "per_child": 6000
+      },
+      "minimum_reduction": {
+        "min_subsidy_chf": 100
+      },
+      "staggered_retention_rates": {
+        "up_to_10000": 0.08,
+        "10001_20000": 0.09,
+        "20001_30000": 0.10,
+        "30001_40000": 0.11,
+        "over_40000": 0.12
+      },
+      "child_protection_lna_thresholds": {
+        "full_relief_up_to": 55000,
+        "partial_30_up_to": 65000,
+        "partial_60_up_to": 80000,
+        "max_considered": 85000
+      },
+      "ref_premium_annual": {
+        "region1": {
+          "adult": 6180,
+          "young_adult": 4580,
+          "child": 1480
+        },
+        "region2": {
+          "adult": 5820,
+          "young_adult": 4280,
+          "child": 1380
+        },
+        "region3": {
+          "adult": 5650,
+          "young_adult": 4100,
+          "child": 1300
+        }
+      },
+      "application": {
+        "method_key": "GR_ipv_application_method",
+        "authority_key": "GR_ipv_application_authority",
+        "office_name_key": "GR_ipv_office_name",
+        "url": "https://www.sva.gr.ch/ipv.html",
+        "contact": {
+          "address_key": "GR_ipv_contact_address",
+          "phone": "+41 81 257 41 11",
+          "email": "info@sva.gr.ch",
+          "office_hours_key": "GR_ipv_office_hours"
+        },
+        "required_docs_list_key": "GR_ipv_required_documents_list"
+      }
+    }
+  }
+}

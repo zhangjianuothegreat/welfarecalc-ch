@@ -1,0 +1,54 @@
+{
+  "BL": {
+    "el": {
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "BL_el_legal_basis_primary",
+        "additional_sources_key": "BL_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "note": "Eintrittsschwelle exkl. selbstbewohnte Liegenschaft"
+      },
+      "rent_limits_annual": {
+        "region_2": {
+          "1": 18300,
+          "2": 21720,
+          "3": 23760,
+          "4": 25920,
+          "5": 25920
+        },
+        "region_3": {
+          "1": 16680,
+          "2": 20160,
+          "3": 22200,
+          "4": 24000,
+          "5": 24000
+        }
+      },
+      "recognized_premiums_annual": {
+        "standard_2026": {
+          "adult": 4596,
+          "young_adult": 3816,
+          "child": 1968
+        }
+      },
+      "grundbedarf_annual": {
+        "single": 19590,
+        "couple": 29385,
+        "additional_person": 4920
+      },
+      "application": {
+        "authority_key": "BL_el_application_authority",
+        "url": "https://www.sva-bl.ch/",
+        "contact": {
+          "phone": "+41 61 425 23 86.",
+          "email": "el@sva-bl.ch"
+        }
+      },
+      "required_documents_key": "BL_el_required_documents_list"
+    }
+  }
+}

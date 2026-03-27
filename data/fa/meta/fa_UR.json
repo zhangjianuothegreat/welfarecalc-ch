@@ -1,0 +1,25 @@
+{
+  "UR": {
+    "name": "Uri",
+    "legal_basis": {
+      "primary_key": "UR_fa_legal_basis_primary",
+      "additional_sources_key": "UR_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "UR_fa_office_name",
+      "authority_key": "UR_fa_application_authority"
+    },
+    "application": {
+      "method_key": "UR_fa_application_method",
+      "url": "https://www.svsuri.ch/dienstleistungen/familienzulagen-fak-flg",
+      "required_documents_key": "UR_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "UR_fa_contact_address",
+      "phone": "+41 41 874 50 20",
+      "email": "info@svsuri.ch"
+    },
+    "notes_key": "UR_fa_special_notes"
+  }
+}

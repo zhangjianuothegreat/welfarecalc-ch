@@ -1,0 +1,56 @@
+{
+  "AI": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_standard",
+      "legal_basis": {
+        "primary_key": "AI_sh_legal_basis_primary",
+        "additional_sources_key": "AI_sh_legal_basis_additional",
+        "legal_source": "https://ai.clex.ch/app/de/texts_of_law/850.000"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 2000,
+        "max_total": 20000
+      },
+      "grundbedarf_monthly": {
+        "size_1": 1061,
+        "size_2": 1624,
+        "size_3": 1974,
+        "size_4": 2271,
+        "size_5": 2568,
+        "per_additional": 216
+      },
+      "rent_max_monthly": {
+        "size_1": 950,
+        "size_2": 1150,
+        "size_3": 1350,
+        "size_4": 1500
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.20
+      },
+      "application": {
+        "method_key": "AI_sh_application_method",
+        "authority_key": "AI_sh_authority",
+        "office_name_key": "AI_sh_office_name",
+        "url": "https://www.ai.ch/",
+        "contact": {
+          "address_key": "AI_sh_contact_address",
+          "email": "sozialamt@gsd.ai.ch",
+          "phone": "+41 71 788 92 61",
+          "office_hours_key": "AI_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id", "sh_doc_income_proof", "sh_doc_assets_proof", "sh_doc_rent_contract", "sh_doc_kk_premiums"
+        ],
+        "contact_reminder_key": "AI_sh_contact_reminder"
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "AR": {
+    "ipv": {
+      "formula_type": "AR_retained_income",
+      "legal_basis": {
+        "primary_key": "AR_ipv_legal_basis_primary",
+        "additional_sources_key": "AR_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.sovar.ch",
+      "algorithm_description_key": "AR_ipv_algorithm_description",
+      "asset_limit_single": 120000,
+      "asset_limit_couple": 200000,
+      "ahv_exemption_annual": 12600,
+      "income_limits": {
+        "single_without_children": 35000,
+        "single_with_1_child": 46200,
+        "single_with_2_children": 47000,
+        "single_with_3_children": 50400,
+        "single_with_4_children": 56700,
+        "single_with_5_plus_children": 63000,
+        "couple_without_children": 55000,
+        "couple_with_1_child": 68200,
+        "couple_with_2_children": 75900,
+        "couple_with_3_children": 76000,
+        "couple_with_4_children": 77000,
+        "couple_with_5_plus_children": 81000
+      },
+      "basic_deduction": {
+        "single_without_children": 20670,
+        "couple_or_single_with_children": 31005,
+        "per_child": 2000,
+        "description_key": "AR_ipv_basic_deduction_desc"
+      },
+      "self_retention_rate": 0.46,
+      "ref_premium_annual": {
+        "adult": 6025.20,
+        "young_adult": 4233.60,
+        "young_adult_education": 2116.80,
+        "child": 1114.80
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 0
+      },
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "AR_ipv_step_1_desc",
+            "formula_key": "AR_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "total_reference_premium",
+            "description_key": "AR_ipv_step_2_desc",
+            "formula_key": "AR_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "retained_income",
+            "description_key": "AR_ipv_step_3_desc",
+            "formula_key": "AR_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "self_retention_amount",
+            "description_key": "AR_ipv_step_4_desc",
+            "formula_key": "AR_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "annual_benefit",
+            "description_key": "AR_ipv_step_5_desc",
+            "formula_key": "AR_ipv_step_5_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "AR_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "AR_ipv_application_method",
+        "authority_key": "AR_ipv_application_authority",
+        "office_name_key": "AR_ipv_office_name",
+        "url": "https://www.sovar.ch/",
+        "contact": {
+          "address_key": "AR_ipv_contact_address",
+          "phone": "+41 71 354 51 38",
+          "email": "info@sovar.ch",
+          "office_hours_key": "AR_ipv_office_hours"
+        },
+        "required_docs_list": [],
+        "deadline": "2026-03-31"
+      }
+    }
+  }
+}

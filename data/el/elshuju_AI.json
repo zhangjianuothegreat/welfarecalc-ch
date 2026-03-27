@@ -1,0 +1,47 @@
+{
+  "AI": {
+    "el": {
+      "asset_limits": { 
+        "single": 100000, 
+        "couple": 200000 
+      },
+      "legal_basis": {
+        "primary_key": "AI_el_legal_basis_primary",
+        "additional_sources_key": "AI_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch/eli/cc/2007/804/de"
+      },
+      "child_deduction_annual": 2500,
+      "rent_limits_monthly": {
+        "regions": [{
+          "name_key": "AI_el_region_all",
+          "1_person": 1210,
+          "2_persons": 1435,
+          "3_persons": 1590,
+          "4_persons": 1715,
+          "5_plus_persons": 1840
+        }]
+      },
+      "recognized_premiums_annual": {
+        "adult": 5304.0,
+        "young_adult": 3852.0,
+        "child": 1248.0
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1620,
+        "per_additional_person": 410
+      },
+      "application": {
+        "authority_key": "AI_el_application_authority",
+        "office_name_key": "AI_el_office_name",
+        "url": "https://www.akai.ch",
+        "contact": {
+          "address_key": "AI_el_contact_address",
+          "phone": "+41 71 788 93 30",
+          "email": "info@akai.ch"
+        },
+        "required_docs_list": []
+      }
+    }
+  }
+}

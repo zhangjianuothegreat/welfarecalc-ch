@@ -1,0 +1,62 @@
+{
+  "GR": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "GR_el_legal_basis_primary",
+        "additional_sources_key": "GR_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child_extra": 50000,
+        "freibetrag_note_key": "GR_el_freibetrag_note"
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "GR_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_plus_persons": 2160,
+          "note_key": "GR_el_region_2_note",
+          "official_source_key": "GR_el_region_2_official_source"
+        },
+        "region_3": {
+          "name_key": "GR_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_plus_persons": 2000,
+          "note_key": "GR_el_region_3_note",
+          "official_source_key": "GR_el_region_3_official_source"
+        }
+      },
+      "recognized_premiums_annual": {
+        "region2": {
+          "adult": 6144,
+          "young_adult": 4536,
+          "child": 1464,
+          "note_key": "GR_el_region2_medium_note"
+        },
+        "region3": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380,
+          "note_key": "GR_el_region3_low_note"
+        }
+      },
+      "application": {
+        "authority_key": "GR_el_application_authority",
+        "office_key": "GR_el_office_name",
+        "address_key": "GR_el_contact_address",
+        "docs_key": "GR_el_required_documents_list",
+        "url": "https://www.sva.gr.ch",
+        "contact": {
+          "phone": "081 257 41 11",
+          "email": "info@sva.gr.ch"
+        }
+      }
+    }
+  }
+}

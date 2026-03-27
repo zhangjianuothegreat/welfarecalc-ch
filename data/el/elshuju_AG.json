@@ -1,0 +1,68 @@
+{
+  "AG": {
+    "el": {
+      "formula_type": "federal_el_with_cantonal_variations",
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "AG_el_legal_basis_primary",
+        "additional_sources_key": "AG_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.sva-aargau.ch/el",
+      "source_note": "Präzisionsdaten 2026. Miete Region 2/3 (BSV), Prämien AG, Kinderabzug inkludiert.",
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "freibetrag_single": 30000,
+        "freibetrag_couple": 50000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1620,
+        "per_additional_person": 410
+      },
+      "rent_limits_monthly": {
+        "regions": [
+          {
+            "name_key": "AG_el_region_1_name",
+            "1_person": 1373,
+            "2_persons": 1640,
+            "3_persons": 1830,
+            "4_persons": 2020,
+            "5_plus_persons": 2210
+          },
+          {
+            "name_key": "AG_el_region_2_name",
+            "1_person": 1260,
+            "2_persons": 1515,
+            "3_persons": 1690,
+            "4_persons": 1865,
+            "5_plus_persons": 2040
+          }
+        ]
+      },
+      "recognized_premiums_annual": {
+        "adult": 6852.0,
+        "young_adult": 4980.0,
+        "child": 1608.0
+      },
+      "income_deductions": {
+        "child_deduction_annual": 2500
+      },
+      "application": {
+        "authority_key": "AG_el_application_authority",
+        "url": "https://www.sva-aargau.ch/el",
+        "required_docs_keys": [
+          "income_proof",
+          "asset_declaration",
+          "rent_receipts",
+          "health_insurance_policy"
+        ],
+        "contact": {
+          "phone": "+41 71 228 50 00",
+          "email": "el@svasg.ch"
+        }
+      }
+    }
+  }
+}

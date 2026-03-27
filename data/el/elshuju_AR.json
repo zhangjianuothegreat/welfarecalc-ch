@@ -1,0 +1,44 @@
+{
+  "AR": {
+    "el": {
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "freibetrag_note": "Freibetrag: 30'000/50'000 CHF"
+      },
+      "rent_limits_monthly": {
+        "region_3": {
+          "name_key": "AR_el_region_1_name",
+          "1_person": 1186,
+          "2_persons": 1339,
+          "3_persons": 1495,
+          "4_persons": 1595,
+          "5_plus_persons": 1698
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 6411.6,
+          "young_adult": 4620.0,
+          "child": 1497.6
+        }
+      },
+      "legal_basis": {
+        "primary_key": "AR_el_legal_basis_primary",
+        "additional_sources_key": "AR_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch/eli/cc/2007/804/de"
+      },
+      "application": {
+        "authority_key": "AR_el_application_authority",
+        "office_name_key": "AR_el_office_name",
+        "url": "https://www.sovar.ch",
+        "contact": {
+          "address_key": "AR_el_contact_address",
+          "phone": "+41 71 354 51 00",
+          "email": "info@sovar.ch"
+        },
+        "required_docs_list": []
+      }
+    }
+  }
+}

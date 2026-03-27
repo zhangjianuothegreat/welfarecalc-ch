@@ -1,0 +1,63 @@
+{
+  "VS": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "VS_el_legal_basis_primary",
+        "additional_sources_key": "VS_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child_extra": 50000,
+        "homeowner_exemption_single": 112500,
+        "homeowner_exemption_couple": 300000,
+        "note": "Eintrittsschwelle 2026. Eigenheim-Freibetrag bei Invalidität/Hilflosigkeit bis 300k erhöht."
+      },
+      "rent_limits_monthly": {
+        "region_1": {
+          "name_key": "VS_el_region_1_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "Region 1: Zentren (Sion, Martigny, Visp, Brig-Glis, Monthey)"
+        },
+        "region_2": {
+          "name_key": "VS_el_region_2_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Region 2: Übrige Walliser Gemeinden"
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 6732,
+          "young_adult": 4988,
+          "child": 1629,
+          "note": "Vom BSV festgelegte Durchschnittsprämien Wallis 2026"
+        }
+      },
+      "application": {
+        "authority_key": "VS_el_application_authority",
+        "office_name_key": "VS_el_office_name",
+        "url": "https://www.ahvwallis.ch/de/Versicherungen/EL/Erganzungsleistungen/Erganzungsleistungen.html",
+        "contact": {
+          "address_key": "VS_el_contact_address",
+          "phone": "+41 27 324 41 11",
+          "email": "pc@ccvs.ch"
+        },
+        "required_documents_key": "VS_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 1.0,
+        "communal_multiplier": 1.05,
+        "source": "ESTV / Kantonale Steuerverwaltung Wallis 2026"
+      }
+    }
+  }
+}

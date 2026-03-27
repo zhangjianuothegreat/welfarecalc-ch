@@ -1,0 +1,55 @@
+{
+  "NW": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "NW_el_legal_basis_primary",
+        "additional_sources_key": "NW_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child_addition": 50000,
+        "note_de": "Gesetzliche Eintrittsschwelle 2026 (ELG-Reform)."
+      },
+      "social_deductions": {
+        "asset_exemption_single": 30000,
+        "asset_exemption_couple": 50000,
+        "asset_exemption_child": 15000,
+        "earned_income_freibetrag_single": 1300,
+        "earned_income_freibetrag_couple": 1950
+      },
+      "rent_limits_monthly": {
+        "region_3": {
+          "name_key": "NW_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "wheelchair_supplement_annual": 6900,
+          "homeowner_nebenkosten_annual": 3480,
+          "shared_flat_max_monthly": 840
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380
+        }
+      },
+      "application": {
+        "authority_key": "NW_el_application_authority",
+        "office_name_key": "NW_el_office_name",
+        "url": "https://www.aknw.ch",
+        "contact": {
+          "address_key": "NW_el_contact_address",
+          "phone": "+41 41 618 51 00",
+          "email": "info@aknw.ch"
+        },
+        "required_documents_key": "NW_el_required_documents_list"
+      }
+    }
+  }
+}

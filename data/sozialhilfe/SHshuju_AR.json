@@ -1,0 +1,63 @@
+{
+  "AR": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_standard_ar_2026",
+      "legal_basis": {
+        "primary_key": "AR_sh_legal_basis_primary",
+        "additional_sources_key": "AR_sh_legal_basis_additional",
+        "legal_source": "https://ar.clex.ch/app/de/texts_of_law/851.1"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+      "grundbedarf_monthly": {
+        "size_1": 1061,
+        "size_2": 1624,
+        "size_3": 1974,
+        "size_4": 2271,
+        "size_5": 2568,
+        "per_additional": 216
+      },
+      "rent_max_monthly": {
+        "size_1": 1050,
+        "size_2": 1250,
+        "size_3": 1400,
+        "size_4": 1550,
+        "note_key": "AR_rent_max_note",
+        "warning": "Diese Werte sind **Durchschnittswerte/Referenzwerte** basierend auf AR-Gemeinden-Durchschnitt. Die verbindlichen Maximalbeträge werden von Ihrer **Wohngemeinde** festgelegt und können abweichen. Bitte fragen Sie bei Ihrer Gemeinde nach den aktuellen Mietzinsrichtlinien."
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "income_deduction": {
+        "earned_income_fixed_ar": 400,
+        "earned_income_low_limit": 200
+      },
+      "integration_extra_monthly": 0,
+      "application": {
+        "method_key": "AR_sh_application_method",
+        "authority_key": "AR_sh_authority",
+        "office_name_key": "AR_sh_office_name",
+        "url": "https://www.ar.ch",
+        "contact": {
+          "address_key": "AR_sh_contact_address",
+          "phone": "+41 71 353 64 46", 
+          "email": "sozialhilfe@ar.ch", 
+          "office_hours_key": "AR_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "SZ": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "SZ_el_legal_basis_primary",
+        "additional_sources_key": "SZ_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "freibetrag_note": "Freibetrag: 30'000 CHF für Alleinstehende / 50'000 CHF für Ehepaare. Liegenschaften (selbstbewohnt) haben separate Freibeträge (112'500 - 300'000 CHF)."
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "SZ_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "BSV Region 2: Städtische Gebiete (z.B. Schwyz, Einsiedeln, Freienbach), Stand 2026 – Brutto inkl. NK.",
+          "official_source": "Sozialversicherungsanstalt des Kantons Schwyz, EL-Grenzwerte 2026"
+        },
+        "region_3": {
+          "name_key": "SZ_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "BSV Region 3: Ländliche Gebiete (z.B. Alpthal, Gersau), Stand 2026 – Brutto inkl. NK.",
+          "official_source": "Sozialversicherungsanstalt des Kantons Schwyz, EL-Grenzwerte 2026"
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 6204,
+          "young_adult": 4368,
+          "child": 1428,
+          "note": "Kantonale Durchschnittsprämie (Pauschale) SZ 2026 für EL-Berechnung"
+        }
+      },
+      "application": {
+        "authority_key": "SZ_el_application_authority",
+        "office_name_key": "SZ_el_office_name",
+        "url": "https://www.sva-sz.ch",
+        "contact": {
+          "address_key": "SZ_el_contact_address",
+          "phone": "+41 41 819 04 25",
+          "email": "info@sva-sz.ch"
+        },
+        "required_documents_key": "SZ_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 0.98,
+        "communal_multiplier": 1.0,
+        "source": "ESTV Steuerfüsse Kantonshauptorte 2025/2026"
+      }
+    }
+  }
+}

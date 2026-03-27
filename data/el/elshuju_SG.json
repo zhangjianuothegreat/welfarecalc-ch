@@ -1,0 +1,84 @@
+{
+  "SG": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "SG_el_legal_basis_primary",
+        "additional_sources_key": "SG_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child_addition": 50000,
+        "freibetrag_single": 30000,
+        "freibetrag_couple": 50000,
+        "freibetrag_child": 15000
+      },
+      "rent_limits_monthly": {
+        "region_1": {
+          "name_key": "SG_el_region_1_name",
+          "1_person": 1575,
+          "2_persons": 1860,
+          "3_persons": 2065,
+          "4_persons": 2255,
+          "5_plus_persons": 2255,
+          "note": "Region 1: Grosszentren (z.B. St. Gallen, Rapperswil-Jona)"
+        },
+        "region_2": {
+          "name_key": "SG_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "Region 2: Stadtumland / Übrige Gemeinden"
+        },
+        "region_3": {
+          "name_key": "SG_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Region 3: Ländliche Gebiete"
+        }
+      },
+      "recognized_premiums_annual": {
+        "region1_high": {
+          "adult": 6564,
+          "young_adult": 4752,
+          "child": 1488,
+          "note": "Region 1 (Hoch)"
+        },
+        "region2_medium": {
+          "adult": 6144,
+          "young_adult": 4536,
+          "child": 1464,
+          "note": "Region 2 (Mittel)"
+        },
+        "region3_low": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380,
+          "note": "Region 3 (Tief)"
+        }
+      },
+      "application": {
+        "authority_key": "SG_el_application_authority",
+        "office_name_key": "SG_el_office_name",
+        "url": "https://www.svasg.ch/el",
+        "contact": {
+          "address_key": "SG_el_contact_address",
+          "phone": "+41 71 228 50 00",
+          "email": "el@svasg.ch"
+        },
+        "required_documents_key": "SG_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 1.35,
+        "communal_multiplier": 1.15,
+        "source": "ESTV Steuerfüsse 2025/2026"
+      }
+    }
+  }
+}

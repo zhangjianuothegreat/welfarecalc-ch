@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
+  <title>WelfareCalc.ch | Schweizer Sozialleistungs-Rechner – Kostenlos & Anonym | 11 Sprachen</title>
+  <meta name="description" content="Berechnen Sie Ihre Schweizer Sozialleistungen (AHV, IV, Ergänzungsleistungen) kostenlos und anonym. Der mehrsprachige Rechner für 6 Zielgruppen in 11 Sprachen: Deutsch, Französisch, Italienisch, Englisch, Spanisch, Portugiesisch, Polnisch, Albanisch, Kroatisch, Türkisch und Tamil.">
+
+  <!-- Canonical Tag: verhindert Duplicate Content durch URL-Parameter -->
+  <link rel="canonical" href="https://welfarecalc.ch/index.html" />
+
+  <!-- Hreflang Tags für mehrsprachige SEO (Google Sprachalternativen) - 11 Sprachen -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/de.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/en.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/fr.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/it.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/es.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/pt.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/pl.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/sq.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/hr.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/tr.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/ta.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/index.html" />
+
+  <!-- FAQ Schema (Strukturierte Daten für Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welche Sozialleistungen werden im Rechner berücksichtigt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unser Rechner berücksichtigt AHV, IV, Ergänzungsleistungen, Arbeitslosenentschädigung, Stipendien, Prämienverbilligung und weitere kantonale Sozialhilfen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die Nutzung des Rechners kostenlos und anonym?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, der Rechner ist vollständig kostenlos und erfordert keine Anmeldung. Es werden keine personenbezogenen Daten gespeichert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In welchen Sprachen ist der Rechner verfügbar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Rechner ist in elf Sprachen verfügbar: Deutsch, Französisch, Italienisch, Englisch, Spanisch, Portugiesisch, Polnisch, Albanisch, Kroatisch, Türkisch und Tamil."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      padding-bottom: max(2rem, env(safe-area-inset-bottom));
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      flex: 1;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #0050a4;
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+    }
+
+    .hero .slogan {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 0.5rem;
+      line-height: 1.5;
+    }
+
+    .lang-instruction {
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #0050a4;
+      margin: 1rem 0 1.8rem;
+    }
+
+    .language-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 0 auto;
+    }
+
+    .lang-card {
+      background: white;
+      border-radius: 14px;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e0e8f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 150px;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
+
+    .lang-card:active {
+      transform: scale(0.98);
+      background: #f8f9fa;
+      border-color: #0050a4;
+    }
+
+    @media (hover: hover) {
+      .lang-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px rgba(0, 80, 164, 0.12);
+        border-color: #0050a4;
+      }
+    }
+
+    .flag-icon {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+      line-height: 1;
+    }
+
+    .lang-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0050a4;
+    }
+
+    /* SEO 静态内容样式 - 为搜索引擎提供更多文本内容 */
+    .seo-info {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #e0e8f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .seo-info h2 {
+      font-size: 1.4rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .seo-info h3 {
+      font-size: 1.2rem;
+      color: #333;
+      margin: 1rem 0 0.5rem;
+      font-weight: 600;
+    }
+    .seo-info p {
+      line-height: 1.6;
+      color: #4a5568;
+      margin-bottom: 0.75rem;
+    }
+    .seo-info ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      color: #4a5568;
+    }
+    .seo-info li {
+      margin: 0.4rem 0;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      padding: 1.5rem 0 0.5rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      width: 100%;
+    }
+
+    .footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* 平板竖屏优化 */
+    @media (min-width: 641px) and (max-width: 1024px) {
+      body {
+        padding: 2rem 1.5rem;
+      }
+      
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+      
+      .hero .slogan {
+        font-size: 1.35rem;
+      }
+      
+      .hero .subtitle {
+        font-size: 1rem;
+      }
+      
+      .lang-instruction {
+        font-size: 1.4rem;
+        margin: 1.5rem 0 2rem;
+      }
+      
+      .language-grid {
+        gap: 1.2rem;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      }
+      
+      .lang-card {
+        padding: 1.6rem 1rem;
+        min-height: 160px;
+      }
+      
+      .flag-icon {
+        font-size: 3rem;
+      }
+      
+      .lang-name {
+        font-size: 1.3rem;
+      }
+      
+      .seo-info h2 {
+        font-size: 1.6rem;
+      }
+      .seo-info h3 {
+        font-size: 1.3rem;
+      }
+    }
+
+    /* 桌面优化 */
+    @media (min-width: 1025px) {
+      body {
+        padding: 3rem 1.5rem;
+      }
+      
+      .hero {
+        margin-bottom: 3.5rem;
+      }
+      
+      .hero h1 {
+        font-size: 3.2rem;
+      }
+      
+      .hero .slogan {
+        font-size: 1.4rem;
+      }
+      
+      .hero .subtitle {
+        font-size: 1.15rem;
+      }
+      
+      .lang-instruction {
+        font-size: 1.5rem;
+        margin: 1.5rem 0 2.5rem;
+      }
+      
+      .language-grid {
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      
+      .lang-card {
+        padding: 2rem 1.2rem;
+        min-height: 180px;
+      }
+      
+      .lang-card:hover {
+        transform: translateY(-6px);
+      }
+      
+      .flag-icon {
+        font-size: 3.5rem;
+      }
+      
+      .lang-name {
+        font-size: 1.5rem;
+      }
+      
+      .footer {
+        margin-top: 3rem;
+      }
+      
+      .seo-info h2 {
+        font-size: 1.8rem;
+      }
+      .seo-info h3 {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* 小屏优化 (iPhone SE, 折叠屏等) */
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem 0.75rem;
+        padding-bottom: max(1rem, env(safe-area-inset-bottom));
+      }
+      
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      
+      .hero .slogan {
+        font-size: 1rem;
+      }
+      
+      .hero .subtitle {
+        font-size: 0.85rem;
+      }
+      
+      .lang-instruction {
+        font-size: 1.1rem;
+        margin: 0.8rem 0 1.2rem;
+      }
+      
+      .language-grid {
+        gap: 0.7rem;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      }
+      
+      .lang-card {
+        padding: 1rem 0.6rem;
+        min-height: 110px;
+      }
+      
+      .flag-icon {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+      }
+      
+      .lang-name {
+        font-size: 0.9rem;
+      }
+      
+      .footer {
+        font-size: 0.7rem;
+        margin-top: 1.5rem;
+      }
+      
+      .seo-info {
+        padding: 1rem;
+        margin-top: 1.5rem;
+      }
+      .seo-info h2 {
+        font-size: 1.2rem;
+      }
+      .seo-info h3 {
+        font-size: 1rem;
+      }
+    }
+
+    /* 中等手机屏幕 (481px-640px) */
+    @media (min-width: 481px) and (max-width: 640px) {
+      .language-grid {
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      }
+      
+      .lang-card {
+        padding: 1.2rem 0.8rem;
+        min-height: 130px;
+      }
+      
+      .flag-icon {
+        font-size: 2.4rem;
+      }
+      
+      .lang-name {
+        font-size: 1rem;
+      }
+    }
+
+    /* 触摸设备优化间距 */
+    @media (pointer: coarse) {
+      .language-grid {
+        gap: 0.8rem;
+      }
+      
+      .lang-card {
+        min-height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="hero">
+      <h1>WelfareCalc.ch</h1>
+      <div class="slogan">Einfach. Unverbindlich. Privat.</div>
+      <p class="subtitle">Schnell wissen, worauf Sie in der Schweiz Anspruch haben – ohne Anmeldung und ohne Weitergabe Ihrer Daten.</p>
+    </div>
+
+    <div class="lang-instruction">
+      Bitte wählen Sie Ihre Sprache
+    </div>
+
+    <div class="language-grid">
+      <a href="de.html" class="lang-card">
+        <div class="flag-icon">🇩🇪</div>
+        <div class="lang-name">Deutsch</div>
+      </a>
+
+      <a href="fr.html" class="lang-card">
+        <div class="flag-icon">🇫🇷</div>
+        <div class="lang-name">Français</div>
+      </a>
+
+      <a href="it.html" class="lang-card">
+        <div class="flag-icon">🇮🇹</div>
+        <div class="lang-name">Italiano</div>
+      </a>
+
+      <a href="en.html" class="lang-card">
+        <div class="flag-icon">🇬🇧</div>
+        <div class="lang-name">English</div>
+      </a>
+
+      <a href="es.html" class="lang-card">
+        <div class="flag-icon">🇪🇸</div>
+        <div class="lang-name">Español</div>
+      </a>
+
+      <a href="pt.html" class="lang-card">
+        <div class="flag-icon">🇵🇹</div>
+        <div class="lang-name">Português</div>
+      </a>
+
+      <a href="pl.html" class="lang-card">
+        <div class="flag-icon">🇵🇱</div>
+        <div class="lang-name">Polski</div>
+      </a>
+
+      <a href="sq.html" class="lang-card">
+        <div class="flag-icon">🇦🇱</div>
+        <div class="lang-name">Shqip</div>
+      </a>
+
+      <a href="hr.html" class="lang-card">
+        <div class="flag-icon">🇭🇷</div>
+        <div class="lang-name">Hrvatski</div>
+      </a>
+
+      <a href="tr.html" class="lang-card">
+        <div class="flag-icon">🇹🇷</div>
+        <div class="lang-name">Türkçe</div>
+      </a>
+
+      <a href="ta.html" class="lang-card">
+        <div class="flag-icon">🇱🇰</div>
+        <div class="lang-name">தமிழ்</div>
+      </a>
+    </div>
+
+    <!-- SEO-optimierter Informationsbereich mit statischem Content -->
+    <div class="seo-info">
+      <h2>Schweizer Sozialleistungen – Kostenloser Rechner in 11 Sprachen</h2>
+      <p>Willkommen bei WelfareCalc.ch, Ihrem kostenlosen und anonymen Online-Tool zur Berechnung von Sozialleistungen in der Schweiz. Unser Rechner hilft Ihnen, Ihre Ansprüche auf AHV, IV, Ergänzungsleistungen, Arbeitslosenentschädigung und weitere Unterstützungen schnell und unkompliziert zu ermitteln.</p>
+      
+      <h3>Welche Leistungen werden abgedeckt?</h3>
+      <p>Der WelfareCalc.ch Rechner berücksichtigt folgende Sozialleistungen (basierend auf den aktuellen Richtlinien, Stand 2026):</p>
+      <ul>
+        <li><strong>AHV/IV</strong> – Alters- und Hinterlassenenversicherung / Invalidenversicherung</li>
+        <li><strong>Ergänzungsleistungen (EL)</strong> – für AHV/IV-Rentner mit tiefem Einkommen</li>
+        <li><strong>Arbeitslosenentschädigung</strong> – Arbeitslosengeld und Kurzarbeitsentschädigung</li>
+        <li><strong>Prämienverbilligung (IPV)</strong> – Krankenkassenprämien-Verbilligung</li>
+        <li><strong>Sozialhilfe</strong> – kantonale und kommunale Unterstützung</li>
+        <li><strong>Stipendien & Ausbildungsbeiträge</strong> – für Studierende und Ausbildung</li>
+        <li><strong>Familienzulagen</strong> – Kinder- und Ausbildungszulagen</li>
+      </ul>
+      
+      <h3>Für wen ist der Rechner geeignet?</h3>
+      <p>Der Rechner ist für folgende Personengruppen optimiert: Einzelpersonen, Familien, Arbeitslose, Studierende, Rentner, Menschen mit niedrigem Einkommen, Menschen mit Behinderung, Schutzsuchende und Schwangere.</p>
+      
+      <h3>Kostenlos, anonym und datenschutzkonform</h3>
+      <p>Die Nutzung von WelfareCalc.ch ist vollständig <strong>kostenlos</strong> und erfordert <strong>keine Anmeldung</strong>. Es werden keine persönlichen Daten gespeichert. Ihre Eingaben bleiben anonym und werden nicht an Dritte weitergegeben.</p>
+      
+      <h3>Mehrsprachig für die Schweiz und darüber hinaus</h3>
+      <p>Unser Rechner ist in elf Sprachen verfügbar: Deutsch, Französisch, Italienisch, Englisch, Spanisch, Portugiesisch, Polnisch, Albanisch, Kroatisch, Türkisch und Tamil. Wählen Sie oben Ihre bevorzugte Sprache, um den Rechner in Ihrer Sprache zu nutzen. Für Sprachen, die nicht direkt vom Algorithmus unterstützt werden, bieten wir umfassende Ratgeber und Artikel in der jeweiligen Muttersprache an.</p>
+      
+      <!-- Externe Autoritätsverlinkung: Offizielle Quelle des Bundesamts für Sozialversicherungen (BSV) -->
+      <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+        📌 Informieren Sie sich auch auf der offiziellen Seite des 
+        <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">Bundesamts für Sozialversicherungen (BSV)</a> 
+        über aktuelle Gesetze und Richtlinien.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>WelfareCalc.ch • Kostenlos • Anonym • 2026</p>
+    <p style="margin-top: 0.6rem;">
+      <a href="impressum.html">Impressum</a> • 
+      <a href="datenschutz.html">Datenschutzerklärung</a> • 
+      <a href="haftung.html">Haftungsausschluss</a>
+    </p>
+    <p style="margin-top: 0.6rem;">
+      <a href="pl.html">Polski</a> • 
+      <a href="sq.html">Shqip</a> • 
+      <a href="hr.html">Hrvatski</a> • 
+      <a href="tr.html">Türkçe</a> • 
+      <a href="ta.html">தமிழ்</a>
+    </p>
+  </div>
+
+</body>
+</html>

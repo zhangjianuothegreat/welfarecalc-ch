@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Socijalne naknade u Švicarskoj 2026: 7 potpora koje možda propuštate | WelfareCalc.ch</title>
+  <meta name="description" content="Izračunajte svoja prava na švicarske socijalne naknade (AHV, IV, dodatne naknade, smanjenje premija) besplatno i anonimno. Online kalkulator za 6 ciljanih skupina.">
+  <meta name="keywords" content="socijalne naknade Švicarska, AHV, IV, dodatne naknade, PC, smanjenje premija, socijalna pomoć, kalkulator naknada, obiteljski dodaci, nezaposlenost">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://welfarecalc.ch/blog/hr/croatian-article.html" />
+
+  <!-- Hreflang Tags za višejezični SEO (svih 11 jezičnih verzija) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/blog/de/sozialleistungen-2026.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/blog/fr/prestations-sociales-2026.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/blog/it/prestazioni-sociali-2026.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/blog/en/social-benefits-2026.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/blog/es/prestaciones-sociales-2026.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/blog/pt/beneficios-sociais-2026.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/blog/pl/polish-article.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/blog/sq/albanian-article.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/blog/hr/croatian-article.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/blog/tr/turkish-article.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/blog/ta/tamil-article.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/blog/hr/croatian-article.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+      text-decoration: none;
+    }
+
+    .site-title a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+
+    .blog-content {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      border: 1px solid #e0e8f0;
+    }
+
+    .blog-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .blog-content h2 {
+      font-size: 1.6rem;
+      color: #0050a4;
+      margin: 1.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e0e8f0;
+    }
+
+    .blog-content p {
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+
+    .blog-content ul, .blog-content ol {
+      margin: 1rem 0 1rem 1.8rem;
+    }
+
+    .blog-content li {
+      margin: 0.5rem 0;
+    }
+
+    .blog-content strong {
+      color: #0050a4;
+    }
+
+    /* CTA Box - glavna kutija za poziv na akciju */
+    .cta-box {
+      background: linear-gradient(135deg, #0050a4 0%, #003a7a 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,80,164,0.2);
+    }
+
+    .cta-box h3 {
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      border: none;
+    }
+
+    .cta-box p {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-box strong {
+      color: white;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #0050a4;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.2s ease;
+      margin-top: 0.5rem;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Language Selection Box - ključni element za ovu stranicu */
+    .language-selection-box {
+      background: #e6f0ff;
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      border: 1px solid #0050a4;
+    }
+
+    .language-selection-box h3 {
+      color: #0050a4;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .language-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .lang-btn {
+      display: inline-block;
+      background: white;
+      color: #0050a4;
+      padding: 0.7rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      border: 1px solid #0050a4;
+    }
+
+    .lang-btn:hover {
+      background: #0050a4;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .info-box {
+      background: #e6f0ff;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #0050a4;
+    }
+
+    .warning-box {
+      background: #fff3e0;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #e67e22;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #e0e8f0;
+      padding-bottom: 1rem;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      color: #0050a4;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-answer {
+      color: #4a5568;
+    }
+
+    /* Stilovi za povezane vodiče - SEO matrica */
+    .related-guides {
+      margin: 2rem 0 1.5rem;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .related-card {
+      background: #f8f9fa;
+      padding: 1rem;
+      border-radius: 12px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border: 1px solid #e0e8f0;
+    }
+
+    .related-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .related-card a {
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .related-card p {
+      font-size: 0.85rem;
+      color: #4a5568;
+      margin-bottom: 0;
+    }
+
+    .back-to-top {
+      text-align: center;
+      margin: 2rem 0 1rem;
+    }
+
+    .back-to-top a {
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+
+    footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .blog-content h1 {
+        font-size: 2.8rem;
+      }
+      .blog-content h2 {
+        font-size: 1.9rem;
+      }
+      .language-buttons {
+        gap: 1.5rem;
+      }
+      .lang-btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .blog-content {
+        padding: 1.2rem;
+      }
+      .blog-content h1 {
+        font-size: 1.6rem;
+      }
+      .blog-content h2 {
+        font-size: 1.3rem;
+      }
+      .cta-box, .language-selection-box {
+        padding: 1.2rem;
+      }
+      .lang-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title"><a href="/index.html">🇨🇭 WelfareCalc.ch</a></h1>
+    <div class="language-selector">
+      <a href="/index.html">← Promijeni jezik</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="blog-content">
+      
+      <h1>💰 Novac od države? 7 švicarskih socijalnih naknada 2026. koje možda propuštate (s kalkulatorom)</h1>
+      
+      <p><strong>Mnogi ljudi u Švicarskoj svake godine ostave tisuće franaka neiskorištene državne pomoći – jednostavno zato što ne znaju da im pripadaju. Ovaj članak pruža potpuni pregled sedam najvažnijih socijalnih naknada i pokazuje kako besplatno provjeriti svoja prava u samo 3 minute.</strong></p>
+      
+      <div class="info-box">
+        <p>👉 <strong>Budući da svaki kanton (npr. Zürich, Bern, Ženeva, Basel) ima svoja pravila i rokove, naš je kalkulator posebno programiran kako bi uzeo u obzir ove regionalne razlike.</strong> Na taj način dobivate procjenu koja je uistinu prilagođena vašoj situaciji.</p>
+      </div>
+      
+      <h2>Zašto biste mogli dobiti više nego što mislite</h2>
+      <p>Švicarska je poznata po svom dobro razvijenom socijalnom sustavu. No, ono što mnogi ne znaju: <strong>oko 40% osoba koje imaju pravo ne podnosi zahtjeve za svoje naknade</strong> – zbog neznanja, srama ili straha da su postupci previše komplicirani.</p>
+      <p>Osobe koje su posebno pogođene su:</p>
+      <ul>
+        <li>👥 Migranti s dozvolom B ili C</li>
+        <li>👩‍👧 Radnici s nepunim radnim vremenom i samohrani roditelji</li>
+        <li>👴 Umirovljenici s niskim prihodima</li>
+        <li>🩺 Osobe s fizičkim ili psihičkim ograničenjima</li>
+      </ul>
+      <p>Ovaj vodič objašnjava korak po korak koje su naknade dostupne i kako provjeriti svoja prava <strong>jednostavno, besplatno i anonimno</strong>.</p>
+      
+      <h2>1. 👴 AHV/AVS – osnova za mirovinu</h2>
+      <p><strong>Osiguranje za starost i preživjele (AHV/AVS)</strong> čini prvi stup švicarskog sustava socijalnog osiguranja. Cilj mu je pokriti osnovne životne potrebe tijekom mirovine.</p>
+      <p><strong>Važne informacije:</strong></p>
+      <ul>
+        <li>Pravo počinje s uobičajenom dobi za umirovljenje (64/65 godina)</li>
+        <li>Iznos ovisi o godinama doprinosa i prosječnom godišnjem dohotku</li>
+        <li><strong>Puna mirovina AHV/AVS</strong> isplaćuje se nakon 44 godine doprinosa (žene) ili 45 godina (muškarci)</li>
+      </ul>
+      <p>💡 <strong>Savjet:</strong> Čak i ako niste radili neprekidno, dodaci za odgoj djece i skrb mogu povećati vašu mirovinu.</p>
+      
+      <h2>2. 🩺 IV/AI – u slučaju bolesti ili invaliditeta</h2>
+      <p><strong>Osiguranje za invalidnost (IV/AI)</strong> stupa na snagu kada ne možete raditi, ili možete raditi samo djelomično, iz zdravstvenih razloga.</p>
+      <p><strong>Ključni kriteriji:</strong></p>
+      <ul>
+        <li>Stupanj invaliditeta mora biti najmanje 40%</li>
+        <li>IV/AI provjerava mogu li medicinske mjere ili profesionalna integracija poboljšati situaciju</li>
+        <li>Djeca s invaliditetom također imaju pravo na <strong>dječju invalidsku mirovinu</strong></li>
+      </ul>
+      <p>📌 <strong>Napomena:</strong> Postupak IV/AI može trajati nekoliko mjeseci. Stoga se toplo preporučuje rana procjena.</p>
+      
+      <h2>3. 💰 Dodatne naknade (EL/PC) – podcijenjena pomoć</h2>
+      <p><strong>Dodatne naknade uz AHV/AVS i IV/AI (EL/PC)</strong> najvažnija su socijalna naknada, ali se prečesto zanemaruju.</p>
+      <p><strong>Što trebate znati:</strong></p>
+      <ul>
+        <li>Dodatne naknade isplaćuju se kada mirovina AHV/AVS ili IV/AI i prihodi ne pokrivaju minimalne troškove života</li>
+        <li>Ne postoji <strong>obveza povrata</strong> – za razliku od socijalne pomoći</li>
+        <li>Dodatne naknade također pokrivaju <strong>premije zdravstvenog osiguranja, stomatološke tretmane i troškove smještaja</strong></li>
+      </ul>
+      <p>👉 Za umirovljenike s malom mirovinom i osobe s invaliditetom, dodatne naknade često su odlučujući čimbenik za dostojan život.</p>
+      
+      <!-- GLAVNA CTA KUTIJA -->
+      <div class="cta-box">
+        <h3>📢 Provjerite svoja prava sada – 100% anonimno</h3>
+        <p>Mnogi oklijevaju zbog straha za svoj status boravka (dozvola C). Međutim, većina naknada (poput dodatnih naknada ili smanjenja premija) <strong>NIJE socijalna pomoć</strong> i <strong>nema negativan utjecaj</strong> na vaše pravo boravka.</p>
+        <p>✅ <strong>Bez registracije</strong> • ✅ <strong>Uzimamo u obzir kantonalne razlike</strong> • ✅ <strong>Trenutačni rezultat</strong><br>
+        Vaši podaci ostaju <strong>u vašem pregledniku</strong> – bez poslužitelja, bez praćenja, apsolutna privatnost.</p>
+        <a href="#language-choice" class="cta-button">👉 Odaberite jezik kalkulatora</a>
+      </div>
+      
+      <!-- KLJUČNI ELEMENT: IZBOR JEZIKA KALKULATORA -->
+      <div id="language-choice" class="language-selection-box">
+        <h3>🌐 Odaberite jezik kalkulatora</h3>
+        <p>Naš kalkulator socijalnih naknada dostupan je na <strong>6 jezika</strong>. Odaberite jezik na kojem želite izračunati svoja prava:</p>
+        <div class="language-buttons">
+          <a href="/de.html" class="lang-btn">🇩🇪 Deutsch</a>
+          <a href="/fr.html" class="lang-btn">🇫🇷 Français</a>
+          <a href="/it.html" class="lang-btn">🇮🇹 Italiano</a>
+          <a href="/en.html" class="lang-btn">🇬🇧 English</a>
+          <a href="/es.html" class="lang-btn">🇪🇸 Español</a>
+          <a href="/pt.html" class="lang-btn">🇵🇹 Português</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">💡 <strong>Savjet:</strong> Ako govorite hrvatski, vjerojatno poznajete i jedan od ovih jezika. Odaberite onaj u kojem se osjećate najudobnije.</p>
+      </div>
+      
+      <h2>4. 🏥 Smanjenje premija (IPV/RIP) – uštedite na zdravstvenom osiguranju</h2>
+      <p><strong>Individualno smanjenje premija (IPV/RIP)</strong> za zdravstveno osiguranje je poznato, ali ne podnose zahtjev sve osobe koje imaju pravo.</p>
+      <p><strong>Ključne točke:</strong></p>
+      <ul>
+        <li>Smanjuje mjesečne premije zdravstvenog osiguranja</li>
+        <li>Zahtjev se podnosi <strong>kantonu prebivališta</strong> – rokovi se znatno razlikuju!</li>
+        <li>Odlučujući kriteriji su prihodi i imovina, a ne bračni status</li>
+      </ul>
+      <div class="warning-box">
+        <p>⚠️ <strong>Pažnja: U nekim kantonima pravo automatski prestaje ako ne poduzmete ništa!</strong> Mnogi kantoni određuju rokove za podnošenje zahtjeva već u <strong>rujnu ili listopadu</strong>. Oni koji propuste rok moraju čekati cijelu godinu da bi ostvarili smanjenje.</p>
+      </div>
+      
+      <h2>5. 💼 Naknada za nezaposlene – zaštita u slučaju gubitka posla</h2>
+      <p><strong>Osiguranje za slučaj nezaposlenosti</strong> štiti vas u slučaju gubitka posla koji nije vaša krivica.</p>
+      <p><strong>Uvjeti:</strong></p>
+      <ul>
+        <li>Morate uplaćivati doprinose najmanje 12 mjeseci u posljednje 2 godine</li>
+        <li>Morate boraviti u Švicarskoj i biti registrirani kao tražitelj posla</li>
+        <li>Visina dnevnih naknada ovisi o vašoj osiguranoj plaći</li>
+      </ul>
+      <p>📌 Važno: Ovisno o kantonu i dobi, primjenjuju se različita okvirna razdoblja. Pravovremena registracija pri RAV (Regionalnom uredu za zapošljavanje) ključna je.</p>
+      
+      <h2>6. 👶 Obiteljski dodaci – čak i za nezaposlene?</h2>
+      <p><strong>Dodaci za djecu i za školovanje</strong> pripadaju u načelu svim roditeljima – čak i ako ne obavljate profesionalnu djelatnost.</p>
+      <p><strong>Trenutne vrijednosti (2026.):</strong></p>
+      <ul>
+        <li><strong>Dodatak za dijete:</strong> oko 200–300 CHF po djetetu mjesečno (varira ovisno o kantonu)</li>
+        <li><strong>Dodatak za školovanje:</strong> do završetka početnog obrazovanja (maksimalno 25 godina)</li>
+      </ul>
+      <p>💡 Mnogi samozaposleni roditelji ili oni bez profesionalne djelatnosti zaboravljaju zatražiti ove dodatke.</p>
+      
+      <h2>7. 🏠 Socijalna pomoć – posljednje sredstvo</h2>
+      <p>Kada sve ostale naknade nisu dovoljne, može uslijediti <strong>socijalna pomoć</strong>. Međutim, podliježe strogim uvjetima i može utjecati na status boravka.</p>
+      <p><strong>Naš savjet:</strong> Prije nego što zatražite socijalnu pomoć, provjerite sve ostale naknade poput dodatnih naknada, IV/AI i smanjenja premija.</p>
+      
+      <h2>Kako provjeriti svoja prava – besplatno i anonimno</h2>
+      <p>Sve navedene naknade mogu se kombinirati. <strong>WelfareCalc.ch</strong> je posebno razvijen za tu svrhu: <strong>za manje od 3 minute</strong> dobivate jasan pregled svojih osobnih prava.</p>
+      <p><strong>Prednosti kalkulatora:</strong></p>
+      <ul>
+        <li>✅ Bez registracije, nije potrebna e-mail adresa</li>
+        <li>✅ <strong>100% anonimno</strong> – vaši podaci nikada ne napuštaju vaš preglednik</li>
+        <li>✅ Posebno dizajniran za Švicarsku s <strong>kantonalnim razlikama</strong> (ZH, BE, GE, TI, VD, itd.)</li>
+        <li>✅ Dostupan na <strong>njemačkom, francuskom, talijanskom, engleskom, španjolskom i portugalskom</strong></li>
+      </ul>
+      <p><strong>Vaši podaci ostaju u vašem pregledniku – bez poslužitelja, bez praćenja, apsolutna privatnost.</strong></p>
+      
+      <!-- Ponovljena kutija za odabir jezika radi bolje konverzije -->
+      <div class="language-selection-box">
+        <h3>👉 Započnite izračun</h3>
+        <p>Kliknite ispod za odlazak na kalkulator na odabranom jeziku:</p>
+        <div class="language-buttons">
+          <a href="/de.html" class="lang-btn">🇩🇪 Deutsch</a>
+          <a href="/fr.html" class="lang-btn">🇫🇷 Français</a>
+          <a href="/it.html" class="lang-btn">🇮🇹 Italiano</a>
+          <a href="/en.html" class="lang-btn">🇬🇧 English</a>
+          <a href="/es.html" class="lang-btn">🇪🇸 Español</a>
+          <a href="/pt.html" class="lang-btn">🇵🇹 Português</a>
+        </div>
+      </div>
+      
+      <h2>Zaključak: Djelujte sada – godina je kratka</h2>
+      <p>Švicarski socijalni sustav složen je, ali uz pravi alat brzo ćete se snaći. Ne čekajte do kraja godine – mnoge naknade moraju se zatražiti u određenim rokovima.</p>
+      <p><strong>Sljedeći koraci:</strong></p>
+      <ol>
+        <li>📱 Otvorite <a href="#language-choice"><strong>WelfareCalc</strong></a></li>
+        <li>👤 Odaberite svoju grupu (samac, obitelj, umirovljenik, itd.)</li>
+        <li>📊 Unesite svoje podatke – odmah dobivate personaliziranu procjenu</li>
+      </ol>
+      <p><strong>Podijelite ovaj članak s prijateljima i obitelji – možda i oni imaju koristi od naknada koje nisu poznavali.</strong></p>
+      
+      <!-- SEO MATRICA: Povezani vodiči (4 članka) -->
+      <div class="related-guides">
+        <h2>📚 Povezani vodiči</h2>
+        <div class="related-grid">
+          <div class="related-card">
+            <a href="smanjenje-premija-2026.html">🏥 Smanjenje premija 2026 →</a>
+            <p>Uštedite na zdravstvenom osiguranju - provjerite imate li pravo na IPV/RIP</p>
+          </div>
+          <div class="related-card">
+            <a href="dodatne-naknade-2026.html">💰 Dodatne naknade (PC) 2026 →</a>
+            <p>Vaša mirovina AHV nije dovoljna? Saznajte kako dobiti financijsku potporu</p>
+          </div>
+          <div class="related-card">
+            <a href="obiteljski-dodaci-2026.html">👶 Obiteljski dodaci 2026 →</a>
+            <p>Koliko vam pripada po djetetu? Kantonalne razlike i retroaktivna isplata</p>
+          </div>
+          <div class="related-card">
+            <a href="nezaposlenost-majcinstvo-2026.html">🤰 Nezaposlenost i majčinstvo 2026 →</a>
+            <p>Vaša prava u slučaju trudnoće i gubitka posla - zaštita od otkaza</p>
+          </div>
+        </div>
+      </div>
+      
+      <h2>Često postavljana pitanja (FAQ)</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pitanje: Imam li pravo na naknade kao stranac s dozvolom B?</div>
+        <div class="faq-answer">Da – većina socijalnih naknada dostupna je svim osobama s boravištem u Švicarskoj, bez obzira na status boravka. Ograničenja postoje samo za socijalnu pomoć. <strong>Važno:</strong> Dodatne naknade (EL/PC) i smanjenje premija ne smatraju se socijalnom pomoći i ne utječu na vaš status boravka.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pitanje: Isplaćuje li se smanjenje premija automatski?</div>
+        <div class="faq-answer">Ne. Morate podnijeti zahtjev <strong>svake godine</strong> svom kantonu. WelfareCalc vam pokazuje isplati li se to učiniti.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pitanje: Mogu li zatražiti dodatne naknade ako već primam AHV/AVS?</div>
+        <div class="faq-answer">Da, u bilo kojem trenutku. Dodatne naknade odobravaju se retroaktivno za tekuću godinu – stoga se preporučuje pravovremena provjera.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pitanje: Jesu li moji podaci sigurni?</div>
+        <div class="faq-answer">Da. Kalkulator radi <strong>100% u pregledniku</strong> (frontend). Nijedan podatak ne šalje se na poslužitelj, nema praćenja ni pohrane. Ostajete potpuno anonimni.</div>
+      </div>
+      
+      <p><em>Ovaj članak pruža opće informacije i ne zamjenjuje individualni pravni savjet. Zakonske osnove (AHVG, IVG, ELG) mogu se promijeniti. Stanje: ožujak 2026.</em></p>
+      
+      <div class="back-to-top">
+        <a href="#">↑ Povratak na vrh</a>
+      </div>
+      
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Besplatno • Anonimno • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="/impressum.html">Impressum</a> •
+    <a href="/datenschutz.html">Zaštita podataka</a> •
+    <a href="/haftung.html">Isključenje odgovornosti</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="/blog/hr/index.html">📚 Svi vodiči</a>
+  </p>
+</footer>
+
+</body>
+</html>

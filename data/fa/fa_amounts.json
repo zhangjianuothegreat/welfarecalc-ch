@@ -1,0 +1,202 @@
+{
+  "federal": {
+    "minimum_child_monthly": 215,
+    "minimum_education_monthly": 268,
+    "birth_allowance_default": 0,
+    "adoption_allowance_default": 0,
+    "note": "Bundesminimum FamZG 2026: Kinderzulage mind. 215 CHF, Ausbildungszulage mind. 268 CHF. Kantone können höher festlegen."
+  },
+  "states": {
+    "default": {
+      "child_monthly": 215,
+      "education_monthly": 268,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "AG": {
+      "child_monthly": 225,
+      "education_monthly": 278,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "AI": {
+      "child_monthly": 245,
+      "education_monthly": 298,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "AR": {
+      "child_monthly": 230,
+      "education_monthly": 280,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "BE": {
+      "child_monthly": 250,
+      "education_monthly": 310,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "BL": {
+      "child_monthly": 215,
+      "education_monthly": 268,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "BS": {
+      "child_monthly": 275,
+      "education_monthly": 325,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "FR": {
+      "child_monthly": 265,
+      "child_monthly_from3": 285,
+      "child_from3_rule": "only_from3",
+      "education_monthly": 325,
+      "education_monthly_from3": 345,
+      "education_from3_rule": "only_from3",
+      "birth_allowance": 1500,
+      "adoption_allowance": 1500
+    },
+    "GE": {
+      "child_monthly": 311,
+      "child_monthly_from3": 411,
+      "child_from3_rule": "only_from3",
+      "education_monthly": 415,
+      "education_monthly_from3": 515,
+      "education_from3_rule": "only_from3",
+      "birth_allowance": 2073,
+      "adoption_allowance": 2073,
+      "birth_multiples_factor": 3073,
+      "adoption_multiples_factor": 3073
+    },
+    "GL": {
+      "child_monthly": 215,
+      "education_monthly": 268,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "GR": {
+      "child_monthly": 240,
+      "education_monthly": 290,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "JU": {
+      "child_monthly": 275,
+      "education_monthly": 325,
+      "birth_allowance": 1500,
+      "adoption_allowance": 1500
+    },
+    "LU": {
+      "child_monthly": 215,
+      "child_monthly_over12": 260,
+      "education_monthly": 268,
+      "birth_allowance": 1075,
+      "adoption_allowance": 1075
+    },
+    "NE": {
+      "child_monthly": 240,
+      "child_monthly_from3": 270,
+      "child_from3_rule": "only_from3",
+      "education_monthly": 320,
+      "education_monthly_from3": 350,
+      "education_from3_rule": "only_from3",
+      "birth_allowance": 1200,
+      "adoption_allowance": 1200
+    },
+    "NW": {
+      "child_monthly": 258,
+      "education_monthly": 311,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "OW": {
+      "child_monthly": 220,
+      "education_monthly": 270,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "SG": {
+      "child_monthly": 245,
+      "education_monthly": 298,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "SH": {
+      "child_monthly": 230,
+      "education_monthly": 290,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "SO": {
+      "child_monthly": 215,
+      "education_monthly": 268,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "SZ": {
+      "child_monthly": 230,
+      "education_monthly": 280,
+      "birth_allowance": 1000,
+      "adoption_allowance": 0
+    },
+    "TG": {
+      "child_monthly": 215,
+      "education_monthly": 280,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "TI": {
+      "child_monthly": 215,
+      "education_monthly": 268,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "UR": {
+      "child_monthly": 240,
+      "education_monthly": 290,
+      "birth_allowance": 1200,
+      "adoption_allowance": 1200
+    },
+    "VD": {
+      "child_monthly": 322,
+      "child_monthly_from3": 365,
+      "child_from3_rule": "only_from3",
+      "education_monthly": 425,
+      "education_monthly_from3": 468,
+      "education_from3_rule": "only_from3",
+      "birth_allowance": 1617,
+      "adoption_allowance": 1617,
+      "birth_multiples_factor": 3234,
+      "adoption_multiples_factor": 3234
+    },
+    "VS": {
+      "child_monthly": 327,
+      "child_monthly_from3": 435,
+      "child_from3_rule": "only_from3",
+      "education_monthly": 477,
+      "education_monthly_from3": 585,
+      "education_from3_rule": "only_from3",
+      "birth_allowance": 2142,
+      "adoption_allowance": 2142,
+      "birth_multiples_factor": 3213,
+      "adoption_multiples_factor": 3213
+    },
+    "ZG": {
+      "child_monthly": 330,
+      "education_monthly": 330,
+      "education_monthly_over18": 385,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    },
+    "ZH": {
+      "child_monthly": 215,
+      "child_monthly_over12": 268,
+      "education_monthly": 268,
+      "birth_allowance": 0,
+      "adoption_allowance": 0
+    }
+  }
+}

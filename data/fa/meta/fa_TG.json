@@ -1,0 +1,25 @@
+{
+  "TG": {
+    "name": "Thurgau",
+    "legal_basis": {
+      "primary_key": "TG_fa_legal_basis_primary",
+      "additional_sources_key": "TG_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "TG_fa_office_name",
+      "authority_key": "TG_fa_application_authority"
+    },
+    "application": {
+      "method_key": "TG_fa_application_method",
+      "url": "https://www.svztg.ch/produkte/familienzulagen-famz-flg/",
+      "required_documents_key": "TG_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "TG_fa_contact_address",
+      "phone": "+41 58 225 75 75",
+      "email": "info@svztg.ch"
+    },
+    "notes_key": "TG_fa_special_notes"
+  }
+}

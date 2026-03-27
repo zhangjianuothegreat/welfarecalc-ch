@@ -1,0 +1,27 @@
+{
+  "ZH": {
+    "name": "Zürich",
+    "legal_basis": {
+      "primary_key": "ZH_fa_legal_basis_primary",
+      "additional_sources_key": "ZH_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "structure_type": "tiered_by_age",
+    "note_key": "ZH_fa_age_tier_note",
+    "authority": {
+      "office_name_key": "ZH_fa_office_name",
+      "authority_key": "ZH_fa_application_authority"
+    },
+    "application": {
+      "method_key": "ZH_fa_application_method",
+      "url": "https://svazurich.ch/fz",
+      "required_documents_key": "ZH_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "ZH_fa_contact_address",
+      "phone": "+41 44 448 89 50",
+      "email": "familienzulagen@svazurich.ch"
+    },
+    "notes_key": "ZH_fa_special_notes"
+  }
+}

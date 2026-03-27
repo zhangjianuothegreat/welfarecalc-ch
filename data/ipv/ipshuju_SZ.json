@@ -1,0 +1,55 @@
+{
+  "SZ": {
+    "ipv": {
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "SZ_ipv_legal_basis_primary",
+        "additional_sources_key": "SZ_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "data_source": "Merkblatt Prämienverbilligung Kanton Schwyz 2026 (Ausgleichskasse Schwyz, https://www.aksz.ch, publiziert Dezember 2025); Provisorischer Online-Rechner",
+      "formula_type": "income_percentage_11_percent",
+      "official_url": "https://www.sva-sz.ch",
+      "algorithm_description": "Einkommens-Prozent-Modell mit 11% Selbstbehalt vom angepassten anrechenbaren Einkommen (nach Kinderabzug 5'000 CHF pro Kind/Jugend). IPV = Richtprämie - Selbstbehalt (Deckel auf effektive Prämie). Mindestgarantie Kinder 80% / Junge in Ausbildung 50% der Richtprämie.",
+      "asset_lump_sum_deduction_single": 25000,
+      "asset_lump_sum_deduction_per_adult": 25000,
+      "asset_lump_sum_per_child_or_young": 15000,
+      "income_limits": {
+        "note": "Variabele Höchsteinkommen je nach Familienzusammensetzung und Region (Beispiel ca. 95'980 CHF für Familie). Keine fixe Obergrenze, aber provisorisch für Berechnung.",
+        "example_max_household": 95980
+      },
+      "income_deduction_factor": 0.11,
+      "child_deduction_per": 5000,
+      "ref_premium_annual": {
+        "adult": 5583.6,
+        "young_adult": 3931.2,
+        "child": 1285.2,
+        "note": "Richtprämien = 90% der kantonalen Durchschnittsprämien (2026 Werte, angepasst an Prämiensteigerung)"
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 100
+      },
+      "special_rules": {
+        "franchise_adjustment": "Subvention proportional zur Prämienreduktion bei Franchise à option",
+        "social_assistance_el": "Volle Richtprämie oder effektive Prämie",
+        "automaticity": "Automatisch für Vorjahresberechtigte und Potenzielle via Steuerdaten",
+        "fortune_in_income": "10% des Vermögens nach Pauschalabzug (25'000 pro Erw., 15'000 pro Kind/Jugend)"
+      },
+      "application": {
+        "method_key": "SZ_ipv_application_method",
+        "authority_key": "SZ_ipv_application_authority",
+        "office_name_key": "SZ_ipv_office_name",
+        "url": "https://www.sva-sz.ch",
+        "digital_portal": "https://www.sva-sz.ch",
+        "contact": {
+          "address_key": "SZ_ipv_contact_address",
+          "phone": "+41 41 819 04 25",
+          "email": "info@sva-sz.ch"
+        },
+        "required_documents_key": "SZ_ipv_required_documents_list"
+      }
+    }
+  }
+}

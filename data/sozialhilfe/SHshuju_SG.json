@@ -1,0 +1,79 @@
+{
+  "SG": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_sg_2026",
+      "accuracy_level": "0.90-0.95",
+      "official_url": "https://www.sg.ch/gesundheit-soziales/soziales/sozialhilfe.html",
+
+      "legal_basis": {
+        "primary_key": "SG_sh_legal_basis_primary",
+        "additional_sources_key": "SG_sh_legal_basis_additional",
+        "legal_source": "https://www.gesetzessammlung.sg.ch/app/de/texts_of_law/381.1"
+      },
+
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+
+      "asset_share_rate": 0,
+
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+
+      "rent_max_monthly": {
+        "1p": 1100,
+        "2p": 1300,
+        "3p": 1500,
+        "4p": 1700,
+        "5p_plus": 1900
+      },
+
+      "integration_extra_monthly": 100,
+
+      "income_deduction": {
+        "earned_income_rate": 0.2,
+        "min": 0,
+        "max": null
+      },
+
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+
+      "calculation_model_note_key": "SG_sh_calc_note",
+
+      "application": {
+        "authority_key": "SG_sh_authority",
+        "office_name_key": "SG_sh_office_name",
+        "url": "https://www.sg.ch/gesundheit-soziales/soziales/sozialhilfe.html",
+
+        "contact": {
+          "address_key": "SG_sh_contact_address",
+          "phone": "+41 58 229 31 11",
+          "email": "info.as@sg.ch",
+          "office_hours_key": "SG_sh_office_hours"
+        },
+
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

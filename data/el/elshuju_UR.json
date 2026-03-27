@@ -1,0 +1,54 @@
+{
+  "UR": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "UR_el_legal_basis_primary",
+        "additional_sources_key": "UR_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child_extra": 50000,
+        "freibetrag_single": 30000,
+        "freibetrag_couple": 50000,
+        "note": "Vermögensschwelle gemäss ELG 2026; Freibeträge für Verzehr: 30'000/50'000 CHF."
+      },
+      "rent_limits_monthly": {
+        "region_3": {
+          "name_key": "UR_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Offizielle BSV Region 3 Grenzwerte 2026 für den Kanton Uri."
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 5850,
+          "young_adult": 4195,
+          "child": 1337,
+          "note": "Offizielle kantonale Durchschnittsprämien Uri 2026."
+        }
+      },
+      "application": {
+        "authority_key": "UR_el_application_authority",
+        "office_name_key": "UR_el_office_name",
+        "url": "https://www.svsuri.ch",
+        "contact": {
+          "address_key": "UR_el_contact_address",
+          "phone": "+41 41 874 50 10",
+          "email": "info@svsuri.ch"
+        },
+        "required_documents_key": "UR_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 1.0,
+        "communal_multiplier": 1.05,
+        "source": "ESTV Steuerfüsse 2025/2026"
+      }
+    }
+  }
+}

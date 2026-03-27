@@ -1,0 +1,62 @@
+{
+  "SH": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_sh_2026",
+      "official_url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen-1756-DE.html",
+      "legal_basis": {
+        "primary_key": "SH_sh_legal_basis_primary",
+        "additional_sources_key": "SH_sh_legal_basis_additional",
+        "legal_source": "https://www.lexfind.ch/fe/de/tol/14194/versions/71728/de"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "1p": 1000,
+        "2p": 1200,
+        "3p": 1400,
+        "4p": 1600,
+        "5p_plus": 1800
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "application": {
+        "authority_key": "SH_sh_authority",
+        "office_name_key": "SH_sh_office_name",
+        "url": "https://sh.ch/CMS/Webseite/Kanton-Schaffhausen-1756-DE.html",
+        "contact": {
+          "address_key": "SH_sh_contact_address",
+          "phone": "+41 52 632 76 85",
+          "email": "info.soza@sh.ch",
+          "office_hours_key": "SH_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

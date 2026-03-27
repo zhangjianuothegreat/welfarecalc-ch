@@ -1,0 +1,25 @@
+{
+  "TI": {
+    "name": "Ticino",
+    "legal_basis": {
+      "primary_key": "TI_fa_legal_basis_primary",
+      "additional_sources_key": "TI_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "TI_fa_office_name",
+      "authority_key": "TI_fa_application_authority"
+    },
+    "application": {
+      "method_key": "TI_fa_application_method",
+      "url": "https://www4.ti.ch/dss/dasf/temi/famiglia-e-figli/aiuti-economici/assegni-sussidi-e-contributi-per-famiglie",
+      "required_documents_key": "TI_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "TI_fa_contact_address",
+      "phone": "+41 91 821 91 11",
+      "email": "avs@ias.ti.ch"
+    },
+    "notes_key": "TI_fa_special_notes"
+  }
+}

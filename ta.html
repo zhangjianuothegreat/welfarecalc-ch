@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WelfareCalc.ch | சுவிஸ் சமூக நலன்கள் வழிகாட்டி | AHV, IV, EL</title>
+  <meta name="description" content="சுவிஸ் சமூக நலன்கள் குறித்த தமிழ் வழிகாட்டி. பிரீமியம் குறைப்பு, குடும்ப கொடுப்பனவுகள் மற்றும் கூடுதல் கொடுப்பனவுகள் பற்றிய கட்டுரைகளைப் படியுங்கள். 6 மொழிகளில் கால்குலேட்டரைப் பயன்படுத்தவும்.">
+  <meta name="keywords" content="தமிழ் சுவிட்சர்லாந்து, சுவிஸ் சமூக நலன்கள், AHV தமிழில், IPV, குடும்ப கொடுப்பனவுகள், நலன் கால்குலேட்டர்">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://welfarecalc.ch/ta.html" />
+
+  <!-- Hreflang Tags (அனைத்து 11 மொழி பதிப்புகளுக்கும்) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/de.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/en.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/fr.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/it.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/es.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/pt.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/pl.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/sq.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/hr.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/tr.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/ta.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/index.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <!-- முக்கிய CSS கோப்பு (DE/EN/FR/IT/ES/PT பதிப்புகளுடன் ஒருங்கிணைப்புக்காக) -->
+  <link rel="stylesheet" href="css/common.css">
+
+  <style>
+    /* முக்கிய பதிப்புகளுடன் பொருந்துவதற்கான கூடுதல் பாணிகள் */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+    .main-content {
+      flex: 1;
+    }
+    /* கால்குலேட்டரின் மொழி வழிகாட்டி (மேலே வைக்கப்பட்டுள்ளது) */
+    .language-guide {
+      background: linear-gradient(135deg, #e6f0ff 0%, #f0f7ff 100%);
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 1.5rem 0 2rem 0;
+      text-align: center;
+      border: 1px solid #0050a4;
+      box-shadow: 0 4px 12px rgba(0, 80, 164, 0.08);
+    }
+    .language-guide h2 {
+      font-family: 'Playfair Display', serif;
+      color: #0050a4;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .language-guide .subhead {
+      color: #2c5a8c;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+    .language-guide p {
+      color: #2c5a8c;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .language-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .lang-btn {
+      background: white;
+      color: #0050a4;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      border: 1px solid #0050a4;
+      display: inline-block;
+    }
+    .lang-btn:hover {
+      background: #0050a4;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 80, 164, 0.2);
+    }
+    .guide-note {
+      font-size: 0.85rem;
+      color: #5f7f9e;
+      margin-top: 1rem;
+      border-top: 1px solid #cddfe7;
+      padding-top: 1rem;
+      display: inline-block;
+    }
+    /* வழிகாட்டி பிரிவு (முக்கிய உள்ளடக்கம்) */
+    .blog-section {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 1rem 0 2rem 0;
+      border: 1px solid #e0e8f0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .blog-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e8f0;
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .blog-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .blog-card {
+      border-bottom: 1px solid #e8edf2;
+      padding-bottom: 1.5rem;
+    }
+    .blog-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .blog-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .blog-card h3 a {
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .blog-card h3 a:hover {
+      text-decoration: underline;
+    }
+    .blog-meta {
+      font-size: 0.85rem;
+      color: #5f7f9e;
+      margin-bottom: 0.5rem;
+    }
+    .blog-excerpt {
+      color: #4a5568;
+      line-height: 1.5;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #0050a4;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    .all-articles-link {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .all-articles-link a {
+      color: #0050a4;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px dotted #cddfe7;
+    }
+    .all-articles-link a:hover {
+      border-bottom-color: #0050a4;
+    }
+    /* அடிக்குறிப்பு */
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+    footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .language-guide h2 {
+        font-size: 2rem;
+      }
+      .blog-section h2 {
+        font-size: 1.8rem;
+      }
+    }
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .language-guide {
+        padding: 1.2rem;
+        margin: 1rem 0 1.5rem 0;
+      }
+      .language-guide h2 {
+        font-size: 1.4rem;
+      }
+      .language-guide .subhead {
+        font-size: 0.95rem;
+      }
+      .lang-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+      }
+      .blog-section {
+        padding: 1rem;
+      }
+      .blog-section h2 {
+        font-size: 1.3rem;
+      }
+      .blog-card h3 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">🇨🇭 WelfareCalc.ch</h1>
+    <div class="language-selector">
+      <a href="index.html">← மொழியை மாற்று</a>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+
+    <!-- கால்குலேட்டர் மொழி வழிகாட்டி: பயனர் உடனடியாகக் காணும் வகையில் மேலே வைக்கப்பட்டுள்ளது -->
+    <div class="language-guide">
+      <h2>🧮 உங்கள் நலன்களைச் சரிபார்க்கவும்</h2>
+      <div class="subhead">WelfareCalc கால்குலேட்டர் – இலவசம், அநாமதேயம், 6 மொழிகளில்</div>
+      <p>AHV, IV, கூடுதல் கொடுப்பனவுகள் (EL) மற்றும் பிரீமியம் குறைப்பு (IPV) ஆகியவற்றுக்கான உங்கள் உரிமைகளைக் கணக்கிடுங்கள்.<br>
+      <strong>கணக்கீட்டைச் செய்ய விரும்பும் மொழியைத் தேர்ந்தெடுக்கவும்:</strong></p>
+      <div class="language-buttons">
+        <a href="/de.html" class="lang-btn">🇩🇪 Deutsch</a>
+        <a href="/en.html" class="lang-btn">🇬🇧 English</a>
+        <a href="/fr.html" class="lang-btn">🇫🇷 Français</a>
+        <a href="/it.html" class="lang-btn">🇮🇹 Italiano</a>
+        <a href="/es.html" class="lang-btn">🇪🇸 Español</a>
+        <a href="/pt.html" class="lang-btn">🇵🇹 Português</a>
+      </div>
+      <div class="guide-note">
+        ✨ கால்குலேட்டர் 100% உங்கள் உலாவியில் இயங்குகிறது – எந்தத் தரவும் சேமிக்கப்படுவதில்லை. கன்டோனல் வேறுபாடுகளை (ZH, BE, GE, TI, VD, போன்றவை) கணக்கில் எடுத்துக்கொள்கிறது. 2 நிமிடங்களுக்குள் முடிவு.
+      </div>
+    </div>
+
+    <!-- வழிகாட்டி பிரிவு: தமிழ் மொழியில் கட்டுரைகள் (கால்குலேட்டருக்குக் கீழே வைக்கப்பட்டுள்ளன) -->
+    <div class="blog-section">
+      <h2>📘 சுவிஸ் சமூக நலன்கள் 2026 வழிகாட்டிகள்</h2>
+      <div class="blog-grid">
+        <div class="blog-card">
+          <h3><a href="blog/ta/premium-reduction-2026.html">🏥 பிரீமியம் குறைப்பு 2026 (IPV/RIP) – சுகாதார காப்பீட்டில் எவ்வாறு சேமிப்பது?</a></h3>
+          <div class="blog-meta">📅 மார்ச் 2026 புதுப்பிப்பு • 5 நிமிட வாசிப்பு</div>
+          <div class="blog-excerpt">2026-ல் கட்டாய சுகாதார காப்பீட்டு பிரீமியங்கள் மீண்டும் உயர்ந்துள்ளன. தனிப்பட்ட பிரீமியம் குறைப்புக்கு (IPV) நீங்கள் உரிமை பெற்றுள்ளீர்களா மற்றும் உங்கள் கன்டோனில் எவ்வாறு விண்ணப்பிப்பது என்பதைச் சரிபார்க்கவும்.</div>
+          <a href="blog/ta/premium-reduction-2026.html" class="read-more">மேலும் படிக்க →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/ta/family-allowances-2026.html">👶 குடும்ப கொடுப்பனவுகள் 2026 – எவ்வளவு மற்றும் எவ்வாறு பெறுவது?</a></h3>
+          <div class="blog-meta">📅 மார்ச் 2026 புதுப்பிப்பு • 6 நிமிட வாசிப்பு</div>
+          <div class="blog-excerpt">குழந்தை கொடுப்பனவுகள் மற்றும் கல்வி கொடுப்பனவுகள் கன்டோனுக்கு கன்டோன் மாறுபடும். மாதாந்திரம் நீங்கள் எவ்வளவு பெறலாம், 5 ஆண்டுகள் வரை பின்னோக்கிச் செலுத்துவதற்கு எவ்வாறு விண்ணப்பிப்பது மற்றும் வேலை செய்யாதவர்களின் உரிமைகள் என்ன என்பதை அறிக.</div>
+          <a href="blog/ta/family-allowances-2026.html" class="read-more">மேலும் படிக்க →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/ta/supplementary-benefits-2026.html">💰 கூடுதல் கொடுப்பனவுகள் (EL/PC) 2026 – AHV/IV ஓய்வூதியம் போதுமானதாக இல்லாதபோது?</a></h3>
+          <div class="blog-meta">📅 மார்ச் 2026 புதுப்பிப்பு • 7 நிமிட வாசிப்பு</div>
+          <div class="blog-excerpt">கூடுதல் கொடுப்பனவுகள் ஓய்வூதியதாரர்கள், ஊனமுற்றோர் மற்றும் குறைந்த வருமானம் உள்ளவர்களுக்கான முக்கிய ஆதரவாகும். யாருக்கு உரிமை உண்டு, எந்தெந்த செலவுகள் மூடப்படுகின்றன (வாடகை, சுகாதார காப்பீட்டு பிரீமியங்கள்) மற்றும் எவ்வாறு விண்ணப்பிப்பது என்பதை விளக்குகிறது.</div>
+          <a href="blog/ta/supplementary-benefits-2026.html" class="read-more">மேலும் படிக்க →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/ta/unemployment-maternity-2026.html">🤰 வேலையின்மை மற்றும் தாய்மை 2026 – கர்ப்பம் மற்றும் வேலை இழப்பு ஏற்பட்டால் பாதுகாப்பு மற்றும் நலன்கள்</a></h3>
+          <div class="blog-meta">📅 மார்ச் 2026 புதுப்பிப்பு • 5 நிமிட வாசிப்பு</div>
+          <div class="blog-excerpt">கர்ப்பமாக இருக்கும் போது வேலையை இழக்கிறீர்களா? பணி நீக்கப் பாதுகாப்பு, மகப்பேறு பலன் (EO) மற்றும் மகப்பேறு விடுப்புக்குப் பிறகு என்ன நடக்கும் என்பதை விளக்குகிறது. சுவிட்சர்லாந்தில் உள்ள பெண்களுக்கான நடைமுறை உதவிக்குறிப்புகள்.</div>
+          <a href="blog/ta/unemployment-maternity-2026.html" class="read-more">மேலும் படிக்க →</a>
+        </div>
+        <div class="blog-card">
+          <h3><a href="blog/ta/tamil-article.html">📋 சுவிட்சர்லாந்தில் 7 மிக முக்கியமான சமூக நலன்கள் 2026 – முழுமையான கண்ணோட்டம்</a></h3>
+          <div class="blog-meta">📅 மார்ச் 2026 புதுப்பிப்பு • 10 நிமிட வாசிப்பு</div>
+          <div class="blog-excerpt">AHV, IV, கூடுதல் கொடுப்பனவுகள், பிரீமியம் குறைப்பு, குடும்ப கொடுப்பனவுகள், வேலையின்மை பலன் மற்றும் சமூக உதவி பற்றிய அறிவுக் களஞ்சியம். நீங்கள் எந்தெந்த நலன்களை இணைக்கலாம் மற்றும் கால்குலேட்டரை எவ்வாறு பயன்படுத்துவது என்பதைக் காண்க.</div>
+          <a href="blog/ta/tamil-article.html" class="read-more">மேலும் படிக்க →</a>
+        </div>
+      </div>
+      <div class="all-articles-link">
+        <a href="blog/ta/index.html">📚 அனைத்து கட்டுரைகள் மற்றும் வழிகாட்டிகளையும் காண்க →</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • இலவசம் • அநாமதேயம் • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="impressum.html">அச்சு</a> •
+    <a href="datenschutz.html">தரவு பாதுகாப்பு அறிவிப்பு</a> •
+    <a href="haftung.html">பொறுப்புத் துறப்பு</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="blog/ta/index.html">📚 அனைத்து தமிழ் வழிகாட்டிகளும்</a>
+  </p>
+</footer>
+
+</body>
+</html>

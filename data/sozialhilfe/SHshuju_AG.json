@@ -1,0 +1,87 @@
+{
+  "AG": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal",
+      "legal_basis": {
+        "primary_key": "AG_sh_legal_basis_primary",
+        "additional_sources_key": "AG_sh_legal_basis_additional",
+        "legal_source": "https://www.ag.ch"
+      },
+      "official_url": "https://www.ag.ch/de/themen/asyl-fluechtlingswesen/sozialhilfe-nothilfe",
+      "source_note_key": "AG_sh_source_note",
+      "asset_freibetrag": {
+        "single": 4000,
+        "couple": 8000,
+        "per_child": 2000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "region_1": {
+          "1p": 1575,
+          "2p": 1860,
+          "3p": 2065,
+          "4p": 2255,
+          "5p_plus": 2445
+        },
+        "region_2": {
+          "1p": 1525,
+          "2p": 1810,
+          "3p": 1980,
+          "4p": 2160,
+          "5p_plus": 2340
+        },
+        "region_3": {
+          "1p": 1390,
+          "2p": 1680,
+          "3p": 1850,
+          "4p": 2000,
+          "5p_plus": 2150
+        }
+      },
+      "health_extra_monthly": 180,
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.20,
+        "child_deduction_annual": 3000
+      },
+      "asset_consumption": {
+        "divisor_ahv": 10,
+        "divisor_other": 7
+      },
+      "application": {
+        "method_key": "AG_sh_application_method",
+        "authority_key": "AG_sh_application_authority",
+        "office_name_key": "AG_sh_office_name",
+        "url": "https://www.ag.ch",
+        "contact": {
+          "address_key": "AG_sh_contact_address",
+          "phone": "+41 62 835 22 40",
+          "email": "sozialhilfe@ag.ch",
+          "office_hours_key": "AG_sh_office_hours"
+        },
+        "required_docs_list": [],  
+        "required_docs_keys": [ 
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment",
+          "sh_doc_birth_certificates",
+          "sh_doc_foreign_pensions",
+          "sh_doc_medical_attests"
+        ],
+        "source_note": "Datenquelle: Departement Gesundheit und Soziales Kanton Aargau / SKOS-Richtlinien 2026. Antragstellung bei der Wohngemeinde."
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "ZG": {
+    "ipv": {
+      "legal_basis": {
+        "primary_key": "ZG_ipv_legal_basis_primary",
+        "additional_sources_key": "ZG_ipv_legal_basis_additional",
+        "legal_source": "https://bgs.zg.ch/app/de/texts_of_law/842.1"
+      },
+      "formula_type": "income_percentage",
+      "official_url": "https://www.akzug.ch",
+      "asset_limit_single": 150000,
+      "asset_limit_couple": 300000,
+      "income_limits": {
+        "max_household_income": 89900
+      },
+      "exemption": {
+        "per_child": 8500
+      },
+      "income_deduction_factor": 0.08,
+      "asset_contribution_rate": 0.12,
+      "ref_premium_annual": {
+        "adult": 5916,
+        "young_adult": 4140,
+        "child": 1392
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 100
+      },
+      "application": {
+        "method_key": "ZG_ipv_application_method",
+        "authority_key": "ZG_ipv_application_authority",
+        "office_name_key": "ZG_ipv_office_name",
+        "url": "https://www.akzug.ch",
+        "digital_portal": "https://ipv-zug.ch",
+        "contact": {
+          "address_key": "ZG_ipv_contact_address",
+          "phone": "+41 41 560 47 00",
+          "email": "info.ipv@akzug.ch"
+        },
+        "required_documents_key": "ZG_ipv_required_documents_list"
+      }
+    }
+  }
+}

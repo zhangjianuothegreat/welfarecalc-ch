@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Świadczenia społeczne w Szwajcarii 2026: 7 zapomóg, które możesz tracić | WelfareCalc.ch</title>
+  <meta name="description" content="Sprawdź swoje prawa do szwajcarskich świadczeń społecznych (AHV, IV, uzupełniające, ulgi w składkach) za darmo i anonimowo. Kalkulator online dla 6 grup docelowych.">
+  <meta name="keywords" content="świadczenia społeczne Szwajcaria, AHV, IV, świadczenia uzupełniające, ulga w składkach, pomoc społeczna, kalkulator świadczeń, zasiłki rodzinne, zasiłek dla bezrobotnych">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://welfarecalc.ch/blog/pl/polish-article.html" />
+
+  <!-- Hreflang Tags dla SEO wielojęzycznego (wszystkie 11 wersji językowych) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/blog/de/sozialleistungen-2026.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/blog/fr/prestations-sociales-2026.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/blog/it/prestazioni-sociali-2026.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/blog/en/social-benefits-2026.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/blog/es/prestaciones-sociales-2026.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/blog/pt/beneficios-sociais-2026.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/blog/pl/polish-article.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/blog/sq/albanian-article.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/blog/hr/croatian-article.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/blog/tr/turkish-article.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/blog/ta/tamil-article.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/blog/pl/polish-article.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+      text-decoration: none;
+    }
+
+    .site-title a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+
+    .blog-content {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      border: 1px solid #e0e8f0;
+    }
+
+    .blog-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    .blog-content h2 {
+      font-size: 1.6rem;
+      color: #0050a4;
+      margin: 1.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e0e8f0;
+    }
+
+    .blog-content p {
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+
+    .blog-content ul, .blog-content ol {
+      margin: 1rem 0 1rem 1.8rem;
+    }
+
+    .blog-content li {
+      margin: 0.5rem 0;
+    }
+
+    .blog-content strong {
+      color: #0050a4;
+    }
+
+    /* CTA Box - główny przycisk do kalkulatora */
+    .cta-box {
+      background: linear-gradient(135deg, #0050a4 0%, #003a7a 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,80,164,0.2);
+    }
+
+    .cta-box h3 {
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      border: none;
+    }
+
+    .cta-box p {
+      color: white;
+      margin-bottom: 1rem;
+    }
+
+    .cta-box strong {
+      color: white;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #0050a4;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.2s ease;
+      margin-top: 0.5rem;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Language Selection Box - kluczowy element dla tej strony */
+    .language-selection-box {
+      background: #e6f0ff;
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      border: 1px solid #0050a4;
+    }
+
+    .language-selection-box h3 {
+      color: #0050a4;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .language-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .lang-btn {
+      display: inline-block;
+      background: white;
+      color: #0050a4;
+      padding: 0.7rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      border: 1px solid #0050a4;
+    }
+
+    .lang-btn:hover {
+      background: #0050a4;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .info-box {
+      background: #e6f0ff;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #0050a4;
+    }
+
+    .warning-box {
+      background: #fff3e0;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #e67e22;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #e0e8f0;
+      padding-bottom: 1rem;
+    }
+
+    .faq-question {
+      font-weight: 700;
+      color: #0050a4;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-answer {
+      color: #4a5568;
+    }
+
+    .back-to-top {
+      text-align: center;
+      margin: 2rem 0 1rem;
+    }
+
+    .back-to-top a {
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+
+    footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .blog-content h1 {
+        font-size: 2.8rem;
+      }
+      .blog-content h2 {
+        font-size: 1.9rem;
+      }
+      .language-buttons {
+        gap: 1.5rem;
+      }
+      .lang-btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .blog-content {
+        padding: 1.2rem;
+      }
+      .blog-content h1 {
+        font-size: 1.6rem;
+      }
+      .blog-content h2 {
+        font-size: 1.3rem;
+      }
+      .cta-box, .language-selection-box {
+        padding: 1.2rem;
+      }
+      .lang-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title"><a href="/index.html">🇨🇭 WelfareCalc.ch</a></h1>
+    <div class="language-selector">
+      <a href="/index.html">← Zmień język</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="blog-content">
+      
+      <h1>💰 Pieniądze od państwa? 7 szwajcarskich świadczeń społecznych 2026, które możesz tracić (z kalkulatorem)</h1>
+      
+      <p><strong>Wiele osób w Szwajcarii co roku pozostawia niezrealizowane tysiące franków pomocy państwowej – po prostu dlatego, że nie wiedzą, że im przysługują. Ten artykuł przedstawia pełny przegląd siedmiu najważniejszych świadczeń społecznych i pokazuje, jak bezpłatnie sprawdzić swoje prawa w zaledwie 3 minuty.</strong></p>
+      
+      <div class="info-box">
+        <p>👉 <strong>Ponieważ każdy kanton (np. Zurych, Berno, Genewa, Bazylea) ma własne zasady i terminy, nasz kalkulator został specjalnie zaprogramowany, aby uwzględniać te różnice regionalne.</strong> Dzięki temu otrzymujesz oszacowanie rzeczywiście dostosowane do Twojej sytuacji.</p>
+      </div>
+      
+      <h2>Dlaczego możesz otrzymać więcej niż myślisz</h2>
+      <p>Szwajcaria słynie z dobrze rozwiniętego systemu społecznego. Jednak wielu nie wie: <strong>około 40% uprawnionych osób nie ubiega się o swoje świadczenia</strong> – z niewiedzy, wstydu lub obawy, że procedury są zbyt skomplikowane.</p>
+      <p>Szczególnie dotyczy to:</p>
+      <ul>
+        <li>👥 Osób z pozwoleniem B lub C</li>
+        <li>👩‍👧 Pracujących na część etatu i samotnych rodziców</li>
+        <li>👴 Emerytów z niskimi dochodami</li>
+        <li>🩺 Osób z ograniczeniami fizycznymi lub psychicznymi</li>
+      </ul>
+      <p>Ten przewodnik wyjaśnia krok po kroku, jakie świadczenia są dostępne i jak sprawdzić swoje prawa <strong>prosto, bezpłatnie i anonimowo</strong>.</p>
+      
+      <h2>1. 👴 AHV/AVS – podstawa emerytury</h2>
+      <p><strong>Ubezpieczenie na starość i dla pozostałych (AHV/AVS)</strong> stanowi pierwszy filar szwajcarskiego systemu zabezpieczenia społecznego. Ma na celu pokrycie podstawowych potrzeb życiowych na emeryturze.</p>
+      <p><strong>Ważne informacje:</strong></p>
+      <ul>
+        <li>Prawo rozpoczyna się w zwykłym wieku emerytalnym (64/65 lat)</li>
+        <li>Wysokość zależy od lat składkowych i średniego rocznego dochodu</li>
+        <li><strong>Pełna renta AHV/AVS</strong> jest wypłacana po 44 latach składek (kobiety) lub 45 latach (mężczyźni)</li>
+      </ul>
+      <p>💡 <strong>Wskazówka:</strong> Nawet jeśli nie pracowałeś nieprzerwanie, dodatki za wychowanie dzieci i opiekę mogą zwiększyć Twoją rentę.</p>
+      
+      <h2>2. 🩺 IV/AI – w przypadku choroby lub niepełnosprawności</h2>
+      <p><strong>Ubezpieczenie rentowe (IV/AI)</strong> wchodzi w grę, gdy nie możesz pracować lub możesz pracować tylko częściowo z powodów zdrowotnych.</p>
+      <p><strong>Kluczowe kryteria:</strong></p>
+      <ul>
+        <li>Stopień niepełnosprawności musi wynosić co najmniej 40%</li>
+        <li>IV/AI sprawdza, czy środki medyczne lub reintegracja zawodowa mogą poprawić sytuację</li>
+        <li>Dzieci z niepełnosprawnościami również mają prawo do <strong>renty IV/AI dla dzieci</strong></li>
+      </ul>
+      <p>📌 <strong>Uwaga:</strong> Postępowanie IV/AI może trwać kilka miesięcy. Dlatego zaleca się wczesną ocenę.</p>
+      
+      <h2>3. 💰 Świadczenia uzupełniające (EL/PC) – niedoceniana pomoc</h2>
+      <p><strong>Świadczenia uzupełniające do AHV/AVS i IV/AI (EL/PC)</strong> są najważniejszym świadczeniem socjalnym, ale zbyt często pomijanym.</p>
+      <p><strong>Co warto wiedzieć:</strong></p>
+      <ul>
+        <li>Świadczenia uzupełniające są wypłacane, gdy renta AHV/AVS lub IV/AI i dochody nie pokrywają minimalnych kosztów utrzymania</li>
+        <li>Nie ma <strong>obowiązku zwrotu</strong> – w przeciwieństwie do pomocy społecznej</li>
+        <li>Świadczenia uzupełniające pokrywają również <strong>składki na ubezpieczenie zdrowotne, leczenie stomatologiczne i koszty pobytu w domu opieki</strong></li>
+      </ul>
+      <p>👉 Dla emerytów z niską rentą i osób z niepełnosprawnościami świadczenia uzupełniające są często decydującym czynnikiem dla godnego życia.</p>
+      
+      <!-- GŁÓWNY CTA BOX -->
+      <div class="cta-box">
+        <h3>📢 Sprawdź swoje prawa teraz – 100% anonimowo</h3>
+        <p>Wielu waha się z obawy o swój status pobytu (pozwolenie C). Jednak większość świadczeń (takich jak świadczenia uzupełniające czy ulgi w składkach) <strong>NIE JEST pomocą społeczną</strong> i <strong>nie ma negatywnego wpływu</strong> na Twoje prawo pobytu.</p>
+        <p>✅ <strong>Bez rejestracji</strong> • ✅ <strong>Uwzględniamy różnice kantonalne</strong> • ✅ <strong>Natychmiastowy wynik</strong><br>
+        Twoje dane pozostają <strong>w Twojej przeglądarce</strong> – bez serwera, bez śledzenia, absolutna prywatność.</p>
+        <a href="#language-choice" class="cta-button">👉 Wybierz język kalkulatora</a>
+      </div>
+      
+      <!-- KLUCZOWY ELEMENT: WYBÓR JĘZYKA KALKULATORA -->
+      <div id="language-choice" class="language-selection-box">
+        <h3>🌐 Wybierz język kalkulatora</h3>
+        <p>Nasz kalkulator świadczeń społecznych jest dostępny w <strong>6 językach</strong>. Wybierz język, w którym chcesz obliczyć swoje prawa:</p>
+        <div class="language-buttons">
+          <a href="/de.html" class="lang-btn">🇩🇪 Deutsch</a>
+          <a href="/fr.html" class="lang-btn">🇫🇷 Français</a>
+          <a href="/it.html" class="lang-btn">🇮🇹 Italiano</a>
+          <a href="/en.html" class="lang-btn">🇬🇧 English</a>
+          <a href="/es.html" class="lang-btn">🇪🇸 Español</a>
+          <a href="/pt.html" class="lang-btn">🇵🇹 Português</a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">💡 <strong>Wskazówka:</strong> Jeśli mówisz po polsku, prawdopodobnie znasz też jeden z tych języków. Wybierz ten, w którym czujesz się najbardziej komfortowo.</p>
+      </div>
+      
+      <h2>4. 🏥 Ulga w składkach (IPV/RIP) – oszczędzaj na ubezpieczeniu zdrowotnym</h2>
+      <p><strong>Indywidualna ulga w składkach (IPV/RIP)</strong> na ubezpieczenie zdrowotne jest znana, ale nie wszystkie uprawnione osoby się o nią ubiegają.</p>
+      <p><strong>Kluczowe punkty:</strong></p>
+      <ul>
+        <li>Zmniejsza miesięczne składki na ubezpieczenie zdrowotne</li>
+        <li>Wniosek składa się <strong>do kantonu zamieszkania</strong> – terminy znacznie się różnią!</li>
+        <li>Decydujące są dochody i majątek, a nie stan cywilny</li>
+      </ul>
+      <div class="warning-box">
+        <p>⚠️ <strong>Uwaga: W niektórych kantonach prawo wygasa automatycznie, jeśli nie złożysz wniosku!</strong> Wiele kantonów ustala terminy składania wniosków już na <strong>wrzesień lub październik</strong>. Ci, którzy przekroczą termin, muszą czekać cały rok na ulgę.</p>
+      </div>
+      
+      <h2>5. 💼 Zasiłek dla bezrobotnych – ochrona w przypadku utraty pracy</h2>
+      <p><strong>Ubezpieczenie na wypadek bezrobocia</strong> chroni Cię w przypadku nie zawinionej utraty pracy.</p>
+      <p><strong>Warunki:</strong></p>
+      <ul>
+        <li>Musiałeś opłacać składki przez co najmniej 12 miesięcy w ciągu ostatnich 2 lat</li>
+        <li>Musisz mieszkać w Szwajcarii i być zarejestrowany jako osoba poszukująca pracy</li>
+        <li>Wysokość dziennego zasiłku zależy od Twojego ubezpieczonego wynagrodzenia</li>
+      </ul>
+      <p>📌 Ważne: W zależności od kantonu i wieku obowiązują różne ramy czasowe. Terminowa rejestracja w RAV (Regionalnym Biurze Pracy) jest kluczowa.</p>
+      
+      <h2>6. 👶 Zasiłki rodzinne – nawet dla niepracujących?</h2>
+      <p><strong>Zasiłki rodzinne i edukacyjne</strong> przysługują co do zasady wszystkim rodzicom – nawet jeśli nie pracujesz zarobkowo.</p>
+      <p><strong>Aktualne wartości (2026):</strong></p>
+      <ul>
+        <li><strong>Zasiłek na dziecko:</strong> około 200–300 CHF na dziecko miesięcznie (różni się w zależności od kantonu)</li>
+        <li><strong>Zasiłek edukacyjny:</strong> do końca pierwszego wykształcenia (maksymalnie 25 lat)</li>
+      </ul>
+      <p>💡 Wielu rodziców prowadzących własną działalność lub niepracujących zapomina ubiegać się o te zasiłki.</p>
+      
+      <h2>7. 🏠 Pomoc społeczna – ostatnia deska ratunku</h2>
+      <p>Kiedy wszystkie inne świadczenia są niewystarczające, może wkroczyć <strong>pomoc społeczna</strong>. Jest ona jednak obwarowana ścisłymi warunkami i może wpłynąć na status pobytu.</p>
+      <p><strong>Nasza wskazówka:</strong> Sprawdź najpierw wszystkie inne świadczenia, takie jak świadczenia uzupełniające, IV/AI i ulgi w składkach, zanim poprosisz o pomoc społeczną.</p>
+      
+      <h2>Jak sprawdzić swoje prawa – bezpłatnie i anonimowo</h2>
+      <p>Wszystkie wymienione świadczenia można łączyć. <strong>WelfareCalc.ch</strong> został stworzony właśnie w tym celu: <strong>w mniej niż 3 minuty</strong> otrzymujesz jasny przegląd swoich osobistych praw.</p>
+      <p><strong>Zalety kalkulatora:</strong></p>
+      <ul>
+        <li>✅ Bez rejestracji, bez podawania adresu e-mail</li>
+        <li>✅ <strong>100% anonimowy</strong> – Twoje dane nigdy nie opuszczają Twojej przeglądarki</li>
+        <li>✅ Specjalnie zaprojektowany dla Szwajcarii z uwzględnieniem <strong>różnic kantonalnych</strong> (ZH, BE, GE, TI, VD itp.)</li>
+        <li>✅ Dostępny w <strong>niemieckim, francuskim, włoskim, angielskim, hiszpańskim i portugalskim</strong></li>
+      </ul>
+      <p><strong>Twoje dane pozostają w Twojej przeglądarce – bez serwera, bez śledzenia, absolutna prywatność.</strong></p>
+      
+      <!-- Powtórzony box wyboru języka dla lepszej konwersji -->
+      <div class="language-selection-box">
+        <h3>👉 Rozpocznij obliczenia</h3>
+        <p>Kliknij poniżej, aby przejść do kalkulatora w wybranym języku:</p>
+        <div class="language-buttons">
+          <a href="/de.html" class="lang-btn">🇩🇪 Deutsch</a>
+          <a href="/fr.html" class="lang-btn">🇫🇷 Français</a>
+          <a href="/it.html" class="lang-btn">🇮🇹 Italiano</a>
+          <a href="/en.html" class="lang-btn">🇬🇧 English</a>
+          <a href="/es.html" class="lang-btn">🇪🇸 Español</a>
+          <a href="/pt.html" class="lang-btn">🇵🇹 Português</a>
+        </div>
+      </div>
+      
+      <h2>Podsumowanie: Działaj teraz – rok jest krótki</h2>
+      <p>Szwajcarski system społeczny jest złożony, ale z odpowiednim narzędziem szybko się w nim odnajdziesz. Nie czekaj do końca roku – wiele świadczeń należy złożyć w określonych terminach.</p>
+      <p><strong>Następne kroki:</strong></p>
+      <ol>
+        <li>📱 Otwórz <a href="#language-choice"><strong>WelfareCalc</strong></a></li>
+        <li>👤 Wybierz swoją grupę (osoba samotna, rodzina, emeryt itp.)</li>
+        <li>📊 Wprowadź swoje dane – uzyskaj natychmiastową spersonalizowaną ocenę</li>
+      </ol>
+      <p><strong>Podziel się tym artykułem z przyjaciółmi i rodziną – być może oni również skorzystają ze świadczeń, o których nie wiedzieli.</strong></p>
+      
+      <h2>Często zadawane pytania (FAQ)</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pytanie: Czy jako cudzoziemiec z pozwoleniem B mam prawo do świadczeń?</div>
+        <div class="faq-answer">Tak – większość świadczeń społecznych przysługuje wszystkim osobom zamieszkałym w Szwajcarii, niezależnie od statusu pobytu. Ograniczenia dotyczą tylko pomocy społecznej. <strong>Ważne:</strong> Świadczenia uzupełniające (EL/PC) i ulgi w składkach nie są uważane za pomoc społeczną i nie wpływają na Twój status pobytu.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pytanie: Czy ulga w składkach jest wypłacana automatycznie?</div>
+        <div class="faq-answer">Nie. Musisz składać wniosek <strong>co roku</strong> do swojego kantonu. WelfareCalc pokazuje, czy warto się tym zająć.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pytanie: Czy mogę ubiegać się o świadczenia uzupełniające, jeśli już otrzymuję AHV/AVS?</div>
+        <div class="faq-answer">Tak, w dowolnym momencie. Świadczenia uzupełniające są przyznawane z mocą wsteczną na bieżący rok – dlatego zaleca się terminowe sprawdzenie.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">Pytanie: Czy moje dane są bezpieczne?</div>
+        <div class="faq-answer">Tak. Kalkulator działa <strong>100% w przeglądarce</strong> (frontend). Żadne dane nie są wysyłane na serwer, nie ma śledzenia ani przechowywania. Pozostajesz całkowicie anonimowy.</div>
+      </div>
+      
+      <p><em>Ten artykuł zawiera informacje ogólne i nie zastępuje indywidualnej porady prawnej. Podstawy prawne (AHVG, IVG, ELG) mogą ulec zmianie. Stan: marzec 2026.</em></p>
+      
+      <h2>📚 Powiązane artykuły</h2>
+      <ul>
+        <li><a href="bezrobocie-macierzynstwo-2026.html">Bezrobocie i macierzyństwo 2026: Twoje prawa w przypadku ciąży i utraty pracy →</a></li>
+        <li><a href="ulga-skladkach-2026.html">Ulga w składkach 2026: jak zaoszczędzić na ubezpieczeniu zdrowotnym →</a></li>
+        <li><a href="swiadczenia-uzupelniajace-2026.html">Świadczenia uzupełniające 2026: Twoja renta AHV nie wystarcza? →</a></li>
+        <li><a href="zasilki-rodzinne-2026.html">Zasiłki rodzinne 2026: zasiłki na dziecko i edukacyjne według kantonu →</a></li>
+      </ul>
+      
+      <div class="back-to-top">
+        <a href="#">↑ Powrót na górę</a>
+      </div>
+      
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Bezpłatny • Anonimowy • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="/impressum.html">Impressum</a> •
+    <a href="/datenschutz.html">Ochrona danych</a> •
+    <a href="/haftung.html">Wyłączenie odpowiedzialności</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="/blog/pl/index.html">📚 Wszystkie poradniki</a>
+  </p>
+</footer>
+
+</body>
+</html>

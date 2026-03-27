@@ -1,0 +1,25 @@
+{
+  "ZG": {
+    "name": "Zug",
+    "legal_basis": {
+      "primary_key": "ZG_fa_legal_basis_primary",
+      "additional_sources_key": "ZG_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "ZG_fa_office_name",
+      "authority_key": "ZG_fa_application_authority"
+    },
+    "application": {
+      "method_key": "ZG_fa_application_method",
+      "url": "https://www.akzug.ch",
+      "required_documents_key": "ZG_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "ZG_fa_contact_address",
+      "phone": "+41 41 560 47 00",
+      "email": "info@akzug.ch"
+    },
+    "notes_key": "ZG_fa_special_notes"
+  }
+}

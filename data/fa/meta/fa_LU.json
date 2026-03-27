@@ -1,0 +1,25 @@
+{
+  "LU": {
+    "name": "Luzern",
+    "legal_basis": {
+      "primary_key": "LU_fa_legal_basis_primary",
+      "additional_sources_key": "LU_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "LU_fa_office_name",
+      "authority_key": "LU_fa_application_authority"
+    },
+    "application": {
+      "method_key": "LU_fa_application_method",
+      "url": "https://www.was-luzern.ch",
+      "required_documents_key": "LU_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "LU_fa_contact_address",
+      "phone": "+41 41 209 00 00",
+      "email": "info@was-luzern.ch"
+    },
+    "notes_key": "LU_fa_special_notes"
+  }
+}

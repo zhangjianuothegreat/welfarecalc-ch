@@ -1,0 +1,89 @@
+{
+  "BE": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "BE_el_legal_basis_primary",
+        "additional_sources_key": "BE_el_legal_basis_additional",
+        "legal_source": "https://www.belex.sites.be.ch/app/fr/texts_of_law/841.31"
+      },
+      "grundbedarf_annual": {
+        "single": 20670,
+        "couple": 31005,
+        "child_1_over_11": 10815,
+        "child_2_over_11": 10815,
+        "child_3_over_11": 7210,
+        "child_4_over_11": 7210,
+        "child_further_over_11": 3605,
+        "child_1_under_11": 7590,
+        "child_2_under_11": 6325,
+        "child_3_under_11": 5270,
+        "child_4_under_11": 4390,
+        "child_further_under_11": 3660
+      },
+      "rent_limits_annual": {
+        "region_1": {
+          "name_key": "BE_el_region_1_name",
+          "1_person": 18900,
+          "2_persons": 22320,
+          "3_persons": 24780,
+          "4_persons": 27060,
+          "5_plus_persons": 27060
+        },
+        "region_2": {
+          "name_key": "BE_el_region_2_name",
+          "1_person": 18300,
+          "2_persons": 21720,
+          "3_persons": 23760,
+          "4_persons": 25920,
+          "5_plus_persons": 25920
+        },
+        "region_3": {
+          "name_key": "BE_el_region_3_name",
+          "1_person": 16680,
+          "2_persons": 20160,
+          "3_persons": 22200,
+          "4_persons": 24000,
+          "5_plus_persons": 24000
+        }
+      },
+      "recognized_premiums_annual": {
+        "region1_high": {
+          "adult": 8004,
+          "young_adult": 5688,
+          "child": 1872
+        },
+        "region2_medium": {
+          "adult": 7236,
+          "young_adult": 5280,
+          "child": 1692
+        },
+        "region3_low": {
+          "adult": 6720,
+          "young_adult": 4860,
+          "child": 1560
+        }
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child": 50000
+      },
+      "vermoegen_freibetrag": {
+        "single": 37500,
+        "couple": 60000,
+        "per_child": 15000
+      },
+      "application": {
+        "authority_key": "BE_el_application_authority",
+        "office_name_key": "BE_el_office_name",
+        "url": "https://www.akbern.ch/de/Versicherungen/EL/Erganzungsleistungen.html ",
+        "contact": {
+          "address_key": "BE_el_contact_address",
+          "phone": "+41 31 370 91 11",
+          "email": "el@akbern.ch"
+        },
+        "required_documents_key": "BE_el_required_documents_list"
+      }
+    }
+  }
+}

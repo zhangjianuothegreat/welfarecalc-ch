@@ -1,0 +1,47 @@
+{
+  "GL": {
+    "ipv": {
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "GL_ipv_legal_basis_primary",
+        "additional_sources_key": "GL_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "ref_premium_annual": {
+        "adult": 5447,
+        "young_adult": 3896,
+        "child": 1500
+      },
+      "lna_child_deduction": 5000,
+      "asset_inclusion_rate": 0.10,
+      "guarantee_threshold_lna": 85000,
+      "minimum_reduction": {
+        "children": 0.80,
+        "young_adults_in_education": 0.50,
+        "min_subsidy_chf": 100
+      },
+      "staggered_rates": [
+        { "limit": 40000, "rate": 0.09 },
+        { "limit": 50000, "rate": 0.10 },
+        { "limit": 60000, "rate": 0.11 },
+        { "limit": 70000, "rate": 0.12 },
+        { "limit": 80000, "rate": 0.13 },
+        { "limit": null, "rate": 0.14 }
+      ],
+      "application": {
+        "method_key": "GL_ipv_application_method",
+        "authority_key": "GL_ipv_application_authority",
+        "office_name_key": "GL_ipv_office_name",
+        "url": "https://www.gl.ch",
+        "contact": {
+          "address_key": "GL_ipv_contact_address",
+          "phone": "+41 55 646 61 65",
+          "email": "steuerverwaltung@gl.ch",
+          "office_hours_key": "GL_ipv_office_hours"
+        },
+        "required_documents_key": "GL_ipv_required_documents_list",
+        "required_docs_list": []
+      }
+    }
+  }
+}

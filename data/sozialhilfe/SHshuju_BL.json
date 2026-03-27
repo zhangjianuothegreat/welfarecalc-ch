@@ -1,0 +1,71 @@
+{
+  "BL": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_bl_2026",
+      "official_url": "https://www.baselland.ch/politik-und-behorden/direktionen/gesundheits-und-sozialdirektion/sozialhilfe",
+      "legal_basis": {
+        "primary_key": "BL_sh_legal_basis_primary",
+        "additional_sources_key": "BL_sh_legal_basis_additional",
+        "legal_source": "https://bl.clex.ch/app/de/texts_of_law/850"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "region_a": {
+          "1p": 1100,
+          "2p": 1300,
+          "3p": 1500,
+          "4p": 1700,
+          "5p_plus": 1900
+        },
+        "region_b": {
+          "1p": 1000,
+          "2p": 1200,
+          "3p": 1400,
+          "4p": 1600,
+          "5p_plus": 1800
+        },
+        "region_c": {
+          "1p": 900,
+          "2p": 1100,
+          "3p": 1300,
+          "4p": 1500,
+          "5p_plus": 1700
+        }
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2
+      },
+      "asset_consumption": {
+        "divisor_other": 7
+      },
+      "application": {
+        "authority_key": "BL_sh_authority",
+        "office_name_key": "BL_sh_office_name",
+        "url": "https://www.baselland.ch/politik-und-behorden/direktionen/gesundheits-und-sozialdirektion/sozialhilfe/antrag-stellen",
+        "contact": {
+          "address_key": "BL_sh_contact_address",
+          "phone": "+41 61 552 60 05",
+          "email": "sozialamt@bl.ch",
+          "office_hours_key": "BL_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "BL_sozialhilfe_required_documents_list"
+        ]
+      }
+    }
+  }
+}

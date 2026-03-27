@@ -1,0 +1,61 @@
+{
+  "OW": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "OW_el_legal_basis_primary",
+        "additional_sources_key": "OW_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child_addition": 50000,
+        "freibetrag_single": 30000,
+        "freibetrag_couple": 50000,
+        "freibetrag_child": 15000,
+        "note": "Eintrittsschwelle gemäss EL-Reform 2026"
+      },
+      "rent_limits_monthly": {
+        "region_3": {
+          "name_key": "OW_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "BSV Region 3: Kanton Obwalden (Gültig ab 01.01.2026)",
+          "official_source": "Ausgleichskasse Obwalden / BSV 2026"
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380
+        },
+        "note": "Kantonale Durchschnittsprämien OW 2026"
+      },
+      "application": {
+        "authority_key": "OW_el_application_authority",
+        "office_name_key": "OW_el_office_name",
+        "url": "https://www.akow.ch",
+        "contact": {
+          "address_key": "OW_el_contact_address",
+          "phone": "+41 41 666 27 50",
+          "email": "el@akow.ch"
+        },
+        "required_documents_key": "OW_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 3.86,
+        "communal_multiplier": 0.54,
+        "source": "ESTV 2025/2026 (Provisorisch)"
+      },
+      "special_rules": {
+        "neutralize_13th_ahv": true,
+        "earned_income_freibetrag_single": 1300,
+        "earned_income_freibetrag_couple": 1950
+      }
+    }
+  }
+}

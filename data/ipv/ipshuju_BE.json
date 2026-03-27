@@ -1,0 +1,78 @@
+{
+  "BE": {
+    "ipv": {
+      "formula_type": "BE_income_tiered_monthly_subsidy",
+      "legal_basis": {
+        "primary_key": "BE_ipv_legal_basis_primary",
+        "additional_sources_key": "BE_ipv_legal_basis_additional",
+        "legal_source": "https://www.belex.sites.be.ch/app/fr/texts_of_law/842.111.1"
+      },
+      "official_url": "https://www.asv.dij.be.ch/de/start/themen/pv.html",
+      "algorithm_description_key": "BE_ipv_algorithm_description",
+      "income_limits": {
+        "single_max": 35000,
+        "family_max": 45000
+      },
+      "income_subsidy_tiers": [
+        { "lna_max": 9000, "description_key": "BE_ipv_tier_1_desc" },
+        { "lna_max": 17000, "description_key": "BE_ipv_tier_2_desc" },
+        { "lna_max": 25000, "description_key": "BE_ipv_tier_3_desc" },
+        { "lna_max": 35000, "description_key": "BE_ipv_tier_4_desc" },
+        { "lna_max": 45000, "description_key": "BE_ipv_tier_5_desc" }
+      ],
+      "social_deductions": {
+        "per_person_vermogen": 17000,
+        "vermoegen_rate": 0.05,
+        "married": 13000,
+        "single_parent": 9750,
+        "single": 2200,
+        "child_first": 15000,
+        "child_second": 12500,
+        "child_further": 10000,
+        "erwerbsabzug_rate": 0.05,
+        "erwerbsabzug_max": 3000
+      },
+      "monthly_subsidies": {
+        "region_1": {
+          "adult": [235.00, 157.00, 114.00, 71.00, 35.50],
+          "young_edu": [254.75, 0, 0, 0, 0],
+          "child": [127.00, 0, 0, 0, 0]
+        },
+        "region_2": {
+          "adult": [221.00, 147.00, 107.00, 67.00, 33.50],
+          "young_edu": [239.25, 0, 0, 0, 0],
+          "child": [119.30, 0, 0, 0, 0]
+        },
+        "region_3": {
+          "adult": [206.00, 137.00, 100.00, 62.00, 31.00],
+          "young_edu": [223.50, 0, 0, 0, 0],
+          "child": [111.40, 0, 0, 0, 0]
+        }
+      },
+      "formula_explanation": {
+        "steps": [
+          { "order": 1, "variable": "korrigiertes_reineinkommen", "description_key": "BE_ipv_step_1_desc", "formula_key": "BE_ipv_step_1_formula", "intermediate": true },
+          { "order": 2, "variable": "korrigiertes_vermoegen", "description_key": "BE_ipv_step_2_desc", "formula_key": "BE_ipv_step_2_formula", "intermediate": true },
+          { "order": 3, "variable": "massgebendes_einkommen", "description_key": "BE_ipv_step_3_desc", "formula_key": "BE_ipv_step_3_formula", "intermediate": true },
+          { "order": 4, "variable": "einkommensstufe", "description_key": "BE_ipv_step_4_desc", "formula_key": "BE_ipv_step_4_formula", "intermediate": true },
+          { "order": 5, "variable": "monatliche_subvention", "description_key": "BE_ipv_step_5_desc", "formula_key": "BE_ipv_step_5_formula", "intermediate": true },
+          { "order": 6, "variable": "jahresbetrag", "description_key": "BE_ipv_step_6_desc", "formula_key": "BE_ipv_step_6_formula", "intermediate": false }
+        ],
+        "note_key": "BE_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "BE_ipv_application_method",
+        "authority_key": "BE_ipv_application_authority",
+        "office_name_key": "BE_ipv_office_name",
+        "url": "https://www.asv.dij.be.ch/de/start/themen/pv.html",
+        "contact": {
+          "address_key": "BE_ipv_contact_address",
+          "phone": "+41 31 636 45 00",
+          "email": "asv.pvo@be.ch",
+          "office_hours_key": "BE_ipv_office_hours"
+        },
+        "required_documents_key": "BE_ipv_required_documents_list"
+      }
+    }
+  }
+}

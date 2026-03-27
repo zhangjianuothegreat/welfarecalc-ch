@@ -1,0 +1,58 @@
+{
+  "JU": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "JU_el_legal_basis_primary",
+        "additional_sources_key": "JU_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch/eli/cc/2007/804/de"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child_extra": 50000,
+        "freibetrag_note": "Seuil d'entrée 2026: Fortune nette sans immeuble d'habitation propre."
+      },
+      "rent_limits_monthly": {
+        "region_3": {
+          "name_key": "JU_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Region 3 (bas loyers) - Valeurs 2026 selon BSV.",
+          "official_source": "CCAJ / ECAS Jura Directives 2026"
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380
+        },
+        "application_max": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380,
+          "note": "Plafond des primes reconnues pour le Jura (R3) en 2026."
+        }
+      },
+      "application": {
+        "authority_key": "JU_el_application_authority",
+        "office_name_key": "JU_el_office_name",
+        "url": "https://www.ecasjura.ch/fr/Assurances/PC/Prestations-complementaires/Prestations-complementaires.html",
+        "contact": {
+          "address_key": "JU_el_contact_address",
+          "phone": "+41 32 952 11 59",
+          "email": "info@ecasjura.ch"
+        },
+        "required_documents_key": "JU_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 1.60,
+        "communal_multiplier": 1.40,
+        "source": "ESTV Steuerfüsse 2025/2026"
+      }
+    }
+  }
+}

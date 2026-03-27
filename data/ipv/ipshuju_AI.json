@@ -1,0 +1,110 @@
+{
+  "AI": {
+    "ipv": {
+      "formula_type": "AI_variable_percentage_deduction",
+      "legal_basis": {
+        "primary_key": "AI_ipv_legal_basis_primary",
+        "additional_sources_key": "AI_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.ai.ch/themen/gesundheit-alter-und-soziales/individuelle-praemienverbilligung",
+      "source_note": "Alle Daten basierend auf offiziellem Merkblatt IPV 2026 (PDF) und kantonaler Website. Primärquelle: https://www.ai.ch/themen/gesundheit-alter-und-soziales/individuelle-praemienverbilligung/merkblatt-ipv/merkblatt-ipv-2024/@@download/file/Merkblatt%20IPV%202026.pdf  sowie FAQ-Seite.",
+      "algorithm_description_key": "AI_ipv_algorithm_description",
+      "asset_limit_single": null,
+      "asset_limit_couple": null,
+      "ahv_exemption_annual": null,
+      "income_limits": {
+        "enhancement_threshold": 75000,
+        "source_note": "Anhebeschwelle für Mindestgarantie: 75'000 CHF (Merkblatt 2026)"
+      },
+      "income_deduction_factor": {
+        "min": 0.07,
+        "max": 0.12,
+        "step_base": 45000,
+        "step_increment_per_1000": 0.00125,
+        "source_note": "Selbstbehalt: 7% bis 45'000 CHF; 12% ab 85'000 CHF; +0.125% pro 1'000 CHF dazwischen (Merkblatt 2026)"
+      },
+      "ref_premium_annual": {
+        "adult": 4640.00,
+        "young_adult": 3446.00,
+        "child": 1034.00,
+        "source_note": "Richtprämien 2026: Erwachsene 4'640 CHF, Junge Erwachsene 3'446 CHF, Kinder 1'034 CHF (Merkblatt 2026)"
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 100,
+        "source_note": "Mindestgarantie: 80% für Kinder, 50% für Jugend in Ausbildung; Mindestbetrag 100 CHF (Merkblatt 2026)"
+      },
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "AI_ipv_step_1_desc",
+            "formula_key": "AI_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "total_reference_premium",
+            "description_key": "AI_ipv_step_2_desc",
+            "formula_key": "AI_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "deduction_rate",
+            "description_key": "AI_ipv_step_3_desc",
+            "formula_key": "AI_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "income_deduction",
+            "description_key": "AI_ipv_step_4_desc",
+            "formula_key": "AI_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "calculated_subsidy",
+            "description_key": "AI_ipv_step_5_desc",
+            "formula_key": "AI_ipv_step_5_formula",
+            "intermediate": true
+          },
+          {
+            "order": 6,
+            "variable": "enhanced_subsidy",
+            "description_key": "AI_ipv_step_6_desc",
+            "formula_key": "AI_ipv_step_6_formula",
+            "intermediate": true
+          },
+          {
+            "order": 7,
+            "variable": "annual_benefit",
+            "description_key": "AI_ipv_step_7_desc",
+            "formula_key": "AI_ipv_step_7_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "AI_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "AI_ipv_application_method",
+        "authority_key": "AI_ipv_application_authority",
+        "office_name_key": "AI_ipv_office_name",
+        "url": "https://www.ai.ch/themen/gesundheit-alter-und-soziales/individuelle-praemienverbilligung",
+        "contact": {
+          "address_key": "AI_ipv_contact_address",
+          "phone": "+41 71 788 92 50",
+          "email": "info@gsd.ai.ch",
+          "office_hours_key": "AI_ipv_office_hours"
+        },
+        "required_docs_list": [],
+        "deadline": null,
+        "source_note": "Automatische Prüfung; Provisorisch per Gesuch (Merkblatt 2026)"
+      }
+    }
+  }
+}

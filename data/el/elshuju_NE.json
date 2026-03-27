@@ -1,0 +1,61 @@
+{
+  "NE": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "NE_el_legal_basis_primary",
+        "additional_sources_key": "NE_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child_extra": 50000,
+        "freibetrag_note": "Eintrittsschwelle 2026: 100k (Alleinstehende) / 200k (Ehepaare). Vermögensfreibetrag: 30k / 50k."
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "NE_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "Region 2: Neuchâtel Stadt und ausgewählte Gemeinden (mittlere Mieten)"
+        },
+        "region_3": {
+          "name_key": "NE_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000,
+          "note": "Region 3: Übrige NE-Gemeinden (tiefe Mieten)"
+        }
+      },
+      "recognized_premiums_annual": {
+        "region2_medium": {
+          "adult": 6144,
+          "young_adult": 4536,
+          "child": 1464,
+          "note": "Kantonale Richtprämien NE 2026 (Region 2)"
+        },
+        "region3_low": {
+          "adult": 5808,
+          "young_adult": 4344,
+          "child": 1380,
+          "note": "Kantonale Richtprämien NE 2026 (Region 3)"
+        }
+      },
+      "application": {
+        "authority_key": "NE_el_application_authority",
+        "office_name_key": "NE_el_office_name",
+        "url": "https://www.caisseavsne.ch",
+        "contact": {
+          "address_key": "NE_el_contact_address",
+          "phone": "+41 32 910 81 11",
+          "email": "avs-ai@ne.ch"
+        }
+      }
+    }
+  }
+}

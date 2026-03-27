@@ -1,0 +1,25 @@
+{
+  "AR": {
+    "name": "Appenzell Ausserrhoden",
+    "legal_basis": {
+      "primary_key": "AR_fa_legal_basis_primary",
+      "additional_sources_key": "AR_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "AR_fa_office_name",
+      "authority_key": "AR_fa_application_authority"
+    },
+    "application": {
+      "method_key": "AR_fa_application_method",
+      "url": "https://www.sovar.ch",
+      "required_documents_key": "AR_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "AR_fa_contact_address",
+      "phone": "+41 71 354 51 51",
+      "email": "info@sovar.ch"
+    },
+    "notes_key": "AR_fa_special_notes"
+  }
+}

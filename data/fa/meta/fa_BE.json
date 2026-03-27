@@ -1,0 +1,25 @@
+{
+  "BE": {
+    "name": "Bern",
+    "legal_basis": {
+      "primary_key": "BE_fa_legal_basis_primary",
+      "additional_sources_key": "BE_fa_legal_basis_additional",
+      "legal_source": "https://www.belex.sites.be.ch/app/fr/texts_of_law/832.71"
+    },
+    "authority": {
+      "office_name_key": "BE_fa_office_name",
+      "authority_key": "BE_fa_application_authority"
+    },
+    "application": {
+      "method_key": "BE_fa_application_method",
+      "url": "https://www.akbern.ch/de/Versicherungen/FZ/Familienzulagen.html",
+      "required_documents_key": "BE_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "BE_fa_contact_address",
+      "phone": "+41 31 370 91 11",
+      "email": "familienzulagen@akbern.ch"
+    },
+    "notes_key": "BE_fa_special_notes"
+  }
+}

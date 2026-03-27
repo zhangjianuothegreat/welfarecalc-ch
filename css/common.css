@@ -1,0 +1,614 @@
+/* css/main_disabled.css - 残疾人模块专用样式 - 老年人友好版 */
+
+/* 全局基础样式 - 加大字号，居中 */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;  /* 从600px增加到800px，更适合大字体 */
+    margin: 0 auto;
+    padding: 30px 20px;  /* 增加上下内边距 */
+    line-height: 1.8;  /* 增加行高，更易读 */
+    font-size: 18px;  /* 基础字体设为18px，对老年人友好 */
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+/* 容器样式 - 确保外层居中 */
+.container {
+    max-width: 800px;  /* 与 body 一致 */
+    margin: 0 auto;
+    padding: 0 20px;   /* 左右内边距，防止内容贴边 */
+    box-sizing: border-box;
+}
+
+.app-container {
+    max-width: 800px;  /* 与 body 一致 */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 可选：如果想定义 full-screen（但建议移除 JS 中的添加），可以加这个，但会取消居中
+.full-screen {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+} */
+
+/* 标题样式 - 更大更醒目 */
+h1, h2, h3 {
+    text-align: center;  /* 所有标题居中 */
+}
+
+h2 {
+    color: #333;
+    border-bottom: 3px solid #007bff;  /* 加粗底部边框 */
+    padding-bottom: 15px;
+    font-size: 28px;  /* 大标题 */
+    margin: 30px 0 25px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #495057;
+    margin: 25px 0 20px;
+}
+
+/* 表单标签样式 - 更大更清晰 */
+label, .form-label, .form-label-highlight {
+    display: block;
+    margin: 20px 0 8px;
+    font-weight: bold;
+    color: #333;  /* 加深颜色 */
+    font-size: 20px;  /* 标签字体增大 */
+}
+
+/* 提示文本样式 */
+.hint {
+    font-size: 16px;  /* 提示文字稍小但依然清晰 */
+    color: #666;
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+/* 输入框和下拉框样式 - 更大更容易点击 */
+input, select, .form-input, .form-select {
+    width: 100%;
+    padding: 15px;  /* 从10px增加到15px */
+    margin: 8px 0 20px;  /* 增加上下间距 */
+    border: 2px solid #ccc;  /* 加粗边框 */
+    border-radius: 8px;  /* 稍大的圆角 */
+    box-sizing: border-box;
+    font-size: 18px;  /* 输入文字增大 */
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+input:focus, select:focus, .form-input:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.25);
+    outline: none;
+}
+
+/* 按钮组样式 - 居中 */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;  /* 按钮组居中 */
+    flex-wrap: wrap;  /* 手机版自动换行 */
+}
+
+/* 通用按钮样式 - 更大更容易点击 */
+button, .btn-primary, .btn-secondary, .submit-btn {
+    padding: 16px 30px;  /* 增大按钮 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;  /* 按钮文字增大 */
+    font-weight: bold;
+    flex: 0 1 auto;  /* 按钮不强制拉伸 */
+    min-width: 200px;  /* 最小宽度，保证可点击区域 */
+    transition: all 0.2s ease;
+}
+
+/* 主按钮样式 */
+.btn-primary, .submit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover, .submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);  /* 悬停效果 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 次要按钮样式 */
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #545b62;
+    transform: translateY(-2px);  /* 悬停效果 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 用户输入容器样式 - 居中 */
+.user-inputs-container {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 auto 30px;  /* 上下外边距，左右自动居中 */
+    max-width: 700px;  /* 限制最大宽度 */
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+.user-inputs-container h3 {
+    margin-top: 0;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 15px;
+    text-align: center;  /* 标题居中 */
+}
+
+/* 输入项表格样式 */
+.inputs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;  /* 表格居中 */
+}
+
+.inputs-table td {
+    padding: 12px 0;  /* 增加单元格内边距 */
+    border-bottom: 1px solid #e9ecef;
+    font-size: 18px;  /* 表格文字增大 */
+}
+
+.inputs-table td:first-child {
+    font-weight: bold;
+    width: 45%;  /* 稍微调整宽度 */
+    color: #495057;
+}
+
+.inputs-table td:last-child {
+    text-align: right;  /* 数值右对齐 */
+}
+
+/* 结果金额展示样式 */
+.result-amounts {
+    font-size: 1.3em;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #e8f5e8;
+    border-radius: 8px;
+    border-left: 6px solid #28a745;
+    text-align: center;  /* 金额居中 */
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+.result-amounts b {
+    color: #28a745;
+    font-size: 1.5em;
+}
+
+/* 公式容器样式 */
+.formula-container {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 25px auto;  /* 上下外边距，左右自动居中 */
+    font-family: monospace;
+    white-space: pre-wrap;
+    max-width: 700px;  /* 限制最大宽度 */
+    font-size: 16px;  /* 公式文字稍小但依然清晰 */
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+.formula-container .step {
+    margin: 15px 0;
+    padding: 12px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;  /* 标签和值左右分开 */
+    align-items: center;
+}
+
+.formula-container .label {
+    color: #495057;
+    font-size: 16px;
+}
+
+.formula-container .val {
+    color: #28a745;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.formula-container .note {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 5px;
+    color: #856404;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* 分隔线样式 */
+hr {
+    margin: 30px auto;
+    border: none;
+    border-top: 3px dashed #dee2e6;
+    width: 80%;  /* 分隔线宽度80%，居中 */
+    display: block; /* 新增：确保分隔线作为块级元素居中 */
+}
+
+/* 按钮禁用样式 */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* 警告框样式 */
+.warning-box {
+    display: none;
+    color: #721c24;
+    background: #f8d7da;
+    padding: 15px;
+    border: 2px solid #f5c6cb;
+    border-radius: 8px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+.warning-box strong {
+    color: #721c24;
+    font-size: 20px;
+}
+
+/* 禁用字段样式 */
+input:disabled, select:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* FA区域特殊样式 */
+#fa-extra-fields {
+    background-color: #f0f8ff !important;
+    border: 3px solid #b8daff !important;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    box-sizing: border-box !important; /* 新增：确保padding不影响宽度计算 */
+}
+
+#fa-result-container .result-amounts {
+    background-color: #e7f3ff;
+    border-left-color: #007bff;
+}
+
+#fa-result-container .result-amounts b {
+    color: #007bff;
+}
+
+/* 一次性标识样式 */
+.onetime-badge {
+    display: inline-block;
+    background: #17a2b8;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+/* 折叠面板样式 */
+.benefit-details {
+    margin: 30px auto;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    max-width: 750px;
+}
+
+.benefit-summary {
+    padding: 20px 25px;
+    background: #f8f9fa;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+.benefit-summary:hover {
+    background: #e9ecef;
+}
+
+.benefit-total {
+    font-size: 18px;
+    color: #28a745;
+}
+
+.benefit-details[open] .benefit-summary {
+    background: #e8f5e8;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.benefit-details-content {
+    padding: 25px;
+}
+
+/* 醒目免责声明样式 */
+.disclaimer-box {
+    background-color: #fff3cd;
+    border: 3px solid #ffeeba;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 0 auto 25px;
+    color: #856404;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 700px;
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+.disclaimer-box strong {
+    color: #c47f00;
+    font-size: 22px;
+}
+
+/* 可点击提示样式 */
+.toggle-hint {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: normal;
+    margin-left: 15px;
+    opacity: 0.9;
+}
+
+/* EL区域样式 */
+#el-extra-fields {
+    background-color: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+/* SH额外字段区域样式 */
+#sh-extra-fields {
+    margin: 25px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    max-width: 700px;
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+/* IPV/EL只读输入框样式 */
+input[readonly] {
+    background-color: #f0f8ff;
+    border-color: #28a745;
+    font-weight: bold;
+}
+
+/* 单选框组样式 - 水平排列，加大间距 */
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 15px 0;
+    justify-content: center; /* 修改：从flex-start改为center，让单选框组居中 */
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* 模式提示框 */
+.mode-notice {
+    background-color: #e8f5e8;
+    border-left: 6px solid #28a745;
+    padding: 18px 20px;
+    margin: 0 auto 25px;
+    border-radius: 8px;
+    color: #2e7d32;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+.mode-notice strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+/* 表单标题 */
+.form-title {
+    color: #333;
+    font-size: 28px;
+    margin: 0 auto 25px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 15px;
+    text-align: center;
+    max-width: 700px;
+    box-sizing: border-box; /* 新增：确保padding不影响宽度计算 */
+}
+
+/* 章节副标题 */
+.section-subtitle {
+    color: #495057;
+    font-size: 22px;
+    margin: 20px 0 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dee2e6;
+    text-align: center;
+}
+
+/* ===== 响应式设计：手机版适配 ===== */
+@media (max-width: 768px) {
+    body {
+        padding: 15px 12px;
+        font-size: 16px;  /* 手机版字号稍减，但仍比默认大 */
+    }
+    
+    h2 {
+        font-size: 24px;
+        padding-bottom: 12px;
+        margin: 20px 0;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    label, .form-label, .form-label-highlight {
+        font-size: 18px;
+    }
+    
+    input, select, .form-input, .form-select {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    button, .btn-primary, .btn-secondary, .submit-btn {
+        padding: 14px 20px;
+        font-size: 18px;
+        min-width: 150px;
+    }
+    
+    .button-group {
+        flex-direction: column;  /* 手机版按钮竖排 */
+        align-items: stretch;
+    }
+    
+    .button-group button {
+        width: 100%;
+    }
+    
+    .user-inputs-container,
+    .formula-container,
+    .warning-box,
+    .disclaimer-box,
+    #fa-extra-fields,
+    #el-extra-fields,
+    #sh-extra-fields,
+    .mode-notice {
+        max-width: 100%;
+        padding: 15px;
+    }
+    
+    .benefit-details {
+        max-width: 100%;
+    }
+    
+    .benefit-summary {
+        padding: 15px;
+        font-size: 18px;
+        flex-direction: column;  /* 手机版标题和金额上下排列 */
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .benefit-total {
+        font-size: 16px;
+    }
+    
+    .radio-group {
+        gap: 15px;
+        flex-direction: column;  /* 手机版单选框竖排 */
+        align-items: center; /* 新增：手机版单选框组居中 */
+    }
+    
+    .radio-group label {
+        font-size: 16px;
+    }
+    
+    .inputs-table td {
+        font-size: 16px;
+    }
+    
+    .inputs-table td:first-child {
+        width: 35%;
+    }
+    
+    .formula-container .step {
+        flex-direction: column;  /* 手机版公式标签和值上下排列 */
+        align-items: flex-start;
+        gap: 5px;
+    }
+    
+    .formula-container .val {
+        align-self: flex-end;
+    }
+}
+
+/* ===== 超小屏幕适配 ===== */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        font-size: 15px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    button, .btn-primary, .btn-secondary, .submit-btn {
+        font-size: 16px;
+        padding: 12px 15px;
+        min-width: 120px;
+    }
+    
+    .inputs-table td {
+        display: block;  /* 超小屏幕表格变块级 */
+        width: 100%;
+        text-align: left;
+        padding: 8px 0;
+    }
+    
+    .inputs-table td:first-child {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    
+    .inputs-table td:last-child {
+        text-align: left;
+        padding-top: 0;
+    }
+}

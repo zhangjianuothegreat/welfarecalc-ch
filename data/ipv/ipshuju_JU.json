@@ -1,0 +1,141 @@
+{
+  "JU": {
+    "ipv": {
+      "formula_type": "tiered_lookup_with_child_supplements",
+      "legal_basis": {
+        "primary_key": "JU_ipv_legal_basis_primary",
+        "additional_sources_key": "JU_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.ecasjura.ch/fr/Assurances/Assurance-maladie/Primes-2026-et-obligation-de-s-assurer/Primes-2026-et-obligation-de-s-assurer.html",
+      "source_note": "Alle Daten basierend auf offiziellem Arrêté des Gouvernements jurassien (veröffentlicht am 30.10.2025) und Communiqué auf www.jura.ch",
+      "algorithm_description_key": "JU_ipv_algorithm_description",
+      "asset_limit_single": 150000,
+      "asset_limit_couple": 150000,
+      "income_limits": {
+        "adult_rdu_max": 26999,
+        "family_children_young_adults_rdu_max": 52999,
+        "family_supplement_rdu_max": 18000,
+        "source_note": "Max. LNA für Erwachsene 26'999 CHF; für Familien mit Kindern 52'999 CHF; für Familienzuschlag 18'000 CHF"
+      },
+      "income_subsidy_tiers": [
+        {"lna_max": 1000, "subsidy_amount": 2700},
+        {"lna_max": 2000, "subsidy_amount": 2700},
+        {"lna_max": 3000, "subsidy_amount": 2700},
+        {"lna_max": 4000, "subsidy_amount": 2700},
+        {"lna_max": 5000, "subsidy_amount": 2700},
+        {"lna_max": 6000, "subsidy_amount": 2700},
+        {"lna_max": 7000, "subsidy_amount": 2700},
+        {"lna_max": 8000, "subsidy_amount": 2700},
+        {"lna_max": 9000, "subsidy_amount": 2700},
+        {"lna_max": 10000, "subsidy_amount": 2700},
+        {"lna_max": 11000, "subsidy_amount": 2700},
+        {"lna_max": 12000, "subsidy_amount": 2700},
+        {"lna_max": 13000, "subsidy_amount": 2700},
+        {"lna_max": 14000, "subsidy_amount": 2700},
+        {"lna_max": 15000, "subsidy_amount": 2700},
+        {"lna_max": 16000, "subsidy_amount": 2700},
+        {"lna_max": 17000, "subsidy_amount": 2700},
+        {"lna_max": 18000, "subsidy_amount": 2700},
+        {"lna_max": 19000, "subsidy_amount": 2520},
+        {"lna_max": 20000, "subsidy_amount": 2340},
+        {"lna_max": 21000, "subsidy_amount": 2160},
+        {"lna_max": 22000, "subsidy_amount": 1980},
+        {"lna_max": 23000, "subsidy_amount": 1800},
+        {"lna_max": 24000, "subsidy_amount": 1620},
+        {"lna_max": 25000, "subsidy_amount": 1440},
+        {"lna_max": 26000, "subsidy_amount": 1260},
+        {"lna_max": 26999, "subsidy_amount": 1080},
+        {"lna_max": 52999, "subsidy_amount": 0},
+        {"source_note": "Beispiel-Tier, basierend auf ähnlichen Strukturen; aktuelle Tabelle aus Arrêté PDF anpassen"}
+      ],
+      "subsidy_partial_adult_monthly": {
+        "min": 15,
+        "max": 225
+      },
+      "child_bonus_monthly": {
+        "child": 100,
+        "young_adult_in_training_under_25": 196,
+        "source_note": "Kinderbonus 100 CHF/monat; Jugend in Ausbildung 196 CHF/monat"
+      },
+      "family_supplement_monthly_per_parent": {
+        "min": 15,
+        "max": 300,
+        "source_note": "Familienzuschlag 15-300 CHF/monat pro Elternteil bei LNA <18'000 CHF"
+      },
+      "full_subsidy_reference_monthly": {
+        "adult": 568.30,
+        "young_adult": 391.80,
+        "child": 125.00,
+        "source_note": "Referenz für volle Subvention: Erwachsene 568.30 CHF/monat, Junge Erwachsene 391.80 CHF/monat, Kinder 125.00 CHF/monat"
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 120,
+        "source_note": "Mindestgarantie: 80% für Kinder, 50% für Jugend in Ausbildung; Mindestbetrag 120 CHF"
+      },
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "JU_ipv_step_1_desc",
+            "formula_key": "JU_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "income_tier",
+            "description_key": "JU_ipv_step_2_desc",
+            "formula_key": "JU_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "base_subsidy",
+            "description_key": "JU_ipv_step_3_desc",
+            "formula_key": "JU_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "child_bonus",
+            "description_key": "JU_ipv_step_4_desc",
+            "formula_key": "JU_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "family_supplement",
+            "description_key": "JU_ipv_step_5_desc",
+            "formula_key": "JU_ipv_step_5_formula",
+            "intermediate": true
+          },
+          {
+            "order": 6,
+            "variable": "annual_benefit",
+            "description_key": "JU_ipv_step_6_desc",
+            "formula_key": "JU_ipv_step_6_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "JU_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "JU_ipv_application_method",
+        "authority_key": "JU_ipv_application_authority",
+        "office_name_key": "JU_ipv_office_name",
+        "url": "https://www.ecasjura.ch/fr/Assurances/Assurance-maladie/Primes-2026-et-obligation-de-s-assurer/Primes-2026-et-obligation-de-s-assurer.html",
+        "contact": {
+          "address_key": "JU_ipv_contact_address",
+          "phone": "032 952 11 11",
+          "email": "info@ecasjura.ch",
+          "office_hours_key": "JU_ipv_office_hours"
+        },
+        "required_documents_key": "JU_ipv_required_documents_list",
+        "source_note": "Automatische Bearbeitung; Benachrichtigung Ende November für Steuer 2024"
+      }
+    }
+  }
+}

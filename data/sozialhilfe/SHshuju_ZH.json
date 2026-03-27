@@ -1,0 +1,78 @@
+{
+  "ZH": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_zh_2026",
+      "official_url": "https://www.zh.ch/de/soziales/sozialhilfe.html",
+      "legal_basis": {
+        "primary_key": "ZH_sh_legal_basis_primary",
+        "additional_sources_key": "ZH_sh_legal_basis_additional",
+        "legal_source": "https://www.zh.ch/de/politik-staat/gesetze-beschluesse/gesetzessammlung/zhlex-ls/erlass-851_1-1981_06_14-1982_01_01-109.html"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "region_a": {
+          "1p": 1400,
+          "2p": 1700,
+          "3p": 2000,
+          "4p": 2300,
+          "5p_plus": 2600
+        },
+        "region_b": {
+          "1p": 1300,
+          "2p": 1600,
+          "3p": 1900,
+          "4p": 2200,
+          "5p_plus": 2500
+        },
+        "region_c": {
+          "1p": 1200,
+          "2p": 1500,
+          "3p": 1800,
+          "4p": 2100,
+          "5p_plus": 2400
+        }
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "application": {
+        "authority_key": "ZH_sh_authority",
+        "office_name_key": "ZH_sh_office_name",
+        "url": "https://www.zh.ch/de/soziales/sozialhilfe.html",
+        "contact": {
+          "address_key": "ZH_sh_contact_address",
+          "phone": "+41 43 259 24 38",
+          "email": "sozialamt@sa.zh.ch",
+          "office_hours_key": "ZH_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

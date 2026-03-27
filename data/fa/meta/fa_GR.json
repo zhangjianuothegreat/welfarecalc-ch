@@ -1,0 +1,25 @@
+{
+  "GR": {
+    "name": "Graubünden",
+    "legal_basis": {
+      "primary_key": "GR_fa_legal_basis_primary",
+      "additional_sources_key": "GR_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "GR_fa_office_name",
+      "authority_key": "GR_fa_application_authority"
+    },
+    "application": {
+      "method_key": "GR_fa_application_method",
+      "url": "https://www.sva.gr.ch/kantonale-familienzulagen.html",
+      "required_documents_key": "GR_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "GR_fa_contact_address",
+      "phone": "+41 81 257 41 11",
+      "email": "fak@sva.gr.ch"
+    },
+    "notes_key": "GR_fa_special_notes"
+  }
+}

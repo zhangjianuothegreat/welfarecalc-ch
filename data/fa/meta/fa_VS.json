@@ -1,0 +1,25 @@
+{
+  "VS": {
+    "name": "Wallis",
+    "legal_basis": {
+      "primary_key": "VS_fa_legal_basis_primary",
+      "additional_sources_key": "VS_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "VS_fa_office_name",
+      "authority_key": "VS_fa_application_authority"
+    },
+    "application": {
+      "method_key": "VS_fa_application_method",
+      "url": "https://www.civafvs.ch/",
+      "required_documents_key": "VS_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "VS_fa_contact_address",
+      "phone": "+41 27 324 41 11",
+      "email": "famille@ccvs.ch"
+    },
+    "notes_key": "VS_fa_special_notes"
+  }
+}

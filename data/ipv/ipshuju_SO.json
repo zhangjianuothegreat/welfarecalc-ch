@@ -1,0 +1,40 @@
+{
+  "SO": {
+    "ipv": {
+      "formula_type": "retained_income_progressive",
+      "legal_basis": {
+        "primary_key": "SO_ipv_legal_basis_primary",
+        "additional_sources_key": "SO_ipv_legal_basis_additional",
+        "legal_source": "https://bgs.so.ch/app/de/texts_of_law/831.1"
+      },
+      "official_url": "https://www.akso.ch/dienstleistungen/praemienverbilligung-ipv",
+      "asset_conversion_rate": 0.05,
+      "income_deduction_rate_min": 0.09,
+      "income_deduction_rate_max": 0.15,
+      "base_deduction_single": 12000,
+      "base_deduction_couple": 18000,
+      "child_deduction": 6000,
+      "ref_premium_annual": {
+        "adult": 6180,
+        "young_adult": 4308,
+        "child": 1440
+      },
+      "min_subsidy_chf": 100,
+      "minimum_reduction_children": 0.80,
+      "minimum_reduction_young_adults": 0.50,
+      "application": {
+        "method_key": "SO_ipv_application_method",
+        "authority_key": "SO_ipv_application_authority",
+        "office_name_key": "SO_ipv_office_name",
+        "url": "https://www.akso.ch/dienstleistungen/praemienverbilligung-ipv",
+        "digital_portal": "https://portal.akso.ch/ipv",
+        "contact": {
+          "address_key": "SO_ipv_contact_address",
+          "phone": "+41 32 686 22 00",
+          "email": "info@akso.ch"
+        },
+        "required_documents_key": "SO_ipv_required_documents_list"
+      }
+    }
+  }
+}

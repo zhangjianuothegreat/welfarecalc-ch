@@ -1,0 +1,42 @@
+{
+  "federal": {
+    "note_key": "nothilfe_note_2026",
+    "legal_basis": {
+        "primary_key": "nothilfe_legal_basis_primary",
+        "legal_source": "https://www.fedlex.admin.ch/eli/cc/1999/358/de"
+    },
+    "single_base": 9.00,
+    "couple_factor": 1.70,
+    "child_addon_factor": 0.55,
+    "child_from3_bonus_factor": 0.10
+  },
+  "states": {
+    "AG": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.52 },
+    "AI": { "daily_cash": 9.00, "housing_type": "collective", "couple_factor": 1.70, "child_addon_factor": 0.55 },
+    "AR": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.65, "child_addon_factor": 0.50 },
+    "BE": { "daily_cash": 9.00, "housing_type": "mixed",     "couple_factor": 1.72, "child_addon_factor": 0.55 },
+    "BL": { "daily_cash": 10.00,"housing_type": "collective", "couple_factor": 1.75, "child_addon_factor": 0.57 },
+    "BS": { "daily_cash": 11.00,"housing_type": "individual", "couple_factor": 1.80, "child_addon_factor": 0.60 },
+    "FR": { "daily_cash": 8.50, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.53 },
+    "GE": { "daily_cash": 10.00,"housing_type": "individual", "couple_factor": 1.78, "child_addon_factor": 0.60 },
+    "GL": { "daily_cash": 9.00, "housing_type": "collective", "couple_factor": 1.70, "child_addon_factor": 0.55 },
+    "GR": { "daily_cash": 9.00, "housing_type": "collective", "couple_factor": 1.65, "child_addon_factor": 0.52 },
+    "JU": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.65, "child_addon_factor": 0.50 },
+    "LU": { "daily_cash": 12.80,"housing_type": "mixed",     "couple_factor": 1.75, "child_addon_factor": 0.58, "child_from3_bonus_factor": 0.15 },
+    "NE": { "daily_cash": 10.00,"housing_type": "mixed",     "couple_factor": 1.72, "child_addon_factor": 0.56 },
+    "NW": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.52 },
+    "OW": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.52 },
+    "SG": { "daily_cash": 10.00,"housing_type": "collective", "couple_factor": 1.72, "child_addon_factor": 0.55 },
+    "SH": { "daily_cash": 9.00, "housing_type": "collective", "couple_factor": 1.70, "child_addon_factor": 0.55 },
+    "SO": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.52 },
+    "SZ": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.52 },
+    "TG": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.68, "child_addon_factor": 0.52 },
+    "TI": { "daily_cash": 10.00,"housing_type": "mixed",     "couple_factor": 1.75, "child_addon_factor": 0.57 },
+    "UR": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.65, "child_addon_factor": 0.50 },
+    "VD": { "daily_cash": 10.00,"housing_type": "mixed",     "couple_factor": 1.78, "child_addon_factor": 0.58 },
+    "VS": { "daily_cash": 9.25, "housing_type": "collective", "couple_factor": 1.70, "child_addon_factor": 0.54 },
+    "ZG": { "daily_cash": 8.00, "housing_type": "collective", "couple_factor": 1.70, "child_addon_factor": 0.55 },
+    "ZH": { "daily_cash": 10.25,"housing_type": "mixed",     "couple_factor": 1.82, "child_addon_factor": 0.62, "child_from3_bonus_factor": 0.12 },
+    "default": { "daily_cash": 9.00, "housing_type": "collective", "couple_factor": 1.70, "child_addon_factor": 0.55 }
+  }
+}

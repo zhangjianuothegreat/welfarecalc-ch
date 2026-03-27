@@ -1,0 +1,25 @@
+{
+  "FR": {
+    "name": "Fribourg",
+    "legal_basis": {
+      "primary_key": "FR_fa_legal_basis_primary",
+      "additional_sources_key": "FR_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch/eli/cc/2008/51/de"
+    },
+    "authority": {
+      "office_name_key": "FR_fa_office_name",
+      "authority_key": "FR_fa_application_authority"
+    },
+    "application": {
+      "method_key": "FR_fa_application_method",
+      "url": "https://www.ecasfr.ch",
+      "required_documents_key": "FR_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "FR_fa_contact_address",
+      "phone": "+41 26 305 45 00",
+      "email": "af.af@ecasfr.ch"
+    },
+    "notes_key": "FR_fa_special_notes"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "ZH": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "ZH_el_legal_basis_primary",
+        "additional_sources_key": "ZH_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "freibetrag_note": "Freibetrag: 30'000/50'000 CHF"
+      },
+      "rent_limits_monthly": {
+        "region_1": {
+          "name_key": "ZH_el_region_1_name",
+          "1_person": 1575,
+          "2_persons": 1860,
+          "3_persons": 2065,
+          "4_persons": 2255,
+          "5_plus_persons": 2455
+        },
+        "region_2": {
+          "name_key": "ZH_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160
+        },
+        "region_3": {
+          "name_key": "ZH_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000
+        },
+        "region_4": {
+          "name_key": "ZH_el_region_4_name",
+          "1_person": 1260,
+          "2_persons": 1510,
+          "3_persons": 1760,
+          "4_persons": 1910,
+          "5_plus_persons": 1910
+        }
+      },
+      "recognized_premiums_annual": {
+        "region1_high": {
+          "adult": 7704,
+          "young_adult": 5532,
+          "child": 1854
+        },
+        "region2_medium": {
+          "adult": 7020,
+          "young_adult": 5040,
+          "child": 1686
+        },
+        "region3_low": {
+          "adult": 6540,
+          "young_adult": 4692,
+          "child": 1566
+        }
+      },
+      "application": {
+        "authority_key": "ZH_el_application_authority",
+        "office_name_key": "ZH_el_office_name",
+        "url": "https://svazurich.ch/",
+        "contact": {
+          "address_key": "ZH_el_contact_address",
+          "phone": "+41 44 448 89 50",
+          "email": "info@svazurich.ch"
+        },
+        "required_documents_key": "ZH_el_required_documents_list"
+      }
+    }
+  }
+}

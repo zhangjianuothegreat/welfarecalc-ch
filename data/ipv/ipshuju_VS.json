@@ -1,0 +1,90 @@
+{
+    "VS": {
+        "ipv": {
+            "formula_type": "VS_percentage_table",
+            "legal_basis": {
+               "primary_key": "VS_ipv_legal_basis_primary",
+               "additional_sources_key": "VS_ipv_legal_basis_additional",
+               "legal_source": "https://www.fedlex.admin.ch"
+            },
+            "official_url": "https://www.ahvwallis.ch",
+            "asset_limit_absolute": 1000000,
+            "asset_consumption_rate": 0.05,
+            "ref_premiums_monthly": {
+                "1": {
+                    "adult": 582,
+                    "young": 416,
+                    "child": 137
+                },
+                "2": {
+                    "adult": 502,
+                    "young": 374,
+                    "child": 114
+                },
+                "3": {
+                    "adult": 452,
+                    "young": 337,
+                    "child": 103
+                }
+            },
+            "ref_premiums_annual": {
+                "1": {
+                    "adult": 6984,
+                    "young": 4992,
+                    "child": 1644
+                },
+                "2": {
+                    "adult": 6024,
+                    "young": 4488,
+                    "child": 1368
+                },
+                "3": {
+                    "adult": 5424,
+                    "young": 4044,
+                    "child": 1236
+                }
+            },
+            "child_fixed_rate": 0.80,
+            "income_thresholds": {
+                "single": {
+                    "70": 21000,
+                    "50": 23917,
+                    "40": 26833,
+                    "30": 29750,
+                    "20": 32667,
+                    "10": 35583,
+                    "5": 38500
+                },
+                "married": {
+                    "70": 36750,
+                    "50": 41854,
+                    "40": 46958,
+                    "30": 52063,
+                    "20": 57167,
+                    "10": 62271,
+                    "5": 67375
+                },
+                "child_increments": [
+                    12000,
+                    10000,
+                    8000,
+                    6000
+                ]
+            },
+            "application": {
+                "method_key": "VS_ipv_application_method",
+                "authority_key": "VS_ipv_application_authority",
+                "office_name_key": "VS_ipv_office_name",
+                "url": "https://www.ahvwallis.ch/",
+                "digital_portal": "https://www.ccvs.ch/fr/espace-client",
+                "contact": {
+                    "address_key": "VS_ipv_contact_address",
+                    "phone": "+41 27 324 41 11",
+                    "email": "ipv-rip@ccvs.ch",
+                    "office_hours_key": "VS_ipv_office_hours"
+                },
+                "required_documents_key": "VS_ipv_required_documents_list"
+            }
+        }
+    }
+}

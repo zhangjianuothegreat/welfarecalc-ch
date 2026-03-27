@@ -1,0 +1,25 @@
+{
+  "SH": {
+    "name": "Schaffhausen",
+    "legal_basis": {
+      "primary_key": "SH_fa_legal_basis_primary",
+      "additional_sources_key": "SH_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "SH_fa_office_name",
+      "authority_key": "SH_fa_application_authority"
+    },
+    "application": {
+      "method_key": "SH_fa_application_method",
+      "url": "https://www.svash.ch/familienzulagen",
+      "required_documents_key": "SH_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "SH_fa_contact_address",
+      "phone": "+41 52 632 61 11",
+      "email": "https://www.svash.ch/kontakt"
+    },
+    "notes_key": "SH_fa_special_notes"
+  }
+}

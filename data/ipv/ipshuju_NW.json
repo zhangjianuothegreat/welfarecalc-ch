@@ -1,0 +1,50 @@
+{
+  "NW": {
+    "ipv": {
+      "formula_type": "income_percentage",
+      "legal_basis": {
+        "primary_key": "NW_ipv_legal_basis_primary",
+        "additional_sources_key": "NW_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.aknw.ch/dienstleistungen/praemienverbilligung-ipv",
+      "algorithm_description_key": "NW_ipv_algorithm_description",
+      "asset_limit_single": 250000,
+      "asset_limit_couple": 350000,
+      "income_deduction_factor": 0.10,
+      "max_subsidy_rate": 0.6,
+      "exemption": {
+        "per_child": 5000
+      },
+      "income_limits": {
+        "single": 50000,
+        "couple": 65000,
+        "per_child": 5000,
+        "max_family": 100000
+      },
+      "ref_premium_annual": {
+        "adult": 5100, 
+        "young_adult": 3576,
+        "child": 1212
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 100
+      },
+      "application": {
+        "method_key": "NW_ipv_application_method",
+        "authority_key": "NW_ipv_application_authority",
+        "office_name_key": "NW_ipv_office_name",
+        "url": "https://www.aknw.ch/dienstleistungen/praemienverbilligung-ipv",
+        "digital_portal": "https://portal.aknw.ch",
+        "contact": {
+          "address_key": "NW_ipv_contact_address",
+          "phone": "+41 41 618 51 00",
+          "email": "info@aknw.ch"
+        },
+        "required_documents_key": "NW_ipv_required_documents_list"
+      }
+    }
+  }
+}

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WelfareCalc.ch | Sozialleistungen Schweiz kostenlos berechnen – AHV, IV, EL</title>
+  <meta name="description" content="Berechnen Sie Ihre Schweizer Sozialleistungen (AHV, IV, Ergänzungsleistungen) kostenlos und anonym. Der All-in-One Rechner für 6 Zielgruppen in 6 Sprachen.">
+
+  <!-- Canonical Tag: verhindert Duplicate Content durch URL-Parameter -->
+  <link rel="canonical" href="https://welfarecalc.ch/de.html" />
+
+  <!-- Hreflang Tags für mehrsprachige SEO (Google Sprachalternativen) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/de.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/en.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/fr.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/it.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/es.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/pt.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/pl.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/sq.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/hr.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/tr.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/ta.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/index.html" />
+
+  <!-- FAQ Schema (Strukturierte Daten für Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Welche Sozialleistungen werden im Rechner berücksichtigt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unser Rechner berücksichtigt AHV, IV, Ergänzungsleistungen, Arbeitslosenentschädigung, Stipendien, Prämienverbilligung und weitere kantonale Sozialhilfen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die Nutzung des Rechners kostenlos und anonym?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, der Rechner ist vollständig kostenlos und erfordert keine Anmeldung. Es werden keine personenbezogenen Daten gespeichert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Für wen ist der Sozialleistungs-Rechner geeignet?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Rechner ist für Einzelpersonen, Familien, Arbeitslose, Studierende, Rentner, Menschen mit niedrigem Einkommen, Menschen mit Behinderung, Schutzsuchende und Schwangere geeignet."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Bunny Fonts: Playfair Display + Lato (欧洲服务器，revDSG 合规) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <!-- 关键修复：引入通用CSS文件（与英语/西班牙语/意大利语版完全相同） -->
+  <link rel="stylesheet" href="css/common.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+    .crowd-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .crowd-btn {
+      background: white;
+      border: 1px solid #e0e8f0;
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0050a4;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.4;
+      background-color: #ffffff;
+    }
+    .crowd-btn:active {
+      transform: scale(0.98);
+      background: #f8f9fa;
+      border-color: #0050a4;
+    }
+    @media (hover: hover) {
+      .crowd-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 80, 164, 0.12);
+        border-color: #0050a4;
+      }
+    }
+    .app-container {
+      margin-top: 1.8rem;
+      min-height: 400px;
+      width: 100%;
+    }
+    /* SEO-Blog-Bereich unterhalb der Crowd-Buttons – dezent, wird bei Rechnerstart ausgeblendet */
+    .blog-seo-links {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1rem 1.5rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #e8edf2;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: opacity 0.2s ease;
+    }
+    .blog-seo-links.hide-seo-links {
+      display: none;
+    }
+    .blog-seo-links .seo-headline {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #5f7f9e;
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .blog-seo-links .seo-headline span {
+      font-size: 1rem;
+    }
+    .blog-seo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .blog-seo-grid a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #2c5a8c;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #cddfe7;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .blog-seo-grid a:hover {
+      color: #003366;
+      border-bottom-color: #0050a4;
+    }
+    .blog-seo-more {
+      font-size: 0.85rem;
+      margin-left: 0.2rem;
+      font-weight: 600;
+      background: #f0f4fa;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+      white-space: nowrap;
+    }
+    @media (max-width: 680px) {
+      .blog-seo-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .blog-seo-grid a {
+        white-space: normal;
+        word-break: break-word;
+      }
+      .blog-seo-more {
+        display: inline-block;
+        margin-top: 0.2rem;
+      }
+      .blog-seo-links {
+        padding: 0.9rem 1rem;
+      }
+    }
+    .seo-static-content {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      border: 1px solid #e0e8f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .seo-static-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+    }
+    .seo-static-content h2 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+    .seo-static-content p {
+      line-height: 1.6;
+      color: #4a5568;
+      margin-bottom: 0.5rem;
+    }
+    .seo-static-content ul {
+      margin: 1rem 0 0 1.5rem;
+      color: #4a5568;
+    }
+    .seo-static-content li {
+      margin: 0.5rem 0;
+    }
+    /* 保留原有博客区域，但也随算法隐藏 */
+    .blog-section {
+      background: #f0f4fa;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 1rem 0 1.5rem;
+      border-left: 4px solid #0050a4;
+    }
+    .hide-on-calc {
+      transition: opacity 0.2s;
+    }
+    .hide-on-calc.hidden-by-calc {
+      display: none;
+    }
+    .loading-placeholder {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: 'Lato', sans-serif;
+      color: #5a6e7c;
+      font-size: 1rem;
+    }
+    .loading-placeholder::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      border: 3px solid #e0e8f0;
+      border-top-color: #0050a4;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      vertical-align: middle;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+    .crowd-instruction {
+      text-align: center;
+      margin: 2rem 0 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #0050a4;
+      line-height: 1.3;
+    }
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .crowd-btn {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        min-height: 120px;
+      }
+      .crowd-grid {
+        gap: 1.5rem;
+      }
+      .crowd-instruction {
+        font-size: 1.6rem;
+      }
+      .seo-static-content h1 {
+        font-size: 2.2rem;
+      }
+      .seo-static-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .crowd-btn {
+        font-size: 0.95rem;
+        padding: 1rem;
+        min-height: 85px;
+      }
+      .crowd-grid {
+        gap: 0.8rem;
+      }
+      .crowd-instruction {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 1rem;
+      }
+      .seo-static-content {
+        padding: 1rem;
+      }
+      .seo-static-content h1 {
+        font-size: 1.4rem;
+      }
+      .seo-static-content h2 {
+        font-size: 1.1rem;
+      }
+      .blog-section {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">🇨🇭 WelfareCalc.ch</h1>
+    <div class="language-selector">
+      <a href="index.html">← Sprache ändern</a>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+
+    <h2 id="crowd-instruction-title" class="crowd-instruction">Bitte wählen Sie Ihre Situation / Personengruppe</h2>
+
+    <div id="crowd-selector" class="crowd-grid">
+      <button class="crowd-btn" data-crowd="single">Einzelperson</button>
+      <button class="crowd-btn" data-crowd="family">Familie</button>
+      <button class="crowd-btn" data-crowd="unemployed">Arbeitslos</button>
+      <button class="crowd-btn" data-crowd="student">Student/in</button>
+      <button class="crowd-btn" data-crowd="retired">Rentner/in</button>
+      <button class="crowd-btn" data-crowd="lowincome">Niedriges Einkommen</button>
+      <button class="crowd-btn" data-crowd="disabled">Menschen mit Behinderung</button>
+      <button class="crowd-btn" data-crowd="refugees">Schutzsuchende</button>
+      <button class="crowd-btn" data-crowd="pregnant">Schwangere</button>
+    </div>
+
+    <!-- SEO-Blog-Bereich (nur im statischen Zustand sichtbar, wird bei Rechnerstart ausgeblendet) -->
+    <div id="blogSeoLinks" class="blog-seo-links">
+      <div class="seo-headline">
+        <span>📘</span> Ratgeber zu Sozialleistungen 2026
+      </div>
+      <div class="blog-seo-grid">
+        <a href="blog/de/sozialleistungen-2026.html">📋 7 Sozialleistungen 2026 – Überblick</a>
+        <a href="blog/de/praemienverbilligung-2026.html">🏥 Prämienverbilligung (IPV) 2026</a>
+        <a href="blog/de/ergaenzungsleistungen-2026.html">💰 Ergänzungsleistungen (EL) 2026</a>
+        <a href="blog/de/familienzulagen-2026.html">👶 Familienzulagen 2026</a>
+        <a href="blog/de/alv-mutterschaft-2026.html">🤰 ALV & Mutterschaft 2026</a>
+        <a href="blog/de/index.html" class="blog-seo-more">📚 Alle Ratgeber →</a>
+      </div>
+    </div>
+
+    <div id="app" class="app-container">
+      <div class="seo-static-content" id="staticContentWrapper">
+        <h1>Schweizer Sozialleistungen Rechner – kostenlos & anonym</h1>
+        <p>Unser Tool hilft Ihnen, Ihre Ansprüche auf AHV, IV, Ergänzungsleistungen und Sozialhilfe schnell zu ermitteln. Wählen Sie oben Ihre Situation, um die persönliche Berechnung zu starten.</p>
+        
+        <h2>Welche Leistungen werden berechnet?</h2>
+        <p>Der WelfareCalc.ch Rechner berücksichtigt folgende Sozialleistungen der Schweiz (Berechnung nach den neuesten Richtlinien, Stand 2026):</p>
+        <ul>
+          <li><strong>AHV/IV</strong> – Alters- und Hinterlassenenversicherung / Invalidenversicherung</li>
+          <li><strong>Ergänzungsleistungen (EL)</strong> – für AHV/IV-Rentner mit tiefem Einkommen</li>
+          <li><strong>Arbeitslosenentschädigung</strong> – Arbeitslosengeld und Kurzarbeitsentschädigung</li>
+          <li><strong>Prämienverbilligung (IPV)</strong> – Krankenkassenprämien-Verbilligung</li>
+          <li><strong>Sozialhilfe</strong> – kantonale und kommunale Unterstützung</li>
+          <li><strong>Stipendien & Ausbildungsbeiträge</strong> – für Studierende und Ausbildung</li>
+          <li><strong>Familienzulagen</strong> – Kinder- und Ausbildungszulagen</li>
+        </ul>
+        
+        <h2>Für wen ist der Rechner geeignet?</h2>
+        <p>Der Rechner ist für folgende Personengruppen optimiert: Einzelpersonen, Familien, Arbeitslose, Studierende, Rentner, Menschen mit niedrigem Einkommen, Menschen mit Behinderung, Schutzsuchende und Schwangere.</p>
+        
+        <h2>Kostenlos, anonym und datenschutzkonform</h2>
+        <p>Die Nutzung des WelfareCalc.ch ist vollständig <strong>kostenlos</strong> und erfordert <strong>keine Anmeldung</strong>. Es werden keine persönlichen Daten gespeichert. Ihre Eingaben bleiben anonym und werden nicht an Dritte weitergegeben.</p>
+        
+        <!-- zusätzliche Blog-Bereich innerhalb des statischen Contents (wird ebenfalls bei Rechnerstart ausgeblendet) -->
+        <div id="staticBlogSection" class="blog-section">
+          <h3>📖 Aktuelle Ratgeber</h3>
+          <p><strong>➡️ <a href="blog/de/sozialleistungen-2026.html">Geld vom Staat? 7 Schweizer Sozialleistungen 2026, die Sie vielleicht verpassen (Inkl. Rechner)</a></strong></p>
+          <p>Erfahren Sie, welche Leistungen Ihnen zustehen – von AHV über IV bis zur Prämienverbilligung. Mit praktischen Tipps zu kantonalen Unterschieden und Fristen.</p>
+          <p style="margin-top: 0.75rem;">📚 <a href="blog/de/index.html">Alle Ratgeber anzeigen →</a></p>
+        </div>
+        
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+          📌 Informieren Sie sich auch auf der offiziellen Seite des 
+          <a href="https://www.bsv.admin.ch/bsv/de/home.html" rel="nofollow noopener" target="_blank">Bundesamts für Sozialversicherungen (BSV)</a> 
+          über aktuelle Gesetze und Richtlinien.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Kostenlos • Anonym • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="impressum_de.html">Impressum</a> •
+    <a href="datenschutz_de.html">Datenschutzerklärung</a> •
+    <a href="haftung_de.html">Haftungsausschluss</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="blog/de/index.html">📚 Ratgeber & Blog</a>
+  </p>
+</footer>
+
+<script src="js/loader.js"></script>
+
+<script>
+  (function() {
+    // 获取需要隐藏的SEO/Blog元素 (当算法启动时全部隐藏)
+    const blogSeoSection = document.getElementById('blogSeoLinks');
+    const staticContentWrapper = document.getElementById('staticContentWrapper');
+    // 额外获取可能存在的独立 blog-section (已经包含在 staticContentWrapper 内，但以防单独控制)
+    // 通过 CSS 类统一管理隐藏
+    
+    const hideAllSeoContent = () => {
+      if (blogSeoSection && !blogSeoSection.classList.contains('hide-seo-links')) {
+        blogSeoSection.classList.add('hide-seo-links');
+      }
+      // 将静态内容容器内的所有内容替换或者隐藏？但为了算法完整显示，我们清空 app 容器并加载算法视图。
+      // 但注意：loadCrowd 会覆盖 app 容器的 innerHTML，所以不需要额外操作。
+      // 但是为了确保博客链接在算法显示后彻底消失（避免残余），在调用 loadCrowd 前进行隐藏样式标记。
+      // 实际上 loadCrowd 会重写 app 内容，所以原有静态内容将被完全替换，SEO区域独立于 app 之外，只需隐藏 blogSeoLinks 即可。
+      // 另外静态内容区域内的任何额外博客区域也会随 app.innerHTML 覆盖而消失。
+    };
+    
+    let originalSEOContent = null;
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const appContainer = document.getElementById('app');
+      if (appContainer) {
+        originalSEOContent = appContainer.innerHTML;
+      }
+      
+      if (window.setLanguage && typeof window.setLanguage === 'function') {
+        window.setLanguage('de');
+      }
+
+      const crowdSelector = document.getElementById('crowd-selector');
+      const instructionTitle = document.getElementById('crowd-instruction-title');
+
+      if (!crowdSelector || !appContainer) return;
+
+      const loadSelectedCrowd = (crowdType, buttonElement) => {
+        // 重要: 一旦用户选择人群，立即隐藏博客SEO链接区域（位于人群按钮下方）
+        if (blogSeoSection) {
+          blogSeoSection.classList.add('hide-seo-links');
+        }
+        
+        if (instructionTitle) {
+          instructionTitle.style.display = 'none';
+        }
+
+        // 清除 app 容器原有内容并显示加载动画（完全替换静态SEO内容）
+        appContainer.innerHTML = '<div class="loading-placeholder">Rechner wird geladen, bitte warten...</div>';
+        appContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        if (window.loadCrowd && typeof window.loadCrowd === 'function') {
+          // 调用外部算法模块，传入人群类型，该模块会渲染实际表单（Kanton, PLZ, Einkommen etc.）
+          window.loadCrowd(crowdType);
+          
+          if (buttonElement) {
+            buttonElement.disabled = true;
+            setTimeout(() => {
+              if (buttonElement) buttonElement.disabled = false;
+            }, 700);
+          }
+        } else {
+          console.error('loadCrowd 函数缺失，请确认 js/loader.js 已正确加载并暴露全局 loadCrowd 方法');
+          appContainer.innerHTML = '<div style="text-align:center; padding:2rem; color:#b91c1c; font-family: Lato, sans-serif;">❌ Fehler: Der Rechner konnte nicht geladen werden. Bitte laden Sie die Seite neu.</div>';
+        }
+      };
+
+      crowdSelector.addEventListener('click', (event) => {
+        const btn = event.target.closest('.crowd-btn');
+        if (!btn) return;
+      
+        const crowdValue = btn.getAttribute('data-crowd');
+        if (!crowdValue) return;
+      
+        if (btn.disabled) return;
+      
+        loadSelectedCrowd(crowdValue, btn);
+      });
+      
+      // 可选：如果外部脚本需要手动重置显示静态内容（比如用户返回首页）可以提供重置函数
+      // 但在此设计中，一旦加载算法，不会再回到原始SEO内容。为了保证体验，不需要额外重置。
+    });
+  })();
+</script>
+
+</body>
+</html>

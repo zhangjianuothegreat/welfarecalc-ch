@@ -1,0 +1,67 @@
+{
+  "LU": {
+    "ipv": {
+      "formula_type": "LU_income_percentage_progressive",
+      "legal_basis": {
+        "primary_key": "LU_ipv_legal_basis_primary",
+        "additional_sources_key": "LU_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.was-luzern.ch/praemienverbilligung",
+      "source_note": "Alle Daten basierend auf WAS Luzern Merkblatt und Berechnungsbeispiel für das Bezugsjahr",
+      "algorithm_description_key": "LU_ipv_algorithm_description",
+      "asset_limit_single": 100000,
+      "asset_limit_couple": 200000,
+      "ahv_exemption_annual": 12600,
+      "income_limits_for_fixed_child_young_adult_subsidy": {
+        "couple": 96392,
+        "single_parent": 77114
+      },
+      "subsidy_brackets": [
+        { "income_max": 30000, "rate": 0.8 },
+        { "income_max": 50000, "rate": 0.7 },
+        { "income_max": 70000, "rate": 0.55 },
+        { "income_max": 90000, "rate": 0.4 },
+        { "income_max": 110000, "rate": 0.25 },
+        { "income_max": 130000, "rate": 0.1 },
+        { "income_max": 999999999, "rate": 0 }
+      ],
+      "ref_premium_annual_by_region": {
+        "region_1": {
+          "adult": 5628,
+          "young_adult": 4044,
+          "child": 1308
+        },
+        "region_2": {
+          "adult": 5304,
+          "young_adult": 3780,
+          "child": 1224
+        },
+        "region_3": {
+          "adult": 5100,
+          "young_adult": 3660,
+          "child": 1176
+        }
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 100
+      },
+      "application": {
+        "method_key": "LU_ipv_application_method",
+        "authority_key": "LU_ipv_application_authority",
+        "office_name_key": "LU_ipv_office_name",
+        "url": "https://www.was-luzern.ch/praemienverbilligung",
+        "contact": {
+          "address_key": "LU_ipv_contact_address",
+          "phone": "+41 41 209 00 00",
+          "email": "info@was-luzern.ch"
+        },
+        "required_documents_key": "LU_ipv_required_documents_list",
+        "deadline": "Ende Oktober Vorjahr",
+        "source_note": "Online-Antrag möglich; Automatische Mitberechnung für Familie"
+      }
+    }
+  }
+}

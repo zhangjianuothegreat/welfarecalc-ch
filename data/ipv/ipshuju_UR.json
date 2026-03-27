@@ -1,0 +1,48 @@
+{
+  "UR": {
+    "ipv": {
+      "legal_basis": {
+        "primary_key": "UR_ipv_legal_basis_primary",
+        "additional_sources_key": "UR_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "formula_type": "income_percentage",
+      "official_url": "https://www.svsuri.ch",
+      "asset_limit_single": 300000,
+      "asset_limit_couple": 450000,
+      "income_limits": {
+        "max_household_income": 120000
+      },
+      "exemption": {
+        "single": 30000,
+        "couple": 55000,
+        "per_child": 3500
+      },
+      "income_deduction_factor": 0.0975,
+      "max_subsidy_rate": 0.65,
+      "ref_premium_annual": {
+        "adult": 5340,
+        "young_adult": 3738,
+        "child": 1272
+      },
+      "minimum_reduction": {
+        "children": 0.8,
+        "young_adults_in_education": 0.5,
+        "min_subsidy_chf": 100
+      },
+      "application": {
+        "method_key": "UR_ipv_application_method",
+        "authority_key": "UR_ipv_application_authority",
+        "office_name_key": "UR_ipv_office_name",
+        "url": "https://www.svsuri.ch",
+        "digital_portal": "https://portal.svsuri.ch/",
+        "contact": {
+          "address_key": "UR_ipv_contact_address",
+          "phone": "+41 41 874 50 10",
+          "email": "info@svsuri.ch"
+        },
+        "required_documents_key": "UR_ipv_required_documents_list"
+      }
+    }
+  }
+}

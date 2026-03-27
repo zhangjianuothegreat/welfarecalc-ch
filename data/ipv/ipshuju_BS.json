@@ -1,0 +1,82 @@
+{
+  "BS": {
+    "ipv": {
+      "formula_type": "BS_income_groups_table",
+      "legal_basis": {
+        "primary_key": "BS_ipv_legal_basis_primary",
+        "additional_sources_key": "BS_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.bs.ch/themen/finanzielle-hilfe/leistungen/praemienverbilligung",
+      "algorithm_description_key": "BS_ipv_algorithm_description",
+      "asset_freibetrag_single": 37500,
+      "asset_freibetrag_couple": 60000,
+      "asset_freibetrag_per_child": 15000,
+      "asset_consumption_rate": 0.1,
+      "ref_premiums_monthly": {
+        "adult": 642.8, 
+        "young": 469.6,
+        "child": 161.8
+      },
+      "income_limits": [
+        [23125, 37000, 47000, 55000, 61000, 65000, 69000, 73000], 
+        [24375, 39000, 49000, 57000, 63000, 67000, 71000, 75000],
+        [25625, 41000, 51000, 59000, 65000, 69000, 73000, 77000],
+        [26875, 43000, 53000, 61000, 67000, 71000, 75000, 79000],
+        [28125, 45000, 55000, 63000, 69000, 73000, 77000, 81000],
+        [29375, 47000, 57000, 65000, 71000, 75000, 79000, 83000],
+        [30625, 49000, 59000, 67000, 73000, 77000, 81000, 85000],
+        [31875, 51000, 61000, 69000, 75000, 79000, 83000, 87000],
+        [33125, 53000, 63000, 71000, 77000, 81000, 85000, 89000],
+        [34375, 55000, 65000, 73000, 79000, 83000, 87000, 91000],
+        [35625, 57000, 67000, 75000, 81000, 85000, 89000, 93000],
+        [36875, 59000, 69000, 77000, 83000, 87000, 91000, 95000],
+        [38125, 61000, 71000, 79000, 85000, 89000, 93000, 97000],
+        [39375, 63000, 73000, 81000, 87000, 91000, 95000, 99000],
+        [40625, 65000, 75000, 83000, 89000, 93000, 97000, 101000],
+        [41875, 67000, 77000, 85000, 91000, 95000, 99000, 103000],
+        [43125, 69000, 79000, 87000, 93000, 97000, 101000, 105000],
+        [44375, 71000, 81000, 89000, 95000, 99000, 103000, 107000],
+        [45625, 73000, 83000, 91000, 97000, 101000, 105000, 109000],
+        [46875, 75000, 85000, 93000, 99000, 103000, 107000, 111000],
+        [48125, 77000, 87000, 95000, 101000, 105000, 109000, 113000],
+        [49375, 79000, 89000, 97000, 103000, 107000, 111000, 115000]
+      ],
+      "subsidies_monthly": {
+        "adult": [
+          510, 490, 471, 452, 433, 414, 395, 376, 357, 338, 319, 300, 281, 262, 243, 224, 205, 186, 167, 148, 129, 110
+        ],
+        "young": [
+          338, 316, 297, 273, 254, 238, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231, 231
+        ],
+        "child": [
+          164, 153, 153, 143, 135, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130, 130
+        ]
+      },
+      "formula_explanation": {
+        "steps": [
+          { "order": 1, "variable": "determining_income", "description_key": "BS_ipv_step_1_desc", "formula_key": "BS_ipv_step_1_formula", "intermediate": true },
+          { "order": 2, "variable": "household_size", "description_key": "BS_ipv_step_2_desc", "formula_key": "BS_ipv_step_2_formula", "intermediate": true },
+          { "order": 3, "variable": "income_group", "description_key": "BS_ipv_step_3_desc", "formula_key": "BS_ipv_step_3_formula", "intermediate": true },
+          { "order": 4, "variable": "theoretical_subsidy", "description_key": "BS_ipv_step_4_desc", "formula_key": "BS_ipv_step_4_formula", "intermediate": true },
+          { "order": 5, "variable": "final_ipv", "description_key": "BS_ipv_step_5_desc", "formula_key": "BS_ipv_step_5_formula", "intermediate": false }
+        ],
+        "note_key": "BS_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "BS_ipv_application_method",
+        "authority_key": "BS_ipv_application_authority",
+        "office_name_key": "BS_ipv_office_name",
+        "url": "https://www.bs.ch/",
+        "contact": {
+          "address_key": "BS_ipv_contact_address",
+          "phone": "+41 61 267 86 66",
+          "email": "asb@bs.ch",
+          "office_hours_key": "BS_ipv_office_hours"
+        },
+        "required_docs_list": [] 
+      },
+      "note": "Basel-Stadt 2026 – Stufenmodell mit 22 Gruppen (Standardtabelle, Mindestreduktionen: Kinder mind. 80% Richtprämie, Junge Erwachsene mind. 50% Richtprämie). Einkommensgrenzen unverändert zu 2025. Subventionen angepasst um +2.9% für Erwachsene, +1.5% für Junge Erwachsene, +4.6% für Kinder."
+    }
+  }
+}

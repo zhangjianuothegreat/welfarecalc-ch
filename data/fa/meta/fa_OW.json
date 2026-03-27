@@ -1,0 +1,25 @@
+{
+  "OW": {
+    "name": "Obwalden",
+    "legal_basis": {
+      "primary_key": "OW_fa_legal_basis_primary",
+      "additional_sources_key": "OW_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "OW_fa_office_name",
+      "authority_key": "OW_fa_application_authority"
+    },
+    "application": {
+      "method_key": "OW_fa_application_method",
+      "url": "https://www.akow.ch/dienstleistungen/familienzulagen",
+      "required_documents_key": "OW_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "OW_fa_contact_address",
+      "phone": "+41 41 666 27 50",
+      "email": "info@akow.ch"
+    },
+    "notes_key": "OW_fa_special_notes"
+  }
+}

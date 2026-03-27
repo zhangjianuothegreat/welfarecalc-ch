@@ -1,0 +1,25 @@
+{
+  "SO": {
+    "name": "Solothurn",
+    "legal_basis": {
+      "primary_key": "SO_fa_legal_basis_primary",
+      "additional_sources_key": "SO_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "SO_fa_office_name",
+      "authority_key": "SO_fa_application_authority"
+    },
+    "application": {
+      "method_key": "SO_fa_application_method",
+      "url": "https://www.akso.ch/dienstleistungen/familienzulagen-fak-flg",
+      "required_documents_key": "SO_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "SO_fa_contact_address",
+      "phone": "+41 32 686 23 73",
+      "email": "fak@akso.ch"
+    },
+    "notes_key": "SO_fa_special_notes"
+  }
+}

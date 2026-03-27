@@ -1,0 +1,62 @@
+{
+  "TI": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_ti_2026",
+      "official_url": "https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps",
+      "legal_basis": {
+        "primary_key": "TI_sh_legal_basis_primary",
+        "additional_sources_key": "TI_sh_legal_basis_additional",
+        "legal_source": "https://m3.ti.ch/CAN/RLeggi/public/raccolta-leggi/legge/num/340"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "1p": 1100,
+        "2p": 1300,
+        "3p": 1500,
+        "4p": 1700,
+        "5p_plus": 1900
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "application": {
+        "authority_key": "Ufficio del sostegno sociale e dell'inserimento (USSI)",
+        "office_name_key": "Ufficio del sostegno sociale e dell'inserimento del Cantone Ticino",
+        "url": "https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps",
+        "contact": {
+          "address_key": "Viale Officina 6, 6501 Bellinzona",
+          "phone": "+41 91 814 70 51",
+          "email": "dss-ussi@ti.ch",
+          "office_hours_key": "Lunedì–venerdì 08:30–11:45 / 14:00–16:30 (orari possono variare a seconda del comune; si consiglia appuntamento)"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

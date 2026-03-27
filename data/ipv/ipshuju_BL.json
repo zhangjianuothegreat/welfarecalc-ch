@@ -1,0 +1,77 @@
+{
+  "BL": {
+    "ipv": {
+      "formula_type": "BL_income_deduction",
+      "legal_basis": {
+        "primary_key": "BL_ipv_legal_basis_primary",
+        "additional_sources_key": "BL_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.sva-bl.ch/de/ausgleichskasse/individuelle-praemienverbilligung-ipv",
+      "algorithm_description_key": "BL_ipv_algorithm_description",
+      "asset_limit_single": 100000,
+      "asset_limit_couple": 200000,
+      "asset_consumption_rate": 0.10,
+      "income_deduction_rate": 0.0775,
+      "child_deduction": 0,
+      "ref_premium_annual": {
+        "adult": 4596,
+        "young_adult": 3816,
+        "child":1968
+      },
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "BL_ipv_step_1_desc",
+            "formula_key": "BL_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "total_reference_premium",
+            "description_key": "BL_ipv_step_2_desc",
+            "formula_key": "BL_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "income_deduction",
+            "description_key": "BL_ipv_step_3_desc",
+            "formula_key": "BL_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "calculated_subsidy",
+            "description_key": "BL_ipv_step_4_desc",
+            "formula_key": "BL_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "annual_benefit",
+            "description_key": "BL_ipv_step_5_desc",
+            "formula_key": "BL_ipv_step_5_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "BL_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "BL_ipv_application_method",
+        "authority_key": "BL_ipv_application_authority",
+        "office_name_key": "BL_ipv_office_name",
+        "url": "https://www.sva-bl.ch/de/ausgleichskasse/individuelle-praemienverbilligung-ipv",
+        "contact": {
+          "address_key": "BL_ipv_contact_address",
+          "phone": "+41 61 425 24 00",
+          "email": "info@sva-bl.ch",
+          "office_hours_key": "BL_ipv_office_hours"
+        },
+        "required_docs_list": [] 
+      }
+    }
+  }
+}

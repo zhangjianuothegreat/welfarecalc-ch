@@ -1,0 +1,25 @@
+{
+  "NE": {
+    "name": "Neuchâtel",
+    "legal_basis": {
+      "primary_key": "NE_fa_legal_basis_primary",
+      "additional_sources_key": "NE_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "NE_fa_office_name",
+      "authority_key": "NE_fa_application_authority"
+    },
+    "application": {
+      "method_key": "NE_fa_application_method",
+      "url": "https://www.caisseavsne.ch",
+      "required_documents_key": "NE_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "NE_fa_contact_address",
+      "phone": "+41 32 910 81 11",
+      "email": "allocations@ne.ch"
+    },
+    "notes_key": "NE_fa_special_notes"
+  }
+}

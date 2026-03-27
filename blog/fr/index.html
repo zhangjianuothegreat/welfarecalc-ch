@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Tous les guides | Prestations sociales suisses 2026 | WelfareCalc.ch</title>
+  <meta name="description" content="Aperçu complet de tous les guides sur les prestations sociales suisses 2026 : allocations familiales, subsides d'assurance-maladie, prestations complémentaires, chômage & maternité et plus.">
+  <meta name="keywords" content="prestations sociales suisse guides, allocations familiales, subsides assurance-maladie, prestations complémentaires, chômage maternité">
+
+  <!-- Canonical Tag -->
+  <link rel="canonical" href="https://welfarecalc.ch/blog/fr/index.html" />
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/blog/de/index.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/blog/fr/index.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/blog/it/index.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/blog/en/index.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/blog/fr/index.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700"
+    rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Lato', system-ui, sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    .site-title a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    .back-link a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      background: transparent;
+    }
+
+    .back-link a:hover {
+      background: #e6f0ff;
+    }
+
+    .blog-list {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+      border: 1px solid #e0e8f0;
+    }
+
+    .blog-list h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #0050a4;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-list .subhead {
+      color: #4a5568;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+
+    .article-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .article-card {
+      border-bottom: 1px solid #e0e8f0;
+      padding-bottom: 1.5rem;
+    }
+
+    .article-card:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .article-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .article-card h2 a {
+      color: #0050a4;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .article-card h2 a:hover {
+      text-decoration: underline;
+    }
+
+    .article-meta {
+      font-size: 0.85rem;
+      color: #6c757d;
+      margin-bottom: 0.75rem;
+    }
+
+    .article-excerpt {
+      color: #2d3748;
+      margin-bottom: 0.75rem;
+    }
+
+    .read-more {
+      color: #0050a4;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+    }
+
+    footer a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+
+      .site-title {
+        font-size: 2rem;
+      }
+
+      .blog-list h1 {
+        font-size: 2.8rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+
+      .blog-list {
+        padding: 1.2rem;
+      }
+
+      .blog-list h1 {
+        font-size: 1.6rem;
+      }
+
+      .article-card h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title"><a href="/fr.html">🇨🇭 WelfareCalc.ch</a></h1>
+      <div class="back-link">
+        <a href="/fr.html">← Retour au calculateur</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="blog-list">
+        <h1>📚 Tous les guides</h1>
+        <p class="subhead">Votre ressource complète sur les prestations sociales suisses 2026 – gratuite, anonyme et à jour.</p>
+
+        <div class="article-grid">
+
+          <!-- Ordre aligné sur la version allemande : 1. Subsides (Prämienverbilligung) -->
+          <div class="article-card">
+            <h2><a href="subsidies-assurance-maladie-2026.html">Subsides d'assurance-maladie 2026 : comment réduire vos primes</a></h2>
+            <div class="article-meta">⏱️ 4 min de lecture</div>
+            <div class="article-excerpt">Les primes d'assurance-maladie augmentent fortement en 2026. Vérifiez dès maintenant votre droit à la réduction individuelle des primes – délais cantonaux, plafonds de revenus et démarches.</div>
+            <a href="subsidies-assurance-maladie-2026.html" class="read-more">Lire la suite →</a>
+          </div>
+
+          <!-- 2. Allocations familiales -->
+          <div class="article-card">
+            <h2><a href="allocations-familiales-2026.html">Allocations familiales 2026 : allocations pour enfants et de formation par canton</a></h2>
+            <div class="article-meta">⏱️ 5 min de lecture</div>
+            <div class="article-excerpt">À combien avez-vous droit mensuellement ? Différences cantonales, versement rétroactif jusqu'à 5 ans et qui peut en faire la demande – avec conseils pour les personnes sans activité lucrative.</div>
+            <a href="allocations-familiales-2026.html" class="read-more">Lire la suite →</a>
+          </div>
+
+          <!-- 3. Aperçu général (7 prestations) -->
+          <div class="article-card">
+            <h2><a href="prestations-sociales-2026.html">7 prestations sociales suisses 2026 à connaître</a></h2>
+            <div class="article-meta">⏱️ 7 min de lecture</div>
+            <div class="article-excerpt">Aperçu complet de l'AVS, AI, prestations complémentaires, subsides d'assurance-maladie, allocations familiales, indemnités de chômage et aide sociale – avec outil de calcul.</div>
+            <a href="prestations-sociales-2026.html" class="read-more">Lire la suite →</a>
+          </div>
+
+          <!-- 4. Prestations complémentaires -->
+          <div class="article-card">
+            <h2><a href="prestations-complementaires-2026.html">Prestations complémentaires (PC) 2026 : votre rente AVS ne suffit pas ?</a></h2>
+            <div class="article-meta">⏱️ 5 min de lecture</div>
+            <div class="article-excerpt">Les prestations complémentaires aident lorsque la rente AVS ou AI ne suffit pas pour vivre. Qui y a droit ? Quel est le montant de l'aide au loyer ? Prise en charge des primes d'assurance-maladie expliquée simplement.</div>
+            <a href="prestations-complementaires-2026.html" class="read-more">Lire la suite →</a>
+          </div>
+
+          <!-- 5. Chômage & maternité -->
+          <div class="article-card">
+            <h2><a href="chomage-maternite-2026.html">Chômage & maternité 2026 : vos droits en cas de grossesse et de perte d'emploi</a></h2>
+            <div class="article-meta">⏱️ 5 min de lecture</div>
+            <div class="article-excerpt">Enceinte et au chômage ? Protection contre le licenciement, allocations de maternité (APG) et démarches après le congé maternité – tous vos droits clairement expliqués.</div>
+            <a href="chomage-maternite-2026.html" class="read-more">Lire la suite →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>WelfareCalc.ch • Gratuit • Anonyme • 2026</p>
+    <p style="margin-top: 0.6rem;">
+      <a href="/impressum_fr.html">Impressum</a> •
+      <a href="/datenschutz_fr.html">Protection des données</a> •
+      <a href="/haftung_fr.html">Exclusion de responsabilité</a>
+    </p>
+    <p style="margin-top: 0.6rem;">
+      <a href="/fr.html">← Retour au calculateur</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>

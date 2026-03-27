@@ -1,0 +1,69 @@
+{
+  "BS": {
+    "el": {
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "BS_el_legal_basis_primary",
+        "additional_sources_key": "BS_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "note": "Eintrittsschwelle gemäss ELG-Reform 2021/2026"
+      },
+      "rent_limits_annual": {
+        "region_1": {
+          "1": 18900,
+          "2": 22320,
+          "3": 24780,
+          "4": 27060,
+          "5": 27060,
+          "name_key": "BS_el_region_1_name"
+        }
+      },
+      "recognized_premiums_annual": {
+        "standard_2026": {
+          "adult": 7759,
+          "young_adult": 5597,
+          "child": 1972
+        }
+      },
+      "grundbedarf_annual": {
+        "single": 20670,
+        "couple": 31005
+      },
+      "child_grundbedarf_rates": {
+        "under_11": [
+          7590,
+          6325,
+          5270,
+          4390,
+          3660
+        ],
+        "over_11": [
+          10815,
+          10815,
+          7210,
+          7210,
+          3605
+        ]
+      },
+      "social_deductions": {
+        "earned_income_freibetrag_single": 1400,
+        "earned_income_freibetrag_couple": 2100,
+        "asset_exemption_single": 30000,
+        "asset_exemption_couple": 50000
+      },
+      "application": {
+        "authority_key": "BS_el_application_authority",
+        "url": "https://www.bs.ch",
+        "contact": {
+          "phone": "+41 61 267 86 66",
+          "email": "asb@bs.ch"
+        },
+        "required_documents": "BS_el_required_documents_list"
+      }
+    }
+  }
+}

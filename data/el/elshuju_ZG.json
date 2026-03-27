@@ -1,0 +1,51 @@
+{
+  "ZG": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "ZG_el_legal_basis_primary",
+        "additional_sources_key": "ZG_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child": 50000,
+        "freibetrag_note": "Freibetrag für Vermögensverzehr: 30'000 (Alleinstehende) / 50'000 (Ehepaare) CHF"
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "ZG_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160,
+          "note": "BSV Region 2: Kanton Zug (Ganze Kanton) 2026"
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 5028,
+          "young_adult": 3636,
+          "child": 1194
+        }
+      },
+      "application": {
+        "authority_key": "ZG_el_application_authority",
+        "office_name_key": "ZG_el_office_name",
+        "url": "https://www.akzug.ch/dienstleistungen/ergaenzungsleistungen",
+        "contact": {
+          "address_key": "ZG_el_contact_address",
+          "phone": "+41 41 560 47 00",
+          "email": "info.el@akzug.ch"
+        },
+        "required_documents_key": "ZG_el_required_documents_list"
+      },
+      "taxation": {
+        "cantonal_multiplier": 0.82,
+        "communal_multiplier": 0.54,
+        "source": "Steuerfüsse Kanton Zug 2025/2026"
+      }
+    }
+  }
+}

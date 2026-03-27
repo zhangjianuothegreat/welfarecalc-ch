@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>WelfareCalc.ch | Swiss Social Benefits Calculator – Free & Anonymous | AHV, IV, EL</title>
+  <meta name="description" content="Calculate your Swiss social benefits (AHV, IV, supplementary benefits) for free and anonymously. The all-in-one calculator for 6 target groups in 6 languages.">
+
+  <!-- Canonical Tag: prevents duplicate content from URL parameters -->
+  <link rel="canonical" href="https://welfarecalc.ch/en.html" />
+
+  <!-- Hreflang Tags for multilingual SEO (Google language alternatives) -->
+  <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/de.html" />
+  <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/en.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/fr.html" />
+  <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/it.html" />
+  <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/es.html" />
+  <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/pt.html" />
+  <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/pl.html" />
+  <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/sq.html" />
+  <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/hr.html" />
+  <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/tr.html" />
+  <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/ta.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/index.html" />
+
+  <!-- FAQ Schema (Structured Data for Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which social benefits are covered by the calculator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our calculator covers AHV, IV, supplementary benefits, unemployment compensation, scholarships, premium reductions, and other cantonal social assistance programs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the calculator free and anonymous to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, the calculator is completely free and requires no registration. No personal data is stored. Your inputs remain anonymous and are not shared with third parties."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is the social benefits calculator suitable for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The calculator is suitable for individuals, families, unemployed persons, students, retirees, low-income individuals, persons with disabilities, protection seekers, and pregnant women."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Bunny Fonts: Playfair Display + Lato (European servers, revDSG compliant) -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <!-- Core common CSS file – identical to DE version, ensures full-width, spacious cards and unified algorithm styling -->
+  <link rel="stylesheet" href="css/common.css">
+
+  <!-- Additional fine-tuning to match German version's sticky header, crowd grid and responsive polish -->
+  <style>
+    /* Guarantee that common.css fully controls internal cards, tables, buttons – no conflicting overrides.
+       Only layout enhancers identical to DE version for perfect alignment */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+    /* Header styling – same sticky white header as German version */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      padding-top: max(1rem, env(safe-area-inset-top));
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    /* Header layout: flex, aligned exactly like DE version */
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      display: inline-block;
+      white-space: nowrap;
+      background: transparent;
+    }
+    .language-selector a:hover {
+      background: #e6f0ff;
+    }
+    /* Crowd grid – identical to DE version: spacious, responsive, modern */
+    .crowd-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .crowd-btn {
+      background: white;
+      border: 1px solid #e0e8f0;
+      border-radius: 16px;
+      padding: 1.2rem 1rem;
+      font-family: 'Lato', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0050a4;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1.4;
+      background-color: #ffffff;
+    }
+    .crowd-btn:active {
+      transform: scale(0.98);
+      background: #f8f9fa;
+      border-color: #0050a4;
+    }
+    @media (hover: hover) {
+      .crowd-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 24px rgba(0, 80, 164, 0.12);
+        border-color: #0050a4;
+      }
+    }
+    /* App container – fully controlled by common.css for algorithm forms and results */
+    .app-container {
+      margin-top: 1.8rem;
+      min-height: 400px;
+      width: 100%;
+    }
+    /* SEO static content styling - displays before dynamic loading, search engine friendly */
+    .seo-static-content {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      border: 1px solid #e0e8f0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .seo-static-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+    }
+    .seo-static-content h2 {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+    .seo-static-content p {
+      line-height: 1.6;
+      color: #4a5568;
+      margin-bottom: 0.5rem;
+    }
+    .seo-static-content ul {
+      margin: 1rem 0 0 1.5rem;
+      color: #4a5568;
+    }
+    .seo-static-content li {
+      margin: 0.5rem 0;
+    }
+    /* SEO-Blog-Bereich unterhalb der Crowd-Buttons – dezent, wird bei Rechnerstart ausgeblendet */
+    .blog-seo-links {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 1rem 1.5rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #e8edf2;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: opacity 0.2s ease;
+    }
+    .blog-seo-links.hide-seo-links {
+      display: none;
+    }
+    .blog-seo-links .seo-headline {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #5f7f9e;
+      margin-bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .blog-seo-links .seo-headline span {
+      font-size: 1rem;
+    }
+    .blog-seo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem 1.2rem;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .blog-seo-grid a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #2c5a8c;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #cddfe7;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .blog-seo-grid a:hover {
+      color: #003366;
+      border-bottom-color: #0050a4;
+    }
+    .blog-seo-more {
+      font-size: 0.85rem;
+      margin-left: 0.2rem;
+      font-weight: 600;
+      background: #f0f4fa;
+      padding: 0.2rem 0.7rem;
+      border-radius: 30px;
+      white-space: nowrap;
+    }
+    @media (max-width: 680px) {
+      .blog-seo-grid {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .blog-seo-grid a {
+        white-space: normal;
+        word-break: break-word;
+      }
+      .blog-seo-more {
+        display: inline-block;
+        margin-top: 0.2rem;
+      }
+      .blog-seo-links {
+        padding: 0.9rem 1rem;
+      }
+    }
+    /* Loading placeholder – consistent with DE version (subtle spinner) */
+    .loading-placeholder {
+      text-align: center;
+      padding: 3rem 1rem;
+      font-family: 'Lato', sans-serif;
+      color: #5a6e7c;
+      font-size: 1rem;
+    }
+    .loading-placeholder::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      border: 3px solid #e0e8f0;
+      border-top-color: #0050a4;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      vertical-align: middle;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+      font-family: 'Lato', sans-serif;
+    }
+    /* Added: style for crowd selection instruction title (consistent with de/fr/it) */
+    .crowd-instruction {
+      text-align: center;
+      margin: 2rem 0 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #0050a4;
+      line-height: 1.3;
+    }
+    @media (min-width: 1024px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .site-title {
+        font-size: 2rem;
+      }
+      .crowd-btn {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        min-height: 120px;
+      }
+      .crowd-grid {
+        gap: 1.5rem;
+      }
+      .crowd-instruction {
+        font-size: 1.6rem;
+      }
+      .seo-static-content h1 {
+        font-size: 2.2rem;
+      }
+      .seo-static-content h2 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 640px) {
+      .site-title {
+        font-size: 1.2rem;
+      }
+      .crowd-btn {
+        font-size: 0.95rem;
+        padding: 1rem;
+        min-height: 85px;
+      }
+      .crowd-grid {
+        gap: 0.8rem;
+      }
+      .crowd-instruction {
+        font-size: 1.25rem;
+        margin: 1.5rem 0 1rem;
+      }
+      .seo-static-content {
+        padding: 1rem;
+      }
+      .seo-static-content h1 {
+        font-size: 1.4rem;
+      }
+      .seo-static-content h2 {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="site-title">🇨🇭 WelfareCalc.ch</h1>
+    <div class="language-selector">
+      <a href="index.html">← Change Language</a>
+    </div>
+  </div>
+</header>
+
+<main class="main-content">
+  <div class="container">
+
+    <!-- Crowd selection instruction title, with id for JS control -->
+    <h2 id="crowd-instruction-title" class="crowd-instruction">Please select your situation / group</h2>
+
+    <!-- Crowd selection buttons – same data-crowd keys as DE/ES/IT versions, translated labels -->
+    <div id="crowd-selector" class="crowd-grid">
+      <button class="crowd-btn" data-crowd="single">Single Person</button>
+      <button class="crowd-btn" data-crowd="family">Family</button>
+      <button class="crowd-btn" data-crowd="unemployed">Unemployed</button>
+      <button class="crowd-btn" data-crowd="student">Student</button>
+      <button class="crowd-btn" data-crowd="retired">Retired</button>
+      <button class="crowd-btn" data-crowd="lowincome">Low Income</button>
+      <button class="crowd-btn" data-crowd="disabled">Persons with Disabilities</button>
+      <button class="crowd-btn" data-crowd="refugees">Protection Seekers</button>
+      <button class="crowd-btn" data-crowd="pregnant">Pregnant</button>
+    </div>
+
+    <!-- SEO-Blog-Bereich (only visible in static state, hidden when calculator starts) - exactly like DE version -->
+    <div id="blogSeoLinks" class="blog-seo-links">
+      <div class="seo-headline">
+        <span>📘</span> Guides to Swiss Social Benefits 2026
+      </div>
+      <div class="blog-seo-grid">
+        <a href="blog/en/social-benefits-2026.html">💰 7 Social Benefits 2026 – Overview</a>
+        <a href="blog/en/premium-reduction-2026.html">🏥 Premium Reduction (IPV) 2026</a>
+        <a href="blog/en/supplementary-benefits-2026.html">📌 Supplementary Benefits (EL) 2026</a>
+        <a href="blog/en/family-allowances-2026.html">👶 Family Allowances 2026</a>
+        <a href="blog/en/unemployment-maternity-2026.html">🤰 Unemployment & Maternity 2026</a>
+        <a href="blog/en/index.html" class="blog-seo-more">📚 All Guides →</a>
+      </div>
+    </div>
+
+    <!-- Dynamic algorithm container - contains SEO-friendly static initial content -->
+    <div id="app" class="app-container">
+      <div class="seo-static-content">
+        <h1>Swiss Social Benefits Calculator – Free & Anonymous</h1>
+        <p>Our tool helps you quickly determine your eligibility for AHV, IV, supplementary benefits, and social assistance. Select your situation above to start the personalized calculation.</p>
+        
+        <h2>Which benefits are calculated?</h2>
+        <p>The WelfareCalc.ch calculator covers the following Swiss social benefits (calculation based on the latest guidelines, as of 2026):</p>
+        <ul>
+          <li><strong>AHV/IV</strong> – Old-age and Survivors' Insurance / Disability Insurance</li>
+          <li><strong>Supplementary Benefits (EL)</strong> – for AHV/IV recipients with low income</li>
+          <li><strong>Unemployment Compensation</strong> – unemployment benefits and short-time work compensation</li>
+          <li><strong>Premium Reduction (IPV)</strong> – health insurance premium reductions</li>
+          <li><strong>Social Assistance</strong> – cantonal and municipal support</li>
+          <li><strong>Scholarships & Training Contributions</strong> – for students and vocational training</li>
+          <li><strong>Family Allowances</strong> – child and education allowances</li>
+        </ul>
+        
+        <h2>Who is the calculator suitable for?</h2>
+        <p>The calculator is optimized for the following groups: individuals, families, unemployed persons, students, retirees, low-income individuals, persons with disabilities, protection seekers, and pregnant women.</p>
+        
+        <h2>Free, anonymous and privacy-compliant</h2>
+        <p>Using WelfareCalc.ch is completely <strong>free</strong> and requires <strong>no registration</strong>. No personal data is stored. Your inputs remain anonymous and are not shared with third parties.</p>
+        
+        <!-- Additional blog teaser inside static content to enhance SEO and long-tail matrix, hidden when calculator runs -->
+        <div id="staticBlogSection" class="blog-section" style="background: #f0f4fa; border-radius: 16px; padding: 1.5rem; margin: 1rem 0 1rem; border-left: 4px solid #0050a4;">
+          <h3>📖 Latest Guides</h3>
+          <p><strong>➡️ <a href="blog/en/social-benefits-2026.html">Money from the Government? 7 Swiss Social Benefits 2026 You Might Be Missing (incl. Calculator)</a></strong></p>
+          <p>Find out which benefits you are entitled to – from AHV and IV to premium reductions. With practical tips on cantonal differences and deadlines.</p>
+          <p style="margin-top: 0.75rem;">📚 <a href="blog/en/index.html">View all guides →</a></p>
+        </div>
+        
+        <!-- External authority link: Official source of the Federal Social Insurance Office (FSIO) -->
+        <p style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+          📌 For official information, also visit the 
+          <a href="https://www.bsv.admin.ch/bsv/en/home.html" rel="nofollow noopener" target="_blank">Federal Social Insurance Office (FSIO)</a> 
+          for current laws and regulations.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Free • Anonymous • 2026</p>
+  <p style="margin-top: 0.6rem;">
+    <a href="impressum_en.html">Imprint</a> • 
+    <a href="datenschutz_en.html">Privacy Policy</a> • 
+    <a href="haftung_en.html">Disclaimer</a>
+  </p>
+  <p style="margin-top: 0.6rem;">
+    <a href="blog/en/index.html">📚 All Guides & Blog</a>
+  </p>
+</footer>
+
+<!-- Loader script – same as DE version, provides window.loadCrowd and setLanguage -->
+<script src="js/loader.js"></script>
+
+<script>
+  (function() {
+    // Get elements for hiding blog SEO area when calculator starts (exactly as in de.html)
+    const blogSeoSection = document.getElementById('blogSeoLinks');
+    // Save original SEO content (optional, but consistent)
+    let originalSEOContent = null;
+    
+    // Ensure page fully loaded, then set language to English and attach crowd selection logic
+    document.addEventListener('DOMContentLoaded', () => {
+      // Save original SEO content HTML structure
+      const appContainer = document.getElementById('app');
+      if (appContainer) {
+        originalSEOContent = appContainer.innerHTML;
+      }
+      
+      // Set language to English if loader.js exposes setLanguage (multilingual support)
+      if (window.setLanguage && typeof window.setLanguage === 'function') {
+        window.setLanguage('en');
+      }
+
+      const crowdSelector = document.getElementById('crowd-selector');
+      const instructionTitle = document.getElementById('crowd-instruction-title');
+
+      if (!crowdSelector || !appContainer) return;
+
+      // Function to load and render the selected crowd algorithm (exactly like DE/FR/IT versions)
+      const loadSelectedCrowd = (crowdType, buttonElement) => {
+        // Hide the blog SEO links section (just like German version hides blog area)
+        if (blogSeoSection && !blogSeoSection.classList.contains('hide-seo-links')) {
+          blogSeoSection.classList.add('hide-seo-links');
+        }
+        
+        // Hide the instruction title
+        if (instructionTitle) {
+          instructionTitle.style.display = 'none';
+        }
+
+        // Show elegant loading indicator using same placeholder class as German version
+        appContainer.innerHTML = '<div class="loading-placeholder">Loading calculator, please wait...</div>';
+       
+        // Smooth scroll to algorithm area for better UX
+        appContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        // Core: call window.loadCrowd function provided by loader.js
+        if (window.loadCrowd && typeof window.loadCrowd === 'function') {
+          // loadCrowd fetches the appropriate crowd HTML/CSS/JS fragment and injects into #app
+          // It relies fully on common.css, ensuring full-width comfortable layout identical to DE/ES/IT versions
+          window.loadCrowd(crowdType);
+         
+          // Debounce: briefly disable the clicked button to avoid rapid double-clicking (but doesn't break UI)
+          if (buttonElement) {
+            buttonElement.disabled = true;
+            setTimeout(() => {
+              if (buttonElement) buttonElement.disabled = false;
+            }, 700);
+          }
+        } else {
+          console.error('loadCrowd function missing – please verify js/loader.js is correctly loaded and exposes global loadCrowd');
+          appContainer.innerHTML = '<div style="text-align:center; padding:2rem; color:#b91c1c; font-family: Lato, sans-serif;">❌ Error: Calculator could not be loaded. Please refresh the page.</div>';
+        }
+      };
+
+      // Event delegation for crowd buttons – identical to DE/FR/IT versions
+      crowdSelector.addEventListener('click', (event) => {
+        const btn = event.target.closest('.crowd-btn');
+        if (!btn) return;
+       
+        const crowdValue = btn.getAttribute('data-crowd');
+        if (!crowdValue) return;
+       
+        // Prevent rapid repeated clicks while loading
+        if (btn.disabled) return;
+       
+        // Load selected crowd calculator
+        loadSelectedCrowd(crowdValue, btn);
+      });
+
+      // No automatic pre-loading on page load – matches DE/FR/IT versions and enhances clarity
+    });
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "SZ": {
+    "name": "Schwyz",
+    "legal_basis": {
+      "primary_key": "SZ_fa_legal_basis_primary",
+      "additional_sources_key": "SZ_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "SZ_fa_office_name",
+      "authority_key": "SZ_fa_application_authority"
+    },
+    "application": {
+      "method_key": "SZ_fa_application_method",
+      "url": "https://www.sva-sz.ch",
+      "required_documents_key": "SZ_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "SZ_fa_contact_address",
+      "phone": "+41 41 819 04 25",
+      "email": "info@sva-sz.ch"
+    },
+    "notes_key": "SZ_fa_special_notes"
+  }
+}

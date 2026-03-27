@@ -1,0 +1,75 @@
+{
+  "GE": {
+    "el": {
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "GE_el_legal_basis_primary",
+        "additional_sources_key": "GE_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child_add": 50000,
+        "note": "Standard fédéral 2026, avec supplément par enfant (ELG Art. 5)"
+      },
+      "rent_limits_monthly": {
+        "region_1": {
+          "1_person": 1450,
+          "2_persons": 1700,
+          "3_persons": 1950,
+          "4_persons": 2200,
+          "5_plus_persons": 2450
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified": {
+          "adult": 8100,
+          "young_adult": 5670,
+          "child": 1890,
+          "note": "Primes moyennes genevoises 2026 estimées"
+        },
+        "max": 30000
+      },
+      "grundbedarf_annual": {
+        "single": 20670,
+        "couple": 31005
+      },
+      "child_grundbedarf_rates": {
+        "over_11": [
+          10815,
+          10815,
+          7210,
+          7210,
+          3605
+        ],
+        "under_11": [
+          7590,
+          6325,
+          5270,
+          4390,
+          3660
+        ]
+      },
+      "application": {
+        "authority_key": "GE_el_application_authority",
+        "office_name_key": "GE_el_office_name",
+        "url": "https://www.ocas.ch",
+        "contact": {
+          "address_key": "GE_el_contact_address",
+          "phone": "+41 22 327 27 27",
+          "email": "spc@ocas.ch"
+        },
+        "required_documents_key": "GE_el_required_documents_list"
+      },
+      "additional_info": {
+        "social_assistance_supplement_desc": "GE_social_assistance_supplement_desc",
+        "child_care_mode": "GE_child_care_mode",
+        "child_care_authority": "GE_child_care_authority",
+        "child_care_calculator_ref": "GE_child_care_calculator_ref",
+        "unterhalt_model": "GE_unterhalt_model",
+        "unterhalt_notes": "GE_unterhalt_notes"
+      }
+    }
+  }
+}

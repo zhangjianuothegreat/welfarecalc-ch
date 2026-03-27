@@ -1,0 +1,42 @@
+{
+  "SH": {
+    "ipv": {
+      "legal_basis": {
+        "primary_key": "SH_ipv_legal_basis_primary",
+        "additional_sources_key": "SH_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "formula_type": "income_percentage",
+      "official_url": "https://www.svash.ch/ipv",
+      "asset_rate": 0.15,
+      "income_deduction_factor": 0.15,
+      "standard_deductions": {
+        "single": 4500,
+        "couple": 9000,
+        "per_child": 4500
+      },
+      "income_limits": {
+        "max_household_income": 80000
+      },
+      "ref_premium_annual": {
+        "adult": 5320,
+        "young_adult": 3724,
+        "child": 1220
+      },
+      "min_payment": 100,
+      "application": {
+        "method_key": "SH_ipv_application_method",
+        "authority_key": "SH_ipv_application_authority",
+        "office_name_key": "SH_ipv_office_name",
+        "url": "https://www.svash.ch/ipv",
+        "digital_portal": "https://portal.svash.ch",
+        "contact": {
+          "address_key": "SH_ipv_contact_address",
+          "phone": "+41 52 632 61 11",
+           "email": "https://www.svash.ch/kontakt"
+        },
+        "required_documents_key": "SH_ipv_required_documents_list"
+      }
+    }
+  }
+}

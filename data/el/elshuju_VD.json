@@ -1,0 +1,59 @@
+{
+  "VD": {
+    "el": {
+     "legal_basis": {
+        "primary_key": "VD_el_legal_basis_primary",
+        "additional_sources_key": "VD_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "per_child_extra": 50000,
+        "note": "Vermögensschwelle VD 2026 gemäss kantonalen Richtlinien."
+      },
+      "rent_limits_monthly": {
+        "region_1": {
+          "name_key": "VD_el_region_1_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "5_plus_persons": 2160
+        },
+        "region_2": {
+          "name_key": "VD_el_region_2_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000
+        },
+        "region_3": {
+          "name_key": "VD_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "5_plus_persons": 2000
+        }
+      },
+      "recognized_premiums_annual": {
+        "region1_high": { "adult": 8388, "young_adult": 6180, "child": 2016 },
+        "region2_medium": { "adult": 7860, "young_adult": 5808, "child": 1896 },
+        "region3_low": { "adult": 7284, "young_adult": 5412, "child": 1764 }
+      },
+      "application": {
+        "authority_key": "VD_el_application_authority",
+        "office_name_key": "VD_el_office_name",
+        "url": "https://www.vd.ch",
+        "contact": {
+          "address_key": "VD_el_contact_address",
+          "phone": "+41 21 964 12 11",
+          "email": "pc@vd.ch"
+        },
+        "required_documents_key": "VD_el_required_documents_list"
+      }
+    }
+  }
+}

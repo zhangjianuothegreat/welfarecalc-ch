@@ -1,0 +1,62 @@
+{
+  "ZG": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_zg_2026",
+      "official_url": "https://zg.ch/de/soziales/sozialhilfe",
+      "legal_basis": {
+        "primary_key": "ZG_sh_legal_basis_primary",
+        "additional_sources_key": "ZG_sh_legal_basis_additional",
+        "legal_source": "https://bgs.zg.ch/app/de/texts_of_law/861.4"
+      },
+      "asset_freibetrag": {
+        "single": 10000,
+        "couple": 20000,
+        "per_child": 4000,
+        "max_total": 25000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "1p": 1500,
+        "2p": 1800,
+        "3p": 2100,
+        "4p": 2400,
+        "5p_plus": 2700
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "application": {
+        "authority_key": "ZG_sh_authority",
+        "office_name_key": "ZG_sh_office_name",
+        "url": "https://zg.ch/de/soziales/sozialhilfe",
+        "contact": {
+          "address_key": "ZG_sh_contact_address",
+          "phone": "+41 41 728 30 00",
+          "email": "sozialhilfe@zg.ch",
+          "office_hours_key": "ZG_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

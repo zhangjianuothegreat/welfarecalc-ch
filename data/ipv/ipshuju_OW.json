@@ -1,0 +1,49 @@
+{
+  "OW": {
+    "ipv": {
+      "formula_type": "retained_income",
+      "legal_basis": {
+        "primary_key": "OW_ipv_legal_basis_primary",
+        "additional_sources_key": "OW_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.akow.ch/dienstleistungen/praemienverbilligung",
+      "algorithm_description_key": "OW_ipv_algorithm_description",
+      "asset_limit_single": 0,
+      "asset_limit_couple": 0,
+      "income_deduction_factor": 0.095,
+      "staffel_rate_per_100": 0.0001,
+      "staffel_start_income": 35000,
+      "exemption": {
+        "married_couple": 7000,
+        "per_child": 7000
+      },
+      "income_limits": {
+        "no_children": 50000,
+        "with_children": 70000
+      },
+      "ref_premium_annual": {
+        "adult": 5018.4,
+        "young_adult": 3570,
+        "child": 1380
+      },
+      "minimum_reduction": {
+        "children_under_50k": 0.8,
+        "children_4th_onward": 1.0,
+        "young_under_25k": 0.5,
+        "min_subsidy_chf": 0
+      },
+      "application": {
+        "contact": {
+          "address_key": "OW_ipv_contact_address",
+          "phone": "+41 41 666 27 50",
+          "email": "info@akow.ch",
+          "office_hours_key": "AG_ipv_office_hours"
+        },
+        "method_key": "OW_ipv_application_method",
+        "authority_key": "OW_ipv_application_authority",
+        "online_application": true
+      }
+    }
+  }
+}

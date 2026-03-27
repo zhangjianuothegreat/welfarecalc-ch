@@ -1,0 +1,57 @@
+{
+  "ZH": {
+    "ipv": {
+      "legal_basis": {
+        "primary_key": "ZH_ipv_legal_basis_primary",
+        "additional_sources_key": "ZH_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "formula_type": "ZH_percentage_eigenanteil",
+      "official_url": "https://svazurich.ch/ipv",
+      "deduction_rate_single": 0.084,
+      "deduction_rate_family": 0.105,
+      "asset_limit_single": 150000,
+      "asset_limit_family": 300000,
+      "asset_freibetrag_single": 75000,
+      "asset_freibetrag_family": 150000,
+      "asset_consumption_rate": 0.1,
+      "grundbetrag_rate": 0.3,
+      "ref_premium_rate": 0.7,
+      "income_limit_no_ausbildung": 70500,
+      "income_limit_with_ausbildung": 94000,
+      "child_eigenanteil_reduction_rate": 0.2,
+      "ausbildung_eigenanteil_reduction_rate": 0.5,
+      "ref_premiums_annual_70percent": {
+        "1": {
+          "adult": 7704,
+          "young": 5532,
+          "child": 1854
+        },
+        "2": {
+          "adult": 7020,
+          "young": 5040,
+          "child": 1686
+        },
+        "3": {
+          "adult": 6540,
+          "young": 4692,
+          "child": 1566
+        }
+      },
+      "application": {
+        "method_key": "ZH_ipv_application_method",
+        "authority_key": "ZH_ipv_application_authority",
+        "office_name_key": "ZH_ipv_office_name",
+        "url": "https://svazurich.ch/ipv",
+        "digital_portal": "https://svazurich.ch/ipv-online",
+        "contact": {
+          "address_key": "ZH_ipv_contact_address",
+          "phone": "+41 44 448 89 50",
+          "email": "info@svazurich.ch",
+          "office_hours_key": "ZH_ipv_office_hours"
+        },
+        "required_documents_key": "ZH_ipv_required_documents_list"
+      }
+    }
+  }
+}

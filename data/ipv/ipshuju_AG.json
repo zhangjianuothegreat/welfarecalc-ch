@@ -1,0 +1,88 @@
+{
+  "AG": {
+    "ipv": {
+      "formula_type": "AG_income_percentage",
+      "year": 2026,
+      "legal_basis": {
+        "primary_key": "AG_ipv_legal_basis_primary",
+        "additional_sources_key": "AG_ipv_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "official_url": "https://www.sva-aargau.ch/pv",
+      "source_note": "Alle Daten basierend auf offiziellen Angaben der SVA Aargau für das Bezugsjahr 2026. Primärquelle für Richtprämien: SVA Aargau (Abschnitt 'Allgemeine Informationen').",
+      "algorithm_description_key": "AG_ipv_algorithm_description",
+      "asset_limit_single": 100000,
+      "asset_limit_couple": 200000,
+      "ahv_exemption_annual": 12600,
+      "income_definition": "taxable_income_plus_assets",
+      "income_period": "tax_assessment_3_years_prior",
+      "eligible_groups": "couples_partners_cohabitation_youth_19_25",
+      "income_deduction_factor": {
+        "married_couple": 0.175,
+        "single_parent": 0.175,
+        "single_person": 0.175,
+        "source_note": "Einkommenssatz 17.5% unverändert für 2026."
+      },
+      "ref_premium_annual": {
+        "adult": 5830.00,
+        "young_adult": 4260.00,
+        "child": 1380.00,
+        "source_note": "Richtprämien 2026: Erwachsene 5'830 CHF, junge Erwachsene 4'260 CHF, Kinder 1'380 CHF."
+      },
+      "formula_explanation": {
+        "steps": [
+          {
+            "order": 1,
+            "variable": "determining_income",
+            "description_key": "AG_ipv_step_1_desc",
+            "formula_key": "AG_ipv_step_1_formula",
+            "intermediate": true
+          },
+          {
+            "order": 2,
+            "variable": "total_reference_premium",
+            "description_key": "AG_ipv_step_2_desc",
+            "formula_key": "AG_ipv_step_2_formula",
+            "intermediate": true
+          },
+          {
+            "order": 3,
+            "variable": "income_deduction",
+            "description_key": "AG_ipv_step_3_desc",
+            "formula_key": "AG_ipv_step_3_formula",
+            "intermediate": true
+          },
+          {
+            "order": 4,
+            "variable": "calculated_subsidy",
+            "description_key": "AG_ipv_step_4_desc",
+            "formula_key": "AG_ipv_step_4_formula",
+            "intermediate": true
+          },
+          {
+            "order": 5,
+            "variable": "annual_benefit",
+            "description_key": "AG_ipv_step_5_desc",
+            "formula_key": "AG_ipv_step_5_formula",
+            "intermediate": false
+          }
+        ],
+        "note_key": "AG_ipv_formula_note"
+      },
+      "application": {
+        "method_key": "AG_ipv_application_method",
+        "authority_key": "AG_ipv_application_authority",
+        "office_name_key": "AG_ipv_office_name",
+        "url": "https://www.sva-aargau.ch/pv",
+        "contact": {
+          "address_key": "AG_ipv_contact_address",
+          "phone": "+41 62 837 89 11",
+          "email": "ipv@sva-ag.ch",
+          "office_hours_key": "AG_ipv_office_hours"
+        },
+        "required_docs_list": [],
+        "source_note": "Datenquelle: SVA Aargau 2026. Antragsmodalitäten und Kontaktinformationen."
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "GL": {
+    "name": "Glarus",
+    "legal_basis": {
+      "primary_key": "GL_fa_legal_basis_primary",
+      "additional_sources_key": "GL_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "GL_fa_office_name",
+      "authority_key": "GL_fa_application_authority"
+    },
+    "application": {
+      "method_key": "GL_fa_application_method",
+      "url": "https://www.svgl.ch",
+      "required_documents_key": "GL_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "GL_fa_contact_address",
+      "phone": "+41 55 646 66 33",
+      "email": "info@svgl.ch"
+    },
+    "notes_key": "GL_fa_special_notes"
+  }
+}

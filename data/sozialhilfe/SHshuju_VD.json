@@ -1,0 +1,62 @@
+{
+  "VD": {
+    "sozialhilfe": {
+      "year": 2026,
+      "formula_type": "skos_cantonal_vd_2026",
+      "official_url": "https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/revenu-dinsertion-ri",
+      "legal_basis": {
+        "primary_key": "VD_sh_legal_basis_primary",
+        "additional_sources_key": "VD_sh_legal_basis_additional",
+        "legal_source": "https://www.lexfind.ch/tolv/214809/fr"
+      },
+      "asset_freibetrag": {
+        "single": 6000,
+        "couple": 12000,
+        "per_child": 3000,
+        "max_total": 15000
+      },
+      "grundbedarf_monthly": {
+        "single": 1061,
+        "couple": 1624,
+        "per_additional_adult": 400,
+        "per_child_under_11": 391,
+        "per_child_11_15": 699,
+        "per_child_over_15": 1061
+      },
+      "rent_max_monthly": {
+        "1p": 1200,
+        "2p": 1400,
+        "3p": 1600,
+        "4p": 1800,
+        "5p_plus": 2000
+      },
+      "integration_extra_monthly": 100,
+      "income_deduction": {
+        "earned_income_rate": 0.2
+      },
+      "asset_consumption": {
+        "divisor_other": 10
+      },
+      "application": {
+        "authority_key": "VD_sh_authority",
+        "office_name_key": "VD_sh_office_name",
+        "url": "https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/revenu-dinsertion-ri",
+        "contact": {
+          "address_key": "VD_sh_contact_address",
+          "phone": "+41 21 316 52 52",
+          "email": "info.dgcs@vd.ch",
+          "office_hours_key": "VD_sh_office_hours"
+        },
+        "required_docs_keys": [
+          "sh_doc_id",
+          "sh_doc_income_proof",
+          "sh_doc_assets_proof",
+          "sh_doc_rent_contract",
+          "sh_doc_bank_statements",
+          "sh_doc_kk_premiums",
+          "sh_doc_tax_assessment"
+        ]
+      }
+    }
+  }
+}

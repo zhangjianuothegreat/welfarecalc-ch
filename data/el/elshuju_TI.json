@@ -1,0 +1,55 @@
+{
+  "TI": {
+    "el": {
+      "legal_basis": {
+        "primary_key": "TI_el_legal_basis_primary",
+        "additional_sources_key": "TI_el_legal_basis_additional",
+        "legal_source": "https://www.fedlex.admin.ch"
+      },
+      "asset_limits": {
+        "single": 100000,
+        "couple": 200000,
+        "child": 50000,
+        "freibetrag_single": 30000,
+        "freibetrag_couple": 50000,
+        "note": "Vermögensschwelle gemäss ELG 2026; Eigenheim-Abzug bis 300'000 CHF möglich."
+      },
+      "rent_limits_monthly": {
+        "region_2": {
+          "name_key": "TI_el_region_2_name",
+          "1_person": 1525,
+          "2_persons": 1810,
+          "3_persons": 1980,
+          "4_persons": 2160,
+          "note": "Offizielle BSV-Mietzinsmaxima 2026 für Region 2 TI."
+        },
+        "region_3": {
+          "name_key": "TI_el_region_3_name",
+          "1_person": 1390,
+          "2_persons": 1680,
+          "3_persons": 1850,
+          "4_persons": 2000,
+          "note": "Offizielle BSV-Mietzinsmaxima 2026 für Region 3 TI."
+        }
+      },
+      "recognized_premiums_annual": {
+        "unified_TI_2026": {
+          "adult": 6852,
+          "young_adult": 5100,
+          "child": 1572
+        }
+      },
+      "application": {
+        "authority_key": "TI_el_application_authority",
+        "office_name_key": "TI_el_office_name",
+        "url": "https://www4.ti.ch/dss/dipartimento",
+        "contact": {
+          "address_key": "TI_el_contact_address",
+          "phone": "+41 91 821 91 11",
+          "email": "pc@ias.ti.ch"
+        },
+        "required_documents_key": "TI_el_required_documents_list"
+      }
+    }
+  }
+}

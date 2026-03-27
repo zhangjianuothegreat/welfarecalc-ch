@@ -1,0 +1,705 @@
+/* main_student.css - 学生版模块专用样式 - 调整为与家庭版/单人版字号与间距标准对齐 */
+
+/* ===== CSS变量定义 ===== */
+:root {
+    /* 主色调 - 蓝色系（输入页面使用）- 更沉稳 */
+    --primary-blue: #5a67d8;
+    --primary-blue-dark: #4c51bf;
+    --primary-blue-light: #e6eeff;
+    --primary-blue-border: #c7d2fe;
+   
+    /* 辅色调 - 紫色系（结果页面使用） */
+    --accent-purple: #6b46c1;
+    --accent-purple-gradient: linear-gradient(135deg, #5a67d8, #6b46c1);
+    --accent-purple-light: #f3e8ff;
+    --accent-purple-border: #ddd6fe;
+   
+    /* 成功色 - 绿色（更克制的绿色） */
+    --success-green: #38a169;
+    --success-green-dark: #276749;
+    --success-green-light: #f0fff4;
+    --success-green-border: #9ae6b4;
+   
+    /* 金色 - 仅保留轻微效果 */
+    --gold-light: #fffbeb;
+    --gold: #f59e0b;
+    --gold-dark: #b45309;
+    --gold-glow: 0 0 8px rgba(245, 158, 11, 0.2);
+   
+    /* 警告色 - 更柔和 */
+    --warning-yellow: #fbbf24;
+    --warning-yellow-light: #fffbeb;
+    --warning-yellow-border: #fcd34d;
+    --warning-orange: #d97706;
+    --warning-orange-light: #fff7ed;
+    --warning-orange-border: #fed7aa;
+   
+    /* 卡片强化色 - 更细腻的边框和阴影 */
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;
+    --card-border-hover: #5a67d8;
+    --card-summary-bg: #f8fafc;
+    --card-summary-hover: #f1f5f9;
+    --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --card-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.15);
+   
+    /* PDF按钮专用颜色 - 更克制的红色 */
+    --pdf-red: #dc2626;
+    --pdf-red-dark: #b91c1c;
+    --pdf-red-light: #fef2f2;
+    --pdf-glow: 0 0 12px rgba(220, 38, 38, 0.3);
+   
+    /* 错误色 - 红色 */
+    --danger-red: #ef4444;
+    --danger-red-light: #fef2f2;
+    --danger-red-border: #fecaca;
+   
+    /* 中性色 - 灰色系 - 更精简 */
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-300: #cbd5e1;
+    --gray-400: #94a3b8;
+    --gray-500: #64748b;
+    --gray-600: #475569;
+    --gray-700: #334155;
+    --gray-800: #1e293b;
+    --gray-900: #0f172a;
+   
+    /* 间距变量 - 显著压缩 */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-xxl: 24px;
+    --spacing-xxxl: 32px;
+   
+    /* 圆角变量 - 更精致 */
+    --radius-card: 12px;
+    --radius-button: 24px;
+    --radius-input: 8px;
+   
+    /* 字体 - 保持清晰但略紧凑 */
+    --font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Courier New', monospace;
+   
+    /* 阴影 - 更细腻 */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 2px 4px rgba(0,0,0,0.08);
+    --shadow-lg: 0 4px 6px rgba(0,0,0,0.1);
+    --shadow-hover: var(--card-shadow-hover);
+    --shadow-card: var(--card-shadow);
+}
+
+/* ===== 全屏模式样式 ===== */
+body.module-fullscreen {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.module-fullscreen #app {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    flex: 1;
+}
+
+/* 全屏模式下的app容器 */
+#app.fullscreen-mode {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 隐藏主页面的元素 */
+.site-header[style*="display: none"],
+#crowd-selector[style*="display: none"],
+.site-footer[style*="display: none"] {
+    display: none !important;
+}
+
+/* 学生模块激活时的样式 */
+#app.student-module-active {
+    animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 确保结果页面卡片正确显示 */
+.benefit-details {
+    margin-bottom: 16px;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.benefit-summary {
+    padding: 16px 20px;
+    background: var(--gray-50);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.benefit-summary:hover {
+    background: var(--gray-100);
+}
+
+/* 移动端适配（全屏模式） */
+@media (max-width: 768px) {
+    body.module-fullscreen #app {
+        padding: 12px !important;
+    }
+   
+    .benefit-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+   
+    .benefit-total {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 480px) {
+    body.module-fullscreen #app {
+        padding: 12px !important;
+    }
+}
+
+/* ===== 全局基础样式 ===== */
+body {
+    font-family: var(--font-family-base);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    line-height: 1.5;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #f8fafc;
+    color: var(--gray-800);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== 结果页面样式 ===== */
+.result-page-magazine {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* 杂志风格标题 - 纯色替代渐变 */
+.magazine-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--accent-purple);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    letter-spacing: -0.01em;
+}
+
+/* 引导区样式 */
+.magazine-lead {
+    background: var(--gray-50);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-card);
+    margin-bottom: var(--spacing-lg);
+    border: 1px solid var(--gray-200);
+}
+
+.magazine-lead p {
+    color: var(--gray-600);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ===== 重要提示 - 黄色块 ===== */
+.disclaimer-box {
+    background: var(--warning-yellow-light);
+    border: 1px solid var(--warning-yellow-border);
+    border-radius: var(--radius-card);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-md) 0 var(--spacing-xl) 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray-700);
+    box-shadow: var(--shadow-sm);
+    text-align: left;
+}
+
+.disclaimer-box strong:first-child {
+    color: var(--gray-800);
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* 章节标题 */
+.section-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin: var(--spacing-xl) 0 var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--gray-200);
+}
+
+/* ===== 输入信息网格 ===== */
+.magazine-input-grid {
+    background: var(--gray-50);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-xl);
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid var(--gray-200);
+}
+
+/* 输入表格样式 */
+.inputs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inputs-table tr {
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.inputs-table tr:last-child {
+    border-bottom: none;
+}
+
+.inputs-table td {
+    padding: var(--spacing-sm) 0;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.inputs-table td:first-child {
+    font-weight: 500;
+    color: var(--gray-600);
+    width: 50%;
+    padding-right: var(--spacing-md);
+}
+
+.inputs-table td:last-child {
+    text-align: right;
+    font-family: var(--font-family-mono);
+    font-weight: 600;
+    color: var(--accent-purple);
+}
+
+/* 隐藏卡片内的 Eingabeinformationen 标题 */
+.inputs-section .section-heading {
+    display: none;
+}
+
+/* ===== 模式提示卡片 ===== */
+.mode-notice {
+    background: var(--primary-blue-light);
+    border: 2px solid var(--primary-blue);
+    border-left: 4px solid var(--primary-blue-dark);
+    padding: var(--spacing-lg);
+    margin: 0 auto var(--spacing-xl);
+    border-radius: var(--radius-card);
+    color: var(--primary-blue-dark);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 680px;
+    box-shadow: var(--shadow-md);
+}
+
+/* 模式提示卡片标题 */
+.mode-notice strong:first-child {
+    display: block;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-blue-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ===== 福利卡片 ===== */
+.benefit-card-magazine {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius-card);
+    margin: 0 0 var(--spacing-lg) 0;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: all 0.2s ease;
+}
+
+.benefit-card-magazine:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--card-border-hover);
+}
+
+.benefit-summary-magazine {
+    padding: var(--spacing-lg);
+    background: var(--card-summary-bg);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    list-style: none;
+    transition: all 0.2s ease;
+}
+
+.benefit-summary-magazine:hover {
+    background: var(--card-summary-hover);
+}
+
+.benefit-summary-magazine::-webkit-details-marker {
+    display: none;
+}
+
+.benefit-name {
+    font-size: 1.1rem;
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+/* 左侧彩色边框 */
+#ipv-details { border-left: 5px solid #3b82f6; }
+#fa-details   { border-left: 5px solid #8b5cf6; }
+#sh-details   { border-left: 5px solid #f59e0b; }
+#el-details   { border-left: 5px solid #10b981; }
+
+.benefit-total-magazine {
+    color: var(--success-green-dark);
+    font-size: 1rem;
+    font-family: var(--font-family-mono);
+    font-weight: 700;
+    background: var(--success-green-light);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.benefit-total-magazine b {
+    font-size: 1.2rem;
+    margin: 0 4px;
+}
+
+.toggle-hint-magazine {
+    color: var(--primary-blue-dark);
+    font-size: 0.95rem;
+    margin-left: var(--spacing-sm);
+    font-weight: 500;
+    background: var(--primary-blue-light);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.benefit-content-magazine {
+    padding: var(--spacing-xl);
+    border-top: 1px solid var(--card-border);
+    background: white;
+}
+
+/* 公式区域 */
+.formula-magazine {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray-700);
+}
+
+.formula-magazine strong {
+    color: var(--success-green-dark);
+    font-weight: 700;
+}
+
+/* 操作按钮区域 */
+.magazine-actions {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xxl);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-magazine {
+    padding: var(--spacing-md) var(--spacing-xl);
+    border: none;
+    border-radius: var(--radius-button);
+    font-weight: 500;
+    cursor: pointer;
+    min-width: 160px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-magazine.primary {
+    background: var(--primary-blue);
+    color: white;
+}
+
+.btn-magazine.primary:hover {
+    background: var(--primary-blue-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-magazine.secondary {
+    background: var(--gray-100);
+    color: var(--gray-600);
+    border: 1px solid var(--gray-200);
+}
+
+.btn-magazine.secondary:hover {
+    background: var(--gray-200);
+    color: var(--gray-700);
+    transform: translateY(-2px);
+}
+
+/* PDF 按钮 */
+.btn-magazine.primary#btn-pdf,
+#btn-pdf.btn-magazine.primary {
+    background: var(--pdf-red);
+    font-size: 1.15rem;
+    padding: var(--spacing-lg) var(--spacing-xxl);
+    min-width: 240px;
+    font-weight: 700;
+    box-shadow: var(--shadow-md);
+}
+
+.btn-magazine.primary#btn-pdf:hover,
+#btn-pdf.btn-magazine.primary:hover {
+    background: var(--pdf-red-dark);
+    transform: translateY(-2px);
+}
+
+/* 用户输入相关 */
+#user-inputs {
+    width: 100%;
+    margin-bottom: var(--spacing-xl);
+}
+
+/* 表单标签 */
+label {
+    display: block;
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+    font-weight: 500;
+    color: var(--gray-700);
+    font-size: 1rem;
+}
+
+/* 输入框和选择框 */
+input, select {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin: var(--spacing-sm) 0 var(--spacing-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-input);
+    font-size: 1rem;
+    height: 44px;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.15);
+}
+
+/* 提示文字 */
+.hint {
+    font-size: 0.95rem;
+    color: var(--gray-600);
+    margin-top: 4px;
+}
+
+/* 公式容器 */
+.formula-container {
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-card);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    font-size: 0.95rem;
+}
+
+.formula-container .note {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: var(--warning-yellow-light);
+    border: 1px solid var(--warning-yellow-border);
+    border-radius: var(--radius-input);
+    font-size: 0.95rem;
+}
+
+/* 警告框 */
+.warning-box {
+    color: var(--danger-red-dark);
+    background: var(--danger-red-light);
+    padding: var(--spacing-md);
+    border: 1px solid var(--danger-red-border);
+    border-radius: var(--radius-card);
+    margin: var(--spacing-lg) 0;
+    font-size: 0.95rem;
+}
+
+/* 一次性标识 */
+.onetime-badge {
+    display: inline-block;
+    background: #0891b2;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: var(--spacing-sm);
+}
+
+/* 返回主页按钮 */
+.back-to-home {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 10000;
+    padding: 10px 18px;
+    background: var(--gray-500);
+    color: white;
+    border: none;
+    border-radius: var(--radius-button);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: var(--shadow-md);
+}
+
+.back-to-home:hover {
+    background: var(--gray-600);
+}
+
+/* 按钮组 */
+.button-group {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xxl);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary, .btn-exit {
+    min-width: 160px;
+    font-size: 1rem;
+    padding: var(--spacing-md) var(--spacing-xl);
+    height: 48px;
+}
+
+.btn-exit {
+    background-color: var(--gray-500);
+}
+
+.btn-exit:hover {
+    background-color: var(--gray-600);
+}
+
+/* 响应式设计 - 与家庭版/单人版尽量对齐 */
+@media (max-width: 768px) {
+    body {
+        padding: 16px;
+    }
+   
+    .magazine-input-grid {
+        padding: var(--spacing-lg);
+    }
+   
+    .magazine-actions {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+   
+    .btn-magazine, .btn-primary, .btn-secondary, .btn-exit {
+        width: 100%;
+        min-width: auto;
+    }
+   
+    .magazine-title {
+        font-size: 1.3rem;
+    }
+   
+    .disclaimer-box {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+   
+    .inputs-table td {
+        font-size: 0.95rem;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: var(--spacing-sm) 0;
+    }
+   
+    .inputs-table td:first-child {
+        width: 100%;
+        padding-right: 0;
+    }
+   
+    .back-to-home {
+        top: 12px;
+        left: 12px;
+        padding: 8px 14px;
+        font-size: 0.95rem;
+    }
+}
+
+/* 强制居中修复 */
+html, body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+#app {
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 0 var(--spacing-md) !important;
+    box-sizing: border-box !important;
+}
+
+/* EL 卡片隐藏 */
+#el-details[style*="display:none"] {
+    display: none !important;
+}

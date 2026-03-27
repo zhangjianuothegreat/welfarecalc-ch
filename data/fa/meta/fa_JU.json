@@ -1,0 +1,24 @@
+{
+  "JU": {
+    "name": "Jura",
+    "legal_basis": {
+      "primary_key": "JU_fa_legal_basis_primary",
+      "additional_sources_key": "JU_fa_legal_basis_additional",
+      "legal_source": "https://www.fedlex.admin.ch"
+    },
+    "authority": {
+      "office_name_key": "JU_fa_office_name",
+      "authority_key": "JU_fa_application_authority"
+    },
+    "application": {
+      "method_key": "JU_fa_application_method",
+      "url": "https://www.ecasjura.ch",
+      "required_documents_key": "JU_fa_required_documents_list"
+    },
+    "contact": {
+      "address_key": "JU_fa_contact_address",
+      "phone": "+41 32 465 52 11"
+    },
+    "notes_key": "JU_fa_special_notes"
+  }
+}
