@@ -1,0 +1,505 @@
+{
+  "code": "4.8200",
+  "name_de": "Alignerbehandlung einfach",
+  "display_name": {
+    "de": "Einfache Aligner-Behandlung (Invisalign)",
+    "fr": "Traitement par aligneurs simple (Invisalign)",
+    "it": "Trattamento con allineatori semplice (Invisalign)",
+    "en": "Simple aligner treatment (Invisalign)",
+    "es": "Tratamiento con alineadores simple (Invisalign)",
+    "pt": "Tratamento com alinhadores simples (Invisalign)",
+    "pl": "Proste leczenie nakładkami (Invisalign)",
+    "al": "Trajtim i thjeshtë me alinjner (Invisalign)",
+    "tr": "Basit şeffaf plak tedavisi (Invisalign)",
+    "hr": "Jednostavan tretman alignerima (Invisalign)",
+    "ta": "எளிய அலைனர் சிகிச்சை (இன்விசலைன்)"
+  },
+  "search_keywords": {
+    "de": ["aligner", "invisalign", "durchsichtige schiene", "kieferorthopädie", "zahnspange unsichtbar", "schienenbehandlung", "clear aligner"],
+    "fr": ["aligneurs", "invisalign", "gouttières transparentes", "orthodontie", "bagues invisibles", "traitement par gouttières"],
+    "it": ["allineatori", "invisalign", "maschere trasparenti", "ortodonzia", "apparecchi invisibili", "trattamento con allineatori"],
+    "en": ["aligners", "invisalign", "clear aligners", "orthodontics", "invisible braces", "aligner treatment"],
+    "es": ["alineadores", "invisalign", "férulas transparentes", "ortodoncia", "brackets invisibles", "tratamiento con alineadores"],
+    "pt": ["alinhadores", "invisalign", "alinhadores transparentes", "ortodontia", "aparelhos invisíveis", "tratamento com alinhadores"],
+    "pl": ["nakładki", "invisalign", "przezroczyste nakładki", "ortodoncja", "niewidoczne aparaty", "leczenie nakładkami"],
+    "al": ["alinjner", "invisalign", "alinjner transparent", "ortodonci", "aparate të padukshme", "trajtim me alinjner"],
+    "tr": ["şeffaf plak", "invisalign", "şeffaf plak tedavisi", "ortodonti", "görünmez tel", "aligner tedavisi"],
+    "hr": ["aligneri", "invisalign", "prozirni aligneri", "ortodoncija", "nevidljive proteze", "liječenje alignerima"],
+    "ta": ["அலைனர்கள்", "இன்விசலைன்", "தெளிவான அலைனர்கள்", "பல் வரிசை சீரமைப்பு", "கண்ணுக்கு தெரியாத பிரேஸ்கள்", "அலைனர் சிகிச்சை"]
+  },
+  "tp_uv_mviv": 146.40,
+  "tp_pp_max": 168.40,
+  "tp_pp_min": 124.40,
+  "chapter": "11.02",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Das ist der Start einer Zahnspange, die fast unsichtbar ist! Du bekommst durchsichtige, herausnehmbare Schienen, die deine Zähne Stück für Stück in die richtige Position bringen. Zuerst macht der Zahnarzt einen Abdruck von deinen Zähnen. Dann bekommst du dein erstes Schienenpaar. Du trägst die Schienen fast den ganzen Tag – nur zum Essen und Zähneputzen nimmst du sie raus. Das ist eine tolle Sache, wenn du keine feste, sichtbare Zahnspange möchtest. Aber Achtung: Die Versicherung muss vorher zustimmen!",
+    "fr": "C'est le début d'un appareil dentaire presque invisible! Tu reçois des gouttières transparentes et amovibles qui déplacent tes dents petit à petit dans la bonne position. D'abord, le dentiste prend une empreinte de tes dents. Ensuite, tu reçois ta première paire de gouttières. Tu portes les gouttières presque toute la journée – tu les enlèves seulement pour manger et te brosser les dents. C'est une excellente option si tu ne veux pas d'un appareil fixe et visible. Mais attention: l'assurance doit approuver avant le traitement!",
+    "it": "Questo è l'inizio di un apparecchio dentale quasi invisibile! Ricevi delle mascherine trasparenti e rimovibili che spostano i tuoi denti poco a poco nella posizione corretta. Prima il dentista prende un'impronta dei tuoi denti. Poi ricevi la tua prima coppia di allineatori. Porti gli allineatori quasi tutto il giorno – li togli solo per mangiare e lavarti i denti. È un'ottima opzione se non vuoi un apparecchio fisso e visibile. Ma attenzione: l'assicurazione deve approvare prima del trattamento!",
+    "en": "This is the start of an almost invisible braces treatment! You receive clear, removable aligners that gradually move your teeth into the correct position. First, the dentist takes an impression of your teeth. Then you get your first pair of aligners. You wear the aligners almost all day – you only take them out to eat and brush your teeth. This is a great option if you don't want fixed, visible braces. But be careful: the insurance must approve the treatment beforehand!",
+    "es": "¡Este es el inicio de un aparato dental casi invisible! Recibes alineadores transparentes y removibles que mueven tus dientes poco a poco a la posición correcta. Primero, el dentista toma una impresión de tus dientes. Luego recibes tu primer par de alineadores. Usas los alineadores casi todo el día – solo te los quitas para comer y cepillarte los dientes. ¡Es una excelente opción si no quieres un aparato fijo y visible! Pero ojo: ¡el seguro debe aprobar antes del tratamiento!",
+    "pt": "Este é o início de um aparelho dentário quase invisível! Recebes alinhadores transparentes e removíveis que movem os teus dentes pouco a pouco para a posição correta. Primeiro, o dentista tira uma impressão dos teus dentes. Depois recebes o teu primeiro par de alinhadores. Usas os alinhadores quase todo o dia – só os tiras para comer e escovar os dentes. É uma ótima opção se não quiseres um aparelho fixo e visível. Mas atenção: o seguro tem de aprovar antes do tratamento!",
+    "pl": "To jest początek prawie niewidocznego aparatu ortodontycznego! Otrzymujesz przezroczyste, zdejmowane nakładki, które stopniowo przesuwają Twoje zęby do prawidłowej pozycji. Najpierw dentysta pobiera wycisk Twoich zębów. Następnie otrzymujesz swoją pierwszą parę nakładek. Nosisz nakładki prawie cały dzień – zdejmujesz je tylko do jedzenia i mycia zębów. To świetna opcja, jeśli nie chcesz stałego, widocznego aparatu. Ale uwaga: ubezpieczenie musi wyrazić zgodę przed leczeniem!",
+    "al": "Ky është fillimi i një trajtimi pothuajse të padukshëm me aparat dentar! Ju merrni alinjnerë transparentë dhe të lëvizshëm që lëvizin dhëmbët tuaj gradualisht në pozicionin e duhur. Së pari, dentisti merr një përshtypje të dhëmbëve tuaj. Pastaj merrni çiftin tuaj të parë të alinjnerëve. I mbani alinjnerët pothuajse gjithë ditën – i hiqni vetëm për të ngrënë dhe larë dhëmbët. Kjo është një mundësi e shkëlqyer nëse nuk dëshironi një aparat fiks dhe të dukshëm. Por kujdes: sigurimi duhet të miratojë para trajtimit!",
+    "tr": "Bu, neredeyse görünmez bir ortodontik tedavinin başlangıcıdır! Dişlerinizi yavaş yavaş doğru konuma getiren şeffaf, çıkarılabilir plaklar alırsınız. Önce diş hekimi dişlerinizin ölçüsünü alır. Ardından ilk plak çiftinizi alırsınız. Plakları neredeyse tüm gün takarsınız – sadece yemek yerken ve dişlerinizi fırçalarken çıkarırsınız. Sabit, görünür bir tel istemiyorsanız bu harika bir seçenektir. Ama dikkat: sigorta tedaviden önce onay vermelidir!",
+    "hr": "Ovo je početak gotovo nevidljivog ortodontskog aparata! Dobivate prozirne, uklonjive alignere koji postupno pomiču vaše zube u ispravan položaj. Prvo, zubar uzima otisak vaših zuba. Zatim dobivate svoj prvi par alignera. Nosite alignere gotovo cijeli dan – skidate ih samo za jelo i pranje zuba. Ovo je izvrsna opcija ako ne želite fiksnu, vidljivu protezu. Ali pažnja: osiguranje mora odobriti prije liječenja!",
+    "ta": "இது கிட்டத்தட்ட கண்ணுக்கு தெரியாத பிரேஸ் சிகிச்சையின் ஆரம்பமாகும்! உங்கள் பற்களை படிப்படியாக சரியான நிலைக்கு நகர்த்தும் தெளிவான, அகற்றக்கூடிய அலைனர்களை நீங்கள் பெறுகிறீர்கள். முதலில், பல் மருத்துவர் உங்கள் பற்களின் அச்சை எடுக்கிறார். பின்னர் உங்கள் முதல் ஜோடி அலைனர்களைப் பெறுகிறீர்கள். நீங்கள் கிட்டத்தட்ட நாள் முழுவதும் அலைனர்களை அணிகிறீர்கள் – சாப்பிடும்போது மற்றும் பற்களை துலக்கும்போது மட்டுமே அவற்றை அகற்றுகிறீர்கள். நிலையான, கண்ணுக்கு தெரியும் பிரேஸ்களை விரும்பவில்லை என்றால் இது ஒரு சிறந்த வழி. ஆனால் கவனம்: சிகிச்சைக்கு முன் காப்பீடு ஒப்புதல் அளிக்க வேண்டும்!"
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 **Individueller Abdruck** deiner Zähne (für die Anfertigung der Aligner)",
+      "📏 **Digitale Planung** der Zahnbewegungen (ClinCheck oder vergleichbar)",
+      "🎯 **Erstes Schienenpaar** (Abgabe und Einweisung)",
+      "📋 **Instruktion** zum Tragen und zur Pflege der Aligner",
+      "🏥 **Vorbereitung** für die gesamte Aligner-Behandlung",
+      "⚠️ **Wichtig:** Folgebehandlungen (Kontrollsitzungen) werden separat mit 4.8570 abgerechnet!",
+      "⚙️ **Zahntechnische Laborleistung** wird separat verrechnet (nicht im TP enthalten)"
+    ],
+    "fr": [
+      "🦷 **Empreinte individuelle** de tes dents (pour la fabrication des aligneurs)",
+      "📏 **Planification numérique** des mouvements dentaires (ClinCheck ou équivalent)",
+      "🎯 **Première paire de gouttières** (remise et instruction)",
+      "📋 **Instruction** sur le port et l'entretien des aligneurs",
+      "🏥 **Préparation** pour l'ensemble du traitement par aligneurs",
+      "⚠️ **Important:** Les traitements de suivi (séances de contrôle) sont facturés séparément avec 4.8570!",
+      "⚙️ **Prestation de laboratoire dentaire** facturée séparément (non incluse dans le TP)"
+    ],
+    "it": [
+      "🦷 **Impronta individuale** dei tuoi denti (per la produzione degli allineatori)",
+      "📏 **Pianificazione digitale** dei movimenti dentali (ClinCheck o equivalente)",
+      "🎯 **Prima coppia di allineatori** (consegna e istruzioni)",
+      "📋 **Istruzioni** su come indossare e curare gli allineatori",
+      "🏥 **Preparazione** per l'intero trattamento con allineatori",
+      "⚠️ **Importante:** I trattamenti di follow-up (sedute di controllo) sono fatturati separatamente con 4.8570!",
+      "⚙️ **Prestazione di laboratorio odontotecnico** fatturata separatamente (non inclusa nel TP)"
+    ],
+    "en": [
+      "🦷 **Individual impression** of your teeth (for manufacturing the aligners)",
+      "📏 **Digital planning** of tooth movements (ClinCheck or equivalent)",
+      "🎯 **First pair of aligners** (delivery and instruction)",
+      "📋 **Instruction** on wearing and caring for the aligners",
+      "🏥 **Preparation** for the entire aligner treatment",
+      "⚠️ **Important:** Follow-up treatments (control sessions) are billed separately with 4.8570!",
+      "⚙️ **Dental laboratory service** billed separately (not included in the TP)"
+    ],
+    "es": [
+      "🦷 **Impresión individual** de tus dientes (para la fabricación de los alineadores)",
+      "📏 **Planificación digital** de los movimientos dentales (ClinCheck o equivalente)",
+      "🎯 **Primer par de alineadores** (entrega e instrucción)",
+      "📋 **Instrucción** sobre cómo usar y cuidar los alineadores",
+      "🏥 **Preparación** para todo el tratamiento con alineadores",
+      "⚠️ **Importante:** Los tratamientos de seguimiento (sesiones de control) se facturan por separado con 4.8570!",
+      "⚙️ **Prestación de laboratorio dental** facturada por separado (no incluida en el TP)"
+    ],
+    "pt": [
+      "🦷 **Impressão individual** dos teus dentes (para a fabricação dos alinhadores)",
+      "📏 **Planeamento digital** dos movimentos dentários (ClinCheck ou equivalente)",
+      "🎯 **Primeiro par de alinhadores** (entrega e instrução)",
+      "📋 **Instrução** sobre como usar e cuidar dos alinhadores",
+      "🏥 **Preparação** para todo o tratamento com alinhadores",
+      "⚠️ **Importante:** Os tratamentos de seguimento (sessões de controlo) são faturados separadamente com 4.8570!",
+      "⚙️ **Prestação de laboratório dentário** faturada separadamente (não incluída no TP)"
+    ],
+    "pl": [
+      "🦷 **Indywidualny wycisk** Twoich zębów (do wykonania nakładek)",
+      "📏 **Planowanie cyfrowe** ruchów zębów (ClinCheck lub odpowiednik)",
+      "🎯 **Pierwsza para nakładek** (wydanie i instruktaż)",
+      "📋 **Instrukcja** dotycząca noszenia i pielęgnacji nakładek",
+      "🏥 **Przygotowanie** do całego leczenia nakładkami",
+      "⚠️ **Ważne:** Leczenie kontrolne (sesje kontrolne) jest rozliczane osobno z 4.8570!",
+      "⚙️ **Praca laboratoryjna** rozliczana osobno (nie wliczona w TP)"
+    ],
+    "al": [
+      "🦷 **Përshtypje individuale** e dhëmbëve tuaj (për prodhimin e alinjnerëve)",
+      "📏 **Planifikim dixhital** i lëvizjeve të dhëmbëve (ClinCheck ose ekuivalente)",
+      "🎯 **Çifti i parë i alinjnerëve** (dorëzimi dhe udhëzimi)",
+      "📋 **Udhëzim** për veshjen dhe kujdesin e alinjnerëve",
+      "🏥 **Përgatitje** për të gjithë trajtimin me alinjner",
+      "⚠️ **E rëndësishme:** Trajtimet pasuese (seancat e kontrollit) faturohen veçmas me 4.8570!",
+      "⚙️ **Shërbimi laboratorik dentar** faturohet veçmas (nuk përfshihet në TP)"
+    ],
+    "tr": [
+      "🦷 **Dişlerinizin bireysel ölçüsü** (plakların üretimi için)",
+      "📏 **Diş hareketlerinin dijital planlaması** (ClinCheck veya benzeri)",
+      "🎯 **İlk plak çifti** (teslim ve talimat)",
+      "📋 **Plakları takma ve bakım talimatları**",
+      "🏥 **Tüm plak tedavisi için hazırlık**",
+      "⚠️ **Önemli:** Takip tedavileri (kontrol seansları) 4.8570 ile ayrı faturalandırılır!",
+      "⚙️ **Diş laboratuvar hizmeti** ayrı faturalandırılır (TP'ye dahil değildir)"
+    ],
+    "hr": [
+      "🦷 **Individualni otisak** vaših zuba (za izradu alignera)",
+      "📏 **Digitalno planiranje** pokreta zuba (ClinCheck ili ekvivalent)",
+      "🎯 **Prvi par alignera** (predaja i instrukcije)",
+      "📋 **Upute** za nošenje i njegu alignera",
+      "🏥 **Priprema** za cjelokupno liječenje alignerima",
+      "⚠️ **Važno:** Kontrolni tretmani (kontrolne seanse) naplaćuju se zasebno s 4.8570!",
+      "⚙️ **Zubotehnički laboratorijski rad** naplaćuje se zasebno (nije uključen u TP)"
+    ],
+    "ta": [
+      "🦷 **உங்கள் பற்களின் தனிப்பட்ட அச்சு** (அலைனர்களை தயாரிப்பதற்கு)",
+      "📏 **பல் அசைவுகளின் டிஜிட்டல் திட்டமிடல்** (கிளின்செக் அல்லது ஒப்பானது)",
+      "🎯 **முதல் ஜோடி அலைனர்கள்** (வழங்குதல் மற்றும் அறிவுறுத்தல்)",
+      "📋 **அலைனர்களை அணிதல் மற்றும் பராமரிப்பதற்கான அறிவுறுத்தல்**",
+      "🏥 **முழு அலைனர் சிகிச்சைக்கான தயாரிப்பு**",
+      "⚠️ **முக்கியம்:** பின்தொடர் சிகிச்சைகள் (கட்டுப்பாட்டு அமர்வுகள்) 4.8570 உடன் தனித்தனியாக கணக்கிடப்படுகின்றன!",
+      "⚙️ **பல் ஆய்வக சேவை** தனித்தனியாக கணக்கிடப்படுகிறது (TP இல் சேர்க்கப்படவில்லை)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Alignerbehandlung einfach** (z.B. Invisalign Go oder vergleichbare einfache Fälle)",
+      "⚠️ **Nur nach Rücksprache mit den Versicherern** nach UV/MV/IV verrechenbar! (Vorabgenehmigung erforderlich!)",
+      "📋 **Leistungsumfang:** Individueller Abdruck und Abgabe des ersten Schienenpaares",
+      "🔄 **Folgebehandlungen:** Werden separat mit Tarifziffer 4.8570 abgerechnet",
+      "⚙️ **Zahntechnische Laborleistung:** Wird separat verrechnet (nicht im TP enthalten)",
+      "💰 **Kosten:** 146.40 TP für UV/MV/IV; Privatpatienten zahlen 124.40–168.40 TP",
+      "👶 **Geeignet für:** Einfache kieferorthopädische Korrekturen, bei denen eine vollständige Aligner-Behandlung nicht erforderlich ist",
+      "📌 **Wichtig:** Dies ist nur der Start der Behandlung! Die Gesamtkosten setzen sich zusammen aus: 4.8200 + (Anzahl Folgebehandlungen × 4.8570) + Laborkosten"
+    ],
+    "fr": [
+      "🦷 **Traitement par aligneurs simple** (p. ex. Invisalign Go ou cas simples comparables)",
+      "⚠️ **Uniquement après consultation avec les assureurs** facturable selon UV/MV/IV! (autorisation préalable requise!)",
+      "📋 **Prestations incluses:** Empreinte individuelle et remise de la première paire de gouttières",
+      "🔄 **Traitements de suivi:** Facturés séparément avec le code 4.8570",
+      "⚙️ **Prestation de laboratoire dentaire:** Facturée séparément (non incluse dans le TP)",
+      "💰 **Coûts:** 146.40 TP pour UV/MV/IV; les patients privés paient 124.40–168.40 TP",
+      "👶 **Adapté pour:** Corrections orthodontiques simples, où un traitement complet par aligneurs n'est pas nécessaire",
+      "📌 **Important:** Ce n'est que le début du traitement! Le coût total se compose de: 4.8200 + (nombre de traitements de suivi × 4.8570) + frais de laboratoire"
+    ],
+    "it": [
+      "🦷 **Trattamento con allineatori semplice** (p. es. Invisalign Go o casi semplici simili)",
+      "⚠️ **Solo dopo consultazione con gli assicuratori** fatturabile secondo UV/MV/IV! (approvazione preventiva richiesta!)",
+      "📋 **Prestazioni incluse:** Impronta individuale e consegna della prima coppia di allineatori",
+      "🔄 **Trattamenti di follow-up:** Fatturati separatamente con il codice 4.8570",
+      "⚙️ **Prestazione di laboratorio odontotecnico:** Fatturata separatamente (non inclusa nel TP)",
+      "💰 **Costi:** 146.40 TP per UV/MV/IV; i pazienti privati pagano 124.40–168.40 TP",
+      "👶 **Adatto per:** Correzioni ortodontiche semplici, dove non è necessario un trattamento completo con allineatori",
+      "📌 **Importante:** Questa è solo l'inizio del trattamento! Il costo totale è composto da: 4.8200 + (numero di trattamenti di follow-up × 4.8570) + costi di laboratorio"
+    ],
+    "en": [
+      "🦷 **Simple aligner treatment** (e.g., Invisalign Go or similar simple cases)",
+      "⚠️ **Only after consultation with the insurers** billable under UV/MV/IV! (prior approval required!)",
+      "📋 **Services included:** Individual impression and delivery of the first pair of aligners",
+      "🔄 **Follow-up treatments:** Billed separately with code 4.8570",
+      "⚙️ **Dental laboratory service:** Billed separately (not included in the TP)",
+      "💰 **Costs:** 146.40 TP for UV/MV/IV; private patients pay 124.40–168.40 TP",
+      "👶 **Suitable for:** Simple orthodontic corrections where a full aligner treatment is not required",
+      "📌 **Important:** This is only the start of the treatment! The total cost consists of: 4.8200 + (number of follow-up treatments × 4.8570) + laboratory costs"
+    ],
+    "es": [
+      "🦷 **Tratamiento con alineadores simple** (p. ej., Invisalign Go o casos simples similares)",
+      "⚠️ **Solo después de consultar con los aseguradores** facturable según UV/MV/IV! (¡se requiere aprobación previa!)",
+      "📋 **Prestaciones incluidas:** Impresión individual y entrega del primer par de alineadores",
+      "🔄 **Tratamientos de seguimiento:** Facturados por separado con el código 4.8570",
+      "⚙️ **Prestación de laboratorio dental:** Facturada por separado (no incluida en el TP)",
+      "💰 **Costes:** 146.40 TP para UV/MV/IV; los pacientes privados pagan 124.40–168.40 TP",
+      "👶 **Adecuado para:** Correcciones ortodónticas simples, donde no se requiere un tratamiento completo con alineadores",
+      "📌 **Importante:** ¡Esto es solo el inicio del tratamiento! El coste total se compone de: 4.8200 + (número de tratamientos de seguimiento × 4.8570) + costes de laboratorio"
+    ],
+    "pt": [
+      "🦷 **Tratamento com alinhadores simples** (p. ex., Invisalign Go ou casos simples semelhantes)",
+      "⚠️ **Apenas após consulta com as seguradoras** faturavel conforme UV/MV/IV! (aprovação prévia necessária!)",
+      "📋 **Prestações incluídas:** Impressão individual e entrega do primeiro par de alinhadores",
+      "🔄 **Tratamentos de seguimento:** Faturados separadamente com o código 4.8570",
+      "⚙️ **Prestação de laboratório dentário:** Faturada separadamente (não incluída no TP)",
+      "💰 **Custos:** 146.40 TP para UV/MV/IV; os pacientes privados pagam 124.40–168.40 TP",
+      "👶 **Adequado para:** Correções ortodônticas simples, onde não é necessário um tratamento completo com alinhadores",
+      "📌 **Importante:** Isto é apenas o início do tratamento! O custo total é composto por: 4.8200 + (número de tratamentos de seguimento × 4.8570) + custos de laboratório"
+    ],
+    "pl": [
+      "🦷 **Proste leczenie nakładkami** (np. Invisalign Go lub podobne proste przypadki)",
+      "⚠️ **Tylko po konsultacji z ubezpieczycielami** do rozliczenia w ramach UV/MV/IV! (wymagana wcześniejsza zgoda!)",
+      "📋 **Zakres usług:** Indywidualny wycisk i wydanie pierwszej pary nakładek",
+      "🔄 **Leczenie kontrolne:** Rozliczane osobno z kodem 4.8570",
+      "⚙️ **Praca laboratoryjna:** Rozliczana osobno (nie wliczona w TP)",
+      "💰 **Koszty:** 146.40 TP dla UV/MV/IV; pacjenci prywatni płacą 124.40–168.40 TP",
+      "👶 **Odpowiednie dla:** Prostych korekt ortodontycznych, gdzie nie jest wymagane pełne leczenie nakładkami",
+      "📌 **Ważne:** To dopiero początek leczenia! Całkowity koszt składa się z: 4.8200 + (liczba leczeń kontrolnych × 4.8570) + koszty laboratoryjne"
+    ],
+    "al": [
+      "🦷 **Trajtim i thjeshtë me alinjner** (p.sh., Invisalign Go ose raste të thjeshta të ngjashme)",
+      "⚠️ **Vetëm pas konsultimit me siguruesit** i faturoshëm sipas UV/MV/IV! (kërkohet miratim paraprak!)",
+      "📋 **Shërbimet e përfshira:** Përshtypje individuale dhe dorëzimi i çiftit të parë të alinjnerëve",
+      "🔄 **Trajtimet pasuese:** Faturuar veçmas me kodin 4.8570",
+      "⚙️ **Shërbimi laboratorik dentar:** Faturuar veçmas (nuk përfshihet në TP)",
+      "💰 **Kostot:** 146.40 TP për UV/MV/IV; pacientët privatë paguajnë 124.40–168.40 TP",
+      "👶 **I përshtatshëm për:** Korrigjime të thjeshta ortodontike, ku nuk kërkohet një trajtim i plotë me alinjner",
+      "📌 **E rëndësishme:** Ky është vetëm fillimi i trajtimit! Kostoja totale përbëhet nga: 4.8200 + (numri i trajtimeve pasuese × 4.8570) + kostot laboratorike"
+    ],
+    "tr": [
+      "🦷 **Basit şeffaf plak tedavisi** (ör. Invisalign Go veya benzeri basit vakalar)",
+      "⚠️ **Sadece sigortacılarla görüşüldükten sonra** UV/MV/IV kapsamında faturalandırılabilir! (ön onay gereklidir!)",
+      "📋 **Dahil olan hizmetler:** Bireysel ölçü ve ilk plak çiftinin teslimi",
+      "🔄 **Takip tedavileri:** 4.8570 kodu ile ayrı faturalandırılır",
+      "⚙️ **Diş laboratuvar hizmeti:** Ayrı faturalandırılır (TP'ye dahil değildir)",
+      "💰 **Maliyetler:** UV/MV/IV için 146.40 TP; özel hastalar 124.40–168.40 TP öder",
+      "👶 **Uygun olduğu durumlar:** Tam plak tedavisi gerektirmeyen basit ortodontik düzeltmeler",
+      "📌 **Önemli:** Bu sadece tedavinin başlangıcıdır! Toplam maliyet şunlardan oluşur: 4.8200 + (takip tedavisi sayısı × 4.8570) + laboratuvar maliyetleri"
+    ],
+    "hr": [
+      "🦷 **Jednostavan tretman alignerima** (npr. Invisalign Go ili slični jednostavni slučajevi)",
+      "⚠️ **Samo nakon konzultacije s osiguravateljima** naplativo prema UV/MV/IV! (potrebno prethodno odobrenje!)",
+      "📋 **Uključene usluge:** Individualni otisak i predaja prvog para alignera",
+      "🔄 **Kontrolni tretmani:** Naplaćuju se zasebno s kodom 4.8570",
+      "⚙️ **Zubotehnički laboratorijski rad:** Naplaćuje se zasebno (nije uključen u TP)",
+      "💰 **Troškovi:** 146.40 TP za UV/MV/IV; privatni pacijenti plaćaju 124.40–168.40 TP",
+      "👶 **Prikladno za:** Jednostavne ortodontske korekcije gdje nije potreban potpuni tretman alignerima",
+      "📌 **Važno:** Ovo je samo početak liječenja! Ukupni trošak se sastoji od: 4.8200 + (broj kontrolnih tretmana × 4.8570) + laboratorijski troškovi"
+    ],
+    "ta": [
+      "🦷 **எளிய அலைனர் சிகிச்சை** (எ.கா., இன்விசலைன் கோ அல்லது ஒத்த எளிய நிகழ்வுகள்)",
+      "⚠️ **காப்பீட்டாளர்களுடன் ஆலோசித்த பின்னரே** UV/MV/IV இன் கீழ் கணக்கிடலாம்! (முன் ஒப்புதல் தேவை!)",
+      "📋 **சேர்க்கப்பட்டுள்ள சேவைகள்:** தனிப்பட்ட அச்சு மற்றும் முதல் ஜோடி அலைனர்களின் வழங்குதல்",
+      "🔄 **பின்தொடர் சிகிச்சைகள்:** 4.8570 குறியீட்டுடன் தனித்தனியாக கணக்கிடப்படுகின்றன",
+      "⚙️ **பல் ஆய்வக சேவை:** தனித்தனியாக கணக்கிடப்படுகிறது (TP இல் சேர்க்கப்படவில்லை)",
+      "💰 **செலவுகள்:** UV/MV/IV க்கு 146.40 TP; தனியார் நோயாளிகள் 124.40–168.40 TP செலுத்துகிறார்கள்",
+      "👶 **பொருந்தக்கூடியது:** முழு அலைனர் சிகிச்சை தேவையில்லாத எளிய பல் வரிசை சீரமைப்பு திருத்தங்கள்",
+      "📌 **முக்கியம்:** இது சிகிச்சையின் தொடக்கமாகும்! மொத்த செலவு: 4.8200 + (பின்தொடர் சிகிச்சைகளின் எண்ணிக்கை × 4.8570) + ஆய்வக செலவுகள்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einfacher (4.8200) und komplexer Alignerbehandlung (4.8550)?",
+        "answer": "Die einfache Alignerbehandlung (4.8200) ist für weniger komplexe Zahnfehlstellungen geeignet, bei denen eine vollständige 3D-Planung mit virtuellem Set-Up nicht erforderlich ist. Sie umfasst nur den individuellen Abdruck und die Abgabe des ersten Schienenpaares. Die komplexe Behandlung (4.8550) beinhaltet zusätzlich einen Präzisionsabdruck, eine Bissnahme und ein virtuelles Set-Up (ClinCheck), das vom Behandler bearbeitet wird – für komplexere Fälle."
+      },
+      {
+        "question": "Wie lange dauert eine Alignerbehandlung?",
+        "answer": "Das hängt vom Einzelfall ab. Bei der einfachen Behandlung (4.8200) sind meist nur wenige Schienenpaare nötig (oft 5–10 Paare). Die Gesamtdauer kann zwischen 3 und 9 Monaten liegen. Dein Zahnarzt wird dir vorher einen Behandlungsplan mit Zeitrahmen geben."
+      },
+      {
+        "question": "Wie oft muss ich zur Kontrolle kommen?",
+        "answer": "Die Kontrollsitzungen werden mit der Tarifziffer 4.8570 abgerechnet. Meist sind alle 4–8 Wochen Kontrollen erforderlich, um den Fortschritt zu überprüfen und die nächsten Schienenpaare auszuhändigen. Dein Zahnarzt wird dir einen individuellen Kontrollplan erstellen."
+      },
+      {
+        "question": "Was kostet eine Alignerbehandlung insgesamt?",
+        "answer": "Die Gesamtkosten setzen sich zusammen aus: der einmaligen Startgebühr (4.8200, 146.40 TP) + den Folgebehandlungen (4.8570, 81.90 TP pro Kontrollsitzung) + den zahntechnischen Laborkosten (die separat anfallen). Bei UV/MV/IV muss die Behandlung vorher von der Versicherung genehmigt werden. Bei Privatpatienten variieren die Kosten je nach Taxpunktwert der Klinik. Frage immer einen schriftlichen Kostenvoranschlag an!"
+      },
+      {
+        "question": "Kann ich die Aligner jederzeit herausnehmen?",
+        "answer": "Ja, die Aligner sind herausnehmbar. Für den Behandlungserfolg ist es wichtig, sie 20–22 Stunden pro Tag zu tragen. Nur zum Essen, Zähneputzen und bei besonderen Anlässen (z.B. wichtige Fotos) darfst du sie herausnehmen. Dein Zahnarzt wird dir genau erklären, wie du die Aligner pflegen und tragen sollst."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre le traitement par aligneurs simple (4.8200) et complexe (4.8550)?",
+        "answer": "Le traitement par aligneurs simple (4.8200) est destiné aux malpositions dentaires moins complexes où une planification 3D complète avec un set-up virtuel n'est pas nécessaire. Il comprend uniquement l'empreinte individuelle et la remise de la première paire de gouttières. Le traitement complexe (4.8550) comprend en plus une empreinte de précision, une prise de morsure et un set-up virtuel (ClinCheck) traité par le praticien – pour les cas plus complexes."
+      },
+      {
+        "question": "Combien de temps dure un traitement par aligneurs?",
+        "answer": "Cela dépend du cas individuel. Dans le traitement simple (4.8200), seules quelques paires de gouttières sont généralement nécessaires (souvent 5–10 paires). La durée totale peut être comprise entre 3 et 9 mois. Ton dentiste te donnera un plan de traitement avec un calendrier."
+      },
+      {
+        "question": "À quelle fréquence dois-je venir pour les contrôles?",
+        "answer": "Les séances de contrôle sont facturées avec le code 4.8570. Généralement, des contrôles toutes les 4 à 8 semaines sont nécessaires pour vérifier les progrès et remettre les prochaines paires de gouttières. Ton dentiste établira un plan de contrôle individuel pour toi."
+      },
+      {
+        "question": "Combien coûte un traitement par aligneurs au total?",
+        "answer": "Le coût total se compose de: des frais de départ uniques (4.8200, 146.40 TP) + des traitements de suivi (4.8570, 81.90 TP par séance de contrôle) + des frais de laboratoire dentaire (qui sont facturés séparément). Pour UV/MV/IV, le traitement doit être approuvé au préalable par l'assurance. Pour les patients privés, les coûts varient en fonction de la valeur en points du cabinet. Demande toujours un devis écrit!"
+      },
+      {
+        "question": "Puis-je retirer les aligneurs à tout moment?",
+        "answer": "Oui, les aligneurs sont amovibles. Pour le succès du traitement, il est important de les porter 20 à 22 heures par jour. Tu ne dois les retirer que pour manger, te brosser les dents et lors d'occasions spéciales (par exemple, photos importantes). Ton dentiste t'expliquera exactement comment entretenir et porter les aligneurs."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra il trattamento con allineatori semplice (4.8200) e complesso (4.8550)?",
+        "answer": "Il trattamento con allineatori semplice (4.8200) è destinato a malposizioni dentarie meno complesse dove non è necessaria una pianificazione 3D completa con set-up virtuale. Comprende solo l'impronta individuale e la consegna della prima coppia di allineatori. Il trattamento complesso (4.8550) include inoltre un'impronta di precisione, una presa di morso e un set-up virtuale (ClinCheck) elaborato dal professionista – per casi più complessi."
+      },
+      {
+        "question": "Quanto dura un trattamento con allineatori?",
+        "answer": "Dipende dal caso individuale. Nel trattamento semplice (4.8200), di solito sono necessarie solo poche coppie di allineatori (spesso 5–10 coppie). La durata totale può essere compresa tra 3 e 9 mesi. Il tuo dentista ti darà un piano di trattamento con una tempistica."
+      },
+      {
+        "question": "Quante volte devo venire per i controlli?",
+        "answer": "Le sedute di controllo sono fatturate con il codice 4.8570. Di solito sono necessari controlli ogni 4–8 settimane per verificare i progressi e consegnare le successive coppie di allineatori. Il tuo dentista creerà per te un piano di controllo individuale."
+      },
+      {
+        "question": "Quanto costa complessivamente un trattamento con allineatori?",
+        "answer": "Il costo totale è composto da: tariffa iniziale una tantum (4.8200, 146.40 TP) + trattamenti di follow-up (4.8570, 81.90 TP per seduta di controllo) + costi di laboratorio odontotecnico (che sono fatturati separatamente). Per UV/MV/IV, il trattamento deve essere approvato preventivamente dall'assicurazione. Per i pazienti privati, i costi variano a seconda del valore in punti dello studio. Chiedi sempre un preventivo scritto!"
+      },
+      {
+        "question": "Posso rimuovere gli allineatori in qualsiasi momento?",
+        "answer": "Sì, gli allineatori sono rimovibili. Per il successo del trattamento, è importante indossarli 20–22 ore al giorno. Dovresti rimuoverli solo per mangiare, lavarti i denti e in occasioni speciali (ad esempio, foto importanti). Il tuo dentista ti spiegherà esattamente come prenderti cura e indossare gli allineatori."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between simple (4.8200) and complex aligner treatment (4.8550)?",
+        "answer": "Simple aligner treatment (4.8200) is for less complex tooth misalignments where a full 3D planning with virtual set-up is not required. It includes only the individual impression and delivery of the first pair of aligners. Complex treatment (4.8550) additionally includes a precision impression, bite registration, and a virtual set-up (ClinCheck) processed by the practitioner – for more complex cases."
+      },
+      {
+        "question": "How long does aligner treatment take?",
+        "answer": "This depends on the individual case. With simple treatment (4.8200), usually only a few pairs of aligners are needed (often 5–10 pairs). The total duration can be between 3 and 9 months. Your dentist will give you a treatment plan with a timeline."
+      },
+      {
+        "question": "How often do I need to come for check-ups?",
+        "answer": "Check-up sessions are billed with code 4.8570. Usually, check-ups every 4–8 weeks are needed to monitor progress and hand out the next pairs of aligners. Your dentist will create an individual check-up schedule for you."
+      },
+      {
+        "question": "How much does aligner treatment cost in total?",
+        "answer": "The total cost consists of: the one-time start fee (4.8200, 146.40 TP) + follow-up treatments (4.8570, 81.90 TP per check-up session) + dental laboratory costs (which are billed separately). For UV/MV/IV, the treatment must be approved by the insurance beforehand. For private patients, costs vary depending on the clinic's point value. Always ask for a written cost estimate!"
+      },
+      {
+        "question": "Can I remove the aligners at any time?",
+        "answer": "Yes, aligners are removable. For treatment success, it is important to wear them 20–22 hours per day. You should only remove them for eating, brushing your teeth, and for special occasions (e.g., important photos). Your dentist will explain exactly how to care for and wear the aligners."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre el tratamiento con alineadores simple (4.8200) y complejo (4.8550)?",
+        "answer": "El tratamiento con alineadores simple (4.8200) es para malposiciones dentales menos complejas donde no se requiere una planificación 3D completa con set-up virtual. Incluye solo la impresión individual y la entrega del primer par de alineadores. El tratamiento complejo (4.8550) incluye además una impresión de precisión, un registro de mordida y un set-up virtual (ClinCheck) procesado por el profesional – para casos más complejos."
+      },
+      {
+        "question": "¿Cuánto dura un tratamiento con alineadores?",
+        "answer": "Depende del caso individual. En el tratamiento simple (4.8200), generalmente solo se necesitan unos pocos pares de alineadores (a menudo 5–10 pares). La duración total puede ser de 3 a 9 meses. Tu dentista te dará un plan de tratamiento con un cronograma."
+      },
+      {
+        "question": "¿Con qué frecuencia debo venir para los controles?",
+        "answer": "Las sesiones de control se facturan con el código 4.8570. Por lo general, se necesitan controles cada 4–8 semanas para verificar el progreso y entregar los siguientes pares de alineadores. Tu dentista creará un plan de control individual para ti."
+      },
+      {
+        "question": "¿Cuánto cuesta un tratamiento con alineadores en total?",
+        "answer": "El coste total se compone de: la tarifa inicial única (4.8200, 146.40 TP) + los tratamientos de seguimiento (4.8570, 81.90 TP por sesión de control) + los costes de laboratorio dental (que se facturan por separado). Para UV/MV/IV, el tratamiento debe ser aprobado previamente por el seguro. Para pacientes privados, los costes varían según el valor en puntos de la clínica. ¡Pide siempre un presupuesto por escrito!"
+      },
+      {
+        "question": "¿Puedo quitarme los alineadores en cualquier momento?",
+        "answer": "Sí, los alineadores son removibles. Para el éxito del tratamiento, es importante usarlos 20–22 horas al día. Solo debes quitártelos para comer, cepillarte los dientes y en ocasiones especiales (por ejemplo, fotos importantes). Tu dentista te explicará exactamente cómo cuidar y usar los alineadores."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre o tratamento com alinhadores simples (4.8200) e complexo (4.8550)?",
+        "answer": "O tratamento com alinhadores simples (4.8200) destina-se a más posições dentárias menos complexas onde não é necessário um planeamento 3D completo com set-up virtual. Inclui apenas a impressão individual e a entrega do primeiro par de alinhadores. O tratamento complexo (4.8550) inclui adicionalmente uma impressão de precisão, um registo de mordida e um set-up virtual (ClinCheck) processado pelo profissional – para casos mais complexos."
+      },
+      {
+        "question": "Quanto tempo demora um tratamento com alinhadores?",
+        "answer": "Depende do caso individual. No tratamento simples (4.8200), geralmente são necessários apenas alguns pares de alinhadores (frequentemente 5–10 pares). A duração total pode ser de 3 a 9 meses. O teu dentista dar-te-á um plano de tratamento com um cronograma."
+      },
+      {
+        "question": "Com que frequência devo vir para os controlos?",
+        "answer": "As sessões de controlo são faturadas com o código 4.8570. Geralmente, são necessários controlos a cada 4–8 semanas para verificar o progresso e entregar os próximos pares de alinhadores. O teu dentista criará um plano de controlo individual para ti."
+      },
+      {
+        "question": "Quanto custa um tratamento com alinhadores no total?",
+        "answer": "O custo total é composto por: a taxa inicial única (4.8200, 146.40 TP) + os tratamentos de seguimento (4.8570, 81.90 TP por sessão de controlo) + os custos de laboratório dentário (que são faturados separadamente). Para UV/MV/IV, o tratamento deve ser aprovado previamente pelo seguro. Para pacientes privados, os custos variam dependendo do valor do ponto da clínica. Pede sempre um orçamento por escrito!"
+      },
+      {
+        "question": "Posso remover os alinhadores a qualquer momento?",
+        "answer": "Sim, os alinhadores são removíveis. Para o sucesso do tratamento, é importante usá-los 20–22 horas por dia. Só deves removê-los para comer, escovar os dentes e em ocasiões especiais (por exemplo, fotos importantes). O teu dentista explicar-te-á exatamente como cuidar e usar os alinhadores."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między prostym (4.8200) a złożonym leczeniem nakładkami (4.8550)?",
+        "answer": "Proste leczenie nakładkami (4.8200) przeznaczone jest dla mniej skomplikowanych wad zgryzu, gdzie nie jest wymagane pełne planowanie 3D z wirtualnym set-upem. Obejmuje tylko indywidualny wycisk i wydanie pierwszej pary nakładek. Leczenie złożone (4.8550) obejmuje dodatkowo precyzyjny wycisk, rejestrację zgryzu i wirtualny set-up (ClinCheck) opracowany przez lekarza – dla bardziej skomplikowanych przypadków."
+      },
+      {
+        "question": "Jak długo trwa leczenie nakładkami?",
+        "answer": "To zależy od indywidualnego przypadku. W prostym leczeniu (4.8200) zwykle potrzeba tylko kilku par nakładek (często 5–10 par). Całkowity czas trwania może wynosić od 3 do 9 miesięcy. Twój dentysta przekaże Ci plan leczenia z harmonogramem."
+      },
+      {
+        "question": "Jak często muszę przychodzić na kontrole?",
+        "answer": "Sesje kontrolne są rozliczane z kodem 4.8570. Zazwyczaj kontrole co 4–8 tygodni są potrzebne do monitorowania postępów i wydawania kolejnych par nakładek. Twój dentysta opracuje dla Ciebie indywidualny plan kontroli."
+      },
+      {
+        "question": "Ile kosztuje leczenie nakładkami łącznie?",
+        "answer": "Całkowity koszt składa się z: jednorazowej opłaty początkowej (4.8200, 146.40 TP) + leczeń kontrolnych (4.8570, 81.90 TP za sesję kontrolną) + kosztów laboratoryjnych (które są rozliczane osobno). W przypadku UV/MV/IV leczenie musi być wcześniej zatwierdzone przez ubezpieczyciela. Dla pacjentów prywatnych koszty różnią się w zależności od wartości punktu w klinice. Zawsze proś o pisemną wycenę!"
+      },
+      {
+        "question": "Czy mogę zdjąć nakładki w dowolnym momencie?",
+        "answer": "Tak, nakładki są zdejmowane. Dla powodzenia leczenia ważne jest noszenie ich 20–22 godzin dziennie. Należy je zdejmować tylko do jedzenia, mycia zębów i w szczególnych okazjach (np. ważne zdjęcia). Twój dentysta dokładnie wyjaśni, jak dbać o nakładki i jak je nosić."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis trajtimit të thjeshtë me alinjner (4.8200) dhe atij kompleks (4.8550)?",
+        "answer": "Trajtimi i thjeshtë me alinjner (4.8200) është për shtrembërime më pak komplekse të dhëmbëve ku nuk kërkohet planifikim i plotë 3D me set-up virtual. Përfshin vetëm përshtypjen individuale dhe dorëzimin e çiftit të parë të alinjnerëve. Trajtimi kompleks (4.8550) përfshin gjithashtu një përshtypje precize, një regjistrim të kafshimit dhe një set-up virtual (ClinCheck) të përpunuar nga profesionisti – për raste më komplekse."
+      },
+      {
+        "question": "Sa kohë zgjat një trajtim me alinjner?",
+        "answer": "Kjo varet nga rasti individual. Në trajtimin e thjeshtë (4.8200), zakonisht nevojiten vetëm disa çifte alinjnerësh (shpesh 5–10 çifte). Kohëzgjatja totale mund të jetë midis 3 dhe 9 muajsh. Dentisti yt do të të japë një plan trajtimi me një afat kohor."
+      },
+      {
+        "question": "Sa shpesh duhet të vij për kontrolle?",
+        "answer": "Seancat e kontrollit faturohen me kodin 4.8570. Zakonisht, nevojiten kontrolle çdo 4–8 javë për të monitoruar përparimin dhe për të dhënë çiftet e ardhshme të alinjnerëve. Dentisti yt do të krijojë një plan kontrolli individual për ty."
+      },
+      {
+        "question": "Sa kushton një trajtim me alinjner në total?",
+        "answer": "Kostoja totale përbëhet nga: tarifa fillestare një herë (4.8200, 146.40 TP) + trajtimet pasuese (4.8570, 81.90 TP për seancë kontrolli) + kostot laboratorike dentare (të cilat faturohen veçmas). Për UV/MV/IV, trajtimi duhet të miratohet paraprakisht nga sigurimi. Për pacientët privatë, kostot ndryshojnë në varësi të vlerës së pikës së klinikës. Kërko gjithmonë një vlerësim me shkrim!"
+      },
+      {
+        "question": "A mund t'i heq alinjnerët në çdo kohë?",
+        "answer": "Po, alinjnerët janë të lëvizshëm. Për suksesin e trajtimit, është e rëndësishme t'i veshësh 20–22 orë në ditë. Duhet t'i heqësh vetëm për të ngrënë, për të larë dhëmbët dhe për raste të veçanta (p.sh., foto të rëndësishme). Dentisti yt do të të shpjegojë saktësisht se si të kujdesesh dhe të veshësh alinjnerët."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Basit (4.8200) ve karmaşık şeffaf plak tedavisi (4.8550) arasındaki fark nedir?",
+        "answer": "Basit şeffaf plak tedavisi (4.8200), sanal set-up ile tam 3D planlama gerektirmeyen daha az karmaşık diş çarpıklıkları içindir. Yalnızca bireysel ölçü ve ilk plak çiftinin teslimini içerir. Karmaşık tedavi (4.8550), ayrıca hassas ölçü, kapanış kaydı ve hekim tarafından işlenen sanal set-up (ClinCheck) içerir – daha karmaşık vakalar için."
+      },
+      {
+        "question": "Şeffaf plak tedavisi ne kadar sürer?",
+        "answer": "Bu, bireysel vakaya bağlıdır. Basit tedavide (4.8200), genellikle sadece birkaç çift plak gerekir (genellikle 5–10 çift). Toplam süre 3 ila 9 ay arasında olabilir. Diş hekimin size zaman çizelgesi olan bir tedavi planı verecektir."
+      },
+      {
+        "question": "Kontroller için ne sıklıkla gelmeliyim?",
+        "answer": "Kontrol seansları 4.8570 kodu ile faturalandırılır. Genellikle, ilerlemeyi izlemek ve sonraki plak çiftlerini teslim etmek için 4–8 haftada bir kontroller gereklidir. Diş hekiminiz sizin için bireysel bir kontrol planı oluşturacaktır."
+      },
+      {
+        "question": "Şeffaf plak tedavisinin toplam maliyeti nedir?",
+        "answer": "Toplam maliyet şunlardan oluşur: tek seferlik başlangıç ücreti (4.8200, 146.40 TP) + takip tedavileri (4.8570, kontrol seansı başına 81.90 TP) + diş laboratuvar maliyetleri (ayrı faturalandırılır). UV/MV/IV için tedavi önceden sigorta tarafından onaylanmalıdır. Özel hastalar için maliyetler, kliniğin puan değerine bağlı olarak değişir. Her zaman yazılı maliyet tahmini isteyin!"
+      },
+      {
+        "question": "Plakları istediğim zaman çıkarabilir miyim?",
+        "answer": "Evet, plaklar çıkarılabilir. Tedavi başarısı için, onları günde 20–22 saat takmak önemlidir. Sadece yemek yerken, dişlerinizi fırçalarken ve özel durumlarda (örneğin önemli fotoğraflar) çıkarmalısınız. Diş hekiminiz plaklara nasıl bakacağınızı ve nasıl takacağınızı tam olarak açıklayacaktır."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između jednostavnog (4.8200) i složenog tretmana alignerima (4.8550)?",
+        "answer": "Jednostavan tretman alignerima (4.8200) namijenjen je manje složenim nepravilnostima zuba gdje nije potrebno potpuno 3D planiranje s virtualnim set-upom. Uključuje samo individualni otisak i predaju prvog para alignera. Složeni tretman (4.8550) dodatno uključuje precizni otisak, registraciju zagriza i virtualni set-up (ClinCheck) obrađen od strane liječnika – za složenije slučajeve."
+      },
+      {
+        "question": "Koliko dugo traje tretman alignerima?",
+        "answer": "To ovisi o pojedinačnom slučaju. Kod jednostavnog tretmana (4.8200), obično je potrebno samo nekoliko pari alignera (često 5–10 pari). Ukupno trajanje može biti između 3 i 9 mjeseci. Zubar će vam dati plan liječenja s vremenskim okvirom."
+      },
+      {
+        "question": "Koliko često moram dolaziti na kontrole?",
+        "answer": "Kontrolne seanse naplaćuju se s kodom 4.8570. Obično su potrebne kontrole svakih 4–8 tjedana za praćenje napretka i predaju sljedećih pari alignera. Zubar će za vas izraditi individualni plan kontrole."
+      },
+      {
+        "question": "Koliko ukupno košta tretman alignerima?",
+        "answer": "Ukupni trošak sastoji se od: jednokratne početne naknade (4.8200, 146.40 TP) + kontrolnih tretmana (4.8570, 81.90 TP po kontrolnoj seansi) + zubotehničkih laboratorijskih troškova (koji se naplaćuju zasebno). Za UV/MV/IV, liječenje mora prethodno odobriti osiguranje. Za privatne pacijente, troškovi variraju ovisno o vrijednosti boda klinike. Uvijek zatražite pismenu procjenu troškova!"
+      },
+      {
+        "question": "Mogu li skinuti alignere u bilo kojem trenutku?",
+        "answer": "Da, aligneri su uklonjivi. Za uspjeh liječenja važno je nositi ih 20–22 sata dnevno. Trebate ih skinuti samo za jelo, pranje zuba i u posebnim prilikama (npr. važne fotografije). Zubar će vam točno objasniti kako se brinuti za alignere i kako ih nositi."
+      }
+    ],
+    "ta": [
+      {
+        "question": "எளிய (4.8200) மற்றும் சிக்கலான அலைனர் சிகிச்சைக்கு (4.8550) என்ன வித்தியாசம்?",
+        "answer": "எளிய அலைனர் சிகிச்சை (4.8200) என்பது மெய்நிகர் அமைப்புடன் முழு 3D திட்டமிடல் தேவையில்லாத குறைவான சிக்கலான பல் முறையற்ற நிலைகளுக்கானது. இது தனிப்பட்ட அச்சு மற்றும் முதல் ஜோடி அலைனர்களின் வழங்குதலை மட்டுமே உள்ளடக்கியது. சிக்கலான சிகிச்சை (4.8550) கூடுதலாக ஒரு துல்லியமான அச்சு, ஒரு கடி பதிவு மற்றும் பயிற்சியாளரால் செயலாக்கப்பட்ட மெய்நிகர் அமைப்பு (கிளின்செக்) ஆகியவற்றை உள்ளடக்கியது – மிகவும் சிக்கலான நிகழ்வுகளுக்கு."
+      },
+      {
+        "question": "அலைனர் சிகிச்சை எவ்வளவு காலம் ஆகும்?",
+        "answer": "இது தனிப்பட்ட நிகழ்வைப் பொறுத்தது. எளிய சிகிச்சையில் (4.8200), பொதுவாக சில ஜோடி அலைனர்கள் மட்டுமே தேவைப்படுகின்றன (பெரும்பாலும் 5–10 ஜோடிகள்). மொத்த காலம் 3 முதல் 9 மாதங்கள் வரை இருக்கலாம். உங்கள் பல் மருத்துவர் ஒரு காலவரிசையுடன் கூடிய சிகிச்சை திட்டத்தை உங்களுக்கு வழங்குவார்."
+      },
+      {
+        "question": "கட்டுப்பாட்டுக்கு எத்தனை முறை வர வேண்டும்?",
+        "answer": "கட்டுப்பாட்டு அமர்வுகள் 4.8570 குறியீட்டுடன் கணக்கிடப்படுகின்றன. பொதுவாக, முன்னேற்றத்தை கண்காணிக்கவும் அடுத்த ஜோடி அலைனர்களை வழங்கவும் ஒவ்வொரு 4–8 வாரங்களுக்கும் கட்டுப்பாடுகள் தேவைப்படுகின்றன. உங்கள் பல் மருத்துவர் உங்களுக்காக ஒரு தனிப்பட்ட கட்டுப்பாட்டு திட்டத்தை உருவாக்குவார்."
+      },
+      {
+        "question": "அலைனர் சிகிச்சையின் மொத்த செலவு எவ்வளவு?",
+        "answer": "மொத்த செலவு பின்வருவனவற்றைக் கொண்டுள்ளது: ஒரு முறை தொடக்கக் கட்டணம் (4.8200, 146.40 TP) + பின்தொடர் சிகிச்சைகள் (4.8570, ஒரு கட்டுப்பாட்டு அமர்வுக்கு 81.90 TP) + பல் ஆய்வக செலவுகள் (தனித்தனியாக கணக்கிடப்படுகின்றன). UV/MV/IV க்கு, சிகிச்சை முன்கூட்டியே காப்பீட்டால் அங்கீகரிக்கப்பட வேண்டும். தனியார் நோயாளிகளுக்கு, செலவுகள் கிளினிக்கின் புள்ளி மதிப்பைப் பொறுத்து மாறுபடும். எப்போதும் எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "நான் எப்போது வேண்டுமானாலும் அலைனர்களை அகற்றலாமா?",
+        "answer": "ஆம், அலைனர்களை அகற்றலாம். சிகிச்சை வெற்றிக்கு, அவற்றை ஒரு நாளைக்கு 20–22 மணி நேரம் அணிவது முக்கியம். சாப்பிடும்போது, பற்களைத் துலக்கும்போது மற்றும் சிறப்பு சந்தர்ப்பங்களில் (எ.கா., முக்கியமான புகைப்படங்கள்) மட்டுமே அவற்றை அகற்ற வேண்டும். உங்கள் பல் மருத்துவர் அலைனர்களை எவ்வாறு பராமரிப்பது மற்றும் அணிவது என்பதை சரியாக விளக்குவார்."
+      }
+    ]
+  }
+}

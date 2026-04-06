@@ -1,0 +1,274 @@
+{
+  "code": "4.0090",
+  "name_de": "Befundaufnahme beim Schüler",
+  "display_name": {
+    "de": "Schulzahnuntersuchung",
+    "fr": "Examen dentaire scolaire",
+    "it": "Visita dentale scolastica",
+    "en": "School dental examination",
+    "es": "Examen dental escolar",
+    "pt": "Exame dentário escolar",
+    "pl": "Szkolne badanie stomatologiczne",
+    "al": "Ekzaminim dentar shkollor",
+    "tr": "Okul diş muayenesi",
+    "hr": "Školski stomatološki pregled",
+    "ta": "பள்ளி பல் பரிசோதனை"
+  },
+  "search_keywords": {
+    "de": ["schule", "schüler", "kind", "zahnarzt schule", "schulzahnpflege", "gebissstatus", "karieskontrolle", "kieferorthopädie grobbefund"],
+    "fr": ["école", "écolier", "enfant", "dentiste scolaire", "hygiène dentaire scolaire", "statut dentaire", "contrôle caries", "examen orthodontique"],
+    "it": ["scuola", "studente", "bambino", "dentista scolastico", "igiene dentale scolastica", "stato dentale", "controllo carie", "esame ortodontico"],
+    "en": ["school", "pupil", "child", "school dentist", "school dental care", "dental status", "caries control", "orthodontic screening"],
+    "es": ["escuela", "alumno", "niño", "dentista escolar", "cuidado dental escolar", "estado dental", "control de caries", "examen ortodóntico"],
+    "pt": ["escola", "aluno", "criança", "dentista escolar", "cuidado dentário escolar", "estado dentário", "controlo de cáries", "exame ortodôntico"],
+    "pl": ["szkoła", "uczeń", "dziecko", "dentysta szkolny", "opieka stomatologiczna w szkole", "stan uzębienia", "kontrola próchnicy", "badanie ortodontyczne"],
+    "al": ["shkollë", "nxënës", "fëmijë", "dentist shkollor", "kujdes dentar shkollor", "gjendja dentare", "kontrolli i kariesit", "ekzaminim ortodontik"],
+    "tr": ["okul", "öğrenci", "çocuk", "okul diş hekimi", "okul diş bakımı", "diş durumu", "çürük kontrolü", "ortodontik muayene"],
+    "hr": ["škola", "učenik", "dijete", "školski zubar", "školska stomatološka skrb", "stomatološki status", "kontrola karijesa", "ortodontski pregled"],
+    "ta": ["பள்ளி", "மாணவர்", "குழந்தை", "பள்ளி பல் மருத்துவர்", "பள்ளி பல் பராமரிப்பு", "பல் நிலை", "புழு கட்டுப்பாடு", "பல் வரிசை சீரமைப்பு பரிசோதனை"]
+  },
+  "tp_uv_mviv": null,
+  "tp_pp_max": 56.10,
+  "tp_pp_min": 41.50,
+  "chapter": "01.02",
+  "coverage": "PP only",
+  "simple_explain": {
+    "de": "Das ist eine Zahnuntersuchung speziell für Kinder in der Schule. Der Zahnarzt schaut sich alle Zähne an, ob Karies da ist, wie sauber die Zähne sind und ob die Zähne gerade wachsen. Eltern müssen dafür selbst bezahlen, die Krankenkasse zahlt nicht. Gut für die Schulgesundheit!",
+    "fr": "C'est un examen dentaire spécialement pour les enfants à l'école. Le dentiste regarde toutes les dents pour voir s'il y a des caries, à quel point les dents sont propres et si elles poussent droites. Les parents doivent payer eux-mêmes, l'assurance maladie ne prend pas en charge. Bon pour la santé scolaire!",
+    "it": "Questo è un esame dentale speciale per i bambini a scuola. Il dentista controlla tutti i denti per vedere se ci sono carie, quanto sono puliti i denti e se crescono dritti. I genitori devono pagare da soli, l'assicurazione malattia non copre. Buono per la salute scolastica!",
+    "en": "This is a dental examination specially for children at school. The dentist checks all teeth for cavities, how clean the teeth are, and whether the teeth are growing straight. Parents have to pay themselves, health insurance does not cover it. Good for school health!",
+    "es": "Este es un examen dental especialmente para niños en la escuela. El dentista revisa todos los dientes para ver si hay caries, qué tan limpios están los dientes y si crecen rectos. Los padres tienen que pagar ellos mismos, el seguro de salud no lo cubre. ¡Bueno para la salud escolar!",
+    "pt": "Este é um exame dentário especialmente para crianças na escola. O dentista verifica todos os dentes para ver se há cáries, quão limpos estão os dentes e se crescem direitos. Os pais têm de pagar eles próprios, o seguro de saúde não cobre. Bom para a saúde escolar!",
+    "pl": "To badanie stomatologiczne specjalnie dla dzieci w szkole. Dentysta sprawdza wszystkie zęby pod kątem próchnicy, czystości zębów i tego, czy rosną prosto. Rodzice muszą zapłacić sami, ubezpieczenie zdrowotne tego nie pokrywa. Dobre dla zdrowia w szkole!",
+    "al": "Ky është një ekzaminim dentar posaçërisht për fëmijët në shkollë. Dentisti kontrollon të gjithë dhëmbët për karies, sa të pastër janë dhëmbët dhe nëse dhëmbët rriten drejt. Prindërit duhet të paguajnë vetë, sigurimi shëndetësor nuk e mbulon. Mirë për shëndetin shkollor!",
+    "tr": "Bu, özellikle okuldaki çocuklar için yapılan bir diş muayenesidir. Diş hekimi çürük olup olmadığını, dişlerin ne kadar temiz olduğunu ve dişlerin düzgün çıkıp çıkmadığını kontrol eder. Ebeveynler kendileri ödemek zorundadır, sağlık sigortası kapsamaz. Okul sağlığı için iyi!",
+    "hr": "Ovo je stomatološki pregled posebno za djecu u školi. Zubar provjerava sve zube na karijes, koliko su zubi čisti i rastu li ravno. Roditelji moraju sami platiti, zdravstveno osiguranje to ne pokriva. Dobro za školsko zdravlje!",
+    "ta": "இது பள்ளியில் உள்ள குழந்தைகளுக்கான சிறப்பு பல் பரிசோதனை ஆகும். பல் மருத்துவர் புழுக்கள் உள்ளதா, பற்கள் எவ்வளவு சுத்தமாக உள்ளன, மற்றும் பற்கள் நேராக வளர்கின்றனவா என அனைத்து பற்களையும் சரிபார்க்கிறார். பெற்றோர்கள் தாங்களே பணம் செலுத்த வேண்டும், சுகாதார காப்பீடு இதை மறைப்பதில்லை. பள்ளி ஆரோக்கியத்திற்கு நல்லது!"
+  },
+  "what_is_included": {
+    "de": ["🦷 Klinische Karieskontrolle (alle Zähne)", "📋 Gebissstatus (welche Zähne sind da?)", "🧼 Mundhygienestatus (sind die Zähne sauber?)", "📏 Kieferorthopädischer Grobbefund (wachsen die Zähne gerade?)", "🏫 Speziell für Schulkinder", "💡 Wichtig: Nicht von der Krankenkasse bezahlt!"],
+    "fr": ["🦷 Contrôle clinique des caries (toutes les dents)", "📋 Statut dentaire (quelles dents sont présentes?)", "🧼 Statut d'hygiène buccale (les dents sont-elles propres?)", "📏 Examen orthodontique grossier (les dents poussent-elles droites?)", "🏫 Spécialement pour les écoliers", "💡 Important: Non pris en charge par l'assurance maladie!"],
+    "it": ["🦷 Controllo clinico delle carie (tutti i denti)", "📋 Stato dentale (quali denti ci sono?)", "🧼 Stato di igiene orale (i denti sono puliti?)", "📏 Esame ortodontico di base (i denti crescono dritti?)", "🏫 Specialmente per gli scolari", "💡 Importante: Non coperto dall'assicurazione malattia!"],
+    "en": ["🦷 Clinical caries control (all teeth)", "📋 Dental status (which teeth are present?)", "🧼 Oral hygiene status (are the teeth clean?)", "📏 Basic orthodontic screening (are the teeth growing straight?)", "🏫 Specifically for school children", "💡 Important: Not covered by health insurance!"],
+    "es": ["🦷 Control clínico de caries (todos los dientes)", "📋 Estado dental (¿qué dientes están presentes?)", "🧼 Estado de higiene bucal (¿están limpios los dientes?)", "📏 Examen ortodóntico básico (¿crecen los dientes rectos?)", "🏫 Especialmente para escolares", "💡 Importante: ¡No cubierto por el seguro de salud!"],
+    "pt": ["🦷 Controlo clínico de cáries (todos os dentes)", "📋 Estado dentário (quais dentes estão presentes?)", "🧼 Estado de higiene oral (os dentes estão limpos?)", "📏 Exame ortodôntico básico (os dentes crescem direitos?)", "🏫 Especialmente para crianças em idade escolar", "💡 Importante: Não coberto pelo seguro de saúde!"],
+    "pl": ["🦷 Kliniczna kontrola próchnicy (wszystkie zęby)", "📋 Stan uzębienia (które zęby są obecne?)", "🧼 Stan higieny jamy ustnej (czy zęby są czyste?)", "📏 Podstawowe badanie ortodontyczne (czy zęby rosną prosto?)", "🏫 Specjalnie dla dzieci w wieku szkolnym", "💡 Ważne: Nie pokrywane przez ubezpieczenie zdrowotne!"],
+    "al": ["🦷 Kontrolli klinik i kariesit (të gjithë dhëmbët)", "📋 Gjendja dentare (cilët dhëmbë janë të pranishëm?)", "🧼 Gjendja e higjienës orale (a janë dhëmbët të pastër?)", "📏 Ekzaminim bazë ortodontik (a po rriten dhëmbët drejt?)", "🏫 Veçanërisht për fëmijët e shkollës", "💡 E rëndësishme: Nuk mbulohet nga sigurimi shëndetësor!"],
+    "tr": ["🦷 Klinik çürük kontrolü (tüm dişler)", "📋 Diş durumu (hangi dişler mevcut?)", "🧼 Ağız hijyeni durumu (dişler temiz mi?)", "📏 Temel ortodontik muayene (dişler düzgün çıkıyor mu?)", "🏫 Özellikle okul çağındaki çocuklar için", "💡 Önemli: Sağlık sigortası tarafından karşılanmaz!"],
+    "hr": ["🦷 Klinička kontrola karijesa (svi zubi)", "📋 Stomatološki status (koji zubi su prisutni?)", "🧼 Stanje oralne higijene (jesu li zubi čisti?)", "📏 Osnovni ortodontski pregled (rastu li zubi ravno?)", "🏫 Posebno za školsku djecu", "💡 Važno: Ne pokriva zdravstveno osiguranje!"],
+    "ta": ["🦷 மருத்துவ புழு கட்டுப்பாடு (அனைத்து பற்களும்)", "📋 பல் நிலை (எந்த பற்கள் உள்ளன?)", "🧼 வாய் சுகாதார நிலை (பற்கள் சுத்தமாக உள்ளனவா?)", "📏 அடிப்படை பல் வரிசை சீரமைப்பு பரிசோதனை (பற்கள் நேராக வளர்கின்றனவா?)", "🏫 குறிப்பாக பள்ளி குழந்தைகளுக்கு", "💡 முக்கியம்: சுகாதார காப்பீட்டால் மறைக்கப்படாது!"]
+  },
+  "important_rules": {
+    "de": ["🏫 Speziell für Schüler / Schulkinder", "💰 Wird von UV/MV/IV nicht vergütet (nur Privatpatienten/PP)", "🔍 Enthält: Karieskontrolle, Gebissstatus, Mundhygienestatus, kieferorthopädischen Grobbefund", "📋 Für Reihen-Untersuchungen in der Schule geeignet", "💡 Tipp: Eltern müssen selbst bezahlen. Fragen Sie bei der Schule nach, ob es eine Schulzahnpflege gibt!"],
+    "fr": ["🏫 Spécialement pour les écoliers", "💰 Non pris en charge par UV/MV/IV (patients privés uniquement)", "🔍 Comprend: contrôle des caries, statut dentaire, statut d'hygiène buccale, examen orthodontique grossier", "📋 Adapté pour les examens de dépistage à l'école", "💡 Conseil: Les parents doivent payer eux-mêmes. Renseignez-vous auprès de l'école sur l'existence de soins dentaires scolaires!"],
+    "it": ["🏫 Specialmente per gli scolari", "💰 Non rimborsato da UV/MV/IV (solo pazienti privati)", "🔍 Include: controllo carie, stato dentale, stato igiene orale, esame ortodontico di base", "📋 Adatto per esami di screening a scuola", "💡 Consiglio: I genitori devono pagare da soli. Chiedete a scuola se esiste un servizio di assistenza dentale scolastica!"],
+    "en": ["🏫 Specifically for school children / pupils", "💰 Not covered by UV/MV/IV (private patients only)", "🔍 Includes: caries control, dental status, oral hygiene status, basic orthodontic screening", "📋 Suitable for school screening examinations", "💡 Tip: Parents must pay themselves. Ask the school if there is a school dental care program!"],
+    "es": ["🏫 Especialmente para escolares", "💰 No cubierto por UV/MV/IV (solo pacientes privados)", "🔍 Incluye: control de caries, estado dental, estado de higiene bucal, examen ortodóntico básico", "📋 Adecuado para exámenes de detección en la escuela", " pagar ellos mismos. ¡Pregunten en la escuela si hay un programa de cuidado dental escolar!"],
+    "pt": ["🏫 Especialmente para crianças em idade escolar", "💰 Não coberto por UV/MV/IV (apenas pacientes privados)", "🔍 Inclui: controlo de cáries, estado dentário, estado de higiene oral, exame ortodôntico básico", "📋 Adequado para exames de rastreio na escola", "💡 Dica: Os pais devem pagar eles próprios. Perguntem na escola se existe um programa de cuidados dentários escolares!"],
+    "pl": ["🏫 Specjalnie dla dzieci w wieku szkolnym", "💰 Nie jest refundowane przez UV/MV/IV (tylko pacjenci prywatni)", "🔍 Obejmuje: kontrolę próchnicy, stan uzębienia, stan higieny jamy ustnej, podstawowe badanie ortodontyczne", "📋 Odpowiednie do badań przesiewowych w szkole", "💡 Wskazówka: Rodzice muszą zapłacić sami. Zapytaj w szkole o program opieki stomatologicznej!"],
+    "al": ["🏫 Veçanërisht për fëmijët e shkollës", "💰 Nuk mbulohet nga UV/MV/IV (vetëm pacientë privatë)", "🔍 Përfshin: kontrollin e kariesit, gjendjen dentare, gjendjen e higjienës orale, ekzaminimin bazë ortodontik", "📋 I përshtatshëm për ekzaminime në shkollë", "💡 Këshillë: Prindërit duhet të paguajnë vetë. Pyetni në shkollë nëse ka një program të kujdesit dentar shkollor!"],
+    "tr": ["🏫 Özellikle okul çağındaki çocuklar için", "💰 UV/MV/IV tarafından karşılanmaz (sadece özel hastalar)", "🔍 Şunları içerir: çürük kontrolü, diş durumu, ağız hijyeni durumu, temel ortodontik muayene", "📋 Okul tarama muayeneleri için uygundur", "💡 İpucu: Ebeveynler kendileri ödemelidir. Okulda bir okul diş bakım programı olup olmadığını sorun!"],
+    "hr": ["🏫 Posebno za školsku djecu", "💰 Ne pokriva se od UV/MVni pacijenti)", "🔍 Uključuje: kontrolu karijesa, stomatološki status, stanje oralne higijene, osnovni ortodontski pregled", "📋 Prikladno za školske preglede probira", "💡 Savjet: Roditelji moraju sami platiti. Pitajte u školi postoji li program školske stomatološke skrbi!"],
+    "ta": ["🏫 குறிப்பாக பள்ளி குழந்தைகளுக்கு", "💰 UV/MV/IV மூலம் மறைக்கப்படாது (தனியார் நோயாளிகள் மட்டும்)", "🔍 உள்ளடக்கியது: புழு கட்டுப்பாடு, பல் நிலை, வாய் சுகாதார நிலை, அடிப்படை பல் வரிசை சீரமைப்பு பரிசோதனை", "📋 பள்ளி திரையிடல் பரிசோதனைகளுக்கு ஏற்றது", "💡 குறிப்பு: பெற்றோர்கள் தாங்களே பணம் செலுத்த வேண்டும். பள்ளியில் பள்ளி பல் பராமரிப்பு திட்டம் உள்ளதா என்று கேளுங்கள்!"]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Wird die Schuluntersuchung von der Krankenkasse bezahlt?",
+        "answer": "Nein. Diese Untersuchung wird von UV/MV/IV nicht vergütet. Eltern müssen selbst bezahlen. In manchen Kantonen gibt es kostenlose Schulzahnpflege-Programme – fragen Sie bei der Schule oder der Gemeinde nach!"
+      },
+      {
+        "question": "Was ist der Unterschied zur normalen Befundaufnahme (4.0000)?",
+        "answer": "Die normale Befundaufnahme (4.0000) kostet 73.20 TP und wird von UV/MV/IV bezahlt, wenn ein Unfall vorliegt. Die Schuluntersuchung (4.0090) kostet 41.50–56.10 TP, wird aber nicht von der Versicherung bezahlt. Sie ist speziell für Kinder und enthält zusätzlich den kieferorthopädischen Grobbefund."
+      },
+      {
+        "question": "Muss mein Kind jedes Jahr zur Schuluntersuchung?",
+        "answer": "Das hängt vom Kanton und der Schule ab. Viele Schulen organisieren regelmäßige zahnärztliche Untersuchungen für die Kinder. Manchmal ist die Untersuchung auch Teil der Schuleingangsuntersuchung. Fragen Sie bei der Schule nach, ob und wann die nächste Untersuchung stattfindet."
+      },
+      {
+        "question": "Was passiert, wenn der Zahnarzt etwas findet?",
+        "answer": "Der Zahnarzt gibt eine Rückmeldung an die Eltern, meistens in Form eines Zahnpasses oder eines Briefes. Bei Karies oder Zahnfehlstellungen wird empfohlen, einen regulären Zahnarzttermin zu vereinbaren. Die Schuluntersuchung ersetzt nicht den regelmäßigen Besuch beim Zahnarzt!"
+      }
+    ],
+    "fr": [
+      {
+        "question": "L'examen scolaire est-il pris en charge par l'assurance maladie?",
+        "answer": "Non. Cet examen n'est pas pris en charge par UV/MV/IV. Les parents doivent payer eux-mêmes. Dans certains cantons, il existe des programmes gratuits de soins dentaires scolaires – renseignez-vous auprès de l'école ou de la commune!"
+      },
+      {
+        "question": "Quelle est la différence avec l'examen initial normal (4.0000)?",
+        "answer": "L'examen initial normal (4.0000) coûte 73.20 TP et est pris en charge par UV/MV/IV en cas d'accident. L'examen scolaire (4.0090) coûte 41.50–56.10 TP, mais n'est pas pris en charge par l'assurance. Il est spécialement conçu pour les enfants et comprend un examen orthodontique de base."
+      },
+      {
+        "question": "Mon enfant doit-il passer un examen scolaire chaque année?",
+        "answer": "Cela dépend du canton et de l'école. De nombreuses écoles organisent régulièrement des examens dentaires pour les enfants. Parfois, l'examen fait également partie de l'examen d'entrée à l'école. Renseignez-vous auprès de l'école pour savoir si et quand le prochain examen aura lieu."
+      },
+      {
+        "question": "Que se passe-t-il si le dentiste trouve quelque chose?",
+        "answer": "Le dentiste donne un retour aux parents, généralement sous la forme d'un carnet de santé dentaire ou d'une lettre. En cas de caries ou de malocclusion dentaire, il est recommandé de prendre un rendez-vous chez un dentiste régulier. L'examen scolaire ne remplace pas les visites régulières chez le dentiste!"
+      }
+    ],
+    "it": [
+      {
+        "question": "L'esame scolastico è coperto dall'assicurazione malattia?",
+        "answer": "No. Questo esame non è rimborsato da UV/MV/IV. I genitori devono pagare da soli. In alcuni cantoni esistono programmi gratuiti di assistenza dentale scolastica – chiedete alla scuola o al comune!"
+      },
+      {
+        "question": "Qual è la differenza con l'esame iniziale normale (4.0000)?",
+        "answer": "L'esame iniziale normale (4.0000) costa 73.20 TP ed è coperto da UV/MV/IV in caso di infortunio. L'esame scolastico (4.0090) costa 41.50–56.10 TP, ma non è coperto dall'assicurazione. È speciale per i bambini e include un esame ortodontico di base."
+      },
+      {
+        "question": "Mio figlio deve fare l'esame scolastico ogni anno?",
+        "answer": "Dipende dal cantone e dalla scuola. Molte scuole organizzano regolarmente esami dentali per i bambini. A volte l'esame fa anche parte dell'esame di ingresso alla scuola. Chiedete a scuola se e quando si terrà il prossimo esame."
+      },
+      {
+        "question": "Cosa succede se il dentista trova qualcosa?",
+        "answer": "Il dentista dà un feedback ai genitori, di solito sotto forma di un libretto di salute dentale o di una lettera. In caso di carie o malocclusione, si consiglia di fissare un appuntamento con un dentista regolare. L'esame scolastico non sostituisce le visite regolari dal dentista!"
+      }
+    ],
+    "en": [
+      {
+        "question": "Is the school examination covered by health insurance?",
+        "answer": "No. This examination is not covered by UV/MV/IV. Parents must pay themselves. In some cantons, there are free school dental care programs – ask the school or the municipality!"
+      },
+      {
+        "question": "What is the difference from the normal initial examination (4.0000)?",
+        "answer": "The normal initial examination (4.0000) costs 73.20 TP and is covered by UV/MV/IV in case of an accident. The school examination (4.0090) costs 41.50–56.10 TP, but is not covered by insurance. It is specifically for children and includes a basic orthodontic screening."
+      },
+      {
+        "question": "Does my child need a school examination every year?",
+        "answer": "That depends on the canton and the school. Many schools organize regular dental examinations for children. Sometimes the examination is also part of the school entry examination. Ask the school if and when the next examination will take place."
+      },
+      {
+        "question": "What happens if the dentist finds something?",
+        "answer": "The dentist gives feedback to the parents, usually in the form of a dental health record or a letter. If there is caries or misaligned teeth, it is recommended to make an appointment with a regular dentist. The school examination does not replace regular visits to the dentist!"
+      }
+    ],
+    "es": [
+      {
+        "question": "¿El examen escolar está cubierto por el seguro de salud?",
+        "answer": "No. Este examen no está cubierto por UV/MV/IV. Los padres deben pagar ellos mismos. En algunos cantones existen programas gratuitos de cuidado dental escolar – ¡pregunten en la escuela o en el municipio!"
+      },
+      {
+        "question": "¿Cuál es la diferencia con el examen inicial normal (4.0000)?",
+        "answer": "El examen inicial normal (4.0000) cuesta 73.20 TP y está cubierto por UV/MV/IV en caso de accidente. El examen escolar (4.0090) cuesta 41.50–56.10 TP, pero no está cubierto por el seguro. Es específico para niños e incluye un examen ortodóntico básico."
+      },
+      {
+        "question": "¿Mi hijo necesita un examen escolar cada año?",
+        "answer": "Eso depende del cantón y de la escuela. Muchas escuelas organizan exámenes dentales regulares para los niños. A veces el examen también forma parte del examen de ingreso a la escuela. Pregunten en la escuela si y cuándo será el próximo examen."
+      },
+      {
+        "question": "¿Qué pasa si el dentista encuentra algo?",
+        "answer": "El dentista da un informe a los padres, generalmente en forma de un carné de salud dental o una carta. Si hay caries o dientes desalineados, se recomienda concertar una cita con un dentista regular. ¡El examen escolar no reemplaza las visitas regulares al dentista!"
+      }
+    ],
+    "pt": [
+      {
+        "question": "O exame escolar é coberto pelo seguro de saúde?",
+        "answer": "Não. Este exame não é coberto por UV/MV/IV. Os pais têm de pagar eles próprios. Em alguns cantões, existem programas gratuitos de cuidados dentários escolares – perguntem na escola ou no município!"
+      },
+      {
+        "question": "Qual é a diferença do exame inicial normal (4.0000)?",
+        "answer": "O exame inicial normal (4.0000) custa 73.20 TP e é coberto por UV/MV/IV em caso de acidente. O exame escolar (4.0090) custa 41.50–56.10 TP, mas não é coberto pelo seguro. É especificamente para crianças e inclui um exame ortodôntico básico."
+      },
+      {
+        "question": "O meu filho precisa de um exame escolar todos os anos?",
+        "answer": "Isso depende do cantão e da escola. Muitas escolas organizam exames dentários regulares para as crianças. Às vezes, o exame também faz parte do exame de entrada na escola. Perguntem na escola se e quando será o próximo exame."
+      },
+      {
+        "question": "O que acontece se o dentista encontrar alguma coisa?",
+        "answer": "O dentista dá um feedback aos pais, geralmente na forma de um boletim de saúde dentária ou uma carta. Em caso de cáries ou dentes desalinhados, recomenda-se marcar uma consulta com um dentista regular. O exame escolar não substitui as visitas regulares ao dentista!"
+      }
+    ],
+    "pl": [
+      {
+        "question": "Czy badanie szkolne jest refundowane przez ubezpieczenie zdrowotne?",
+        "answer": "Nie. To badanie nie jest refundowane przez UV/MV/IV. Rodzice muszą zapłacić sami. W niektórych kantonach istnieją bezpłatne programy opieki stomatologicznej w szkole – zapytaj w szkole lub gminie!"
+      },
+      {
+        "question": "Jaka jest różnica w stosunku do normalnego badania wstępnego (4.0000)?",
+        "answer": "Normalne badanie wstępne (4.0000) kosztuje 73.20 TP i jest refundowane przez UV/MV/IV w przypadku wypadku. Badanie szkolne (4.0090) kosztuje 41.50–56.10 TP, ale nie jest refundowane przez ubezpieczenie. Jest przeznaczone specjalnie dla dzieci i zawiera podstawowe badanie ortodontyczne."
+      },
+      {
+        "question": "Czy moje dziecko musi co roku przechodzić badanie szkolne?",
+        "answer": "To zależy od kantonu i szkoły. Wiele szkół organizuje regularne badania stomatologiczne dla dzieci. Czasami badanie jest również częścią badania wstępnego do szkoły. Zapytaj w szkole, czy i kiedy odbędzie się następne badanie."
+      },
+      {
+        "question": "Co się dzieje, jeśli dentysta coś znajdzie?",
+        "answer": "Dentysta przekazuje informację rodzicom, zwykle w formie książeczki zdrowia jamy ustnej lub listu. W przypadku próchnicy lub wad zgryzu zaleca się umówienie wizyty u stałego dentysty. Badanie szkolne nie zastępuje regularnych wizyt u dentysty!"
+      }
+    ],
+    "al": [
+      {
+        "question": "A ekzaminimi shkollor mbulohet nga sigurimi shëndetësor?",
+        "answer": "Jo. Ky ekzaminim nuk mbulohet nga UV/MV/IV. Prindërit duhet të paguajnë vetë. Në disa kantone, ekzistojnë programe falas të kujdesit dentar shkollor – pyetni në shkollë ose në komunë!"
+      },
+      {
+        "question": "Cili është ndryshimi nga ekzaminimi fillestar normal (4.0000)?",
+        "answer": "Ekzaminimi fillestar normal (4.0000) kushton 73.20 TP dhe mbulohet nga UV/MV/IV në rast aksidenti. Ekzaminimi shkollor (4.0090) kushton 41.50–56.10 TP, por nuk mbulohet nga sigurimi. Është posaçërisht për fëmijë dhe përfshin një ekzaminim bazë ortodontik."
+      },
+      {
+        "question": "A ka nevojë fëmija im për një ekzaminim shkollor çdo vit?",
+        "answer": "Kjo varet nga kantoni dhe shkolla. Shumë shkolla organizojnë ekzaminime të rregullta dentare për fëmijët. Ndonjëherë ekzaminimi është gjithashtu pjesë e ekzaminimit të hyrjes në shkollë. Pyetni në shkollë nëse dhe kur do të bëhet ekzaminimi i ardhshëm."
+      },
+      {
+        "question": "Çfarë ndodh nëse dentisti gjen diçka?",
+        "answer": "Dentisti jep një përgjigje prindërve, zakonisht në formën e një librezë shëndetësore dentare ose një letre. Në rast kariesi ose dhëmbësh të shtrembër, rekomandohet të caktohet një takim me një dentist të rregullt. Ekzaminimi shkollor nuk zëvendëson vizitat e rregullta te dentisti!"
+      }
+    ],
+    "tr": [
+      {
+        "question": "Okul muayenesi sağlık sigortası tarafından karşılanıyor mu?",
+        "answer": "Hayır. Bu muayene UV/MV/IV tarafından karşılanmaz. Ebeveynler kendileri ödemek zorundadır. Bazı kantonlarda ücretsiz okul diş bakım programları vardır – okula veya belediyeye sorun!"
+      },
+      {
+        "question": "Normal ilk muayeneden (4.0000) farkı nedir?",
+        "answer": "Normal ilk muayene (4.0000) 73.20 TP tutar ve kaza durumunda UV/MV/IV tarafından karşılanır. Okul muayenesi (4.0090) 41.50–56.10 TP tutar, ancak sigorta tarafından karşılanmaz. Özellikle çocuklar içindir ve temel bir ortodontik muayene içerir."
+      },
+      {
+        "question": "Çocuğum her yıl okul muayenesi yaptırmalı mı?",
+        "answer": "Bu kantona ve okula bağlıdır. Birçok okul çocuklar için düzenli diş muayeneleri düzenler. Bazen muayene aynı zamanda okula giriş muayenesinin bir parçasıdır. Bir sonraki muayenenin olup olmadığını ve ne zaman olacağını okula sorun."
+      },
+      {
+        "question": "Diş hekimi bir şey bulursa ne olur?",
+        "answer": "Diş hekimi ebeveynlere genellikle bir diş sağlığı karnesi veya bir mektup şeklinde geri bildirim verir. Çürük veya diş çarpıklığı varsa, normal bir diş hekiminden randevu alınması önerilir. Okul muayenesi düzenli diş hekimi ziyaretlerinin yerini tutmaz!"
+      }
+    ],
+    "hr": [
+      {
+        "question": "Pokriva li zdravstveno osiguranje školski pregled?",
+        "answer": "Ne. Ovaj pregled ne pokriva UV/MV/IV. Roditelji moraju sami platiti. U nekim kantonima postoje besplatni programi školske stomatološke skrbi – pitajte u školi ili općini!"
+      },
+      {
+        "question": "Koja je razlika od normalnog početnog pregleda (4.0000)?",
+        "answer": "Normalni početni pregled (4.0000) košta 73.20 TP i pokriva ga UV/MV/IV u slučaju nezgode. Školski pregled (4.0090) košta 41.50–56.10 TP, ali ga osiguranje ne pokriva. Posebno je za djecu i uključuje osnovni ortodontski pregled."
+      },
+      {
+        "question": "Treba li moje dijete ići na školski pregled svake godine?",
+        "answer": "To ovisi o kantonu i školi. Mnoge škole organiziraju redovite stomatološke preglede za djecu. Ponekad je pregled također dio školskog ulaznog pregleda. Pitajte u školi hoće li biti sljedećeg pregleda i kada."
+      },
+      {
+        "question": "Što se događa ako zubar nešto pronađe?",
+        "answer": "Zubar daje povratnu informaciju roditeljima, obično u obliku stomatološke zdravstvene knjižice ili pisma. Ako postoji karijes ili nepravilno postavljeni zubi, preporučuje se dogovoriti termin s redovitim zubarom. Školski pregled ne zamjenjuje redovite posjete zubaru!"
+      }
+    ],
+    "ta": [
+      {
+        "question": "பள்ளி பரிசோதனை சுகாதார காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "இல்லை. இந்த பரிசோதனை UV/MV/IV மூலம் மறைக்கப்படாது. பெற்றோர்கள் தாங்களே பணம் செலுத்த வேண்டும். சில கன்டோன்களில், இலவச பள்ளி பல் பராமரிப்பு திட்டங்கள் உள்ளன – பள்ளி அல்லது நகராட்சியில் கேளுங்கள்!"
+      },
+      {
+        "question": "சாதாரண முதல் பரிசோதனையிலிருந்து (4.0000) என்ன வித்தியாசம்?",
+        "answer": "சாதாரண முதல் பரிசோதனை (4.0000) 73.20 TP செலவாகும் மற்றும் விபத்து ஏற்பட்டால் UV/MV/IV ஆல் மறைக்கப்படும். பள்ளி பரிசோதனை (4.0090) 41.50–56.10 TP செலவாகும், ஆனால் காப்பீட்டால் மறைக்கப்படாது. இது குறிப்பாக குழந்தைகளுக்கானது மற்றும் அடிப்படை பல் வரிசை சீரமைப்பு பரிசோதனையை உள்ளடக்கியது."
+      },
+      {
+        "question": "என் குழந்தை ஒவ்வொரு வருடமும் பள்ளி பரிசோதனை செய்ய வேண்டுமா?",
+        "answer": "இது கன்டோன் மற்றும் பள்ளியைப் பொறுத்தது. பல பள்ளிகள் குழந்தைகளுக்கு வழக்கமான பல் பரிசோதனைகளை ஏற்பாடு செய்கின்றன. சில நேரங்களில் பரிசோதனை பள்ளி நுழைவு பரிசோதனையின் ஒரு பகுதியாகும். அடுத்த பரிசோதனை நடக்குமா மற்றும் எப்போது நடக்கும் என்று பள்ளியில் கேளுங்கள்."
+      },
+      {
+        "question": "பல் மருத்துவர் ஏதாவது கண்டுபிடித்தால் என்ன நடக்கும்?",
+        "answer": "பல் மருத்துவர் பெற்றோர்களுக்கு பொதுவாக ஒரு பல் ஆரோக்கிய பதிவேடு அல்லது கடிதம் வடிவில் பதிலளிப்பார். புழு அல்லது தவறாக வளர்ந்த பற்கள் இருந்தால், வழக்கமான பல் மருத்துவரிடம் சந்திப்பு ஏற்பாடு செய்ய பரிந்துரைக்கப்படுகிறது. பள்ளி பரிசோதனை வழக்கமான பல் மருத்துவ வருகைகளை மாற்றுவதில்லை!"
+      }
+    ]
+  }
+}

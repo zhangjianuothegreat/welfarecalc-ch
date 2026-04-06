@@ -1,0 +1,40 @@
+{
+  "services": [
+    { "code": "4.0000", "file": "40000.json", "chapter": "01.01" },
+    { "code": "4.0020", "file": "40020.json", "chapter": "01.01" },
+    { "code": "4.0040", "file": "40040.json", "chapter": "01.01" },
+    { "code": "4.0090", "file": "40090.json", "chapter": "01.02" },
+    { "code": "4.0500", "file": "40500.json", "chapter": "01.11" },
+    { "code": "4.0530", "file": "40530.json", "chapter": "01.11" },
+    { "code": "4.1110", "file": "41110.json", "chapter": "02.03" },
+    { "code": "4.1260", "file": "41260.json", "chapter": "03.02" },
+    { "code": "4.2010", "file": "42010.json", "chapter": "05.01" },
+    { "code": "4.2010.LP", "file": "42010LP.json", "chapter": "15.05" },
+    { "code": "4.2020", "file": "42020.json", "chapter": "05.01" },
+    { "code": "4.2530", "file": "42530.json", "chapter": "05.04" },
+    { "code": "4.2530.LP", "file": "42530LP.json", "chapter": "15.05" },
+    { "code": "4.4600", "file": "44600.json", "chapter": "07.03" },
+    { "code": "4.4700", "file": "44700.json", "chapter": "07.05" },
+    { "code": "4.5350", "file": "45350.json", "chapter": "08.04" },
+    { "code": "4.5350.LP", "file": "45350LP.json", "chapter": "15.08" },
+    { "code": "4.7080", "file": "47080.json", "chapter": "10.01" },
+    { "code": "4.7085", "file": "47085.json", "chapter": "10.01" },
+    { "code": "4.8200", "file": "48200.json", "chapter": "11.02" }
+  ],
+  "chapters": {
+    "01.01": { "icon": "🦷", "name": { "en": "General Examinations", "de": "Allgemeine Untersuchungen", "fr": "Examens généraux", "it": "Esami generali", "es": "Exámenes generales", "pt": "Exames gerais", "pl": "Badania ogólne", "al": "Ekzaminime të përgjithshme", "tr": "Genel Muayeneler", "hr": "Opći pregledi", "ta": "பொதுப் பரிசோதனைகள்" } },
+    "01.02": { "icon": "🏫", "name": { "en": "School Dental Care", "de": "Schulzahnpflege", "fr": "Soins dentaires scolaires", "it": "Cure dentarie scolastiche", "es": "Cuidado dental escolar", "pt": "Cuidado dentário escolar", "pl": "Opieka stomatologiczna w szkole", "al": "Kujdesi dentar shkollor", "tr": "Okul Diş Bakımı", "hr": "Školska stomatološka skrb", "ta": "பள்ளி பல் பராமரிப்பு" } },
+    "01.11": { "icon": "📸", "name": { "en": "X-rays", "de": "Röntgen", "fr": "Radiographies", "it": "Radiografie", "es": "Radiografías", "pt": "Radiografias", "pl": "Rentgen", "al": "Rreze X", "tr": "Röntgen", "hr": "Rendgen", "ta": "எக்ஸ்-ரே" } },
+    "02.03": { "icon": "🪥", "name": { "en": "Dental Hygiene", "de": "Dentalhygiene", "fr": "Hygiène dentaire", "it": "Igiene dentale", "es": "Higiene dental", "pt": "Higiene dental", "pl": "Higiena jamy ustnej", "al": "Higjiena dentare", "tr": "Diş Hijyeni", "hr": "Dentalna higijena", "ta": "பல் சுகாதாரம்" } },
+    "03.02": { "icon": "🦷", "name": { "en": "Periodontal Therapy", "de": "Parodontale Therapie", "fr": "Thérapie parodontale", "it": "Terapia parodontale", "es": "Terapia periodontal", "pt": "Terapia periodontal", "pl": "Terapia periodontologiczna", "al": "Terapia periodontale", "tr": "Periodontal Tedavi", "hr": "Parodontalna terapija", "ta": "ஈறு நோய் சிகிச்சை" } },
+    "05.01": { "icon": "🔪", "name": { "en": "Oral Surgery - Extractions", "de": "Oralchirurgie - Extraktionen", "fr": "Chirurgie orale - Extractions", "it": "Chirurgia orale - Estrazioni", "es": "Cirugía oral - Extracciones", "pt": "Cirurgia oral - Extrações", "pl": "Chirurgia jamy ustnej - Ekstrakcje", "al": "Kirurgjia orale - Nxjerrje", "tr": "Ağız Cerrahisi - Çekimler", "hr": "Oralna kirurgija - Vađenja", "ta": "வாய் அறுவை சிகிச்சை - பிடுங்கல்கள்" } },
+    "05.04": { "icon": "🔩", "name": { "en": "Implants", "de": "Implantate", "fr": "Implants", "it": "Impianti", "es": "Implantes", "pt": "Implantes", "pl": "Implanty", "al": "Implante", "tr": "İmplantlar", "hr": "Implantati", "ta": "உள்வைப்புகள்" } },
+    "07.03": { "icon": "🦷", "name": { "en": "Root Canal Treatment", "de": "Wurzelbehandlung", "fr": "Traitement canalaire", "it": "Cura canalare", "es": "Tratamiento de conducto", "pt": "Tratamento de canal", "pl": "Leczenie kanałowe", "al": "Trajtim kanali i rrënjës", "tr": "Kanal Tedavisi", "hr": "Liječenje korijenskog kanala", "ta": "வேர் கால்வாய் சிகிச்சை" } },
+    "07.05": { "icon": "✨", "name": { "en": "Bleaching", "de": "Bleichen", "fr": "Blanchiment", "it": "Sbiancamento", "es": "Blanqueamiento", "pt": "Branqueamento", "pl": "Wybielanie", "al": "Zbardhje", "tr": "Beyazlatma", "hr": "Bjeljenje", "ta": "வெண்மையாக்குதல்" } },
+    "08.04": { "icon": "🦷", "name": { "en": "Fillings", "de": "Füllungen", "fr": "Plombages", "it": "Otturazioni", "es": "Empastes", "pt": "Obturações", "pl": "Wypełnienia", "al": "Mbushje", "tr": "Dolgular", "hr": "Ispune", "ta": "நிரப்புதல்கள்" } },
+    "10.01": { "icon": "👑", "name": { "en": "Crowns", "de": "Kronen", "fr": "Couronnes", "it": "Corone", "es": "Coronas", "pt": "Coroas", "pl": "Korony", "al": "Kurora", "tr": "Kuronlar", "hr": "Krunice", "ta": "கிரீடங்கள்" } },
+    "11.02": { "icon": "😬", "name": { "en": "Removable Orthodontics", "de": "Herausnehmbare Kieferorthopädie", "fr": "Orthodontie amovible", "it": "Ortodonzia rimovibile", "es": "Ortodoncia removible", "pt": "Ortodontia removível", "pl": "Ortodoncja ruchoma", "al": "Ortodonci e lëvizshme", "tr": "Çıkarılabilir Ortodonti", "hr": "Uklonjiva ortodoncija", "ta": "அகற்றக்கூடிய பல் வரிசை சீரமைப்பு" } },
+    "15.05": { "icon": "📦", "name": { "en": "Surgery Packages", "de": "Chirurgie-Pakete", "fr": "Forfaits chirurgicaux", "it": "Pacchetti chirurgici", "es": "Paquetes quirúrgicos", "pt": "Pacotes cirúrgicos", "pl": "Pakiety chirurgiczne", "al": "Paketat kirurgjikale", "tr": "Cerrahi Paketleri", "hr": "Kirurški paketi", "ta": "அறுவை சிகிச்சை தொகுப்புகள்" } },
+    "15.08": { "icon": "📦", "name": { "en": "Filling Packages", "de": "Füllungs-Pakete", "fr": "Forfaits d'obturation", "it": "Pacchetti di otturazione", "es": "Paquetes de empastes", "pt": "Pacotes de obturação", "pl": "Pakiety wypełnień", "al": "Paketat e mbushjeve", "tr": "Dolgu Paketleri", "hr": "Paketi ispuna", "ta": "நிரப்புதல் தொகுப்புகள்" } }
+  }
+}

@@ -1,0 +1,472 @@
+{
+  "code": "4.1110",
+  "name_de": "Behandlung durch Dentalhygienikerin, pro 5 Min.",
+  "display_name": {
+    "de": "Zahnreinigung (Dentalhygienikerin)",
+    "fr": "Nettoyage dentaire (hygiéniste dentaire)",
+    "it": "Pulizia dentale (igienista dentale)",
+    "en": "Dental cleaning (dental hygienist)",
+    "es": "Limpieza dental (higienista dental)",
+    "pt": "Limpeza dentária (higienista dental)",
+    "pl": "Czyszczenie zębów (higienistka stomatologiczna)",
+    "al": "Pastrimi i dhëmbëve (higjieniste dentare)",
+    "tr": "Diş temizliği (diş hijyenisti)",
+    "hr": "Čišćenje zuba (dentalni higijeničar)",
+    "ta": "பல் சுத்தம் (பல் சுகாதார நிபுணர்)"
+  },
+  "search_keywords": {
+    "de": ["zahnreinigung", "dentalhygiene", "professionelle zahnreinigung", "pzr", "zahnsteinentfernung", "plaque entfernung", "reinigung"],
+    "fr": ["nettoyage dentaire", "détartrage", "hygiène dentaire", "soins dentaires", "prophylaxie"],
+    "it": ["pulizia denti", "igiene dentale", "detartrasi", "ablazione del tartaro", "profilassi"],
+    "en": ["dental cleaning", "teeth cleaning", "dental hygiene", "scaling", "prophylaxis"],
+    "es": ["limpieza dental", "higiene dental", "profilaxis", "destartraje", "limpieza de dientes"],
+    "pt": ["limpeza dentária", "higiene dental", "destartarização", "profilaxia", "limpeza dos dentes"],
+    "pl": ["czyszczenie zębów", "higiena jamy ustnej", "skaling", "profilaktyka", "usuwanie kamienia"],
+    "al": ["pastrimi i dhëmbëve", "higjiena dentare", "skalimi", "profilaksë", "largimi i gurëve"],
+    "tr": ["diş temizliği", "diş hijyeni", "detertraj", "profilaksi", "diş taşı temizliği"],
+    "hr": ["čišćenje zuba", "dentalna higijena", "skaliranje", "profilaksa", "uklanjanje kamenca"],
+    "ta": ["பல் சுத்தம்", "பல் சுகாதாரம்", "ஸ்கேலிங்", "பல் பராமரிப்பு", "பல் கல் நீக்கம்"]
+  },
+  "tp_uv_mviv": 15.70,
+  "tp_pp_max": 18.10,
+  "tp_pp_min": 13.30,
+  "chapter": "02.03",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Eine speziell ausgebildete Zahnreinigerin (Dentalhygienikerin) putzt deine Zähne ganz gründlich. Sie entfernt Zahnstein, Plaque und Verfärbungen – auch an Stellen, wo du mit der Zahnbürste nicht hinkommst. Das ist wie eine Profi-Putzaktion für deine Zähne! Die Behandlung wird nach Zeit abgerechnet (pro 5 Minuten). Je sauberer und gesünder deine Zähne sind, desto weniger Zeit braucht es.",
+    "fr": "Une hygiéniste dentaire spécialement formée nettoie tes dents très minutieusement. Elle enlève le tartre, la plaque dentaire et les taches – même aux endroits où tu ne peux pas atteindre avec ta brosse à dents. C'est comme un nettoyage professionnel pour tes dents! Le traitement est facturé au temps (toutes les 5 minutes). Plus tes dents sont propres et saines, moins cela prend de temps.",
+    "it": "Un'igienista dentale appositamente formata pulisce i tuoi denti in modo molto accurato. Rimuove tartaro, placca e macchie – anche nei punti dove non puoi arrivare con lo spazzolino. È come un'azione di pulizia professionale per i tuoi denti! Il trattamento viene fatturato a tempo (ogni 5 minuti). Più i tuoi denti sono puliti e sani, meno tempo serve.",
+    "en": "A specially trained dental hygienist cleans your teeth very thoroughly. She removes tartar, plaque and stains – even in places where you can't reach with your toothbrush. It's like a professional cleaning action for your teeth! The treatment is billed by time (per 5 minutes). The cleaner and healthier your teeth are, the less time it takes.",
+    "es": "Una higienista dental especialmente formada limpia tus dientes muy a fondo. Elimina el sarro, la placa y las manchas – incluso en lugares donde no puedes llegar con el cepillo. ¡Es como una limpieza profesional para tus dientes! El tratamiento se factura por tiempo (cada 5 minutos). Cuanto más limpios y sanos estén tus dientes, menos tiempo se necesita.",
+    "pt": "Uma higienista dental especialmente treinada limpa os teus dentes muito profundamente. Remove tártaro, placa e manchas – mesmo em locais onde não consegues alcançar com a escova. É como uma limpeza profissional para os teus dentes! O tratamento é faturado por tempo (a cada 5 minutos). Quanto mais limpos e saudáveis estiverem os teus dentes, menos tempo demora.",
+    "pl": "Specjalnie przeszkolona higienistka stomatologiczna bardzo dokładnie czyści Twoje zęby. Usuwa kamień nazębny, płytkę bakteryjną i przebarwienia – nawet w miejscach, do których nie możesz dotrzeć szczoteczką. To jak profesjonalne czyszczenie dla Twoich zębów! Leczenie jest rozliczane według czasu (co 5 minut). Im czystsze i zdrowsze są Twoje zęby, tym mniej czasu potrzeba.",
+    "al": "Një higjieniste dentare e trajnuar posaçërisht pastron dhëmbët e tu shumë tërësisht. Ajo heq gurët, pllakën dhe njollat – madje edhe në vendet ku nuk mund të arrish me furçën e dhëmbëve. Është si një veprim pastrimi profesional për dhëmbët e tu! Trajtimi faturohet sipas kohës (çdo 5 minuta). Sa më të pastër dhe të shëndetshëm të jenë dhëmbët e tu, aq më pak kohë duhet.",
+    "tr": "Özel olarak eğitilmiş bir diş hijyenisti dişlerini çok iyi temizler. Diş taşı, plak ve lekeleri temizler – diş fırçanla ulaşamadığın yerlerde bile. Dişlerin için profesyonel bir temizlik hareketi gibi! Tedavi zamana göre faturalandırılır (5 dakikada bir). Dişlerin ne kadar temiz ve sağlıklıysa, o kadar az zaman gerekir.",
+    "hr": "Posebno educirana dentalna higijeničarka vrlo temeljito čisti tvoje zube. Uklanja kamenac, plak i mrlje – čak i na mjestima gdje ne možeš doći četkicom. To je kao profesionalno čišćenje za tvoje zube! Liječenje se naplaćuje po vremenu (svakih 5 minuta). Što su tvoji zubi čišći i zdraviji, manje vremena je potrebno.",
+    "ta": "சிறப்பாகப் பயிற்சி பெற்ற ஒரு பல் சுகாதார நிபுணர் உங்கள் பற்களை மிக நன்றாக சுத்தம் செய்கிறார். அவர் பல் கல், பிளேக் மற்றும் கறைகளை நீக்குகிறார் – உங்கள் பல் துலக்கினால் எட்ட முடியாத இடங்களில் கூட. இது உங்கள் பற்களுக்கான ஒரு தொழில்முறை சுத்தம் செயல் போன்றது! சிகிச்சை நேரத்தின் அடிப்படையில் கணக்கிடப்படுகிறது (ஒவ்வொரு 5 நிமிடங்களுக்கும்). உங்கள் பற்கள் எவ்வளவு சுத்தமாகவும் ஆரோக்கியமாகவும் இருக்கின்றனவோ, அவ்வளவு குறைந்த நேரம் தேவைப்படுகிறது."
+  },
+  "what_is_included": {
+    "de": [
+      "🪥 Professionelle Zahnreinigung durch speziell ausgebildete Dentalhygienikerin",
+      "🧼 Entfernung von Plaque und Verfärbungen",
+      "🪨 Entfernung von Zahnstein (supragingival und subgingival)",
+      "💧 Reinigung auch an schwer zugänglichen Stellen",
+      "📏 Mundhygieneinstruktion (kann separat vereinbart werden)",
+      "⏱️ Abrechnung nach Zeitaufwand (pro 5 Minuten)"
+    ],
+    "fr": [
+      "🪥 Nettoyage dentaire professionnel par une hygiéniste dentaire spécialement formée",
+      "🧼 Élimination de la plaque dentaire et des taches",
+      "🪨 Élimination du tartre (supragingival et subgingival)",
+      "💧 Nettoyage même dans les endroits difficiles d'accès",
+      "📏 Instruction d'hygiène buccale (peut être convenue séparément)",
+      "⏱️ Facturation selon le temps (toutes les 5 minutes)"
+    ],
+    "it": [
+      "🪥 Pulizia dentale professionale da parte di un'igienista dentale specializzata",
+      "🧼 Rimozione di placca e macchie",
+      "🪨 Rimozione del tartaro (sopragengivale e sottogengivale)",
+      "💧 Pulizia anche in punti difficili da raggiungere",
+      "📏 Istruzione sull'igiene orale (può essere concordata separatamente)",
+      "⏱️ Fatturazione in base al tempo (ogni 5 minuti)"
+    ],
+    "en": [
+      "🪥 Professional dental cleaning by a specially trained dental hygienist",
+      "🧼 Removal of plaque and stains",
+      "🪨 Removal of tartar (supragingival and subgingival)",
+      "💧 Cleaning even in hard-to-reach areas",
+      "📏 Oral hygiene instruction (can be arranged separately)",
+      "⏱️ Billed by time (per 5 minutes)"
+    ],
+    "es": [
+      "🪥 Limpieza dental profesional por una higienista dental especialmente formada",
+      "🧼 Eliminación de placa y manchas",
+      "🪨 Eliminación de sarro (supragingival y subgingival)",
+      "💧 Limpieza incluso en lugares de difícil acceso",
+      "📏 Instrucción de higiene bucal (puede acordarse por separado)",
+      "⏱️ Facturación por tiempo (cada 5 minutos)"
+    ],
+    "pt": [
+      "🪥 Limpeza dentária profissional por uma higienista dental especialmente treinada",
+      "🧼 Remoção de placa e manchas",
+      "🪨 Remoção de tártaro (supragengival e subgengival)",
+      "💧 Limpeza mesmo em locais de difícil acesso",
+      "📏 Instrução de higiene oral (pode ser acordada separadamente)",
+      "⏱️ Faturação por tempo (a cada 5 minutos)"
+    ],
+    "pl": [
+      "🪥 Profesjonalne czyszczenie zębów przez specjalnie przeszkoloną higienistkę stomatologiczną",
+      "🧼 Usuwanie płytki nazębnej i przebarwień",
+      "🪨 Usuwanie kamienia nazębnego (nad- i poddziąsłowego)",
+      "💧 Czyszczenie nawet w trudno dostępnych miejscach",
+      "📏 Instrukcja higieny jamy ustnej (może być uzgodniona osobno)",
+      "⏱️ Rozliczenie według czasu (co 5 minut)"
+    ],
+    "al": [
+      "🪥 Pastrim profesional dentar nga një higjieniste dentare e trajnuar posaçërisht",
+      "🧼 Largimi i pllakës dhe njollave",
+      "🪨 Largimi i gurëve (supragingival dhe subgingival)",
+      "💧 Pastrim edhe në vende të vështira për t'u arritur",
+      "📏 Udhëzim për higjienën orale (mund të bihet dakord veçmas)",
+      "⏱️ Faturimi sipas kohës (çdo 5 minuta)"
+    ],
+    "tr": [
+      "🪥 Özel olarak eğitilmiş bir diş hijyenisti tarafından profesyonel diş temizliği",
+      "🧼 Plak ve lekelerin temizlenmesi",
+      "🪨 Diş taşının temizlenmesi (diş eti üstü ve altı)",
+      "💧 Ulaşılması zor yerlerde bile temizlik",
+      "📏 Ağız hijyeni eğitimi (ayrıca kararlaştırılabilir)",
+      "⏱️ Zamana göre faturalandırma (5 dakikada bir)"
+    ],
+    "hr": [
+      "🪥 Profesionalno čišćenje zuba od strane posebno educirane dentalne higijeničarke",
+      "🧼 Uklanjanje plaka i mrlja",
+      "🪨 Uklanjanje kamenca (iznad i ispod desni)",
+      "💧 Čišćenje čak i na teško dostupnim mjestima",
+      "📏 Upute o oralnoj higijeni (mogu se dogovoriti zasebno)",
+      "⏱️ Naplata prema vremenu (svakih 5 minuta)"
+    ],
+    "ta": [
+      "🪥 சிறப்பாகப் பயிற்சி பெற்ற ஒரு பல் சுகாதார நிபுணரால் தொழில்முறை பல் சுத்தம்",
+      "🧼 பிளேக் மற்றும் கறைகளை நீக்குதல்",
+      "🪨 பல் கல்லை நீக்குதல் (ஈறுகளுக்கு மேல் மற்றும் கீழ்)",
+      "💧 அணுகுவது கடினமான இடங்களில் கூட சுத்தம்",
+      "📏 வாய் சுகாதார பயிற்சி (தனியாக ஏற்பாடு செய்யலாம்)",
+      "⏱️ நேரத்தின் அடிப்படையில் கணக்கிடுதல் (ஒவ்வொரு 5 நிமிடங்களுக்கும்)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Fachpersonal:** Behandlung durch speziell ausgebildete Dentalhygienikerin (nicht durch Zahnarzt)",
+      "⏱️ **Abrechnung nach Zeit:** Pro 5 Minuten (maximal 30 Minuten pro Sitzung, maximal 4 mal pro Jahr verrechenbar – bei mehr Sitzungen ist eine neue Kostengutsprache nötig)",
+      "💰 **Kosten:** 15.70 TP pro 5 Minuten bei UV/MV/IV; Privatpatienten zahlen 13.30–18.10 TP pro 5 Minuten",
+      "📋 **Zusatzleistungen:** Röntgenaufnahmen, Abformungen (4.0890) und physikalische Therapien werden separat abgerechnet",
+      "👩‍⚕️ **Praktikantinnen:** Behandlung durch Praktikantinnen wird mit den Tarifziffern 4.1100 (Dentalhygienikerin) oder 4.1105 (Prophylaxeassistentin) abgerechnet (günstiger)",
+      "⚠️ **Wichtig:** Die Zahnreinigung ist bei UV/MV/IV nur im Rahmen der Behandlung von Unfallfolgen oder bei medizinischer Notwendigkeit (z.B. vor Parodontalbehandlung) erstattungsfähig. Für reine Vorsorge (Prophylaxe) müssen Privatpatienten selbst zahlen."
+    ],
+    "fr": [
+      "🦷 **Personnel spécialisé:** Traitement par une hygiéniste dentaire spécialement formée (pas par le dentiste)",
+      "⏱️ **Facturation au temps:** Toutes les 5 minutes (maximum 30 minutes par séance, maximum 4 fois par an facturable – pour plus de séances, un nouveau devis est nécessaire)",
+      "💰 **Coûts:** 15.70 TP toutes les 5 minutes pour UV/MV/IV; les patients privés paient 13.30–18.10 TP toutes les 5 minutes",
+      "📋 **Prestations supplémentaires:** Radiographies, empreintes (4.0890) et thérapies physiques sont facturées séparément",
+      "👩‍⚕️ **Stagiaires:** Le traitement par des stagiaires est facturé avec les codes 4.1100 (hygiéniste dentaire) ou 4.1105 (assistante en prophylaxie) (moins cher)",
+      "⚠️ **Important:** Le nettoyage dentaire n'est pris en charge par UV/MV/IV que dans le cadre du traitement des conséquences d'un accident ou en cas de nécessité médicale (p. ex. avant un traitement parodontal). Pour la simple prévention (prophylaxie), les patients privés doivent payer eux-mêmes."
+    ],
+    "it": [
+      "🦷 **Personale specializzato:** Trattamento da parte di un'igienista dentale specializzata (non dal dentista)",
+      "⏱️ **Fatturazione a tempo:** Ogni 5 minuti (massimo 30 minuti per seduta, massimo 4 volte all'anno fatturabili – per più sedute è necessario un nuovo preventivo)",
+      "💰 **Costi:** 15.70 TP ogni 5 minuti per UV/MV/IV; i pazienti privati pagano 13.30–18.10 TP ogni 5 minuti",
+      "📋 **Prestazioni aggiuntive:** Radiografie, impronte (4.0890) e terapie fisiche sono fatturate separatamente",
+      "👩‍⚕️ **Tirocinanti:** Il trattamento da parte di tirocinanti viene fatturato con i codici 4.1100 (igienista dentale) o 4.1105 (assistente alla profilassi) (più economico)",
+      "⚠️ **Importante:** La pulizia dentale è rimborsata da UV/MV/IV solo nell'ambito del trattamento delle conseguenze di un infortunio o in caso di necessità medica (ad es. prima di un trattamento parodontale). Per la semplice prevenzione (profilassi), i pazienti privati devono pagare loro stessi."
+    ],
+    "en": [
+      "🦷 **Specialized staff:** Treatment by a specially trained dental hygienist (not by the dentist)",
+      "⏱️ **Billed by time:** Per 5 minutes (maximum 30 minutes per session, maximum 4 times per year billable – for more sessions, a new cost estimate is required)",
+      "💰 **Costs:** 15.70 TP per 5 minutes for UV/MV/IV; private patients pay 13.30–18.10 TP per 5 minutes",
+      "📋 **Additional services:** X-rays, impressions (4.0890), and physical therapies are billed separately",
+      "👩‍⚕️ **Trainees:** Treatment by trainees is billed with codes 4.1100 (dental hygienist) or 4.1105 (prophylaxis assistant) (cheaper)",
+      "⚠️ **Important:** Dental cleaning is covered by UV/MV/IV only within the treatment of accident consequences or for medical necessity (e.g., before periodontal treatment). For pure prevention (prophylaxis), private patients must pay themselves."
+    ],
+    "es": [
+      "🦷 **Personal especializado:** Tratamiento por una higienista dental especialmente formada (no por el dentista)",
+      "⏱️ **Facturación por tiempo:** Cada 5 minutos (máximo 30 minutos por sesión, máximo 4 veces al año facturables – para más sesiones, se necesita un nuevo presupuesto)",
+      "💰 **Costos:** 15.70 TP cada 5 minutos para UV/MV/IV; los pacientes privados pagan 13.30–18.10 TP cada 5 minutos",
+      "📋 **Servicios adicionales:** Radiografías, impresiones (4.0890) y terapias físicas se facturan por separado",
+      "👩‍⚕️ **Pasantes:** El tratamiento por pasantes se factura con los códigos 4.1100 (higienista dental) o 4.1105 (asistente de profilaxis) (más económico)",
+      "⚠️ **Importante:** La limpieza dental está cubierta por UV/MV/IV solo en el tratamiento de consecuencias de accidentes o por necesidad médica (por ejemplo, antes de un tratamiento periodontal). Para la prevención pura (profilaxis), los pacientes privados deben pagar ellos mismos."
+    ],
+    "pt": [
+      "🦷 **Pessoal especializado:** Tratamento por uma higienista dental especialmente treinada (não pelo dentista)",
+      "⏱️ **Faturação por tempo:** A cada 5 minutos (máximo 30 minutos por sessão, máximo 4 vezes por ano faturáveis – para mais sessões, é necessário um novo orçamento)",
+      "💰 **Custos:** 15.70 TP a cada 5 minutos para UV/MV/IV; os pacientes privados pagam 13.30–18.10 TP a cada 5 minutos",
+      "📋 **Serviços adicionais:** Radiografias, impressões (4.0890) e terapias físicas são faturadas separadamente",
+      "👩‍⚕️ **Estagiários:** O tratamento por estagiários é faturado com os códigos 4.1100 (higienista dental) ou 4.1105 (assistente de profilaxia) (mais barato)",
+      "⚠️ **Importante:** A limpeza dentária é coberta por UV/MV/IV apenas no tratamento de consequências de acidentes ou por necessidade médica (por exemplo, antes de um tratamento periodontal). Para prevenção pura (profilaxia), os pacientes privados devem pagar eles próprios."
+    ],
+    "pl": [
+      "🦷 **Wyspecjalizowany personel:** Leczenie przez specjalnie przeszkoloną higienistkę stomatologiczną (nie przez dentystę)",
+      "⏱️ **Rozliczenie według czasu:** Co 5 minut (maksymalnie 30 minut na sesję, maksymalnie 4 razy w roku do rozliczenia – przy większej liczbie sesji potrzebna jest nowa wycena)",
+      "💰 **Koszty:** 15.70 TP co 5 minut dla UV/MV/IV; pacjenci prywatni płacą 13.30–18.10 TP co 5 minut",
+      "📋 **Usługi dodatkowe:** Zdjęcia rentgenowskie, wyciski (4.0890) i terapie fizyczne są rozliczane osobno",
+      "👩‍⚕️ **Stażyści:** Leczenie przez stażystów jest rozliczane kodami 4.1100 (higienistka stomatologiczna) lub 4.1105 (asystent profilaktyki) (tańsze)",
+      "⚠️ **Ważne:** Czyszczenie zębów jest refundowane przez UV/MV/IV tylko w ramach leczenia następstw wypadków lub w przypadku konieczności medycznej (np. przed leczeniem periodontologicznym). W przypadku czystej profilaktyki pacjenci prywatni muszą zapłacić sami."
+    ],
+    "al": [
+      "🦷 **Staf i specializuar:** Trajtim nga një higjieniste dentare e trajnuar posaçërisht (jo nga dentisti)",
+      "⏱️ **Faturimi sipas kohës:** Çdo 5 minuta (maksimumi 30 minuta për seancë, maksimumi 4 herë në vit të faturoshme – për më shumë seanca, nevojitet një vlerësim i ri)",
+      "💰 **Kostot:** 15.70 TP çdo 5 minuta për UV/MV/IV; pacientët privatë paguajnë 13.30–18.10 TP çdo 5 minuta",
+      "📋 **Shërbime shtesë:** Rrezet X, përshtypjet (4.0890) dhe terapitë fizike faturohen veçmas",
+      "👩‍⚕️ **Praktikantët:** Trajtimi nga praktikantët faturohet me kodet 4.1100 (higjieniste dentare) ose 4.1105 (asistente profilakse) (më e lirë)",
+      "⚠️ **E rëndësishme:** Pastrimi dentar mbulohet nga UV/MV/IV vetëm në kuadër të trajtimit të pasojave të aksidenteve ose për nevojë mjekësore (p.sh., para trajtimit periodontal). Për parandalim të thjeshtë (profilaksë), pacientët privatë duhet të paguajnë vetë."
+    ],
+    "tr": [
+      "🦷 **Uzman personel:** Özel olarak eğitilmiş bir diş hijyenisti tarafından tedavi (diş hekimi tarafından değil)",
+      "⏱️ **Zamana göre faturalandırma:** 5 dakikada bir (seans başına maksimum 30 dakika, yılda maksimum 4 kez faturalandırılabilir – daha fazla seans için yeni bir maliyet tahmini gerekir)",
+      "💰 **Maliyetler:** UV/MV/IV için 5 dakikada 15.70 TP; özel hastalar 5 dakikada 13.30–18.10 TP öder",
+      "📋 **Ek hizmetler:** Röntgenler, ölçüler (4.0890) ve fiziksel terapiler ayrı faturalandırılır",
+      "👩‍⚕️ **Stajyerler:** Stajyerler tarafından tedavi, 4.1100 (diş hijyenisti) veya 4.1105 (profilaksi asistanı) kodlarıyla faturalandırılır (daha ucuz)",
+      "⚠️ **Önemli:** Diş temizliği, UV/MV/IV tarafından yalnızca kaza sonuçlarının tedavisi kapsamında veya tıbbi zorunluluk halinde (örneğin periodontal tedaviden önce) karşılanır. Saf korunma (profilaksi) için özel hastalar kendileri ödemek zorundadır."
+    ],
+    "hr": [
+      "🦷 **Specijalizirano osoblje:** Liječenje od strane posebno educirane dentalne higijeničarke (ne od strane zubara)",
+      "⏱️ **Naplata prema vremenu:** Svakih 5 minuta (maksimalno 30 minuta po seansi, maksimalno 4 puta godišnje naplativo – za više seansi potrebna je nova procjena troškova)",
+      "💰 **Troškovi:** 15.70 TP svakih 5 minuta za UV/MV/IV; privatni pacijenti plaćaju 13.30–18.10 TP svakih 5 minuta",
+      "📋 **Dodatne usluge:** Rendgeni, otisci (4.0890) i fizikalne terapije naplaćuju se zasebno",
+      "👩‍⚕️ **Pripravnici:** Liječenje od strane pripravnika naplaćuje se kodovima 4.1100 (dentalni higijeničar) ili 4.1105 (asistent za profilaksu) (jeftinije)",
+      "⚠️ **Važno:** Čišćenje zuba pokriva UV/MV/IV samo u okviru liječenja posljedica nesreće ili u slučaju medicinske potrebe (npr. prije parodontološkog liječenja). Za čistu prevenciju (profilaksu), privatni pacijenti moraju platiti sami."
+    ],
+    "ta": [
+      "🦷 **சிறப்பு பணியாளர்கள்:** சிறப்பாகப் பயிற்சி பெற்ற ஒரு பல் சுகாதார நிபுணரால் சிகிச்சை (பல் மருத்துவரால் அல்ல)",
+      "⏱️ **நேரத்தின் அடிப்படையில் கணக்கிடுதல்:** ஒவ்வொரு 5 நிமிடங்களுக்கும் (ஒரு அமர்வுக்கு அதிகபட்சம் 30 நிமிடங்கள், வருடத்திற்கு அதிகபட்சம் 4 முறை கணக்கிடலாம் – அதிக அமர்வுகளுக்கு புதிய செலவு மதிப்பீடு தேவை)",
+      "💰 **செலவுகள்:** UV/MV/IV க்கு 5 நிமிடங்களுக்கு 15.70 TP; தனியார் நோயாளிகள் 5 நிமிடங்களுக்கு 13.30–18.10 TP செலுத்துகிறார்கள்",
+      "📋 **கூடுதல் சேவைகள்:** எக்ஸ்-ரேக்கள், அச்சுகள் (4.0890), மற்றும் உடல் சிகிச்சைகள் தனித்தனியாக கணக்கிடப்படுகின்றன",
+      "👩‍⚕️ **பயிற்சி மாணவர்கள்:** பயிற்சி மாணவர்களால் சிகிச்சை 4.1100 (பல் சுகாதார நிபுணர்) அல்லது 4.1105 (பல் பாதுகாப்பு உதவியாளர்) குறியீடுகளுடன் கணக்கிடப்படுகிறது (மலிவானது)",
+      "⚠️ **முக்கியம்:** பல் சுத்தம் UV/MV/IV ஆல் விபத்து விளைவுகளின் சிகிச்சையின் ஒரு பகுதியாக அல்லது மருத்துவ தேவைக்காக (எ.கா., ஈறு சிகிச்சைக்கு முன்) மட்டுமே மறைக்கப்படுகிறது. தூய தடுப்புக்காக (பல் பாதுகாப்பு), தனியார் நோயாளிகள் தாங்களே பணம் செலுத்த வேண்டும்."
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Wie oft sollte ich zur Zahnreinigung gehen?",
+        "answer": "Das hängt von deiner Mundgesundheit ab. Für die meisten Menschen werden 1–2 Mal pro Jahr empfohlen. Bei erhöhtem Karies- oder Parodontitisrisiko kann es auch öfter nötig sein. Die Dentalhygienikerin berät dich dazu."
+      },
+      {
+        "question": "Ist die Zahnreinigung schmerzhaft?",
+        "answer": "Normalerweise nicht. Bei empfindlichen Zähnen oder entzündetem Zahnfleisch kann es manchmal etwas unangenehm sein. Sag einfach Bescheid, dann kann die Dentalhygienikerin vorsichtiger arbeiten oder eine Betäubung anbieten."
+      },
+      {
+        "question": "Wird die Zahnreinigung von der Krankenkasse bezahlt?",
+        "answer": "Bei UV/MV/IV (Unfall-, Militär-, Invalidenversicherung) wird die Zahnreinigung nur bezahlt, wenn sie im Zusammenhang mit einem Unfall oder einer medizinisch notwendigen Behandlung steht (z.B. vor einer Parodontalbehandlung). Für reine Vorsorge (Prophylaxe) müssen Privatpatienten selbst zahlen. Viele haben dafür eine private Zahnzusatzversicherung."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen Zahnreinigung und Zahnsteinentfernung durch den Zahnarzt?",
+        "answer": "Die Zahnreinigung durch die Dentalhygienikerin (4.1110) ist eine gründliche Profi-Reinigung, die Plaque, Verfärbungen und Zahnstein entfernt. Die Zahnsteinentfernung durch den Zahnarzt (4.1250/4.1260) konzentriert sich mehr auf die medizinisch notwendige Entfernung von Zahnstein, besonders unter dem Zahnfleisch. Beide können kombiniert werden."
+      },
+      {
+        "question": "Kann ich die Zahnreinigung von der Steuer absetzen?",
+        "answer": "Ja, in der Schweiz können Zahnarzt- und Zahnreinigungskosten als Krankheitskosten in der Steuererklärung geltend gemacht werden, sofern sie einen bestimmten Selbstbehalt (meist 5% des steuerbaren Einkommens) übersteigen. Bewahre die Rechnungen gut auf!"
+      }
+    ],
+    "fr": [
+      {
+        "question": "À quelle fréquence devrais-je faire un nettoyage dentaire?",
+        "answer": "Cela dépend de ta santé buccale. Pour la plupart des gens, 1 à 2 fois par an sont recommandés. En cas de risque accru de caries ou de parodontite, cela peut être plus souvent nécessaire. L'hygiéniste dentaire te conseillera à ce sujet."
+      },
+      {
+        "question": "Le nettoyage dentaire est-il douloureux?",
+        "answer": "Normalement non. Pour les dents sensibles ou les gencives enflammées, cela peut parfois être un peu inconfortable. Il suffit de le dire, et l'hygiéniste dentaire pourra travailler plus doucement ou proposer une anesthésie."
+      },
+      {
+        "question": "Le nettoyage dentaire est-il pris en charge par l'assurance maladie?",
+        "answer": "Pour UV/MV/IV (assurance accidents, militaire, invalidité), le nettoyage dentaire n'est pris en charge que s'il est lié à un accident ou à un traitement médicalement nécessaire (par ex. avant un traitement parodontal). Pour la simple prévention (prophylaxie), les patients privés doivent payer eux-mêmes. Beaucoup ont une assurance dentaire privée pour cela."
+      },
+      {
+        "question": "Quelle est la différence entre le nettoyage dentaire et l'élimination du tartre par le dentiste?",
+        "answer": "Le nettoyage dentaire par l'hygiéniste dentaire (4.1110) est un nettoyage professionnel approfondi qui élimine la plaque, les taches et le tartre. L'élimination du tartre par le dentiste (4.1250/4.1260) se concentre davantage sur l'élimination médicalement nécessaire du tartre, en particulier sous la gencive. Les deux peuvent être combinés."
+      },
+      {
+        "question": "Puis-je déduire le nettoyage dentaire de mes impôts?",
+        "answer": "Oui, en Suisse, les frais dentaires et de nettoyage dentaire peuvent être déduits comme frais de maladie dans la déclaration d'impôts, s'ils dépassent une certaine franchise (généralement 5% du revenu imposable). Conserve bien les factures!"
+      }
+    ],
+    "it": [
+      {
+        "question": "Quanto spesso dovrei fare la pulizia dentale?",
+        "answer": "Dipende dalla tua salute orale. Per la maggior parte delle persone si consiglia 1–2 volte all'anno. In caso di maggiore rischio di carie o parodontite, potrebbe essere necessario più spesso. L'igienista dentale ti consiglierà in merito."
+      },
+      {
+        "question": "La pulizia dentale è dolorosa?",
+        "answer": "Normalmente no. Per denti sensibili o gengive infiammate, a volte può essere un po' scomodo. Basta dirlo e l'igienista dentale potrà lavorare con più delicatezza o offrire un'anestesia."
+      },
+      {
+        "question": "La pulizia dentale è coperta dall'assicurazione malattia?",
+        "answer": "Per UV/MV/IV (assicurazione infortuni, militare, invalidità), la pulizia dentale è coperta solo se legata a un infortunio o a un trattamento medicalmente necessario (ad es. prima di un trattamento parodontale). Per la semplice prevenzione (profilassi), i pazienti privati devono pagare loro stessi. Molti hanno un'assicurazione dentale privata per questo."
+      },
+      {
+        "question": "Qual è la differenza tra pulizia dentale e rimozione del tartaro da parte del dentista?",
+        "answer": "La pulizia dentale da parte dell'igienista dentale (4.1110) è una pulizia professionale approfondita che rimuove placca, macchie e tartaro. La rimozione del tartaro da parte del dentista (4.1250/4.1260) si concentra maggiormente sulla rimozione medicalmente necessaria del tartaro, specialmente sotto la gengiva. Entrambe possono essere combinate."
+      },
+      {
+        "question": "Posso dedurre la pulizia dentale dalle tasse?",
+        "answer": "Sì, in Svizzera, i costi dentistici e di pulizia dentale possono essere dedotti come spese mediche nella dichiarazione dei redditi, se superano una certa franchigia (di solito il 5% del reddito imponibile). Conserva bene le fatture!"
+      }
+    ],
+    "en": [
+      {
+        "question": "How often should I get a dental cleaning?",
+        "answer": "That depends on your oral health. For most people, 1–2 times per year are recommended. If you have a higher risk of cavities or periodontitis, it may be needed more often. The dental hygienist will advise you on this."
+      },
+      {
+        "question": "Is dental cleaning painful?",
+        "answer": "Normally not. For sensitive teeth or inflamed gums, it can sometimes be a bit uncomfortable. Just let them know, and the dental hygienist can work more gently or offer anesthesia."
+      },
+      {
+        "question": "Is dental cleaning covered by health insurance?",
+        "answer": "For UV/MV/IV (accident, military, disability insurance), dental cleaning is only covered if it is related to an accident or a medically necessary treatment (e.g., before periodontal treatment). For pure prevention (prophylaxis), private patients must pay themselves. Many have private dental insurance for this."
+      },
+      {
+        "question": "What is the difference between dental cleaning and tartar removal by the dentist?",
+        "answer": "Dental cleaning by the hygienist (4.1110) is a thorough professional cleaning that removes plaque, stains and tartar. Tartar removal by the dentist (4.1250/4.1260) focuses more on the medically necessary removal of tartar, especially under the gums. Both can be combined."
+      },
+      {
+        "question": "Can I deduct dental cleaning from my taxes?",
+        "answer": "Yes, in Switzerland, dental and dental cleaning costs can be claimed as medical expenses on your tax return if they exceed a certain deductible (usually 5% of taxable income). Keep the invoices well!"
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Con qué frecuencia debo hacerme una limpieza dental?",
+        "answer": "Depende de tu salud bucal. Para la mayoría de las personas se recomienda 1–2 veces al año. Si tienes un mayor riesgo de caries o periodontitis, puede ser necesario con más frecuencia. La higienista dental te asesorará al respecto."
+      },
+      {
+        "question": "¿Es dolorosa la limpieza dental?",
+        "answer": "Normalmente no. Para dientes sensibles o encías inflamadas, a veces puede ser un poco incómodo. Solo hay que decirlo, y la higienista dental podrá trabajar con más suavidad u ofrecer anestesia."
+      },
+      {
+        "question": "¿La limpieza dental está cubierta por el seguro de salud?",
+        "answer": "Para UV/MV/IV (seguro de accidentes, militar, invalidez), la limpieza dental solo está cubierta si está relacionada con un accidente o un tratamiento médicamente necesario (por ejemplo, antes de un tratamiento periodontal). Para la prevención pura (profilaxis), los pacientes privados deben pagar ellos mismos. Muchos tienen un seguro dental privado para esto."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre la limpieza dental y la eliminación de sarro por el dentista?",
+        "answer": "La limpieza dental por la higienista (4.1110) es una limpieza profesional a fondo que elimina placa, manchas y sarro. La eliminación de sarro por el dentista (4.1250/4.1260) se centra más en la eliminación médicamente necesaria del sarro, especialmente bajo las encías. Ambas pueden combinarse."
+      },
+      {
+        "question": "¿Puedo deducir la limpieza dental de mis impuestos?",
+        "answer": "Sí, en Suiza, los costos dentales y de limpieza dental pueden deducirse como gastos médicos en la declaración de impuestos si superan un cierto deducible (generalmente el 5% de la renta imponible). ¡Guarda bien las facturas!"
+      }
+    ],
+    "pt": [
+      {
+        "question": "Com que frequência devo fazer uma limpeza dentária?",
+        "answer": "Depende da tua saúde oral. Para a maioria das pessoas, recomenda-se 1–2 vezes por ano. Se tiveres um risco maior de cáries ou periodontite, pode ser necessário mais vezes. A higienista dental irá aconselhar-te sobre isso."
+      },
+      {
+        "question": "A limpeza dentária é dolorosa?",
+        "answer": "Normalmente não. Para dentes sensíveis ou gengivas inflamadas, às vezes pode ser um pouco desconfortável. Basta dizer, e a higienista dental poderá trabalhar com mais suavidade ou oferecer anestesia."
+      },
+      {
+        "question": "A limpeza dentária é coberta pelo seguro de saúde?",
+        "answer": "Para UV/MV/IV (seguro de acidentes, militar, invalidez), a limpeza dentária só é coberta se estiver relacionada com um acidente ou um tratamento medicamente necessário (por exemplo, antes de um tratamento periodontal). Para a prevenção pura (profilaxia), os pacientes privados devem pagar eles próprios. Muitos têm um seguro dentário privado para isso."
+      },
+      {
+        "question": "Qual é a diferença entre limpeza dentária e remoção de tártaro pelo dentista?",
+        "answer": "A limpeza dentária pela higienista (4.1110) é uma limpeza profissional aprofundada que remove placa, manchas e tártaro. A remoção de tártaro pelo dentista (4.1250/4.1260) concentra-se mais na remoção medicamente necessária do tártaro, especialmente sob a gengiva. Ambas podem ser combinadas."
+      },
+      {
+        "question": "Posso deduzir a limpeza dentária dos meus impostos?",
+        "answer": "Sim, na Suíça, os custos dentários e de limpeza dentária podem ser deduzidos como despesas médicas na declaração de impostos se excederem um certo valor (geralmente 5% do rendimento tributável). Guarda bem as faturas!"
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jak często powinienem robić czyszczenie zębów?",
+        "answer": "To zależy od stanu zdrowia jamy ustnej. Dla większości osób zaleca się 1–2 razy w roku. W przypadku wyższego ryzyka próchnicy lub zapalenia przyzębia może być potrzebne częściej. Higienistka stomatologiczna doradzi Ci w tej sprawie."
+      },
+      {
+        "question": "Czy czyszczenie zębów jest bolesne?",
+        "answer": "Normalnie nie. Przy wrażliwych zębach lub zapalonym dziąśle może czasem być trochę nieprzyjemne. Wystarczy powiedzieć, a higienistka będzie mogła pracować delikatniej lub zaproponować znieczulenie."
+      },
+      {
+        "question": "Czy czyszczenie zębów jest refundowane przez ubezpieczenie zdrowotne?",
+        "answer": "Dla UV/MV/IV (ubezpieczenie wypadkowe, wojskowe, inwalidzkie), czyszczenie zębów jest refundowane tylko wtedy, gdy jest związane z wypadkiem lub leczeniem medycznie koniecznym (np. przed leczeniem periodontologicznym). W przypadku czystej profilaktyki pacjenci prywatni muszą zapłacić sami. Wielu ma na to prywatne ubezpieczenie stomatologiczne."
+      },
+      {
+        "question": "Jaka jest różnica między czyszczeniem zębów a usuwaniem kamienia przez dentystę?",
+        "answer": "Czyszczenie zębów przez higienistkę (4.1110) to dokładne profesjonalne czyszczenie, które usuwa płytkę nazębną, przebarwienia i kamień. Usuwanie kamienia przez dentystę (4.1250/4.1260) koncentruje się bardziej na medycznie koniecznym usuwaniu kamienia, szczególnie pod dziąsłem. Oba mogą być łączone."
+      },
+      {
+        "question": "Czy mogę odliczyć czyszczenie zębów od podatku?",
+        "answer": "Tak, w Szwajcarii koszty stomatologiczne i czyszczenia zębów mogą być odliczone jako koszty leczenia w zeznaniu podatkowym, jeśli przekraczają określoną kwotę (zwykle 5% dochodu podlegającego opodatkowaniu). Zachowaj rachunki!"
+      }
+    ],
+    "al": [
+      {
+        "question": "Sa herë duhet të bëj pastrim dhëmbësh?",
+        "answer": "Kjo varet nga shëndeti yt oral. Për shumicën e njerëzve rekomandohet 1–2 herë në vit. Nëse ke rrezik më të lartë për karies ose periodontit, mund të jetë e nevojshme më shpesh. Higjienistja dentare do të të këshillojë për këtë."
+      },
+      {
+        "question": "A është e dhimbshme pastrimi dentar?",
+        "answer": "Normalisht jo. Për dhëmbë të ndjeshëm ose mishra të përflakur, ndonjëherë mund të jetë pak e pakëndshme. Mjafton të thuash, dhe higjienistja dentare mund të punojë më butë ose të ofrojë anestezi."
+      },
+      {
+        "question": "A mbulohet pastrimi dentar nga sigurimi shëndetësor?",
+        "answer": "Për UV/MV/IV (sigurimi i aksidenteve, ushtarak, invaliditeti), pastrimi dentar mbulohet vetëm nëse lidhet me një aksident ose një trajtim mjekësisht të nevojshëm (p.sh., para trajtimit periodontal). Për parandalim të thjeshtë (profilaksë), pacientët privatë duhet të paguajnë vetë. Shumë kanë një sigurim privat dentar për këtë."
+      },
+      {
+        "question": "Cili është ndryshimi midis pastrimit dentar dhe largimit të gurëve nga dentisti?",
+        "answer": "Pastrimi dentar nga higjienistja (4.1110) është një pastrim profesional i thellë që largon pllakën, njollat dhe gurët. Largimi i gurëve nga dentisti (4.1250/4.1260) fokusohet më shumë në largimin mjekësisht të nevojshëm të gurëve, veçanërisht nën mishrat. Të dyja mund të kombinohen."
+      },
+      {
+        "question": "A mund ta zbres pastrimin dentar nga taksat?",
+        "answer": "Po, në Zvicër, kostot dentare dhe të pastrimit dentar mund të zbriten si shpenzime mjekësore në deklaratën e taksave nëse tejkalojnë një shumë të caktuar (zakonisht 5% e të ardhurave të tatueshme). Mbaji faturat mirë!"
+      }
+    ],
+    "tr": [
+      {
+        "question": "Diş temizliğini ne sıklıkla yaptırmalıyım?",
+        "answer": "Bu ağız sağlığına bağlıdır. Çoğu insan için yılda 1–2 kez önerilir. Daha yüksek çürük veya periodontit riskiniz varsa, daha sık gerekebilir. Diş hijyenisti bu konuda size tavsiyede bulunacaktır."
+      },
+      {
+        "question": "Diş temizliği acı verir mi?",
+        "answer": "Normalde hayır. Hassas dişler veya iltihaplı diş etleri için bazen biraz rahatsız edici olabilir. Söylemen yeterli, diş hijyenisti daha nazik çalışabilir veya anestezi önerebilir."
+      },
+      {
+        "question": "Diş temizliği sağlık sigortası tarafından karşılanır mı?",
+        "answer": "UV/MV/IV (kaza, askerlik, engellilik sigortası) için diş temizliği, yalnızca bir kaza veya tıbbi olarak gerekli bir tedavi (örneğin periodontolojik tedavi öncesi) ile bağlantılıysa karşılanır. Saf korunma (profilaksi) için özel hastalar kendileri ödemek zorundadır. Birçok kişinin bunun için özel diş sigortası vardır."
+      },
+      {
+        "question": "Diş temizliği ile diş hekimi tarafından diş taşı temizliği arasındaki fark nedir?",
+        "answer": "Hijyenist tarafından diş temizliği (4.1110), plak, leke ve diş taşını temizleyen kapsamlı bir profesyonel temizliktir. Diş hekimi tarafından diş taşı temizliği (4.1250/4.1260), özellikle diş eti altında, tıbbi olarak gerekli diş taşı temizliğine odaklanır. Her ikisi de birleştirilebilir."
+      },
+      {
+        "question": "Diş temizliğini vergilerimden düşebilir miyim?",
+        "answer": "Evet, İsviçre'de diş ve diş temizliği masrafları, vergi beyannamesinde belirli bir muafiyeti (genellikle vergilendirilebilir gelirin %5'i) aşarsa hastalık masrafı olarak düşülebilir. Faturaları iyi saklayın!"
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koliko često trebam raditi čišćenje zuba?",
+        "answer": "To ovisi o tvojem oralnom zdravlju. Za većinu ljudi preporučuje se 1–2 puta godišnje. Ako imate veći rizik od karijesa ili parodontitisa, može biti potrebno češće. Dentalna higijeničarka će vas savjetovati o tome."
+      },
+      {
+        "question": "Je li čišćenje zuba bolno?",
+        "answer": "Normalno nije. Za osjetljive zube ili upaljene desni ponekad može biti malo neugodno. Dovoljno je reći, a dentalna higijeničarka može raditi nježnije ili ponuditi anesteziju."
+      },
+      {
+        "question": "Pokriva li zdravstveno osiguranje čišćenje zuba?",
+        "answer": "Za UV/MV/IV (osiguranje od nezgode, vojno, invalidsko), čišćenje zuba se pokriva samo ako je povezano s nezgodom ili medicinski potrebnim liječenjem (npr. prije parodontološkog liječenja). Za čistu prevenciju (profilaksu), privatni pacijenti moraju platiti sami. Mnogi za to imaju privatno stomatološko osiguranje."
+      },
+      {
+        "question": "Koja je razlika između čišćenja zuba i uklanjanja kamenca od strane zubara?",
+        "answer": "Čišćenje zuba od strane higijeničarke (4.1110) je temeljito profesionalno čišćenje koje uklanja plak, mrlje i kamenac. Uklanjanje kamenca od strane zubara (4.1250/4.1260) usredotočuje se više na medicinski potrebno uklanjanje kamenca, posebno ispod desni. Oba se mogu kombinirati."
+      },
+      {
+        "question": "Mogu li odbiti čišćenje zuba od poreza?",
+        "answer": "Da, u Švicarskoj se troškovi stomatoloških usluga i čišćenja zuba mogu odbiti kao medicinski troškovi u poreznoj prijavi ako prelaze određeni iznos (obično 5% oporezivog dohotka). Dobro čuvajte račune!"
+      }
+    ],
+    "ta": [
+      {
+        "question": "எத்தனை முறை பல் சுத்தம் செய்ய வேண்டும்?",
+        "answer": "இது உங்கள் வாய் ஆரோக்கியத்தைப் பொறுத்தது. பெரும்பாலான மக்களுக்கு வருடத்திற்கு 1–2 முறை பரிந்துரைக்கப்படுகிறது. புழு அல்லது ஈறு நோய் அதிக ஆபத்து இருந்தால், அடிக்கடி தேவைப்படலாம். பல் சுகாதார நிபுணர் இது குறித்து உங்களுக்கு அறிவுறுத்துவார்."
+      },
+      {
+        "question": "பல் சுத்தம் வலியை ஏற்படுத்துமா?",
+        "answer": "பொதுவாக இல்லை. உணர்திறன் கொண்ட பற்கள் அல்லது வீங்கிய ஈறுகளுக்கு சில நேரங்களில் சற்று அசௌகரியமாக இருக்கலாம். சொன்னால் போதும், பல் சுகாதார நிபுணர் மென்மையாக வேலை செய்யலாம் அல்லது மரத்துப்போகச் செய்யும் மருந்தை வழங்கலாம்."
+      },
+      {
+        "question": "பல் சுத்தம் சுகாதார காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "UV/MV/IV (விபத்து, இராணுவம், ஊனமுறை காப்பீடு) க்கு, பல் சுத்தம் ஒரு விபத்து அல்லது மருத்துவ ரீதியாக தேவையான சிகிச்சையுடன் (எ.கா., ஈறு சிகிச்சைக்கு முன்) தொடர்புடையதாக இருந்தால் மட்டுமே மறைக்கப்படுகிறது. தூய தடுப்புக்காக (பல் பாதுகாப்பு), தனியார் நோயாளிகள் தாங்களே பணம் செலுத்த வேண்டும். பலருக்கு இதற்காக தனியார் பல் காப்பீடு உள்ளது."
+      },
+      {
+        "question": "பல் சுத்தத்திற்கும் பல் மருத்துவரால் பல் கல் நீக்கத்திற்கும் என்ன வித்தியாசம்?",
+        "answer": "சுகாதார நிபுணரால் பல் சுத்தம் (4.1110) என்பது பிளேக், கறைகள் மற்றும் பல் கல்லை நீக்கும் முழுமையான தொழில்முறை சுத்தமாகும். பல் மருத்துவரால் பல் கல் நீக்கம் (4.1250/4.1260) என்பது மருத்துவ ரீதியாக தேவையான பல் கல் நீக்கத்தில், குறிப்பாக ஈறுகளின் கீழ், கவனம் செலுத்துகிறது. இரண்டையும் இணைக்கலாம்."
+      },
+      {
+        "question": "பல் சுத்தத்தை வரியிலிருந்து கழிக்கலாமா?",
+        "answer": "ஆம், சுவிட்சர்லாந்தில், பல் மற்றும் பல் சுத்த செலவுகள், ஒரு குறிப்பிட்ட விலக்கு அளவை (பொதுவாக வரிக்குட்பட்ட வருமானத்தில் 5%) மீறினால், வரி வருமானத்தில் நோய் செலவுகளாக கழிக்கப்படலாம். விலைப்பட்டியல்களை நன்கு வைத்திருங்கள்!"
+      }
+    ]
+  }
+}

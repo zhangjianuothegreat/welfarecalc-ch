@@ -1,0 +1,483 @@
+{
+  "code": "4.0530",
+  "name_de": "Orthopantomographie (Panoramaschichtaufnahme)",
+  "display_name": {
+    "de": "Panorama-Röntgen (Übersichtsbild aller Zähne)",
+    "fr": "Radiographie panoramique (vue d'ensemble de toutes les dents)",
+    "it": "Radiografia panoramica (vista d'insieme di tutti i denti)",
+    "en": "Panoramic X-ray (overview of all teeth)",
+    "es": "Radiografía panorámica (vista general de todos los dientes)",
+    "pt": "Radiografia panorâmica (visão geral de todos os dentes)",
+    "pl": "Rentgen panoramiczny (przegląd wszystkich zębów)",
+    "al": "Rreze X panoramike (pamje e përgjithshme e të gjithë dhëmbëve)",
+    "tr": "Panoramik röntgen (tüm dişlerin genel görünümü)",
+    "hr": "Panoramski rendgen (pregled svih zuba)",
+    "ta": "பனோரமிக் எக்ஸ்-ரே (அனைத்து பற்களின் கண்ணோட்டம்)"
+  },
+  "search_keywords": {
+    "de": ["orthopantomographie", "opt", "panorama", "panoramabild", "panoramafilm", "übersichtsaufnahme", "röntgenübersicht", "alle zähne röntgen"],
+    "fr": ["orthopantomographie", "opt", "panoramique", "radiographie panoramique", "vue d'ensemble", "toutes les dents"],
+    "it": ["ortopantomografia", "opt", "panoramica", "radiografia panoramica", "vista d'insieme", "tutti i denti"],
+    "en": ["orthopantomography", "opt", "panoramic", "panoramic x-ray", "overview", "all teeth x-ray"],
+    "es": ["ortopantomografía", "opt", "panorámica", "radiografía panorámica", "visión general", "todos los dientes"],
+    "pt": ["ortopantomografia", "opt", "panorâmica", "radiografia panorâmica", "visão geral", "todos os dentes"],
+    "pl": ["ortopantomografia", "opt", "panoramiczny", "zdjęcie panoramiczne", "przegląd", "wszystkie zęby"],
+    "al": ["ortopantomografi", "opt", "panoramike", "rreze x panoramike", "pamje e përgjithshme", "të gjithë dhëmbët"],
+    "tr": ["ortopantomografi", "opt", "panoramik", "panoramik röntgen", "genel görünüm", "tüm dişler"],
+    "hr": ["ortopantomografija", "opt", "panoramski", "panoramski rendgen", "pregled", "svi zubi"],
+    "ta": ["ஆர்த்தோபன்டோமோகிராஃபி", "ஒபிடி", "பனோரமிக்", "பனோரமிக் எக்ஸ்-ரே", "கண்ணோட்டம்", "அனைத்து பற்கள்"]
+  },
+  "tp_uv_mviv": 156.90,
+  "tp_pp_max": 180.40,
+  "tp_pp_min": 133.40,
+  "chapter": "01.11",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Das ist ein besonderes Röntgenbild, das alle deine Zähne auf einmal zeigt – wie ein großes Gruppenfoto deiner Zähne! Du stehst oder sitzt ruhig, und die Röntgenmaschine fährt einmal um deinen Kopf herum. So kann der Zahnarzt sehen, wie alle Zähne stehen, ob Weisheitszähne da sind und ob der Kieferknochen gesund ist. Das hilft bei der Planung von größeren Behandlungen.",
+    "fr": "C'est une radiographie spéciale qui montre toutes tes dents en une seule fois – comme une grande photo de groupe de tes dents! Tu te tiens debout ou assis tranquillement, et la machine à rayons X fait le tour de ta tête. Ainsi, le dentiste peut voir comment toutes les dents sont positionnées, si les dents de sagesse sont présentes et si l'os de la mâchoire est sain. Cela aide à planifier les traitements plus importants.",
+    "it": "Questa è una radiografia speciale che mostra tutti i tuoi denti in una sola volta – come una grande foto di gruppo dei tuoi denti! Stai in piedi o seduto immobile, e la macchina a raggi X fa il giro della tua testa. Così il dentista può vedere come sono posizionati tutti i denti, se ci sono i denti del giudizio e se l'osso della mascella è sano. Aiuta a pianificare trattamenti più importanti.",
+    "en": "This is a special X-ray that shows all your teeth at once – like a big group photo of your teeth! You stand or sit still, and the X-ray machine goes around your head. This way the dentist can see how all your teeth are positioned, whether there are wisdom teeth, and whether the jawbone is healthy. It helps plan bigger treatments.",
+    "es": "Esta es una radiografía especial que muestra todos tus dientes de una vez – ¡como una gran foto grupal de tus dientes! Te mantienes de pie o sentado sin moverte, y la máquina de rayos X da una vuelta alrededor de tu cabeza. Así el dentista puede ver cómo están posicionados todos los dientes, si hay muelas del juicio y si el hueso de la mandíbula está sano. Ayuda a planificar tratamientos más importantes.",
+    "pt": "Esta é uma radiografia especial que mostra todos os teus dentes de uma só vez – como uma grande foto de grupo dos teus dentes! Ficas de pé ou sentado imóvel, e a máquina de raios X dá a volta à tua cabeça. Assim o dentista pode ver como todos os dentes estão posicionados, se há dentes do siso e se o osso da mandíbula está saudável. Ajuda a planear tratamentos maiores.",
+    "pl": "To specjalne zdjęcie rentgenowskie, które pokazuje wszystkie zęby na raz – jak duże zdjęcie grupowe twoich zębów! Stoisz lub siedzisz nieruchomo, a aparat rentgenowski okrąża twoją głowę. Dzięki temu dentysta może zobaczyć, jak ustawione są wszystkie zęby, czy są zęby mądrości i czy kość szczęki jest zdrowa. Pomaga to w planowaniu większych zabiegów.",
+    "al": "Kjo është një rreze X speciale që tregon të gjithë dhëmbët e tu në një herë – si një foto e madhe grupore e dhëmbëve të tu! Qëndron në këmbë ose ulur pa lëvizur, dhe makina me rreze X rrotullohet rreth kokës sate. Në këtë mënyrë dentisti mund të shohë se si janë pozicionuar të gjithë dhëmbët, nëse ka dhëmballë të mençurisë dhe nëse kocka e nofullës është e shëndetshme. Ndihmon në planifikimin e trajtimeve më të mëdha.",
+    "tr": "Bu, tüm dişlerini tek seferde gösteren özel bir röntgendir – dişlerinin büyük bir grup fotoğrafı gibi! Ayakta durur veya oturursun, röntgen makinesi başının etrafında döner. Bu sayede diş hekimi tüm dişlerin nasıl konumlandığını, yirmilik dişlerin olup olmadığını ve çene kemiğinin sağlıklı olup olmadığını görebilir. Daha büyük tedavileri planlamaya yardımcı olur.",
+    "hr": "Ovo je poseban rendgen koji prikazuje sve tvoje zube odjednom – kao velika grupna fotografija tvojih zuba! Stojiš ili sjediš mirno, a rendgenski aparat se okreće oko tvoje glave. Na taj način zubar može vidjeti kako su svi zubi postavljeni, ima li umnjaka i je li čeljusna kost zdrava. Pomaže u planiranju većih zahvata.",
+    "ta": "இது ஒரு சிறப்பு எக்ஸ்-ரே ஆகும், இது உங்கள் அனைத்து பற்களையும் ஒரே நேரத்தில் காட்டுகிறது – உங்கள் பற்களின் பெரிய குழு புகைப்படம் போல! நீங்கள் அசையாமல் நிற்கிறீர்கள் அல்லது உட்காருகிறீர்கள், மற்றும் எக்ஸ்-ரே இயந்திரம் உங்கள் தலைக்கு சுற்றி வருகிறது. இதனால் பல் மருத்துவர் அனைத்து பற்களும் எவ்வாறு நிலைநிறுத்தப்பட்டுள்ளன, ஞானப்பற்கள் உள்ளனவா, மற்றும் தாடை எலும்பு ஆரோக்கியமாக உள்ளதா என்பதை பார்க்க முடியும். பெரிய சிகிச்சைகளை திட்டமிட உதவுகிறது."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 Ein Panorama-Röntgenbild, das alle Zähne und Kiefer zeigt",
+      "🖥️ Digitale Bildaufnahme (kein Papierausdruck, wird auf Computer gespeichert)",
+      "👨‍⚕️ Beurteilung des Bildes durch den Zahnarzt (Diagnose)",
+      "📋 Hilft bei der Planung von Weisheitszahn-OPs, Implantaten oder Kieferorthopädie",
+      "💾 Digitale Speicherung in deiner Patientenakte",
+      "📤 Bei Versicherungsfällen: digitale Abgabe an die Versicherung (nicht als PDF)"
+    ],
+    "fr": [
+      "🦷 Une radiographie panoramique montrant toutes les dents et les mâchoires",
+      "🖥️ Prise d'image numérique (pas d'impression, stockée sur ordinateur)",
+      "👨‍⚕️ Interprétation de l'image par le dentiste (diagnostic)",
+      "📋 Aide à la planification des opérations des dents de sagesse, des implants ou de l'orthodontie",
+      "💾 Stockage numérique dans ton dossier patient",
+      "📤 En cas d'assurance: remise numérique à l'assurance (pas au format PDF)"
+    ],
+    "it": [
+      "🦷 Una radiografia panoramica che mostra tutti i denti e le mascelle",
+      "🖥️ Acquisizione digitale dell'immagine (nessuna stampa, archiviata su computer)",
+      "👨‍⚕️ Valutazione dell'immagine da parte del dentista (diagnosi)",
+      "📋 Aiuta nella pianificazione di operazioni dei denti del giudizio, impianti o ortodonzia",
+      "💾 Archiviazione digitale nella tua cartella clinica",
+      "📤 Per casi assicurativi: consegna digitale all'assicurazione (non in PDF)"
+    ],
+    "en": [
+      "🦷 A panoramic X-ray showing all teeth and jaws",
+      "🖥️ Digital image capture (no printout, stored on computer)",
+      "👨‍⚕️ Image evaluation by the dentist (diagnosis)",
+      "📋 Helps plan wisdom tooth surgery, implants, or orthodontic treatment",
+      "💾 Digital storage in your patient file",
+      "📤 For insurance cases: digital submission to the insurance company (not as PDF)"
+    ],
+    "es": [
+      "🦷 Una radiografía panorámica que muestra todos los dientes y mandíbulas",
+      "🖥️ Captura digital de la imagen (sin impresión, almacenada en ordenador)",
+      "👨‍⚕️ Evaluación de la imagen por el dentista (diagnóstico)",
+      "📋 Ayuda a planificar cirugías de muelas del juicio, implantes u ortodoncia",
+      "💾 Almacenamiento digital en tu historial",
+      "📤 Para casos de seguro: entrega digital a la aseguradora (no en PDF)"
+    ],
+    "pt": [
+      "🦷 Uma radiografia panorâmica que mostra todos os dentes e maxilares",
+      "🖥️ Captura digital da imagem (sem impressão, armazenada no computador)",
+      "👨‍⚕️ Avaliação da imagem pelo dentista (diagnóstico)",
+      "📋 Ajuda a planear cirurgias de dentes do siso, implantes ou ortodontia",
+      "💾 Armazenamento digital no teu processo clínico",
+      "📤 Para casos de seguro: entrega digital à seguradora (não em PDF)"
+    ],
+    "pl": [
+      "🦷 Panoramiczne zdjęcie rentgenowskie pokazujące wszystkie zęby i szczęki",
+      "🖥️ Cyfrowe przechwytywanie obrazu (bez wydruku, przechowywane na komputerze)",
+      "👨‍⚕️ Ocena obrazu przez dentystę (diagnoza)",
+      "📋 Pomaga w planowaniu operacji ósemek, implantów lub leczenia ortodontycznego",
+      "💾 Cyfrowe przechowywanie w Twojej dokumentacji",
+      "📤 Dla przypadków ubezpieczeniowych: cyfrowe przekazanie ubezpieczycielowi (nie jako PDF)"
+    ],
+    "al": [
+      "🦷 Një rreze X panoramike që tregon të gjithë dhëmbët dhe nofullat",
+      "🖥️ Kapje dixhitale e imazhit (pa printim, ruhet në kompjuter)",
+      "👨‍⚕️ Vlerësimi i imazhit nga dentisti (diagnozë)",
+      "📋 Ndihmon në planifikimin e operacioneve të dhëmballëve të mençurisë, implanteve ose ortodontisë",
+      "💾 Ruajtje dixhitale në dosjen tënde të pacientit",
+      "📤 Për raste sigurimi: dorëzim dixhital te sigurimi (jo si PDF)"
+    ],
+    "tr": [
+      "🦷 Tüm dişleri ve çeneleri gösteren panoramik röntgen görüntüsü",
+      "🖥️ Dijital görüntü yakalama (çıktı yok, bilgisayarda saklanır)",
+      "👨‍⚕️ Görüntünün diş hekimi tarafından değerlendirilmesi (teşhis)",
+      "📋 Yirmilik diş ameliyatları, implantlar veya ortodontik tedavi planlamasına yardımcı olur",
+      "💾 Hasta dosyanda dijital depolama",
+      "📤 Sigorta durumlarında: sigortaya dijital teslim (PDF olarak değil)"
+    ],
+    "hr": [
+      "🦷 Panoramski rendgenski snimak koji prikazuje sve zube i čeljusti",
+      "🖥️ Digitalno snimanje slike (bez ispisa, pohranjuje se na računalu)",
+      "👨‍⚕️ Procjena slike od strane zubara (dijagnoza)",
+      "📋 Pomaže u planiranju operacija umnjaka, implantata ili ortodontskog liječenja",
+      "💾 Digitalno pohranjivanje u tvoju medicinsku dokumentaciju",
+      "📤 Za slučajeve osiguranja: digitalna dostava osiguranju (ne kao PDF)"
+    ],
+    "ta": [
+      "🦷 அனைத்து பற்களையும் தாடைகளையும் காட்டும் ஒரு பனோரமிக் எக்ஸ்-ரே",
+      "🖥️ டிஜிட்டல் படம் பிடிப்பு (அச்சு இல்லை, கணினியில் சேமிக்கப்படும்)",
+      "👨‍⚕️ பல் மருத்துவரால் படம் மதிப்பீடு (நோயறிதல்)",
+      "📋 ஞானப்பல் அறுவை சிகிச்சை, பல் உள்வைப்புகள் அல்லது பல் வரிசை சீரமைப்பு சிகிச்சை திட்டமிட உதவுகிறது",
+      "💾 உங்கள் நோயாளி கோப்பில் டிஜிட்டல் சேமிப்பு",
+      "📤 காப்பீட்டு நிகழ்வுகளுக்கு: காப்பீட்டிற்கு டிஜிட்டல் சமர்ப்பிப்பு (PDF ஆக அல்ல)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "📸 **Panorama-Röntgenbild (Übersichtsaufnahme aller Zähne und Kiefer)**",
+      "💻 **Nur digitale Formate sind zulässig** (PDF-Format ist nicht erlaubt!)",
+      "🏥 **Bei UV/MV/IV:** Das Bild muss in fotografischer Qualität und digital an die Versicherung übermittelt werden. Das PDF-Format ist für die Abgabe an die Versicherung nicht zulässig, da es die Bildqualität verringert.",
+      "🦷 **Wofür wird es verwendet?** Planung von Weisheitszahn-OPs, Implantaten, kieferorthopädischen Behandlungen oder zur Beurteilung des gesamten Gebisses",
+      "📦 **In Leistungspaketen enthalten:** Kann in verschiedenen Leistungspaketen enthalten sein (z.B. bei umfassender Diagnostik)",
+      "⏱️ **Aufbewahrung:** Bei UVG-Fällen müssen die Bilder 30 Jahre archiviert werden und nach Behandlungsende an den Versicherer übergeben werden",
+      "📋 **Für dich als Patient:** Du musst nichts tun. Dein Zahnarzt kümmert sich um die richtige digitale Übergabe an die Versicherung. Wenn du die Bilder selbst haben möchtest (z.B. als PDF oder Ausdruck), kannst du sie beim Zahnarzt anfordern – das ist für dich als Patient völlig in Ordnung."
+    ],
+    "fr": [
+      "📸 **Radiographie panoramique (vue d'ensemble de toutes les dents et mâchoires)**",
+      "💻 **Seuls les formats numériques sont autorisés** (le format PDF n'est pas autorisé!)",
+      "🏥 **Pour UV/MV/IV:** L'image doit être transmise à l'assurance en qualité photographique et au format numérique. Le format PDF n'est pas accepté pour la remise à l'assurance car il réduit la qualité de l'image.",
+      "🦷 **À quoi sert-il?** Planification des opérations des dents de sagesse, des implants, des traitements orthodontiques ou pour évaluer l'ensemble de la dentition",
+      "📦 **Inclus dans les forfaits de prestations:** Peut être inclus dans divers forfaits (par exemple pour un diagnostic complet)",
+      "⏱️ **Conservation:** Pour les cas UV, les images doivent être archivées pendant 30 ans et remises à l'assureur après la fin du traitement",
+      "📋 **Pour toi en tant que patient:** Tu n'as rien à faire. Ton dentiste se charge de la transmission numérique correcte à l'assurance. Si tu souhaites obtenir les images toi-même (par exemple en PDF ou en impression), tu peux les demander à ton dentiste – c'est tout à fait acceptable pour toi en tant que patient."
+    ],
+    "it": [
+      "📸 **Radiografia panoramica (vista d'insieme di tutti i denti e mascelle)**",
+      "💻 **Solo formati digitali sono consentiti** (il formato PDF non è ammesso!)",
+      "🏥 **Per UV/MV/IV:** L'immagine deve essere trasmessa all'assicurazione in qualità fotografica e in formato digitale. Il formato PDF non è accettato per la consegna all'assicurazione perché riduce la qualità dell'immagine.",
+      "🦷 **A cosa serve?** Pianificazione di operazioni dei denti del giudizio, impianti, trattamenti ortodontici o per valutare l'intera dentatura",
+      "📦 **Incluso nei pacchetti di prestazioni:** Può essere incluso in vari pacchetti (ad esempio per diagnosi complete)",
+      "⏱️ **Conservazione:** Per i casi UV, le immagini devono essere archiviate per 30 anni e consegnate all'assicuratore dopo il trattamento",
+      "📋 **Per te come paziente:** Non devi fare nulla. Il tuo dentista si occuperà della corretta consegna digitale all'assicurazione. Se desideri avere le immagini per te (ad esempio come PDF o stampa), puoi richiederle al tuo dentista – per te come paziente va benissimo."
+    ],
+    "en": [
+      "📸 **Panoramic X-ray (overview of all teeth and jaws)**",
+      "💻 **Only digital formats are permitted** (PDF format is NOT allowed!)",
+      "🏥 **For UV/MV/IV:** The image must be submitted to the insurance company in photographic quality and digital format. PDF format is not accepted for submission to the insurance company because it reduces image quality.",
+      "🦷 **What is it used for?** Planning wisdom tooth surgery, implants, orthodontic treatment, or assessing the entire dentition",
+      "📦 **Included in service packages:** May be included in various service packages (e.g., for comprehensive diagnostics)",
+      "⏱️ **Storage:** For UV cases, images must be archived for 30 years and handed over to the insurer after treatment completion",
+      "📋 **For you as a patient:** You don't need to do anything. Your dentist will handle the correct digital submission to the insurance company. If you want a copy of the images for yourself (e.g., as PDF or printout), you can ask your dentist – that is perfectly fine for you as a patient."
+    ],
+    "es": [
+      "📸 **Radiografía panorámica (vista general de todos los dientes y mandíbulas)**",
+      "💻 **Solo se permiten formatos digitales** (¡el formato PDF no está permitido!)",
+      "🏥 **Para UV/MV/IV:** La imagen debe entregarse al seguro en calidad fotográfica y formato digital. El formato PDF no se acepta para la entrega al seguro porque reduce la calidad de la imagen.",
+      "🦷 **¿Para qué se utiliza?** Planificación de cirugías de muelas del juicio, implantes, tratamientos de ortodoncia o para evaluar toda la dentadura",
+      "📦 **Incluido en paquetes de servicios:** Puede estar incluido en varios paquetes (por ejemplo, para diagnósticos completos)",
+      "⏱️ **Conservación:** Para casos UV, las imágenes deben archivarse durante 30 años y entregarse al asegurador al finalizar el tratamiento",
+      "📋 **Para ti como paciente:** No tienes que hacer nada. Tu dentista se encargará de la correcta entrega digital al seguro. Si quieres tener las imágenes para ti (por ejemplo, como PDF o impresión), puedes pedírselas a tu dentista – para ti como paciente está perfectamente bien."
+    ],
+    "pt": [
+      "📸 **Radiografia panorâmica (visão geral de todos os dentes e maxilares)**",
+      "💻 **Apenas formatos digitais são permitidos** (o formato PDF NÃO é permitido!)",
+      "🏥 **Para UV/MV/IV:** A imagem deve ser entregue ao seguro em qualidade fotográfica e formato digital. O formato PDF não é aceite para entrega ao seguro porque reduz a qualidade da imagem.",
+      "🦷 **Para que é utilizado?** Planeamento de cirurgias de dentes do siso, implantes, tratamentos ortodônticos ou para avaliar toda a dentição",
+      "📦 **Incluído em pacotes de serviços:** Pode estar incluído em vários pacotes (por exemplo, para diagnósticos completos)",
+      "⏱️ **Armazenamento:** Para casos UV, as imagens devem ser arquivadas por 30 anos e entregues à seguradora após o tratamento",
+      "📋 **Para ti como paciente:** Não tens de fazer nada. O teu dentista tratará da correta entrega digital à seguradora. Se quiseres ter as imagens para ti (por exemplo, como PDF ou impressão), podes pedi-las ao teu dentista – para ti como paciente está perfeitamente bem."
+    ],
+    "pl": [
+      "📸 **Zdjęcie panoramiczne (przegląd wszystkich zębów i szczęk)**",
+      "💻 **Dozwolone są tylko formaty cyfrowe** (format PDF NIE jest dozwolony!)",
+      "🏥 **Dla UV/MV/IV:** Obraz musi być przekazany ubezpieczycielowi w jakości fotograficznej i formacie cyfrowym. Format PDF nie jest akceptowany do przekazania ubezpieczycielowi, ponieważ obniża jakość obrazu.",
+      "🦷 **Do czego służy?** Planowanie operacji ósemek, implantów, leczenia ortodontycznego lub ocena całego uzębienia",
+      "📦 **Zawarte w pakietach usług:** Może być zawarte w różnych pakietach (np. do kompleksowej diagnostyki)",
+      "⏱️ **Przechowywanie:** Dla przypadków UV, obrazy muszą być archiwizowane przez 30 lat i przekazane ubezpieczycielowi po zakończeniu leczenia",
+      "📋 **Dla ciebie jako pacjenta:** Nie musisz nic robić. Twój dentysta zajmie się prawidłowym cyfrowym przekazaniem do ubezpieczyciela. Jeśli chcesz mieć obrazy dla siebie (np. jako PDF lub wydruk), możesz poprosić o nie swojego dentystę – dla ciebie jako pacjenta jest to całkowicie w porządku."
+    ],
+    "al": [
+      "📸 **Rreze X panoramike (pamje e përgjithshme e të gjithë dhëmbëve dhe nofullave)**",
+      "💻 **Lejohen vetëm formatet dixhitale** (formati PDF NUK lejohet!)",
+      "🏥 **Për UV/MV/IV:** Imazhi duhet të dorëzohet te sigurimi në cilësi fotografike dhe format dixhital. Formati PDF nuk pranohet për dorëzim te sigurimi sepse ul cilësinë e imazhit.",
+      "🦷 **Për çfarë përdoret?** Planifikimi i operacioneve të dhëmballëve të mençurisë, implanteve, trajtimeve ortodontike ose për vlerësimin e të gjithë dhëmbëve",
+      "📦 **Përfshirë në paketat e shërbimeve:** Mund të përfshihet në paketa të ndryshme (p.sh., për diagnozë të plotë)",
+      "⏱️ **Ruajtja:** Për rastet UV, imazhet duhet të arkivohen për 30 vjet dhe t'i dorëzohen siguruesit pas përfundimit të trajtimit",
+      "📋 **Për ty si pacient:** Nuk ke nevojë të bësh asgjë. Dentisti yt do të kujdeset për dorëzimin e saktë dixhital te sigurimi. Nëse dëshiron t'i kesh imazhet për vete (p.sh. si PDF ose printim), mund t'i kërkosh dentistit tënd – për ty si pacient është krejtësisht në rregull."
+    ],
+    "tr": [
+      "📸 **Panoramik röntgen (tüm dişlerin ve çenelerin genel görünümü)**",
+      "💻 **Yalnızca dijital formatlara izin verilir** (PDF formatına İZİN VERİLMEZ!)",
+      "🏥 **UV/MV/IV için:** Görüntü, fotoğraf kalitesinde ve dijital formatta sigortaya teslim edilmelidir. PDF formatı, görüntü kalitesini düşürdüğü için sigortaya teslim için kabul edilmez.",
+      "🦷 **Ne için kullanılır?** Yirmilik diş ameliyatları, implantlar, ortodontik tedaviler planlamak veya tüm diş yapısını değerlendirmek için",
+      "📦 **Hizmet paketlerinde bulunur:** Çeşitli paketlerde bulunabilir (örneğin kapsamlı teşhis için)",
+      "⏱️ **Saklama:** UV vakaları için, görüntüler 30 yıl boyunca arşivlenmeli ve tedavi tamamlandıktan sonra sigortacıya teslim edilmelidir",
+      "📋 **Hasta olarak senin için:** Hiçbir şey yapman gerekmez. Diş hekimin sigortaya doğru dijital teslimi halledecektir. Görüntüleri kendin için almak istersen (örneğin PDF veya çıktı olarak), diş hekiminden isteyebilirsin – hasta olarak senin için bu tamamen uygundur."
+    ],
+    "hr": [
+      "📸 **Panoramski rendgen (pregled svih zuba i čeljusti)**",
+      "💻 **Dopušteni su samo digitalni formati** (PDF format NIJE dopušten!)",
+      "🏥 **Za UV/MV/IV:** Slika se mora dostaviti osiguranju u fotografskoj kvaliteti i digitalnom formatu. PDF format nije prihvaćen za dostavu osiguranju jer smanjuje kvalitetu slike.",
+      "🦷 **Za što se koristi?** Planiranje operacija umnjaka, implantata, ortodontskih tretmana ili za procjenu cjelokupnog zubala",
+      "📦 **Uključeno u pakete usluga:** Može biti uključeno u različite pakete (npr. za sveobuhvatnu dijagnostiku)",
+      "⏱️ **Pohrana:** Za UV slučajeve, slike se moraju arhivirati 30 godina i predati osiguravatelju nakon završetka liječenja",
+      "📋 **Za tebe kao pacijenta:** Ne moraš ništa učiniti. Tvoj zubar će se pobrinuti za ispravnu digitalnu dostavu osiguranju. Ako želiš imati slike za sebe (npr. kao PDF ili ispis), možeš ih zatražiti od svog zubara – za tebe kao pacijenta to je sasvim u redu."
+    ],
+    "ta": [
+      "📸 **பனோரமிக் எக்ஸ்-ரே (அனைத்து பற்கள் மற்றும் தாடைகளின் கண்ணோட்டம்)**",
+      "💻 **டிஜிட்டல் வடிவங்கள் மட்டுமே அனுமதிக்கப்படுகின்றன** (PDF வடிவம் அனுமதிக்கப்படாது!)",
+      "🏥 **UV/MV/IV க்கு:** படம் புகைப்பட தரத்தில் மற்றும் டிஜிட்டல் வடிவத்தில் காப்பீட்டிற்கு சமர்ப்பிக்கப்பட வேண்டும். PDF வடிவம் படத்தின் தரத்தை குறைப்பதால் காப்பீட்டிற்கு சமர்ப்பிப்பதற்கு ஏற்றுக்கொள்ளப்படாது.",
+      "🦷 **இது எதற்காகப் பயன்படுத்தப்படுகிறது?** ஞானப்பல் அறுவை சிகிச்சை, பல் உள்வைப்புகள், பல் வரிசை சீரமைப்பு சிகிச்சைகள் திட்டமிட அல்லது முழு பற்களையும் மதிப்பிட",
+      "📦 **சேவை தொகுப்புகளில் சேர்க்கப்பட்டுள்ளது:** பல்வேறு தொகுப்புகளில் சேர்க்கப்படலாம் (எ.கா., விரிவான நோயறிதலுக்கு)",
+      "⏱️ **சேமிப்பு:** UV வழக்குகளுக்கு, படங்கள் 30 ஆண்டுகளுக்கு காப்பகப்படுத்தப்பட வேண்டும் மற்றும் சிகிச்சை முடிந்த பிறகு காப்பீட்டாளரிடம் ஒப்படைக்கப்பட வேண்டும்",
+      "📋 **நோயாளியாக உங்களுக்கு:** நீங்கள் எதுவும் செய்ய வேண்டியதில்லை. உங்கள் பல் மருத்துவர் காப்பீட்டிற்கு சரியான டிஜிட்டல் சமர்ப்பிப்பை கவனித்துக்கொள்வார். நீங்கள் படங்களை உங்களுக்காக விரும்பினால் (எ.கா. PDF அல்லது அச்சு வெளியீடாக), உங்கள் பல் மருத்துவரிடம் கேட்கலாம் – நோயாளியாக உங்களுக்கு இது முற்றிலும் ஏற்றுக்கொள்ளத்தக்கது."
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Ist das Panorama-Röntgen schädlich?",
+        "answer": "Nein. Moderne digitale Geräte verwenden eine sehr geringe Strahlendosis – etwa so viel wie bei einem kurzen Flug oder ein paar Tagen natürlicher Hintergrundstrahlung. Der Zahnarzt schützt dich zusätzlich mit einer Bleischürze. Der Nutzen für die Diagnose überwiegt bei weitem das kleine Risiko."
+      },
+      {
+        "question": "Was ist der Unterschied zum normalen Zahnfilm (4.0500)?",
+        "answer": "Der normale Zahnfilm (4.0500) zeigt nur einen oder wenige Zähne im Detail. Das Panorama-Röntgen (4.0530) zeigt alle Zähne und Kiefer auf einmal. Es ist wie ein Gruppenfoto – gut für die Übersicht, aber weniger detailliert als Einzelaufnahmen. Oft werden beide Arten kombiniert."
+      },
+      {
+        "question": "Wie läuft die Aufnahme ab?",
+        "answer": "Du stehst oder sitzt ruhig. Du beißt auf ein Mundstück, und die Röntgenmaschine fährt einmal um deinen Kopf herum. Das dauert etwa 10–20 Sekunden. Währenddessen musst du stillhalten und nicht schlucken. Es ist völlig schmerzfrei."
+      },
+      {
+        "question": "Wann brauche ich ein Panorama-Röntgen?",
+        "answer": "Typische Situationen: Vor einer Weisheitszahn-OP, vor einer Implantat-Behandlung, für eine kieferorthopädische Planung (Zahnspange), bei Kiefergelenksproblemen, oder um einen Überblick über das ganze Gebiss zu bekommen. Dein Zahnarzt entscheidet, ob es nötig ist."
+      },
+      {
+        "question": "Bekomme ich die Bilder mit?",
+        "answer": "Du hast ein Recht darauf, deine Röntgenbilder zu bekommen. Sprich deinen Zahnarzt darauf an. Bei UV/MV/IV-Fällen werden die Bilder nach Behandlungsende an die Versicherung übergeben (die Versicherer archivieren sie 30 Jahre lang). Für dich kann der Zahnarzt eine Kopie anfertigen – zum Beispiel als PDF, Ausdruck oder auf einem USB-Stick."
+      }
+    ],
+    "fr": [
+      {
+        "question": "La radiographie panoramique est-elle dangereuse?",
+        "answer": "Non. Les appareils numériques modernes utilisent une dose de rayonnement très faible – environ autant qu'un vol court ou quelques jours de rayonnement naturel de fond. Le dentiste te protège en plus avec un tablier plombé. Le bénéfice pour le diagnostic l'emporte de loin sur le faible risque."
+      },
+      {
+        "question": "Quelle est la différence avec la radiographie dentaire normale (4.0500)?",
+        "answer": "La radiographie dentaire normale (4.0500) montre seulement une ou quelques dents en détail. La radiographie panoramique (4.0530) montre toutes les dents et les mâchoires en une fois. C'est comme une photo de groupe – bonne pour la vue d'ensemble, mais moins détaillée que les clichés individuels. Souvent, les deux types sont combinés."
+      },
+      {
+        "question": "Comment se déroule l'examen?",
+        "answer": "Tu te tiens debout ou assis immobile. Tu mords sur une pièce buccale, et la machine à rayons X fait le tour de ta tête. Cela dure environ 10 à 20 secondes. Pendant ce temps, tu dois rester immobile et ne pas avaler. C'est totalement indolore."
+      },
+      {
+        "question": "Quand ai-je besoin d'une radiographie panoramique?",
+        "answer": "Situations typiques: avant une opération des dents de sagesse, avant un traitement implantaire, pour une planification orthodontique (appareil dentaire), en cas de problèmes d'articulation de la mâchoire, ou pour avoir une vue d'ensemble de la dentition. Ton dentiste décidera si c'est nécessaire."
+      },
+      {
+        "question": "Puis-je avoir les images?",
+        "answer": "Tu as le droit d'obtenir tes radiographies. Parle-en à ton dentiste. Pour les cas UV/MV/IV, les images sont remises à l'assurance après le traitement (les assureurs les conservent pendant 30 ans). Le dentiste peut en faire une copie pour toi – par exemple en PDF, en impression ou sur une clé USB."
+      }
+    ],
+    "it": [
+      {
+        "question": "La radiografia panoramica è pericolosa?",
+        "answer": "No. Le moderne apparecchiature digitali usano una dose di radiazioni molto bassa – circa quanto un volo breve o alcuni giorni di radiazione naturale di fondo. Il dentista ti protegge inoltre con un grembiule di piombo. Il beneficio per la diagnosi supera di gran lunga il piccolo rischio."
+      },
+      {
+        "question": "Qual è la differenza con la radiografia dentale normale (4.0500)?",
+        "answer": "La radiografia dentale normale (4.0500) mostra solo uno o pochi denti in dettaglio. La radiografia panoramica (4.0530) mostra tutti i denti e le mascelle in una volta. È come una foto di gruppo – buona per la visione d'insieme, ma meno dettagliata delle singole immagini. Spesso i due tipi vengono combinati."
+      },
+      {
+        "question": "Come si svolge l'esame?",
+        "answer": "Stai in piedi o seduto immobile. Mordi un pezzo buccale e la macchina a raggi X gira intorno alla tua testa. Ci vogliono circa 10-20 secondi. Durante questo periodo devi rimanere immobile e non deglutire. È completamente indolore."
+      },
+      {
+        "question": "Quando ho bisogno di una radiografia panoramica?",
+        "answer": "Situazioni tipiche: prima di un'operazione dei denti del giudizio, prima di un trattamento implantare, per una pianificazione ortodontica (apparecchio), in caso di problemi all'articolazione della mascella, o per avere una visione d'insieme dell'intera dentatura. Il tuo dentista deciderà se è necessario."
+      },
+      {
+        "question": "Posso avere le immagini?",
+        "answer": "Hai il diritto di ricevere le tue radiografie. Parlane con il tuo dentista. Per i casi UV/MV/IV, le immagini vengono consegnate all'assicurazione dopo il trattamento (gli assicuratori le conservano per 30 anni). Il dentista può farne una copia per te – ad esempio come PDF, stampa o su una chiavetta USB."
+      }
+    ],
+    "en": [
+      {
+        "question": "Is the panoramic X-ray harmful?",
+        "answer": "No. Modern digital equipment uses a very low radiation dose – about as much as a short flight or a few days of natural background radiation. The dentist also protects you with a lead apron. The benefit for diagnosis far outweighs the small risk."
+      },
+      {
+        "question": "What is the difference from a regular dental X-ray (4.0500)?",
+        "answer": "A regular dental X-ray (4.0500) shows only one or a few teeth in detail. The panoramic X-ray (4.0530) shows all teeth and jaws at once. It's like a group photo – good for overview, but less detailed than individual images. Often both types are combined."
+      },
+      {
+        "question": "How does the examination work?",
+        "answer": "You stand or sit still. You bite on a mouthpiece, and the X-ray machine rotates around your head. This takes about 10–20 seconds. During this time, you must stay still and not swallow. It is completely painless."
+      },
+      {
+        "question": "When do I need a panoramic X-ray?",
+        "answer": "Typical situations: before wisdom tooth surgery, before implant treatment, for orthodontic planning (braces), for jaw joint problems, or to get an overview of the entire dentition. Your dentist will decide if it is necessary."
+      },
+      {
+        "question": "Can I get the images?",
+        "answer": "You have the right to receive your X-ray images. Talk to your dentist about it. For UV/MV/IV cases, the images are handed over to the insurance after treatment (insurers archive them for 30 years). The dentist can make a copy for you – for example as PDF, printout, or on a USB stick."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿La radiografía panorámica es perjudicial?",
+        "answer": "No. Los equipos digitales modernos utilizan una dosis de radiación muy baja – aproximadamente la de un vuelo corto o unos días de radiación natural de fondo. El dentista te protege además con un delantal de plomo. El beneficio para el diagnóstico supera con creces el pequeño riesgo."
+      },
+      {
+        "question": "¿Cuál es la diferencia con la radiografía dental normal (4.0500)?",
+        "answer": "La radiografía dental normal (4.0500) muestra solo uno o pocos dientes en detalle. La radiografía panorámica (4.0530) muestra todos los dientes y mandíbulas de una vez. Es como una foto de grupo – buena para la visión general, pero menos detallada que las imágenes individuales. A menudo se combinan ambos tipos."
+      },
+      {
+        "question": "¿Cómo se realiza el examen?",
+        "answer": "Te mantienes de pie o sentado sin moverte. Mordes una pieza bucal y la máquina de rayos X gira alrededor de tu cabeza. Tarda unos 10-20 segundos. Durante este tiempo debes permanecer quieto y no tragar. Es completamente indoloro."
+      },
+      {
+        "question": "¿Cuándo necesito una radiografía panorámica?",
+        "answer": "Situaciones típicas: antes de una cirugía de muelas del juicio, antes de un tratamiento con implantes, para planificación de ortodoncia (frenillos), para problemas de la articulación de la mandíbula, o para obtener una visión general de toda la dentadura. Tu dentista decidirá si es necesario."
+      },
+      {
+        "question": "¿Puedo quedarme con las imágenes?",
+        "answer": "Tienes derecho a recibir tus radiografías. Habla con tu dentista. En casos UV/MV/IV, las imágenes se entregan al seguro después del tratamiento (los aseguradores las archivan durante 30 años). El dentista puede hacerte una copia – por ejemplo como PDF, impresión o en un USB."
+      }
+    ],
+    "pt": [
+      {
+        "question": "A radiografia panorâmica é prejudicial?",
+        "answer": "Não. Os equipamentos digitais modernos usam uma dose de radiação muito baixa – aproximadamente a de um voo curto ou alguns dias de radiação natural de fundo. O dentista também te protege com um avental de chumbo. O benefício para o diagnóstico supera em muito o pequeno risco."
+      },
+      {
+        "question": "Qual é a diferença da radiografia dentária normal (4.0500)?",
+        "answer": "A radiografia dentária normal (4.0500) mostra apenas um ou poucos dentes em detalhe. A radiografia panorâmica (4.0530) mostra todos os dentes e maxilares de uma vez. É como uma foto de grupo – boa para a visão geral, mas menos detalhada do que as imagens individuais. Frequentemente, os dois tipos são combinados."
+      },
+      {
+        "question": "Como é feito o exame?",
+        "answer": "Ficas de pé ou sentado imóvel. Mordes uma peça bucal e a máquina de raios X gira à volta da tua cabeça. Demora cerca de 10-20 segundos. Durante este tempo deves permanecer imóvel e não engolir. É completamente indolor."
+      },
+      {
+        "question": "Quando preciso de uma radiografia panorâmica?",
+        "answer": "Situações típicas: antes de uma cirurgia de dentes do siso, antes de um tratamento com implantes, para planeamento ortodôntico (aparelho), para problemas na articulação da mandíbula, ou para obter uma visão geral de toda a dentição. O teu dentista decidirá se é necessário."
+      },
+      {
+        "question": "Posso ficar com as imagens?",
+        "answer": "Tens o direito de receber as tuas radiografias. Fala com o teu dentista. Para casos UV/MV/IV, as imagens são entregues à seguradora após o tratamento (as seguradoras arquivam-nas durante 30 anos). O dentista pode fazer uma cópia para ti – por exemplo como PDF, impressão ou num USB."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Czy rentgen panoramiczny jest szkodliwy?",
+        "answer": "Nie. Nowoczesny sprzęt cyfrowy używa bardzo niskiej dawki promieniowania – mniej więcej tyle, co podczas krótkiego lotu lub kilku dni naturalnego promieniowania tła. Dentysta dodatkowo chroni Cię ołowianym fartuchem. Korzyść dla diagnozy znacznie przewyższa małe ryzyko."
+      },
+      {
+        "question": "Jaka jest różnica w stosunku do zwykłego zdjęcia rentgenowskiego zęba (4.0500)?",
+        "answer": "Zwykłe zdjęcie rentgenowskie zęba (4.0500) pokazuje tylko jeden lub kilka zębów w szczegółach. Rentgen panoramiczny (4.0530) pokazuje wszystkie zęby i szczęki na raz. To jak zdjęcie grupowe – dobre do przeglądu, ale mniej szczegółowe niż pojedyncze zdjęcia. Często oba typy są łączone."
+      },
+      {
+        "question": "Jak przebiega badanie?",
+        "answer": "Stoisz lub siedzisz nieruchomo. Zagryzasz ustnik, a aparat rentgenowski obraca się wokół twojej głowy. Trwa to około 10–20 sekund. W tym czasie musisz pozostać nieruchomy i nie przełykać. Jest całkowicie bezbolesne."
+      },
+      {
+        "question": "Kiedy potrzebuję rentgenu panoramicznego?",
+        "answer": "Typowe sytuacje: przed operacją ósemek, przed leczeniem implantologicznym, do planowania leczenia ortodontycznego (aparat), przy problemach ze stawem skroniowo-żuchwowym lub aby uzyskać przegląd całego uzębienia. Twój dentysta zdecyduje, czy jest to konieczne."
+      },
+      {
+        "question": "Czy mogę otrzymać zdjęcia?",
+        "answer": "Masz prawo do otrzymania swoich zdjęć rentgenowskich. Porozmawiaj o tym ze swoim dentystą. W przypadkach UV/MV/IV zdjęcia są przekazywane ubezpieczycielowi po zakończeniu leczenia (ubezpieczyciele archiwizują je przez 30 lat). Dentysta może zrobić dla Ciebie kopię – na przykład jako PDF, wydruk lub na pendrive."
+      }
+    ],
+    "al": [
+      {
+        "question": "A është e dëmshme rrezja X panoramike?",
+        "answer": "Jo. Pajisjet moderne dixhitale përdorin një dozë shumë të ulët rrezatimi – aq sa një fluturim i shkurtër ose disa ditë rrezatim natyral në sfond. Dentisti të mbron gjithashtu me një përparëse plumbi. Përfitimi për diagnozën tejkalon shumë rrezikun e vogël."
+      },
+      {
+        "question": "Cili është ndryshimi nga rrezja X normale dentare (4.0500)?",
+        "answer": "Rrezja X normale dentare (4.0500) tregon vetëm një ose disa dhëmbë në detaje. Rrezja X panoramike (4.0530) tregon të gjithë dhëmbët dhe nofullat në një herë. Është si një foto grupore – e mirë për pamjen e përgjithshme, por më pak e detajuar se imazhet individuale. Shpesh të dy llojet kombinohen."
+      },
+      {
+        "question": "Si kryhet ekzaminimi?",
+        "answer": "Qëndron në këmbë ose ulur pa lëvizur. Kafshon një pjesë gojore dhe makina me rreze X rrotullohet rreth kokës sate. Zgjat rreth 10–20 sekonda. Gjatë kësaj kohe duhet të qëndrosh pa lëvizur dhe të mos gëlltisësh. Është plotësisht pa dhimbje."
+      },
+      {
+        "question": "Kur kam nevojë për një rreze X panoramike?",
+        "answer": "Situata tipike: para operacionit të dhëmballëve të mençurisë, para trajtimit me implante, për planifikim ortodontik (mbajtëse), për probleme të nyjës së nofullës, ose për të marrë një pamje të përgjithshme të të gjithë dhëmbëve. Dentisti yt do të vendosë nëse është e nevojshme."
+      },
+      {
+        "question": "A mund t'i marr imazhet?",
+        "answer": "Ke të drejtë të marrësh imazhet e tua me rreze X. Fol me dentistin tënd për këtë. Për rastet UV/MV/IV, imazhet i dorëzohen siguruesit pas trajtimit (siguruesit i arkivojnë për 30 vjet). Dentisti mund të bëjë një kopje për ty – për shembull si PDF, printim ose në një USB."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Panoramik röntgen zararlı mı?",
+        "answer": "Hayır. Modern dijital cihazlar çok düşük dozda radyasyon kullanır – yaklaşık olarak kısa bir uçuş veya birkaç günlük doğal arka plan radyasyonu kadar. Diş hekimi seni ayrıca kurşun önlükle korur. Teşhis için fayda, küçük riskten çok daha ağır basar."
+      },
+      {
+        "question": "Normal diş röntgeninden (4.0500) farkı nedir?",
+        "answer": "Normal diş röntgeni (4.0500) sadece bir veya birkaç dişi detaylı olarak gösterir. Panoramik röntgen (4.0530) tüm dişleri ve çeneleri tek seferde gösterir. Bir grup fotoğrafı gibidir – genel görünüm için iyidir, ancak tek tek görüntülerden daha az detaylıdır. Genellikle her iki tür de birleştirilir."
+      },
+      {
+        "question": "Muayene nasıl yapılır?",
+        "answer": "Ayakta durur veya oturursun. Bir ağızlığı ısırırsın ve röntgen makinesi başının etrafında döner. Yaklaşık 10–20 saniye sürer. Bu süre boyunca hareketsiz kalmalı ve yutmamalısın. Tamamen ağrısızdır."
+      },
+      {
+        "question": "Ne zaman panoramik röntgene ihtiyacım olur?",
+        "answer": "Tipik durumlar: yirmilik diş ameliyatı öncesi, implant tedavisi öncesi, ortodontik planlama (tel) için, çene eklemi sorunları için veya tüm diş yapısının genel görünümünü almak için. Diş hekimin gerekli olup olmadığına karar verecektir."
+      },
+      {
+        "question": "Görüntüleri alabilir miyim?",
+        "answer": "Röntgen görüntülerini alma hakkın vardır. Diş hekiminle bunun hakkında konuş. UV/MV/IV vakalarında, görüntüler tedavi sonrasında sigortaya teslim edilir (sigortacılar 30 yıl boyunca arşivler). Diş hekimin senin için bir kopya yapabilir – örneğin PDF, çıktı veya USB bellek olarak."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Je li panoramski rendgen štetan?",
+        "answer": "Ne. Suvremena digitalna oprema koristi vrlo nisku dozu zračenja – otprilike koliko i kratki let ili nekoliko dana prirodnog pozadinskog zračenja. Zubar te dodatno štiti olovnom pregačom. Korist za dijagnozu daleko nadmašuje mali rizik."
+      },
+      {
+        "question": "Koja je razlika od običnog zubnog rendgena (4.0500)?",
+        "answer": "Obični zubni rendgen (4.0500) prikazuje samo jedan ili nekoliko zuba u detalje. Panoramski rendgen (4.0530) prikazuje sve zube i čeljusti odjednom. To je kao grupna fotografija – dobra za pregled, ali manje detaljna od pojedinačnih snimaka. Često se oba tipa kombiniraju."
+      },
+      {
+        "question": "Kako se izvodi pregled?",
+        "answer": "Stojiš ili sjediš mirno. Zagrizeš ustnik, a rendgenski aparat se okreće oko tvoje glave. Traje oko 10–20 sekundi. Tijekom tog vremena moraš ostati miran i ne gutati. Potpuno je bezbolno."
+      },
+      {
+        "question": "Kada mi je potreban panoramski rendgen?",
+        "answer": "Tipične situacije: prije operacije umnjaka, prije implantološkog liječenja, za ortodontsko planiranje (aparatić), za probleme s čeljusnim zglobom, ili za dobivanje pregleda cjelokupnog zubala. Tvoj zubar će odlučiti je li potrebno."
+      },
+      {
+        "question": "Mogu li dobiti snimke?",
+        "answer": "Imaš pravo dobiti svoje rendgenske snimke. Razgovaraj o tome sa svojim zubarom. Za UV/MV/IV slučajeve, snimke se predaju osiguravatelju nakon liječenja (osiguravatelji ih arhiviraju 30 godina). Zubar ti može napraviti kopiju – na primjer kao PDF, ispis ili na USB stick."
+      }
+    ],
+    "ta": [
+      {
+        "question": "பனோரமிக் எக்ஸ்-ரே தீங்கு விளைவிக்குமா?",
+        "answer": "இல்லை. நவீன டிஜிட்டல் கருவிகள் மிகக் குறைந்த கதிர்வீச்சு அளவைப் பயன்படுத்துகின்றன – ஒரு குறுகிய விமானப் பயணம் அல்லது சில நாட்கள் இயற்கை பின்னணி கதிர்வீச்சு அளவு. பல் மருத்துவர் உங்களை கூடுதலாக ஈய கவசத்துடன் பாதுகாக்கிறார். நோயறிதலுக்கான பயன் சிறிய ஆபத்தை விட மிக அதிகம்."
+      },
+      {
+        "question": "சாதாரண பல் எக்ஸ்-ரேவிலிருந்து (4.0500) என்ன வித்தியாசம்?",
+        "answer": "சாதாரண பல் எக்ஸ்-ரே (4.0500) ஒன்று அல்லது சில பற்களை மட்டும் விரிவாகக் காட்டுகிறது. பனோரமிக் எக்ஸ்-ரே (4.0530) அனைத்து பற்களையும் தாடைகளையும் ஒரே நேரத்தில் காட்டுகிறது. இது ஒரு குழு புகைப்படம் போன்றது – கண்ணோட்டத்திற்கு நல்லது, ஆனால் தனிப்பட்ட படங்களை விட குறைந்த விவரத்துடன். பெரும்பாலும் இரண்டு வகைகளும் இணைக்கப்படுகின்றன."
+      },
+      {
+        "question": "பரிசோதனை எவ்வாறு செய்யப்படுகிறது?",
+        "answer": "நீங்கள் அசையாமல் நிற்கிறீர்கள் அல்லது உட்காருகிறீர்கள். ஒரு வாய் துண்டைக் கடிக்கிறீர்கள், மற்றும் எக்ஸ்-ரே இயந்திரம் உங்கள் தலைக்கு சுற்றி வருகிறது. இது சுமார் 10–20 விநாடிகள் ஆகும். இந்த நேரத்தில் நீங்கள் அசையாமல் இருக்க வேண்டும் மற்றும் விழுங்கக்கூடாது. இது முற்றிலும் வலியற்றது."
+      },
+      {
+        "question": "எப்போது எனக்கு பனோரமிக் எக்ஸ்-ரே தேவைப்படுகிறது?",
+        "answer": "வழக்கமான சூழ்நிலைகள்: ஞானப்பல் அறுவை சிகிச்சைக்கு முன், பல் உள்வைப்பு சிகிச்சைக்கு முன், பல் வரிசை சீரமைப்பு திட்டமிடலுக்கு (பிரேஸ்), தாடை மூட்டு பிரச்சினைகளுக்கு, அல்லது முழு பற்களின் கண்ணோட்டத்தைப் பெற. தேவையா என்பதை உங்கள் பல் மருத்துவர் முடிவு செய்வார்."
+      },
+      {
+        "question": "நான் படங்களைப் பெற முடியுமா?",
+        "answer": "உங்கள் எக்ஸ்-ரே படங்களைப் பெற உங்களுக்கு உரிமை உண்டு. இதைப் பற்றி உங்கள் பல் மருத்துவரிடம் பேசுங்கள். UV/MV/IV வழக்குகளில், படங்கள் சிகிச்சைக்குப் பிறகு காப்பீட்டாளரிடம் ஒப்படைக்கப்படுகின்றன (காப்பீட்டாளர்கள் 30 ஆண்டுகள் காப்பகப்படுத்துகின்றனர்). பல் மருத்துவர் உங்களுக்காக ஒரு நகலை உருவாக்கலாம் – எடுத்துக்காட்டாக PDF, அச்சு வெளியீடு அல்லது USB ஸ்டிக்கில்."
+      }
+    ]
+  }
+}

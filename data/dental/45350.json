@@ -1,0 +1,494 @@
+{
+  "code": "4.5350",
+  "name_de": "Kompositfüllung, einflächig",
+  "display_name": {
+    "de": "Kleine Zahnfüllung (Kunststoff)",
+    "fr": "Petit plombage (composite)",
+    "it": "Piccola otturazione (composito)",
+    "en": "Small filling (composite)",
+    "es": "Pequeño empaste (composite)",
+    "pt": "Pequena obturação (compósito)",
+    "pl": "Małe wypełnienie (kompozyt)",
+    "al": "Mbushje e vogël (kompozit)",
+    "tr": "Küçük dolgu (kompozit)",
+    "hr": "Mala ispuna (kompozit)",
+    "ta": "சிறிய நிரப்புதல் (கலவை)"
+  },
+  "search_keywords": {
+    "de": ["füllung", "kompositfüllung", "kunststofffüllung", "einflächig", "zahnfüllung", "karies", "loch füllen", "milchzahn"],
+    "fr": ["plombage", "obturation composite", "plastique", "une face", "carie", "dent de lait"],
+    "it": ["otturazione", "otturazione in composito", "una faccia", "carie", "dente da latte"],
+    "en": ["filling", "composite filling", "one surface", "cavity", "baby tooth"],
+    "es": ["empaste", "empaste composite", "una cara", "carie", "diente de leche"],
+    "pt": ["obturação", "obturação compósito", "uma face", "cárie", "dente de leite"],
+    "pl": ["wypełnienie", "wypełnienie kompozytowe", "jedna powierzchnia", "próchnica", "ząb mleczny"],
+    "al": ["mbushje", "mbushje kompozit", "një faqe", "karies", "dhëmb qumështi"],
+    "tr": ["dolgu", "kompozit dolgu", "tek yüzey", "çürük", "süt dişi"],
+    "hr": ["ispuna", "kompozitna ispuna", "jedna ploha", "karijes", "mliječni zub"],
+    "ta": ["நிரப்புதல்", "கலவை நிரப்புதல்", "ஒரு மேற்பரப்பு", "புழு", "பால் பல்"]
+  },
+  "tp_uv_mviv": 122.00,
+  "tp_pp_max": 140.30,
+  "tp_pp_min": 103.70,
+  "chapter": "08.04",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn du ein kleines Loch im Zahn hast (Karies), macht der Zahnarzt eine Füllung aus Kunststoff. Das nennt man Kompositfüllung. Der Zahnarzt reinigt das Loch zuerst, füllt es dann mit dem weichen Kunststoff und härtet es mit einer speziellen Lampe aus. Danach sieht der Zahn fast aus wie vorher – die Füllung hat die gleiche Farbe wie deine Zähne. Das geht auch bei Milchzähnen! Diese Füllung ist für kleine Löcher, die nur eine Fläche des Zahns betreffen (z.B. nur die Kaufläche oder nur eine Seite).",
+    "fr": "Quand tu as un petit trou dans une dent (carie), le dentiste fait un plombage en plastique. C'est ce qu'on appelle une obturation composite. Le dentiste nettoie d'abord le trou, puis le remplit avec le plastique mou et le durcit avec une lampe spéciale. Après cela, la dent ressemble presque à avant – l'obturation a la même couleur que tes dents. Cela fonctionne aussi pour les dents de lait! Cette obturation est pour les petits trous qui n'affectent qu'une seule surface de la dent (par exemple seulement la surface de mastication ou seulement un côté).",
+    "it": "Quando hai un piccolo buco in un dente (carie), il dentista fa un'otturazione in plastica. Si chiama otturazione in composito. Il dentista pulisce prima il buco, poi lo riempie con la plastica morbida e la indurisce con una lampada speciale. Dopo, il dente sembra quasi come prima – l'otturazione ha lo stesso colore dei tuoi denti. Funziona anche per i denti da latte! Questa otturazione è per piccoli buchi che interessano solo una superficie del dente (ad esempio solo la superficie masticatoria o solo un lato).",
+    "en": "When you have a small hole in a tooth (cavity), the dentist puts in a plastic filling. This is called a composite filling. The dentist first cleans the hole, then fills it with soft plastic and hardens it with a special lamp. Afterwards, the tooth looks almost like before – the filling has the same color as your teeth. This also works for baby teeth! This filling is for small holes that only affect one surface of the tooth (e.g., only the chewing surface or only one side).",
+    "es": "Cuando tienes un pequeño agujero en un diente (carie), el dentista pone un empaste de plástico. Esto se llama empaste composite. El dentista primero limpia el agujero, luego lo llena con plástico blando y lo endurece con una lámpara especial. Después, el diente se parece casi a como era antes – el empaste tiene el mismo color que tus dientes. ¡Esto también funciona para los dientes de leche! Este empaste es para pequeños agujeros que solo afectan una superficie del diente (por ejemplo, solo la superficie de masticación o solo un lado).",
+    "pt": "Quando tens um pequeno buraco num dente (cárie), o dentista coloca uma obturação de plástico. Isto chama-se obturação de compósito. O dentista primeiro limpa o buraco, depois preenche-o com plástico macio e endurece-o com uma lâmpada especial. Depois, o dente parece quase como antes – a obturação tem a mesma cor que os teus dentes. Isto também funciona para dentes de leite! Esta obturação é para pequenos buracos que afetam apenas uma superfície do dente (por exemplo, apenas a superfície de mastigação ou apenas um lado).",
+    "pl": "Kiedy masz małą dziurę w zębie (próchnica), dentysta zakłada plombę z tworzywa sztucznego. Nazywa się to wypełnieniem kompozytowym. Dentysta najpierw czyści dziurę, a następnie wypełnia ją miękkim tworzywem i utwardza specjalną lampą. Potem ząb wygląda prawie jak przedtem – wypełnienie ma ten sam kolor co Twoje zęby. Działa to również na zęby mleczne! To wypełnienie jest przeznaczone do małych dziur, które dotyczą tylko jednej powierzchni zęba (np. tylko powierzchni żującej lub tylko jednego boku).",
+    "al": "Kur ke një vrimë të vogël në një dhëmb (karies), dentisti bën një mbushje plastike. Kjo quhet mbushje kompozit. Dentisti së pari pastron vrimën, pastaj e mbush me plastikë të butë dhe e ngurtëson me një llambë të veçantë. Pas kësaj, dhëmbi duket pothuajse si më parë – mbushja ka të njëjtën ngjyrë me dhëmbët e tu. Kjo funksionon edhe për dhëmbët e qumështit! Kjo mbushje është për vrima të vogla që prekin vetëm një sipërfaqe të dhëmbit (p.sh., vetëm sipërfaqen përtypëse ose vetëm një anë).",
+    "tr": "Dişinde küçük bir delik (çürük) olduğunda, diş hekimi plastik bir dolgu yapar. Buna kompozit dolgu denir. Diş hekimi önce deliği temizler, sonra yumuşak plastikle doldurur ve özel bir lambayla sertleştirir. Bundan sonra diş neredeyse önceki gibi görünür – dolgu dişlerinle aynı renktedir. Bu süt dişleri için de geçerlidir! Bu dolgu, dişin yalnızca bir yüzeyini etkileyen küçük delikler içindir (örneğin yalnızca çiğneme yüzeyi veya yalnızca bir taraf).",
+    "hr": "Kad imaš malu rupu u zubu (karijes), zubar stavlja plastičnu ispunu. To se zove kompozitna ispuna. Zubar prvo očisti rupu, zatim je ispuni mekanom plastikom i stvrdne je posebnom lampom. Nakon toga, zub izgleda gotovo kao prije – ispuna ima istu boju kao tvoji zubi. Ovo vrijedi i za mliječne zube! Ova ispuna je za male rupe koje zahvaćaju samo jednu plohu zuba (npr. samo žvačnu plohu ili samo jednu stranu).",
+    "ta": "உங்கள் பல்லில் ஒரு சிறிய துளை (புழு) இருக்கும்போது, பல் மருத்துவர் ஒரு பிளாஸ்டிக் நிரப்புதலைச் செய்கிறார். இது கலவை நிரப்புதல் என்று அழைக்கப்படுகிறது. பல் மருத்துவர் முதலில் துளையை சுத்தம் செய்கிறார், பின்னர் அதை மென்மையான பிளாஸ்டிக்கால் நிரப்பி ஒரு சிறப்பு விளக்கால் கடினமாக்குகிறார். இதற்குப் பிறகு, பல் கிட்டத்தட்ட முன்பு போலவே தெரிகிறது – நிரப்புதல் உங்கள் பற்களின் அதே நிறத்தில் இருக்கும். இது பால் பற்களுக்கும் பொருந்தும்! இந்த நிரப்புதல் பல்லின் ஒரு மேற்பரப்பை மட்டுமே பாதிக்கும் சிறிய துளைகளுக்கானது (எ.கா., மெல்லும் மேற்பரப்பு மட்டும் அல்லது ஒரு பக்கம் மட்டும்)."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 Kompositfüllung (kunststoffbasiert, zahnfarben)",
+      "🪥 Entfernung von Karies und Reinigung der Kavität",
+      "🧪 Auftragen des Haftvermittlers (Bonding)",
+      "💎 Schichtweises Einbringen und Aushärten des Komposits",
+      "🎨 Farbauswahl (die Füllung wird an deine Zahnfarbe angepasst)",
+      "✨ Politur und Nachbearbeitung",
+      "👶 Gilt auch für Milchzähne"
+    ],
+    "fr": [
+      "🦷 Obturation composite (à base de plastique, couleur dent)",
+      "🪥 Élimination de la carie et nettoyage de la cavité",
+      "🧪 Application de l'adhésif (bonding)",
+      "💎 Application et durcissement du composite par couches",
+      "🎨 Choix de la couleur (l'obturation est adaptée à la couleur de ta dent)",
+      "✨ Polissage et finition",
+      "👶 S'applique également aux dents de lait"
+    ],
+    "it": [
+      "🦷 Otturazione in composito (a base di plastica, color dente)",
+      "🪥 Rimozione della carie e pulizia della cavità",
+      "🧪 Applicazione dell'adesivo (bonding)",
+      "💎 Inserimento e indurimento del composito a strati",
+      "🎨 Scelta del colore (l'otturazione viene adattata al colore del tuo dente)",
+      "✨ Lucidatura e finitura",
+      "👶 Vale anche per i denti da latte"
+    ],
+    "en": [
+      "🦷 Composite filling (plastic-based, tooth-colored)",
+      "🪥 Removal of decay and cleaning of the cavity",
+      "🧪 Application of adhesive (bonding)",
+      "💎 Layered insertion and hardening of the composite",
+      "🎨 Color selection (the filling is matched to your tooth color)",
+      "✨ Polishing and finishing",
+      "👶 Also applies to baby teeth"
+    ],
+    "es": [
+      "🦷 Empaste composite (a base de plástico, color diente)",
+      "🪥 Eliminación de caries y limpieza de la cavidad",
+      "🧪 Aplicación del adhesivo (bonding)",
+      "💎 Inserción y endurecimiento del composite por capas",
+      "🎨 Selección del color (el empaste se adapta al color de tu diente)",
+      "✨ Pulido y acabado",
+      "👶 También se aplica a dientes de leche"
+    ],
+    "pt": [
+      "🦷 Obturação de compósito (à base de plástico, cor do dente)",
+      "🪥 Remoção da cárie e limpeza da cavidade",
+      "🧪 Aplicação do adesivo (bonding)",
+      "💎 Inserção e endurecimento do compósito em camadas",
+      "🎨 Seleção da cor (a obturação é adaptada à cor do teu dente)",
+      "✨ Polimento e acabamento",
+      "👶 Também se aplica a dentes de leite"
+    ],
+    "pl": [
+      "🦷 Wypełnienie kompozytowe (na bazie tworzywa sztucznego, kolor zęba)",
+      "🪥 Usunięcie próchnicy i oczyszczenie ubytku",
+      "🧪 Aplikacja środka wiążącego (bonding)",
+      "💎 Warstwowe nakładanie i utwardzanie kompozytu",
+      "🎨 Dobór koloru (wypełnienie dopasowane do koloru Twojego zęba)",
+      "✨ Polerowanie i wykończenie",
+      "👶 Dotyczy również zębów mlecznych"
+    ],
+    "al": [
+      "🦷 Mbushje kompozit (me bazë plastike, ngjyrë dhëmbi)",
+      "🪥 Largimi i kariesit dhe pastrimi i zgavrës",
+      "🧪 Aplikimi i ngjitësit (bonding)",
+      "💎 Futja dhe ngurtësimi i kompozitit në shtresa",
+      "🎨 Zgjedhja e ngjyrës (mbushja përshtatet me ngjyrën e dhëmbit tënd)",
+      "✨ Lustrim dhe përfundim",
+      "👶 Vlen edhe për dhëmbët e qumështit"
+    ],
+    "tr": [
+      "🦷 Kompozit dolgu (plastik bazlı, diş renginde)",
+      "🪥 Çürüğün temizlenmesi ve boşluğun temizliği",
+      "🧪 Yapıştırıcı uygulaması (bonding)",
+      "💎 Kompozitin katmanlar halinde yerleştirilmesi ve sertleştirilmesi",
+      "🎨 Renk seçimi (dolgu dişinin rengine uyarlanır)",
+      "✨ Parlatma ve bitirme",
+      "👶 Süt dişleri için de geçerlidir"
+    ],
+    "hr": [
+      "🦷 Kompozitna ispuna (na bazi plastike, boje zuba)",
+      "🪥 Uklanjanje karijesa i čišćenje šupljine",
+      "🧪 Nanošenje adheziva (bonding)",
+      "💎 Slojevito unošenje i stvrdnjavanje kompozita",
+      "🎨 Odabir boje (ispuna se prilagođava boji tvog zuba)",
+      "✨ Poliranje i završna obrada",
+      "👶 Vrijedi i za mliječne zube"
+    ],
+    "ta": [
+      "🦷 கலவை நிரப்புதல் (பிளாஸ்டிக் அடிப்படையிலான, பல் நிறம்)",
+      "🪥 புழுவை அகற்றுதல் மற்றும் குழியை சுத்தம் செய்தல்",
+      "🧪 பிசின் பயன்பாடு (பாண்டிங்)",
+      "💎 அடுக்குகளாக கலவையை செருகுதல் மற்றும் கடினமாக்குதல்",
+      "🎨 நிறத் தேர்வு (நிரப்புதல் உங்கள் பல்லின் நிறத்துடன் பொருந்துகிறது)",
+      "✨ மெருகூட்டல் மற்றும் இறுதி செய்தல்",
+      "👶 பால் பற்களுக்கும் பொருந்தும்"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Kompositfüllung, einflächig** (nur eine Zahnfläche, z.B. Kaufläche oder eine Seitenfläche)",
+      "🎨 **Farbauswahl** ist inbegriffen",
+      "👶 **Gilt auch für Milchzähne**",
+      "🔄 **Mehrere Füllungen:** Werden mehrere Füllungen in derselben Sitzung gemacht, wird die höher bewertete als erste Füllung abgerechnet (volle TP). Jede weitere Füllung im gleichen Sextanten wird mit dem reduzierten Zusatzcode (4.5360) abgerechnet.",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.5350.LP «Kompositfüllung, klein UV/MV» enthalten",
+      "💡 **Bonding:** Schmelzätzung (4.5800) und Dentinvorbehandlung (4.5810) sind separat abrechenbar, werden aber bei den meisten Füllungen mitverrechnet",
+      "⚠️ **Wichtig:** Bei größeren Füllungen (z.B. zweiflächig, dreiflächig, Höckeraufbau) gelten die Ziffern 4.5370–4.5560 mit höherem TP-Wert"
+    ],
+    "fr": [
+      "🦷 **Obturation composite, une face** (une seule surface dentaire, p. ex. surface de mastication ou une surface latérale)",
+      "🎨 **Choix de la couleur** est inclus",
+      "👶 **S'applique également aux dents de lait**",
+      "🔄 **Plusieurs obturations:** Si plusieurs obturations sont faites dans la même séance, l'obturation la mieux évaluée est facturée en premier (TP complet). Chaque obturation supplémentaire dans le même sextant est facturée avec le code additionnel réduit (4.5360).",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.5350.LP «Petite obturation composite UV/MV»",
+      "💡 **Adhésif:** Le mordançage de l'émail (4.5800) et le traitement de la dentine (4.5810) sont facturables séparément, mais sont généralement inclus dans la plupart des obturations",
+      "⚠️ **Important:** Pour les obturations plus grandes (p. ex. deux faces, trois faces, reconstruction de cuspide), les codes 4.5370–4.5560 avec une valeur TP plus élevée s'appliquent"
+    ],
+    "it": [
+      "🦷 **Otturazione in composito, una faccia** (una sola superficie dentale, ad es. superficie masticatoria o una superficie laterale)",
+      "🎨 **Scelta del colore** è inclusa",
+      "👶 **Vale anche per i denti da latte**",
+      "🔄 **Più otturazioni:** Se vengono eseguite più otturazioni nella stessa seduta, l'otturazione con il valore più alto viene fatturata per prima (TP completo). Ogni otturazione aggiuntiva nello stesso sestante viene fatturata con il codice aggiuntivo ridotto (4.5360).",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.5350.LP «Piccola otturazione composito UV/MV»",
+      "💡 **Adesivo:** L'incisione dello smalto (4.5800) e il trattamento della dentina (4.5810) sono fatturabili separatamente, ma sono generalmente inclusi nella maggior parte delle otturazioni",
+      "⚠️ **Importante:** Per otturazioni più grandi (ad es. due facce, tre facce, ricostruzione di cuspide), si applicano i codici 4.5370–4.5560 con valore TP più elevato"
+    ],
+    "en": [
+      "🦷 **Composite filling, one surface** (only one tooth surface, e.g., chewing surface or one side)",
+      "🎨 **Color selection** is included",
+      "👶 **Also applies to baby teeth**",
+      "🔄 **Multiple fillings:** If multiple fillings are done in the same session, the higher-rated filling is billed first (full TP). Each additional filling in the same sextant is billed with the reduced add-on code (4.5360).",
+      "📦 **Service package:** This service is included in package 4.5350.LP «Small composite filling UV/MV»",
+      "💡 **Bonding:** Enamel etching (4.5800) and dentin treatment (4.5810) are billable separately but are generally included in most fillings",
+      "⚠️ **Important:** For larger fillings (e.g., two surfaces, three surfaces, cusp buildup), codes 4.5370–4.5560 with higher TP value apply"
+    ],
+    "es": [
+      "🦷 **Empaste composite, una cara** (una sola superficie dental, p. ej., superficie de masticación o un lado)",
+      "🎨 **Selección del color** está incluida",
+      "👶 **También se aplica a dientes de leche**",
+      "🔄 **Múltiples empastes:** Si se realizan varios empastes en la misma sesión, el empaste con mayor valor se factura primero (TP completo). Cada empaste adicional en el mismo sextante se factura con el código adicional reducido (4.5360).",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.5350.LP «Pequeño empaste composite UV/MV»",
+      "💡 **Adhesión:** El grabado del esmalte (4.5800) y el tratamiento de la dentina (4.5810) son facturables por separado, pero generalmente se incluyen en la mayoría de los empastes",
+      "⚠️ **Importante:** Para empastes más grandes (p. ej., dos caras, tres caras, reconstrucción de cúspide), se aplican los códigos 4.5370–4.5560 con mayor valor TP"
+    ],
+    "pt": [
+      "🦷 **Obturação compósito, uma face** (apenas uma superfície dentária, p. ex., superfície de mastigação ou um lado)",
+      "🎨 **Seleção da cor** está incluída",
+      "👶 **Também se aplica a dentes de leite**",
+      "🔄 **Múltiplas obturações:** Se várias obturações forem feitas na mesma sessão, a obturação com maior valor é faturada primeiro (TP completo). Cada obturação adicional no mesmo sextante é faturada com o código adicional reduzido (4.5360).",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.5350.LP «Pequena obturação compósito UV/MV»",
+      "💡 **Adesão:** O condicionamento do esmalte (4.5800) e o tratamento da dentina (4.5810) são faturáveis separadamente, mas geralmente estão incluídos na maioria das obturações",
+      "⚠️ **Importante:** Para obturações maiores (p. ex., duas faces, três faces, reconstrução de cúspide), aplicam-se os códigos 4.5370–4.5560 com valor TP mais elevado"
+    ],
+    "pl": [
+      "🦷 **Wypełnienie kompozytowe, jedna powierzchnia** (tylko jedna powierzchnia zęba, np. powierzchnia żująca lub jedna strona)",
+      "🎨 **Dobór koloru** jest wliczony",
+      "👶 **Dotyczy również zębów mlecznych**",
+      "🔄 **Wiele wypełnień:** Jeśli w tej samej sesji wykonano wiele wypełnień, wypełnienie o wyższej wartości jest rozliczane jako pierwsze (pełne TP). Każde dodatkowe wypełnienie w tym samym sekstancie jest rozliczane z obniżonym kodem dodatkowym (4.5360).",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.5350.LP «Małe wypełnienie kompozytowe UV/MV»",
+      "💡 **Bonding:** Trawienie szkliwa (4.5800) i przygotowanie zębiny (4.5810) są rozliczane osobno, ale zazwyczaj są uwzględniane w większości wypełnień",
+      "⚠️ **Ważne:** W przypadku większych wypełnień (np. dwie powierzchnie, trzy powierzchnie, odbudowa guzka) stosuje się kody 4.5370–4.5560 z wyższą wartością TP"
+    ],
+    "al": [
+      "🦷 **Mbushje kompozit, një faqe** (vetëm një sipërfaqe dhëmbi, p.sh., sipërfaqja përtypëse ose një anë)",
+      "🎨 **Zgjedhja e ngjyrës** është e përfshirë",
+      "👶 **Vlen edhe për dhëmbët e qumështit**",
+      "🔄 **Mbushje të shumta:** Nëse bëhen disa mbushje në të njëjtën seancë, mbushja me vlerë më të lartë faturohet e para (TP e plotë). Çdo mbushje shtesë në të njëjtin sekstant faturohet me kodin shtesë të reduktuar (4.5360).",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.5350.LP «Mbushje e vogël kompozit UV/MV»",
+      "💡 **Ngjitja:** Gdhëndja e smaltit (4.5800) dhe trajtimi i dentinës (4.5810) janë të faturoshme veçmas, por përgjithësisht përfshihen në shumicën e mbushjeve",
+      "⚠️ **E rëndësishme:** Për mbushje më të mëdha (p.sh., dy faqe, tre faqe, rindërtim kuspash), aplikohen kodet 4.5370–4.5560 me vlerë TP më të lartë"
+    ],
+    "tr": [
+      "🦷 **Kompozit dolgu, tek yüzey** (yalnızca bir diş yüzeyi, örn. çiğneme yüzeyi veya bir taraf)",
+      "🎨 **Renk seçimi** dahildir",
+      "👶 **Süt dişleri için de geçerlidir**",
+      "🔄 **Birden fazla dolgu:** Aynı seansta birden fazla dolgu yapılırsa, daha yüksek değerli dolgu önce faturalandırılır (tam TP). Aynı sekstanttaki her ek dolgu, indirimli ek kodla (4.5360) faturalandırılır.",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.5350.LP «Küçük kompozit dolgu UV/MV» paketine dahildir",
+      "💡 **Yapıştırma:** Mine pürüzlendirme (4.5800) ve dentin hazırlığı (4.5810) ayrı faturalandırılabilir, ancak genellikle çoğu dolguda dahildir",
+      "⚠️ **Önemli:** Daha büyük dolgular için (örneğin, iki yüzey, üç yüzey, tüberkül yapımı), daha yüksek TP değerine sahip 4.5370–4.5560 kodları uygulanır"
+    ],
+    "hr": [
+      "🦷 **Kompozitna ispuna, jedna ploha** (samo jedna zubna ploha, npr. žvačna ploha ili jedna strana)",
+      "🎨 **Odabir boje** je uključen",
+      "👶 **Vrijedi i za mliječne zube**",
+      "🔄 **Više ispuna:** Ako se više ispuna napravi u istoj seansi, ispuna s višom vrijednošću naplaćuje se prva (puni TP). Svaka dodatna ispuna u istom sekstantu naplaćuje se s reduciranim dodatnim kodom (4.5360).",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.5350.LP «Mala kompozitna ispuna UV/MV»",
+      "💡 **Adhezija:** Jetkanje cakline (4.5800) i priprema dentina (4.5810) naplaćuju se zasebno, ali su općenito uključeni u većinu ispuna",
+      "⚠️ **Važno:** Za veće ispune (npr. dvije plohe, tri plohe, izgradnja kvržice), primjenjuju se kodovi 4.5370–4.5560 s višom TP vrijednošću"
+    ],
+    "ta": [
+      "🦷 **கலவை நிரப்புதல், ஒரு மேற்பரப்பு** (ஒரே ஒரு பல் மேற்பரப்பு, எ.கா., மெல்லும் மேற்பரப்பு அல்லது ஒரு பக்கம்)",
+      "🎨 **நிறத் தேர்வு** சேர்க்கப்பட்டுள்ளது",
+      "👶 **பால் பற்களுக்கும் பொருந்தும்**",
+      "🔄 **பல நிரப்புதல்கள்:** ஒரே அமர்வில் பல நிரப்புதல்கள் செய்யப்பட்டால், அதிக மதிப்புள்ள நிரப்புதல் முதலில் கணக்கிடப்படும் (முழு TP). அதே செக்ஸ்டன்டில் உள்ள ஒவ்வொரு கூடுதல் நிரப்புதலும் குறைக்கப்பட்ட கூடுதல் குறியீட்டுடன் (4.5360) கணக்கிடப்படும்.",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.5350.LP «சிறிய கலவை நிரப்புதல் UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "💡 **பாண்டிங்:** பற்சிப்பி அரித்தல் (4.5800) மற்றும் டென்டின் சிகிச்சை (4.5810) தனித்தனியாக கணக்கிடப்படலாம், ஆனால் பொதுவாக பெரும்பாலான நிரப்புதல்களில் சேர்க்கப்பட்டுள்ளன",
+      "⚠️ **முக்கியம்:** பெரிய நிரப்புதல்களுக்கு (எ.கா., இரண்டு மேற்பரப்புகள், மூன்று மேற்பரப்புகள், கஸ்ப் கட்டுமானம்), அதிக TP மதிப்பைக் கொண்ட 4.5370–4.5560 குறியீடுகள் பொருந்தும்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einer Kompositfüllung und einer Amalgamfüllung?",
+        "answer": "Kompositfüllungen sind aus Kunststoff und haben die gleiche Farbe wie deine Zähne – man sieht sie kaum. Amalgamfüllungen sind aus Metall und silbrig-grau, also deutlich sichtbar. Kompositfüllungen werden mit einem speziellen Kleber (Bonding) befestigt und härten mit einer Lampe aus. Amalgam wird in das Loch gestopft und härtet von selbst. Kompositfüllungen sind etwas teurer, aber ästhetisch viel schöner. Bei UV/MV/IV werden beide erstattet, wenn sie medizinisch notwendig sind."
+      },
+      {
+        "question": "Wie lange hält eine Kompositfüllung?",
+        "answer": "Bei guter Pflege (regelmäßige Zahnreinigung, gute Mundhygiene) halten Kompositfüllungen in der Regel 5–10 Jahre. Die Haltbarkeit hängt auch von der Größe der Füllung ab – kleine einflächige Füllungen halten oft länger als große Mehrflächenfüllungen. Dein Zahnarzt wird bei den Kontrolluntersuchungen die Füllungen überprüfen."
+      },
+      {
+        "question": "Ist das Setzen einer Kompositfüllung schmerzhaft?",
+        "answer": "Normalerweise nicht. Der Zahnarzt betäubt den Zahn vorher, damit du während des Bohrens nichts spürst. Bei kleinen Füllungen ist manchmal keine Betäubung nötig. Wenn du während der Behandlung etwas spürst, sag einfach Bescheid – der Zahnarzt kann nachbetäuben. Nach der Behandlung kann der Zahn ein paar Tage empfindlich sein, besonders bei Kälte oder Wärme. Das ist normal und geht vorbei."
+      },
+      {
+        "question": "Was kostet eine Kompositfüllung?",
+        "answer": "Der offizielle TP-Wert für eine einflächige Kompositfüllung ist 122.00 für UV/MV/IV. Bei Privatpatienten (PP) liegt der Preis zwischen 103.70 und 140.30 TP. Dazu kommen die Kosten für die Anästhesie (4.0650, 38.40 TP) und eventuell Kofferdam (4.0940/4.0950). Der tatsächliche Preis in Franken hängt vom Taxpunktwert der Klinik ab (meist 1.00–1.30 CHF pro TP). Frage vorher nach einem Kostenvoranschlag!"
+      },
+      {
+        "question": "Kann ich nach der Füllung sofort wieder essen?",
+        "answer": "Ja, moderne Kompositfüllungen härten sofort unter der speziellen Lampe aus. Du kannst direkt nach der Behandlung wieder normal essen. Dein Zahnarzt wird dir sagen, ob es irgendwelche Einschränkungen gibt. In den ersten Tagen solltest du sehr kalte oder sehr heiße Speisen vielleicht etwas meiden, wenn der Zahn empfindlich ist."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre une obturation composite et une obturation amalgame?",
+        "answer": "Les obturations composites sont en plastique et ont la même couleur que tes dents – on les voit à peine. Les obturations amalgame sont en métal et de couleur argent-gris, donc nettement visibles. Les obturations composites sont fixées avec une colle spéciale (bonding) et durcissent avec une lampe. L'amalgame est tassé dans le trou et durcit de lui-même. Les obturations composites sont un peu plus chères, mais esthétiquement beaucoup plus belles. Pour UV/MV/IV, les deux sont prises en charge si elles sont médicalement nécessaires."
+      },
+      {
+        "question": "Combien de temps dure une obturation composite?",
+        "answer": "Avec de bons soins (nettoyage dentaire régulier, bonne hygiène buccale), les obturations composites durent généralement 5–10 ans. La durabilité dépend également de la taille de l'obturation – les petites obturations durent souvent plus longtemps que les grandes obturations multi-faces. Ton dentiste vérifiera les obturations lors des examens de contrôle."
+      },
+      {
+        "question": "La pose d'une obturation composite est-elle douloureuse?",
+        "answer": "Normalement non. Le dentiste anesthésie la dent au préalable afin que tu ne ressentes rien pendant le forage. Pour les petites obturations, une anesthésie n'est parfois pas nécessaire. Si tu ressens quelque chose pendant le traitement, il suffit de le dire – le dentiste peut refaire l'anesthésie. Après le traitement, la dent peut être sensible pendant quelques jours, surtout au froid ou au chaud. C'est normal et cela disparaît."
+      },
+      {
+        "question": "Combien coûte une obturation composite?",
+        "answer": "La valeur TP officielle pour une obturation composite une face est de 122.00 pour UV/MV/IV. Pour les patients privés (PP), le prix se situe entre 103.70 et 140.30 TP. S'ajoutent les frais d'anesthésie (4.0650, 38.40 TP) et éventuellement de digue (4.0940/4.0950). Le prix réel en francs dépend de la valeur en points du cabinet (généralement 1.00–1.30 CHF par TP). Demande un devis écrit avant!"
+      },
+      {
+        "question": "Puis-je manger immédiatement après l'obturation?",
+        "answer": "Oui, les obturations composites modernes durcissent immédiatement sous la lampe spéciale. Tu peux manger normalement juste après le traitement. Ton dentiste te dira s'il y a des restrictions. Les premiers jours, il est peut-être préférable d'éviter les aliments très froids ou très chauds si la dent est sensible."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra un'otturazione in composito e un'otturazione in amalgama?",
+        "answer": "Le otturazioni in composito sono in plastica e hanno lo stesso colore dei denti – si vedono a malapena. Le otturazioni in amalgama sono in metallo e di colore argento-grigio, quindi chiaramente visibili. Le otturazioni in composito vengono fissate con una colla speciale (bonding) e induriscono con una lampada. L'amalgama viene pressato nel buco e indurisce da solo. Le otturazioni in composito sono un po' più costose, ma esteticamente molto più belle. Per UV/MV/IV, entrambe sono rimborsate se sono medicalmente necessarie."
+      },
+      {
+        "question": "Quanto dura un'otturazione in composito?",
+        "answer": "Con una buona cura (pulizia dentale regolare, buona igiene orale), le otturazioni in composito durano in genere 5–10 anni. La durata dipende anche dalle dimensioni dell'otturazione – le piccole otturazioni durano spesso più a lungo delle grandi otturazioni multi-faccia. Il tuo dentista controllerà le otturazioni durante gli esami di controllo."
+      },
+      {
+        "question": "La messa di un'otturazione in composito è dolorosa?",
+        "answer": "Normalmente no. Il dentista anestetizza il dente in anticipo in modo che non senta nulla durante la foratura. Per le piccole otturazioni a volte non è necessaria l'anestesia. Se senti qualcosa durante il trattamento, basta dirlo – il dentista può anestetizzare di nuovo. Dopo il trattamento, il dente può essere sensibile per alcuni giorni, specialmente al freddo o al caldo. È normale e passa."
+      },
+      {
+        "question": "Quanto costa un'otturazione in composito?",
+        "answer": "Il valore TP ufficiale per un'otturazione in composito a una faccia è 122.00 per UV/MV/IV. Per i pazienti privati (PP), il prezzo è tra 103.70 e 140.30 TP. A questi si aggiungono i costi per l'anestesia (4.0650, 38.40 TP) ed eventualmente la diga (4.0940/4.0950). Il prezzo effettivo in franchi dipende dal valore in punti dello studio (di solito 1.00–1.30 CHF per TP). Chiedi un preventivo scritto prima!"
+      },
+      {
+        "question": "Posso mangiare subito dopo l'otturazione?",
+        "answer": "Sì, le otturazioni in composito moderne induriscono immediatamente sotto la lampada speciale. Puoi mangiare normalmente subito dopo il trattamento. Il tuo dentista ti dirà se ci sono restrizioni. Nei primi giorni, potresti evitare cibi molto freddi o molto caldi se il dente è sensibile."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between a composite filling and an amalgam filling?",
+        "answer": "Composite fillings are made of plastic and have the same color as your teeth – they are barely visible. Amalgam fillings are made of metal and are silver-gray, so clearly visible. Composite fillings are attached with a special adhesive (bonding) and harden with a lamp. Amalgam is packed into the hole and hardens on its own. Composite fillings are a bit more expensive, but much more aesthetic. For UV/MV/IV, both are covered if medically necessary."
+      },
+      {
+        "question": "How long does a composite filling last?",
+        "answer": "With good care (regular dental cleaning, good oral hygiene), composite fillings typically last 5–10 years. Durability also depends on the size of the filling – small fillings often last longer than large multi-surface fillings. Your dentist will check the fillings during check-up examinations."
+      },
+      {
+        "question": "Is getting a composite filling painful?",
+        "answer": "Normally not. The dentist numbs the tooth beforehand so you don't feel anything during drilling. For small fillings, anesthesia is sometimes not necessary. If you feel something during treatment, just let them know – the dentist can administer more anesthetic. After treatment, the tooth may be sensitive for a few days, especially to cold or heat. This is normal and will pass."
+      },
+      {
+        "question": "How much does a composite filling cost?",
+        "answer": "The official TP value for a one-surface composite filling is 122.00 for UV/MV/IV. For private patients (PP), the price ranges from 103.70 to 140.30 TP. Added to this are the costs for anesthesia (4.0650, 38.40 TP) and possibly rubber dam (4.0940/4.0950). The actual price in Swiss francs depends on the clinic's point value (usually 1.00–1.30 CHF per TP). Ask for a written cost estimate beforehand!"
+      },
+      {
+        "question": "Can I eat right after the filling?",
+        "answer": "Yes, modern composite fillings harden immediately under the special lamp. You can eat normally right after the treatment. Your dentist will tell you if there are any restrictions. In the first few days, you might want to avoid very cold or very hot foods if the tooth is sensitive."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre un empaste composite y un empaste de amalgama?",
+        "answer": "Los empastes composite son de plástico y tienen el mismo color que tus dientes – apenas se ven. Los empastes de amalgama son de metal y de color gris plateado, por lo que son claramente visibles. Los empastes composite se fijan con un adhesivo especial (bonding) y se endurecen con una lámpara. La amalgama se compacta en el agujero y se endurece por sí sola. Los empastes composite son un poco más caros, pero estéticamente mucho más bonitos. Para UV/MV/IV, ambos están cubiertos si son médicamente necesarios."
+      },
+      {
+        "question": "¿Cuánto dura un empaste composite?",
+        "answer": "Con un buen cuidado (limpieza dental regular, buena higiene bucal), los empastes composite suelen durar 5–10 años. La durabilidad también depende del tamaño del empaste – los empastes pequeños suelen durar más que los grandes empastes de múltiples caras. Tu dentista revisará los empastes durante los exámenes de control."
+      },
+      {
+        "question": "¿Duele ponerse un empaste composite?",
+        "answer": "Normalmente no. El dentista adormece el diente previamente para que no sientas nada durante la perforación. Para empastes pequeños, a veces no es necesaria la anestesia. Si sientes algo durante el tratamiento, solo dilo – el dentista puede poner más anestesia. Después del tratamiento, el diente puede estar sensible durante unos días, especialmente al frío o al calor. Es normal y pasará."
+      },
+      {
+        "question": "¿Cuánto cuesta un empaste composite?",
+        "answer": "El valor TP oficial para un empaste composite de una cara es 122.00 para UV/MV/IV. Para pacientes privados (PP), el precio está entre 103.70 y 140.30 TP. A esto se suman los costes de anestesia (4.0650, 38.40 TP) y posiblemente dique (4.0940/4.0950). El precio real en francos depende del valor en puntos de la clínica (normalmente 1.00–1.30 CHF por TP). ¡Pide un presupuesto por escrito antes!"
+      },
+      {
+        "question": "¿Puedo comer justo después del empaste?",
+        "answer": "Sí, los empastes composite modernos se endurecen inmediatamente bajo la lámpara especial. Puedes comer normalmente justo después del tratamiento. Tu dentista te dirá si hay alguna restricción. En los primeros días, quizás quieras evitar alimentos muy fríos o muy calientes si el diente está sensible."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre uma obturação compósito e uma obturação de amálgama?",
+        "answer": "As obturações compósito são de plástico e têm a mesma cor dos teus dentes – quase não se veem. As obturações de amálgama são de metal e de cor prateada, por isso são claramente visíveis. As obturações compósito são fixadas com um adesivo especial (bonding) e endurecem com uma lâmpada. A amálgama é compactada no buraco e endurece sozinha. As obturações compósito são um pouco mais caras, mas esteticamente muito mais bonitas. Para UV/MV/IV, ambas são cobertas se forem medicamente necessárias."
+      },
+      {
+        "question": "Quanto tempo dura uma obturação compósito?",
+        "answer": "Com bons cuidados (limpeza dentária regular, boa higiene oral), as obturações compósito duram geralmente 5–10 anos. A durabilidade também depende do tamanho da obturação – as pequenas obturações duram frequentemente mais do que as grandes obturações de múltiplas faces. O teu dentista verificará as obturações durante os exames de controlo."
+      },
+      {
+        "question": "Colocar uma obturação compósito é doloroso?",
+        "answer": "Normalmente não. O dentista anestesia o dente previamente para que não sintas nada durante a perfuração. Para pequenas obturações, por vezes não é necessária anestesia. Se sentires alguma coisa durante o tratamento, basta dizer – o dentista pode anestesiar novamente. Após o tratamento, o dente pode estar sensível durante alguns dias, especialmente ao frio ou ao calor. É normal e passa."
+      },
+      {
+        "question": "Quanto custa uma obturação compósito?",
+        "answer": "O valor TP oficial para uma obturação compósito de uma face é 122.00 para UV/MV/IV. Para pacientes privados (PP), o preço situa-se entre 103.70 e 140.30 TP. A estes acrescem os custos de anestesia (4.0650, 38.40 TP) e eventualmente dique (4.0940/4.0950). O preço real em francos depende do valor do ponto da clínica (geralmente 1.00–1.30 CHF por TP). Pede um orçamento por escrito antes!"
+      },
+      {
+        "question": "Posso comer logo após a obturação?",
+        "answer": "Sim, as obturações compósito modernas endurecem imediatamente sob a lâmpada especial. Podes comer normalmente logo após o tratamento. O teu dentista dir-te-á se há alguma restrição. Nos primeiros dias, talvez queiras evitar alimentos muito frios ou muito quentes se o dente estiver sensível."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między wypełnieniem kompozytowym a wypełnieniem amalgamatowym?",
+        "answer": "Wypełnienia kompozytowe są z tworzywa sztucznego i mają ten sam kolor co Twoje zęby – są ledwo widoczne. Wypełnienia amalgamatowe są metalowe i mają srebrnoszary kolor, więc są wyraźnie widoczne. Wypełnienia kompozytowe są mocowane specjalnym klejem (bonding) i utwardzane lampą. Amalgamat jest wbijany w dziurę i utwardza się sam. Wypełnienia kompozytowe są nieco droższe, ale estetycznie znacznie ładniejsze. Dla UV/MV/IV oba są refundowane, jeśli są medycznie konieczne."
+      },
+      {
+        "question": "Jak długo utrzymuje się wypełnienie kompozytowe?",
+        "answer": "Przy odpowiedniej pielęgnacji (regularne czyszczenie zębów, dobra higiena jamy ustnej) wypełnienia kompozytowe zwykle utrzymują się 5–10 lat. Trwałość zależy również od wielkości wypełnienia – małe wypełnienia często utrzymują się dłużej niż duże wypełnienia wielopowierzchniowe. Dentysta sprawdzi wypełnienia podczas badań kontrolnych."
+      },
+      {
+        "question": "Czy zakładanie wypełnienia kompozytowego jest bolesne?",
+        "answer": "Normalnie nie. Dentysta wcześniej znieczula ząb, abyś nie czuł nic podczas wiercenia. W przypadku małych wypełnień czasami nie jest potrzebne znieczulenie. Jeśli podczas leczenia coś poczujesz, po prostu powiedz – dentysta może podać dodatkowe znieczulenie. Po leczeniu ząb może być wrażliwy przez kilka dni, szczególnie na zimno lub ciepło. To normalne i minie."
+      },
+      {
+        "question": "Ile kosztuje wypełnienie kompozytowe?",
+        "answer": "Oficjalna wartość TP dla jednopowierzchniowego wypełnienia kompozytowego wynosi 122.00 dla UV/MV/IV. Dla pacjentów prywatnych (PP) cena wynosi od 103.70 do 140.30 TP. Do tego dochodzą koszty znieczulenia (4.0650, 38.40 TP) i ewentualnie koferdamu (4.0940/4.0950). Rzeczywista cena we frankach zależy od wartości punktu w klinice (zwykle 1.00–1.30 CHF za TP). Poproś o pisemną wycenę przed zabiegiem!"
+      },
+      {
+        "question": "Czy mogę jeść bezpośrednio po założeniu wypełnienia?",
+        "answer": "Tak, nowoczesne wypełnienia kompozytowe twardnieją natychmiast pod specjalną lampą. Możesz normalnie jeść zaraz po zabiegu. Dentysta poinformuje Cię, czy są jakieś ograniczenia. W pierwszych dniach możesz unikać bardzo zimnych lub bardzo gorących potraw, jeśli ząb jest wrażliwy."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis një mbushjeje kompozit dhe një mbushjeje amalgame?",
+        "answer": "Mbushjet kompozit janë prej plastike dhe kanë të njëjtën ngjyrë me dhëmbët e tu – mezi duken. Mbushjet amalgame janë prej metali dhe kanë ngjyrë argjendi-hirtë, prandaj janë qartësisht të dukshme. Mbushjet kompozit fiksohen me një ngjitës të veçantë (bonding) dhe ngurtësohen me një llambë. Amalgama shtypet në vrimë dhe ngurtësohet vetë. Mbushjet kompozit janë pak më të shtrenjta, por estetikisht shumë më të bukura. Për UV/MV/IV, të dyja mbulohen nëse janë mjekësisht të nevojshme."
+      },
+      {
+        "question": "Sa zgjat një mbushje kompozit?",
+        "answer": "Me kujdes të mirë (pastrim i rregullt dentar, higjienë e mirë orale), mbushjet kompozit zakonisht zgjasin 5–10 vjet. Qëndrueshmëria varet gjithashtu nga madhësia e mbushjes – mbushjet e vogla shpesh zgjasin më shumë se mbushjet e mëdha me shumë sipërfaqe. Dentisti yt do të kontrollojë mbushjet gjatë ekzaminimeve të kontrollit."
+      },
+      {
+        "question": "A është e dhimbshme vendosja e një mbushjeje kompozit?",
+        "answer": "Normalisht jo. Dentisti mpin dhëmbin paraprakisht në mënyrë që të mos ndjesh asgjë gjatë shpimit. Për mbushjet e vogla ndonjëherë nuk nevojitet anestezi. Nëse ndjen diçka gjatë trajtimit, thjesht thuaj – dentisti mund të japë më shumë anestezi. Pas trajtimit, dhëmbi mund të jetë i ndjeshëm për disa ditë, veçanërisht ndaj të ftohtit ose të nxehtit. Kjo është normale dhe do të kalojë."
+      },
+      {
+        "question": "Sa kushton një mbushje kompozit?",
+        "answer": "Vlera zyrtare TP për një mbushje kompozit me një faqe është 122.00 për UV/MV/IV. Për pacientët privatë (PP), çmimi është midis 103.70 dhe 140.30 TP. Këtyre u shtohen kostot për anestezinë (4.0650, 38.40 TP) dhe eventualisht digën e gomës (4.0940/4.0950). Çmimi aktual në franga varet nga vlera e pikës së klinikës (zakonisht 1.00–1.30 CHF për TP). Kërko një vlerësim me shkrim paraprakisht!"
+      },
+      {
+        "question": "A mund të ha menjëherë pas mbushjes?",
+        "answer": "Po, mbushjet moderne kompozit ngurtësohen menjëherë nën llambën e veçantë. Mund të hash normalisht menjëherë pas trajtimit. Dentisti yt do të të tregojë nëse ka ndonjë kufizim. Në ditët e para, mund të shmangni ushqimet shumë të ftohta ose shumë të nxehta nëse dhëmbi është i ndjeshëm."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kompozit dolgu ile amalgam dolgu arasındaki fark nedir?",
+        "answer": "Kompozit dolgular plastiktir ve dişlerinle aynı renktedir – neredeyse görünmezler. Amalgam dolgular metaldir ve gümüş-gri renktedir, bu nedenle açıkça görünürler. Kompozit dolgular özel bir yapıştırıcıyla (bonding) sabitlenir ve bir lambayla sertleştirilir. Amalgam deliğe sıkıştırılır ve kendiliğinden sertleşir. Kompozit dolgular biraz daha pahalıdır, ancak estetik olarak çok daha güzeldir. UV/MV/IV için, tıbbi olarak gerekliyse her ikisi de karşılanır."
+      },
+      {
+        "question": "Kompozit dolgu ne kadar dayanır?",
+        "answer": "İyi bakımla (düzenli diş temizliği, iyi ağız hijyeni), kompozit dolgular tipik olarak 5–10 yıl dayanır. Dayanıklılık aynı zamanda dolgunun boyutuna da bağlıdır – küçük dolgular genellikle büyük çok yüzeyli dolgulardan daha uzun dayanır. Diş hekimin kontrol muayeneleri sırasında dolguları kontrol edecektir."
+      },
+      {
+        "question": "Kompozit dolgu yaptırmak ağrılı mıdır?",
+        "answer": "Normalde hayır. Diş hekimi dişi önceden uyuşturur, böylece delme sırasında hiçbir şey hissetmezsin. Küçük dolgular için bazen anestezi gerekmez. Tedavi sırasında bir şey hissedersen, söylemen yeterli – diş hekimi daha fazla anestezi yapabilir. Tedaviden sonra diş birkaç gün hassas olabilir, özellikle soğuğa veya sıcağa karşı. Bu normaldir ve geçecektir."
+      },
+      {
+        "question": "Kompozit dolgu ne kadardır?",
+        "answer": "Tek yüzeyli kompozit dolgu için resmi TP değeri UV/MV/IV için 122.00'dır. Özel hastalar (PP) için fiyat 103.70 ile 140.30 TP arasındadır. Buna anestezi (4.0650, 38.40 TP) ve muhtemelen kauçuk baraj (4.0940/4.0950) için masraflar eklenir. Frank cinsinden gerçek fiyat, kliniğin puan değerine bağlıdır (genellikle TP başına 1.00–1.30 CHF). Önceden yazılı maliyet tahmini iste!"
+      },
+      {
+        "question": "Dolgudan hemen sonra yemek yiyebilir miyim?",
+        "answer": "Evet, modern kompozit dolgular özel lamba altında hemen sertleşir. Tedaviden hemen sonra normal yemek yiyebilirsin. Diş hekimin herhangi bir kısıtlama olup olmadığını söyleyecektir. İlk birkaç gün, diş hassassa çok soğuk veya çok sıcak yiyeceklerden kaçınmak isteyebilirsin."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između kompozitne ispune i amalgamske ispune?",
+        "answer": "Kompozitne ispune su od plastike i imaju istu boju kao tvoji zubi – jedva se vide. Amalgamske ispune su metalne i srebrno-sive boje, stoga su jasno vidljive. Kompozitne ispune se pričvršćuju posebnim ljepilom (bonding) i stvrdnjavaju se lampom. Amalgam se utiskuje u rupu i stvrdnjava sam. Kompozitne ispune su nešto skuplje, ali estetski mnogo ljepše. Za UV/MV/IV, obje su pokrivene ako su medicinski potrebne."
+      },
+      {
+        "question": "Koliko traje kompozitna ispuna?",
+        "answer": "Uz dobru njegu (redovito čišćenje zuba, dobra oralna higijena), kompozitne ispune obično traju 5–10 godina. Trajnost također ovisi o veličini ispune – male ispune često traju dulje od velikih ispuna s više ploha. Tvoj zubar će provjeriti ispune tijekom kontrolnih pregleda."
+      },
+      {
+        "question": "Je li postavljanje kompozitne ispune bolno?",
+        "answer": "Normalno nije. Zubar prethodno umrtvi zub kako ne bi osjetio ništa tijekom bušenja. Za male ispune ponekad anestezija nije potrebna. Ako osjetiš nešto tijekom liječenja, jednostavno reci – zubar može dati dodatnu anesteziju. Nakon liječenja, zub može biti osjetljiv nekoliko dana, posebno na hladno ili toplo. To je normalno i proći će."
+      },
+      {
+        "question": "Koliko košta kompozitna ispuna?",
+        "answer": "Službena TP vrijednost za jednoplošnu kompozitnu ispunu je 122.00 za UV/MV/IV. Za privatne pacijente (PP) cijena je između 103.70 i 140.30 TP. Tome se dodaju troškovi anestezije (4.0650, 38.40 TP) i eventualno koferdama (4.0940/4.0950). Stvarna cijena u francima ovisi o vrijednosti boda klinike (obično 1.00–1.30 CHF po TP). Zatraži pismenu procjenu troškova prije zahvata!"
+      },
+      {
+        "question": "Mogu li jesti odmah nakon ispune?",
+        "answer": "Da, moderne kompozitne ispune stvrdnjavaju se odmah pod posebnom lampom. Možeš normalno jesti odmah nakon liječenja. Zubar će ti reći postoje li kakva ograničenja. Prvih dana možda ćeš htjeti izbjegavati vrlo hladnu ili vrlo toplu hranu ako je zub osjetljiv."
+      }
+    ],
+    "ta": [
+      {
+        "question": "கலவை நிரப்புதலுக்கும் அமல்காம் நிரப்புதலுக்கும் என்ன வித்தியாசம்?",
+        "answer": "கலவை நிரப்புதல்கள் பிளாஸ்டிக்கால் ஆனவை மற்றும் உங்கள் பற்களின் அதே நிறத்தைக் கொண்டிருக்கும் – அவை அரிதாகவே தெரியும். அமல்காம் நிரப்புதல்கள் உலோகத்தால் ஆனவை மற்றும் வெள்ளி-சாம்பல் நிறத்தில் இருக்கும், எனவே தெளிவாகத் தெரியும். கலவை நிரப்புதல்கள் ஒரு சிறப்பு பிசினுடன் (பாண்டிங்) இணைக்கப்பட்டு ஒரு விளக்கால் கடினமாக்கப்படுகின்றன. அமல்காம் துளையில் அழுத்தப்பட்டு தானாகவே கடினமாகிறது. கலவை நிரப்புதல்கள் சற்று விலை அதிகம், ஆனால் அழகியல் ரீதியாக மிகவும் அழகானவை. UV/MV/IV க்கு, மருத்துவ ரீதியாக தேவைப்பட்டால் இரண்டும் மறைக்கப்படுகின்றன."
+      },
+      {
+        "question": "கலவை நிரப்புதல் எவ்வளவு காலம் நீடிக்கும்?",
+        "answer": "நல்ல கவனிப்புடன் (வழக்கமான பல் சுத்தம், நல்ல வாய் சுகாதாரம்), கலவை நிரப்புதல்கள் பொதுவாக 5–10 ஆண்டுகள் நீடிக்கும். நீடித்துழைப்பு நிரப்புதலின் அளவைப் பொறுத்தும் அமைகிறது – சிறிய நிரப்புதல்கள் பெரும்பாலும் பெரிய பல-மேற்பரப்பு நிரப்புதல்களை விட நீண்ட காலம் நீடிக்கும். கட்டுப்பாட்டு பரிசோதனைகளின் போது உங்கள் பல் மருத்துவர் நிரப்புதல்களை சரிபார்ப்பார்."
+      },
+      {
+        "question": "கலவை நிரப்புதல் செய்வது வலியை ஏற்படுத்துமா?",
+        "answer": "பொதுவாக இல்லை. பல் மருத்துவர் துளையிடும் போது நீங்கள் எதுவும் உணராத வகையில் முன்கூட்டியே பல்லை மரத்துப்போகச் செய்கிறார். சிறிய நிரப்புதல்களுக்கு சில நேரங்களில் மரத்துப்போகச் செய்தல் தேவையில்லை. சிகிச்சையின் போது ஏதாவது உணர்ந்தால், சொல்லுங்கள் – பல் மருத்துவர் மேலும் மரத்துப்போகச் செய்யலாம். சிகிச்சைக்குப் பிறகு, பல் சில நாட்களுக்கு உணர்திறன் கொண்டிருக்கலாம், குறிப்பாக குளிர் அல்லது வெப்பத்திற்கு. இது இயல்பானது மற்றும் கடந்து போகும்."
+      },
+      {
+        "question": "கலவை நிரப்புதலுக்கு எவ்வளவு செலவாகும்?",
+        "answer": "ஒரு மேற்பரப்பு கலவை நிரப்புதலுக்கான அதிகாரப்பூர்வ TP மதிப்பு UV/MV/IV க்கு 122.00 ஆகும். தனியார் நோயாளிகளுக்கு (PP), விலை 103.70 முதல் 140.30 TP வரை இருக்கும். இதில் மரத்துப்போகச் செய்தல் (4.0650, 38.40 TP) மற்றும் ரப்பர் டேம் (4.0940/4.0950) ஆகியவற்றிற்கான செலவுகள் சேர்க்கப்படும். ஃபிராங்க்களில் உண்மையான விலை கிளினிக்கின் புள்ளி மதிப்பைப் பொறுத்தது (வழக்கமாக TP க்கு 1.00–1.30 CHF). முன்கூட்டியே எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "நிரப்புதலுக்குப் பிறகு உடனே சாப்பிடலாமா?",
+        "answer": "ஆம், நவீன கலவை நிரப்புதல்கள் சிறப்பு விளக்கின் கீழ் உடனடியாக கடினமாகின்றன. சிகிச்சைக்குப் பிறகு உடனேயே நீங்கள் சாதாரணமாக சாப்பிடலாம். ஏதேனும் கட்டுப்பாடுகள் இருந்தால் உங்கள் பல் மருத்துவர் கூறுவார். முதல் சில நாட்களில், பல் உணர்திறன் கொண்டிருந்தால் மிகவும் குளிர்ந்த அல்லது மிகவும் சூடான உணவுகளைத் தவிர்க்க விரும்பலாம்."
+      }
+    ]
+  }
+}

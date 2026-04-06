@@ -1,0 +1,461 @@
+{
+  "code": "4.2020",
+  "name_de": "Zahnextraktion mit Separieren",
+  "display_name": {
+    "de": "Zahnentfernung mit Teilen",
+    "fr": "Extraction dentaire avec sectionnement",
+    "it": "Estrazione dentale con sezionamento",
+    "en": "Tooth extraction with splitting",
+    "es": "Extracción dental con seccionamiento",
+    "pt": "Extração dentária com secionamento",
+    "pl": "Usunięcie zęba z podziałem",
+    "al": "Nxjerrje e dhëmbit me ndarje",
+    "tr": "Bölerek diş çekimi",
+    "hr": "Vađenje zuba s dijeljenjem",
+    "ta": "பிரித்து பல் பிடுங்கல்"
+  },
+  "search_keywords": {
+    "de": ["zahn ziehen", "zahnextraktion", "separieren", "teilen", "wurzelteilen", "mehrwurzlig", "milchzahn", "schwierige extraktion"],
+    "fr": ["arracher dent", "extraction dentaire", "sectionnement", "diviser", "division racinaire", "mult radiculaire", "dent de lait"],
+    "it": ["estrarre dente", "estrazione dentale", "sezionamento", "dividere", "divisione radicolare", "multiradicolare", "dente da latte"],
+    "en": ["pull tooth", "tooth extraction", "splitting", "divide", "root division", "multi-rooted", "baby tooth"],
+    "es": ["sacar muela", "extracción dental", "seccionamiento", "dividir", "división radicular", "multiradicular", "diente de leche"],
+    "pt": ["arrancar dente", "extração dentária", "secionamento", "dividir", "divisão radicular", "multirradicular", "dente de leite"],
+    "pl": ["usunąć ząb", "ekstrakcja zęba", "podział", "dzielenie", "podział korzeni", "wielokorzeniowy", "ząb mleczny"],
+    "al": ["heq dhëmb", "nxjerrje e dhëmbit", "ndarje", "pjestim", "ndarje e rrënjëve", "shumë rrënjë", "dhëmballë qumështi"],
+    "tr": ["diş çekmek", "diş çekimi", "bölme", "ayırma", "kök ayırma", "çok köklü", "süt dişi"],
+    "hr": ["izvaditi zub", "vađenje zuba", "dijeljenje", "podjela", "podjela korijena", "višekorijenski", "mliječni zub"],
+    "ta": ["பல் பிடுங்கல்", "பல் அகற்றல்", "பிரித்தல்", "பிரித்தெடுத்தல்", "வேர் பிரித்தல்", "பல வேர்கள்", "பால் பல்"]
+  },
+  "tp_uv_mviv": 136.00,
+  "tp_pp_max": 156.40,
+  "tp_pp_min": 115.60,
+  "chapter": "05.01",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn ein Zahn mehrere Wurzeln hat (wie viele Backenzähne) oder die Wurzeln sehr krumm sind, muss der Zahnarzt den Zahn manchmal in mehrere Teile teilen, bevor er ihn herausnehmen kann. Das nennt man Separieren. So kann jeder Teil einzeln entfernt werden, ohne dass zu viel Druck auf den Kieferknochen ausgeübt werden muss. Das klingt kompliziert, aber du spürst nichts, weil der Zahnarzt die Stelle vorher betäubt. Das gilt auch für Milchzähne.",
+    "fr": "Lorsqu'une dent a plusieurs racines (comme beaucoup de molaires) ou que les racines sont très courbées, le dentiste doit parfois diviser la dent en plusieurs parties avant de pouvoir l'extraire. C'est ce qu'on appelle le sectionnement. Ainsi, chaque partie peut être retirée individuellement sans exercer une trop grande pression sur l'os de la mâchoire. Cela semble compliqué, mais tu ne ressens rien car le dentiste anesthésie la zone au préalable. Cela s'applique aussi aux dents de lait.",
+    "it": "Quando un dente ha più radici (come molti molari) o le radici sono molto curve, il dentista a volte deve dividere il dente in più parti prima di poterlo estrarre. Questo si chiama sezionamento. In questo modo ogni parte può essere rimossa individualmente senza esercitare troppa pressione sull'osso mascellare. Sembra complicato, ma non senti nulla perché il dentista anestetizza la zona in anticipo. Questo vale anche per i denti da latte.",
+    "en": "When a tooth has multiple roots (like many molars) or the roots are very curved, the dentist sometimes has to split the tooth into several pieces before extracting it. This is called splitting. This way, each part can be removed individually without putting too much pressure on the jawbone. It sounds complicated, but you won't feel anything because the dentist numbs the area beforehand. This also applies to baby teeth.",
+    "es": "Cuando un diente tiene múltiples raíces (como muchos molares) o las raíces son muy curvas, el dentista a veces tiene que dividir el diente en varias partes antes de poder extraerlo. Esto se llama seccionamiento. De esta manera, cada parte puede ser removida individualmente sin ejercer demasiada presión sobre el hueso de la mandíbula. Suena complicado, pero no sientes nada porque el dentista adormece la zona de antemano. Esto también se aplica a los dientes de leche.",
+    "pt": "Quando um dente tem várias raízes (como muitos molares) ou as raízes são muito curvas, o dentista por vezes tem de dividir o dente em várias partes antes de o poder extrair. Isto chama-se secionamento. Desta forma, cada parte pode ser removida individualmente sem exercer demasiada pressão sobre o osso da mandíbula. Parece complicado, mas não sentes nada porque o dentista anestesia a zona previamente. Isto também se aplica aos dentes de leite.",
+    "pl": "Kiedy ząb ma wiele korzeni (jak wiele zębów trzonowych) lub korzenie są bardzo zakrzywione, dentysta czasami musi podzielić ząb na kilka części przed jego usunięciem. Nazywa się to podziałem. W ten sposób każda część może zostać usunięta indywidualnie bez wywierania zbyt dużego nacisku na kość szczęki. Brzmi skomplikowanie, ale nic nie czujesz, ponieważ dentysta wcześniej znieczula miejsce. Dotyczy to również zębów mlecznych.",
+    "al": "Kur një dhëmb ka shumë rrënjë (si shumë dhëmballë) ose rrënjët janë shumë të lakuara, dentisti ndonjëherë duhet ta ndajë dhëmbin në disa pjesë para se ta nxjerrë. Kjo quhet ndarje. Në këtë mënyrë, secila pjesë mund të hiqet individualisht pa ushtruar shumë presion në kockën e nofullës. Tingëllon e ndërlikuar, por nuk ndjen asgjë sepse dentisti mpin zonën më parë. Kjo vlen edhe për dhëmbët e qumështit.",
+    "tr": "Bir dişin birden fazla kökü olduğunda (birçok azı dişi gibi) veya kökler çok eğri olduğunda, diş hekimi bazen dişi çekmeden önce birkaç parçaya bölmek zorundadır. Buna bölerek çekim denir. Bu şekilde, her parça çene kemiğine çok fazla baskı uygulamadan tek tek çıkarılabilir. Kulağa karmaşık geliyor, ancak diş hekimi bölgeyi önceden uyuşturduğu için hiçbir şey hissetmezsin. Bu, süt dişleri için de geçerlidir.",
+    "hr": "Kada zub ima više korijena (kao mnogi kutnjaci) ili su korijeni vrlo zakrivljeni, zubar ponekad mora podijeliti zub na nekoliko dijelova prije nego što ga može izvaditi. To se zove dijeljenje. Na taj način svaki se dio može ukloniti pojedinačno bez prevelikog pritiska na čeljusnu kost. Zvuči komplicirano, ali ne osjećaš ništa jer zubar prethodno umrtvi područje. To se također odnosi na mliječne zube.",
+    "ta": "ஒரு பல்லுக்கு பல வேர்கள் இருக்கும்போது (பல கடைவாய்ப்பற்கள் போல) அல்லது வேர்கள் மிகவும் வளைந்திருக்கும்போது, பல் மருத்துவர் சில நேரங்களில் பல்லைப் பிடுங்குவதற்கு முன் அதை பல துண்டுகளாக பிரிக்க வேண்டும். இது பிரித்து பிடுங்குதல் என்று அழைக்கப்படுகிறது. இந்த வழியில், ஒவ்வொரு பகுதியும் தாடை எலும்பில் அதிக அழுத்தத்தை ஏற்படுத்தாமல் தனித்தனியாக அகற்றப்படலாம். இது சிக்கலானதாகத் தோன்றலாம், ஆனால் பல் மருத்துவர் அந்தப் பகுதியை முன்கூட்டியே மரத்துப்போகச் செய்வதால் உங்களுக்கு எதுவும் தெரியாது. இது பால் பற்களுக்கும் பொருந்தும்."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 Zahnextraktion mit Separieren (Teilen des Zahnes)",
+      "🔪 Geeignet für mehrwurzlige Zähne (z.B. Backenzähne)",
+      "⚙️ Zahn wird in mehrere Teile geteilt, dann einzeln entfernt",
+      "🦷 Gilt auch für Milchzähne",
+      "💉 Anästhesie (wird separat abgerechnet, siehe 4.0650)",
+      "🪡 Nähte (falls nötig, werden separat abgerechnet, siehe 4.2950)",
+      "🩹 Verbrauchsmaterial (Tupfer, etc.) inbegriffen"
+    ],
+    "fr": [
+      "🦷 Extraction dentaire avec sectionnement (division de la dent)",
+      "🔪 Convient pour les dents multiradiculées (p. ex. molaires)",
+      "⚙️ La dent est divisée en plusieurs parties, puis retirée individuellement",
+      "🦷 S'applique également aux dents de lait",
+      "💉 Anesthésie (facturée séparément, voir 4.0650)",
+      "🪡 Sutures (si nécessaire, facturées séparément, voir 4.2950)",
+      "🩹 Matériel consommable (compresses, etc.) inclus"
+    ],
+    "it": [
+      "🦷 Estrazione dentale con sezionamento (divisione del dente)",
+      "🔪 Adatto per denti multiradicolari (ad es. molari)",
+      "⚙️ Il dente viene diviso in più parti, poi rimosso singolarmente",
+      "🦷 Vale anche per i denti da latte",
+      "💉 Anestesia (fatturata separatamente, vedi 4.0650)",
+      "🪡 Suture (se necessario, fatturate separatamente, vedi 4.2950)",
+      "🩹 Materiale di consumo (garze, ecc.) incluso"
+    ],
+    "en": [
+      "🦷 Tooth extraction with splitting (dividing the tooth)",
+      "🔪 Suitable for multi-rooted teeth (e.g., molars)",
+      "⚙️ The tooth is divided into several pieces, then removed individually",
+      "🦷 Also applies to baby teeth",
+      "💉 Anesthesia (billed separately, see 4.0650)",
+      "🪡 Sutures (if needed, billed separately, see 4.2950)",
+      "🩹 Consumables (gauze, etc.) included"
+    ],
+    "es": [
+      "🦷 Extracción dental con seccionamiento (división del diente)",
+      "🔪 Adecuado para dientes multiradiculares (p. ej., molares)",
+      "⚙️ El diente se divide en varias partes, luego se retira individualmente",
+      "🦷 También se aplica a dientes de leche",
+      "💉 Anestesia (facturada por separado, ver 4.0650)",
+      "🪡 Suturas (si es necesario, facturadas por separado, ver 4.2950)",
+      "🩹 Consumibles (gasa, etc.) incluidos"
+    ],
+    "pt": [
+      "🦷 Extração dentária com secionamento (divisão do dente)",
+      "🔪 Adequado para dentes multirradiculares (p. ex., molares)",
+      "⚙️ O dente é dividido em várias partes, depois removido individualmente",
+      "🦷 Também se aplica a dentes de leite",
+      "💉 Anestesia (faturada separadamente, ver 4.0650)",
+      "🪡 Suturas (se necessário, faturadas separadamente, ver 4.2950)",
+      "🩹 Consumíveis (gaze, etc.) incluídos"
+    ],
+    "pl": [
+      "🦷 Usunięcie zęba z podziałem (dzielenie zęba)",
+      "🔪 Odpowiednie dla zębów wielokorzeniowych (np. trzonowce)",
+      "⚙️ Ząb jest dzielony na kilka części, a następnie usuwany indywidualnie",
+      "🦷 Dotyczy również zębów mlecznych",
+      "💉 Znieczulenie (rozliczane osobno, patrz 4.0650)",
+      "🪡 Szwy (w razie potrzeby, rozliczane osobno, patrz 4.2950)",
+      "🩹 Materiały eksploatacyjne (gaza itp.) wliczone"
+    ],
+    "al": [
+      "🦷 Nxjerrje e dhëmbit me ndarje (ndarja e dhëmbit)",
+      "🔪 I përshtatshëm për dhëmbë me shumë rrënjë (p.sh., dhëmballë)",
+      "⚙️ Dhëmbi ndahet në disa pjesë, pastaj hiqet individualisht",
+      "🦷 Vlen edhe për dhëmbët e qumështit",
+      "💉 Anestezi (faturohet veçmas, shih 4.0650)",
+      "🪡 Qepje (nëse nevojiten, faturohen veçmas, shih 4.2950)",
+      "🩹 Materiale harxhuese (garzë, etj.) të përfshira"
+    ],
+    "tr": [
+      "🦷 Bölerek diş çekimi (dişin bölünmesi)",
+      "🔪 Çok köklü dişler için uygundur (örn. azı dişleri)",
+      "⚙️ Diş birkaç parçaya bölünür, ardından tek tek çıkarılır",
+      "🦷 Süt dişleri için de geçerlidir",
+      "💉 Anestezi (ayrı faturalandırılır, bkz. 4.0650)",
+      "🪡 Dikişler (gerekirse, ayrı faturalandırılır, bkz. 4.2950)",
+      "🩹 Sarf malzemeleri (gaz bezi vb.) dahil"
+    ],
+    "hr": [
+      "🦷 Vađenje zuba s dijeljenjem (dijeljenje zuba)",
+      "🔪 Prikladno za višekorijenske zube (npr. kutnjake)",
+      "⚙️ Zub se dijeli na nekoliko dijelova, zatim se uklanja pojedinačno",
+      "🦷 Vrijedi i za mliječne zube",
+      "💉 Anestezija (naplaćuje se zasebno, vidi 4.0650)",
+      "🪡 Šavovi (po potrebi, naplaćuju se zasebno, vidi 4.2950)",
+      "🩹 Potrošni materijal (gaza, itd.) uključen"
+    ],
+    "ta": [
+      "🦷 பிரித்து பல் பிடுங்கல் (பல்லைப் பிரித்தல்)",
+      "🔪 பல வேர் பற்களுக்கு ஏற்றது (எ.கா., கடைவாய்ப்பற்கள்)",
+      "⚙️ பல் பல துண்டுகளாகப் பிரிக்கப்படுகிறது, பின்னர் தனித்தனியாக அகற்றப்படுகிறது",
+      "🦷 பால் பற்களுக்கும் பொருந்தும்",
+      "💉 மரத்துப்போகச் செய்தல் (தனித்தனியாக கணக்கிடப்படும், 4.0650 பார்க்கவும்)",
+      "🪡 தையல்கள் (தேவைப்பட்டால், தனித்தனியாக கணக்கிடப்படும், 4.2950 பார்க்கவும்)",
+      "🩹 நுகர்பொருட்கள் (காஸ் போன்றவை) சேர்க்கப்பட்டுள்ளன"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Zahnextraktion mit Separieren** durch den Zahnarzt",
+      "🔪 **Typische Anwendung:** Mehrwurzlige Zähne (z.B. Molaren), die in einzelne Wurzeln geteilt werden müssen",
+      "⚙️ **Technik:** Zahn wird mit einem speziellen Instrument (z.B. Rotationsinstrument oder Meißel) in einzelne Teile geteilt, dann einzeln entfernt",
+      "👶 **Gilt auch für Milchzähne** (wenn sie nicht von alleine ausfallen)",
+      "💉 **Anästhesie:** Wird separat mit 4.0650 (Infiltrationsanästhesie) abgerechnet (max. 6 Anästhesien pro Sitzung)",
+      "🪡 **Nähte:** Maximal 4 Nähte pro Eingriff mit 4.2950 separat abrechenbar (Nahtmaterial inbegriffen)",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.2010.LP «Chirurgischer Eingriff, mittel UV/MV» enthalten",
+      "⚠️ **Wichtig:** Bei noch schwierigeren Fällen (z.B. mit Aufklappung) gelten die Ziffern 4.2030 oder 4.2040 mit höherem TP-Wert"
+    ],
+    "fr": [
+      "🦷 **Extraction dentaire avec sectionnement** par le dentiste",
+      "🔪 **Application typique:** Dents multiradiculées (p. ex. molaires) qui doivent être divisées en racines individuelles",
+      "⚙️ **Technique:** La dent est divisée en parties individuelles à l'aide d'un instrument spécial (p. ex. instrument rotatif ou ciseau), puis retirée individuellement",
+      "👶 **S'applique également aux dents de lait** (si elles ne tombent pas toutes seules)",
+      "💉 **Anesthésie:** Facturée séparément avec 4.0650 (anesthésie par infiltration) (max. 6 anesthésies par séance)",
+      "🪡 **Sutures:** Maximum 4 sutures par intervention facturables séparément avec 4.2950 (matériel de suture inclus)",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.2010.LP «Intervention chirurgicale, moyenne UV/MV»",
+      "⚠️ **Important:** Pour les cas encore plus difficiles (p. ex. avec ouverture), les codes 4.2030 ou 4.2040 avec une valeur TP plus élevée s'appliquent"
+    ],
+    "it": [
+      "🦷 **Estrazione dentale con sezionamento** dal dentista",
+      "🔪 **Applicazione tipica:** Denti multiradicolari (ad es. molari) che devono essere divisi in radici individuali",
+      "⚙️ **Tecnica:** Il dente viene diviso in parti individuali con uno strumento speciale (ad es. strumento rotante o scalpello), quindi rimosso individualmente",
+      "👶 **Vale anche per i denti da latte** (se non cadono da soli)",
+      "💉 **Anestesia:** Fatturata separatamente con 4.0650 (anestesia per infiltrazione) (max. 6 anestesie per seduta)",
+      "🪡 **Suture:** Massimo 4 suture per intervento fatturabili separatamente con 4.2950 (materiale di sutura incluso)",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.2010.LP «Intervento chirurgico, medio UV/MV»",
+      "⚠️ **Importante:** Per i casi ancora più difficili (ad es. con apertura), si applicano i codici 4.2030 o 4.2040 con valore TP più elevato"
+    ],
+    "en": [
+      "🦷 **Tooth extraction with splitting** by the dentist",
+      "🔪 **Typical application:** Multi-rooted teeth (e.g., molars) that need to be divided into individual roots",
+      "⚙️ **Technique:** The tooth is divided into individual parts using a special instrument (e.g., rotary instrument or chisel), then removed individually",
+      "👶 **Also applies to baby teeth** (if they don't fall out on their own)",
+      "💉 **Anesthesia:** Billed separately with 4.0650 (infiltration anesthesia) (max. 6 anesthesias per session)",
+      "🪡 **Sutures:** Maximum 4 sutures per procedure billable separately with 4.2950 (suture material included)",
+      "📦 **Service package:** This service is included in package 4.2010.LP «Surgical procedure, medium UV/MV»",
+      "⚠️ **Important:** For even more difficult cases (e.g., with flap opening), codes 4.2030 or 4.2040 with higher TP value apply"
+    ],
+    "es": [
+      "🦷 **Extracción dental con seccionamiento** por el dentista",
+      "🔪 **Aplicación típica:** Dientes multiradiculares (p. ej., molares) que deben dividirse en raíces individuales",
+      "⚙️ **Técnica:** El diente se divide en partes individuales con un instrumento especial (p. ej., instrumento rotatorio o cincel), luego se retira individualmente",
+      "👶 **También se aplica a dientes de leche** (si no se caen solos)",
+      "💉 **Anestesia:** Facturada por separado con 4.0650 (anestesia por infiltración) (máx. 6 anestesias por sesión)",
+      "🪡 **Suturas:** Máximo 4 suturas por intervención facturables por separado con 4.2950 (material de sutura incluido)",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.2010.LP «Intervención quirúrgica, media UV/MV»",
+      "⚠️ **Importante:** Para casos aún más difíciles (p. ej., con apertura), se aplican los códigos 4.2030 o 4.2040 con mayor valor TP"
+    ],
+    "pt": [
+      "🦷 **Extração dentária com secionamento** pelo dentista",
+      "🔪 **Aplicação típica:** Dentes multirradiculares (p. ex., molares) que precisam ser divididos em raízes individuais",
+      "⚙️ **Técnica:** O dente é dividido em partes individuais com um instrumento especial (p. ex., instrumento rotativo ou cinzel), depois removido individualmente",
+      "👶 **Também se aplica a dentes de leite** (se não caírem sozinhos)",
+      "💉 **Anestesia:** Faturada separadamente com 4.0650 (anestesia por infiltração) (máx. 6 anestesias por sessão)",
+      "🪡 **Suturas:** Máximo 4 suturas por intervenção faturáveis separadamente com 4.2950 (material de sutura incluído)",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.2010.LP «Intervenção cirúrgica, média UV/MV»",
+      "⚠️ **Importante:** Para casos ainda mais difíceis (p. ex., com abertura), aplicam-se os códigos 4.2030 ou 4.2040 com valor TP mais elevado"
+    ],
+    "pl": [
+      "🦷 **Usunięcie zęba z podziałem** przez dentystę",
+      "🔪 **Typowe zastosowanie:** Zęby wielokorzeniowe (np. trzonowce), które należy podzielić na poszczególne korzenie",
+      "⚙️ **Technika:** Ząb jest dzielony na poszczególne części za pomocą specjalnego instrumentu (np. instrumentu rotacyjnego lub dłuta), a następnie usuwany indywidualnie",
+      "👶 **Dotyczy również zębów mlecznych** (jeśli nie wypadną same)",
+      "💉 **Znieczulenie:** Rozliczane osobno z 4.0650 (znieczulenie nasiękowe) (maks. 6 znieczuleń na sesję)",
+      "🪡 **Szwy:** Maksymalnie 4 szwy na zabieg rozliczane osobno z 4.2950 (materiał szewny wliczony)",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.2010.LP «Zabieg chirurgiczny, średni UV/MV»",
+      "⚠️ **Ważne:** W jeszcze trudniejszych przypadkach (np. z otwarciem) stosuje się kody 4.2030 lub 4.2040 z wyższą wartością TP"
+    ],
+    "al": [
+      "🦷 **Nxjerrje e dhëmbit me ndarje** nga dentisti",
+      "🔪 **Aplikim tipik:** Dhëmbë me shumë rrënjë (p.sh., dhëmballë) që duhet të ndahen në rrënjë individuale",
+      "⚙️ **Teknika:** Dhëmbi ndahet në pjesë individuale duke përdorur një instrument të veçantë (p.sh., instrument rrotullues ose daltë), pastaj hiqet individualisht",
+      "👶 **Vlen edhe për dhëmbët e qumështit** (nëse nuk bien vetë)",
+      "💉 **Anestezi:** Faturohet veçmas me 4.0650 (anestezi me infiltrim) (max. 6 anestezi për seancë)",
+      "🪡 **Qepje:** Maksimumi 4 qepje për ndërhyrje të faturohen veçmas me 4.2950 (materiali i qepjes i përfshirë)",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.2010.LP «Ndërhyrje kirurgjikale, e mesme UV/MV»",
+      "⚠️ **E rëndësishme:** Për raste edhe më të vështira (p.sh., me hapje), aplikohen kodet 4.2030 ose 4.2040 me vlerë TP më të lartë"
+    ],
+    "tr": [
+      "🦷 **Bölerek diş çekimi** diş hekimi tarafından",
+      "🔪 **Tipik uygulama:** Tek tek köklere bölünmesi gereken çok köklü dişler (örn. azı dişleri)",
+      "⚙️ **Teknik:** Diş özel bir aletle (örn. döner alet veya keski) tek tek parçalara bölünür, ardından tek tek çıkarılır",
+      "👶 **Süt dişleri için de geçerlidir** (kendi başlarına düşmezlerse)",
+      "💉 **Anestezi:** 4.0650 (infiltrasyon anestezisi) ile ayrı faturalandırılır (seans başına maks. 6 anestezi)",
+      "🪡 **Dikişler:** Müdahale başına maksimum 4 dikiş, 4.2950 ile ayrı faturalandırılabilir (dikiş malzemesi dahil)",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.2010.LP «Orta düzey cerrahi müdahale, UV/MV» paketine dahildir",
+      "⚠️ **Önemli:** Daha da zor vakalar için (örn. flep açılarak), daha yüksek TP değerine sahip 4.2030 veya 4.2040 kodları uygulanır"
+    ],
+    "hr": [
+      "🦷 **Vađenje zuba s dijeljenjem** od strane zubara",
+      "🔪 **Tipična primjena:** Višekorijenski zubi (npr. kutnjaci) koje treba podijeliti na pojedinačne korijene",
+      "⚙️ **Tehnika:** Zub se dijeli na pojedinačne dijelove pomoću posebnog instrumenta (npr. rotacijskog instrumenta ili dlijeta), zatim se uklanja pojedinačno",
+      "👶 **Vrijedi i za mliječne zube** (ako ne ispadnu sami)",
+      "💉 **Anestezija:** Naplaćuje se zasebno s 4.0650 (infiltracijska anestezija) (maks. 6 anestezija po seansi)",
+      "🪡 **Šavovi:** Maksimalno 4 šava po zahvatu naplativo zasebno s 4.2950 (materijal za šavove uključen)",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.2010.LP «Srednje teška kirurška intervencija, UV/MV»",
+      "⚠️ **Važno:** Za još teže slučajeve (npr. s otvaranjem), primjenjuju se kodovi 4.2030 ili 4.2040 s višom TP vrijednošću"
+    ],
+    "ta": [
+      "🦷 **பிரித்து பல் பிடுங்கல்** பல் மருத்துவரால்",
+      "🔪 **பொதுவான பயன்பாடு:** தனிப்பட்ட வேர்களாக பிரிக்கப்பட வேண்டிய பல வேர் பற்கள் (எ.கா., கடைவாய்ப்பற்கள்)",
+      "⚙️ **நுட்பம்:** பல் ஒரு சிறப்பு கருவியைப் பயன்படுத்தி (எ.கா., சுழல் கருவி அல்லது உளி) தனிப்பட்ட பகுதிகளாக பிரிக்கப்படுகிறது, பின்னர் தனித்தனியாக அகற்றப்படுகிறது",
+      "👶 **பால் பற்களுக்கும் பொருந்தும்** (அவை தானாக விழவில்லை என்றால்)",
+      "💉 **மரத்துப்போகச் செய்தல்:** 4.0650 (ஊடுருவல் மரத்துப்போகச் செய்தல்) உடன் தனித்தனியாக கணக்கிடப்படும் (ஒரு அமர்வில் அதிகபட்சம் 6 மரத்துப்போகச் செய்தல்கள்)",
+      "🪡 **தையல்கள்:** ஒரு செயல்முறைக்கு அதிகபட்சம் 4 தையல்கள் 4.2950 உடன் தனித்தனியாக கணக்கிடலாம் (தையல் பொருள் சேர்க்கப்பட்டுள்ளது)",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.2010.LP «நடுத்தர அறுவை சிகிச்சை, UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "⚠️ **முக்கியம்:** இன்னும் கடினமான நிகழ்வுகளுக்கு (எ.கா., திறப்புடன்), அதிக TP மதிப்பைக் கொண்ட 4.2030 அல்லது 4.2040 குறியீடுகள் பொருந்தும்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen aufwändiger Extraktion (4.2010) und Extraktion mit Separieren (4.2020)?",
+        "answer": "Beide haben denselben TP-Wert (104.60 bzw. 136.00 – Achtung: 4.2020 hat 136.00 TP, das ist ein Unterschied!). Die aufwändige Extraktion (4.2010) ist für Fälle, bei denen der Zahn abgebrochen ist, krumme Wurzeln hat oder wurzelbehandelt wurde. Die Extraktion mit Separieren (4.2020) wird speziell bei mehrwurzligen Zähnen (wie Backenzähnen) angewendet, bei denen der Zahn in einzelne Wurzeln geteilt werden muss. Oft werden beide Techniken kombiniert."
+      },
+      {
+        "question": "Wird der Zahn beim Separieren wirklich zerteilt?",
+        "answer": "Ja, aber nur wenn nötig. Der Zahnarzt verwendet dafür ein spezielles Instrument, zum Beispiel einen Bohrer oder einen Meißel. Der Zahn wird dann in einzelne Teile geteilt, die einzeln entfernt werden können. Das schont den Kieferknochen, weil weniger Zugkraft nötig ist. Du spürst nichts davon, weil die Stelle betäubt ist."
+      },
+      {
+        "question": "Ist diese Behandlung auch für Kinderzähne geeignet?",
+        "answer": "Ja, die Tarifziffer 4.2020 gilt auch für Milchzähne. Wenn ein Milchzahn mehrere Wurzeln hat oder nicht von alleine ausfallen will, kann der Zahnarzt auch hier die Teilungstechnik anwenden."
+      },
+      {
+        "question": "Wie viel kostet eine Extraktion mit Separieren?",
+        "answer": "Der offizielle TP-Wert ist 136.00 für UV/MV/IV. Bei Privatpatienten (PP) liegt der Preis zwischen 115.60 und 156.40 TP. Dazu kommen die Kosten für die Anästhesie (4.0650, 38.40 TP) und eventuell Nähte (4.2950, 13.90 TP pro Naht). Der tatsächliche Preis in Franken hängt vom Taxpunktwert der Klinik ab (meist 1.00–1.30 CHF pro TP). Frage vorher nach einem Kostenvoranschlag!"
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre l'extraction complexe (4.2010) et l'extraction avec sectionnement (4.2020)?",
+        "answer": "Toutes deux ont la même valeur TP (104.60 et 136.00 – attention : 4.2020 a 136.00 TP, c'est une différence!). L'extraction complexe (4.2010) est pour les cas où la dent est cassée, a des racines courbées ou a été traitée endodontiquement. L'extraction avec sectionnement (4.2020) est spécifiquement utilisée pour les dents multiradiculées (comme les molaires) où la dent doit être divisée en racines individuelles. Souvent, les deux techniques sont combinées."
+      },
+      {
+        "question": "La dent est-elle vraiment coupée lors du sectionnement?",
+        "answer": "Oui, mais seulement si nécessaire. Le dentiste utilise pour cela un instrument spécial, par exemple une fraise ou un ciseau. La dent est ensuite divisée en parties individuelles qui peuvent être retirées séparément. Cela préserve l'os de la mâchoire car moins de force de traction est nécessaire. Tu n'en ressens rien car la zone est anesthésiée."
+      },
+      {
+        "question": "Ce traitement est-il également adapté aux dents d'enfant?",
+        "answer": "Oui, le code 4.2020 s'applique également aux dents de lait. Si une dent de lait a plusieurs racines ou ne veut pas tomber d'elle-même, le dentiste peut également utiliser la technique de division ici."
+      },
+      {
+        "question": "Combien coûte une extraction avec sectionnement?",
+        "answer": "La valeur TP officielle est de 136.00 pour UV/MV/IV. Pour les patients privés (PP), le prix se situe entre 115.60 et 156.40 TP. S'ajoutent les frais d'anesthésie (4.0650, 38.40 TP) et éventuellement les sutures (4.2950, 13.90 TP par suture). Le prix réel en francs dépend de la valeur en points du cabinet (généralement 1.00–1.30 CHF par TP). Demande un devis écrit avant!"
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra estrazione complessa (4.2010) ed estrazione con sezionamento (4.2020)?",
+        "answer": "Entrambe hanno lo stesso valore TP (104.60 e 136.00 – attenzione: 4.2020 ha 136.00 TP, c'è una differenza!). L'estrazione complessa (4.2010) è per i casi in cui il dente è rotto, ha radici curve o è stato devitalizzato. L'estrazione con sezionamento (4.2020) viene utilizzata specificamente per i denti multiradicolari (come i molari) in cui il dente deve essere diviso in radici individuali. Spesso le due tecniche vengono combinate."
+      },
+      {
+        "question": "Il dente viene davvero tagliato durante il sezionamento?",
+        "answer": "Sì, ma solo se necessario. Il dentista utilizza uno strumento speciale, ad esempio una fresa o uno scalpello. Il dente viene quindi diviso in singole parti che possono essere rimosse separatamente. Questo preserva l'osso mascellare perché è necessaria meno forza di trazione. Non ne senti nulla perché l'area è anestetizzata."
+      },
+      {
+        "question": "Questo trattamento è adatto anche per i denti dei bambini?",
+        "answer": "Sì, il codice 4.2020 si applica anche ai denti da latte. Se un dente da latte ha più radici o non vuole cadere da solo, il dentista può utilizzare anche qui la tecnica di divisione."
+      },
+      {
+        "question": "Quanto costa un'estrazione con sezionamento?",
+        "answer": "Il valore TP ufficiale è 136.00 per UV/MV/IV. Per i pazienti privati (PP), il prezzo è tra 115.60 e 156.40 TP. A questi si aggiungono i costi per l'anestesia (4.0650, 38.40 TP) ed eventualmente le suture (4.2950, 13.90 TP per sutura). Il prezzo effettivo in franchi dipende dal valore in punti dello studio (di solito 1.00–1.30 CHF per TP). Chiedi un preventivo scritto prima!"
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between complex extraction (4.2010) and extraction with splitting (4.2020)?",
+        "answer": "Both have the same TP value (104.60 and 136.00 – note: 4.2020 has 136.00 TP, there is a difference!). Complex extraction (4.2010) is for cases where the tooth is broken, has curved roots, or has had root canal treatment. Extraction with splitting (4.2020) is specifically used for multi-rooted teeth (like molars) where the tooth needs to be divided into individual roots. Often both techniques are combined."
+      },
+      {
+        "question": "Is the tooth actually cut during splitting?",
+        "answer": "Yes, but only if necessary. The dentist uses a special instrument for this, such as a drill or chisel. The tooth is then divided into individual parts that can be removed separately. This preserves the jawbone because less pulling force is needed. You won't feel anything because the area is numbed."
+      },
+      {
+        "question": "Is this treatment also suitable for children's teeth?",
+        "answer": "Yes, code 4.2020 also applies to baby teeth. If a baby tooth has multiple roots or doesn't want to fall out on its own, the dentist can also use the splitting technique here."
+      },
+      {
+        "question": "How much does an extraction with splitting cost?",
+        "answer": "The official TP value is 136.00 for UV/MV/IV. For private patients (PP), the price ranges from 115.60 to 156.40 TP. Added to this are the costs for anesthesia (4.0650, 38.40 TP) and possibly sutures (4.2950, 13.90 TP per suture). The actual price in Swiss francs depends on the clinic's point value (usually 1.00–1.30 CHF per TP). Ask for a written cost estimate beforehand!"
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre la extracción compleja (4.2010) y la extracción con seccionamiento (4.2020)?",
+        "answer": "Ambas tienen el mismo valor TP (104.60 y 136.00 – ¡atención: 4.2020 tiene 136.00 TP, hay una diferencia!). La extracción compleja (4.2010) es para casos en los que el diente está roto, tiene raíces curvadas o ha sido endodonciado. La extracción con seccionamiento (4.2020) se utiliza específicamente para dientes multiradiculares (como los molares) donde el diente debe dividirse en raíces individuales. A menudo se combinan ambas técnicas."
+      },
+      {
+        "question": "¿Se corta realmente el diente durante el seccionamiento?",
+        "answer": "Sí, pero solo si es necesario. El dentista utiliza para ello un instrumento especial, por ejemplo una fresa o un cincel. El diente se divide entonces en partes individuales que pueden ser retiradas por separado. Esto preserva el hueso de la mandíbula porque se necesita menos fuerza de tracción. No sientes nada porque la zona está anestesiada."
+      },
+      {
+        "question": "¿Este tratamiento también es adecuado para los dientes de los niños?",
+        "answer": "Sí, el código 4.2020 también se aplica a los dientes de leche. Si un diente de leche tiene varias raíces o no quiere caerse solo, el dentista también puede utilizar aquí la técnica de división."
+      },
+      {
+        "question": "¿Cuánto cuesta una extracción con seccionamiento?",
+        "answer": "El valor TP oficial es 136.00 para UV/MV/IV. Para pacientes privados (PP), el precio está entre 115.60 y 156.40 TP. A esto se suman los costes de anestesia (4.0650, 38.40 TP) y posiblemente suturas (4.2950, 13.90 TP por sutura). El precio real en francos depende del valor en puntos de la clínica (normalmente 1.00–1.30 CHF por TP). ¡Pide un presupuesto por escrito antes!"
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre extração complexa (4.2010) e extração com secionamento (4.2020)?",
+        "answer": "Ambas têm o mesmo valor TP (104.60 e 136.00 – atenção: 4.2020 tem 136.00 TP, há uma diferença!). A extração complexa (4.2010) é para casos em que o dente está partido, tem raízes curvas ou foi desvitalizado. A extração com secionamento (4.2020) é especificamente utilizada para dentes multirradiculares (como molares) onde o dente precisa ser dividido em raízes individuais. Frequentemente, ambas as técnicas são combinadas."
+      },
+      {
+        "question": "O dente é realmente cortado durante o secionamento?",
+        "answer": "Sim, mas apenas se necessário. O dentista utiliza para isso um instrumento especial, por exemplo uma fresa ou um cinzel. O dente é então dividido em partes individuais que podem ser removidas separadamente. Isto preserva o osso da mandíbula porque é necessária menos força de tração. Não sentes nada porque a área está anestesiada."
+      },
+      {
+        "question": "Este tratamento também é adequado para dentes de crianças?",
+        "answer": "Sim, o código 4.2020 também se aplica a dentes de leite. Se um dente de leite tem várias raízes ou não quer cair sozinho, o dentista também pode utilizar aqui a técnica de divisão."
+      },
+      {
+        "question": "Quanto custa uma extração com secionamento?",
+        "answer": "O valor TP oficial é 136.00 para UV/MV/IV. Para pacientes privados (PP), o preço situa-se entre 115.60 e 156.40 TP. A estes acrescem os custos de anestesia (4.0650, 38.40 TP) e eventualmente suturas (4.2950, 13.90 TP por sutura). O preço real em francos depende do valor do ponto da clínica (geralmente 1.00–1.30 CHF por TP). Pede um orçamento por escrito antes!"
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między ekstrakcją skomplikowaną (4.2010) a ekstrakcją z podziałem (4.2020)?",
+        "answer": "Obie mają tę samą wartość TP (104.60 i 136.00 – uwaga: 4.2020 ma 136.00 TP, jest różnica!). Ekstrakcja skomplikowana (4.2010) dotyczy przypadków, gdy ząb jest złamany, ma zakrzywione korzenie lub był leczony kanałowo. Ekstrakcja z podziałem (4.2020) jest stosowana specjalnie do zębów wielokorzeniowych (jak trzonowce), gdzie ząb musi być podzielony na poszczególne korzenie. Często obie techniki są łączone."
+      },
+      {
+        "question": "Czy ząb jest naprawdę cięty podczas podziału?",
+        "answer": "Tak, ale tylko w razie potrzeby. Dentysta używa do tego specjalnego instrumentu, na przykład wiertła lub dłuta. Ząb jest następnie dzielony na poszczególne części, które można usunąć osobno. Chroni to kość szczęki, ponieważ potrzebna jest mniejsza siła ciągnięcia. Nic nie czujesz, ponieważ obszar jest znieczulony."
+      },
+      {
+        "question": "Czy to leczenie jest również odpowiednie dla zębów dzieci?",
+        "answer": "Tak, kod 4.2020 dotyczy również zębów mlecznych. Jeśli ząb mleczny ma wiele korzeni lub nie chce sam wypaść, dentysta może również zastosować tutaj technikę podziału."
+      },
+      {
+        "question": "Ile kosztuje ekstrakcja z podziałem?",
+        "answer": "Oficjalna wartość TP to 136.00 dla UV/MV/IV. Dla pacjentów prywatnych (PP) cena wynosi od 115.60 do 156.40 TP. Do tego dochodzą koszty znieczulenia (4.0650, 38.40 TP) oraz ewentualnie szwów (4.2950, 13.90 TP za szew). Rzeczywista cena we frankach zależy od wartości punktu w klinice (zwykle 1.00–1.30 CHF za TP). Poproś o pisemną wycenę przed zabiegiem!"
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis nxjerrjes komplekse (4.2010) dhe nxjerrjes me ndarje (4.2020)?",
+        "answer": "Të dyja kanë të njëjtën vlerë TP (104.60 dhe 136.00 – vëmendje: 4.2020 ka 136.00 TP, ka një ndryshim!). Nxjerrja komplekse (4.2010) është për rastet kur dhëmbi është i thyer, ka rrënjë të lakuara ose ka pasur trajtim kanali. Nxjerrja me ndarje (4.2020) përdoret posaçërisht për dhëmbë me shumë rrënjë (si dhëmballët) ku dhëmbi duhet të ndahet në rrënjë individuale. Shpesh të dyja teknikat kombinohen."
+      },
+      {
+        "question": "A pritet vërtet dhëmbi gjatë ndarjes?",
+        "answer": "Po, por vetëm nëse është e nevojshme. Dentisti përdor për këtë një instrument të veçantë, për shembull një stërvitje ose daltë. Dhëmbi më pas ndahet në pjesë individuale që mund të hiqen veçmas. Kjo ruan kockën e nofullës sepse nevojitet më pak forcë tërheqëse. Nuk ndjen asgjë sepse zona është e mpirë."
+      },
+      {
+        "question": "A është ky trajtim i përshtatshëm edhe për dhëmbët e fëmijëve?",
+        "answer": "Po, kodi 4.2020 vlen edhe për dhëmbët e qumështit. Nëse një dhëmb qumështi ka shumë rrënjë ose nuk dëshiron të bjerë vetë, dentisti mund të përdorë gjithashtu teknikën e ndarjes këtu."
+      },
+      {
+        "question": "Sa kushton një nxjerrje me ndarje?",
+        "answer": "Vlera zyrtare TP është 136.00 për UV/MV/IV. Për pacientët privatë (PP), çmimi është midis 115.60 dhe 156.40 TP. Këtyre u shtohen kostot për anestezinë (4.0650, 38.40 TP) dhe eventualisht qepjet (4.2950, 13.90 TP për qepje). Çmimi aktual në franga varet nga vlera e pikës së klinikës (zakonisht 1.00–1.30 CHF për TP). Kërko një vlerësim me shkrim paraprakisht!"
+      }
+    ],
+    "tr": [
+      {
+        "question": "Karmaşık çekim (4.2010) ile bölerek çekim (4.2020) arasındaki fark nedir?",
+        "answer": "İkisi de aynı TP değerine sahiptir (104.60 ve 136.00 – dikkat: 4.2020'nin TP'si 136.00'dır, fark var!). Karmaşık çekim (4.2010), dişin kırık olduğu, köklerin eğri olduğu veya kanal tedavisi görmüş olduğu durumlar içindir. Bölerek çekim (4.2020), dişin tek tek köklere bölünmesi gereken çok köklü dişler (azı dişleri gibi) için özel olarak kullanılır. Genellikle her iki teknik de birleştirilir."
+      },
+      {
+        "question": "Bölme sırasında diş gerçekten kesiliyor mu?",
+        "answer": "Evet, ancak yalnızca gerekliyse. Diş hekimi bunun için özel bir alet kullanır, örneğin bir matkap veya keski. Diş daha sonra ayrı ayrı çıkarılabilen tek tek parçalara bölünür. Bu, çene kemiğini korur çünkü daha az çekme kuvveti gerekir. Bölge uyuşturulduğu için hiçbir şey hissetmezsin."
+      },
+      {
+        "question": "Bu tedavi çocuk dişleri için de uygun mu?",
+        "answer": "Evet, kod 4.2020 süt dişleri için de geçerlidir. Bir süt dişinin birden fazla kökü varsa veya kendi başına düşmek istemiyorsa, diş hekimi burada da bölme tekniğini kullanabilir."
+      },
+      {
+        "question": "Bölerek çekim ne kadardır?",
+        "answer": "Resmi TP değeri UV/MV/IV için 136.00'dır. Özel hastalar (PP) için fiyat 115.60 ile 156.40 TP arasındadır. Buna anestezi (4.0650, 38.40 TP) ve muhtemelen dikişler (4.2950, dikiş başına 13.90 TP) için masraflar eklenir. Frank cinsinden gerçek fiyat, kliniğin puan değerine bağlıdır (genellikle TP başına 1.00–1.30 CHF). Önceden yazılı maliyet tahmini iste!"
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između složenog vađenja (4.2010) i vađenja s dijeljenjem (4.2020)?",
+        "answer": "Obje imaju istu TP vrijednost (104.60 i 136.00 – pažnja: 4.2020 ima 136.00 TP, postoji razlika!). Složeno vađenje (4.2010) je za slučajeve gdje je zub slomljen, ima zakrivljene korijene ili je liječen korijenskim kanalom. Vađenje s dijeljenjem (4.2020) se posebno koristi za višekorijenske zube (poput kutnjaka) gdje se zub mora podijeliti na pojedinačne korijene. Često se obje tehnike kombiniraju."
+      },
+      {
+        "question": "Je li zub stvarno rezan tijekom dijeljenja?",
+        "answer": "Da, ali samo ako je potrebno. Zubar za to koristi poseban instrument, na primjer svrdlo ili dlijeto. Zub se zatim dijeli na pojedinačne dijelove koji se mogu ukloniti zasebno. To čuva čeljusnu kost jer je potrebna manja sila povlačenja. Ne osjećaš ništa jer je područje umrtvljeno."
+      },
+      {
+        "question": "Je li ovaj tretman prikladan i za dječje zube?",
+        "answer": "Da, kod 4.2020 vrijedi i za mliječne zube. Ako mliječni zub ima više korijena ili ne želi ispasti sam, zubar ovdje također može koristiti tehniku dijeljenja."
+      },
+      {
+        "question": "Koliko košta vađenje s dijeljenjem?",
+        "answer": "Službena TP vrijednost je 136.00 za UV/MV/IV. Za privatne pacijente (PP) cijena je između 115.60 i 156.40 TP. Tome se dodaju troškovi anestezije (4.0650, 38.40 TP) i eventualno šavova (4.2950, 13.90 TP po šavu). Stvarna cijena u francima ovisi o vrijednosti boda klinike (obično 1.00–1.30 CHF po TP). Zatraži pismenu procjenu troškova prije zahvata!"
+      }
+    ],
+    "ta": [
+      {
+        "question": "சிக்கலான பிடுங்கல் (4.2010) மற்றும் பிரித்து பிடுங்கல் (4.2020) இடையே என்ன வித்தியாசம்?",
+        "answer": "இரண்டும் ஒரே TP மதிப்பைக் கொண்டுள்ளன (104.60 மற்றும் 136.00 – கவனம்: 4.2020 136.00 TP கொண்டது, வித்தியாசம் உள்ளது!). சிக்கலான பிடுங்கல் (4.2010) என்பது பல் உடைந்திருக்கும், வேர்கள் வளைந்திருக்கும் அல்லது ரூட் கால்வாய் சிகிச்சை பெற்றிருக்கும் நிகழ்வுகளுக்கானது. பிரித்து பிடுங்கல் (4.2020) என்பது பல்லை தனித்தனி வேர்களாக பிரிக்க வேண்டிய பல வேர் பற்களுக்கு (கடைவாய்ப்பற்கள் போன்றவை) குறிப்பாகப் பயன்படுத்தப்படுகிறது. பெரும்பாலும் இரண்டு நுட்பங்களும் இணைக்கப்படுகின்றன."
+      },
+      {
+        "question": "பிரிக்கும் போது பல் உண்மையில் வெட்டப்படுகிறதா?",
+        "answer": "ஆம், ஆனால் தேவைப்பட்டால் மட்டும். பல் மருத்துவர் இதற்காக ஒரு சிறப்பு கருவியைப் பயன்படுத்துகிறார், எடுத்துக்காட்டாக ஒரு துரப்பணம் அல்லது உளி. பல் பின்னர் தனித்தனியாக அகற்றக்கூடிய தனிப்பட்ட பகுதிகளாக பிரிக்கப்படுகிறது. இது தாடை எலும்பைப் பாதுகாக்கிறது, ஏனெனில் குறைந்த இழுவை விசை தேவைப்படுகிறது. பகுதி மரத்துப்போனதால் உங்களுக்கு எதுவும் தெரியாது."
+      },
+      {
+        "question": "இந்த சிகிச்சை குழந்தைகளின் பற்களுக்கும் ஏற்றதா?",
+        "answer": "ஆம், குறியீடு 4.2020 பால் பற்களுக்கும் பொருந்தும். ஒரு பால் பல்லுக்கு பல வேர்கள் இருந்தால் அல்லது தானாக விழ விரும்பவில்லை என்றால், பல் மருத்துவர் இங்கேயும் பிரிக்கும் நுட்பத்தைப் பயன்படுத்தலாம்."
+      },
+      {
+        "question": "பிரித்து பிடுங்கலுக்கு எவ்வளவு செலவாகும்?",
+        "answer": "அதிகாரப்பூர்வ TP மதிப்பு UV/MV/IV க்கு 136.00 ஆகும். தனியார் நோயாளிகளுக்கு (PP), விலை 115.60 முதல் 156.40 TP வரை இருக்கும். இதில் மரத்துப்போகச் செய்தல் (4.0650, 38.40 TP) மற்றும் தையல்கள் (4.2950, ஒவ்வொரு தையலுக்கும் 13.90 TP) ஆகியவற்றிற்கான செலவுகள் சேர்க்கப்படும். ஃபிராங்க்களில் உண்மையான விலை கிளினிக்கின் புள்ளி மதிப்பைப் பொறுத்தது (வழக்கமாக TP க்கு 1.00–1.30 CHF). முன்கூட்டியே எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      }
+    ]
+  }
+}

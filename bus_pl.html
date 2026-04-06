@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
+    <title>Kalkulator Świadczeń Szwajcarskich i Dekoder Rachunków Dentystycznych | WelfareCalc.ch</title>
+    <meta name="description" content="Oficjalne narzędzia WelfareCalc.ch: Oblicz swoje szwajcarskie świadczenia społeczne (AHV, IV, EL) za darmo i anonimowo – oraz dekoduj ukryte koszty dentystyczne i rachunki DENTOTAR. Zero rejestracji. Zero śledzenia. Zero bzdur.">
+
+    <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        .container { max-width: 1200px; width: 100%; flex: 1; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
+        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
+        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
+        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
+        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
+        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
+        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
+        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
+        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
+        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
+        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
+        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
+        .seo-info li { margin: 0.4rem 0; }
+        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
+        .footer a { color: #0050a4; text-decoration: none; }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>WelfareCalc.ch</h1>
+            <div class="slogan">Przestań zgadywać. Zacznij wiedzieć.</div>
+            <p class="subtitle">
+                Jedyny naprawdę niezależny portal, który dekoduje szwajcarskie świadczenia społeczne i rachunki dentystyczne.<br>
+                Bez rejestracji. Bez śledzenia. Zero bzdur. Tylko prawda.
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <div class="choice-instruction">📌 Wybierz swój dekoder</div>
+        </div>
+
+        <div class="tools-grid">
+            <a href="https://www.welfarecalc.ch/pl.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">⚖️📊</div>
+                <div class="tool-title">Kalkulator Świadczeń Szwajcarskich</div>
+                <div class="tool-description">
+                    Sprawdź dokładnie, ile państwo ci się należy — AHV, IV, EL, redukcje składek. 
+                    <strong>Przestań zostawiać tysiące franków na stole.</strong>
+                </div>
+            </a>
+            
+            <a href="https://www.welfarecalc.ch/blog/pl/dental/dental_pl.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">🦷💰</div>
+                <div class="tool-title">Audytor Rachunków Dentystycznych</div>
+                <div class="tool-description">
+                    Ukryte Taxpunktwert i kody DENTOTAR po cichu opróżniają twój portfel. 
+                    <strong>Odszyfruj rachunek dentystyczny i przestań przepłacać — już dziś.</strong>
+                </div>
+            </a>
+        </div>
+
+        <div class="seo-info">
+            <h2>Twój zestaw przetrwania dla szwajcarskich kosztów socjalnych i dentystycznych</h2>
+            <p>WelfareCalc.ch zapewnia przejrzystość, której często brakuje w systemie. Użyj naszego <strong>Kalkulatora Świadczeń Społecznych</strong>, aby poruszać się po złożonym świecie AHV, IV i świadczeń uzupełniających (EL). Przejdź do <strong>Audytora Rachunków Dentystycznych</strong>, aby zrozumieć, dlaczego 5-minutowa kontrola kosztuje 200 CHF i jak zweryfikować każdy kod DENTOTAR na swojej fakturze.</p>
+            
+            <h3>Przestań przepłacać swojemu dentyście</h3>
+            <p>Szwajcarskie rachunki dentystyczne są pisane w tajemnym języku punktów taryfowych (TP) i wartości punktowej (Taxpunktwert). Nasz przewodnik ujawnia:</p>
+            <ul>
+                <li><strong>Pułapka DENTOTAR</strong> – Jak kody takie jak 4.0000 i 4.1110 są używane do zawyżania rachunku.</li>
+                <li><strong>Zwrot z inwestycji w ubezpieczenie</strong> – Dlaczego większość dodatkowych ubezpieczeń dentystycznych to dla dorosłych "matematyczna porażka".</li>
+                <li><strong>Ukryte stawki</strong> – Dlaczego to samo wypełnienie kosztuje 110 CHF w jednej klinice i 160 CHF w innej.</li>
+                <li><strong>Prawa pacjenta</strong> – Jak poprosić o drugą opinię i zakwestionować "pilne" plany leczenia.</li>
+            </ul>
+            
+            <h3>Świadczenia społeczne – otrzymaj to, co ci się należy</h3>
+            <p>Wielu mieszkańców Szwajcarii traci tysiące franków, ponieważ proces aplikacyjny jest onieśmielający. Upraszczamy wytyczne na 2026 rok dotyczące AHV, IV i redukcji składek (IPV).</p>
+            
+            <h3>Wielojęzyczny i z poszanowaniem prywatności</h3>
+            <p>Wierzymy, że przejrzystość finansowa powinna być dostępna dla każdego. Nasze narzędzia oferują <strong>wsparcie wielojęzyczne</strong>, aby pomóc międzynarodowej społeczności w Szwajcarii zrozumieć swoje prawa bez barier językowych. Co najlepsze: Wszystkie obliczenia działają <strong>lokalnie w twojej przeglądarce</strong>. Nie przechowujemy twoich danych i nie śledzimy twojej tożsamości.</p>
+            
+            <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+                📌 Dane zweryfikowane zgodnie z oficjalnymi standardami na 2026 rok z <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO</a> i <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH</a>.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>WelfareCalc.ch • Darmowe • Anonimowe • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="impressum.html">Impressum</a> • 
+            <a href="datenschutz.html">Polityka prywatności</a> • 
+            <a href="haftung.html">Wyłączenie odpowiedzialności</a>
+        </p>
+    </div>
+</body>
+</html>

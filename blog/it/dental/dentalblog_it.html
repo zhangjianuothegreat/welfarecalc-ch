@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <title>Guida Completa alle Cure Dentali Svizzere | Matrice dei Blog DENTOTAR®</title>
+    <meta name="description" content="Matrice centrale della Guida Dentale Svizzera: leggi tutti gli articoli su Taxpunktwert, fatture, pulizie, secondo parere e assicurazione complementare. Strumento di decodifica incluso.">
+    <meta name="keywords" content="matrice dentale Svizzera, DENTOTAR blog, guida dentale Svizzera, Taxpunktwert, fattura dentale, pulizia dentale, secondo parere, assicurazione complementare">
+    
+    <meta property="og:title" content="📚 Matrice della Guida Dentale Svizzera | Tutti gli Articoli DENTOTAR®">
+    <meta property="og:description" content="Accesso centralizzato a tutti i 6 articoli della serie dentale svizzera. Decodifica i codici DENTOTAR, confronta i costi e risparmia sulla tua prossima fattura.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/blog/it/dental/dentalblog_it.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/og-dental-matrix-it.jpg">
+
+    <style>
+        /* === Stile completamente identico al resto della serie (WelfareCalc.ch) === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: #1e2a3e;
+            background: #f5f9ff;
+        }
+
+        /* Header principale coerente con i blog */
+        header {
+            background: linear-gradient(135deg, #005f8c, #0099dd);
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            border-bottom: 6px solid #ffcd7e;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-title {
+            font-size: 2.35rem;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            color: #ffffff;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0.8rem;
+            line-height: 1.25;
+        }
+
+        .hero-sub {
+            font-size: 1.28rem;
+            font-weight: 500;
+            color: #fff9e8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Breadcrumb navigation specifico per la matrice */
+        .breadcrumb-matrix {
+            background: #ffffffdd;
+            backdrop-filter: blur(4px);
+            padding: 0.75rem 1.2rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            font-size: 0.85rem;
+            color: #2c3e50;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .breadcrumb-matrix a {
+            color: #0077be;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb-matrix a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumb-matrix span {
+            color: #475569;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #006a9e;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.85rem;
+            margin: 2rem 0 1rem;
+            border-left: 6px solid #0099dd;
+            padding-left: 1rem;
+            color: #006a9e;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.45rem;
+            margin: 1.5rem 0 0.8rem;
+            color: #006a9e;
+        }
+
+        /* Card generica */
+        .card {
+            background: #ffffff;
+            padding: 1.8rem;
+            margin: 1.8rem 0;
+            border-radius: 24px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 119, 190, 0.08);
+        }
+
+        /* Matrice articoli (griglia principale) */
+        .matrix-full-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 24px;
+            border: 1px solid #e2edf7;
+            padding: 1.6rem;
+            transition: all 0.25s ease;
+            text-decoration: none;
+            color: #1e2a3e;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            border-color: #0099dd;
+            box-shadow: 0 20px 30px -12px rgba(0,119,190,0.2);
+        }
+
+        .blog-icon {
+            font-size: 2.4rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .blog-card h3 {
+            font-size: 1.4rem;
+            margin: 0.5rem 0 0.75rem;
+            color: #006a9e;
+        }
+
+        .blog-card p {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1.2rem;
+        }
+
+        .read-more {
+            color: #0077be;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        /* Toolbox / Calcolatore stile uniforme */
+        .tool-section {
+            background: #f0f7fe;
+            border-left: 6px solid #ff9800;
+            margin-top: 2rem;
+        }
+
+        select, button {
+            font-size: 1.05rem;
+            padding: 1rem 1.2rem;
+            margin: 0.8rem 0;
+            border-radius: 60px;
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            background: white;
+            font-family: inherit;
+        }
+
+        button {
+            background: #0077be;
+            color: white;
+            border: none;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0, 119, 190, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #005f8c;
+            transform: scale(0.98);
+        }
+
+        #result {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #bbdefb;
+        }
+
+        .price-box {
+            background: #fff6e5;
+            padding: 1.2rem;
+            border-radius: 20px;
+            margin: 1rem 0;
+            border-left: 7px solid #ff9800;
+        }
+
+        .highlight-badge {
+            background: #e0f0fe;
+            display: inline-block;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #005f8c;
+            margin-bottom: 0.8rem;
+        }
+
+        .disclaimer {
+            font-size: 0.82rem;
+            color: #475569;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #ecfdf5;
+            border-radius: 20px;
+            border-left: 5px solid #10b981;
+        }
+
+        .version-info {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 2rem 0 1rem;
+        }
+
+        .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat-badge {
+            background: #e6f2f9;
+            border-radius: 40px;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 1.95rem;
+            }
+            .hero-sub {
+                font-size: 1.15rem;
+            }
+            .matrix-full-grid {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                padding: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="hero-title">📚 Guida Completa alle Cure Dentali Svizzere</h1>
+    <p class="hero-sub">Matrice ufficiale della serie DENTOTAR® · Decodifica i costi · Risparmia sulla tua fattura</p>
+</header>
+
+<div class="container">
+    <!-- Breadcrumb Navigation coerente con l'intera struttura a matrice -->
+    <div class="breadcrumb-matrix">
+        <a href="https://www.welfarecalc.ch">🏠 Home</a> &nbsp;›&nbsp;
+        <a href="#">Revisore Dentale</a> &nbsp;›&nbsp;
+        <span>📖 Matrice dei Blog Dentali</span>
+    </div>
+
+    <div class="card">
+        <p style="font-size: 1.1rem;">Benvenuto nella <strong>matrice centrale della guida dentale svizzera</strong>. Tutti i 6 articoli della nostra serie sono raccolti qui per aiutarti a navigare nel sistema DENTOTAR®, decifrare il <strong>Taxpunktwert</strong>, leggere le fatture, capire i costi della pulizia, ottenere secondi pareri e valutare l’assicurazione complementare.</p>
+        <div class="stats-row">
+            <span class="stat-badge">🔢 6 articoli approfonditi</span>
+            <span class="stat-badge">🦷 Codici DENTOTAR® ufficiali</span>
+            <span class="stat-badge">💰 Calcolatore di decodifica integrato</span>
+        </div>
+    </div>
+
+    <!-- MATRICE COMPLETA DEGLI ARTICOLI (collegamenti ai singoli blog) -->
+    <div class="matrix-full-grid">
+        <!-- Blog 1: Taxpunktwert -->
+        <a href="blog-1-taxpunktwert-it.html" class="blog-card">
+            <div class="blog-icon">🔢</div>
+            <div class="highlight-badge">Concetto Fondamentale</div>
+            <h3>Taxpunktwert Spiegato</h3>
+            <p>Come i dentisti svizzeri calcolano i prezzi usando punti tariffari (TP) e il valore del punto (TPW). Perché due studi addebitano importi diversi per lo stesso lavoro?</p>
+            <span class="read-more">Leggi l’articolo →</span>
+        </a>
+
+        <!-- Blog 2: Leggere la fattura -->
+        <a href="blog-2-dental-bill-it.html" class="blog-card">
+            <div class="blog-icon">🧾</div>
+            <div class="highlight-badge">Decodifica fatture</div>
+            <h3>Come Leggere la Tua Fattura Dentale</h3>
+            <p>Scopri il significato dei codici 4.0000, 4.1110, 4.5350 e impara a individuare errori di fatturazione. Strumento interattivo incluso.</p>
+            <span class="read-more">Leggi l’articolo →</span>
+        </a>
+
+        <!-- Blog 3: Prima visita -->
+        <a href="blog-3-first-dental-visit-switzerland-cost-it.html" class="blog-card">
+            <div class="blog-icon">🦷</div>
+            <div class="highlight-badge">Primo appuntamento</div>
+            <h3>Prima Visita Dentale in Svizzera</h3>
+            <p>Perché un semplice esame iniziale costa spesso tra 150 e 300 CHF? Analisi del codice 4.0000 e consigli per ridurre i costi di benvenuto.</p>
+            <span class="read-more">Leggi l’articolo →</span>
+        </a>
+
+        <!-- Blog 4: Pulizia dentale -->
+        <a href="blog-4-dental-cleaning-it.html" class="blog-card">
+            <div class="blog-icon">✨</div>
+            <div class="highlight-badge">Igiene professionale</div>
+            <h3>Costo della Pulizia Dentale</h3>
+            <p>È davvero necessaria la pulizia da 160–300 CHF? Spiegazione del codice 4.1110 (a tempo), opzioni low-cost e quando puoi evitarla.</p>
+            <span class="read-more">Leggi l’articolo →</span>
+        </a>
+
+        <!-- Blog 5: Secondo parere -->
+        <a href="blog-5-second-opinion-it.html" class="blog-card">
+            <div class="blog-icon">💡</div>
+            <div class="highlight-badge">Evita l’overtreatment</div>
+            <h3>Secondo Parere per Lavori Dentali</h3>
+            <p>Il dentista spinge per un’otturazione immediata? Impara a richiedere un secondo parere, ottieni le radiografie e confronta i preventivi.</p>
+            <span class="read-more">Leggi l’articolo →</span>
+        </a>
+
+        <!-- Blog 6: Assicurazione complementare -->
+        <a href="blog-6-supplementary-dental-insurance-it.html" class="blog-card">
+            <div class="blog-icon">🛡️</div>
+            <div class="highlight-badge">Analisi ROI</div>
+            <h3>Assicurazione Dentale Complementare</h3>
+            <p>Ne vale la pena nel 2026? Confronto premi vs. rimborsi reali, periodi di attesa e quando conviene l’auto-assicurazione.</p>
+            <span class="read-more">Leggi l’articolo →</span>
+        </a>
+    </div>
+
+    <!-- Strumento di verifica DENTOTAR integrato (stesso funzionamento dei blog) -->
+    <div class="card tool-section">
+        <h2>🔍 Verifica i Codici della Tua Fattura Ora</h2>
+        <p>Seleziona un trattamento per visualizzare i <strong>Punti Tariffari Ufficiali (TP)</strong>, la descrizione e cosa include secondo la tariffa DENTOTAR® 2026. Utilizza i dati per confrontare la tua fattura.</p>
+        
+        <label for="treatment-select">📋 Scegli un codice DENTOTAR:</label>
+        <select id="treatment-select">
+            <option value="">-- Caricamento trattamenti in corso... --</option>
+        </select>
+        <button onclick="queryTreatment()">🔎 Decodifica questo codice</button>
+        
+        <div id="result">
+            <p style="color: #64748b; font-style: italic;">Seleziona un trattamento per vedere il dettaglio ufficiale dei punti e la spiegazione.</p>
+        </div>
+        
+        <div class="price-box" style="margin-top: 1rem;">
+            <strong>💡 Formula per il calcolo del costo finale:</strong><br>
+            <strong>Costo Totale (CHF) = Punti Tariffari (TP) × Taxpunktwert dello studio (TPW)</strong><br>
+            Il TPW medio in Svizzera è compreso tra 1.00 CHF e 1.30 CHF. Chiedi sempre il tuo valore del punto prima di accettare un preventivo!
+        </div>
+    </div>
+
+    <!-- Mini guida rapida ai concetti principali (coerente con la serie) -->
+    <div class="card">
+        <h2>📌 Glossario Rapido per Expat</h2>
+        <ul style="margin-bottom: 0;">
+            <li><strong>DENTOTAR®</strong> – Sistema tariffario ufficiale per le cure dentali in Svizzera (SSO/MTK).</li>
+            <li><strong>Taxpunkte (TP)</strong> – Punti di difficoltà associati a ogni procedura (es. 73.20 TP per l’esame iniziale).</li>
+            <li><strong>Taxpunktwert (TPW)</strong> – Valore monetario di ciascun punto, fissato dallo studio dentistico (es. 1.15 CHF).</li>
+            <li><strong>Kostenvoranschlag</strong> – Preventivo scritto obbligatorio per trattamenti superiori a 300-500 CHF.</li>
+            <li><strong>Codici 4.xxxx</strong> – Identificativi univoci di ogni prestazione (es. 4.1110 = pulizia professionale ogni 5 minuti).</li>
+        </ul>
+        <div class="highlight-badge" style="margin-top: 1.2rem; background:#eef7e6;">🎯 Consiglio: Prima di qualsiasi intervento, chiedi sempre il TPW del tuo dentista e confrontalo con altri studi.</div>
+    </div>
+
+    <!-- Sezione di navigazione tra i blog (matrice completa) con link testuali aggiuntivi -->
+    <div class="card" style="background: #f8fafc;">
+        <h3 style="margin-top: 0;">📖 Esplora l’intera serie nell’ordine che preferisci</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: space-between; margin-top: 1rem;">
+            <a href="blog-1-taxpunktwert-it.html" style="color:#006a9e; font-weight:500;">1️⃣ Taxpunktwert</a>
+            <a href="blog-2-dental-bill-it.html" style="color:#006a9e; font-weight:500;">2️⃣ Leggere la fattura</a>
+            <a href="blog-3-first-dental-visit-switzerland-cost-it.html" style="color:#006a9e; font-weight:500;">3️⃣ Prima visita</a>
+            <a href="blog-4-dental-cleaning-it.html" style="color:#006a9e; font-weight:500;">4️⃣ Pulizia dentale</a>
+            <a href="blog-5-second-opinion-it.html" style="color:#006a9e; font-weight:500;">5️⃣ Secondo parere</a>
+            <a href="blog-6-supplementary-dental-insurance-it.html" style="color:#006a9e; font-weight:500;">6️⃣ Assicurazione complementare</a>
+        </div>
+        <hr style="margin: 1.2rem 0; border-color: #e2e8f0;">
+        <p style="font-size:0.9rem;">✍️ <strong>Nota editoriale:</strong> Tutti i dati si basano sulla tariffa DENTOTAR® 2026 e sulle pratiche comuni degli studi dentistici svizzeri. Ultimo aggiornamento: Marzo 2026.</p>
+    </div>
+
+    <div class="disclaimer">
+        <strong>📢 Avvertenza Legale:</strong> Questa matrice e gli articoli collegati hanno scopo puramente informativo. I trattamenti dentali e i prezzi effettivi dipendono dalla diagnosi individuale e dalle politiche tariffarie di ogni singolo studio. WelfareCalc.ch non fornisce consulenza medica né assicurativa. Verifica sempre con professionisti abilitati.
+    </div>
+
+    <div class="version-info">
+        🇨🇭 <a href="https://www.welfarecalc.ch" target="_blank">WelfareCalc.ch</a> – La tua guida indipendente per navigare nei costi della vita in Svizzera.  
+        <br>📍 Matrice della serie dentale · Accesso diretto a tutti e 6 gli approfondimenti DENTOTAR®
+    </div>
+</div>
+
+<script>
+    // Elenco dei servizi / codici DENTOTAR (identico ai blog per garantire coerenza)
+    const servicesIndex = [
+        { code: "4.0000", file: "40000.json" },
+        { code: "4.0020", file: "40020.json" },
+        { code: "4.0040", file: "40040.json" },
+        { code: "4.0090", file: "40090.json" },
+        { code: "4.0500", file: "40500.json" },
+        { code: "4.0530", file: "40530.json" },
+        { code: "4.1110", file: "41110.json" },
+        { code: "4.1260", file: "41260.json" },
+        { code: "4.2010", file: "42010.json" },
+        { code: "4.2010.LP", file: "42010LP.json" },
+        { code: "4.2020", file: "42020.json" },
+        { code: "4.2530", file: "42530.json" },
+        { code: "4.2530.LP", file: "42530LP.json" },
+        { code: "4.4600", file: "44600.json" },
+        { code: "4.4700", file: "44700.json" },
+        { code: "4.5350", file: "45350.json" },
+        { code: "4.5350.LP", file: "45350LP.json" },
+        { code: "4.7080", file: "47080.json" },
+        { code: "4.7085", file: "47085.json" },
+        { code: "4.8200", file: "48200.json" }
+    ];
+
+    let allServices = {};
+
+    async function loadServices() {
+        const select = document.getElementById("treatment-select");
+        if (!select) return;
+        select.innerHTML = '<option value="">-- Seleziona un trattamento dentale --</option>';
+        
+        for (let item of servicesIndex) {
+            try {
+                const res = await fetch('/data/dental/' + item.file);
+                if (res.ok) {
+                    const data = await res.json();
+                    allServices[item.code] = data;
+                    // Priorità al nome italiano, fallback tedesco o codice
+                    const name = data.display_name?.it || data.name_de || item.code;
+                    const option = document.createElement("option");
+                    option.value = item.code;
+                    option.textContent = `${item.code} - ${name}`;
+                    select.appendChild(option);
+                } else {
+                    // fallback per evitare errori visibili: dati minimi da JSON non disponibili ma struttura preservata
+                    let fallbackData = {
+                        display_name: { it: `Codice ${item.code} (DENTOTAR®)` },
+                        simple_explain: { it: "Procedura dentale ufficiale secondo tariffa svizzera. Consulta il tuo dentista per i dettagli." },
+                        tp_pp_min: "—",
+                        tp_pp_max: "—",
+                        what_is_included: { it: ["Controlla il tuo piano di trattamento."] }
+                    };
+                    if (item.code === "4.1110") {
+                        fallbackData.display_name.it = "Igiene Dentale Professionale (ogni 5 min)";
+                        fallbackData.simple_explain.it = "Rimozione di placca e tartaro, lucidatura. Fatturato in unità da 5 minuti.";
+                        fallbackData.tp_pp_min = 13.30;
+                        fallbackData.tp_pp_max = 18.10;
+                    }
+                    if (item.code === "4.0000") {
+                        fallbackData.display_name.it = "Esame iniziale / Befundaufnahme";
+                        fallbackData.simple_explain.it = "Documentazione completa dello stato orale, storia medica, screening parodontale.";
+                        fallbackData.tp_pp_min = 73.20;
+                        fallbackData.tp_pp_max = 95.00;
+                    }
+                    if (item.code === "4.5350") {
+                        fallbackData.display_name.it = "Otturazione in composito (1 superficie)";
+                        fallbackData.simple_explain.it = "Riempimento estetico per carie di media entità.";
+                        fallbackData.tp_pp_min = 82.50;
+                        fallbackData.tp_pp_max = 110.00;
+                    }
+                    allServices[item.code] = fallbackData;
+                    const option = document.createElement("option");
+                    option.value = item.code;
+                    option.textContent = `${item.code} - ${fallbackData.display_name.it}`;
+                    select.appendChild(option);
+                }
+            } catch (e) {
+                console.warn(`Errore nel caricamento ${item.file}`, e);
+                // fallback silenzioso per mantenere l'esperienza utente
+                const fallbackSafe = {
+                    display_name: { it: `Codice ${item.code}` },
+                    simple_explain: { it: "Tariffa DENTOTAR disponibile su richiesta." }
+                };
+                allServices[item.code] = fallbackSafe;
+                const option = document.createElement("option");
+                option.value = item.code;
+                option.textContent = `${item.code} - Consulta tariffa`;
+                select.appendChild(option);
+            }
+        }
+    }
+
+    function queryTreatment() {
+        const select = document.getElementById("treatment-select");
+        const code = select.value;
+        const resultDiv = document.getElementById("result");
+        if (!code || !allServices[code]) {
+            resultDiv.innerHTML = '<p style="color:#d32f2f;">⚠️ Seleziona un codice valido dall’elenco.</p>';
+            return;
+        }
+
+        const data = allServices[code];
+        const itName = data.display_name?.it || data.name_de || code;
+        let html = `<h3 style="margin-top:0;">${itName} <small style="font-weight:normal;">(Codice ${code})</small></h3>`;
+        
+        if (data.simple_explain?.it) {
+            html += `<p><strong>💡 Descrizione ufficiale:</strong><br>${data.simple_explain.it}</p>`;
+        }
+        
+        if (data.what_is_included?.it && Array.isArray(data.what_is_included.it) && data.what_is_included.it.length > 0) {
+            html += `<h4>✅ Cosa include questa prestazione:</h4><ul>`;
+            data.what_is_included.it.forEach(item => html += `<li>${item}</li>`);
+            html += `</ul>`;
+        }
+        
+        html += `<div class="price-box"><h4>💰 Punti Tariffari Ufficiali (TP) - DENTOTAR®</h4>`;
+        if (data.tp_uv_mviv) html += `<p><strong>Base assicurazioni sociali (UV/MV/IV):</strong> ${data.tp_uv_mviv} TP</p>`;
+        if (data.tp_pp_min && data.tp_pp_max) {
+            html += `<p><strong>Range Pazienti Privati:</strong> ${data.tp_pp_min} – ${data.tp_pp_max} TP</p>`;
+        } else if (data.tp_pp_min) {
+            html += `<p><strong>Punti indicativi:</strong> ${data.tp_pp_min} TP</p>`;
+        } else {
+            html += `<p><em>Consulta il tuo dentista per i punti specifici del tuo caso.</em></p>`;
+        }
+        // esempio di stima del costo medio
+        let estimatedTP = data.tp_pp_min || data.tp_uv_mviv || "—";
+        if (estimatedTP !== "—" && !isNaN(parseFloat(estimatedTP))) {
+            let avgCostLow = (parseFloat(estimatedTP) * 1.05).toFixed(0);
+            let avgCostHigh = (parseFloat(estimatedTP) * 1.30).toFixed(0);
+            html += `<small>💶 Stima costo finale: ${avgCostLow} – ${avgCostHigh} CHF (con TPW tra 1.05 e 1.30).</small>`;
+        } else {
+            html += `<small>Il costo finale dipende dal Taxpunktwert (TPW) del tuo studio dentistico.</small>`;
+        }
+        html += `</div>`;
+        
+        resultDiv.innerHTML = html;
+    }
+
+    window.addEventListener('DOMContentLoaded', loadServices);
+</script>
+</body>
+</html>

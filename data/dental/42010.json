@@ -1,0 +1,505 @@
+{
+  "code": "4.2010",
+  "name_de": "Zahnextraktion, aufwändig",
+  "display_name": {
+    "de": "Komplexe Zahnentfernung",
+    "fr": "Extraction dentaire complexe",
+    "it": "Estrazione dentale complessa",
+    "en": "Complex tooth extraction",
+    "es": "Extracción dental compleja",
+    "pt": "Extração dentária complexa",
+    "pl": "Skomplikowane usunięcie zęba",
+    "al": "Nxjerrje komplekse e dhëmbit",
+    "tr": "Kompleks diş çekimi",
+    "hr": "Složeno vađenje zuba",
+    "ta": "சிக்கலான பல் பிடுங்கல்"
+  },
+  "search_keywords": {
+    "de": ["zahn ziehen", "zahnextraktion", "zahn entfernen", "aufwändig", "komplex", "wurzelreste", "milchzahn", "schwierige extraktion"],
+    "fr": ["arracher dent", "extraction dentaire", "enlever dent", "complexe", "difficile", "racines", "dent de lait"],
+    "it": ["estrarre dente", "estrazione dentale", "rimuovere dente", "complessa", "difficile", "radici", "dente da latte"],
+    "en": ["pull tooth", "tooth extraction", "remove tooth", "complex", "difficult", "root remnants", "baby tooth"],
+    "es": ["sacar muela", "extracción dental", "quitar diente", "compleja", "difícil", "raíces", "diente de leche"],
+    "pt": ["arrancar dente", "extração dentária", "remover dente", "complexa", "difícil", "raízes", "dente de leite"],
+    "pl": ["usunąć ząb", "ekstrakcja zęba", "usunięcie zęba", "skomplikowane", "trudne", "korzenie", "ząb mleczny"],
+    "al": ["heq dhëmb", "nxjerrje e dhëmbit", "largim dhëmbi", "komplekse", "vështirë", "rrënjë", "dhëmballë qumështi"],
+    "tr": ["diş çekmek", "diş çekimi", "diş çıkarmak", "kompleks", "zor", "kök kalıntıları", "süt dişi"],
+    "hr": ["izvaditi zub", "vađenje zuba", "uklanjanje zuba", "složeno", "teško", "korijeni", "mliječni zub"],
+    "ta": ["பல் பிடுங்கல்", "பல் அகற்றல்", "பல் எடுத்தல்", "சிக்கலான", "கடினமான", "வேர் எச்சங்கள்", "பால் பல்"]
+  },
+  "tp_uv_mviv": 104.60,
+  "tp_pp_max": 120.30,
+  "tp_pp_min": 88.90,
+  "chapter": "05.01",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn ein Zahn nicht einfach gezogen werden kann, weil er zum Beispiel abgebrochen ist, sich die Wurzeln krumm sind oder der Zahn schon einmal eine Wurzelbehandlung hatte, macht der Zahnarzt eine aufwändige Zahnentfernung. Er muss den Zahn oft in mehrere Teile teilen oder das Zahnfleisch etwas öffnen, um den Zahn herauszubekommen. Das klingt vielleicht gruselig, aber du spürst nichts, weil der Zahnarzt die Stelle vorher betäubt. Das gilt auch für Milchzähne, die nicht von alleine rauswollen.",
+    "fr": "Quand une dent ne peut pas être extraite simplement, par exemple parce qu'elle est cassée, que ses racines sont courbées ou qu'elle a déjà eu un traitement canalaire, le dentiste procède à une extraction complexe. Il doit souvent diviser la dent en plusieurs parties ou ouvrir légèrement la gencive pour sortir la dent. Cela peut sembler effrayant, mais tu ne ressens rien car le dentiste anesthésie la zone au préalable. Cela s'applique aussi aux dents de lait qui ne veulent pas tomber toutes seules.",
+    "it": "Quando un dente non può essere estratto semplicemente, ad esempio perché è rotto, le radici sono curve o ha già avuto una cura canalare, il dentista esegue un'estrazione complessa. Spesso deve dividere il dente in più parti o aprire leggermente la gengiva per rimuovere il dente. Può sembrare spaventoso, ma non senti nulla perché il dentista anestetizza la zona in anticipo. Questo vale anche per i denti da latte che non vogliono cadere da soli.",
+    "en": "When a tooth cannot be simply pulled, for example because it is broken, the roots are curved, or it has already had root canal treatment, the dentist performs a complex tooth extraction. They often have to split the tooth into several pieces or slightly open the gum to get the tooth out. This may sound scary, but you won't feel anything because the dentist numbs the area beforehand. This also applies to baby teeth that don't want to fall out on their own.",
+    "es": "Cuando un diente no puede ser extraído simplemente, por ejemplo porque está roto, sus raíces están curvadas o ya ha tenido un tratamiento de conducto, el dentista realiza una extracción compleja. A menudo tiene que dividir el diente en varias partes o abrir ligeramente la encía para sacar el diente. Puede sonar aterrador, pero no sientes nada porque el dentista adormece la zona de antemano. Esto también se aplica a los dientes de leche que no quieren caerse solos.",
+    "pt": "Quando um dente não pode ser simplesmente extraído, por exemplo porque está partido, as raízes são curvas ou já teve um tratamento de canal, o dentista realiza uma extração complexa. Muitas vezes tem de dividir o dente em várias partes ou abrir ligeiramente a gengiva para remover o dente. Pode parecer assustador, mas não sentes nada porque o dentista anestesia a zona previamente. Isto também se aplica aos dentes de leite que não querem cair sozinhos.",
+    "pl": "Gdy ząb nie może być po prostu usunięty, na przykład dlatego, że jest złamany, ma zakrzywione korzenie lub był już leczony kanałowo, dentysta wykonuje skomplikowaną ekstrakcję. Często musi podzielić ząb na kilka części lub lekko otworzyć dziąsło, aby wyjąć ząb. Może to brzmieć przerażająco, ale nic nie czujesz, ponieważ dentysta wcześniej znieczula miejsce. Dotyczy to również zębów mlecznych, które nie chcą same wypaść.",
+    "al": "Kur një dhëmb nuk mund të nxirret thjesht, për shembull sepse është i thyer, rrënjët janë të lakuara ose ka pasur një trajtim kanali më parë, dentisti kryen një nxjerrje komplekse. Shpesh ai duhet ta ndajë dhëmbin në disa pjesë ose të hapë lehtë mishrat për të nxjerrë dhëmbin. Mund të tingëllojë e frikshme, por nuk ndjen asgjë sepse dentisti mpin zonën më parë. Kjo vlen edhe për dhëmbët e qumështit që nuk duan të bien vetë.",
+    "tr": "Bir diş basitçe çekilemediğinde, örneğin kırılmışsa, kökleri eğriyse veya daha önce kanal tedavisi görmüşse, diş hekimi karmaşık bir diş çekimi yapar. Dişi çıkarmak için genellikle dişi birkaç parçaya ayırması veya diş etini hafifçe açması gerekir. Kulağa korkutucu gelebilir, ancak diş hekimi bölgeyi önceden uyuşturduğu için hiçbir şey hissetmezsin. Bu, kendi başına düşmek istemeyen süt dişleri için de geçerlidir.",
+    "hr": "Kada se zub ne može jednostavno izvaditi, na primjer zato što je slomljen, korijeni su zakrivljeni ili je već imao liječenje korijenskog kanala, zubar izvodi složeno vađenje zuba. Često mora podijeliti zub na nekoliko dijelova ili lagano otvoriti desni kako bi izvadio zub. Može zvučati zastrašujuće, ali ne osjećaš ništa jer zubar prethodno umrtvi područje. To se također odnosi na mliječne zube koji ne žele ispasti sami.",
+    "ta": "ஒரு பல்லை எளிமையாகப் பிடுங்க முடியாதபோது, எடுத்துக்காட்டாக அது உடைந்திருந்தால், வேர்கள் வளைந்திருந்தால் அல்லது ஏற்கனவே ரூட் கால்வாய் சிகிச்சை பெற்றிருந்தால், பல் மருத்துவர் ஒரு சிக்கலான பல் பிடுங்கலை செய்கிறார். பல்லை வெளியே எடுக்க அவர் பெரும்பாலும் பல்லை பல துண்டுகளாகப் பிரிக்க வேண்டும் அல்லது ஈறுகளை சற்று திறக்க வேண்டும். இது பயமாகத் தோன்றலாம், ஆனால் பல் மருத்துவர் அந்தப் பகுதியை முன்கூட்டியே மரத்துப்போகச் செய்வதால் உங்களுக்கு எதுவும் தெரியாது. இது தானாக விழ விரும்பாத பால் பற்களுக்கும் பொருந்தும்."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 Komplexe Zahnextraktion durch den Zahnarzt",
+      "🔪 Bei Bedarf: Aufklappen des Zahnfleisches",
+      "⚙️ Bei Bedarf: Teilen des Zahnes (z.B. bei mehrwurzligen Zähnen oder abgebrochenen Wurzeln)",
+      "🦷 Gilt auch für Milchzähne (wenn sie nicht von alleine rausfallen)",
+      "💉 Anästhesie (wird separat abgerechnet, siehe 4.0650)",
+      "🪡 Nähte (falls nötig, werden separat abgerechnet, siehe 4.2950)",
+      "🩹 Verbrauchsmaterial (Tupfer, etc.) inbegriffen"
+    ],
+    "fr": [
+      "🦷 Extraction dentaire complexe par le dentiste",
+      "🔪 Si nécessaire: ouverture de la gencive",
+      "⚙️ Si nécessaire: sectionnement de la dent (p. ex. pour les dents multiradiculées ou les racines cassées)",
+      "🦷 S'applique également aux dents de lait (si elles ne tombent pas toutes seules)",
+      "💉 Anesthésie (facturée séparément, voir 4.0650)",
+      "🪡 Sutures (si nécessaire, facturées séparément, voir 4.2950)",
+      "🩹 Matériel consommable (compresses, etc.) inclus"
+    ],
+    "it": [
+      "🦷 Estrazione dentale complessa dal dentista",
+      "🔪 Se necessario: apertura della gengiva",
+      "⚙️ Se necessario: sezionamento del dente (ad es. per denti multiradicolari o radici rotte)",
+      "🦷 Vale anche per i denti da latte (se non cadono da soli)",
+      "💉 Anestesia (fatturata separatamente, vedi 4.0650)",
+      "🪡 Suture (se necessario, fatturate separatamente, vedi 4.2950)",
+      "🩹 Materiale di consumo (garze, ecc.) incluso"
+    ],
+    "en": [
+      "🦷 Complex tooth extraction by the dentist",
+      "🔪 If needed: Opening the gum (flap)",
+      "⚙️ If needed: Splitting the tooth (e.g., for multi-rooted teeth or broken roots)",
+      "🦷 Also applies to baby teeth (if they don't fall out on their own)",
+      "💉 Anesthesia (billed separately, see 4.0650)",
+      "🪡 Sutures (if needed, billed separately, see 4.2950)",
+      "🩹 Consumables (gauze, etc.) included"
+    ],
+    "es": [
+      "🦷 Extracción dental compleja por el dentista",
+      "🔪 Si es necesario: Apertura de la encía",
+      "⚙️ Si es necesario: Seccionamiento del diente (p. ej., para dientes multiradiculares o raíces rotas)",
+      "🦷 También se aplica a dientes de leche (si no se caen solos)",
+      "💉 Anestesia (facturada por separado, ver 4.0650)",
+      "🪡 Suturas (si es necesario, facturadas por separado, ver 4.2950)",
+      "🩹 Consumibles (gasa, etc.) incluidos"
+    ],
+    "pt": [
+      "🦷 Extração dentária complexa pelo dentista",
+      "🔪 Se necessário: Abertura da gengiva",
+      "⚙️ Se necessário: Secionamento do dente (p. ex., para dentes multirradiculares ou raízes partidas)",
+      "🦷 Aplica-se também a dentes de leite (se não caírem sozinhos)",
+      "💉 Anestesia (faturada separadamente, ver 4.0650)",
+      "🪡 Suturas (se necessário, faturadas separadamente, ver 4.2950)",
+      "🩹 Consumíveis (gaze, etc.) incluídos"
+    ],
+    "pl": [
+      "🦷 Skomplikowane usunięcie zęba przez dentystę",
+      "🔪 W razie potrzeby: Otwarcie dziąsła",
+      "⚙️ W razie potrzeby: Dzielenie zęba (np. dla zębów wielokorzeniowych lub złamanych korzeni)",
+      "🦷 Dotyczy również zębów mlecznych (jeśli nie wypadną same)",
+      "💉 Znieczulenie (rozliczane osobno, patrz 4.0650)",
+      "🪡 Szwy (w razie potrzeby, rozliczane osobno, patrz 4.2950)",
+      "🩹 Materiały eksploatacyjne (gaza itp.) wliczone"
+    ],
+    "al": [
+      "🦷 Nxjerrje komplekse e dhëmbit nga dentisti",
+      "🔪 Nëse nevojitet: Hapja e mishrave",
+      "⚙️ Nëse nevojitet: Ndarja e dhëmbit (p.sh., për dhëmbë me shumë rrënjë ose rrënjë të thyera)",
+      "🦷 Vlen edhe për dhëmbët e qumështit (nëse nuk bien vetë)",
+      "💉 Anestezi (faturohet veçmas, shih 4.0650)",
+      "🪡 Qepje (nëse nevojiten, faturohen veçmas, shih 4.2950)",
+      "🩹 Materiale harxhuese (garzë, etj.) të përfshira"
+    ],
+    "tr": [
+      "🦷 Diş hekimi tarafından karmaşık diş çekimi",
+      "🔪 Gerekirse: Diş etinin açılması",
+      "⚙️ Gerekirse: Dişin bölünmesi (örn. çok köklü dişler veya kırık kökler için)",
+      "🦷 Süt dişleri için de geçerlidir (kendi başlarına düşmezlerse)",
+      "💉 Anestezi (ayrı faturalandırılır, bkz. 4.0650)",
+      "🪡 Dikişler (gerekirse, ayrı faturalandırılır, bkz. 4.2950)",
+      "🩹 Sarf malzemeleri (gaz bezi vb.) dahil"
+    ],
+    "hr": [
+      "🦷 Složeno vađenje zuba od strane zubara",
+      "🔪 Po potrebi: Otvaranje desni",
+      "⚙️ Po potrebi: Dijeljenje zuba (npr. za višekorijenske zube ili slomljene korijene)",
+      "🦷 Vrijedi i za mliječne zube (ako ne ispadnu sami)",
+      "💉 Anestezija (naplaćuje se zasebno, vidi 4.0650)",
+      "🪡 Šavovi (po potrebi, naplaćuju se zasebno, vidi 4.2950)",
+      "🩹 Potrošni materijal (gaza, itd.) uključen"
+    ],
+    "ta": [
+      "🦷 பல் மருத்துவரால் சிக்கலான பல் பிடுங்கல்",
+      "🔪 தேவைப்பட்டால்: ஈறுகளைத் திறத்தல்",
+      "⚙️ தேவைப்பட்டால்: பல்லைப் பிரித்தல் (எ.கா., பல வேர்களைக் கொண்ட பற்கள் அல்லது உடைந்த வேர்களுக்கு)",
+      "🦷 பால் பற்களுக்கும் பொருந்தும் (அவை தானாக விழவில்லை என்றால்)",
+      "💉 மரத்துப்போகச் செய்தல் (தனித்தனியாக கணக்கிடப்படும், 4.0650 பார்க்கவும்)",
+      "🪡 தையல்கள் (தேவைப்பட்டால், தனித்தனியாக கணக்கிடப்படும், 4.2950 பார்க்கவும்)",
+      "🩹 நுகர்பொருட்கள் (காஸ் போன்றவை) சேர்க்கப்பட்டுள்ளன"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Komplexe Zahnextraktion** durch den Zahnarzt",
+      "👶 **Gilt auch für Milchzähne** (wenn sie nicht von alleine ausfallen)",
+      "🔪 **Typische Anwendungen:** Abgebrochene Zähne, mehrwurzlige Zähne, wurzelbehandelte Zähne, Zähne mit krummen Wurzeln, Wurzelreste",
+      "💉 **Anästhesie:** Wird separat mit 4.0650 (Infiltrationsanästhesie) abgerechnet (max. 6 Anästhesien pro Sitzung)",
+      "🪡 **Nähte:** Maximal 4 Nähte pro Eingriff mit 4.2950 separat abrechenbar (Nahtmaterial inbegriffen)",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.2010.LP «Chirurgischer Eingriff, mittel UV/MV» enthalten",
+      "🔁 **Kombination:** Kann mit anderen chirurgischen Leistungen kombiniert werden (z.B. Wurzelspitzenresektion, Zystenoperation)",
+      "⚠️ **Wichtig:** Bei noch schwierigeren Fällen (z.B. mit Aufklappung) gelten die Ziffern 4.2030 oder 4.2040 mit höherem TP-Wert"
+    ],
+    "fr": [
+      "🦷 **Extraction dentaire complexe** par le dentiste",
+      "👶 **S'applique également aux dents de lait** (si elles ne tombent pas toutes seules)",
+      "🔪 **Applications typiques:** Dents cassées, dents multiradiculées, dents dévitalisées, dents à racines courbées, racines résiduelles",
+      "💉 **Anesthésie:** Facturée séparément avec 4.0650 (anesthésie par infiltration) (max. 6 anesthésies par séance)",
+      "🪡 **Sutures:** Maximum 4 sutures par intervention facturables séparément avec 4.2950 (matériel de suture inclus)",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.2010.LP «Intervention chirurgicale, moyenne UV/MV»",
+      "🔁 **Combinaison:** Peut être combinée avec d'autres prestations chirurgicales (p. ex. résection apicale, opération de kyste)",
+      "⚠️ **Important:** Pour les cas encore plus difficiles (p. ex. avec ouverture), les codes 4.2030 ou 4.2040 avec une valeur TP plus élevée s'appliquent"
+    ],
+    "it": [
+      "🦷 **Estrazione dentale complessa** dal dentista",
+      "👶 **Vale anche per i denti da latte** (se non cadono da soli)",
+      "🔪 **Applicazioni tipiche:** Denti rotti, denti multiradicolari, denti devitalizzati, denti con radici curve, residui radicolari",
+      "💉 **Anestesia:** Fatturata separatamente con 4.0650 (anestesia per infiltrazione) (max. 6 anestesie per seduta)",
+      "🪡 **Suture:** Massimo 4 suture per intervento fatturabili separatamente con 4.2950 (materiale di sutura incluso)",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.2010.LP «Intervento chirurgico, medio UV/MV»",
+      "🔁 **Combinazione:** Può essere combinata con altre prestazioni chirurgiche (ad es. resezione apicale, operazione di cisti)",
+      "⚠️ **Importante:** Per i casi ancora più difficili (ad es. con apertura), si applicano i codici 4.2030 o 4.2040 con valore TP più elevato"
+    ],
+    "en": [
+      "🦷 **Complex tooth extraction** by the dentist",
+      "👶 **Also applies to baby teeth** (if they don't fall out on their own)",
+      "🔪 **Typical applications:** Broken teeth, multi-rooted teeth, root canal treated teeth, teeth with curved roots, root remnants",
+      "💉 **Anesthesia:** Billed separately with 4.0650 (infiltration anesthesia) (max. 6 anesthesias per session)",
+      "🪡 **Sutures:** Maximum 4 sutures per procedure billable separately with 4.2950 (suture material included)",
+      "📦 **Service package:** This service is included in package 4.2010.LP «Surgical procedure, medium UV/MV»",
+      "🔁 **Combination:** Can be combined with other surgical services (e.g., apicoectomy, cyst operation)",
+      "⚠️ **Important:** For even more difficult cases (e.g., with flap opening), codes 4.2030 or 4.2040 with higher TP value apply"
+    ],
+    "es": [
+      "🦷 **Extracción dental compleja** por el dentista",
+      "👶 **También se aplica a dientes de leche** (si no se caen solos)",
+      "🔪 **Aplicaciones típicas:** Dientes rotos, dientes multiradiculares, dientes endodonciados, dientes con raíces curvadas, restos radiculares",
+      "💉 **Anestesia:** Facturada por separado con 4.0650 (anestesia por infiltración) (máx. 6 anestesias por sesión)",
+      "🪡 **Suturas:** Máximo 4 suturas por intervención facturables por separado con 4.2950 (material de sutura incluido)",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.2010.LP «Intervención quirúrgica, media UV/MV»",
+      "🔁 **Combinación:** Puede combinarse con otras prestaciones quirúrgicas (p. ej., resección apical, operación de quiste)",
+      "⚠️ **Importante:** Para casos aún más difíciles (p. ej., con apertura), se aplican los códigos 4.2030 o 4.2040 con mayor valor TP"
+    ],
+    "pt": [
+      "🦷 **Extração dentária complexa** pelo dentista",
+      "👶 **Também se aplica a dentes de leite** (se não caírem sozinhos)",
+      "🔪 **Aplicações típicas:** Dentes partidos, dentes multirradiculares, dentes desvitalizados, dentes com raízes curvas, restos radiculares",
+      "💉 **Anestesia:** Faturada separadamente com 4.0650 (anestesia por infiltração) (máx. 6 anestesias por sessão)",
+      "🪡 **Suturas:** Máximo 4 suturas por intervenção faturáveis separadamente com 4.2950 (material de sutura incluído)",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.2010.LP «Intervenção cirúrgica, média UV/MV»",
+      "🔁 **Combinação:** Pode ser combinada com outras prestações cirúrgicas (p. ex., resseção apical, operação de quisto)",
+      "⚠️ **Importante:** Para casos ainda mais difíceis (p. ex., com abertura), aplicam-se os códigos 4.2030 ou 4.2040 com valor TP mais elevado"
+    ],
+    "pl": [
+      "🦷 **Skomplikowane usunięcie zęba** przez dentystę",
+      "👶 **Dotyczy również zębów mlecznych** (jeśli nie wypadną same)",
+      "🔪 **Typowe zastosowania:** Złamane zęby, zęby wielokorzeniowe, zęby po leczeniu kanałowym, zęby z zakrzywionymi korzeniami, pozostałości korzeniowe",
+      "💉 **Znieczulenie:** Rozliczane osobno z 4.0650 (znieczulenie nasiękowe) (maks. 6 znieczuleń na sesję)",
+      "🪡 **Szwy:** Maksymalnie 4 szwy na zabieg rozliczane osobno z 4.2950 (materiał szewny wliczony)",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.2010.LP «Zabieg chirurgiczny, średni UV/MV»",
+      "🔁 **Kombinacja:** Może być łączona z innymi usługami chirurgicznymi (np. resekcja wierzchołka korzenia, operacja torbieli)",
+      "⚠️ **Ważne:** W jeszcze trudniejszych przypadkach (np. z otwarciem) stosuje się kody 4.2030 lub 4.2040 z wyższą wartością TP"
+    ],
+    "al": [
+      "🦷 **Nxjerrje komplekse e dhëmbit** nga dentisti",
+      "👶 **Vlen edhe për dhëmbët e qumështit** (nëse nuk bien vetë)",
+      "🔪 **Aplikime tipike:** Dhëmbë të thyer, dhëmbë me shumë rrënjë, dhëmbë të trajtuar me kanal, dhëmbë me rrënjë të lakuara, mbetje rrënjësh",
+      "💉 **Anestezi:** Faturohet veçmas me 4.0650 (anestezi me infiltrim) (max. 6 anestezi për seancë)",
+      "🪡 **Qepje:** Maksimumi 4 qepje për ndërhyrje të faturohen veçmas me 4.2950 (materiali i qepjes i përfshirë)",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.2010.LP «Ndërhyrje kirurgjikale, e mesme UV/MV»",
+      "🔁 **Kombinimi:** Mund të kombinohet me shërbime të tjera kirurgjikale (p.sh., rezeksion apikal, operacion kist)",
+      "⚠️ **E rëndësishme:** Për raste edhe më të vështira (p.sh., me hapje), aplikohen kodet 4.2030 ose 4.2040 me vlerë TP më të lartë"
+    ],
+    "tr": [
+      "🦷 **Karmaşık diş çekimi** diş hekimi tarafından",
+      "👶 **Süt dişleri için de geçerlidir** (kendi başlarına düşmezlerse)",
+      "🔪 **Tipik uygulamalar:** Kırık dişler, çok köklü dişler, kanal tedavisi görmüş dişler, eğri köklü dişler, kök kalıntıları",
+      "💉 **Anestezi:** 4.0650 (infiltrasyon anestezisi) ile ayrı faturalandırılır (seans başına maks. 6 anestezi)",
+      "🪡 **Dikişler:** Müdahale başına maksimum 4 dikiş, 4.2950 ile ayrı faturalandırılabilir (dikiş malzemesi dahil)",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.2010.LP «Orta düzey cerrahi müdahale, UV/MV» paketine dahildir",
+      "🔁 **Kombinasyon:** Diğer cerrahi hizmetlerle kombine edilebilir (örn. apeks rezeksiyonu, kist operasyonu)",
+      "⚠️ **Önemli:** Daha da zor vakalar için (örn. flep açılarak), daha yüksek TP değerine sahip 4.2030 veya 4.2040 kodları uygulanır"
+    ],
+    "hr": [
+      "🦷 **Složeno vađenje zuba** od strane zubara",
+      "👶 **Vrijedi i za mliječne zube** (ako ne ispadnu sami)",
+      "🔪 **Tipične primjene:** Slomljeni zubi, višekorijenski zubi, liječeni korijenskim kanalom, zubi sa zakrivljenim korijenima, ostaci korijena",
+      "💉 **Anestezija:** Naplaćuje se zasebno s 4.0650 (infiltracijska anestezija) (maks. 6 anestezija po seansi)",
+      "🪡 **Šavovi:** Maksimalno 4 šava po zahvatu naplativo zasebno s 4.2950 (materijal za šavove uključen)",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.2010.LP «Srednje teška kirurška intervencija, UV/MV»",
+      "🔁 **Kombinacija:** Može se kombinirati s drugim kirurškim uslugama (npr. apikotomija, operacija ciste)",
+      "⚠️ **Važno:** Za još teže slučajeve (npr. s otvaranjem), primjenjuju se kodovi 4.2030 ili 4.2040 s višom TP vrijednošću"
+    ],
+    "ta": [
+      "🦷 **சிக்கலான பல் பிடுங்கல்** பல் மருத்துவரால்",
+      "👶 **பால் பற்களுக்கும் பொருந்தும்** (அவை தானாக விழவில்லை என்றால்)",
+      "🔪 **வழக்கமான பயன்பாடுகள்:** உடைந்த பற்கள், பல வேர் பற்கள், ரூட் கால்வாய் சிகிச்சை பெற்ற பற்கள், வளைந்த வேர்களைக் கொண்ட பற்கள், வேர் எச்சங்கள்",
+      "💉 **மரத்துப்போகச் செய்தல்:** 4.0650 (ஊடுருவல் மரத்துப்போகச் செய்தல்) உடன் தனித்தனியாக கணக்கிடப்படும் (ஒரு அமர்வில் அதிகபட்சம் 6 மரத்துப்போகச் செய்தல்கள்)",
+      "🪡 **தையல்கள்:** ஒரு செயல்முறைக்கு அதிகபட்சம் 4 தையல்கள் 4.2950 உடன் தனித்தனியாக கணக்கிடலாம் (தையல் பொருள் சேர்க்கப்பட்டுள்ளது)",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.2010.LP «நடுத்தர அறுவை சிகிச்சை, UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "🔁 **இணைப்பு:** பிற அறுவை சிகிச்சை சேவைகளுடன் இணைக்கப்படலாம் (எ.கா., வேர் நுனி அகற்றுதல், நீர்க்கட்டு அறுவை சிகிச்சை)",
+      "⚠️ **முக்கியம்:** இன்னும் கடினமான நிகழ்வுகளுக்கு (எ.கா., திறப்புடன்), அதிக TP மதிப்பைக் கொண்ட 4.2030 அல்லது 4.2040 குறியீடுகள் பொருந்தும்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einfacher (4.2000) und aufwändiger Zahnextraktion (4.2010)?",
+        "answer": "Bei der einfachen Extraktion (4.2000) kann der Zahn mit einer Zange direkt gefasst und gezogen werden. Die aufwändige Extraktion (4.2010) ist nötig, wenn der Zahn abgebrochen ist, krumme Wurzeln hat, mehrwurzlig ist oder bereits wurzelbehandelt wurde. Der Zahnarzt muss dann oft den Zahn teilen oder das Zahnfleisch öffnen. Das dauert länger und ist aufwändiger – deshalb ist der Preis höher."
+      },
+      {
+        "question": "Ist die aufwändige Zahnextraktion schmerzhaft?",
+        "answer": "Nein. Der Zahnarzt betäubt die Stelle vorher gründlich mit einer lokalen Anästhesie (4.0650). Während der Behandlung spürst du keinen Schmerz, nur Druck und Bewegungen. Wenn du während der Behandlung doch etwas spürst, sag einfach Bescheid – der Zahnarzt kann nachbetäuben."
+      },
+      {
+        "question": "Wie lange dauert die Heilung nach einer aufwändigen Extraktion?",
+        "answer": "Die Wunde heilt meist innerhalb von 1–2 Wochen. In den ersten Tagen kann die Wunde etwas nachbluten und schmerzen. Dein Zahnarzt wird dir sagen, wie du die Wunde pflegen sollst (kühlen, nicht spülen, nicht rauchen). Fäden werden nach etwa 7–10 Tagen gezogen (4.2900 oder 4.2950). Bei starken Schmerzen oder Fieber solltest du deinen Zahnarzt kontaktieren."
+      },
+      {
+        "question": "Was kostet eine aufwändige Zahnextraktion?",
+        "answer": "Der offizielle TP-Wert ist 104.60 für UV/MV/IV. Bei Privatpatienten (PP) liegt der Preis zwischen 88.90 und 120.30 TP. Dazu kommen die Kosten für die Anästhesie (4.0650, 38.40 TP) und eventuell Nähte (4.2950, 13.90 TP pro Naht). Der tatsächliche Preis in Franken hängt vom Taxpunktwert der Klinik ab (meist 1.00–1.30 CHF pro TP). Frage vorher nach einem Kostenvoranschlag!"
+      },
+      {
+        "question": "Wird die aufwändige Extraktion von der Versicherung bezahlt?",
+        "answer": "Bei UV/MV/IV (Unfall-, Militär-, Invalidenversicherung) wird die Extraktion übernommen, wenn sie im Zusammenhang mit einem Unfall oder einer Krankheit steht. Bei Privatpatienten (PP) müssen die Kosten selbst getragen werden. Viele haben eine private Zahnzusatzversicherung, die einen Teil oder alle Kosten übernimmt. Frage bei deiner Versicherung nach!"
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre l'extraction simple (4.2000) et l'extraction complexe (4.2010)?",
+        "answer": "Lors de l'extraction simple (4.2000), la dent peut être saisie directement avec une pince et extraite. L'extraction complexe (4.2010) est nécessaire lorsque la dent est cassée, a des racines courbées, est multiradiculée ou a déjà été traitée endodontiquement. Le dentiste doit alors souvent sectionner la dent ou ouvrir la gencive. Cela prend plus de temps et est plus complexe – c'est pourquoi le prix est plus élevé."
+      },
+      {
+        "question": "L'extraction complexe est-elle douloureuse?",
+        "answer": "Non. Le dentiste anesthésie soigneusement la zone au préalable avec une anesthésie locale (4.0650). Pendant le traitement, tu ne ressens aucune douleur, seulement une pression et des mouvements. Si tu ressens quelque chose pendant le traitement, dis-le simplement – le dentiste peut refaire l'anesthésie."
+      },
+      {
+        "question": "Combien de temps dure la guérison après une extraction complexe?",
+        "answer": "La plaie guérit généralement en 1 à 2 semaines. Les premiers jours, la plaie peut saigner légèrement et faire mal. Ton dentiste te dira comment prendre soin de la plaie (refroidir, ne pas rincer, ne pas fumer). Les fils sont retirés après environ 7 à 10 jours (4.2900 ou 4.2950). En cas de fortes douleurs ou de fièvre, tu dois contacter ton dentiste."
+      },
+      {
+        "question": "Combien coûte une extraction complexe?",
+        "answer": "La valeur TP officielle est de 104.60 pour UV/MV/IV. Pour les patients privés (PP), le prix se situe entre 88.90 et 120.30 TP. S'ajoutent les frais d'anesthésie (4.0650, 38.40 TP) et éventuellement les sutures (4.2950, 13.90 TP par suture). Le prix réel en francs dépend de la valeur en points du cabinet (généralement 1.00–1.30 CHF par TP). Demande un devis écrit avant!"
+      },
+      {
+        "question": "L'extraction complexe est-elle prise en charge par l'assurance?",
+        "answer": "Pour UV/MV/IV (assurance accidents, militaire, invalidité), l'extraction est prise en charge si elle est liée à un accident ou une maladie. Pour les patients privés (PP), les frais doivent être supportés par eux-mêmes. Beaucoup ont une assurance dentaire privée qui prend en charge une partie ou la totalité des frais. Renseigne-toi auprès de ton assurance!"
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra estrazione semplice (4.2000) ed estrazione complessa (4.2010)?",
+        "answer": "Nell'estrazione semplice (4.2000) il dente può essere afferrato direttamente con una pinza ed estratto. L'estrazione complessa (4.2010) è necessaria quando il dente è rotto, ha radici curve, è multiradicolare o è già stato devitalizzato. Il dentista deve allora spesso sezionare il dente o aprire la gengiva. Ci vuole più tempo ed è più complesso – ecco perché il prezzo è più alto."
+      },
+      {
+        "question": "L'estrazione complessa è dolorosa?",
+        "answer": "No. Il dentista anestetizza accuratamente la zona con un'anestesia locale (4.0650). Durante il trattamento non senti alcun dolore, solo pressione e movimenti. Se durante il trattamento senti qualcosa, dillo semplicemente – il dentista può anestetizzare nuovamente."
+      },
+      {
+        "question": "Quanto dura la guarigione dopo un'estrazione complessa?",
+        "answer": "La ferita guarisce di solito entro 1–2 settimane. Nei primi giorni la ferita può sanguinare un po' e far male. Il tuo dentista ti dirà come prenderti cura della ferita (raffreddare, non risciacquare, non fumare). I punti vengono rimossi dopo circa 7–10 giorni (4.2900 o 4.2950). In caso di forte dolore o febbre, dovresti contattare il tuo dentista."
+      },
+      {
+        "question": "Quanto costa un'estrazione complessa?",
+        "answer": "Il valore TP ufficiale è 104.60 per UV/MV/IV. Per i pazienti privati (PP), il prezzo è tra 88.90 e 120.30 TP. A questi si aggiungono i costi per l'anestesia (4.0650, 38.40 TP) ed eventualmente le suture (4.2950, 13.90 TP per sutura). Il prezzo effettivo in franchi dipende dal valore in punti dello studio (di solito 1.00–1.30 CHF per TP). Chiedi un preventivo scritto prima!"
+      },
+      {
+        "question": "L'estrazione complessa è coperta dall'assicurazione?",
+        "answer": "Per UV/MV/IV (assicurazione infortuni, militare, invalidità), l'estrazione è coperta se è correlata a un infortunio o a una malattia. Per i pazienti privati (PP), i costi devono essere sostenuti da loro stessi. Molti hanno un'assicurazione dentale privata che copre una parte o tutti i costi. Informati presso la tua assicurazione!"
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between simple (4.2000) and complex tooth extraction (4.2010)?",
+        "answer": "With a simple extraction (4.2000), the tooth can be directly grasped with forceps and pulled out. Complex extraction (4.2010) is needed when the tooth is broken, has curved roots, is multi-rooted, or has already had root canal treatment. The dentist then often has to split the tooth or open the gum. This takes longer and is more complex – that's why the price is higher."
+      },
+      {
+        "question": "Is complex tooth extraction painful?",
+        "answer": "No. The dentist thoroughly numbs the area beforehand with local anesthesia (4.0650). During the treatment, you won't feel any pain, only pressure and movements. If you do feel something during the treatment, just let them know – the dentist can administer more anesthetic."
+      },
+      {
+        "question": "How long does healing take after a complex extraction?",
+        "answer": "The wound usually heals within 1–2 weeks. In the first few days, the wound may bleed a little and be sore. Your dentist will tell you how to care for the wound (cooling, no rinsing, no smoking). Stitches are removed after about 7–10 days (4.2900 or 4.2950). If you have severe pain or fever, you should contact your dentist."
+      },
+      {
+        "question": "How much does a complex tooth extraction cost?",
+        "answer": "The official TP value is 104.60 for UV/MV/IV. For private patients (PP), the price ranges from 88.90 to 120.30 TP. Added to this are the costs for anesthesia (4.0650, 38.40 TP) and possibly sutures (4.2950, 13.90 TP per suture). The actual price in Swiss francs depends on the clinic's point value (usually 1.00–1.30 CHF per TP). Ask for a written cost estimate beforehand!"
+      },
+      {
+        "question": "Is complex extraction covered by insurance?",
+        "answer": "For UV/MV/IV (accident, military, disability insurance), the extraction is covered if it is related to an accident or illness. For private patients (PP), the costs must be borne by themselves. Many have private dental insurance that covers part or all of the costs. Check with your insurance company!"
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre la extracción simple (4.2000) y la compleja (4.2010)?",
+        "answer": "En la extracción simple (4.2000), el diente puede ser agarrado directamente con fórceps y extraído. La extracción compleja (4.2010) es necesaria cuando el diente está roto, tiene raíces curvadas, es multiradicular o ya ha sido endodonciado. El dentista entonces a menudo tiene que seccionar el diente o abrir la encía. Esto lleva más tiempo y es más complejo – por eso el precio es más alto."
+      },
+      {
+        "question": "¿Es dolorosa la extracción compleja?",
+        "answer": "No. El dentista adormece la zona previamente con anestesia local (4.0650). Durante el tratamiento no sientes ningún dolor, solo presión y movimientos. Si sientes algo durante el tratamiento, simplemente dilo – el dentista puede poner más anestesia."
+      },
+      {
+        "question": "¿Cuánto tarda la curación después de una extracción compleja?",
+        "answer": "La herida suele curar en 1–2 semanas. En los primeros días, la herida puede sangrar un poco y doler. Tu dentista te dirá cómo cuidar la herida (enfriar, no enjuagar, no fumar). Los puntos se retiran después de unos 7–10 días (4.2900 o 4.2950). Si tienes mucho dolor o fiebre, debes contactar a tu dentista."
+      },
+      {
+        "question": "¿Cuánto cuesta una extracción compleja?",
+        "answer": "El valor TP oficial es 104.60 para UV/MV/IV. Para pacientes privados (PP), el precio está entre 88.90 y 120.30 TP. A esto se suman los costes de anestesia (4.0650, 38.40 TP) y posiblemente suturas (4.2950, 13.90 TP por sutura). El precio real en francos depende del valor en puntos de la clínica (normalmente 1.00–1.30 CHF por TP). ¡Pide un presupuesto por escrito antes!"
+      },
+      {
+        "question": "¿La extracción compleja está cubierta por el seguro?",
+        "answer": "Para UV/MV/IV (seguro de accidentes, militar, invalidez), la extracción está cubierta si está relacionada con un accidente o enfermedad. Para pacientes privados (PP), los costes deben ser asumidos por ellos mismos. Muchos tienen un seguro dental privado que cubre parte o todos los costes. ¡Infórmate en tu seguro!"
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre a extração simples (4.2000) e a complexa (4.2010)?",
+        "answer": "Na extração simples (4.2000), o dente pode ser agarrado diretamente com um fórceps e extraído. A extração complexa (4.2010) é necessária quando o dente está partido, tem raízes curvas, é multirradicular ou já foi desvitalizado. O dentista então muitas vezes tem de seccionar o dente ou abrir a gengiva. Demora mais tempo e é mais complexo – é por isso que o preço é mais alto."
+      },
+      {
+        "question": "A extração complexa é dolorosa?",
+        "answer": "Não. O dentista anestesia cuidadosamente a zona com anestesia local (4.0650). Durante o tratamento não sentes qualquer dor, apenas pressão e movimentos. Se sentires alguma coisa durante o tratamento, diz simplesmente – o dentista pode anestesiar novamente."
+      },
+      {
+        "question": "Quanto tempo demora a cicatrização após uma extração complexa?",
+        "answer": "A ferida geralmente cicatriza em 1–2 semanas. Nos primeiros dias, a ferida pode sangrar um pouco e doer. O teu dentista dir-te-á como cuidar da ferida (arrefecer, não bochechar, não fumar). Os pontos são removidos após cerca de 7–10 dias (4.2900 ou 4.2950). Em caso de dor intensa ou febre, deves contactar o teu dentista."
+      },
+      {
+        "question": "Quanto custa uma extração complexa?",
+        "answer": "O valor TP oficial é 104.60 para UV/MV/IV. Para pacientes privados (PP), o preço situa-se entre 88.90 e 120.30 TP. A estes acrescem os custos de anestesia (4.0650, 38.40 TP) e eventualmente suturas (4.2950, 13.90 TP por sutura). O preço real em francos depende do valor do ponto da clínica (geralmente 1.00–1.30 CHF por TP). Pede um orçamento por escrito antes!"
+      },
+      {
+        "question": "A extração complexa é coberta pelo seguro?",
+        "answer": "Para UV/MV/IV (seguro de acidentes, militar, invalidez), a extração é coberta se estiver relacionada com um acidente ou doença. Para pacientes privados (PP), os custos devem ser suportados por eles próprios. Muitos têm um seguro dentário privado que cobre parte ou todos os custos. Informa-te junto do teu seguro!"
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między prostym (4.2000) a skomplikowanym usunięciem zęba (4.2010)?",
+        "answer": "Przy prostym usunięciu (4.2000) ząb można chwycić bezpośrednio kleszczami i wyrwać. Skomplikowane usunięcie (4.2010) jest potrzebne, gdy ząb jest złamany, ma zakrzywione korzenie, jest wielokorzeniowy lub był już leczony kanałowo. Dentysta często musi wtedy przeciąć ząb lub otworzyć dziąsło. To trwa dłużej i jest bardziej skomplikowane – dlatego cena jest wyższa."
+      },
+      {
+        "question": "Czy skomplikowane usunięcie zęba jest bolesne?",
+        "answer": "Nie. Dentysta dokładnie znieczula miejsce przed zabiegiem znieczuleniem miejscowym (4.0650). Podczas leczenia nie czujesz żadnego bólu, tylko ucisk i ruchy. Jeśli podczas leczenia coś poczujesz, po prostu powiedz – dentysta może podać dodatkowe znieczulenie."
+      },
+      {
+        "question": "Jak długo trwa gojenie po skomplikowanym usunięciu zęba?",
+        "answer": "Rana zwykle goi się w ciągu 1–2 tygodni. W pierwszych dniach rana może lekko krwawić i boleć. Dentysta powie Ci, jak dbać o ranę (chłodzić, nie płukać, nie palić). Szwy są usuwane po około 7–10 dniach (4.2900 lub 4.2950). W przypadku silnego bólu lub gorączki należy skontaktować się z dentystą."
+      },
+      {
+        "question": "Ile kosztuje skomplikowane usunięcie zęba?",
+        "answer": "Oficjalna wartość TP to 104.60 dla UV/MV/IV. Dla pacjentów prywatnych (PP) cena wynosi od 88.90 do 120.30 TP. Do tego dochodzą koszty znieczulenia (4.0650, 38.40 TP) oraz ewentualnie szwów (4.2950, 13.90 TP za szew). Rzeczywista cena we frankach zależy od wartości punktu w klinice (zwykle 1.00–1.30 CHF za TP). Poproś o pisemną wycenę przed zabiegiem!"
+      },
+      {
+        "question": "Czy skomplikowane usunięcie zęba jest refundowane przez ubezpieczenie?",
+        "answer": "W przypadku UV/MV/IV (ubezpieczenie wypadkowe, wojskowe, inwalidzkie) usunięcie jest refundowane, jeśli jest związane z wypadkiem lub chorobą. W przypadku pacjentów prywatnych (PP) koszty muszą być pokryte we własnym zakresie. Wielu ma prywatne ubezpieczenie stomatologiczne, które pokrywa część lub wszystkie koszty. Zapytaj w swoim ubezpieczeniu!"
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis nxjerrjes së thjeshtë (4.2000) dhe asaj komplekse (4.2010)?",
+        "answer": "Në nxjerrjen e thjeshtë (4.2000), dhëmbi mund të kapet drejtpërdrejt me pincë dhe të nxirret. Nxjerrja komplekse (4.2010) është e nevojshme kur dhëmbi është i thyer, ka rrënjë të lakuara, është me shumë rrënjë ose ka pasur trajtim kanali më parë. Dentisti atëherë shpesh duhet ta ndajë dhëmbin ose të hapë mishrat. Kjo zgjat më shumë dhe është më komplekse – prandaj çmimi është më i lartë."
+      },
+      {
+        "question": "A është e dhimbshme nxjerrja komplekse?",
+        "answer": "Jo. Dentisti mpin zonën tërësisht paraprakisht me anestezi lokale (4.0650). Gjatë trajtimit nuk ndjen asnjë dhimbje, vetëm presion dhe lëvizje. Nëse ndjen diçka gjatë trajtimit, thjesht thuaj – dentisti mund të japë më shumë anestezi."
+      },
+      {
+        "question": "Sa kohë zgjat shërimi pas një nxjerrjeje komplekse?",
+        "answer": "Plaga zakonisht shërohet brenda 1–2 javësh. Në ditët e para, plaga mund të rrjedhë pak gjak dhe të dhembë. Dentisti yt do të të tregojë se si të kujdesesh për plagën (ftohje, mos shpëlarje, mos duhan). Qepjet hiqen pas rreth 7–10 ditësh (4.2900 ose 4.2950). Nëse ke dhimbje të forta ose ethe, duhet të kontaktoni dentistin tënd."
+      },
+      {
+        "question": "Sa kushton një nxjerrje komplekse?",
+        "answer": "Vlera zyrtare TP është 104.60 për UV/MV/IV. Për pacientët privatë (PP), çmimi është midis 88.90 dhe 120.30 TP. Këtyre u shtohen kostot për anestezinë (4.0650, 38.40 TP) dhe eventualisht qepjet (4.2950, 13.90 TP për qepje). Çmimi aktual në franga varet nga vlera e pikës së klinikës (zakonisht 1.00–1.30 CHF për TP). Kërko një vlerësim me shkrim paraprakisht!"
+      },
+      {
+        "question": "A mbulohet nxjerrja komplekse nga sigurimi?",
+        "answer": "Për UV/MV/IV (sigurimi i aksidenteve, ushtarak, invaliditeti), nxjerrja mbulohet nëse lidhet me një aksident ose sëmundje. Për pacientët privatë (PP), kostot duhet të përballohen vetë. Shumë kanë një sigurim privat dentar që mbulon një pjesë ose të gjitha kostot. Pyet në sigurimin tënd!"
+      }
+    ],
+    "tr": [
+      {
+        "question": "Basit (4.2000) ve karmaşık diş çekimi (4.2010) arasındaki fark nedir?",
+        "answer": "Basit çekimde (4.2000) diş doğrudan forsepsle kavranıp çekilebilir. Karmaşık çekim (4.2010), diş kırılmışsa, kökleri eğriyse, çok köklüyse veya daha önce kanal tedavisi görmüşse gereklidir. Diş hekimi daha sonra genellikle dişi bölmek veya diş etini açmak zorundadır. Bu daha uzun sürer ve daha karmaşıktır – bu nedenle fiyat daha yüksektir."
+      },
+      {
+        "question": "Karmaşık diş çekimi ağrılı mıdır?",
+        "answer": "Hayır. Diş hekimi bölgeyi önceden lokal anestezi (4.0650) ile iyice uyuşturur. Tedavi sırasında hiç ağrı hissetmezsin, sadece basınç ve hareketler hissedersin. Tedavi sırasında bir şey hissedersen, söylemen yeterli – diş hekimi daha fazla anestezi yapabilir."
+      },
+      {
+        "question": "Karmaşık çekim sonrası iyileşme ne kadar sürer?",
+        "answer": "Yara genellikle 1–2 hafta içinde iyileşir. İlk birkaç gün yara biraz kanayabilir ve ağrıyabilir. Diş hekimin yaranın nasıl bakımını yapacağını söyleyecektir (soğutma, durulama yapmama, sigara içmeme). Dikişler yaklaşık 7–10 gün sonra alınır (4.2900 veya 4.2950). Şiddetli ağrı veya ateş varsa, diş hekimine başvurmalısın."
+      },
+      {
+        "question": "Karmaşık diş çekimi ne kadardır?",
+        "answer": "Resmi TP değeri UV/MV/IV için 104.60'tır. Özel hastalar (PP) için fiyat 88.90 ile 120.30 TP arasındadır. Buna anestezi (4.0650, 38.40 TP) ve muhtemelen dikişler (4.2950, dikiş başına 13.90 TP) için masraflar eklenir. Frank cinsinden gerçek fiyat, kliniğin puan değerine bağlıdır (genellikle TP başına 1.00–1.30 CHF). Önceden yazılı maliyet tahmini iste!"
+      },
+      {
+        "question": "Karmaşık çekim sigorta tarafından karşılanır mı?",
+        "answer": "UV/MV/IV (kaza, askerlik, engellilik sigortası) için, çekim bir kaza veya hastalıkla bağlantılıysa karşılanır. Özel hastalar (PP) için masraflar kendileri tarafından karşılanmalıdır. Birçoğunun masrafların bir kısmını veya tamamını karşılayan özel diş sigortası vardır. Sigorta şirketine sor!"
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između jednostavnog (4.2000) i složenog vađenja zuba (4.2010)?",
+        "answer": "Kod jednostavnog vađenja (4.2000) zub se može izravno uhvatiti kliještima i izvaditi. Složeno vađenje (4.2010) potrebno je kada je zub slomljen, ima zakrivljene korijene, višekorijenski je ili je već liječen korijenskim kanalom. Zubar tada često mora podijeliti zub ili otvoriti desni. To traje duže i složenije je – zato je cijena viša."
+      },
+      {
+        "question": "Je li složeno vađenje zuba bolno?",
+        "answer": "Ne. Zubar prethodno temeljito umrtvi područje lokalnom anestezijom (4.0650). Tijekom liječenja ne osjećaš bol, samo pritisak i pokrete. Ako tijekom liječenja osjetiš nešto, jednostavno reci – zubar može dati dodatnu anesteziju."
+      },
+      {
+        "question": "Koliko dugo traje zacjeljivanje nakon složenog vađenja?",
+        "answer": "Rana obično zacjeljuje unutar 1–2 tjedna. Prvih dana rana može malo krvariti i boljeti. Zubar će ti reći kako njegovati ranu (hladiti, ne ispirati, ne pušiti). Konci se uklanjaju nakon otprilike 7–10 dana (4.2900 ili 4.2950). Ako imaš jake bolove ili vrućicu, trebaš kontaktirati zubara."
+      },
+      {
+        "question": "Koliko košta složeno vađenje zuba?",
+        "answer": "Službena TP vrijednost je 104.60 za UV/MV/IV. Za privatne pacijente (PP) cijena je između 88.90 i 120.30 TP. Tome se dodaju troškovi anestezije (4.0650, 38.40 TP) i eventualno šavova (4.2950, 13.90 TP po šavu). Stvarna cijena u francima ovisi o vrijednosti boda klinike (obično 1.00–1.30 CHF po TP). Zatraži pismenu procjenu troškova prije zahvata!"
+      },
+      {
+        "question": "Pokriva li osiguranje složeno vađenje zuba?",
+        "answer": "Za UV/MV/IV (osiguranje od nezgode, vojno, invalidsko), vađenje je pokriveno ako je povezano s nezgodom ili bolešću. Za privatne pacijente (PP) troškove moraju snositi sami. Mnogi imaju privatno stomatološko osiguranje koje pokriva dio ili sve troškove. Provjeri u svom osiguranju!"
+      }
+    ],
+    "ta": [
+      {
+        "question": "எளிய (4.2000) மற்றும் சிக்கலான பல் பிடுங்கலுக்கும் (4.2010) என்ன வித்தியாசம்?",
+        "answer": "எளிய பிடுங்கலில் (4.2000) பல்லை நேரடியாக ஃபோர்செப்ஸால் பிடித்து இழுக்க முடியும். சிக்கலான பிடுங்கல் (4.2010) பல் உடைந்திருந்தால், வேர்கள் வளைந்திருந்தால், பல வேர்களைக் கொண்டிருந்தால் அல்லது ஏற்கனவே ரூட் கால்வாய் சிகிச்சை பெற்றிருந்தால் தேவைப்படுகிறது. பல் மருத்துவர் பின்னர் பெரும்பாலும் பல்லைப் பிரிக்க வேண்டும் அல்லது ஈறுகளைத் திறக்க வேண்டும். இது அதிக நேரம் எடுக்கும் மற்றும் மிகவும் சிக்கலானது – அதனால்தான் விலை அதிகம்."
+      },
+      {
+        "question": "சிக்கலான பல் பிடுங்கல் வலியை ஏற்படுத்துமா?",
+        "answer": "இல்லை. பல் மருத்துவர் முன்கூட்டியே உள்ளூர் மரத்துப்போகச் செய்தலுடன் (4.0650) அந்தப் பகுதியை முழுமையாக மரத்துப்போகச் செய்கிறார். சிகிச்சையின் போது உங்களுக்கு எந்த வலியும் தெரியாது, அழுத்தம் மற்றும் அசைவுகள் மட்டுமே தெரியும். சிகிச்சையின் போது ஏதாவது உணர்ந்தால், சொல்லுங்கள் – பல் மருத்துவர் மேலும் மரத்துப்போகச் செய்யலாம்."
+      },
+      {
+        "question": "சிக்கலான பிடுங்கலுக்குப் பிறகு குணமடைய எவ்வளவு நேரம் ஆகும்?",
+        "answer": "காயம் பொதுவாக 1–2 வாரங்களில் குணமாகும். முதல் சில நாட்களில், காயம் சிறிது இரத்தம் கசியலாம் மற்றும் வலிக்கலாம். உங்கள் பல் மருத்துவர் காயத்தை எவ்வாறு பராமரிப்பது என்று கூறுவார் (குளிர்வித்தல், துவைக்காதீர்கள், புகைபிடிக்காதீர்கள்). தையல்கள் சுமார் 7–10 நாட்களுக்குப் பிறகு அகற்றப்படும் (4.2900 அல்லது 4.2950). கடுமையான வலி அல்லது காய்ச்சல் இருந்தால், உங்கள் பல் மருத்துவரைத் தொடர்பு கொள்ள வேண்டும்."
+      },
+      {
+        "question": "சிக்கலான பல் பிடுங்கலுக்கு எவ்வளவு செலவாகும்?",
+        "answer": "அதிகாரப்பூர்வ TP மதிப்பு UV/MV/IV க்கு 104.60 ஆகும். தனியார் நோயாளிகளுக்கு (PP), விலை 88.90 முதல் 120.30 TP வரை இருக்கும். இதில் மரத்துப்போகச் செய்தல் (4.0650, 38.40 TP) மற்றும் தையல்கள் (4.2950, ஒவ்வொரு தையலுக்கும் 13.90 TP) ஆகியவற்றிற்கான செலவுகள் சேர்க்கப்படும். ஃபிராங்க்களில் உண்மையான விலை கிளினிக்கின் புள்ளி மதிப்பைப் பொறுத்தது (வழக்கமாக TP க்கு 1.00–1.30 CHF). முன்கூட்டியே எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "சிக்கலான பிடுங்கல் காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "UV/MV/IV (விபத்து, இராணுவம், ஊனமுறை காப்பீடு) க்கு, பிடுங்கல் ஒரு விபத்து அல்லது நோயுடன் தொடர்புடையதாக இருந்தால் மறைக்கப்படுகிறது. தனியார் நோயாளிகளுக்கு (PP), செலவுகளை தாங்களே ஏற்க வேண்டும். பலருக்கு செலவுகளின் ஒரு பகுதி அல்லது அனைத்தையும் மறைக்கும் தனியார் பல் காப்பீடு உள்ளது. உங்கள் காப்பீட்டு நிறுவனத்தில் கேளுங்கள்!"
+      }
+    ]
+  }
+}

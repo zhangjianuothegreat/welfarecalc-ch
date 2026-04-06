@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
+    <title>சுவிஸ் சமூக நலன் கால்குலேட்டர் & பில் டிகோடர் | WelfareCalc.ch</title>
+    <meta name="description" content="WelfareCalc.ch மூலம் உங்கள் சுவிஸ் சமூக நலன்களை (AHV, IV, EL) இலவசமாகவும், பதிவு இல்லாமலும் கணக்கிடுங்கள். உங்கள் DENTOTAR பில் உள்ள மறைக்கப்பட்ட செலவுகளைக் கண்டுபிடித்து, ஏமாறாமல் பணத்தை மிச்சப்படுத்துங்கள். உண்மை மட்டும்.">
+
+    <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        .container { max-width: 1200px; width: 100%; flex: 1; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
+        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
+        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
+        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
+        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
+        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
+        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
+        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
+        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
+        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
+        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
+        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
+        .seo-info li { margin: 0.4rem 0; }
+        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
+        .footer a { color: #0050a4; text-decoration: none; }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>WelfareCalc.ch</h1>
+            <div class="slogan">யூகிப்பதை நிறுத்துங்கள். தெரிந்துகொள்ள ஆரம்பியுங்கள்.</div>
+            <p class="subtitle">
+                சுவிஸ் சமூக நலன்களையும் பல் பில்களையும் கண்டுபிடிக்கும் ஒரே உண்மையான சுயாதீன போர்டல்.<br>
+                பதிவு இல்லை. கண்காணிப்பு இல்லை. முட்டாள்தனம் இல்லை. உண்மை மட்டுமே.
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <div class="choice-instruction">📌 உங்கள் டிகோடரைத் தேர்ந்தெடுக்கவும்</div>
+        </div>
+
+        <div class="tools-grid">
+            <a href="https://www.welfarecalc.ch/ta.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">⚖️📊</div>
+                <div class="tool-title">சுவிஸ் நலன் கால்குலேட்டர்</div>
+                <div class="tool-description">
+                    அரசு உங்களுக்குக் கொடுக்க வேண்டியதை சரியாகக் கண்டுபிடியுங்கள் — AHV, IV, EL, பிரீமியம் குறைப்புகள். 
+                    <strong>ஆயிரக்கணக்கான ஃப்ராங்க்களை மேசையில் விட்டுவிடுவதை நிறுத்துங்கள்.</strong>
+                </div>
+            </a>
+            
+            <a href="https://www.welfarecalc.ch/blog/ta/dental/dental_ta.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">🦷💰</div>
+                <div class="tool-title">சுவிஸ் பில் ஆடிட்டர்</div>
+                <div class="tool-description">
+                    மறைக்கப்பட்ட Taxpunktwert மற்றும் DENTOTAR குறியீடுகள் உங்கள் பணத்தை அமைதியாக வடிகட்டுகின்றன. 
+                    <strong>உங்கள் பல் பில்லை டிகோட் செய்து, இன்றே அதிக கட்டணம் செலுத்துவதை நிறுத்துங்கள்.</strong>
+                </div>
+            </a>
+        </div>
+
+        <div class="seo-info">
+            <h2>சுவிஸ் சமூக & பல் செலவுகளுக்கான உங்கள் உயிர்காப்பு கிட்</h2>
+            <p>WelfareCalc.ch அமைப்பில் பெரும்பாலும் இல்லாத வெளிப்படைத்தன்மையை வழங்குகிறது. எங்களின் <strong>சமூக நலன் கால்குலேட்டர்</strong> மூலம் AHV, IV மற்றும் கூடுதல் பலன்களின் (EL) சிக்கலான உலகில் வழிசெலுத்துங்கள். <strong>சுவிஸ் பில் ஆடிட்டர்</strong> மூலம், 5 நிமிட சோதனைக்கு 200 CHF ஏன் செலவாகிறது மற்றும் உங்கள் இன்வாய்ஸில் உள்ள ஒவ்வொரு DENTOTAR குறியீட்டையும் எவ்வாறு சரிபார்க்கலாம் என்பதைப் புரிந்துகொள்ளுங்கள்.</p>
+            
+            <h3>உங்கள் பல் மருத்துவருக்கு அதிகமாகச் செலுத்துவதை நிறுத்துங்கள்</h3>
+            <p>சுவிஸ் பல் பில்கள் ரகசிய மொழியில் எழுதப்படுகின்றன: வரிப் புள்ளிகள் (TP) மற்றும் புள்ளி மதிப்புகள் (Taxpunktwert). எங்கள் வழிகாட்டி வெளிப்படுத்துவது:</p>
+            <ul>
+                <li><strong>DENTOTAR பொறி</strong> – 4.0000 மற்றும் 4.1110 போன்ற குறியீடுகள் உங்கள் பில்லை உயர்த்திப் பயன்படுத்தப்படும் விதம்.</li>
+                <li><strong>காப்பீட்டு ROI</strong> – பெரும்பாலான கூடுதல் பல் காப்பீடு பெரியவர்களுக்கு ஏன் "கணிதத் தோல்வி" என்பது.</li>
+                <li><strong>மறைக்கப்பட்ட விலைகள்</strong> – அதே பல் நிரப்புதல் ஒரு கிளினிக்கில் 110 CHF ஆகவும், இன்னொன்றில் 160 CHF ஆகவும் ஏன் இருக்கிறது.</li>
+                <li><strong>நோயாளியின் உரிமைகள்</strong> – இரண்டாவது கருத்தை எவ்வாறு கோருவது மற்றும் "அவசர" சிகிச்சை திட்டங்களை எவ்வாறு சவால் செய்வது.</li>
+            </ul>
+            
+            <h3>சமூக நலன்கள் – உங்களுக்கு உரியதைப் பெறுங்கள்</h3>
+            <p>சுவிட்சர்லாந்தில் பலர் விண்ணப்ப செயல்முறை மிரட்டலாக இருப்பதால் ஆயிரக்கணக்கான ஃப்ராங்க்களை இழக்கிறார்கள். AHV, IV, மற்றும் பிரீமியம் குறைப்புகளுக்கான (IPV) 2026 வழிகாட்டுதல்களை நாங்கள் எளிமைப்படுத்துகிறோம்.</p>
+            
+            <h3>பன்மொழி & தனியுரிமை முதன்மை</h3>
+            <p>நிதி தெளிவு அனைவருக்கும் அணுகக்கூடியதாக இருக்க வேண்டும் என்பதில் நாங்கள் நம்பிக்கை கொண்டுள்ளோம். எங்கள் கருவிகள் <strong>பன்மொழி ஆதரவை</strong> வழங்குகின்றன, இதனால் சுவிட்சர்லாந்தில் உள்ள சர்வதேச சமூகம் மொழித் தடைகள் இல்லாமல் தங்கள் உரிமைகளைப் புரிந்துகொள்ள முடியும். சிறப்பான விஷயம்: அனைத்து கணக்கீடுகளும் உங்கள் உலாவியில் <strong>உள்நாட்டில் இயங்குகின்றன</strong>. நாங்கள் உங்கள் தரவைச் சேமிப்பதில்லை, உங்கள் அடையாளத்தைக் கண்காணிப்பதுமில்லை.</p>
+            
+            <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+                📌 தகவல்கள் <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO</a> மற்றும் <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH</a> இன் 2026 அதிகாரப்பூர்வ தரங்களுக்கு எதிராக சரிபார்க்கப்பட்டது.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>WelfareCalc.ch • இலவசம் • அநாமதேயம் • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="impressum.html">முத்திரை</a> • 
+            <a href="datenschutz.html">தனியுரிமைக் கொள்கை</a> • 
+            <a href="haftung.html">பொறுப்புத் துறப்பு</a>
+        </p>
+    </div>
+</body>
+</html>

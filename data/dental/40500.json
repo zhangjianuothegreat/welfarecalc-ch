@@ -1,0 +1,472 @@
+{
+  "code": "4.0500",
+  "name_de": "Intraorales Röntgenbild",
+  "display_name": {
+    "de": "Zahn-Röntgen (Einzelbild)",
+    "fr": "Radiographie dentaire (image unique)",
+    "it": "Radiografia dentale (singola)",
+    "en": "Dental X-ray (single image)",
+    "es": "Radiografía dental (imagen única)",
+    "pt": "Radiografia dentária (imagem única)",
+    "pl": "Rentgen zęba (pojedynczy obraz)",
+    "al": "Rreze X dentare (imazh i vetëm)",
+    "tr": "Diş röntgeni (tek görüntü)",
+    "hr": "Zubni rendgen (pojedinačna slika)",
+    "ta": "பல் எக்ஸ்-ரே (ஒற்றை படம்)"
+  },
+  "search_keywords": {
+    "de": ["röntgen", "zahnröntgen", "röntgenbild", "intraoral", "zahnfilm", "röntgenaufnahme", "einzelbild"],
+    "fr": ["radiographie", "radio dentaire", "cliché", "intraoral", "film dentaire", "image radiographique"],
+    "it": ["radiografia", "rx", "lastra", "intraorale", "film dentale", "immagine radiografica"],
+    "en": ["x-ray", "dental x-ray", "radiograph", "intraoral", "dental film", "x-ray image"],
+    "es": ["radiografía", "rayos x", "placa dental", "intraoral", "película dental", "imagen radiográfica"],
+    "pt": ["radiografia", "raios x", "chapa dentária", "intraoral", "película dentária", "imagem radiográfica"],
+    "pl": ["rentgen", "zdjęcie rentgenowskie", "radiogram", "wewnątrzustny", "film zębowy"],
+    "al": ["rreze x", "radiografi", "foto rreze x", "intraoral", "film dentar"],
+    "tr": ["röntgen", "diş röntgeni", "radyografi", "ağız içi", "diş filmi"],
+    "hr": ["rendgen", "zubni rendgen", "radiogram", "intraoralni", "zubni film"],
+    "ta": ["எக்ஸ்-ரே", "பல் எக்ஸ்-ரே", "ரேடியோகிராஃப்", "வாய்க்குள்", "பல் படம்"]
+  },
+  "tp_uv_mviv": 19.20,
+  "tp_pp_max": 22.10,
+  "tp_pp_min": 16.30,
+  "chapter": "01.11",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Der Zahnarzt macht ein Foto von deinen Zähnen, aber mit Röntgenstrahlen. So kann er sehen, was in den Zähnen und im Kieferknochen ist – zum Beispiel Karies, die man von außen nicht sieht. Das Bild ist digital, also am Computer. Es ist wie ein Foto, aber durch die Zähne hindurch!",
+    "fr": "Le dentiste prend une photo de tes dents, mais avec des rayons X. Ainsi, il peut voir ce qui se trouve à l'intérieur des dents et dans l'os de la mâchoire – par exemple des caries que l'on ne voit pas de l'extérieur. L'image est numérique, donc sur l'ordinateur. C'est comme une photo, mais à travers les dents!",
+    "it": "Il dentista fa una foto dei tuoi denti, ma con i raggi X. Così può vedere cosa c'è dentro i denti e nell'osso della mascella – per esempio carie che non si vedono dall'esterno. L'immagine è digitale, quindi sul computer. È come una foto, ma attraverso i denti!",
+    "en": "The dentist takes a picture of your teeth, but with X-rays. This way they can see what's inside the teeth and in the jawbone – for example, cavities that you can't see from the outside. The image is digital, so on the computer. It's like a photo, but through the teeth!",
+    "es": "El dentista toma una foto de tus dientes, pero con rayos X. Así puede ver lo que hay dentro de los dientes y en el hueso de la mandíbula – por ejemplo, caries que no se ven desde fuera. La imagen es digital, en el ordenador. ¡Es como una foto, pero a través de los dientes!",
+    "pt": "O dentista tira uma foto dos teus dentes, mas com raios X. Assim pode ver o que está dentro dos dentes e no osso da mandíbula – por exemplo, cáries que não se veem por fora. A imagem é digital, no computador. É como uma foto, mas através dos dentes!",
+    "pl": "Dentysta robi zdjęcie Twoich zębów, ale za pomocą promieni rentgenowskich. Dzięki temu może zobaczyć, co jest wewnątrz zębów i w kości szczęki – na przykład próchnicę, której nie widać z zewnątrz. Obraz jest cyfrowy, na komputerze. To jak zdjęcie, ale przez zęby!",
+    "al": "Dentisti bën një foto të dhëmbëve të tu, por me rreze X. Në këtë mënyrë ai mund të shohë se çfarë është brenda dhëmbëve dhe në kockën e nofullës – për shembull karies që nuk duket nga jashtë. Imazhi është dixhital, pra në kompjuter. Është si një foto, por përmes dhëmbëve!",
+    "tr": "Diş hekimi dişlerinin fotoğrafını çeker, ama röntgen ışınlarıyla. Böylece dişlerin içinde ve çene kemiğinde ne olduğunu görebilir – örneğin dışarıdan görünmeyen çürükleri. Görüntü dijitaldir, yani bilgisayarda. Dişlerin içinden bir fotoğraf gibi!",
+    "hr": "Zubar snima sliku tvojih zuba, ali rendgenskim zrakama. Na taj način može vidjeti što je unutar zuba i u čeljusnoj kosti – na primjer karijes koji se ne vidi izvana. Slika je digitalna, na računalu. To je kao fotografija, ali kroz zube!",
+    "ta": "பல் மருத்துவர் உங்கள் பற்களின் படத்தை எடுக்கிறார், ஆனால் எக்ஸ்-கதிர்கள் மூலம். இதனால் பற்களின் உள்ளேயும் தாடை எலும்பிலும் என்ன இருக்கிறது என்று பார்க்க முடியும் – உதாரணமாக வெளியில் இருந்து தெரியாத புழுக்கள். படம் டிஜிட்டல், அதாவது கணினியில். இது ஒரு புகைப்படம் போல, ஆனால் பற்கள் வழியாக!"
+  },
+  "what_is_included": {
+    "de": [
+      "📸 Ein einzelnes Röntgenbild eines Zahnes oder eines kleinen Bereichs",
+      "🖥️ Digitale Bildaufnahme (kein Papierausdruck, wird auf Computer gespeichert)",
+      "👨‍⚕️ Beurteilung des Bildes durch den Zahnarzt (Diagnose)",
+      "💾 Digitale Speicherung in deiner Patientenakte",
+      "📤 Bei Versicherungsfällen: digitale Abgabe an die Versicherung (nicht als PDF)"
+    ],
+    "fr": [
+      "📸 Une seule radiographie d'une dent ou d'une petite zone",
+      "🖥️ Prise d'image numérique (pas d'impression, stockée sur ordinateur)",
+      "👨‍⚕️ Interprétation de l'image par le dentiste (diagnostic)",
+      "💾 Stockage numérique dans ton dossier patient",
+      "📤 En cas d'assurance: remise numérique à l'assurance (pas au format PDF)"
+    ],
+    "it": [
+      "📸 Una singola radiografia di un dente o di una piccola area",
+      "🖥️ Acquisizione digitale dell'immagine (nessuna stampa, archiviata su computer)",
+      "👨‍⚕️ Valutazione dell'immagine da parte del dentista (diagnosi)",
+      "💾 Archiviazione digitale nella tua cartella clinica",
+      "📤 Per casi assicurativi: consegna digitale all'assicurazione (non in PDF)"
+    ],
+    "en": [
+      "📸 A single X-ray image of one tooth or a small area",
+      "🖥️ Digital image capture (no printout, stored on computer)",
+      "👨‍⚕️ Image evaluation by the dentist (diagnosis)",
+      "💾 Digital storage in your patient file",
+      "📤 For insurance cases: digital submission to the insurance company (not as PDF)"
+    ],
+    "es": [
+      "📸 Una sola radiografía de un diente o una pequeña área",
+      "🖥️ Captura digital de la imagen (sin impresión, almacenada en ordenador)",
+      "👨‍⚕️ Evaluación de la imagen por el dentista (diagnóstico)",
+      "💾 Almacenamiento digital en tu historial",
+      "📤 Para casos de seguro: entrega digital a la aseguradora (no en PDF)"
+    ],
+    "pt": [
+      "📸 Uma única radiografia de um dente ou de uma pequena área",
+      "🖥️ Captura digital da imagem (sem impressão, armazenada no computador)",
+      "👨‍⚕️ Avaliação da imagem pelo dentista (diagnóstico)",
+      "💾 Armazenamento digital no teu processo clínico",
+      "📤 Para casos de seguro: entrega digital à seguradora (não em PDF)"
+    ],
+    "pl": [
+      "📸 Pojedyncze zdjęcie rentgenowskie jednego zęba lub małego obszaru",
+      "🖥️ Cyfrowe przechwytywanie obrazu (bez wydruku, przechowywane na komputerze)",
+      "👨‍⚕️ Ocena obrazu przez dentystę (diagnoza)",
+      "💾 Cyfrowe przechowywanie w Twojej dokumentacji",
+      "📤 Dla przypadków ubezpieczeniowych: cyfrowe przekazanie ubezpieczycielowi (nie jako PDF)"
+    ],
+    "al": [
+      "📸 Një imazh i vetëm me rreze X i një dhëmbi ose një zone të vogël",
+      "🖥️ Kapje dixhitale e imazhit (pa printim, ruhet në kompjuter)",
+      "👨‍⚕️ Vlerësimi i imazhit nga dentisti (diagnozë)",
+      "💾 Ruajtje dixhitale në dosjen tënde të pacientit",
+      "📤 Për raste sigurimi: dorëzim dixhital te sigurimi (jo si PDF)"
+    ],
+    "tr": [
+      "📸 Tek bir dişin veya küçük bir alanın röntgen görüntüsü",
+      "🖥️ Dijital görüntü yakalama (çıktı yok, bilgisayarda saklanır)",
+      "👨‍⚕️ Görüntünün diş hekimi tarafından değerlendirilmesi (teşhis)",
+      "💾 Hasta dosyanda dijital depolama",
+      "📤 Sigorta durumlarında: sigortaya dijital teslim (PDF olarak değil)"
+    ],
+    "hr": [
+      "📸 Pojedinačna rendgenska slika jednog zuba ili malog područja",
+      "🖥️ Digitalno snimanje slike (bez ispisa, pohranjuje se na računalu)",
+      "👨‍⚕️ Procjena slike od strane zubara (dijagnoza)",
+      "💾 Digitalno pohranjivanje u tvoju medicinsku dokumentaciju",
+      "📤 Za slučajeve osiguranja: digitalna dostava osiguranju (ne kao PDF)"
+    ],
+    "ta": [
+      "📸 ஒரு பல்லின் அல்லது சிறிய பகுதியின் ஒற்றை எக்ஸ்-ரே படம்",
+      "🖥️ டிஜிட்டல் படம் பிடிப்பு (அச்சு இல்லை, கணினியில் சேமிக்கப்படும்)",
+      "👨‍⚕️ பல் மருத்துவரால் படம் மதிப்பீடு (நோயறிதல்)",
+      "💾 உங்கள் நோயாளி கோப்பில் டிஜிட்டல் சேமிப்பு",
+      "📤 காப்பீட்டு நிகழ்வுகளுக்கு: காப்பீட்டிற்கு டிஜிட்டல் சமர்ப்பிப்பு (PDF ஆக அல்ல)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "📸 **Einzelnes Röntgenbild eines Zahnes oder einer kleinen Region**",
+      "💻 **Nur digitale Formate sind zulässig** (PDF-Format ist nicht erlaubt!)",
+      "🏥 **Bei UV/MV/IV:** Das Bild muss in fotografischer Qualität und digital an die Versicherung übermittelt werden. Das PDF-Format ist für die Abgabe an die Versicherung nicht zulässig, da es die Bildqualität verringert.",
+      "📦 **In Leistungspaketen enthalten:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Zusätzliche Bilder:** Dürfen nur mit schriftlicher Begründung abgerechnet werden, wenn sie für die Behandlung notwendig und wirtschaftlich sind",
+      "⏱️ **Aufbewahrung:** Bei UVG-Fällen müssen die Bilder 30 Jahre archiviert werden und nach Behandlungsende an den Versicherer übergeben werden",
+      "📋 **Für dich als Patient:** Du musst nichts tun. Dein Zahnarzt kümmert sich um die richtige digitale Übergabe an die Versicherung. Wenn du die Bilder selbst haben möchtest (z.B. als PDF oder Ausdruck), kannst du sie beim Zahnarzt anfordern – das ist für dich als Patient völlig in Ordnung."
+    ],
+    "fr": [
+      "📸 **Radiographie unique d'une dent ou d'une petite région**",
+      "💻 **Seuls les formats numériques sont autorisés** (le format PDF n'est pas autorisé!)",
+      "🏥 **Pour UV/MV/IV:** L'image doit être transmise à l'assurance en qualité photographique et au format numérique. Le format PDF n'est pas accepté pour la remise à l'assurance car il réduit la qualité de l'image.",
+      "📦 **Inclus dans les forfaits de prestations:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Images supplémentaires:** Ne peuvent être facturées qu'avec une justification écrite, si elles sont nécessaires et économiques pour le traitement",
+      "⏱️ **Conservation:** Pour les cas UV, les images doivent être archivées pendant 30 ans et remises à l'assureur après la fin du traitement",
+      "📋 **Pour toi en tant que patient:** Tu n'as rien à faire. Ton dentiste se charge de la transmission numérique correcte à l'assurance. Si tu souhaites obtenir les images toi-même (par exemple en PDF ou en impression), tu peux les demander à ton dentiste – c'est tout à fait acceptable pour toi en tant que patient."
+    ],
+    "it": [
+      "📸 **Singola radiografia di un dente o di una piccola regione**",
+      "💻 **Solo formati digitali sono consentiti** (il formato PDF non è ammesso!)",
+      "🏥 **Per UV/MV/IV:** L'immagine deve essere trasmessa all'assicurazione in qualità fotografica e in formato digitale. Il formato PDF non è accettato per la consegna all'assicurazione perché riduce la qualità dell'immagine.",
+      "📦 **Incluso nei pacchetti di prestazioni:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Immagini aggiuntive:** Possono essere fatturate solo con giustificazione scritta, se necessarie ed economiche per il trattamento",
+      "⏱️ **Conservazione:** Per i casi UV, le immagini devono essere archiviate per 30 anni e consegnate all'assicuratore dopo il trattamento",
+      "📋 **Per te come paziente:** Non devi fare nulla. Il tuo dentista si occuperà della corretta consegna digitale all'assicurazione. Se desideri avere le immagini per te (ad esempio come PDF o stampa), puoi richiederle al tuo dentista – per te come paziente va benissimo."
+    ],
+    "en": [
+      "📸 **Single X-ray image of one tooth or a small area**",
+      "💻 **Only digital formats are permitted** (PDF format is NOT allowed!)",
+      "🏥 **For UV/MV/IV:** The image must be submitted to the insurance company in photographic quality and digital format. PDF format is not accepted for submission to the insurance company because it reduces image quality.",
+      "📦 **Included in service packages:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Additional images:** May only be billed with written justification, if necessary and economical for the treatment",
+      "⏱️ **Storage:** For UV cases, images must be archived for 30 years and handed over to the insurer after treatment completion",
+      "📋 **For you as a patient:** You don't need to do anything. Your dentist will handle the correct digital submission to the insurance company. If you want a copy of the images for yourself (e.g., as PDF or printout), you can ask your dentist – that is perfectly fine for you as a patient."
+    ],
+    "es": [
+      "📸 **Radiografía única de un diente o una pequeña zona**",
+      "💻 **Solo se permiten formatos digitales** (¡el formato PDF no está permitido!)",
+      "🏥 **Para UV/MV/IV:** La imagen debe entregarse al seguro en calidad fotográfica y formato digital. El formato PDF no se acepta para la entrega al seguro porque reduce la calidad de la imagen.",
+      "📦 **Incluido en paquetes de servicios:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Imágenes adicionales:** Solo pueden facturarse con justificación escrita, si son necesarias y económicas para el tratamiento",
+      "⏱️ **Conservación:** Para casos UV, las imágenes deben archivarse durante 30 años y entregarse al asegurador al finalizar el tratamiento",
+      "📋 **Para ti como paciente:** No tienes que hacer nada. Tu dentista se encargará de la correcta entrega digital al seguro. Si quieres tener las imágenes para ti (por ejemplo, como PDF o impresión), puedes pedírselas a tu dentista – para ti como paciente está perfectamente bien."
+    ],
+    "pt": [
+      "📸 **Radiografia única de um dente ou de uma pequena área**",
+      "💻 **Apenas formatos digitais são permitidos** (o formato PDF NÃO é permitido!)",
+      "🏥 **Para UV/MV/IV:** A imagem deve ser entregue ao seguro em qualidade fotográfica e formato digital. O formato PDF não é aceite para entrega ao seguro porque reduz a qualidade da imagem.",
+      "📦 **Incluído em pacotes de serviços:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Imagens adicionais:** Só podem ser facturadas com justificação escrita, se necessárias e económicas para o tratamento",
+      "⏱️ **Armazenamento:** Para casos UV, as imagens devem ser arquivadas por 30 anos e entregues à seguradora após o tratamento",
+      "📋 **Para ti como paciente:** Não tens de fazer nada. O teu dentista tratará da correta entrega digital à seguradora. Se quiseres ter as imagens para ti (por exemplo, como PDF ou impressão), podes pedi-las ao teu dentista – para ti como paciente está perfeitamente bem."
+    ],
+    "pl": [
+      "📸 **Pojedyncze zdjęcie rentgenowskie jednego zęba lub małego obszaru**",
+      "💻 **Dozwolone są tylko formaty cyfrowe** (format PDF NIE jest dozwolony!)",
+      "🏥 **Dla UV/MV/IV:** Obraz musi być przekazany ubezpieczycielowi w jakości fotograficznej i formacie cyfrowym. Format PDF nie jest akceptowany do przekazania ubezpieczycielowi, ponieważ obniża jakość obrazu.",
+      "📦 **Zawarte w pakietach usług:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Dodatkowe zdjęcia:** Mogą być rozliczone tylko z pisemnym uzasadnieniem, jeśli są konieczne i ekonomiczne dla leczenia",
+      "⏱️ **Przechowywanie:** Dla przypadków UV, obrazy muszą być archiwizowane przez 30 lat i przekazane ubezpieczycielowi po zakończeniu leczenia",
+      "📋 **Dla ciebie jako pacjenta:** Nie musisz nic robić. Twój dentysta zajmie się prawidłowym cyfrowym przekazaniem do ubezpieczyciela. Jeśli chcesz mieć obrazy dla siebie (np. jako PDF lub wydruk), możesz poprosić o nie swojego dentystę – dla ciebie jako pacjenta jest to całkowicie w porządku."
+    ],
+    "al": [
+      "📸 **Imazh i vetëm me rreze X i një dhëmbi ose një zone të vogël**",
+      "💻 **Lejohen vetëm formatet dixhitale** (formati PDF NUK lejohet!)",
+      "🏥 **Për UV/MV/IV:** Imazhi duhet të dorëzohet te sigurimi në cilësi fotografike dhe format dixhital. Formati PDF nuk pranohet për dorëzim te sigurimi sepse ul cilësinë e imazhit.",
+      "📦 **Përfshirë në paketat e shërbimeve:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Imazhe shtesë:** Mund të faturohen vetëm me arsyetim me shkrim, nëse janë të nevojshme dhe ekonomike për trajtimin",
+      "⏱️ **Ruajtja:** Për rastet UV, imazhet duhet të arkivohen për 30 vjet dhe t'i dorëzohen siguruesit pas përfundimit të trajtimit",
+      "📋 **Për ty si pacient:** Nuk ke nevojë të bësh asgjë. Dentisti yt do të kujdeset për dorëzimin e saktë dixhital te sigurimi. Nëse dëshiron t'i kesh imazhet për vete (p.sh. si PDF ose printim), mund t'i kërkosh dentistit tënd – për ty si pacient është krejtësisht në rregull."
+    ],
+    "tr": [
+      "📸 **Bir dişin veya küçük bir alanın tek röntgen görüntüsü**",
+      "💻 **Yalnızca dijital formatlara izin verilir** (PDF formatına İZİN VERİLMEZ!)",
+      "🏥 **UV/MV/IV için:** Görüntü, fotoğraf kalitesinde ve dijital formatta sigortaya teslim edilmelidir. PDF formatı, görüntü kalitesini düşürdüğü için sigortaya teslim için kabul edilmez.",
+      "📦 **Hizmet paketlerinde bulunur:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Ek görüntüler:** Tedavi için gerekli ve ekonomik ise, yalnızca yazılı gerekçe ile faturalandırılabilir",
+      "⏱️ **Saklama:** UV vakaları için, görüntüler 30 yıl boyunca arşivlenmeli ve tedavi tamamlandıktan sonra sigortacıya teslim edilmelidir",
+      "📋 **Hasta olarak senin için:** Hiçbir şey yapman gerekmez. Diş hekimin sigortaya doğru dijital teslimi halledecektir. Görüntüleri kendin için almak istersen (örneğin PDF veya çıktı olarak), diş hekiminden isteyebilirsin – hasta olarak senin için bu tamamen uygundur."
+    ],
+    "hr": [
+      "📸 **Pojedinačna rendgenska slika jednog zuba ili malog područja**",
+      "💻 **Dopušteni su samo digitalni formati** (PDF format NIJE dopušten!)",
+      "🏥 **Za UV/MV/IV:** Slika se mora dostaviti osiguranju u fotografskoj kvaliteti i digitalnom formatu. PDF format nije prihvaćen za dostavu osiguranju jer smanjuje kvalitetu slike.",
+      "📦 **Uključeno u pakete usluga:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **Dodatne slike:** Mogu se naplatiti samo s pisanim obrazloženjem, ako su potrebne i ekonomske za liječenje",
+      "⏱️ **Pohrana:** Za UV slučajeve, slike se moraju arhivirati 30 godina i predati osiguravatelju nakon završetka liječenja",
+      "📋 **Za tebe kao pacijenta:** Ne moraš ništa učiniti. Tvoj zubar će se pobrinuti za ispravnu digitalnu dostavu osiguranju. Ako želiš imati slike za sebe (npr. kao PDF ili ispis), možeš ih zatražiti od svog zubara – za tebe kao pacijenta to je sasvim u redu."
+    ],
+    "ta": [
+      "📸 **ஒரு பல்லின் அல்லது சிறிய பகுதியின் ஒற்றை எக்ஸ்-ரே படம்**",
+      "💻 **டிஜிட்டல் வடிவங்கள் மட்டுமே அனுமதிக்கப்படுகின்றன** (PDF வடிவம் அனுமதிக்கப்படாது!)",
+      "🏥 **UV/MV/IV க்கு:** படம் புகைப்பட தரத்தில் மற்றும் டிஜிட்டல் வடிவத்தில் காப்பீட்டிற்கு சமர்ப்பிக்கப்பட வேண்டும். PDF வடிவம் படத்தின் தரத்தை குறைப்பதால் காப்பீட்டிற்கு சமர்ப்பிப்பதற்கு ஏற்றுக்கொள்ளப்படாது.",
+      "📦 **சேவை தொகுப்புகளில் சேர்க்கப்பட்டுள்ளது:** 4.0000.LP, 4.0020.LP, 4.0055.LP, 4.2530.LP, 4.2550.LP, 4.2920.LP, 4.2990.LP, 4.4991.LP",
+      "➕ **கூடுதல் படங்கள்:** சிகிச்சைக்கு அவசியமான மற்றும் சிக்கனமானதாக இருந்தால், எழுத்துப்பூர்வ காரணத்துடன் மட்டுமே கணக்கிடப்படும்",
+      "⏱️ **சேமிப்பு:** UV வழக்குகளுக்கு, படங்கள் 30 ஆண்டுகளுக்கு காப்பகப்படுத்தப்பட வேண்டும் மற்றும் சிகிச்சை முடிந்த பிறகு காப்பீட்டாளரிடம் ஒப்படைக்கப்பட வேண்டும்",
+      "📋 **நோயாளியாக உங்களுக்கு:** நீங்கள் எதுவும் செய்ய வேண்டியதில்லை. உங்கள் பல் மருத்துவர் காப்பீட்டிற்கு சரியான டிஜிட்டல் சமர்ப்பிப்பை கவனித்துக்கொள்வார். நீங்கள் படங்களை உங்களுக்காக விரும்பினால் (எ.கா. PDF அல்லது அச்சு வெளியீடாக), உங்கள் பல் மருத்துவரிடம் கேட்கலாம் – நோயாளியாக உங்களுக்கு இது முற்றிலும் ஏற்றுக்கொள்ளத்தக்கது."
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Ist das Röntgen schädlich für mich oder mein Kind?",
+        "answer": "Nein. Moderne digitale Röntgengeräte verwenden eine sehr geringe Strahlendosis – viel weniger als früher. Zum Vergleich: Eine Zahnröntgenaufnahme entspricht etwa der Strahlung eines kurzen Fluges. Der Zahnarzt schützt dich zusätzlich mit einer Bleischürze. Bei Kindern wird besonders vorsichtig geröntgt."
+      },
+      {
+        "question": "Warum muss das Bild digital sein? PDF geht nicht?",
+        "answer": "Die Versicherungen verlangen die Bilder in fotografischer Qualität und digitalem Format, um sie gut beurteilen zu können. PDF komprimiert die Bilder und verringert die Qualität. Deshalb ist PDF für die Abgabe an die Versicherung nicht erlaubt. Dein Zahnarzt gibt die Bilder im richtigen Format an die Versicherung weiter. Für dich als Patient ist es aber völlig in Ordnung, wenn du die Bilder als PDF oder Ausdruck bekommst – das macht nichts."
+      },
+      {
+        "question": "Wie viele Röntgenbilder darf der Zahnarzt machen?",
+        "answer": "Der Zahnarzt macht so viele Bilder, wie für die Diagnose und Behandlung nötig sind. In den meisten Leistungspaketen (wie 4.0000.LP) ist bereits ein Röntgenbild enthalten. Zusätzliche Bilder müssen mit einer schriftlichen Begründung abgerechnet werden. Der Zahnarzt sollte dir vorher erklären, warum weitere Bilder nötig sind."
+      },
+      {
+        "question": "Bekomme ich die Röntgenbilder mit?",
+        "answer": "Du hast ein Recht darauf, deine Röntgenbilder zu bekommen. Sprich deinen Zahnarzt darauf an. Bei UV/MV/IV-Fällen werden die Bilder nach Behandlungsende an die Versicherung übergeben (die Versicherer archivieren sie 30 Jahre lang). Für dich kann der Zahnarzt eine Kopie anfertigen – zum Beispiel als PDF, Ausdruck oder auf einem USB-Stick."
+      },
+      {
+        "question": "Mein Zahnarzt hat mir die Röntgenbilder als PDF geschickt. Ist das in Ordnung?",
+        "answer": "Für dich als Patient ist das völlig in Ordnung – du kannst die Bilder so aufbewahren oder an einen anderen Arzt weiterleiten. Für die Abrechnung mit der UV/MV/IV-Versicherung muss der Zahnarzt die Bilder jedoch in einem anderen digitalen Format (wie JPEG oder DICOM) einreichen, weil PDF die Bildqualität verringert. Dein Zahnarzt weiß das und kümmert sich darum. Du musst nichts weiter tun."
+      }
+    ],
+    "fr": [
+      {
+        "question": "La radiographie est-elle dangereuse pour moi ou mon enfant?",
+        "answer": "Non. Les appareils de radiographie numériques modernes utilisent une dose de rayonnement très faible – bien moins qu'avant. À titre de comparaison: une radiographie dentaire correspond à peu près au rayonnement d'un vol court. Le dentiste te protège en plus avec un tablier plombé. Pour les enfants, on est particulièrement prudent."
+      },
+      {
+        "question": "Pourquoi l'image doit-elle être numérique? Le PDF ne convient pas?",
+        "answer": "Les assurances exigent les images en qualité photographique et au format numérique pour pouvoir bien les évaluer. Le PDF comprime les images et réduit la qualité. C'est pourquoi le PDF n'est pas accepté pour la transmission à l'assurance. Ton dentiste transmettra les images dans le bon format à l'assurance. Pour toi en tant que patient, c'est tout à fait acceptable de recevoir les images en PDF ou en impression – cela ne pose aucun problème."
+      },
+      {
+        "question": "Combien de radiographies le dentiste peut-il faire?",
+        "answer": "Le dentiste fait autant d'images que nécessaire pour le diagnostic et le traitement. Dans la plupart des forfaits de prestations (comme 4.0000.LP), une radiographie est déjà incluse. Les images supplémentaires doivent être facturées avec une justification écrite. Le dentiste devrait t'expliquer avant pourquoi des images supplémentaires sont nécessaires."
+      },
+      {
+        "question": "Puis-je avoir les radiographies?",
+        "answer": "Tu as le droit d'obtenir tes radiographies. Parle-en à ton dentiste. Pour les cas UV/MV/IV, les images sont remises à l'assurance après le traitement (les assureurs les conservent pendant 30 ans). Le dentiste peut en faire une copie pour toi – par exemple en PDF, en impression ou sur une clé USB."
+      },
+      {
+        "question": "Mon dentiste m'a envoyé les radiographies en PDF. Est-ce que c'est correct?",
+        "answer": "Pour toi en tant que patient, c'est tout à fait correct – tu peux conserver les images ainsi ou les transmettre à un autre médecin. Pour la facturation avec l'assurance UV/MV/IV, le dentiste doit cependant soumettre les images dans un autre format numérique (comme JPEG ou DICOM), car le PDF réduit la qualité de l'image. Ton dentiste le sait et s'en occupe. Tu n'as rien d'autre à faire."
+      }
+    ],
+    "it": [
+      {
+        "question": "La radiografia è pericolosa per me o per mio figlio?",
+        "answer": "No. Le moderne apparecchiature digitali usano una dose di radiazioni molto bassa – molto meno di prima. Per confronto: una radiografia dentale corrisponde circa alle radiazioni di un volo breve. Il dentista ti protegge inoltre con un grembiule di piombo. Per i bambini si è particolarmente cauti."
+      },
+      {
+        "question": "Perché l'immagine deve essere digitale? Il PDF non va bene?",
+        "answer": "Le assicurazioni richiedono le immagini in qualità fotografica e formato digitale per poterle valutare bene. Il PDF comprime le immagini e riduce la qualità. Per questo il PDF non è accettato per la trasmissione all'assicurazione. Il tuo dentista trasmetterà le immagini nel formato corretto all'assicurazione. Per te come paziente, è perfettamente accettabile ricevere le immagini come PDF o stampa – non c'è problema."
+      },
+      {
+        "question": "Quante radiografie può fare il dentista?",
+        "answer": "Il dentista fa tutte le immagini necessarie per la diagnosi e il trattamento. Nella maggior parte dei pacchetti di prestazioni (come 4.0000.LP) è già inclusa una radiografia. Le immagini aggiuntive devono essere fatturate con una giustificazione scritta. Il dentista dovrebbe spiegarti prima perché sono necessarie immagini aggiuntive."
+      },
+      {
+        "question": "Posso avere le radiografie?",
+        "answer": "Hai il diritto di ricevere le tue radiografie. Parlane con il tuo dentista. Per i casi UV/MV/IV, le immagini vengono consegnate all'assicurazione dopo il trattamento (gli assicuratori le conservano per 30 anni). Il dentista può farne una copia per te – ad esempio come PDF, stampa o su una chiavetta USB."
+      },
+      {
+        "question": "Il mio dentista mi ha inviato le radiografie in PDF. Va bene?",
+        "answer": "Per te come paziente va benissimo – puoi conservare le immagini così o trasmetterle a un altro medico. Per la fatturazione con l'assicurazione UV/MV/IV, il dentista deve tuttavia presentare le immagini in un altro formato digitale (come JPEG o DICOM), perché il PDF riduce la qualità dell'immagine. Il tuo dentista lo sa e se ne occuperà. Non devi fare altro."
+      }
+    ],
+    "en": [
+      {
+        "question": "Is the X-ray harmful to me or my child?",
+        "answer": "No. Modern digital X-ray equipment uses a very low radiation dose – much less than before. For comparison: one dental X-ray is about the same radiation as a short flight. The dentist also protects you with a lead apron. For children, they are especially careful."
+      },
+      {
+        "question": "Why does the image have to be digital? PDF is not allowed?",
+        "answer": "Insurance companies require images in photographic quality and digital format so they can evaluate them properly. PDF compresses the images and reduces quality. That's why PDF is not accepted for submission to the insurance company. Your dentist will submit the images in the correct format to the insurance company. For you as a patient, it's perfectly fine to receive the images as PDF or printout – that's not a problem."
+      },
+      {
+        "question": "How many X-rays can the dentist take?",
+        "answer": "The dentist takes as many images as needed for diagnosis and treatment. Most service packages (like 4.0000.LP) already include one X-ray. Additional images must be billed with written justification. The dentist should explain to you beforehand why more images are needed."
+      },
+      {
+        "question": "Can I get the X-ray images?",
+        "answer": "You have the right to receive your X-ray images. Talk to your dentist about it. For UV/MV/IV cases, the images are handed over to the insurance after treatment (insurers archive them for 30 years). The dentist can make a copy for you – for example as PDF, printout, or on a USB stick."
+      },
+      {
+        "question": "My dentist sent me the X-rays as a PDF. Is that okay?",
+        "answer": "For you as a patient, that's perfectly fine – you can keep the images that way or share them with another doctor. For billing with UV/MV/IV insurance, however, the dentist must submit the images in a different digital format (such as JPEG or DICOM) because PDF reduces image quality. Your dentist knows this and will take care of it. You don't need to do anything else."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿La radiografía es perjudicial para mí o mi hijo?",
+        "answer": "No. Los equipos digitales modernos utilizan una dosis de radiación muy baja – mucho menos que antes. A modo de comparación: una radiografía dental equivale aproximadamente a la radiación de un vuelo corto. El dentista te protege además con un delantal de plomo. Con los niños se tiene especial cuidado."
+      },
+      {
+        "question": "¿Por qué la imagen tiene que ser digital? ¿El PDF no vale?",
+        "answer": "Los seguros exigen las imágenes en calidad fotográfica y formato digital para poder evaluarlas correctamente. El PDF comprime las imágenes y reduce la calidad. Por eso no se acepta PDF para la entrega al seguro. Tu dentista entregará las imágenes en el formato correcto al seguro. Para ti como paciente, es perfectamente aceptable recibir las imágenes como PDF o impresión – no hay problema."
+      },
+      {
+        "question": "¿Cuántas radiografías puede hacer el dentista?",
+        "answer": "El dentista hace las imágenes necesarias para el diagnóstico y tratamiento. En la mayoría de los paquetes de servicios (como 4.0000.LP) ya se incluye una radiografía. Las imágenes adicionales deben facturarse con justificación por escrito. El dentista debería explicarte antes por qué se necesitan más imágenes."
+      },
+      {
+        "question": "¿Puedo quedarme con las radiografías?",
+        "answer": "Tienes derecho a recibir tus radiografías. Habla con tu dentista. En casos UV/MV/IV, las imágenes se entregan al seguro después del tratamiento (los aseguradores las archivan durante 30 años). El dentista puede hacerte una copia – por ejemplo como PDF, impresión o en un USB."
+      },
+      {
+        "question": "Mi dentista me envió las radiografías en PDF. ¿Está bien?",
+        "answer": "Para ti como paciente está perfectamente bien – puedes conservar las imágenes así o compartirlas con otro médico. Para la facturación con el seguro UV/MV/IV, sin embargo, el dentista debe presentar las imágenes en otro formato digital (como JPEG o DICOM) porque el PDF reduce la calidad de la imagen. Tu dentista lo sabe y se encargará de ello. No tienes que hacer nada más."
+      }
+    ],
+    "pt": [
+      {
+        "question": "A radiografia é prejudicial para mim ou para o meu filho?",
+        "answer": "Não. Os equipamentos digitais modernos usam uma dose de radiação muito baixa – muito menos do que antes. Para comparação: uma radiografia dentária corresponde aproximadamente à radiação de um voo curto. O dentista também te protege com um avental de chumbo. Para as crianças, há cuidados especiais."
+      },
+      {
+        "question": "Porque é que a imagem tem de ser digital? O PDF não serve?",
+        "answer": "As seguradoras exigem as imagens em qualidade fotográfica e formato digital para poderem avaliá-las corretamente. O PDF comprime as imagens e reduz a qualidade. Por isso o PDF não é aceite para entrega à seguradora. O teu dentista entregará as imagens no formato correto à seguradora. Para ti como paciente, é perfeitamente aceitável receber as imagens como PDF ou impressão – não há problema."
+      },
+      {
+        "question": "Quantas radiografias o dentista pode fazer?",
+        "answer": "O dentista faz as imagens necessárias para o diagnóstico e tratamento. Na maioria dos pacotes de serviços (como 4.0000.LP) já está incluída uma radiografia. Imagens adicionais devem ser faturadas com justificação por escrito. O dentista deve explicar-te antes porque são necessárias mais imagens."
+      },
+      {
+        "question": "Posso ficar com as radiografias?",
+        "answer": "Tens o direito de receber as tuas radiografias. Fala com o teu dentista. Para casos UV/MV/IV, as imagens são entregues à seguradora após o tratamento (as seguradoras arquivam-nas durante 30 anos). O dentista pode fazer uma cópia para ti – por exemplo como PDF, impressão ou num USB."
+      },
+      {
+        "question": "O meu dentista enviou-me as radiografias em PDF. Está correto?",
+        "answer": "Para ti como paciente está perfeitamente correto – podes guardar as imagens assim ou partilhá-las com outro médico. Para a faturação com o seguro UV/MV/IV, no entanto, o dentista deve apresentar as imagens noutro formato digital (como JPEG ou DICOM) porque o PDF reduz a qualidade da imagem. O teu dentista sabe disso e tratará disso. Não tens de fazer mais nada."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Czy rentgen jest szkodliwy dla mnie lub mojego dziecka?",
+        "answer": "Nie. Nowoczesny cyfrowy sprzęt rentgenowski używa bardzo niskiej dawki promieniowania – znacznie mniejszej niż dawniej. Dla porównania: jedno zdjęcie rentgenowskie zęba odpowiada mniej więcej promieniowaniu podczas krótkiego lotu. Dentysta dodatkowo chroni Cię ołowianym fartuchem. W przypadku dzieci zachowuje się szczególną ostrożność."
+      },
+      {
+        "question": "Dlaczego obraz musi być cyfrowy? Czy PDF nie jest dobry?",
+        "answer": "Ubezpieczyciele wymagają obrazów w jakości fotograficznej i formacie cyfrowym, aby móc je dobrze ocenić. PDF kompresuje obrazy i obniża jakość. Dlatego PDF nie jest akceptowany do przekazania ubezpieczycielowi. Twój dentysta przekaże obrazy w odpowiednim formacie ubezpieczycielowi. Dla ciebie jako pacjenta, otrzymanie obrazów jako PDF lub wydruk jest całkowicie w porządku – to żaden problem."
+      },
+      {
+        "question": "Ile zdjęć rentgenowskich może zrobić dentysta?",
+        "answer": "Dentysta robi tyle zdjęć, ile potrzeba do diagnozy i leczenia. W większości pakietów usług (jak 4.0000.LP) jedno zdjęcie jest już zawarte. Dodatkowe zdjęcia muszą być rozliczone z pisemnym uzasadnieniem. Dentysta powinien wyjaśnić Ci przedtem, dlaczego potrzebne są dodatkowe zdjęcia."
+      },
+      {
+        "question": "Czy mogę otrzymać zdjęcia rentgenowskie?",
+        "answer": "Masz prawo do otrzymania swoich zdjęć rentgenowskich. Porozmawiaj o tym ze swoim dentystą. W przypadkach UV/MV/IV zdjęcia są przekazywane ubezpieczycielowi po zakończeniu leczenia (ubezpieczyciele archiwizują je przez 30 lat). Dentysta może zrobić dla Ciebie kopię – na przykład jako PDF, wydruk lub na pendrive."
+      },
+      {
+        "question": "Mój dentysta wysłał mi zdjęcia rentgenowskie jako PDF. Czy to w porządku?",
+        "answer": "Dla ciebie jako pacjenta jest to całkowicie w porządku – możesz przechowywać zdjęcia w ten sposób lub przekazać je innemu lekarzowi. Do rozliczenia z ubezpieczycielem UV/MV/IV dentysta musi jednak przesłać zdjęcia w innym formacie cyfrowym (takim jak JPEG lub DICOM), ponieważ PDF obniża jakość obrazu. Twój dentysta o tym wie i zajmie się tym. Nie musisz nic więcej robić."
+      }
+    ],
+    "al": [
+      {
+        "question": "A është rrezet X e dëmshme për mua ose fëmijën tim?",
+        "answer": "Jo. Pajisjet moderne dixhitale me rreze X përdorin një dozë shumë të ulët rrezatimi – shumë më pak se më parë. Për krahasim: një rreze X dentare korrespondon afërsisht me rrezatimin e një fluturimi të shkurtër. Dentisti të mbron gjithashtu me një përparëse plumbi. Për fëmijët tregohet kujdes i veçantë."
+      },
+      {
+        "question": "Pse imazhi duhet të jetë dixhital? A nuk lejohet PDF?",
+        "answer": "Siguruesit kërkojnë imazhet në cilësi fotografike dhe format dixhital që t'i vlerësojnë mirë. PDF ngjesh imazhet dhe ul cilësinë. Prandaj PDF nuk pranohet për dorëzim te sigurimi. Dentisti yt do të dorëzojë imazhet në formatin e duhur te sigurimi. Për ty si pacient, është krejtësisht në rregull të marrësh imazhet si PDF ose printim – nuk ka problem."
+      },
+      {
+        "question": "Sa rreze X mund të bëjë dentisti?",
+        "answer": "Dentisti bën aq imazhe sa janë të nevojshme për diagnozën dhe trajtimin. Në shumicën e paketave të shërbimeve (si 4.0000.LP) tashmë është përfshirë një rreze X. Imazhet shtesë duhet të faturohen me arsyetim me shkrim. Dentisti duhet të të shpjegojë paraprakisht pse nevojiten imazhe shtesë."
+      },
+      {
+        "question": "A mund t'i marr imazhet e rrezeve X?",
+        "answer": "Ke të drejtë të marrësh imazhet e tua me rreze X. Fol me dentistin tënd për këtë. Për rastet UV/MV/IV, imazhet i dorëzohen siguruesit pas trajtimit (siguruesit i arkivojnë për 30 vjet). Dentisti mund të bëjë një kopje për ty – për shembull si PDF, printim ose në një USB."
+      },
+      {
+        "question": "Dentisti im më dërgoi imazhet e rrezeve X si PDF. A është në rregull?",
+        "answer": "Për ty si pacient është krejtësisht në rregull – mund t'i ruash imazhet ashtu ose t'ia japësh një mjeku tjetër. Për faturimin me sigurimin UV/MV/IV, dentisti duhet të dorëzojë imazhet në një format tjetër dixhital (si JPEG ose DICOM), sepse PDF ul cilësinë e imazhit. Dentisti yt e di këtë dhe do të kujdeset për të. Nuk ke nevojë të bësh asgjë tjetër."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Röntgen benim veya çocuğum için zararlı mı?",
+        "answer": "Hayır. Modern dijital röntgen cihazları çok düşük dozda radyasyon kullanır – eskisinden çok daha az. Karşılaştırma yapmak gerekirse: bir diş röntgeni, kısa bir uçuşun radyasyonuna eşdeğerdir. Diş hekimi seni ayrıca kurşun önlükle korur. Çocuklar için özellikle dikkatli olunur."
+      },
+      {
+        "question": "Görüntü neden dijital olmalı? PDF olmaz mı?",
+        "answer": "Sigortalar, görüntüleri iyi değerlendirebilmek için fotoğraf kalitesinde ve dijital formatta talep eder. PDF, görüntüleri sıkıştırır ve kaliteyi düşürür. Bu nedenle PDF, sigortaya teslim için kabul edilmez. Diş hekimin görüntüleri doğru formatta sigortaya teslim edecektir. Hasta olarak senin için, görüntüleri PDF veya çıktı olarak alman tamamen uygundur – sorun değil."
+      },
+      {
+        "question": "Diş hekimi kaç röntgen çekebilir?",
+        "answer": "Diş hekimi, teşhis ve tedavi için gerektiği kadar görüntü alır. Çoğu hizmet paketinde (4.0000.LP gibi) zaten bir röntgen bulunur. Ek görüntüler yazılı gerekçe ile faturalandırılabilir. Diş hekimi sana neden daha fazla görüntü gerektiğini önceden açıklamalıdır."
+      },
+      {
+        "question": "Röntgen görüntülerini alabilir miyim?",
+        "answer": "Röntgen görüntülerini alma hakkın vardır. Diş hekiminle bunun hakkında konuş. UV/MV/IV vakalarında, görüntüler tedavi sonrasında sigortaya teslim edilir (sigortacılar 30 yıl boyunca arşivler). Diş hekimin senin için bir kopya yapabilir – örneğin PDF, çıktı veya USB bellek olarak."
+      },
+      {
+        "question": "Diş hekimim röntgen görüntülerini PDF olarak gönderdi. Bu doğru mu?",
+        "answer": "Hasta olarak senin için bu tamamen doğru – görüntüleri bu şekilde saklayabilir veya başka bir doktora iletebilirsin. UV/MV/IV sigortası ile faturalandırma için, diş hekiminin görüntüleri başka bir dijital formatta (JPEG veya DICOM gibi) sunması gerekir, çünkü PDF görüntü kalitesini düşürür. Diş hekimin bunu bilir ve halleder. Başka bir şey yapman gerekmez."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Je li rendgen štetan za mene ili moje dijete?",
+        "answer": "Ne. Suvremena digitalna rendgenska oprema koristi vrlo nisku dozu zračenja – mnogo manje nego prije. Za usporedbu: jedan zubni rendgen odgovara otprilike zračenju kratkog leta. Zubar te dodatno štiti olovnom pregačom. Za djecu se posebno pazi."
+      },
+      {
+        "question": "Zašto slika mora biti digitalna? PDF nije dobar?",
+        "answer": "Osiguravatelji zahtijevaju slike u fotografskoj kvaliteti i digitalnom formatu kako bi ih mogli dobro procijeniti. PDF komprimira slike i smanjuje kvalitetu. Zato PDF nije prihvaćen za dostavu osiguranju. Tvoj zubar će dostaviti slike u ispravnom formatu osiguranju. Za tebe kao pacijenta, sasvim je u redu primiti slike kao PDF ili ispis – to nije problem."
+      },
+      {
+        "question": "Koliko rendgenskih snimaka zubar može napraviti?",
+        "answer": "Zubar radi onoliko snimaka koliko je potrebno za dijagnozu i liječenje. U većini paketa usluga (poput 4.0000.LP) već je uključena jedna rendgenska snimka. Dodatne snimke moraju se naplatiti s pisanim obrazloženjem. Zubar bi ti trebao unaprijed objasniti zašto su potrebne dodatne snimke."
+      },
+      {
+        "question": "Mogu li dobiti rendgenske snimke?",
+        "answer": "Imaš pravo dobiti svoje rendgenske snimke. Razgovaraj o tome sa svojim zubarom. Za UV/MV/IV slučajeve, snimke se predaju osiguravatelju nakon liječenja (osiguravatelji ih arhiviraju 30 godina). Zubar ti može napraviti kopiju – na primjer kao PDF, ispis ili na USB stick."
+      },
+      {
+        "question": "Moj zubar mi je poslao rendgenske snimke kao PDF. Je li to u redu?",
+        "answer": "Za tebe kao pacijenta to je sasvim u redu – možeš tako čuvati slike ili ih podijeliti s drugim liječnikom. Za naplatu s UV/MV/IV osiguranjem, zubar mora dostaviti slike u drugom digitalnom formatu (poput JPEG ili DICOM), jer PDF smanjuje kvalitetu slike. Tvoj zubar to zna i pobrinut će se za to. Ne moraš ništa više činiti."
+      }
+    ],
+    "ta": [
+      {
+        "question": "எக்ஸ்-ரே எனக்கு அல்லது என் குழந்தைக்கு தீங்கு விளைவிக்குமா?",
+        "answer": "இல்லை. நவீன டிஜிட்டல் எக்ஸ்-ரே கருவிகள் மிகக் குறைந்த கதிர்வீச்சு அளவைப் பயன்படுத்துகின்றன – முன்பை விட மிகக் குறைவு. ஒப்பிடுவதற்கு: ஒரு பல் எக்ஸ்-ரே ஒரு குறுகிய விமானப் பயணத்தின் கதிர்வீச்சுக்கு சமம். பல் மருத்துவர் உங்களை கூடுதலாக ஈய கவசத்துடன் பாதுகாக்கிறார். குழந்தைகளுக்கு குறிப்பாக கவனமாக இருக்கப்படுகிறது."
+      },
+      {
+        "question": "படம் ஏன் டிஜிட்டலாக இருக்க வேண்டும்? PDF ஏன் அனுமதிக்கப்படவில்லை?",
+        "answer": "காப்பீட்டு நிறுவனங்கள் படங்களை சரியாக மதிப்பீடு செய்ய புகைப்பட தரம் மற்றும் டிஜிட்டல் வடிவத்தில் கோருகின்றன. PDF படங்களை சுருக்கி தரத்தை குறைக்கிறது. அதனால்தான் PDF காப்பீட்டிற்கு சமர்ப்பிப்பதற்கு ஏற்றுக்கொள்ளப்படுவதில்லை. உங்கள் பல் மருத்துவர் படங்களை சரியான வடிவத்தில் காப்பீட்டிற்கு சமர்ப்பிப்பார். நோயாளியாக உங்களுக்கு, படங்களை PDF அல்லது அச்சு வெளியீடாகப் பெறுவது முற்றிலும் ஏற்றுக்கொள்ளத்தக்கது – அது ஒரு பிரச்சனையல்ல."
+      },
+      {
+        "question": "பல் மருத்துவர் எத்தனை எக்ஸ்-ரே எடுக்கலாம்?",
+        "answer": "பல் மருத்துவர் நோயறிதல் மற்றும் சிகிச்சைக்கு தேவையான அளவு படங்களை எடுக்கிறார். பெரும்பாலான சேவை தொகுப்புகளில் (4.0000.LP போன்றவை) ஏற்கனவே ஒரு எக்ஸ்-ரே சேர்க்கப்பட்டுள்ளது. கூடுதல் படங்கள் எழுத்துப்பூர்வ காரணத்துடன் மட்டுமே கணக்கிடப்படும். ஏன் கூடுதல் படங்கள் தேவை என்பதை பல் மருத்துவர் முன்கூட்டியே உங்களுக்கு விளக்க வேண்டும்."
+      },
+      {
+        "question": "நான் எக்ஸ்-ரே படங்களைப் பெற முடியுமா?",
+        "answer": "உங்கள் எக்ஸ்-ரே படங்களைப் பெற உங்களுக்கு உரிமை உண்டு. இதைப் பற்றி உங்கள் பல் மருத்துவரிடம் பேசுங்கள். UV/MV/IV வழக்குகளில், படங்கள் சிகிச்சைக்குப் பிறகு காப்பீட்டாளரிடம் ஒப்படைக்கப்படுகின்றன (காப்பீட்டாளர்கள் 30 ஆண்டுகள் காப்பகப்படுத்துகின்றனர்). பல் மருத்துவர் உங்களுக்காக ஒரு நகலை உருவாக்கலாம் – எடுத்துக்காட்டாக PDF, அச்சு வெளியீடு அல்லது USB ஸ்டிக்கில்."
+      },
+      {
+        "question": "என் பல் மருத்துவர் எக்ஸ்-ரே படங்களை PDF ஆக அனுப்பினார். இது சரிதானா?",
+        "answer": "நோயாளியாக உங்களுக்கு இது முற்றிலும் சரிதான் – படங்களை அப்படியே வைத்திருக்கலாம் அல்லது மற்றொரு மருத்துவருடன் பகிர்ந்து கொள்ளலாம். UV/MV/IV காப்பீட்டுடன் கணக்கிடுவதற்கு, பல் மருத்துவர் படங்களை வேறு டிஜிட்டல் வடிவத்தில் (JPEG அல்லது DICOM போன்றவை) சமர்ப்பிக்க வேண்டும், ஏனெனில் PDF படத்தின் தரத்தை குறைக்கிறது. உங்கள் பல் மருத்துவர் இதை அறிவார் மற்றும் கவனித்துக் கொள்வார். நீங்கள் வேறு எதுவும் செய்ய வேண்டியதில்லை."
+      }
+    ]
+  }
+}

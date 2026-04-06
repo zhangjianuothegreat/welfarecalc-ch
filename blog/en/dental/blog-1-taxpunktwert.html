@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>Swiss Dental Prices: Taxpunktwert & DENTOTAR Decoding Guide</title>
+    <meta name="description"
+        content="Confused by Swiss dental bills? Learn how the Taxpunktwert (point value) and DENTOTAR system work. Use our calculator to decode your dentist's secret numbers and save money.">
+    <meta name="keywords"
+        content="Swiss dental prices, Taxpunktwert Switzerland, DENTOTAR, dental bill calculation Switzerland, Swiss dentist cost, Taxpunktwert explained, DENTOTAR tariff 2026">
+
+    <meta property="og:title" content="Decode Your Swiss Dental Bill: The Secret of Taxpunktwert">
+    <meta property="og:description"
+        content="Why does the same filling cost 110 CHF at one clinic and 150 CHF at another? Learn the secret of Swiss dental pricing.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.welfarecalc.ch/blog/en/dental/blog-1-taxpunktwert.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/og-dental-guide.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Swiss Dentists Use Secret Numbers to Charge You – Decoding the Taxpunktwert System",
+      "description": "A complete survival guide for expats on how the DENTOTAR® and Taxpunktwert system works in Switzerland. Learn to decode your dental bill and save money.",
+      "author": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch"
+      },
+      "datePublished": "2026-03-30",
+      "dateModified": "2026-03-31",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.welfarecalc.ch/blog/en/dental/blog-1-taxpunktwert.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.welfarecalc.ch/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        /* 完全与主站风格一致 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: #1e2a3e;
+            background: #f5f9ff;
+        }
+
+        header {
+            background: linear-gradient(135deg, #005f8c, #0099dd);
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            border-bottom: 6px solid #ffcd7e;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-title {
+            font-size: 2.35rem;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            color: #ffffff;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0.8rem;
+            line-height: 1.25;
+        }
+
+        .hero-sub {
+            font-size: 1.28rem;
+            font-weight: 500;
+            color: #fff9e8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #006a9e;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.85rem;
+            margin: 2rem 0 1rem;
+            border-left: 6px solid #0099dd;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.45rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 1.8rem;
+            margin: 1.5rem 0;
+            border-radius: 24px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 119, 190, 0.08);
+        }
+
+        .highlight {
+            background: #e0f0fe;
+            padding: 1.3rem;
+            border-left: 7px solid #0077be;
+            margin: 1.5rem 0;
+            border-radius: 16px;
+            font-size: 1.05rem;
+        }
+
+        .price-box {
+            background: #fff6e5;
+            padding: 1.4rem;
+            border-radius: 20px;
+            margin: 1.5rem 0;
+            border-left: 7px solid #ff9800;
+        }
+
+        .tip {
+            background: #fff3cd;
+            padding: 1rem 1.5rem;
+            border-radius: 20px;
+            border-left: 7px solid #ffc107;
+            margin: 1.2rem 0;
+        }
+
+        select,
+        button {
+            font-size: 1.05rem;
+            padding: 1rem 1.2rem;
+            margin: 0.8rem 0;
+            border-radius: 60px;
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            background: white;
+        }
+
+        button {
+            background: #0077be;
+            color: white;
+            border: none;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0, 119, 190, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #005f8c;
+            transform: scale(0.98);
+        }
+
+        #result {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: #f0f8ff;
+            border-radius: 20px;
+            border: 1px solid #bbdefb;
+        }
+
+        .action-list {
+            background: #eef7e6;
+            padding: 1.5rem;
+            border-radius: 20px;
+            margin: 1rem 0;
+            border-left: 6px solid #2e7d32;
+        }
+
+        .next-read-box {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            margin-top: 3rem;
+        }
+
+        .next-read-box h3 {
+            margin-top: 0;
+            color: #475569;
+        }
+
+        .next-read-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .next-read-box li {
+            margin: 0.8rem 0;
+        }
+
+        .next-read-box a {
+            color: #0077be;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .next-read-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* 新增的完整矩阵卡片样式（统一风格） */
+        .series-matrix {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 1.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        .series-matrix h3 {
+            margin-top: 0;
+            color: #475569;
+        }
+
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+
+        .matrix-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 16px;
+            border: 1px solid #cbd5e1;
+            text-decoration: none;
+            color: #1e2a3e;
+            transition: all 0.25s ease;
+            display: block;
+        }
+
+        .matrix-item:hover {
+            border-color: #0099dd;
+            box-shadow: 0 8px 20px rgba(0, 119, 190, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .matrix-item h4 {
+            color: #006a9e;
+            margin: 0 0 0.4rem 0;
+            font-size: 1.05rem;
+        }
+
+        .matrix-item p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin: 0;
+        }
+
+        .disclaimer {
+            font-size: 0.82rem;
+            color: #475569;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #ecfdf5;
+            border-radius: 20px;
+            border-left: 5px solid #10b981;
+        }
+
+        .version-info {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 2rem 0 1rem;
+        }
+
+        ul,
+        ol {
+            padding-left: 1.8rem;
+            margin: 1rem 0;
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            color: #64748b;
+        }
+
+        .breadcrumb a {
+            color: #0077be;
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 1.95rem;
+            }
+
+            .hero-sub {
+                font-size: 1.15rem;
+            }
+
+            .card {
+                padding: 1.3rem;
+            }
+
+            .matrix-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="hero-title">Swiss Dentists Use Secret Numbers to Charge You</h1>
+        <p class="hero-sub">Decoding the "Taxpunktwert" System – A Survival Guide for Expats in Switzerland</p>
+    </header>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="https://www.welfarecalc.ch">Home</a> >
+            <a href="https://www.welfarecalc.ch/blog/en/dental/dentalblog_en.html">Dental Auditor</a> >
+            Understanding Taxpunktwert
+        </nav>
+
+        <article>
+            <div class="card">
+                <p>Imagine this: You go to the dentist for a quick check-up. The doctor looks at your teeth for 5
+                    minutes, and you receive a bill for 180 CHF.</p>
+                <p>You think: <em>“What? Just for looking?”</em></p>
+                <p>Welcome to Swiss dental billing — the most confusing (and expensive) system many newcomers have ever
+                    seen. But there is a logic behind it, and knowing it can save you hundreds of francs.</p>
+            </div>
+
+            <div class="card">
+                <h2>The DENTOTAR® System Explained</h2>
+                <p>In Switzerland, dental prices aren't random. They are governed by a nationwide framework called
+                    <strong>DENTOTAR®</strong>. Instead of fixed prices, every movement the dentist makes is assigned
+                    "points."</p>
+
+                <div class="highlight">
+                    <strong>The calculation formula is simple:</strong><br><br>
+                    • <strong>Tax Points (Taxpunkte - TP):</strong> The "difficulty score" of the treatment (same
+                    everywhere).<br>
+                    • <strong>Point Value (Taxpunktwert - TPW):</strong> The price per point (set by each individual
+                    clinic).
+                </div>
+
+                <p><strong>Total Cost = Tax Points × Point Value</strong></p>
+            </div>
+
+            <div class="card">
+                <h2>Why Prices Vary Between Clinics</h2>
+                <p>While the "difficulty points" for a filling are the same in Zurich or a mountain village, the
+                    <strong>Point Value (TPW)</strong> changes. Most clinics set their value between <strong>1.00 CHF
+                        and 1.30 CHF</strong>, but some luxury clinics in city centers go as high as 1.70 CHF.</p>
+
+                <div class="price-box">
+                    <strong>Real-world comparison for 100 Tax Points:</strong>
+                    <ul>
+                        <li>Clinic A (TPW 1.05): <strong>105 CHF</strong></li>
+                        <li>Clinic B (TPW 1.25): <strong>125 CHF</strong></li>
+                        <li>Clinic C (TPW 1.50): <strong>150 CHF</strong></li>
+                    </ul>
+                </div>
+                <p>The dental work is identical; you are simply paying more for the clinic's location, brand, or
+                    equipment.</p>
+            </div>
+
+            <div class="card">
+                <h2>🔍 Audit Your Treatment Right Now</h2>
+                <p>Don’t guess anymore. Use our auditor tool to see the official tax point range for common Swiss dental
+                    procedures.</p>
+
+                <label for="treatment-select">Select a procedure to see the official DENTOTAR points:</label>
+                <select id="treatment-select">
+                    <option value="">-- Loading treatments... --</option>
+                </select>
+                <button onclick="queryTreatment()">Audit This Procedure</button>
+
+                <div id="result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Survival Tips for the Next Visit</h2>
+                <div class="action-list">
+                    <strong>✅ 1. Ask for the TPW:</strong> Before booking, ask: <em>"What is your Taxpunktwert for
+                        private patients?"</em> If it's above 1.20, it's considered expensive.<br><br>
+                    <strong>✅ 2. Get a "Kostenvoranschlag":</strong> For any treatment expected to cost more than
+                    300-500 CHF, you have the right to a written cost estimate.<br><br>
+                    <strong>✅ 3. Compare Towns:</strong> Clinics in smaller towns often have a lower TPW than those on
+                    the Bahnhofstrasse in Zurich or Geneva.
+                </div>
+            </div>
+
+            <!-- 完整 Swiss Dental Guide Series 矩阵卡片 -->
+            <div class="series-matrix">
+                <h3>📖 Complete Swiss Dental Bill Auditor Series</h3>
+                <div class="matrix-grid">
+                    <a href="blog-1-taxpunktwert.html" class="matrix-item">
+                        <h4>🔢 Taxpunktwert Explained</h4>
+                        <p>How Swiss dentists calculate prices using points and multipliers.</p>
+                    </a>
+                    <a href="blog-2-dental-bill.html" class="matrix-item">
+                        <h4>🧾 How to Read Your Dental Bill</h4>
+                        <p>Decode every DENTOTAR code on your invoice in minutes.</p>
+                    </a>
+                    <a href="blog-3-first-dental-visit-switzerland-cost.html" class="matrix-item">
+                        <h4>🦷 First Dental Visit in Switzerland</h4>
+                        <p>Why the initial examination often costs 150–300 CHF.</p>
+                    </a>
+                    <a href="blog-4-dental-cleaning.html" class="matrix-item">
+                        <h4>✨ Dental Cleaning Costs</h4>
+                        <p>Is 160–300 CHF for professional hygiene necessary?</p>
+                    </a>
+                    <a href="blog-5-second-opinion.html" class="matrix-item">
+                        <h4>💡 Second Opinion for Dental Work</h4>
+                        <p>How to avoid overtreatment and get a reliable second opinion.</p>
+                    </a>
+                    <a href="blog-6-supplementary-dental-insurance.html" class="matrix-item">
+                        <h4>🛡️ Supplementary Dental Insurance</h4>
+                        <p>Is it worth it in 2026? Honest ROI analysis.</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <div class="disclaimer">
+            <strong>📢 Legal Disclaimer:</strong> This guide is for informational purposes only. Data is based on the
+            official DENTOTAR® tariff (SSO/MTK). Actual prices depend on individual dental diagnosis and clinic policy.
+            Last updated: March 2026.
+        </div>
+
+        <div class="version-info">
+            🇨🇭 <a href="https://www.welfarecalc.ch" target="_blank">WelfareCalc.ch</a> - Helping you navigate Swiss
+            life costs.
+        </div>
+    </div>
+
+    <script>
+        // 服务列表索引
+        const servicesIndex = [
+            { code: "4.0000", file: "40000.json" },
+            { code: "4.0020", file: "40020.json" },
+            { code: "4.0040", file: "40040.json" },
+            { code: "4.0090", file: "40090.json" },
+            { code: "4.0500", file: "40500.json" },
+            { code: "4.0530", file: "40530.json" },
+            { code: "4.1110", file: "41110.json" },
+            { code: "4.1260", file: "41260.json" },
+            { code: "4.2010", file: "42010.json" },
+            { code: "4.2010.LP", file: "42010LP.json" },
+            { code: "4.2020", file: "42020.json" },
+            { code: "4.2530", file: "42530.json" },
+            { code: "4.2530.LP", file: "42530LP.json" },
+            { code: "4.4600", file: "44600.json" },
+            { code: "4.4700", file: "44700.json" },
+            { code: "4.5350", file: "45350.json" },
+            { code: "4.5350.LP", file: "45350LP.json" },
+            { code: "4.7080", file: "47080.json" },
+            { code: "4.7085", file: "47085.json" },
+            { code: "4.8200", file: "48200.json" }
+        ];
+
+        let allServices = {};
+
+        async function loadServices() {
+            const select = document.getElementById("treatment-select");
+            if (!select) return;
+            select.innerHTML = '<option value="">-- Choose a dental treatment --</option>';
+
+            for (let item of servicesIndex) {
+                try {
+                    const res = await fetch('/data/dental/' + item.file);
+                    if (res.ok) {
+                        const data = await res.json();
+                        allServices[item.code] = data;
+                        const name = data.display_name?.en || data.name_de || item.code;
+                        const option = document.createElement("option");
+                        option.value = item.code;
+                        option.textContent = `${item.code} - ${name}`;
+                        select.appendChild(option);
+                    }
+                } catch (e) { console.warn(`Error loading ${item.file}`); }
+            }
+        }
+
+        function queryTreatment() {
+            const select = document.getElementById("treatment-select");
+            const code = select.value;
+            const resultDiv = document.getElementById("result");
+            if (!code || !allServices[code]) {
+                resultDiv.innerHTML = '<p style="color:#d32f2f;">Please select a treatment from the list.</p>';
+                return;
+            }
+
+            const data = allServices[code];
+            const enName = data.display_name?.en || data.name_de || code;
+            let html = `<h3>${enName}</h3>`;
+
+            if (data.simple_explain?.en) {
+                html += `<p><strong>💡 What it is:</strong><br>${data.simple_explain.en}</p>`;
+            }
+
+            if (data.what_is_included?.en && Array.isArray(data.what_is_included.en)) {
+                html += `<h4>✅ What’s included:</h4><ul>`;
+                data.what_is_included.en.forEach(item => html += `<li>${item}</li>`);
+                html += `</ul>`;
+            }
+
+            html += `<div class="price-box"><h4>💰 Official Tax Points (TP)</h4>`;
+            if (data.tp_uv_mviv) html += `<p><strong>Min Points:</strong> ${data.tp_uv_mviv} TP</p>`;
+            if (data.tp_pp_min && data.tp_pp_max) {
+                html += `<p><strong>Private Patient Range:</strong> ${data.tp_pp_min} – ${data.tp_pp_max} TP</p>`;
+            }
+            html += `<small>Final cost = TP × Point Value (Avg: 1.10 - 1.20 CHF).</small></div>`;
+
+            resultDiv.innerHTML = html;
+        }
+
+        window.addEventListener('DOMContentLoaded', loadServices);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,461 @@
+{
+  "code": "4.2010.LP",
+  "name_de": "Chirurgischer Eingriff, mittel UV/MV",
+  "display_name": {
+    "de": "Chirurgie-Paket (mittel)",
+    "fr": "Forfait chirurgical (moyen)",
+    "it": "Pacchetto chirurgico (medio)",
+    "en": "Surgical package (medium)",
+    "es": "Paquete quirúrgico (medio)",
+    "pt": "Pacote cirúrgico (médio)",
+    "pl": "Pakiet chirurgiczny (średni)",
+    "al": "Paketa kirurgjikale (e mesme)",
+    "tr": "Cerrahi paketi (orta)",
+    "hr": "Kirurški paket (srednji)",
+    "ta": "அறுவை சிகிச்சை தொகுப்பு (நடுத்தர)"
+  },
+  "search_keywords": {
+    "de": ["chirurgie paket", "mittel", "lp", "leistungspaket", "zahnextraktion", "hemisektion", "probeexzision", "lippenband", "zungenband"],
+    "fr": ["forfait chirurgical", "moyen", "lp", "pack de prestations", "extraction dentaire", "hémisection", "excision biopsique", "frein"],
+    "it": ["pacchetto chirurgico", "medio", "lp", "pacchetto di prestazioni", "estrazione dentale", "emisezione", "escissione bioptica", "frenulo"],
+    "en": ["surgical package", "medium", "lp", "service package", "tooth extraction", "hemisection", "biopsy excision", "frenulum"],
+    "es": ["paquete quirúrgico", "medio", "lp", "paquete de prestaciones", "extracción dental", "hemisección", "escisión biópsica", "frenillo"],
+    "pt": ["pacote cirúrgico", "médio", "lp", "pacote de prestações", "extração dentária", "hemissecção", "excisão de biópsia", "frénulo"],
+    "pl": ["pakiet chirurgiczny", "średni", "lp", "pakiet usług", "ekstrakcja zęba", "hemisekcja", "wycięcie biopsyjne", "wędzidełko"],
+    "al": ["paketa kirurgjikale", "e mesme", "lp", "paketa e shërbimeve", "nxjerrje dhëmbi", "hemiseksion", "ekscizion biopsie", "frenulum"],
+    "tr": ["cerrahi paketi", "orta", "lp", "hizmet paketi", "diş çekimi", "hemiseksiyon", "biyopsi eksizyonu", "frenulum"],
+    "hr": ["kirurški paket", "srednji", "lp", "paket usluga", "vađenje zuba", "hemisekcija", "ekscizija biopsije", "frenulum"],
+    "ta": ["அறுவை சிகிச்சை தொகுப்பு", "நடுத்தர", "எல்பி", "சேவை தொகுப்பு", "பல் பிடுங்கல்", "ஹெமிசெக்ஷன்", "பயாப்ஸி அகற்றல்", "ஃப்ரெனுலம்"]
+  },
+  "tp_uv_mviv": null,
+  "tp_pp_max": null,
+  "tp_pp_min": null,
+  "chapter": "15.05",
+  "coverage": "UV/MV",
+  "simple_explain": {
+    "de": "Das ist ein besonderes Behandlungspaket für die Unfall- und Militärversicherung (UV/MV). Wenn du eine mittelschwere Operation brauchst – wie das Ziehen eines schwierigen Zahns, das Entfernen von Wurzelresten oder das Kürzen eines Lippenbändchens – dann wird der Zahnarzt dieses Paket verwenden. Es enthält alles, was für so eine Operation typisch ist. So wird die Abrechnung einfacher. Das Paket gilt nicht für die Invalidenversicherung (IV).",
+    "fr": "Il s'agit d'un forfait de traitement spécial pour l'assurance accidents et militaire (UV/MV). Si tu as besoin d'une opération de complexité moyenne – comme l'extraction d'une dent difficile, l'élimination de racines résiduelles ou la coupe d'un frein labial – le dentiste utilisera ce forfait. Il comprend tout ce qui est typique pour une telle opération. Cela simplifie la facturation. Ce forfait ne s'applique pas à l'assurance invalidité (IV).",
+    "it": "Questo è un pacchetto di trattamento speciale per l'assicurazione infortuni e militare (UV/MV). Se hai bisogno di un'operazione di media complessità – come l'estrazione di un dente difficile, la rimozione di residui radicolari o il taglio di un frenulo labiale – il dentista utilizzerà questo pacchetto. Include tutto ciò che è tipico per tale operazione. Questo semplifica la fatturazione. Il pacchetto non si applica all'assicurazione invalidità (IV).",
+    "en": "This is a special treatment package for accident and military insurance (UV/MV). If you need a medium-complexity operation – like extracting a difficult tooth, removing root remnants, or cutting a lip frenulum – the dentist will use this package. It includes everything typical for such an operation. This simplifies billing. This package does not apply to disability insurance (IV).",
+    "es": "Este es un paquete de tratamiento especial para el seguro de accidentes y militar (UV/MV). Si necesitas una operación de complejidad media – como la extracción de un diente difícil, la eliminación de restos radiculares o el corte de un frenillo labial – el dentista utilizará este paquete. Incluye todo lo típico para dicha operación. Esto simplifica la facturación. Este paquete no se aplica al seguro de invalidez (IV).",
+    "pt": "Este é um pacote de tratamento especial para o seguro de acidentes e militar (UV/MV). Se precisares de uma operação de média complexidade – como a extração de um dente difícil, a remoção de restos radiculares ou o corte de um frénulo labial – o dentista utilizará este pacote. Inclui tudo o que é típico para tal operação. Isto simplifica a faturação. Este pacote não se aplica ao seguro de invalidez (IV).",
+    "pl": "Jest to specjalny pakiet leczenia dla ubezpieczenia wypadkowego i wojskowego (UV/MV). Jeśli potrzebujesz operacji o średnim stopniu skomplikowania – jak usunięcie trudnego zęba, usunięcie pozostałości korzeniowych lub przecięcie wędzidełka wargi – dentysta użyje tego pakietu. Zawiera wszystko, co typowe dla takiej operacji. Upraszcza to rozliczanie. Pakiet nie dotyczy ubezpieczenia inwalidzkiego (IV).",
+    "al": "Ky është një paketë e veçantë trajtimi për sigurimin e aksidenteve dhe ushtarak (UV/MV). Nëse keni nevojë për një operacion me kompleksitet të mesëm – si nxjerrja e një dhëmbi të vështirë, largimi i mbetjeve të rrënjëve ose prerja e frenulumit të buzës – dentisti do të përdorë këtë paketë. Përfshin gjithçka që është tipike për një operacion të tillë. Kjo thjeshton faturimin. Ky paketë nuk zbatohet për sigurimin e invaliditetit (IV).",
+    "tr": "Bu, kaza ve askerlik sigortası (UV/MV) için özel bir tedavi paketidir. Orta karmaşıklıkta bir operasyona ihtiyacın varsa – zor bir dişin çekilmesi, kök kalıntılarının temizlenmesi veya dudak frenulumunun kesilmesi gibi – diş hekimi bu paketi kullanacaktır. Böyle bir operasyon için tipik olan her şeyi içerir. Bu, faturalandırmayı basitleştirir. Bu paket engellilik sigortası (IV) için geçerli değildir.",
+    "hr": "Ovo je poseban paket liječenja za osiguranje od nezgode i vojno osiguranje (UV/MV). Ako trebaš operaciju srednje složenosti – kao što je vađenje teškog zuba, uklanjanje ostataka korijena ili rezanje frenuluma usne – zubar će koristiti ovaj paket. Uključuje sve što je tipično za takvu operaciju. To pojednostavljuje naplatu. Ovaj paket ne vrijedi za invalidsko osiguranje (IV).",
+    "ta": "இது விபத்து மற்றும் இராணுவ காப்பீட்டுக்கான (UV/MV) சிறப்பு சிகிச்சை தொகுப்பாகும். உங்களுக்கு நடுத்தர சிக்கலான அறுவை சிகிச்சை தேவைப்பட்டால் – கடினமான பல் பிடுங்குதல், வேர் எச்சங்களை அகற்றுதல் அல்லது உதட்டு ஃப்ரெனுலத்தை வெட்டுதல் போன்றவை – பல் மருத்துவர் இந்த தொகுப்பைப் பயன்படுத்துவார். அத்தகைய அறுவை சிகிச்சைக்கு பொதுவான அனைத்தையும் இது உள்ளடக்கியது. இது கணக்கிடுதலை எளிதாக்குகிறது. இந்த தொகுப்பு ஊனமுறை காப்பீட்டுக்கு (IV) பொருந்தாது."
+  },
+  "what_is_included": {
+    "de": [
+      "📦 **Leistungspaket für UV/MV (gilt nicht für IV)**",
+      "🦷 **Enthaltene Einzelleistungen:**",
+      "   • 4.2010 Zahnextraktion, aufwändig",
+      "   • 4.2020 Zahnextraktion mit Separieren",
+      "   • 4.2050 Hemisektion oder Wurzelamputation",
+      "   • 4.2130 Probeexzision",
+      "   • 4.2180 Korrektur Lippenband, Zungenband oder Wangenband",
+      "🧾 **Verbrauchsmaterial** inbegriffen",
+      "⚠️ **Wichtig:** Nähte, Röntgenbild, Anästhesie und Wundkontrolle sind NICHT in diesem Paket enthalten – diese werden mit dem Zusatzpaket 4.2990.LP abgerechnet"
+    ],
+    "fr": [
+      "📦 **Forfait de prestations pour UV/MV (ne s'applique pas à IV)**",
+      "🦷 **Prestations individuelles incluses:**",
+      "   • 4.2010 Extraction dentaire complexe",
+      "   • 4.2020 Extraction dentaire avec séparation",
+      "   • 4.2050 Hémisection ou amputation radiculaire",
+      "   • 4.2130 Excision biopsique",
+      "   • 4.2180 Correction de frein labial, lingual ou jugal",
+      "🧾 **Matériel consommable** inclus",
+      "⚠️ **Important:** Les sutures, la radiographie, l'anesthésie et le contrôle de la plaie ne sont PAS inclus dans ce forfait – ils sont facturés avec le forfait supplémentaire 4.2990.LP"
+    ],
+    "it": [
+      "📦 **Pacchetto di prestazioni per UV/MV (non applicabile a IV)**",
+      "🦷 **Prestazioni individuali incluse:**",
+      "   • 4.2010 Estrazione dentale complessa",
+      "   • 4.2020 Estrazione dentale con separazione",
+      "   • 4.2050 Emisezione o amputazione radicolare",
+      "   • 4.2130 Escissione bioptica",
+      "   • 4.2180 Correzione di frenulo labiale, linguale o genieno",
+      "🧾 **Materiale di consumo** incluso",
+      "⚠️ **Importante:** Le suture, la radiografia, l'anestesia e il controllo della ferita NON sono inclusi in questo pacchetto – vengono fatturati con il pacchetto supplementare 4.2990.LP"
+    ],
+    "en": [
+      "📦 **Service package for UV/MV (not applicable to IV)**",
+      "🦷 **Individual services included:**",
+      "   • 4.2010 Complex tooth extraction",
+      "   • 4.2020 Tooth extraction with separation",
+      "   • 4.2050 Hemisection or root amputation",
+      "   • 4.2130 Biopsy excision",
+      "   • 4.2180 Correction of lip, tongue or cheek frenulum",
+      "🧾 **Consumables** included",
+      "⚠️ **Important:** Sutures, X-ray, anesthesia and wound control are NOT included in this package – they are billed with the supplementary package 4.2990.LP"
+    ],
+    "es": [
+      "📦 **Paquete de prestaciones para UV/MV (no aplica a IV)**",
+      "🦷 **Prestaciones individuales incluidas:**",
+      "   • 4.2010 Extracción dental compleja",
+      "   • 4.2020 Extracción dental con separación",
+      "   • 4.2050 Hemisección o amputación radicular",
+      "   • 4.2130 Excisión biópsica",
+      "   • 4.2180 Corrección de frenillo labial, lingual o yugal",
+      "🧾 **Consumibles** incluidos",
+      "⚠️ **Importante:** Las suturas, la radiografía, la anestesia y el control de la herida NO están incluidos en este paquete – se facturan con el paquete suplementario 4.2990.LP"
+    ],
+    "pt": [
+      "📦 **Pacote de prestações para UV/MV (não aplicável a IV)**",
+      "🦷 **Prestações individuais incluídas:**",
+      "   • 4.2010 Extração dentária complexa",
+      "   • 4.2020 Extração dentária com separação",
+      "   • 4.2050 Hemissecção ou amputação radicular",
+      "   • 4.2130 Excisão de biópsia",
+      "   • 4.2180 Correção de frénulo labial, lingual ou jugal",
+      "🧾 **Consumíveis** incluídos",
+      "⚠️ **Importante:** As suturas, a radiografia, a anestesia e o controlo da ferida NÃO estão incluídos neste pacote – são faturados com o pacote suplementar 4.2990.LP"
+    ],
+    "pl": [
+      "📦 **Pakiet usług dla UV/MV (nie dotyczy IV)**",
+      "🦷 **Zawarte usługi indywidualne:**",
+      "   • 4.2010 Skomplikowane usunięcie zęba",
+      "   • 4.2020 Usunięcie zęba z podziałem",
+      "   • 4.2050 Hemisekcja lub amputacja korzenia",
+      "   • 4.2130 Wycięcie biopsyjne",
+      "   • 4.2180 Korekta wędzidełka wargi, języka lub policzka",
+      "🧾 **Materiały eksploatacyjne** wliczone",
+      "⚠️ **Ważne:** Szwy, rentgen, znieczulenie i kontrola rany NIE są zawarte w tym pakiecie – są rozliczane z pakietem uzupełniającym 4.2990.LP"
+    ],
+    "al": [
+      "📦 **Paketa e shërbimeve për UV/MV (nuk vlen për IV)**",
+      "🦷 **Shërbimet individuale të përfshira:**",
+      "   • 4.2010 Nxjerrje komplekse e dhëmbit",
+      "   • 4.2020 Nxjerrje e dhëmbit me ndarje",
+      "   • 4.2050 Hemiseksion ose amputim i rrënjës",
+      "   • 4.2130 Ekscizion biopsie",
+      "   • 4.2180 Korrigjim i frenulumit të buzës, gjuhës ose faqes",
+      "🧾 **Materiale harxhuese** të përfshira",
+      "⚠️ **E rëndësishme:** Qepjet, rrezet X, anestezia dhe kontrolli i plagës NUK janë të përfshira në këtë paketë – ato faturohen me paketën shtesë 4.2990.LP"
+    ],
+    "tr": [
+      "📦 **UV/MV için hizmet paketi (IV için geçerli değildir)**",
+      "🦷 **Dahil olan bireysel hizmetler:**",
+      "   • 4.2010 Karmaşık diş çekimi",
+      "   • 4.2020 Bölerek diş çekimi",
+      "   • 4.2050 Hemiseksiyon veya kök amputasyonu",
+      "   • 4.2130 Biyopsi eksizyonu",
+      "   • 4.2180 Dudak, dil veya yanak frenulum düzeltmesi",
+      "🧾 **Sarf malzemeleri** dahildir",
+      "⚠️ **Önemli:** Dikişler, röntgen, anestezi ve yara kontrolü BU pakete DAHİL DEĞİLDİR – bunlar ek paket 4.2990.LP ile faturalandırılır"
+    ],
+    "hr": [
+      "📦 **Paket usluga za UV/MV (ne vrijedi za IV)**",
+      "🦷 **Pojedinačne usluge uključene:**",
+      "   • 4.2010 Složeno vađenje zuba",
+      "   • 4.2020 Vađenje zuba s dijeljenjem",
+      "   • 4.2050 Hemisekcija ili amputacija korijena",
+      "   • 4.2130 Ekscizija biopsije",
+      "   • 4.2180 Korekcija frenuluma usne, jezika ili obraza",
+      "🧾 **Potrošni materijal** uključen",
+      "⚠️ **Važno:** Šavovi, rendgen, anestezija i kontrola rane NISU uključeni u ovaj paket – naplaćuju se s dodatnim paketom 4.2990.LP"
+    ],
+    "ta": [
+      "📦 **UV/MV க்கான சேவை தொகுப்பு (IV க்கு பொருந்தாது)**",
+      "🦷 **சேர்க்கப்பட்டுள்ள தனிப்பட்ட சேவைகள்:**",
+      "   • 4.2010 சிக்கலான பல் பிடுங்கல்",
+      "   • 4.2020 பிரித்து பல் பிடுங்கல்",
+      "   • 4.2050 ஹெமிசெக்ஷன் அல்லது வேர் துண்டிப்பு",
+      "   • 4.2130 பயாப்ஸி அகற்றல்",
+      "   • 4.2180 உதடு, நாக்கு அல்லது கன்ன ஃப்ரெனுலம் திருத்தம்",
+      "🧾 **நுகர்பொருட்கள்** சேர்க்கப்பட்டுள்ளன",
+      "⚠️ **முக்கியம்:** தையல்கள், எக்ஸ்-ரே, மரத்துப்போகச் செய்தல் மற்றும் காயம் கட்டுப்பாடு ஆகியவை இந்த தொகுப்பில் சேர்க்கப்படவில்லை – அவை கூடுதல் தொகுப்பு 4.2990.LP உடன் கணக்கிடப்படுகின்றன"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "📦 **Nur für UV/MV** (Unfall- und Militärversicherung) – **nicht für IV**",
+      "🦷 **Pro Sitzung** maximal 1 mal verrechenbar",
+      "🔧 **Zusätzliche Zähne** in derselben Sitzung werden mit 4.2010.LP abgerechnet",
+      "💉 **Nähte, Röntgen, Anästhesie, Wundkontrolle:** Diese werden mit dem Zusatzpaket 4.2990.LP abgerechnet (1 mal pro Sitzung)",
+      "📋 **Aufklärung:** Die Tarifziffer 4.0110 «Instruktion und Aufklärung des Patienten» darf 1 mal pro Fall zusätzlich verrechnet werden",
+      "⚠️ **Wichtig:** Dies ist ein Leistungspaket, keine Pauschale. Bei nachweisbarem Mehraufwand können zusätzliche Einzelleistungen verrechnet werden"
+    ],
+    "fr": [
+      "📦 **Uniquement pour UV/MV** (assurance accidents et militaire) – **pas pour IV**",
+      "🦷 **Par séance** maximum 1 fois facturable",
+      "🔧 **Dents supplémentaires** dans la même séance sont facturées avec 4.2010.LP",
+      "💉 **Sutures, radiographie, anesthésie, contrôle de la plaie:** Celles-ci sont facturées avec le forfait supplémentaire 4.2990.LP (1 fois par séance)",
+      "📋 **Information:** Le code 4.0110 «Instruction et information du patient» peut être facturé 1 fois par cas en supplément",
+      "⚠️ **Important:** Il s'agit d'un forfait de prestations, pas d'un forfait global. En cas de surcroît de travail justifié, des prestations individuelles supplémentaires peuvent être facturées"
+    ],
+    "it": [
+      "📦 **Solo per UV/MV** (assicurazione infortuni e militare) – **non per IV**",
+      "🦷 **Per seduta** massimo 1 volta fatturabile",
+      "🔧 **Denti aggiuntivi** nella stessa seduta sono fatturati con 4.2010.LP",
+      "💉 **Suture, radiografia, anestesia, controllo della ferita:** Queste sono fatturate con il pacchetto supplementare 4.2990.LP (1 volta per seduta)",
+      "📋 **Informazione:** Il codice 4.0110 «Istruzione e informazione del paziente» può essere fatturato 1 volta per caso in aggiunta",
+      "⚠️ **Importante:** Si tratta di un pacchetto di prestazioni, non di una tariffa forfettaria. In caso di maggiore onere documentato, possono essere fatturate prestazioni individuali aggiuntive"
+    ],
+    "en": [
+      "📦 **Only for UV/MV** (accident and military insurance) – **not for IV**",
+      "🦷 **Per session** maximum 1 time billable",
+      "🔧 **Additional teeth** in the same session are billed with 4.2010.LP",
+      "💉 **Sutures, X-ray, anesthesia, wound control:** These are billed with the supplementary package 4.2990.LP (1 time per session)",
+      "📋 **Information:** Code 4.0110 «Instruction and information of the patient» may be billed 1 time per case in addition",
+      "⚠️ **Important:** This is a service package, not a flat rate. In case of proven additional effort, additional individual services may be billed"
+    ],
+    "es": [
+      "📦 **Solo para UV/MV** (seguro de accidentes y militar) – **no para IV**",
+      "🦷 **Por sesión** máximo 1 vez facturable",
+      "🔧 **Dientes adicionales** en la misma sesión se facturan con 4.2010.LP",
+      "💉 **Suturas, radiografía, anestesia, control de la herida:** Estos se facturan con el paquete suplementario 4.2990.LP (1 vez por sesión)",
+      "📋 **Información:** El código 4.0110 «Instrucción e información del paciente» puede facturarse 1 vez por caso adicionalmente",
+      "⚠️ **Importante:** Este es un paquete de prestaciones, no una tarifa plana. En caso de esfuerzo adicional justificado, pueden facturarse prestaciones individuales adicionales"
+    ],
+    "pt": [
+      "📦 **Apenas para UV/MV** (seguro de acidentes e militar) – **não para IV**",
+      "🦷 **Por sessão** máximo 1 vez faturavel",
+      "🔧 **Dentes adicionais** na mesma sessão são faturados com 4.2010.LP",
+      "💉 **Suturas, radiografia, anestesia, controlo da ferida:** Estes são faturados com o pacote suplementar 4.2990.LP (1 vez por sessão)",
+      "📋 **Informação:** O código 4.0110 «Instrução e informação do paciente» pode ser faturado 1 vez por caso adicionalmente",
+      "⚠️ **Importante:** Este é um pacote de prestações, não uma tarifa fixa. Em caso de esforço adicional comprovado, podem ser faturadas prestações individuais adicionais"
+    ],
+    "pl": [
+      "📦 **Tylko dla UV/MV** (ubezpieczenie wypadkowe i wojskowe) – **nie dla IV**",
+      "🦷 **Na sesję** maksymalnie 1 raz do rozliczenia",
+      "🔧 **Dodatkowe zęby** w tej samej sesji są rozliczane z 4.2010.LP",
+      "💉 **Szwy, rentgen, znieczulenie, kontrola rany:** Są one rozliczane z pakietem uzupełniającym 4.2990.LP (1 raz na sesję)",
+      "📋 **Informacja:** Kod 4.0110 «Instrukcja i informacja pacjenta» może być rozliczony 1 raz na przypadek dodatkowo",
+      "⚠️ **Ważne:** To jest pakiet usług, nie ryczałt. W przypadku udokumentowanego dodatkowego nakładu pracy mogą być rozliczone dodatkowe usługi indywidualne"
+    ],
+    "al": [
+      "📦 **Vetëm për UV/MV** (sigurimi i aksidenteve dhe ushtarak) – **jo për IV**",
+      "🦷 **Për seancë** maksimumi 1 herë e faturoshme",
+      "🔧 **Dhëmbë shtesë** në të njëjtën seancë faturohen me 4.2010.LP",
+      "💉 **Qepjet, rrezet X, anestezia, kontrolli i plagës:** Këto faturohen me paketën shtesë 4.2990.LP (1 herë për seancë)",
+      "📋 **Informimi:** Kodi 4.0110 «Udhëzim dhe informim i pacientit» mund të faturohet 1 herë për rast shtesë",
+      "⚠️ **E rëndësishme:** Ky është një paketë shërbimesh, jo një tarifë fikse. Në rast të përpjekjeve shtesë të provuara, mund të faturohen shërbime individuale shtesë"
+    ],
+    "tr": [
+      "📦 **Sadece UV/MV için** (kaza ve askerlik sigortası) – **IV için değil**",
+      "🦷 **Seans başına** maksimum 1 kez faturalandırılabilir",
+      "🔧 **Aynı seansta ek dişler** 4.2010.LP ile faturalandırılır",
+      "💉 **Dikişler, röntgen, anestezi, yara kontrolü:** Bunlar ek paket 4.2990.LP ile faturalandırılır (seans başına 1 kez)",
+      "📋 **Bilgilendirme:** 4.0110 «Hastanın bilgilendirilmesi ve talimatlandırılması» kodu ek olarak vaka başına 1 kez faturalandırılabilir",
+      "⚠️ **Önemli:** Bu bir hizmet paketidir, sabit ücret değildir. Kanıtlanmış ek çaba durumunda, ek bireysel hizmetler faturalandırılabilir"
+    ],
+    "hr": [
+      "📦 **Samo za UV/MV** (osiguranje od nezgode i vojno osiguranje) – **ne za IV**",
+      "🦷 **Po seansi** maksimalno 1 put naplativo",
+      "🔧 **Dodatni zubi** u istoj seansi naplaćuju se s 4.2010.LP",
+      "💉 **Šavovi, rendgen, anestezija, kontrola rane:** Oni se naplaćuju s dodatnim paketom 4.2990.LP (1 put po seansi)",
+      "📋 **Informiranje:** Kod 4.0110 «Instrukcija i informiranje pacijenta» može se naplatiti 1 put po slučaju dodatno",
+      "⚠️ **Važno:** Ovo je paket usluga, ne paušal. U slučaju dokazanog dodatnog napora, mogu se naplatiti dodatne pojedinačne usluge"
+    ],
+    "ta": [
+      "📦 **UV/MV க்கு மட்டும்** (விபத்து மற்றும் இராணுவ காப்பீடு) – **IV க்கு அல்ல**",
+      "🦷 **ஒரு அமர்வுக்கு** அதிகபட்சம் 1 முறை கணக்கிடலாம்",
+      "🔧 **அதே அமர்வில் கூடுதல் பற்கள்** 4.2010.LP உடன் கணக்கிடப்படும்",
+      "💉 **தையல்கள், எக்ஸ்-ரே, மரத்துப்போகச் செய்தல், காயம் கட்டுப்பாடு:** இவை கூடுதல் தொகுப்பு 4.2990.LP உடன் கணக்கிடப்படும் (ஒரு அமர்வுக்கு 1 முறை)",
+      "📋 **தகவல்:** 4.0110 «நோயாளியின் அறிவுறுத்தல் மற்றும் தகவல்» குறியீடு ஒரு வழக்குக்கு 1 முறை கூடுதலாக கணக்கிடப்படலாம்",
+      "⚠️ **முக்கியம்:** இது ஒரு சேவை தொகுப்பு, ஒரு நிலையான கட்டணம் அல்ல. நிரூபிக்கப்பட்ட கூடுதல் முயற்சி ஏற்பட்டால், கூடுதல் தனிப்பட்ட சேவைகள் கணக்கிடப்படலாம்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einem Leistungspaket und einer normalen Abrechnung?",
+        "answer": "Ein Leistungspaket (LP) fasst mehrere typische Einzelleistungen zu einem Paket zusammen. Das macht die Abrechnung einfacher. Bei nachweisbarem Mehraufwand können trotzdem zusätzliche Einzelleistungen verrechnet werden – es ist also keine Pauschale. Für UV/MV-Fälle sind diese Pakete Pflicht, für Privatpatienten gelten die normalen Einzelleistungen."
+      },
+      {
+        "question": "Was ist in diesem Paket enthalten und was nicht?",
+        "answer": "Enthalten sind: die eigentliche Operation (z.B. komplexe Zahnextraktion, Hemisektion, Probeexzision, Korrektur von Lippen-/Zungenbändern) sowie Verbrauchsmaterial. Nicht enthalten sind: Anästhesie, Röntgenbild, Nähte und Wundkontrolle. Diese werden mit dem Zusatzpaket 4.2990.LP abgerechnet."
+      },
+      {
+        "question": "Gilt dieses Paket auch für die Invalidenversicherung (IV)?",
+        "answer": "Nein. Die Leistungspakete Plus (LP+) gelten ausschließlich für den Unfall- und Militärversicherungsbereich (UV/MV). Für die Invalidenversicherung (IV) werden die normalen Einzelleistungen abgerechnet."
+      },
+      {
+        "question": "Wie viele Zähne kann ich mit einem Paket behandeln lassen?",
+        "answer": "Das Paket 4.2010.LP gilt pro Zahn oder Region. Wenn mehrere Zähne in derselben Sitzung operiert werden, wird für jeden weiteren Zahn zusätzlich dasselbe Paket verrechnet."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre un forfait de prestations et une facturation normale?",
+        "answer": "Un forfait de prestations (LP) regroupe plusieurs prestations individuelles typiques en un seul forfait. Cela simplifie la facturation. En cas de surcroît de travail justifié, des prestations individuelles supplémentaires peuvent néanmoins être facturées – ce n'est donc pas un forfait global. Pour les cas UV/MV, ces forfaits sont obligatoires, pour les patients privés, les prestations individuelles normales s'appliquent."
+      },
+      {
+        "question": "Qu'est-ce qui est inclus dans ce forfait et qu'est-ce qui ne l'est pas?",
+        "answer": "Sont inclus: l'opération elle-même (par exemple extraction dentaire complexe, hémisection, excision biopsique, correction de freins) ainsi que le matériel consommable. Ne sont pas inclus: l'anesthésie, la radiographie, les sutures et le contrôle de la plaie. Ceux-ci sont facturés avec le forfait supplémentaire 4.2990.LP."
+      },
+      {
+        "question": "Ce forfait s'applique-t-il également à l'assurance invalidité (IV)?",
+        "answer": "Non. Les forfaits de prestations Plus (LP+) s'appliquent exclusivement au domaine de l'assurance accidents et militaire (UV/MV). Pour l'assurance invalidité (IV), les prestations individuelles normales sont facturées."
+      },
+      {
+        "question": "Combien de dents puis-je traiter avec un forfait?",
+        "answer": "Le forfait 4.2010.LP s'applique par dent ou par région. Si plusieurs dents sont opérées lors de la même séance, le même forfait est facturé pour chaque dent supplémentaire."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra un pacchetto di prestazioni e una fatturazione normale?",
+        "answer": "Un pacchetto di prestazioni (LP) raggruppa diverse prestazioni individuali tipiche in un unico pacchetto. Questo semplifica la fatturazione. In caso di maggiore onere documentato, possono comunque essere fatturate prestazioni individuali aggiuntive – quindi non è una tariffa forfettaria. Per i casi UV/MV, questi pacchetti sono obbligatori, per i pazienti privati valgono le normali prestazioni individuali."
+      },
+      {
+        "question": "Cosa è incluso in questo pacchetto e cosa no?",
+        "answer": "Sono inclusi: l'operazione stessa (ad es. estrazione dentale complessa, emisezione, escissione bioptica, correzione di frenuli) e il materiale di consumo. Non sono inclusi: anestesia, radiografia, suture e controllo della ferita. Questi vengono fatturati con il pacchetto supplementare 4.2990.LP."
+      },
+      {
+        "question": "Questo pacchetto vale anche per l'assicurazione invalidità (IV)?",
+        "answer": "No. I pacchetti di prestazioni Plus (LP+) si applicano esclusivamente all'ambito dell'assicurazione infortuni e militare (UV/MV). Per l'assicurazione invalidità (IV) vengono fatturate le normali prestazioni individuali."
+      },
+      {
+        "question": "Quanti denti posso trattare con un pacchetto?",
+        "answer": "Il pacchetto 4.2010.LP si applica per dente o regione. Se più denti vengono operati nella stessa seduta, lo stesso pacchetto viene fatturato per ogni dente aggiuntivo."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between a service package and normal billing?",
+        "answer": "A service package (LP) groups several typical individual services into one package. This simplifies billing. In case of proven additional effort, additional individual services can still be billed – so it's not a flat rate. For UV/MV cases, these packages are mandatory; for private patients, normal individual services apply."
+      },
+      {
+        "question": "What is included in this package and what is not?",
+        "answer": "Included: the operation itself (e.g., complex tooth extraction, hemisection, biopsy excision, frenulum correction) and consumables. Not included: anesthesia, X-ray, sutures, and wound control. These are billed with the supplementary package 4.2990.LP."
+      },
+      {
+        "question": "Does this package also apply to disability insurance (IV)?",
+        "answer": "No. The Plus service packages (LP+) apply exclusively to accident and military insurance (UV/MV). For disability insurance (IV), normal individual services are billed."
+      },
+      {
+        "question": "How many teeth can I treat with one package?",
+        "answer": "Package 4.2010.LP applies per tooth or region. If multiple teeth are operated on in the same session, the same package is billed for each additional tooth."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre un paquete de prestaciones y una facturación normal?",
+        "answer": "Un paquete de prestaciones (LP) agrupa varias prestaciones individuales típicas en un solo paquete. Esto simplifica la facturación. En caso de esfuerzo adicional justificado, pueden facturarse prestaciones individuales adicionales – por lo que no es una tarifa plana. Para casos UV/MV, estos paquetes son obligatorios; para pacientes privados, se aplican las prestaciones individuales normales."
+      },
+      {
+        "question": "¿Qué está incluido en este paquete y qué no?",
+        "answer": "Están incluidos: la operación en sí (por ejemplo, extracción dental compleja, hemisección, escisión biópsica, corrección de frenillos) y los consumibles. No están incluidos: anestesia, radiografía, suturas y control de la herida. Estos se facturan con el paquete suplementario 4.2990.LP."
+      },
+      {
+        "question": "¿Este paquete también se aplica al seguro de invalidez (IV)?",
+        "answer": "No. Los paquetes de prestaciones Plus (LP+) se aplican exclusivamente al ámbito del seguro de accidentes y militar (UV/MV). Para el seguro de invalidez (IV), se facturan las prestaciones individuales normales."
+      },
+      {
+        "question": "¿Cuántos dientes puedo tratar con un paquete?",
+        "answer": "El paquete 4.2010.LP se aplica por diente o región. Si se operan varios dientes en la misma sesión, se factura el mismo paquete para cada diente adicional."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre um pacote de prestações e uma faturação normal?",
+        "answer": "Um pacote de prestações (LP) agrupa várias prestações individuais típicas num único pacote. Isto simplifica a faturação. Em caso de esforço adicional comprovado, podem ser faturadas prestações individuais adicionais – portanto não é uma tarifa fixa. Para casos UV/MV, estes pacotes são obrigatórios; para pacientes privados, aplicam-se as prestações individuais normais."
+      },
+      {
+        "question": "O que está incluído neste pacote e o que não está?",
+        "answer": "Estão incluídos: a operação em si (por exemplo, extração dentária complexa, hemissecção, excisão de biópsia, correção de frénulos) e os consumíveis. Não estão incluídos: anestesia, radiografia, suturas e controlo da ferida. Estes são faturados com o pacote suplementar 4.2990.LP."
+      },
+      {
+        "question": "Este pacote também se aplica ao seguro de invalidez (IV)?",
+        "answer": "Não. Os pacotes de prestações Plus (LP+) aplicam-se exclusivamente ao domínio do seguro de acidentes e militar (UV/MV). Para o seguro de invalidez (IV), são faturadas as prestações individuais normais."
+      },
+      {
+        "question": "Quantos dentes posso tratar com um pacote?",
+        "answer": "O pacote 4.2010.LP aplica-se por dente ou região. Se vários dentes forem operados na mesma sessão, o mesmo pacote é faturado para cada dente adicional."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między pakietem usług a normalnym rozliczaniem?",
+        "answer": "Pakiet usług (LP) grupuje kilka typowych usług indywidualnych w jeden pakiet. Upraszcza to rozliczanie. W przypadku udokumentowanego dodatkowego nakładu pracy można mimo to rozliczyć dodatkowe usługi indywidualne – nie jest to więc ryczałt. Dla przypadków UV/MV pakiety te są obowiązkowe, dla pacjentów prywatnych obowiązują normalne usługi indywidualne."
+      },
+      {
+        "question": "Co jest zawarte w tym pakiecie, a co nie?",
+        "answer": "Zawarte są: sama operacja (np. skomplikowane usunięcie zęba, hemisekcja, wycięcie biopsyjne, korekta wędzidełek) oraz materiały eksploatacyjne. Nie zawarte są: znieczulenie, rentgen, szwy i kontrola rany. Są one rozliczane z pakietem uzupełniającym 4.2990.LP."
+      },
+      {
+        "question": "Czy ten pakiet dotyczy również ubezpieczenia inwalidzkiego (IV)?",
+        "answer": "Nie. Pakiety usług Plus (LP+) dotyczą wyłącznie ubezpieczenia wypadkowego i wojskowego (UV/MV). Dla ubezpieczenia inwalidzkiego (IV) rozliczane są normalne usługi indywidualne."
+      },
+      {
+        "question": "Ile zębów można leczyć jednym pakietem?",
+        "answer": "Pakiet 4.2010.LP dotyczy jednego zęba lub regionu. Jeśli w tej samej sesji operowanych jest kilka zębów, ten sam pakiet jest rozliczany za każdy dodatkowy ząb."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis një pakete shërbimesh dhe faturimit normal?",
+        "answer": "Një paketë shërbimesh (LP) grupon disa shërbime individuale tipike në një paketë të vetme. Kjo thjeshton faturimin. Në rast të përpjekjeve shtesë të provuara, mund të faturohen përsëri shërbime individuale shtesë – pra nuk është një tarifë fikse. Për rastet UV/MV, këto paketa janë të detyrueshme; për pacientët privatë, zbatohen shërbimet normale individuale."
+      },
+      {
+        "question": "Çfarë përfshihet në këtë paketë dhe çfarë jo?",
+        "answer": "Përfshihen: vetë operacioni (p.sh., nxjerrje komplekse e dhëmbit, hemiseksion, ekscizion biopsie, korrigjim i frenulumit) dhe materialet harxhuese. Nuk përfshihen: anestezia, rrezet X, qepjet dhe kontrolli i plagës. Këto faturohen me paketën shtesë 4.2990.LP."
+      },
+      {
+        "question": "A vlen kjo paketë edhe për sigurimin e invaliditetit (IV)?",
+        "answer": "Jo. Paketat e shërbimeve Plus (LP+) zbatohen ekskluzivisht për sigurimin e aksidenteve dhe ushtarak (UV/MV). Për sigurimin e invaliditetit (IV), faturohen shërbimet normale individuale."
+      },
+      {
+        "question": "Sa dhëmbë mund të trajtoj me një paketë?",
+        "answer": "Paketa 4.2010.LP zbatohet për dhëmb ose rajon. Nëse operohen disa dhëmbë në të njëjtën seancë, e njëjta paketë faturohet për çdo dhëmb shtesë."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bir hizmet paketi ile normal faturalandırma arasındaki fark nedir?",
+        "answer": "Bir hizmet paketi (LP), birkaç tipik bireysel hizmeti tek bir pakette birleştirir. Bu, faturalandırmayı basitleştirir. Kanıtlanmış ek çaba durumunda, ek bireysel hizmetler yine de faturalandırılabilir – bu nedenle sabit bir ücret değildir. UV/MV vakaları için bu paketler zorunludur; özel hastalar için normal bireysel hizmetler geçerlidir."
+      },
+      {
+        "question": "Bu pakette neler var ve neler yok?",
+        "answer": "Dahil olanlar: operasyonun kendisi (örn. karmaşık diş çekimi, hemiseksiyon, biyopsi eksizyonu, frenulum düzeltmesi) ve sarf malzemeleri. Dahil olmayanlar: anestezi, röntgen, dikişler ve yara kontrolü. Bunlar ek paket 4.2990.LP ile faturalandırılır."
+      },
+      {
+        "question": "Bu paket engellilik sigortası (IV) için de geçerli midir?",
+        "answer": "Hayır. Plus hizmet paketleri (LP+) yalnızca kaza ve askerlik sigortası (UV/MV) alanı için geçerlidir. Engellilik sigortası (IV) için normal bireysel hizmetler faturalandırılır."
+      },
+      {
+        "question": "Bir paketle kaç diş tedavi ettirebilirim?",
+        "answer": "Paket 4.2010.LP diş veya bölge başına uygulanır. Aynı seansta birden fazla diş ameliyat edilirse, her ek diş için aynı paket faturalandırılır."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između paketa usluga i normalnog naplaćivanja?",
+        "answer": "Paket usluga (LP) grupira nekoliko tipičnih pojedinačnih usluga u jedan paket. To pojednostavljuje naplatu. U slučaju dokazanog dodatnog napora, dodatne pojedinačne usluge se i dalje mogu naplatiti – dakle nije paušal. Za UV/MV slučajeve ovi paketi su obvezni; za privatne pacijente vrijede normalne pojedinačne usluge."
+      },
+      {
+        "question": "Što je uključeno u ovaj paket, a što nije?",
+        "answer": "Uključeno: sama operacija (npr. složeno vađenje zuba, hemisekcija, ekscizija biopsije, korekcija frenuluma) i potrošni materijal. Nije uključeno: anestezija, rendgen, šavovi i kontrola rane. Oni se naplaćuju s dodatnim paketom 4.2990.LP."
+      },
+      {
+        "question": "Vrijedi li ovaj paket i za invalidsko osiguranje (IV)?",
+        "answer": "Ne. Plus paketi usluga (LP+) vrijede isključivo za osiguranje od nezgode i vojno osiguranje (UV/MV). Za invalidsko osiguranje (IV) naplaćuju se normalne pojedinačne usluge."
+      },
+      {
+        "question": "Koliko zuba mogu liječiti s jednim paketom?",
+        "answer": "Paket 4.2010.LP primjenjuje se po zubu ili regiji. Ako se više zuba operira u istoj seansi, isti paket se naplaćuje za svaki dodatni zub."
+      }
+    ],
+    "ta": [
+      {
+        "question": "ஒரு சேவை தொகுப்புக்கும் சாதாரண கணக்கிடுதலுக்கும் என்ன வித்தியாசம்?",
+        "answer": "ஒரு சேவை தொகுப்பு (LP) பல பொதுவான தனிப்பட்ட சேவைகளை ஒரு தொகுப்பாக தொகுக்கிறது. இது கணக்கிடுதலை எளிதாக்குகிறது. நிரூபிக்கப்பட்ட கூடுதல் முயற்சி ஏற்பட்டால், கூடுதல் தனிப்பட்ட சேவைகள் இன்னும் கணக்கிடப்படலாம் – எனவே இது ஒரு நிலையான கட்டணம் அல்ல. UV/MV வழக்குகளுக்கு, இந்த தொகுப்புகள் கட்டாயமானவை; தனியார் நோயாளிகளுக்கு, சாதாரண தனிப்பட்ட சேவைகள் பொருந்தும்."
+      },
+      {
+        "question": "இந்த தொகுப்பில் என்ன சேர்க்கப்பட்டுள்ளது, என்ன சேர்க்கப்படவில்லை?",
+        "answer": "சேர்க்கப்பட்டவை: அறுவை சிகிச்சை (எ.கா., சிக்கலான பல் பிடுங்கல், ஹெமிசெக்ஷன், பயாப்ஸி அகற்றல், ஃப்ரெனுலம் திருத்தம்) மற்றும் நுகர்பொருட்கள். சேர்க்கப்படாதவை: மரத்துப்போகச் செய்தல், எக்ஸ்-ரே, தையல்கள் மற்றும் காயம் கட்டுப்பாடு. இவை கூடுதல் தொகுப்பு 4.2990.LP உடன் கணக்கிடப்படுகின்றன."
+      },
+      {
+        "question": "இந்த தொகுப்பு ஊனமுறை காப்பீட்டுக்கும் (IV) பொருந்துமா?",
+        "answer": "இல்லை. Plus சேவை தொகுப்புகள் (LP+) பிரத்தியேகமாக விபத்து மற்றும் இராணுவ காப்பீட்டு (UV/MV) பகுதிக்கு பொருந்தும். ஊனமுறை காப்பீட்டுக்கு (IV), சாதாரண தனிப்பட்ட சேவைகள் கணக்கிடப்படுகின்றன."
+      },
+      {
+        "question": "ஒரு தொகுப்பில் எத்தனை பற்களுக்கு சிகிச்சை பெறலாம்?",
+        "answer": "தொகுப்பு 4.2010.LP ஒரு பல் அல்லது பகுதிக்கு பொருந்தும். ஒரே அமர்வில் பல பற்களுக்கு அறுவை சிகிச்சை செய்யப்பட்டால், ஒவ்வொரு கூடுதல் பல்லுக்கும் அதே தொகுப்பு கணக்கிடப்படுகிறது."
+      }
+    ]
+  }
+}

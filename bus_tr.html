@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
+    <title>İsviçre Sosyal Yardım Hesaplayıcısı & Diş Faturası Kod Çözücü | WelfareCalc.ch</title>
+    <meta name="description" content="WelfareCalc.ch resmi araçları: İsviçre sosyal yardımlarınızı (AHV/AVS, IV/AI, EL) ücretsiz ve anonim olarak hesaplayın – gizli diş ücretlerini ve DENTOTAR faturalarını deşifre edin. Kayıt yok, izleme yok, boş laf yok.">
+
+    <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        .container { max-width: 1200px; width: 100%; flex: 1; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
+        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
+        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
+        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
+        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
+        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
+        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
+        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
+        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
+        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
+        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
+        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
+        .seo-info li { margin: 0.4rem 0; }
+        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
+        .footer a { color: #0050a4; text-decoration: none; }
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>WelfareCalc.ch</h1>
+            <div class="slogan">Tahmin Etmeyi Bırakın. Öğrenmeye Başlayın.</div>
+            <p class="subtitle">
+                İsviçre sosyal yardımlarını ve diş faturalarını çözen gerçekten bağımsız tek portal.<br>
+                Kayıt yok. İzleme yok. Boş laf yok. Sadece gerçekler.
+            </p>
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <div class="choice-instruction">📌 Kod Çözücünüzü Seçin</div>
+        </div>
+
+        <div class="tools-grid">
+            <a href="https://www.welfarecalc.ch/tr.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">⚖️📊</div>
+                <div class="tool-title">İsviçre Yardım Hesaplayıcısı</div>
+                <div class="tool-description">
+                    Devletin size ne borçlu olduğunu görün — AHV/AVS, IV/AI, ek yardımlar, prim indirimleri. 
+                    <strong>Binlerce İsviçre Frangı'nı masada bırakmayın.</strong>
+                </div>
+            </a>
+            
+            <a href="https://www.welfarecalc.ch/blog/tr/dental/dental_tr.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">🦷💰</div>
+                <div class="tool-title">İsviçre Diş Faturası Denetçisi</div>
+                <div class="tool-description">
+                    Gizli Taxpunktwert ve DENTOTAR kodları faturanızı şişiriyor. 
+                    <strong>Diş faturanızı deşifre edin ve fazla ödemeyi durdurun.</strong>
+                </div>
+            </a>
+        </div>
+
+        <div class="seo-info">
+            <h2>İsviçre Sosyal & Diş Maliyetleri İçin Bilgi Seti</h2>
+            <p>WelfareCalc.ch, sistemin sıklıkla eksik ettiği şeffaflığı sağlar. <strong>Sosyal Yardım Hesaplayıcımız</strong> ile AHV/AVS, IV/AI ve ek yardımların dünyasında yol alın. <strong>İsviçre Diş Faturası Denetçisi</strong> ile 5 dakikalık bir kontrolün neden 200 CHF tuttuğunu ve faturanızdaki DENTOTAR kodlarını nasıl göreceğinizi anlayın.</p>
+            
+            <h3>Diş Hekiminize Fazla Ödemeyi Durdurun</h3>
+            <p>İsviçre diş faturaları, vergi puanları (TP) ve puan değerlerinin (Taxpunktwert) bir dilinde yazılır. Rehberimiz şunları gösteriyor:</p>
+            <ul>
+                <li><strong>DENTOTAR Kodları</strong> – 4.0000 ve 4.1110 gibi kodlar ne anlama geliyor.</li>
+                <li><strong>Sigorta Karşılaştırması</strong> – Yetişkinler için ek diş sigortalarının mantıklı olup olmadığı.</li>
+                <li><strong>Ücret Farkları</strong> – Aynı dolgunun bir klinikte 110 CHF, diğerinde 160 CHF olması.</li>
+                <li><strong>Hasta Hakları</strong> – İkinci görüş talebi ve tedavi planlarına itiraz.</li>
+            </ul>
+            
+            <h3>Sosyal Yardımlar – Hakkınız Olanı Alın</h3>
+            <p>İsviçre'de birçok kişi, başvuru sürecinin karmaşık olması nedeniyle yardımları kaçırıyor. Burada 2026 yılı AHV/AVS, IV/AI ve Prim İndirimleri (IPV) kılavuzlarını bulabilirsiniz.</p>
+            
+            <h3>Çok Dilli ve Gizlilik Öncelikli</h3>
+            <p>Tüm hesaplamalar <strong>doğrudan tarayıcınızda çalışır</strong>. Verilerinizi saklamıyoruz ve kimliğinizi izlemiyoruz. Araçlarımız çok dilli destek sunar.</p>
+            
+            <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+                📌 Veriler, <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO (BSV)</a> ve <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH (BAG)</a>'nin 2026 standartlarına dayanmaktadır.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>WelfareCalc.ch • Ücretsiz • Anonim • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="impressum.html">Künye</a> • 
+            <a href="datenschutz.html">Gizlilik Politikası</a> • 
+            <a href="haftung.html">Sorumluluk Reddi</a>
+        </p>
+    </div>
+</body>
+</html>

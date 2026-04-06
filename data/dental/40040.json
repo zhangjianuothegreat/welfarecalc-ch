@@ -1,0 +1,274 @@
+{
+  "code": "4.0040",
+  "name_de": "Befundaufnahme beim Notfallpatienten zwischen 20.00 Uhr und 07.00 Uhr",
+  "display_name": {
+    "de": "Nacht-Notfall Untersuchung (20-7 Uhr)",
+    "fr": "Examen d'urgence nocturne (20h-7h)",
+    "it": "Esame d'emergenza notturno (20-7)",
+    "en": "Night emergency examination (8pm-7am)",
+    "es": "Examen de emergencia nocturno (20-7 h)",
+    "pt": "Exame de emergência noturno (20h-7h)",
+    "pl": "Nocne badanie w nagłych przypadkach (20-7)",
+    "al": "Ekzaminim emergjent natë (20-7)",
+    "tr": "Gece acil muayene (20-7)",
+    "hr": "Noćni hitni pregled (20-7)",
+    "ta": "இரவு அவசர பரிசோதனை (மாலை 8 - காலை 7)"
+  },
+  "search_keywords": {
+    "de": ["notfall", "nacht", "nachts", "abend", "20 uhr", "22 uhr", "mitternacht", "später abend", "nachtbereitschaft", "nachtnotfall"],
+    "fr": ["urgence", "nuit", "soir", "20h", "minuit", "garde de nuit", "urgence nocturne"],
+    "it": ["emergenza", "notte", "sera", "20", "mezzanotte", "pronto intervento notturno"],
+    "en": ["emergency", "night", "evening", "8pm", "midnight", "night duty", "after hours"],
+    "es": ["emergencia", "noche", "tarde-noche", "20h", "medianoche", "guardia nocturna"],
+    "pt": ["emergência", "noite", "20h", "meia-noite", "horário noturno"],
+    "pl": ["nagły wypadek", "noc", "wieczór", "20", "północ", "dyżur nocny"],
+    "al": ["emergjente", "natë", "mbrëmje", "20:00", "mesnatë", "turni i natës"],
+    "tr": ["acil", "gece", "akşam", "20:00", "gece yarısı", "gece nöbeti"],
+    "hr": ["hitno", "noć", "večer", "20h", "ponoć", "noćna dežurstva"],
+    "ta": ["அவசர", "இரவு", "மாலை 8", "நள்ளிரவு", "இரவு பணி"]
+  },
+  "tp_uv_mviv": 146.40,
+  "tp_pp_max": 168.40,
+  "tp_pp_min": 124.40,
+  "chapter": "01.01",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn dein Zahn nachts oder spät abends plötzlich stark wehtut, kannst du zum Zahnarzt in Notfallpraxis gehen. Das ist teurer als tagsüber, weil der Zahnarzt extra für dich aus dem Bett kommt. Gut für echte Notfälle, wenn es nicht bis morgen warten kann.",
+    "fr": "Si ta dent te fait soudainement très mal la nuit ou tard le soir, tu peux aller chez le dentiste de garde. C'est plus cher que pendant la journée parce que le dentiste se déplace spécialement pour toi. Utile pour les vraies urgences qui ne peuvent pas attendre jusqu'à demain.",
+    "it": "Se il tuo dente ti fa improvvisamente molto male di notte o a tarda sera, puoi andare dal dentista di guardia. È più caro che durante il giorno perché il dentista viene appositamente per te. Buono per le vere emergenze che non possono aspettare fino a domani.",
+    "en": "If your tooth suddenly hurts a lot at night or late in the evening, you can go to the emergency dentist. It's more expensive than during the day because the dentist comes out specially for you. Good for real emergencies that cannot wait until tomorrow.",
+    "es": "Si te duele mucho un diente por la noche o al anochecer, puedes ir al dentista de urgencias. Es más caro que durante el día porque el dentista viene especialmente para ti. Bueno para emergencias reales que no pueden esperar hasta mañana.",
+    "pt": "Se o teu dente dói muito à noite ou ao final da tarde, podes ir ao dentista de emergência. É mais caro do que durante o dia porque o dentista vem especialmente para ti. Bom para emergências reais que não podem esperar até amanhã.",
+    "pl": "Jeśli ząb nagle bardzo boli w nocy lub późnym wieczorem, możesz iść do dentysty w nagłych wypadkach. To droższe niż w ciągu dnia, ponieważ dentysta przyjeżdża specjalnie dla ciebie. Dobre dla prawdziwych nagłych przypadków, które nie mogą czekać do rana.",
+    "al": "Nëse dhëmbi juaj dhemb shumë papritur gjatë natës ose vonë në mbrëmje, mund të shkoni te dentisti i emergjencës. Është më e shtrenjtë se gjatë ditës sepse dentisti vjen posaçërisht për ju. Mirë për emergjenca të vërteta që nuk mund të presin deri nesër.",
+    "tr": "Dişiniz gece veya akşam saatlerinde aniden çok ağrıyorsa, nöbetçi diş hekimine gidebilirsiniz. Gündüze göre daha pahalıdır çünkü diş hekimi sizin için özel olarak gelir. Sabaha kadar bekleyemeyecek gerçek acil durumlar için iyidir.",
+    "hr": "Ako vas zub iznenada jako zaboli noću ili kasno navečer, možete otići hitnom zubaru. To je skuplje nego danju jer zubar dolazi posebno zbog vas. Dobro za prave hitne slučajeve koji ne mogu čekati do jutra.",
+    "ta": "உங்கள் பல் இரவில் அல்லது மாலை நேரத்தில் திடீரென்று மிகவும் வலித்தால், அவசர பல் மருத்துவரிடம் செல்லலாம். இது பகல் நேரத்தை விட விலை அதிகம், ஏனெனில் பல் மருத்துவர் உங்களுக்காக சிறப்பாக வருகிறார். நாளை வரை காத்திருக்க முடியாத உண்மையான அவசர சூழ்நிலைகளுக்கு நல்லது."
+  },
+  "what_is_included": {
+    "de": ["🌙 Untersuchung nur der schmerzhaften Region (wie bei 4.0020)", "🦷 Notfallbehandlung zwischen 20:00 und 07:00 Uhr", "👄 Kurze Kontrolle der Mundschleimhaut im schmerzhaften Bereich", "📝 Kurze Befragung zu deinen Schmerzen", "⏰ Zuschlag für Nachtarbeit (höherer Preis)"],
+    "fr": ["🌙 Examen uniquement de la région douloureuse (comme 4.0020)", "🦷 Traitement d'urgence entre 20h00 et 07h00", "👄 Brève vérification de la muqueuse buccale dans la zone douloureuse", "📝 Courte interview sur ta douleur", "⏰ Supplément pour travail de nuit (prix plus élevé)"],
+    "it": ["🌙 Esame solo della regione dolorosa (come 4.0020)", "🦷 Trattamento d'emergenza tra le 20:00 e le 07:00", "👄 Breve controllo della mucosa orale nell'area dolorosa", "📝 Breve colloquio sul tuo dolore", "⏰ Supplemento per lavoro notturno (prezzo più alto)"],
+    "en": ["🌙 Examination only of the painful area (like 4.0020)", "🦷 Emergency treatment between 8:00 PM and 7:00 AM", "👄 Brief check of the oral mucosa in the painful area", "📝 Brief interview about your pain", "⏰ Surcharge for night work (higher price)"],
+    "es": ["🌙 Examen solo de la zona dolorosa (como 4.0020)", "🦷 Tratamiento de emergencia entre las 20:00 y las 07:00", "👄 Breve control de la mucosa oral en la zona dolorosa", "📝 Breve entrevista sobre tu dolor", "⏰ Recargo por trabajo nocturno (precio más alto)"],
+    "pt": ["🌙 Exame apenas da área dolorosa (como 4.0020)", "🦷 Tratamento de emergência entre as 20h00 e as 07h00", "👄 Breve verificação da mucosa oral na área dolorosa", "📝 Breve entrevista sobre a tua dor", "⏰ Suplemento por trabalho noturno (preço mais alto)"],
+    "pl": ["🌙 Badanie tylko bolesnego obszaru (jak 4.0020)", "🦷 Leczenie w nagłych przypadkach między 20:00 a 07:00", "👄 Krótka kontrola błony śluzowej w bolesnym obszarze", "📝 Krótki wywiad na temat bólu", "⏰ Dodatek za pracę nocną (wyższa cena)"],
+    "al": ["🌙 Ekzaminim vetëm i zonës së dhimbshme (si 4.0020)", "🦷 Trajtim emergjent ndërmjet 20:00 dhe 07:00", "👄 Kontroll i shkurtër i mukozës orale në zonën e dhimbshme", "📝 Intervistë e shkurtër për dhimbjen tënde", "⏰ Shtesë për punë nate (çmim më i lartë)"],
+    "tr": ["🌙 Sadece ağrılı bölgenin muayenesi (4.0020 gibi)", "🦷 20:00 ile 07:00 arasında acil tedavi", "👄 Ağrılı bölgede ağız mukozasının kısa kontrolü", "📝 Ağrın hakkında kısa görüşme", "⏰ Gece çalışma ek ücreti (daha yüksek fiyat)"],
+    "hr": ["🌙 Pregled samo bolnog područja (kao 4.0020)", "🦷 Hitno liječenje između 20:00 i 07:00", "👄 Kratka provjera sluznice usta u bolnom području", "📝 Kratki razgovor o tvojoj boli", "⏰ Dodatak za noćni rad (viša cijena)"],
+    "ta": ["🌙 வலிக்கும் பகுதியின் மட்டும் பரிசோதனை (4.0020 போல)", "🦷 மாலை 8 மணி முதல் காலை 7 மணி வரை அவசர சிகிச்சை", "👄 வலிக்கும் பகுதியில் வாய் சளி சவ்வின் சுருக்கமான சோதனை", "📝 உங்கள் வலி பற்றிய சுருக்கமான நேர்காணல்", "⏰ இரவு வேலைக்கான கூடுதல் கட்டணம் (அதிக விலை)"]
+  },
+  "important_rules": {
+    "de": ["🌙 Gilt nur für Notfallpatienten zwischen 20:00 und 07:00 Uhr", "🔍 Die Untersuchung ist auf die schmerzhafte Region beschränkt (wie 4.0020)", "🚫 Nicht kombinierbar mit Befundaufnahme an Sonn- und Feiertagen (4.0050)", "💰 Deutlich teurer als die normale Kurzbefundaufnahme (4.0020) wegen Nachtzuschlag", "📋 Bei umfassenderer Untersuchung gelten die Ziffern 4.0000 oder 4.0010"],
+    "fr": ["🌙 Valable uniquement pour les patients d'urgence entre 20h00 et 07h00", "🔍 L'examen est limité à la région douloureuse (comme 4.0020)", "🚫 Non combinable avec l'examen d'urgence les dimanches et jours fériés (4.0050)", "💰 Nettement plus cher que l'examen court normal (4.0020) en raison du supplément de nuit", "📋 Pour un examen plus complet, les codes 4.0000 ou 4.0010 s'appliquent"],
+    "it": ["🌙 Valido solo per pazienti d'emergenza tra le 20:00 e le 07:00", "🔍 L'esame è limitato alla regione dolorosa (come 4.0020)", "🚫 Non combinabile con l'esame d'emergenza in giorni festivi (4.0050)", "💰 Notevolmente più caro del normale esame breve (4.0020) per supplemento notturno", "📋 Per un esame più completo si applicano i codici 4.0000 o 4.0010"],
+    "en": ["🌙 Only valid for emergency patients between 8:00 PM and 7:00 AM", "🔍 The examination is limited to the painful area (like 4.0020)", "🚫 Not combinable with emergency examination on Sundays and holidays (4.0050)", "💰 Significantly more expensive than the normal short examination (4.0020) due to night surcharge", "📋 For a more comprehensive examination, codes 4.0000 or 4.001 apply"],
+    "es": ["🌙 Válido solo para pacientes de emergencia entre las 20:00 y las 07:00", "🔍 El examen se limita a la zona dolorosa (como 4.0020)", "🚫 No combinable con examen de emergencia en domingos y festivos (4.0050)", "💰 Significativamente más caro que el examen breve normal (4.0020) por recargo nocturno", "📋 Para un examen más completo, se aplican los códigos 4.0000 o 4.0010"],
+    "pt": ["🌙 Válido apenas para pacientes de emergência entre as 20h00 e as 07h00", "🔍 O exame está limitado à área dolorosa (como 4.0020)", "🚫 Não combinável com exame de emergência em domingos e feriados (4.0050)", "💰 Significativamente mais caro que o exame breve normal (4.0020) devido ao suplemento noturno", "📋 Para um exame mais completo, aplicam-se os códigos 4.0000 ou 4.0010"],
+    "pl": ["🌙 Ważne tylko dla pacjentów w nagłych przypadkach między 20:00 a 07:00", "🔍 Badanie ogranicza się do bolesnego obszaru (jak 4.0020)", "🚫 Nie łączy się z badaniem w nagłych przypadkach w niedziele i święta (4.0050)", "💰 Znacznie droższe niż normalne krótkie badanie (4.0020) z powodu dodatku nocnego", "📋 W przypadku bardziej kompleksowego badania stosuje się kody 4.0000 lub 4.0010"],
+    "al": ["🌙 Vlen vetëm për pacientë emergjentë ndërmjet 20:00 dhe 07:00", "🔍 Ekzaminimi është i kufizuar në zonën e dhimbshme (si 4.0020)", "🚫 Nuk kombinohet me ekzaminimin emergjent të dielave dhe festave (4.0050)", "💰 Dukshëm më e shtrenjtë se ekzaminimi i shkurtër normal (4.0020) për shkak të shtesës së natës", "📋 Për një ekzaminim më të plotë, aplikohen kodet 4.0000 ose 4.0010"],
+    "tr": ["🌙 Sadece 20:00 ile 07:00 arasında acil hastalar için geçerlidir", "🔍 Muayene ağrılı bölge ile sınırlıdır (4.0020 gibi)", "🚫 Pazar ve resmi tatil acil muayenesi (4.0050) ile birleştirilemez", "💰 Gece ek ücreti nedeniyle normal kısa muayeneden (4.0020) önemli ölçüde daha pahalıdır", "📋 Daha kapsamlı bir muayene için 4.0000 veya 4.0010 kodları uygulanır"],
+    "hr": ["🌙 Vrijedi samo za hitne pacijente između 20:00 i 07:00", "🔍 Pregled je ograničen na bolno područje (kao 4.0020)", "🚫 Ne kombinira se s hitnim pregledom nedjeljom i blagdanima (4.0050)", "💰 Znatno skuplje od normalnog kratkog pregleda (4.0020) zbog noćnog dodatka", "📋 Za potpuniji pregled primjenjuju se kodovi 4.0000 ili 4.0010"],
+    "ta": ["🌙 மாலை 8 மணி முதல் காலை 7 மணி வரை அவசர நோயாளிகளுக்கு மட்டும் செல்லுபடியாகும்", "🔍 பரிசோதனை வலிக்கும் பகுதிக்கு மட்டும் வரையறுக்கப்பட்டுள்ளது (4.0020 போல)", "🚫 ஞாயிறு மற்றும் விடுமுறை நாட்களில் அவசர பரிசோதனையுடன் (4.0050) இணைக்க முடியாது", "💰 இரவு கூடுதல் கட்டணம் காரணமாக சாதாரண குறுகிய பரிசோதனையை விட (4.0020) கணிசமாக அதிக விலை", "📋 மேலும் விரிவான பரிசோதனைக்கு, 4.0000 அல்லது 4.0010 குறியீடுகள் பொருந்தும்"]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Wann sollte ich den Nacht-Notfall wählen?",
+        "answer": "Nur bei echten Notfällen, wenn der Schmerz so stark ist, dass du nicht bis zum nächsten Morgen warten kannst. Beispiele: starker, unerträglicher Schmerz, starke Schwellung, Fieber, oder wenn ein Zahn komplett ausgeschlagen wurde."
+      },
+      {
+        "question": "Warum ist die Nacht-Notfall Untersuchung so viel teurer?",
+        "answer": "Weil der Zahnarzt außerhalb der normalen Arbeitszeiten für dich arbeitet. Er muss extra kommen oder seine Nachtruhe unterbrechen. Der höhere Preis ist der Nachtzuschlag (wie bei anderen Berufen auch)."
+      },
+      {
+        "question": "Was ist der Unterschied zur normalen Kurzbefundaufnahme (4.0020)?",
+        "answer": "Die normale Kurzbefundaufnahme (4.0020) kostet 33.10 TP und gilt tagsüber. Die Nacht-Notfall Untersuchung (4.0040) kostet 146.40 TP und gilt zwischen 20:00 und 07:00 Uhr. Die medizinische Leistung ist gleich, aber der Zeit macht den Preisunterschied."
+      },
+      {
+        "question": "Kann ich auch tagsüber den Nacht-Notfall abrechnen?",
+        "answer": "Nein! Diese Ziffer gilt NUR für Behandlungen zwischen 20:00 und 07:00 Uhr. Tagsüber gilt die normale Kurzbefundaufnahme (4.0020)."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quand dois-je choisir l'urgence de nuit?",
+        "answer": "Uniquement pour les vraies urgences, quand la douleur est si forte que tu ne peux pas attendre jusqu'au lendemain matin. Exemples : douleur forte et insupportable, gonflement important, fièvre, ou si une dent a été complètement expulsée."
+      },
+      {
+        "question": "Pourquoi l'examen d'urgence de nuit est-il tellement plus cher?",
+        "answer": "Parce que le dentiste travaille en dehors des heures normales pour toi. Il doit venir spécialement ou interrompre son repos nocturne. Le prix plus élevé est la majoration de nuit (comme dans d'autres professions)."
+      },
+      {
+        "question": "Quelle est la différence avec l'examen court normal (4.0020)?",
+        "answer": "L'examen court normal (4.0020) coûte 33.10 TP et s'applique pendant la journée. L'examen d'urgence de nuit (4.0040) coûte 146.40 TP et s'applique entre 20h00 et 07h00. La prestation médicale est la même, mais l'horaire fait la différence de prix."
+      },
+      {
+        "question": "Puis-je facturer l'urgence de nuit pendant la journée?",
+        "answer": "Non! Ce code s'applique UNIQUEMENT aux traitements entre 20h00 et 07h00. Pendant la journée, l'examen court normal (4.0020) s'applique."
+      }
+    ],
+    "it": [
+      {
+        "question": "Quando dovrei scegliere l'emergenza notturna?",
+        "answer": "Solo per vere emergenze, quando il dolore è così forte che non puoi aspettare fino al mattino successivo. Esempi: dolore forte e insopportabile, gonfiore importante, febbre, o se un dente è stato completamente espulso."
+      },
+      {
+        "question": "Perché l'esame d'emergenza notturno è molto più costoso?",
+        "answer": "Perché il dentista lavora fuori dall'orario normale per te. Deve venire appositamente o interrompere il suo riposo notturno. Il prezzo più alto è il supplemento notturno (come in altre professioni)."
+      },
+      {
+        "question": "Qual è la differenza con l'esame breve normale (4.0020)?",
+        "answer": "L'esame breve normale (4.0020) costa 33.10 TP e si applica durante il giorno. L'esame d'emergenza notturno (4.0040) costa 146.40 TP e si applica tra le 20:00 e le 07:00. La prestazione medica è la stessa, ma l'orario fa la differenza di prezzo."
+      },
+      {
+        "question": "Posso fatturare l'emergenza notturna durante il giorno?",
+        "answer": "No! Questo codice si applica SOLO ai trattamenti tra le 20:00 e le 07:00. Durante il giorno si applica l'esame breve normale (4.0020)."
+      }
+    ],
+    "en": [
+      {
+        "question": "When should I choose the night emergency?",
+        "answer": "Only for real emergencies, when the pain is so severe that you cannot wait until the next morning. Examples: severe, unbearable pain, significant swelling, fever, or if a tooth has been completely knocked out."
+      },
+      {
+        "question": "Why is the night emergency examination so much more expensive?",
+        "answer": "Because the dentist works outside normal hours for you. They have to come specially or interrupt their night's rest. The higher price is the night surcharge (like in other professions)."
+      },
+      {
+        "question": "What is the difference from the normal short examination (4.0020)?",
+        "answer": "The normal short examination (4.0020) costs 33.10 TP and applies during the day. The night emergency examination (4.0040) costs 146.40 TP and applies between 8:00 PM and 7:00 AM. The medical service is the same, but the time makes the price difference."
+      },
+      {
+        "question": "Can I bill the night emergency during the day?",
+        "answer": "No! This code applies ONLY to treatments between 8:00 PM and 7:00 AM. During the day, the normal short examination (4.0020) applies."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuándo debo elegir la emergencia nocturna?",
+        "answer": "Solo para emergencias reales, cuando el dolor es tan fuerte que no puedes esperar hasta la mañana siguiente. Ejemplos: dolor fuerte e insoportable, hinchazón importante, fiebre, o si se ha caído un diente por completo."
+      },
+      {
+        "question": "¿Por qué el examen de emergencia nocturna es mucho más caro?",
+        "answer": "Porque el dentista trabaja fuera del horario normal para ti. Tiene que venir especialmente o interrumpir su descanso nocturno. El precio más alto es el recargo nocturno (como en otras profesiones)."
+      },
+      {
+        "question": "¿Cuál es la diferencia con el examen breve normal (4.0020)?",
+        "answer": "El examen breve normal (4.0020) cuesta 33.10 TP y se aplica durante el día. El examen de emergencia nocturna (4.0040) cuesta 146.40 TP y se aplica entre las 20:00 y las 07:00. El servicio médico es el mismo, pero el horario hace la diferencia de precio."
+      },
+      {
+        "question": "¿Puedo facturar la emergencia nocturna durante el día?",
+        "answer": "¡No! Este código se aplica SOLO a tratamientos entre las 20:00 y las 07:00. Durante el día, se aplica el examen breve normal (4.0020)."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quando devo escolher a emergência noturna?",
+        "answer": "Apenas para emergências reais, quando a dor é tão forte que não podes esperar até à manhã seguinte. Exemplos: dor forte e insuportável, inchaço significativo, febre, ou se um dente foi completamente arrancado."
+      },
+      {
+        "question": "Porque é que o exame de emergência noturna é muito mais caro?",
+        "answer": "Porque o dentista trabalha fora do horário normal para ti. Ele tem que vir especialmente ou interromper o seu descanso noturno. O preço mais alto é o suplemento noturno (como noutras profissões)."
+      },
+      {
+        "question": "Qual é a diferença do exame breve normal (4.0020)?",
+        "answer": "O exame breve normal (4.0020) custa 33.10 TP e aplica-se durante o dia. O exame de emergência noturna (4.0040) custa 146.40 TP e aplica-se entre as 20h00 e as 07h00. O serviço médico é o mesmo, mas o horário faz a diferença de preço."
+      },
+      {
+        "question": "Posso faturar a emergência noturna durante o dia?",
+        "answer": "Não! Este código aplica-se APENAS a tratamentos entre as 20h00 e as 07h00. Durante o dia, aplica-se o exame breve normal (4.0020)."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Kiedy powinienem wybrać pomoc nocną w nagłych przypadkach?",
+        "answer": "Tylko w prawdziwych nagłych przypadkach, gdy ból jest tak silny, że nie możesz czekać do rana. Przykłady: silny, nieznośny ból, znaczny obrzęk, gorączka lub gdy ząb został całkowicie wybity."
+      },
+      {
+        "question": "Dlaczego nocne badanie w nagłych przypadkach jest znacznie droższe?",
+        "answer": "Ponieważ dentysta pracuje poza normalnymi godzinami dla ciebie. Musi specjalnie przyjechać lub przerwać nocny odpoczynek. Wyższa cena to dodatek nocny (jak w innych zawodach)."
+      },
+      {
+        "question": "Jaka jest różnica w stosunku do normalnego krótkiego badania (4.0020)?",
+        "answer": "Normalne krótkie badanie (4.0020) kosztuje 33.10 TP i obowiązuje w ciągu dnia. Nocne badanie w nagłych przypadkach (4.0040) kosztuje 146.40 TP i obowiązuje między 20:00 a 07:00. Świadczenie medyczne jest takie samo, ale pora robi różnicę w cenie."
+      },
+      {
+        "question": "Czy mogę rozliczyć nocny nagły wypadek w ciągu dnia?",
+        "answer": "Nie! Ten kod dotyczy TYLKO leczenia między 20:00 a 07:00. W ciągu dnia obowiązuje normalne krótkie badanie (4.0020)."
+      }
+    ],
+    "al": [
+      {
+        "question": "Kur duhet të zgjedh emergjencën e natës?",
+        "answer": "Vetëm për emergjenca të vërteta, kur dhimbja është aq e fortë sa nuk mund të presësh deri në mëngjes. Shembuj: dhimbje e fortë e padurueshme, ënjtje e konsiderueshme, ethe, ose nëse një dhëmb është rrëzuar plotësisht."
+      },
+      {
+        "question": "Pse ekzaminimi i emergjencës së natës është kaq shumë më i shtrenjtë?",
+        "answer": "Sepse dentisti punon jashtë orarit normal për ty. Ai duhet të vijë posaçërisht ose të ndërpresë pushimin e natës. Çmimi më i lartë është shtesa e natës (si në profesionet e tjera)."
+      },
+      {
+        "question": "Cili është ndryshimi nga ekzaminimi i shkurtër normal (4.0020)?",
+        "answer": "Ekzaminimi i shkurtër normal (4.0020) kushton 33.10 TP dhe zbatohet gjatë ditës. Ekzaminimi i emergjencës së natës (4.0040) kushton 146.40 TP dhe zbatohet ndërmjet 20:00 dhe 07:00. Shërbimi mjekësor është i njëjtë, por koha bën diferencën e çmimit."
+      },
+      {
+        "question": "A mund ta faturoj emergjencën e natës gjatë ditës?",
+        "answer": "Jo! Ky kod zbatohet VETËM për trajtime ndërmjet 20:00 dhe 07:00. Gjatë ditës, zbatohet ekzaminimi i shkurtër normal (4.0020)."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Gece acil durumu ne zaman seçmeliyim?",
+        "answer": "Sadece gerçek acil durumlar için, ağrı o kadar şiddetliyse sabaha kadar bekleyemezsin. Örnekler: şiddetli, dayanılmaz ağrı, önemli şişlik, ateş veya bir diş tamamen çıkmışsa."
+      },
+      {
+        "question": "Gece acil muayenesi neden bu kadar daha pahalı?",
+        "answer": "Çünkü diş hekimi senin için normal çalışma saatleri dışında çalışır. Özel olarak gelmek veya gece istirahatini kesmek zorundadır. Daha yüksek fiyat gece ek ücretidir (diğer mesleklerde olduğu gibi)."
+      },
+      {
+        "question": "Normal kısa muayeneden (4.0020) farkı nedir?",
+        "answer": "Normal kısa muayene (4.0020) 33.10 TP tutar ve gündüz uygulanır. Gece acil muayenesi (4.0040) 146.40 TP tutar ve 20:00 ile 07:00 arasında uygulanır. Tıbbi hizmet aynıdır, ancak zaman fiyat farkını yaratır."
+      },
+      {
+        "question": "Gece acilini gündüz fatura edebilir miyim?",
+        "answer": "Hayır! Bu kod SADECE 20:00 ile 07:00 arasındaki tedaviler için geçerlidir. Gündüz, normal kısa muayene (4.0020) uygulanır."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Kada trebam odabrati noćnu hitnu službu?",
+        "answer": "Samo za prave hitne slučajeve, kada je bol toliko jak da ne možeš čekati do jutra. Primjeri: jak, nepodnošljiv bol, značajna oteklina, vrućica ili ako je zub potpuno izbačen."
+      },
+      {
+        "question": "Zašto je noćni hitni pregled toliko skuplji?",
+        "answer": "Jer zubar radi izvan uobičajenog radnog vremena za tebe. Mora posebno doći ili prekinuti noćni odmor. Viša cijena je noćni dodatak (kao i u drugim profesijama)."
+      },
+      {
+        "question": "Koja je razlika od normalnog kratkog pregleda (4.0020)?",
+        "answer": "Normalni kratki pregled (4.0020) košta 33.10 TP i primjenjuje se tijekom dana. Noćni hitni pregled (4.0040) košta 146.40 TP i primjenjuje se između 20:00 i 07:00. Medicinska usluga je ista, ali vrijeme čini razliku u cijeni."
+      },
+      {
+        "question": "Mogu li naplatiti noćni hitni slučaj tijekom dana?",
+        "answer": "Ne! Ovaj kod se primjenjuje SAMO na tretmane između 20:00 i 07:00. Tijekom dana primjenjuje se normalni kratki pregled (4.0020)."
+      }
+    ],
+    "ta": [
+      {
+        "question": "இரவு அவசர சிகிச்சையை எப்போது தேர்வு செய்ய வேண்டும்?",
+        "answer": "உண்மையான அவசர சூழ்நிலைகளுக்கு மட்டும், வலி மிகவும் கடுமையாக இருந்தால் அடுத்த காலை வரை காத்திருக்க முடியாது. எடுத்துக்காட்டுகள்: கடுமையான, தாங்க முடியாத வலி, குறிப்பிடத்தக்க வீக்கம், காய்ச்சல், அல்லது ஒரு பல் முற்றிலும் வெளியேற்றப்பட்டால்."
+      },
+      {
+        "question": "இரவு அவசர பரிசோதனை ஏன் மிகவும் அதிக விலை?",
+        "answer": "ஏனெனில் பல் மருத்துவர் உங்களுக்காக சாதாரண நேரத்திற்கு வெளியே வேலை செய்கிறார். அவர் சிறப்பாக வர வேண்டும் அல்லது இரவு ஓய்வை குறுக்கிட வேண்டும். அதிக விலை இரவு கூடுதல் கட்டணம் (மற்ற தொழில்களைப் போல)."
+      },
+      {
+        "question": "சாதாரண குறுகிய பரிசோதனையிலிருந்து (4.0020) என்ன வித்தியாசம்?",
+        "answer": "சாதாரண குறுகிய பரிசோதனை (4.0020) 33.10 TP செலவாகும் மற்றும் பகல் நேரத்தில் பொருந்தும். இரவு அவசர பரிசோதனை (4.0040) 146.40 TP செலவாகும் மற்றும் மாலை 8 மணி முதல் காலை 7 மணி வரை பொருந்தும். மருத்துவ சேவை ஒன்றுதான், ஆனால் நேரமே விலை வித்தியாசத்தை ஏற்படுத்துகிறது."
+      },
+      {
+        "question": "இரவு அவசர சிகிச்சையை பகல் நேரத்தில் கட்டணம் வசூலிக்கலாமா?",
+        "answer": "இல்லை! இந்த குறியீடு மாலை 8 மணி முதல் காலை 7 மணி வரையிலான சிகிச்சைகளுக்கு மட்டுமே பொருந்தும். பகல் நேரத்தில், சாதாரண குறுகிய பரிசோதனை (4.0020) பொருந்தும்."
+      }
+    ]
+  }
+}

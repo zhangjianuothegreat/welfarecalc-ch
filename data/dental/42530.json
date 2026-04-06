@@ -1,0 +1,527 @@
+{
+  "code": "4.2530",
+  "name_de": "Implantatinsertion",
+  "display_name": {
+    "de": "Zahnimplantat setzen",
+    "fr": "Pose d'implant dentaire",
+    "it": "Inserimento di impianto dentale",
+    "en": "Dental implant placement",
+    "es": "Colocación de implante dental",
+    "pt": "Colocação de implante dentário",
+    "pl": "Wszczepienie implantu stomatologicznego",
+    "al": "Vendosja e implantit dentar",
+    "tr": "Diş implantı yerleştirme",
+    "hr": "Postavljanje dentalnog implantata",
+    "ta": "பல் உள்வைப்பு பொருத்துதல்"
+  },
+  "search_keywords": {
+    "de": ["implantat", "zahnimplantat", "implantat setzen", "implantat insertion", "künstliche zahnwurzel", "zahnersatz", "implantologie"],
+    "fr": ["implant", "implant dentaire", "pose d'implant", "insertion d'implant", "racine artificielle", "prothèse dentaire"],
+    "it": ["impianto", "impianto dentale", "inserimento impianto", "radice artificiale", "protesi dentale"],
+    "en": ["implant", "dental implant", "implant placement", "artificial tooth root", "dental prosthesis"],
+    "es": ["implante", "implante dental", "colocación de implante", "raíz artificial", "prótesis dental"],
+    "pt": ["implante", "implante dentário", "colocação de implante", "raiz artificial", "prótese dentária"],
+    "pl": ["implant", "implant stomatologiczny", "wszczepienie implantu", "sztuczny korzeń", "proteza zębowa"],
+    "al": ["implant", "implant dentar", "vendosje implanti", "rrënjë artificiale", "protezë dentare"],
+    "tr": ["implant", "diş implantı", "implant yerleştirme", "yapay diş kökü", "diş protezi"],
+    "hr": ["implantat", "dentalni implantat", "postavljanje implantata", "umjetni korijen", "zubna proteza"],
+    "ta": ["உள்வைப்பு", "பல் உள்வைப்பு", "உள்வைப்பு பொருத்துதல்", "செயற்கை பல் வேர்", "பல் செயற்கை உறுப்பு"]
+  },
+  "tp_uv_mviv": 669.40,
+  "tp_pp_max": 769.80,
+  "tp_pp_min": 569.00,
+  "chapter": "05.04",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn ein Zahn fehlt, kann der Zahnarzt eine künstliche Zahnwurzel aus Titan in den Kieferknochen einsetzen – das nennt man Implantat. Das ist wie ein kleiner Schraube, die später den neuen Zahn hält. Zuerst muss der Zahnarzt den Kieferknochen freilegen (Lappenbildung), dann ein passendes Loch bohren und das Implantat einsetzen. Danach wird alles wieder zugenäht. Das Implantat muss dann einige Monate einheilen, bevor der neue Zahn (die Krone) darauf gesetzt werden kann. Das ist eine große Operation – deshalb ist der Preis höher. Materialkosten für das Implantat selbst kommen noch dazu.",
+    "fr": "Lorsqu'une dent manque, le dentiste peut insérer une racine dentaire artificielle en titane dans l'os de la mâchoire – c'est ce qu'on appelle un implant. C'est comme une petite vis qui maintiendra plus tard la nouvelle dent. Tout d'abord, le dentiste doit exposer l'os de la mâchoire (formation d'un lambeau), puis percer un trou adapté et insérer l'implant. Ensuite, tout est recousu. L'implant doit ensuite cicatriser pendant quelques mois avant que la nouvelle dent (la couronne) puisse être placée dessus. C'est une opération majeure – c'est pourquoi le prix est plus élevé. Les coûts des matériaux pour l'implant lui-même s'ajoutent.",
+    "it": "Quando manca un dente, il dentista può inserire una radice dentaria artificiale in titanio nell'osso mascellare – questo si chiama impianto. È come una piccola vite che terrà il nuovo dente. Prima, il dentista deve esporre l'osso mascellare (formazione di un lembo), poi forare un foro adatto e inserire l'impianto. Dopodiché, tutto viene suturato. L'impianto deve poi guarire per alcuni mesi prima che il nuovo dente (la corona) possa essere posizionato sopra. È un'operazione importante – ecco perché il prezzo è più alto. I costi dei materiali per l'impianto stesso si aggiungono.",
+    "en": "When a tooth is missing, the dentist can insert an artificial tooth root made of titanium into the jawbone – this is called an implant. It's like a small screw that will later hold the new tooth. First, the dentist must expose the jawbone (flap formation), then drill a suitable hole and insert the implant. After that, everything is stitched up. The implant then needs to heal for a few months before the new tooth (the crown) can be placed on it. This is a major operation – which is why the price is higher. Material costs for the implant itself are additional.",
+    "es": "Cuando falta un diente, el dentista puede insertar una raíz dental artificial de titanio en el hueso de la mandíbula – esto se llama implante. Es como un pequeño tornillo que luego sostendrá el nuevo diente. Primero, el dentista debe exponer el hueso de la mandíbula (formación de colgajo), luego perforar un agujero adecuado e insertar el implante. Después de eso, todo se sutura. El implante necesita cicatrizar durante unos meses antes de que se pueda colocar el nuevo diente (la corona) sobre él. Es una operación importante – por eso el precio es más alto. Los costos de material para el implante mismo se añaden.",
+    "pt": "Quando falta um dente, o dentista pode inserir uma raiz dentária artificial de titânio no osso da mandíbula – isto chama-se implante. É como um pequeno parafuso que mais tarde segurará o novo dente. Primeiro, o dentista deve expor o osso da mandíbula (formação de retalho), depois perfurar um orifício adequado e inserir o implante. Depois disso, tudo é suturado. O implante precisa então cicatrizar durante alguns meses antes que o novo dente (a coroa) possa ser colocado sobre ele. É uma operação importante – é por isso que o preço é mais alto. Os custos de material para o próprio implante são adicionais.",
+    "pl": "Gdy brakuje zęba, dentysta może wprowadzić sztuczny korzeń zęba wykonany z tytanu w kość szczęki – nazywa się to implantem. To jak mała śrubka, która później utrzyma nowy ząb. Najpierw dentysta musi odsłonić kość szczęki (utworzenie płata), następnie wywiercić odpowiedni otwór i wprowadzić implant. Potem wszystko jest zszywane. Implant musi się zagoić przez kilka miesięcy, zanim będzie można na nim umieścić nowy ząb (koronę). To poważna operacja – dlatego cena jest wyższa. Koszty materiałów samego implantu są dodatkowe.",
+    "al": "Kur mungon një dhëmb, dentisti mund të fusë një rrënjë dhëmbi artificiale prej titani në kockën e nofullës – kjo quhet implant. Është si një vidë e vogël që më vonë do të mbajë dhëmbin e ri. Së pari, dentisti duhet të ekspozojë kockën e nofullës (formimi i palosjes), më pas të shpojë një vrimë të përshtatshme dhe të fusë implantin. Pas kësaj, gjithçka qepet. Implanti duhet të shërohet për disa muaj përpara se dhëmbi i ri (kurora) të mund të vendoset mbi të. Ky është një operacion i madh – prandaj çmimi është më i lartë. Kostot materiale për vetë implantin janë shtesë.",
+    "tr": "Bir diş eksik olduğunda, diş hekimi çene kemiğine titanyumdan yapılmış yapay bir diş kökü yerleştirebilir – buna implant denir. Daha sonra yeni dişi tutacak küçük bir vida gibidir. Önce diş hekimi çene kemiğini açmalıdır (flep oluşturma), ardından uygun bir delik açmalı ve implantı yerleştirmelidir. Bundan sonra her şey dikilir. İmplant, üzerine yeni dişin (kuron) yerleştirilebilmesi için birkaç ay iyileşmelidir. Bu büyük bir operasyondur – bu nedenle fiyat daha yüksektir. İmplantın kendisi için malzeme masrafları ek olarak gelir.",
+    "hr": "Kada nedostaje zub, zubar može umetnuti umjetni korijen zuba od titana u čeljusnu kost – to se zove implantat. To je kao mali vijak koji će kasnije držati novi zub. Prvo, zubar mora izložiti čeljusnu kost (formiranje režnja), zatim izbušiti odgovarajuću rupu i umetnuti implantat. Nakon toga, sve se zašije. Implantat zatim treba zacijeliti nekoliko mjeseci prije nego što se novi zub (krunica) može postaviti na njega. Ovo je velika operacija – zato je cijena viša. Troškovi materijala za sam implantat su dodatni.",
+    "ta": "ஒரு பல் காணாமல் போகும்போது, பல் மருத்துவர் தாடை எலும்பில் டைட்டானியத்தால் செய்யப்பட்ட செயற்கை பல் வேரைச் செருகலாம் – இது உள்வைப்பு என்று அழைக்கப்படுகிறது. இது பின்னர் புதிய பல்லைப் பிடிக்கும் ஒரு சிறிய திருகு போன்றது. முதலில், பல் மருத்துவர் தாடை எலும்பை வெளிப்படுத்த வேண்டும் (மடல் உருவாக்கம்), பின்னர் பொருத்தமான துளையிட்டு உள்வைப்பைச் செருக வேண்டும். அதன் பிறகு, எல்லாம் தைக்கப்படுகிறது. புதிய பல் (கிரீடம்) அதன் மேல் வைக்கப்படுவதற்கு முன் உள்வைப்பு சில மாதங்கள் குணமடைய வேண்டும். இது ஒரு பெரிய அறுவை சிகிச்சை – அதனால்தான் விலை அதிகம். உள்வைப்புக்கான பொருள் செலவுகள் கூடுதலாகும்."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 **Implantatinsertion** (Einsetzen der künstlichen Zahnwurzel)",
+      "🔪 **Inklusive:** Lappenbildung (Öffnen des Zahnfleisches)",
+      "🔨 **Inklusive:** Aufbereitung des Implantatbettes (Bohren des Knochens)",
+      "🔩 **Inklusive:** Montage des Platzhalters (Verschluss-Schraube)",
+      "🪡 **Inklusive:** Wundverschluss (maximal 4 Nähte)",
+      "💉 **Anästhesie:** Wird separat abgerechnet (siehe 4.0650)",
+      "📸 **Röntgen:** Wird separat abgerechnet (siehe 4.0500, 4.0530)",
+      "💰 **Materialkosten:** Implantat, Abutment, Hilfsteile werden mit Typisierung (Kapitel 19) separat verrechnet",
+      "⚠️ **Wichtig:** Nur nach Rücksprache mit der Versicherung abrechenbar!"
+    ],
+    "fr": [
+      "🦷 **Insertion d'implant** (pose de la racine dentaire artificielle)",
+      "🔪 **Inclus:** Formation de lambeau (ouverture de la gencive)",
+      "🔨 **Inclus:** Préparation du lit implantaire (perçage de l'os)",
+      "🔩 **Inclus:** Montage du protecteur de site (vis de fermeture)",
+      "🪡 **Inclus:** Fermeture de la plaie (maximum 4 sutures)",
+      "💉 **Anesthésie:** Facturée séparément (voir 4.0650)",
+      "📸 **Radiographie:** Facturée séparément (voir 4.0500, 4.0530)",
+      "💰 **Coûts des matériaux:** L'implant, le pilier, les pièces auxiliaires sont facturés séparément avec typification (chapitre 19)",
+      "⚠️ **Important:** Facturable uniquement après consultation de l'assurance!"
+    ],
+    "it": [
+      "🦷 **Inserimento dell'impianto** (posizionamento della radice dentaria artificiale)",
+      "🔪 **Incluso:** Formazione del lembo (apertura della gengiva)",
+      "🔨 **Incluso:** Preparazione del letto implantare (foratura dell'osso)",
+      "🔩 **Incluso:** Montaggio del protettore di sito (vite di chiusura)",
+      "🪡 **Incluso:** Chiusura della ferita (massimo 4 suture)",
+      "💉 **Anestesia:** Fatturata separatamente (vedi 4.0650)",
+      "📸 **Radiografia:** Fatturata separatamente (vedi 4.0500, 4.0530)",
+      "💰 **Costi dei materiali:** L'impianto, il pilastro, le parti ausiliarie sono fatturati separatamente con tipizzazione (capitolo 19)",
+      "⚠️ **Importante:** Fatturabile solo dopo consultazione con l'assicurazione!"
+    ],
+    "en": [
+      "🦷 **Implant placement** (insertion of the artificial tooth root)",
+      "🔪 **Included:** Flap formation (opening the gum)",
+      "🔨 **Included:** Implant bed preparation (drilling the bone)",
+      "🔩 **Included:** Placement of cover screw (site protector)",
+      "🪡 **Included:** Wound closure (maximum 4 sutures)",
+      "💉 **Anesthesia:** Billed separately (see 4.0650)",
+      "📸 **X-ray:** Billed separately (see 4.0500, 4.0530)",
+      "💰 **Material costs:** Implant, abutment, auxiliary parts are billed separately with typing (chapter 19)",
+      "⚠️ **Important:** Only billable after consultation with the insurance company!"
+    ],
+    "es": [
+      "🦷 **Colocación de implante** (inserción de la raíz dental artificial)",
+      "🔪 **Incluye:** Formación de colgajo (apertura de la encía)",
+      "🔨 **Incluye:** Preparación del lecho implantario (perforación del hueso)",
+      "🔩 **Incluye:** Montaje del protector de sitio (tornillo de cierre)",
+      "🪡 **Incluye:** Cierre de la herida (máximo 4 suturas)",
+      "💉 **Anestesia:** Facturada por separado (ver 4.0650)",
+      "📸 **Radiografía:** Facturada por separado (ver 4.0500, 4.0530)",
+      "💰 **Costos de materiales:** El implante, el pilar, las partes auxiliares se facturan por separado con tipificación (capítulo 19)",
+      "⚠️ **Importante:** ¡Facturable solo después de consultar con el seguro!"
+    ],
+    "pt": [
+      "🦷 **Colocação de implante** (inserção da raiz dentária artificial)",
+      "🔪 **Inclui:** Formação de retalho (abertura da gengiva)",
+      "🔨 **Inclui:** Preparação do leito implantar (perfuração do osso)",
+      "🔩 **Inclui:** Montagem do protetor de sítio (parafuso de fecho)",
+      "🪡 **Inclui:** Fecho da ferida (máximo 4 suturas)",
+      "💉 **Anestesia:** Faturada separadamente (ver 4.0650)",
+      "📸 **Radiografia:** Faturada separadamente (ver 4.0500, 4.0530)",
+      "💰 **Custos de materiais:** O implante, o pilar, as partes auxiliares são faturados separadamente com tipificação (capítulo 19)",
+      "⚠️ **Importante:** Faturável apenas após consulta com o seguro!"
+    ],
+    "pl": [
+      "🦷 **Wszczepienie implantu** (wprowadzenie sztucznego korzenia zęba)",
+      "🔪 **Wliczone:** Utworzenie płata (otwarcie dziąsła)",
+      "🔨 **Wliczone:** Przygotowanie łożyska implantu (wiertowanie kości)",
+      "🔩 **Wliczone:** Montaż śruby zamykającej (protektora miejsca)",
+      "🪡 **Wliczone:** Zamknięcie rany (maksymalnie 4 szwy)",
+      "💉 **Znieczulenie:** Rozliczane osobno (patrz 4.0650)",
+      "📸 **Rentgen:** Rozliczany osobno (patrz 4.0500, 4.0530)",
+      "💰 **Koszty materiałów:** Implant, łącznik, części pomocnicze są rozliczane osobno z typizacją (rozdział 19)",
+      "⚠️ **Ważne:** Rozliczalne tylko po konsultacji z ubezpieczycielem!"
+    ],
+    "al": [
+      "🦷 **Vendosja e implantit** (futja e rrënjës artificiale të dhëmbit)",
+      "🔪 **Përfshirë:** Formimi i palosjes (hapja e mishrave)",
+      "🔨 **Përfshirë:** Përgatitja e shtratit të implantit (shpimi i kockës)",
+      "🔩 **Përfshirë:** Montimi i mbrojtësit të vendit (vidhos mbyllëse)",
+      "🪡 **Përfshirë:** Mbyllja e plagës (maksimumi 4 qepje)",
+      "💉 **Anestezi:** Faturohet veçmas (shih 4.0650)",
+      "📸 **Rrezet X:** Faturohen veçmas (shih 4.0500, 4.0530)",
+      "💰 **Kostot materiale:** Implanti, abutmenti, pjesët ndihmëse faturohen veçmas me tipizim (kapitulli 19)",
+      "⚠️ **E rëndësishme:** E faturoshme vetëm pas konsultimit me sigurimin!"
+    ],
+    "tr": [
+      "🦷 **İmplant yerleştirme** (yapay diş kökünün yerleştirilmesi)",
+      "🔪 **Dahil:** Flep oluşturma (diş etinin açılması)",
+      "🔨 **Dahil:** İmplant yatağının hazırlanması (kemiğin delinmesi)",
+      "🔩 **Dahil:** Kapatma vidasının takılması (yer koruyucu)",
+      "🪡 **Dahil:** Yaranın kapatılması (maksimum 4 dikiş)",
+      "💉 **Anestezi:** Ayrı faturalandırılır (bkz. 4.0650)",
+      "📸 **Röntgen:** Ayrı faturalandırılır (bkz. 4.0500, 4.0530)",
+      "💰 **Malzeme maliyetleri:** İmplant, abutment, yardımcı parçalar tipizasyon ile ayrı faturalandırılır (bölüm 19)",
+      "⚠️ **Önemli:** Yalnızca sigorta ile görüşüldükten sonra faturalandırılabilir!"
+    ],
+    "hr": [
+      "🦷 **Postavljanje implantata** (umetanje umjetnog korijena zuba)",
+      "🔪 **Uključeno:** Formiranje režnja (otvaranje desni)",
+      "🔨 **Uključeno:** Priprema ležišta implantata (bušenje kosti)",
+      "🔩 **Uključeno:** Montaža zaštitnog vijka (čep)",
+      "🪡 **Uključeno:** Zatvaranje rane (maksimalno 4 šava)",
+      "💉 **Anestezija:** Naplaćuje se zasebno (vidi 4.0650)",
+      "📸 **Rendgen:** Naplaćuje se zasebno (vidi 4.0500, 4.0530)",
+      "💰 **Troškovi materijala:** Implantat, abutment, pomoćni dijelovi naplaćuju se zasebno s tipizacijom (poglavlje 19)",
+      "⚠️ **Važno:** Naplativo samo nakon konzultacije s osiguranjem!"
+    ],
+    "ta": [
+      "🦷 **உள்வைப்பு பொருத்துதல்** (செயற்கை பல் வேரைச் செருகுதல்)",
+      "🔪 **சேர்க்கப்பட்டுள்ளது:** மடல் உருவாக்கம் (ஈறுகளைத் திறத்தல்)",
+      "🔨 **சேர்க்கப்பட்டுள்ளது:** உள்வைப்பு படுக்கை தயாரித்தல் (எலும்பில் துளையிடுதல்)",
+      "🔩 **சேர்க்கப்பட்டுள்ளது:** மூடுத் திருகு பொருத்துதல் (இடப் பாதுகாப்பான்)",
+      "🪡 **சேர்க்கப்பட்டுள்ளது:** காயத்தை மூடுதல் (அதிகபட்சம் 4 தையல்கள்)",
+      "💉 **மரத்துப்போகச் செய்தல்:** தனித்தனியாக கணக்கிடப்படும் (4.0650 பார்க்கவும்)",
+      "📸 **எக்ஸ்-ரே:** தனித்தனியாக கணக்கிடப்படும் (4.0500, 4.0530 பார்க்கவும்)",
+      "💰 **பொருள் செலவுகள்:** உள்வைப்பு, அபட்மென்ட், துணை பாகங்கள் தனித்தனியாக வகைப்படுத்தலுடன் கணக்கிடப்படும் (அத்தியாயம் 19)",
+      "⚠️ **முக்கியம்:** காப்பீட்டுடன் ஆலோசனைக்குப் பிறகு மட்டுமே கணக்கிட முடியும்!"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Implantatinsertion** durch den Zahnarzt",
+      "📞 **Voraussetzung:** Nur nach Rücksprache mit den Versicherern verrechenbar",
+      "🔪 **Inbegriffen:** Lappenbildung, Aufbereitung des Implantatbettes, Montage des Platzhalters und Wundverschluss",
+      "🪡 **Nähte:** Maximal 4 Nähte pro Eingriff sind in dieser Leistung enthalten",
+      "💰 **Materialkosten:** Implantat, Abutment und Hilfsteile werden mit Typisierung (Kapitel 19) separat verrechnet",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.2530.LP «Implantatinsertion, pro Fall / Behandlungsplanung UV/MV» enthalten",
+      "🔁 **Weitere Implantate:** Bei mehreren Implantaten in derselben Sitzung wird für jedes weitere Implantat die Ziffer 4.2540 oder 4.2540.LP verwendet",
+      "⚠️ **Wichtig:** Die Grundausrüstung an chirurgischen Instrumenten ist in der Tarifierung bereits berücksichtigt und kann nicht separat verrechnet werden"
+    ],
+    "fr": [
+      "🦷 **Insertion d'implant** par le dentiste",
+      "📞 **Condition:** Facturable uniquement après consultation des assureurs",
+      "🔪 **Inclus:** Formation de lambeau, préparation du lit implantaire, montage du protecteur de site et fermeture de la plaie",
+      "🪡 **Sutures:** Maximum 4 sutures par intervention sont incluses dans cette prestation",
+      "💰 **Coûts des matériaux:** L'implant, le pilier et les pièces auxiliaires sont facturés séparément avec typification (chapitre 19)",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.2530.LP «Insertion d'implant, par cas / planification de traitement UV/MV»",
+      "🔁 **Implants supplémentaires:** Pour plusieurs implants dans la même séance, le code 4.2540 ou 4.2540.LP est utilisé pour chaque implant supplémentaire",
+      "⚠️ **Important:** L'équipement de base en instruments chirurgicaux est déjà pris en compte dans la tarification et ne peut pas être facturé séparément"
+    ],
+    "it": [
+      "🦷 **Inserimento dell'impianto** dal dentista",
+      "📞 **Condizione:** Fatturabile solo dopo consultazione con gli assicuratori",
+      "🔪 **Incluso:** Formazione del lembo, preparazione del letto implantare, montaggio del protettore di sito e chiusura della ferita",
+      "🪡 **Suture:** Massimo 4 suture per intervento sono incluse in questa prestazione",
+      "💰 **Costi dei materiali:** L'impianto, il pilastro e le parti ausiliarie sono fatturati separatamente con tipizzazione (capitolo 19)",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.2530.LP «Inserimento impianto, per caso / pianificazione trattamento UV/MV»",
+      "🔁 **Impianti aggiuntivi:** Per più impianti nella stessa seduta, per ogni impianto aggiuntivo viene utilizzato il codice 4.2540 o 4.2540.LP",
+      "⚠️ **Importante:** L'equipaggiamento di base di strumenti chirurgici è già considerato nella tariffazione e non può essere fatturato separatamente"
+    ],
+    "en": [
+      "🦷 **Implant placement** by the dentist",
+      "📞 **Requirement:** Only billable after consultation with the insurance companies",
+      "🔪 **Included:** Flap formation, implant bed preparation, placement of cover screw, and wound closure",
+      "🪡 **Sutures:** Maximum 4 sutures per procedure are included in this service",
+      "💰 **Material costs:** Implant, abutment, and auxiliary parts are billed separately with typing (chapter 19)",
+      "📦 **Service package:** This service is included in package 4.2530.LP «Implant placement, per case / treatment planning UV/MV»",
+      "🔁 **Additional implants:** For multiple implants in the same session, code 4.2540 or 4.2540.LP is used for each additional implant",
+      "⚠️ **Important:** The basic surgical instrument set is already considered in the pricing and cannot be billed separately"
+    ],
+    "es": [
+      "🦷 **Colocación de implante** por el dentista",
+      "📞 **Requisito:** Facturable solo después de consultar con los aseguradores",
+      "🔪 **Incluido:** Formación de colgajo, preparación del lecho implantario, montaje del protector de sitio y cierre de la herida",
+      "🪡 **Suturas:** Máximo 4 suturas por intervención están incluidas en esta prestación",
+      "💰 **Costos de materiales:** El implante, el pilar y las partes auxiliares se facturan por separado con tipificación (capítulo 19)",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.2530.LP «Colocación de implante, por caso / planificación de tratamiento UV/MV»",
+      "🔁 **Implantes adicionales:** Para múltiples implantes en la misma sesión, se utiliza el código 4.2540 o 4.2540.LP para cada implante adicional",
+      "⚠️ **Importante:** El equipamiento básico de instrumentos quirúrgicos ya está considerado en la tarificación y no puede facturarse por separado"
+    ],
+    "pt": [
+      "🦷 **Colocação de implante** pelo dentista",
+      "📞 **Requisito:** Faturável apenas após consulta com as seguradoras",
+      "🔪 **Incluído:** Formação de retalho, preparação do leito implantar, montagem do protetor de sítio e fecho da ferida",
+      "🪡 **Suturas:** Máximo 4 suturas por intervenção estão incluídas nesta prestação",
+      "💰 **Custos de materiais:** O implante, o pilar e as partes auxiliares são faturados separadamente com tipificação (capítulo 19)",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.2530.LP «Colocação de implante, por caso / planeamento de tratamento UV/MV»",
+      "🔁 **Implantes adicionais:** Para múltiplos implantes na mesma sessão, utiliza-se o código 4.2540 ou 4.2540.LP para cada implante adicional",
+      "⚠️ **Importante:** O equipamento básico de instrumentos cirúrgicos já está considerado na tarifação e não pode ser faturado separadamente"
+    ],
+    "pl": [
+      "🦷 **Wszczepienie implantu** przez dentystę",
+      "📞 **Wymaganie:** Rozliczalne tylko po konsultacji z ubezpieczycielami",
+      "🔪 **Wliczone:** Utworzenie płata, przygotowanie łożyska implantu, montaż śruby zamykającej i zamknięcie rany",
+      "🪡 **Szwy:** Maksymalnie 4 szwy na zabieg są wliczone w tę usługę",
+      "💰 **Koszty materiałów:** Implant, łącznik i części pomocnicze są rozliczane osobno z typizacją (rozdział 19)",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.2530.LP «Wszczepienie implantu, na przypadek / planowanie leczenia UV/MV»",
+      "🔁 **Dodatkowe implanty:** W przypadku wielu implantów w tej samej sesji, dla każdego dodatkowego implantu stosuje się kod 4.2540 lub 4.2540.LP",
+      "⚠️ **Ważne:** Podstawowe wyposażenie w instrumenty chirurgiczne jest już uwzględnione w taryfikacji i nie może być rozliczane osobno"
+    ],
+    "al": [
+      "🦷 **Vendosja e implantit** nga dentisti",
+      "📞 **Kushti:** E faturoshme vetëm pas konsultimit me siguruesit",
+      "🔪 **Përfshirë:** Formimi i palosjes, përgatitja e shtratit të implantit, montimi i mbrojtësit të vendit dhe mbyllja e plagës",
+      "🪡 **Qepje:** Maksimumi 4 qepje për ndërhyrje janë të përfshira në këtë shërbim",
+      "💰 **Kostot materiale:** Implanti, abutmenti dhe pjesët ndihmëse faturohen veçmas me tipizim (kapitulli 19)",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.2530.LP «Vendosje implanti, për rast / planifikim trajtimi UV/MV»",
+      "🔁 **Implante shtesë:** Për implante të shumta në të njëjtën seancë, për çdo implant shtesë përdoret kodi 4.2540 ose 4.2540.LP",
+      "⚠️ **E rëndësishme:** Pajisja bazë e instrumenteve kirurgjikale është konsideruar tashmë në tarifim dhe nuk mund të faturohet veçmas"
+    ],
+    "tr": [
+      "🦷 **İmplant yerleştirme** diş hekimi tarafından",
+      "📞 **Gereklilik:** Yalnızca sigorta şirketleri ile görüşüldükten sonra faturalandırılabilir",
+      "🔪 **Dahil:** Flep oluşturma, implant yatağının hazırlanması, kapatma vidasının takılması ve yaranın kapatılması",
+      "🪡 **Dikişler:** Bu hizmete işlem başına maksimum 4 dikiş dahildir",
+      "💰 **Malzeme maliyetleri:** İmplant, abutment ve yardımcı parçalar tipizasyon ile ayrı faturalandırılır (bölüm 19)",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.2530.LP «İmplant yerleştirme, vaka başına / tedavi planlaması UV/MV» paketine dahildir",
+      "🔁 **Ek implantlar:** Aynı seansta birden fazla implant için, her ek implant için 4.2540 veya 4.2540.LP kodu kullanılır",
+      "⚠️ **Önemli:** Temel cerrahi alet donanımı tarifede zaten dikkate alınmıştır ve ayrı faturalandırılamaz"
+    ],
+    "hr": [
+      "🦷 **Postavljanje implantata** od strane zubara",
+      "📞 **Uvjet:** Naplativo samo nakon konzultacije s osiguravateljima",
+      "🔪 **Uključeno:** Formiranje režnja, priprema ležišta implantata, montaža zaštitnog vijka i zatvaranje rane",
+      "🪡 **Šavovi:** Maksimalno 4 šava po zahvatu uključeno je u ovu uslugu",
+      "💰 **Troškovi materijala:** Implantat, abutment i pomoćni dijelovi naplaćuju se zasebno s tipizacijom (poglavlje 19)",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.2530.LP «Postavljanje implantata, po slučaju / planiranje liječenja UV/MV»",
+      "🔁 **Dodatni implantati:** Za više implantata u istoj seansi, za svaki dodatni implantat koristi se kod 4.2540 ili 4.2540.LP",
+      "⚠️ **Važno:** Osnovna oprema kirurških instrumenata već je uzeta u obzir u tarifiranju i ne može se naplatiti zasebno"
+    ],
+    "ta": [
+      "🦷 **உள்வைப்பு பொருத்துதல்** பல் மருத்துவரால்",
+      "📞 **தேவை:** காப்பீட்டு நிறுவனங்களுடன் ஆலோசனைக்குப் பிறகு மட்டுமே கணக்கிட முடியும்",
+      "🔪 **சேர்க்கப்பட்டுள்ளது:** மடல் உருவாக்கம், உள்வைப்பு படுக்கை தயாரித்தல், மூடுத் திருகு பொருத்துதல் மற்றும் காயத்தை மூடுதல்",
+      "🪡 **தையல்கள்:** ஒரு செயல்முறைக்கு அதிகபட்சம் 4 தையல்கள் இந்த சேவையில் சேர்க்கப்பட்டுள்ளன",
+      "💰 **பொருள் செலவுகள்:** உள்வைப்பு, அபட்மென்ட் மற்றும் துணை பாகங்கள் வகைப்படுத்தலுடன் தனித்தனியாக கணக்கிடப்படும் (அத்தியாயம் 19)",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.2530.LP «உள்வைப்பு பொருத்துதல், ஒவ்வொரு வழக்குக்கும் / சிகிச்சை திட்டமிடல் UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "🔁 **கூடுதல் உள்வைப்புகள்:** ஒரே அமர்வில் பல உள்வைப்புகளுக்கு, ஒவ்வொரு கூடுதல் உள்வைப்புக்கும் 4.2540 அல்லது 4.2540.LP குறியீடு பயன்படுத்தப்படுகிறது",
+      "⚠️ **முக்கியம்:** அடிப்படை அறுவை சிகிச்சை கருவிகள் ஏற்கனவே கட்டணத்தில் கருதப்பட்டுள்ளன மற்றும் தனித்தனியாக கணக்கிட முடியாது"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was kostet ein Zahnimplantat insgesamt?",
+        "answer": "Die reine Implantatinsertion (4.2530) kostet 669.40 TP. Dazu kommen Materialkosten für das Implantat selbst (je nach Hersteller und Typ, oft 300–800 CHF), die Anästhesie (4.0650, 38.40 TP), Röntgenbilder (4.0500 oder 4.0530), eventuell eine Knochenaugmentation (4.2610 oder 4.2620) und später die Krone (4.7070, ca. 760 TP). Insgesamt können die Kosten für ein Implantat mit Krone 3.000–5.000 CHF betragen. Frage vorher einen detaillierten Kostenvoranschlag an!"
+      },
+      {
+        "question": "Wird ein Implantat von der Krankenkasse bezahlt?",
+        "answer": "Bei UV/MV/IV wird ein Implantat nur in Ausnahmefällen bezahlt, z.B. nach einem Unfall oder bei angeborenen Fehlbildungen. Bei Privatpatienten (PP) müssen die Kosten in der Regel selbst getragen werden. Viele haben eine private Zahnzusatzversicherung, die einen Teil übernimmt. Vor der Behandlung ist immer eine Kostengutsprache der Versicherung erforderlich!"
+      },
+      {
+        "question": "Wie lange dauert die Behandlung?",
+        "answer": "Die Implantatinsertion selbst dauert etwa 30–60 Minuten pro Implantat. Danach muss das Implantat einheilen – das dauert 3–6 Monate (bei Oberkiefer oft länger). Erst dann kann die Krone eingesetzt werden. Insgesamt dauert die Behandlung also mehrere Monate."
+      },
+      {
+        "question": "Ist die Implantat-OP schmerzhaft?",
+        "answer": "Nein, die Operation wird unter lokaler Betäubung durchgeführt. Du spürst während des Eingriffs keinen Schmerz, nur Druck und Vibrationen. Nach der Operation kann es für einige Tage zu Schwellungen und leichten Schmerzen kommen, die mit Schmerzmitteln gut behandelt werden können."
+      },
+      {
+        "question": "Was ist in der Leistung 4.2530 alles enthalten?",
+        "answer": "Enthalten sind: Lappenbildung (Öffnen des Zahnfleisches), Aufbereitung des Implantatbettes (Bohren), Einsetzen des Implantats, Montage des Platzhalters (Verschlussschraube) und der Wundverschluss (maximal 4 Nähte). Nicht enthalten sind: Anästhesie, Röntgenbilder, Materialkosten für das Implantat selbst und eventuell notwendige Knochenaufbauten."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Combien coûte un implant dentaire au total?",
+        "answer": "La simple insertion de l'implant (4.2530) coûte 669.40 TP. S'ajoutent les coûts des matériaux pour l'implant lui-même (selon le fabricant et le type, souvent 300–800 CHF), l'anesthésie (4.0650, 38.40 TP), les radiographies (4.0500 ou 4.0530), éventuellement une augmentation osseuse (4.2610 ou 4.2620) et plus tard la couronne (4.7070, env. 760 TP). Au total, les coûts pour un implant avec couronne peuvent atteindre 3.000–5.000 CHF. Demandez un devis détaillé à l'avance!"
+      },
+      {
+        "question": "Un implant est-il pris en charge par l'assurance maladie?",
+        "answer": "Pour UV/MV/IV, un implant n'est pris en charge que dans des cas exceptionnels, par exemple après un accident ou en cas de malformation congénitale. Pour les patients privés (PP), les frais doivent généralement être supportés par eux-mêmes. Beaucoup ont une assurance dentaire privée qui prend en charge une partie. Avant le traitement, une approbation de l'assurance est toujours requise!"
+      },
+      {
+        "question": "Combien de temps dure le traitement?",
+        "answer": "L'insertion de l'implant elle-même dure environ 30–60 minutes par implant. Ensuite, l'implant doit cicatriser – cela prend 3–6 mois (souvent plus long pour la mâchoire supérieure). Ce n'est qu'ensuite que la couronne peut être posée. Au total, le traitement dure donc plusieurs mois."
+      },
+      {
+        "question": "L'opération d'implant est-elle douloureuse?",
+        "answer": "Non, l'opération est réalisée sous anesthésie locale. Tu ne ressens aucune douleur pendant l'intervention, seulement une pression et des vibrations. Après l'opération, il peut y avoir un gonflement et de légères douleurs pendant quelques jours, qui peuvent être bien traitées avec des analgésiques."
+      },
+      {
+        "question": "Qu'est-ce qui est inclus dans la prestation 4.2530?",
+        "answer": "Sont inclus: la formation de lambeau (ouverture de la gencive), la préparation du lit implantaire (perçage), l'insertion de l'implant, le montage du protecteur de site (vis de fermeture) et la fermeture de la plaie (maximum 4 sutures). Ne sont pas inclus: l'anesthésie, les radiographies, les coûts des matériaux pour l'implant lui-même et les éventuelles augmentations osseuses nécessaires."
+      }
+    ],
+    "it": [
+      {
+        "question": "Quanto costa un impianto dentale in totale?",
+        "answer": "Il solo inserimento dell'impianto (4.2530) costa 669.40 TP. A questi si aggiungono i costi dei materiali per l'impianto stesso (a seconda del produttore e del tipo, spesso 300–800 CHF), l'anestesia (4.0650, 38.40 TP), le radiografie (4.0500 o 4.0530), eventualmente un aumento osseo (4.2610 o 4.2620) e successivamente la corona (4.7070, circa 760 TP). In totale, i costi per un impianto con corona possono arrivare a 3.000–5.000 CHF. Chiedi un preventivo dettagliato in anticipo!"
+      },
+      {
+        "question": "Un impianto è coperto dall'assicurazione malattia?",
+        "answer": "Per UV/MV/IV, un impianto è coperto solo in casi eccezionali, ad esempio dopo un infortunio o in caso di malformazioni congenite. Per i pazienti privati (PP), i costi devono generalmente essere sostenuti da loro stessi. Molti hanno un'assicurazione dentale privata che copre una parte. Prima del trattamento è sempre necessaria l'approvazione dell'assicurazione!"
+      },
+      {
+        "question": "Quanto dura il trattamento?",
+        "answer": "L'inserimento dell'impianto stesso dura circa 30–60 minuti per impianto. Dopodiché l'impianto deve guarire – ci vogliono 3–6 mesi (spesso più a lungo per la mascella superiore). Solo allora si può posizionare la corona. In totale, il trattamento dura quindi diversi mesi."
+      },
+      {
+        "question": "L'operazione dell'impianto è dolorosa?",
+        "answer": "No, l'operazione viene eseguita in anestesia locale. Durante l'intervento non senti alcun dolore, solo pressione e vibrazioni. Dopo l'operazione possono verificarsi gonfiore e lievi dolori per alcuni giorni, che possono essere ben trattati con antidolorifici."
+      },
+      {
+        "question": "Cosa è incluso nella prestazione 4.2530?",
+        "answer": "Sono inclusi: formazione del lembo (apertura della gengiva), preparazione del letto implantare (foratura), inserimento dell'impianto, montaggio del protettore di sito (vite di chiusura) e chiusura della ferita (massimo 4 suture). Non sono inclusi: anestesia, radiografie, costi dei materiali per l'impianto stesso e eventuali aumenti ossei necessari."
+      }
+    ],
+    "en": [
+      {
+        "question": "How much does a dental implant cost in total?",
+        "answer": "The implant placement itself (4.2530) costs 669.40 TP. Added to this are material costs for the implant itself (depending on manufacturer and type, often 300–800 CHF), anesthesia (4.0650, 38.40 TP), X-rays (4.0500 or 4.0530), possibly bone augmentation (4.2610 or 4.2620), and later the crown (4.7070, approx. 760 TP). In total, the costs for an implant with crown can range from 3,000–5,000 CHF. Ask for a detailed cost estimate in advance!"
+      },
+      {
+        "question": "Is an implant covered by health insurance?",
+        "answer": "For UV/MV/IV, an implant is only covered in exceptional cases, such as after an accident or for congenital malformations. For private patients (PP), the costs generally must be borne by themselves. Many have private dental insurance that covers part of it. Prior approval from the insurance company is always required before treatment!"
+      },
+      {
+        "question": "How long does the treatment take?",
+        "answer": "The implant placement itself takes about 30–60 minutes per implant. After that, the implant must heal – this takes 3–6 months (often longer for the upper jaw). Only then can the crown be placed. In total, the treatment therefore takes several months."
+      },
+      {
+        "question": "Is the implant surgery painful?",
+        "answer": "No, the surgery is performed under local anesthesia. You won't feel any pain during the procedure, only pressure and vibrations. After the surgery, there may be swelling and mild pain for a few days, which can be well managed with painkillers."
+      },
+      {
+        "question": "What is included in service 4.2530?",
+        "answer": "Included are: flap formation (opening the gum), implant bed preparation (drilling), implant placement, placement of the cover screw, and wound closure (maximum 4 sutures). Not included are: anesthesia, X-rays, material costs for the implant itself, and any necessary bone augmentation."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuánto cuesta un implante dental en total?",
+        "answer": "La sola colocación del implante (4.2530) cuesta 669.40 TP. A esto se suman los costos de material del implante en sí (según el fabricante y tipo, a menudo 300–800 CHF), la anestesia (4.0650, 38.40 TP), las radiografías (4.0500 o 4.0530), posiblemente una aumentación ósea (4.2610 o 4.2620) y más tarde la corona (4.7070, aprox. 760 TP). En total, los costos para un implante con corona pueden oscilar entre 3.000–5.000 CHF. ¡Pide un presupuesto detallado por adelantado!"
+      },
+      {
+        "question": "¿Un implante está cubierto por el seguro de salud?",
+        "answer": "Para UV/MV/IV, un implante solo se cubre en casos excepcionales, por ejemplo después de un accidente o en caso de malformaciones congénitas. Para pacientes privados (PP), los costos generalmente deben ser asumidos por ellos mismos. Muchos tienen un seguro dental privado que cubre una parte. ¡Antes del tratamiento siempre se requiere la aprobación del seguro!"
+      },
+      {
+        "question": "¿Cuánto dura el tratamiento?",
+        "answer": "La colocación del implante en sí dura unos 30–60 minutos por implante. Después, el implante debe cicatrizar – esto lleva 3–6 meses (a menudo más tiempo para la mandíbula superior). Solo entonces se puede colocar la corona. En total, el tratamiento dura varios meses."
+      },
+      {
+        "question": "¿Es dolorosa la cirugía de implante?",
+        "answer": "No, la cirugía se realiza con anestesia local. No sientes ningún dolor durante el procedimiento, solo presión y vibraciones. Después de la cirugía, puede haber hinchazón y dolor leve durante unos días, que pueden tratarse bien con analgésicos."
+      },
+      {
+        "question": "¿Qué está incluido en la prestación 4.2530?",
+        "answer": "Están incluidos: formación de colgajo (apertura de la encía), preparación del lecho implantario (perforación), colocación del implante, montaje del protector de sitio (tornillo de cierre) y cierre de la herida (máximo 4 suturas). No están incluidos: anestesia, radiografías, costos de material del implante en sí y cualquier aumentación ósea necesaria."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quanto custa um implante dentário no total?",
+        "answer": "A colocação do implante (4.2530) custa 669.40 TP. A estes acrescem os custos de material do próprio implante (consoante o fabricante e tipo, frequentemente 300–800 CHF), a anestesia (4.0650, 38.40 TP), as radiografias (4.0500 ou 4.0530), eventualmente uma aumentação óssea (4.2610 ou 4.2620) e mais tarde a coroa (4.7070, aprox. 760 TP). No total, os custos para um implante com coroa podem variar entre 3.000–5.000 CHF. Pede um orçamento detalhado antecipadamente!"
+      },
+      {
+        "question": "Um implante é coberto pelo seguro de saúde?",
+        "answer": "Para UV/MV/IV, um implante só é coberto em casos excecionais, por exemplo após um acidente ou em caso de malformações congénitas. Para pacientes privados (PP), os custos geralmente devem ser suportados por eles próprios. Muitos têm um seguro dentário privado que cobre uma parte. Antes do tratamento é sempre necessária a aprovação do seguro!"
+      },
+      {
+        "question": "Quanto tempo demora o tratamento?",
+        "answer": "A colocação do implante em si demora cerca de 30–60 minutos por implante. Depois, o implante tem de cicatrizar – isto leva 3–6 meses (frequentemente mais tempo para a mandíbula superior). Só então se pode colocar a coroa. No total, o tratamento demora vários meses."
+      },
+      {
+        "question": "A cirurgia de implante é dolorosa?",
+        "answer": "Não, a cirurgia é realizada com anestesia local. Não sentes qualquer dor durante o procedimento, apenas pressão e vibrações. Após a cirurgia, pode haver inchaço e dor ligeira durante alguns dias, que podem ser bem tratados com analgésicos."
+      },
+      {
+        "question": "O que está incluído na prestação 4.2530?",
+        "answer": "Estão incluídos: formação de retalho (abertura da gengiva), preparação do leito implantar (perfuração), colocação do implante, montagem do protetor de sítio (parafuso de fecho) e fecho da ferida (máximo 4 suturas). Não estão incluídos: anestesia, radiografias, custos de material do próprio implante e quaisquer aumentações ósseas necessárias."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Ile kosztuje implant zębowy w sumie?",
+        "answer": "Samo wszczepienie implantu (4.2530) kosztuje 669.40 TP. Do tego dochodzą koszty materiałów samego implantu (w zależności od producenta i typu, często 300–800 CHF), znieczulenie (4.0650, 38.40 TP), zdjęcia rentgenowskie (4.0500 lub 4.0530), ewentualna augmentacja kości (4.2610 lub 4.2620), a później korona (4.7070, ok. 760 TP). Łącznie koszty implantu z koroną mogą wynieść 3.000–5.000 CHF. Poproś o szczegółową wycenę z góry!"
+      },
+      {
+        "question": "Czy implant jest refundowany przez ubezpieczenie zdrowotne?",
+        "answer": "W przypadku UV/MV/IV implant jest refundowany tylko w wyjątkowych przypadkach, na przykład po wypadku lub przy wadach wrodzonych. W przypadku pacjentów prywatnych (PP) koszty zazwyczaj muszą być pokryte we własnym zakresie. Wielu ma prywatne ubezpieczenie stomatologiczne, które pokrywa część. Przed leczeniem zawsze wymagana jest zgoda ubezpieczyciela!"
+      },
+      {
+        "question": "Jak długo trwa leczenie?",
+        "answer": "Samo wszczepienie implantu trwa około 30–60 minut na implant. Potem implant musi się zagoić – trwa to 3–6 miesięcy (często dłużej dla szczęki górnej). Dopiero wtedy można założyć koronę. Łącznie leczenie trwa więc kilka miesięcy."
+      },
+      {
+        "question": "Czy operacja implantu jest bolesna?",
+        "answer": "Nie, operacja jest wykonywana w znieczuleniu miejscowym. Podczas zabiegu nie czujesz żadnego bólu, tylko ucisk i wibracje. Po operacji może wystąpić obrzęk i lekki ból przez kilka dni, które można dobrze leczyć środkami przeciwbólowymi."
+      },
+      {
+        "question": "Co jest zawarte w usłudze 4.2530?",
+        "answer": "Zawarte są: utworzenie płata (otwarcie dziąsła), przygotowanie łożyska implantu (wiertowanie), wszczepienie implantu, montaż śruby zamykającej i zamknięcie rany (maksymalnie 4 szwy). Nie zawarte są: znieczulenie, zdjęcia rentgenowskie, koszty materiałów samego implantu i ewentualna augmentacja kości."
+      }
+    ],
+    "al": [
+      {
+        "question": "Sa kushton një implant dentar në total?",
+        "answer": "Vendosja e implantit (4.2530) kushton 669.40 TP. Këtyre u shtohen kostot materiale për vetë implantin (në varësi të prodhuesit dhe tipit, shpesh 300–800 CHF), anestezia (4.0650, 38.40 TP), rrezet X (4.0500 ose 4.0530), ndoshta një augmentim kockor (4.2610 ose 4.2620), dhe më vonë kurora (4.7070, rreth 760 TP). Në total, kostot për një implant me kurorë mund të jenë 3.000–5.000 CHF. Kërko një vlerësim të detajuar paraprakisht!"
+      },
+      {
+        "question": "A mbulohet një implant nga sigurimi shëndetësor?",
+        "answer": "Për UV/MV/IV, një implant mbulohet vetëm në raste të jashtëzakonshme, për shembull pas një aksidenti ose për keqformime kongjenitale. Për pacientët privatë (PP), kostot zakonisht duhet të përballohen vetë. Shumë kanë një sigurim privat dentar që mbulon një pjesë. Para trajtimit kërkohet gjithmonë miratimi i sigurimit!"
+      },
+      {
+        "question": "Sa kohë zgjat trajtimi?",
+        "answer": "Vendosja e implantit zgjat rreth 30–60 minuta për implant. Pas kësaj, implanti duhet të shërohet – kjo zgjat 3–6 muaj (shpesh më gjatë për nofullën e sipërme). Vetëm atëherë mund të vendoset kurora. Në total, trajtimi zgjat disa muaj."
+      },
+      {
+        "question": "A është e dhimbshme operacioni i implantit?",
+        "answer": "Jo, operacioni kryhet me anestezi lokale. Gjatë procedurës nuk ndjen asnjë dhimbje, vetëm presion dhe dridhje. Pas operacionit, mund të ketë ënjtje dhe dhimbje të lehta për disa ditë, të cilat mund të trajtohen mirë me qetësues dhimbjeje."
+      },
+      {
+        "question": "Çfarë përfshihet në shërbimin 4.2530?",
+        "answer": "Përfshihen: formimi i palosjes (hapja e mishrave), përgatitja e shtratit të implantit (shpimi), vendosja e implantit, montimi i mbrojtësit të vendit (vidhos mbyllëse) dhe mbyllja e plagës (maksimumi 4 qepje). Nuk përfshihen: anestezia, rrezet X, kostot materiale për vetë implantin dhe çdo augmentim kockor i nevojshëm."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bir diş implantının toplam maliyeti nedir?",
+        "answer": "Sadece implant yerleştirme (4.2530) 669.40 TP tutar. Buna implantın kendisi için malzeme maliyetleri (üretici ve tipe bağlı olarak, genellikle 300–800 CHF), anestezi (4.0650, 38.40 TP), röntgenler (4.0500 veya 4.0530), olası kemik takviyesi (4.2610 veya 4.2620) ve daha sonra kron (4.7070, yaklaşık 760 TP) eklenir. Toplamda, kronlu bir implantın maliyeti 3.000–5.000 CHF arasında olabilir. Önceden ayrıntılı bir maliyet tahmini isteyin!"
+      },
+      {
+        "question": "İmplant sağlık sigortası tarafından karşılanır mı?",
+        "answer": "UV/MV/IV için implant yalnızca istisnai durumlarda karşılanır, örneğin bir kazadan sonra veya doğuştan malformasyonlarda. Özel hastalar (PP) için masraflar genellikle kendileri tarafından karşılanmalıdır. Birçoğunun bir kısmını karşılayan özel diş sigortası vardır. Tedaviden önce her zaman sigortanın onayı gereklidir!"
+      },
+      {
+        "question": "Tedavi ne kadar sürer?",
+        "answer": "İmplant yerleştirmenin kendisi implant başına yaklaşık 30–60 dakika sürer. Bundan sonra implant iyileşmelidir – bu 3–6 ay sürer (üst çene için genellikle daha uzun). Ancak o zaman kron takılabilir. Toplamda, tedavi bu nedenle birkaç ay sürer."
+      },
+      {
+        "question": "İmplant ameliyatı ağrılı mıdır?",
+        "answer": "Hayır, ameliyat lokal anestezi altında yapılır. İşlem sırasında hiç ağrı hissetmezsiniz, sadece basınç ve titreşim hissedersiniz. Ameliyattan sonra birkaç gün boyunca şişlik ve hafif ağrı olabilir, bunlar ağrı kesicilerle iyi bir şekilde tedavi edilebilir."
+      },
+      {
+        "question": "4.2530 hizmetine neler dahildir?",
+        "answer": "Dahil olanlar: flep oluşturma (diş etinin açılması), implant yatağının hazırlanması (delme), implantın yerleştirilmesi, kapatma vidasının takılması ve yaranın kapatılması (maksimum 4 dikiş). Dahil olmayanlar: anestezi, röntgenler, implantın kendisi için malzeme maliyetleri ve gerekli herhangi bir kemik takviyesi."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koliko košta dentalni implantat ukupno?",
+        "answer": "Samo postavljanje implantata (4.2530) košta 669.40 TP. Tome se dodaju troškovi materijala za sam implantat (ovisno o proizvođaču i tipu, često 300–800 CHF), anestezija (4.0650, 38.40 TP), rendgeni (4.0500 ili 4.0530), eventualno nadogradnja kosti (4.2610 ili 4.2620), i kasnije krunica (4.7070, oko 760 TP). Ukupno, troškovi za implantat s krunicom mogu biti 3.000–5.000 CHF. Zatražite detaljnu procjenu troškova unaprijed!"
+      },
+      {
+        "question": "Pokriva li zdravstveno osiguranje implantat?",
+        "answer": "Za UV/MV/IV, implantat se pokriva samo u iznimnim slučajevima, na primjer nakon nesreće ili kod urođenih malformacija. Za privatne pacijente (PP) troškove općenito moraju snositi sami. Mnogi imaju privatno stomatološko osiguranje koje pokriva dio. Prije liječenja uvijek je potrebno odobrenje osiguranja!"
+      },
+      {
+        "question": "Koliko dugo traje liječenje?",
+        "answer": "Samo postavljanje implantata traje oko 30–60 minuta po implantatu. Nakon toga, implantat mora zacijeliti – to traje 3–6 mjeseci (često dulje za gornju čeljust). Tek tada se može postaviti krunica. Ukupno, liječenje traje nekoliko mjeseci."
+      },
+      {
+        "question": "Je li operacija implantata bolna?",
+        "answer": "Ne, operacija se izvodi u lokalnoj anesteziji. Tijekom zahvata ne osjećaš bol, samo pritisak i vibracije. Nakon operacije može doći do otekline i blage boli nekoliko dana, što se može dobro liječiti lijekovima protiv bolova."
+      },
+      {
+        "question": "Što je uključeno u uslugu 4.2530?",
+        "answer": "Uključeno je: formiranje režnja (otvaranje desni), priprema ležišta implantata (bušenje), postavljanje implantata, montaža zaštitnog vijka i zatvaranje rane (maksimalno 4 šava). Nije uključeno: anestezija, rendgeni, troškovi materijala za sam implantat i eventualna nadogradnja kosti."
+      }
+    ],
+    "ta": [
+      {
+        "question": "ஒரு பல் உள்வைப்பின் மொத்த செலவு எவ்வளவு?",
+        "answer": "உள்வைப்பு பொருத்துதல் (4.2530) மட்டும் 669.40 TP செலவாகும். இதில் உள்வைப்புக்கான பொருள் செலவுகள் (உற்பத்தியாளர் மற்றும் வகையைப் பொறுத்து, பெரும்பாலும் 300–800 CHF), மரத்துப்போகச் செய்தல் (4.0650, 38.40 TP), எக்ஸ்-ரேக்கள் (4.0500 அல்லது 4.0530), கூடுதல் எலும்பு சேர்க்கை (4.2610 அல்லது 4.2620), மற்றும் பின்னர் கிரீடம் (4.7070, தோராயமாக 760 TP) ஆகியவை சேர்க்கப்படும். மொத்தத்தில், கிரீடத்துடன் கூடிய ஒரு உள்வைப்புக்கான செலவு 3,000–5,000 CHF வரை இருக்கலாம். முன்கூட்டியே விரிவான செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "உள்வைப்பு சுகாதார காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "UV/MV/IV க்கு, ஒரு உள்வைப்பு விதிவிலக்கான நிகழ்வுகளில் மட்டுமே மறைக்கப்படுகிறது, எடுத்துக்காட்டாக ஒரு விபத்துக்குப் பிறகு அல்லது பிறவி குறைபாடுகளுக்கு. தனியார் நோயாளிகளுக்கு (PP), செலவுகள் பொதுவாக தாங்களே ஏற்க வேண்டும். பலருக்கு ஒரு பகுதியை மறைக்கும் தனியார் பல் காப்பீடு உள்ளது. சிகிச்சைக்கு முன் காப்பீட்டின் ஒப்புதல் எப்போதும் தேவைப்படுகிறது!"
+      },
+      {
+        "question": "சிகிச்சை எவ்வளவு நேரம் எடுக்கும்?",
+        "answer": "உள்வைப்பு பொருத்துதல் ஒவ்வொரு உள்வைப்புக்கும் சுமார் 30–60 நிமிடங்கள் ஆகும். அதன் பிறகு, உள்வைப்பு குணமடைய வேண்டும் – இது 3–6 மாதங்கள் ஆகும் (மேல் தாடைக்கு பெரும்பாலும் நீண்ட நேரம்). அப்போதுதான் கிரீடம் வைக்க முடியும். மொத்தத்தில், சிகிச்சை பல மாதங்கள் ஆகும்."
+      },
+      {
+        "question": "உள்வைப்பு அறுவை சிகிச்சை வலியை ஏற்படுத்துமா?",
+        "answer": "இல்லை, அறுவை சிகிச்சை உள்ளூர் மரத்துப்போகச் செய்தலுடன் செய்யப்படுகிறது. செயல்முறையின் போது உங்களுக்கு எந்த வலியும் தெரியாது, அழுத்தம் மற்றும் அதிர்வுகள் மட்டுமே தெரியும். அறுவை சிகிச்சைக்குப் பிறகு, சில நாட்களுக்கு வீக்கம் மற்றும் லேசான வலி இருக்கலாம், இது வலி நிவாரணிகளுடன் நன்றாக கட்டுப்படுத்தப்படலாம்."
+      },
+      {
+        "question": "4.2530 சேவையில் என்ன சேர்க்கப்பட்டுள்ளது?",
+        "answer": "சேர்க்கப்பட்டவை: மடல் உருவாக்கம் (ஈறுகளைத் திறத்தல்), உள்வைப்பு படுக்கை தயாரித்தல் (துளையிடுதல்), உள்வைப்பை பொருத்துதல், மூடுத் திருகு பொருத்துதல் மற்றும் காயத்தை மூடுதல் (அதிகபட்சம் 4 தையல்கள்). சேர்க்கப்படாதவை: மரத்துப்போகச் செய்தல், எக்ஸ்-ரேக்கள், உள்வைப்புக்கான பொருள் செலவுகள் மற்றும் தேவையான எலும்பு சேர்க்கை."
+      }
+    ]
+  }
+}

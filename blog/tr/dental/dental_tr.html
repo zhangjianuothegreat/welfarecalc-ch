@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>İsviçre Diş Faturası Denetleyicisi – Faturanızı Çözün ve Adil Fiyatları Kontrol Edin | WelfareCalc</title>
+    <meta name="description"
+        content="İsviçre diş faturanızı anlayın. DENTOTAR kodlarını çözün, resmi tarife puanlarını kontrol edin ve faturanızın adil olup olmadığını resmi referanslarla doğrulayın.">
+    <meta name="keywords"
+        content="İsviçre diş faturası denetleyicisi, DENTOTAR, Taxpunktwert, İsviçre diş faturası, diş faturası kontrol, İsviçre diş sistemi">
+    
+    <meta property="og:title" content="İsviçre Diş Faturası Denetleyicisi – Faturanızı Çözün ve Adil Fiyatları Kontrol Edin">
+    <meta property="og:description"
+        content="Diş faturanızı hızlıca çözün, DENTOTAR kodlarını kontrol edin ve adil fiyatlandırmayı resmi tarife ile doğrulayın.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/blog/tr/dental/">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/og-dental-guide.jpg">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: #1e2a3e;
+            background: #f5f9ff;
+        }
+
+        header {
+            background: linear-gradient(135deg, #005f8c, #0099dd);
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            border-bottom: 6px solid #ffcd7e;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-title {
+            font-size: 2.35rem;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            color: #ffffff;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 0.8rem;
+            line-height: 1.25;
+        }
+
+        .hero-sub {
+            font-size: 1.28rem;
+            font-weight: 500;
+            color: #fff9e8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #006a9e;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.85rem;
+            margin: 2rem 0 1rem;
+            border-left: 6px solid #0099dd;
+            padding-left: 1rem;
+        }
+
+        h3 {
+            font-size: 1.45rem;
+            margin: 1.5rem 0 0.8rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 1.8rem;
+            margin: 1.5rem 0;
+            border-radius: 24px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 119, 190, 0.08);
+        }
+
+        .highlight {
+            background: #e0f0fe;
+            padding: 1.3rem;
+            border-left: 7px solid #0077be;
+            margin: 1.5rem 0;
+            border-radius: 16px;
+            font-size: 1.05rem;
+        }
+
+        .price-box {
+            background: #fff6e5;
+            padding: 1.4rem;
+            border-radius: 20px;
+            margin: 1.5rem 0;
+            border-left: 7px solid #ff9800;
+        }
+
+        select,
+        button {
+            font-size: 1.05rem;
+            padding: 1rem 1.2rem;
+            margin: 0.8rem 0;
+            border-radius: 60px;
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            background: white;
+        }
+
+        button {
+            background: #0077be;
+            color: white;
+            border: none;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0, 119, 190, 0.25);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #005f8c;
+            transform: scale(0.98);
+        }
+
+        #result {
+            margin-top: 2rem;
+            padding: 1.8rem;
+            background: #f0f8ff;
+            border-radius: 20px;
+            border: 1px solid #bbdefb;
+        }
+
+        /* 博客矩阵卡片样式 - 低调但清晰 */
+        .blog-matrix {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .blog-matrix h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: #475569;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .blog-matrix p.series-desc {
+            color: #64748b;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .matrix-item {
+            background: white;
+            padding: 0.9rem 1rem;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: #1e2a3e;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .matrix-item:hover {
+            border-color: #0099dd;
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 119, 190, 0.08);
+            transform: translateY(-1px);
+        }
+
+        .matrix-icon {
+            font-size: 1.4rem;
+            min-width: 32px;
+            text-align: center;
+        }
+
+        .matrix-content {
+            flex: 1;
+        }
+
+        .matrix-content h4 {
+            color: #006a9e;
+            margin: 0;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .matrix-content p {
+            font-size: 0.75rem;
+            color: #64748b;
+            margin: 0.2rem 0 0;
+            line-height: 1.3;
+        }
+
+        .disclaimer {
+            font-size: 0.82rem;
+            color: #475569;
+            margin-top: 2rem;
+            padding: 1.4rem;
+            background: #ecfdf5;
+            border-radius: 20px;
+            border-left: 5px solid #10b981;
+        }
+
+        .version-info {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 2.5rem 0 1rem;
+        }
+
+        ul,
+        ol {
+            padding-left: 1.8rem;
+            margin: 1rem 0;
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        @media (max-width: 640px) {
+            .hero-title {
+                font-size: 1.95rem;
+            }
+
+            .hero-sub {
+                font-size: 1.15rem;
+            }
+
+            .card {
+                padding: 1.3rem;
+            }
+
+            .matrix-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .matrix-item {
+                padding: 0.7rem 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="hero-title">İsviçre Diş Faturası Denetleyicisi</h1>
+        <p class="hero-sub">Faturanızı çözün, DENTOTAR kodlarını kontrol edin ve resmi referanslarla adil fiyatları doğrulayın.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>İsviçre'ye hoş geldiniz!</h2>
+            <p>Buraya yeni geldiyseniz ve dişçiye gitmek sizi endişelendiriyorsa, yalnız değilsiniz. Birçok insan (hatta
+                İsviçreliler bile) bu sistemi ilk başta karmaşık bulur.</p>
+
+            <div class="highlight">
+                <strong>✨ En önemli cümle:</strong><br>
+                İsviçre'de diş fiyatları <strong>sabit değildir</strong>, ama <strong>şeffaftır</strong>.
+                Sistemi anladığınızda, kolayca karşılaştırabilir ve fazla ödeme yapmaktan kurtulabilirsiniz.
+            </div>
+
+            <h3>UV, MV ve IV nedir?</h3>
+            <p>İsviçre'de diş tedavilerinde en sık duyacağınız sigorta türleri şunlardır:</p>
+            <ul>
+                <li><strong>UV</strong> = Kaza Sigortası – Kazadan kaynaklanan diş hasarlarını karşılar.</li>
+                <li><strong>MV</strong> = Askerlik Sigortası – Askerlik yapanlar için geçerlidir.</li>
+                <li><strong>IV</strong> = Maluliyet Sigortası – Doğuştan ciddi engeli veya hastalığı olanlar için.</li>
+            </ul>
+            <p><strong>Önemli not:</strong> Normal yetişkin kontrolleri ve tedavilerde çoğu kişi kendi cebinden öder
+                (Özel Hasta).</p>
+
+            <h3>Fatura nasıl hesaplanır?</h3>
+            <p>İsviçre'de <strong>DENTOTAR®</strong> adlı ulusal bir sistem kullanılır.</p>
+            <ul>
+                <li><strong>TP (Tarife Puanı)</strong> — Tedavinin ne kadar zor olduğunu gösteren ulusal puandır (tüm
+                    İsviçre'de aynıdır).</li>
+                <li><strong>Puan Değeri (TPW)</strong> — Her kliniğin 1 puan için belirlediği fiyattır (genellikle 1,00
+                    – 1,30 CHF arasında).</li>
+            </ul>
+
+            <div class="price-box">
+                <strong>Ödeyeceğiniz ücret = TP × Kliniğin Puan Değeri</strong><br><br>
+                Örnek: Bir dolgu = 100 TP<br>
+                • A Kliniği (1,10 CHF/puan) → <strong>110 CHF</strong><br>
+                • B Kliniği (1,30 CHF/puan) → <strong>130 CHF</strong>
+            </div>
+        </div>
+
+        <!-- 查询系统 -->
+        <div class="card">
+            <h2>🔍 Diş Kodunuzu Kontrol Edin</h2>
+            <p>Faturanızdaki bir kodu seçerek resmi DENTOTAR açıklamasını ve önerilen tarife puanı aralığını görün.</p>
+
+            <select id="treatment-select">
+                <option value="">-- Faturanızdan bir kod seçin --</option>
+            </select>
+            <button onclick="queryTreatment()">Bu Kodu Kontrol Et</button>
+
+            <div id="result"></div>
+        </div>
+
+        <p style="text-align: right; margin-bottom: 0.5rem;">
+            <a href="dentalblog_tr.html" style="color: #0077be; text-decoration: none; font-weight: 500;">📖 Tüm Rehber
+                Yazılarına Git →</a>
+        </p>
+
+        <!-- 📚 博客矩阵卡片 -->
+        <div class="blog-matrix">
+            <h3>📚 İsviçre Diş Faturası Denetleyicisi – Detaylı Rehber Serisi</h3>
+            <p class="series-desc">Daha fazla bilgi mi istiyorsunuz? İşte İsviçre diş faturası ve DENTOTAR sistemi hakkında kapsamlı makaleler:</p>
+            <div class="matrix-grid">
+                <a href="blog-1-taxpunktwert-tr.html" class="matrix-item">
+                    <span class="matrix-icon">🔢</span>
+                    <div class="matrix-content">
+                        <h4>Taxpunktwert Açıklaması</h4>
+                        <p>Puan ve çarpan sistemi nasıl çalışır?</p>
+                    </div>
+                </a>
+                <a href="blog-2-dental-bill-tr.html" class="matrix-item">
+                    <span class="matrix-icon">🧾</span>
+                    <div class="matrix-content">
+                        <h4>Diş Faturanızı Okuma</h4>
+                        <p>Her DENTOTAR kodunu çözün</p>
+                    </div>
+                </a>
+                <a href="blog-3-first-dental-visit-switzerland-cost-tr.html" class="matrix-item">
+                    <span class="matrix-icon">🦷</span>
+                    <div class="matrix-content">
+                        <h4>İlk Diş Ziyareti</h4>
+                        <p>150–300 CHF neden normal?</p>
+                    </div>
+                </a>
+                <a href="blog-4-dental-cleaning-tr.html" class="matrix-item">
+                    <span class="matrix-icon">✨</span>
+                    <div class="matrix-content">
+                        <h4>Diş Temizliği Maliyetleri</h4>
+                        <p>160–300 CHF gerekli mi?</p>
+                    </div>
+                </a>
+                <a href="blog-5-second-opinion-tr.html" class="matrix-item">
+                    <span class="matrix-icon">💡</span>
+                    <div class="matrix-content">
+                        <h4>İkinci Görüş Rehberi</h4>
+                        <p>Aşırı tedaviden kaçının</p>
+                    </div>
+                </a>
+                <a href="blog-6-supplementary-dental-insurance-tr.html" class="matrix-item">
+                    <span class="matrix-icon">🛡️</span>
+                    <div class="matrix-content">
+                        <h4>Tamamlayıcı Diş Sigortası</h4>
+                        <p>2026'da değer mi?</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <strong>📢 Önemli Uyarı:</strong> Bu web sitesi yalnızca genel bilgilendirme amaçlıdır.
+            Tüm bilgiler resmi İsviçre diş tarifesinden (DENTOTAR® – SSO / MTK-CTM) alınmıştır.
+            Fiyatlar ve kurallar kliniğe ve kişisel duruma göre değişebilir.
+            Biz bir diş kliniği değiliz ve tıbbi tavsiye vermiyoruz.
+            Lütfen her zaman diş hekiminize ve sigortanıza danışın.
+            Son güncelleme: Mart 2026.
+        </div>
+
+        <div class="version-info">
+            🇨🇭 İsviçre Diş Faturası Denetleyicisi • <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a> tarafından bağımsız bir proje
+        </div>
+    </div>
+
+    <script>
+        const servicesIndex = [
+            { code: "4.0000", file: "40000.json" },
+            { code: "4.0020", file: "40020.json" },
+            { code: "4.0040", file: "40040.json" },
+            { code: "4.0090", file: "40090.json" },
+            { code: "4.0500", file: "40500.json" },
+            { code: "4.0530", file: "40530.json" },
+            { code: "4.1110", file: "41110.json" },
+            { code: "4.1260", file: "41260.json" },
+            { code: "4.2010", file: "42010.json" },
+            { code: "4.2010.LP", file: "42010LP.json" },
+            { code: "4.2020", file: "42020.json" },
+            { code: "4.2530", file: "42530.json" },
+            { code: "4.2530.LP", file: "42530LP.json" },
+            { code: "4.4600", file: "44600.json" },
+            { code: "4.4700", file: "44700.json" },
+            { code: "4.5350", file: "45350.json" },
+            { code: "4.5350.LP", file: "45350LP.json" },
+            { code: "4.7080", file: "47080.json" },
+            { code: "4.7085", file: "47085.json" },
+            { code: "4.8200", file: "48200.json" }
+        ];
+
+        let allServices = {};
+
+        async function loadServices() {
+            const select = document.getElementById("treatment-select");
+            for (let item of servicesIndex) {
+                try {
+                    const res = await fetch('/data/dental/' + item.file);
+                    if (res.ok) allServices[item.code] = await res.json();
+                } catch (e) {
+                    console.warn(`${item.file} yüklenemedi`);
+                }
+            }
+
+            select.innerHTML = '<option value="">-- Faturanızdan bir kod seçin --</option>';
+            for (let code in allServices) {
+                const data = allServices[code];
+                const trName = data.display_name?.tr || data.display_name?.de || data.name_de || code;
+                const deName = data.name_de || "";
+                const display = deName ? `${trName} (${deName})` : trName;
+
+                const opt = document.createElement("option");
+                opt.value = code;
+                opt.textContent = `${code} - ${display}`;
+                select.appendChild(opt);
+            }
+        }
+
+        function getLocalized(data, field) {
+            if (!data || !data[field]) return null;
+            const val = data[field];
+            if (typeof val === 'object') {
+                return val.tr || val.de || val.en || null;
+            }
+            return val;
+        }
+
+        function queryTreatment() {
+            const code = document.getElementById("treatment-select").value;
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerHTML = "";
+
+            if (!code || !allServices[code]) {
+                resultDiv.innerHTML = '<p style="color:#d32f2f;">Lütfen geçerli bir DENTOTAR kodu seçin.</p>';
+                return;
+            }
+
+            const data = allServices[code];
+            const trName = data.display_name?.tr || data.display_name?.de || data.name_de || code;
+            const deName = data.name_de || "";
+
+            let html = `<h3>Denetim Sonucu: Kod ${code}</h3>`;
+            html += `<p><strong>Resmi Adı:</strong> ${trName} ${deName ? `(${deName})` : ''}</p>`;
+
+            const simpleText = getLocalized(data, 'simple_explain');
+            if (simpleText) html += `<div class="highlight"><strong>Açıklama:</strong><br>${simpleText}</div>`;
+
+            const included = getLocalized(data, 'what_is_included');
+            if (included && Array.isArray(included)) {
+                html += `<h4>✅ Neler dahildir:</h4><ul>`;
+                included.forEach(item => html += `<li>${item}</li>`);
+                html += `</ul>`;
+            }
+
+            const rules = getLocalized(data, 'important_rules');
+            if (rules && Array.isArray(rules)) {
+                html += `<h4>Önemli Kurallar:</h4><ul>`;
+                rules.forEach(rule => html += `<li>${rule}</li>`);
+                html += `</ul>`;
+            }
+
+            html += `<div class="price-box"><h4>Resmi Tarife Puanı Aralığı</h4>`;
+            if (data.tp_uv_mviv) html += `<p><strong>Sosyal Sigorta Oranı:</strong> ${data.tp_uv_mviv} TP (Sabit)</p>`;
+            if (data.tp_pp_min && data.tp_pp_max) {
+                html += `<p><strong>Özel Hasta Aralığı:</strong> ${data.tp_pp_min} – ${data.tp_pp_max} TP</p>`;
+                html += `<p style="font-size:0.9rem; margin-top:5px; color:#718096;">Faturanızda belirgin şekilde daha fazla puan varsa, diş hekiminizden açıklama isteyebilirsiniz.</p>`;
+            }
+            html += `</div>`;
+
+            resultDiv.innerHTML = html;
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        window.onload = loadServices;
+    </script>
+</body>
+
+</html>

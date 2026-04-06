@@ -1,0 +1,571 @@
+{
+  "code": "4.7080",
+  "name_de": "Krone",
+  "display_name": {
+    "de": "Zahnkrone",
+    "fr": "Couronne dentaire",
+    "it": "Corona dentale",
+    "en": "Dental crown",
+    "es": "Corona dental",
+    "pt": "Coroa dentária",
+    "pl": "Korona zębowa",
+    "al": "Kurorë dentare",
+    "tr": "Diş kronu",
+    "hr": "Zubna krunica",
+    "ta": "பல் கிரீடம்"
+  },
+  "search_keywords": {
+    "de": ["krone", "zahnkrone", "kronenersatz", "zahnkappe", "teilkrone", "teleskopkrone", "keramikkrone", "vollkrone"],
+    "fr": ["couronne", "couronne dentaire", "prothèse couronne", "chapeau dentaire", "couronne céramique"],
+    "it": ["corona", "corona dentale", "protesi corona", "cappuccio dentale", "corona in ceramica"],
+    "en": ["crown", "dental crown", "tooth crown", "dental cap", "ceramic crown", "full crown"],
+    "es": ["corona", "corona dental", "prótesis corona", "funda dental", "corona cerámica"],
+    "pt": ["coroa", "coroa dentária", "prótese coroa", "capuz dentário", "coroa cerâmica"],
+    "pl": ["korona", "korona zębowa", "proteza koronowa", "czapka zębowa", "korona ceramiczna"],
+    "al": ["kurorë", "kurorë dentare", "protezë kurorë", "kapak dentar", "kurorë qeramike"],
+    "tr": ["kuron", "diş kronu", "kuron protezi", "diş kapağı", "seramik kuron"],
+    "hr": ["krunica", "zubna krunica", "protetska krunica", "zubna kapa", "keramička krunica"],
+    "ta": ["கிரீடம்", "பல் கிரீடம்", "கிரீடம் புரோஸ்தெசிஸ்", "பல் தொப்பி", "பீங்கான் கிரீடம்"]
+  },
+  "tp_uv_mviv": 652.00,
+  "tp_pp_max": 749.80,
+  "tp_pp_min": 554.20,
+  "chapter": "10.01",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Eine Zahnkrone ist wie ein fester Zahn-Helm, der über einen beschädigten Zahn gestülpt wird. Wenn ein Zahn sehr kaputt ist – zum Beispiel durch Karies oder nach einer Wurzelbehandlung – kann eine normale Füllung nicht mehr halten. Dann macht der Zahnarzt eine Krone. Sie sieht aus wie ein richtiger Zahn und schützt den darunterliegenden Zahn. Die Krone wird vom Zahntechniker im Labor passend für dich angefertigt. Das dauert ein paar Tage. Du bekommst eine provisorische Krone, bis die richtige fertig ist. Eine Krone hält viele Jahre, wenn du sie gut pflegst.",
+    "fr": "Une couronne dentaire est comme un casque solide que l'on place sur une dent endommagée. Lorsqu'une dent est très abîmée – par exemple par des caries ou après un traitement de canal – une simple obturation ne suffit plus. Le dentiste pose alors une couronne. Elle ressemble à une vraie dent et protège la dent située en dessous. La couronne est fabriquée sur mesure pour toi par le prothésiste dentaire en laboratoire. Cela prend quelques jours. Tu reçois une couronne provisoire en attendant que la vraie soit prête. Une couronne dure de nombreuses années si tu en prends bien soin.",
+    "it": "Una corona dentale è come un casco solido che viene posizionato su un dente danneggiato. Quando un dente è molto rovinato – ad esempio da carie o dopo un trattamento canalare – un normale otturazione non è più sufficiente. Il dentista applica allora una corona. Assomiglia a un vero dente e protegge il dente sottostante. La corona viene realizzata su misura per te dal tecnico odontotecnico in laboratorio. Ci vogliono alcuni giorni. Ricevi una corona provvisoria finché quella definitiva non è pronta. Una corona dura molti anni se la curi bene.",
+    "en": "A dental crown is like a solid helmet that is placed over a damaged tooth. When a tooth is very damaged – for example by cavities or after root canal treatment – a normal filling is no longer enough. The dentist then places a crown. It looks like a real tooth and protects the tooth underneath. The crown is custom-made for you by the dental technician in the laboratory. This takes a few days. You receive a temporary crown until the real one is ready. A crown lasts many years if you take good care of it.",
+    "es": "Una corona dental es como un casco sólido que se coloca sobre un diente dañado. Cuando un diente está muy dañado – por ejemplo por caries o después de un tratamiento de conducto – un simple empaste ya no es suficiente. El dentista entonces coloca una corona. Se parece a un diente real y protege el diente que está debajo. La corona es hecha a medida para ti por el protésico dental en el laboratorio. Esto lleva unos días. Recibes una corona provisional hasta que la definitiva esté lista. Una corona dura muchos años si la cuidas bien.",
+    "pt": "Uma coroa dentária é como um capacete sólido que é colocado sobre um dente danificado. Quando um dente está muito danificado – por exemplo por cáries ou após um tratamento de canal – uma simples obturação já não é suficiente. O dentista coloca então uma coroa. Ela parece um dente real e protege o dente por baixo. A coroa é feita à medida para ti pelo técnico de prótese dentária em laboratório. Isto leva alguns dias. Recebes uma coroa provisória até a definitiva estar pronta. Uma coroa dura muitos anos se a cuidares bem.",
+    "pl": "Korona zębowa jest jak solidny hełm nakładany na uszkodzony ząb. Gdy ząb jest bardzo zniszczony – na przykład przez próchnicę lub po leczeniu kanałowym – zwykłe wypełnienie nie wystarcza. Dentysta zakłada wtedy koronę. Wygląda jak prawdziwy ząb i chroni ząb pod spodem. Korona jest wykonywana na miarę dla Ciebie przez technika dentystycznego w laboratorium. Zajmuje to kilka dni. Otrzymujesz koronę tymczasową, zanim właściwa będzie gotowa. Korona wytrzymuje wiele lat, jeśli odpowiednio o nią dbasz.",
+    "al": "Një kurorë dentare është si një përkrenare e fortë që vendoset mbi një dhëmb të dëmtuar. Kur një dhëmb është shumë i dëmtuar – për shembull nga kariesi ose pas një trajtimi kanali – një mbushje e zakonshme nuk mjafton më. Dentisti vendos atëherë një kurorë. Duket si një dhëmb i vërtetë dhe mbron dhëmbin poshtë. Kurora bëhet me masë për ty nga tekniku dentar në laborator. Kjo zgjat disa ditë. Merr një kurorë të përkohshme derisa e vërteta të jetë gati. Një kurorë zgjat shumë vite nëse kujdesesh mirë për të.",
+    "tr": "Diş kronu, hasarlı bir dişin üzerine yerleştirilen sağlam bir kask gibidir. Bir diş çok hasar gördüğünde – örneğin çürük nedeniyle veya kanal tedavisinden sonra – normal bir dolgu artık yeterli olmaz. Diş hekimi daha sonra bir kron yerleştirir. Gerçek bir dişe benzer ve altındaki dişi korur. Kron, laboratuvarda diş teknisyeni tarafından sana özel olarak yapılır. Bu birkaç gün sürer. Gerçek kron hazır olana kadar geçici bir kron alırsın. İyi bakarsan bir kron yıllarca dayanır.",
+    "hr": "Zubna krunica je poput čvrstog šljema koji se stavlja na oštećeni zub. Kada je zub jako oštećen – na primjer karijesom ili nakon liječenja korijenskog kanala – obična ispuna više nije dovoljna. Zubar tada stavlja krunicu. Izgleda kao pravi zub i štiti zub ispod. Krunicu za tebe izrađuje zubni tehničar u laboratoriju po mjeri. To traje nekoliko dana. Dobivaš privremenu krunicu dok prava ne bude gotova. Krunica traje mnogo godina ako se dobro brineš o njoj.",
+    "ta": "ஒரு பல் கிரீடம், சேதமடைந்த பல்லின் மேல் வைக்கப்படும் ஒரு திடமான தலைக்கவசம் போன்றது. ஒரு பல் மிகவும் சேதமடைந்தால் – எடுத்துக்காட்டாக புழு காரணமாக அல்லது ரூட் கால்வாய் சிகிச்சைக்குப் பிறகு – ஒரு சாதாரண நிரப்புதல் போதாது. பல் மருத்துவர் பின்னர் ஒரு கிரீடத்தை வைக்கிறார். இது ஒரு உண்மையான பல் போல் தெரிகிறது மற்றும் கீழே உள்ள பல்லைப் பாதுகாக்கிறது. கிரீடம், ஆய்வகத்தில் பல் தொழில்நுட்ப வல்லுநரால் உங்களுக்குத் தனிப்பயனாக்கப்பட்டு செய்யப்படுகிறது. இது சில நாட்கள் ஆகும். உண்மையான கிரீடம் தயாராகும் வரை நீங்கள் ஒரு தற்காலிக கிரீடத்தைப் பெறுவீர்கள். ஒரு கிரீடம், நீங்கள் அதை நன்றாக கவனித்துக்கொண்டால் பல ஆண்டுகள் நீடிக்கும்."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 **Planung der Arbeit** (Besprechung der Krone mit dir)",
+      "✂️ **Präparation** (Ausschleifen des Zahnes für die Krone)",
+      "📏 **Abformung** (Abdruck des präparierten Zahnes und Gegenkiefer)",
+      "🔧 **Einprobe** (Anpassen der Krone vor dem endgültigen Einsetzen)",
+      "🪢 **Definitives Zementieren** (Festkleben der Krone mit Zement)",
+      "🪥 **Zementieren von Provisorien** (provisorische Krone während der Wartezeit)",
+      "🎨 **Farbbestimmung** (wird separat mit 4.7700 verrechnet, falls vom Zahntechniker gemacht)",
+      "⚠️ **Nicht enthalten:** Zahntechnische Laborleistung (wird separat berechnet)"
+    ],
+    "fr": [
+      "🦷 **Planification du travail** (discussion de la couronne avec toi)",
+      "✂️ **Préparation** (meulage de la dent pour la couronne)",
+      "📏 **Empreinte** (empreinte de la dent préparée et de la mâchoire opposée)",
+      "🔧 **Essayage** (ajustement de la couronne avant la pose définitive)",
+      "🪢 **Scellement définitif** (collage de la couronne avec du ciment)",
+      "🪥 **Scellement des provisoires** (couronne provisoire pendant la période d'attente)",
+      "🎨 **Détermination de la couleur** (facturée séparément avec 4.7700 si effectuée par le prothésiste)",
+      "⚠️ **Non inclus:** Travail de laboratoire prothétique (facturé séparément)"
+    ],
+    "it": [
+      "🦷 **Pianificazione del lavoro** (discussione della corona con te)",
+      "✂️ **Preparazione** (limatura del dente per la corona)",
+      "📏 **Impronta** (impronta del dente preparato e della mascella opposta)",
+      "🔧 **Prova** (adattamento della corona prima della messa in opera definitiva)",
+      "🪢 **Cementazione definitiva** (incollaggio della corona con cemento)",
+      "🪥 **Cementazione dei provvisori** (corona provvisoria durante l'attesa)",
+      "🎨 **Determinazione del colore** (fatturata separatamente con 4.7700 se eseguita dall'odontotecnico)",
+      "⚠️ **Non incluso:** Lavoro di laboratorio odontotecnico (fatturato separatamente)"
+    ],
+    "en": [
+      "🦷 **Work planning** (discussing the crown with you)",
+      "✂️ **Preparation** (grinding the tooth for the crown)",
+      "📏 **Impression** (impression of the prepared tooth and opposing jaw)",
+      "🔧 **Try-in** (adjusting the crown before final placement)",
+      "🪢 **Final cementation** (gluing the crown with cement)",
+      "🪥 **Cementation of temporaries** (temporary crown during the waiting period)",
+      "🎨 **Color determination** (billed separately with 4.7700 if done by the dental technician)",
+      "⚠️ **Not included:** Dental laboratory work (billed separately)"
+    ],
+    "es": [
+      "🦷 **Planificación del trabajo** (discusión de la corona contigo)",
+      "✂️ **Preparación** (tallado del diente para la corona)",
+      "📏 **Impresión** (impresión del diente preparado y la mandíbula opuesta)",
+      "🔧 **Prueba** (ajuste de la corona antes de la colocación definitiva)",
+      "🪢 **Cementado definitivo** (pegado de la corona con cemento)",
+      "🪥 **Cementado de provisionales** (corona provisional durante el periodo de espera)",
+      "🎨 **Determinación del color** (facturada por separado con 4.7700 si la realiza el protésico)",
+      "⚠️ **No incluido:** Trabajo de laboratorio protésico (facturado por separado)"
+    ],
+    "pt": [
+      "🦷 **Planeamento do trabalho** (discussão da coroa contigo)",
+      "✂️ **Preparação** (desgaste do dente para a coroa)",
+      "📏 **Impressão** (impressão do dente preparado e da maxila oposta)",
+      "🔧 **Prova** (ajuste da coroa antes da colocação definitiva)",
+      "🪢 **Cimentação definitiva** (colagem da coroa com cimento)",
+      "🪥 **Cimentação de provisórios** (coroa provisória durante o período de espera)",
+      "🎨 **Determinação da cor** (faturada separadamente com 4.7700 se feita pelo protético)",
+      "⚠️ **Não incluído:** Trabalho de laboratório protésico (faturado separadamente)"
+    ],
+    "pl": [
+      "🦷 **Planowanie pracy** (omówienie korony z tobą)",
+      "✂️ **Preparacja** (oszlifowanie zęba pod koronę)",
+      "📏 **Wyciski** (wycisk przygotowanego zęba i szczęki przeciwstawnej)",
+      "🔧 **Przymiarka** (dopasowanie korony przed ostatecznym umocowaniem)",
+      "🪢 **Ostateczne cementowanie** (przyklejenie korony cementem)",
+      "🪥 **Cementowanie tymczasowe** (korona tymczasowa w okresie oczekiwania)",
+      "🎨 **Określenie koloru** (rozliczane osobno z 4.7700, jeśli wykonane przez technika dentystycznego)",
+      "⚠️ **Nie zawiera:** Praca laboratoryjna (rozliczana osobno)"
+    ],
+    "al": [
+      "🦷 **Planifikimi i punës** (diskutimi i kurorës me ty)",
+      "✂️ **Përgatitja** (gërryerja e dhëmbit për kurorën)",
+      "📏 **Përshtypja** (përshtypja e dhëmbit të përgatitur dhe nofullës kundër)",
+      "🔧 **Provimi** (rregullimi i kurorës para vendosjes përfundimtare)",
+      "🪢 **Çimentimi përfundimtar** (ngjitja e kurorës me çimento)",
+      "🪥 **Çimentimi i përkohshëm** (kurora e përkohshme gjatë periudhës së pritjes)",
+      "🎨 **Përcaktimi i ngjyrës** (faturohet veçmas me 4.7700 nëse bëhet nga tekniku dentar)",
+      "⚠️ **Nuk përfshihet:** Puna laboratorike dentare (faturohet veçmas)"
+    ],
+    "tr": [
+      "🦷 **İş planlaması** (kuronun seninle görüşülmesi)",
+      "✂️ **Hazırlık** (dişin kuron için aşındırılması)",
+      "📏 **Ölçü** (hazırlanan dişin ve karşı çenenin ölçüsü)",
+      "🔧 **Deneme** (kuronun son yerleştirmeden önce ayarlanması)",
+      "🪢 **Kesin simantasyon** (kuronun simanla yapıştırılması)",
+      "🪥 **Geçici simantasyon** (bekleme süresince geçici kuron)",
+      "🎨 **Renk belirleme** (diş teknisyeni tarafından yapılırsa 4.7700 ile ayrı faturalandırılır)",
+      "⚠️ **Dahil değildir:** Diş laboratuvar işçiliği (ayrı faturalandırılır)"
+    ],
+    "hr": [
+      "🦷 **Planiranje rada** (razgovor o krunici s tobom)",
+      "✂️ **Preparacija** (brušenje zuba za krunicu)",
+      "📏 **Otisak** (otisak prepariranog zuba i suprotne čeljusti)",
+      "🔧 **Proba** (prilagodba krunice prije konačnog postavljanja)",
+      "🪢 **Konačno cementiranje** (lijepljenje krunice cementom)",
+      "🪥 **Cementiranje privremenih** (privremena krunica tijekom razdoblja čekanja)",
+      "🎨 **Određivanje boje** (naplaćuje se zasebno s 4.7700 ako izvodi zubni tehničar)",
+      "⚠️ **Nije uključeno:** Zubotehnički laboratorijski rad (naplaćuje se zasebno)"
+    ],
+    "ta": [
+      "🦷 **பணி திட்டமிடல்** (உங்களுடன் கிரீடம் பற்றிய விவாதம்)",
+      "✂️ **தயாரிப்பு** (கிரீடத்திற்காக பல்லை அரைத்தல்)",
+      "📏 **அச்சு** (தயாரிக்கப்பட்ட பல் மற்றும் எதிர் தாடையின் அச்சு)",
+      "🔧 **முயற்சி** (இறுதி வைப்பதற்கு முன் கிரீடத்தை சரிசெய்தல்)",
+      "🪢 **இறுதி சிமென்டேஷன்** (கிரீடத்தை சிமெண்டுடன் ஒட்டுதல்)",
+      "🪥 **தற்காலிக சிமென்டேஷன்** (காத்திருப்பு காலத்தில் தற்காலிக கிரீடம்)",
+      "🎨 **நிற நிர்ணயம்** (பல் தொழில்நுட்ப வல்லுநரால் செய்யப்பட்டால் 4.7700 உடன் தனித்தனியாக கணக்கிடப்படும்)",
+      "⚠️ **சேர்க்கப்படவில்லை:** பல் ஆய்வக வேலை (தனித்தனியாக கணக்கிடப்படும்)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Krone:** Zahnfarbener oder metallischer Zahnersatz, der einen beschädigten Zahn vollständig umschließt",
+      "🔧 **Enthaltene Leistungen:** Planung, Präparation, Abformung, Einprobe, definitives Zementieren, Zementieren von Provisorien",
+      "🏥 **Für UV/MV/IV:** Gilt für alle übrigen Kronenversorgungen (außer Teleskopkronen)",
+      "🚫 **Teleskopkronen:** Werden von den Versicherern nach UV/MV/IV nicht vergütet",
+      "💰 **DENTOTAR® (Privatpatienten):** Die PP-Bandbreite deckt von der Teilkrone bis zur Teleskopkrone alle Varianten ab",
+      "🔬 **Zahntechnische Laborleistung:** Wird separat verrechnet (nicht im TP enthalten)",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.7070.LP «Krone UV/MV» enthalten",
+      "🎨 **Farbbestimmung:** Wird mit 4.7700 separat abgerechnet (kann vom Zahnarzt oder Zahntechniker 1x pro Fall verrechnet werden)",
+      "⚠️ **Wichtig:** Keramikarbeiten werden nur in kariesfreien oder sanierten Gebissen als wirtschaftlich und zweckmässig betrachtet"
+    ],
+    "fr": [
+      "🦷 **Couronne:** Prothèse dentaire de couleur dentaire ou métallique qui entoure complètement une dent endommagée",
+      "🔧 **Prestations incluses:** Planification, préparation, empreinte, essayage, scellement définitif, scellement des provisoires",
+      "🏥 **Pour UV/MV/IV:** S'applique à toutes les autres restaurations coronaires (sauf les couronnes télescopiques)",
+      "🚫 **Couronnes télescopiques:** Ne sont pas prises en charge par les assureurs selon UV/MV/IV",
+      "💰 **DENTOTAR® (patients privés):** La fourchette PP couvre toutes les variantes de la couronne partielle à la couronne télescopique",
+      "🔬 **Travail de laboratoire prothétique:** Facturé séparément (non inclus dans le TP)",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.7070.LP «Couronne UV/MV»",
+      "🎨 **Détermination de la couleur:** Facturée séparément avec 4.7700 (peut être facturée 1x par cas par le dentiste ou le prothésiste)",
+      "⚠️ **Important:** Les travaux en céramique ne sont considérés comme économiques et opportuns que dans des dentitions exemptes de caries ou assainies"
+    ],
+    "it": [
+      "🦷 **Corona:** Protesi dentaria di colore dentale o metallica che circonda completamente un dente danneggiato",
+      "🔧 **Prestazioni incluse:** Pianificazione, preparazione, impronta, prova, cementazione definitiva, cementazione dei provvisori",
+      "🏥 **Per UV/MV/IV:** Si applica a tutte le altre restaurazioni coronali (escluse le corone telescopiche)",
+      "🚫 **Corone telescopiche:** Non sono rimborsate dagli assicuratori secondo UV/MV/IV",
+      "💰 **DENTOTAR® (pazienti privati):** La forbice PP copre tutte le varianti dalla corona parziale alla corona telescopica",
+      "🔬 **Lavoro di laboratorio odontotecnico:** Fatturato separatamente (non incluso nel TP)",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.7070.LP «Corona UV/MV»",
+      "🎨 **Determinazione del colore:** Fatturata separatamente con 4.7700 (può essere fatturata 1x per caso dal dentista o dall'odontotecnico)",
+      "⚠️ **Importante:** I lavori in ceramica sono considerati economici e opportuni solo in dentizioni libere da carie o risanate"
+    ],
+    "en": [
+      "🦷 **Crown:** Tooth-colored or metal dental prosthesis that completely surrounds a damaged tooth",
+      "🔧 **Services included:** Planning, preparation, impression, try-in, final cementation, cementation of temporaries",
+      "🏥 **For UV/MV/IV:** Applies to all other crown restorations (except telescopic crowns)",
+      "🚫 **Telescopic crowns:** Are not reimbursed by insurers under UV/MV/IV",
+      "💰 **DENTOTAR® (private patients):** The PP range covers all variants from partial crown to telescopic crown",
+      "🔬 **Dental laboratory work:** Billed separately (not included in the TP)",
+      "📦 **Service package:** This service is included in package 4.7070.LP «Crown UV/MV»",
+      "🎨 **Color determination:** Billed separately with 4.7700 (can be billed 1x per case by the dentist or dental technician)",
+      "⚠️ **Important:** Ceramic work is considered economical and appropriate only in caries-free or rehabilitated dentitions"
+    ],
+    "es": [
+      "🦷 **Corona:** Prótesis dental de color dental o metálica que rodea completamente un diente dañado",
+      "🔧 **Prestaciones incluidas:** Planificación, preparación, impresión, prueba, cementado definitivo, cementado de provisionales",
+      "🏥 **Para UV/MV/IV:** Se aplica a todas las demás restauraciones coronales (excepto coronas telescópicas)",
+      "🚫 **Coronas telescópicas:** No son reembolsadas por los aseguradores según UV/MV/IV",
+      "💰 **DENTOTAR® (pacientes privados):** El rango PP cubre todas las variantes desde corona parcial hasta corona telescópica",
+      "🔬 **Trabajo de laboratorio protésico:** Facturado por separado (no incluido en el TP)",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.7070.LP «Corona UV/MV»",
+      "🎨 **Determinación del color:** Facturada por separado con 4.7700 (puede facturarse 1x por caso por el dentista o el protésico)",
+      "⚠️ **Importante:** Los trabajos cerámicos solo se consideran económicos y oportunos en dentaduras libres de caries o rehabilitadas"
+    ],
+    "pt": [
+      "🦷 **Coroa:** Prótese dentária de cor dentária ou metálica que envolve completamente um dente danificado",
+      "🔧 **Prestações incluídas:** Planeamento, preparação, impressão, prova, cimentação definitiva, cimentação de provisórios",
+      "🏥 **Para UV/MV/IV:** Aplica-se a todas as outras restaurações coronárias (exceto coroas telescópicas)",
+      "🚫 **Coroas telescópicas:** Não são reembolsadas pelos seguradores segundo UV/MV/IV",
+      "💰 **DENTOTAR® (pacientes privados):** A faixa PP cobre todas as variantes desde coroa parcial até coroa telescópica",
+      "🔬 **Trabalho de laboratório protésico:** Faturado separadamente (não incluído no TP)",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.7070.LP «Coroa UV/MV»",
+      "🎨 **Determinação da cor:** Faturada separadamente com 4.7700 (pode ser faturada 1x por caso pelo dentista ou pelo protético)",
+      "⚠️ **Importante:** Os trabalhos em cerâmica só são considerados económicos e adequados em dentições livres de cáries ou reabilitadas"
+    ],
+    "pl": [
+      "🦷 **Korona:** Protetyczna uzupełnienie w kolorze zęba lub metalowe, które całkowicie otacza uszkodzony ząb",
+      "🔧 **Zawarte usługi:** Planowanie, preparacja, wycisk, przymiarka, ostateczne cementowanie, cementowanie tymczasowe",
+      "🏥 **Dla UV/MV/IV:** Dotyczy wszystkich innych uzupełnień koronowych (z wyjątkiem koron teleskopowych)",
+      "🚫 **Korony teleskopowe:** Nie są refundowane przez ubezpieczycieli zgodnie z UV/MV/IV",
+      "💰 **DENTOTAR® (pacjenci prywatni):** Przedział PP obejmuje wszystkie warianty od korony częściowej do korony teleskopowej",
+      "🔬 **Praca laboratoryjna:** Rozliczana osobno (nie zawarta w TP)",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.7070.LP «Korona UV/MV»",
+      "🎨 **Określenie koloru:** Rozliczane osobno z 4.7700 (może być rozliczone 1x na przypadek przez dentystę lub technika dentystycznego)",
+      "⚠️ **Ważne:** Prace ceramiczne są uważane za ekonomiczne i celowe tylko w uzębieniu wolnym od próchnicy lub zrehabilitowanym"
+    ],
+    "al": [
+      "🦷 **Kurora:** Protezë dentare me ngjyrë dhëmbi ose metalike që rrethon plotësisht një dhëmb të dëmtuar",
+      "🔧 **Shërbimet e përfshira:** Planifikimi, përgatitja, përshtypja, provimi, çimentimi përfundimtar, çimentimi i përkohshëm",
+      "🏥 **Për UV/MV/IV:** Zbatohet për të gjitha restaurimet e tjera kurorë (përveç kurorave teleskopike)",
+      "🚫 **Kurorat teleskopike:** Nuk rimbursohen nga siguruesit sipas UV/MV/IV",
+      "💰 **DENTOTAR® (pacientë privatë):** Gama PP mbulon të gjitha variantet nga kurora e pjesshme deri te kurora teleskopike",
+      "🔬 **Puna laboratorike dentare:** Faturohet veçmas (nuk përfshihet në TP)",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.7070.LP «Kurorë UV/MV»",
+      "🎨 **Përcaktimi i ngjyrës:** Faturohet veçmas me 4.7700 (mund të faturohet 1x për rast nga dentisti ose tekniku dentar)",
+      "⚠️ **E rëndësishme:** Puna me qeramikë konsiderohet ekonomike dhe e përshtatshme vetëm në dhëmbëza pa karies ose të rehabilituara"
+    ],
+    "tr": [
+      "🦷 **Kuron:** Hasarlı bir dişi tamamen çevreleyen diş renginde veya metalik dental protez",
+      "🔧 **Dahil olan hizmetler:** Planlama, hazırlık, ölçü, deneme, kesin simantasyon, geçici simantasyon",
+      "🏥 **UV/MV/IV için:** Tüm diğer kuron restorasyonları için geçerlidir (teleskopik kuronlar hariç)",
+      "🚫 **Teleskopik kuronlar:** UV/MV/IV kapsamında sigortacılar tarafından geri ödenmez",
+      "💰 **DENTOTAR® (özel hastalar):** PP aralığı, parsiyel kurondan teleskopik kurona kadar tüm varyantları kapsar",
+      "🔬 **Diş laboratuvar işçiliği:** Ayrı faturalandırılır (TP'ye dahil değildir)",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.7070.LP «Kuron UV/MV» paketine dahildir",
+      "🎨 **Renk belirleme:** 4.7700 ile ayrı faturalandırılır (vaka başına 1 kez diş hekimi veya diş teknisyeni tarafından faturalandırılabilir)",
+      "⚠️ **Önemli:** Seramik işler, yalnızca çürüksüz veya rehabilitasyonu tamamlanmış dişlerde ekonomik ve uygun olarak kabul edilir"
+    ],
+    "hr": [
+      "🦷 **Krunica:** Zubne boje ili metalna zubna proteza koja u potpunosti okružuje oštećeni zub",
+      "🔧 **Uključene usluge:** Planiranje, preparacija, otisak, proba, konačno cementiranje, cementiranje privremenih",
+      "🏥 **Za UV/MV/IV:** Primjenjuje se na sve ostale krunične restauracije (osim teleskopskih krunica)",
+      "🚫 **Teleskopske krunice:** Ne refundiraju se od strane osiguravatelja prema UV/MV/IV",
+      "💰 **DENTOTAR® (privatni pacijenti):** Raspon PP pokriva sve varijante od parcijalne krunice do teleskopske krunice",
+      "🔬 **Zubotehnički laboratorijski rad:** Naplaćuje se zasebno (nije uključen u TP)",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.7070.LP «Krunica UV/MV»",
+      "🎨 **Određivanje boje:** Naplaćuje se zasebno s 4.7700 (može se naplatiti 1x po slučaju od strane zubara ili zubnog tehničara)",
+      "⚠️ **Važno:** Keramički radovi smatraju se ekonomski isplativima i prikladnima samo u zubima bez karijesa ili saniranim"
+    ],
+    "ta": [
+      "🦷 **கிரீடம்:** சேதமடைந்த பல்லை முழுமையாகச் சுற்றியிருக்கும் பல் நிற அல்லது உலோக பல் மாற்று உறுப்பு",
+      "🔧 **சேர்க்கப்பட்ட சேவைகள்:** திட்டமிடல், தயாரிப்பு, அச்சு, முயற்சி, இறுதி சிமென்டேஷன், தற்காலிக சிமென்டேஷன்",
+      "🏥 **UV/MV/IV க்கு:** மற்ற அனைத்து கிரீட மீட்டமைப்புகளுக்கும் பொருந்தும் (டெலஸ்கோபிக் கிரீடங்கள் தவிர)",
+      "🚫 **டெலஸ்கோபிக் கிரீடங்கள்:** UV/MV/IV இன் கீழ் காப்பீட்டாளர்களால் திருப்பிச் செலுத்தப்படுவதில்லை",
+      "💰 **DENTOTAR® (தனியார் நோயாளிகள்):** PP வரம்பு, பகுதி கிரீடம் முதல் டெலஸ்கோபிக் கிரீடம் வரையிலான அனைத்து மாறுபாடுகளையும் உள்ளடக்கியது",
+      "🔬 **பல் ஆய்வக வேலை:** தனித்தனியாக கணக்கிடப்படும் (TP இல் சேர்க்கப்படவில்லை)",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.7070.LP «கிரீடம் UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "🎨 **நிற நிர்ணயம்:** 4.7700 உடன் தனித்தனியாக கணக்கிடப்படும் (ஒரு வழக்குக்கு 1 முறை பல் மருத்துவர் அல்லது பல் தொழில்நுட்ப வல்லுநரால் கணக்கிடப்படலாம்)",
+      "⚠️ **முக்கியம்:** பீங்கான் வேலைகள், புழு இல்லாத அல்லது மறுவாழ்வு செய்யப்பட்ட பற்களில் மட்டுமே சிக்கனமான மற்றும் பொருத்தமானதாகக் கருதப்படுகின்றன"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Wann brauche ich eine Zahnkrone?",
+        "answer": "Eine Krone wird benötigt, wenn ein Zahn so stark zerstört ist, dass eine normale Füllung nicht mehr hält. Typische Fälle: nach einer Wurzelbehandlung (der Zahn wird brüchig), bei großen Kariesdefekten, bei abgebrochenen Zähnen oder wenn ein Zahn als Pfeiler für eine Brücke dienen soll."
+      },
+      {
+        "question": "Was kostet eine Zahnkrone?",
+        "answer": "Der offizielle TP-Wert für die Krone selbst ist 652.00 für UV/MV/IV. Für Privatpatienten (PP) liegt der Preis zwischen 554.20 und 749.80 TP. Dazu kommen: Anästhesie (4.0650), provisorische Krone (4.7240 oder 4.7250), Farbbestimmung (4.7700) und die zahntechnische Laborleistung (separate Rechnung vom Labor). Der tatsächliche Preis in Franken hängt vom Taxpunktwert der Klinik (meist 1.00–1.30 CHF pro TP) und vom Laborkosten ab. Frage vorher nach einem schriftlichen Kostenvoranschlag!"
+      },
+      {
+        "question": "Wie lange hält eine Krone?",
+        "answer": "Bei guter Pflege hält eine Krone im Durchschnitt 10–15 Jahre, manchmal auch länger. Wichtig sind regelmäßige Zahnarztbesuche und eine gründliche Mundhygiene. Auch wenn die Krone selbst nicht kariös werden kann, kann der Zahn darunter erkranken. Putze daher die Übergangsstelle zwischen Krone und Zahnfleisch besonders sorgfältig."
+      },
+      {
+        "question": "Was ist der Unterschied zwischen einer Krone und einer Teilkrone (Inlay/Onlay)?",
+        "answer": "Eine Krone umschließt den gesamten Zahn wie eine Kappe. Eine Teilkrone (Inlay/Onlay) ersetzt nur einen Teil des Zahnes – zum Beispiel eine größere Füllung. Teilkronen sind oft bei weniger stark zerstörten Zähnen möglich und schonen mehr gesunde Zahnsubstanz. Dein Zahnarzt berät dich, welche Lösung für deinen Zahn am besten ist."
+      },
+      {
+        "question": "Wird die Krone von der Krankenkasse bezahlt?",
+        "answer": "Bei UV/MV/IV (Unfall-, Militär-, Invalidenversicherung) wird die Krone übernommen, wenn sie im Zusammenhang mit einem Unfall oder einer anerkannten Krankheit steht. Für Privatpatienten (PP) müssen die Kosten selbst getragen werden. Viele haben eine private Zahnzusatzversicherung, die einen Teil oder alle Kosten übernimmt. Wichtig: Teleskopkronen werden von UV/MV/IV nicht vergütet!"
+      },
+      {
+        "question": "Wie läuft die Behandlung ab?",
+        "answer": "In der ersten Sitzung präpariert (schleift) der Zahnarzt den Zahn, nimmt einen Abdruck und setzt eine provisorische Krone ein. Der Abdruck geht ans zahntechnische Labor, wo deine individuelle Krone angefertigt wird (dauert etwa 1–2 Wochen). In der zweiten Sitzung wird die provisorische Krone entfernt und die endgültige Krone eingepasst und eingeklebt."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quand ai-je besoin d'une couronne dentaire?",
+        "answer": "Une couronne est nécessaire lorsqu'une dent est tellement détruite qu'une simple obturation ne tient plus. Cas typiques : après un traitement de canal (la dent devient fragile), en cas de grandes caries, de dents cassées ou lorsqu'une dent doit servir de pilier pour un pont."
+      },
+      {
+        "question": "Combien coûte une couronne dentaire?",
+        "answer": "La valeur TP officielle pour la couronne elle-même est de 652.00 pour UV/MV/IV. Pour les patients privés (PP), le prix se situe entre 554.20 et 749.80 TP. S'ajoutent : l'anesthésie (4.0650), la couronne provisoire (4.7240 ou 4.7250), la détermination de la couleur (4.7700) et le travail de laboratoire prothétique (facture séparée du laboratoire). Le prix réel en francs dépend de la valeur en points du cabinet (généralement 1.00–1.30 CHF par TP) et des frais de laboratoire. Demande un devis écrit avant!"
+      },
+      {
+        "question": "Combien de temps dure une couronne?",
+        "answer": "Avec de bons soins, une couronne dure en moyenne 10–15 ans, parfois plus. Les visites régulières chez le dentiste et une hygiène buccale minutieuse sont importantes. Même si la couronne elle-même ne peut pas devenir cariée, la dent en dessous peut tomber malade. Brosse donc particulièrement soigneusement la zone de transition entre la couronne et la gencive."
+      },
+      {
+        "question": "Quelle est la différence entre une couronne et une inlay/onlay?",
+        "answer": "Une couronne entoure complètement la dent comme un capuchon. Une inlay/onlay ne remplace qu'une partie de la dent – par exemple un grand plombage. Les inlays/onlays sont souvent possibles pour les dents moins endommagées et préservent davantage de substance dentaire saine. Ton dentiste te conseillera sur la meilleure solution pour ta dent."
+      },
+      {
+        "question": "La couronne est-elle prise en charge par l'assurance maladie?",
+        "answer": "Pour UV/MV/IV (assurance accidents, militaire, invalidité), la couronne est prise en charge si elle est liée à un accident ou à une maladie reconnue. Pour les patients privés (PP), les frais doivent être supportés par eux-mêmes. Beaucoup ont une assurance dentaire privée qui couvre une partie ou tous les frais. Important : les couronnes télescopiques ne sont pas remboursées par UV/MV/IV!"
+      },
+      {
+        "question": "Comment se déroule le traitement?",
+        "answer": "Lors de la première séance, le dentiste prépare (meule) la dent, prend une empreinte et pose une couronne provisoire. L'empreinte est envoyée au laboratoire prothétique où ta couronne individuelle est fabriquée (cela prend environ 1–2 semaines). Lors de la deuxième séance, la couronne provisoire est retirée et la couronne définitive est ajustée et collée."
+      }
+    ],
+    "it": [
+      {
+        "question": "Quando ho bisogno di una corona dentale?",
+        "answer": "Una corona è necessaria quando un dente è talmente distrutto che un normale otturazione non regge più. Casi tipici: dopo un trattamento canalare (il dente diventa fragile), in caso di grandi carie, di denti rotti o quando un dente deve servire da pilastro per un ponte."
+      },
+      {
+        "question": "Quanto costa una corona dentale?",
+        "answer": "Il valore TP ufficiale per la corona stessa è 652.00 per UV/MV/IV. Per i pazienti privati (PP), il prezzo è tra 554.20 e 749.80 TP. A questi si aggiungono: anestesia (4.0650), corona provvisoria (4.7240 o 4.7250), determinazione del colore (4.7700) e il lavoro di laboratorio odontotecnico (fattura separata dal laboratorio). Il prezzo effettivo in franchi dipende dal valore in punti dello studio (di solito 1.00–1.30 CHF per TP) e dai costi di laboratorio. Chiedi un preventivo scritto prima!"
+      },
+      {
+        "question": "Quanto dura una corona?",
+        "answer": "Con una buona cura, una corona dura in media 10–15 anni, a volte di più. Sono importanti le visite regolari dal dentista e un'accurata igiene orale. Anche se la corona stessa non può diventare cariata, il dente sottostante può ammalarsi. Spazzola quindi con particolare attenzione la zona di transizione tra corona e gengiva."
+      },
+      {
+        "question": "Qual è la differenza tra una corona e un inlay/onlay?",
+        "answer": "Una corona circonda completamente il dente come un cappuccio. Un inlay/onlay sostituisce solo una parte del dente – ad esempio un grande otturazione. Gli inlay/onlay sono spesso possibili per denti meno danneggiati e conservano più sostanza dentale sana. Il tuo dentista ti consiglierà quale soluzione è migliore per il tuo dente."
+      },
+      {
+        "question": "La corona è coperta dall'assicurazione malattia?",
+        "answer": "Per UV/MV/IV (assicurazione infortuni, militare, invalidità), la corona è coperta se è correlata a un infortunio o a una malattia riconosciuta. Per i pazienti privati (PP), i costi devono essere sostenuti da loro stessi. Molti hanno un'assicurazione dentale privata che copre una parte o tutti i costi. Importante: le corone telescopiche non sono rimborsate da UV/MV/IV!"
+      },
+      {
+        "question": "Come si svolge il trattamento?",
+        "answer": "Nella prima seduta, il dentista prepara (lima) il dente, prende un'impronta e applica una corona provvisoria. L'impronta viene inviata al laboratorio odontotecnico dove viene realizzata la tua corona individuale (ci vogliono circa 1–2 settimane). Nella seconda seduta, la corona provvisoria viene rimossa e la corona definitiva viene adattata e incollata."
+      }
+    ],
+    "en": [
+      {
+        "question": "When do I need a dental crown?",
+        "answer": "A crown is needed when a tooth is so damaged that a normal filling no longer holds. Typical cases: after root canal treatment (the tooth becomes brittle), large cavities, broken teeth, or when a tooth needs to serve as an abutment for a bridge."
+      },
+      {
+        "question": "How much does a dental crown cost?",
+        "answer": "The official TP value for the crown itself is 652.00 for UV/MV/IV. For private patients (PP), the price ranges from 554.20 to 749.80 TP. Added to this are: anesthesia (4.0650), temporary crown (4.7240 or 4.7250), color determination (4.7700), and dental laboratory work (separate invoice from the lab). The actual price in Swiss francs depends on the clinic's point value (usually 1.00–1.30 CHF per TP) and lab costs. Ask for a written cost estimate beforehand!"
+      },
+      {
+        "question": "How long does a crown last?",
+        "answer": "With good care, a crown lasts on average 10–15 years, sometimes longer. Regular dental visits and thorough oral hygiene are important. Even though the crown itself cannot become decayed, the tooth underneath can get sick. Therefore, brush the transition area between the crown and the gum especially carefully."
+      },
+      {
+        "question": "What is the difference between a crown and an inlay/onlay?",
+        "answer": "A crown completely surrounds the tooth like a cap. An inlay/onlay only replaces part of the tooth – for example, a large filling. Inlays/onlays are often possible for less damaged teeth and preserve more healthy tooth substance. Your dentist will advise you on which solution is best for your tooth."
+      },
+      {
+        "question": "Is the crown covered by health insurance?",
+        "answer": "For UV/MV/IV (accident, military, disability insurance), the crown is covered if it is related to an accident or a recognized illness. For private patients (PP), the costs must be borne by themselves. Many have private dental insurance that covers part or all of the costs. Important: telescopic crowns are not reimbursed by UV/MV/IV!"
+      },
+      {
+        "question": "How does the treatment proceed?",
+        "answer": "In the first session, the dentist prepares (grinds) the tooth, takes an impression, and places a temporary crown. The impression is sent to the dental laboratory where your individual crown is made (takes about 1–2 weeks). In the second session, the temporary crown is removed and the final crown is fitted and cemented."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuándo necesito una corona dental?",
+        "answer": "Se necesita una corona cuando un diente está tan dañado que un empaste normal ya no aguanta. Casos típicos: después de un tratamiento de conducto (el diente se vuelve frágil), caries grandes, dientes rotos o cuando un diente debe servir como pilar para un puente."
+      },
+      {
+        "question": "¿Cuánto cuesta una corona dental?",
+        "answer": "El valor TP oficial para la corona en sí es 652.00 para UV/MV/IV. Para pacientes privados (PP), el precio está entre 554.20 y 749.80 TP. A esto se suman: anestesia (4.0650), corona provisional (4.7240 o 4.7250), determinación del color (4.7700) y el trabajo de laboratorio protésico (factura separada del laboratorio). El precio real en francos depende del valor en puntos de la clínica (normalmente 1.00–1.30 CHF por TP) y de los costes de laboratorio. ¡Pide un presupuesto por escrito antes!"
+      },
+      {
+        "question": "¿Cuánto dura una corona?",
+        "answer": "Con un buen cuidado, una corona dura en promedio 10–15 años, a veces más. Son importantes las visitas regulares al dentista y una higiene bucal minuciosa. Aunque la corona en sí no puede tener caries, el diente que está debajo puede enfermar. Por lo tanto, cepilla especialmente bien la zona de transición entre la corona y la encía."
+      },
+      {
+        "question": "¿Cuál es la diferencia entre una corona y una inlay/onlay?",
+        "answer": "Una corona rodea completamente el diente como un capuchón. Una inlay/onlay solo reemplaza una parte del diente – por ejemplo, un empaste grande. Las inlays/onlays a menudo son posibles para dientes menos dañados y conservan más sustancia dental sana. Tu dentista te aconsejará qué solución es mejor para tu diente."
+      },
+      {
+        "question": "¿La corona está cubierta por el seguro de salud?",
+        "answer": "Para UV/MV/IV (seguro de accidentes, militar, invalidez), la corona está cubierta si está relacionada con un accidente o una enfermedad reconocida. Para pacientes privados (PP), los costes deben ser asumidos por ellos mismos. Muchos tienen un seguro dental privado que cubre parte o todos los costes. ¡Importante: las coronas telescópicas no son reembolsadas por UV/MV/IV!"
+      },
+      {
+        "question": "¿Cómo se realiza el tratamiento?",
+        "answer": "En la primera sesión, el dentista prepara (talla) el diente, toma una impresión y coloca una corona provisional. La impresión se envía al laboratorio protésico donde se fabrica tu corona individual (tarda aproximadamente 1–2 semanas). En la segunda sesión, se retira la corona provisional y se ajusta y cementa la corona definitiva."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quando preciso de uma coroa dentária?",
+        "answer": "Uma coroa é necessária quando um dente está tão danificado que uma obturação normal já não segura. Casos típicos: após um tratamento de canal (o dente torna-se frágil), grandes cáries, dentes partidos ou quando um dente deve servir de pilar para uma ponte."
+      },
+      {
+        "question": "Quanto custa uma coroa dentária?",
+        "answer": "O valor TP oficial para a coroa em si é 652.00 para UV/MV/IV. Para pacientes privados (PP), o preço situa-se entre 554.20 e 749.80 TP. A estes acrescem: anestesia (4.0650), coroa provisória (4.7240 ou 4.7250), determinação da cor (4.7700) e o trabalho de laboratório protésico (fatura separada do laboratório). O preço real em francos depende do valor do ponto da clínica (geralmente 1.00–1.30 CHF por TP) e dos custos de laboratório. Pede um orçamento por escrito antes!"
+      },
+      {
+        "question": "Quanto tempo dura uma coroa?",
+        "answer": "Com bons cuidados, uma coroa dura em média 10–15 anos, por vezes mais. São importantes as visitas regulares ao dentista e uma higiene oral minuciosa. Embora a própria coroa não possa ter cáries, o dente por baixo pode adoecer. Por isso, escova especialmente bem a zona de transição entre a coroa e a gengiva."
+      },
+      {
+        "question": "Qual é a diferença entre uma coroa e um inlay/onlay?",
+        "answer": "Uma coroa envolve completamente o dente como uma capa. Um inlay/onlay substitui apenas uma parte do dente – por exemplo, uma grande obturação. Os inlays/onlays são frequentemente possíveis para dentes menos danificados e preservam mais substância dentária saudável. O teu dentista irá aconselhar-te sobre qual solução é melhor para o teu dente."
+      },
+      {
+        "question": "A coroa é coberta pelo seguro de saúde?",
+        "answer": "Para UV/MV/IV (seguro de acidentes, militar, invalidez), a coroa é coberta se estiver relacionada com um acidente ou uma doença reconhecida. Para pacientes privados (PP), os custos devem ser suportados por eles próprios. Muitos têm um seguro dentário privado que cobre parte ou todos os custos. Importante: as coroas telescópicas não são reembolsadas por UV/MV/IV!"
+      },
+      {
+        "question": "Como decorre o tratamento?",
+        "answer": "Na primeira sessão, o dentista prepara (desgasta) o dente, tira uma impressão e coloca uma coroa provisória. A impressão é enviada para o laboratório protésico onde é feita a tua coroa individual (demora cerca de 1–2 semanas). Na segunda sessão, a coroa provisória é removida e a coroa definitiva é ajustada e cimentada."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Kiedy potrzebuję korony zębowej?",
+        "answer": "Korona jest potrzebna, gdy ząb jest tak zniszczony, że zwykłe wypełnienie już nie trzyma. Typowe przypadki: po leczeniu kanałowym (ząb staje się kruchy), przy dużych ubytkach próchnicowych, złamanych zębach lub gdy ząb ma służyć jako filar mostu."
+      },
+      {
+        "question": "Ile kosztuje korona zębowa?",
+        "answer": "Oficjalna wartość TP dla samej korony wynosi 652.00 dla UV/MV/IV. Dla pacjentów prywatnych (PP) cena wynosi od 554.20 do 749.80 TP. Do tego dochodzą: znieczulenie (4.0650), korona tymczasowa (4.7240 lub 4.7250), określenie koloru (4.7700) oraz praca laboratoryjna (osobna faktura od laboratorium). Rzeczywista cena we frankach zależy od wartości punktu w klinice (zwykle 1.00–1.30 CHF za TP) i kosztów laboratoryjnych. Poproś o pisemną wycenę przed zabiegiem!"
+      },
+      {
+        "question": "Jak długo wytrzymuje korona?",
+        "answer": "Przy dobrej pielęgnacji korona wytrzymuje średnio 10–15 lat, czasem dłużej. Ważne są regularne wizyty u dentysty i dokładna higiena jamy ustnej. Mimo że sama korona nie może ulec próchnicy, ząb pod nią może zachorować. Dlatego szczególnie starannie szczytuj miejsce przejścia między koroną a dziąsłem."
+      },
+      {
+        "question": "Jaka jest różnica między koroną a inlay/onlay?",
+        "answer": "Korona całkowicie otacza ząb jak kapturek. Inlay/onlay zastępuje tylko część zęba – na przykład duże wypełnienie. Inlay/onlay są często możliwe przy mniej zniszczonych zębach i oszczędzają więcej zdrowej tkanki zęba. Twój dentysta doradzi Ci, które rozwiązanie jest najlepsze dla Twojego zęba."
+      },
+      {
+        "question": "Czy korona jest refundowana przez ubezpieczenie zdrowotne?",
+        "answer": "Dla UV/MV/IV (ubezpieczenie wypadkowe, wojskowe, inwalidzkie) korona jest refundowana, jeśli jest związana z wypadkiem lub uznaną chorobą. Dla pacjentów prywatnych (PP) koszty muszą być pokryte we własnym zakresie. Wielu ma prywatne ubezpieczenie stomatologiczne, które pokrywa część lub wszystkie koszty. Ważne: korony teleskopowe nie są refundowane przez UV/MV/IV!"
+      },
+      {
+        "question": "Jak przebiega leczenie?",
+        "answer": "Podczas pierwszej wizyty dentysta preparuje (szlifuje) ząb, pobiera wycisk i zakłada koronę tymczasową. Wycisk trafia do laboratorium protetycznego, gdzie wykonywana jest Twoja indywidualna korona (trwa to około 1–2 tygodni). Podczas drugiej wizyty korona tymczasowa jest usuwana, a korona ostateczna dopasowywana i cementowana."
+      }
+    ],
+    "al": [
+      {
+        "question": "Kur kam nevojë për një kurorë dentare?",
+        "answer": "Një kurorë nevojitet kur një dhëmb është aq i dëmtuar sa një mbushje normale nuk mban më. Raste tipike: pas një trajtimi kanali (dhëmbi bëhet i brishtë), për karies të madh, dhëmbë të thyer ose kur një dhëmb duhet të shërbejë si shtyllë për një urë."
+      },
+      {
+        "question": "Sa kushton një kurorë dentare?",
+        "answer": "Vlera zyrtare TP për vetë kurorën është 652.00 për UV/MV/IV. Për pacientët privatë (PP), çmimi është midis 554.20 dhe 749.80 TP. Këtyre u shtohen: anestezia (4.0650), kurora e përkohshme (4.7240 ose 4.7250), përcaktimi i ngjyrës (4.7700) dhe puna laboratorike dentare (faturë e veçantë nga laboratori). Çmimi aktual në franga varet nga vlera e pikës së klinikës (zakonisht 1.00–1.30 CHF për TP) dhe kostot laboratorike. Kërko një vlerësim me shkrim paraprakisht!"
+      },
+      {
+        "question": "Sa zgjat një kurorë?",
+        "answer": "Me kujdes të mirë, një kurorë zgjat mesatarisht 10–15 vjet, ndonjëherë më shumë. Vizitat e rregullta te dentisti dhe higjiena e kujdesshme orale janë të rëndësishme. Edhe pse vetë kurora nuk mund të kariesohet, dhëmbi poshtë saj mund të sëmuret. Prandaj, pastroji veçanërisht me kujdes zonën e tranzicionit midis kurorës dhe mishit të dhëmbëve."
+      },
+      {
+        "question": "Cili është ndryshimi midis një kurorë dhe një inlay/onlay?",
+        "answer": "Një kurorë rrethon plotësisht dhëmbin si një kapak. Një inlay/onlay zëvendëson vetëm një pjesë të dhëmbit – për shembull një mbushje të madhe. Inlay/onlay shpesh janë të mundshme për dhëmbë më pak të dëmtuar dhe ruajnë më shumë substancë të shëndetshme dentare. Dentisti yt do të të këshillojë se cila zgjidhje është më e mirë për dhëmbin tënd."
+      },
+      {
+        "question": "A mbulohet kurora nga sigurimi shëndetësor?",
+        "answer": "Për UV/MV/IV (sigurimi i aksidenteve, ushtarak, invaliditeti), kurora mbulohet nëse lidhet me një aksident ose një sëmundje të njohur. Për pacientët privatë (PP), kostot duhet të përballohen vetë. Shumë kanë një sigurim privat dentar që mbulon një pjesë ose të gjitha kostot. E rëndësishme: kurorat teleskopike nuk rimbursohen nga UV/MV/IV!"
+      },
+      {
+        "question": "Si zhvillohet trajtimi?",
+        "answer": "Në seancën e parë, dentisti përgatit (gërryen) dhëmbin, merr një përshtypje dhe vendos një kurorë të përkohshme. Përshtypja dërgohet në laboratorin dentar ku bëhet kurora jote individuale (zgjat rreth 1–2 javë). Në seancën e dytë, kurora e përkohshme hiqet dhe kurora përfundimtare përshtatet dhe çimentohet."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Ne zaman diş kronuna ihtiyacım olur?",
+        "answer": "Bir diş normal bir dolgunun artık tutamayacağı kadar hasar gördüğünde kron gerekir. Tipik durumlar: kanal tedavisinden sonra (diş kırılganlaşır), büyük çürüklerde, kırık dişlerde veya bir dişin köprü için dayanak olması gerektiğinde."
+      },
+      {
+        "question": "Diş kronu ne kadardır?",
+        "answer": "Kronun kendisi için resmi TP değeri UV/MV/IV için 652.00'dır. Özel hastalar (PP) için fiyat 554.20 ile 749.80 TP arasındadır. Buna ek olarak: anestezi (4.0650), geçici kron (4.7240 veya 4.7250), renk belirleme (4.7700) ve diş laboratuvar işçiliği (laboratuvardan ayrı fatura) eklenir. Frank cinsinden gerçek fiyat, kliniğin puan değerine (genellikle TP başına 1.00–1.30 CHF) ve laboratuvar maliyetlerine bağlıdır. Önceden yazılı maliyet tahmini iste!"
+      },
+      {
+        "question": "Kron ne kadar dayanır?",
+        "answer": "İyi bakımla bir kron ortalama 10–15 yıl, bazen daha uzun dayanır. Düzenli diş hekimi ziyaretleri ve titiz ağız hijyeni önemlidir. Kronun kendisi çürüyemese de altındaki diş hastalanabilir. Bu nedenle kron ile diş eti arasındaki geçiş bölgesini özellikle dikkatlice fırçala."
+      },
+      {
+        "question": "Kron ile inlay/onlay arasındaki fark nedir?",
+        "answer": "Bir kron, dişi bir kask gibi tamamen sarar. Bir inlay/onlay, dişin yalnızca bir kısmını değiştirir – örneğin büyük bir dolguyu. Inlay/onlay'lar genellikle daha az hasarlı dişler için mümkündür ve daha fazla sağlıklı diş maddesi korur. Diş hekimin dişin için hangi çözümün en iyi olduğu konusunda sana danışacaktır."
+      },
+      {
+        "question": "Kron sağlık sigortası tarafından karşılanır mı?",
+        "answer": "UV/MV/IV (kaza, askerlik, engellilik sigortası) için kron, bir kaza veya tanınmış bir hastalıkla bağlantılıysa karşılanır. Özel hastalar (PP) için masraflar kendileri tarafından karşılanmalıdır. Birçoğunun masrafların bir kısmını veya tamamını karşılayan özel diş sigortası vardır. Önemli: teleskopik kronlar UV/MV/IV tarafından geri ödenmez!"
+      },
+      {
+        "question": "Tedavi nasıl ilerler?",
+        "answer": "İlk seansta diş hekimi dişi hazırlar (aşındırır), ölçü alır ve geçici bir kron yerleştirir. Ölçü, bireysel kronunun yapıldığı diş laboratuvarına gönderilir (yaklaşık 1–2 hafta sürer). İkinci seansta geçici kron çıkarılır ve son kron takılıp yapıştırılır."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Kada mi treba zubna krunica?",
+        "answer": "Krunica je potrebna kada je zub toliko oštećen da obična ispuna više ne drži. Tipični slučajevi: nakon liječenja korijenskog kanala (zub postaje krhak), kod velikih karijesa, slomljenih zuba ili kada zub treba služiti kao uporište za most."
+      },
+      {
+        "question": "Koliko košta zubna krunica?",
+        "answer": "Službena TP vrijednost za samu krunicu je 652.00 za UV/MV/IV. Za privatne pacijente (PP) cijena je između 554.20 i 749.80 TP. Tome se dodaju: anestezija (4.0650), privremena krunica (4.7240 ili 4.7250), određivanje boje (4.7700) i zubotehnički laboratorijski rad (poseban račun od laboratorija). Stvarna cijena u francima ovisi o vrijednosti boda klinike (obično 1.00–1.30 CHF po TP) i laboratorijskim troškovima. Zatraži pismenu procjenu troškova prije zahvata!"
+      },
+      {
+        "question": "Koliko dugo traje krunica?",
+        "answer": "Uz dobru njegu, krunica traje u prosjeku 10–15 godina, ponekad i duže. Važni su redoviti posjeti zubaru i temeljita oralna higijena. Iako sama krunica ne može dobiti karijes, zub ispod nje može oboljeti. Stoga posebno pažljivo četkaj prijelazno područje između krunice i desni."
+      },
+      {
+        "question": "Koja je razlika između krunice i inlay/onlay?",
+        "answer": "Krunica u potpunosti okružuje zub poput kape. Inlay/onlay zamjenjuje samo dio zuba – na primjer veliku ispunu. Inlay/onlay često su mogući za manje oštećene zube i čuvaju više zdrave zubne tvari. Tvoj zubar će te savjetovati koje je rješenje najbolje za tvoj zub."
+      },
+      {
+        "question": "Pokriva li zdravstveno osiguranje krunicu?",
+        "answer": "Za UV/MV/IV (osiguranje od nezgode, vojno, invalidsko), krunica je pokrivena ako je povezana s nezgodom ili priznatom bolešću. Za privatne pacijente (PP) troškove moraju snositi sami. Mnogi imaju privatno stomatološko osiguranje koje pokriva dio ili sve troškove. Važno: teleskopske krunice ne refundiraju se od strane UV/MV/IV!"
+      },
+      {
+        "question": "Kako se odvija liječenje?",
+        "answer": "U prvoj seansi zubar preparira (brusi) zub, uzima otisak i stavlja privremenu krunicu. Otisak se šalje u zubotehnički laboratorij gdje se izrađuje tvoja individualna krunica (traje oko 1–2 tjedna). U drugoj seansi privremena krunica se uklanja, a konačna krunica se prilagođava i cementira."
+      }
+    ],
+    "ta": [
+      {
+        "question": "எப்போது எனக்கு பல் கிரீடம் தேவைப்படுகிறது?",
+        "answer": "ஒரு பல் சாதாரண நிரப்புதல் இனி பிடிக்காத அளவுக்கு சேதமடையும் போது கிரீடம் தேவைப்படுகிறது. பொதுவான நிகழ்வுகள்: ரூட் கால்வாய் சிகிச்சைக்குப் பிறகு (பல் உடையக்கூடியதாகிறது), பெரிய புழுக்கள், உடைந்த பற்கள் அல்லது ஒரு பல் பாலத்திற்கு ஆதாரமாக செயல்பட வேண்டியிருக்கும் போது."
+      },
+      {
+        "question": "பல் கிரீடம் எவ்வளவு செலவாகும்?",
+        "answer": "கிரீடத்திற்கான அதிகாரப்பூர்வ TP மதிப்பு UV/MV/IV க்கு 652.00 ஆகும். தனியார் நோயாளிகளுக்கு (PP), விலை 554.20 முதல் 749.80 TP வரை இருக்கும். இதில் சேர்க்கப்படுபவை: மரத்துப்போகச் செய்தல் (4.0650), தற்காலிக கிரீடம் (4.7240 அல்லது 4.7250), நிற நிர்ணயம் (4.7700) மற்றும் பல் ஆய்வக வேலை (ஆய்வகத்திலிருந்து தனி விலைப்பட்டியல்). ஃபிராங்க்களில் உண்மையான விலை கிளினிக்கின் புள்ளி மதிப்பை (வழக்கமாக TP க்கு 1.00–1.30 CHF) மற்றும் ஆய்வக செலவுகளைப் பொறுத்தது. முன்கூட்டியே எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "ஒரு கிரீடம் எவ்வளவு காலம் நீடிக்கும்?",
+        "answer": "நல்ல பராமரிப்புடன், ஒரு கிரீடம் சராசரியாக 10–15 ஆண்டுகள், சில நேரங்களில் அதிகம் நீடிக்கும். வழக்கமான பல் மருத்துவ வருகைகள் மற்றும் முழுமையான வாய் சுகாதாரம் முக்கியம். கிரீடம் தானே புழுவாக முடியாது என்றாலும், அதன் கீழ் உள்ள பல் நோய்வாய்ப்படலாம். எனவே, கிரீடத்திற்கும் ஈறுகளுக்கும் இடையிலான மாற்றுப் பகுதியை குறிப்பாக கவனமாக துலக்குங்கள்."
+      },
+      {
+        "question": "ஒரு கிரீடத்திற்கும் இன்லே/ஓன்லேவிற்கும் என்ன வித்தியாசம்?",
+        "answer": "ஒரு கிரீடம், பல்லை ஒரு தொப்பி போல முழுமையாக சூழ்ந்திருக்கும். ஒரு இன்லே/ஓன்லே, பல்லின் ஒரு பகுதியை மட்டும் மாற்றுகிறது – உதாரணமாக ஒரு பெரிய நிரப்புதலை. இன்லே/ஓன்லேக்கள் பெரும்பாலும் குறைவான சேதமடைந்த பற்களுக்கு சாத்தியமாகும் மற்றும் அதிக ஆரோக்கியமான பல் பொருளைப் பாதுகாக்கின்றன. உங்கள் பல்லுக்கு எந்த தீர்வு சிறந்தது என்பதை உங்கள் பல் மருத்துவர் உங்களுக்கு அறிவுறுத்துவார்."
+      },
+      {
+        "question": "கிரீடம் சுகாதார காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "UV/MV/IV (விபத்து, இராணுவம், ஊனமுறை காப்பீடு) க்கு, கிரீடம் ஒரு விபத்து அல்லது அங்கீகரிக்கப்பட்ட நோயுடன் தொடர்புடையதாக இருந்தால் மறைக்கப்படுகிறது. தனியார் நோயாளிகளுக்கு (PP), செலவுகளை தாங்களே ஏற்க வேண்டும். பலருக்கு செலவுகளின் ஒரு பகுதி அல்லது அனைத்தையும் மறைக்கும் தனியார் பல் காப்பீடு உள்ளது. முக்கியம்: டெலஸ்கோபிக் கிரீடங்கள் UV/MV/IV ஆல் திருப்பிச் செலுத்தப்படுவதில்லை!"
+      },
+      {
+        "question": "சிகிச்சை எவ்வாறு மேற்கொள்ளப்படுகிறது?",
+        "answer": "முதல் அமர்வில், பல் மருத்துவர் பல்லைத் தயாரித்து (அரைத்து), ஒரு அச்சு எடுத்து, ஒரு தற்காலிக கிரீடத்தை வைக்கிறார். அச்சு, உங்கள் தனிப்பயன் கிரீடம் தயாரிக்கப்படும் பல் ஆய்வகத்திற்கு அனுப்பப்படுகிறது (சுமார் 1–2 வாரங்கள் ஆகும்). இரண்டாவது அமர்வில், தற்காலிக கிரீடம் அகற்றப்பட்டு, இறுதி கிரீடம் பொருத்தப்பட்டு ஒட்டப்படுகிறது."
+      }
+    ]
+  }
+}

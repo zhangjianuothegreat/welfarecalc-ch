@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
+    <title>Calculadora de Prestaciones Sociales Suizas y Decodificador Dental | WelfareCalc.ch</title>
+    <meta name="description" content="Herramientas oficiales de WelfareCalc.ch: calcule sus prestaciones sociales suizas (AVS, AI, PC) de forma gratuita y anónima. Decodifique los costes dentales ocultos y las facturas DENTOTAR. Sin registro. Sin seguimiento.">
+
+    <!-- Fuentes y estilos - Mismo diseño moderno que referencia -->
+    <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #f8f9fa;
+            color: #1a1a1a;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            padding-bottom: max(2rem, env(safe-area-inset-bottom));
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* Sección Hero – Identidad de marca */
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #0050a4;
+            margin-bottom: 0.6rem;
+            line-height: 1.2;
+        }
+
+        .hero .slogan {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .subtitle {
+            font-size: 0.95rem;
+            color: #555;
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 0.5rem;
+            line-height: 1.5;
+        }
+
+        /* Instrucción de selección – insignia moderna */
+        .choice-instruction {
+            text-align: center;
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #0050a4;
+            margin: 1.2rem 0 2rem;
+            background: #eef3fc;
+            display: inline-block;
+            width: auto;
+            padding: 0.5rem 1.8rem;
+            border-radius: 60px;
+            letter-spacing: -0.2px;
+        }
+
+        /* Cuadrícula para las dos tarjetas */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 1rem 0 2.5rem;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 28px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e0e8f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 260px;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+
+        .tool-card:active {
+            transform: scale(0.98);
+            background: #fdfdfd;
+            border-color: #0050a4;
+        }
+
+        @media (hover: hover) {
+            .tool-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12);
+                border-color: #0050a4;
+                background: #ffffff;
+            }
+        }
+
+        .tool-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            line-height: 1;
+        }
+
+        .tool-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0050a4;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.3px;
+        }
+
+        .tool-description {
+            font-size: 0.95rem;
+            color: #3a546d;
+            line-height: 1.5;
+            max-width: 260px;
+            margin-top: 0.25rem;
+        }
+
+        /* Bloque de información SEO – mismo estilo que referencia */
+        .seo-info {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid #e0e8f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .seo-info h2 {
+            font-size: 1.4rem;
+            color: #0050a4;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .seo-info h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 1rem 0 0.5rem;
+            font-weight: 600;
+        }
+
+        .seo-info p {
+            line-height: 1.6;
+            color: #4a5568;
+            margin-bottom: 0.75rem;
+        }
+
+        .seo-info ul {
+            margin: 0.5rem 0 1rem 1.5rem;
+            color: #4a5568;
+        }
+
+        .seo-info li {
+            margin: 0.4rem 0;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            padding: 1.5rem 0 0.5rem;
+            text-align: center;
+            color: #666;
+            font-size: 0.85rem;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #0050a4;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Puntos de interrupción responsivos – igual que el diseño de referencia */
+        @media (min-width: 641px) and (max-width: 1024px) {
+            body { padding: 2rem 1.5rem; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero .slogan { font-size: 1.35rem; }
+            .hero .subtitle { font-size: 1rem; }
+            .choice-instruction { font-size: 1.5rem; margin: 1rem 0 2rem; padding: 0.6rem 2rem; }
+            .tools-grid { gap: 2rem; }
+            .tool-card { padding: 2rem 1.5rem; min-height: 280px; }
+            .tool-icon { font-size: 4rem; }
+            .tool-title { font-size: 2rem; }
+            .tool-description { font-size: 1rem; }
+            .seo-info h2 { font-size: 1.6rem; }
+            .seo-info h3 { font-size: 1.3rem; }
+        }
+
+        @media (min-width: 1025px) {
+            body { padding: 3rem 1.5rem; }
+            .hero { margin-bottom: 2rem; }
+            .hero h1 { font-size: 3.2rem; }
+            .hero .slogan { font-size: 1.4rem; }
+            .hero .subtitle { font-size: 1.15rem; }
+            .choice-instruction { font-size: 1.6rem; margin: 1.5rem 0 2.2rem; padding: 0.7rem 2.4rem; }
+            .tools-grid { gap: 2.5rem; margin: 2rem 0 3rem; }
+            .tool-card { padding: 2.5rem 2rem; min-height: 310px; }
+            .tool-icon { font-size: 4.5rem; margin-bottom: 1.2rem; }
+            .tool-title { font-size: 2.2rem; }
+            .tool-description { font-size: 1.05rem; max-width: 300px; }
+            .footer { margin-top: 3rem; }
+            .seo-info h2 { font-size: 1.8rem; }
+            .seo-info h3 { font-size: 1.4rem; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 1rem 0.75rem; padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+            .hero h1 { font-size: 1.8rem; }
+            .hero .slogan { font-size: 1rem; }
+            .hero .subtitle { font-size: 0.85rem; }
+            .choice-instruction { font-size: 1.1rem; margin: 0.5rem 0 1.5rem; padding: 0.4rem 1.2rem; }
+            .tools-grid { gap: 1rem; grid-template-columns: 1fr; }
+            .tool-card { padding: 1.2rem 1rem; min-height: 180px; }
+            .tool-icon { font-size: 2.6rem; margin-bottom: 0.4rem; }
+            .tool-title { font-size: 1.5rem; }
+            .tool-description { font-size: 0.8rem; }
+            .footer { font-size: 0.7rem; margin-top: 1.5rem; }
+            .seo-info { padding: 1rem; margin-top: 1.5rem; }
+            .seo-info h2 { font-size: 1.2rem; }
+            .seo-info h3 { font-size: 1rem; }
+        }
+
+        @media (min-width: 481px) and (max-width: 640px) {
+            .tools-grid { gap: 1.2rem; grid-template-columns: 1fr; }
+            .tool-card { padding: 1.4rem 1rem; min-height: 200px; }
+            .tool-icon { font-size: 3rem; }
+            .tool-title { font-size: 1.6rem; }
+        }
+
+        @media (pointer: coarse) {
+            .tools-grid { gap: 1rem; }
+            .tool-card { min-height: 170px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sección Hero con la marca WelfareCalc.ch -->
+        <div class="hero">
+            <h1>WelfareCalc.ch</h1>
+            <div class="slogan">Deja de especular. Empieza a saber.</div>
+            <p class="subtitle">El único portal verdaderamente independiente que descifra las prestaciones sociales suizas y las facturas dentales. Sin registro. Sin seguimiento. Sin tonterías. Solo la verdad.</p>
+        </div>
+
+        <!-- Aviso de selección centrado: "Por favor seleccione" como instrucción moderna -->
+        <div style="display: flex; justify-content: center;">
+            <div class="choice-instruction">📌 Elige tu decodificador</div>
+        </div>
+
+        <!-- Cuadrícula con dos tarjetas: Calculadora de Prestaciones Sociales + Guía Dental Suiza (enlaces en español) -->
+        <div class="tools-grid">
+            <a href="https://www.welfarecalc.ch/es.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">⚖️📊</div>
+                <div class="tool-title">Calculadora de Prestaciones Sociales</div>
+                <div class="tool-description">
+                    Descubre exactamente lo que el estado te debe: AVS, AI, PC, reducción de primas. <strong>Deja de perder miles de francos sobre la mesa.</strong>
+                </div>
+            </a>
+
+            <a href="https://www.welfarecalc.ch/blog/es/dental/dental_es.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">🦷💰</div>
+                <div class="tool-title">Auditor de Facturas Dentales Suizas</div>
+                <div class="tool-description">
+                    El Taxpunktwert oculto y los códigos DENTOTAR están drenando tu dinero silenciosamente. <strong>Decodifica tu factura dental y deja de pagar de más — hoy.</strong>
+                </div>
+            </a>
+        </div>
+
+        <!-- Bloque de información optimizado para SEO – adaptado a ambas herramientas en español -->
+        <div class="seo-info">
+            <h2>Tu Kit de Supervivencia para los Costes Sociales y Dentales en Suiza</h2>
+            <p>WelfareCalc.ch proporciona la transparencia que el sistema a menudo oculta. Usa nuestra <strong>Calculadora de Prestaciones Sociales</strong> para navegar por el complejo mundo de la AVS, AI y las prestaciones complementarias (PC). Cambia al <strong>Auditor de Facturas Dentales Suizas</strong> para entender por qué una revisión de 5 minutos cuesta 200 CHF y cómo verificar cada código DENTOTAR en tu factura.</p>
+            
+            <h3>Deja de Pagar de Más a tu Dentista</h3>
+            <p>Las facturas dentales suizas están escritas en un lenguaje secreto de puntos impositivos (TP) y valores por punto (Taxpunktwert). Nuestra guía revela:</p>
+            <ul>
+                <li><strong>La Trampa DENTOTAR</strong> – Cómo se usan códigos como 4.0000 y 4.1110 para inflar tu factura.</li>
+                <li><strong>ROI del Seguro</strong> – Por qué la mayoría de los seguros dentales complementarios son un "fracaso matemático" para adultos.</li>
+                <li><strong>Tarifas Ocultas</strong> – Por qué el mismo empaste cuesta 110 CHF en una clínica y 160 CHF en otra.</li>
+                <li><strong>Tus Derechos como Paciente</strong> – Cómo solicitar una segunda opinión y cuestionar planes de tratamiento "urgentes".</li>
+            </ul>
+            
+            <h3>Prestaciones Sociales – Obtén lo que te Corresponde</h3>
+            <p>Muchos residentes en Suiza pierden miles de francos porque el proceso de solicitud es intimidante. Simplificamos las directrices 2026 para AVS, AI y Reducción de Primas (IPV).</p>
+            
+            <h3>Multilingüe y Prioritario en Privacidad</h3>
+            <p>Creemos que la claridad financiera debe ser accesible para todos. Nuestras herramientas ofrecen <strong>soporte multilingüe</strong> para ayudar a la comunidad internacional en Suiza a entender sus derechos sin barreras idiomáticas. Lo mejor de todo: Todos los cálculos se ejecutan <strong>localmente en tu navegador</strong>. No almacenamos tus datos ni rastreamos tu identidad.</p>
+            
+            <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
+                📌 Datos verificados según los estándares oficiales 2026 de la <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">OFAS</a> y la <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">OFSP</a>.
+            </p>
+        </div>
+    </div>
+
+    <!-- Pie de página con enlaces legales (coherente con el diseño de referencia) -->
+    <div class="footer">
+        <p>WelfareCalc.ch • Gratuito • Anónimo • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="impressum.html">Aviso legal</a> • 
+            <a href="datenschutz.html">Política de privacidad</a> • 
+            <a href="haftung.html">Renuncia de responsabilidad</a>
+        </p>
+    </div>
+</body>
+</html>

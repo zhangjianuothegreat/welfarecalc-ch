@@ -1,0 +1,505 @@
+{
+  "code": "4.4600",
+  "name_de": "Wurzelbehandlung in einer Sitzung, mit Endometrie, 1 Kanal",
+  "display_name": {
+    "de": "Wurzelbehandlung (1 Sitzung, 1 Kanal)",
+    "fr": "Traitement canalaire (1 séance, 1 canal)",
+    "it": "Trattamento canalare (1 seduta, 1 canale)",
+    "en": "Root canal treatment (1 session, 1 canal)",
+    "es": "Tratamiento de conducto (1 sesión, 1 canal)",
+    "pt": "Tratamento de canal (1 sessão, 1 canal)",
+    "pl": "Leczenie kanałowe (1 sesja, 1 kanał)",
+    "al": "Trajtim kanali i rrënjës (1 seancë, 1 kanal)",
+    "tr": "Kanal tedavisi (1 seans, 1 kanal)",
+    "hr": "Liječenje korijenskog kanala (1 seansa, 1 kanal)",
+    "ta": "வேர் கால்வாய் சிகிச்சை (1 அமர்வு, 1 கால்வாய்)"
+  },
+  "search_keywords": {
+    "de": ["wurzelbehandlung", "wurzelkanalbehandlung", "endodontie", "1 sitzung", "ein kanal", "wurzel füllung", "endometrie", "zahn retten"],
+    "fr": ["traitement canalaire", "traitement de racine", "endodontie", "1 séance", "un canal", "obturation canalaire", "endométrie"],
+    "it": ["cura canalare", "trattamento canalare", "endodonzia", "1 seduta", "un canale", "otturazione canalare", "endometria"],
+    "en": ["root canal treatment", "endodontic treatment", "1 session", "one canal", "root filling", "endometry"],
+    "es": ["tratamiento de conducto", "endodoncia", "1 sesión", "un conducto", "obturación del conducto", "endometría"],
+    "pt": ["tratamento de canal", "endodontia", "1 sessão", "um canal", "obturação do canal", "endometria"],
+    "pl": ["leczenie kanałowe", "endodoncja", "1 sesja", "jeden kanał", "wypełnienie kanałowe", "endometria"],
+    "al": ["trajtim kanali i rrënjës", "endodonci", "1 seancë", "një kanal", "mbushje kanali", "endometri"],
+    "tr": ["kanal tedavisi", "endodonti", "1 seans", "tek kanal", "kanal dolgusu", "endometri"],
+    "hr": ["liječenje korijenskog kanala", "endodoncija", "1 seansa", "jedan kanal", "ispuna kanala", "endometrija"],
+    "ta": ["வேர் கால்வாய் சிகிச்சை", "எண்டோடோன்டிக்ஸ்", "1 அமர்வு", "ஒரு கால்வாய்", "வேர் நிரப்புதல்", "எண்டோமெட்ரி"]
+  },
+  "tp_uv_mviv": 265.00,
+  "tp_pp_max": 304.80,
+  "tp_pp_min": 225.30,
+  "chapter": "07.03",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn ein Zahn von innen krank ist, weil die Bakterien bis in die Nerven eingedrungen sind, macht der Zahnarzt eine Wurzelbehandlung. Er macht den Zahn auf, reinigt die feinen Kanäle im Inneren ganz gründlich und füllt sie dann mit einem speziellen Material. So bleibt der Zahn erhalten und muss nicht gezogen werden. Bei dieser Behandlung wird alles in einer einzigen Sitzung erledigt – du musst also nur einmal kommen! Das gilt für einen Zahn mit einem Kanal (zum Beispiel Schneidezähne). Bei mehreren Kanälen (Backenzähne) dauert es länger.",
+    "fr": "Quand une dent est malade de l'intérieur parce que les bactéries ont atteint les nerfs, le dentiste fait un traitement canalaire. Il ouvre la dent, nettoie très soigneusement les canaux fins à l'intérieur et les remplit avec un matériau spécial. Ainsi, la dent est préservée et n'a pas besoin d'être extraite. Avec ce traitement, tout est fait en une seule séance – tu n'as donc besoin de venir qu'une fois! Cela s'applique à une dent avec un seul canal (par exemple les incisives). Pour plusieurs canaux (molaires), cela prend plus de temps.",
+    "it": "Quando un dente è malato dall'interno perché i batteri hanno raggiunto i nervi, il dentista esegue una cura canalare. Apre il dente, pulisce molto accuratamente i sottili canali all'interno e li riempie con un materiale speciale. In questo modo il dente viene preservato e non deve essere estratto. Con questo trattamento, tutto viene fatto in un'unica seduta – quindi devi venire solo una volta! Questo vale per un dente con un solo canale (ad esempio gli incisivi). Per più canali (molari), ci vuole più tempo.",
+    "en": "When a tooth is sick from the inside because bacteria have reached the nerves, the dentist performs a root canal treatment. He opens the tooth, thoroughly cleans the fine canals inside, and fills them with a special material. This way, the tooth is preserved and does not need to be pulled. With this treatment, everything is done in a single session – so you only need to come once! This applies to a tooth with one canal (for example, incisors). For multiple canals (molars), it takes longer.",
+    "es": "Cuando un diente está enfermo por dentro porque las bacterias han llegado a los nervios, el dentista realiza un tratamiento de conducto. Abre el diente, limpia muy a fondo los finos conductos del interior y los rellena con un material especial. Así, el diente se conserva y no necesita ser extraído. Con este tratamiento, todo se hace en una sola sesión – ¡solo tienes que venir una vez! Esto se aplica a un diente con un solo conducto (por ejemplo, los incisivos). Para varios conductos (molares), lleva más tiempo.",
+    "pt": "Quando um dente está doente por dentro porque as bactérias atingiram os nervos, o dentista realiza um tratamento de canal. Abre o dente, limpa muito cuidadosamente os canais finos no interior e preenche-os com um material especial. Desta forma, o dente é preservado e não precisa ser extraído. Com este tratamento, tudo é feito numa única sessão – por isso só precisas de vir uma vez! Isto aplica-se a um dente com um único canal (por exemplo, os incisivos). Para vários canais (molares), demora mais tempo.",
+    "pl": "Kiedy ząb jest chory od wewnątrz, ponieważ bakterie dostały się do nerwów, dentysta wykonuje leczenie kanałowe. Otwiera ząb, dokładnie czyści cienkie kanały wewnątrz i wypełnia je specjalnym materiałem. W ten sposób ząb zostaje zachowany i nie musi być usuwany. W tym leczeniu wszystko odbywa się podczas jednej sesji – więc musisz przyjść tylko raz! Dotyczy to zęba z jednym kanałem (na przykład siekacze). Dla wielu kanałów (trzonowce) trwa to dłużej.",
+    "al": "Kur një dhëmb është i sëmurë nga brenda sepse bakteret kanë arritur te nervat, dentisti kryen një trajtim kanali të rrënjës. Ai hap dhëmbin, pastron tërësisht kanalet e holla brenda dhe i mbush me një material të veçantë. Në këtë mënyrë, dhëmbi ruhet dhe nuk ka nevojë të nxirret. Me këtë trajtim, gjithçka bëhet në një seancë të vetme – kështu që duhet të vish vetëm një herë! Kjo vlen për një dhëmb me një kanal (për shembull, dhëmbët e përparmë). Për shumë kanale (dhëmballë), zgjat më shumë.",
+    "tr": "Bir diş, bakteriler sinirlere ulaştığı için içten hasta olduğunda, diş hekimi kanal tedavisi yapar. Dişi açar, içindeki ince kanalları çok iyi temizler ve özel bir malzeme ile doldurur. Bu şekilde diş korunur ve çekilmesi gerekmez. Bu tedavide her şey tek bir seansta yapılır – yani sadece bir kez gelmen yeterli! Bu, tek kanallı bir diş için geçerlidir (örneğin kesici dişler). Birden fazla kanal için (azı dişleri) daha uzun sürer.",
+    "hr": "Kada je zub bolestan iznutra jer su bakterije dospjele do živaca, zubar provodi liječenje korijenskog kanala. Otvara zub, temeljito čisti fine kanale unutra i ispunjava ih posebnim materijalom. Na taj način zub se čuva i ne mora se vaditi. Kod ovog tretmana sve se radi u jednoj seansi – tako da trebaš doći samo jednom! To se odnosi na zub s jednim kanalom (na primjer sjekutići). Za više kanala (kutnjaci) traje dulje.",
+    "ta": "பாக்டீரியாக்கள் நரம்புகளை அடைந்ததால் ஒரு பல் உள்ளே இருந்து நோய்வாய்ப்படும் போது, பல் மருத்துவர் ஒரு வேர் கால்வாய் சிகிச்சையை செய்கிறார். அவர் பல்லைத் திறந்து, உள்ளே இருக்கும் மெல்லிய கால்வாய்களை மிகவும் நன்றாக சுத்தம் செய்து, ஒரு சிறப்புப் பொருளால் நிரப்புகிறார். இந்த வழியில், பல் பாதுகாக்கப்படுகிறது மற்றும் பிடுங்கப்பட வேண்டியதில்லை. இந்த சிகிச்சையில், எல்லாம் ஒரே அமர்வில் செய்யப்படுகிறது – எனவே நீங்கள் ஒருமுறை மட்டுமே வர வேண்டும்! இது ஒரு கால்வாய் கொண்ட பல்லுக்கு பொருந்தும் (உதாரணமாக வெட்டுப்பற்கள்). பல கால்வாய்களுக்கு (கடைவாய்ப்பற்கள்) அதிக நேரம் எடுக்கும்."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 Wurzelbehandlung in einer einzigen Sitzung",
+      "📏 Endometrie (exakte Längenbestimmung der Wurzelkanäle mit elektronischem Messgerät)",
+      "🧼 Gründliche Reinigung und Desinfektion der Wurzelkanäle",
+      "🔬 Aufbereitung der Kanäle mit speziellen Instrumenten",
+      "💊 Medikamenteneinlage (temporär, falls nötig)",
+      "🦷 Wurzelkanalfüllung (exklusive Verschluss – der definitive Verschluss der Zahnkrone erfolgt separat)",
+      "⚠️ **Wichtig:** Gilt für 1 Kanal (z.B. Schneidezähne, Eckzähne)"
+    ],
+    "fr": [
+      "🦷 Traitement canalaire en une seule séance",
+      "📏 Endométrie (détermination exacte de la longueur des canaux radiculaires avec un appareil de mesure électronique)",
+      "🧼 Nettoyage et désinfection minutieux des canaux radiculaires",
+      "🔬 Façonnage des canaux avec des instruments spéciaux",
+      "💊 Mise en place de médicaments (temporaire, si nécessaire)",
+      "🦷 Obturation canalaire (excluant la fermeture – la fermeture définitive de la couronne dentaire se fait séparément)",
+      "⚠️ **Important:** S'applique à 1 canal (par exemple incisives, canines)"
+    ],
+    "it": [
+      "🦷 Trattamento canalare in una sola seduta",
+      "📏 Endometria (determinazione esatta della lunghezza dei canali radicolari con apparecchio di misura elettronico)",
+      "🧼 Pulizia e disinfezione accurata dei canali radicolari",
+      "🔬 Preparazione dei canali con strumenti speciali",
+      "💊 Medicazione (temporanea, se necessaria)",
+      "🦷 Obturazione canalare (esclusa la chiusura – la chiusura definitiva della corona dentale avviene separatamente)",
+      "⚠️ **Importante:** Si applica a 1 canale (ad esempio incisivi, canini)"
+    ],
+    "en": [
+      "🦷 Root canal treatment in a single session",
+      "📏 Endometry (exact length determination of root canals with electronic measuring device)",
+      "🧼 Thorough cleaning and disinfection of the root canals",
+      "🔬 Shaping of the canals with special instruments",
+      "💊 Medication placement (temporary, if necessary)",
+      "🦷 Root canal filling (excluding closure – the definitive closure of the tooth crown is done separately)",
+      "⚠️ **Important:** Applies to 1 canal (e.g., incisors, canines)"
+    ],
+    "es": [
+      "🦷 Tratamiento de conducto en una sola sesión",
+      "📏 Endometría (determinación exacta de la longitud de los conductos radiculares con dispositivo electrónico de medición)",
+      "🧼 Limpieza y desinfección minuciosa de los conductos radiculares",
+      "🔬 Conformación de los conductos con instrumentos especiales",
+      "💊 Colocación de medicación (temporal, si es necesario)",
+      "🦷 Obturación del conducto (excluyendo el cierre – el cierre definitivo de la corona dental se realiza por separado)",
+      "⚠️ **Importante:** Se aplica a 1 conducto (por ejemplo, incisivos, caninos)"
+    ],
+    "pt": [
+      "🦷 Tratamento de canal numa única sessão",
+      "📏 Endometria (determinação exata do comprimento dos canais radiculares com dispositivo eletrónico de medição)",
+      "🧼 Limpeza e desinfeção minuciosa dos canais radiculares",
+      "🔬 Conformação dos canais com instrumentos especiais",
+      "💊 Colocação de medicação (temporária, se necessária)",
+      "🦷 Obturação do canal (excluindo o fecho – o fecho definitivo da coroa do dente é feito separadamente)",
+      "⚠️ **Importante:** Aplica-se a 1 canal (por exemplo, incisivos, caninos)"
+    ],
+    "pl": [
+      "🦷 Leczenie kanałowe w jednej sesji",
+      "📏 Endometria (dokładne określenie długości kanałów korzeniowych za pomocą elektronicznego urządzenia pomiarowego)",
+      "🧼 Dokładne czyszczenie i dezynfekcja kanałów korzeniowych",
+      "🔬 Opracowanie kanałów specjalnymi instrumentami",
+      "💊 Wprowadzenie leku (tymczasowego, jeśli to konieczne)",
+      "🦷 Wypełnienie kanału (z wyłączeniem zamknięcia – ostateczne zamknięcie korony zęba odbywa się osobno)",
+      "⚠️ **Ważne:** Dotyczy 1 kanału (np. siekacze, kły)"
+    ],
+    "al": [
+      "🦷 Trajtim kanali i rrënjës në një seancë të vetme",
+      "📏 Endometri (përcaktimi i saktë i gjatësisë së kanaleve të rrënjës me pajisje matëse elektronike)",
+      "🧼 Pastrim dhe dezinfektim i plotë i kanaleve të rrënjës",
+      "🔬 Përgatitja e kanaleve me instrumente speciale",
+      "💊 Vendosja e mjekimit (të përkohshëm, nëse është e nevojshme)",
+      "🦷 Mbushja e kanalit të rrënjës (përjashton mbylljen – mbyllja përfundimtare e kurorës së dhëmbit bëhet veçmas)",
+      "⚠️ **E rëndësishme:** Zbatohet për 1 kanal (p.sh., dhëmbët e përparmë, dhëmbët e qenit)"
+    ],
+    "tr": [
+      "🦷 Tek seansta kanal tedavisi",
+      "📏 Endometri (kök kanallarının uzunluğunun elektronik ölçüm cihazı ile hassas belirlenmesi)",
+      "🧼 Kök kanallarının iyice temizlenmesi ve dezenfekte edilmesi",
+      "🔬 Kanalların özel aletlerle şekillendirilmesi",
+      "💊 İlaç yerleştirilmesi (geçici, gerekirse)",
+      "🦷 Kök kanal dolgusu (kapanış hariç – diş kronunun kesin kapanışı ayrıca yapılır)",
+      "⚠️ **Önemli:** 1 kanal için geçerlidir (örneğin kesici dişler, köpek dişleri)"
+    ],
+    "hr": [
+      "🦷 Liječenje korijenskog kanala u jednoj seansi",
+      "📏 Endometrija (točno određivanje duljine korijenskih kanala elektroničkim mjernim uređajem)",
+      "🧼 Temeljito čišćenje i dezinfekcija korijenskih kanala",
+      "🔬 Oblikovanje kanala posebnim instrumentima",
+      "💊 Postavljanje lijeka (privremenog, ako je potrebno)",
+      "🦷 Ispuna korijenskog kanala (isključuje zatvaranje – konačno zatvaranje krune zuba obavlja se zasebno)",
+      "⚠️ **Važno:** Vrijedi za 1 kanal (npr. sjekutići, očnjaci)"
+    ],
+    "ta": [
+      "🦷 ஒரே அமர்வில் வேர் கால்வாய் சிகிச்சை",
+      "📏 எண்டோமெட்ரி (எலக்ட்ரானிக் அளவீட்டு சாதனம் மூலம் வேர் கால்வாய்களின் நீளத்தை துல்லியமாக தீர்மானித்தல்)",
+      "🧼 வேர் கால்வாய்களை முழுமையாக சுத்தம் செய்து கிருமி நீக்கம் செய்தல்",
+      "🔬 சிறப்பு கருவிகள் மூலம் கால்வாய்களை வடிவமைத்தல்",
+      "💊 மருந்து வைத்தல் (தேவைப்பட்டால், தற்காலிகமானது)",
+      "🦷 வேர் கால்வாய் நிரப்புதல் (மூடுதல் தவிர – பல் கிரீடத்தின் இறுதி மூடுதல் தனித்தனியாக செய்யப்படுகிறது)",
+      "⚠️ **முக்கியம்:** 1 கால்வாய்க்கு பொருந்தும் (எ.கா., வெட்டுப்பற்கள், கோரைப்பற்கள்)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Wurzelbehandlung in einer Sitzung** mit Endometrie",
+      "📏 **Endometrie:** Verpflichtend bei jeder Wurzelbehandlung – ermöglicht exakte Längenbestimmung der Kanäle",
+      "🦷 **1 Kanal:** Gilt für Zähne mit einem Wurzelkanal (z.B. Schneidezähne, Eckzähne, manche Prämolaren)",
+      "🔬 **Maximale Beschränkung:** Pro Zahn maximal 5 vollständig gefüllte Kanäle abrechenbar",
+      "🚫 **Exklusive Verschluss:** Die definitive Füllung der Zahnkrone (Verschluss) ist nicht inbegriffen und wird separat mit den Ziffern 4.5000–4.5030 abgerechnet",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.4810.LP «Wurzelbehandlung in 1 Sitzung, mit Endometrie, erster Kanal UV/MV» enthalten",
+      "➕ **Zusatzpaket:** Das Zusatzpaket 4.4991.LP (Anästhesie, Kofferdam, provisorische Füllung, Röntgen) kann 1 mal pro Sitzung zusätzlich verrechnet werden",
+      "⚠️ **Wichtig:** Bei mehreren Kanälen (2, 3 oder mehr) gelten die Ziffern 4.4610, 4.4620 oder 4.4630"
+    ],
+    "fr": [
+      "🦷 **Traitement canalaire en une séance** avec endométrie",
+      "📏 **Endométrie:** Obligatoire pour tout traitement canalaire – permet une détermination exacte de la longueur des canaux",
+      "🦷 **1 canal:** S'applique aux dents avec un canal radiculaire (p. ex. incisives, canines, certaines prémolaires)",
+      "🔬 **Limitation maximale:** Maximum 5 canaux complètement obturés facturables par dent",
+      "🚫 **Excluant la fermeture:** L'obturation définitive de la couronne dentaire (fermeture) n'est pas incluse et est facturée séparément avec les codes 4.5000–4.5030",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.4810.LP «Traitement canalaire en 1 séance, avec endométrie, premier canal UV/MV»",
+      "➕ **Forfait supplémentaire:** Le forfait supplémentaire 4.4991.LP (anesthésie, digue, obturation provisoire, radiographie) peut être facturé 1 fois par séance en supplément",
+      "⚠️ **Important:** Pour plusieurs canaux (2, 3 ou plus), les codes 4.4610, 4.4620 ou 4.4630 s'appliquent"
+    ],
+    "it": [
+      "🦷 **Trattamento canalare in una seduta** con endometria",
+      "📏 **Endometria:** Obbligatoria per ogni trattamento canalare – permette la determinazione esatta della lunghezza dei canali",
+      "🦷 **1 canale:** Si applica ai denti con un canale radicolare (ad es. incisivi, canini, alcuni premolari)",
+      "🔬 **Limitazione massima:** Massimo 5 canali completamente otturati fatturabili per dente",
+      "🚫 **Esclusa la chiusura:** L'otturazione definitiva della corona dentale (chiusura) non è inclusa e viene fatturata separatamente con i codici 4.5000–4.5030",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.4810.LP «Trattamento canalare in 1 seduta, con endometria, primo canale UV/MV»",
+      "➕ **Pacchetto supplementare:** Il pacchetto supplementare 4.4991.LP (anestesia, diga, otturazione provvisoria, radiografia) può essere fatturato 1 volta per seduta in aggiunta",
+      "⚠️ **Importante:** Per più canali (2, 3 o più), si applicano i codici 4.4610, 4.4620 o 4.4630"
+    ],
+    "en": [
+      "🦷 **Root canal treatment in one session** with endometry",
+      "📏 **Endometry:** Mandatory for every root canal treatment – enables exact length determination of the canals",
+      "🦷 **1 canal:** Applies to teeth with one root canal (e.g., incisors, canines, some premolars)",
+      "🔬 **Maximum limitation:** Maximum 5 completely filled canals billable per tooth",
+      "🚫 **Excluding closure:** The definitive filling of the tooth crown (closure) is not included and is billed separately with codes 4.5000–4.5030",
+      "📦 **Service package:** This service is included in package 4.4810.LP «Root canal treatment in 1 session, with endometry, first canal UV/MV»",
+      "➕ **Supplementary package:** The supplementary package 4.4991.LP (anesthesia, rubber dam, temporary filling, X-ray) can be billed 1 time per session in addition",
+      "⚠️ **Important:** For multiple canals (2, 3 or more), codes 4.4610, 4.4620 or 4.4630 apply"
+    ],
+    "es": [
+      "🦷 **Tratamiento de conducto en una sesión** con endometría",
+      "📏 **Endometría:** Obligatoria en todo tratamiento de conducto – permite la determinación exacta de la longitud de los conductos",
+      "🦷 **1 conducto:** Se aplica a dientes con un conducto radicular (p. ej., incisivos, caninos, algunos premolares)",
+      "🔬 **Limitación máxima:** Máximo 5 conductos completamente obturados facturables por diente",
+      "🚫 **Excluyendo el cierre:** La obturación definitiva de la corona dental (cierre) no está incluida y se factura por separado con los códigos 4.5000–4.5030",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.4810.LP «Tratamiento de conducto en 1 sesión, con endometría, primer conducto UV/MV»",
+      "➕ **Paquete suplementario:** El paquete suplementario 4.4991.LP (anestesia, dique, obturación provisional, radiografía) puede facturarse 1 vez por sesión adicionalmente",
+      "⚠️ **Importante:** Para varios conductos (2, 3 o más), se aplican los códigos 4.4610, 4.4620 o 4.4630"
+    ],
+    "pt": [
+      "🦷 **Tratamento de canal numa sessão** com endometria",
+      "📏 **Endometria:** Obrigatória em todo tratamento de canal – permite a determinação exata do comprimento dos canais",
+      "🦷 **1 canal:** Aplica-se a dentes com um canal radicular (p. ex., incisivos, caninos, alguns pré-molares)",
+      "🔬 **Limitação máxima:** Máximo 5 canais completamente obturados faturáveis por dente",
+      "🚫 **Excluindo o fecho:** A obturação definitiva da coroa dentária (fecho) não está incluída e é faturada separadamente com os códigos 4.5000–4.5030",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.4810.LP «Tratamento de canal em 1 sessão, com endometria, primeiro canal UV/MV»",
+      "➕ **Pacote suplementar:** O pacote suplementar 4.4991.LP (anestesia, dique, obturação provisória, radiografia) pode ser faturado 1 vez por sessão adicionalmente",
+      "⚠️ **Importante:** Para vários canais (2, 3 ou mais), aplicam-se os códigos 4.4610, 4.4620 ou 4.4630"
+    ],
+    "pl": [
+      "🦷 **Leczenie kanałowe w jednej sesji** z endometrią",
+      "📏 **Endometria:** Obowiązkowa przy każdym leczeniu kanałowym – umożliwia dokładne określenie długości kanałów",
+      "🦷 **1 kanał:** Dotyczy zębów z jednym kanałem korzeniowym (np. siekacze, kły, niektóre przedtrzonowce)",
+      "🔬 **Maksymalne ograniczenie:** Maksymalnie 5 całkowicie wypełnionych kanałów do rozliczenia na ząb",
+      "🚫 **Z wyłączeniem zamknięcia:** Ostateczne wypełnienie korony zęba (zamknięcie) nie jest wliczone i jest rozliczane osobno z kodami 4.5000–4.5030",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.4810.LP «Leczenie kanałowe w 1 sesji, z endometrią, pierwszy kanał UV/MV»",
+      "➕ **Pakiet uzupełniający:** Pakiet uzupełniający 4.4991.LP (znieczulenie, koferdam, wypełnienie tymczasowe, rentgen) może być rozliczony 1 raz na sesję dodatkowo",
+      "⚠️ **Ważne:** Dla wielu kanałów (2, 3 lub więcej) stosuje się kody 4.4610, 4.4620 lub 4.4630"
+    ],
+    "al": [
+      "🦷 **Trajtim kanali i rrënjës në një seancë** me endometri",
+      "📏 **Endometri:** I detyrueshëm për çdo trajtim kanali – mundëson përcaktimin e saktë të gjatësisë së kanaleve",
+      "🦷 **1 kanal:** Zbatohet për dhëmbët me një kanal rrënjë (p.sh., dhëmbët e përparmë, dhëmbët e qenit, disa premolarë)",
+      "🔬 **Kufizimi maksimal:** Maksimumi 5 kanale të mbushura plotësisht të faturoshme për dhëmb",
+      "🚫 **Përjashton mbylljen:** Mbushja përfundimtare e kurorës së dhëmbit (mbyllja) nuk përfshihet dhe faturohet veçmas me kodet 4.5000–4.5030",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.4810.LP «Trajtim kanali i rrënjës në 1 seancë, me endometri, kanali i parë UV/MV»",
+      "➕ **Paketa shtesë:** Paketa shtesë 4.4991.LP (anestezi, digë, mbushje e përkohshme, rreze X) mund të faturohet 1 herë për seancë shtesë",
+      "⚠️ **E rëndësishme:** Për kanale të shumta (2, 3 ose më shumë), zbatohen kodet 4.4610, 4.4620 ose 4.4630"
+    ],
+    "tr": [
+      "🦷 **Tek seansta kanal tedavisi** endrometri ile",
+      "📏 **Endometri:** Her kanal tedavisinde zorunludur – kanalların uzunluğunun hassas belirlenmesini sağlar",
+      "🦷 **1 kanal:** Tek kök kanalı olan dişler için geçerlidir (örn. kesici dişler, köpek dişleri, bazı küçük azı dişleri)",
+      "🔬 **Maksimum sınırlama:** Diş başına maksimum 5 tamamen doldurulmuş kanal faturalandırılabilir",
+      "🚫 **Kapanış hariç:** Diş kronunun kesin dolgusu (kapanış) dahil değildir ve 4.5000–4.5030 kodları ile ayrı faturalandırılır",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.4810.LP «1 seansta kanal tedavisi, endometri ile, ilk kanal UV/MV» paketine dahildir",
+      "➕ **Ek paket:** Ek paket 4.4991.LP (anestezi, kofferdam, geçici dolgu, röntgen) seans başına 1 kez ek olarak faturalandırılabilir",
+      "⚠️ **Önemli:** Birden fazla kanal için (2, 3 veya daha fazla), 4.4610, 4.4620 veya 4.4630 kodları uygulanır"
+    ],
+    "hr": [
+      "🦷 **Liječenje korijenskog kanala u jednoj seansi** s endometrijom",
+      "📏 **Endometrija:** Obvezna za svako liječenje kanala – omogućuje točno određivanje duljine kanala",
+      "🦷 **1 kanal:** Primjenjuje se na zube s jednim korijenskim kanalom (npr. sjekutići, očnjaci, neki pretkutnjaci)",
+      "🔬 **Maksimalno ograničenje:** Maksimalno 5 potpuno ispunjenih kanala naplativo po zubu",
+      "🚫 **Isključuje zatvaranje:** Konačna ispuna krune zuba (zatvaranje) nije uključena i naplaćuje se zasebno s kodovima 4.5000–4.5030",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.4810.LP «Liječenje korijenskog kanala u 1 seansi, s endometrijom, prvi kanal UV/MV»",
+      "➕ **Dodatni paket:** Dodatni paket 4.4991.LP (anestezija, kofferdam, privremena ispuna, rendgen) može se naplatiti 1 put po seansi dodatno",
+      "⚠️ **Važno:** Za više kanala (2, 3 ili više), primjenjuju se kodovi 4.4610, 4.4620 ili 4.4630"
+    ],
+    "ta": [
+      "🦷 **ஒரே அமர்வில் வேர் கால்வாய் சிகிச்சை** எண்டோமெட்ரியுடன்",
+      "📏 **எண்டோமெட்ரி:** ஒவ்வொரு வேர் கால்வாய் சிகிச்சைக்கும் கட்டாயமானது – கால்வாய்களின் நீளத்தை துல்லியமாக தீர்மானிக்க உதவுகிறது",
+      "🦷 **1 கால்வாய்:** ஒரு வேர் கால்வாய் கொண்ட பற்களுக்கு பொருந்தும் (எ.கா., வெட்டுப்பற்கள், கோரைப்பற்கள், சில முன் கடைவாய்ப்பற்கள்)",
+      "🔬 **அதிகபட்ச வரம்பு:** ஒரு பல்லுக்கு அதிகபட்சம் 5 முழுமையாக நிரப்பப்பட்ட கால்வாய்கள் கணக்கிடலாம்",
+      "🚫 **மூடுதல் தவிர:** பல் கிரீடத்தின் இறுதி நிரப்புதல் (மூடுதல்) சேர்க்கப்படவில்லை மற்றும் 4.5000–4.5030 குறியீடுகளுடன் தனித்தனியாக கணக்கிடப்படுகிறது",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.4810.LP «1 அமர்வில் வேர் கால்வாய் சிகிச்சை, எண்டோமெட்ரியுடன், முதல் கால்வாய் UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "➕ **கூடுதல் தொகுப்பு:** கூடுதல் தொகுப்பு 4.4991.LP (மரத்துப்போகச் செய்தல், காஃபர் டேம், தற்காலிக நிரப்புதல், எக்ஸ்-ரே) ஒரு அமர்வுக்கு 1 முறை கூடுதலாக கணக்கிடப்படலாம்",
+      "⚠️ **முக்கியம்:** பல கால்வாய்களுக்கு (2, 3 அல்லது அதற்கு மேல்), 4.4610, 4.4620 அல்லது 4.4630 குறியீடுகள் பொருந்தும்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einer Wurzelbehandlung in einer Sitzung und in mehreren Sitzungen?",
+        "answer": "Bei einer Wurzelbehandlung in einer Sitzung (4.4600) wird alles – Reinigung, Aufbereitung und Füllung des Kanals – in einem einzigen Termin erledigt. Das ist möglich, wenn der Zahn nicht stark entzündet ist. Bei mehreren Sitzungen (4.4400, 4.4500, 4.4550 etc.) wird zwischen den Terminen ein Medikament in den Kanal gelegt. Das ist bei starken Entzündungen oder komplizierten Fällen nötig. Der Preis ist bei einer Sitzung etwas höher, dafür sparst du Zeit."
+      },
+      {
+        "question": "Ist die Wurzelbehandlung schmerzhaft?",
+        "answer": "Nein. Der Zahnarzt betäubt den Zahn vorher gründlich mit einer lokalen Anästhesie (4.0650). Während der Behandlung spürst du nichts. Wenn der Zahn schon stark entzündet war, kann die Betäubung manchmal weniger gut wirken – sag einfach Bescheid, dann kann der Zahnarzt nachbetäuben. Nach der Behandlung kann der Zahn ein paar Tage empfindlich sein, das ist normal."
+      },
+      {
+        "question": "Was bedeutet Endometrie?",
+        "answer": "Endometrie ist die exakte Messung der Länge des Wurzelkanals mit einem elektronischen Messgerät. Das ist sehr wichtig, damit die Reinigung und Füllung bis zur Spitze der Wurzel, aber nicht darüber hinaus, erfolgt. Endometrie ist bei jeder Wurzelbehandlung verpflichtend und in den Tarifziffern bereits enthalten."
+      },
+      {
+        "question": "Was kostet eine Wurzelbehandlung mit einem Kanal?",
+        "answer": "Der offizielle TP-Wert ist 265.00 für UV/MV/IV. Bei Privatpatienten (PP) liegt der Preis zwischen 225.30 und 304.80 TP. Dazu kommen die Kosten für die Anästhesie (4.0650, 38.40 TP), Kofferdam (4.0940, 22.70 TP), provisorische Füllung (4.5000, 38.40 TP) und eventuell Röntgenbilder (4.0500, 19.20 TP). Oft wird dafür das Zusatzpaket 4.4991.LP (118.70 TP) verwendet. Der tatsächliche Preis in Franken hängt vom Taxpunktwert der Klinik ab (meist 1.00–1.30 CHF pro TP). Frage vorher nach einem Kostenvoranschlag!"
+      },
+      {
+        "question": "Was passiert nach der Wurzelbehandlung?",
+        "answer": "Nach der Wurzelbehandlung wird der Zahn mit einer provisorischen Füllung (4.5000) verschlossen. Später (oft bei der nächsten Sitzung) wird der Zahn mit einer definitiven Füllung (z.B. Komposit, 4.5350 ff.) oder einer Krone (4.7070 ff.) wieder aufgebaut. Das ist wichtig, weil ein wurzelbehandelter Zahn brüchiger werden kann. Dein Zahnarzt wird dir sagen, wann du für den endgültigen Aufbau wiederkommen sollst."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre un traitement canalaire en une séance et en plusieurs séances?",
+        "answer": "Dans un traitement canalaire en une séance (4.4600), tout – nettoyage, façonnage et obturation du canal – est effectué en un seul rendez-vous. C'est possible lorsque la dent n'est pas fortement enflammée. En plusieurs séances (4.4400, 4.4500, 4.4550 etc.), un médicament est placé dans le canal entre les rendez-vous. Cela est nécessaire en cas d'inflammation sévère ou de cas compliqués. Le prix est légèrement plus élevé pour une séance, mais tu gagnes du temps."
+      },
+      {
+        "question": "Le traitement canalaire est-il douloureux?",
+        "answer": "Non. Le dentiste anesthésie soigneusement la dent au préalable avec une anesthésie locale (4.0650). Pendant le traitement, tu ne ressens rien. Si la dent était déjà très enflammée, l'anesthésie peut parfois être moins efficace – il suffit de le dire, et le dentiste peut refaire l'anesthésie. Après le traitement, la dent peut être sensible pendant quelques jours, c'est normal."
+      },
+      {
+        "question": "Que signifie endométrie?",
+        "answer": "L'endométrie est la mesure exacte de la longueur du canal radiculaire à l'aide d'un appareil de mesure électronique. C'est très important pour que le nettoyage et l'obturation aillent jusqu'à l'extrémité de la racine, mais pas au-delà. L'endométrie est obligatoire pour tout traitement canalaire et est déjà incluse dans les codes tarifaires."
+      },
+      {
+        "question": "Combien coûte un traitement canalaire avec un canal?",
+        "answer": "La valeur TP officielle est de 265.00 pour UV/MV/IV. Pour les patients privés (PP), le prix se situe entre 225.30 et 304.80 TP. S'ajoutent les frais d'anesthésie (4.0650, 38.40 TP), de digue (4.0940, 22.70 TP), d'obturation provisoire (4.5000, 38.40 TP) et éventuellement de radiographies (4.0500, 19.20 TP). Le forfait supplémentaire 4.4991.LP (118.70 TP) est souvent utilisé pour cela. Le prix réel en francs dépend de la valeur en points du cabinet (généralement 1.00–1.30 CHF par TP). Demande un devis écrit avant!"
+      },
+      {
+        "question": "Que se passe-t-il après le traitement canalaire?",
+        "answer": "Après le traitement canalaire, la dent est fermée avec une obturation provisoire (4.5000). Plus tard (souvent lors de la séance suivante), la dent est reconstruite avec une obturation définitive (par exemple composite, 4.5350 etc.) ou une couronne (4.7070 etc.). C'est important car une dent traitée endodontiquement peut devenir plus fragile. Ton dentiste te dira quand revenir pour la reconstruction définitive."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra un trattamento canalare in una seduta e in più sedute?",
+        "answer": "In un trattamento canalare in una seduta (4.4600), tutto – pulizia, preparazione e otturazione del canale – viene eseguito in un unico appuntamento. Questo è possibile quando il dente non è fortemente infiammato. In più sedute (4.4400, 4.4500, 4.4550 ecc.), viene posizionato un medicinale nel canale tra un appuntamento e l'altro. Questo è necessario in caso di infiammazione grave o di casi complicati. Il prezzo è leggermente più alto per una seduta, ma risparmi tempo."
+      },
+      {
+        "question": "Il trattamento canalare è doloroso?",
+        "answer": "No. Il dentista anestetizza accuratamente il dente in precedenza con un'anestesia locale (4.0650). Durante il trattamento non senti nulla. Se il dente era già molto infiammato, l'anestesia a volte può essere meno efficace – basta dirlo, e il dentista può anestetizzare nuovamente. Dopo il trattamento, il dente può essere sensibile per alcuni giorni, è normale."
+      },
+      {
+        "question": "Cosa significa endometria?",
+        "answer": "L'endometria è la misurazione esatta della lunghezza del canale radicolare con un apparecchio di misura elettronico. Questo è molto importante affinché la pulizia e l'otturazione arrivino fino all'apice della radice, ma non oltre. L'endometria è obbligatoria per ogni trattamento canalare ed è già inclusa nei codici tariffari."
+      },
+      {
+        "question": "Quanto costa un trattamento canalare con un canale?",
+        "answer": "Il valore TP ufficiale è 265.00 per UV/MV/IV. Per i pazienti privati (PP), il prezzo è tra 225.30 e 304.80 TP. A questi si aggiungono i costi per l'anestesia (4.0650, 38.40 TP), la diga (4.0940, 22.70 TP), l'otturazione provvisoria (4.5000, 38.40 TP) ed eventualmente le radiografie (4.0500, 19.20 TP). Spesso viene utilizzato il pacchetto supplementare 4.4991.LP (118.70 TP). Il prezzo effettivo in franchi dipende dal valore in punti dello studio (di solito 1.00–1.30 CHF per TP). Chiedi un preventivo scritto prima!"
+      },
+      {
+        "question": "Cosa succede dopo il trattamento canalare?",
+        "answer": "Dopo il trattamento canalare, il dente viene chiuso con un'otturazione provvisoria (4.5000). Successivamente (spesso nella seduta successiva), il dente viene ricostruito con un'otturazione definitiva (ad esempio composito, 4.5350 ecc.) o una corona (4.7070 ecc.). Questo è importante perché un dente devitalizzato può diventare più fragile. Il tuo dentista ti dirà quando tornare per la ricostruzione definitiva."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between a root canal treatment in one session and in multiple sessions?",
+        "answer": "In a root canal treatment in one session (4.4600), everything – cleaning, shaping, and filling of the canal – is done in a single appointment. This is possible when the tooth is not severely inflamed. In multiple sessions (4.4400, 4.4500, 4.4550 etc.), medication is placed in the canal between appointments. This is necessary for severe inflammation or complicated cases. The price is slightly higher for one session, but you save time."
+      },
+      {
+        "question": "Is root canal treatment painful?",
+        "answer": "No. The dentist thoroughly numbs the tooth beforehand with local anesthesia (4.0650). During the treatment, you won't feel anything. If the tooth was already very inflamed, the anesthesia may sometimes be less effective – just let them know, and the dentist can administer more anesthetic. After the treatment, the tooth may be sensitive for a few days, which is normal."
+      },
+      {
+        "question": "What does endometry mean?",
+        "answer": "Endometry is the exact measurement of the root canal length using an electronic measuring device. This is very important so that cleaning and filling go to the tip of the root, but not beyond. Endometry is mandatory for every root canal treatment and is already included in the tariff codes."
+      },
+      {
+        "question": "How much does a root canal treatment with one canal cost?",
+        "answer": "The official TP value is 265.00 for UV/MV/IV. For private patients (PP), the price ranges from 225.30 to 304.80 TP. Added to this are the costs for anesthesia (4.0650, 38.40 TP), rubber dam (4.0940, 22.70 TP), temporary filling (4.5000, 38.40 TP), and possibly X-rays (4.0500, 19.20 TP). The supplementary package 4.4991.LP (118.70 TP) is often used for this. The actual price in Swiss francs depends on the clinic's point value (usually 1.00–1.30 CHF per TP). Ask for a written cost estimate beforehand!"
+      },
+      {
+        "question": "What happens after root canal treatment?",
+        "answer": "After root canal treatment, the tooth is closed with a temporary filling (4.5000). Later (often at the next session), the tooth is rebuilt with a definitive filling (e.g., composite, 4.5350 etc.) or a crown (4.7070 etc.). This is important because a root-treated tooth can become more brittle. Your dentist will tell you when to come back for the definitive restoration."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre un tratamiento de conducto en una sesión y en varias sesiones?",
+        "answer": "En un tratamiento de conducto en una sesión (4.4600), todo – limpieza, conformación y obturación del conducto – se realiza en una sola cita. Esto es posible cuando el diente no está muy inflamado. En varias sesiones (4.4400, 4.4500, 4.4550 etc.), se coloca un medicamento en el conducto entre las citas. Esto es necesario en caso de inflamación grave o casos complicados. El precio es ligeramente más alto para una sesión, pero ahorras tiempo."
+      },
+      {
+        "question": "¿El tratamiento de conducto es doloroso?",
+        "answer": "No. El dentista adormece el diente previamente con anestesia local (4.0650). Durante el tratamiento no sientes nada. Si el diente ya estaba muy inflamado, la anestesia a veces puede ser menos efectiva – solo hay que decirlo, y el dentista puede poner más anestesia. Después del tratamiento, el diente puede estar sensible durante unos días, es normal."
+      },
+      {
+        "question": "¿Qué significa endometría?",
+        "answer": "La endometría es la medición exacta de la longitud del conducto radicular con un dispositivo electrónico de medición. Esto es muy importante para que la limpieza y la obturación lleguen hasta la punta de la raíz, pero no más allá. La endometría es obligatoria en todo tratamiento de conducto y ya está incluida en los códigos arancelarios."
+      },
+      {
+        "question": "¿Cuánto cuesta un tratamiento de conducto con un conducto?",
+        "answer": "El valor TP oficial es 265.00 para UV/MV/IV. Para pacientes privados (PP), el precio está entre 225.30 y 304.80 TP. A esto se suman los costes de anestesia (4.0650, 38.40 TP), dique (4.0940, 22.70 TP), obturación provisional (4.5000, 38.40 TP) y posiblemente radiografías (4.0500, 19.20 TP). A menudo se utiliza el paquete suplementario 4.4991.LP (118.70 TP). El precio real en francos depende del valor en puntos de la clínica (normalmente 1.00–1.30 CHF por TP). ¡Pide un presupuesto por escrito antes!"
+      },
+      {
+        "question": "¿Qué sucede después del tratamiento de conducto?",
+        "answer": "Después del tratamiento de conducto, el diente se cierra con una obturación provisional (4.5000). Más tarde (a menudo en la siguiente sesión), el diente se reconstruye con una obturación definitiva (por ejemplo, composite, 4.5350 etc.) o una corona (4.7070 etc.). Esto es importante porque un diente endodonciado puede volverse más frágil. Tu dentista te dirá cuándo volver para la reconstrucción definitiva."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre um tratamento de canal numa sessão e em várias sessões?",
+        "answer": "Num tratamento de canal numa sessão (4.4600), tudo – limpeza, conformação e obturação do canal – é feito numa única consulta. Isto é possível quando o dente não está muito inflamado. Em várias sessões (4.4400, 4.4500, 4.4550 etc.), é colocado um medicamento no canal entre as consultas. Isto é necessário em caso de inflamação grave ou casos complicados. O preço é ligeiramente mais alto para uma sessão, mas poupas tempo."
+      },
+      {
+        "question": "O tratamento de canal é doloroso?",
+        "answer": "Não. O dentista anestesia cuidadosamente o dente previamente com anestesia local (4.0650). Durante o tratamento não sentes nada. Se o dente já estava muito inflamado, a anestesia pode por vezes ser menos eficaz – basta dizer, e o dentista pode anestesiar novamente. Após o tratamento, o dente pode estar sensível durante alguns dias, é normal."
+      },
+      {
+        "question": "O que significa endometria?",
+        "answer": "A endometria é a medição exata do comprimento do canal radicular com um dispositivo eletrónico de medição. Isto é muito importante para que a limpeza e a obturação cheguem à ponta da raiz, mas não além. A endometria é obrigatória em todo tratamento de canal e já está incluída nos códigos tarifários."
+      },
+      {
+        "question": "Quanto custa um tratamento de canal com um canal?",
+        "answer": "O valor TP oficial é 265.00 para UV/MV/IV. Para pacientes privados (PP), o preço situa-se entre 225.30 e 304.80 TP. A estes acrescem os custos de anestesia (4.0650, 38.40 TP), dique (4.0940, 22.70 TP), obturação provisória (4.5000, 38.40 TP) e eventualmente radiografias (4.0500, 19.20 TP). O pacote suplementar 4.4991.LP (118.70 TP) é frequentemente utilizado para isto. O preço real em francos depende do valor do ponto da clínica (geralmente 1.00–1.30 CHF por TP). Pede um orçamento por escrito antes!"
+      },
+      {
+        "question": "O que acontece após o tratamento de canal?",
+        "answer": "Após o tratamento de canal, o dente é fechado com uma obturação provisória (4.5000). Mais tarde (frequentemente na sessão seguinte), o dente é reconstruído com uma obturação definitiva (por exemplo, composite, 4.5350 etc.) ou uma coroa (4.7070 etc.). Isto é importante porque um dente desvitalizado pode tornar-se mais frágil. O teu dentista dir-te-á quando voltar para a reconstrução definitiva."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między leczeniem kanałowym w jednej sesji a w kilku sesjach?",
+        "answer": "W leczeniu kanałowym w jednej sesji (4.4600) wszystko – czyszczenie, opracowanie i wypełnienie kanału – odbywa się podczas jednej wizyty. Jest to możliwe, gdy ząb nie jest mocno zapalony. W kilku sesjach (4.4400, 4.4500, 4.4550 itd.) między wizytami umieszcza się lek w kanale. Jest to konieczne w przypadku silnego stanu zapalnego lub skomplikowanych przypadków. Cena jest nieco wyższa za jedną sesję, ale oszczędzasz czas."
+      },
+      {
+        "question": "Czy leczenie kanałowe jest bolesne?",
+        "answer": "Nie. Dentysta dokładnie znieczula ząb przed zabiegiem znieczuleniem miejscowym (4.0650). Podczas leczenia nic nie czujesz. Jeśli ząb był już bardzo zaogniony, znieczulenie może czasami być mniej skuteczne – wystarczy powiedzieć, a dentysta może podać dodatkowe znieczulenie. Po zabiegu ząb może być wrażliwy przez kilka dni, to normalne."
+      },
+      {
+        "question": "Co oznacza endometria?",
+        "answer": "Endometria to dokładny pomiar długości kanału korzeniowego za pomocą elektronicznego urządzenia pomiarowego. Jest to bardzo ważne, aby czyszczenie i wypełnienie sięgało do końca korzenia, ale nie dalej. Endometria jest obowiązkowa przy każdym leczeniu kanałowym i jest już uwzględniona w kodach taryfowych."
+      },
+      {
+        "question": "Ile kosztuje leczenie kanałowe z jednym kanałem?",
+        "answer": "Oficjalna wartość TP to 265.00 dla UV/MV/IV. Dla pacjentów prywatnych (PP) cena wynosi od 225.30 do 304.80 TP. Do tego dochodzą koszty znieczulenia (4.0650, 38.40 TP), koferdamu (4.0940, 22.70 TP), wypełnienia tymczasowego (4.5000, 38.40 TP) oraz ewentualnie zdjęć rentgenowskich (4.0500, 19.20 TP). Często używany jest do tego pakiet uzupełniający 4.4991.LP (118.70 TP). Rzeczywista cena we frankach zależy od wartości punktu w klinice (zwykle 1.00–1.30 CHF za TP). Poproś o pisemną wycenę przed zabiegiem!"
+      },
+      {
+        "question": "Co dzieje się po leczeniu kanałowym?",
+        "answer": "Po leczeniu kanałowym ząb jest zamykany tymczasowym wypełnieniem (4.5000). Później (często podczas następnej sesji) ząb jest odbudowywany za pomocą wypełnienia ostatecznego (np. kompozytowego, 4.5350 itd.) lub korony (4.7070 itd.). Jest to ważne, ponieważ ząb po leczeniu kanałowym może stać się bardziej kruchy. Dentysta powie Ci, kiedy wrócić na ostateczną odbudowę."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis trajtimit kanali në një seancë dhe në disa seanca?",
+        "answer": "Në trajtimin e kanalit në një seancë (4.4600), gjithçka – pastrimi, përgatitja dhe mbushja e kanalit – bëhet në një takim të vetëm. Kjo është e mundur kur dhëmbi nuk është shumë i përflakur. Në disa seanca (4.4400, 4.4500, 4.4550 etj.), vendoset një ilaç në kanal midis takimeve. Kjo është e nevojshme në rast të inflamacionit të rëndë ose rasteve të komplikuara. Çmimi është pak më i lartë për një seancë, por kursen kohë."
+      },
+      {
+        "question": "A është i dhimbshëm trajtimi i kanalit?",
+        "answer": "Jo. Dentisti mpin dhëmbin paraprakisht me anestezi lokale (4.0650). Gjatë trajtimit nuk ndjen asgjë. Nëse dhëmbi ishte tashmë shumë i përflakur, anestezia ndonjëherë mund të jetë më pak efektive – mjafton të thuash, dhe dentisti mund të japë më shumë anestezi. Pas trajtimit, dhëmbi mund të jetë i ndjeshëm për disa ditë, kjo është normale."
+      },
+      {
+        "question": "Çfarë do të thotë endometri?",
+        "answer": "Endometria është matja e saktë e gjatësisë së kanalit të rrënjës duke përdorur një pajisje matëse elektronike. Kjo është shumë e rëndësishme në mënyrë që pastrimi dhe mbushja të shkojnë deri në majën e rrënjës, por jo më tej. Endometria është e detyrueshme për çdo trajtim kanali dhe tashmë është përfshirë në kodet tarifore."
+      },
+      {
+        "question": "Sa kushton një trajtim kanali me një kanal?",
+        "answer": "Vlera zyrtare TP është 265.00 për UV/MV/IV. Për pacientët privatë (PP), çmimi është midis 225.30 dhe 304.80 TP. Këtyre u shtohen kostot për anestezinë (4.0650, 38.40 TP), digën (4.0940, 22.70 TP), mbushjen e përkohshme (4.5000, 38.40 TP) dhe eventualisht rrezet X (4.0500, 19.20 TP). Paketa shtesë 4.4991.LP (118.70 TP) përdoret shpesh për këtë. Çmimi aktual në franga varet nga vlera e pikës së klinikës (zakonisht 1.00–1.30 CHF për TP). Kërko një vlerësim me shkrim paraprakisht!"
+      },
+      {
+        "question": "Çfarë ndodh pas trajtimit të kanalit?",
+        "answer": "Pas trajtimit të kanalit, dhëmbi mbyllet me një mbushje të përkohshme (4.5000). Më vonë (shpesh në seancën tjetër), dhëmbi rindërtohet me një mbushje definitive (p.sh., kompozit, 4.5350 etj.) ose një kurorë (4.7070 etj.). Kjo është e rëndësishme sepse një dhëmb i trajtuar me kanal mund të bëhet më i brishtë. Dentisti yt do të të tregojë se kur të kthehesh për rindërtimin definitiv."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bir seansta kanal tedavisi ile birden fazla seansta kanal tedavisi arasındaki fark nedir?",
+        "answer": "Bir seansta kanal tedavisinde (4.4600), her şey – kanalın temizlenmesi, şekillendirilmesi ve doldurulması – tek bir randevuda yapılır. Bu, diş çok iltihaplı değilse mümkündür. Birden fazla seansta (4.4400, 4.4500, 4.4550 vb.), randevular arasında kanala ilaç konulur. Bu, şiddetli iltihap veya karmaşık vakalarda gereklidir. Fiyat bir seans için biraz daha yüksektir, ancak zamandan tasarruf edersin."
+      },
+      {
+        "question": "Kanal tedavisi ağrılı mıdır?",
+        "answer": "Hayır. Diş hekimi dişi önceden lokal anestezi (4.0650) ile iyice uyuşturur. Tedavi sırasında hiçbir şey hissetmezsin. Diş zaten çok iltihaplıysa, anestezi bazen daha az etkili olabilir – söylemen yeterli, diş hekimi daha fazla anestezi yapabilir. Tedaviden sonra diş birkaç gün hassas olabilir, bu normaldir."
+      },
+      {
+        "question": "Endometri ne anlama geliyor?",
+        "answer": "Endometri, kök kanalı uzunluğunun elektronik bir ölçüm cihazı ile hassas bir şekilde ölçülmesidir. Bu, temizlik ve dolgunun kök ucuna kadar gitmesi, ancak ötesine geçmemesi için çok önemlidir. Endometri her kanal tedavisinde zorunludur ve tarife kodlarında zaten dahildir."
+      },
+      {
+        "question": "Tek kanallı bir kanal tedavisi ne kadardır?",
+        "answer": "Resmi TP değeri UV/MV/IV için 265.00'dır. Özel hastalar (PP) için fiyat 225.30 ile 304.80 TP arasındadır. Buna anestezi (4.0650, 38.40 TP), kofferdam (4.0940, 22.70 TP), geçici dolgu (4.5000, 38.40 TP) ve muhtemelen röntgen (4.0500, 19.20 TP) için masraflar eklenir. Bunun için genellikle ek paket 4.4991.LP (118.70 TP) kullanılır. Frank cinsinden gerçek fiyat, kliniğin puan değerine bağlıdır (genellikle TP başına 1.00–1.30 CHF). Önceden yazılı maliyet tahmini iste!"
+      },
+      {
+        "question": "Kanal tedavisinden sonra ne olur?",
+        "answer": "Kanal tedavisinden sonra diş geçici bir dolgu (4.5000) ile kapatılır. Daha sonra (genellikle bir sonraki seansta) diş, kesin bir dolgu (örneğin kompozit, 4.5350 vb.) veya bir kuron (4.7070 vb.) ile yeniden inşa edilir. Bu önemlidir çünkü kanal tedavisi görmüş bir diş daha kırılgan hale gelebilir. Diş hekimin kesin restorasyon için ne zaman geri döneceğini söyleyecektir."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između liječenja korijenskog kanala u jednoj seansi i u više seansi?",
+        "answer": "Kod liječenja korijenskog kanala u jednoj seansi (4.4600), sve – čišćenje, oblikovanje i ispuna kanala – obavlja se u jednom terminu. To je moguće kada zub nije jako upaljen. Kod više seansi (4.4400, 4.4500, 4.4550 itd.), između termina stavlja se lijek u kanal. To je potrebno kod teških upala ili kompliciranih slučajeva. Cijena je nešto viša za jednu seansu, ali štediš vrijeme."
+      },
+      {
+        "question": "Je li liječenje korijenskog kanala bolno?",
+        "answer": "Ne. Zubar prethodno temeljito umrtvi zub lokalnom anestezijom (4.0650). Tijekom liječenja ne osjećaš ništa. Ako je zub već bio jako upaljen, anestezija ponekad može biti manje učinkovita – jednostavno reci, a zubar može dati dodatnu anesteziju. Nakon liječenja, zub može biti osjetljiv nekoliko dana, to je normalno."
+      },
+      {
+        "question": "Što znači endometrija?",
+        "answer": "Endometrija je točno mjerenje duljine korijenskog kanala pomoću elektroničkog mjernog uređaja. To je vrlo važno kako bi čišćenje i ispuna išli do vrha korijena, ali ne dalje. Endometrija je obvezna za svako liječenje kanala i već je uključena u tarifne kodove."
+      },
+      {
+        "question": "Koliko košta liječenje korijenskog kanala s jednim kanalom?",
+        "answer": "Službena TP vrijednost je 265.00 za UV/MV/IV. Za privatne pacijente (PP) cijena je između 225.30 i 304.80 TP. Tome se dodaju troškovi anestezije (4.0650, 38.40 TP), kofferdama (4.0940, 22.70 TP), privremene ispune (4.5000, 38.40 TP) i eventualno rendgena (4.0500, 19.20 TP). Za to se često koristi dodatni paket 4.4991.LP (118.70 TP). Stvarna cijena u francima ovisi o vrijednosti boda klinike (obično 1.00–1.30 CHF po TP). Zatraži pismenu procjenu troškova prije zahvata!"
+      },
+      {
+        "question": "Što se događa nakon liječenja korijenskog kanala?",
+        "answer": "Nakon liječenja korijenskog kanala, zub se zatvara privremenom ispunom (4.5000). Kasnije (često na sljedećoj seansi), zub se obnavlja definitivnom ispunom (npr. kompozit, 4.5350 itd.) ili krunom (4.7070 itd.). To je važno jer zub nakon liječenja kanala može postati lomljiviji. Zubar će ti reći kada se vratiti na definitivnu obnovu."
+      }
+    ],
+    "ta": [
+      {
+        "question": "ஒரு அமர்வில் வேர் கால்வாய் சிகிச்சைக்கும் பல அமர்வுகளில் சிகிச்சைக்கும் என்ன வித்தியாசம்?",
+        "answer": "ஒரு அமர்வில் வேர் கால்வாய் சிகிச்சையில் (4.4600), எல்லாம் – கால்வாயை சுத்தம் செய்தல், வடிவமைத்தல் மற்றும் நிரப்புதல் – ஒரே சந்திப்பில் செய்யப்படுகிறது. பல் மிகவும் வீங்கியிருக்கவில்லை என்றால் இது சாத்தியமாகும். பல அமர்வுகளில் (4.4400, 4.4500, 4.4550 போன்றவை), சந்திப்புகளுக்கு இடையில் கால்வாயில் மருந்து வைக்கப்படுகிறது. கடுமையான வீக்கம் அல்லது சிக்கலான நிகழ்வுகளில் இது அவசியம். ஒரு அமர்வுக்கு விலை சற்று அதிகம், ஆனால் நேரத்தை மிச்சப்படுத்துகிறது."
+      },
+      {
+        "question": "வேர் கால்வாய் சிகிச்சை வலியை ஏற்படுத்துமா?",
+        "answer": "இல்லை. பல் மருத்துவர் பல்லை முன்கூட்டியே உள்ளூர் மரத்துப்போகச் செய்தலுடன் (4.0650) முழுமையாக மரத்துப்போகச் செய்கிறார். சிகிச்சையின் போது உங்களுக்கு எதுவும் தெரியாது. பல் ஏற்கனவே மிகவும் வீங்கியிருந்தால், மரத்துப்போகச் செய்தல் சில நேரங்களில் குறைவான பலனைத் தரலாம் – சொன்னால் போதும், பல் மருத்துவர் மேலும் மரத்துப்போகச் செய்யலாம். சிகிச்சைக்குப் பிறகு, பல் சில நாட்களுக்கு உணர்திறன் கொண்டிருக்கலாம், இது இயல்பானது."
+      },
+      {
+        "question": "எண்டோமெட்ரி என்றால் என்ன?",
+        "answer": "எண்டோமெட்ரி என்பது எலக்ட்ரானிக் அளவீட்டு சாதனத்தைப் பயன்படுத்தி வேர் கால்வாயின் நீளத்தை துல்லியமாக அளவிடுவதாகும். சுத்தம் மற்றும் நிரப்புதல் வேரின் நுனி வரை செல்வதற்கு, ஆனால் அதற்கு அப்பால் செல்லாமல் இருப்பதற்கு இது மிகவும் முக்கியமானது. எண்டோமெட்ரி ஒவ்வொரு வேர் கால்வாய் சிகிச்சைக்கும் கட்டாயமானது மற்றும் ஏற்கனவே கட்டண குறியீடுகளில் சேர்க்கப்பட்டுள்ளது."
+      },
+      {
+        "question": "ஒரு கால்வாயுடன் கூடிய வேர் கால்வாய் சிகிச்சைக்கு எவ்வளவு செலவாகும்?",
+        "answer": "அதிகாரப்பூர்வ TP மதிப்பு UV/MV/IV க்கு 265.00 ஆகும். தனியார் நோயாளிகளுக்கு (PP), விலை 225.30 முதல் 304.80 TP வரை இருக்கும். இதில் மரத்துப்போகச் செய்தல் (4.0650, 38.40 TP), காஃபர் டேம் (4.0940, 22.70 TP), தற்காலிக நிரப்புதல் (4.5000, 38.40 TP) மற்றும் எக்ஸ்-ரே (4.0500, 19.20 TP) ஆகியவற்றிற்கான செலவுகள் சேர்க்கப்படும். இதற்கு பெரும்பாலும் கூடுதல் தொகுப்பு 4.4991.LP (118.70 TP) பயன்படுத்தப்படுகிறது. ஃபிராங்க்களில் உண்மையான விலை கிளினிக்கின் புள்ளி மதிப்பைப் பொறுத்தது (வழக்கமாக TP க்கு 1.00–1.30 CHF). முன்கூட்டியே எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "வேர் கால்வாய் சிகிச்சைக்குப் பிறகு என்ன நடக்கும்?",
+        "answer": "வேர் கால்வாய் சிகிச்சைக்குப் பிறகு, பல் தற்காலிக நிரப்புதலுடன் (4.5000) மூடப்படுகிறது. பின்னர் (பெரும்பாலும் அடுத்த அமர்வில்), பல் ஒரு நிரந்தர நிரப்புதலுடன் (எ.கா., கலவை, 4.5350 போன்றவை) அல்லது ஒரு கிரீடத்துடன் (4.7070 போன்றவை) மீண்டும் கட்டமைக்கப்படுகிறது. இது முக்கியமானது, ஏனெனில் வேர் சிகிச்சை பெற்ற பல் மிகவும் உடையக்கூடியதாக மாறக்கூடும். நிரந்தர மீள்கட்டுமானத்திற்கு எப்போது திரும்பி வர வேண்டும் என்று உங்கள் பல் மருத்துவர் கூறுவார்."
+      }
+    ]
+  }
+}

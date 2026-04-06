@@ -1,0 +1,516 @@
+{
+  "code": "4.2530.LP",
+  "name_de": "Implantatinsertion, pro Fall / Behandlungsplanung UV/MV",
+  "display_name": {
+    "de": "Implantat-Paket (UV/MV)",
+    "fr": "Forfait implant (UV/MV)",
+    "it": "Pacchetto impianto (UV/MV)",
+    "en": "Implant package (UV/MV)",
+    "es": "Paquete de implante (UV/MV)",
+    "pt": "Pacote de implante (UV/MV)",
+    "pl": "Pakiet implantu (UV/MV)",
+    "al": "Paketa e implantit (UV/MV)",
+    "tr": "İmplant paketi (UV/MV)",
+    "hr": "Paket implantata (UV/MV)",
+    "ta": "உள்வைப்பு தொகுப்பு (UV/MV)"
+  },
+  "search_keywords": {
+    "de": ["implantat paket", "lp", "leistungspaket", "implantatinsertion", "behandlungsplanung", "uv/mv"],
+    "fr": ["forfait implant", "lp", "pack de prestations", "insertion d'implant", "planification de traitement", "uv/mv"],
+    "it": ["pacchetto impianto", "lp", "pacchetto di prestazioni", "inserimento impianto", "pianificazione trattamento", "uv/mv"],
+    "en": ["implant package", "lp", "service package", "implant placement", "treatment planning", "uv/mv"],
+    "es": ["paquete de implante", "lp", "paquete de prestaciones", "colocación de implante", "planificación de tratamiento", "uv/mv"],
+    "pt": ["pacote de implante", "lp", "pacote de prestações", "colocação de implante", "planeamento de tratamento", "uv/mv"],
+    "pl": ["pakiet implantu", "lp", "pakiet usług", "wszczepienie implantu", "planowanie leczenia", "uv/mv"],
+    "al": ["paketa e implantit", "lp", "paketa e shërbimeve", "vendosje implanti", "planifikim trajtimi", "uv/mv"],
+    "tr": ["implant paketi", "lp", "hizmet paketi", "implant yerleştirme", "tedavi planlaması", "uv/mv"],
+    "hr": ["paket implantata", "lp", "paket usluga", "postavljanje implantata", "planiranje liječenja", "uv/mv"],
+    "ta": ["உள்வைப்பு தொகுப்பு", "எல்பி", "சேவை தொகுப்பு", "உள்வைப்பு பொருத்துதல்", "சிகிச்சை திட்டமிடல்", "uv/mv"]
+  },
+  "tp_uv_mviv": 1103.00,
+  "tp_pp_max": null,
+  "tp_pp_min": null,
+  "chapter": "15.05",
+  "coverage": "UV/MV",
+  "simple_explain": {
+    "de": "Das ist ein spezielles Behandlungspaket für die Unfall- und Militärversicherung (UV/MV). Wenn du ein Zahnimplantat brauchst (z.B. nach einem Unfall), fasst dieses Paket alle notwendigen Leistungen zusammen: die Planung, das Setzen des Implantats, die Nachsorge und alles, was dazu gehört. So wird die Abrechnung einfacher. Das Paket gilt nur für UV/MV – nicht für die Invalidenversicherung (IV). Materialkosten für das Implantat selbst kommen noch dazu.",
+    "fr": "Il s'agit d'un forfait de traitement spécial pour l'assurance accidents et militaire (UV/MV). Si vous avez besoin d'un implant dentaire (par exemple après un accident), ce forfait regroupe toutes les prestations nécessaires: la planification, la pose de l'implant, le suivi et tout ce qui s'y rapporte. Cela simplifie la facturation. Ce forfait ne s'applique qu'à UV/MV – pas à l'assurance invalidité (IV). Les coûts des matériaux pour l'implant lui-même s'ajoutent.",
+    "it": "Questo è un pacchetto di trattamento speciale per l'assicurazione infortuni e militare (UV/MV). Se hai bisogno di un impianto dentale (ad esempio dopo un infortunio), questo pacchetto raggruppa tutte le prestazioni necessarie: la pianificazione, l'inserimento dell'impianto, il follow-up e tutto ciò che ne fa parte. Questo semplifica la fatturazione. Il pacchetto vale solo per UV/MV – non per l'assicurazione invalidità (IV). I costi dei materiali per l'impianto stesso si aggiungono.",
+    "en": "This is a special treatment package for accident and military insurance (UV/MV). If you need a dental implant (e.g., after an accident), this package combines all necessary services: planning, implant placement, follow-up, and everything related. This simplifies billing. The package only applies to UV/MV – not to disability insurance (IV). Material costs for the implant itself are additional.",
+    "es": "Este es un paquete de tratamiento especial para el seguro de accidentes y militar (UV/MV). Si necesitas un implante dental (por ejemplo, después de un accidente), este paquete agrupa todas las prestaciones necesarias: la planificación, la colocación del implante, el seguimiento y todo lo relacionado. Esto simplifica la facturación. El paquete solo se aplica a UV/MV – no al seguro de invalidez (IV). Los costos de material para el implante mismo se añaden.",
+    "pt": "Este é um pacote de tratamento especial para o seguro de acidentes e militar (UV/MV). Se precisas de um implante dentário (por exemplo, após um acidente), este pacote agrupa todas as prestações necessárias: o planeamento, a colocação do implante, o acompanhamento e tudo o que está relacionado. Isto simplifica a faturação. O pacote só se aplica a UV/MV – não ao seguro de invalidez (IV). Os custos de material para o próprio implante são adicionais.",
+    "pl": "Jest to specjalny pakiet leczenia dla ubezpieczenia wypadkowego i wojskowego (UV/MV). Jeśli potrzebujesz implantu stomatologicznego (na przykład po wypadku), ten pakiet łączy wszystkie niezbędne usługi: planowanie, wszczepienie implantu, opiekę kontrolną i wszystko, co z tym związane. Upraszcza to rozliczanie. Pakiet dotyczy tylko UV/MV – nie ubezpieczenia inwalidzkiego (IV). Koszty materiałów samego implantu są dodatkowe.",
+    "al": "Ky është një paketë e veçantë trajtimi për sigurimin e aksidenteve dhe ushtarak (UV/MV). Nëse keni nevojë për një implant dentar (p.sh., pas një aksidenti), kjo paketë kombinon të gjitha shërbimet e nevojshme: planifikimin, vendosjen e implantit, ndjekjen dhe gjithçka që lidhet me të. Kjo thjeshton faturimin. Paketa vlen vetëm për UV/MV – jo për sigurimin e invaliditetit (IV). Kostot materiale për vetë implantin janë shtesë.",
+    "tr": "Bu, kaza ve askerlik sigortası (UV/MV) için özel bir tedavi paketidir. Diş implantına ihtiyacınız varsa (örneğin bir kazadan sonra), bu paket gerekli tüm hizmetleri birleştirir: planlama, implant yerleştirme, takip ve ilgili her şey. Bu, faturalandırmayı basitleştirir. Paket yalnızca UV/MV için geçerlidir – engellilik sigortası (IV) için değildir. İmplantın kendisi için malzeme maliyetleri ek olarak gelir.",
+    "hr": "Ovo je poseban paket liječenja za osiguranje od nezgode i vojno osiguranje (UV/MV). Ako trebate dentalni implantat (npr. nakon nesreće), ovaj paket objedinjuje sve potrebne usluge: planiranje, postavljanje implantata, praćenje i sve što je povezano. To pojednostavljuje naplatu. Paket vrijedi samo za UV/MV – ne za invalidsko osiguranje (IV). Troškovi materijala za sam implantat su dodatni.",
+    "ta": "இது விபத்து மற்றும் இராணுவ காப்பீட்டுக்கான (UV/MV) சிறப்பு சிகிச்சை தொகுப்பாகும். உங்களுக்கு பல் உள்வைப்பு தேவைப்பட்டால் (எ.கா., ஒரு விபத்துக்குப் பிறகு), இந்த தொகுப்பு அனைத்து தேவையான சேவைகளையும் ஒருங்கிணைக்கிறது: திட்டமிடல், உள்வைப்பு பொருத்துதல், பின்தொடர்தல் மற்றும் தொடர்புடைய அனைத்தும். இது கணக்கிடுதலை எளிதாக்குகிறது. தொகுப்பு UV/MV க்கு மட்டுமே பொருந்தும் – ஊனமுறை காப்பீட்டுக்கு (IV) அல்ல. உள்வைப்புக்கான பொருள் செலவுகள் கூடுதலாகும்."
+  },
+  "what_is_included": {
+    "de": [
+      "📦 **Leistungspaket für UV/MV (gilt nicht für IV)**",
+      "🦷 **Enthaltene Einzelleistungen:**",
+      "   • 4.0020 Kurzbefundaufnahme",
+      "   • 4.0500 Intraorales Röntgenbild",
+      "   • 4.0650 Infiltrationsanästhesie",
+      "   • 4.0970 Extraorale oder intraorale Fotoaufnahme",
+      "   • 4.2500 Erstbeurteilung und Aufklärung Patient, pro Behandlungsfall",
+      "   • 4.2530 Implantatinsertion",
+      "   • 4.2570 Wiedereröffnungsoperation",
+      "   • 4.2950 Naht, pro Naht (2 Nähte)",
+      "🧾 **Verbrauchsmaterial** inbegriffen",
+      "⚠️ **Wichtig:** Materialkosten für Implantat, Abutment und Hilfsteile werden mit Typisierung (Kapitel 19) separat verrechnet"
+    ],
+    "fr": [
+      "📦 **Forfait de prestations pour UV/MV (ne s'applique pas à IV)**",
+      "🦷 **Prestations individuelles incluses:**",
+      "   • 4.0020 Examen d'urgence court",
+      "   • 4.0500 Radiographie intra-orale",
+      "   • 4.0650 Anesthésie par infiltration",
+      "   • 4.0970 Photographie extra-orale ou intra-orale",
+      "   • 4.2500 Évaluation initiale et information du patient, par cas de traitement",
+      "   • 4.2530 Insertion d'implant",
+      "   • 4.2570 Opération de réouverture",
+      "   • 4.2950 Suture, par suture (2 sutures)",
+      "🧾 **Matériel consommable** inclus",
+      "⚠️ **Important:** Les coûts des matériaux pour l'implant, le pilier et les pièces auxiliaires sont facturés séparément avec typification (chapitre 19)"
+    ],
+    "it": [
+      "📦 **Pacchetto di prestazioni per UV/MV (non applicabile a IV)**",
+      "🦷 **Prestazioni individuali incluse:**",
+      "   • 4.0020 Esame d'emergenza breve",
+      "   • 4.0500 Radiografia intraorale",
+      "   • 4.0650 Anestesia per infiltrazione",
+      "   • 4.0970 Fotografia extraorale o intraorale",
+      "   • 4.2500 Valutazione iniziale e informazione del paziente, per caso di trattamento",
+      "   • 4.2530 Inserimento impianto",
+      "   • 4.2570 Operazione di riapertura",
+      "   • 4.2950 Sutura, per sutura (2 suture)",
+      "🧾 **Materiale di consumo** incluso",
+      "⚠️ **Importante:** I costi dei materiali per l'impianto, il pilastro e le parti ausiliarie sono fatturati separatamente con tipizzazione (capitolo 19)"
+    ],
+    "en": [
+      "📦 **Service package for UV/MV (not applicable to IV)**",
+      "🦷 **Individual services included:**",
+      "   • 4.0020 Short emergency examination",
+      "   • 4.0500 Intraoral X-ray",
+      "   • 4.0650 Infiltration anesthesia",
+      "   • 4.0970 Extraoral or intraoral photograph",
+      "   • 4.2500 Initial assessment and patient information, per treatment case",
+      "   • 4.2530 Implant placement",
+      "   • 4.2570 Reopening operation",
+      "   • 4.2950 Suture, per suture (2 sutures)",
+      "🧾 **Consumables** included",
+      "⚠️ **Important:** Material costs for the implant, abutment, and auxiliary parts are billed separately with typing (chapter 19)"
+    ],
+    "es": [
+      "📦 **Paquete de prestaciones para UV/MV (no aplica a IV)**",
+      "🦷 **Prestaciones individuales incluidas:**",
+      "   • 4.0020 Examen de emergencia breve",
+      "   • 4.0500 Radiografía intraoral",
+      "   • 4.0650 Anestesia por infiltración",
+      "   • 4.0970 Fotografía extraoral o intraoral",
+      "   • 4.2500 Evaluación inicial e información del paciente, por caso de tratamiento",
+      "   • 4.2530 Colocación de implante",
+      "   • 4.2570 Operación de reapertura",
+      "   • 4.2950 Sutura, por sutura (2 suturas)",
+      "🧾 **Consumibles** incluidos",
+      "⚠️ **Importante:** Los costos de material para el implante, el pilar y las partes auxiliares se facturan por separado con tipificación (capítulo 19)"
+    ],
+    "pt": [
+      "📦 **Pacote de prestações para UV/MV (não aplicável a IV)**",
+      "🦷 **Prestações individuais incluídas:**",
+      "   • 4.0020 Exame de emergência breve",
+      "   • 4.0500 Radiografia intraoral",
+      "   • 4.0650 Anestesia por infiltração",
+      "   • 4.0970 Fotografia extraoral ou intraoral",
+      "   • 4.2500 Avaliação inicial e informação do paciente, por caso de tratamento",
+      "   • 4.2530 Colocação de implante",
+      "   • 4.2570 Operação de reabertura",
+      "   • 4.2950 Sutura, por sutura (2 suturas)",
+      "🧾 **Consumíveis** incluídos",
+      "⚠️ **Importante:** Os custos de material para o implante, o pilar e as partes auxiliares são faturados separadamente com tipificação (capítulo 19)"
+    ],
+    "pl": [
+      "📦 **Pakiet usług dla UV/MV (nie dotyczy IV)**",
+      "🦷 **Zawarte usługi indywidualne:**",
+      "   • 4.0020 Krótkie badanie w nagłych przypadkach",
+      "   • 4.0500 Rentgen wewnątrzustny",
+      "   • 4.0650 Znieczulenie nasiękowe",
+      "   • 4.0970 Zdjęcie zewnątrzustne lub wewnątrzustne",
+      "   • 4.2500 Ocena wstępna i informacja pacjenta, na przypadek leczenia",
+      "   • 4.2530 Wszczepienie implantu",
+      "   • 4.2570 Operacja ponownego otwarcia",
+      "   • 4.2950 Szwy, za szew (2 szwy)",
+      "🧾 **Materiały eksploatacyjne** wliczone",
+      "⚠️ **Ważne:** Koszty materiałów implantu, łącznika i części pomocniczych są rozliczane osobno z typizacją (rozdział 19)"
+    ],
+    "al": [
+      "📦 **Paketa e shërbimeve për UV/MV (nuk vlen për IV)**",
+      "🦷 **Shërbimet individuale të përfshira:**",
+      "   • 4.0020 Ekzaminim i shkurtër emergjent",
+      "   • 4.0500 Rreze X intraorale",
+      "   • 4.0650 Anestezi me infiltrim",
+      "   • 4.0970 Fotografi ekstraorale ose intraorale",
+      "   • 4.2500 Vlerësimi fillestar dhe informimi i pacientit, për rast trajtimi",
+      "   • 4.2530 Vendosja e implantit",
+      "   • 4.2570 Operacioni i rihapjes",
+      "   • 4.2950 Qepje, për qepje (2 qepje)",
+      "🧾 **Materiale harxhuese** të përfshira",
+      "⚠️ **E rëndësishme:** Kostot materiale për implantin, abutmentin dhe pjesët ndihmëse faturohen veçmas me tipizim (kapitulli 19)"
+    ],
+    "tr": [
+      "📦 **UV/MV için hizmet paketi (IV için geçerli değildir)**",
+      "🦷 **Dahil olan bireysel hizmetler:**",
+      "   • 4.0020 Kısa acil muayene",
+      "   • 4.0500 Ağız içi röntgen",
+      "   • 4.0650 İnfiltrasyon anestezisi",
+      "   • 4.0970 Ağız dışı veya ağız içi fotoğraf",
+      "   • 4.2500 İlk değerlendirme ve hasta bilgilendirmesi, tedavi vakası başına",
+      "   • 4.2530 İmplant yerleştirme",
+      "   • 4.2570 Yeniden açma operasyonu",
+      "   • 4.2950 Dikiş, dikiş başına (2 dikiş)",
+      "🧾 **Sarf malzemeleri** dahildir",
+      "⚠️ **Önemli:** İmplant, abutment ve yardımcı parçalar için malzeme maliyetleri tipizasyon ile ayrı faturalandırılır (bölüm 19)"
+    ],
+    "hr": [
+      "📦 **Paket usluga za UV/MV (ne vrijedi za IV)**",
+      "🦷 **Pojedinačne usluge uključene:**",
+      "   • 4.0020 Kratki hitni pregled",
+      "   • 4.0500 Intraoralni rendgen",
+      "   • 4.0650 Infiltracijska anestezija",
+      "   • 4.0970 Ekstraoralna ili intraoralna fotografija",
+      "   • 4.2500 Početna procjena i informiranje pacijenta, po slučaju liječenja",
+      "   • 4.2530 Postavljanje implantata",
+      "   • 4.2570 Operacija ponovnog otvaranja",
+      "   • 4.2950 Šav, po šavu (2 šava)",
+      "🧾 **Potrošni materijal** uključen",
+      "⚠️ **Važno:** Troškovi materijala za implantat, abutment i pomoćne dijelove naplaćuju se zasebno s tipizacijom (poglavlje 19)"
+    ],
+    "ta": [
+      "📦 **UV/MV க்கான சேவை தொகுப்பு (IV க்கு பொருந்தாது)**",
+      "🦷 **சேர்க்கப்பட்டுள்ள தனிப்பட்ட சேவைகள்:**",
+      "   • 4.0020 குறுகிய அவசர பரிசோதனை",
+      "   • 4.0500 வாய்க்குள் எக்ஸ்-ரே",
+      "   • 4.0650 ஊடுருவல் மரத்துப்போகச் செய்தல்",
+      "   • 4.0970 வாய்க்கு வெளியே அல்லது வாய்க்குள் புகைப்படம்",
+      "   • 4.2500 ஆரம்ப மதிப்பீடு மற்றும் நோயாளி தகவல், சிகிச்சை வழக்குக்கு",
+      "   • 4.2530 உள்வைப்பு பொருத்துதல்",
+      "   • 4.2570 மீண்டும் திறப்பு அறுவை சிகிச்சை",
+      "   • 4.2950 தையல், ஒவ்வொரு தையலுக்கும் (2 தையல்கள்)",
+      "🧾 **நுகர்பொருட்கள்** சேர்க்கப்பட்டுள்ளன",
+      "⚠️ **முக்கியம்:** உள்வைப்பு, அபட்மென்ட் மற்றும் துணை பாகங்களுக்கான பொருள் செலவுகள் வகைப்படுத்தலுடன் தனித்தனியாக கணக்கிடப்படும் (அத்தியாயம் 19)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "📦 **Nur für UV/MV** (Unfall- und Militärversicherung) – **nicht für IV**",
+      "🦷 **Pro Fall / Behandlungsplanung** maximal 1 mal verrechenbar",
+      "🔧 **Zusätzliche Implantate** in gleicher Planung, in gleicher Sitzung werden mit 4.2540.LP abgerechnet",
+      "🪡 **Nähte, Röntgen, Anästhesie, Wundkontrolle:** Diese sind in diesem Paket enthalten",
+      "💰 **Materialkosten:** Implantat, Abutment und Hilfsteile werden mit Typisierung (Kapitel 19) separat verrechnet",
+      "🔩 **Bohrschablone:** Nur nach Rücksprache mit dem Versicherer verrechenbar",
+      "📋 **Aufklärung:** Die Tarifziffer 4.0110 «Instruktion und Aufklärung des Patienten» ist in diesem Paket enthalten",
+      "⚠️ **Wichtig:** Dies ist ein Leistungspaket, keine Pauschale. Bei nachweisbarem Mehraufwand können zusätzliche Einzelleistungen verrechnet werden"
+    ],
+    "fr": [
+      "📦 **Uniquement pour UV/MV** (assurance accidents et militaire) – **pas pour IV**",
+      "🦷 **Par cas / planification de traitement** maximum 1 fois facturable",
+      "🔧 **Implants supplémentaires** dans la même planification, dans la même séance sont facturés avec 4.2540.LP",
+      "🪡 **Sutures, radiographie, anesthésie, contrôle de la plaie:** Ceux-ci sont inclus dans ce forfait",
+      "💰 **Coûts des matériaux:** L'implant, le pilier et les pièces auxiliaires sont facturés séparément avec typification (chapitre 19)",
+      "🔩 **Guide de forage:** Facturable uniquement après consultation de l'assureur",
+      "📋 **Information:** Le code 4.0110 «Instruction et information du patient» est inclus dans ce forfait",
+      "⚠️ **Important:** Il s'agit d'un forfait de prestations, pas d'un forfait global. En cas de surcroît de travail justifié, des prestations individuelles supplémentaires peuvent être facturées"
+    ],
+    "it": [
+      "📦 **Solo per UV/MV** (assicurazione infortuni e militare) – **non per IV**",
+      "🦷 **Per caso / pianificazione trattamento** massimo 1 volta fatturabile",
+      "🔧 **Impianti aggiuntivi** nella stessa pianificazione, nella stessa seduta sono fatturati con 4.2540.LP",
+      "🪡 **Suture, radiografia, anestesia, controllo della ferita:** Questi sono inclusi in questo pacchetto",
+      "💰 **Costi dei materiali:** L'impianto, il pilastro e le parti ausiliarie sono fatturati separatamente con tipizzazione (capitolo 19)",
+      "🔩 **Guida di foratura:** Fatturabile solo dopo consultazione con l'assicuratore",
+      "📋 **Informazione:** Il codice 4.0110 «Istruzione e informazione del paziente» è incluso in questo pacchetto",
+      "⚠️ **Importante:** Si tratta di un pacchetto di prestazioni, non di una tariffa forfettaria. In caso di maggiore onere documentato, possono essere fatturate prestazioni individuali aggiuntive"
+    ],
+    "en": [
+      "📦 **Only for UV/MV** (accident and military insurance) – **not for IV**",
+      "🦷 **Per case / treatment planning** maximum 1 time billable",
+      "🔧 **Additional implants** in the same planning, in the same session are billed with 4.2540.LP",
+      "🪡 **Sutures, X-ray, anesthesia, wound control:** These are included in this package",
+      "💰 **Material costs:** Implant, abutment, and auxiliary parts are billed separately with typing (chapter 19)",
+      "🔩 **Drill guide:** Billable only after consultation with the insurer",
+      "📋 **Information:** Code 4.0110 «Instruction and information of the patient» is included in this package",
+      "⚠️ **Important:** This is a service package, not a flat rate. In case of proven additional effort, additional individual services may be billed"
+    ],
+    "es": [
+      "📦 **Solo para UV/MV** (seguro de accidentes y militar) – **no para IV**",
+      "🦷 **Por caso / planificación de tratamiento** máximo 1 vez facturable",
+      "🔧 **Implantes adicionales** en la misma planificación, en la misma sesión se facturan con 4.2540.LP",
+      "🪡 **Suturas, radiografía, anestesia, control de la herida:** Estos están incluidos en este paquete",
+      "💰 **Costos de materiales:** El implante, el pilar y las partes auxiliares se facturan por separado con tipificación (capítulo 19)",
+      "🔩 **Guía de perforación:** Facturable solo después de consultar con el asegurador",
+      "📋 **Información:** El código 4.0110 «Instrucción e información del paciente» está incluido en este paquete",
+      "⚠️ **Importante:** Este es un paquete de prestaciones, no una tarifa plana. En caso de esfuerzo adicional justificado, pueden facturarse prestaciones individuales adicionales"
+    ],
+    "pt": [
+      "📦 **Apenas para UV/MV** (seguro de acidentes e militar) – **não para IV**",
+      "🦷 **Por caso / planeamento de tratamento** máximo 1 vez faturavel",
+      "🔧 **Implantes adicionais** no mesmo planeamento, na mesma sessão são faturados com 4.2540.LP",
+      "🪡 **Suturas, radiografia, anestesia, controlo da ferida:** Estes estão incluídos neste pacote",
+      "💰 **Custos de materiais:** O implante, o pilar e as partes auxiliares são faturados separadamente com tipificação (capítulo 19)",
+      "🔩 **Guia de perfuração:** Faturável apenas após consulta com o segurador",
+      "📋 **Informação:** O código 4.0110 «Instrução e informação do paciente» está incluído neste pacote",
+      "⚠️ **Importante:** Este é um pacote de prestações, não uma tarifa fixa. Em caso de esforço adicional comprovado, podem ser faturadas prestações individuais adicionais"
+    ],
+    "pl": [
+      "📦 **Tylko dla UV/MV** (ubezpieczenie wypadkowe i wojskowe) – **nie dla IV**",
+      "🦷 **Na przypadek / planowanie leczenia** maksymalnie 1 raz do rozliczenia",
+      "🔧 **Dodatkowe implanty** w tym samym planowaniu, w tej samej sesji są rozliczane z 4.2540.LP",
+      "🪡 **Szwy, rentgen, znieczulenie, kontrola rany:** Są one zawarte w tym pakiecie",
+      "💰 **Koszty materiałów:** Implant, łącznik i części pomocnicze są rozliczane osobno z typizacją (rozdział 19)",
+      "🔩 **Szablon wiertniczy:** Rozliczalny tylko po konsultacji z ubezpieczycielem",
+      "📋 **Informacja:** Kod 4.0110 «Instrukcja i informacja pacjenta» jest zawarty w tym pakiecie",
+      "⚠️ **Ważne:** To jest pakiet usług, nie ryczałt. W przypadku udokumentowanego dodatkowego nakładu pracy mogą być rozliczone dodatkowe usługi indywidualne"
+    ],
+    "al": [
+      "📦 **Vetëm për UV/MV** (sigurimi i aksidenteve dhe ushtarak) – **jo për IV**",
+      "🦷 **Për rast / planifikim trajtimi** maksimumi 1 herë e faturoshme",
+      "🔧 **Implante shtesë** në të njëjtin planifikim, në të njëjtën seancë faturohen me 4.2540.LP",
+      "🪡 **Qepjet, rrezet X, anestezia, kontrolli i plagës:** Këto janë të përfshira në këtë paketë",
+      "💰 **Kostot materiale:** Implanti, abutmenti dhe pjesët ndihmëse faturohen veçmas me tipizim (kapitulli 19)",
+      "🔩 **Udhëzuesi i shpimit:** I faturoshëm vetëm pas konsultimit me siguruesin",
+      "📋 **Informimi:** Kodi 4.0110 «Udhëzim dhe informim i pacientit» është i përfshirë në këtë paketë",
+      "⚠️ **E rëndësishme:** Kjo është një paketë shërbimesh, jo një tarifë fikse. Në rast të përpjekjeve shtesë të provuara, mund të faturohen shërbime individuale shtesë"
+    ],
+    "tr": [
+      "📦 **Sadece UV/MV için** (kaza ve askerlik sigortası) – **IV için değil**",
+      "🦷 **Vaka başına / tedavi planlaması** maksimum 1 kez faturalandırılabilir",
+      "🔧 **Aynı planlamada, aynı seansta ek implantlar** 4.2540.LP ile faturalandırılır",
+      "🪡 **Dikişler, röntgen, anestezi, yara kontrolü:** Bunlar bu pakete dahildir",
+      "💰 **Malzeme maliyetleri:** İmplant, abutment ve yardımcı parçalar tipizasyon ile ayrı faturalandırılır (bölüm 19)",
+      "🔩 **Delme kılavuzu:** Yalnızca sigortacı ile görüşüldükten sonra faturalandırılabilir",
+      "📋 **Bilgilendirme:** 4.0110 «Hastanın bilgilendirilmesi ve talimatlandırılması» kodu bu pakete dahildir",
+      "⚠️ **Önemli:** Bu bir hizmet paketidir, sabit ücret değildir. Kanıtlanmış ek çaba durumunda, ek bireysel hizmetler faturalandırılabilir"
+    ],
+    "hr": [
+      "📦 **Samo za UV/MV** (osiguranje od nezgode i vojno osiguranje) – **ne za IV**",
+      "🦷 **Po slučaju / planiranju liječenja** maksimalno 1 put naplativo",
+      "🔧 **Dodatni implantati** u istom planiranju, u istoj seansi naplaćuju se s 4.2540.LP",
+      "🪡 **Šavovi, rendgen, anestezija, kontrola rane:** Oni su uključeni u ovaj paket",
+      "💰 **Troškovi materijala:** Implantat, abutment i pomoćni dijelovi naplaćuju se zasebno s tipizacijom (poglavlje 19)",
+      "🔩 **Vodilica za bušenje:** Naplativo samo nakon konzultacije s osiguravateljem",
+      "📋 **Informiranje:** Kod 4.0110 «Instrukcija i informiranje pacijenta» uključen je u ovaj paket",
+      "⚠️ **Važno:** Ovo je paket usluga, ne paušal. U slučaju dokazanog dodatnog napora, mogu se naplatiti dodatne pojedinačne usluge"
+    ],
+    "ta": [
+      "📦 **UV/MV க்கு மட்டும்** (விபத்து மற்றும் இராணுவ காப்பீடு) – **IV க்கு அல்ல**",
+      "🦷 **ஒவ்வொரு வழக்குக்கும் / சிகிச்சை திட்டமிடலுக்கும்** அதிகபட்சம் 1 முறை கணக்கிடலாம்",
+      "🔧 **அதே திட்டமிடலில், அதே அமர்வில் கூடுதல் உள்வைப்புகள்** 4.2540.LP உடன் கணக்கிடப்படும்",
+      "🪡 **தையல்கள், எக்ஸ்-ரே, மரத்துப்போகச் செய்தல், காயம் கட்டுப்பாடு:** இவை இந்த தொகுப்பில் சேர்க்கப்பட்டுள்ளன",
+      "💰 **பொருள் செலவுகள்:** உள்வைப்பு, அபட்மென்ட் மற்றும் துணை பாகங்கள் வகைப்படுத்தலுடன் தனித்தனியாக கணக்கிடப்படும் (அத்தியாயம் 19)",
+      "🔩 **துளையிடல் வழிகாட்டி:** காப்பீட்டாளருடன் ஆலோசனைக்குப் பிறகு மட்டுமே கணக்கிட முடியும்",
+      "📋 **தகவல்:** 4.0110 «நோயாளியின் அறிவுறுத்தல் மற்றும் தகவல்» குறியீடு இந்த தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "⚠️ **முக்கியம்:** இது ஒரு சேவை தொகுப்பு, ஒரு நிலையான கட்டணம் அல்ல. நிரூபிக்கப்பட்ட கூடுதல் முயற்சி ஏற்பட்டால், கூடுதல் தனிப்பட்ட சேவைகள் கணக்கிடப்படலாம்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen der Einzelleistung 4.2530 und dem Leistungspaket 4.2530.LP?",
+        "answer": "Die Einzelleistung 4.2530 ist nur der chirurgische Teil (Implantat setzen). Das Leistungspaket 4.2530.LP bündelt für UV/MV-Fälle alle notwendigen Leistungen rund um die Implantatversorgung: Kurzbefundaufnahme, Röntgen, Anästhesie, Foto, Planung, Aufklärung, Implantatinsertion, Wiedereröffnung und Nähte. Das macht die Abrechnung einfacher. Das Paket gilt nur für UV/MV – für IV und PP werden die Einzelleistungen abgerechnet."
+      },
+      {
+        "question": "Was ist in diesem Paket nicht enthalten?",
+        "answer": "Nicht enthalten sind: Materialkosten für das Implantat selbst, Abutment und Hilfsteile. Diese werden mit Typisierung (Kapitel 19) separat verrechnet. Auch eine eventuell notwendige Knochenaugmentation (4.2610.LP) oder eine Bohrschablone werden separat abgerechnet. Die Grundausrüstung an chirurgischen Instrumenten ist in der Tarifierung bereits berücksichtigt."
+      },
+      {
+        "question": "Wie viele Implantate können mit einem Paket abgerechnet werden?",
+        "answer": "Das Paket 4.2530.LP gilt für ein Implantat pro Fall / Behandlungsplanung. Wenn mehrere Implantate in derselben Planung und in derselben Sitzung gesetzt werden, wird für jedes weitere Implantat das Paket 4.2540.LP (jede weitere Implantatinsertion) verwendet."
+      },
+      {
+        "question": "Gilt dieses Paket auch für die Invalidenversicherung (IV)?",
+        "answer": "Nein. Die Leistungspakete Plus (LP+) gelten ausschließlich für den Unfall- und Militärversicherungsbereich (UV/MV). Für die Invalidenversicherung (IV) werden die normalen Einzelleistungen abgerechnet. Auch für Privatpatienten (PP) gelten die Einzelleistungen."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre la prestation individuelle 4.2530 et le forfait de prestations 4.2530.LP?",
+        "answer": "La prestation individuelle 4.2530 n'est que la partie chirurgicale (pose de l'implant). Le forfait de prestations 4.2530.LP regroupe pour les cas UV/MV toutes les prestations nécessaires autour du traitement implantaire: examen court, radiographie, anesthésie, photo, planification, information, insertion d'implant, réouverture et sutures. Cela simplifie la facturation. Le forfait ne s'applique qu'à UV/MV – pour IV et PP, les prestations individuelles sont facturées."
+      },
+      {
+        "question": "Qu'est-ce qui n'est pas inclus dans ce forfait?",
+        "answer": "Ne sont pas inclus: les coûts des matériaux pour l'implant lui-même, le pilier et les pièces auxiliaires. Ceux-ci sont facturés séparément avec typification (chapitre 19). Une éventuelle augmentation osseuse nécessaire (4.2610.LP) ou un guide de forage sont également facturés séparément. L'équipement de base des instruments chirurgicaux est déjà pris en compte dans la tarification."
+      },
+      {
+        "question": "Combien d'implants peuvent être facturés avec un forfait?",
+        "answer": "Le forfait 4.2530.LP s'applique pour un implant par cas / planification de traitement. Si plusieurs implants sont posés dans la même planification et dans la même séance, le forfait 4.2540.LP (chaque insertion d'implant supplémentaire) est utilisé pour chaque implant supplémentaire."
+      },
+      {
+        "question": "Ce forfait s'applique-t-il également à l'assurance invalidité (IV)?",
+        "answer": "Non. Les forfaits de prestations Plus (LP+) s'appliquent exclusivement au domaine de l'assurance accidents et militaire (UV/MV). Pour l'assurance invalidité (IV), les prestations individuelles normales sont facturées. Pour les patients privés (PP), les prestations individuelles s'appliquent également."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra la prestazione individuale 4.2530 e il pacchetto di prestazioni 4.2530.LP?",
+        "answer": "La prestazione individuale 4.2530 è solo la parte chirurgica (inserimento dell'impianto). Il pacchetto di prestazioni 4.2530.LP raggruppa per i casi UV/MV tutte le prestazioni necessarie intorno al trattamento implantare: esame breve, radiografia, anestesia, foto, pianificazione, informazione, inserimento impianto, riapertura e suture. Questo semplifica la fatturazione. Il pacchetto vale solo per UV/MV – per IV e PP vengono fatturate le prestazioni individuali."
+      },
+      {
+        "question": "Cosa non è incluso in questo pacchetto?",
+        "answer": "Non sono inclusi: i costi dei materiali per l'impianto stesso, il pilastro e le parti ausiliarie. Questi vengono fatturati separatamente con tipizzazione (capitolo 19). Anche un eventuale aumento osseo necessario (4.2610.LP) o una guida di foratura vengono fatturati separatamente. L'equipaggiamento di base degli strumenti chirurgici è già considerato nella tariffazione."
+      },
+      {
+        "question": "Quanti impianti possono essere fatturati con un pacchetto?",
+        "answer": "Il pacchetto 4.2530.LP si applica per un impianto per caso / pianificazione trattamento. Se vengono posizionati più impianti nella stessa pianificazione e nella stessa seduta, per ogni impianto aggiuntivo viene utilizzato il pacchetto 4.2540.LP (ogni ulteriore inserimento di impianto)."
+      },
+      {
+        "question": "Questo pacchetto si applica anche all'assicurazione invalidità (IV)?",
+        "answer": "No. I pacchetti di prestazioni Plus (LP+) si applicano esclusivamente al settore dell'assicurazione infortuni e militare (UV/MV). Per l'assicurazione invalidità (IV) vengono fatturate le normali prestazioni individuali. Per i pazienti privati (PP) valgono anche le prestazioni individuali."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between individual service 4.2530 and the service package 4.2530.LP?",
+        "answer": "Individual service 4.2530 is only the surgical part (implant placement). The service package 4.2530.LP bundles for UV/MV cases all necessary services around implant treatment: short examination, X-ray, anesthesia, photo, planning, information, implant placement, reopening, and sutures. This simplifies billing. The package only applies to UV/MV – for IV and PP, individual services are billed."
+      },
+      {
+        "question": "What is not included in this package?",
+        "answer": "Not included are: material costs for the implant itself, abutment, and auxiliary parts. These are billed separately with typing (chapter 19). Any necessary bone augmentation (4.2610.LP) or a drill guide are also billed separately. The basic surgical instrument set is already considered in the pricing."
+      },
+      {
+        "question": "How many implants can be billed with one package?",
+        "answer": "Package 4.2530.LP applies for one implant per case / treatment planning. If multiple implants are placed in the same planning and in the same session, package 4.2540.LP (each additional implant placement) is used for each additional implant."
+      },
+      {
+        "question": "Does this package also apply to disability insurance (IV)?",
+        "answer": "No. The Plus service packages (LP+) apply exclusively to accident and military insurance (UV/MV). For disability insurance (IV), normal individual services are billed. For private patients (PP), individual services also apply."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre la prestación individual 4.2530 y el paquete de prestaciones 4.2530.LP?",
+        "answer": "La prestación individual 4.2530 es solo la parte quirúrgica (colocación del implante). El paquete de prestaciones 4.2530.LP agrupa para casos UV/MV todas las prestaciones necesarias alrededor del tratamiento con implantes: examen breve, radiografía, anestesia, foto, planificación, información, colocación de implante, reapertura y suturas. Esto simplifica la facturación. El paquete solo se aplica a UV/MV – para IV y PP se facturan las prestaciones individuales."
+      },
+      {
+        "question": "¿Qué no está incluido en este paquete?",
+        "answer": "No están incluidos: los costos de material del implante en sí, el pilar y las partes auxiliares. Estos se facturan por separado con tipificación (capítulo 19). También una eventual aumentación ósea necesaria (4.2610.LP) o una guía de perforación se facturan por separado. El equipamiento básico de instrumentos quirúrgicos ya está considerado en la tarificación."
+      },
+      {
+        "question": "¿Cuántos implantes se pueden facturar con un paquete?",
+        "answer": "El paquete 4.2530.LP se aplica para un implante por caso / planificación de tratamiento. Si se colocan varios implantes en la misma planificación y en la misma sesión, se utiliza el paquete 4.2540.LP (cada colocación de implante adicional) para cada implante adicional."
+      },
+      {
+        "question": "¿Este paquete también se aplica al seguro de invalidez (IV)?",
+        "answer": "No. Los paquetes de prestaciones Plus (LP+) se aplican exclusivamente al ámbito del seguro de accidentes y militar (UV/MV). Para el seguro de invalidez (IV), se facturan las prestaciones individuales normales. Para los pacientes privados (PP), también se aplican las prestaciones individuales."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre a prestação individual 4.2530 e o pacote de prestações 4.2530.LP?",
+        "answer": "A prestação individual 4.2530 é apenas a parte cirúrgica (colocação do implante). O pacote de prestações 4.2530.LP agrupa para casos UV/MV todas as prestações necessárias em torno do tratamento com implantes: exame breve, radiografia, anestesia, foto, planeamento, informação, colocação de implante, reabertura e suturas. Isto simplifica a faturação. O pacote só se aplica a UV/MV – para IV e PP, as prestações individuais são faturadas."
+      },
+      {
+        "question": "O que não está incluído neste pacote?",
+        "answer": "Não estão incluídos: os custos de material do próprio implante, o pilar e as partes auxiliares. Estes são faturados separadamente com tipificação (capítulo 19). Também uma eventual aumentação óssea necessária (4.2610.LP) ou um guia de perfuração são faturados separadamente. O equipamento básico de instrumentos cirúrgicos já está considerado na tarifação."
+      },
+      {
+        "question": "Quantos implantes podem ser faturados com um pacote?",
+        "answer": "O pacote 4.2530.LP aplica-se para um implante por caso / planeamento de tratamento. Se vários implantes forem colocados no mesmo planeamento e na mesma sessão, o pacote 4.2540.LP (cada colocação de implante adicional) é utilizado para cada implante adicional."
+      },
+      {
+        "question": "Este pacote também se aplica ao seguro de invalidez (IV)?",
+        "answer": "Não. Os pacotes de prestações Plus (LP+) aplicam-se exclusivamente ao domínio do seguro de acidentes e militar (UV/MV). Para o seguro de invalidez (IV), as prestações individuais normais são faturadas. Para pacientes privados (PP), as prestações individuais também se aplicam."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między usługą indywidualną 4.2530 a pakietem usług 4.2530.LP?",
+        "answer": "Usługa indywidualna 4.2530 to tylko część chirurgiczna (wszczepienie implantu). Pakiet usług 4.2530.LP łączy dla przypadków UV/MV wszystkie niezbędne usługi związane z leczeniem implantologicznym: krótkie badanie, rentgen, znieczulenie, zdjęcie, planowanie, informację, wszczepienie implantu, ponowne otwarcie i szwy. Upraszcza to rozliczanie. Pakiet dotyczy tylko UV/MV – dla IV i PP rozliczane są usługi indywidualne."
+      },
+      {
+        "question": "Co nie jest zawarte w tym pakiecie?",
+        "answer": "Nie są zawarte: koszty materiałów samego implantu, łącznika i części pomocniczych. Są one rozliczane osobno z typizacją (rozdział 19). Ewentualna niezbędna augmentacja kości (4.2610.LP) lub szablon wiertniczy są również rozliczane osobno. Podstawowe wyposażenie w instrumenty chirurgiczne jest już uwzględnione w taryfikacji."
+      },
+      {
+        "question": "Ile implantów można rozliczyć z jednym pakietem?",
+        "answer": "Pakiet 4.2530.LP dotyczy jednego implantu na przypadek / planowanie leczenia. Jeśli kilka implantów zostanie umieszczonych w tym samym planowaniu i w tej samej sesji, dla każdego dodatkowego implantu stosuje się pakiet 4.2540.LP (każde dodatkowe wszczepienie implantu)."
+      },
+      {
+        "question": "Czy ten pakiet dotyczy również ubezpieczenia inwalidzkiego (IV)?",
+        "answer": "Nie. Pakiety usług Plus (LP+) dotyczą wyłącznie ubezpieczenia wypadkowego i wojskowego (UV/MV). Dla ubezpieczenia inwalidzkiego (IV) rozliczane są normalne usługi indywidualne. Dla pacjentów prywatnych (PP) również obowiązują usługi indywidualne."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis shërbimit individual 4.2530 dhe paketës së shërbimeve 4.2530.LP?",
+        "answer": "Shërbimi individual 4.2530 është vetëm pjesa kirurgjikale (vendosja e implantit). Paketa e shërbimeve 4.2530.LP bashkon për rastet UV/MV të gjitha shërbimet e nevojshme rreth trajtimit me implant: ekzaminim i shkurtër, rreze X, anestezi, foto, planifikim, informim, vendosje implanti, rihapje dhe qepje. Kjo thjeshton faturimin. Paketa vlen vetëm për UV/MV – për IV dhe PP faturohen shërbimet individuale."
+      },
+      {
+        "question": "Çfarë nuk përfshihet në këtë paketë?",
+        "answer": "Nuk përfshihen: kostot materiale për vetë implantin, abutmentin dhe pjesët ndihmëse. Këto faturohen veçmas me tipizim (kapitulli 19). Gjithashtu një augmentim kockor i nevojshëm (4.2610.LP) ose një udhëzues shpimi faturohen veçmas. Pajisja bazë e instrumenteve kirurgjikale është konsideruar tashmë në tarifim."
+      },
+      {
+        "question": "Sa implante mund të faturohen me një paketë?",
+        "answer": "Paketa 4.2530.LP zbatohet për një implant për rast / planifikim trajtimi. Nëse vendosen disa implante në të njëjtin planifikim dhe në të njëjtën seancë, për çdo implant shtesë përdoret paketa 4.2540.LP (çdo vendosje implanti shtesë)."
+      },
+      {
+        "question": "A vlen kjo paketë edhe për sigurimin e invaliditetit (IV)?",
+        "answer": "Jo. Paketat e shërbimeve Plus (LP+) zbatohen ekskluzivisht për sigurimin e aksidenteve dhe ushtarak (UV/MV). Për sigurimin e invaliditetit (IV), faturohen shërbimet normale individuale. Për pacientët privatë (PP), faturohen gjithashtu shërbimet individuale."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bireysel hizmet 4.2530 ile hizmet paketi 4.2530.LP arasındaki fark nedir?",
+        "answer": "Bireysel hizmet 4.2530 sadece cerrahi kısımdır (implant yerleştirme). Hizmet paketi 4.2530.LP, UV/MV vakaları için implant tedavisi etrafındaki tüm gerekli hizmetleri birleştirir: kısa muayene, röntgen, anestezi, fotoğraf, planlama, bilgilendirme, implant yerleştirme, yeniden açma ve dikişler. Bu, faturalandırmayı basitleştirir. Paket yalnızca UV/MV için geçerlidir – IV ve PP için bireysel hizmetler faturalandırılır."
+      },
+      {
+        "question": "Bu pakette neler yok?",
+        "answer": "Dahil olmayanlar: implantın kendisi, abutment ve yardımcı parçalar için malzeme maliyetleri. Bunlar tipizasyon ile ayrı faturalandırılır (bölüm 19). Gerekli herhangi bir kemik takviyesi (4.2610.LP) veya bir delme kılavuzu da ayrı faturalandırılır. Temel cerrahi alet donanımı tarifede zaten dikkate alınmıştır."
+      },
+      {
+        "question": "Bir paketle kaç implant faturalandırılabilir?",
+        "answer": "Paket 4.2530.LP, vaka / tedavi planlaması başına bir implant için geçerlidir. Aynı planlamada ve aynı seansta birden fazla implant yerleştirilirse, her ek implant için 4.2540.LP paketi (her ek implant yerleştirme) kullanılır."
+      },
+      {
+        "question": "Bu paket engellilik sigortası (IV) için de geçerli midir?",
+        "answer": "Hayır. Plus hizmet paketleri (LP+) yalnızca kaza ve askerlik sigortası (UV/MV) alanı için geçerlidir. Engellilik sigortası (IV) için normal bireysel hizmetler faturalandırılır. Özel hastalar (PP) için de bireysel hizmetler geçerlidir."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između pojedinačne usluge 4.2530 i paketa usluga 4.2530.LP?",
+        "answer": "Pojedinačna usluga 4.2530 samo je kirurški dio (postavljanje implantata). Paket usluga 4.2530.LP objedinjuje za UV/MV slučajeve sve potrebne usluge oko implantološkog liječenja: kratki pregled, rendgen, anesteziju, fotografiju, planiranje, informiranje, postavljanje implantata, ponovno otvaranje i šavove. To pojednostavljuje naplatu. Paket vrijedi samo za UV/MV – za IV i PP naplaćuju se pojedinačne usluge."
+      },
+      {
+        "question": "Što nije uključeno u ovaj paket?",
+        "answer": "Nije uključeno: troškovi materijala za sam implantat, abutment i pomoćne dijelove. Oni se naplaćuju zasebno s tipizacijom (poglavlje 19). Također eventualna potrebna nadogradnja kosti (4.2610.LP) ili vodilica za bušenje naplaćuju se zasebno. Osnovna oprema kirurških instrumenata već je uzeta u obzir u tarifiranju."
+      },
+      {
+        "question": "Koliko se implantata može naplatiti s jednim paketom?",
+        "answer": "Paket 4.2530.LP primjenjuje se za jedan implantat po slučaju / planiranju liječenja. Ako se više implantata postavi u istom planiranju i u istoj seansi, za svaki dodatni implantat koristi se paket 4.2540.LP (svako dodatno postavljanje implantata)."
+      },
+      {
+        "question": "Vrijedi li ovaj paket i za invalidsko osiguranje (IV)?",
+        "answer": "Ne. Plus paketi usluga (LP+) vrijede isključivo za osiguranje od nezgode i vojno osiguranje (UV/MV). Za invalidsko osiguranje (IV) naplaćuju se normalne pojedinačne usluge. Za privatne pacijente (PP) također vrijede pojedinačne usluge."
+      }
+    ],
+    "ta": [
+      {
+        "question": "தனிப்பட்ட சேவை 4.2530 மற்றும் சேவை தொகுப்பு 4.2530.LP இடையே என்ன வித்தியாசம்?",
+        "answer": "தனிப்பட்ட சேவை 4.2530 என்பது அறுவை சிகிச்சை பகுதி மட்டுமே (உள்வைப்பு பொருத்துதல்). சேவை தொகுப்பு 4.2530.LP, UV/MV வழக்குகளுக்கு உள்வைப்பு சிகிச்சையைச் சுற்றியுள்ள அனைத்து தேவையான சேவைகளையும் ஒருங்கிணைக்கிறது: குறுகிய பரிசோதனை, எக்ஸ்-ரே, மரத்துப்போகச் செய்தல், புகைப்படம், திட்டமிடல், தகவல், உள்வைப்பு பொருத்துதல், மீண்டும் திறப்பு மற்றும் தையல்கள். இது கணக்கிடுதலை எளிதாக்குகிறது. தொகுப்பு UV/MV க்கு மட்டுமே பொருந்தும் – IV மற்றும் PP க்கு தனிப்பட்ட சேவைகள் கணக்கிடப்படும்."
+      },
+      {
+        "question": "இந்த தொகுப்பில் என்ன சேர்க்கப்படவில்லை?",
+        "answer": "சேர்க்கப்படாதவை: உள்வைப்பு, அபட்மென்ட் மற்றும் துணை பாகங்களுக்கான பொருள் செலவுகள். இவை வகைப்படுத்தலுடன் தனித்தனியாக கணக்கிடப்படும் (அத்தியாயம் 19). தேவையான எலும்பு சேர்க்கை (4.2610.LP) அல்லது ஒரு துளையிடல் வழிகாட்டியும் தனித்தனியாக கணக்கிடப்படும். அடிப்படை அறுவை சிகிச்சை கருவிகள் ஏற்கனவே கட்டணத்தில் கருதப்பட்டுள்ளன."
+      },
+      {
+        "question": "ஒரு தொகுப்புடன் எத்தனை உள்வைப்புகளை கணக்கிட முடியும்?",
+        "answer": "தொகுப்பு 4.2530.LP ஒரு வழக்கு / சிகிச்சை திட்டமிடலுக்கு ஒரு உள்வைப்புக்கு பொருந்தும். ஒரே திட்டமிடலில் மற்றும் ஒரே அமர்வில் பல உள்வைப்புகள் வைக்கப்பட்டால், ஒவ்வொரு கூடுதல் உள்வைப்புக்கும் 4.2540.LP தொகுப்பு (ஒவ்வொரு கூடுதல் உள்வைப்பு பொருத்துதல்) பயன்படுத்தப்படுகிறது."
+      },
+      {
+        "question": "இந்த தொகுப்பு ஊனமுறை காப்பீட்டுக்கும் (IV) பொருந்துமா?",
+        "answer": "இல்லை. Plus சேவை தொகுப்புகள் (LP+) பிரத்தியேகமாக விபத்து மற்றும் இராணுவ காப்பீட்டு (UV/MV) பகுதிக்கு பொருந்தும். ஊனமுறை காப்பீட்டுக்கு (IV), சாதாரண தனிப்பட்ட சேவைகள் கணக்கிடப்படும். தனியார் நோயாளிகளுக்கும் (PP) தனிப்பட்ட சேவைகள் பொருந்தும்."
+      }
+    ]
+  }
+}

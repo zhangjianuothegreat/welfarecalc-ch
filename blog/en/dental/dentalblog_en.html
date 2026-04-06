@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Swiss Dental Bill Auditor Series | WelfareCalc.ch Blog Matrix</title>
+    <meta name="description" content="Complete Swiss Dental Bill Auditor Series: Decode Taxpunktwert, read DENTOTAR bills, cleaning costs, second opinions, and dental insurance ROI. All articles in one matrix.">
+    <meta name="keywords" content="Swiss dental blog, DENTOTAR guide, Taxpunktwert, dental cleaning Switzerland, dental insurance Switzerland, second opinion dentist, dental bill Switzerland, WelfareCalc blog">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Swiss Dental Bill Auditor – Complete Blog Series">
+    <meta property="og:description" content="Your complete survival kit for Swiss dental costs. 6 in-depth articles covering Taxpunktwert, bills, first visits, cleanings, second opinions, and insurance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/blog/en/dental/dentalblog_en.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/og-dental-matrix.jpg">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/blog/en/dental/dentalblog_en.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.65;
+            color: #1e2a3e;
+            background: #f5f9ff;
+        }
+
+        /* Header with gradient consistent with main site & blog articles */
+        header {
+            background: linear-gradient(135deg, #005f8c, #0099dd);
+            padding: 3rem 1.5rem 2.5rem;
+            text-align: center;
+            border-bottom: 6px solid #ffcd7e;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            color: #ffffff;
+            text-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin-bottom: 0.6rem;
+        }
+
+        .hero-sub {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: #fff9e8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        /* Breadcrumb navigation (semantic & SEO friendly) */
+        .breadcrumb-nav {
+            margin-bottom: 2rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid #e0e7f0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.4rem 0.6rem;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb-nav a {
+            color: #0077be;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb-nav a:hover {
+            color: #005f8c;
+            text-decoration: underline;
+        }
+
+        .breadcrumb-nav span {
+            color: #64748b;
+        }
+
+        .current-bread {
+            font-weight: 600;
+            color: #1e2a3e;
+        }
+
+        /* Series introduction card */
+        .intro-card {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            border: 1px solid #e2edf7;
+        }
+
+        .intro-card h2 {
+            color: #006a9e;
+            font-size: 1.8rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .intro-card p {
+            font-size: 1.05rem;
+            color: #2c3e50;
+            max-width: 85%;
+        }
+
+        .badge-series {
+            display: inline-block;
+            background: #e0f0fe;
+            color: #005f8c;
+            padding: 0.25rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 0.75rem;
+        }
+
+        /* Matrix grid: main blog listing (articles) */
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0 3rem;
+        }
+
+        .blog-card {
+            background: #ffffff;
+            border-radius: 28px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,119,190,0.12);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 30px -12px rgba(0,119,190,0.2);
+            border-color: #cde3f5;
+        }
+
+        .card-content {
+            padding: 1.8rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-icon {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-title {
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: #006a9e;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .blog-excerpt {
+            color: #334155;
+            font-size: 0.95rem;
+            margin-bottom: 1.2rem;
+            flex: 1;
+        }
+
+        .code-badge {
+            font-family: monospace;
+            background: #f1f5f9;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #0f3b5c;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+        }
+
+        .read-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-weight: 600;
+            color: #0077be;
+            text-decoration: none;
+            margin-top: 0.5rem;
+            transition: gap 0.2s;
+        }
+
+        .read-link:hover {
+            gap: 0.6rem;
+            text-decoration: underline;
+        }
+
+        /* topic tags */
+        .topic-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0 0.8rem;
+        }
+
+        .tag {
+            background: #eef2ff;
+            padding: 0.2rem 0.7rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #1e40af;
+        }
+
+        /* additional resources or meta */
+        .utility-section {
+            background: #f8fafc;
+            border-radius: 28px;
+            padding: 2rem;
+            margin: 2.5rem 0 1.5rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        .utility-section h3 {
+            font-size: 1.4rem;
+            color: #1e2a3e;
+            margin-bottom: 1rem;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .quick-links li a {
+            background: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #006a9e;
+            border: 1px solid #cbd5e1;
+            transition: 0.2s;
+            display: inline-block;
+        }
+
+        .quick-links li a:hover {
+            background: #e0f0fe;
+            border-color: #0099dd;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #475569;
+            margin-top: 2.5rem;
+            padding: 1.2rem;
+            background: #ecfdf5;
+            border-radius: 24px;
+            border-left: 5px solid #10b981;
+        }
+
+        .version-info {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 2rem 0 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 680px) {
+            .hero-title { font-size: 1.9rem; }
+            .intro-card p { max-width: 100%; }
+            .matrix-grid { grid-template-columns: 1fr; }
+            .blog-title { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 class="hero-title">Swiss Dental Decoder</h1>
+    <p class="hero-sub">Complete Guide Series: Taxpunktwert, DENTOTAR® bills, costs & insurance</p>
+</header>
+
+<div class="container">
+    
+    <!-- 面包屑导航: 符合语义，清晰链接到主站和博客矩阵 -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+        <a href="https://www.welfarecalc.ch">Home</a>
+        <span>›</span>
+        <a href="https://www.welfarecalc.ch/blog/">Blog</a>
+        <span>›</span>
+        <a href="https://www.welfarecalc.ch/blog/en/">English</a>
+        <span>›</span>
+        <a href="https://www.welfarecalc.ch/blog/en/dental/">Dental</a>
+        <span>›</span>
+        <span class="current-bread">Complete Swiss Dental Bill Auditor Series</span>
+    </nav>
+
+    <!-- 简介卡片：强调博客矩阵和系列价值 -->
+    <div class="intro-card">
+        <h2>📘 Swiss Dental Blog Matrix</h2>
+        <p>Six essential guides for expats and residents. Understand how your dentist calculates prices, decode your bill like a pro, and learn exactly when to say “yes” — or “no” — to expensive treatments.</p>
+        <div class="badge-series">🔍 Based on official DENTOTAR® 2026 tariff + real Swiss clinic data</div>
+    </div>
+
+    <!-- 博客矩阵网格：包含全部六篇文章，与提供的文件完全对应 -->
+    <div class="matrix-grid">
+        
+        <!-- Blog 1: Taxpunktwert Explained -->
+        <div class="blog-card">
+            <div class="card-content">
+                <div class="card-icon">🔢</div>
+                <div class="code-badge">DENTOTAR core</div>
+                <h2 class="blog-title">Taxpunktwert Explained</h2>
+                <p class="blog-excerpt">Why does the same filling cost 110 CHF at one clinic and 150 CHF at another? Discover the secret multiplier behind every Swiss dental bill.</p>
+                <div class="topic-tags">
+                    <span class="tag">Point value</span>
+                    <span class="tag">Price variation</span>
+                    <span class="tag">Audit tool</span>
+                </div>
+                <a href="blog-1-taxpunktwert.html" class="read-link">Read full guide →</a>
+            </div>
+        </div>
+        
+        <!-- Blog 2: How to Read Your Dental Bill -->
+        <div class="blog-card">
+            <div class="card-content">
+                <div class="card-icon">🧾</div>
+                <div class="code-badge">4.0000 · 4.1110 · 4.5350</div>
+                <h2 class="blog-title">How to Read Your Dental Bill</h2>
+                <p class="blog-excerpt">Your invoice looks like a secret code. Decode DENTOTAR numbers, verify units, and spot overcharging in minutes.</p>
+                <div class="topic-tags">
+                    <span class="tag">Code decoder</span>
+                    <span class="tag">Billing audit</span>
+                    <span class="tag">Tax points</span>
+                </div>
+                <a href="blog-2-dental-bill.html" class="read-link">Decode your bill →</a>
+            </div>
+        </div>
+        
+        <!-- Blog 3: First Dental Visit Switzerland Cost -->
+        <div class="blog-card">
+            <div class="card-content">
+                <div class="card-icon">🦷</div>
+                <div class="code-badge">Initial examination (4.0000)</div>
+                <h2 class="blog-title">First Dental Visit in Switzerland</h2>
+                <p class="blog-excerpt">Why does a 5‑minute check cost 150–300 CHF? The full breakdown of intake fees, mandatory X‑rays, and how to reduce the entry cost.</p>
+                <div class="topic-tags">
+                    <span class="tag">New patient</span>
+                    <span class="tag">Kostenvoranschlag</span>
+                    <span class="tag">Hidden admin</span>
+                </div>
+                <a href="blog-3-first-dental-visit-switzerland-cost.html" class="read-link">Learn first visit hacks →</a>
+            </div>
+        </div>
+        
+        <!-- Blog 4: Dental Cleaning Costs (160–300 CHF) -->
+        <div class="blog-card">
+            <div class="card-content">
+                <div class="card-icon">✨</div>
+                <div class="code-badge">4.1110 (per 5 min)</div>
+                <h2 class="blog-title">Dental Cleaning Costs</h2>
+                <p class="blog-excerpt">Is professional hygiene at 160–300 CHF a necessity or an upsell? Understand time‑based billing and when you can say “not today”.</p>
+                <div class="topic-tags">
+                    <span class="tag">Hygiene</span>
+                    <span class="tag">Prevention</span>
+                    <span class="tag">Dental schools</span>
+                </div>
+                <a href="blog-4-dental-cleaning.html" class="read-link">Check cleaning truth →</a>
+            </div>
+        </div>
+        
+        <!-- Blog 5: Second Opinion for Dental Work -->
+        <div class="blog-card">
+            <div class="card-content">
+                <div class="card-icon">💡</div>
+                <div class="code-badge">Overtreatment prevention</div>
+                <h2 class="blog-title">Second Opinion for Dental Work</h2>
+                <p class="blog-excerpt">Your dentist says you need a filling “urgently”. Learn your rights, how to request X‑rays, and when to walk away for a second quote.</p>
+                <div class="topic-tags">
+                    <span class="tag">Patient rights</span>
+                    <span class="tag">Cost estimate</span>
+                    <span class="tag">Avoid overtreatment</span>
+                </div>
+                <a href="blog-5-second-opinion.html" class="read-link">Get second opinion guide →</a>
+            </div>
+        </div>
+        
+        <!-- Blog 6: Supplementary Dental Insurance ROI -->
+        <div class="blog-card">
+            <div class="card-content">
+                <div class="card-icon">🛡️</div>
+                <div class="code-badge">ROI analysis 2026</div>
+                <h2 class="blog-title">Supplementary Dental Insurance</h2>
+                <p class="blog-excerpt">Is it worth paying 500 CHF/year to get 200 CHF back? Honest math on premiums, coverage caps, and the “self‑insurance” strategy.</p>
+                <div class="topic-tags">
+                    <span class="tag">Zahnversicherung</span>
+                    <span class="tag">Cost‑benefit</span>
+                    <span class="tag">Waiting period</span>
+                </div>
+                <a href="blog-6-supplementary-dental-insurance.html" class="read-link">Read insurance verdict →</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 系列导航矩阵: 额外帮助用户快速定位所有博客 (强化内部链接) -->
+    <div class="utility-section">
+        <h3>📚 Navigate the full Swiss Dental Bill Auditor Series</h3>
+        <p style="margin-bottom: 1rem;">Each article includes an interactive DENTOTAR audit tool and actionable tips. Use the matrix to jump between topics:</p>
+        <ul class="quick-links">
+            <li><a href="blog-1-taxpunktwert.html">1. Taxpunktwert</a></li>
+            <li><a href="blog-2-dental-bill.html">2. Read your bill</a></li>
+            <li><a href="blog-3-first-dental-visit-switzerland-cost.html">3. First visit costs</a></li>
+            <li><a href="blog-4-dental-cleaning.html">4. Cleaning prices</a></li>
+            <li><a href="blog-5-second-opinion.html">5. Second opinion</a></li>
+            <li><a href="blog-6-supplementary-dental-insurance.html">6. Dental insurance</a></li>
+        </ul>
+        <p style="margin-top: 1.2rem; font-size: 0.9rem;">⭐ All guides are built on official DENTOTAR® 2026 tariffs, Swiss SSO standards, and real expat experiences.</p>
+    </div>
+
+    <!-- 额外面包屑导航: 显示当前所在博客矩阵，同时包含相关链接增加 SEO 深度 -->
+    <nav class="breadcrumb-nav" style="margin-top: 0.5rem;" aria-label="Secondary breadcrumb">
+        <a href="https://www.welfarecalc.ch">🏠 WelfareCalc.ch</a>
+        <span>›</span>
+        <a href="https://www.welfarecalc.ch/blog/en/">EN Blog Hub</a>
+        <span>›</span>
+        <span class="current-bread">Dental Blog Matrix (6 articles)</span>
+    </nav>
+
+    <!-- 关于系列的小提示和常见问题结构化 -->
+    <div class="disclaimer">
+        <strong>📢 About this Dental Blog Series</strong><br>
+        This matrix page consolidates six independent guides written for residents and newcomers in Switzerland. Each article contains practical examples, DENTOTAR code lookups, and actionable checklists. The content reflects the legal framework of the Swiss dental tariff (DENTOTAR®) and real market data for 2026. 
+        <br><br>
+        💡 <strong>Quick tip:</strong> To compare dentist prices, always ask for the clinic’s <strong>Taxpunktwert (TPW)</strong> before scheduling major work — a difference of 0.20 CHF per point can save hundreds of francs on larger treatments.
+    </div>
+
+    <div class="version-info">
+        🇨🇭 <strong>WelfareCalc.ch – Swiss Cost Transparency Initiative</strong><br>
+        Last updated: March 2026 | DENTOTAR® data version SSO/MTK 2026.1
+    </div>
+
+    <footer>
+        <div class="version-info" style="margin-top: 0;">
+            <a href="https://www.welfarecalc.ch/imprint" style="color:#64748b;">Imprint</a> &nbsp;|&nbsp; 
+            <a href="https://www.welfarecalc.ch/privacy" style="color:#64748b;">Privacy</a>
+        </div>
+    </footer>
+</div>
+
+<!-- 结构化数据 (Schema.org) 针对博客列表/集合页面，提升搜索可见性 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Swiss Dental Bill Auditor Series – Complete Blog Matrix",
+  "description": "A six-part guide for understanding Swiss dental bills, DENTOTAR codes, Taxpunktwert, cleaning costs, second opinions, and supplementary dental insurance.",
+  "url": "https://www.welfarecalc.ch/blog/en/dental/dentalblog_en.html",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.welfarecalc.ch"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.welfarecalc.ch/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "English Dental Guides",
+        "item": "https://www.welfarecalc.ch/blog/en/dental/dentalblog_en.html"
+      }
+    ]
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Taxpunktwert Explained",
+        "url": "https://www.welfarecalc.ch/blog/en/dental/blog-1-taxpunktwert.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "How to Read Your Dental Bill",
+        "url": "https://www.welfarecalc.ch/blog/en/dental/blog-2-dental-bill.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "First Dental Visit Switzerland Cost",
+        "url": "https://www.welfarecalc.ch/blog/en/dental/blog-3-first-dental-visit-switzerland-cost.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Dental Cleaning Costs",
+        "url": "https://www.welfarecalc.ch/blog/en/dental/blog-4-dental-cleaning.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Second Opinion for Dental Work",
+        "url": "https://www.welfarecalc.ch/blog/en/dental/blog-5-second-opinion.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Supplementary Dental Insurance Review",
+        "url": "https://www.welfarecalc.ch/blog/en/dental/blog-6-supplementary-dental-insurance.html"
+      }
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "WelfareCalc.ch",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.welfarecalc.ch/logo.png"
+    }
+  }
+}
+</script>
+</body>
+</html>

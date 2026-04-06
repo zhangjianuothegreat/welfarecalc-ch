@@ -1,0 +1,230 @@
+{
+  "code": "4.0020",
+  "name_de": "Kurzbefundaufnahme",
+  "display_name": {
+    "de": "Kurze Notfall-Untersuchung",
+    "fr": "Examen d'urgence court",
+    "it": "Esame d'emergenza breve",
+    "en": "Short emergency examination",
+    "es": "Examen de emergencia breve",
+    "pt": "Exame de emergência breve",
+    "pl": "Krótkie badanie w nagłych przypadkach",
+    "al": "Ekzaminimi fillestar & mendim i dytë",
+    "tr": "Kısa acil muayene",
+    "hr": "Kratki hitni pregled",
+    "ta": "குறுகிய அவசர பரிசோதனை"
+  },
+  "search_keywords": {
+    "de": ["notfall", "akut", "schmerz", "zahnschmerzen", "kurzuntersuchung", "schmerzhafte region"],
+    "fr": ["urgence", "aigu", "douleur", "mal de dents", "examen court", "région douloureuse"],
+    "it": ["emergenza", "acuto", "dolore", "mal di denti", "esame breve", "regione dolorosa"],
+    "en": ["emergency", "acute", "pain", "toothache", "short exam", "painful area"],
+    "es": ["emergencia", "agudo", "dolor", "dolor de muelas", "examen breve", "área dolorosa"],
+    "pt": ["emergência", "agudo", "dor", "dor de dentes", "exame breve", "área dolorosa"],
+    "pl": ["nagły wypadek", "ostry", "ból", "ból zęba", "krótkie badanie", "bolesny obszar"],
+    "al": ["emergjente", "akut", "dhimbje", "dhimbje dhëmbi", "ekzaminim i shkurtër", "zona e dhimbshme"],
+    "tr": ["acil", "akut", "ağrı", "diş ağrısı", "kısa muayene", "ağrılı bölge"],
+    "hr": ["hitno", "akutno", "bol", "zubobolja", "kratki pregled", "bolno područje"],
+    "ta": ["அவசர", "கடுமையான", "வலி", "பல் வலி", "குறுகிய பரிசோதனை", "வலி பகுதி"]
+  },
+  "tp_uv_mviv": 33.10,
+  "tp_pp_max": 38.10,
+  "tp_pp_min": 28.10,
+  "chapter": "01.01",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn dein Zahn plötzlich stark wehtut, schaut der Zahnarzt nur dort hin, wo es weh tut. Das ist schneller als eine große Untersuchung. Gut für Notfälle, wenn du schnell Hilfe brauchst.",
+    "fr": "Quand ta dent te fait soudainement très mal, le dentiste regarde seulement là où ça fait mal. C'est plus rapide qu'un grand examen. Idéal pour les urgences, quand tu as besoin d'aide rapidement.",
+    "it": "Quando un dente ti fa improvvisamente molto male, il dentista guarda solo dove fa male. È più veloce di un esame completo. Ottimo per le emergenze, quando hai bisogno di aiuto velocemente.",
+    "en": "When your tooth suddenly hurts a lot, the dentist only looks at the painful area. It's faster than a full examination. Good for emergencies when you need help quickly.",
+    "es": "Cuando te duele mucho un diente de repente, el dentista solo mira la zona dolorosa. Es más rápido que un examen completo. Bueno para emergencias cuando necesitas ayuda rápido.",
+    "pt": "Quando um dente dói muito de repente, o dentista só olha para a área dolorosa. É mais rápido do que um exame completo. Bom para emergências quando precisas de ajuda rapidamente.",
+    "pl": "Kiedy nagle bardzo boli Cię ząb, dentysta sprawdza tylko bolące miejsce. To szybsze niż pełne badanie. Dobre na nagłe przypadki, gdy potrzebujesz szybkiej pomocy.",
+    "al": "Kur një dhëmb të dhemb shumë papritur, dentisti shikon vetëm zonën e dhimbshme. Është më i shpejtë se një ekzaminim i plotë. I mirë për emergjenca kur ke nevojë për ndihmë të shpejtë.",
+    "tr": "Dişin aniden çok ağrıdığında, diş hekimi sadece ağrıyan bölgeye bakar. Tam muayeneden daha hızlıdır. Hızlı yardıma ihtiyacın olduğunda acil durumlar için iyidir.",
+    "hr": "Kad te iznenada jako zaboli zub, zubar gleda samo bolno područje. Brže je od potpunog pregleda. Dobro za hitne slučajeve kada trebaš brzu pomoć.",
+    "ta": "உங்கள் பல் திடீரென்று மிகவும் வலிக்கும் போது, பல் மருத்துவர் வலிக்கும் பகுதியை மட்டும் பார்க்கிறார். இது முழு பரிசோதனையை விட வேகமானது. விரைவான உதவி தேவைப்படும் போது அவசர சூழ்நிலைகளுக்கு நல்லது."
+  },
+  "what_is_included": {
+    "de": ["🦷 Untersuchung nur der schmerzhaften Region", "👄 Kurze Kontrolle der Mundschleimhaut im schmerzhaften Bereich", "📝 Kurze Befragung zu deinen Schmerzen", "⚡ Speziell für Notfall- und Akutpatienten"],
+    "fr": ["🦷 Examen uniquement de la région douloureuse", "👄 Brève vérification de la muqueuse buccale dans la zone douloureuse", "📝 Courte interview sur ta douleur", "⚡ Spécialement pour les patients d'urgence et aigus"],
+    "it": ["🦷 Esame solo della regione dolorosa", "👄 Breve controllo della mucosa orale nell'area dolorosa", "📝 Breve colloquio sul tuo dolore", "⚡ Specialmente per pazienti d'emergenza e acuti"],
+    "en": ["🦷 Examination only of the painful area", "👄 Brief check of the oral mucosa in the painful area", "📝 Brief interview about your pain", "⚡ Specifically for emergency and acute patients"],
+    "es": ["🦷 Examen solo de la zona dolorosa", "👄 Breve control de la mucosa oral en la zona dolorosa", "📝 Breve entrevista sobre tu dolor", "⚡ Especialmente para pacientes de emergencia y agudos"],
+    "pt": ["🦷 Exame apenas da área dolorosa", "👄 Breve verificação da mucosa oral na área dolorosa", "📝 Breve entrevista sobre a tua dor", "⚡ Especialmente para pacientes de emergência e agudos"],
+    "pl": ["🦷 Badanie tylko bolesnego obszaru", "👄 Krótka kontrola błony śluzowej w bolesnym obszarze", "📝 Krótki wywiad na temat bólu", "⚡ Specjalnie dla pacjentów nagłych i ostrych"],
+    "al": ["🦷 Ekzaminim vetëm i zonës e dhimbshme", "👄 Kontroll i shkurtër i mukozës orale në zonën e dhimbshme", "📝 Intervistë e shkurtër për dhimbjen tënde", "⚡ Veçanërisht për pacientët emergjentë dhe akutë"],
+    "tr": ["🦷 Sadece ağrılı bölgenin muayenesi", "👄 Ağrılı bölgede ağız mukozasının kısa kontrolü", "📝 Ağrın hakkında kısa görüşme", "⚡ Özellikle acil ve akut hastalar için"],
+    "hr": ["🦷 Pregled samo bolnog područja", "👄 Kratka provjera sluznice usta u bolnom području", "📝 Kratki razgovor o tvojoj boli", "⚡ Posebno za hitne i akutne pacijente"],
+    "ta": ["🦷 வலிக்கும் பகுதியின் மட்டும் பரிசோதனை", "👄 வலிக்கும் பகுதியில் வாய் சளி சவ்வின் சுருக்கமான சோதனை", "📝 உங்கள் வலி பற்றிய சுருக்கமான நேர்காணல்", "⚡ குறிப்பாக அவசர மற்றும் கடுமையான நோயாளிகளுக்கு"]
+  },
+  "important_rules": {
+    "de": ["⚠️ Nur für Notfall- oder Akutpatienten", "🔍 Die Untersuchung ist auf die schmerzhafte Region beschränkt", "🚫 Nicht kombinierbar mit Befundaufnahme (4.0000) und Recall-Befundaufnahme (4.0010)", "📋 Bei umfassenderer Untersuchung gelten die Ziffern 4.0000 oder 4.0010"],
+    "fr": ["⚠️ Uniquement pour les patients d'urgence ou aigus", "🔍 L'examen est limité à la région douloureuse", "🚫 Non combinable avec l'examen initial (4.0000) et l'examen de suivi (4.0010)", "📋 Pour un examen plus complet, les codes 4.0000 ou 4.0010 s'appliquent"],
+    "it": ["⚠️ Solo per pazienti d'emergenza o acuti", "🔍 L'esame è limitato alla regione dolorosa", "🚫 Non combinabile con esame iniziale (4.0000) e esame di richiamo (4.0010)", "📋 Per un esame più completo si applicano i codici 4.0000 o 4.0010"],
+    "en": ["⚠️ Only for emergency or acute patients", "🔍 The examination is limited to the painful area", "🚫 Not combinable with initial examination (4.0000) and recall examination (4.0010)", "📋 For a more comprehensive examination, codes 4.0000 or 4.0010 apply"],
+    "es": ["⚠️ Solo para pacientes de emergencia o agudos", "🔍 El examen se limita a la zona dolorosa", "🚫 No combinable con examen inicial (4.0000) y examen de seguimiento (4.0010)", "📋 Para un examen más completo, se aplican los códigos 4.0000 o 4.0010"],
+    "pt": ["⚠️ Apenas para pacientes de emergência ou agudos", "🔍 O exame está limitado à área dolorosa", "🚫 Não combinável com exame inicial (4.0000) e exame de seguimento (4.0010)", "📋 Para um exame mais completo, aplicam-se os códigos 4.0000 ou 4.0010"],
+    "pl": ["⚠️ Tylko dla pacjentów nagłych lub ostrych", "🔍 Badanie ogranicza się do bolesnego obszaru", "🚫 Nie łączy się z badaniem wstępnym (4.0000) i badaniem kontrolnym (4.0010)", "📋 W przypadku bardziej kompleksowego badania stosuje się kody 4.0000 lub 4.0010"],
+    "al": ["⚠️ Vetëm për pacientë emergjentë ose akutë", "🔍 Ekzaminimi është i kufizuar në zonën e dhimbshme", "🚫 Nuk kombinohet me ekzaminimin fillestar (4.0000) dhe ekzaminimin e rikujtimit (4.0010)", "📋 Për një ekzaminim më të plotë, aplikohen kodet 4.0000 ose 4.0010"],
+    "tr": ["⚠️ Sadece acil veya akut hastalar için", "🔍 Muayene ağrılı bölge ile sınırlıdır", "🚫 İlk muayene (4.0000) ve hatırlatma muayenesi (4.0010) ile birleştirilemez", "📋 Daha kapsamlı bir muayene için 4.0000 veya 4.0010 kodları uygulanır"],
+    "hr": ["⚠️ Samo za hitne ili akutne pacijente", "🔍 Pregled je ograničen na bolno područje", "🚫 Ne kombinira se s početnim pregledom (4.0000) i kontrolnim pregledom (4.0010)", "📋 Za potpuniji pregled primjenjuju se kodovi 4.0000 ili 4.0010"],
+    "ta": ["⚠️ அவசர அல்லது கடுமையான நோயாளிகளுக்கு மட்டும்", "🔍 பரிசோதனை வலிக்கும் பகுதிக்கு மட்டும் வரையறுக்கப்பட்டுள்ளது", "🚫 முதல் பரிசோதனை (4.0000) மற்றும் மீள் பரிசோதனை (4.0010) உடன் இணைக்க முடியாது", "📋 மேலும் விரிவான பரிசோதனைக்கு, 4.0000 அல்லது 4.0010 குறியீடுகள் பொருந்தும்"]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Wann sollte ich die Kurzbefundaufnahme wählen?",
+        "answer": "Wenn du plötzliche, starke Zahnschmerzen hast und schnell Hilfe brauchst. Der Zahnarzt untersucht dann nur die Stelle, die wehtut."
+      },
+      {
+        "question": "Was ist der Unterschied zur normalen Befundaufnahme (4.0000)?",
+        "answer": "Die Kurzbefundaufnahme ist nur für die schmerzhafte Region. Die normale Befundaufnahme untersucht alle Zähne und die Mundhöhle komplett."
+      },
+      {
+        "question": "Kann ich später noch eine vollständige Untersuchung machen lassen?",
+        "answer": "Ja! Wenn der Notfall vorbei ist, kann der Zahnarzt später eine vollständige Untersuchung (4.0000) machen. Das ist dann eine separate Behandlung."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quand dois-je choisir l'examen d'urgence court?",
+        "answer": "Quand tu as soudainement de fortes douleurs dentaires et que tu as besoin d'aide rapidement. Le dentiste examinera alors uniquement l'endroit qui fait mal."
+      },
+      {
+        "question": "Quelle est la différence avec l'examen initial normal (4.0000)?",
+        "answer": "L'examen d'urgence court est uniquement pour la région douloureuse. L'examen initial normal examine toutes les dents et toute la cavité buccale."
+      },
+      {
+        "question": "Puis-je faire un examen complet plus tard?",
+        "answer": "Oui! Une fois l'urgence passée, le dentiste peut faire un examen complet (4.0000) plus tard. Ce sera un traitement séparé."
+      }
+    ],
+    "it": [
+      {
+        "question": "Quando dovrei scegliere l'esame d'emergenza breve?",
+        "answer": "Quando hai un improvviso forte mal di denti e hai bisogno di aiuto rapidamente. Il dentista esaminerà solo il punto che fa male."
+      },
+      {
+        "question": "Qual è la differenza con l'esame iniziale normale (4.0000)?",
+        "answer": "L'esame d'emergenza breve è solo per la regione dolorosa. L'esame iniziale normale esamina tutti i denti e l'intera cavità orale."
+      },
+      {
+        "question": "Posso fare un esame completo più tardi?",
+        "answer": "Sì! Una volta passata l'emergenza, il dentista può fare un esame completo (4.0000) in un secondo momento. Sarà un trattamento separato."
+      }
+    ],
+    "en": [
+      {
+        "question": "When should I choose the short emergency examination?",
+        "answer": "When you have sudden, severe toothache and need help quickly. The dentist will only examine the area that hurts."
+      },
+      {
+        "question": "What is the difference from the normal initial examination (4.0000)?",
+        "answer": "The short emergency examination is only for the painful area. The normal initial examination examines all teeth and the entire oral cavity."
+      },
+      {
+        "question": "Can I have a complete examination later?",
+        "answer": "Yes! Once the emergency is over, the dentist can do a complete examination (4.0000) later. That will be a separate treatment."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuándo debo elegir el examen de emergencia breve?",
+        "answer": "Cuando tienes un dolor de muelas repentino e intenso y necesitas ayuda rápidamente. El dentista solo examinará la zona que duele."
+      },
+      {
+        "question": "¿Cuál es la diferencia con el examen inicial normal (4.0000)?",
+        "answer": "El examen de emergencia breve es solo para la zona dolorosa. El examen inicial normal examina todos los dientes y toda la cavidad bucal."
+      },
+      {
+        "question": "¿Puedo hacerme un examen completo más tarde?",
+        "answer": "¡Sí! Una vez que pase la emergencia, el dentista puede hacer un examen completo (4.0000) más tarde. Eso será un tratamiento separado."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Quando devo escolher o exame de emergência breve?",
+        "answer": "Quando tens uma dor de dentes repentina e intensa e precisas de ajuda rapidamente. O dentista examinará apenas a área que dói."
+      },
+      {
+        "question": "Qual é a diferença do exame inicial normal (4.0000)?",
+        "answer": "O exame de emergência breve é apenas para a área dolorosa. O exame inicial normal examina todos os dentes e toda a cavidade oral."
+      },
+      {
+        "question": "Posso fazer um exame completo mais tarde?",
+        "answer": "Sim! Depois de passar a emergência, o dentista pode fazer um exame completo (4.0000) mais tarde. Esse será um tratamento separado."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Kiedy powinienem wybrać krótkie badanie w nagłych przypadkach?",
+        "answer": "Gdy masz nagły, silny ból zęba i potrzebujesz szybkiej pomocy. Dentysta zbada tylko bolące miejsce."
+      },
+      {
+        "question": "Jaka jest różnica w stosunku do normalnego badania wstępnego (4.0000)?",
+        "answer": "Krótkie badanie w nagłych przypadkach dotyczy tylko bolesnego obszaru. Normalne badanie wstępne obejmuje wszystkie zęby i całą jamę ustną."
+      },
+      {
+        "question": "Czy mogę zrobić pełne badanie później?",
+        "answer": "Tak! Gdy nagły przypadek minie, dentysta może później wykonać pełne badanie (4.0000). Będzie to osobne leczenie."
+      }
+    ],
+    "al": [
+      {
+        "question": "Kur duhet të zgjedh ekzaminimin e shkurtër emergjent?",
+        "answer": "Kur ke dhimbje të papritura dhe të forta dhëmbi dhe ke nevojë për ndihmë të shpejtë. Dentisti do të ekzaminojë vetëm zonën që dhemb."
+      },
+      {
+        "question": "Cili është ndryshimi nga ekzaminimi fillestar normal (4.0000)?",
+        "answer": "Ekzaminimi i shkurtër emergjent është vetëm për zonën e dhimbshme. Ekzaminimi fillestar normal ekzaminon të gjithë dhëmbët dhe të gjithë zgavrën gojore."
+      },
+      {
+        "question": "A mund të bëj një ekzaminim të plotë më vonë?",
+        "answer": "Po! Pasi të kalojë emergjenca, dentisti mund të bëjë një ekzaminim të plotë (4.0000) më vonë. Ky do të jetë një trajtim i veçantë."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kısa acil muayeneyi ne zaman seçmeliyim?",
+        "answer": "Aniden şiddetli diş ağrın olduğunda ve hızlı yardıma ihtiyacın olduğunda. Diş hekimi sadece ağrıyan bölgeyi muayene edecektir."
+      },
+      {
+        "question": "Normal ilk muayeneden (4.0000) farkı nedir?",
+        "answer": "Kısa acil muayene sadece ağrılı bölge içindir. Normal ilk muayene tüm dişleri ve tüm ağız boşluğunu inceler."
+      },
+      {
+        "question": "Daha sonra tam bir muayene yaptırabilir miyim?",
+        "answer": "Evet! Acil durum geçtikten sonra, diş hekimi daha sonra tam bir muayene (4.0000) yapabilir. Bu ayrı bir tedavi olacaktır."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Kada trebam odabrati kratki hitni pregled?",
+        "answer": "Kada imaš iznenadnu, jaku zubobolju i trebaš brzu pomoć. Zubar će pregledati samo područje koje boli."
+      },
+      {
+        "question": "Koja je razlika od normalnog početnog pregleda (4.0000)?",
+        "answer": "Kratki hitni pregled je samo za bolno područje. Normalni početni pregled pregledava sve zube i cijelu usnu šupljinu."
+      },
+      {
+        "question": "Mogu li kasnije obaviti potpuni pregled?",
+        "answer": "Da! Nakon što hitni slučaj prođe, zubar može kasnije obaviti potpuni pregled (4.0000). To će biti zaseban tretman."
+      }
+    ],
+    "ta": [
+      {
+        "question": "குறுகிய அவசர பரிசோதனையை நான் எப்போது தேர்வு செய்ய வேண்டும்?",
+        "answer": "திடீரென்று கடுமையான பல் வலி ஏற்பட்டு விரைவான உதவி தேவைப்படும் போது. பல் மருத்துவர் வலிக்கும் பகுதியை மட்டும் பரிசோதிப்பார்."
+      },
+      {
+        "question": "சாதாரண முதல் பரிசோதனையிலிருந்து (4.0000) என்ன வித்தியாசம்?",
+        "answer": "குறுகிய அவசர பரிசோதனை வலிக்கும் பகுதிக்கு மட்டும். சாதாரண முதல் பரிசோதனை அனைத்து பற்களையும் முழு வாய் குழியையும் பரிசோதிக்கிறது."
+      },
+      {
+        "question": "பின்னர் முழு பரிசோதனை செய்யலாமா?",
+        "answer": "ஆம்! அவசர நிலை முடிந்ததும், பல் மருத்துவர் பின்னர் முழு பரிசோதனை (4.0000) செய்யலாம். அது ஒரு தனி சிகிச்சையாக இருக்கும்."
+      }
+    ]
+  }
+}

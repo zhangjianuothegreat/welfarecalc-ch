@@ -1,0 +1,494 @@
+{
+  "code": "4.1260",
+  "name_de": "Zahnsteinentfernung durch den Zahnarzt, pro 5 Min.",
+  "display_name": {
+    "de": "Tiefenreinigung (Zahnarzt)",
+    "fr": "Détartrage en profondeur (dentiste)",
+    "it": "Pulizia profonda (dentista)",
+    "en": "Deep cleaning (dentist)",
+    "es": "Limpieza profunda (dentista)",
+    "pt": "Limpeza profunda (dentista)",
+    "pl": "Głębokie czyszczenie (dentysta)",
+    "al": "Pastrim i thellë (dentist)",
+    "tr": "Derin temizlik (diş hekimi)",
+    "hr": "Dubinsko čišćenje (zubar)",
+    "ta": "ஆழமான சுத்தம் (பல் மருத்துவர்)"
+  },
+  "search_keywords": {
+    "de": ["zahnsteinentfernung", "tiefenreinigung", "deepscaling", "subgingival", "wurzelglättung", "parodontitis behandlung", "zahnstein", "zahnfleischtaschen reinigung"],
+    "fr": ["détartrage", "nettoyage en profondeur", "détartrage sous-gingival", "lissage radiculaire", "traitement parodontite", "tartre"],
+    "it": ["detartrasi", "pulizia profonda", "detartrasi sottogengivale", "levigatura radicolare", "trattamento parodontite", "tartaro"],
+    "en": ["tartar removal", "deep cleaning", "subgingival scaling", "root planing", "periodontal treatment", "scaling", "deep scaling"],
+    "es": ["eliminación de sarro", "limpieza profunda", "raspado subgingival", "alisado radicular", "tratamiento periodontitis", "sarro"],
+    "pt": ["remoção de tártaro", "limpeza profunda", "raspagem subgengival", "alisamento radicular", "tratamento periodontite", "tártaro"],
+    "pl": ["usuwanie kamienia", "głębokie czyszczenie", "skaling poddziąsłowy", "wygładzanie korzeni", "leczenie zapalenia przyzębia", "kamień nazębny"],
+    "al": ["largimi i gurëve", "pastrim i thellë", "skalimi subgingival", "lëmimi i rrënjëve", "trajtimi i periodontitit", "gurët"],
+    "tr": ["diş taşı temizliği", "derin temizlik", "diş eti altı temizliği", "kök yüzeyi düzleştirme", "periodontitis tedavisi", "diş taşı"],
+    "hr": ["uklanjanje kamenca", "dubinsko čišćenje", "skaliranje ispod desni", "glaćenje korijena", "liječenje parodontitisa", "kamenac"],
+    "ta": ["பல் கல் நீக்கம்", "ஆழமான சுத்தம்", "ஈறுகளுக்கு கீழ் ஸ்கேலிங்", "வேர் மென்மையாக்குதல்", "ஈறு நோய் சிகிச்சை", "பல் கல்"]
+  },
+  "tp_uv_mviv": 36.60,
+  "tp_pp_max": 42.10,
+  "tp_pp_min": 31.10,
+  "chapter": "03.02",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn dein Zahnfleisch entzündet ist und sich Zahnstein tief unter dem Zahnfleisch gebildet hat, macht der Zahnarzt eine spezielle Tiefenreinigung. Er entfernt den Zahnstein unter dem Zahnfleisch und glättet die Zahnwurzeln. Das ist wie eine gründliche Putzaktion für die Stellen, wo deine Zahnbürste nicht hinkommt. Das hilft, dein Zahnfleisch wieder gesund zu machen. Die Behandlung wird nach Zeit abgerechnet (pro 5 Minuten).",
+    "fr": "Si tes gencives sont enflammées et que du tartre s'est formé profondément sous la gencive, le dentiste effectue un nettoyage en profondeur spécial. Il enlève le tartre sous la gencive et lisse les racines des dents. C'est comme un nettoyage minutieux pour les endroits où ta brosse à dents ne peut pas atteindre. Cela aide à rendre tes gencives à nouveau saines. Le traitement est facturé au temps (toutes les 5 minutes).",
+    "it": "Se le tue gengive sono infiammate e si è formato del tartaro in profondità sotto la gengiva, il dentista esegue una speciale pulizia profonda. Rimuove il tartaro sotto la gengiva e leviga le radici dei denti. È come un'azione di pulizia approfondita per i punti dove lo spazzolino non può arrivare. Questo aiuta a rendere le gengive di nuovo sane. Il trattamento viene fatturato a tempo (ogni 5 minuti).",
+    "en": "If your gums are inflamed and tartar has formed deep under the gumline, the dentist performs a special deep cleaning. He removes the tartar under the gum and smooths the tooth roots. It's like a thorough cleaning for the places where your toothbrush can't reach. This helps make your gums healthy again. The treatment is billed by time (per 5 minutes).",
+    "es": "Si tus encías están inflamadas y se ha formado sarro profundamente debajo de la encía, el dentista realiza una limpieza profunda especial. Elimina el sarro bajo la encía y alisa las raíces de los dientes. Es como una limpieza a fondo para los lugares donde tu cepillo de dientes no puede llegar. Esto ayuda a que tus encías vuelvan a estar sanas. El tratamiento se factura por tiempo (cada 5 minutos).",
+    "pt": "Se as tuas gengivas estão inflamadas e se formou tártaro profundamente sob a gengiva, o dentista realiza uma limpeza profunda especial. Ele remove o tártaro sob a gengiva e alisa as raízes dos dentes. É como uma limpeza minuciosa para os locais onde a tua escova de dentes não consegue alcançar. Isto ajuda a tornar as tuas gengivas saudáveis novamente. O tratamento é faturado por tempo (a cada 5 minutos).",
+    "pl": "Jeśli Twoje dziąsła są zaognione, a kamień nazębny utworzył się głęboko pod dziąsłem, dentysta wykonuje specjalne głębokie czyszczenie. Usuwa kamień spod dziąsła i wygładza korzenie zębów. To jak dokładne czyszczenie miejsc, do których nie dociera Twoja szczoteczka. Pomaga to przywrócić zdrowie dziąseł. Leczenie jest rozliczane według czasu (co 5 minut).",
+    "al": "Nëse mishrat e tua janë të përflakur dhe janë formuar gurë thellë nën mishrat e dhëmbëve, dentisti kryen një pastrim të veçantë të thellë. Ai heq gurët nën mishrat dhe lëmon rrënjët e dhëmbëve. Është si një pastrim i plotë për vendet ku furça e dhëmbëve nuk mund të arrijë. Kjo ndihmon që mishrat e tua të bëhen përsëri të shëndetshme. Trajtimi faturohet sipas kohës (çdo 5 minuta).",
+    "tr": "Diş etlerin iltihaplıysa ve diş eti altında derinlerde diş taşı oluşmuşsa, diş hekimi özel bir derin temizlik yapar. Diş eti altındaki diş taşını temizler ve diş köklerini düzeltir. Diş fırçanın ulaşamadığı yerler için yapılan kapsamlı bir temizlik gibidir. Bu, diş etlerinin tekrar sağlıklı olmasına yardımcı olur. Tedavi zamana göre faturalandırılır (5 dakikada bir).",
+    "hr": "Ako su ti desni upaljene i stvorio se kamenac duboko ispod desni, zubar obavlja posebno dubinsko čišćenje. Uklanja kamenac ispod desni i glađenje korijena zuba. To je kao temeljito čišćenje mjesta do kojih tvoja četkica ne može doći. To pomaže da tvoje desni ponovno postanu zdrave. Liječenje se naplaćuje po vremenu (svakih 5 minuta).",
+    "ta": "உங்கள் ஈறுகள் வீங்கியிருந்தால் மற்றும் ஈறுகளின் கீழ் ஆழமாக பல் கல் உருவாகியிருந்தால், பல் மருத்துவர் ஒரு சிறப்பு ஆழமான சுத்தம் செய்கிறார். அவர் ஈறுகளின் கீழ் உள்ள பல் கல்லை நீக்கி, பல் வேர்களை மென்மையாக்குகிறார். இது உங்கள் பல் துலக்கினால் எட்ட முடியாத இடங்களுக்கான முழுமையான சுத்தம் போன்றது. இது உங்கள் ஈறுகளை மீண்டும் ஆரோக்கியமாக்க உதவுகிறது. சிகிச்சை நேரத்தின் அடிப்படையில் கணக்கிடப்படுகிறது (ஒவ்வொரு 5 நிமிடங்களுக்கும்)."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 Durchführung durch den Zahnarzt (nicht durch Dentalhygienikerin)",
+      "🪨 Systematische subgingivale Zahnsteinentfernung (unter dem Zahnfleisch)",
+      "✨ Wurzelglättung (Glätten der Zahnwurzeln)",
+      "🦷 Behandlung von Zahnfleischtaschen (Parodontitis)",
+      "🧼 Entfernung von hartnäckigen Belägen",
+      "⏱️ Abrechnung nach Zeitaufwand (pro 5 Minuten)",
+      "💡 Bei Bedarf: Anästhesie (wird separat abgerechnet, siehe 4.0650)"
+    ],
+    "fr": [
+      "🦷 Réalisé par le dentiste (pas par l'hygiéniste dentaire)",
+      "🪨 Détartrage sous-gingival systématique (sous la gencive)",
+      "✨ Lissage radiculaire (lissage des racines dentaires)",
+      "🦷 Traitement des poches parodontales (parodontite)",
+      "🧼 Élimination des dépôts tenaces",
+      "⏱️ Facturation selon le temps (toutes les 5 minutes)",
+      "💡 Si nécessaire: Anesthésie (facturée séparément, voir 4.0650)"
+    ],
+    "it": [
+      "🦷 Eseguito dal dentista (non dall'igienista dentale)",
+      "🪨 Detartrasi sottogengivale sistematica (sotto la gengiva)",
+      "✨ Levigatura radicolare (levigatura delle radici dei denti)",
+      "🦷 Trattamento delle tasche parodontali (parodontite)",
+      "🧼 Rimozione di depositi ostinati",
+      "⏱️ Fatturazione in base al tempo (ogni 5 minuti)",
+      "💡 Se necessario: Anestesia (fatturata separatamente, vedi 4.0650)"
+    ],
+    "en": [
+      "🦷 Performed by the dentist (not by the dental hygienist)",
+      "🪨 Systematic subgingival tartar removal (under the gums)",
+      "✨ Root planing (smoothing tooth roots)",
+      "🦷 Treatment of periodontal pockets (periodontitis)",
+      "🧼 Removal of stubborn deposits",
+      "⏱️ Billed by time (per 5 minutes)",
+      "💡 If needed: Anesthesia (billed separately, see 4.0650)"
+    ],
+    "es": [
+      "🦷 Realizado por el dentista (no por la higienista dental)",
+      "🪨 Eliminación sistemática de sarro subgingival (bajo la encía)",
+      "✨ Alisado radicular (alisado de las raíces dentales)",
+      "🦷 Tratamiento de bolsas periodontales (periodontitis)",
+      "🧼 Eliminación de depósitos persistentes",
+      "⏱️ Facturación por tiempo (cada 5 minutos)",
+      "💡 Si es necesario: Anestesia (facturada por separado, ver 4.0650)"
+    ],
+    "pt": [
+      "🦷 Realizado pelo dentista (não pela higienista dental)",
+      "🪨 Remoção sistemática de tártaro subgengival (sob a gengiva)",
+      "✨ Alisamento radicular (alisamento das raízes dentárias)",
+      "🦷 Tratamento de bolsas periodontais (periodontite)",
+      "🧼 Remoção de depósitos persistentes",
+      "⏱️ Faturação por tempo (a cada 5 minutos)",
+      "💡 Se necessário: Anestesia (faturada separadamente, ver 4.0650)"
+    ],
+    "pl": [
+      "🦷 Wykonywane przez dentystę (nie przez higienistkę stomatologiczną)",
+      "🪨 Systematyczne usuwanie kamienia poddziąsłowego (pod dziąsłem)",
+      "✨ Wygładzanie korzeni (wygładzanie korzeni zębów)",
+      "🦷 Leczenie kieszonek przyzębnych (zapalenie przyzębia)",
+      "🧼 Usuwanie uporczywych osadów",
+      "⏱️ Rozliczenie według czasu (co 5 minut)",
+      "💡 W razie potrzeby: Znieczulenie (rozliczane osobno, patrz 4.0650)"
+    ],
+    "al": [
+      "🦷 Kryer nga dentisti (jo nga higjienistja dentare)",
+      "🪨 Largimi sistematik i gurëve subgingival (nën mishrat)",
+      "✨ Lëmimi i rrënjëve (lëmimi i rrënjëve të dhëmbëve)",
+      "🦷 Trajtimi i xhepave periodontal (periodontiti)",
+      "🧼 Largimi i depozitave kokëforta",
+      "⏱️ Faturimi sipas kohës (çdo 5 minuta)",
+      "💡 Nëse nevojitet: Anestezi (faturohet veçmas, shih 4.0650)"
+    ],
+    "tr": [
+      "🦷 Diş hekimi tarafından yapılır (diş hijyenisti tarafından değil)",
+      "🪨 Sistematik diş eti altı diş taşı temizliği (diş eti altı)",
+      "✨ Kök yüzeyi düzleştirme (diş köklerini düzeltme)",
+      "🦷 Periodontal ceplerin tedavisi (periodontitis)",
+      "🧼 İnatçı tortuların temizlenmesi",
+      "⏱️ Zamana göre faturalandırma (5 dakikada bir)",
+      "💡 Gerekirse: Anestezi (ayrı faturalandırılır, bkz. 4.0650)"
+    ],
+    "hr": [
+      "🦷 Izvodi zubar (ne dentalni higijeničar)",
+      "🪨 Sustavno uklanjanje kamenca ispod desni (ispod desni)",
+      "✨ Glaćenje korijena (glađenje korijena zuba)",
+      "🦷 Liječenje parodontalnih džepova (parodontitis)",
+      "🧼 Uklanjanje tvrdokornih naslaga",
+      "⏱️ Naplata prema vremenu (svakih 5 minuta)",
+      "💡 Po potrebi: Anestezija (naplaćuje se zasebno, vidi 4.0650)"
+    ],
+    "ta": [
+      "🦷 பல் மருத்துவரால் செய்யப்படுகிறது (பல் சுகாதார நிபுணரால் அல்ல)",
+      "🪨 முறையான ஈறுகளின் கீழ் பல் கல் நீக்கம் (ஈறுகளின் கீழ்)",
+      "✨ வேர் மென்மையாக்குதல் (பல் வேர்களை மென்மையாக்குதல்)",
+      "🦷 ஈறு பைகளின் சிகிச்சை (ஈறு நோய்)",
+      "🧼 பிடிவாதமான படிவுகளை நீக்குதல்",
+      "⏱️ நேரத்தின் அடிப்படையில் கணக்கிடுதல் (ஒவ்வொரு 5 நிமிடங்களுக்கும்)",
+      "💡 தேவைப்பட்டால்: மரத்துப்போகச் செய்தல் (தனித்தனியாக கணக்கிடப்படும், 4.0650 பார்க்கவும்)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Durchführung:** Behandlung durch den Zahnarzt (nicht durch Dentalhygienikerin)",
+      "🎯 **Ziel:** Systematische subgingivale Zahnsteinentfernung und Wurzelglättung (Deepscaling)",
+      "⏱️ **Abrechnung:** Pro 5 Minuten (nach Zeitaufwand)",
+      "💉 **Anästhesie:** Falls nötig, separat mit 4.0650 (Infiltrationsanästhesie) abrechenbar",
+      "📋 **Voraussetzung:** Diese Behandlung ist eine medizinisch notwendige Parodontaltherapie (nicht reine Prophylaxe)",
+      "🏥 **Kombination:** Kann mit anderen parodontalen Leistungen (z.B. Befundaufnahme 4.1210–4.1230) kombiniert werden",
+      "⚠️ **Wichtig:** Im Gegensatz zur Zahnreinigung durch die Dentalhygienikerin (4.1110) handelt es sich hier um eine medizinisch indizierte Therapie bei bestehender Parodontitis. Die Kosten werden bei medizinischer Notwendigkeit von UV/MV/IV übernommen."
+    ],
+    "fr": [
+      "🦷 **Réalisation:** Traitement par le dentiste (pas par l'hygiéniste dentaire)",
+      "🎯 **Objectif:** Détartrage sous-gingival systématique et lissage radiculaire (détartrage en profondeur)",
+      "⏱️ **Facturation:** Toutes les 5 minutes (selon le temps)",
+      "💉 **Anesthésie:** Si nécessaire, facturable séparément avec 4.0650 (anesthésie par infiltration)",
+      "📋 **Condition:** Ce traitement est une thérapie parodontale médicalement nécessaire (pas une prophylaxie pure)",
+      "🏥 **Combinaison:** Peut être combiné avec d'autres prestations parodontales (p. ex. examen 4.1210–4.1230)",
+      "⚠️ **Important:** Contrairement au nettoyage dentaire par l'hygiéniste dentaire (4.1110), il s'agit ici d'une thérapie médicalement indiquée en cas de parodontite existante. Les frais sont pris en charge par UV/MV/IV en cas de nécessité médicale."
+    ],
+    "it": [
+      "🦷 **Esecuzione:** Trattamento dal dentista (non dall'igienista dentale)",
+      "🎯 **Obiettivo:** Detartrasi sottogengivale sistematica e levigatura radicolare (deep scaling)",
+      "⏱️ **Fatturazione:** Ogni 5 minuti (secondo il tempo impiegato)",
+      "💉 **Anestesia:** Se necessaria, fatturabile separatamente con 4.0650 (anestesia per infiltrazione)",
+      "📋 **Prerequisito:** Questo trattamento è una terapia parodontale medicalmente necessaria (non pura profilassi)",
+      "🏥 **Combinazione:** Può essere combinato con altre prestazioni parodontali (ad es. esame 4.1210–4.1230)",
+      "⚠️ **Importante:** A differenza della pulizia dentale dell'igienista dentale (4.1110), si tratta qui di una terapia medica indicata per parodontite esistente. I costi sono coperti da UV/MV/IV in caso di necessità medica."
+    ],
+    "en": [
+      "🦷 **Performed by:** Treatment by the dentist (not by the dental hygienist)",
+      "🎯 **Purpose:** Systematic subgingival tartar removal and root planing (deep scaling)",
+      "⏱️ **Billing:** Per 5 minutes (based on time)",
+      "💉 **Anesthesia:** If needed, can be billed separately with 4.0650 (infiltration anesthesia)",
+      "📋 **Requirement:** This treatment is a medically necessary periodontal therapy (not pure prophylaxis)",
+      "🏥 **Combination:** Can be combined with other periodontal services (e.g., examination 4.1210–4.1230)",
+      "⚠️ **Important:** In contrast to dental cleaning by the hygienist (4.1110), this is a medically indicated therapy for existing periodontitis. Costs are covered by UV/MV/IV when medically necessary."
+    ],
+    "es": [
+      "🦷 **Realización:** Tratamiento por el dentista (no por la higienista dental)",
+      "🎯 **Objetivo:** Eliminación sistemática de sarro subgingival y alisado radicular (raspado profundo)",
+      "⏱️ **Facturación:** Cada 5 minutos (según el tiempo)",
+      "💉 **Anestesia:** Si es necesaria, facturable por separado con 4.0650 (anestesia por infiltración)",
+      "📋 **Requisito:** Este tratamiento es una terapia periodontal médicamente necesaria (no profilaxis pura)",
+      "🏥 **Combinación:** Puede combinarse con otros servicios periodontales (p. ej., examen 4.1210–4.1230)",
+      "⚠️ **Importante:** A diferencia de la limpieza dental por la higienista (4.1110), se trata aquí de una terapia médicamente indicada para periodontitis existente. Los costes son cubiertos por UV/MV/IV cuando son médicamente necesarios."
+    ],
+    "pt": [
+      "🦷 **Realização:** Tratamento pelo dentista (não pela higienista dental)",
+      "🎯 **Objetivo:** Remoção sistemática de tártaro subgengival e alisamento radicular (raspagem profunda)",
+      "⏱️ **Faturação:** A cada 5 minutos (conforme o tempo)",
+      "💉 **Anestesia:** Se necessário, faturavel separadamente com 4.0650 (anestesia por infiltração)",
+      "📋 **Requisito:** Este tratamento é uma terapia periodontal medicamente necessária (não profilaxia pura)",
+      "🏥 **Combinação:** Pode ser combinado com outros serviços periodontais (por ex., exame 4.1210–4.1230)",
+      "⚠️ **Importante:** Ao contrário da limpeza dentária pela higienista (4.1110), trata-se aqui de uma terapia medicamente indicada para periodontite existente. Os custos são cobertos por UV/MV/IV quando medicamente necessários."
+    ],
+    "pl": [
+      "🦷 **Wykonanie:** Leczenie przez dentystę (nie przez higienistkę stomatologiczną)",
+      "🎯 **Cel:** Systematyczne usuwanie kamienia poddziąsłowego i wygładzanie korzeni (skaling głęboki)",
+      "⏱️ **Rozliczenie:** Co 5 minut (według czasu)",
+      "💉 **Znieczulenie:** W razie potrzeby, rozliczane osobno z 4.0650 (znieczulenie nasiękowe)",
+      "📋 **Wymaganie:** To leczenie jest medycznie konieczną terapią periodontologiczną (nie czystą profilaktyką)",
+      "🏥 **Kombinacja:** Może być łączone z innymi usługami periodontologicznymi (np. badanie 4.1210–4.1230)",
+      "⚠️ **Ważne:** W przeciwieństwie do czyszczenia zębów przez higienistkę (4.1110), jest to terapia medycznie wskazana przy istniejącym zapaleniu przyzębia. Koszty są pokrywane przez UV/MV/IV w przypadku medycznej konieczności."
+    ],
+    "al": [
+      "🦷 **Kryerja:** Trajtim nga dentisti (jo nga higjienistja dentare)",
+      "🎯 **Qëllimi:** Largimi sistematik i gurëve subgingival dhe lëmimi i rrënjëve (skalim i thellë)",
+      "⏱️ **Faturimi:** Çdo 5 minuta (sipas kohës)",
+      "💉 **Anestezia:** Nëse nevojitet, faturohet veçmas me 4.0650 (anestezi me infiltrim)",
+      "📋 **Kërkesa:** Ky trajtim është një terapi periodontale mjekësisht e nevojshme (jo profilaksë e thjeshtë)",
+      "🏥 **Kombinimi:** Mund të kombinohet me shërbime të tjera periodontale (p.sh., ekzaminimi 4.1210–4.1230)",
+      "⚠️ **E rëndësishme:** Ndryshe nga pastrimi dentar nga higjienistja (4.1110), këtu bëhet fjalë për një terapi mjekësisht të indikuar për periodontit ekzistues. Kostot mbulohen nga UV/MV/IV kur është mjekësisht e nevojshme."
+    ],
+    "tr": [
+      "🦷 **Yapılışı:** Diş hekimi tarafından tedavi (diş hijyenisti tarafından değil)",
+      "🎯 **Amaç:** Sistematik diş eti altı diş taşı temizliği ve kök yüzeyi düzleştirme (derin skaling)",
+      "⏱️ **Faturalandırma:** 5 dakikada bir (zamana göre)",
+      "💉 **Anestezi:** Gerekirse, 4.0650 (infiltrasyon anestezisi) ile ayrı faturalandırılabilir",
+      "📋 **Gereklilik:** Bu tedavi, tıbbi olarak gerekli bir periodontal terapidir (saf profilaksi değil)",
+      "🏥 **Kombinasyon:** Diğer periodontal hizmetlerle birleştirilebilir (örneğin, muayene 4.1210–4.1230)",
+      "⚠️ **Önemli:** Hijyenist tarafından diş temizliğinin (4.1110) aksine, bu, mevcut periodontitis için tıbbi olarak endike bir terapidir. Tıbbi olarak gerekli olduğunda masraflar UV/MV/IV tarafından karşılanır."
+    ],
+    "hr": [
+      "🦷 **Izvođenje:** Liječenje od strane zubara (ne od strane dentalnog higijeničara)",
+      "🎯 **Cilj:** Sustavno uklanjanje kamenca ispod desni i glađenje korijena (dubinsko skaliranje)",
+      "⏱️ **Naplata:** Svakih 5 minuta (prema vremenu)",
+      "💉 **Anestezija:** Po potrebi, može se naplatiti zasebno s 4.0650 (infiltracijska anestezija)",
+      "📋 **Uvjet:** Ovo liječenje je medicinski potrebna parodontalna terapija (ne čista profilaksa)",
+      "🏥 **Kombinacija:** Može se kombinirati s drugim parodontalnim uslugama (npr. pregled 4.1210–4.1230)",
+      "⚠️ **Važno:** Za razliku od čišćenja zuba od strane higijeničara (4.1110), radi se o medicinski indiciranoj terapiji za postojeći parodontitis. Troškovi se pokrivaju od UV/MV/IV kada je medicinski potrebno."
+    ],
+    "ta": [
+      "🦷 **செயல்படுத்தல்:** பல் மருத்துவரால் சிகிச்சை (பல் சுகாதார நிபுணரால் அல்ல)",
+      "🎯 **நோக்கம்:** முறையான ஈறுகளின் கீழ் பல் கல் நீக்கம் மற்றும் வேர் மென்மையாக்குதல் (ஆழமான ஸ்கேலிங்)",
+      "⏱️ **கணக்கிடுதல்:** ஒவ்வொரு 5 நிமிடங்களுக்கும் (நேரத்தின் அடிப்படையில்)",
+      "💉 **மரத்துப்போகச் செய்தல்:** தேவைப்பட்டால், 4.0650 (ஊடுருவல் மரத்துப்போகச் செய்தல்) உடன் தனித்தனியாக கணக்கிடலாம்",
+      "📋 **தேவை:** இந்த சிகிச்சை மருத்துவ ரீதியாக தேவையான ஈறு நோய் சிகிச்சையாகும் (தூய தடுப்பு அல்ல)",
+      "🏥 **இணைப்பு:** பிற ஈறு நோய் சேவைகளுடன் இணைக்கப்படலாம் (எ.கா., பரிசோதனை 4.1210–4.1230)",
+      "⚠️ **முக்கியம்:** சுகாதார நிபுணரால் பல் சுத்தம் (4.1110) போலல்லாமல், இது இருக்கும் ஈறு நோய்க்கான மருத்துவ ரீதியாக சுட்டிக்காட்டப்பட்ட சிகிச்சையாகும். மருத்துவ ரீதியாக தேவைப்படும்போது செலவுகள் UV/MV/IV ஆல் மறைக்கப்படுகின்றன."
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen der Zahnreinigung (4.1110) und dieser Tiefenreinigung (4.1260)?",
+        "answer": "Die Zahnreinigung (4.1110) durch die Dentalhygienikerin ist eine vorbeugende Maßnahme (Prophylaxe). Sie entfernt Plaque und Zahnstein oberhalb und knapp unterhalb des Zahnfleisches. Die Tiefenreinigung (4.1260) durch den Zahnarzt ist eine Behandlung bei bereits bestehender Zahnfleischentzündung (Parodontitis). Sie reinigt die Zahnfleischtaschen gründlich, entfernt Zahnstein tief unter dem Zahnfleisch und glättet die Zahnwurzeln. Die Tiefenreinigung ist medizinisch notwendig und wird bei entsprechender Diagnose von der Versicherung übernommen."
+      },
+      {
+        "question": "Ist die Tiefenreinigung schmerzhaft?",
+        "answer": "Die Behandlung findet unter dem Zahnfleisch statt und kann unangenehm sein. Daher wird in der Regel eine lokale Betäubung (Anästhesie) verwendet, damit du während der Behandlung keine Schmerzen spürst. Sprich mit deinem Zahnarzt, wenn du Angst vor Schmerzen hast – er kann die Betäubung anpassen."
+      },
+      {
+        "question": "Wie lange dauert die Behandlung?",
+        "answer": "Das hängt davon ab, wie viele Zähne betroffen sind und wie stark die Entzündung ist. Pro Kieferhälfte oder Quadrant können 15–30 Minuten benötigt werden. Oft wird die Behandlung auf mehrere Sitzungen verteilt (z.B. eine Hälfte pro Sitzung). Dein Zahnarzt wird dir vorher sagen, wie viel Zeit eingeplant werden sollte."
+      },
+      {
+        "question": "Wird die Tiefenreinigung von der Krankenkasse bezahlt?",
+        "answer": "Bei medizinischer Notwendigkeit (diagnostizierte Parodontitis) wird die Behandlung von UV/MV/IV übernommen. Vor der Behandlung muss eine parodontale Befundaufnahme (4.1210–4.1230) durchgeführt werden, um die Notwendigkeit zu bestätigen. Bei rein privaten Patienten (PP) müssen die Kosten selbst getragen werden, es sei denn, es besteht eine private Zahnzusatzversicherung."
+      },
+      {
+        "question": "Was passiert nach der Tiefenreinigung?",
+        "answer": "Nach der Behandlung kann dein Zahnfleisch für einige Tage empfindlich sein. Dein Zahnarzt wird dir eine Nachsorge empfehlen, oft mit einer Kontrolle nach 4–6 Wochen (4.1470). Wichtig ist, dass du zu Hause eine gute Mundhygiene durchführst, damit die Behandlungserfolge erhalten bleiben. Dein Zahnarzt oder die Dentalhygienikerin wird dir zeigen, wie du deine Zähne richtig putzt."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre le nettoyage dentaire (4.1110) et ce nettoyage en profondeur (4.1260)?",
+        "answer": "Le nettoyage dentaire (4.1110) par l'hygiéniste dentaire est une mesure préventive (prophylaxie). Il élimine la plaque et le tartre au-dessus et juste en dessous de la gencive. Le nettoyage en profondeur (4.1260) par le dentiste est un traitement en cas d'inflammation des gencives existante (parodontite). Il nettoie en profondeur les poches parodontales, élimine le tartre profondément sous la gencive et lisse les racines dentaires. Le nettoyage en profondeur est médicalement nécessaire et est pris en charge par l'assurance en cas de diagnostic correspondant."
+      },
+      {
+        "question": "Le nettoyage en profondeur est-il douloureux?",
+        "answer": "Le traitement se déroule sous la gencive et peut être inconfortable. C'est pourquoi une anesthésie locale est généralement utilisée pour que tu ne ressentes aucune douleur pendant le traitement. Parle à ton dentiste si tu as peur de la douleur – il pourra adapter l'anesthésie."
+      },
+      {
+        "question": "Combien de temps dure le traitement?",
+        "answer": "Cela dépend du nombre de dents touchées et de la gravité de l'inflammation. Par demi-mâchoire ou quadrant, il peut falloir 15–30 minutes. Le traitement est souvent réparti sur plusieurs séances (par exemple une moitié par séance). Ton dentiste te dira à l'avance combien de temps il faut prévoir."
+      },
+      {
+        "question": "Le nettoyage en profondeur est-il pris en charge par l'assurance maladie?",
+        "answer": "En cas de nécessité médicale (parodontite diagnostiquée), le traitement est pris en charge par UV/MV/IV. Avant le traitement, un examen parodontal (4.1210–4.1230) doit être effectué pour confirmer la nécessité. Pour les patients purement privés (PP), les frais doivent être pris en charge par eux-mêmes, à moins qu'une assurance dentaire privée existe."
+      },
+      {
+        "question": "Que se passe-t-il après le nettoyage en profondeur?",
+        "answer": "Après le traitement, tes gencives peuvent être sensibles pendant quelques jours. Ton dentiste te recommandera un suivi, souvent avec un contrôle après 4–6 semaines (4.1470). Il est important que tu aies une bonne hygiène buccale à la maison pour que les résultats du traitement soient maintenus. Ton dentiste ou l'hygiéniste dentaire te montrera comment te brosser les dents correctement."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra la pulizia dentale (4.1110) e questa pulizia profonda (4.1260)?",
+        "answer": "La pulizia dentale (4.1110) dell'igienista dentale è una misura preventiva (profilassi). Rimuove placca e tartaro sopra e appena sotto la gengiva. La pulizia profonda (4.1260) del dentista è un trattamento per l'infiammazione gengivale esistente (parodontite). Pulisce a fondo le tasche parodontali, rimuove il tartaro in profondità sotto la gengiva e leviga le radici dei denti. La pulizia profonda è medicalmente necessaria e viene coperta dall'assicurazione in caso di diagnosi corrispondente."
+      },
+      {
+        "question": "La pulizia profonda è dolorosa?",
+        "answer": "Il trattamento avviene sotto la gengiva e può essere scomodo. Per questo motivo viene solitamente utilizzata un'anestesia locale in modo che tu non senta alcun dolore durante il trattamento. Parla con il tuo dentista se hai paura del dolore – potrà adattare l'anestesia."
+      },
+      {
+        "question": "Quanto dura il trattamento?",
+        "answer": "Dipende da quanti denti sono interessati e da quanto è grave l'infiammazione. Per metà mascella o quadrante possono essere necessari 15–30 minuti. Spesso il trattamento viene suddiviso in più sedute (ad esempio una metà per seduta). Il tuo dentista ti dirà in anticipo quanto tempo dovresti prevedere."
+      },
+      {
+        "question": "La pulizia profonda è coperta dall'assicurazione malattia?",
+        "answer": "In caso di necessità medica (parodontite diagnosticata), il trattamento è coperto da UV/MV/IV. Prima del trattamento deve essere effettuato un esame parodontale (4.1210–4.1230) per confermare la necessità. Per i pazienti puramente privati (PP), i costi devono essere sostenuti da loro stessi, a meno che non esista un'assicurazione dentale privata."
+      },
+      {
+        "question": "Cosa succede dopo la pulizia profonda?",
+        "answer": "Dopo il trattamento, le tue gengive possono essere sensibili per alcuni giorni. Il tuo dentista ti consiglierà un follow-up, spesso con un controllo dopo 4–6 settimane (4.1470). È importante che tu abbia una buona igiene orale a casa per mantenere i risultati del trattamento. Il tuo dentista o l'igienista dentale ti mostrerà come lavarti i denti correttamente."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between dental cleaning (4.1110) and this deep cleaning (4.1260)?",
+        "answer": "Dental cleaning (4.1110) by the hygienist is a preventive measure (prophylaxis). It removes plaque and tartar above and just below the gumline. Deep cleaning (4.1260) by the dentist is a treatment for existing gum inflammation (periodontitis). It thoroughly cleans the periodontal pockets, removes tartar deep under the gums, and smoothes the tooth roots. Deep cleaning is medically necessary and is covered by insurance when diagnosed accordingly."
+      },
+      {
+        "question": "Is deep cleaning painful?",
+        "answer": "The treatment takes place under the gums and can be uncomfortable. Therefore, local anesthesia is usually used so you don't feel any pain during the treatment. Talk to your dentist if you are afraid of pain – they can adjust the anesthesia."
+      },
+      {
+        "question": "How long does the treatment take?",
+        "answer": "That depends on how many teeth are affected and how severe the inflammation is. Per half jaw or quadrant, 15–30 minutes may be needed. The treatment is often divided into several sessions (e.g., one half per session). Your dentist will tell you in advance how much time to plan for."
+      },
+      {
+        "question": "Is deep cleaning covered by health insurance?",
+        "answer": "If medically necessary (diagnosed periodontitis), the treatment is covered by UV/MV/IV. Before treatment, a periodontal examination (4.1210–4.1230) must be performed to confirm necessity. For purely private patients (PP), costs must be borne themselves unless they have private dental insurance."
+      },
+      {
+        "question": "What happens after deep cleaning?",
+        "answer": "After treatment, your gums may be sensitive for a few days. Your dentist will recommend follow-up care, often with a check-up after 4–6 weeks (4.1470). It is important that you maintain good oral hygiene at home to preserve the treatment results. Your dentist or hygienist will show you how to brush your teeth properly."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre la limpieza dental (4.1110) y esta limpieza profunda (4.1260)?",
+        "answer": "La limpieza dental (4.1110) por la higienista es una medida preventiva (profilaxis). Elimina la placa y el sarro por encima y justo por debajo de la encía. La limpieza profunda (4.1260) por el dentista es un tratamiento para la inflamación de encías existente (periodontitis). Limpia a fondo las bolsas periodontales, elimina el sarro profundamente bajo la encía y alisa las raíces dentales. La limpieza profunda es médicamente necesaria y está cubierta por el seguro cuando se diagnostica adecuadamente."
+      },
+      {
+        "question": "¿Es dolorosa la limpieza profunda?",
+        "answer": "El tratamiento se realiza bajo la encía y puede ser incómodo. Por lo tanto, se suele utilizar anestesia local para que no sientas dolor durante el tratamiento. Habla con tu dentista si tienes miedo al dolor – podrá ajustar la anestesia."
+      },
+      {
+        "question": "¿Cuánto dura el tratamiento?",
+        "answer": "Depende de cuántos dientes estén afectados y de la gravedad de la inflamación. Por media mandíbula o cuadrante pueden necesitarse 15–30 minutos. A menudo el tratamiento se divide en varias sesiones (por ejemplo, una mitad por sesión). Tu dentista te dirá de antemano cuánto tiempo debes prever."
+      },
+      {
+        "question": "¿La limpieza profunda está cubierta por el seguro de salud?",
+        "answer": "En caso de necesidad médica (periodontitis diagnosticada), el tratamiento está cubierto por UV/MV/IV. Antes del tratamiento, se debe realizar un examen periodontal (4.1210–4.1230) para confirmar la necesidad. Para los pacientes puramente privados (PP), los costos deben ser asumidos por ellos mismos, a menos que tengan un seguro dental privado."
+      },
+      {
+        "question": "¿Qué sucede después de la limpieza profunda?",
+        "answer": "Después del tratamiento, tus encías pueden estar sensibles durante unos días. Tu dentista recomendará un seguimiento, a menudo con un control después de 4–6 semanas (4.1470). Es importante que mantengas una buena higiene bucal en casa para preservar los resultados del tratamiento. Tu dentista o higienista te mostrará cómo cepillarte los dientes correctamente."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre a limpeza dentária (4.1110) e esta limpeza profunda (4.1260)?",
+        "answer": "A limpeza dentária (4.1110) pela higienista é uma medida preventiva (profilaxia). Remove placa e tártaro acima e logo abaixo da gengiva. A limpeza profunda (4.1260) pelo dentista é um tratamento para inflamação gengival existente (periodontite). Limpa a fundo as bolsas periodontais, remove o tártaro profundamente sob a gengiva e alisa as raízes dos dentes. A limpeza profunda é medicamente necessária e é coberta pelo seguro quando diagnosticada adequadamente."
+      },
+      {
+        "question": "A limpeza profunda é dolorosa?",
+        "answer": "O tratamento ocorre sob a gengiva e pode ser desconfortável. Portanto, geralmente é utilizada anestesia local para que não sintas dor durante o tratamento. Fala com o teu dentista se tens medo da dor – ele poderá ajustar a anestesia."
+      },
+      {
+        "question": "Quanto tempo demora o tratamento?",
+        "answer": "Depende de quantos dentes estão afetados e da gravidade da inflamação. Por meia mandíbula ou quadrante podem ser necessários 15–30 minutos. Frequentemente, o tratamento é dividido em várias sessões (por exemplo, uma metade por sessão). O teu dentista dir-te-á antecipadamente quanto tempo deves planear."
+      },
+      {
+        "question": "A limpeza profunda é coberta pelo seguro de saúde?",
+        "answer": "Em caso de necessidade médica (periodontite diagnosticada), o tratamento é coberto por UV/MV/IV. Antes do tratamento, deve ser realizado um exame periodontal (4.1210–4.1230) para confirmar a necessidade. Para pacientes puramente privados (PP), os custos devem ser suportados por eles próprios, a menos que tenham um seguro dentário privado."
+      },
+      {
+        "question": "O que acontece após a limpeza profunda?",
+        "answer": "Após o tratamento, as tuas gengivas podem estar sensíveis durante alguns dias. O teu dentista recomendará um acompanhamento, muitas vezes com um controlo após 4–6 semanas (4.1470). É importante que mantenhas uma boa higiene oral em casa para preservar os resultados do tratamento. O teu dentista ou higienista mostrar-te-á como escovar os dentes corretamente."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między czyszczeniem zębów (4.1110) a tym głębokim czyszczeniem (4.1260)?",
+        "answer": "Czyszczenie zębów (4.1110) przez higienistkę jest działaniem profilaktycznym (profilaktyka). Usuwa płytkę nazębną i kamień powyżej i tuż poniżej linii dziąseł. Głębokie czyszczenie (4.1260) przez dentystę to leczenie istniejącego zapalenia dziąseł (zapalenia przyzębia). Dokładnie czyści kieszonki przyzębne, usuwa kamień głęboko pod dziąsłem i wygładza korzenie zębów. Głębokie czyszczenie jest medycznie konieczne i jest refundowane przez ubezpieczenie po odpowiedniej diagnozie."
+      },
+      {
+        "question": "Czy głębokie czyszczenie jest bolesne?",
+        "answer": "Leczenie odbywa się pod dziąsłem i może być nieprzyjemne. Dlatego zwykle stosuje się znieczulenie miejscowe, aby nie odczuwać bólu podczas zabiegu. Porozmawiaj ze swoim dentystą, jeśli boisz się bólu – może dostosować znieczulenie."
+      },
+      {
+        "question": "Jak długo trwa leczenie?",
+        "answer": "To zależy od tego, ile zębów jest dotkniętych i jak poważne jest zapalenie. Na połowę szczęki lub kwadrant może być potrzebne 15–30 minut. Leczenie często dzieli się na kilka sesji (np. połowa na sesję). Twój dentysta powie Ci z wyprzedzeniem, ile czasu należy zaplanować."
+      },
+      {
+        "question": "Czy głębokie czyszczenie jest refundowane przez ubezpieczenie zdrowotne?",
+        "answer": "W przypadku medycznej konieczności (zdiagnozowane zapalenie przyzębia) leczenie jest refundowane przez UV/MV/IV. Przed leczeniem należy wykonać badanie periodontologiczne (4.1210–4.1230), aby potwierdzić konieczność. W przypadku pacjentów czysto prywatnych (PP) koszty muszą być pokryte we własnym zakresie, chyba że mają prywatne ubezpieczenie stomatologiczne."
+      },
+      {
+        "question": "Co dzieje się po głębokim czyszczeniu?",
+        "answer": "Po zabiegu Twoje dziąsła mogą być wrażliwe przez kilka dni. Dentysta zaleci wizytę kontrolną, często po 4–6 tygodniach (4.1470). Ważne jest, abyś dbał o dobrą higienę jamy ustnej w domu, aby utrzymać wyniki leczenia. Twój dentysta lub higienistka pokaże Ci, jak prawidłowo myć zęby."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis pastrimit dentar (4.1110) dhe këtij pastrimi të thellë (4.1260)?",
+        "answer": "Pastrimi dentar (4.1110) nga higjienistja është një masë parandaluese (profilaksë). Largon pllakën dhe gurët mbi dhe pak nën mishrat e dhëmbëve. Pastrimi i thellë (4.1260) nga dentisti është një trajtim për inflamacionin ekzistues të mishrave (periodontit). Pastron tërësisht xhepat periodontal, largon gurët thellë nën mishrat dhe lëmon rrënjët e dhëmbëve. Pastrimi i thellë është mjekësisht i nevojshëm dhe mbulohet nga sigurimi kur diagnostikohet në mënyrë të përshtatshme."
+      },
+      {
+        "question": "A është i dhimbshëm pastrimi i thellë?",
+        "answer": "Trajtimi zhvillohet nën mishrat dhe mund të jetë i pakëndshëm. Prandaj, zakonisht përdoret anestezi lokale në mënyrë që të mos ndjesh dhimbje gjatë trajtimit. Fol me dentistin tënd nëse ke frikë nga dhimbja – ai mund të rregullojë anestezinë."
+      },
+      {
+        "question": "Sa kohë zgjat trajtimi?",
+        "answer": "Kjo varet nga sa dhëmbë janë të prekur dhe sa e rëndë është inflamacioni. Për gjysmë nofulla ose kuadrant mund të nevojiten 15–30 minuta. Trajtimi shpesh ndahet në disa seanca (p.sh., një gjysmë për seancë). Dentisti yt do të të tregojë paraprakisht sa kohë duhet të planifikosh."
+      },
+      {
+        "question": "A mbulohet pastrimi i thellë nga sigurimi shëndetësor?",
+        "answer": "Në rast nevoje mjekësore (periodontit i diagnostikuar), trajtimi mbulohet nga UV/MV/IV. Para trajtimit, duhet të kryhet një ekzaminim periodontal (4.1210–4.1230) për të konfirmuar nevojën. Për pacientët thjesht privatë (PP), kostot duhet të përballohen vetë, përveç nëse kanë një sigurim privat dentar."
+      },
+      {
+        "question": "Çfarë ndodh pas pastrimit të thellë?",
+        "answer": "Pas trajtimit, mishrat e tua mund të jenë të ndjeshme për disa ditë. Dentisti yt do të rekomandojë kujdes të mëtejshëm, shpesh me një kontroll pas 4–6 javësh (4.1470). Është e rëndësishme që të kesh një higjienë të mirë orale në shtëpi për të ruajtur rezultatet e trajtimit. Dentisti yt ose higjienistja do të të tregojë se si të lani dhëmbët siç duhet."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Diş temizliği (4.1110) ile bu derin temizlik (4.1260) arasındaki fark nedir?",
+        "answer": "Hijyenist tarafından diş temizliği (4.1110) önleyici bir önlemdir (profilaksi). Plak ve diş taşını diş eti çizgisinin üstünde ve hemen altında temizler. Diş hekimi tarafından derin temizlik (4.1260), mevcut diş eti iltihabı (periodontitis) için bir tedavidir. Periodontal cepleri iyice temizler, diş eti altındaki diş taşını derinlemesine temizler ve diş köklerini düzeltir. Derin temizlik tıbbi olarak gereklidir ve uygun şekilde teşhis edildiğinde sigorta tarafından karşılanır."
+      },
+      {
+        "question": "Derin temizlik acı verir mi?",
+        "answer": "Tedavi diş eti altında gerçekleşir ve rahatsız edici olabilir. Bu nedenle, tedavi sırasında ağrı hissetmemen için genellikle lokal anestezi kullanılır. Ağrıdan korkuyorsan diş hekiminle konuş – anesteziyi ayarlayabilir."
+      },
+      {
+        "question": "Tedavi ne kadar sürer?",
+        "answer": "Bu, kaç dişin etkilendiğine ve iltihabın ne kadar şiddetli olduğuna bağlıdır. Yarım çene veya kadran başına 15–30 dakika gerekebilir. Tedavi genellikle birkaç seansa bölünür (örneğin, seans başına bir yarım). Diş hekimin önceden ne kadar zaman ayırman gerektiğini söyleyecektir."
+      },
+      {
+        "question": "Derin temizlik sağlık sigortası tarafından karşılanır mı?",
+        "answer": "Tıbbi olarak gerekli olduğunda (teşhis edilmiş periodontitis), tedavi UV/MV/IV tarafından karşılanır. Tedaviden önce, gerekliliği doğrulamak için bir periodontal muayene (4.1210–4.1230) yapılmalıdır. Tamamen özel hastalar (PP) için, özel diş sigortaları yoksa masraflar kendileri tarafından karşılanmalıdır."
+      },
+      {
+        "question": "Derin temizlikten sonra ne olur?",
+        "answer": "Tedaviden sonra diş etlerin birkaç gün hassas olabilir. Diş hekimin, genellikle 4–6 hafta sonra bir kontrol ile (4.1470) takip önerecektir. Tedavi sonuçlarını korumak için evde iyi bir ağız hijyeni sağlaman önemlidir. Diş hekimin veya hijyenist dişlerini doğru şekilde nasıl fırçalayacağını gösterecektir."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između čišćenja zuba (4.1110) i ovog dubinskog čišćenja (4.1260)?",
+        "answer": "Čišćenje zuba (4.1110) od strane higijeničara je preventivna mjera (profilaksa). Uklanja plak i kamenac iznad i neposredno ispod linije desni. Dubinsko čišćenje (4.1260) od strane zubara je liječenje postojeće upale desni (parodontitis). Temeljito čisti parodontalne džepove, uklanja kamenac duboko ispod desni i glađenje korijena zuba. Dubinsko čišćenje je medicinski potrebno i pokriva ga osiguranje kada se odgovarajuće dijagnosticira."
+      },
+      {
+        "question": "Je li dubinsko čišćenje bolno?",
+        "answer": "Liječenje se odvija ispod desni i može biti neugodno. Stoga se obično koristi lokalna anestezija kako ne bi osjetio bol tijekom liječenja. Razgovaraj sa svojim zubarom ako se bojiš boli – može prilagoditi anesteziju."
+      },
+      {
+        "question": "Koliko dugo traje liječenje?",
+        "answer": "To ovisi o tome koliko je zuba zahvaćeno i koliko je ozbiljna upala. Po polovici čeljusti ili kvadrantu može biti potrebno 15–30 minuta. Liječenje se često dijeli na nekoliko seansi (npr. jedna polovica po seansi). Zubar će ti unaprijed reći koliko vremena treba planirati."
+      },
+      {
+        "question": "Pokriva li zdravstveno osiguranje dubinsko čišćenje?",
+        "answer": "Ako je medicinski potrebno (dijagnosticiran parodontitis), liječenje pokriva UV/MV/IV. Prije liječenja mora se obaviti parodontalni pregled (4.1210–4.1230) kako bi se potvrdila potreba. Za čisto privatne pacijente (PP), troškove moraju snositi sami, osim ako imaju privatno stomatološko osiguranje."
+      },
+      {
+        "question": "Što se događa nakon dubinskog čišćenja?",
+        "answer": "Nakon liječenja, tvoje desni mogu biti osjetljive nekoliko dana. Zubar će preporučiti naknadnu njegu, često s kontrolom nakon 4–6 tjedana (4.1470). Važno je da kod kuće održavaš dobru oralnu higijenu kako bi se zadržali rezultati liječenja. Zubar ili higijeničar će ti pokazati kako pravilno prati zube."
+      }
+    ],
+    "ta": [
+      {
+        "question": "பல் சுத்தம் (4.1110) க்கும் இந்த ஆழமான சுத்தத்திற்கும் (4.1260) என்ன வித்தியாசம்?",
+        "answer": "சுகாதார நிபுணரால் பல் சுத்தம் (4.1110) ஒரு தடுப்பு நடவடிக்கையாகும் (பல் பாதுகாப்பு). இது பிளேக் மற்றும் பல் கல்லை ஈறுகளின் மேல் மற்றும் சற்று கீழே நீக்குகிறது. பல் மருத்துவரால் ஆழமான சுத்தம் (4.1260) என்பது இருக்கும் ஈறு வீக்கத்திற்கான (ஈறு நோய்) சிகிச்சையாகும். இது ஈறு பைகளை முழுமையாக சுத்தம் செய்கிறது, ஈறுகளின் கீழ் ஆழமாக பல் கல்லை நீக்குகிறது, மற்றும் பல் வேர்களை மென்மையாக்குகிறது. ஆழமான சுத்தம் மருத்துவ ரீதியாக தேவையானது மற்றும் அதற்கேற்ப கண்டறியப்பட்டால் காப்பீட்டால் மறைக்கப்படுகிறது."
+      },
+      {
+        "question": "ஆழமான சுத்தம் வலியை ஏற்படுத்துமா?",
+        "answer": "சிகிச்சை ஈறுகளின் கீழ் நடைபெறுகிறது மற்றும் அசௌகரியமாக இருக்கலாம். எனவே, சிகிச்சையின் போது வலியை உணராத வகையில் பொதுவாக உள்ளூர் மரத்துப்போகச் செய்தல் பயன்படுத்தப்படுகிறது. வலிக்கு பயப்படுகிறீர்கள் என்றால் உங்கள் பல் மருத்துவரிடம் பேசுங்கள் – அவர் மரத்துப்போகச் செய்தலை சரிசெய்யலாம்."
+      },
+      {
+        "question": "சிகிச்சை எவ்வளவு நேரம் எடுக்கும்?",
+        "answer": "இது எத்தனை பற்கள் பாதிக்கப்பட்டுள்ளன மற்றும் வீக்கம் எவ்வளவு கடுமையானது என்பதைப் பொறுத்தது. அரை தாடை அல்லது பகுதிக்கு 15–30 நிமிடங்கள் தேவைப்படலாம். சிகிச்சை பெரும்பாலும் பல அமர்வுகளாக பிரிக்கப்படுகிறது (எ.கா., ஒரு அமர்வில் ஒரு பாதி). உங்கள் பல் மருத்துவர் எவ்வளவு நேரம் திட்டமிட வேண்டும் என்பதை முன்கூட்டியே கூறுவார்."
+      },
+      {
+        "question": "ஆழமான சுத்தம் சுகாதார காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "மருத்துவ ரீதியாக தேவைப்பட்டால் (கண்டறியப்பட்ட ஈறு நோய்), சிகிச்சை UV/MV/IV ஆல் மறைக்கப்படுகிறது. சிகிச்சைக்கு முன், தேவையை உறுதிப்படுத்த ஒரு ஈறு நோய் பரிசோதனை (4.1210–4.1230) செய்யப்பட வேண்டும். முற்றிலும் தனியார் நோயாளிகளுக்கு (PP), தனியார் பல் காப்பீடு இல்லையென்றால் செலவுகளை தாங்களே ஏற்க வேண்டும்."
+      },
+      {
+        "question": "ஆழமான சுத்தத்திற்குப் பிறகு என்ன நடக்கும்?",
+        "answer": "சிகிச்சைக்குப் பிறகு, உங்கள் ஈறுகள் சில நாட்களுக்கு உணர்திறன் கொண்டிருக்கலாம். உங்கள் பல் மருத்துவர், பெரும்பாலும் 4–6 வாரங்களுக்குப் பிறகு ஒரு கட்டுப்பாட்டுடன் (4.1470) பின்தொடர்வதை பரிந்துரைப்பார். சிகிச்சை முடிவுகளைப் பராமரிக்க வீட்டில் நல்ல வாய் சுகாதாரத்தை பராமரிப்பது முக்கியம். உங்கள் பல் மருத்துவர் அல்லது சுகாதார நிபுணர் பற்களை சரியாக எவ்வாறு துலக்குவது என்பதைக் காண்பிப்பார்."
+      }
+    ]
+  }
+}

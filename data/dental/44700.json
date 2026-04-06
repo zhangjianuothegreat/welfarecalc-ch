@@ -1,0 +1,505 @@
+{
+  "code": "4.4700",
+  "name_de": "Bleichen von devitalen Zähnen",
+  "display_name": {
+    "de": "Zahnaufhellung (toter Zahn)",
+    "fr": "Blanchiment dentaire (dent dévitalisée)",
+    "it": "Sbiancamento dentale (dente devitalizzato)",
+    "en": "Tooth whitening (non-vital tooth)",
+    "es": "Blanqueamiento dental (diente desvitalizado)",
+    "pt": "Branqueamento dentário (dente desvitalizado)",
+    "pl": "Wybielanie zęba (zęba martwego)",
+    "al": "Zbardhja e dhëmbit (dhëmbi i vdekur)",
+    "tr": "Diş beyazlatma (canlı olmayan diş)",
+    "hr": "Bjeljenje zuba (mrtvog zuba)",
+    "ta": "பல் வெண்மையாக்குதல் (உயிரற்ற பல்)"
+  },
+  "search_keywords": {
+    "de": ["bleichen", "zahnaufhellung", "devital", "wurzelbehandelt", "toter zahn", "innenbleichung", "walking bleach", "koronarbleichung"],
+    "fr": ["blanchiment", "blanchiment dentaire", "dévitalisé", "dé vitalisé", "traitement canalaire", "blanchiment interne", "walking bleach"],
+    "it": ["sbiancamento", "sbiancamento dentale", "devitalizzato", "devi talizzato", "canalare", "sbiancamento interno", "walking bleach"],
+    "en": ["bleaching", "tooth whitening", "non-vital", "devitalized", "root canal treated", "internal bleaching", "walking bleach"],
+    "es": ["blanqueamiento", "blanqueamiento dental", "desvitalizado", "endodoncia", "blanqueamiento interno", "walking bleach"],
+    "pt": ["branqueamento", "branqueamento dentário", "desvitalizado", "tratamento de canal", "branqueamento interno", "walking bleach"],
+    "pl": ["wybielanie", "wybielanie zębów", "dewitalny", "martwy ząb", "leczenie kanałowe", "wybielanie wewnętrzne"],
+    "al": ["zbardhje", "zbardhje e dhëmbëve", "devital", "dhëmb i vdekur", "trajtim kanali", "zbardhje e brendshme"],
+    "tr": ["beyazlatma", "diş beyazlatma", "devital", "canlı olmayan diş", "kanal tedavisi", "iç beyazlatma"],
+    "hr": ["bjeljenje", "bjeljenje zuba", "devitalan", "mrtav zub", "liječenje kanala", "unutarnje bjeljenje"],
+    "ta": ["வெண்மையாக்குதல்", "பல் வெண்மையாக்குதல்", "உயிரற்ற", "வேர் கால்வாய் சிகிச்சை", "உள் வெண்மையாக்குதல்"]
+  },
+  "tp_uv_mviv": 111.60,
+  "tp_pp_max": 128.30,
+  "tp_pp_min": 94.90,
+  "chapter": "07.05",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn ein Zahn nach einer Wurzelbehandlung dunkel geworden ist, kann der Zahnarzt ihn von innen wieder aufhellen. Dazu macht er ein kleines Loch in die Rückseite des Zahnes und gibt ein spezielles Bleichgel hinein. Das Gel bleibt ein paar Tage im Zahn und macht ihn wieder heller. Das nennt man Walking-Bleach-Methode. Der Zahn wird dadurch nicht weißer als die anderen Zähne, aber viel heller und natürlicher. Pro Zahn sind bis zu 3 Sitzungen möglich.",
+    "fr": "Lorsqu'une dent est devenue foncée après un traitement canalaire, le dentiste peut l'éclaircir de l'intérieur. Pour cela, il fait un petit trou à l'arrière de la dent et y met un gel blanchissant spécial. Le gel reste quelques jours dans la dent et l'éclaircit. C'est ce qu'on appelle la méthode walking bleach. La dent ne devient pas plus blanche que les autres dents, mais beaucoup plus claire et naturelle. Jusqu'à 3 séances par dent sont possibles.",
+    "it": "Quando un dente è diventato scuro dopo un trattamento canalare, il dentista può schiarirlo dall'interno. Per farlo, pratica un piccolo foro sul retro del dente e vi inserisce un gel sbiancante speciale. Il gel rimane nel dente per alcuni giorni e lo schiarisce. Questo è chiamato metodo walking bleach. Il dente non diventa più bianco degli altri denti, ma molto più chiaro e naturale. Sono possibili fino a 3 sedute per dente.",
+    "en": "When a tooth has become dark after root canal treatment, the dentist can lighten it from the inside. To do this, he makes a small hole in the back of the tooth and puts a special bleaching gel inside. The gel stays in the tooth for a few days and makes it lighter. This is called the walking bleach method. The tooth does not become whiter than the other teeth, but much lighter and more natural. Up to 3 sessions per tooth are possible.",
+    "es": "Cuando un diente se ha oscurecido después de un tratamiento de conducto, el dentista puede aclararlo desde el interior. Para ello, hace un pequeño agujero en la parte posterior del diente y coloca un gel blanqueador especial en su interior. El gel permanece en el diente durante unos días y lo aclara. Esto se llama método walking bleach. El diente no se vuelve más blanco que los otros dientes, sino mucho más claro y natural. Son posibles hasta 3 sesiones por diente.",
+    "pt": "Quando um dente escureceu após um tratamento de canal, o dentista pode clareá-lo por dentro. Para isso, faz um pequeno orifício na parte de trás do dente e coloca um gel branqueador especial no interior. O gel permanece no dente durante alguns dias e torna-o mais claro. Isto é chamado método walking bleach. O dente não fica mais branco do que os outros dentes, mas muito mais claro e natural. São possíveis até 3 sessões por dente.",
+    "pl": "Gdy ząb ściemniał po leczeniu kanałowym, dentysta może go rozjaśnić od wewnątrz. W tym celu robi mały otwór z tyłu zęba i umieszcza w nim specjalny żel wybielający. Żel pozostaje w zębie przez kilka dni i rozjaśnia go. Nazywa się to metodą walking bleach. Ząb nie staje się bielszy od innych zębów, ale znacznie jaśniejszy i bardziej naturalny. Możliwe są do 3 sesji na ząb.",
+    "al": "Kur një dhëmb është errësuar pas një trajtimi kanali, dentisti mund ta zbardhë atë nga brenda. Për ta bërë këtë, ai bën një vrimë të vogël në pjesën e pasme të dhëmbit dhe vendos një xhel të veçantë zbardhues brenda. Xheli qëndron në dhëmb për disa ditë dhe e bën atë më të ndritshëm. Kjo quhet metoda walking bleach. Dhëmbi nuk bëhet më i bardhë se dhëmbët e tjerë, por shumë më i ndritshëm dhe më natyral. Deri në 3 seanca për dhëmb janë të mundshme.",
+    "tr": "Bir diş kanal tedavisinden sonra koyulaştığında, diş hekimi onu içeriden aydınlatabilir. Bunu yapmak için dişin arkasında küçük bir delik açar ve içine özel bir beyazlatma jeli koyar. Jel birkaç gün dişin içinde kalır ve onu aydınlatır. Buna walking bleach yöntemi denir. Diş diğer dişlerden daha beyaz olmaz, ancak çok daha açık ve doğal olur. Diş başına 3 seansa kadar mümkündür.",
+    "hr": "Kada je zub potamnio nakon liječenja korijenskog kanala, zubar ga može posvijetliti iznutra. Da bi to učinio, napravi malu rupu na stražnjoj strani zuba i unutra stavi poseban gel za bjeljenje. Gel ostaje u zubu nekoliko dana i čini ga svjetlijim. To se zove metoda walking bleach. Zub ne postaje bjelji od ostalih zuba, ali mnogo svjetliji i prirodniji. Moguće su do 3 seanse po zubu.",
+    "ta": "ஒரு பல் வேர் கால்வாய் சிகிச்சைக்குப் பிறகு கருமையாகிவிட்டால், பல் மருத்துவர் அதை உள்ளே இருந்து வெண்மையாக்க முடியும். இதைச் செய்ய, பல்லின் பின்புறத்தில் ஒரு சிறிய துளை போட்டு, உள்ளே ஒரு சிறப்பு வெண்மையாக்கும் ஜெல்லை வைக்கிறார். ஜெல் சில நாட்கள் பல்லில் தங்கி, அதை வெண்மையாக்குகிறது. இது வாக்கிங் ப்ளீச் முறை என்று அழைக்கப்படுகிறது. பல் மற்ற பற்களை விட வெண்மையாக மாறாது, ஆனால் மிகவும் வெளிச்சமாகவும் இயற்கையாகவும் மாறும். ஒரு பல்லுக்கு 3 அமர்வுகள் வரை சாத்தியம்."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 **Bleichen eines wurzelbehandelten (devitalen) Zahnes**",
+      "🔧 **Aufbereitung** des Zahnes (Kofferdam wird separat berechnet)",
+      "💊 **Einlage** des Bleichmittels in die Zahnkrone",
+      "🦷 **Provisorische Füllung** zum Verschließen des Zugangs",
+      "🕒 **Walking-Bleach-Methode** (Bleichmittel verbleibt für mehrere Tage im Zahn)",
+      "🔄 **Maximal 3 Sitzungen** pro Zahn verrechenbar",
+      "💡 **Geeignet für:** Verfärbungen nach Wurzelbehandlung (z.B. durch Blutreste, Füllungsmaterialien)"
+    ],
+    "fr": [
+      "🦷 **Blanchiment d'une dent dévitalisée (traitement canalaire)**",
+      "🔧 **Préparation** de la dent (la digue en caoutchouc est facturée séparément)",
+      "💊 **Insertion** de l'agent blanchissant dans la couronne dentaire",
+      "🦷 **Obturation provisoire** pour fermer l'accès",
+      "🕒 **Méthode walking bleach** (l'agent blanchissant reste dans la dent pendant plusieurs jours)",
+      "🔄 **Maximum 3 séances** par dent facturables",
+      "💡 **Convient pour:** Décolorations après traitement canalaire (p. ex. dues à des résidus sanguins, matériaux d'obturation)"
+    ],
+    "it": [
+      "🦷 **Sbiancamento di un dente devitalizzato (trattamento canalare)**",
+      "🔧 **Preparazione** del dente (la diga di gomma è fatturata separatamente)",
+      "💊 **Inserimento** dell'agente sbiancante nella corona del dente",
+      "🦷 **Otturazione provvisoria** per chiudere l'accesso",
+      "🕒 **Metodo walking bleach** (l'agente sbiancante rimane nel dente per diversi giorni)",
+      "🔄 **Massimo 3 sedute** per dente fatturabili",
+      "💡 **Adatto per:** Decolorazioni dopo trattamento canalare (ad es. da residui di sangue, materiali di otturazione)"
+    ],
+    "en": [
+      "🦷 **Bleaching of a non-vital (root canal treated) tooth**",
+      "🔧 **Preparation** of the tooth (rubber dam is billed separately)",
+      "💊 **Placement** of bleaching agent into the tooth crown",
+      "🦷 **Temporary filling** to seal the access",
+      "🕒 **Walking bleach method** (bleaching agent remains in the tooth for several days)",
+      "🔄 **Maximum 3 sessions** per tooth billable",
+      "💡 **Suitable for:** Discoloration after root canal treatment (e.g., from blood residues, filling materials)"
+    ],
+    "es": [
+      "🦷 **Blanqueamiento de un diente desvitalizado (tratamiento de conducto)**",
+      "🔧 **Preparación** del diente (el dique de goma se factura por separado)",
+      "💊 **Colocación** del agente blanqueador en la corona del diente",
+      "🦷 **Obturación provisional** para sellar el acceso",
+      "🕒 **Método walking bleach** (el agente blanqueador permanece en el diente varios días)",
+      "🔄 **Máximo 3 sesiones** por diente facturables",
+      "💡 **Adecuado para:** Decoloraciones después de un tratamiento de conducto (p. ej., por restos de sangre, materiales de obturación)"
+    ],
+    "pt": [
+      "🦷 **Branqueamento de um dente desvitalizado (tratamento de canal)**",
+      "🔧 **Preparação** do dente (o dique de borracha é faturado separadamente)",
+      "💊 **Colocação** do agente branqueador na coroa do dente",
+      "🦷 **Obturação provisória** para selar o acesso",
+      "🕒 **Método walking bleach** (o agente branqueador permanece no dente durante vários dias)",
+      "🔄 **Máximo 3 sessões** por dente faturáveis",
+      "💡 **Adequado para:** Descolorações após tratamento de canal (p. ex., por resíduos de sangue, materiais de obturação)"
+    ],
+    "pl": [
+      "🦷 **Wybielanie zęba martwego (po leczeniu kanałowym)**",
+      "🔧 **Przygotowanie** zęba (koferdam rozliczany osobno)",
+      "💊 **Umieszczenie** środka wybielającego w koronie zęba",
+      "🦷 **Wypełnienie tymczasowe** do zamknięcia dostępu",
+      "🕒 **Metoda walking bleach** (środek wybielający pozostaje w zębie przez kilka dni)",
+      "🔄 **Maksymalnie 3 sesje** na ząb do rozliczenia",
+      "💡 **Odpowiednie dla:** Przebarwień po leczeniu kanałowym (np. z powodu pozostałości krwi, materiałów wypełniających)"
+    ],
+    "al": [
+      "🦷 **Zbardhja e një dhëmbi të vdekur (pas trajtimit të kanalit)**",
+      "🔧 **Përgatitja** e dhëmbit (koferdami faturohet veçmas)",
+      "💊 **Vendosja** e agjentit zbardhues në kurorën e dhëmbit",
+      "🦷 **Mbushje e përkohshme** për të mbyllur aksesin",
+      "🕒 **Metoda walking bleach** (agjenti zbardhues qëndron në dhëmb për disa ditë)",
+      "🔄 **Maksimumi 3 seanca** për dhëmb të faturoshme",
+      "💡 **I përshtatshëm për:** Njollosje pas trajtimit të kanalit (p.sh., nga mbetje gjaku, materiale mbushëse)"
+    ],
+    "tr": [
+      "🦷 **Kanal tedavisi görmüş (canlı olmayan) dişin beyazlatılması**",
+      "🔧 **Dişin hazırlanması** (lastik örtü ayrı faturalandırılır)",
+      "💊 **Beyazlatma ajanının** diş kronuna yerleştirilmesi",
+      "🦷 **Geçici dolgu** ile girişin kapatılması",
+      "🕒 **Walking bleach yöntemi** (beyazlatma ajanı birkaç gün dişte kalır)",
+      "🔄 **Diş başına maksimum 3 seans** faturalandırılabilir",
+      "💡 **Uygun:** Kanal tedavisi sonrası renk değişiklikleri (örn. kan kalıntıları, dolgu malzemeleri)"
+    ],
+    "hr": [
+      "🦷 **Bjeljenje mrtvog zuba (nakon liječenja kanala)**",
+      "🔧 **Priprema** zuba (gumeni pokrov se naplaćuje zasebno)",
+      "💊 **Stavljanje** sredstva za bjeljenje u krunu zuba",
+      "🦷 **Privremena ispuna** za zatvaranje pristupa",
+      "🕒 **Metoda walking bleach** (sredstvo za bjeljenje ostaje u zubu nekoliko dana)",
+      "🔄 **Maksimalno 3 seanse** po zubu naplativo",
+      "💡 **Prikladno za:** Promjenu boje nakon liječenja kanala (npr. od ostataka krvi, materijala za ispunu)"
+    ],
+    "ta": [
+      "🦷 **வேர் கால்வாய் சிகிச்சை பெற்ற (உயிரற்ற) பல்லை வெண்மையாக்குதல்**",
+      "🔧 **பல்லின் தயாரிப்பு** (ரப்பர் டேம் தனித்தனியாக கணக்கிடப்படும்)",
+      "💊 **வெண்மையாக்கும் முகவரை** பல் கிரீடத்தில் வைத்தல்",
+      "🦷 **தற்காலிக நிரப்புதல்** அணுகலை மூடுவதற்கு",
+      "🕒 **வாக்கிங் ப்ளீச் முறை** (வெண்மையாக்கும் முகவர் பல நாட்கள் பல்லில் இருக்கும்)",
+      "🔄 **ஒரு பல்லுக்கு அதிகபட்சம் 3 அமர்வுகள்** கணக்கிடலாம்",
+      "💡 **ஏற்றது:** வேர் கால்வாய் சிகிச்சைக்குப் பிறகு ஏற்படும் நிற மாற்றங்களுக்கு (எ.கா., இரத்த எச்சங்கள், நிரப்பு பொருட்களால்)"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Bleichen von devitalen Zähnen** (Zähne nach Wurzelbehandlung)",
+      "🔧 **Inklusive:** Provisorische Füllung, Aufbereitung und Einlage des Bleichmittels",
+      "🚫 **Exklusive:** Kofferdam (wird separat mit 4.0940 oder 4.0950 abgerechnet)",
+      "🦷 **Pro Zahn und Sitzung** verrechenbar",
+      "🔄 **Maximal 3 Sitzungen pro Zahn** (bei mehr Sitzungen ist eine schriftliche Begründung erforderlich)",
+      "⏱️ **Walking-Bleach-Methode:** Bleichmittel verbleibt mehrere Tage im Zahn, dann wird der Zahn kontrolliert und ggf. erneut behandelt",
+      "💡 **Voraussetzung:** Der Zahn muss fachgerecht wurzelgefüllt sein (keine offenen Kanäle)",
+      "⚠️ **Wichtig:** Dies ist eine interne Bleaching-Methode für devitale Zähne. Für das Bleichen von vitalen Zähnen (Homebleaching / In-Office-Bleaching) gelten andere Tarifziffern (4.4710, 4.4720)"
+    ],
+    "fr": [
+      "🦷 **Blanchiment des dents dévitalisées** (dents après traitement canalaire)",
+      "🔧 **Inclus:** Obturation provisoire, préparation et insertion de l'agent blanchissant",
+      "🚫 **Exclus:** Digue en caoutchouc (facturée séparément avec 4.0940 ou 4.0950)",
+      "🦷 **Facturable par dent et par séance**",
+      "🔄 **Maximum 3 séances par dent** (pour plus de séances, une justification écrite est nécessaire)",
+      "⏱️ **Méthode walking bleach:** L'agent blanchissant reste plusieurs jours dans la dent, puis la dent est contrôlée et éventuellement retraitée",
+      "💡 **Condition:** La dent doit être correctement obturée canalairement (pas de canaux ouverts)",
+      "⚠️ **Important:** Il s'agit d'une méthode de blanchiment interne pour dents dévitalisées. Pour le blanchiment des dents vitales (home bleaching / in-office bleaching), d'autres codes s'appliquent (4.4710, 4.4720)"
+    ],
+    "it": [
+      "🦷 **Sbiancamento di denti devitalizzati** (denti dopo trattamento canalare)",
+      "🔧 **Incluso:** Otturazione provvisoria, preparazione e inserimento dell'agente sbiancante",
+      "🚫 **Escluso:** Diga di gomma (fatturata separatamente con 4.0940 o 4.0950)",
+      "🦷 **Fatturabile per dente e per seduta**",
+      "🔄 **Massimo 3 sedute per dente** (per più sedute è necessaria una giustificazione scritta)",
+      "⏱️ **Metodo walking bleach:** L'agente sbiancante rimane nel dente per diversi giorni, poi il dente viene controllato ed eventualmente ritrattato",
+      "💡 **Condizione:** Il dente deve essere correttamente otturato canalare (nessun canale aperto)",
+      "⚠️ **Importante:** Questo è un metodo di sbiancamento interno per denti devitalizzati. Per lo sbiancamento di denti vitali (home bleaching / in-office bleaching) si applicano altri codici (4.4710, 4.4720)"
+    ],
+    "en": [
+      "🦷 **Bleaching of non-vital teeth** (teeth after root canal treatment)",
+      "🔧 **Included:** Temporary filling, preparation, and placement of bleaching agent",
+      "🚫 **Excluded:** Rubber dam (billed separately with 4.0940 or 4.0950)",
+      "🦷 **Billable per tooth and per session**",
+      "🔄 **Maximum 3 sessions per tooth** (for more sessions, written justification is required)",
+      "⏱️ **Walking bleach method:** Bleaching agent remains in the tooth for several days, then the tooth is checked and possibly retreated",
+      "💡 **Requirement:** The tooth must be properly root-filled (no open canals)",
+      "⚠️ **Important:** This is an internal bleaching method for non-vital teeth. For bleaching vital teeth (home bleaching / in-office bleaching), other codes apply (4.4710, 4.4720)"
+    ],
+    "es": [
+      "🦷 **Blanqueamiento de dientes desvitalizados** (dientes después de tratamiento de conducto)",
+      "🔧 **Incluye:** Obturación provisional, preparación y colocación del agente blanqueador",
+      "🚫 **Excluye:** Dique de goma (facturado por separado con 4.0940 o 4.0950)",
+      "🦷 **Facturable por diente y por sesión**",
+      "🔄 **Máximo 3 sesiones por diente** (para más sesiones, se requiere justificación por escrito)",
+      "⏱️ **Método walking bleach:** El agente blanqueador permanece en el diente varios días, luego se controla el diente y posiblemente se retrata",
+      "💡 **Requisito:** El diente debe estar correctamente obturado (sin conductos abiertos)",
+      "⚠️ **Importante:** Este es un método de blanqueamiento interno para dientes desvitalizados. Para el blanqueamiento de dientes vitales (home bleaching / in-office bleaching) se aplican otros códigos (4.4710, 4.4720)"
+    ],
+    "pt": [
+      "🦷 **Branqueamento de dentes desvitalizados** (dentes após tratamento de canal)",
+      "🔧 **Inclui:** Obturação provisória, preparação e colocação do agente branqueador",
+      "🚫 **Exclui:** Dique de borracha (faturado separadamente com 4.0940 ou 4.0950)",
+      "🦷 **Faturável por dente e por sessão**",
+      "🔄 **Máximo 3 sessões por dente** (para mais sessões, é necessária justificação por escrito)",
+      "⏱️ **Método walking bleach:** O agente branqueador permanece no dente durante vários dias, depois o dente é verificado e possivelmente retratado",
+      "💡 **Requisito:** O dente deve estar corretamente obturado (sem canais abertos)",
+      "⚠️ **Importante:** Este é um método de branqueamento interno para dentes desvitalizados. Para o branqueamento de dentes vitais (home bleaching / in-office bleaching) aplicam-se outros códigos (4.4710, 4.4720)"
+    ],
+    "pl": [
+      "🦷 **Wybielanie zębów martwych** (zęby po leczeniu kanałowym)",
+      "🔧 **Zawiera:** Wypełnienie tymczasowe, przygotowanie i umieszczenie środka wybielającego",
+      "🚫 **Nie zawiera:** Koferdamu (rozliczany osobno z 4.0940 lub 4.0950)",
+      "🦷 **Rozliczane za ząb i za sesję**",
+      "🔄 **Maksymalnie 3 sesje na ząb** (w przypadku większej liczby sesji wymagane jest pisemne uzasadnienie)",
+      "⏱️ **Metoda walking bleach:** Środek wybielający pozostaje w zębie przez kilka dni, następnie ząb jest sprawdzany i ewentualnie ponownie leczony",
+      "💡 **Warunek:** Ząb musi być prawidłowo wypełniony kanałowo (bez otwartych kanałów)",
+      "⚠️ **Ważne:** Jest to metoda wybielania wewnętrznego dla zębów martwych. Do wybielania zębów żywych (home bleaching / in-office bleaching) stosuje się inne kody (4.4710, 4.4720)"
+    ],
+    "al": [
+      "🦷 **Zbardhja e dhëmbëve të vdekur** (dhëmbë pas trajtimit të kanalit)",
+      "🔧 **Përfshin:** Mbushje të përkohshme, përgatitje dhe vendosje të agjentit zbardhues",
+      "🚫 **Nuk përfshin:** Koferdamin (faturohet veçmas me 4.0940 ose 4.0950)",
+      "🦷 **Faturohet për dhëmb dhe për seancë**",
+      "🔄 **Maksimumi 3 seanca për dhëmb** (për më shumë seanca, kërkohet arsyetim me shkrim)",
+      "⏱️ **Metoda walking bleach:** Agjenti zbardhues qëndron në dhëmb për disa ditë, pastaj dhëmbi kontrollohet dhe ndoshta ritrajtohet",
+      "💡 **Kushti:** Dhëmbi duhet të jetë i mbushur siç duhet (pa kanale të hapura)",
+      "⚠️ **E rëndësishme:** Kjo është një metodë zbardhje e brendshme për dhëmbë të vdekur. Për zbardhjen e dhëmbëve të gjallë (zbardhje në shtëpi / në klinikë) zbatohen kode të tjera (4.4710, 4.4720)"
+    ],
+    "tr": [
+      "🦷 **Canlı olmayan dişlerin beyazlatılması** (kanal tedavisi görmüş dişler)",
+      "🔧 **İçerir:** Geçici dolgu, hazırlık ve beyazlatma ajanının yerleştirilmesi",
+      "🚫 **İçermez:** Lastik örtü (4.0940 veya 4.0950 ile ayrı faturalandırılır)",
+      "🦷 **Diş başına ve seans başına faturalandırılır**",
+      "🔄 **Diş başına maksimum 3 seans** (daha fazla seans için yazılı gerekçe gereklidir)",
+      "⏱️ **Walking bleach yöntemi:** Beyazlatma ajanı birkaç gün dişte kalır, ardından diş kontrol edilir ve gerekirse yeniden tedavi edilir",
+      "💡 **Koşul:** Diş kanalı düzgün şekilde doldurulmuş olmalıdır (açık kanal olmamalıdır)",
+      "⚠️ **Önemli:** Bu, canlı olmayan dişler için bir iç beyazlatma yöntemidir. Canlı dişlerin beyazlatılması (evde beyazlatma / ofis içi beyazlatma) için diğer kodlar geçerlidir (4.4710, 4.4720)"
+    ],
+    "hr": [
+      "🦷 **Bjeljenje mrtvih zuba** (zubi nakon liječenja kanala)",
+      "🔧 **Uključuje:** Privremenu ispunu, pripremu i stavljanje sredstva za bjeljenje",
+      "🚫 **Ne uključuje:** Gumeni pokrov (naplaćuje se zasebno s 4.0940 ili 4.0950)",
+      "🦷 **Naplaćuje se po zubu i po seansi**",
+      "🔄 **Maksimalno 3 seanse po zubu** (za više seansi potrebno je pisano obrazloženje)",
+      "⏱️ **Metoda walking bleach:** Sredstvo za bjeljenje ostaje u zubu nekoliko dana, zatim se zub provjerava i po potrebi ponovno tretira",
+      "💡 **Uvjet:** Zub mora biti pravilno ispunjen (bez otvorenih kanala)",
+      "⚠️ **Važno:** Ovo je metoda unutarnjeg bjeljenja za mrtve zube. Za bjeljenje živih zuba (kućno bjeljenje / bjeljenje u ordinaciji) primjenjuju se drugi kodovi (4.4710, 4.4720)"
+    ],
+    "ta": [
+      "🦷 **உயிரற்ற பற்களின் வெண்மையாக்குதல்** (வேர் கால்வாய் சிகிச்சைக்குப் பிறகு பற்கள்)",
+      "🔧 **உள்ளடக்கியது:** தற்காலிக நிரப்புதல், தயாரிப்பு மற்றும் வெண்மையாக்கும் முகவரை வைத்தல்",
+      "🚫 **விலக்கப்பட்டது:** ரப்பர் டேம் (4.0940 அல்லது 4.0950 உடன் தனித்தனியாக கணக்கிடப்படும்)",
+      "🦷 **பல் ஒன்றுக்கும் அமர்வு ஒன்றுக்கும் கணக்கிடப்படும்**",
+      "🔄 **ஒரு பல்லுக்கு அதிகபட்சம் 3 அமர்வுகள்** (அதிக அமர்வுகளுக்கு, எழுத்துப்பூர்வ காரணம் தேவை)",
+      "⏱️ **வாக்கிங் ப்ளீச் முறை:** வெண்மையாக்கும் முகவர் பல நாட்கள் பல்லில் இருக்கும், பின்னர் பல் சரிபார்க்கப்பட்டு மீண்டும் சிகிச்சை அளிக்கப்படலாம்",
+      "💡 **நிபந்தனை:** பல் சரியாக வேர் நிரப்பப்பட்டிருக்க வேண்டும் (திறந்த கால்வாய்கள் இல்லாமல்)",
+      "⚠️ **முக்கியம்:** இது உயிரற்ற பற்களுக்கான உள் வெண்மையாக்கும் முறையாகும். உயிருள்ள பற்களின் வெண்மையாக்கலுக்கு (வீட்டில் வெண்மையாக்குதல் / மருத்துவமனையில் வெண்மையாக்குதல்) வேறு குறியீடுகள் பொருந்தும் (4.4710, 4.4720)"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Warum werden manche Zähne nach einer Wurzelbehandlung dunkel?",
+        "answer": "Nach einer Wurzelbehandlung kann der Zahn mit der Zeit dunkler werden. Das liegt oft an kleinen Blutresten, die im Zahn verblieben sind, oder an bestimmten Füllungsmaterialien. Auch wenn der Zahn nicht mehr lebendig ist, verändert sich seine Farbe auf natürliche Weise. Das Bleichen von innen kann diese Verfärbung rückgängig machen."
+      },
+      {
+        "question": "Wie läuft das Bleichen ab?",
+        "answer": "Der Zahnarzt öffnet den Zahn von hinten (oder von vorne, je nach Lage), reinigt die Zahnkrone gründlich und legt ein spezielles Bleichgel ein. Dann wird der Zahn mit einer provisorischen Füllung verschlossen. Das Gel bleibt 3–7 Tage im Zahn (Walking-Bleach). Dann wird der Zahn kontrolliert und bei Bedarf erneut behandelt. Pro Zahn sind maximal 3 Sitzungen möglich."
+      },
+      {
+        "question": "Ist das Bleichen schmerzhaft?",
+        "answer": "Normalerweise nicht. Da der Zahn wurzelbehandelt ist, hat er keine Nerven mehr und ist unempfindlich. Du spürst höchstens ein leichtes Druckgefühl während der Behandlung. Das Bleichgel selbst verursacht keine Schmerzen. Wenn doch ein Zahn empfindlich ist, könnte das bedeuten, dass die Wurzelfüllung nicht dicht ist – dann muss der Zahnarzt vorher nachbehandeln."
+      },
+      {
+        "question": "Wie lange hält das Ergebnis?",
+        "answer": "Das Ergebnis hält in der Regel mehrere Jahre. Mit der Zeit kann der Zahn wieder leicht nachdunkeln. Dann kann eine Auffrischungsbehandlung durchgeführt werden. Wichtig ist, dass der Zahn gut versorgt ist (dichte Wurzelfüllung) und du keine stark färbenden Lebensmittel (Kaffee, Tee, Rotwein) übermäßig konsumierst."
+      },
+      {
+        "question": "Wird das Bleichen von der Versicherung bezahlt?",
+        "answer": "Bei UV/MV/IV (Unfall-, Militär-, Invalidenversicherung) wird das Bleichen übernommen, wenn die Verfärbung durch den Unfall oder die Behandlung des Unfallschadens entstanden ist. Bei Privatpatienten (PP) handelt es sich in der Regel um eine ästhetische Behandlung, die selbst bezahlt werden muss. Viele Zahnzusatzversicherungen übernehmen jedoch einen Teil der Kosten – frage bei deiner Versicherung nach!"
+      }
+    ],
+    "fr": [
+      {
+        "question": "Pourquoi certaines dents s'assombrissent-elles après un traitement canalaire?",
+        "answer": "Après un traitement canalaire, la dent peut s'assombrir avec le temps. Cela est souvent dû à de petits résidus de sang restés dans la dent ou à certains matériaux d'obturation. Même si la dent n'est plus vivante, sa couleur change naturellement. Le blanchiment interne peut inverser cette décoloration."
+      },
+      {
+        "question": "Comment se déroule le blanchiment?",
+        "answer": "Le dentiste ouvre la dent par l'arrière (ou par l'avant, selon la position), nettoie soigneusement la couronne dentaire et y place un gel blanchissant spécial. La dent est ensuite fermée avec une obturation provisoire. Le gel reste 3–7 jours dans la dent (walking bleach). Ensuite, la dent est contrôlée et éventuellement retraitée. Jusqu'à 3 séances par dent sont possibles."
+      },
+      {
+        "question": "Le blanchiment est-il douloureux?",
+        "answer": "Normalement non. Comme la dent est dévitalisée, elle n'a plus de nerfs et est insensible. Tu ressens tout au plus une légère sensation de pression pendant le traitement. Le gel blanchissant lui-même ne cause pas de douleur. Si une dent est sensible, cela pourrait signifier que l'obturation canalaire n'est pas étanche – le dentiste devra alors la retraiter au préalable."
+      },
+      {
+        "question": "Combien de temps dure le résultat?",
+        "answer": "Le résultat dure généralement plusieurs années. Avec le temps, la dent peut s'assombrir légèrement à nouveau. Un traitement de rafraîchissement peut alors être effectué. Il est important que la dent soit bien traitée (obturation canalaire étanche) et que tu ne consommes pas excessivement d'aliments fortement colorants (café, thé, vin rouge)."
+      },
+      {
+        "question": "Le blanchiment est-il pris en charge par l'assurance?",
+        "answer": "Pour UV/MV/IV (assurance accidents, militaire, invalidité), le blanchiment est pris en charge si la décoloration est due à l'accident ou au traitement des conséquences de l'accident. Pour les patients privés (PP), il s'agit généralement d'un traitement esthétique qui doit être payé par le patient lui-même. De nombreuses assurances dentaires complémentaires prennent cependant en charge une partie des frais – renseigne-toi auprès de ton assurance!"
+      }
+    ],
+    "it": [
+      {
+        "question": "Perché alcuni denti si scuriscono dopo un trattamento canalare?",
+        "answer": "Dopo un trattamento canalare, il dente può scurirsi con il tempo. Questo è spesso dovuto a piccoli residui di sangue rimasti nel dente o a determinati materiali di otturazione. Anche se il dente non è più vitale, il suo colore cambia naturalmente. Lo sbiancamento interno può invertire questa decolorazione."
+      },
+      {
+        "question": "Come avviene lo sbiancamento?",
+        "answer": "Il dentista apre il dente dal retro (o dalla parte anteriore, a seconda della posizione), pulisce accuratamente la corona del dente e vi inserisce un gel sbiancante speciale. Il dente viene poi chiuso con un'otturazione provvisoria. Il gel rimane 3–7 giorni nel dente (walking bleach). Quindi il dente viene controllato ed eventualmente ritrattato. Sono possibili fino a 3 sedute per dente."
+      },
+      {
+        "question": "Lo sbiancamento è doloroso?",
+        "answer": "Normalmente no. Poiché il dente è devitalizzato, non ha più nervi ed è insensibile. Si avverte al massimo una leggera sensazione di pressione durante il trattamento. Il gel sbiancante stesso non causa dolore. Se un dente è sensibile, potrebbe significare che l'otturazione canalare non è ermetica – il dentista dovrà allora ritrattare prima."
+      },
+      {
+        "question": "Quanto dura il risultato?",
+        "answer": "Il risultato dura in genere diversi anni. Con il tempo, il dente può scurirsi leggermente di nuovo. È quindi possibile eseguire un trattamento di rinfresco. È importante che il dente sia ben trattato (otturazione canalare ermetica) e che tu non consumi eccessivamente alimenti fortemente coloranti (caffè, tè, vino rosso)."
+      },
+      {
+        "question": "Lo sbiancamento è coperto dall'assicurazione?",
+        "answer": "Per UV/MV/IV (assicurazione infortuni, militare, invalidità), lo sbiancamento è coperto se la decolorazione è dovuta all'infortunio o al trattamento delle conseguenze dell'infortunio. Per i pazienti privati (PP) si tratta generalmente di un trattamento estetico che deve essere pagato dal paziente stesso. Molte assicurazioni dentali complementari coprono tuttavia una parte dei costi – informati presso la tua assicurazione!"
+      }
+    ],
+    "en": [
+      {
+        "question": "Why do some teeth become dark after root canal treatment?",
+        "answer": "After root canal treatment, the tooth can darken over time. This is often due to small blood residues left in the tooth or certain filling materials. Even though the tooth is no longer vital, its color changes naturally. Internal bleaching can reverse this discoloration."
+      },
+      {
+        "question": "How does the bleaching procedure work?",
+        "answer": "The dentist opens the tooth from the back (or front, depending on position), thoroughly cleans the tooth crown, and places a special bleaching gel inside. The tooth is then sealed with a temporary filling. The gel remains in the tooth for 3–7 days (walking bleach). Then the tooth is checked and possibly retreated. Up to 3 sessions per tooth are possible."
+      },
+      {
+        "question": "Is bleaching painful?",
+        "answer": "Normally not. Since the tooth is non-vital, it no longer has nerves and is insensitive. You may feel at most a slight pressure sensation during the treatment. The bleaching gel itself does not cause pain. If a tooth is sensitive, it could mean the root filling is not sealed – then the dentist will need to retreat it first."
+      },
+      {
+        "question": "How long does the result last?",
+        "answer": "The result typically lasts several years. Over time, the tooth may darken slightly again. A touch-up treatment can then be performed. It is important that the tooth is well treated (sealed root filling) and that you do not excessively consume strongly staining foods (coffee, tea, red wine)."
+      },
+      {
+        "question": "Is bleaching covered by insurance?",
+        "answer": "For UV/MV/IV (accident, military, disability insurance), bleaching is covered if the discoloration is due to the accident or the treatment of the accident consequences. For private patients (PP), this is generally an aesthetic treatment that must be paid for by the patient themselves. Many supplementary dental insurance plans cover part of the costs – check with your insurance company!"
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Por qué algunos dientes se oscurecen después de un tratamiento de conducto?",
+        "answer": "Después de un tratamiento de conducto, el diente puede oscurecerse con el tiempo. Esto se debe a menudo a pequeños restos de sangre que quedaron en el diente o a ciertos materiales de obturación. Aunque el diente ya no es vital, su color cambia naturalmente. El blanqueamiento interno puede revertir esta decoloración."
+      },
+      {
+        "question": "¿Cómo se realiza el blanqueamiento?",
+        "answer": "El dentista abre el diente por la parte posterior (o anterior, según la posición), limpia a fondo la corona del diente y coloca un gel blanqueador especial en su interior. Luego se sella el diente con una obturación provisional. El gel permanece en el diente durante 3–7 días (walking bleach). Luego se controla el diente y, si es necesario, se retrata. Son posibles hasta 3 sesiones por diente."
+      },
+      {
+        "question": "¿Es doloroso el blanqueamiento?",
+        "answer": "Normalmente no. Como el diente está desvitalizado, ya no tiene nervios y es insensible. Como máximo, sientes una ligera sensación de presión durante el tratamiento. El gel blanqueador en sí no causa dolor. Si un diente es sensible, podría significar que la obturación del conducto no es hermética – entonces el dentista deberá retratar primero."
+      },
+      {
+        "question": "¿Cuánto dura el resultado?",
+        "answer": "El resultado suele durar varios años. Con el tiempo, el diente puede oscurecerse ligeramente de nuevo. Entonces se puede realizar un tratamiento de refresco. Es importante que el diente esté bien tratado (obturación del conducto hermética) y que no consumas en exceso alimentos muy colorantes (café, té, vino tinto)."
+      },
+      {
+        "question": "¿El blanqueamiento está cubierto por el seguro?",
+        "answer": "Para UV/MV/IV (seguro de accidentes, militar, invalidez), el blanqueamiento está cubierto si la decoloración se debe al accidente o al tratamiento de las consecuencias del accidente. Para los pacientes privados (PP), generalmente se trata de un tratamiento estético que debe ser pagado por el propio paciente. Muchos seguros dentales complementarios cubren una parte de los costes – ¡infórmate en tu seguro!"
+      }
+    ],
+    "pt": [
+      {
+        "question": "Porque é que alguns dentes escurecem após um tratamento de canal?",
+        "answer": "Após um tratamento de canal, o dente pode escurecer com o tempo. Isto deve-se muitas vezes a pequenos resíduos de sangue que ficaram no dente ou a certos materiais de obturação. Mesmo que o dente já não seja vital, a sua cor muda naturalmente. O branqueamento interno pode reverter esta descoloração."
+      },
+      {
+        "question": "Como é feito o branqueamento?",
+        "answer": "O dentista abre o dente pela parte de trás (ou pela frente, dependendo da posição), limpa cuidadosamente a coroa do dente e coloca um gel branqueador especial no interior. O dente é então selado com uma obturação provisória. O gel permanece no dente durante 3–7 dias (walking bleach). Depois o dente é verificado e, se necessário, retratado. São possíveis até 3 sessões por dente."
+      },
+      {
+        "question": "O branqueamento é doloroso?",
+        "answer": "Normalmente não. Como o dente está desvitalizado, já não tem nervos e é insensível. No máximo, sentes uma ligeira sensação de pressão durante o tratamento. O gel branqueador em si não causa dor. Se um dente estiver sensível, pode significar que a obturação do canal não está estanque – então o dentista terá de retratar primeiro."
+      },
+      {
+        "question": "Quanto tempo dura o resultado?",
+        "answer": "O resultado geralmente dura vários anos. Com o tempo, o dente pode escurecer ligeiramente novamente. Pode então ser realizado um tratamento de refresco. É importante que o dente esteja bem tratado (obturação do canal estanque) e que não consumas excessivamente alimentos muito corantes (café, chá, vinho tinto)."
+      },
+      {
+        "question": "O branqueamento é coberto pelo seguro?",
+        "answer": "Para UV/MV/IV (seguro de acidentes, militar, invalidez), o branqueamento é coberto se a descoloração se dever ao acidente ou ao tratamento das consequências do acidente. Para os pacientes privados (PP), trata-se geralmente de um tratamento estético que deve ser pago pelo próprio paciente. Muitos seguros dentários complementares cobrem parte dos custos – informa-te junto do teu seguro!"
+      }
+    ],
+    "pl": [
+      {
+        "question": "Dlaczego niektóre zęby ciemnieją po leczeniu kanałowym?",
+        "answer": "Po leczeniu kanałowym ząb może z czasem ciemnieć. Często jest to spowodowane małymi pozostałościami krwi w zębie lub niektórymi materiałami wypełniającymi. Nawet jeśli ząb nie jest już żywy, jego kolor zmienia się naturalnie. Wybielanie wewnętrzne może odwrócić to przebarwienie."
+      },
+      {
+        "question": "Jak przebiega wybielanie?",
+        "answer": "Dentysta otwiera ząb od tyłu (lub z przodu, w zależności od położenia), dokładnie czyści koronę zęba i umieszcza w środku specjalny żel wybielający. Ząb jest następnie zamykany tymczasowym wypełnieniem. Żel pozostaje w zębie przez 3–7 dni (walking bleach). Następnie ząb jest sprawdzany i ewentualnie ponownie leczony. Możliwe są do 3 sesji na ząb."
+      },
+      {
+        "question": "Czy wybielanie jest bolesne?",
+        "answer": "Normalnie nie. Ponieważ ząb jest martwy, nie ma już nerwów i jest niewrażliwy. Możesz co najwyżej odczuwać lekkie uczucie nacisku podczas zabiegu. Sam żel wybielający nie powoduje bólu. Jeśli ząb jest wrażliwy, może to oznaczać, że wypełnienie kanału nie jest szczelne – wtedy dentysta będzie musiał najpierw powtórzyć leczenie."
+      },
+      {
+        "question": "Jak długo utrzymuje się efekt?",
+        "answer": "Efekt utrzymuje się zwykle kilka lat. Z czasem ząb może ponownie lekko ściemnieć. Można wtedy wykonać zabieg odświeżający. Ważne jest, aby ząb był dobrze leczony (szczelne wypełnienie kanału) i aby nie spożywać nadmiernie silnie barwiących pokarmów (kawa, herbata, czerwone wino)."
+      },
+      {
+        "question": "Czy wybielanie jest refundowane przez ubezpieczenie?",
+        "answer": "W przypadku UV/MV/IV (ubezpieczenie wypadkowe, wojskowe, inwalidzkie) wybielanie jest refundowane, jeśli przebarwienie jest spowodowane wypadkiem lub leczeniem następstw wypadku. W przypadku pacjentów prywatnych (PP) jest to zazwyczaj zabieg estetyczny, który musi być opłacony przez pacjenta. Wiele prywatnych ubezpieczeń stomatologicznych pokrywa jednak część kosztów – zapytaj w swoim ubezpieczeniu!"
+      }
+    ],
+    "al": [
+      {
+        "question": "Pse disa dhëmbë errësohen pas trajtimit të kanalit?",
+        "answer": "Pas trajtimit të kanalit, dhëmbi mund të errësohet me kalimin e kohës. Kjo shpesh është për shkak të mbetjeve të vogla të gjakut që kanë mbetur në dhëmb ose të disa materialeve mbushëse. Edhe pse dhëmbi nuk është më i gjallë, ngjyra e tij ndryshon natyrshëm. Zbardhja e brendshme mund ta kthejë këtë njollosje."
+      },
+      {
+        "question": "Si zhvillohet procedura e zbardhjes?",
+        "answer": "Dentisti hap dhëmbin nga prapa (ose nga përpara, në varësi të pozicionit), pastron tërësisht kurorën e dhëmbit dhe vendos një xhel të veçantë zbardhues brenda. Dhëmbi më pas mbyllet me një mbushje të përkohshme. Xheli qëndron në dhëmb për 3–7 ditë (walking bleach). Më pas dhëmbi kontrollohet dhe ndoshta ritrajtohet. Deri në 3 seanca për dhëmb janë të mundshme."
+      },
+      {
+        "question": "A është e dhimbshme zbardhja?",
+        "answer": "Normalisht jo. Meqenëse dhëmbi është i vdekur, ai nuk ka më nerva dhe është i pandjeshëm. Më së shumti ndjen një ndjesi të lehtë presioni gjatë trajtimit. Vetë xheli zbardhues nuk shkakton dhimbje. Nëse një dhëmb është i ndjeshëm, kjo mund të nënkuptojë se mbushja e kanalit nuk është e mbyllur – atëherë dentisti do të duhet ta ritrajtojë së pari."
+      },
+      {
+        "question": "Sa zgjat rezultati?",
+        "answer": "Rezultati zakonisht zgjat disa vjet. Me kalimin e kohës, dhëmbi mund të errësohet përsëri lehtë. Atëherë mund të kryhet një trajtim përtëritës. Është e rëndësishme që dhëmbi të jetë i trajtuar mirë (mbushja e kanalit e mbyllur) dhe që të mos konsumosh ushqime shumë ngjyruese (kafe, çaj, verë të kuqe)."
+      },
+      {
+        "question": "A mbulohet zbardhja nga sigurimi?",
+        "answer": "Për UV/MV/IV (sigurimi i aksidenteve, ushtarak, invaliditeti), zbardhja mbulohet nëse njollosja është shkaktuar nga aksidenti ose nga trajtimi i pasojave të aksidentit. Për pacientët privatë (PP), kjo është zakonisht një trajtim estetik që duhet paguar nga pacienti vetë. Shumë sigurime dentare private mbulojnë një pjesë të kostove – pyet në sigurimin tënd!"
+      }
+    ],
+    "tr": [
+      {
+        "question": "Bazı dişler kanal tedavisinden sonra neden koyulaşır?",
+        "answer": "Kanal tedavisinden sonra diş zamanla koyulaşabilir. Bunun nedeni genellikle dişte kalan küçük kan kalıntıları veya belirli dolgu malzemeleridir. Diş artık canlı olmasa da rengi doğal olarak değişir. İç beyazlatma bu renk değişimini tersine çevirebilir."
+      },
+      {
+        "question": "Beyazlatma işlemi nasıl yapılır?",
+        "answer": "Diş hekimi dişi arkadan (veya konuma bağlı olarak önden) açar, diş kronunu iyice temizler ve içine özel bir beyazlatma jeli yerleştirir. Diş daha sonra geçici bir dolgu ile kapatılır. Jel 3–7 gün dişte kalır (walking bleach). Daha sonra diş kontrol edilir ve gerekirse yeniden tedavi edilir. Diş başına 3 seansa kadar mümkündür."
+      },
+      {
+        "question": "Beyazlatma ağrılı mıdır?",
+        "answer": "Normalde hayır. Diş canlı olmadığı için artık siniri yoktur ve hassas değildir. Tedavi sırasında en fazla hafif bir basınç hissi hissedersin. Beyazlatma jelinin kendisi ağrıya neden olmaz. Bir diş hassassa, bu kanal dolgusunun sızdırmaz olmadığı anlamına gelebilir – o zaman diş hekiminin önce yeniden tedavi etmesi gerekir."
+      },
+      {
+        "question": "Sonuç ne kadar sürer?",
+        "answer": "Sonuç genellikle birkaç yıl sürer. Zamanla diş tekrar hafifçe koyulaşabilir. Daha sonra bir yenileme tedavisi yapılabilir. Dişin iyi tedavi edilmiş olması (sızdırmaz kanal dolgusu) ve aşırı miktarda renklendirici gıda (kahve, çay, kırmızı şarap) tüketmemen önemlidir."
+      },
+      {
+        "question": "Beyazlatma sigorta tarafından karşılanır mı?",
+        "answer": "UV/MV/IV (kaza, askerlik, engellilik sigortası) için, renk değişimi kazadan veya kaza sonuçlarının tedavisinden kaynaklanıyorsa beyazlatma karşılanır. Özel hastalar (PP) için bu genellikle hastanın kendisi tarafından ödenmesi gereken estetik bir tedavidir. Birçok özel diş sigortası maliyetin bir kısmını karşılar – sigorta şirketine sor!"
+      }
+    ],
+    "hr": [
+      {
+        "question": "Zašto neki zubi potamne nakon liječenja kanala?",
+        "answer": "Nakon liječenja kanala, zub može s vremenom potamnjeti. To je često zbog malih ostataka krvi koji su ostali u zubu ili određenih materijala za ispunu. Iako zub više nije živ, njegova boja se prirodno mijenja. Unutarnje bjeljenje može preokrenuti to promjenu boje."
+      },
+      {
+        "question": "Kako se provodi bjeljenje?",
+        "answer": "Zubar otvara zub sa stražnje strane (ili s prednje, ovisno o položaju), temeljito čisti krunu zuba i unutra stavlja poseban gel za bjeljenje. Zub se zatim zatvara privremenom ispunom. Gel ostaje u zubu 3–7 dana (walking bleach). Zatim se zub provjerava i po potrebi ponovno tretira. Moguće su do 3 seanse po zubu."
+      },
+      {
+        "question": "Je li bjeljenje bolno?",
+        "answer": "Normalno ne. Budući da je zub mrtav, nema više živaca i neosjetljiv je. Najviše osjećaš lagani osjećaj pritiska tijekom tretmana. Sam gel za bjeljenje ne uzrokuje bol. Ako je zub osjetljiv, to bi moglo značiti da ispuna kanala nije nepropusna – tada će zubar prvo morati ponovno liječiti."
+      },
+      {
+        "question": "Koliko dugo traje rezultat?",
+        "answer": "Rezultat obično traje nekoliko godina. S vremenom zub može ponovno lagano potamniti. Tada se može provesti tretman osvježenja. Važno je da je zub dobro tretiran (nepropusna ispuna kanala) i da ne konzumiraš prekomjerno hranu koja jako boji (kava, čaj, crno vino)."
+      },
+      {
+        "question": "Pokriva li osiguranje bjeljenje?",
+        "answer": "Za UV/MV/IV (osiguranje od nezgode, vojno, invalidsko), bjeljenje je pokriveno ako je promjena boje posljedica nezgode ili liječenja posljedica nezgode. Za privatne pacijente (PP) radi se uglavnom o estetskom tretmanu koji mora platiti sam pacijent. Mnoga privatna stomatološka osiguranja pokrivaju dio troškova – provjeri u svom osiguranju!"
+      }
+    ],
+    "ta": [
+      {
+        "question": "வேர் கால்வாய் சிகிச்சைக்குப் பிறகு சில பற்கள் ஏன் கருமையாகின்றன?",
+        "answer": "வேர் கால்வாய் சிகிச்சைக்குப் பிறகு, பல் காலப்போக்கில் கருமையாகலாம். இது பெரும்பாலும் பல்லில் எஞ்சியிருக்கும் சிறிய இரத்த எச்சங்கள் அல்லது சில நிரப்பு பொருட்களால் ஏற்படுகிறது. பல் இனி உயிருள்ளதாக இல்லாவிட்டாலும், அதன் நிறம் இயற்கையாகவே மாறுகிறது. உள் வெண்மையாக்குதல் இந்த நிற மாற்றத்தை மாற்றியமைக்க முடியும்."
+      },
+      {
+        "question": "வெண்மையாக்குதல் செயல்முறை எவ்வாறு செய்யப்படுகிறது?",
+        "answer": "பல் மருத்துவர் பல்லை பின்புறமாகத் திறந்து (அல்லது நிலையைப் பொறுத்து முன்புறமாக), பல் கிரீடத்தை முழுமையாகச் சுத்தம் செய்து, உள்ளே ஒரு சிறப்பு வெண்மையாக்கும் ஜெல்லை வைக்கிறார். பல் பின்னர் தற்காலிக நிரப்புதலுடன் மூடப்படுகிறது. ஜெல் 3–7 நாட்கள் பல்லில் இருக்கும் (வாக்கிங் ப்ளீச்). பின்னர் பல் சரிபார்க்கப்பட்டு மீண்டும் சிகிச்சை அளிக்கப்படலாம். ஒரு பல்லுக்கு 3 அமர்வுகள் வரை சாத்தியம்."
+      },
+      {
+        "question": "வெண்மையாக்குதல் வலியை ஏற்படுத்துமா?",
+        "answer": "பொதுவாக இல்லை. பல் உயிரற்றதாக இருப்பதால், அதற்கு நரம்புகள் இல்லை மற்றும் உணர்வற்றது. சிகிச்சையின் போது அதிகபட்சமாக லேசான அழுத்த உணர்வை மட்டுமே உணருவீர்கள். வெண்மையாக்கும் ஜெல் தானே வலியை ஏற்படுத்தாது. ஒரு பல் உணர்வுடன் இருந்தால், வேர் நிரப்புதல் மூடப்படவில்லை என்று அர்த்தமாகும் – அப்போது பல் மருத்துவர் முதலில் மீண்டும் சிகிச்சை அளிக்க வேண்டும்."
+      },
+      {
+        "question": "முடிவு எவ்வளவு காலம் நீடிக்கும்?",
+        "answer": "முடிவு பொதுவாக பல ஆண்டுகள் நீடிக்கும். காலப்போக்கில், பல் மீண்டும் சற்று கருமையாகலாம். பின்னர் ஒரு புத்துணர்வு சிகிச்சை செய்யப்படலாம். பல் நன்றாக சிகிச்சை பெற்றிருப்பது (மூடப்பட்ட வேர் நிரப்புதல்) மற்றும் அதிக நிறமுடைய உணவுகளை (காபி, தேநீர், சிவப்பு ஒயின்) அதிகமாக உட்கொள்ளாமல் இருப்பது முக்கியம்."
+      },
+      {
+        "question": "வெண்மையாக்குதல் காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "UV/MV/IV (விபத்து, இராணுவம், ஊனமுறை காப்பீடு) க்கு, நிற மாற்றம் விபத்து அல்லது விபத்து விளைவுகளின் சிகிச்சையால் ஏற்பட்டிருந்தால் வெண்மையாக்குதல் மறைக்கப்படுகிறது. தனியார் நோயாளிகளுக்கு (PP), இது பொதுவாக நோயாளியே செலுத்த வேண்டிய அழகியல் சிகிச்சையாகும். பல தனியார் பல் காப்பீடுகள் செலவுகளின் ஒரு பகுதியை மறைக்கின்றன – உங்கள் காப்பீட்டு நிறுவனத்தில் கேளுங்கள்!"
+      }
+    ]
+  }
+}

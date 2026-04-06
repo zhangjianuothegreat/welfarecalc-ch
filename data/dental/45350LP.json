@@ -1,0 +1,505 @@
+{
+  "code": "4.5350.LP",
+  "name_de": "Kompositfüllung, klein UV/MV",
+  "display_name": {
+    "de": "Kleine Kunststofffüllung (Paket)",
+    "fr": "Petite obturation composite (forfait)",
+    "it": "Piccola otturazione in composito (pacchetto)",
+    "en": "Small composite filling (package)",
+    "es": "Pequeño empaste composite (paquete)",
+    "pt": "Pequena obturação compósito (pacote)",
+    "pl": "Małe wypełnienie kompozytowe (pakiet)",
+    "al": "Mbushje e vogël kompozit (paketë)",
+    "tr": "Küçük kompozit dolgu (paket)",
+    "hr": "Mala kompozitna ispuna (paket)",
+    "ta": "சிறிய கலவை நிரப்புதல் (தொகுப்பு)"
+  },
+  "search_keywords": {
+    "de": ["kompositfüllung klein", "lp", "leistungspaket", "kunststofffüllung", "füllungspaket", "uv mv"],
+    "fr": ["petite obturation composite", "forfait", "pack de prestations", "plombage", "uv mv"],
+    "it": ["piccola otturazione composito", "pacchetto", "pacchetto prestazioni", "otturazione", "uv mv"],
+    "en": ["small composite filling", "package", "service package", "filling", "uv mv"],
+    "es": ["pequeño empaste composite", "paquete", "paquete de prestaciones", "empaste", "uv mv"],
+    "pt": ["pequena obturação compósito", "pacote", "pacote de prestações", "obturação", "uv mv"],
+    "pl": ["małe wypełnienie kompozytowe", "pakiet", "pakiet usług", "wypełnienie", "uv mv"],
+    "al": ["mbushje e vogël kompozit", "paketë", "paketa e shërbimeve", "mbushje", "uv mv"],
+    "tr": ["küçük kompozit dolgu", "paket", "hizmet paketi", "dolgu", "uv mv"],
+    "hr": ["mala kompozitna ispuna", "paket", "paket usluga", "ispuna", "uv mv"],
+    "ta": ["சிறிய கலவை நிரப்புதல்", "தொகுப்பு", "சேவை தொகுப்பு", "நிரப்புதல்", "uv mv"]
+  },
+  "tp_uv_mviv": null,
+  "tp_pp_max": null,
+  "tp_pp_min": null,
+  "chapter": "15.08",
+  "coverage": "UV/MV",
+  "simple_explain": {
+    "de": "Das ist ein spezielles Behandlungspaket für die Unfall- und Militärversicherung (UV/MV). Wenn du eine kleine Zahnfüllung aus Kunststoff (Komposit) brauchst – zum Beispiel für ein kleines Loch – dann wird der Zahnarzt dieses Paket verwenden. Es enthält die Füllung selbst, die Schmelzätzung und die Dentinvorbehandlung (das sind die Schritte, damit die Füllung gut hält). So wird die Abrechnung einfacher. Das Paket gilt nicht für die Invalidenversicherung (IV).",
+    "fr": "Il s'agit d'un forfait de traitement spécial pour l'assurance accidents et militaire (UV/MV). Si tu as besoin d'une petite obturation dentaire en plastique (composite) – par exemple pour un petit trou – le dentiste utilisera ce forfait. Il comprend l'obturation elle-même, le mordançage de l'émail et le traitement de la dentine (les étapes pour que l'obturation tienne bien). Cela simplifie la facturation. Ce forfait ne s'applique pas à l'assurance invalidité (IV).",
+    "it": "Questo è un pacchetto di trattamento speciale per l'assicurazione infortuni e militare (UV/MV). Se hai bisogno di una piccola otturazione dentale in plastica (composito) – ad esempio per un piccolo buco – il dentista utilizzerà questo pacchetto. Include l'otturazione stessa, l'incisione dello smalto e il trattamento della dentina (i passaggi per far sì che l'otturazione tenga bene). Questo semplifica la fatturazione. Il pacchetto non si applica all'assicurazione invalidità (IV).",
+    "en": "This is a special treatment package for accident and military insurance (UV/MV). If you need a small plastic tooth filling (composite) – for example for a small hole – the dentist will use this package. It includes the filling itself, enamel etching, and dentin treatment (the steps to make the filling hold well). This simplifies billing. This package does not apply to disability insurance (IV).",
+    "es": "Este es un paquete de tratamiento especial para el seguro de accidentes y militar (UV/MV). Si necesitas un pequeño empaste dental de plástico (composite) – por ejemplo para un pequeño agujero – el dentista utilizará este paquete. Incluye el empaste en sí, el grabado del esmalte y el tratamiento de la dentina (los pasos para que el empaste sujete bien). Esto simplifica la facturación. Este paquete no se aplica al seguro de invalidez (IV).",
+    "pt": "Este é um pacote de tratamento especial para o seguro de acidentes e militar (UV/MV). Se precisares de uma pequena obturação dentária de plástico (compósito) – por exemplo para um pequeno buraco – o dentista utilizará este pacote. Inclui a própria obturação, o condicionamento do esmalte e o tratamento da dentina (os passos para que a obturação segure bem). Isto simplifica a faturação. Este pacote não se aplica ao seguro de invalidez (IV).",
+    "pl": "Jest to specjalny pakiet leczenia dla ubezpieczenia wypadkowego i wojskowego (UV/MV). Jeśli potrzebujesz małego plastikowego wypełnienia zęba (kompozyt) – na przykład na małą dziurę – dentysta użyje tego pakietu. Zawiera on samo wypełnienie, trawienie szkliwa i przygotowanie zębiny (etapy, aby wypełnienie dobrze trzymało). Upraszcza to rozliczanie. Pakiet nie dotyczy ubezpieczenia inwalidzkiego (IV).",
+    "al": "Ky është një paketë e veçantë trajtimi për sigurimin e aksidenteve dhe ushtarak (UV/MV). Nëse keni nevojë për një mbushje të vogël dhëmbi prej plastike (kompozit) – për shembull për një vrimë të vogël – dentisti do të përdorë këtë paketë. Ai përfshin vetë mbushjen, gdhëndjen e smaltit dhe trajtimin e dentinës (hapat që mbushja të qëndrojë mirë). Kjo thjeshton faturimin. Ky paketë nuk zbatohet për sigurimin e invaliditetit (IV).",
+    "tr": "Bu, kaza ve askerlik sigortası (UV/MV) için özel bir tedavi paketidir. Küçük bir plastik diş dolgusuna (kompozit) ihtiyacın varsa – örneğin küçük bir delik için – diş hekimi bu paketi kullanacaktır. Dolgunun kendisini, mine pürüzlendirmeyi ve dentin hazırlığını (dolgunun iyi tutunması için adımlar) içerir. Bu, faturalandırmayı basitleştirir. Bu paket engellilik sigortası (IV) için geçerli değildir.",
+    "hr": "Ovo je poseban paket liječenja za osiguranje od nezgode i vojno osiguranje (UV/MV). Ako trebaš malu plastičnu ispunu zuba (kompozit) – na primjer za malu rupu – zubar će koristiti ovaj paket. Uključuje samu ispunu, jetkanje cakline i pripremu dentina (korake da ispuna dobro drži). To pojednostavljuje naplatu. Ovaj paket ne vrijedi za invalidsko osiguranje (IV).",
+    "ta": "இது விபத்து மற்றும் இராணுவ காப்பீட்டுக்கான (UV/MV) சிறப்பு சிகிச்சை தொகுப்பாகும். உங்களுக்கு ஒரு சிறிய பிளாஸ்டிக் பல் நிரப்புதல் (கலவை) தேவைப்பட்டால் – எடுத்துக்காட்டாக ஒரு சிறிய துளைக்கு – பல் மருத்துவர் இந்த தொகுப்பைப் பயன்படுத்துவார். இது நிரப்புதல், பற்சிப்பி அரித்தல் மற்றும் டென்டின் சிகிச்சை (நிரப்புதல் நன்றாக ஒட்டுவதற்கான படிகள்) ஆகியவற்றை உள்ளடக்கியது. இது கணக்கிடுதலை எளிதாக்குகிறது. இந்த தொகுப்பு ஊனமுறை காப்பீட்டுக்கு (IV) பொருந்தாது."
+  },
+  "what_is_included": {
+    "de": [
+      "📦 **Leistungspaket für UV/MV (gilt nicht für IV)**",
+      "🦷 **Enthaltene Einzelleistungen:**",
+      "   • 4.5350 Kompositfüllung, einflächig",
+      "   • 4.5360 + Komposit-Füllung, einflächig, jede weitere in der gleichen Sitzung und im gleichen Sextant",
+      "   • 4.5370 Kompositfüllung, interdental Front",
+      "   • 4.5380 + Kompositfüllung, interdental Front, jede weitere in der gleichen Sitzung und im gleichen Sextant",
+      "   • 4.5400 + Kompositeckenaufbau; -Inzisalkantenrekonstruktion, jede(r) weitere in der gleichen Sitzung und im gleichen Sextant",
+      "   • 4.5410 Kompositfüllung Prämolar/Milchmolar, zweiflächig",
+      "   • 4.5420 + Kompositfüllung Prämolar/Milchmolar, zweiflächig, jede weitere in der gleichen Sitzung und im gleichen Sextant",
+      "   • 4.5800 Schmelzätzung und Anbringen des Haftvermittlers",
+      "   • 4.5810 Dentinvorbehandlung und Anbringen des Dentinhaftvermittlers",
+      "🧾 **Farbauswahl** ist inbegriffen",
+      "⚠️ **Wichtig:** Das Zusatzpaket 4.5990.LP (Kofferdam und Anästhesie) wird pro Sitzung zusätzlich verrechnet"
+    ],
+    "fr": [
+      "📦 **Forfait de prestations pour UV/MV (ne s'applique pas à IV)**",
+      "🦷 **Prestations individuelles incluses:**",
+      "   • 4.5350 Obturation composite, une face",
+      "   • 4.5360 + Obturation composite, une face, chaque supplémentaire dans la même séance et dans le même sextant",
+      "   • 4.5370 Obturation composite, interproximale antérieure",
+      "   • 4.5380 + Obturation composite, interproximale antérieure, chaque supplémentaire dans la même séance et dans le même sextant",
+      "   • 4.5400 + Reconstruction de corne ou de bord incisif en composite, chaque supplémentaire dans la même séance et dans le même sextant",
+      "   • 4.5410 Obturation composite prémolaire/molaire lactéale, deux faces",
+      "   • 4.5420 + Obturation composite prémolaire/molaire lactéale, deux faces, chaque supplémentaire dans la même séance et dans le même sextant",
+      "   • 4.5800 Mordançage de l'émail et application de l'adhésif",
+      "   • 4.5810 Prétraitement de la dentine et application de l'adhésif dentinaire",
+      "🧾 **Choix de la couleur** est inclus",
+      "⚠️ **Important:** Le forfait supplémentaire 4.5990.LP (digue et anesthésie) est facturé par séance en supplément"
+    ],
+    "it": [
+      "📦 **Pacchetto di prestazioni per UV/MV (non applicabile a IV)**",
+      "🦷 **Prestazioni individuali incluse:**",
+      "   • 4.5350 Otturazione in composito, una faccia",
+      "   • 4.5360 + Otturazione in composito, una faccia, ogni ulteriore nella stessa seduta e nello stesso sestante",
+      "   • 4.5370 Otturazione in composito, interprossimale anteriore",
+      "   • 4.5380 + Otturazione in composito, interprossimale anteriore, ogni ulteriore nella stessa seduta e nello stesso sestante",
+      "   • 4.5400 + Ricostruzione di corno o margine incisale in composito, ogni ulteriore nella stessa seduta e nello stesso sestante",
+      "   • 4.5410 Otturazione in composito premolare/molare da latte, due facce",
+      "   • 4.5420 + Otturazione in composito premolare/molare da latte, due facce, ogni ulteriore nella stessa seduta e nello stesso sestante",
+      "   • 4.5800 Incisione dello smalto e applicazione dell'adesivo",
+      "   • 4.5810 Pre-trattamento della dentina e applicazione dell'adesivo dentinale",
+      "🧾 **Scelta del colore** è inclusa",
+      "⚠️ **Importante:** Il pacchetto supplementare 4.5990.LP (diga e anestesia) viene fatturato per seduta in aggiunta"
+    ],
+    "en": [
+      "📦 **Service package for UV/MV (not applicable to IV)**",
+      "🦷 **Individual services included:**",
+      "   • 4.5350 Composite filling, one surface",
+      "   • 4.5360 + Composite filling, one surface, each additional in the same session and same sextant",
+      "   • 4.5370 Composite filling, anterior interproximal",
+      "   • 4.5380 + Composite filling, anterior interproximal, each additional in the same session and same sextant",
+      "   • 4.5400 + Composite cusp or incisal edge build-up, each additional in the same session and same sextant",
+      "   • 4.5410 Composite filling premolar/baby molar, two surfaces",
+      "   • 4.5420 + Composite filling premolar/baby molar, two surfaces, each additional in the same session and same sextant",
+      "   • 4.5800 Enamel etching and application of adhesive",
+      "   • 4.5810 Dentin pretreatment and application of dentin adhesive",
+      "🧾 **Color selection** is included",
+      "⚠️ **Important:** The supplementary package 4.5990.LP (rubber dam and anesthesia) is billed per session in addition"
+    ],
+    "es": [
+      "📦 **Paquete de prestaciones para UV/MV (no aplica a IV)**",
+      "🦷 **Prestaciones individuales incluidas:**",
+      "   • 4.5350 Empaste composite, una cara",
+      "   • 4.5360 + Empaste composite, una cara, cada adicional en la misma sesión y en el mismo sextante",
+      "   • 4.5370 Empaste composite, interproximal anterior",
+      "   • 4.5380 + Empaste composite, interproximal anterior, cada adicional en la misma sesión y en el mismo sextante",
+      "   • 4.5400 + Reconstrucción de cúspide o borde incisal en composite, cada adicional en la misma sesión y en el mismo sextante",
+      "   • 4.5410 Empaste composite premolar/molar de leche, dos caras",
+      "   • 4.5420 + Empaste composite premolar/molar de leche, dos caras, cada adicional en la misma sesión y en el mismo sextante",
+      "   • 4.5800 Grabado del esmalte y aplicación del adhesivo",
+      "   • 4.5810 Pretratamiento de la dentina y aplicación del adhesivo dentinario",
+      "🧾 **Selección del color** está incluida",
+      "⚠️ **Importante:** El paquete suplementario 4.5990.LP (dique y anestesia) se factura por sesión adicionalmente"
+    ],
+    "pt": [
+      "📦 **Pacote de prestações para UV/MV (não aplicável a IV)**",
+      "🦷 **Prestações individuais incluídas:**",
+      "   • 4.5350 Obturação compósito, uma face",
+      "   • 4.5360 + Obturação compósito, uma face, cada adicional na mesma sessão e no mesmo sextante",
+      "   • 4.5370 Obturação compósito, interproximal anterior",
+      "   • 4.5380 + Obturação compósito, interproximal anterior, cada adicional na mesma sessão e no mesmo sextante",
+      "   • 4.5400 + Reconstrução de cúspide ou borda incisal em compósito, cada adicional na mesma sessão e no mesmo sextante",
+      "   • 4.5410 Obturação compósito pré-molar/molar de leite, duas faces",
+      "   • 4.5420 + Obturação compósito pré-molar/molar de leite, duas faces, cada adicional na mesma sessão e no mesmo sextante",
+      "   • 4.5800 Condicionamento do esmalte e aplicação do adesivo",
+      "   • 4.5810 Pré-tratamento da dentina e aplicação do adesivo dentinário",
+      "🧾 **Seleção da cor** está incluída",
+      "⚠️ **Importante:** O pacote suplementar 4.5990.LP (dique e anestesia) é faturado por sessão adicionalmente"
+    ],
+    "pl": [
+      "📦 **Pakiet usług dla UV/MV (nie dotyczy IV)**",
+      "🦷 **Zawarte usługi indywidualne:**",
+      "   • 4.5350 Wypełnienie kompozytowe, jedna powierzchnia",
+      "   • 4.5360 + Wypełnienie kompozytowe, jedna powierzchnia, każde dodatkowe w tej samej sesji i w tym samym sekstancie",
+      "   • 4.5370 Wypełnienie kompozytowe, przednie międzyzębowe",
+      "   • 4.5380 + Wypełnienie kompozytowe, przednie międzyzębowe, każde dodatkowe w tej samej sesji i w tym samym sekstancie",
+      "   • 4.5400 + Odbudowa guzka lub brzegu siecznego kompozytem, każde dodatkowe w tej samej sesji i w tym samym sekstancie",
+      "   • 4.5410 Wypełnienie kompozytowe przedtrzonowiec/trzonowiec mleczny, dwie powierzchnie",
+      "   • 4.5420 + Wypełnienie kompozytowe przedtrzonowiec/trzonowiec mleczny, dwie powierzchnie, każde dodatkowe w tej samej sesji i w tym samym sekstancie",
+      "   • 4.5800 Trawienie szkliwa i nakładanie środka wiążącego",
+      "   • 4.5810 Przygotowanie zębiny i nakładanie środka wiążącego do zębiny",
+      "🧾 **Dobór koloru** jest wliczony",
+      "⚠️ **Ważne:** Pakiet uzupełniający 4.5990.LP (koferdam i znieczulenie) jest rozliczany na sesję dodatkowo"
+    ],
+    "al": [
+      "📦 **Paketa e shërbimeve për UV/MV (nuk vlen për IV)**",
+      "🦷 **Shërbimet individuale të përfshira:**",
+      "   • 4.5350 Mbushje kompozit, një faqe",
+      "   • 4.5360 + Mbushje kompozit, një faqe, çdo shtesë në të njëjtën seancë dhe të njëjtin sekstant",
+      "   • 4.5370 Mbushje kompozit, anteriore ndërdhëmbore",
+      "   • 4.5380 + Mbushje kompozit, anteriore ndërdhëmbore, çdo shtesë në të njëjtën seancë dhe të njëjtin sekstant",
+      "   • 4.5400 + Rindërtim kuspe ose skaji incizal me kompozit, çdo shtesë në të njëjtën seancë dhe të njëjtin sekstant",
+      "   • 4.5410 Mbushje kompozit premolar/molar qumështi, dy faqe",
+      "   • 4.5420 + Mbushje kompozit premolar/molar qumështi, dy faqe, çdo shtesë në të njëjtën seancë dhe të njëjtin sekstant",
+      "   • 4.5800 Gdhëndje e smaltit dhe aplikim i ngjitësit",
+      "   • 4.5810 Para-trajtim i dentinës dhe aplikim i ngjitësit të dentinës",
+      "🧾 **Zgjedhja e ngjyrës** është e përfshirë",
+      "⚠️ **E rëndësishme:** Paketa shtesë 4.5990.LP (diga e gomës dhe anestezi) faturohet për seancë shtesë"
+    ],
+    "tr": [
+      "📦 **UV/MV için hizmet paketi (IV için geçerli değildir)**",
+      "🦷 **Dahil olan bireysel hizmetler:**",
+      "   • 4.5350 Kompozit dolgu, tek yüzey",
+      "   • 4.5360 + Kompozit dolgu, tek yüzey, aynı seansta ve aynı sekstantta her ek dolgu",
+      "   • 4.5370 Kompozit dolgu, ön diş ara yüzey",
+      "   • 4.5380 + Kompozit dolgu, ön diş ara yüzey, aynı seansta ve aynı sekstantta her ek dolgu",
+      "   • 4.5400 + Kompozit tüberkül veya kesici kenar yapımı, aynı seansta ve aynı sekstantta her ek",
+      "   • 4.5410 Kompozit dolgu küçük azı/süt azı, iki yüzey",
+      "   • 4.5420 + Kompozit dolgu küçük azı/süt azı, iki yüzey, aynı seansta ve aynı sekstantta her ek dolgu",
+      "   • 4.5800 Mine pürüzlendirme ve yapıştırıcı uygulaması",
+      "   • 4.5810 Dentin ön hazırlığı ve dentin yapıştırıcısı uygulaması",
+      "🧾 **Renk seçimi** dahildir",
+      "⚠️ **Önemli:** Ek paket 4.5990.LP (kauçuk baraj ve anestezi) seans başına ek olarak faturalandırılır"
+    ],
+    "hr": [
+      "📦 **Paket usluga za UV/MV (ne vrijedi za IV)**",
+      "🦷 **Pojedinačne usluge uključene:**",
+      "   • 4.5350 Kompozitna ispuna, jedna ploha",
+      "   • 4.5360 + Kompozitna ispuna, jedna ploha, svaka dodatna u istoj seansi i istom sekstantu",
+      "   • 4.5370 Kompozitna ispuna, prednja interdentalna",
+      "   • 4.5380 + Kompozitna ispuna, prednja interdentalna, svaka dodatna u istoj seansi i istom sekstantu",
+      "   • 4.5400 + Izgradnja kvržice ili incizalnog ruba kompozitom, svaka dodatna u istoj seansi i istom sekstantu",
+      "   • 4.5410 Kompozitna ispuna pretkutnjak/mliječni kutnjak, dvije plohe",
+      "   • 4.5420 + Kompozitna ispuna pretkutnjak/mliječni kutnjak, dvije plohe, svaka dodatna u istoj seansi i istom sekstantu",
+      "   • 4.5800 Jetkanje cakline i nanošenje adheziva",
+      "   • 4.5810 Prethodna obrada dentina i nanošenje dentinskog adheziva",
+      "🧾 **Odabir boje** je uključen",
+      "⚠️ **Važno:** Dodatni paket 4.5990.LP (koferdam i anestezija) naplaćuje se po seansi dodatno"
+    ],
+    "ta": [
+      "📦 **UV/MV க்கான சேவை தொகுப்பு (IV க்கு பொருந்தாது)**",
+      "🦷 **சேர்க்கப்பட்டுள்ள தனிப்பட்ட சேவைகள்:**",
+      "   • 4.5350 கலவை நிரப்புதல், ஒரு மேற்பரப்பு",
+      "   • 4.5360 + கலவை நிரப்புதல், ஒரு மேற்பரப்பு, அதே அமர்வில் மற்றும் அதே செக்ஸ்டன்டில் ஒவ்வொரு கூடுதல்",
+      "   • 4.5370 கலவை நிரப்புதல், முன் பல் இடைப்பகுதி",
+      "   • 4.5380 + கலவை நிரப்புதல், முன் பல் இடைப்பகுதி, அதே அமர்வில் மற்றும் அதே செக்ஸ்டன்டில் ஒவ்வொரு கூடுதல்",
+      "   • 4.5400 + கலவை கஸ்ப் அல்லது இன்சிசல் விளிம்பு கட்டுமானம், அதே அமர்வில் மற்றும் அதே செக்ஸ்டன்டில் ஒவ்வொரு கூடுதல்",
+      "   • 4.5410 கலவை நிரப்புதல் முன் கடைவாய்ப்பல்/பால் கடைவாய்ப்பல், இரண்டு மேற்பரப்புகள்",
+      "   • 4.5420 + கலவை நிரப்புதல் முன் கடைவாய்ப்பல்/பால் கடைவாய்ப்பல், இரண்டு மேற்பரப்புகள், அதே அமர்வில் மற்றும் அதே செக்ஸ்டன்டில் ஒவ்வொரு கூடுதல்",
+      "   • 4.5800 பற்சிப்பி அரித்தல் மற்றும் பிசின் பயன்பாடு",
+      "   • 4.5810 டென்டின் முன் சிகிச்சை மற்றும் டென்டின் பிசின் பயன்பாடு",
+      "🧾 **நிறத் தேர்வு** சேர்க்கப்பட்டுள்ளது",
+      "⚠️ **முக்கியம்:** கூடுதல் தொகுப்பு 4.5990.LP (ரப்பர் டேம் மற்றும் மரத்துப்போகச் செய்தல்) ஒரு அமர்வுக்கு கூடுதலாக கணக்கிடப்படுகிறது"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "📦 **Nur für UV/MV** (Unfall- und Militärversicherung) – **nicht für IV**",
+      "🦷 **Pro Sitzung** kann das Zusatzpaket 4.5990.LP (Kofferdam und Anästhesie) 1 mal verrechnet werden",
+      "🔧 **Bei 2 Eckaufbauten am gleichen Zahn** wird das LP «Kompositfüllung, klein UV/MV» 2 mal verrechnet",
+      "🔧 **Bei einer Rekonstruktion > 2/3 der Zahnkrone** wird 1 mal das LP «Kompositfüllung, klein UV/MV» und 1 mal das LP «Kompositfüllung, mittel UV/MV» (4.5430.LP) verrechnet",
+      "📋 **Aufklärung:** Die Tarifziffer 4.0110 «Instruktion und Aufklärung des Patienten» darf 1 mal pro Fall zusätzlich verrechnet werden",
+      "⚠️ **Wichtig:** Dies ist ein Leistungspaket, keine Pauschale. Bei nachweisbarem Mehraufwand können zusätzliche Einzelleistungen verrechnet werden"
+    ],
+    "fr": [
+      "📦 **Uniquement pour UV/MV** (assurance accidents et militaire) – **pas pour IV**",
+      "🦷 **Par séance** le forfait supplémentaire 4.5990.LP (digue et anesthésie) peut être facturé 1 fois",
+      "🔧 **Pour 2 reconstructions de corne sur la même dent** le forfait «Petite obturation composite UV/MV» est facturé 2 fois",
+      "🔧 **Pour une reconstruction > 2/3 de la couronne dentaire** le forfait «Petite obturation composite UV/MV» est facturé 1 fois et le forfait «Obturation composite moyenne UV/MV» (4.5430.LP) 1 fois",
+      "📋 **Information:** Le code 4.0110 «Instruction et information du patient» peut être facturé 1 fois par cas en supplément",
+      "⚠️ **Important:** Il s'agit d'un forfait de prestations, pas d'un forfait global. En cas de surcroît de travail justifié, des prestations individuelles supplémentaires peuvent être facturées"
+    ],
+    "it": [
+      "📦 **Solo per UV/MV** (assicurazione infortuni e militare) – **non per IV**",
+      "🦷 **Per seduta** il pacchetto supplementare 4.5990.LP (diga e anestesia) può essere fatturato 1 volta",
+      "🔧 **Per 2 ricostruzioni di corno sullo stesso dente** il pacchetto «Piccola otturazione composito UV/MV» viene fatturato 2 volte",
+      "🔧 **Per una ricostruzione > 2/3 della corona dentale** il pacchetto «Piccola otturazione composito UV/MV» viene fatturato 1 volta e il pacchetto «Otturazione composito media UV/MV» (4.5430.LP) 1 volta",
+      "📋 **Informazione:** Il codice 4.0110 «Istruzione e informazione del paziente» può essere fatturato 1 volta per caso in aggiunta",
+      "⚠️ **Importante:** Si tratta di un pacchetto di prestazioni, non di una tariffa forfettaria. In caso di maggiore onere documentato, possono essere fatturate prestazioni individuali aggiuntive"
+    ],
+    "en": [
+      "📦 **Only for UV/MV** (accident and military insurance) – **not for IV**",
+      "🦷 **Per session** the supplementary package 4.5990.LP (rubber dam and anesthesia) can be billed 1 time",
+      "🔧 **For 2 cusp build-ups on the same tooth** the «Small composite filling UV/MV» package is billed 2 times",
+      "🔧 **For a reconstruction > 2/3 of the tooth crown** the «Small composite filling UV/MV» package is billed 1 time and the «Medium composite filling UV/MV» package (4.5430.LP) is billed 1 time",
+      "📋 **Information:** Code 4.0110 «Instruction and information of the patient» may be billed 1 time per case in addition",
+      "⚠️ **Important:** This is a service package, not a flat rate. In case of proven additional effort, additional individual services may be billed"
+    ],
+    "es": [
+      "📦 **Solo para UV/MV** (seguro de accidentes y militar) – **no para IV**",
+      "🦷 **Por sesión** el paquete suplementario 4.5990.LP (dique y anestesia) puede facturarse 1 vez",
+      "🔧 **Para 2 reconstrucciones de cúspide en el mismo diente** el paquete «Pequeño empaste composite UV/MV» se factura 2 veces",
+      "🔧 **Para una reconstrucción > 2/3 de la corona dental** el paquete «Pequeño empaste composite UV/MV» se factura 1 vez y el paquete «Empaste composite medio UV/MV» (4.5430.LP) se factura 1 vez",
+      "📋 **Información:** El código 4.0110 «Instrucción e información del paciente» puede facturarse 1 vez por caso adicionalmente",
+      "⚠️ **Importante:** Este es un paquete de prestaciones, no una tarifa plana. En caso de esfuerzo adicional justificado, pueden facturarse prestaciones individuales adicionales"
+    ],
+    "pt": [
+      "📦 **Apenas para UV/MV** (seguro de acidentes e militar) – **não para IV**",
+      "🦷 **Por sessão** o pacote suplementar 4.5990.LP (dique e anestesia) pode ser faturado 1 vez",
+      "🔧 **Para 2 reconstruções de cúspide no mesmo dente** o pacote «Pequena obturação compósito UV/MV» é faturado 2 vezes",
+      "🔧 **Para uma reconstrução > 2/3 da coroa dentária** o pacote «Pequena obturação compósito UV/MV» é faturado 1 vez e o pacote «Obturação compósito média UV/MV» (4.5430.LP) é faturado 1 vez",
+      "📋 **Informação:** O código 4.0110 «Instrução e informação do paciente» pode ser faturado 1 vez por caso adicionalmente",
+      "⚠️ **Importante:** Este é um pacote de prestações, não uma tarifa fixa. Em caso de esforço adicional comprovado, podem ser faturadas prestações individuais adicionais"
+    ],
+    "pl": [
+      "📦 **Tylko dla UV/MV** (ubezpieczenie wypadkowe i wojskowe) – **nie dla IV**",
+      "🦷 **Na sesję** pakiet uzupełniający 4.5990.LP (koferdam i znieczulenie) może być rozliczony 1 raz",
+      "🔧 **Dla 2 odbudów guzków na tym samym zębie** pakiet «Małe wypełnienie kompozytowe UV/MV» jest rozliczany 2 razy",
+      "🔧 **Dla odbudowy > 2/3 korony zęba** pakiet «Małe wypełnienie kompozytowe UV/MV» jest rozliczany 1 raz, a pakiet «Średnie wypełnienie kompozytowe UV/MV» (4.5430.LP) 1 raz",
+      "📋 **Informacja:** Kod 4.0110 «Instrukcja i informacja pacjenta» może być rozliczony 1 raz na przypadek dodatkowo",
+      "⚠️ **Ważne:** To jest pakiet usług, nie ryczałt. W przypadku udokumentowanego dodatkowego nakładu pracy mogą być rozliczone dodatkowe usługi indywidualne"
+    ],
+    "al": [
+      "📦 **Vetëm për UV/MV** (sigurimi i aksidenteve dhe ushtarak) – **jo për IV**",
+      "🦷 **Për seancë** paketa shtesë 4.5990.LP (diga e gomës dhe anestezi) mund të faturohet 1 herë",
+      "🔧 **Për 2 rindërtime kuspe në të njëjtin dhëmb** paketa «Mbushje e vogël kompozit UV/MV» faturohet 2 herë",
+      "🔧 **Për një rindërtim > 2/3 e kurorës së dhëmbit** paketa «Mbushje e vogël kompozit UV/MV» faturohet 1 herë dhe paketa «Mbushje kompozit e mesme UV/MV» (4.5430.LP) faturohet 1 herë",
+      "📋 **Informimi:** Kodi 4.0110 «Udhëzim dhe informim i pacientit» mund të faturohet 1 herë për rast shtesë",
+      "⚠️ **E rëndësishme:** Ky është një paketë shërbimesh, jo një tarifë fikse. Në rast të përpjekjeve shtesë të provuara, mund të faturohen shërbime individuale shtesë"
+    ],
+    "tr": [
+      "📦 **Sadece UV/MV için** (kaza ve askerlik sigortası) – **IV için değil**",
+      "🦷 **Seans başına** ek paket 4.5990.LP (kauçuk baraj ve anestezi) 1 kez faturalandırılabilir",
+      "🔧 **Aynı dişte 2 tüberkül yapımı için** «Küçük kompozit dolgu UV/MV» paketi 2 kez faturalandırılır",
+      "🔧 **Diş kronunun > 2/3'ünün yapımı için** «Küçük kompozit dolgu UV/MV» paketi 1 kez ve «Orta kompozit dolgu UV/MV» paketi (4.5430.LP) 1 kez faturalandırılır",
+      "📋 **Bilgilendirme:** 4.0110 «Hastanın bilgilendirilmesi ve talimatlandırılması» kodu ek olarak vaka başına 1 kez faturalandırılabilir",
+      "⚠️ **Önemli:** Bu bir hizmet paketidir, sabit ücret değildir. Kanıtlanmış ek çaba durumunda, ek bireysel hizmetler faturalandırılabilir"
+    ],
+    "hr": [
+      "📦 **Samo za UV/MV** (osiguranje od nezgode i vojno osiguranje) – **ne za IV**",
+      "🦷 **Po seansi** dodatni paket 4.5990.LP (koferdam i anestezija) može se naplatiti 1 put",
+      "🔧 **Za 2 izgradnje kvržica na istom zubu** paket «Mala kompozitna ispuna UV/MV» naplaćuje se 2 puta",
+      "🔧 **Za rekonstrukciju > 2/3 zubne krune** paket «Mala kompozitna ispuna UV/MV» naplaćuje se 1 put i paket «Srednja kompozitna ispuna UV/MV» (4.5430.LP) naplaćuje se 1 put",
+      "📋 **Informiranje:** Kod 4.0110 «Instrukcija i informiranje pacijenta» može se naplatiti 1 put po slučaju dodatno",
+      "⚠️ **Važno:** Ovo je paket usluga, ne paušal. U slučaju dokazanog dodatnog napora, mogu se naplatiti dodatne pojedinačne usluge"
+    ],
+    "ta": [
+      "📦 **UV/MV க்கு மட்டும்** (விபத்து மற்றும் இராணுவ காப்பீடு) – **IV க்கு அல்ல**",
+      "🦷 **ஒரு அமர்வுக்கு** கூடுதல் தொகுப்பு 4.5990.LP (ரப்பர் டேம் மற்றும் மரத்துப்போகச் செய்தல்) 1 முறை கணக்கிடப்படலாம்",
+      "🔧 **அதே பல்லில் 2 கஸ்ப் கட்டுமானங்களுக்கு** «சிறிய கலவை நிரப்புதல் UV/MV» தொகுப்பு 2 முறை கணக்கிடப்படுகிறது",
+      "🔧 **பல் கிரீடத்தின் > 2/3 க்கும் மேற்பட்ட கட்டுமானத்திற்கு** «சிறிய கலவை நிரப்புதல் UV/MV» தொகுப்பு 1 முறை மற்றும் «நடுத்தர கலவை நிரப்புதல் UV/MV» தொகுப்பு (4.5430.LP) 1 முறை கணக்கிடப்படுகிறது",
+      "📋 **தகவல்:** 4.0110 «நோயாளியின் அறிவுறுத்தல் மற்றும் தகவல்» குறியீடு ஒரு வழக்குக்கு 1 முறை கூடுதலாக கணக்கிடப்படலாம்",
+      "⚠️ **முக்கியம்:** இது ஒரு சேவை தொகுப்பு, ஒரு நிலையான கட்டணம் அல்ல. நிரூபிக்கப்பட்ட கூடுதல் முயற்சி ஏற்பட்டால், கூடுதல் தனிப்பட்ட சேவைகள் கணக்கிடப்படலாம்"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen der normalen Kompositfüllung (4.5350) und diesem Leistungspaket (4.5350.LP)?",
+        "answer": "Die normale Einzelleistung (4.5350) wird bei Privatpatienten (PP) verwendet. Das Leistungspaket (4.5350.LP) ist speziell für UV/MV-Versicherungsfälle. Es bündelt mehrere typische Einzelleistungen (die Füllung selbst, Schmelzätzung, Dentinvorbehandlung) in einem Paket, was die Abrechnung vereinfacht. Der Preis ist derselbe – es geht nur um die Art der Abrechnung."
+      },
+      {
+        "question": "Was ist in diesem Paket enthalten und was nicht?",
+        "answer": "Enthalten sind: die eigentliche Füllung (je nach Größe und Lage verschiedene Codes), die Schmelzätzung (4.5800) und die Dentinvorbehandlung (4.5810) sowie die Farbauswahl. Nicht enthalten sind: Anästhesie (4.0650) und Kofferdam (4.0940/4.0950). Diese werden mit dem Zusatzpaket 4.5990.LP pro Sitzung abgerechnet."
+      },
+      {
+        "question": "Gilt dieses Paket auch für die Invalidenversicherung (IV)?",
+        "answer": "Nein. Die Leistungspakete Plus (LP+) gelten ausschließlich für den Unfall- und Militärversicherungsbereich (UV/MV). Für die Invalidenversicherung (IV) werden die normalen Einzelleistungen abgerechnet."
+      },
+      {
+        "question": "Wie viele Füllungen kann ich mit einem Paket machen lassen?",
+        "answer": "Das Paket gilt pro Füllung oder pro Zahn. Werden mehrere Füllungen in derselben Sitzung gemacht, wird die höher bewertete als erste Füllung mit dem vollen TP abgerechnet. Jede weitere Füllung im gleichen Sextanten wird mit dem reduzierten Zusatzcode (4.5360, 4.5380, 4.5400, 4.5420) abgerechnet."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre l'obturation composite normale (4.5350) et ce forfait de prestations (4.5350.LP)?",
+        "answer": "La prestation individuelle normale (4.5350) est utilisée pour les patients privés (PP). Le forfait de prestations (4.5350.LP) est spécialement destiné aux cas d'assurance UV/MV. Il regroupe plusieurs prestations individuelles typiques (l'obturation elle-même, le mordançage de l'émail, le traitement de la dentine) en un seul forfait, ce qui simplifie la facturation. Le prix est le même – il s'agit uniquement du mode de facturation."
+      },
+      {
+        "question": "Qu'est-ce qui est inclus dans ce forfait et qu'est-ce qui ne l'est pas?",
+        "answer": "Sont inclus: l'obturation elle-même (selon la taille et l'emplacement, différents codes), le mordançage de l'émail (4.5800) et le traitement de la dentine (4.5810) ainsi que le choix de la couleur. Ne sont pas inclus: l'anesthésie (4.0650) et la digue (4.0940/4.0950). Ceux-ci sont facturés avec le forfait supplémentaire 4.5990.LP par séance."
+      },
+      {
+        "question": "Ce forfait s'applique-t-il également à l'assurance invalidité (IV)?",
+        "answer": "Non. Les forfaits de prestations Plus (LP+) s'appliquent exclusivement au domaine de l'assurance accidents et militaire (UV/MV). Pour l'assurance invalidité (IV), les prestations individuelles normales sont facturées."
+      },
+      {
+        "question": "Combien d'obturations puis-je faire avec un forfait?",
+        "answer": "Le forfait s'applique par obturation ou par dent. Si plusieurs obturations sont faites dans la même séance, l'obturation la mieux évaluée est facturée en premier avec le TP complet. Chaque obturation supplémentaire dans le même sextant est facturée avec le code additionnel réduit (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra l'otturazione in composito normale (4.5350) e questo pacchetto di prestazioni (4.5350.LP)?",
+        "answer": "La prestazione individuale normale (4.5350) viene utilizzata per i pazienti privati (PP). Il pacchetto di prestazioni (4.5350.LP) è specifico per i casi assicurativi UV/MV. Raggruppa diverse prestazioni individuali tipiche (l'otturazione stessa, l'incisione dello smalto, il trattamento della dentina) in un unico pacchetto, semplificando la fatturazione. Il prezzo è lo stesso – si tratta solo del modo di fatturare."
+      },
+      {
+        "question": "Cosa è incluso in questo pacchetto e cosa no?",
+        "answer": "Sono inclusi: l'otturazione stessa (a seconda delle dimensioni e della posizione, codici diversi), l'incisione dello smalto (4.5800) e il trattamento della dentina (4.5810) nonché la scelta del colore. Non sono inclusi: anestesia (4.0650) e diga (4.0940/4.0950). Questi vengono fatturati con il pacchetto supplementare 4.5990.LP per seduta."
+      },
+      {
+        "question": "Questo pacchetto vale anche per l'assicurazione invalidità (IV)?",
+        "answer": "No. I pacchetti di prestazioni Plus (LP+) si applicano esclusivamente all'ambito dell'assicurazione infortuni e militare (UV/MV). Per l'assicurazione invalidità (IV) vengono fatturate le normali prestazioni individuali."
+      },
+      {
+        "question": "Quante otturazioni posso fare con un pacchetto?",
+        "answer": "Il pacchetto si applica per otturazione o per dente. Se vengono eseguite più otturazioni nella stessa seduta, l'otturazione con il valore più alto viene fatturata per prima con il TP completo. Ogni otturazione aggiuntiva nello stesso sestante viene fatturata con il codice aggiuntivo ridotto (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between the normal composite filling (4.5350) and this service package (4.5350.LP)?",
+        "answer": "The normal individual service (4.5350) is used for private patients (PP). The service package (4.5350.LP) is specifically for UV/MV insurance cases. It bundles several typical individual services (the filling itself, enamel etching, dentin treatment) into one package, simplifying billing. The price is the same – it's just about the billing method."
+      },
+      {
+        "question": "What is included in this package and what is not?",
+        "answer": "Included: the filling itself (depending on size and location, different codes), enamel etching (4.5800) and dentin treatment (4.5810) as well as color selection. Not included: anesthesia (4.0650) and rubber dam (4.0940/4.0950). These are billed with the supplementary package 4.5990.LP per session."
+      },
+      {
+        "question": "Does this package also apply to disability insurance (IV)?",
+        "answer": "No. The Plus service packages (LP+) apply exclusively to accident and military insurance (UV/MV). For disability insurance (IV), normal individual services are billed."
+      },
+      {
+        "question": "How many fillings can I get with one package?",
+        "answer": "The package applies per filling or per tooth. If multiple fillings are done in the same session, the higher-rated filling is billed first with the full TP. Each additional filling in the same sextant is billed with the reduced add-on code (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre el empaste composite normal (4.5350) y este paquete de prestaciones (4.5350.LP)?",
+        "answer": "La prestación individual normal (4.5350) se utiliza para pacientes privados (PP). El paquete de prestaciones (4.5350.LP) es específico para casos de seguro UV/MV. Agrupa varias prestaciones individuales típicas (el empaste en sí, el grabado del esmalte, el tratamiento de la dentina) en un solo paquete, simplificando la facturación. El precio es el mismo – se trata solo del método de facturación."
+      },
+      {
+        "question": "¿Qué está incluido en este paquete y qué no?",
+        "answer": "Están incluidos: el empaste en sí (según tamaño y ubicación, diferentes códigos), el grabado del esmalte (4.5800) y el tratamiento de la dentina (4.5810) así como la selección del color. No están incluidos: anestesia (4.0650) y dique (4.0940/4.0950). Estos se facturan con el paquete suplementario 4.5990.LP por sesión."
+      },
+      {
+        "question": "¿Este paquete también se aplica al seguro de invalidez (IV)?",
+        "answer": "No. Los paquetes de prestaciones Plus (LP+) se aplican exclusivamente al ámbito del seguro de accidentes y militar (UV/MV). Para el seguro de invalidez (IV), se facturan las prestaciones individuales normales."
+      },
+      {
+        "question": "¿Cuántos empastes puedo hacer con un paquete?",
+        "answer": "El paquete se aplica por empaste o por diente. Si se realizan varios empastes en la misma sesión, el empaste con mayor valor se factura primero con el TP completo. Cada empaste adicional en el mismo sextante se factura con el código adicional reducido (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre a obturação compósito normal (4.5350) e este pacote de prestações (4.5350.LP)?",
+        "answer": "A prestação individual normal (4.5350) é utilizada para pacientes privados (PP). O pacote de prestações (4.5350.LP) é especificamente para casos de seguro UV/MV. Agrupa várias prestações individuais típicas (a própria obturação, o condicionamento do esmalte, o tratamento da dentina) num único pacote, simplificando a faturação. O preço é o mesmo – trata-se apenas do método de faturação."
+      },
+      {
+        "question": "O que está incluído neste pacote e o que não está?",
+        "answer": "Estão incluídos: a própria obturação (conforme tamanho e localização, códigos diferentes), o condicionamento do esmalte (4.5800) e o tratamento da dentina (4.5810) bem como a seleção da cor. Não estão incluídos: anestesia (4.0650) e dique (4.0940/4.0950). Estes são faturados com o pacote suplementar 4.5990.LP por sessão."
+      },
+      {
+        "question": "Este pacote também se aplica ao seguro de invalidez (IV)?",
+        "answer": "Não. Os pacotes de prestações Plus (LP+) aplicam-se exclusivamente ao domínio do seguro de acidentes e militar (UV/MV). Para o seguro de invalidez (IV), são faturadas as prestações individuais normais."
+      },
+      {
+        "question": "Quantas obturações posso fazer com um pacote?",
+        "answer": "O pacote aplica-se por obturação ou por dente. Se várias obturações forem feitas na mesma sessão, a obturação com maior valor é faturada primeiro com o TP completo. Cada obturação adicional no mesmo sextante é faturada com o código adicional reduzido (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między normalnym wypełnieniem kompozytowym (4.5350) a tym pakietem usług (4.5350.LP)?",
+        "answer": "Normalna usługa indywidualna (4.5350) jest stosowana dla pacjentów prywatnych (PP). Pakiet usług (4.5350.LP) jest przeznaczony specjalnie dla przypadków ubezpieczeniowych UV/MV. Łączy kilka typowych usług indywidualnych (samo wypełnienie, trawienie szkliwa, przygotowanie zębiny) w jeden pakiet, upraszczając rozliczanie. Cena jest taka sama – chodzi tylko o sposób rozliczania."
+      },
+      {
+        "question": "Co jest zawarte w tym pakiecie, a co nie?",
+        "answer": "Zawarte są: samo wypełnienie (w zależności od wielkości i lokalizacji, różne kody), trawienie szkliwa (4.5800) i przygotowanie zębiny (4.5810) oraz dobór koloru. Nie zawarte są: znieczulenie (4.0650) i koferdam (4.0940/4.0950). Są one rozliczane z pakietem uzupełniającym 4.5990.LP na sesję."
+      },
+      {
+        "question": "Czy ten pakiet dotyczy również ubezpieczenia inwalidzkiego (IV)?",
+        "answer": "Nie. Pakiety usług Plus (LP+) dotyczą wyłącznie ubezpieczenia wypadkowego i wojskowego (UV/MV). Dla ubezpieczenia inwalidzkiego (IV) rozliczane są normalne usługi indywidualne."
+      },
+      {
+        "question": "Ile wypełnień mogę zrobić z jednym pakietem?",
+        "answer": "Pakiet dotyczy jednego wypełnienia lub jednego zęba. Jeśli w tej samej sesji wykonano wiele wypełnień, wypełnienie o wyższej wartości jest rozliczane jako pierwsze z pełnym TP. Każde dodatkowe wypełnienie w tym samym sekstancie jest rozliczane z obniżonym kodem dodatkowym (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis mbushjes normale kompozit (4.5350) dhe kësaj pakete shërbimesh (4.5350.LP)?",
+        "answer": "Shërbimi normal individual (4.5350) përdoret për pacientët privatë (PP). Paketa e shërbimeve (4.5350.LP) është specifike për rastet e sigurimit UV/MV. Ajo grup disa shërbime individuale tipike (vetë mbushjen, gdhëndjen e smaltit, trajtimin e dentinës) në një paketë të vetme, duke thjeshtuar faturimin. Çmimi është i njëjtë – bëhet fjalë vetëm për mënyrën e faturimit."
+      },
+      {
+        "question": "Çfarë përfshihet në këtë paketë dhe çfarë jo?",
+        "answer": "Përfshihen: vetë mbushja (në varësi të madhësisë dhe vendndodhjes, kode të ndryshme), gdhëndja e smaltit (4.5800) dhe trajtimi i dentinës (4.5810) si dhe zgjedhja e ngjyrës. Nuk përfshihen: anestezia (4.0650) dhe diga e gomës (4.0940/4.0950). Këto faturohen me paketën shtesë 4.5990.LP për seancë."
+      },
+      {
+        "question": "A vlen kjo paketë edhe për sigurimin e invaliditetit (IV)?",
+        "answer": "Jo. Paketat e shërbimeve Plus (LP+) zbatohen ekskluzivisht për sigurimin e aksidenteve dhe ushtarak (UV/MV). Për sigurimin e invaliditetit (IV), faturohen shërbimet normale individuale."
+      },
+      {
+        "question": "Sa mbushje mund të bëj me një paketë?",
+        "answer": "Paketa zbatohet për mbushje ose për dhëmb. Nëse bëhen disa mbushje në të njëjtën seancë, mbushja me vlerë më të lartë faturohet e para me TP të plotë. Çdo mbushje shtesë në të njëjtin sekstant faturohet me kodin shtesë të reduktuar (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Normal kompozit dolgu (4.5350) ile bu hizmet paketi (4.5350.LP) arasındaki fark nedir?",
+        "answer": "Normal bireysel hizmet (4.5350) özel hastalar (PP) için kullanılır. Hizmet paketi (4.5350.LP) özellikle UV/MV sigorta vakaları içindir. Birkaç tipik bireysel hizmeti (dolgunun kendisi, mine pürüzlendirme, dentin hazırlığı) tek bir pakette birleştirir, faturalandırmayı basitleştirir. Fiyat aynıdır – sadece faturalandırma yöntemiyle ilgilidir."
+      },
+      {
+        "question": "Bu pakette neler var ve neler yok?",
+        "answer": "Dahil olanlar: dolgunun kendisi (boyut ve konuma göre farklı kodlar), mine pürüzlendirme (4.5800) ve dentin hazırlığı (4.5810) ile renk seçimi. Dahil olmayanlar: anestezi (4.0650) ve kauçuk baraj (4.0940/4.0950). Bunlar seans başına ek paket 4.5990.LP ile faturalandırılır."
+      },
+      {
+        "question": "Bu paket engellilik sigortası (IV) için de geçerli midir?",
+        "answer": "Hayır. Plus hizmet paketleri (LP+) yalnızca kaza ve askerlik sigortası (UV/MV) alanı için geçerlidir. Engellilik sigortası (IV) için normal bireysel hizmetler faturalandırılır."
+      },
+      {
+        "question": "Bir paketle kaç dolgu yaptırabilirim?",
+        "answer": "Paket dolgu başına veya diş başına uygulanır. Aynı seansta birden fazla dolgu yapılırsa, daha yüksek değerli dolgu önce tam TP ile faturalandırılır. Aynı sekstanttaki her ek dolgu, indirimli ek kodla (4.5360, 4.5380, 4.5400, 4.5420) faturalandırılır."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između normalne kompozitne ispune (4.5350) i ovog paketa usluga (4.5350.LP)?",
+        "answer": "Normalna pojedinačna usluga (4.5350) koristi se za privatne pacijente (PP). Paket usluga (4.5350.LP) specifičan je za slučajeve osiguranja UV/MV. Grupira nekoliko tipičnih pojedinačnih usluga (samu ispunu, jetkanje cakline, pripremu dentina) u jedan paket, pojednostavljujući naplatu. Cijena je ista – radi se samo o načinu naplate."
+      },
+      {
+        "question": "Što je uključeno u ovaj paket, a što nije?",
+        "answer": "Uključeno: sama ispuna (ovisno o veličini i položaju, različiti kodovi), jetkanje cakline (4.5800) i priprema dentina (4.5810) te odabir boje. Nije uključeno: anestezija (4.0650) i koferdam (4.0940/4.0950). Oni se naplaćuju s dodatnim paketom 4.5990.LP po seansi."
+      },
+      {
+        "question": "Vrijedi li ovaj paket i za invalidsko osiguranje (IV)?",
+        "answer": "Ne. Plus paketi usluga (LP+) vrijede isključivo za osiguranje od nezgode i vojno osiguranje (UV/MV). Za invalidsko osiguranje (IV) naplaćuju se normalne pojedinačne usluge."
+      },
+      {
+        "question": "Koliko ispuna mogu napraviti s jednim paketom?",
+        "answer": "Paket se primjenjuje po ispuni ili po zubu. Ako se više ispuna napravi u istoj seansi, ispuna s višom vrijednošću naplaćuje se prva s punim TP-om. Svaka dodatna ispuna u istom sekstantu naplaćuje se s reduciranim dodatnim kodom (4.5360, 4.5380, 4.5400, 4.5420)."
+      }
+    ],
+    "ta": [
+      {
+        "question": "சாதாரண கலவை நிரப்புதலுக்கும் (4.5350) இந்த சேவை தொகுப்புக்கும் (4.5350.LP) என்ன வித்தியாசம்?",
+        "answer": "சாதாரண தனிப்பட்ட சேவை (4.5350) தனியார் நோயாளிகளுக்கு (PP) பயன்படுத்தப்படுகிறது. சேவை தொகுப்பு (4.5350.LP) குறிப்பாக UV/MV காப்பீட்டு நிகழ்வுகளுக்கானது. இது பல பொதுவான தனிப்பட்ட சேவைகளை (நிரப்புதல், பற்சிப்பி அரித்தல், டென்டின் சிகிச்சை) ஒரு தொகுப்பில் தொகுக்கிறது, கணக்கிடுதலை எளிதாக்குகிறது. விலை ஒன்றுதான் – இது கணக்கிடும் முறையைப் பற்றியது மட்டுமே."
+      },
+      {
+        "question": "இந்த தொகுப்பில் என்ன சேர்க்கப்பட்டுள்ளது, என்ன சேர்க்கப்படவில்லை?",
+        "answer": "சேர்க்கப்பட்டவை: நிரப்புதல் (அளவு மற்றும் இடத்தைப் பொறுத்து வெவ்வேறு குறியீடுகள்), பற்சிப்பி அரித்தல் (4.5800) மற்றும் டென்டின் சிகிச்சை (4.5810) மற்றும் நிறத் தேர்வு. சேர்க்கப்படாதவை: மரத்துப்போகச் செய்தல் (4.0650) மற்றும் ரப்பர் டேம் (4.0940/4.0950). இவை ஒரு அமர்வுக்கு கூடுதல் தொகுப்பு 4.5990.LP உடன் கணக்கிடப்படுகின்றன."
+      },
+      {
+        "question": "இந்த தொகுப்பு ஊனமுறை காப்பீட்டுக்கும் (IV) பொருந்துமா?",
+        "answer": "இல்லை. Plus சேவை தொகுப்புகள் (LP+) பிரத்தியேகமாக விபத்து மற்றும் இராணுவ காப்பீட்டு (UV/MV) பகுதிக்கு பொருந்தும். ஊனமுறை காப்பீட்டுக்கு (IV), சாதாரண தனிப்பட்ட சேவைகள் கணக்கிடப்படுகின்றன."
+      },
+      {
+        "question": "ஒரு தொகுப்பில் எத்தனை நிரப்புதல்கள் செய்யலாம்?",
+        "answer": "தொகுப்பு ஒரு நிரப்புதலுக்கு அல்லது ஒரு பல்லுக்கு பொருந்தும். ஒரே அமர்வில் பல நிரப்புதல்கள் செய்யப்பட்டால், அதிக மதிப்புள்ள நிரப்புதல் முதலில் முழு TP உடன் கணக்கிடப்படும். அதே செக்ஸ்டன்டில் உள்ள ஒவ்வொரு கூடுதல் நிரப்புதலும் குறைக்கப்பட்ட கூடுதல் குறியீட்டுடன் (4.5360, 4.5380, 4.5400, 4.5420) கணக்கிடப்படும்."
+      }
+    ]
+  }
+}

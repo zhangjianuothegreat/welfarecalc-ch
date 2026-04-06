@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <title>Odszyfrowanie szwajcarskiego rachunku za dentystę: Wyjaśnienie kodów DENTOTAR</title>
+    <link rel="canonical" href="https://www.welfarecalc.ch/blog/pl/dental/blog-2-dental-bill-pl.html">
+    <meta name="description" content="Masz problem z odczytaniem szwajcarskiego rachunku za dentystę? Dowiedz się, co oznaczają kody takie jak 4.0000 czy 4.1110, jak działają punkty taryfowe i jak sprawdzić, czy nie zostałeś przewalony.">
+    <meta name="keywords" content="szwajcarski rachunek za dentystę, kody DENTOTAR, taryfa dentystyczna Szwajcaria, faktura dentysty w Szwajcarii, wyjaśnienie Taxpunkte, jak czytać szwajcarski rachunek za dentystę, taryfa DENTOTAR 2026">
+    
+    <meta property="og:title" content="Szwajcarskie rachunki za dentystę: Jak czytać sekretne kody">
+    <meta property="og:description" content="Twój rachunek za dentystę wygląda jak tajny kod. Pomożemy Ci odszyfrować system DENTOTAR w 5 minut.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.welfarecalc.ch/blog/pl/dental/blog-2-dental-bill-pl.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/og-dental-guide-pl.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Twój szwajcarski rachunek za dentystę wygląda jak kod – Jak czytać kody DENTOTAR",
+      "description": "Kompletny przewodnik po odszyfrowywaniu szwajcarskich faktur stomatologicznych. Dowiedz się, co oznaczają kody DENTOTAR, jak działają punkty taryfowe i wartości punktów oraz jak sprawdzić, czy nie zostałeś przewalony.",
+      "author": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch"
+      },
+      "datePublished": "2026-03-30",
+      "dateModified": "2026-03-31",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.welfarecalc.ch/blog/pl/dental/blog-2-dental-bill-pl.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.welfarecalc.ch/logo.png"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        /* 与主站及第一篇博文完全一致的风格 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.65;
+            color: #1e2a3e;
+            background: #f5f9ff;
+        }
+        header {
+            background: linear-gradient(135deg, #005f8c, #0099dd);
+            padding: 3.5rem 1.5rem 3rem;
+            text-align: center;
+            border-bottom: 6px solid #ffcd7e;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .hero-title {
+            font-size: 2.35rem;
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            color: #ffffff;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-bottom: 0.8rem;
+            line-height: 1.25;
+        }
+        .hero-sub {
+            font-size: 1.28rem;
+            font-weight: 500;
+            color: #fff9e8;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+        h1, h2, h3 { color: #006a9e; font-weight: 700; }
+        h2 { font-size: 1.85rem; margin: 2rem 0 1rem; border-left: 6px solid #0099dd; padding-left: 1rem; }
+        h3 { font-size: 1.45rem; margin: 1.5rem 0 0.8rem; }
+
+        .card {
+            background: #ffffff;
+            padding: 1.8rem;
+            margin: 1.5rem 0;
+            border-radius: 24px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,119,190,0.08);
+        }
+        .highlight {
+            background: #e0f0fe;
+            padding: 1.3rem;
+            border-left: 7px solid #0077be;
+            margin: 1.5rem 0;
+            border-radius: 16px;
+            font-size: 1.05rem;
+        }
+        .price-box {
+            background: #fff6e5;
+            padding: 1.4rem;
+            border-radius: 20px;
+            margin: 1rem 0;
+            border-left: 7px solid #ff9800;
+        }
+        .action-list {
+            background: #eef7e6;
+            padding: 1.5rem;
+            border-radius: 20px;
+            margin: 1rem 0;
+            border-left: 6px solid #2e7d32;
+        }
+        select, button {
+            font-size: 1.05rem;
+            padding: 1rem 1.2rem;
+            margin: 0.8rem 0;
+            border-radius: 60px;
+            width: 100%;
+            border: 1px solid #cbd5e1;
+            background: white;
+        }
+        button {
+            background: #0077be;
+            color: white;
+            border: none;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0,119,190,0.25);
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        button:hover { background: #005f8c; transform: scale(0.98); }
+        
+        #result {
+            margin-top: 1.5rem;
+            padding: 1.5rem;
+            background: #f0f8ff;
+            border-radius: 20px;
+            border: 1px solid #bbdefb;
+        }
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+            color: #64748b;
+        }
+        .breadcrumb a { color: #0077be; text-decoration: none; }
+
+        /* 新增的完整矩阵卡片样式（与 Blog 1 统一） */
+        .series-matrix {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 24px;
+            padding: 1.8rem;
+            margin: 2.5rem 0 1.5rem;
+        }
+        .series-matrix h3 { margin-top: 0; color: #475569; }
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            margin-top: 1.2rem;
+        }
+        .matrix-item {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 16px;
+            border: 1px solid #cbd5e1;
+            text-decoration: none;
+            color: #1e2a3e;
+            transition: all 0.25s ease;
+            display: block;
+        }
+        .matrix-item:hover {
+            border-color: #0099dd;
+            box-shadow: 0 8px 20px rgba(0,119,190,0.1);
+            transform: translateY(-3px);
+        }
+        .matrix-item h4 {
+            color: #006a9e;
+            margin: 0 0 0.4rem 0;
+            font-size: 1.05rem;
+        }
+        .matrix-item p {
+            font-size: 0.9rem;
+            color: #64748b;
+            margin: 0;
+        }
+
+        .next-read-box {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            margin-top: 3rem;
+        }
+        .next-read-box h3 { margin-top: 0; color: #475569; }
+        .next-read-box ul { list-style: none; padding: 0; }
+        .next-read-box li { margin: 0.8rem 0; }
+        .next-read-box a { color: #0077be; text-decoration: none; font-weight: 600; }
+        .next-read-box a:hover { text-decoration: underline; }
+
+        .disclaimer {
+            font-size: 0.82rem;
+            color: #475569;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #ecfdf5;
+            border-radius: 20px;
+            border-left: 5px solid #10b981;
+        }
+        .version-info {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.85rem;
+            margin: 2rem 0 1rem;
+        }
+        ul, ol { padding-left: 1.8rem; margin: 1rem 0; }
+        li { margin: 0.4rem 0; }
+
+        @media (max-width: 640px) {
+            .hero-title { font-size: 1.95rem; }
+            .hero-sub { font-size: 1.15rem; }
+            .card { padding: 1.3rem; }
+            .matrix-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">Twój szwajcarski rachunek za dentystę wygląda jak kod</h1>
+        <p class="hero-sub">Jak go odczytać w 5 minut – nawet jeśli właśnie przyjechałeś do Szwajcarii</p>
+    </header>
+
+    <div class="container">
+        <nav class="breadcrumb">
+            <a href="https://www.welfarecalc.ch">Strona główna</a> > <a href="https://www.welfarecalc.ch/blog/pl/dental/dentalblog_pl.html">Audytor dentystyczny</a> > Czytanie rachunku
+        </nav>
+
+        <article>
+            <div class="card">
+                <p>Otwierasz kopertę od dentysty i widzisz długą listę dziwnych numerów: <strong>4.0000, 4.0650, 4.2950…</strong></p>
+                <p>Co one do cholery oznaczają? Czy to tajemny język? W pewnym sensie tak. To system <strong>DENTOTAR®</strong>, a kiedy już zdobędziesz klucz, wszystko staje się jasne.</p>
+            </div>
+
+            <div class="card">
+                <h2>Dlaczego szwajcarskie rachunki za dentystę używają kodów</h2>
+                <p>Szwajcaria stosuje oficjalny system o nazwie <strong>DENTOTAR®</strong>. Każda pojedyncza czynność, którą wykonuje dentysta, ma swój własny kod (zwany <em>Tarifziffer</em>).</p>
+                <p>System ten został zaprojektowany, aby rozliczenia były przejrzyste w całym kraju. Niezależnie od tego, czy jesteś w Genewie, czy w Chur, kod "4.0000" zawsze odnosi się do tego samego podstawowego badania. Jednak podczas gdy kody są standardowe, <strong>punkty taryfowe (TP)</strong> i <strong>wartość punktu (TPW)</strong> mogą się różnić.</p>
+            </div>
+
+            <div class="card">
+                <h2>Najczęstsze kody spotykane na rachunkach</h2>
+                <ul>
+                    <li><strong>4.0000</strong> – Podstawowa kontrola / Badanie wstępne</li>
+                    <li><strong>4.0650</strong> – Znieczulenie miejscowe (uśpienie obszaru)</li>
+                    <li><strong>4.1110</strong> – Czyszczenie zębów przez higienistkę (rozliczane co 5 minut)</li>
+                    <li><strong>4.0500</strong> – Pojedyncze zdjęcie rentgenowskie</li>
+                    <li><strong>4.5350</strong> – Standardowe białe wypełnienie (kompozytowe)</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Porada profesjonalisty:</strong> Większość czyszczeń przez higienistkę (4.1110) jest rozliczana w 5-minutowych jednostkach. Jeśli siedziałeś na fotelu przez 45 minut, na rachunku powinieneś zobaczyć "9 jednostek".
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🔍 Sprawdź swój rachunek już teraz</h2>
+                <p>Przestań zgadywać, co oznacza każdy kod na twojej fakturze. Użyj poniższego narzędzia, aby natychmiast zobaczyć oficjalną definicję i dozwolony zakres punktów taryfowych.</p>
+                
+                <label for="treatment-select">Wybierz kod ze swojego rachunku:</label>
+                <select id="treatment-select">
+                    <option value="">-- Ładowanie kodów zabiegów... --</option>
+                </select>
+                <button onclick="queryTreatment()">Odszyfruj ten kod</button>
+                <div id="result"></div>
+            </div>
+
+            <div class="card">
+                <h2>Jak znaleźć błędy na rachunku</h2>
+                <div class="action-list">
+                    <strong>✅ Sprawdź jednostki:</strong> W przypadku kodów opartych na czasie (takich jak czyszczenie), czy czas na rachunku odpowiada czasowi, który faktycznie spędziłeś na fotelu?<br><br>
+                    <strong>✅ Zweryfikuj wartość punktu (TPW):</strong> Poszukaj liczby takiej jak 1.00 lub 1.15. To jest mnożnik. Jeśli jest powyżej 1.20, twoja klinika znajduje się w "premiumowej" półce cenowej.<br><br>
+                    <strong>✅ Porównaj kody:</strong> Użyj naszego audytora, aby sprawdzić, czy kod "4.2010" (skomplikowane usunięcie) został użyty, gdy faktycznie miałeś kod "4.2000" (proste usunięcie).
+                </div>
+            </div>
+
+            <!-- 完整 Swiss Dental Guide Series 矩阵卡片 -->
+            <div class="series-matrix">
+                <h3>📖 Kompletna seria przewodników stomatologicznych w Szwajcarii</h3>
+                <div class="matrix-grid">
+                    <a href="blog-1-taxpunktwert-pl.html" class="matrix-item">
+                        <h4>🔢 Taxpunktwert wyjaśniony</h4>
+                        <p>Jak szwajcarscy dentyści obliczają ceny za pomocą punktów i mnożników.</p>
+                    </a>
+                    <a href="blog-2-dental-bill-pl.html" class="matrix-item">
+                        <h4>🧾 Jak czytać swój rachunek za dentystę</h4>
+                        <p>Odszyfruj każdy kod DENTOTAR na swojej fakturze w kilka minut.</p>
+                    </a>
+                    <a href="blog-3-first-dental-visit-switzerland-cost-pl.html" class="matrix-item">
+                        <h4>🦷 Pierwsza wizyta u dentysty w Szwajcarii</h4>
+                        <p>Dlaczego wstępne badanie często kosztuje 150–300 CHF.</p>
+                    </a>
+                    <a href="blog-4-dental-cleaning-pl.html" class="matrix-item">
+                        <h4>✨ Koszty czyszczenia zębów</h4>
+                        <p>Czy 160–300 CHF za profesjonalną higienę jest konieczne?</p>
+                    </a>
+                    <a href="blog-5-second-opinion-pl.html" class="matrix-item">
+                        <h4>💡 Druga opinia dotycząca leczenia stomatologicznego</h4>
+                        <p>Jak uniknąć nadmiernego leczenia i uzyskać wiarygodną drugą opinię.</p>
+                    </a>
+                    <a href="blog-6-supplementary-dental-insurance-pl.html" class="matrix-item">
+                        <h4>🛡️ Dodatkowe ubezpieczenie stomatologiczne</h4>
+                        <p>Czy opłaca się w 2026 roku? Rzetelna analiza ROI.</p>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <div class="disclaimer">
+            <strong>📢 Zastrzeżenie prawne:</strong> Ten przewodnik zawiera ogólne informacje oparte na ramach DENTOTAR®. Nie zastępuje on profesjonalnej porady. Dane taryfowe mogą ulec zmianie przez SSO i MTK. Ostatnia aktualizacja: marzec 2026.
+        </div>
+
+        <div class="version-info">
+            🇨🇭 <a href="https://www.welfarecalc.ch" target="_blank">WelfareCalc.ch</a> - Odszyfrowujemy szwajcarskie koszty dla Ciebie.
+        </div>
+    </div>
+
+    <script>
+        // 服务列表索引（完整保留）
+        const servicesIndex = [
+            { code: "4.0000", file: "40000.json" },
+            { code: "4.0020", file: "40020.json" },
+            { code: "4.0040", file: "40040.json" },
+            { code: "4.0090", file: "40090.json" },
+            { code: "4.0500", file: "40500.json" },
+            { code: "4.0530", file: "40530.json" },
+            { code: "4.1110", file: "41110.json" },
+            { code: "4.1260", file: "41260.json" },
+            { code: "4.2010", file: "42010.json" },
+            { code: "4.2010.LP", file: "42010LP.json" },
+            { code: "4.2020", file: "42020.json" },
+            { code: "4.2530", file: "42530.json" },
+            { code: "4.2530.LP", file: "42530LP.json" },
+            { code: "4.4600", file: "44600.json" },
+            { code: "4.4700", file: "44700.json" },
+            { code: "4.5350", file: "45350.json" },
+            { code: "4.5350.LP", file: "45350LP.json" },
+            { code: "4.7080", file: "47080.json" },
+            { code: "4.7085", file: "47085.json" },
+            { code: "4.8200", file: "48200.json" }
+        ];
+
+        let allServices = {};
+
+        async function loadServices() {
+            const select = document.getElementById("treatment-select");
+            if (!select) return;
+            select.innerHTML = '<option value="">-- Wybierz kod ze swojego rachunku --</option>';
+            
+            for (let item of servicesIndex) {
+                try {
+                    const res = await fetch('/data/dental/' + item.file);
+                    if (res.ok) {
+                        const data = await res.json();
+                        allServices[item.code] = data;
+                        const name = data.display_name?.pl || data.display_name?.en || data.name_de || item.code;
+                        const option = document.createElement("option");
+                        option.value = item.code;
+                        option.textContent = `${item.code} - ${name}`;
+                        select.appendChild(option);
+                    }
+                } catch (e) { console.warn(`Błąd ładowania ${item.file}`); }
+            }
+        }
+
+        function queryTreatment() {
+            const select = document.getElementById("treatment-select");
+            const code = select.value;
+            const resultDiv = document.getElementById("result");
+            if (!code || !allServices[code]) {
+                resultDiv.innerHTML = '<p style="color:#d32f2f;">Wybierz kod z listy rozwijanej.</p>';
+                return;
+            }
+
+            const data = allServices[code];
+            const plName = data.display_name?.pl || data.display_name?.en || data.name_de || code;
+            let html = `<h3>${plName} <small>(Kod ${code})</small></h3>`;
+
+            if (data.simple_explain?.pl) {
+                html += `<p><strong>💡 Co oznacza ten kod:</strong><br>${data.simple_explain.pl}</p>`;
+            } else if (data.simple_explain?.en) {
+                html += `<p><strong>💡 Co oznacza ten kod:</strong><br>${data.simple_explain.en}</p>`;
+            }
+
+            if (data.what_is_included?.pl && Array.isArray(data.what_is_included.pl)) {
+                html += `<h4>✅ Ten kod obejmuje:</h4><ul>`;
+                data.what_is_included.pl.forEach(item => html += `<li>${item}</li>`);
+                html += `</ul>`;
+            } else if (data.what_is_included?.en && Array.isArray(data.what_is_included.en)) {
+                html += `<h4>✅ Ten kod obejmuje:</h4><ul>`;
+                data.what_is_included.en.forEach(item => html += `<li>${item}</li>`);
+                html += `</ul>`;
+            }
+
+            if (data.important_rules?.pl && Array.isArray(data.important_rules.pl)) {
+                html += `<h4>⚠️ Ważne zasady rozliczania:</h4><ul>`;
+                data.important_rules.pl.forEach(rule => html += `<li>${rule}</li>`);
+                html += `</ul>`;
+            } else if (data.important_rules?.en && Array.isArray(data.important_rules.en)) {
+                html += `<h4>⚠️ Ważne zasady rozliczania:</h4><ul>`;
+                data.important_rules.en.forEach(rule => html += `<li>${rule}</li>`);
+                html += `</ul>`;
+            }
+
+            html += `<div class="price-box"><h4>💰 Oficjalne punkty taryfowe (TP)</h4>`;
+            if (data.tp_uv_mviv) html += `<p><strong>Ubezpieczenie społeczne (UV/MV/IV):</strong> ${data.tp_uv_mviv} TP</p>`;
+            if (data.tp_pp_min && data.tp_pp_max) {
+                html += `<p><strong>Zakres dla pacjentów prywatnych:</strong> ${data.tp_pp_min} – ${data.tp_pp_max} TP</p>`;
+            }
+            html += `<small>Cena całkowita = TP × wartość punktu w klinice.</small></div>`;
+            
+            resultDiv.innerHTML = html;
+        }
+
+        window.addEventListener('DOMContentLoaded', loadServices);
+    </script>
+</body>
+</html>

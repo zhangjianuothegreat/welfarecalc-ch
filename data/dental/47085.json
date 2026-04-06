@@ -1,0 +1,516 @@
+{
+  "code": "4.7085",
+  "name_de": "Implantatkrone",
+  "display_name": {
+    "de": "Implantat-Krone",
+    "fr": "Couronne sur implant",
+    "it": "Corona su impianto",
+    "en": "Implant crown",
+    "es": "Corona sobre implante",
+    "pt": "Coroa sobre implante",
+    "pl": "Korona na implancie",
+    "al": "Kurorë mbi implant",
+    "tr": "İmplant kronu",
+    "hr": "Krunica na implantatu",
+    "ta": "உள்வைப்பு கிரீடம்"
+  },
+  "search_keywords": {
+    "de": ["implantatkrone", "krone auf implantat", "implantatversorgung", "zahnkrone implantat", "verschraubte krone", "zementierte krone"],
+    "fr": ["couronne sur implant", "couronne implant", "prothèse implantaire", "couronne vissée", "couronne scellée"],
+    "it": ["corona su impianto", "corona implantare", "protesi implantare", "corona avvitata", "corona cementata"],
+    "en": ["implant crown", "crown on implant", "implant restoration", "screw-retained crown", "cemented crown"],
+    "es": ["corona sobre implante", "corona implantológica", "prótesis implantaria", "corona atornillada", "corona cementada"],
+    "pt": ["coroa sobre implante", "coroa implantar", "prótese implantar", "coroa aparafusada", "coroa cimentada"],
+    "pl": ["korona na implancie", "korona implantowa", "uzupełnienie implantu", "korona wkręcana", "korona cementowana"],
+    "al": ["kurorë mbi implant", "kurorë implantare", "protezë implantare", "kurorë e vidhosur", "kurorë e çimentuar"],
+    "tr": ["implant kronu", "implant üstü kuron", "implant protezi", "vidalı kron", "simante kron"],
+    "hr": ["krunica na implantatu", "implantatna krunica", "implantatna nadogradnja", "vijčana krunica", "cementirana krunica"],
+    "ta": ["உள்வைப்பு கிரீடம்", "உள்வைப்பு மேல் கிரீடம்", "உள்வைப்பு மறுசீரமைப்பு", "திருகு-தக்கவைக்கப்பட்ட கிரீடம்", "சிமெண்ட் செய்யப்பட்ட கிரீடம்"]
+  },
+  "tp_uv_mviv": 652.00,
+  "tp_pp_max": 749.80,
+  "tp_pp_min": 554.20,
+  "chapter": "10.01",
+  "coverage": "UV/MV/IV",
+  "simple_explain": {
+    "de": "Wenn dir ein Zahn fehlt und ein künstlicher Zahn (Implantat) in den Kieferknochen eingesetzt wurde, kommt oben drauf eine Krone – wie ein Zahn. Das ist die Implantatkrone. Sie wird entweder aufgeschraubt oder festgeklebt und sieht aus wie ein echter Zahn. Damit kannst du wieder normal kauen und lächeln. Die Krone wird speziell für dich im zahntechnischen Labor angefertigt, damit sie perfekt passt und zur Farbe deiner anderen Zähne.",
+    "fr": "Quand il te manque une dent et qu'une dent artificielle (implant) a été placée dans l'os de la mâchoire, on met une couronne dessus – comme une dent. C'est la couronne sur implant. Elle est soit vissée, soit scellée et ressemble à une vraie dent. Ainsi, tu peux à nouveau mâcher normalement et sourire. La couronne est fabriquée spécialement pour toi dans un laboratoire dentaire afin qu'elle s'adapte parfaitement et corresponde à la couleur de tes autres dents.",
+    "it": "Quando ti manca un dente e un dente artificiale (impianto) è stato inserito nell'osso della mascella, sopra viene messa una corona – come un dente. Questa è la corona su impianto. Viene avvitata o cementata e sembra un vero dente. Così puoi tornare a masticare normalmente e sorridere. La corona viene realizzata appositamente per te in un laboratorio odontotecnico in modo che si adatti perfettamente e corrisponda al colore dei tuoi altri denti.",
+    "en": "When you are missing a tooth and an artificial tooth (implant) has been placed in the jawbone, a crown is placed on top – like a tooth. This is the implant crown. It is either screwed on or cemented and looks like a real tooth. This way you can chew normally again and smile. The crown is specially made for you in a dental laboratory so that it fits perfectly and matches the color of your other teeth.",
+    "es": "Cuando te falta un diente y se ha colocado un diente artificial (implante) en el hueso de la mandíbula, se coloca una corona encima – como un diente. Esta es la corona sobre implante. Se atornilla o se cementa y parece un diente real. Así puedes volver a masticar normalmente y sonreír. La corona se fabrica especialmente para ti en un laboratorio dental para que se ajuste perfectamente y coincida con el color de tus otros dientes.",
+    "pt": "Quando te falta um dente e um dente artificial (implante) foi colocado no osso da mandíbula, é colocada uma coroa por cima – como um dente. Esta é a coroa sobre implante. É aparafusada ou cimentada e parece um dente real. Assim podes voltar a mastigar normalmente e sorrir. A coroa é feita especialmente para ti num laboratório dentário para que se ajuste perfeitamente e corresponda à cor dos teus outros dentes.",
+    "pl": "Gdy brakuje Ci zęba i wszczepiono sztuczny ząb (implant) w kość szczęki, na górze umieszcza się koronę – jak ząb. To jest korona na implancie. Jest wkręcana lub cementowana i wygląda jak prawdziwy ząb. Dzięki temu możesz normalnie jeść i uśmiechać się. Korona jest wykonana specjalnie dla Ciebie w laboratorium protetycznym, aby idealnie pasowała i odpowiadała kolorowi Twoich innych zębów.",
+    "al": "Kur të mungon një dhëmb dhe një dhëmb artificial (implant) është vendosur në kockën e nofullës, një kurorë vendoset sipër – si një dhëmb. Kjo është kurora mbi implant. Ajo ose vidhoset ose çimentohet dhe duket si një dhëmb i vërtetë. Në këtë mënyrë mund të përtypësh përsëri normalisht dhe të buzëqeshësh. Kurora bëhet posaçërisht për ty në një laborator dentar në mënyrë që të përshtatet në mënyrë perfekte dhe të përputhet me ngjyrën e dhëmbëve të tu të tjerë.",
+    "tr": "Eksik bir dişin olduğunda ve çene kemiğine yapay bir diş (implant) yerleştirildiğinde, üstüne bir kuron yerleştirilir – bir diş gibi. Bu, implant kronudur. Ya vidalanır ya da simante edilir ve gerçek bir diş gibi görünür. Bu sayede tekrar normal çiğneyebilir ve gülümseyebilirsin. Kuron, diğer dişlerinin rengine uyması ve mükemmel uyum sağlaması için diş laboratuvarında özel olarak senin için yapılır.",
+    "hr": "Kada ti nedostaje zub i umjetni zub (implantat) je postavljen u čeljusnu kost, na njega se postavlja krunica – poput zuba. To je krunica na implantatu. Ili se uvrće ili cementira i izgleda kao pravi zub. Na taj način možeš ponovno normalno žvakati i smiješiti se. Krunica se izrađuje posebno za tebe u zubotehničkom laboratoriju kako bi savršeno pristajala i odgovarala boji tvojih ostalih zuba.",
+    "ta": "உங்களுக்கு ஒரு பல் காணாமல் போனால், தாடை எலும்பில் ஒரு செயற்கைப் பல் (உள்வைப்பு) வைக்கப்பட்டால், அதன் மேல் ஒரு கிரீடம் வைக்கப்படுகிறது – ஒரு பல் போல. இதுவே உள்வைப்பு கிரீடம் ஆகும். இது திருகப்படுகிறது அல்லது சிமெண்ட் செய்யப்படுகிறது மற்றும் உண்மையான பல் போல் தெரிகிறது. இந்த வழியில் நீங்கள் மீண்டும் சாதாரணமாக மெல்லலாம் மற்றும் சிரிக்கலாம். கிரீடம் உங்கள் மற்ற பற்களின் நிறத்துடன் பொருந்துவதற்கும், சரியாகப் பொருந்துவதற்கும் ஒரு பல் ஆய்வகத்தில் உங்களுக்காக சிறப்பாகத் தயாரிக்கப்படுகிறது."
+  },
+  "what_is_included": {
+    "de": [
+      "🦷 **Implantatkrone** (künstlicher Zahn auf Implantat)",
+      "🔧 **Planung der Arbeit** durch den Zahnarzt",
+      "🦷 **Präparation** (falls nötig)",
+      "📏 **Abformung** des Implantats und des Gegenkiefers",
+      "🎨 **Farbbestimmung** für natürliches Aussehen",
+      "👨‍⚕️ **Einprobe** der Krone",
+      "🔩 **Definitives Befestigen** (bei verschraubten Kronen: okklusaler Verschluss inbegriffen)",
+      "🦷 **Provisorium** (falls nötig, wird separat abgerechnet)",
+      "💡 **Wichtig:** Zahntechnische Laborleistung wird separat verrechnet"
+    ],
+    "fr": [
+      "🦷 **Couronne sur implant** (dent artificielle sur implant)",
+      "🔧 **Planification du travail** par le dentiste",
+      "🦷 **Préparation** (si nécessaire)",
+      "📏 **Empreinte** de l'implant et de la mâchoire opposée",
+      "🎨 **Détermination de la couleur** pour un aspect naturel",
+      "👨‍⚕️ **Essayage** de la couronne",
+      "🔩 **Fixation définitive** (pour les couronnes vissées : fermeture occlusale incluse)",
+      "🦷 **Provisoire** (si nécessaire, facturé séparément)",
+      "💡 **Important:** La prestation du laboratoire dentaire est facturée séparément"
+    ],
+    "it": [
+      "🦷 **Corona su impianto** (dente artificiale su impianto)",
+      "🔧 **Pianificazione del lavoro** dal dentista",
+      "🦷 **Preparazione** (se necessaria)",
+      "📏 **Impronta** dell'impianto e della mascella opposta",
+      "🎨 **Determinazione del colore** per un aspetto naturale",
+      "👨‍⚕️ **Prova** della corona",
+      "🔩 **Fissaggio definitivo** (per corone avvitate: chiusura occlusale inclusa)",
+      "🦷 **Provvisorio** (se necessario, fatturato separatamente)",
+      "💡 **Importante:** La prestazione del laboratorio odontotecnico è fatturata separatamente"
+    ],
+    "en": [
+      "🦷 **Implant crown** (artificial tooth on implant)",
+      "🔧 **Work planning** by the dentist",
+      "🦷 **Preparation** (if needed)",
+      "📏 **Impression** of the implant and opposing jaw",
+      "🎨 **Shade selection** for natural appearance",
+      "👨‍⚕️ **Try-in** of the crown",
+      "🔩 **Final placement** (for screw-retained crowns: occlusal closure included)",
+      "🦷 **Provisional** (if needed, billed separately)",
+      "💡 **Important:** Dental laboratory work is billed separately"
+    ],
+    "es": [
+      "🦷 **Corona sobre implante** (diente artificial sobre implante)",
+      "🔧 **Planificación del trabajo** por el dentista",
+      "🦷 **Preparación** (si es necesaria)",
+      "📏 **Impresión** del implante y la mandíbula opuesta",
+      "🎨 **Selección de color** para aspecto natural",
+      "👨‍⚕️ **Prueba** de la corona",
+      "🔩 **Colocación definitiva** (para coronas atornilladas: cierre oclusal incluido)",
+      "🦷 **Provisional** (si es necesario, facturado por separado)",
+      "💡 **Importante:** El trabajo de laboratorio dental se factura por separado"
+    ],
+    "pt": [
+      "🦷 **Coroa sobre implante** (dente artificial sobre implante)",
+      "🔧 **Planeamento do trabalho** pelo dentista",
+      "🦷 **Preparação** (se necessária)",
+      "📏 **Impressão** do implante e da mandíbula oposta",
+      "🎨 **Seleção de cor** para aspeto natural",
+      "👨‍⚕️ **Prova** da coroa",
+      "🔩 **Colocação definitiva** (para coroas aparafusadas: fecho oclusal incluído)",
+      "🦷 **Provisório** (se necessário, faturado separadamente)",
+      "💡 **Importante:** O trabalho de laboratório dentário é faturado separadamente"
+    ],
+    "pl": [
+      "🦷 **Korona na implancie** (sztuczny ząb na implancie)",
+      "🔧 **Planowanie pracy** przez dentystę",
+      "🦷 **Preparacja** (w razie potrzeby)",
+      "📏 **Wyciski** implantu i przeciwstawnej szczęki",
+      "🎨 **Dobór koloru** dla naturalnego wyglądu",
+      "👨‍⚕️ **Przymiarka** korony",
+      "🔩 **Ostateczne umocowanie** (dla koron wkręcanych: zamknięcie okluzyjne wliczone)",
+      "🦷 **Tymczasowe uzupełnienie** (w razie potrzeby, rozliczane osobno)",
+      "💡 **Ważne:** Praca laboratorium protetycznego jest rozliczana osobno"
+    ],
+    "al": [
+      "🦷 **Kurorë mbi implant** (dhëmb artificial mbi implant)",
+      "🔧 **Planifikimi i punës** nga dentisti",
+      "🦷 **Përgatitja** (nëse nevojitet)",
+      "📏 **Përshtypja** e implantit dhe nofullës kundërt",
+      "🎨 **Përzgjedhja e ngjyrës** për pamje natyrale",
+      "👨‍⚕️ **Provimi** i kurorës",
+      "🔩 **Vendosja përfundimtare** (për kurorat e vidhosura: mbyllja okluzale e përfshirë)",
+      "🦷 **Provizori** (nëse nevojitet, faturohet veçmas)",
+      "💡 **E rëndësishme:** Puna e laboratorit dentar faturohet veçmas"
+    ],
+    "tr": [
+      "🦷 **İmplant kronu** (implant üzerinde yapay diş)",
+      "🔧 **İşin planlanması** diş hekimi tarafından",
+      "🦷 **Preparasyon** (gerekirse)",
+      "📏 **Ölçü** implant ve karşı çene",
+      "🎨 **Renk seçimi** doğal görünüm için",
+      "👨‍⚕️ **Kronun denenmesi**",
+      "🔩 **Kesin yerleştirme** (vidalı kronlar için: oklüzal kapatma dahil)",
+      "🦷 **Geçici** (gerekirse, ayrı faturalandırılır)",
+      "💡 **Önemli:** Diş laboratuvar işçiliği ayrı faturalandırılır"
+    ],
+    "hr": [
+      "🦷 **Krunica na implantatu** (umjetni zub na implantatu)",
+      "🔧 **Planiranje rada** od strane zubara",
+      "🦷 **Preparacija** (po potrebi)",
+      "📏 **Otisak** implantata i suprotne čeljusti",
+      "🎨 **Odabir boje** za prirodan izgled",
+      "👨‍⚕️ **Probno postavljanje** krunice",
+      "🔩 **Konačno postavljanje** (za vijčane krunice: okluzalno zatvaranje uključeno)",
+      "🦷 **Provizorij** (po potrebi, naplaćuje se zasebno)",
+      "💡 **Važno:** Zubotehnički laboratorijski rad naplaćuje se zasebno"
+    ],
+    "ta": [
+      "🦷 **உள்வைப்பு கிரீடம்** (உள்வைப்பின் மீது செயற்கைப் பல்)",
+      "🔧 **வேலை திட்டமிடல்** பல் மருத்துவரால்",
+      "🦷 **தயாரிப்பு** (தேவைப்பட்டால்)",
+      "📏 **அச்சு** உள்வைப்பு மற்றும் எதிர் தாடை",
+      "🎨 **இயற்கை தோற்றத்திற்கான நிறம் தேர்வு**",
+      "👨‍⚕️ **கிரீடத்தின் முயற்சி**",
+      "🔩 **இறுதி வைப்பு** (திருகு-தக்கவைக்கப்பட்ட கிரீடங்களுக்கு: அடைப்பு மூடல் சேர்க்கப்பட்டுள்ளது)",
+      "🦷 **தற்காலிகம்** (தேவைப்பட்டால், தனித்தனியாக கணக்கிடப்படும்)",
+      "💡 **முக்கியம்:** பல் ஆய்வக வேலை தனித்தனியாக கணக்கிடப்படுகிறது"
+    ]
+  },
+  "important_rules": {
+    "de": [
+      "🦷 **Implantatgetragene Krone** (künstlicher Zahn auf Implantat)",
+      "🔧 **Enthaltene Leistungen:** Planung, Präparation (falls nötig), Abformung, Farbbestimmung, Einprobe, definitives Zementieren/Befestigen",
+      "🔩 **Verschraubte Kronen:** Der okklusale Verschluss (Verschluss des Zugangskanals) ist in der Leistung inbegriffen",
+      "🏥 **Laborleistung:** Die zahntechnische Laborleistung wird **separat** verrechnet (nicht im TP enthalten)",
+      "📦 **Leistungspaket:** Diese Leistung ist im LP 4.7070.LP «Krone UV/MV» enthalten",
+      "🦷 **Provisorium:** Falls ein Provisorium benötigt wird, wird dies mit den entsprechenden Tarifziffern (z.B. 4.7230, 4.7240, 4.7250) separat abgerechnet",
+      "⚠️ **Wichtig:** Für die Implantation selbst (das Setzen des Implantats) gelten separate Tarifziffern (z.B. 4.2530, 4.2540, 4.2550) – diese sind nicht in der Implantatkrone enthalten"
+    ],
+    "fr": [
+      "🦷 **Couronne implantoportée** (dent artificielle sur implant)",
+      "🔧 **Prestations incluses:** Planification, préparation (si nécessaire), empreinte, détermination de la couleur, essayage, cimentage/fixation définitive",
+      "🔩 **Couronnes vissées:** La fermeture occlusale (fermeture du canal d'accès) est incluse dans la prestation",
+      "🏥 **Travail de laboratoire:** Le travail du laboratoire dentaire est facturé **séparément** (non inclus dans le TP)",
+      "📦 **Forfait de prestations:** Cette prestation est incluse dans le forfait 4.7070.LP «Couronne UV/MV»",
+      "🦷 **Provisoire:** Si un provisoire est nécessaire, il est facturé avec les codes correspondants (p. ex. 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Important:** L'implantation elle-même (la pose de l'implant) est facturée avec des codes séparés (p. ex. 4.2530, 4.2540, 4.2550) – ceux-ci ne sont pas inclus dans la couronne sur implant"
+    ],
+    "it": [
+      "🦷 **Corona impianto-supportata** (dente artificiale su impianto)",
+      "🔧 **Prestazioni incluse:** Pianificazione, preparazione (se necessaria), impronta, determinazione del colore, prova, cementazione/fissaggio definitivo",
+      "🔩 **Corone avvitate:** La chiusura occlusale (chiusura del canale di accesso) è inclusa nella prestazione",
+      "🏥 **Lavoro di laboratorio:** Il lavoro del laboratorio odontotecnico è fatturato **separatamente** (non incluso nel TP)",
+      "📦 **Pacchetto di prestazioni:** Questa prestazione è inclusa nel pacchetto 4.7070.LP «Corona UV/MV»",
+      "🦷 **Provvisorio:** Se è necessario un provvisorio, viene fatturato con i codici corrispondenti (ad es. 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Importante:** L'impianto stesso (l'inserimento dell'impianto) viene fatturato con codici separati (ad es. 4.2530, 4.2540, 4.2550) – questi non sono inclusi nella corona su impianto"
+    ],
+    "en": [
+      "🦷 **Implant-supported crown** (artificial tooth on implant)",
+      "🔧 **Services included:** Planning, preparation (if needed), impression, shade selection, try-in, final cementation/fixation",
+      "🔩 **Screw-retained crowns:** Occlusal closure (closing the access channel) is included in the service",
+      "🏥 **Laboratory work:** Dental laboratory work is billed **separately** (not included in the TP)",
+      "📦 **Service package:** This service is included in package 4.7070.LP «Crown UV/MV»",
+      "🦷 **Provisional:** If a provisional is needed, it is billed with the corresponding codes (e.g., 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Important:** The implantation itself (placing the implant) is billed with separate codes (e.g., 4.2530, 4.2540, 4.2550) – these are not included in the implant crown"
+    ],
+    "es": [
+      "🦷 **Corona implantosoportada** (diente artificial sobre implante)",
+      "🔧 **Prestaciones incluidas:** Planificación, preparación (si es necesaria), impresión, selección de color, prueba, cementado/colocación definitiva",
+      "🔩 **Coronas atornilladas:** El cierre oclusal (cierre del canal de acceso) está incluido en la prestación",
+      "🏥 **Trabajo de laboratorio:** El trabajo de laboratorio dental se factura **por separado** (no incluido en el TP)",
+      "📦 **Paquete de prestaciones:** Esta prestación está incluida en el paquete 4.7070.LP «Corona UV/MV»",
+      "🦷 **Provisional:** Si se necesita un provisional, se factura con los códigos correspondientes (p. ej., 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Importante:** La implantación en sí (colocación del implante) se factura con códigos separados (p. ej., 4.2530, 4.2540, 4.2550) – estos no están incluidos en la corona sobre implante"
+    ],
+    "pt": [
+      "🦷 **Coroa implantossuportada** (dente artificial sobre implante)",
+      "🔧 **Prestações incluídas:** Planeamento, preparação (se necessária), impressão, seleção de cor, prova, cimentação/colocação definitiva",
+      "🔩 **Coroas aparafusadas:** O fecho oclusal (fecho do canal de acesso) está incluído na prestação",
+      "🏥 **Trabalho de laboratório:** O trabalho de laboratório dentário é faturado **separadamente** (não incluído no TP)",
+      "📦 **Pacote de prestações:** Esta prestação está incluída no pacote 4.7070.LP «Coroa UV/MV»",
+      "🦷 **Provisório:** Se for necessário um provisório, é faturado com os códigos correspondentes (p. ex., 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Importante:** A implantação em si (colocação do implante) é faturada com códigos separados (p. ex., 4.2530, 4.2540, 4.2550) – estes não estão incluídos na coroa sobre implante"
+    ],
+    "pl": [
+      "🦷 **Korona na implancie** (sztuczny ząb na implancie)",
+      "🔧 **Usługi wliczone:** Planowanie, preparacja (w razie potrzeby), wycisk, dobór koloru, przymiarka, ostateczne cementowanie/mocowanie",
+      "🔩 **Korony wkręcane:** Zamknięcie okluzyjne (zamknięcie kanału dostępu) jest wliczone w usługę",
+      "🏥 **Praca laboratoryjna:** Praca laboratorium protetycznego jest rozliczana **osobno** (nie jest wliczona w TP)",
+      "📦 **Pakiet usług:** Ta usługa jest zawarta w pakiecie 4.7070.LP «Korona UV/MV»",
+      "🦷 **Tymczasowe uzupełnienie:** Jeśli potrzebne jest tymczasowe uzupełnienie, jest ono rozliczane z odpowiednimi kodami (np. 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Ważne:** Sama implantacja (umieszczenie implantu) jest rozliczana z oddzielnymi kodami (np. 4.2530, 4.2540, 4.2550) – nie są one wliczone w koronę na implancie"
+    ],
+    "al": [
+      "🦷 **Kurorë e mbështetur nga implanti** (dhëmb artificial mbi implant)",
+      "🔧 **Shërbimet e përfshira:** Planifikimi, përgatitja (nëse nevojitet), përshtypja, përzgjedhja e ngjyrës, provimi, çimentimi/fiksimi përfundimtar",
+      "🔩 **Kurorat e vidhosura:** Mbyllja okluzale (mbyllja e kanalit të aksesit) është e përfshirë në shërbim",
+      "🏥 **Puna laboratorike:** Puna e laboratorit dentar faturohet **veçmas** (nuk përfshihet në TP)",
+      "📦 **Paketa e shërbimeve:** Kjo shërbim është përfshirë në paketën 4.7070.LP «Kurorë UV/MV»",
+      "🦷 **Provizori:** Nëse nevojitet një provizor, ai faturohet me kodet përkatëse (p.sh., 4.7230, 4.7240, 4.7250)",
+      "⚠️ **E rëndësishme:** Vetë implantimi (vendosja e implantit) faturohet me kode të veçanta (p.sh., 4.2530, 4.2540, 4.2550) – këto nuk përfshihen në kurorën mbi implant"
+    ],
+    "tr": [
+      "🦷 **İmplant destekli kuron** (implant üzerinde yapay diş)",
+      "🔧 **Dahil olan hizmetler:** Planlama, preparasyon (gerekirse), ölçü, renk seçimi, deneme, kesin simantasyon/fiksasyon",
+      "🔩 **Vidalı kuronlar:** Oklüzal kapatma (erişim kanalının kapatılması) hizmete dahildir",
+      "🏥 **Laboratuvar işçiliği:** Diş laboratuvar işçiliği **ayrı** faturalandırılır (TP'ye dahil değildir)",
+      "📦 **Hizmet paketi:** Bu hizmet, 4.7070.LP «Kuron UV/MV» paketine dahildir",
+      "🦷 **Geçici:** Geçici bir kuron gerekiyorsa, ilgili kodlarla faturalandırılır (örn. 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Önemli:** İmplantasyonun kendisi (implantın yerleştirilmesi) ayrı kodlarla faturalandırılır (örn. 4.2530, 4.2540, 4.2550) – bunlar implant kronuna dahil değildir"
+    ],
+    "hr": [
+      "🦷 **Krunica na implantatu** (umjetni zub na implantatu)",
+      "🔧 **Usluge uključene:** Planiranje, preparacija (po potrebi), otisak, odabir boje, probno postavljanje, konačno cementiranje/fiksiranje",
+      "🔩 **Vijčane krunice:** Okluzalno zatvaranje (zatvaranje pristupnog kanala) uključeno je u uslugu",
+      "🏥 **Laboratorijski rad:** Zubotehnički laboratorijski rad naplaćuje se **zasebno** (nije uključen u TP)",
+      "📦 **Paket usluga:** Ova usluga uključena je u paket 4.7070.LP «Krunica UV/MV»",
+      "🦷 **Provizorij:** Ako je potreban provizorij, naplaćuje se s odgovarajućim kodovima (npr. 4.7230, 4.7240, 4.7250)",
+      "⚠️ **Važno:** Sama implantacija (postavljanje implantata) naplaćuje se zasebnim kodovima (npr. 4.2530, 4.2540, 4.2550) – oni nisu uključeni u krunicu na implantatu"
+    ],
+    "ta": [
+      "🦷 **உள்வைப்பு-ஆதரவு கிரீடம்** (உள்வைப்பின் மீது செயற்கைப் பல்)",
+      "🔧 **சேர்க்கப்பட்டுள்ள சேவைகள்:** திட்டமிடல், தயாரிப்பு (தேவைப்பட்டால்), அச்சு, நிறம் தேர்வு, முயற்சி, இறுதி சிமெண்டிங்/பொருத்துதல்",
+      "🔩 **திருகு-தக்கவைக்கப்பட்ட கிரீடங்கள்:** அடைப்பு மூடல் (அணுகல் கால்வாயை மூடுதல்) சேவையில் சேர்க்கப்பட்டுள்ளது",
+      "🏥 **ஆய்வக வேலை:** பல் ஆய்வக வேலை **தனித்தனியாக** கணக்கிடப்படுகிறது (TP இல் சேர்க்கப்படவில்லை)",
+      "📦 **சேவை தொகுப்பு:** இந்த சேவை 4.7070.LP «கிரீடம் UV/MV» தொகுப்பில் சேர்க்கப்பட்டுள்ளது",
+      "🦷 **தற்காலிகம்:** தற்காலிக கிரீடம் தேவைப்பட்டால், அது தொடர்புடைய குறியீடுகளுடன் கணக்கிடப்படுகிறது (எ.கா., 4.7230, 4.7240, 4.7250)",
+      "⚠️ **முக்கியம்:** உள்வைப்பு வைப்பது (உள்வைப்பைப் பொருத்துதல்) தனித்தனி குறியீடுகளுடன் கணக்கிடப்படுகிறது (எ.கா., 4.2530, 4.2540, 4.2550) – இவை உள்வைப்பு கிரீடத்தில் சேர்க்கப்படவில்லை"
+    ]
+  },
+  "common_questions": {
+    "de": [
+      {
+        "question": "Was ist der Unterschied zwischen einer normalen Krone und einer Implantatkrone?",
+        "answer": "Eine normale Krone (z.B. 4.7080) wird auf einen eigenen, natürlichen Zahn gesetzt, der dafür präpariert wurde. Eine Implantatkrone (4.7085) wird auf ein künstliches Zahnimplantat gesetzt, das in den Kieferknochen eingeschraubt wurde. Die Krone selbst sieht gleich aus, aber die Befestigung ist anders: bei natürlichen Zähnen wird zementiert, bei Implantaten kann auch verschraubt werden."
+      },
+      {
+        "question": "Was bedeutet 'okklusaler Verschluss bei verschraubten Implantatkronen'?",
+        "answer": "Bei einer verschraubten Implantatkrone gibt es ein kleines Loch in der Kaufläche, durch das die Schraube eingedreht wird. Nachdem die Krone festgeschraubt ist, wird dieses Loch mit einem speziellen Material verschlossen, damit es nicht sichtbar ist. Das ist der 'okklusale Verschluss'. Er ist in der Leistung 4.7085 bereits enthalten."
+      },
+      {
+        "question": "Was kostet eine Implantatkrone insgesamt?",
+        "answer": "Die Implantatkrone selbst kostet 652.00 TP (bei UV/MV/IV). Dazu kommen die zahntechnischen Laborleistungen, die separat verrechnet werden (je nach Aufwand ca. 300–800 CHF). Außerdem fallen Kosten für das Implantat selbst (4.2530, ca. 669.40 TP) und eventuell eine Augmentation (Knochenaufbau) an. Der Gesamtpreis für eine implantatgetragene Krone kann daher zwischen 3'000 und 6'000 CHF liegen. Frage vor der Behandlung unbedingt einen schriftlichen Kostenvoranschlag an!"
+      },
+      {
+        "question": "Wird die Implantatkrone von der Versicherung bezahlt?",
+        "answer": "Bei UV/MV/IV (Unfall-, Militär-, Invalidenversicherung) wird die Implantatkrone nur übernommen, wenn der Zahnverlust durch einen Unfall oder eine anerkannte Krankheit (z.B. Geburtsgebrechen) verursacht wurde. Bei rein zahnmedizinischen Gründen (z.B. Karies, Parodontitis) müssen Privatpatienten selbst zahlen. Viele haben eine private Zahnzusatzversicherung, die einen Teil der Kosten übernimmt. Frage bei deiner Versicherung nach!"
+      },
+      {
+        "question": "Wie lange hält eine Implantatkrone?",
+        "answer": "Bei guter Pflege und regelmäßiger Kontrolle kann eine Implantatkrone 15–20 Jahre oder länger halten. Wichtig ist eine gute Mundhygiene (gründliches Putzen, Zahnseide, spezielle Implantatbürsten) und regelmäßige Kontrollen beim Zahnarzt (mindestens 1–2 Mal pro Jahr). Das Implantat selbst kann bei guter Pflege sogar ein Leben lang halten."
+      }
+    ],
+    "fr": [
+      {
+        "question": "Quelle est la différence entre une couronne normale et une couronne sur implant?",
+        "answer": "Une couronne normale (p. ex. 4.7080) est placée sur une dent naturelle qui a été préparée. Une couronne sur implant (4.7085) est placée sur un implant dentaire artificiel qui a été vissé dans l'os de la mâchoire. La couronne elle-même a la même apparence, mais la fixation est différente : pour les dents naturelles, elle est cimentée ; pour les implants, elle peut également être vissée."
+      },
+      {
+        "question": "Que signifie 'fermeture occlusale pour les couronnes sur implant vissées'?",
+        "answer": "Pour une couronne sur implant vissée, il y a un petit trou dans la surface de mastication par lequel la vis est serrée. Après que la couronne a été vissée, ce trou est fermé avec un matériau spécial pour qu'il ne soit pas visible. C'est la 'fermeture occlusale'. Elle est déjà incluse dans la prestation 4.7085."
+      },
+      {
+        "question": "Combien coûte une couronne sur implant au total?",
+        "answer": "La couronne sur implant elle-même coûte 652.00 TP (pour UV/MV/IV). S'ajoutent les travaux de laboratoire dentaire, facturés séparément (environ 300–800 CHF selon le travail). De plus, des frais pour l'implant lui-même (4.2530, environ 669.40 TP) et éventuellement une augmentation (construction osseuse) s'ajoutent. Le prix total pour une couronne sur implant peut donc se situer entre 3'000 et 6'000 CHF. Demande impérativement un devis écrit avant le traitement!"
+      },
+      {
+        "question": "La couronne sur implant est-elle prise en charge par l'assurance?",
+        "answer": "Pour UV/MV/IV (assurance accidents, militaire, invalidité), la couronne sur implant n'est prise en charge que si la perte de dent a été causée par un accident ou une maladie reconnue (p. ex. infirmité congénitale). Pour des raisons purement dentaires (p. ex. carie, parodontite), les patients privés doivent payer eux-mêmes. Beaucoup ont une assurance dentaire privée qui prend en charge une partie des frais. Renseigne-toi auprès de ton assurance!"
+      },
+      {
+        "question": "Combien de temps dure une couronne sur implant?",
+        "answer": "Avec de bons soins et des contrôles réguliers, une couronne sur implant peut durer 15–20 ans ou plus. Une bonne hygiène buccale est importante (brossage minutieux, fil dentaire, brossettes interdentaires spéciales) ainsi que des contrôles réguliers chez le dentiste (au moins 1 à 2 fois par an). L'implant lui-même peut durer toute une vie avec de bons soins."
+      }
+    ],
+    "it": [
+      {
+        "question": "Qual è la differenza tra una corona normale e una corona su impianto?",
+        "answer": "Una corona normale (ad es. 4.7080) viene posizionata su un dente naturale che è stato preparato. Una corona su impianto (4.7085) viene posizionata su un impianto dentale artificiale che è stato avvitato nell'osso mascellare. La corona stessa ha lo stesso aspetto, ma il fissaggio è diverso: per i denti naturali viene cementata, per gli impianti può anche essere avvitata."
+      },
+      {
+        "question": "Cosa significa 'chiusura occlusale per le corone su impianto avvitate'?",
+        "answer": "Per una corona su impianto avvitata, c'è un piccolo foro sulla superficie masticatoria attraverso il quale viene serrata la vite. Dopo che la corona è stata avvitata, questo foro viene chiuso con un materiale speciale in modo che non sia visibile. Questa è la 'chiusura occlusale'. È già inclusa nella prestazione 4.7085."
+      },
+      {
+        "question": "Quanto costa una corona su impianto in totale?",
+        "answer": "La corona su impianto stessa costa 652.00 TP (per UV/MV/IV). A questi si aggiungono i lavori di laboratorio odontotecnico, fatturati separatamente (circa 300–800 CHF a seconda del lavoro). Inoltre si aggiungono i costi per l'impianto stesso (4.2530, circa 669.40 TP) ed eventualmente un aumento osseo. Il prezzo totale per una corona su impianto può quindi essere tra 3'000 e 6'000 CHF. Chiedi assolutamente un preventivo scritto prima del trattamento!"
+      },
+      {
+        "question": "La corona su impianto è coperta dall'assicurazione?",
+        "answer": "Per UV/MV/IV (assicurazione infortuni, militare, invalidità), la corona su impianto è coperta solo se la perdita del dente è stata causata da un infortunio o da una malattia riconosciuta (ad es. menomazione congenita). Per ragioni puramente odontoiatriche (ad es. carie, parodontite), i pazienti privati devono pagare loro stessi. Molti hanno un'assicurazione dentale privata che copre una parte dei costi. Informati presso la tua assicurazione!"
+      },
+      {
+        "question": "Quanto dura una corona su impianto?",
+        "answer": "Con una buona cura e controlli regolari, una corona su impianto può durare 15–20 anni o più. Una buona igiene orale è importante (spazzolatura accurata, filo interdentale, spazzolini interdentali speciali) così come controlli regolari dal dentista (almeno 1–2 volte all'anno). L'impianto stesso può durare tutta una vita con una buona cura."
+      }
+    ],
+    "en": [
+      {
+        "question": "What is the difference between a normal crown and an implant crown?",
+        "answer": "A normal crown (e.g., 4.7080) is placed on a natural tooth that has been prepared. An implant crown (4.7085) is placed on an artificial dental implant that has been screwed into the jawbone. The crown itself looks the same, but the attachment is different: natural teeth are cemented, implants can also be screw-retained."
+      },
+      {
+        "question": "What does 'occlusal closure for screw-retained implant crowns' mean?",
+        "answer": "For a screw-retained implant crown, there is a small hole in the chewing surface through which the screw is tightened. After the crown is screwed on, this hole is closed with a special material so it is not visible. This is the 'occlusal closure'. It is already included in service 4.7085."
+      },
+      {
+        "question": "How much does an implant crown cost in total?",
+        "answer": "The implant crown itself costs 652.00 TP (for UV/MV/IV). Added to this are the dental laboratory costs, which are billed separately (approx. 300–800 CHF depending on the work). Additionally, costs for the implant itself (4.2530, approx. 669.40 TP) and possibly bone augmentation are incurred. The total price for an implant crown can therefore be between 3,000 and 6,000 CHF. Definitely ask for a written cost estimate before treatment!"
+      },
+      {
+        "question": "Is the implant crown covered by insurance?",
+        "answer": "For UV/MV/IV (accident, military, disability insurance), the implant crown is only covered if the tooth loss was caused by an accident or a recognized illness (e.g., congenital disability). For purely dental reasons (e.g., caries, periodontitis), private patients must pay themselves. Many have private dental insurance that covers part of the costs. Check with your insurance company!"
+      },
+      {
+        "question": "How long does an implant crown last?",
+        "answer": "With good care and regular check-ups, an implant crown can last 15–20 years or longer. Good oral hygiene is important (thorough brushing, flossing, special interdental brushes) as well as regular check-ups with the dentist (at least 1–2 times per year). The implant itself can last a lifetime with good care."
+      }
+    ],
+    "es": [
+      {
+        "question": "¿Cuál es la diferencia entre una corona normal y una corona sobre implante?",
+        "answer": "Una corona normal (p. ej., 4.7080) se coloca sobre un diente natural que ha sido preparado. Una corona sobre implante (4.7085) se coloca sobre un implante dental artificial que se ha atornillado en el hueso de la mandíbula. La corona en sí tiene el mismo aspecto, pero la fijación es diferente: los dientes naturales se cementan, los implantes también pueden atornillarse."
+      },
+      {
+        "question": "¿Qué significa 'cierre oclusal para coronas sobre implante atornilladas'?",
+        "answer": "Para una corona sobre implante atornillada, hay un pequeño orificio en la superficie de masticación a través del cual se aprieta el tornillo. Después de atornillar la corona, este orificio se cierra con un material especial para que no sea visible. Este es el 'cierre oclusal'. Ya está incluido en la prestación 4.7085."
+      },
+      {
+        "question": "¿Cuánto cuesta una corona sobre implante en total?",
+        "answer": "La corona sobre implante cuesta 652.00 TP (para UV/MV/IV). A esto se suman los trabajos de laboratorio dental, facturados por separado (aproximadamente 300–800 CHF según el trabajo). Además, se incurren en costes para el implante en sí (4.2530, aproximadamente 669.40 TP) y posiblemente una aumentación ósea. El precio total de una corona sobre implante puede oscilar entre 3.000 y 6.000 CHF. ¡Pide un presupuesto por escrito antes del tratamiento!"
+      },
+      {
+        "question": "¿La corona sobre implante está cubierta por el seguro?",
+        "answer": "Para UV/MV/IV (seguro de accidentes, militar, invalidez), la corona sobre implante solo está cubierta si la pérdida del diente fue causada por un accidente o una enfermedad reconocida (p. ej., defecto congénito). Por razones puramente dentales (p. ej., caries, periodontitis), los pacientes privados deben pagar ellos mismos. Muchos tienen un seguro dental privado que cubre parte de los costes. ¡Infórmate en tu seguro!"
+      },
+      {
+        "question": "¿Cuánto dura una corona sobre implante?",
+        "answer": "Con buenos cuidados y revisiones regulares, una corona sobre implante puede durar 15–20 años o más. Es importante una buena higiene bucal (cepillado minucioso, hilo dental, cepillos interdentales especiales) así como revisiones regulares con el dentista (al menos 1–2 veces al año). El implante en sí puede durar toda la vida con buenos cuidados."
+      }
+    ],
+    "pt": [
+      {
+        "question": "Qual é a diferença entre uma coroa normal e uma coroa sobre implante?",
+        "answer": "Uma coroa normal (p. ex., 4.7080) é colocada sobre um dente natural que foi preparado. Uma coroa sobre implante (4.7085) é colocada sobre um implante dentário artificial que foi aparafusado no osso da mandíbula. A coroa em si tem o mesmo aspeto, mas a fixação é diferente: os dentes naturais são cimentados, os implantes também podem ser aparafusados."
+      },
+      {
+        "question": "O que significa 'fecho oclusal para coroas sobre implante aparafusadas'?",
+        "answer": "Para uma coroa sobre implante aparafusada, há um pequeno orifício na superfície de mastigação através do qual o parafuso é apertado. Depois de a coroa ser aparafusada, este orifício é fechado com um material especial para que não seja visível. Este é o 'fecho oclusal'. Já está incluído na prestação 4.7085."
+      },
+      {
+        "question": "Quanto custa uma coroa sobre implante no total?",
+        "answer": "A coroa sobre implante em si custa 652.00 TP (para UV/MV/IV). A estes acrescem os trabalhos de laboratório dentário, faturados separadamente (aproximadamente 300–800 CHF dependendo do trabalho). Além disso, há custos para o próprio implante (4.2530, aproximadamente 669.40 TP) e possivelmente uma aumento ósseo. O preço total para uma coroa sobre implante pode, portanto, situar-se entre 3.000 e 6.000 CHF. Pede um orçamento por escrito antes do tratamento!"
+      },
+      {
+        "question": "A coroa sobre implante é coberta pelo seguro?",
+        "answer": "Para UV/MV/IV (seguro de acidentes, militar, invalidez), a coroa sobre implante só é coberta se a perda do dente foi causada por um acidente ou uma doença reconhecida (p. ex., deficiência congénita). Por razões puramente dentárias (p. ex., cárie, periodontite), os pacientes privados devem pagar eles próprios. Muitos têm um seguro dentário privado que cobre parte dos custos. Informa-te junto do teu seguro!"
+      },
+      {
+        "question": "Quanto tempo dura uma coroa sobre implante?",
+        "answer": "Com bons cuidados e verificações regulares, uma coroa sobre implante pode durar 15–20 anos ou mais. Uma boa higiene oral é importante (escovagem minuciosa, fio dental, escovas interdentais especiais), assim como verificações regulares com o dentista (pelo menos 1–2 vezes por ano). O próprio implante pode durar uma vida inteira com bons cuidados."
+      }
+    ],
+    "pl": [
+      {
+        "question": "Jaka jest różnica między koroną normalną a koroną na implancie?",
+        "answer": "Korona normalna (np. 4.7080) jest umieszczana na naturalnym zębie, który został przygotowany. Korona na implancie (4.7085) jest umieszczana na sztucznym implancie dentystycznym, który został wkręcony w kość szczęki. Sama korona wygląda tak samo, ale mocowanie jest inne: zęby naturalne są cementowane, implanty mogą być również wkręcane."
+      },
+      {
+        "question": "Co oznacza 'zamknięcie okluzyjne dla wkręcanych koron na implancie'?",
+        "answer": "W przypadku wkręcanej korony na implancie na powierzchni żującej znajduje się mały otwór, przez który wkręcana jest śruba. Po wkręceniu korony otwór ten jest zamykany specjalnym materiałem, aby nie był widoczny. Jest to 'zamknięcie okluzyjne'. Jest już zawarte w usłudze 4.7085."
+      },
+      {
+        "question": "Ile kosztuje korona na implancie łącznie?",
+        "answer": "Sama korona na implancie kosztuje 652.00 TP (dla UV/MV/IV). Do tego dochodzą prace laboratoryjne, rozliczane osobno (około 300–800 CHF w zależności od pracy). Dodatkowo występują koszty samego implantu (4.2530, około 669.40 TP) oraz ewentualnie augmentacji kości. Łączna cena za koronę na implancie może więc wynosić między 3.000 a 6.000 CHF. Przed zabiegiem koniecznie poproś o pisemną wycenę!"
+      },
+      {
+        "question": "Czy korona na implancie jest refundowana przez ubezpieczenie?",
+        "answer": "Dla UV/MV/IV (ubezpieczenie wypadkowe, wojskowe, inwalidzkie), korona na implancie jest refundowana tylko wtedy, gdy utrata zęba była spowodowana wypadkiem lub uznaną chorobą (np. wadą wrodzoną). Z powodów czysto stomatologicznych (np. próchnica, zapalenie przyzębia) pacjenci prywatni muszą zapłacić sami. Wielu ma prywatne ubezpieczenie stomatologiczne, które pokrywa część kosztów. Zapytaj w swoim ubezpieczeniu!"
+      },
+      {
+        "question": "Jak długo wytrzymuje korona na implancie?",
+        "answer": "Przy dobrej pielęgnacji i regularnych kontrolach korona na implancie może wytrzymać 15–20 lat lub dłużej. Ważna jest dobra higiena jamy ustnej (dokładne szczotkowanie, nitkowanie, specjalne szczoteczki międzyzębowe) oraz regularne kontrole u dentysty (co najmniej 1–2 razy w roku). Sam implant może przy dobrej pielęgnacji wytrzymać całe życie."
+      }
+    ],
+    "al": [
+      {
+        "question": "Cili është ndryshimi midis një kurorë normale dhe një kurorë mbi implant?",
+        "answer": "Një kurorë normale (p.sh., 4.7080) vendoset mbi një dhëmb natyral që është përgatitur. Një kurorë mbi implant (4.7085) vendoset mbi një implant dentar artificial që është vidhosur në kockën e nofullës. Vetë kurora duket njësoj, por fiksimi është i ndryshëm: dhëmbët natyralë çimentohen, implantet mund të vidhosen gjithashtu."
+      },
+      {
+        "question": "Çfarë do të thotë 'mbyllja okluzale për kurorat mbi implant të vidhosura'?",
+        "answer": "Për një kurorë mbi implant të vidhosur, ka një vrimë të vogël në sipërfaqen përtypëse përmes së cilës shtrëngohet vida. Pasi kurora vidhoset, kjo vrimë mbyllet me një material të veçantë në mënyrë që të mos jetë e dukshme. Kjo është 'mbyllja okluzale'. Ajo është tashmë e përfshirë në shërbimin 4.7085."
+      },
+      {
+        "question": "Sa kushton një kurorë mbi implant në total?",
+        "answer": "Vetë kurora mbi implant kushton 652.00 TP (për UV/MV/IV). Këtyre u shtohen punët e laboratorit dentar, të faturohen veçmas (rreth 300–800 CHF në varësi të punës). Përveç kësaj, ka kosto për vetë implantin (4.2530, rreth 669.40 TP) dhe mundësisht një augmentim kockor. Çmimi total për një kurorë mbi implant mund të jetë midis 3.000 dhe 6.000 CHF. Kërko patjetër një vlerësim me shkrim para trajtimit!"
+      },
+      {
+        "question": "A mbulohet kurora mbi implant nga sigurimi?",
+        "answer": "Për UV/MV/IV (sigurimi i aksidenteve, ushtarak, invaliditeti), kurora mbi implant mbulohet vetëm nëse humbja e dhëmbit është shkaktuar nga një aksident ose një sëmundje e njohur (p.sh., defekt i lindjes). Për arsye thjesht dentare (p.sh., karies, periodontit), pacientët privatë duhet të paguajnë vetë. Shumë kanë një sigurim privat dentar që mbulon një pjesë të kostove. Pyet në sigurimin tënd!"
+      },
+      {
+        "question": "Sa kohë zgjat një kurorë mbi implant?",
+        "answer": "Me kujdes të mirë dhe kontrolle të rregullta, një kurorë mbi implant mund të zgjasë 15–20 vjet ose më shumë. Një higjienë e mirë orale është e rëndësishme (larje e plotë, fill dentar, furça të veçanta ndërdhëmbore) si dhe kontrolle të rregullta te dentisti (të paktën 1–2 herë në vit). Vetë implanti mund të zgjasë një jetë të tërë me kujdes të mirë."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Normal bir kuron ile implant kronu arasındaki fark nedir?",
+        "answer": "Normal bir kuron (örn. 4.7080) hazırlanmış doğal bir dişin üzerine yerleştirilir. Bir implant kronu (4.7085), çene kemiğine vidalanmış yapay bir dental implantın üzerine yerleştirilir. Kuronun kendisi aynı görünür, ancak tespit farklıdır: doğal dişler simante edilir, implantlar ayrıca vidalanabilir."
+      },
+      {
+        "question": "'Vidalı implant kronları için oklüzal kapatma' ne anlama gelir?",
+        "answer": "Vidalı bir implant kronu için, çiğneme yüzeyinde vidanın sıkıldığı küçük bir delik vardır. Kron vidalandıktan sonra, bu delik görünmemesi için özel bir malzeme ile kapatılır. Bu 'oklüzal kapatma'dır. Zaten 4.7085 hizmetine dahildir."
+      },
+      {
+        "question": "Bir implant kronunun toplam maliyeti ne kadardır?",
+        "answer": "İmplant kronunun kendisi 652.00 TP'dir (UV/MV/IV için). Buna ayrı faturalandırılan diş laboratuvar işçiliği (işe bağlı olarak yaklaşık 300–800 CHF) eklenir. Ayrıca implantın kendisi (4.2530, yaklaşık 669.40 TP) ve muhtemelen kemik takviyesi için maliyetler vardır. Bir implant kronunun toplam fiyatı bu nedenle 3.000 ile 6.000 CHF arasında olabilir. Tedaviden önce mutlaka yazılı maliyet tahmini isteyin!"
+      },
+      {
+        "question": "İmplant kronu sigorta tarafından karşılanır mı?",
+        "answer": "UV/MV/IV (kaza, askerlik, engellilik sigortası) için, implant kronu yalnızca diş kaybı bir kaza veya tanınmış bir hastalıktan (örneğin doğuştan kusur) kaynaklanıyorsa karşılanır. Tamamen diş nedenleriyle (örneğin çürük, periodontitis) özel hastalar kendileri ödemek zorundadır. Birçoğunun maliyetlerin bir kısmını karşılayan özel diş sigortası vardır. Sigorta şirketinize sorun!"
+      },
+      {
+        "question": "Bir implant kronu ne kadar dayanır?",
+        "answer": "İyi bakım ve düzenli kontrollerle bir implant kronu 15–20 yıl veya daha uzun süre dayanabilir. İyi ağız hijyeni (iyice fırçalama, diş ipi, özel interdental fırçalar) ve diş hekimi ile düzenli kontroller (yılda en az 1–2 kez) önemlidir. İmplantın kendisi iyi bakımla ömür boyu dayanabilir."
+      }
+    ],
+    "hr": [
+      {
+        "question": "Koja je razlika između normalne krunice i krunice na implantatu?",
+        "answer": "Normalna krunica (npr. 4.7080) postavlja se na prirodni zub koji je pripremljen. Krunica na implantatu (4.7085) postavlja se na umjetni dentalni implantat koji je uvrnut u čeljusnu kost. Sama krunica izgleda isto, ali je fiksacija drugačija: prirodni zubi se cementiraju, implantati se također mogu uvrtati."
+      },
+      {
+        "question": "Što znači 'okluzalno zatvaranje za uvrtane krunice na implantatu'?",
+        "answer": "Za uvrtanu krunicu na implantatu postoji mala rupa na žvačnoj površini kroz koju se zategne vijak. Nakon što je krunica uvrta, ta se rupa zatvara posebnim materijalom kako ne bi bila vidljiva. To je 'okluzalno zatvaranje'. Već je uključeno u uslugu 4.7085."
+      },
+      {
+        "question": "Koliko ukupno košta krunica na implantatu?",
+        "answer": "Sama krunica na implantatu košta 652.00 TP (za UV/MV/IV). Tome se dodaju zubotehnički laboratorijski radovi, koji se naplaćuju zasebno (oko 300–800 CHF ovisno o radu). Dodatno, tu su troškovi za sam implantat (4.2530, oko 669.40 TP) i eventualno augmentaciju kosti. Ukupna cijena za krunicu na implantatu može biti između 3.000 i 6.000 CHF. Prije zahvata obavezno zatraži pismenu procjenu troškova!"
+      },
+      {
+        "question": "Pokriva li osiguranje krunicu na implantatu?",
+        "answer": "Za UV/MV/IV (osiguranje od nezgode, vojno, invalidsko), krunica na implantatu pokriva se samo ako je gubitak zuba uzrokovan nesrećom ili priznatom bolešću (npr. urođenom manom). Iz čisto stomatoloških razloga (npr. karijes, parodontitis) privatni pacijenti moraju platiti sami. Mnogi imaju privatno stomatološko osiguranje koje pokriva dio troškova. Provjeri u svom osiguranju!"
+      },
+      {
+        "question": "Koliko dugo traje krunica na implantatu?",
+        "answer": "Uz dobru njegu i redovite kontrole, krunica na implantatu može trajati 15–20 godina ili dulje. Važna je dobra oralna higijena (temeljito pranje, zubni konac, posebne interdentalne četkice) kao i redovite kontrole kod zubara (najmanje 1–2 puta godišnje). Sam implantat može uz dobru njegu trajati cijeli život."
+      }
+    ],
+    "ta": [
+      {
+        "question": "சாதாரண கிரீடத்திற்கும் உள்வைப்பு கிரீடத்திற்கும் என்ன வித்தியாசம்?",
+        "answer": "ஒரு சாதாரண கிரீடம் (எ.கா., 4.7080) தயாரிக்கப்பட்ட இயற்கை பல்லின் மீது வைக்கப்படுகிறது. ஒரு உள்வைப்பு கிரீடம் (4.7085) தாடை எலும்பில் திருகப்பட்ட செயற்கை பல் உள்வைப்பின் மீது வைக்கப்படுகிறது. கிரீடம் ஒரே மாதிரியாகத் தெரிகிறது, ஆனால் பொருத்துதல் வேறுபட்டது: இயற்கை பற்கள் சிமெண்ட் செய்யப்படுகின்றன, உள்வைப்புகள் திருகப்படலாம்."
+      },
+      {
+        "question": "'திருகு-தக்கவைக்கப்பட்ட உள்வைப்பு கிரீடங்களுக்கான அடைப்பு மூடல்' என்றால் என்ன?",
+        "answer": "திருகு-தக்கவைக்கப்பட்ட உள்வைப்பு கிரீடத்திற்கு, மெல்லும் மேற்பரப்பில் ஒரு சிறிய துளை உள்ளது, அதன் வழியாக திருகு இறுக்கப்படுகிறது. கிரீடம் திருகப்பட்ட பிறகு, இந்த துளை தெரியாத வகையில் ஒரு சிறப்புப் பொருளால் மூடப்படுகிறது. இதுவே 'அடைப்பு மூடல்' ஆகும். இது ஏற்கனவே 4.7085 சேவையில் சேர்க்கப்பட்டுள்ளது."
+      },
+      {
+        "question": "ஒரு உள்வைப்பு கிரீடத்தின் மொத்த செலவு எவ்வளவு?",
+        "answer": "உள்வைப்பு கிரீடம் 652.00 TP (UV/MV/IV க்கு). இதில் தனித்தனியாக கணக்கிடப்படும் பல் ஆய்வக வேலைகள் (வேலையைப் பொறுத்து தோராயமாக 300–800 CHF) சேர்க்கப்படுகின்றன. கூடுதலாக, உள்வைப்பிற்கான செலவுகள் (4.2530, தோராயமாக 669.40 TP) மற்றும் எலும்பு விரிவாக்கம் ஆகியவை உள்ளன. ஒரு உள்வைப்பு கிரீடத்தின் மொத்த விலை 3,000 முதல் 6,000 CHF வரை இருக்கலாம். சிகிச்சைக்கு முன் கண்டிப்பாக எழுத்துப்பூர்வ செலவு மதிப்பீட்டைக் கேளுங்கள்!"
+      },
+      {
+        "question": "உள்வைப்பு கிரீடம் காப்பீட்டால் மறைக்கப்படுகிறதா?",
+        "answer": "UV/MV/IV (விபத்து, இராணுவம், ஊனமுறை காப்பீடு) க்கு, பல் இழப்பு ஒரு விபத்து அல்லது அங்கீகரிக்கப்பட்ட நோயால் (எ.கா., பிறவி குறைபாடு) ஏற்பட்டால் மட்டுமே உள்வைப்பு கிரீடம் மறைக்கப்படுகிறது. முற்றிலும் பல் காரணங்களுக்காக (எ.கா., புழு, ஈறு நோய்) தனியார் நோயாளிகள் தாங்களே பணம் செலுத்த வேண்டும். பலருக்கு செலவுகளின் ஒரு பகுதியை மறைக்கும் தனியார் பல் காப்பீடு உள்ளது. உங்கள் காப்பீட்டு நிறுவனத்தில் கேளுங்கள்!"
+      },
+      {
+        "question": "ஒரு உள்வைப்பு கிரீடம் எவ்வளவு காலம் நீடிக்கும்?",
+        "answer": "நல்ல பராமரிப்பு மற்றும் வழக்கமான சோதனைகளுடன், ஒரு உள்வைப்பு கிரீடம் 15–20 ஆண்டுகள் அல்லது அதற்கு மேல் நீடிக்கும். நல்ல வாய் சுகாதாரம் (முழுமையாக துலக்குதல், பல் நூல், சிறப்பு இடை-பல் துலக்கிகள்) மற்றும் பல் மருத்துவரிடம் வழக்கமான சோதனைகள் (வருடத்திற்கு குறைந்தது 1–2 முறை) முக்கியம். நல்ல பராமரிப்புடன் உள்வைப்பு வாழ்நாள் முழுவதும் நீடிக்கும்."
+      }
+    ]
+  }
+}
