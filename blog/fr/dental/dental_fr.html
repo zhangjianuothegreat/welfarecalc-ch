@@ -156,11 +156,46 @@
             margin: 0;
         }
 
+        .home-link {
+            display: inline-block;
+            background: white;
+            color: #005f8c;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 1rem 0 0 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
+            border: 1px solid #cbd5e1;
+        }
+        .home-link:hover {
+            background: #005f8c;
+            color: white;
+            border-color: #005f8c;
+        }
+        footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+            border-radius: 24px 24px 0 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ffcd7e;
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+        footer a:hover { text-decoration: underline; }
+
         @media (max-width: 640px) {
             .hero-title { font-size: 1.95rem; }
             .hero-sub { font-size: 1.15rem; }
             .card { padding: 1.3rem; }
             .matrix-grid { grid-template-columns: 1fr; }
+            .home-link { margin-left: 1rem; }
         }
     </style>
 </head>
@@ -170,6 +205,25 @@
         <h1 class="hero-title">Swiss Dental Bill Auditor</h1>
         <p class="hero-sub">Décryptez votre Facture Dentaire & Vérifiez les Tarifs Justes</p>
     </header>
+
+    <!-- 回到主页的链接 -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0.5rem 1.5rem 0 1.5rem;">
+        <a href="https://www.welfarecalc.ch" class="home-link">🏠 Retour à l'accueil</a>
+    </div>
+
+    <!-- ==================== 法语版强烈风险提示 ==================== -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+            <strong>⚠️ Avis juridique important :</strong><br><br>
+            Cet outil d’audit de factures dentaires est fourni <strong>uniquement à des fins d’information et de transparence</strong>. 
+            Les résultats ne constituent <strong>ni un avis juridique, ni un avis médical, ni un examen dentaire professionnel</strong>.<br><br>
+            
+            Nous n’assumons <strong>aucune responsabilité</strong> pour les décisions prises sur la base de l’utilisation de cet outil – 
+            par exemple, contester une facture, refuser un paiement ou engager un litige avec votre cabinet dentaire.<br><br>
+            
+            En cas d’incertitude, veuillez toujours consulter votre dentiste traitant ou votre assureur santé.
+        </div>
+    </div>
 
     <div class="container">
 
@@ -281,6 +335,16 @@
             🇨🇭 Swiss Dental Bill Auditor • Un projet indépendant de <a href="https://www.welfarecalc.ch" target="_blank" style="color:#64748b;">welfarecalc.ch</a>
         </div>
     </div>
+
+    <!-- 页脚 Footer -->
+    <footer>
+        <p>WelfareCalc.ch • Gratuit • Anonyme • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_fr.html">Impressum</a> •
+            <a href="/datenschutz_fr.html">Protection des données</a> •
+            <a href="/haftung_fr.html">Exclusion de responsabilité</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [

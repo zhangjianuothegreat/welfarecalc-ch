@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>சுவிஸ் வாடகை பாதுகாப்பாளர் · 30 இடர் புள்ளிகள் · தனியுரிமை முதலிடம்</title>
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f0f4f8;
+            color: #0f172a;
+            line-height: 1.5;
+        }
+
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #ffffff;
+            color: #0f172a;
+            padding: 12px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+            min-height: 48px;
+        }
+
+        .back-to-home:hover {
+            background: #1e3a8a;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-color: #1e3a8a;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%);
+            color: #2d3748;
+            padding: 3rem 1.5rem 6rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            background-image:
+                linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%),
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2394a3b8' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M96 49c0 2.761-2.239 5-5 5l-86 0c-2.761 0-5-2.239-5-5l0-86c0-2.761 2.239-5 5-5l86 0c2.761 0 5 2.239 5 5l0 86z' fill='%23ffffff' fill-opacity='0.4'/%3E%3C/svg%3E");
+            opacity: 0.2;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-20px, -10px) rotate(1deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .hero h1 i {
+            color: #f97316;
+            margin-right: 8px;
+        }
+
+        .hero-sub {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 1;
+            color: #475569;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            backdrop-filter: none;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f59e0b, #ea580c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #0f172a;
+            border-left: 5px solid #dc2626;
+            padding-left: 1rem;
+        }
+
+        .upload-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .upload-btn {
+            background: #f1f5f9;
+            border: 1.5px solid #cbd5e1;
+            padding: 0.8rem 1.5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all .2s;
+            min-height: 48px;
+        }
+
+        .upload-btn:hover {
+            background: #e2e8f0;
+            border-color: #3b82f6;
+        }
+
+        .knowledge-btn {
+            background: linear-gradient(95deg, #dc2626, #b91c1c);
+            border: none;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 2.5rem;
+            font-weight: 700;
+            width: 100%;
+            font-size: 1.15rem;
+            margin: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
+            transition: all 0.2s;
+            min-height: 56px;
+        }
+
+        .knowledge-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(95deg, #b91c1c, #991b1b);
+        }
+
+        .action-btn {
+            background: linear-gradient(95deg, #059669, #10b981);
+            color: white;
+            border: none;
+            padding: 0.9rem 1.8rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+            font-size: 1rem;
+            min-height: 48px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(95deg, #047857, #059669);
+        }
+
+        .scam-alert {
+            background: #fff0f0;
+            border-left: 6px solid #dc2626;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0 1.5rem 0;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, .1);
+        }
+
+        .scam-alert h4 {
+            margin: 0 0 .5rem 0;
+            color: #b91c1c;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 260px;
+            padding: 1.2rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 1rem;
+            font-family: monospace;
+            font-size: .95rem;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, .2);
+        }
+
+        .primary-btn {
+            background: #dc2626;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 56px;
+        }
+
+        .primary-btn:hover {
+            background: #b91c1c;
+        }
+
+        .primary-btn:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .result-item {
+            border-left: 5px solid;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-radius: 1rem;
+            background: #fefefe;
+        }
+
+        .high-risk {
+            border-left-color: #dc2626;
+            background: #fef2f2;
+        }
+
+        .medium-risk {
+            border-left-color: #f59e0b;
+            background: #fffbeb;
+        }
+
+        .low-risk {
+            border-left-color: #10b981;
+            background: #ecfdf5;
+        }
+
+        .action-box {
+            background: #f8fafc;
+            padding: .8rem;
+            border-radius: .8rem;
+            margin-top: .8rem;
+            border-left: 3px solid #3b82f6;
+            font-size: .9rem;
+        }
+
+        .confirm-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .confirm-option label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background: #f1f5f9;
+            padding: .5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            border: 1px solid #cbd5e1;
+            min-height: 44px;
+        }
+
+        .confirm-option input:checked+label {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+        }
+
+        .confirm-option input {
+            display: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .modal-card {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            background: #0f172a;
+            color: white;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .checklist-item {
+            border-left: 4px solid #dc2626;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: .8rem;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .95);
+            z-index: 3000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #e2e8f0;
+            border-top: 5px solid #dc2626;
+            border-radius: 50%;
+            animation: spin 1s infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #475569;
+            font-size: .85rem;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            align-items: center;
+        }
+
+        .button-group .action-btn {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            #resultArea,
+            #resultArea * {
+                visibility: visible;
+            }
+
+            #resultArea {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+
+            .hero,
+            .upload-toolbar,
+            .scam-alert,
+            .knowledge-btn,
+            footer,
+            .modal,
+            .primary-btn,
+            .button-group,
+            .confirm-group,
+            .back-to-home {
+                display: none !important;
+            }
+
+            .result-item {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .button-group {
+                flex-direction: column;
+            }
+
+            .button-group .action-btn {
+                width: 100%;
+                min-width: auto;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .stat-card {
+                padding: 0.75rem 1.25rem;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.welfarecalc.ch/" class="back-to-home" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-arrow-left"></i> முதன்மை தளத்திற்குத் திரும்பு
+    </a>
+
+    <div class="hero">
+        <h1><i class="fas fa-shield-virus"></i> சுவிஸ் வாடகை பாதுகாப்பாளர்</h1>
+        <p class="hero-sub">30+ சட்டப் பிடிப்புகள் · இலவசம் · 100% உள்நாட்டு & தனியார்</p>
+        <div class="stats">
+            <div class="stat-card"><span class="stat-number">94%</span><br>ஒப்பந்தங்களில் இடர்கள் மறைந்துள்ளன</div>
+            <div class="stat-card"><span class="stat-number">CHF 1500+</span><br>சராசரி பிணைத் தொகை சர்ச்சை</div>
+            <div class="stat-card"><span class="stat-number">30</span><br>இடர் புள்ளிகள்</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div
+            style="background: linear-gradient(135deg, #1e3a8a, #1e40af); border-radius: 1rem; padding: 1.5rem; margin: -1rem 0 1.5rem 0; text-align: center; font-size: 1rem; line-height: 1.5; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #3b82f6;">
+            <div style="font-size: 1.1rem; margin-bottom: 0.75rem;">
+                🔒 <strong>100% உள்நாட்டு செயலாக்கம்</strong> – உங்கள் ஒப்பந்தம் உங்கள் உலாவியை விட்டு வெளியேறுவதில்லை.
+            </div>
+            <div style="background: rgba(255,255,255,0.12); border-radius: 0.75rem; padding: 1rem; margin-top: 0.5rem;">
+                <strong>⚠️ முக்கிய எச்சரிக்கை:</strong> இந்த கருவி தகவல் மற்றும் கல்வி நோக்கங்களுக்காக மட்டுமே. இது
+                <strong>சட்ட ஆலோசனை அல்ல</strong>. ஜெர்மன் ஒப்பந்தங்கள் வளமான சொற்களஞ்சியம் காரணமாக அதிக எச்சரிக்கைகளைத்
+                தூண்டலாம்; பிரஞ்சு மற்றும் இத்தாலிய ஒப்பந்தங்கள் மிகவும் தரப்படுத்தப்பட்டவை.<br>
+                <strong>இறுதி முடிவுகள் எப்போதும் தகுதிவாய்ந்த வழக்கறிஞர் அல்லது Mieterverband ஆல் மதிப்பாய்வு செய்யப்பட
+                    வேண்டும்.</strong>
+            </div>
+        </div>
+
+        <div
+            style="background:#f0f9ff; border-radius:1.5rem; padding:1.2rem; margin: 1.5rem 0; border:1px solid #b9d8f3;">
+            <h3 style="margin:0 0 0.5rem 0; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-file-contract"></i> இலவச வாடகை ஒப்பந்த வார்ப்புருக்கள் (அதிகாரப்பூர்வ மொழிகள்)
+            </h3>
+            <p style="font-size:0.9rem; margin-bottom:1rem;">📄 சுவிஸ் அதிகாரப்பூர்வ மொழிகளில் மாதிரி ஒப்பந்தங்களைப்
+                பதிவிறக்கவும் – குறிப்புதவிக்கு மட்டும்</p>
+            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                <a href="FrenchContract.pdf" download class="upload-btn" style="text-decoration:none;"><i
+                        class="fas fa-file-pdf"></i> பிரஞ்சு (Français)</a>
+                <a href="GermanContract.pdf" download class="upload-btn" style="text-decoration:none;"><i
+                        class="fas fa-file-pdf"></i> ஜெர்மன் (Deutsch)</a>
+                <a href="ItalianContract.pdf" download class="upload-btn" style="text-decoration:none;"><i
+                        class="fas fa-file-pdf"></i> இத்தாலியன் (Italiano)</a>
+            </div>
+
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 2px dashed #b9d8f3;">
+                <p style="font-size:0.95rem; margin-bottom:1rem; color:#1e3a8a;">
+                    <i class="fas fa-language"></i> <strong>ஜெர்மன், பிரஞ்சு அல்லது இத்தாலியன் தெரியவில்லையா? பிரச்சினை
+                        இல்லை!</strong><br>
+                    நாங்கள் உங்களுக்காக இருமொழி ஒப்பீட்டு கோப்புகளைத் தயாரித்துள்ளோம். கீழே கிளிக் செய்து பதிவிறக்கவும்:
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                    <a href="French_Tamil.pdf" download class="upload-btn"
+                        style="text-decoration:none; background:#e6f7ff;">
+                        <i class="fas fa-file-pdf"></i> 🇫🇷 பிரஞ்சு - தமிழ் (இருமொழி)
+                    </a>
+                    <a href="German_Tamil.pdf" download class="upload-btn"
+                        style="text-decoration:none; background:#e6f7ff;">
+                        <i class="fas fa-file-pdf"></i> 🇩🇪 ஜெர்மன் - தமிழ் (இருமொழி)
+                    </a>
+                    <a href="Italian_Tamil.pdf" download class="upload-btn"
+                        style="text-decoration:none; background:#e6f7ff;">
+                        <i class="fas fa-file-pdf"></i> 🇮🇹 இத்தாலியன் - தமிழ் (இருமொழி)
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-upload"></i> வாடகை ஒப்பந்தத்தை இறக்குமதி செய்யுங்கள் (PDF / உரை)
+            </h2>
+            <div
+                style="background:#fef9e3; border-left:4px solid #f59e0b; padding:0.75rem 1rem; border-radius:0.75rem; margin-bottom:1rem; font-size:0.9rem;">
+                <i class="fas fa-language"></i> <strong>மொழி ஆதரவு:</strong> சுவிஸ் அதிகாரப்பூர்வ மொழிகள் மட்டும் —
+                ஜெர்மன் (Deutsch), பிரஞ்சு (Français), இத்தாலியன் (Italiano). மற்ற மொழிகள் சரியாகக் கண்டறியப்படாமல்
+                போகலாம்.
+            </div>
+            <div
+                style="background:#f8fafc; border-radius:1rem; padding:1rem 1.2rem; margin-bottom:1.2rem; border-left:4px solid #3b82f6;">
+                <p style="margin:0 0 0.5rem 0; font-weight:700;"><i class="fas fa-info-circle"></i> 📋 எவ்வாறு
+                    செயல்படுகிறது:</p>
+                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">உங்கள் வாடகை ஒப்பந்தத்தை (ஜெர்மன்,
+                    பிரஞ்சு அல்லது இத்தாலியன்) பதிவேற்றம் செய்யவும் அல்லது ஒட்டவும். எங்கள் கருவி 30+ பொதுவான சட்ட
+                    அபாயங்களை முக்கிய சொல் பொருத்தத்தைப் பயன்படுத்தி ஸ்கேன் செய்கிறது — நீங்கள் கையெழுத்திடும் முன் ஒரு
+                    கூடுதல் கண்களைப் போல.</p>
+                <p style="margin:0 0 0.5rem 0; font-weight:700; color:#1e3a8a;"><i class="fas fa-shield-alt"></i> 🔒
+                    உங்கள் தனியுரிமை முக்கியமானது:</p>
+                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">எல்லாம் உங்கள் உலாவியில் உள்நாட்டிலேயே
+                    நிகழ்கிறது. பதிவேற்றங்கள் இல்லை, சேவையகங்கள் இல்லை, கண்காணிப்பு இல்லை. உங்கள் ஒப்பந்தம் உங்கள்
+                    சாதனத்தை விட்டு வெளியேறுவதில்லை. அதை ஸ்கேன் செய்யுங்கள், முடிவுகளை மதிப்பாய்வு செய்யுங்கள், பக்கத்தை
+                    மூடுங்கள் — எந்த தடயமும் இல்லை.</p>
+                <p
+                    style="margin:0; font-size:0.85rem; background:#fef9e3; padding:0.6rem; border-radius:0.75rem; color:#92400e;">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>நினைவில் கொள்ளுங்கள்:</strong> இந்த கருவி ஒரு
+                    வழக்கறிஞர் அல்ல. முடிவுகள் குறிப்புதவிக்கு மட்டுமே மற்றும் ஒவ்வொரு பிரச்சினையையும் பிடிக்காமல்
+                    போகலாம். எப்போதும் எச்சரிக்கையுடன் இருங்கள் — இரண்டாவது பார்வை ஒருபோதும் காயப்படுத்தாது. சந்தேகம்
+                    இருந்தால், ஒரு நிபுணர் அல்லது உங்கள் உள்ளூர் Mieterverband ஐ அணுகவும்.</p>
+            </div>
+
+            <div class="upload-toolbar">
+                <label class="upload-btn">
+                    <input type="file" id="pdfUpload" accept=".pdf">
+                    <i class="fas fa-file-pdf"></i> PDF ஒப்பந்தத்தைப் பதிவேற்றுக
+                </label>
+                <div class="upload-btn" onclick="document.getElementById('contractInput').focus();">
+                    <i class="fas fa-keyboard"></i> உரையை கைமுறையாக ஒட்டவும்
+                </div>
+            </div>
+
+            <div class="scam-alert">
+                <h4><i class="fas fa-exclamation-triangle"></i> சுவிஸ் வாடகை சிவப்புக் கோடு – மோசடி எச்சரிக்கை</h4>
+                <p>🚫 வீட்டைப் பார்க்கும் முன் ஒருபோதும் பணம் செலுத்த வேண்டாம்! பணம் இல்லை, வெஸ்டர்ன் யூனியன் இல்லை,
+                    "தபால் மூலம் சாவி" இல்லை.<br>
+                    ✅ பாதுகாப்பு வைப்புத் தொகை குத்தகைதாரரின் பெயரில் ஒரு தடுக்கப்பட்ட கணக்கில் (Mietkautionskonto)
+                    வைக்கப்பட வேண்டும்.</p>
+            </div>
+
+            <button class="knowledge-btn" id="showChecklistBtn">
+                <i class="fas fa-list-check"></i> 30 இடர் புள்ளிகளைக் காண்க (முழுச் சரிபார்ப்புப் பட்டியல்)
+            </button>
+
+            <textarea id="contractInput"
+                placeholder="உங்கள் ஜெர்மன், பிரஞ்சு அல்லது இத்தாலியன் வாடகை ஒப்பந்தத்தை இங்கே ஒட்டவும்..."></textarea>
+
+            <div style="display:flex;justify-content:space-between;margin:.5rem 0;font-size:0.9rem;">
+                <span id="charCounter">0 எழுத்துகள்</span>
+                <span><i class="fas fa-shield-alt"></i> 30 இடர் புள்ளிகள் ஸ்கேன் செய்யப்படுகின்றன</span>
+            </div>
+            <button class="primary-btn" id="scanBtn"><i class="fas fa-radar"></i> ஒப்பந்தப் பொறிகளை இப்போது ஸ்கேன்
+                செய்யுங்கள்</button>
+        </div>
+
+        <div id="resultArea" style="display:none;">
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-exclamation-triangle"></i> இடர் மதிப்பீட்டு அறிக்கை</h2>
+                <div id="dynamicResults"></div>
+                <div class="button-group">
+                    <button class="action-btn" id="printReportBtn"><i class="fas fa-print"></i> 🖨️ தற்போதைய இடர்களை
+                        அச்சிடுக</button>
+                    <button class="action-btn" id="downloadReportPdfBtn"><i class="fas fa-file-pdf"></i> 📥 PDF ஆகப்
+                        பதிவிறக்குக</button>
+                </div>
+            </div>
+        </div>
+
+        <footer
+            style="text-align: center; padding: 2rem; color: #475569; font-size: 0.85rem; border-top: 1px solid #e2e8f0; margin-top: 2rem;">
+            <p>© 2026 சுவிஸ் வாடகை பாதுகாப்பாளர் – <a href="https://www.welfarecalc.ch/" target="_blank"
+                    rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">WelfareCalc.ch</a> இன்
+                இலவசக் கருவி</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://www.welfarecalc.ch/impressum.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Impressum</a> |
+                <a href="https://www.welfarecalc.ch/datenschutz.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Datenschutzerklärung</a> |
+                <a href="https://www.welfarecalc.ch/haftung.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Haftungsausschluss</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.75rem; color: #64748b;">
+                <i class="fas fa-gavel"></i> சுவிஸ் கடமைகள் கோட் (OR) அடிப்படையில் | குறிப்புதவிக்கு மட்டும் – சட்ட
+                ஆலோசனை அல்ல.
+                எந்த ஒப்பந்தத்திலும் கையெழுத்திடும் முன் எப்போதும் Mieterverband அல்லது தகுதிவாய்ந்த வழக்கறிஞரை
+                அணுகவும்.
+            </p>
+        </footer>
+    </div>
+
+    <div id="checklistModal" class="modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fas fa-book-skull"></i> 30 சுவிஸ் வாடகை இடர் புள்ளிகள்</h3>
+                <span style="font-size:2rem;cursor:pointer;" id="closeModalBtn">&times;</span>
+            </div>
+            <div class="modal-body" id="modalChecklistBody"></div>
+            <div style="padding:1rem 1.5rem;background:#f8fafc;border-top:1px solid #e2e8f0;text-align:center;">
+                <button onclick="downloadChecklistPDF()" class="action-btn"
+                    style="width:100%;max-width:340px;margin:0 auto;">
+                    <i class="fas fa-download"></i> 30 இடர் புள்ளிகளை PDF ஆகப் பதிவிறக்குக
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <div id="loadingMsg" style="margin-top:1rem;">தரவுத்தளத்தை ஏற்றுகிறது மற்றும் ஸ்கேன் செய்கிறது...</div>
+    </div>
+
+    <script>
+        let legalDatabase = [];
+        let riskPrompts = {};
+
+        async function loadData() {
+            const loadingMsg = document.getElementById('loadingMsg');
+            loadingMsg.textContent = "legalDatabase.json மற்றும் riskPrompts.json ஏற்றப்படுகிறது...";
+            try {
+                const [dbRes, promptsRes] = await Promise.all([
+                    fetch('legalDatabase.json'),
+                    fetch('riskPrompts.json')
+                ]);
+                if (!dbRes.ok || !promptsRes.ok) throw new Error('JSON கோப்புகள் கிடைக்கவில்லை');
+                const dbData = await dbRes.json();
+                legalDatabase = dbData.data || dbData;
+                riskPrompts = await promptsRes.json();
+                console.log('✅ JSON கோப்புகள் வெற்றிகரமாக ஏற்றப்பட்டன');
+                loadingMsg.textContent = "தரவுத்தளம் வெற்றிகரமாக ஏற்றப்பட்டது!";
+                setTimeout(() => { document.getElementById('loadingOverlay').style.display = 'none'; }, 1000);
+            } catch (err) {
+                console.error('❌ JSON ஏற்றம் தோல்வி:', err);
+                loadingMsg.innerHTML = `<span style="color:red;">JSON கோப்புகளை ஏற்ற முடியவில்லை</span><br><br>இரண்டு கோப்புகளும் index.html உடன் ஒரே கோப்புறையில் இருப்பதை உறுதிசெய்து, உள்ளூர் சேவையகத்துடன் இந்தப் பக்கத்தை இயக்கவும்:<br><strong>python -m http.server 8000</strong><br><br>பின்னர் திறக்கவும்: http://localhost:8000`;
+            }
+        }
+
+        function detectContractLanguage(text) {
+            const lower = text.toLowerCase();
+            let scores = { de: 0, fr: 0, it: 0 };
+            const deMarkers = ["mietvertrag", "mieter", "vermieter", "kaution", "wohnung", "kündigung", "nebenkosten", "privatkonto", "hausordnung"];
+            const frMarkers = ["bail", "locataire", "bailleur", "caution", "logement", "résiliation", "charges", "appartement"];
+            const itMarkers = ["contratto", "inquilino", "locatore", "cauzione", "alloggio", "disdetta", "spese accessorie", "appartamento"];
+            deMarkers.forEach(w => { if (lower.includes(w)) scores.de++; });
+            frMarkers.forEach(w => { if (lower.includes(w)) scores.fr++; });
+            itMarkers.forEach(w => { if (lower.includes(w)) scores.it++; });
+            if (scores.de >= scores.fr && scores.de >= scores.it) return "de";
+            if (scores.fr >= scores.de && scores.fr >= scores.it) return "fr";
+            return "it";
+        }
+
+        function scanContract(text) {
+            const lower = text.toLowerCase();
+            const matchedIds = new Set();
+            for (let entry of legalDatabase) {
+                let keywords = [...(entry.de || []), ...(entry.fr || []), ...(entry.it || [])];
+                for (let kw of keywords) {
+                    if (kw && lower.includes(kw.toLowerCase())) { matchedIds.add(entry.id); break; }
+                }
+            }
+            return Array.from(matchedIds);
+        }
+
+        function updateCharCount() {
+            const count = document.getElementById('contractInput').value.length;
+            document.getElementById('charCounter').textContent = count + " எழுத்துகள்";
+        }
+
+        async function handlePdfUpload(file) {
+            if (!file) return;
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'flex';
+            document.getElementById('loadingMsg').textContent = "PDF உரையைப் பிரித்தெடுக்கிறது...";
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                let fullText = "";
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const content = await page.getTextContent();
+                    fullText += content.items.map(item => item.str).join(" ") + "\n";
+                }
+                document.getElementById('contractInput').value = fullText;
+                updateCharCount();
+                alert(`✅ PDF வெற்றிகரமாகப் பிரித்தெடுக்கப்பட்டது: ${pdf.numPages} பக்கங்கள்`);
+            } catch (e) {
+                alert("PDF பிரித்தெடுத்தல் தோல்வி. உரையை கைமுறையாக ஒட்டவும் அல்லது OCR கருவியைப் பயன்படுத்தவும்.");
+            }
+            loadingOverlay.style.display = 'none';
+        }
+
+        function getCurrentReportHTML() {
+            const dynamicResults = document.getElementById('dynamicResults');
+            if (!dynamicResults) return '';
+            const cloneResults = dynamicResults.cloneNode(true);
+            cloneResults.querySelectorAll('.confirm-group').forEach(el => el.remove());
+            cloneResults.querySelectorAll('input, button, .confirm-option').forEach(el => el.remove());
+            return `<html><head><meta charset="UTF-8"><title>Swiss Rental Protector - Risk Assessment Report</title><style>body { font-family: system-ui, sans-serif; padding: 40px; line-height: 1.6; } h1 { color: #0f172a; border-bottom: 3px solid #dc2626; } .report-date { color: #475569; margin-bottom: 30px; } .result-item { margin: 20px 0; padding: 20px; border-left: 5px solid; border-radius: 8px; background: #f9fafb; page-break-inside: avoid; } .high-risk { border-left-color: #dc2626; background: #fef2f2; } .medium-risk { border-left-color: #f59e0b; background: #fffbeb; } .low-risk { border-left-color: #10b981; background: #ecfdf5; } .action-box { background: #f1f5f9; padding: 12px; border-radius: 8px; margin-top: 10px; } footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; } .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; }</style></head><body><h1>Swiss Rental Protector - Risk Assessment Report</h1><div class="report-date">Generated: ${new Date().toLocaleString()}</div><div class="disclaimer"><strong>⚠️ Disclaimer:</strong> For informational purposes only. NOT legal advice.</div>${cloneResults.innerHTML}<footer>Swiss Rental Protector – welfarecalc.ch • Based on Swiss Code of Obligations</footer></body></html>`;
+        }
+
+        function printCurrentReport() {
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(getCurrentReportHTML());
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+        }
+
+        function downloadCurrentReportAsPDF() {
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(getCurrentReportHTML());
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => { printWindow.print(); alert("💡 அச்சு உரையாடலில், PDF கோப்பாகச் சேமிக்க 'Save as PDF' என்பதைத் தேர்ந்தெடுக்கவும்."); }, 500);
+        }
+
+        function startScan() {
+            const raw = document.getElementById('contractInput').value.trim();
+            if (!raw || raw.length < 30) { alert("உங்கள் வாடகை ஒப்பந்தத்தின் குறைந்தது 30 எழுத்துகளை ஒட்டவும்."); return; }
+            const scanBtn = document.getElementById('scanBtn');
+            scanBtn.disabled = true;
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'flex';
+            document.getElementById('loadingMsg').textContent = "30 இடர் புள்ளிகளுக்கு ஒப்பந்தத்தை ஸ்கேன் செய்கிறது...";
+            setTimeout(() => {
+                const matchedIds = scanContract(raw);
+                const contractLang = detectContractLanguage(raw);
+                const resultArea = document.getElementById('resultArea');
+                const dynamicResults = document.getElementById('dynamicResults');
+                let html = `<div style="background:#fefce8;border:1px solid #facc15;border-radius:1rem;padding:1rem;margin-bottom:1.5rem;"><strong>மொழிக் குறிப்பு:</strong> ஜெர்மன் ஒப்பந்தங்கள் பெரும்பாலும் அதிக எச்சரிக்கைகளைத் தூண்டும். பிரஞ்சு & இத்தாலியன் ஒப்பந்தங்கள் மிகவும் தரப்படுத்தப்பட்டவை.<br><strong>எச்சரிக்கை:</strong> குறிப்புதவிக்கு மட்டுமே, சட்ட ஆலோசனை அல்ல.</div>`;
+                if (matchedIds.length === 0) html += `<p style="text-align:center;color:#10b981;">🎉 இந்த ஒப்பந்தத்தில் இடர் முக்கிய சொற்கள் எதுவும் கண்டறியப்படவில்லை.<br>முழு 30 இடர் புள்ளிகளையும் மதிப்பாய்வு செய்ய பரிந்துரைக்கப்படுகிறது.</p>`;
+                else {
+                    html += `<p><strong>${matchedIds.length}</strong> சாத்தியமான இடர்(கள்) கண்டறியப்பட்டன. ஒவ்வொன்றையும் மதிப்பாய்வு செய்யவும்:</p>`;
+                    for (let id of matchedIds) {
+                        const entry = legalDatabase.find(e => e.id === id);
+                        if (!entry) continue;
+                        const riskClass = entry.severity === 'high' ? 'high-risk' : (entry.severity === 'medium' ? 'medium-risk' : 'low-risk');
+                        const promptObj = riskPrompts[id] || {};
+
+                        // 获取合同语言的提示（德语/法语/意大利语）
+                        const contractLangPrompt = (promptObj[contractLang] && promptObj[contractLang].prompt)
+                            ? promptObj[contractLang].prompt
+                            : "இந்த விதிமுறையை ஒரு சட்ட ஆலோசகரிடம் சரிபார்க்கவும்.";
+
+                        // 获取泰米尔语的提示
+                        const tamilPrompt = (promptObj.ta && promptObj.ta.prompt)
+                            ? promptObj.ta.prompt
+                            : "இந்த விதிமுறையை ஒரு சட்ட ஆலோசகரிடம் சரிபார்க்கவும்.";
+
+                        // 获取泰米尔语的标题
+                        const titleTa = (promptObj.ta && promptObj.ta.title)
+                            ? promptObj.ta.title
+                            : id;
+
+                        // 获取法律引用（优先用泰米尔语，否则用英语）
+                        const lawRef = (promptObj.ta && promptObj.ta.law)
+                            ? promptObj.ta.law
+                            : (promptObj.en && promptObj.en.law)
+                                ? promptObj.en.law
+                                : (entry.law || "Swiss Code of Obligations");
+
+                        // 获取合同语言名称（用于显示）
+                        let langName = contractLang.toUpperCase();
+                        if (contractLang === 'de') langName = 'DEUTSCH (ஜெர்மன்)';
+                        else if (contractLang === 'fr') langName = 'FRANÇAIS (பிரஞ்சு)';
+                        else if (contractLang === 'it') langName = 'ITALIANO (இத்தாலியன்)';
+
+                        html += `<div class="result-item ${riskClass}">
+                    <h4>${titleTa}</h4>
+                    <div><strong>சட்டம் (Law):</strong> ${lawRef}</div>
+                    <div class="action-box">
+                        <strong>📄 ${langName}:</strong> ${contractLangPrompt}<br><br>
+                        <strong>🇱🇰 தமிழ் (Tamil):</strong> ${tamilPrompt}
+                    </div>
+                    <div class="confirm-group">
+                        <div class="confirm-option">
+                            <input type="radio" name="confirm-${id}" id="ok-${id}" value="ok" checked>
+                            <label for="ok-${id}"><i class="fas fa-check-circle"></i> ✅ சரிபார்க்கப்பட்டது & இணக்கமானது</label>
+                        </div>
+                        <div class="confirm-option">
+                            <input type="radio" name="confirm-${id}" id="negotiate-${id}" value="negotiate">
+                            <label for="negotiate-${id}"><i class="fas fa-handshake"></i> ⚠️ நில உரிமையாளருடன் பேச்சுவார்த்தை தேவை</label>
+                        </div>
+                        <div class="confirm-option">
+                            <input type="radio" name="confirm-${id}" id="problem-${id}" value="problem">
+                            <label for="problem-${id}"><i class="fas fa-times-circle"></i> ❌ பிரச்சினை கண்டுபிடிக்கப்பட்டது, உதவி தேவை</label>
+                        </div>
+                    </div>
+                </div>`;
+                    }
+                }
+                dynamicResults.innerHTML = html;
+                resultArea.style.display = 'block';
+                loadingOverlay.style.display = 'none';
+                scanBtn.disabled = false;
+                window.scrollTo({ top: resultArea.offsetTop - 50, behavior: 'smooth' });
+            }, 120);
+        }
+
+        function showChecklistModal() {
+            const modalBody = document.getElementById('modalChecklistBody');
+            let html = '';
+            for (let id in riskPrompts) {
+                const p = riskPrompts[id].ta || {};
+                const title = p.title || id;
+                const law = p.law || "Swiss Code of Obligations";
+                const promptText = p.prompt || "Please review this clause.";
+                html += `<div class="checklist-item"><strong>${title}</strong><span style="background:#e2e8f0; padding:2px 8px; border-radius:20px; margin-left:10px; font-size:0.85rem;">${law}</span><div style="margin-top:10px;">${promptText}</div></div>`;
+            }
+            modalBody.innerHTML = html;
+            document.getElementById('checklistModal').style.display = 'block';
+        }
+
+        function downloadChecklistPDF() {
+            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Swiss Rental Risk Points Checklist</title><style>body{font-family:system-ui;padding:40px;} h1{text-align:center;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;page-break-inside:avoid;} .risk-title{font-weight:700;} footer{margin-top:50px;text-align:center;}</style></head><body><h1>30 Swiss Rental Contract Risk Points</h1><div style="text-align:center;">For educational purposes only</div>`;
+            for (let id in riskPrompts) {
+                const p = riskPrompts[id].ta || {};
+                pdfContent += `<div class="risk-item"><div class="risk-title">${p.title || id}</div><div>Law: ${p.law || "Swiss Code of Obligations"}</div><div>${p.prompt || "Please review this clause carefully."}</div></div>`;
+            }
+            pdfContent += `<footer>Generated by Swiss Rental Protector – welfarecalc.ch ${new Date().toLocaleDateString()}</footer></body></html>`;
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(pdfContent);
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => { printWindow.print(); }, 500);
+        }
+
+        document.getElementById('scanBtn').addEventListener('click', startScan);
+        document.getElementById('contractInput').addEventListener('input', updateCharCount);
+        document.getElementById('pdfUpload').addEventListener('change', (e) => { if (e.target.files.length) handlePdfUpload(e.target.files[0]); e.target.value = ''; });
+        document.getElementById('showChecklistBtn').addEventListener('click', showChecklistModal);
+        document.getElementById('closeModalBtn').addEventListener('click', () => { document.getElementById('checklistModal').style.display = 'none'; });
+        document.getElementById('printReportBtn').addEventListener('click', (e) => { e.preventDefault(); printCurrentReport(); });
+        document.getElementById('downloadReportPdfBtn').addEventListener('click', (e) => { e.preventDefault(); downloadCurrentReportAsPDF(); });
+        window.addEventListener('click', (e) => { if (e.target === document.getElementById('checklistModal')) document.getElementById('checklistModal').style.display = 'none'; });
+        window.addEventListener('load', async () => { await loadData(); updateCharCount(); });
+    </script>
+</body>
+
+</html>

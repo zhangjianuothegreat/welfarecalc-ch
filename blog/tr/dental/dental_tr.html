@@ -57,6 +57,33 @@
             margin: 0 auto;
         }
 
+        .back-home {
+            text-align: center;
+            margin: 1.2rem 1.5rem 0 1.5rem;
+        }
+        
+        .back-home a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 0.7rem 1.6rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            color: #005f8c;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: 0.2s;
+            border: 1px solid rgba(0, 95, 140, 0.2);
+        }
+        
+        .back-home a:hover {
+            background: #f0f9ff;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+            border-color: #0099dd;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -241,6 +268,27 @@
         li {
             margin: 0.4rem 0;
         }
+        
+        footer {
+            background: #f1f5f9;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+            border-top: 1px solid #cbd5e1;
+            font-size: 0.9rem;
+            color: #334155;
+        }
+        
+        footer a {
+            color: #0077be;
+            text-decoration: none;
+            font-weight: 500;
+            margin: 0 0.3rem;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
 
         @media (max-width: 640px) {
             .hero-title {
@@ -271,8 +319,26 @@
         <h1 class="hero-title">İsviçre Diş Faturası Denetleyicisi</h1>
         <p class="hero-sub">Faturanızı çözün, DENTOTAR kodlarını kontrol edin ve resmi referanslarla adil fiyatları doğrulayın.</p>
     </header>
+    
+    <div class="back-home">
+        <a href="https://www.welfarecalc.ch">🏠 Ana Sayfaya Dön</a>
+    </div>
 
     <div class="container">
+        
+        <!-- 风险提示块 - 强烈法律声明 -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0;">
+            <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+                <strong>⚠️ Önemli Yasal Uyarı:</strong><br><br>
+                Bu Diş Faturası Denetleme Aracı, <strong>yalnızca bilgilendirme ve şeffaflık amaçlı</strong> sağlanmaktadır. 
+                Sonuçlar, <strong>hukuki tavsiye, tıbbi tavsiye veya profesyonel bir diş muayenesi teşkil etmez</strong>.<br><br>
+                
+                Bu aracın kullanımına dayanarak verilen kararlardan (örneğin bir faturaya itiraz etmek, ödemeyi reddetmek veya diş hekiminizle anlaşmazlığa düşmek) 
+                <strong>hiçbir şekilde sorumluluk kabul etmiyoruz</strong>.<br><br>
+                
+                Herhangi bir belirsizlik durumunda, lütfen daima tedavinizi yürüten diş hekiminize veya sağlık sigortası sağlayıcınıza danışın.
+            </div>
+        </div>
 
         <div class="card">
             <h2>İsviçre'ye hoş geldiniz!</h2>
@@ -394,6 +460,15 @@
             🇨🇭 İsviçre Diş Faturası Denetleyicisi • <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a> tarafından bağımsız bir proje
         </div>
     </div>
+    
+    <footer>
+        <p>WelfareCalc.ch • Ücretsiz • Anonim • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_tr.html">Künye</a> •
+            <a href="/datenschutz_tr.html">Veri Koruma Beyanı</a> •
+            <a href="/haftung_tr.html">Sorumluluk Reddi</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [

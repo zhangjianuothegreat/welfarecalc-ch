@@ -200,6 +200,50 @@
             margin: 0;
         }
 
+        .home-link {
+            text-align: center;
+            margin: 1rem 0 0 0;
+            padding: 0.75rem 1rem;
+        }
+        .home-link a {
+            display: inline-block;
+            background: #ffffffcc;
+            backdrop-filter: blur(4px);
+            color: #005f8c;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 0.6rem 1.8rem;
+            border-radius: 60px;
+            transition: all 0.2s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #ffffffcc;
+        }
+        .home-link a:hover {
+            background: #ffffff;
+            border-color: #ffcd7e;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem 1rem;
+            background: #eef2f8;
+            border-radius: 24px;
+            font-size: 0.85rem;
+            color: #2d3748;
+            border-top: 1px solid #cbd5e1;
+        }
+        footer a {
+            color: #006a9e;
+            text-decoration: none;
+            margin: 0 0.3rem;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 640px) {
             .hero-title { font-size: 1.95rem; }
             .hero-sub { font-size: 1.15rem; }
@@ -214,6 +258,25 @@
         <h1 class="hero-title">Szwajcarski Audytor Rachunków Dentystycznych</h1>
         <p class="hero-sub">Odszyfruj swoją fakturę dentystyczną i sprawdź, czy płacisz uczciwą cenę – dzięki oficjalnym benchmarkom DENTOTAR.</p>
     </header>
+
+    <!-- ==================== 回到主页链接 ==================== -->
+    <div class="home-link">
+        <a href="https://www.welfarecalc.ch">🏠 Powrót do strony głównej</a>
+    </div>
+
+    <!-- ==================== Polska wersja ważnego zastrzeżenia prawnego (ryzyko) ==================== -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+            <strong>⚠️ Ważne zastrzeżenie prawne:</strong><br><br>
+            Niniejszy audytor rachunków dentystycznych jest udostępniany <strong>wyłącznie w celach informacyjnych i zwiększania przejrzystości</strong>. 
+            Wyniki nie stanowią <strong>porady prawnej, medycznej ani profesjonalnego badania stomatologicznego</strong>.<br><br>
+            
+            <strong>Nie ponosimy żadnej odpowiedzialności</strong> za decyzje podjęte na podstawie użycia tego narzędzia – 
+            na przykład kwestionowanie faktury, odmowa zapłaty lub wszczynanie sporów z Twoją praktyką dentystyczną.<br><br>
+            
+            W razie jakichkolwiek wątpliwości zawsze skonsultuj się z lekarzem dentystą lub swoim ubezpieczycielem zdrowotnym.
+        </div>
+    </div>
 
     <div class="container">
 
@@ -313,6 +376,16 @@
             🇨🇭 Szwajcarski Audytor Rachunków Dentystycznych • Niezależny projekt <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a>
         </div>
     </div>
+
+    <!-- ==================== 页脚 FOOTER ==================== -->
+    <footer>
+        <p>WelfareCalc.ch • Bezpłatny • Anonimowy • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_pl.html">Impressum</a> •
+            <a href="/datenschutz_pl.html">Ochrona danych</a> •
+            <a href="/haftung_pl.html">Wyłączenie odpowiedzialności</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [

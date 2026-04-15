@@ -176,6 +176,49 @@
             margin: 2.5rem 0 1rem;
         }
 
+        .home-link {
+            background: #ffffffdd;
+            backdrop-filter: blur(8px);
+            display: inline-block;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            font-weight: 700;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ffffffaa;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .home-link a {
+            color: #005f8c;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+        .home-link a:hover {
+            text-decoration: underline;
+            color: #003f5c;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #e6f0fa;
+            border-radius: 24px 24px 0 0;
+            font-size: 0.9rem;
+            color: #2c5a7a;
+        }
+        footer a {
+            color: #005f8c;
+            text-decoration: none;
+            margin: 0 0.4rem;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 640px) {
             .hero-title {
                 font-size: 1.95rem;
@@ -201,6 +244,29 @@
         <h1 class="hero-title">Auditori i Faturave Dentare Zvicerane</h1>
         <p class="hero-sub">Deshifro faturën tënde & kontrollo çmimet e drejta me standardet zyrtare DENTOTAR.</p>
     </header>
+
+    <!-- ==================== Linku "Kthehu në faqen kryesore" ==================== -->
+    <div style="max-width: 1200px; margin: 1rem auto 0 auto; padding: 0 1.5rem;">
+        <div class="home-link">
+            <a href="https://www.welfarecalc.ch" target="_blank" rel="noopener noreferrer">
+                🏠 Kthehu në faqen kryesore → welfarecalc.ch
+            </a>
+        </div>
+    </div>
+
+    <!-- ==================== Versioni në shqip i Njoftimit të Rëndësishëm të Rrezikut ==================== -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+            <strong>⚠️ Njoftim i Rëndësishëm Ligjor:</strong><br><br>
+            Ky Auditues i Faturave Dentare ofrohet <strong>vetëm për qëllime informimi dhe transparence</strong>. 
+            Rezultatet <strong>nuk përbëjnë këshillë ligjore, këshillë mjekësore apo një ekzaminim profesional dentar</strong>.<br><br>
+            
+            Ne <strong>nuk marrim asnjë përgjegjësi</strong> për vendimet e marra në bazë të përdorimit të këtij mjeti – 
+            për shembull, kundërshtimi i një faturë, refuzimi i pagesës ose hyrja në mosmarrëveshje me klinikën tuaj dentare.<br><br>
+            
+            Nëse keni ndonjë pasiguri, ju lutemi konsultohuni gjithmonë me dentistin tuaj trajtues ose me ofruesin e sigurimit shëndetësor.
+        </div>
+    </div>
 
     <div class="container">
 
@@ -243,11 +309,25 @@
             </div>
         </div>
 
-        <!-- Lidhja direkte me serinë e plotë të blogjeve (dentalblog_sq.html) -->
+        <!-- Sistemi i kontrollit të trajtimeve -->
+        <div class="card">
+            <h2>🔍 Kontrollo çdo trajtim dentar</h2>
+            <p>Zgjidhni një trajtim për të parë shpjegimin e thjeshtë, çfarë përfshihet, rregullat e rëndësishme dhe
+                informacionin mbi çmimet:</p>
+
+            <select id="treatment-select">
+                <option value="">-- Po ngarkohen trajtimet... --</option>
+            </select>
+            <button onclick="queryTreatment()">Shfaq shpjegimin e thjeshtë</button>
+
+            <div id="result"></div>
+        </div>
+
+        <!-- Lidhja direkte me serinë e plotë të blogjeve (dentalblog_sq.html) - tani pas mjetit të kontrollit -->
         <div class="blog-series-link" style="text-align: center; margin: 1.5rem 0;">
             <a href="dentalblog_sq.html"
                 style="display: inline-block; background: #0077be; color: white; padding: 0.8rem 1.8rem; border-radius: 60px; text-decoration: none; font-weight: bold; margin-bottom: 1rem;">📚
-                Shiko serinë e plotë (6 artikuj) →</a>
+                Shiko serinë e plotë të artikujve →</a>
 
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-top: 1rem;">
                 <a href="blog-1-taxpunktwert-sq.html"
@@ -271,20 +351,6 @@
             </div>
         </div>
 
-        <!-- Sistemi i kontrollit të trajtimeve -->
-        <div class="card">
-            <h2>🔍 Kontrollo çdo trajtim dentar</h2>
-            <p>Zgjidhni një trajtim për të parë shpjegimin e thjeshtë, çfarë përfshihet, rregullat e rëndësishme dhe
-                informacionin mbi çmimet:</p>
-
-            <select id="treatment-select">
-                <option value="">-- Po ngarkohen trajtimet... --</option>
-            </select>
-            <button onclick="queryTreatment()">Shfaq shpjegimin e thjeshtë</button>
-
-            <div id="result"></div>
-        </div>
-
         <!-- Përgjegjësia Ligjore -->
         <div class="disclaimer">
             <strong>📢 Shënim i rëndësishëm:</strong> Kjo faqe shërben vetëm për informacion të përgjithshëm.
@@ -300,6 +366,16 @@
                 target="_blank" style="color:#64748b;">welfarecalc.ch</a>
         </div>
     </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>WelfareCalc.ch • Falas • Anonim • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_sq.html">Impressum</a> •
+            <a href="/datenschutz_sq.html">Mbrojtja e të dhënave</a> •
+            <a href="/haftung_sq.html">Përjashtimi i përgjegjësisë</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [

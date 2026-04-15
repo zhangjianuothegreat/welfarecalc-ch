@@ -3,35 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
-    <title>Sozialleistungs-Rechner & Zahnrechnungs-Dekoder | WelfareCalc.ch</title>
-    <meta name="description" content="Die offiziellen Tools von WelfareCalc.ch: Berechnen Sie Ihre Schweizer Sozialleistungen (AHV, IV, EL) kostenlos & anonym – mit mehrsprachiger Unterstützung. Dekodieren Sie versteckte Zahnkosten und DENTOTAR-Rechnungen. Keine Anmeldung. Kein Tracking. Einfach die Wahrheit.">
-
+    <title>Sozialleistungs-Rechner, Zahnrechnungs-Prüfer & Mietvertrag-Schutz | WelfareCalc.ch</title>
+    <meta name="description" content="Kostenlose Schweizer Tools: AHV/IV/EL-Leistungen berechnen, Zahnrechnungen dekodieren und Mietverträge auf über 30 rechtliche Risiken prüfen. 100% privat, keine Registrierung, lokale Verarbeitung.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+   
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
+        }
         .container { max-width: 1200px; width: 100%; flex: 1; }
         .hero { text-align: center; margin-bottom: 2rem; }
-        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
-        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
-        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
-        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
-        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
-        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
-        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
-        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
-        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
-        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
-        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
-        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
-        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
-        .seo-info li { margin: 0.4rem 0; }
-        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
-        .footer a { color: #0050a4; text-decoration: none; }
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
+        }
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
+        }
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
+        }
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
+        }
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
+        }
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
+        }
+        .tool-card:active { 
+            transform: scale(0.98); 
+            background: #fdfdfd; 
+            border-color: #0050a4; 
+        }
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
+        }
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
+        }
+        .tool-title { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
+        }
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
+        }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
+        }
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
+        }
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
+        }
+        .seo-info li { 
+            margin: 0.4rem 0; 
+        }
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
+        }
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
+        }
         @media (max-width: 480px) {
             .hero h1 { font-size: 1.8rem; }
             .tools-grid { grid-template-columns: 1fr; }
@@ -44,40 +168,51 @@
             <h1>WelfareCalc.ch</h1>
             <div class="slogan">Hör auf zu raten. Fang an zu wissen.</div>
             <p class="subtitle">
-                Das einzige wirklich unabhängige Portal, das Schweizer Sozialleistungen und Zahnrechnungen entschlüsselt.<br>
-                Keine Registrierung. Kein Tracking. Kein Unsinn. Einfach die Wahrheit.
+                Kostenlose Schweizer Tools: Sozialleistungs-Rechner • Zahnrechnungs-Prüfer • Mietvertrag-Schutz.<br>
+                Keine Registrierung. Kein Tracking. Alles läuft lokal in Ihrem Browser.
             </p>
         </div>
-
         <div style="display: flex; justify-content: center;">
-            <div class="choice-instruction">📌 Wählen Sie Ihren Dekoder</div>
+            <div class="choice-instruction">📌 Wählen Sie Ihren Decoder</div>
         </div>
-
         <div class="tools-grid">
             <a href="https://www.welfarecalc.ch/de.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
                 <div class="tool-title">Sozialleistungs-Rechner</div>
                 <div class="tool-description">
-                    Finden Sie genau heraus, was der Staat Ihnen schuldet – AHV, IV, EL, Prämienverbilligung. 
+                    Finden Sie genau heraus, was der Staat Ihnen schuldet – AHV, IV, EL, Prämienverbilligung.
                     <strong>Hören Sie auf, Tausende von Franken liegen zu lassen.</strong>
                 </div>
             </a>
-            
+           
             <a href="https://www.welfarecalc.ch/blog/de/dental/dental_de.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
                 <div class="tool-title">Zahnrechnungs-Prüfer</div>
                 <div class="tool-description">
-                    Versteckter Taxpunktwert und DENTOTAR-Codes zapfen still Ihr Konto leer. 
+                    Versteckter Taxpunktwert und DENTOTAR-Codes zapfen still Ihr Konto leer.
                     <strong>Dekodieren Sie Ihre Zahnrechnung und zahlen Sie nicht länger zu viel – noch heute.</strong>
                 </div>
             </a>
-        </div>
 
+            <!-- Swiss Rental Protector (Deutsch) -->
+            <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_de.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🏠🛡️</div>
+                <div class="tool-title">Mietvertrag-Schutz</div>
+                <div class="tool-description">
+                    Prüfen Sie Ihren Mietvertrag auf über 30 rechtliche Fallstricke, bevor Sie unterschreiben.<br>
+                    <strong>Kostenlos • 100% privat • Lokale Verarbeitung.</strong><br>
+                    Unterschreiben Sie nie wieder einen riskanten Mietvertrag.
+                </div>
+            </a>
+        </div>
         <div class="seo-info">
-            <h2>Ihr Überlebenskit für Schweizer Sozial- & Zahnkosten</h2>
-            <p>WelfareCalc.ch bietet die Transparenz, die das System oft vermissen lässt. Nutzen Sie unseren <strong>Sozialleistungs-Rechner</strong>, um sich im komplexen Dschungel aus AHV, IV und Ergänzungsleistungen (EL) zurechtzufinden. Wechseln Sie zum <strong>Schweizer Zahnrechnungs-Prüfer</strong>, um zu verstehen, warum eine 5-minütige Kontrolle 200 CHF kostet – und wie Sie jede einzelne DENTOTAR-Ziffer auf Ihrer Rechnung überprüfen können.</p>
-            
-            <h3>Hören Sie auf, Ihren Zahnarzt zu bezahlen wie ein Staatsgast</h3>
+            <h2>Ihr Überlebenskit für die Schweizer Lebenshaltungskosten</h2>
+            <p>WelfareCalc.ch bietet die Transparenz, die das System oft vermissen lässt. Nutzen Sie unseren <strong>Sozialleistungs-Rechner</strong>, um zu bekommen, was Ihnen zusteht (AHV, IV, EL), den <strong>Zahnrechnungs-Prüfer</strong>, um versteckte Gebühren zu entschlüsseln, und den neuen <strong>Mietvertrag-Schutz</strong>, um Mietverträge vor der Unterzeichnung auf unfaire Klauseln zu prüfen.</p>
+           
+            <h3>Hören Sie auf, beim Zahnarzt zu viel zu bezahlen</h3>
             <p>Schweizer Zahnrechnungen sind in einer Geheimsprache aus Taxpunkten (TP) und Taxpunktwerten verfasst. Unser Ratgeber enthüllt:</p>
             <ul>
                 <li><strong>Die DENTOTAR-Falle</strong> – Wie Codes wie 4.0000 und 4.1110 verwendet werden, um Ihre Rechnung aufzublähen.</li>
@@ -85,25 +220,34 @@
                 <li><strong>Versteckte Tarife</strong> – Warum dieselbe Füllung in einer Praxis 110 CHF und in einer anderen 160 CHF kostet.</li>
                 <li><strong>Ihre Patientenrechte</strong> – Wie Sie eine zweite Meinung einfordern und "dringende" Behandlungspläne anfechten können.</li>
             </ul>
-            
+
+            <h3>Schützen Sie sich beim Mieten in der Schweiz</h3>
+            <p>Umzug in die Schweiz oder Wohnungswechsel? Mietverträge (Mietvertrag / Bail / Contratto) enthalten oft versteckte Risiken, die Sie später Tausende von Franken kosten können. Unser <strong>Mietvertrag-Schutz</strong> scannt Ihren Vertrag auf über 30 häufige rechtliche Fallstricke – komplett kostenlos und 100 % lokal in Ihrem Browser.</p>
+            <ul>
+                <li>Unzulässige oder überhöhte Kautionen</li>
+                <li>Unfaire Renovierungs- und Reinigungspflichten</li>
+                <li>Problematische Kündigungsregeln und Fristen</li>
+                <li>Versteckte Kosten und verbotene Einschränkungen</li>
+            </ul>
+            <p><strong>Tipp:</strong> Scannen Sie Ihren Vertrag immer vor der Unterzeichnung und konsultieren Sie bei Warnsignalen den Mieterverband.</p>
+           
             <h3>Sozialleistungen – Holen Sie sich, was Ihnen zusteht</h3>
-            <p>Viele Einwohner der Schweiz verschenken Tausende von Franken, weil der Antragsprozess einschüchternd wirkt. Wir vereinfachen die aktuellen Richtlinien für AHV, IV und Prämienverbilligung (IPV) – transparent, direkt und ohne Behördendeutsch.</p>
-            
+            <p>Viele Einwohner der Schweiz verschenken Tausende von Franken, weil der Antragsprozess einschüchternd wirkt. Wir vereinfachen die Richtlinien 2026 für AHV, IV und Prämienverbilligung (IPV).</p>
+           
             <h3>Mehrsprachig & datenschutzorientiert</h3>
-            <p>Wir glauben, dass finanzielle Klarheit für alle zugänglich sein sollte. Unsere Tools bieten <strong>mehrsprachige Unterstützung</strong>, um der internationalen Gemeinschaft in der Schweiz zu helfen, ihre Rechte ohne Sprachbarrieren zu verstehen. Das Beste daran: Alle Berechnungen laufen <strong>lokal in Ihrem Browser</strong>. Wir speichern keine Ihrer Daten und wir verfolgen nicht Ihre Identität.</p>
-            
+            <p>Wir glauben, dass finanzielle und rechtliche Klarheit für alle zugänglich sein sollte. Unsere Tools bieten mehrsprachige Unterstützung und laufen <strong>lokal in Ihrem Browser</strong>. Keine Daten werden gespeichert oder nachverfolgt.</p>
+           
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
                 📌 Daten geprüft nach offiziellen Standards 2026 des <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> und <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
             </p>
         </div>
     </div>
-
     <div class="footer">
         <p>WelfareCalc.ch • Kostenlos • Anonym • 2026</p>
         <p style="margin-top: 0.6rem;">
-            <a href="impressum.html">Impressum</a> • 
-            <a href="datenschutz.html">Datenschutzerklärung</a> • 
-            <a href="haftung.html">Haftungsausschluss</a>
+            <a href="impressum_de.html">Impressum</a> •
+            <a href="datenschutz_de.html">Datenschutzerklärung</a> •
+            <a href="haftung_de.html">Haftungsausschluss</a>
         </p>
     </div>
 </body>

@@ -201,6 +201,52 @@
             font-size: 0.7rem;
         }
 
+        /* 返回主页按钮样式 */
+        .home-link-container {
+            max-width: 1200px;
+            margin: 1rem auto 0;
+            padding: 0 1.5rem;
+            text-align: right;
+        }
+        .home-link {
+            display: inline-block;
+            background: #ffffff;
+            color: #005f8c;
+            text-decoration: none;
+            padding: 0.6rem 1.3rem;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #cbd5e1;
+            transition: all 0.2s ease;
+        }
+        .home-link:hover {
+            background: #e0f0fe;
+            border-color: #0099dd;
+            color: #003f5c;
+        }
+
+        /* 页脚样式 */
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem 1rem 1.5rem;
+            border-top: 1px solid #cbd5e1;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #334155;
+        }
+        footer a {
+            color: #006a9e;
+            text-decoration: none;
+            border-bottom: 1px dotted #bbdefb;
+        }
+        footer a:hover {
+            color: #0099dd;
+            border-bottom-color: #0099dd;
+        }
+
         @media (max-width: 640px) {
             .hero-title {
                 font-size: 1.85rem;
@@ -231,7 +277,25 @@
         <p class="hero-sub">உங்கள் பல் மசோதாவை கண்டறிந்து, அதிகாரப்பூர்வ DENTOTAR அளவுகோல்களுடன் நியாயமான விலையை சரிபார்க்கவும்.</p>
     </header>
 
+    <!-- 返回主页链接 (显眼位置) -->
+    <div class="home-link-container">
+        <a href="https://www.welfarecalc.ch" class="home-link">🏠 முகப்புப் பக்கத்திற்குத் திரும்பு (welfarecalc.ch)</a>
+    </div>
+
     <div class="container">
+
+        <!-- ==================== தமிழ் பதிப்பு - வலுவான எச்சரிக்கை ==================== -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+                <strong>⚠️ முக்கியமான சட்ட அறிவிப்பு:</strong><br><br>
+                இந்த டென்டல் பில் ஆடிட்டர் (பல் மருத்துவக் கட்டணச் சீட்டு ஆய்வுக் கருவி) <strong>தகவல் மற்றும் வெளிப்படைத்தன்மை நோக்கங்களுக்காக மட்டுமே</strong> வழங்கப்படுகிறது. 
+                இதன் முடிவுகள் <strong>சட்ட ஆலோசனை, மருத்துவ ஆலோசனை, அல்லது தொழில்முறை பல் பரிசோதனை ஆகியவற்றைக்</strong> குறிப்பதில்லை.<br><br>
+                
+                இந்தக் கருவியைப் பயன்படுத்துவதன் அடிப்படையில் எடுக்கப்படும் முடிவுகளுக்கு – எடுத்துக்காட்டாக, ஒரு விலாச்சீட்டை எதிர்த்தல், பணம் செலுத்த மறுத்தல், அல்லது உங்கள் பல் மருத்துவ மையத்துடன் சச்சரவில் ஈடுபடுதல் – <strong>எந்தவொரு பொறுப்பையும்</strong> நாங்கள் ஏற்றுக்கொள்ள மாட்டோம்.<br><br>
+                
+                உங்களுக்கு ஏதேனும் சந்தேகங்கள் இருந்தால், தயவுசெய்து எப்போதும் உங்கள் சிகிச்சை அளிக்கும் பல் மருத்துவர் அல்லது உங்கள் சுகாதாரக் காப்பீட்டு வழங்குநரை ஆலோசிக்கவும்.
+            </div>
+        </div>
 
         <div class="card">
             <h2>சுவிட்சர்லாந்துக்கு வருக!</h2>
@@ -325,6 +389,16 @@
             🇨🇭 ஸ்விஸ் பல் மசோதா தணிக்கையாளர் • <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a> இன் ஒரு சுயாதீன திட்டம்
         </div>
     </div>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>WelfareCalc.ch • இலவசம் • அநாமதேயம் • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_ta.html">அச்சு</a> •
+            <a href="/datenschutz_ta.html">தரவு பாதுகாப்பு அறிவிப்பு</a> •
+            <a href="/haftung_ta.html">பொறுப்புத் துறப்பு</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [

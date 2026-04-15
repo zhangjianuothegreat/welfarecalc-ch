@@ -83,6 +83,32 @@
             color: #2c3e50;
             font-weight: 600;
         }
+        /* Zusätzlicher prominenter Home-Link (oben rechts / sichtbar) */
+        .top-home-link {
+            text-align: right;
+            margin-bottom: 0.75rem;
+        }
+        .top-home-link a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #ffffffdd;
+            backdrop-filter: blur(8px);
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            font-weight: 600;
+            color: #005f8c;
+            text-decoration: none;
+            font-size: 0.95rem;
+            border: 1px solid #cde3f5;
+            transition: all 0.2s;
+        }
+        .top-home-link a:hover {
+            background: #ffffff;
+            color: #ff8c00;
+            border-color: #ffcd7e;
+            transform: scale(1.02);
+        }
 
         .card {
             background: #ffffff;
@@ -204,6 +230,7 @@
             .card { padding: 1.3rem; }
             .matrix-grid { grid-template-columns: 1fr; }
             .breadcrumb-nav { width: 100%; }
+            .top-home-link { text-align: center; margin-bottom: 1rem; }
         }
     </style>
 </head>
@@ -213,9 +240,28 @@
         <p class="hero-sub">Ihre Zahnarztrechnung entschlüsseln & auf faire Preise prüfen – mit offiziellen DENTOTAR-Benchmarks.</p>
     </header>
 
-    <div class="container">
+    <!-- ==================== 强烈风险提示 ==================== -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+        <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+            <strong>⚠️ Wichtiger rechtlicher Hinweis:</strong><br><br>
+            Dieser Zahnrechnungs-Auditor dient <strong>ausschließlich zu Informations- und Transparenzzwecken</strong>. 
+            Die Ergebnisse stellen <strong>keine Rechtsberatung, keine medizinische Beratung und keine zahnärztliche Prüfung</strong> dar.<br><br>
+            
+            Wir übernehmen <strong>keinerlei Haftung</strong> für Entscheidungen, die auf Basis dieses Tools getroffen werden – 
+            z. B. Rechnungsanfechtung, Zahlungsverweigerung oder Streitigkeiten mit Ihrer Zahnarztpraxis.<br><br>
+            
+            Bitte konsultieren Sie bei Unsicherheiten immer Ihren behandelnden Zahnarzt oder Ihre Krankenkasse.
+        </div>
+    </div>
+    <!-- ==================== 结束风险提示 ==================== -->
 
-        <!-- Breadcrumb Navigation -->
+    <div class="container">
+        <!-- Ganz oben: prominenter "Zur Startseite"-Link (zusätzlich, sehr sichtbar) -->
+        <div class="top-home-link">
+            <a href="https://www.welfarecalc.ch">🏠 Zur Startseite</a>
+        </div>
+
+        <!-- Breadcrumb Navigation (enthält ebenfalls Startseite) -->
         <nav class="breadcrumb-nav" aria-label="Breadcrumb">
             <a href="https://www.welfarecalc.ch">🏠 Startseite</a>
             <span>›</span>
@@ -321,6 +367,16 @@
             <a href="dentalblog_de.html" style="color: #006a9e;">Zur vollständigen Ratgeber-Übersicht</a>
         </div>
     </div>
+
+    <!-- Neuer Footer mit korrekter Position: ausserhalb .container, aber innerhalb body, mit voller Breite und Styling -->
+    <footer style="text-align: center; padding: 2rem 1rem; background: #eef2f7; margin-top: 3rem;">
+        <p>WelfareCalc.ch • Kostenlos • Anonym • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_de.html">Impressum</a> •
+            <a href="/datenschutz_de.html">Datenschutzerklärung</a> •
+            <a href="/haftung_de.html">Haftungsausschluss</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [

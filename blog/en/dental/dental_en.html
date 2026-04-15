@@ -25,7 +25,7 @@
             background: linear-gradient(135deg, #1a365d, #2c5282);
             padding: 4rem 1.5rem 3.5rem;
             text-align: center;
-            border-bottom: 6px solid #3182ce; /* 改为专业蓝，避免过度红色警示 */
+            border-bottom: 6px solid #3182ce;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
@@ -47,6 +47,44 @@
             margin: 0 auto;
         }
 
+        /* 回到主页链接样式 */
+        .home-link-bar {
+            background: #ffffff;
+            padding: 0.9rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #ebf8ff;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            color: #1a365d;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            border: 1px solid #cbd5e1;
+        }
+
+        .home-link:hover {
+            background: #3182ce;
+            color: white;
+            border-color: #3182ce;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(49, 130, 206, 0.2);
+        }
+
+        .home-link::before {
+            content: "←";
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -61,7 +99,7 @@
         h2 {
             font-size: 1.85rem;
             margin: 2rem 0 1rem;
-            border-left: 6px solid #3182ce; /* 改为专业蓝色 */
+            border-left: 6px solid #3182ce;
             padding-left: 1rem;
         }
 
@@ -76,7 +114,7 @@
             margin: 1.5rem 0;
             border-radius: 24px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-            border: 1px solid rgba(49, 130, 206, 0.1); /* 柔和蓝边 */
+            border: 1px solid rgba(49, 130, 206, 0.1);
         }
 
         .risk-alert {
@@ -122,7 +160,7 @@
         }
 
         button {
-            background: #3182ce; /* 改为专业蓝色，降低攻击感 */
+            background: #3182ce;
             color: white;
             border: none;
             font-weight: 800;
@@ -200,9 +238,55 @@
             background: #f0f9ff;
         }
 
+        /* 全新页脚样式 */
+        .main-footer {
+            background: #1e293b;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 2.5rem 1.5rem;
+            margin-top: 3rem;
+            border-top: 4px solid #3182ce;
+            font-size: 0.95rem;
+        }
+
+        .main-footer p {
+            margin: 0.4rem 0;
+        }
+
+        .main-footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .main-footer a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        .footer-links {
+            margin-top: 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            row-gap: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #cbd5e1;
+            font-weight: 500;
+        }
+
+        .footer-links a:hover {
+            color: #ffd700;
+        }
+
         @media (max-width: 640px) {
             .hero-title { font-size: 2rem; }
             .hero-sub { font-size: 1.1rem; }
+            .home-link { font-size: 0.9rem; padding: 0.5rem 1.2rem; }
         }
     </style>
 </head>
@@ -213,7 +297,26 @@
         <p class="hero-sub">Decode your dental invoice and check fair pricing with official DENTOTAR benchmarks.</p>
     </header>
 
+    <!-- 显眼位置：回到主页链接（header之后，主要内容之前） -->
+    <div class="home-link-bar">
+        <a href="https://www.welfarecalc.ch" class="home-link">Back to Home</a>
+    </div>
+
     <div class="container">
+
+        <!-- ==================== 英语版强烈风险提示 ==================== -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+            <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+                <strong>⚠️ Important Legal Notice:</strong><br><br>
+                This Dental Bill Auditor is provided <strong>solely for informational and transparency purposes</strong>. 
+                The results do <strong>not constitute legal advice, medical advice, or a professional dental examination</strong>.<br><br>
+                
+                We assume <strong>no liability whatsoever</strong> for decisions made based on the use of this tool – 
+                for example, disputing an invoice, refusing payment, or entering into disputes with your dental practice.<br><br>
+                
+                If you have any uncertainties, please always consult your treating dentist or your health insurance provider.
+            </div>
+        </div>
 
         <div class="card">
             <h2>Understanding Swiss Dental Pricing</h2>
@@ -275,6 +378,16 @@
             &copy; 2026 Swiss Dental Auditor • An independent project by <a href="https://www.welfarecalc.ch" target="_blank" style="color: #a0aec0;">welfarecalc.ch</a>
         </div>
     </div>
+
+    <!-- 全新页脚（footer）符合要求 -->
+    <footer class="main-footer">
+        <p>WelfareCalc.ch • Free • Anonymous • 2026</p>
+        <div class="footer-links">
+            <a href="/impressum_en.html">Imprint</a> •
+            <a href="/datenschutz_en.html">Privacy Policy</a> •
+            <a href="/haftung_en.html">Disclaimer</a>
+        </div>
+    </footer>
 
     <script>
         const servicesIndex = [

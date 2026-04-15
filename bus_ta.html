@@ -3,35 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
-    <title>சுவிஸ் சமூக நலன் கால்குலேட்டர் & பில் டிகோடர் | WelfareCalc.ch</title>
-    <meta name="description" content="WelfareCalc.ch மூலம் உங்கள் சுவிஸ் சமூக நலன்களை (AHV, IV, EL) இலவசமாகவும், பதிவு இல்லாமலும் கணக்கிடுங்கள். உங்கள் DENTOTAR பில் உள்ள மறைக்கப்பட்ட செலவுகளைக் கண்டுபிடித்து, ஏமாறாமல் பணத்தை மிச்சப்படுத்துங்கள். உண்மை மட்டும்.">
-
+    <title>சுவிஸ் சமூக நலன் கால்குலேட்டர், பில் ஆடிட்டர் & வாடகைப் பாதுகாப்பு | WelfareCalc.ch</title>
+    <meta name="description" content="இலவச சுவிஸ் கருவிகள்: AHV/IV/EL நலன்களைக் கணக்கிடுங்கள், பல் பில்களை டிகோட் செய்யுங்கள், வாடகை ஒப்பந்தங்களை 30+ சட்ட அபாயங்களுக்கு ஸ்கேன் செய்யுங்கள். 100% தனிப்பட்ட, பதிவு தேவையில்லை, உங்கள் உலாவியிலேயே செயலாக்கம்.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+   
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
+        }
         .container { max-width: 1200px; width: 100%; flex: 1; }
         .hero { text-align: center; margin-bottom: 2rem; }
-        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
-        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
-        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
-        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
-        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
-        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
-        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
-        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
-        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
-        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
-        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
-        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
-        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
-        .seo-info li { margin: 0.4rem 0; }
-        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
-        .footer a { color: #0050a4; text-decoration: none; }
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
+        }
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
+        }
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
+        }
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
+        }
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
+        }
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
+        }
+        .tool-card:active { 
+            transform: scale(0.98); 
+            background: #fdfdfd; 
+            border-color: #0050a4; 
+        }
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
+        }
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
+        }
+        .tool-title { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
+        }
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
+        }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
+        }
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
+        }
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
+        }
+        .seo-info li { 
+            margin: 0.4rem 0; 
+        }
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
+        }
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
+        }
         @media (max-width: 480px) {
             .hero h1 { font-size: 1.8rem; }
             .tools-grid { grid-template-columns: 1fr; }
@@ -44,66 +168,86 @@
             <h1>WelfareCalc.ch</h1>
             <div class="slogan">யூகிப்பதை நிறுத்துங்கள். தெரிந்துகொள்ள ஆரம்பியுங்கள்.</div>
             <p class="subtitle">
-                சுவிஸ் சமூக நலன்களையும் பல் பில்களையும் கண்டுபிடிக்கும் ஒரே உண்மையான சுயாதீன போர்டல்.<br>
-                பதிவு இல்லை. கண்காணிப்பு இல்லை. முட்டாள்தனம் இல்லை. உண்மை மட்டுமே.
+                இலவச சுவிஸ் கருவிகள்: சமூக நலன் கால்குலேட்டர் • பல் பில் டிகோடர் • வாடகை ஒப்பந்த ஸ்கேனர்.<br>
+                பதிவு தேவையில்லை. கண்காணிப்பு இல்லை. அனைத்தும் உங்கள் உலாவியிலேயே இயங்கும்.
             </p>
         </div>
-
         <div style="display: flex; justify-content: center;">
             <div class="choice-instruction">📌 உங்கள் டிகோடரைத் தேர்ந்தெடுக்கவும்</div>
         </div>
-
         <div class="tools-grid">
             <a href="https://www.welfarecalc.ch/ta.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
                 <div class="tool-title">சுவிஸ் நலன் கால்குலேட்டர்</div>
                 <div class="tool-description">
-                    அரசு உங்களுக்குக் கொடுக்க வேண்டியதை சரியாகக் கண்டுபிடியுங்கள் — AHV, IV, EL, பிரீமியம் குறைப்புகள். 
+                    அரசு உங்களுக்குக் கொடுக்க வேண்டியதைச் சரியாகக் கண்டுபிடியுங்கள் — AHV, IV, EL, பிரீமியம் குறைப்புகள்.
                     <strong>ஆயிரக்கணக்கான ஃப்ராங்க்களை மேசையில் விட்டுவிடுவதை நிறுத்துங்கள்.</strong>
                 </div>
             </a>
-            
+           
             <a href="https://www.welfarecalc.ch/blog/ta/dental/dental_ta.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
                 <div class="tool-title">சுவிஸ் பில் ஆடிட்டர்</div>
                 <div class="tool-description">
-                    மறைக்கப்பட்ட Taxpunktwert மற்றும் DENTOTAR குறியீடுகள் உங்கள் பணத்தை அமைதியாக வடிகட்டுகின்றன. 
+                    மறைக்கப்பட்ட Taxpunktwert மற்றும் DENTOTAR குறியீடுகள் உங்கள் பணத்தை அமைதியாக வடிகட்டுகின்றன.
                     <strong>உங்கள் பல் பில்லை டிகோட் செய்து, இன்றே அதிக கட்டணம் செலுத்துவதை நிறுத்துங்கள்.</strong>
                 </div>
             </a>
-        </div>
 
+            <!-- சுவிஸ் வாடகைப் பாதுகாப்பு (Swiss Rental Protector) -->
+            <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_ta.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🏠🛡️</div>
+                <div class="tool-title">சுவிஸ் வாடகைப் பாதுகாப்பு</div>
+                <div class="tool-description">
+                    கையெழுத்திடும் முன் உங்கள் வாடகை ஒப்பந்தத்தை 30+ சட்டப் பொறிகளுக்கு ஸ்கேன் செய்யுங்கள்.<br>
+                    <strong>இலவசம் • 100% தனிப்பட்டது • உள்நாட்டுச் செயலாக்கம்.</strong><br>
+                    ஆபத்தான Mietvertrag / Bail ஒப்பந்தத்தில் கையெழுத்திடவேண்டாம்.
+                </div>
+            </a>
+        </div>
         <div class="seo-info">
-            <h2>சுவிஸ் சமூக & பல் செலவுகளுக்கான உங்கள் உயிர்காப்பு கிட்</h2>
-            <p>WelfareCalc.ch அமைப்பில் பெரும்பாலும் இல்லாத வெளிப்படைத்தன்மையை வழங்குகிறது. எங்களின் <strong>சமூக நலன் கால்குலேட்டர்</strong> மூலம் AHV, IV மற்றும் கூடுதல் பலன்களின் (EL) சிக்கலான உலகில் வழிசெலுத்துங்கள். <strong>சுவிஸ் பில் ஆடிட்டர்</strong> மூலம், 5 நிமிட சோதனைக்கு 200 CHF ஏன் செலவாகிறது மற்றும் உங்கள் இன்வாய்ஸில் உள்ள ஒவ்வொரு DENTOTAR குறியீட்டையும் எவ்வாறு சரிபார்க்கலாம் என்பதைப் புரிந்துகொள்ளுங்கள்.</p>
-            
+            <h2>சுவிஸ் வாழ்க்கைச் செலவுகளுக்கான உங்கள் உயிர்காப்பு கிட்</h2>
+            <p>WelfareCalc.ch, அமைப்பில் பெரும்பாலும் இல்லாத வெளிப்படைத்தன்மையை வழங்குகிறது. எங்களின் <strong>சமூக நலன் கால்குலேட்டர்</strong> மூலம் உங்களுக்கு உரியதை (AHV, IV, EL) கோருங்கள், <strong>சுவிஸ் பில் ஆடிட்டர்</strong> மூலம் மறைக்கப்பட்ட கட்டணங்களை டிகோட் செய்யுங்கள், மேலும் <strong>சுவிஸ் வாடகைப் பாதுகாப்பு</strong> மூலம் கையெழுத்திடும் முன் வாடகை ஒப்பந்தங்களை நியாயமற்ற விதிமுறைகளுக்கு ஸ்கேன் செய்யுங்கள்.</p>
+           
             <h3>உங்கள் பல் மருத்துவருக்கு அதிகமாகச் செலுத்துவதை நிறுத்துங்கள்</h3>
-            <p>சுவிஸ் பல் பில்கள் ரகசிய மொழியில் எழுதப்படுகின்றன: வரிப் புள்ளிகள் (TP) மற்றும் புள்ளி மதிப்புகள் (Taxpunktwert). எங்கள் வழிகாட்டி வெளிப்படுத்துவது:</p>
+            <p>சுவிஸ் பல் பில்கள் ஒரு ரகசிய மொழியில் எழுதப்படுகின்றன: வரிப் புள்ளிகள் (TP) மற்றும் புள்ளி மதிப்புகள் (Taxpunktwert). எங்கள் வழிகாட்டி வெளிப்படுத்துவது:</p>
             <ul>
                 <li><strong>DENTOTAR பொறி</strong> – 4.0000 மற்றும் 4.1110 போன்ற குறியீடுகள் உங்கள் பில்லை உயர்த்திப் பயன்படுத்தப்படும் விதம்.</li>
                 <li><strong>காப்பீட்டு ROI</strong> – பெரும்பாலான கூடுதல் பல் காப்பீடு பெரியவர்களுக்கு ஏன் "கணிதத் தோல்வி" என்பது.</li>
                 <li><strong>மறைக்கப்பட்ட விலைகள்</strong> – அதே பல் நிரப்புதல் ஒரு கிளினிக்கில் 110 CHF ஆகவும், இன்னொன்றில் 160 CHF ஆகவும் ஏன் இருக்கிறது.</li>
                 <li><strong>நோயாளியின் உரிமைகள்</strong> – இரண்டாவது கருத்தை எவ்வாறு கோருவது மற்றும் "அவசர" சிகிச்சை திட்டங்களை எவ்வாறு சவால் செய்வது.</li>
             </ul>
-            
+
+            <h3>சுவிட்சர்லாந்தில் வாடகைக்கு எடுக்கும்போது உங்களைப் பாதுகாத்துக்கொள்ளுங்கள்</h3>
+            <p>சுவிட்சர்லாந்திற்கு இடம்பெயர்வதா அல்லது அடுக்ககத்தை மாற்றுகிறீர்களா? வாடகை ஒப்பந்தங்கள் (Mietvertrag / Bail / Contratto) பெரும்பாலும் மறைக்கப்பட்ட அபாயங்களைக் கொண்டிருக்கின்றன, அவை பின்னர் உங்களுக்கு ஆயிரக்கணக்கான ஃப்ராங்க்களை இழக்கச் செய்யும். எங்களின் <strong>சுவிஸ் வாடகைப் பாதுகாப்பு</strong> உங்கள் ஒப்பந்தத்தை 30+ பொதுவான சட்டப் பொறிகளுக்கு முற்றிலும் இலவசமாகவும், 100% உங்கள் உலாவியிலும் ஸ்கேன் செய்கிறது.</p>
+            <ul>
+                <li>சட்டவிரோதமான அல்லது அதிகப்படியான வைப்புத் தொகை (deposit) விதிமுறைகள்</li>
+                <li>நியாயமற்ற புதுப்பித்தல் மற்றும் சுத்தம் செய்யும் கடமைகள்</li>
+                <li>சிக்கலான ஒப்பந்த முடிவு விதிகள் மற்றும் நோட்டீஸ் காலங்கள்</li>
+                <li>மறைக்கப்பட்ட செலவுகள் மற்றும் தடைசெய்யப்பட்ட கட்டுப்பாடுகள்</li>
+            </ul>
+            <p><strong>உதவிக்குறிப்பு:</strong> கையெழுத்திடும் முன் எப்போதும் உங்கள் ஒப்பந்தத்தை ஸ்கேன் செய்யுங்கள், ஏதேனும் சிவப்புக் கொடிகள் தென்பட்டால் Mieterverband ஐத் தொடர்பு கொள்ளுங்கள்.</p>
+           
             <h3>சமூக நலன்கள் – உங்களுக்கு உரியதைப் பெறுங்கள்</h3>
             <p>சுவிட்சர்லாந்தில் பலர் விண்ணப்ப செயல்முறை மிரட்டலாக இருப்பதால் ஆயிரக்கணக்கான ஃப்ராங்க்களை இழக்கிறார்கள். AHV, IV, மற்றும் பிரீமியம் குறைப்புகளுக்கான (IPV) 2026 வழிகாட்டுதல்களை நாங்கள் எளிமைப்படுத்துகிறோம்.</p>
-            
+           
             <h3>பன்மொழி & தனியுரிமை முதன்மை</h3>
-            <p>நிதி தெளிவு அனைவருக்கும் அணுகக்கூடியதாக இருக்க வேண்டும் என்பதில் நாங்கள் நம்பிக்கை கொண்டுள்ளோம். எங்கள் கருவிகள் <strong>பன்மொழி ஆதரவை</strong> வழங்குகின்றன, இதனால் சுவிட்சர்லாந்தில் உள்ள சர்வதேச சமூகம் மொழித் தடைகள் இல்லாமல் தங்கள் உரிமைகளைப் புரிந்துகொள்ள முடியும். சிறப்பான விஷயம்: அனைத்து கணக்கீடுகளும் உங்கள் உலாவியில் <strong>உள்நாட்டில் இயங்குகின்றன</strong>. நாங்கள் உங்கள் தரவைச் சேமிப்பதில்லை, உங்கள் அடையாளத்தைக் கண்காணிப்பதுமில்லை.</p>
-            
+            <p>நிதி மற்றும் சட்டத் தெளிவு அனைவருக்கும் அணுகக்கூடியதாக இருக்க வேண்டும் என்பதில் நாங்கள் நம்பிக்கை கொண்டுள்ளோம். எங்கள் கருவிகள் பன்மொழி ஆதரவை வழங்குகின்றன மற்றும் உங்கள் உலாவியில் <strong>உள்நாட்டில் இயங்குகின்றன</strong>. எந்தத் தரவும் சேமிக்கப்படுவதில்லை அல்லது கண்காணிக்கப்படுவதில்லை.</p>
+           
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 தகவல்கள் <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO</a> மற்றும் <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH</a> இன் 2026 அதிகாரப்பூர்வ தரங்களுக்கு எதிராக சரிபார்க்கப்பட்டது.
+                📌 தகவல்கள் <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO</a> மற்றும் <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH</a> இன் 2026 அதிகாரப்பூர்வ தரங்களுக்கு எதிராகச் சரிபார்க்கப்பட்டது.
             </p>
         </div>
     </div>
-
     <div class="footer">
         <p>WelfareCalc.ch • இலவசம் • அநாமதேயம் • 2026</p>
         <p style="margin-top: 0.6rem;">
-            <a href="impressum.html">முத்திரை</a> • 
-            <a href="datenschutz.html">தனியுரிமைக் கொள்கை</a> • 
-            <a href="haftung.html">பொறுப்புத் துறப்பு</a>
+            <a href="impressum_ta.html">முத்திரை</a> •
+            <a href="datenschutz_ta.html">தனியுரிமைக் கொள்கை</a> •
+            <a href="haftung_ta.html">பொறுப்புத் துறப்பு</a>
         </p>
     </div>
 </body>

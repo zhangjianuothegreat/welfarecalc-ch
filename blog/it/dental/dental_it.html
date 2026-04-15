@@ -206,9 +206,60 @@
             background: #f0f9ff;
         }
 
+        .home-link {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            padding: 0.75rem 1.8rem;
+            border-radius: 60px;
+            color: #ffd700;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .home-link:hover {
+            background: rgba(255, 215, 0, 0.2);
+            color: #ffffff;
+            border-color: #ffd700;
+            transform: translateY(-2px);
+        }
+
+        .home-wrapper {
+            text-align: right;
+            max-width: 1200px;
+            margin: 1rem auto 0;
+            padding: 0 1.5rem;
+        }
+
+        footer {
+            background: #1a365d;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+            border-top: 4px solid #3182ce;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 0.4rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 640px) {
             .hero-title { font-size: 2rem; }
             .hero-sub { font-size: 1.1rem; }
+            .home-wrapper { text-align: center; }
         }
     </style>
 </head>
@@ -219,7 +270,25 @@
         <p class="hero-sub">Decodifica la tua fattura odontoiatrica e verifica i prezzi equi con i benchmark ufficiali DENTOTAR.</p>
     </header>
 
+    <!-- Link "Torna alla home" in posizione ben visibile -->
+    <div class="home-wrapper">
+        <a href="https://www.welfarecalc.ch" class="home-link">🏠 Torna alla home di WelfareCalc</a>
+    </div>
+
     <div class="container">
+        <!-- ==================== 意大利语版强烈风险提示 ==================== -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0;">
+            <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+                <strong>⚠️ Avviso legale importante:</strong><br><br>
+                Questo strumento di verifica delle fatture odontoiatriche è fornito <strong>esclusivamente a scopo informativo e di trasparenza</strong>.
+                I risultati <strong>non costituiscono consulenza legale, consulenza medica né un esame odontoiatrico professionale</strong>.<br><br>
+                
+                Non assumiamo <strong>alcuna responsabilità</strong> per decisioni prese sulla base dell'utilizzo di questo strumento – 
+                ad esempio, contestare una fattura, rifiutare il pagamento o intraprendere controversie con il proprio studio dentistico.<br><br>
+                
+                In caso di dubbi, si prega di consultare sempre il proprio dentista curante o il proprio assicuratore sanitario.
+            </div>
+        </div>
 
         <div class="card">
             <h2>Capire i prezzi odontoiatrici in Svizzera</h2>
@@ -282,6 +351,16 @@
         </div>
     </div>
 
+    <!-- Footer con link richiesti -->
+    <footer>
+        <p>WelfareCalc.ch • Gratuito • Anonimo • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_it.html">Impressum</a> •
+            <a href="/datenschutz_it.html">Informativa sulla privacy</a> •
+            <a href="/haftung_it.html">Esclusione di responsabilità</a>
+        </p>
+    </footer>
+
     <script>
         const servicesIndex = [
             { code: "4.0000", file: "40000.json" },
@@ -308,10 +387,35 @@
 
         let allServices = {};
 
+        // Funzione per ottenere testo localizzato in italiano (con fallback a tedesco e inglese)
+        function getLocalizedText(data, fieldName) {
+            if (!data || !data[fieldName]) return null;
+            const field = data[fieldName];
+            if (typeof field === 'object' && !Array.isArray(field)) {
+                // Priorità: italiano → tedesco → inglese
+                return field.it || field.de || field.en || null;
+            }
+            return field;
+        }
+
+        // Funzione per ottenere array localizzato (per what_is_included e important_rules)
+        function getLocalizedArray(data, fieldName) {
+            if (!data || !data[fieldName]) return null;
+            const field = data[fieldName];
+            if (Array.isArray(field)) {
+                return field;
+            }
+            if (typeof field === 'object') {
+                return field.it || field.de || field.en || null;
+            }
+            return field;
+        }
+
         async function loadServices() {
             const select = document.getElementById("treatment-select");
             for (let item of servicesIndex) {
                 try {
+                    // Mantengo lo stesso percorso /data/dental/ come richiesto
                     const res = await fetch('/data/dental/' + item.file);
                     if (res.ok) {
                         allServices[item.code] = await res.json();
@@ -322,9 +426,10 @@
             select.innerHTML = '<option value="">-- Seleziona un codice dalla tua fattura --</option>';
             for (let code in allServices) {
                 const data = allServices[code];
-                const enName = data.display_name?.en || data.name_de || code;
+                // Priorità: italiano → tedesco → inglese per il nome visualizzato
+                const itName = data.display_name?.it || data.display_name?.de || data.display_name?.en || data.name_de || code;
                 const deName = data.name_de || "";
-                const display = deName ? `${code} - ${enName} (${deName})` : `${code} - ${enName}`;
+                const display = deName ? `${code} - ${itName} (${deName})` : `${code} - ${itName}`;
 
                 const opt = document.createElement("option");
                 opt.value = code;
@@ -344,25 +449,32 @@
             }
 
             const data = allServices[code];
-            const enName = data.display_name?.en || data.name_de || code;
+            // Nome localizzato in italiano
+            const itName = data.display_name?.it || data.display_name?.de || data.display_name?.en || data.name_de || code;
             
             result.style.display = "block";
             let html = `<h3>Risultato verifica per il codice ${code}</h3>`;
-            html += `<p style="font-size:1.1rem; margin-bottom:1rem;"><strong>Nome ufficiale:</strong> ${enName}</p>`;
+            html += `<p style="font-size:1.1rem; margin-bottom:1rem;"><strong>Nome ufficiale:</strong> ${itName}</p>`;
 
-            if (data.simple_explain?.en) {
-                html += `<div class="highlight"><strong>Spiegazione:</strong><br>${data.simple_explain.en}</div>`;
+            // Spiegazione semplice localizzata
+            const simpleExplain = getLocalizedText(data, 'simple_explain');
+            if (simpleExplain) {
+                html += `<div class="highlight"><strong>Spiegazione:</strong><br>${simpleExplain}</div>`;
             }
             
-            if (data.what_is_included?.en) {
+            // Cosa include - array localizzato
+            const whatIncluded = getLocalizedArray(data, 'what_is_included');
+            if (whatIncluded && Array.isArray(whatIncluded) && whatIncluded.length > 0) {
                 html += `<h4>✅ Cosa include:</h4><ul>`;
-                data.what_is_included.en.forEach(item => html += `<li>${item}</li>`);
+                whatIncluded.forEach(item => html += `<li>${item}</li>`);
                 html += `</ul>`;
             }
 
-            if (data.important_rules?.en) {
-                html += `<h4>Note importanti:</h4><ul>`;
-                data.important_rules.en.forEach(item => html += `<li>${item}</li>`);
+            // Regole importanti - array localizzato
+            const importantRules = getLocalizedArray(data, 'important_rules');
+            if (importantRules && Array.isArray(importantRules) && importantRules.length > 0) {
+                html += `<h4>⚠️ Note importanti:</h4><ul>`;
+                importantRules.forEach(rule => html += `<li>${rule}</li>`);
                 html += `</ul>`;
             }
 
@@ -370,12 +482,13 @@
             html += `<h4 style="margin-top:0; color:#1a365d;">Intervallo ufficiale di punti tariffari</h4>`;
             
             if (data.tp_uv_mviv) {
-                html += `<p><strong>Tariffa assicurazioni sociali:</strong> ${data.tp_uv_mviv} TP (Fisso)</p>`;
+                html += `<p><strong>Tariffa assicurazioni sociali (UV/MV/IV):</strong> ${data.tp_uv_mviv} TP (Fisso)</p>`;
             }
             if (data.tp_pp_min && data.tp_pp_max) {
-                html += `<p><strong>Intervallo per pazienti privati:</strong> ${data.tp_pp_min} – ${data.tp_pp_max} TP</p>`;
+                html += `<p><strong>Intervallo per pazienti privati (PP):</strong> ${data.tp_pp_min} – ${data.tp_pp_max} TP</p>`;
                 html += `<p style="font-size:0.9rem; margin-top:5px; color:#718096;">Se la tua fattura mostra molti più punti, puoi chiedere un chiarimento al tuo dentista.</p>`;
             }
+            html += `<p style="font-size:0.85rem; margin-top:10px; color:#64748b;"><strong>Formula:</strong> Prezzo finale = TP × Valore del Punto dello studio (di solito 1,00 – 1,30 CHF per punto)</p>`;
             html += `</div>`;
 
             result.innerHTML = html;

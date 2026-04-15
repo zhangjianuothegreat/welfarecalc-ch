@@ -1,0 +1,2042 @@
+{
+  "depot_account": {
+    "sq": {
+      "title": "Depozita e garancisë në llogari private",
+      "core": "Depozita e garancisë nuk duhet të paguhet kurrë në llogarinë private të qiradhënësit, por duhet të depozitohet në një llogari të bllokuar në emër të qiramarrësit.",
+      "law": "OR 257e",
+      "prompt": "Sipas OR 257e, depozita e garancisë së qirasë nuk mund të transferohet në një llogari private të qiradhënësit. Ajo duhet të depozitohet në një llogari të bllokuar në emër të qiramarrësit. Ju lutemi, kontrolloni të dhënat e kontratës suaj."
+    },
+    "pl": {
+      "title": "Depozyt kaucji na koncie prywatnym",
+      "core": "Kaucja nigdy nie może być wpłacona na prywatne konto wynajmującego, lecz musi być zdeponowana na koncie blokowanym na nazwisko najemcy.",
+      "law": "OR 257e",
+      "prompt": "Zgodnie z OR 257e, kaucja najmu nie może być przekazana na prywatne konto wynajmującego. Musi być zdeponowana na koncie blokowanym na nazwisko najemcy. Proszę sprawdzić dane w swojej umowie."
+    },
+    "de": {
+      "title": "Mietzinsdepot auf Privatkonto",
+      "core": "Die Kaution darf niemals auf das Privatkonto des Vermieters eingezahlt werden, sondern muss auf einem Sperrkonto im Namen des Mieters erfolgen.",
+      "law": "OR 257e",
+      "prompt": "Gemäss OR 257e darf die Mietkaution nicht auf ein Privatkonto des Vermieters überwiesen werden. Sie muss auf einem Sperrkonto im Namen des Mieters hinterlegt werden. Bitte prüfen Sie Ihre Vertragsangaben."
+    },
+    "fr": {
+      "title": "Dépôt de garantie sur compte privé",
+      "core": "La caution ne doit en aucun cas être versée sur un compte privé du bailleur, mais sur un compte bloqué au nom du locataire.",
+      "law": "OR 257e",
+      "prompt": "Selon l'OR 257e, la caution locative ne peut pas être versée sur un compte privé du bailleur. Elle doit être déposée sur un compte bloqué au nom du locataire. Veuillez vérifier les indications dans votre contrat."
+    },
+    "hr": {
+      "title": "Depozit jamčevine na privatni račun",
+      "core": "Jamčevina se nikada ne smije uplatiti na privatni račun najmodavca, već se mora položiti na blokirani račun na ime najmoprimca.",
+      "law": "OR 257e",
+      "prompt": "Prema OR 257e, jamčevina za najam ne smije se prenijeti na privatni račun najmodavca. Mora se položiti na blokirani račun na ime najmoprimca. Provjerite podatke u svom ugovoru."
+    },
+    "pt": {
+      "title": "Depósito de caução em conta privada",
+      "core": "A caução nunca deve ser paga na conta privada do senhorio, mas sim depositada numa conta bloqueada em nome do inquilino.",
+      "law": "OR 257e",
+      "prompt": "De acordo com o OR 257e, a caução de arrendamento não pode ser transferida para uma conta privada do senhorio. Deve ser depositada numa conta bloqueada em nome do inquilino. Por favor, verifique os dados do seu contrato."
+    },
+    "ta": {
+      "title": "தனிப்பட்ட கணக்கில் வாடகை டெபாசிட்",
+      "core": "வாடகை டெபாசிட் ஒருபோதும் வீட்டு உரிமையாளரின் தனிப்பட்ட கணக்கில் செலுத்தப்படக் கூடாது. அது குத்தகையாளரின் பெயரில் தடை செய்யப்பட்ட கணக்கில் வைக்கப்பட வேண்டும்.",
+      "law": "OR 257e",
+      "prompt": "OR 257e பிரிவின்படி, வாடகை டெபாசிட் வீட்டு உரிமையாளரின் தனிப்பட்ட கணக்கிற்கு மாற்றப்படக் கூடாது. அது குத்தகையாளரின் பெயரில் தடை செய்யப்பட்ட கணக்கில் டெபாசிட் செய்யப்பட வேண்டும். உங்கள் ஒப்பந்த விவரங்களை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Özel hesaba kira depozitosu",
+      "core": "Kira depozitosu asla ev sahibinin özel hesabına yatırılmamalı, kiracı adına bloke edilmiş bir hesaba yatırılmalıdır.",
+      "law": "OR 257e",
+      "prompt": "OR 257e maddesine göre, kira depozitosu ev sahibinin özel hesabına aktarılamaz. Kiracı adına bloke edilmiş bir hesaba yatırılmalıdır. Lütfen sözleşme bilgilerinizi kontrol edin."
+    },
+    "es": {
+      "title": "Depósito de garantía en cuenta privada",
+      "core": "El depósito de garantía nunca debe pagarse en la cuenta privada del arrendador, sino que debe depositarse en una cuenta bloqueada a nombre del arrendatario.",
+      "law": "OR 257e",
+      "prompt": "Según el OR 257e, el depósito de garantía de alquiler no puede transferirse a una cuenta privada del arrendador. Debe depositarse en una cuenta bloqueada a nombre del arrendatario. Por favor, revise los datos de su contrato."
+    },
+    "it": {
+      "title": "Deposito cauzionale su conto privato",
+      "core": "La cauzione non deve in nessun caso essere versata sul conto privato del locatore, ma su un conto bloccato a nome dell'inquilino.",
+      "law": "OR 257e",
+      "prompt": "Secondo l'OR 257e, la cauzione locativa non può essere versata su un conto privato del locatore. Deve essere depositata su un conto bloccato a nome dell'inquilino. Verificate le indicazioni nel vostro contratto."
+    },
+    "en": {
+      "title": "Security deposit on private account",
+      "core": "The security deposit must never be paid into the landlord's private account, but must be placed in a blocked account in the tenant's name.",
+      "law": "OR 257e",
+      "prompt": "According to OR 257e, the rental security deposit may not be transferred to a private account of the landlord. It must be deposited in a blocked account in the tenant's name. Please check the details in your contract."
+    }
+  },
+  "depot_amount": {
+    "sq": {
+      "title": "Depozitë garancie shumë e lartë",
+      "core": "Depozita e garancisë për kontratat e qirasë banesore është rreptësisht e kufizuar në maksimum 3 qira mujore neto.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Sipas OR 257e paragrafi 2, depozita maksimale e garancisë është 3 qira mujore neto. Ju lutemi, kontrolloni shumën e kërkuar në kontratën tuaj."
+    },
+    "pl": {
+      "title": "Zbyt wysoka kaucja",
+      "core": "Kaucja dla najmu lokali mieszkalnych jest ściśle ograniczona do maksymalnie 3 miesięcznych czynszów netto.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Zgodnie z OR 257e ust. 2, maksymalna kaucja wynosi 3 miesięczne czynsze netto. Proszę sprawdzić kwotę wymaganą w umowie."
+    },
+    "de": {
+      "title": "Zu hohe Kaution",
+      "core": "Die Kaution für Wohnmietverhältnisse ist streng auf maximal 3 Monatsnettomieten begrenzt.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Gemäss OR 257e Abs. 2 beträgt die maximale Kaution 3 Monatsnettomieten. Bitte prüfen Sie den in Ihrem Vertrag geforderten Betrag."
+    },
+    "fr": {
+      "title": "Caution trop élevée",
+      "core": "La caution pour les locations d'habitation est strictement limitée à 3 mois de loyer net.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Selon l'OR 257e Abs. 2, le montant maximal de la caution est de 3 mois de loyer net. Veuillez vérifier le montant exigé dans votre contrat."
+    },
+    "hr": {
+      "title": "Previsoka jamčevina",
+      "core": "Jamčevina za stambeni najam strogo je ograničena na najviše 3 neto mjesečne najamnine.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Prema OR 257e st. 2, maksimalna jamčevina iznosi 3 neto mjesečne najamnine. Provjerite iznos koji se traži u vašem ugovoru."
+    },
+    "pt": {
+      "title": "Depósito de caução excessivamente alto",
+      "core": "O depósito de caução para contratos de arrendamento habitacional está estritamente limitado a um máximo de 3 meses de renda líquida.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "De acordo com o OR 257e, n.º 2, o montante máximo do depósito de caução é de 3 meses de renda líquida. Por favor, verifique o montante exigido no seu contrato."
+    },
+    "ta": {
+      "title": "மிக அதிக டெபாசிட்",
+      "core": "குடியிருப்பு வாடகை ஒப்பந்தங்களில் டெபாசிட் அதிகபட்சம் 3 மாத நிகர வாடகைக்கு மட்டுமே கடுமையாக வரையறுக்கப்பட்டுள்ளது.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "OR 257e பிரிவு 2 இன் படி, அதிகபட்ச டெபாசிட் 3 மாத நிகர வாடகை ஆகும். உங்கள் ஒப்பந்தத்தில் கோரப்பட்ட தொகையை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Aşırı yüksek depozito",
+      "core": "Konut kiralarında depozito, en fazla 3 aylık net kira ile sıkı şekilde sınırlandırılmıştır.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "OR 257e fıkra 2'ye göre, azami depozito miktarı 3 aylık net kiradır. Lütfen sözleşmenizde talep edilen tutarı kontrol edin."
+    },
+    "es": {
+      "title": "Depósito de garantía excesivamente alto",
+      "core": "El depósito de garantía para contratos de alquiler de vivienda está estrictamente limitado a un máximo de 3 mensualidades de renta neta.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Según el OR 257e apartado 2, el importe máximo del depósito de garantía es de 3 mensualidades de renta neta. Por favor, compruebe el importe exigido en su contrato."
+    },
+    "it": {
+      "title": "Cauzione troppo elevata",
+      "core": "La cauzione per le locazioni abitative è strettamente limitata a massimo 3 mensilità nette.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "Secondo l'OR 257e Abs. 2, l'importo massimo della cauzione è di 3 mensilità nette. Verificate l'importo richiesto nel vostro contratto."
+    },
+    "en": {
+      "title": "Excessive security deposit",
+      "core": "The security deposit for residential leases is strictly limited to a maximum of 3 months' net rent.",
+      "law": "OR 257e Abs. 2",
+      "prompt": "According to OR 257e Abs. 2, the maximum security deposit is 3 months' net rent. Please check the amount required in your contract."
+    }
+  },
+  "nebenkosten_low": {
+    "sq": {
+      "title": "Kostot shtesë joshëse të ulëta (taktikë karremi)",
+      "core": "Një paradhënie mujore e kostove shtesë (Akonto) e qëllimshme shumë e ulët përdoret si karrem dhe provokon një pagesë shtesë të lartë në fund të vitit.",
+      "law": "OR 257a",
+      "prompt": "Sipas OR 257a, një paradhënie e kostove shtesë e qëllimshme e ulët është e papranueshme nëse çon në një pagesë shtesë të lartë në fund të vitit. Ju lutemi, kontrolloni shumat mujore të paradhënies."
+    },
+    "pl": {
+      "title": "Gastosy dodatkowe jako przynęta (celowo niskie)",
+      "core": "Celowo bardzo niskie miesięczne zaliczki na koszty dodatkowe (Akonto) służą jako przynęta i prowokują wysoką dopłatę na koniec roku.",
+      "law": "OR 257a",
+      "prompt": "Zgodnie z OR 257a, celowo niska zaliczka na koszty dodatkowe jest niedopuszczalna, jeśli prowadzi do wysokiej dopłaty na koniec roku. Proszę sprawdzić miesięczne kwoty zaliczek."
+    },
+    "de": {
+      "title": "Lockvogel-Nebenkosten",
+      "core": "Durch bewusst sehr niedrige monatliche Akonto-Nebenkosten wird eine hohe Nachzahlung am Jahresende provoziert.",
+      "law": "OR 257a",
+      "prompt": "Gemäss OR 257a ist ein bewusst niedriges Akonto für Nebenkosten unzulässig, wenn es zu einer hohen Nachzahlung führt. Bitte prüfen Sie die monatlichen Akonto-Beträge."
+    },
+    "fr": {
+      "title": "Frais accessoires attractifs bas (Lockvogel)",
+      "core": "Un acompte mensuel de charges (Akonto) volontairement très bas entraîne un important complément à payer en fin d'année.",
+      "law": "OR 257a",
+      "prompt": "Selon l'OR 257a, un acompte de charges volontairement bas est inadmissible s'il entraîne un important décompte en fin d'année. Veuillez vérifier les montants d'acompte mensuels."
+    },
+    "hr": {
+      "title": "Namjerno niski sporedni troškovi kao mamac",
+      "core": "Namjerno vrlo niske mjesečne akontacije sporednih troškova (Akonto) služe kao mamac i provociraju visoku doplatu na kraju godine.",
+      "law": "OR 257a",
+      "prompt": "Prema OR 257a, namjerno niska akontacija sporednih troškova nedopuštena je ako dovodi do visoke doplate na kraju godine. Provjerite mjesečne iznose akontacije."
+    },
+    "pt": {
+      "title": "Gastos acessórios enganosamente baixos (tática de isca)",
+      "core": "Um pagamento mensal antecipado de gastos acessórios (Akonto) deliberadamente muito baixo é usado como isca e provoca um elevado pagamento adicional no final do ano.",
+      "law": "OR 257a",
+      "prompt": "De acordo com o OR 257a, um antecipado de gastos acessórios deliberadamente baixo é inadmissível se levar a um pagamento adicional elevado no final do ano. Por favor, verifique os montantes antecipados mensais."
+    },
+    "ta": {
+      "title": "குறைவாகக் காட்டப்பட்ட கூடுதல் செலவுகள் (யெம்லிங் தந்திரம்)",
+      "core": "வேண்டுமென்றே மிகக் குறைவான மாதாந்திர கூடுதல் செலவு முன்பணம் (Akonto), ஆண்டு இறுதியில் அதிக கூடுதல் பணம் செலுத்த வைக்கும் யெம்லிங் தந்திரமாகப் பயன்படுத்தப்படுகிறது.",
+      "law": "OR 257a",
+      "prompt": "OR 257a பிரிவின்படி, வேண்டுமென்றே குறைவான கூடுதல் செலவு முன்பணம், ஆண்டு இறுதியில் அதிக கூடுதல் தொகைக்கு வழிவகுத்தால் ஏற்றுக்கொள்ள முடியாது. மாதாந்திர முன்பணத் தொகைகளை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Düşük gösterilen ek giderler (yemleme taktiği)",
+      "core": "Bilinçli olarak çok düşük aylık ek gider avansı (Akonto), yıl sonunda yüksek bir ek ödemeye yol açmak için yem olarak kullanılır.",
+      "law": "OR 257a",
+      "prompt": "OR 257a maddesine göre, bilinçli olarak düşük ek gider avansı, yıl sonunda yüksek ek ödemeye yol açıyorsa kabul edilemez. Lütfen aylık avans tutarlarını kontrol edin."
+    },
+    "es": {
+      "title": "Gastos accesorios engañosamente bajos (táctica de cebo)",
+      "core": "Un anticipo mensual de gastos accesorios (Akonto) deliberadamente muy bajo se utiliza como cebo y provoca un elevado pago complementario al final del año.",
+      "law": "OR 257a",
+      "prompt": "Según el OR 257a, un anticipo de gastos accesorios deliberadamente bajo es inadmisible si conduce a un alto pago complementario al final del año. Por favor, revise los importes mensuales del anticipo."
+    },
+    "it": {
+      "title": "Spese accessorie basse ingannevoli (Lockvogel)",
+      "core": "Un acconto mensile di spese accessorie (Akonto) volutamente molto basso porta a un forte conguaglio alla fine dell'anno.",
+      "law": "OR 257a",
+      "prompt": "Secondo l'OR 257a, un acconto di spese accessorie volutamente basso è inadmissibile se porta a un forte conguaglio finale. Verificate gli importi di acconto mensili."
+    },
+    "en": {
+      "title": "Misleadingly low ancillary costs (bait tactic)",
+      "core": "A deliberately very low monthly advance payment for ancillary costs (Akonto) is used as bait, leading to a high additional payment at the end of the year.",
+      "law": "OR 257a",
+      "prompt": "According to OR 257a, a deliberately low advance payment for ancillary costs is inadmissible if it leads to a high year-end settlement. Please check the monthly advance amounts."
+    }
+  },
+  "nebenkosten_pauschal": {
+    "sq": {
+      "title": "Kostot shtesë fikse (shumë e vetme)",
+      "core": "Me kostot shtesë fikse, në fund të vitit nuk mund të kërkohet asnjë pagesë shtesë nga qiramarrësi.",
+      "law": "VMWG Art. 4",
+      "prompt": "Sipas VMWG Art. 4, kostot shtesë fikse nënkuptojnë se në fund të vitit nuk mund të kërkohet asnjë pagesë shtesë. Ju lutemi, kontrolloni nëse kontrata juaj e tregon këtë saktë."
+    },
+    "pl": {
+      "title": "Ryczałtowe koszty dodatkowe",
+      "core": "Przy ryczałtowych kosztach dodatkowych na koniec roku nie można żądać od najemcy żadnej dopłaty.",
+      "law": "VMWG Art. 4",
+      "prompt": "Zgodnie z VMWG Art. 4, ryczałtowe koszty dodatkowe oznaczają, że na koniec roku nie można żądać żadnej dopłaty. Proszę sprawdzić, czy umowa prawidłowo to określa."
+    },
+    "de": {
+      "title": "Pauschale Nebenkosten",
+      "core": "Bei pauschalen Nebenkosten darf am Jahresende keine Nachzahlung mehr vom Mieter verlangt werden.",
+      "law": "VMWG Art. 4",
+      "prompt": "Gemäss VMWG Art. 4 bedeutet eine Pauschale Nebenkosten, dass keine Nachzahlung mehr verlangt werden darf. Bitte prüfen Sie, ob Ihr Vertrag dies korrekt angibt."
+    },
+    "fr": {
+      "title": "Frais accessoires forfaitaires",
+      "core": "Avec des frais accessoires forfaitaires, aucun complément ne peut plus être réclamé au locataire en fin d'année.",
+      "law": "VMWG Art. 4",
+      "prompt": "Selon le VMWG Art. 4, un forfait de frais accessoires signifie qu'aucun complément (Nachzahlung) ne peut être exigé en fin d'année. Veuillez vérifier si votre contrat le mentionne correctement."
+    },
+    "hr": {
+      "title": "Paušalni sporedni troškovi",
+      "core": "Kod paušalnih sporednih troškova, na kraju godine ne može se zahtijevati nikakva doplata od najmoprimca.",
+      "law": "VMWG Art. 4",
+      "prompt": "Prema VMWG Art. 4, paušalni sporedni troškovi znače da se na kraju godine ne može zahtijevati nikakva doplata. Provjerite navodi li vaš ugovor to ispravno."
+    },
+    "pt": {
+      "title": "Gastos acessórios a montante fixo",
+      "core": "Com gastos acessórios a montante fixo, não pode ser exigido qualquer pagamento adicional ao inquilino no final do ano.",
+      "law": "VMWG Art. 4",
+      "prompt": "De acordo com o VMWG Art. 4, os gastos acessórios a montante fixo significam que não pode ser exigido qualquer pagamento adicional no final do ano. Por favor, verifique se o seu contrato indica isto corretamente."
+    },
+    "ta": {
+      "title": "மொத்தமாகக் கணக்கிடப்பட்ட கூடுதல் செலவுகள்",
+      "core": "மொத்தமாகக் கணக்கிடப்பட்ட கூடுதல் செலவுகளில், ஆண்டு இறுதியில் குத்தகையாளரிடமிருந்து எந்தக் கூடுதல் பணமும் கோர முடியாது.",
+      "law": "VMWG Art. 4",
+      "prompt": "VMWG பிரிவு 4 இன் படி, மொத்தமாகக் கணக்கிடப்பட்ட கூடுதல் செலவுகள் என்றால் ஆண்டு இறுதியில் எந்தக் கூடுதல் பணமும் கோர முடியாது. உங்கள் ஒப்பந்தம் இதை சரியாகக் குறிப்பிடுகிறதா என சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Götürü ek giderler",
+      "core": "Götürü ek giderlerde, yıl sonunda kiracıdan herhangi bir ek ödeme talep edilemez.",
+      "law": "VMWG Art. 4",
+      "prompt": "VMWG Madde 4'e göre, götürü ek giderler yıl sonunda hiçbir ek ödeme talep edilemeyeceği anlamına gelir. Lütfen sözleşmenizin bunu doğru şekilde belirtip belirtmediğini kontrol edin."
+    },
+    "es": {
+      "title": "Gastos accesorios a tanto alzado",
+      "core": "Con gastos accesorios a tanto alzado, no se puede exigir ningún pago complementario al arrendatario al final del año.",
+      "law": "VMWG Art. 4",
+      "prompt": "Según el VMWG Art. 4, los gastos accesorios a tanto alzado significan que no se puede exigir ningún pago complementario al final del año. Por favor, compruebe si su contrato lo indica correctamente."
+    },
+    "it": {
+      "title": "Spese accessorie forfettarie",
+      "core": "Con spese accessorie forfettarie, non può più essere richiesto alcun conguaglio all'inquilino alla fine dell'anno.",
+      "law": "VMWG Art. 4",
+      "prompt": "Secondo il VMWG Art. 4, le spese accessorie forfettarie significano che non può essere richiesto alcun conguaglio alla fine dell'anno. Verificate se il vostro contratto lo indica correttamente."
+    },
+    "en": {
+      "title": "Lump-sum ancillary costs",
+      "core": "With lump-sum ancillary costs, no additional payment (Nachzahlung) may be demanded from the tenant at the end of the year.",
+      "law": "VMWG Art. 4",
+      "prompt": "According to VMWG Art. 4, lump-sum ancillary costs mean that no additional payment may be required at the end of the year. Please check whether your contract states this correctly."
+    }
+  },
+  "solidarhaftung": {
+    "sq": {
+      "title": "Përgjegjësi solidare",
+      "core": "Mes bashkëqiramarrësve ekziston përgjegjësi solidare: nëse njëri nuk paguan, të gjithë janë përgjegjës.",
+      "law": "OR 143",
+      "prompt": "Sipas OR 143, të gjithë bashkëqiramarrësit janë solidarisht përgjegjës. Vonesa në pagesë e një personi sjell pasoja për të gjithë. Ju lutemi, kontrolloni klauzolën e përgjegjësisë."
+    },
+    "pl": {
+      "title": "Odpowiedzialność solidarna",
+      "core": "Między współnajemcami istnieje odpowiedzialność solidarna: jeśli jeden nie płaci, odpowiedzialni są wszyscy.",
+      "law": "OR 143",
+      "prompt": "Zgodnie z OR 143, wszyscy współnajemcy odpowiadają solidarnie. Opóźnienie w płatności jednej osoby ma konsekwencje dla wszystkich. Proszę sprawdzić klauzulę odpowiedzialności."
+    },
+    "de": {
+      "title": "Solidarhaftung",
+      "core": "Zwischen Mitmietern besteht eine gesamtschuldnerische Haftung: Wenn einer nicht zahlt, haften alle.",
+      "law": "OR 143",
+      "prompt": "Gemäss OR 143 haften alle Mitmieter solidarisch. Eine Person im Verzug bedeutet Konsequenzen für alle. Bitte prüfen Sie die Haftungsregelung."
+    },
+    "fr": {
+      "title": "Responsabilité solidaire",
+      "core": "Entre colocataires, il existe une responsabilité solidaire : si l'un ne paie pas, tous sont concernés.",
+      "law": "OR 143",
+      "prompt": "Selon l'OR 143, tous les colocataires sont solidairement responsables. Un retard de paiement d'une personne a des conséquences pour tous. Veuillez vérifier la clause de responsabilité."
+    },
+    "hr": {
+      "title": "Solidarna odgovornost",
+      "core": "Između sustanara postoji solidarna odgovornost: ako jedan ne plati, svi su odgovorni.",
+      "law": "OR 143",
+      "prompt": "Prema OR 143, svi sustanari su solidarno odgovorni. Kašnjenje u plaćanju jedne osobe ima posljedice za sve. Provjerite klauzulu o odgovornosti."
+    },
+    "pt": {
+      "title": "Responsabilidade solidária",
+      "core": "Entre co-inquilinos existe responsabilidade solidária: se um não pagar, todos são responsáveis.",
+      "law": "OR 143",
+      "prompt": "De acordo com o OR 143, todos os co-inquilinos são solidariamente responsáveis. Um atraso de pagamento de uma pessoa implica consequências para todos. Por favor, verifique a cláusula de responsabilidade."
+    },
+    "ta": {
+      "title": "கூட்டுப் பொறுப்பு",
+      "core": "இணை குத்தகையாளர்களிடையே கூட்டுப் பொறுப்பு உள்ளது: ஒருவர் செலுத்தாவிட்டால் அனைவரும் பொறுப்பாவார்கள்.",
+      "law": "OR 143",
+      "prompt": "OR 143 பிரிவின்படி, அனைத்து இணை குத்தகையாளர்களும் கூட்டுப் பொறுப்பில் உள்ளனர். ஒருவரின் பணம் செலுத்தும் தாமதம் அனைவருக்கும் விளைவுகளை ஏற்படுத்தும். பொறுப்பு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Müteselsil sorumluluk",
+      "core": "Birlikte kiracılar arasında müteselsil sorumluluk vardır: biri ödemezse herkes sorumludur.",
+      "law": "OR 143",
+      "prompt": "OR 143 maddesine göre, tüm birlikte kiracılar müteselsilen sorumludur. Bir kişinin ödeme gecikmesi herkes için sonuç doğurur. Lütfen sorumluluk maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Responsabilidad solidaria",
+      "core": "Entre coinquilinos existe responsabilidad solidaria: si uno no paga, todos responden.",
+      "law": "OR 143",
+      "prompt": "Según el OR 143, todos los coinquilinos son solidariamente responsables. Un retraso en el pago de una persona tiene consecuencias para todos. Por favor, revise la cláusula de responsabilidad."
+    },
+    "it": {
+      "title": "Responsabilità solidale",
+      "core": "Tra coinquilini esiste una responsabilità solidale: se uno non paga, tutti ne subiscono le conseguenze.",
+      "law": "OR 143",
+      "prompt": "Secondo l'OR 143, tutti i coinquilini sono responsabili in solido. Un ritardo di pagamento di una persona ha conseguenze per tutti. Verificate la clausola di responsabilità."
+    },
+    "en": {
+      "title": "Joint and several liability",
+      "core": "Between co-tenants there is joint and several liability: if one does not pay, all are affected.",
+      "law": "OR 143",
+      "prompt": "According to OR 143, all co-tenants are jointly and severally liable. A payment default by one person has consequences for everyone. Please check the liability clause."
+    }
+  },
+  "kuendigung_frist": {
+    "sq": {
+      "title": "Afati i njoftimit për zgjidhje",
+      "core": "Afati ligjor i njoftimit për zgjidhje është 3 muaj. Një rregullim kontraktor prej 6 muajsh kufizon lirinë e qiramarrësit.",
+      "law": "OR 266c",
+      "prompt": "Sipas OR 266c, afati ligjor i njoftimit për zgjidhje është 3 muaj. Një afat më i gjatë (p.sh. 6 muaj) është i papranueshëm për qiramarrësin. Ju lutemi, kontrolloni afatin e njoftimit."
+    },
+    "pl": {
+      "title": "Okres wypowiedzenia",
+      "core": "Ustawowy okres wypowiedzenia wynosi 3 miesiące. Umowne ustalenie 6 miesięcy ogranicza wolność najemcy.",
+      "law": "OR 266c",
+      "prompt": "Zgodnie z OR 266c, ustawowy okres wypowiedzenia wynosi 3 miesiące. Dłuższy okres (np. 6 miesięcy) jest niedopuszczalny dla najemcy. Proszę sprawdzić okres wypowiedzenia."
+    },
+    "de": {
+      "title": "Kündigungsfrist",
+      "core": "Die gesetzliche Kündigungsfrist beträgt 3 Monate. Eine vertragliche Regelung von 6 Monaten schränkt die Freiheit des Mieters ein.",
+      "law": "OR 266c",
+      "prompt": "Gemäss OR 266c beträgt die gesetzliche Kündigungsfrist 3 Monate. Eine längere Frist (z. B. 6 Monate) ist für den Mieter unzulässig. Bitte prüfen Sie die Kündigungsfrist."
+    },
+    "fr": {
+      "title": "Délai de résiliation",
+      "core": "Le délai de résiliation légal est de 3 mois. Une clause contractuelle de 6 mois limite la liberté du locataire.",
+      "law": "OR 266c",
+      "prompt": "Selon l'OR 266c, le délai de résiliation légal est de 3 mois. Un délai plus long (ex. 6 mois) est inadmissible pour le locataire. Veuillez vérifier le délai de résiliation."
+    },
+    "hr": {
+      "title": "Rok otkaza",
+      "core": "Zakonski rok otkaza je 3 mjeseca. Ugovorna odredba od 6 mjeseci ograničava slobodu najmoprimca.",
+      "law": "OR 266c",
+      "prompt": "Prema OR 266c, zakonski rok otkaza je 3 mjeseca. Duži rok (npr. 6 mjeseci) nedopušten je za najmoprimca. Provjerite rok otkaza."
+    },
+    "pt": {
+      "title": "Prazo de aviso prévio",
+      "core": "O prazo legal de aviso prévio é de 3 meses. Uma cláusula contratual de 6 meses restringe a liberdade do inquilino.",
+      "law": "OR 266c",
+      "prompt": "De acordo com o OR 266c, o prazo legal de aviso prévio é de 3 meses. Um prazo mais longo (ex.: 6 meses) é inadmissível para o inquilino. Por favor, verifique o prazo de aviso prévio."
+    },
+    "ta": {
+      "title": "ரத்து செய்யும் கால அளவு",
+      "core": "சட்டப்படியான ரத்து செய்யும் கால அளவு 3 மாதங்கள். 6 மாத ஒப்பந்த விதி குத்தகையாளரின் சுதந்திரத்தை கட்டுப்படுத்துகிறது.",
+      "law": "OR 266c",
+      "prompt": "OR 266c பிரிவின்படி, சட்டப்படியான ரத்து செய்யும் கால அளவு 3 மாதங்கள். நீண்ட காலம் (எ.கா. 6 மாதங்கள்) குத்தகையாளருக்கு ஏற்றுக்கொள்ள முடியாது. ரத்து செய்யும் கால அளவை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Fesih süresi",
+      "core": "Yasal fesih süresi 3 aydır. 6 aylık sözleşme hükmü kiracının özgürlüğünü kısıtlar.",
+      "law": "OR 266c",
+      "prompt": "OR 266c maddesine göre, yasal fesih süresi 3 aydır. Daha uzun bir süre (ör. 6 ay) kiracı için kabul edilemez. Lütfen fesih süresini kontrol edin."
+    },
+    "es": {
+      "title": "Plazo de preaviso",
+      "core": "El plazo legal de preaviso es de 3 meses. Una cláusula contractual de 6 meses restringe la libertad del arrendatario.",
+      "law": "OR 266c",
+      "prompt": "Según el OR 266c, el plazo legal de preaviso es de 3 meses. Un plazo más largo (ej. 6 meses) es inadmisible para el arrendatario. Por favor, revise el plazo de preaviso."
+    },
+    "it": {
+      "title": "Termine di disdetta",
+      "core": "Il termine legale di disdetta è di 3 mesi. Una clausola contrattuale di 6 mesi limita la libertà dell'inquilino.",
+      "law": "OR 266c",
+      "prompt": "Secondo l'OR 266c, il termine legale di disdetta è di 3 mesi. Un termine più lungo (es. 6 mesi) è inadmissibile per l'inquilino. Verificate il termine di disdetta."
+    },
+    "en": {
+      "title": "Notice period",
+      "core": "The statutory notice period is 3 months. A contractual clause of 6 months restricts the tenant's freedom.",
+      "law": "OR 266c",
+      "prompt": "According to OR 266c, the statutory notice period is 3 months. A longer period (e.g. 6 months) is inadmissible for the tenant. Please check the notice period."
+    }
+  },
+  "mindestdauer": {
+    "sq": {
+      "title": "Afati minimal i qirasë",
+      "core": "Brenda një afati minimal të rënë dakord, e drejta e zgjidhjes nuk mund të përjashtohet. Kontratat me afat të caktuar janë të vlefshme vetëm nëse gjendet një qiramarrës zëvendësues i kualifikuar; përndryshe, klauzola të tilla janë të pavlefshme.",
+      "law": "OR 255",
+      "prompt": "Sipas OR 255, klauzolat e afatit minimal që përjashtojnë të drejtën e zgjidhjes janë të pavlefshme. Ju lutemi, kontrolloni nëse kontrata juaj përmban një afat minimal fiks."
+    },
+    "pl": {
+      "title": "Minimalny okres najmu",
+      "core": "W uzgodnionym minimalnym okresie najmu nie można wyłączyć prawa wypowiedzenia. Umowy na czas określony są ważne tylko wtedy, gdy zostanie znaleziony kwalifikowany najemca zastępczy; w przeciwnym razie takie klauzule są nieważne.",
+      "law": "OR 255",
+      "prompt": "Zgodnie z OR 255, klauzule minimalnego okresu najmu wyłączające prawo wypowiedzenia są nieważne. Proszę sprawdzić, czy umowa zawiera stały minimalny okres."
+    },
+    "de": {
+      "title": "Mindestmietdauer",
+      "core": "Innerhalb einer vereinbarten Mindestmietdauer darf das Kündigungsrecht nicht ausgeschlossen werden. Festmietverträge sind nur gültig, wenn ein qualifizierter Ersatzmieter gefunden wird; ansonsten sind solche Klauseln ungültig.",
+      "law": "OR 255",
+      "prompt": "Gemäss OR 255 sind Mindestmietdauer-Klauseln, die das Kündigungsrecht ausschliessen, ungültig. Bitte prüfen Sie, ob Ihr Vertrag eine feste Mindestlaufzeit enthält."
+    },
+    "fr": {
+      "title": "Durée minimale de location",
+      "core": "Pendant une durée minimale convenue, le droit de résiliation ne peut pas être exclu. Les baux à durée déterminée ne sont valables que si un locataire de remplacement qualifié est trouvé ; sinon, ces clauses sont nulles.",
+      "law": "OR 255",
+      "prompt": "Selon l'OR 255, les clauses de durée minimale qui excluent le droit de résiliation sont nulles. Veuillez vérifier si votre contrat contient une durée minimale fixe."
+    },
+    "hr": {
+      "title": "Minimalno trajanje najma",
+      "core": "Unutar dogovorenog minimalnog trajanja najma, pravo na otkaz ne može se isključiti. Ugovori na određeno vrijeme vrijede samo ako se pronađe kvalificirani zamjenski najmoprimac; inače su takve klauzule ništavne.",
+      "law": "OR 255",
+      "prompt": "Prema OR 255, klauzule o minimalnom trajanju koje isključuju pravo na otkaz su ništavne. Provjerite sadrži li vaš ugovor fiksno minimalno trajanje."
+    },
+    "pt": {
+      "title": "Duração mínima do arrendamento",
+      "core": "Durante uma duração mínima acordada, o direito de rescisão não pode ser excluído. Contratos de duração determinada só são válidos se for encontrado um inquilino substituto qualificado; caso contrário, tais cláusulas são nulas.",
+      "law": "OR 255",
+      "prompt": "De acordo com o OR 255, as cláusulas de duração mínima que excluem o direito de rescisão são nulas. Por favor, verifique se o seu contrato contém uma duração mínima fixa."
+    },
+    "ta": {
+      "title": "குறைந்தபட்ச வாடகை காலம்",
+      "core": "ஒப்புக்கொள்ளப்பட்ட குறைந்தபட்ச வாடகை காலத்தில் ரத்து செய்யும் உரிமையை நீக்க முடியாது. நிச்சயிக்கப்பட்ட கால ஒப்பந்தங்கள் தகுதியான மாற்று குத்தகையாளர் கிடைத்தால் மட்டுமே செல்லுபடியாகும்; இல்லையெனில் அத்தகைய விதிகள் செல்லாதவை.",
+      "law": "OR 255",
+      "prompt": "OR 255 பிரிவின்படி, ரத்து செய்யும் உரிமையை நீக்கும் குறைந்தபட்ச கால விதிகள் செல்லாதவை. உங்கள் ஒப்பந்தத்தில் நிலையான குறைந்தபட்ச காலம் உள்ளதா என சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Asgari kira süresi",
+      "core": "Kararlaştırılan asgari kira süresi içinde fesih hakkı kaldırılamaz. Belirli süreli kira sözleşmeleri ancak nitelikli bir yedek kiracı bulunursa geçerlidir; aksi takdirde bu tür hükümler geçersizdir.",
+      "law": "OR 255",
+      "prompt": "OR 255 maddesine göre, fesih hakkını dışlayan asgari süre hükümleri geçersizdir. Lütfen sözleşmenizin sabit bir asgari süre içerip içermediğini kontrol edin."
+    },
+    "es": {
+      "title": "Duración mínima de alquiler",
+      "core": "Durante una duración mínima acordada, no se puede excluir el derecho de rescisión. Los contratos a plazo fijo solo son válidos si se encuentra un arrendatario sustituto cualificado; de lo contrario, dichas cláusulas son nulas.",
+      "law": "OR 255",
+      "prompt": "Según el OR 255, las cláusulas de duración mínima que excluyen el derecho de rescisión son nulas. Por favor, compruebe si su contrato contiene una duración mínima fija."
+    },
+    "it": {
+      "title": "Durata minima di locazione",
+      "core": "Durante una durata minima concordata, il diritto di disdetta non può essere escluso. I contratti a tempo determinato sono validi solo se si trova un inquilino sostitutivo qualificato; altrimenti tali clausole sono nulle.",
+      "law": "OR 255",
+      "prompt": "Secondo l'OR 255, le clausole di durata minima che escludono il diritto di disdetta sono nulle. Verificate se il vostro contratto contiene una durata minima fissa."
+    },
+    "en": {
+      "title": "Minimum rental duration",
+      "core": "During an agreed minimum rental period, the right to terminate cannot be excluded. Fixed-term leases are only valid if a qualified replacement tenant is found; otherwise such clauses are void.",
+      "law": "OR 255",
+      "prompt": "According to OR 255, minimum duration clauses that exclude the right to terminate are void. Please check whether your contract contains a fixed minimum term."
+    }
+  },
+  "reparaturen_klein": {
+    "sq": {
+      "title": "Mirëmbajtje e vogël",
+      "core": "Qiramarrësi është përgjegjës vetëm për riparime të vogla deri në rreth 150-200 CHF; shumat më të larta përballohen nga qiradhënësi.",
+      "law": "OR 259",
+      "prompt": "Sipas OR 259, qiramarrësi përgjigjet vetëm për punë të vogla mirëmbajtjeje (rreth 150-200 CHF). Riparimet më të mëdha janë në barrën e qiradhënësit. Ju lutemi, kontrolloni klauzolën e riparimeve."
+    },
+    "pl": {
+      "title": "Drobne utrzymanie",
+      "core": "Najemca jest odpowiedzialny tylko za drobne naprawy do ok. 150-200 CHF; wyższe kwoty ponosi wynajmujący.",
+      "law": "OR 259",
+      "prompt": "Zgodnie z OR 259, najemca odpowiada tylko za drobne prace konserwacyjne (ok. 150-200 CHF). Większe naprawy są na koszt wynajmującego. Proszę sprawdzić klauzulę napraw."
+    },
+    "de": {
+      "title": "Kleiner Unterhalt",
+      "core": "Der Mieter ist nur für kleine Reparaturen bis ca. 150-200 CHF verantwortlich, höhere Beträge trägt der Vermieter.",
+      "law": "OR 259",
+      "prompt": "Gemäss OR 259 haftet der Mieter nur für kleine Unterhaltsarbeiten (ca. 150-200 CHF). Grössere Reparaturen gehen zu Lasten des Vermieters. Bitte prüfen Sie die Reparaturklausel."
+    },
+    "fr": {
+      "title": "Petits travaux d'entretien",
+      "core": "Le locataire n'est responsable que des petites réparations jusqu'à environ 150-200 CHF ; les montants supérieurs sont à la charge du bailleur.",
+      "law": "OR 259",
+      "prompt": "Selon l'OR 259, le locataire n'est responsable que des petits travaux d'entretien (environ 150-200 CHF). Les réparations plus importantes sont à la charge du bailleur. Veuillez vérifier la clause de réparations."
+    },
+    "hr": {
+      "title": "Manji održavanje",
+      "core": "Najmoprimac je odgovoran samo za manje popravke do oko 150-200 CHF, više iznose snosi najmodavac.",
+      "law": "OR 259",
+      "prompt": "Prema OR 259, najmoprimac odgovara samo za manje radove održavanja (oko 150-200 CHF). Veći popravci su na teret najmodavca. Provjerite klauzulu o popravcima."
+    },
+    "pt": {
+      "title": "Pequena manutenção",
+      "core": "O inquilino só é responsável por pequenas reparações até cerca de 150-200 CHF; montantes superiores são suportados pelo senhorio.",
+      "law": "OR 259",
+      "prompt": "De acordo com o OR 259, o inquilino só responde por pequenos trabalhos de manutenção (cerca de 150-200 CHF). Reparações mais importantes são por conta do senhorio. Por favor, verifique a cláusula de reparações."
+    },
+    "ta": {
+      "title": "சிறிய பராமரிப்பு",
+      "core": "குத்தகையாளர் சுமார் 150-200 CHF வரையிலான சிறிய பழுதுபார்ப்புகளுக்கு மட்டுமே பொறுப்பு. அதிக தொகைகளை வீட்டு உரிமையாளர் ஏற்க வேண்டும்.",
+      "law": "OR 259",
+      "prompt": "OR 259 பிரிவின்படி, குத்தகையாளர் சிறிய பராமரிப்பு வேலைகளுக்கு மட்டுமே (சுமார் 150-200 CHF) பொறுப்பு. பெரிய பழுதுபார்ப்புகள் வீட்டு உரிமையாளரின் பொறுப்பு. பழுதுபார்ப்பு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Küçük bakım",
+      "core": "Kiracı yalnızca yaklaşık 150-200 CHF'ye kadar olan küçük onarımlardan sorumludur; daha yüksek tutarlar ev sahibine aittir.",
+      "law": "OR 259",
+      "prompt": "OR 259 maddesine göre, kiracı yalnızca küçük bakım işlerinden (yaklaşık 150-200 CHF) sorumludur. Daha büyük onarımlar ev sahibinin yükümlülüğündedir. Lütfen onarım maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Pequeño mantenimiento",
+      "core": "El arrendatario solo es responsable de pequeñas reparaciones hasta aproximadamente 150-200 CHF; los importes superiores corren a cargo del arrendador.",
+      "law": "OR 259",
+      "prompt": "Según el OR 259, el arrendatario solo responde de pequeños trabajos de mantenimiento (aprox. 150-200 CHF). Las reparaciones más importantes corren por cuenta del arrendador. Por favor, revise la cláusula de reparaciones."
+    },
+    "it": {
+      "title": "Piccola manutenzione",
+      "core": "L'inquilino è responsabile solo per piccole riparazioni fino a circa 150-200 CHF; gli importi superiori sono a carico del locatore.",
+      "law": "OR 259",
+      "prompt": "Secondo l'OR 259, l'inquilino è responsabile solo per la piccola manutenzione (circa 150-200 CHF). Le riparazioni più importanti sono a carico del locatore. Verificate la clausola sulle riparazioni."
+    },
+    "en": {
+      "title": "Minor maintenance",
+      "core": "The tenant is only responsible for minor repairs up to approximately 150-200 CHF; higher amounts are borne by the landlord.",
+      "law": "OR 259",
+      "prompt": "According to OR 259, the tenant is only liable for minor maintenance work (approx. 150-200 CHF). Major repairs are at the landlord's expense. Please check the repair clause."
+    }
+  },
+  "reinigung": {
+    "sq": {
+      "title": "Pastrim profesional",
+      "core": "Përveç nëse është rënë dakord shprehimisht me shkrim, kur lirohet banesa mjafton një banesë 'e pastër' – nuk ka detyrim të punësohet një kompani profesionale pastrimi.",
+      "law": "OR 256",
+      "prompt": "Sipas OR 256, kur lirohet banesa nuk kërkohet pastrim profesional, përveç nëse është rënë dakord shprehimisht me shkrim. Në përgjithësi mjafton një pastrim i thellë ('e pastër'). Ju lutemi, kontrolloni klauzolën e pastrimit."
+    },
+    "pl": {
+      "title": "Profesjonalne sprzątanie",
+      "core": "O ile nie uzgodniono wyraźnie na piśmie, przy wyprowadzce wystarczy mieszkanie 'czyste' – nie ma obowiązku zatrudniania profesjonalnej firmy sprzątającej.",
+      "law": "OR 256",
+      "prompt": "Zgodnie z OR 256, przy wyprowadzce nie jest wymagane profesjonalne sprzątanie, chyba że wyraźnie uzgodniono to na piśmie. Zazwyczaj wystarczy dokładne sprzątanie ('czyste'). Proszę sprawdzić klauzulę sprzątania."
+    },
+    "de": {
+      "title": "Professionelle Reinigung",
+      "core": "Sofern nicht ausdrücklich schriftlich vereinbart, genügt bei Auszug eine 'saubere' Wohnung – keine Pflicht, eine professionelle Reinigungsfirma zu beauftragen.",
+      "law": "OR 256",
+      "prompt": "Gemäss OR 256 ist bei Auszug keine professionelle Reinigungsfirma erforderlich, es sei denn, dies ist ausdrücklich schriftlich vereinbart. Es genügt in der Regel eine gründliche Reinigung ('sauber'). Bitte prüfen Sie die Reinigungsklausel."
+    },
+    "fr": {
+      "title": "Nettoyage professionnel",
+      "core": "Sauf convention écrite expresse, il suffit à la sortie d'avoir un logement 'propre' – aucune obligation d'engager une entreprise de nettoyage professionnelle.",
+      "law": "OR 256",
+      "prompt": "Selon l'OR 256, aucun nettoyage professionnel n'est exigé à la sortie, sauf convention écrite expresse. Il suffit en général d'une remise en état propre et soignée du logement. Veuillez vérifier la clause de nettoyage."
+    },
+    "hr": {
+      "title": "Profesionalno čišćenje",
+      "core": "Osim ako nije izričito dogovoreno pismeno, prilikom iseljenja dovoljan je 'čist' stan – nema obveze angažiranja profesionalne tvrtke za čišćenje.",
+      "law": "OR 256",
+      "prompt": "Prema OR 256, prilikom iseljenja nije potrebno profesionalno čišćenje, osim ako je izričito dogovoreno pismeno. U pravilu je dovoljno temeljito čišćenje ('čisto'). Provjerite klauzulu o čišćenju."
+    },
+    "pt": {
+      "title": "Limpeza profissional",
+      "core": "Salvo acordo expresso por escrito, ao sair é suficiente entregar um apartamento 'limpo' – não há obrigação de contratar uma empresa de limpeza profissional.",
+      "law": "OR 256",
+      "prompt": "De acordo com o OR 256, ao sair não é necessária uma limpeza profissional, salvo acordo expresso por escrito. Geralmente, é suficiente entregar o apartamento num estado limpo e cuidado. Por favor, verifique a cláusula de limpeza."
+    },
+    "ta": {
+      "title": "தொழில்முறை சுத்தம்",
+      "core": "வெளிப்படையாக எழுத்துப்பூர்வமாக ஒப்புக்கொள்ளப்படாவிட்டால், வெளியேறும் போது 'சுத்தமான' அடுக்குமாடி போதுமானது – தொழில்முறை சுத்தம் நிறுவனத்தை பணியமர்த்த வேண்டிய கட்டாயம் இல்லை.",
+      "law": "OR 256",
+      "prompt": "OR 256 பிரிவின்படி, வெளியேறும் போது வெளிப்படையாக எழுத்துப்பூர்வமாக ஒப்புக்கொள்ளப்படாவிட்டால் தொழில்முறை சுத்தம் தேவையில்லை. பொதுவாக ஆழமான சுத்தம் ('சுத்தம்') போதுமானது. சுத்தம் விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Profesyonel temizlik",
+      "core": "Açıkça yazılı olarak kararlaştırılmadıkça, taşınırken 'temiz' bir daire teslim etmek yeterlidir – profesyonel temizlik şirketi tutma zorunluluğu yoktur.",
+      "law": "OR 256",
+      "prompt": "OR 256 maddesine göre, taşınırken açıkça yazılı anlaşma olmadıkça profesyonel temizlik gerekmez. Genellikle kapsamlı bir temizlik ('temiz') yeterlidir. Lütfen temizlik maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Limpieza profesional",
+      "core": "Salvo acuerdo expreso por escrito, al salir es suficiente entregar un piso 'limpio' – no existe obligación de contratar una empresa de limpieza profesional.",
+      "law": "OR 256",
+      "prompt": "Según el OR 256, al salir no se requiere una limpieza profesional salvo acuerdo expreso por escrito. Generalmente es suficiente entregar el piso en un estado limpio y ordenado. Por favor, revise la cláusula de limpieza."
+    },
+    "it": {
+      "title": "Pulizia professionale",
+      "core": "Salvo accordo scritto espresso, alla disdetta è sufficiente un appartamento 'pulito' – non è obbligatorio incaricare un'impresa di pulizie professionale.",
+      "law": "OR 256",
+      "prompt": "Secondo l'OR 256, alla disdetta non è richiesta una pulizia professionale, salvo accordo scritto espresso. È generalmente sufficiente riconsegnare l'appartamento in uno stato pulito e curato. Verificate la clausola sulla pulizia."
+    },
+    "en": {
+      "title": "Professional cleaning",
+      "core": "Unless expressly agreed in writing, it is sufficient to return a 'clean' apartment upon moving out – there is no obligation to hire a professional cleaning company.",
+      "law": "OR 256",
+      "prompt": "According to OR 256, no professional cleaning is required upon moving out unless expressly agreed in writing. It is generally sufficient to return the apartment in a clean and tidy condition. Please check the cleaning clause."
+    }
+  },
+  "streichen": {
+    "sq": {
+      "title": "Lyerje / Rinovim",
+      "core": "Konsumimi normal i mureve nga përdorimi i zakonshëm përballohet nga qiradhënësi. Qiramarrësi nuk ka detyrim të rilyejë banesën.",
+      "law": "OR 259",
+      "prompt": "Sipas OR 259, konsumimi normal i mureve përballohet nga qiradhënësi. Qiramarrësi nuk është i detyruar ta rilyejë banesën. Ju lutemi, kontrolloni klauzolën e rinovimit."
+    },
+    "pl": {
+      "title": "Malowanie / Remont",
+      "core": "Normalne zużycie ścian wynikające z normalnego użytkowania ponosi wynajmujący. Najemca nie ma obowiązku ponownego malowania mieszkania.",
+      "law": "OR 259",
+      "prompt": "Zgodnie z OR 259, normalne zużycie ścian ponosi wynajmujący. Najemca nie musi malować mieszkania. Proszę sprawdzić klauzulę remontową."
+    },
+    "de": {
+      "title": "Streichen / Renovation",
+      "core": "Normale Abnutzung der Wände durch den normalen Gebrauch trägt der Vermieter. Der Mieter hat keine Pflicht, die Wohnung neu zu streichen.",
+      "law": "OR 259",
+      "prompt": "Gemäss OR 259 trägt der Vermieter die normale Abnutzung der Wände. Der Mieter muss die Wohnung nicht neu streichen. Bitte prüfen Sie die Renovationsklausel."
+    },
+    "fr": {
+      "title": "Peinture / Rénovation",
+      "core": "L'usure normale des murs due à l'usage courant est à la charge du bailleur. Le locataire n'a pas l'obligation de repeindre le logement.",
+      "law": "OR 259",
+      "prompt": "Selon l'OR 259, l'usure normale des murs est à la charge du bailleur. Le locataire n'est pas obligé de repeindre. Veuillez vérifier la clause de rénovation."
+    },
+    "hr": {
+      "title": "Bojenje / Renovacija",
+      "core": "Normalno trošenje zidova uobičajenom uporabom snosi najmodavac. Najmoprimac nema obvezu ponovnog bojenja stana.",
+      "law": "OR 259",
+      "prompt": "Prema OR 259, normalno trošenje zidova snosi najmodavac. Najmoprimac ne mora bojati stan. Provjerite klauzulu o renovaciji."
+    },
+    "pt": {
+      "title": "Pintura / Renovação",
+      "core": "O desgaste normal das paredes devido ao uso ordinário é suportado pelo senhorio. O inquilino não tem obrigação de repintar o apartamento.",
+      "law": "OR 259",
+      "prompt": "De acordo com o OR 259, o senhorio suporta o desgaste normal das paredes. O inquilino não está obrigado a repintar o apartamento. Por favor, verifique a cláusula de renovação."
+    },
+    "ta": {
+      "title": "பெயிண்ட் / புதுப்பித்தல்",
+      "core": "சாதாரண பயன்பாட்டால் ஏற்படும் சுவர்களின் இயல்பான தேய்மானத்தை வீட்டு உரிமையாளர் ஏற்க வேண்டும். குத்தகையாளருக்கு அடுக்குமாடியை மீண்டும் பெயிண்ட் செய்யும் கடமை இல்லை.",
+      "law": "OR 259",
+      "prompt": "OR 259 பிரிவின்படி, சுவர்களின் இயல்பான தேய்மானத்தை வீட்டு உரிமையாளர் ஏற்க வேண்டும். குத்தகையாளர் அடுக்குமாடியை மீண்டும் பெயிண்ட் செய்ய வேண்டியதில்லை. புதுப்பித்தல் விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Boya / Yenileme",
+      "core": "Duvarların normal kullanımdan kaynaklanan normal aşınmasını ev sahibi karşılar. Kiracının daireyi yeniden boyama zorunluluğu yoktur.",
+      "law": "OR 259",
+      "prompt": "OR 259 maddesine göre, duvarların normal aşınmasını ev sahibi karşılar. Kiracı daireyi yeniden boyamak zorunda değildir. Lütfen yenileme maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Pintura / Renovación",
+      "core": "El desgaste normal de las paredes debido al uso ordinario corre a cargo del arrendador. El arrendatario no tiene obligación de volver a pintar el piso.",
+      "law": "OR 259",
+      "prompt": "Según el OR 259, el arrendador asume el desgaste normal de las paredes. El arrendatario no está obligado a repintar. Por favor, revise la cláusula de renovación."
+    },
+    "it": {
+      "title": "Tinteggiatura / Rinnovo",
+      "core": "L'usura normale delle pareti dovuta all'uso ordinario è a carico del locatore. L'inquilino non ha l'obbligo di ridipingere l'appartamento.",
+      "law": "OR 259",
+      "prompt": "Secondo l'OR 259, l'usura normale delle pareti è a carico del locatore. L'inquilino non è obbligato a ridipingere. Verificate la clausola di rinnovo."
+    },
+    "en": {
+      "title": "Painting / Renovation",
+      "core": "Normal wear and tear of the walls due to ordinary use is borne by the landlord. The tenant has no obligation to repaint the apartment.",
+      "law": "OR 259",
+      "prompt": "According to OR 259, normal wear and tear of the walls is at the landlord's expense. The tenant is not obliged to repaint. Please check the renovation clause."
+    }
+  },
+  "untermiete": {
+    "sq": {
+      "title": "Ndalimi i nënqirasë",
+      "core": "Qiradhënësi nuk mund ta ndalojë nënqiranë pa arsye të vlefshme, për sa kohë që qiramarrësi ndjek procedurën dhe e njofton atë.",
+      "law": "OR 262",
+      "prompt": "Sipas OR 262, qiradhënësi nuk mund ta ndalojë nënqiranë pa një arsye të vlefshme. Ju lutemi, kontrolloni klauzolën e nënqirasë."
+    },
+    "pl": {
+      "title": "Zakaz podnajmu",
+      "core": "Wynajmujący nie może zakazać podnajmu bez ważnego powodu, pod warunkiem że najemca przestrzega procedury i zgłasza to wynajmującemu.",
+      "law": "OR 262",
+      "prompt": "Zgodnie z OR 262, wynajmujący nie może zakazać podnajmu bez ważnego powodu. Proszę sprawdzić klauzulę podnajmu."
+    },
+    "de": {
+      "title": "Untermiete Verbot",
+      "core": "Der Vermieter kann die Untervermietung nicht ohne Grund verbieten, solange der Mieter das Verfahren einhält und meldet.",
+      "law": "OR 262",
+      "prompt": "Gemäss OR 262 darf der Vermieter die Untervermietung nicht ohne triftigen Grund verbieten. Bitte prüfen Sie die Untervermietungsklausel."
+    },
+    "fr": {
+      "title": "Interdiction de sous-location",
+      "core": "Le bailleur ne peut pas interdire la sous-location sans motif valable, pour autant que le locataire respecte la procédure et en informe le bailleur.",
+      "law": "OR 262",
+      "prompt": "Selon l'OR 262, le bailleur ne peut pas interdire la sous-location sans motif valable. Veuillez vérifier la clause de sous-location."
+    },
+    "hr": {
+      "title": "Zabrana podnajma",
+      "core": "Najmodavac ne može zabraniti podnajam bez valjanog razloga, pod uvjetom da najmoprimac slijedi proceduru i prijavi ga.",
+      "law": "OR 262",
+      "prompt": "Prema OR 262, najmodavac ne može zabraniti podnajam bez valjanog razloga. Provjerite klauzulu o podnajmu."
+    },
+    "pt": {
+      "title": "Proibição de subarrendamento",
+      "core": "O senhorio não pode proibir o subarrendamento sem motivo válido, desde que o inquilino siga o procedimento e o notifique.",
+      "law": "OR 262",
+      "prompt": "De acordo com o OR 262, o senhorio não pode proibir o subarrendamento sem motivo válido. Por favor, verifique a cláusula de subarrendamento."
+    },
+    "ta": {
+      "title": "உப வாடகை தடை",
+      "core": "குத்தகையாளர் செயல்முறையைப் பின்பற்றி அறிவித்தால், வீட்டு உரிமையாளர் செல்லுபடியான காரணமின்றி உப வாடகையை தடை செய்ய முடியாது.",
+      "law": "OR 262",
+      "prompt": "OR 262 பிரிவின்படி, வீட்டு உரிமையாளர் செல்லுபடியான காரணமின்றி உப வாடகையை தடை செய்ய முடியாது. உப வாடகை விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Alt kira yasağı",
+      "core": "Ev sahibi, kiracı usulüne uygun hareket ettiği ve bildirimde bulunduğu sürece, geçerli bir sebep olmadan alt kirayı yasaklayamaz.",
+      "law": "OR 262",
+      "prompt": "OR 262 maddesine göre, ev sahibi geçerli bir sebep olmadan alt kirayı yasaklayamaz. Lütfen alt kira maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Prohibición de subarriendo",
+      "core": "El arrendador no puede prohibir el subarriendo sin motivo válido, siempre que el arrendatario siga el procedimiento y lo notifique.",
+      "law": "OR 262",
+      "prompt": "Según el OR 262, el arrendador no puede prohibir el subarriendo sin motivo válido. Por favor, revise la cláusula de subarriendo."
+    },
+    "it": {
+      "title": "Divieto di sublocazione",
+      "core": "Il locatore non può vietare la sublocazione senza motivo valido, purché l'inquilino segua la procedura e ne dia comunicazione.",
+      "law": "OR 262",
+      "prompt": "Secondo l'OR 262, il locatore non può vietare la sublocazione senza motivo valido. Verificate la clausola sulla sublocazione."
+    },
+    "en": {
+      "title": "Prohibition of subletting",
+      "core": "The landlord cannot prohibit subletting without a valid reason, provided the tenant follows the procedure and notifies the landlord.",
+      "law": "OR 262",
+      "prompt": "According to OR 262, the landlord may not prohibit subletting without a valid reason. Please check the subletting clause."
+    }
+  },
+  "haustiere": {
+    "sq": {
+      "title": "Ndalimi i kafshëve shtëpiake",
+      "core": "Kafshët e vogla si brejtësit ose peshqit nuk mund të ndalohen. Kafshët më të mëdha kërkojnë leje, por nuk mund të ndalohen absolutisht.",
+      "law": "OR 257",
+      "prompt": "Sipas OR 257, kafshët e vogla (brejtës, peshq, etj.) nuk mund të ndalohen. Ju lutemi, kontrolloni klauzolën për kafshët shtëpiake."
+    },
+    "pl": {
+      "title": "Zakaz zwierząt domowych",
+      "core": "Małe zwierzęta, takie jak chomiki czy rybki, nie mogą być zakazane. Większe zwierzęta wymagają pozwolenia, ale nie mogą być całkowicie zakazane.",
+      "law": "OR 257",
+      "prompt": "Zgodnie z OR 257, małe zwierzęta (chomiki, rybki itp.) nie mogą być zakazane. Proszę sprawdzić klauzulę dotyczącą zwierząt."
+    },
+    "de": {
+      "title": "Haustierverbot",
+      "core": "Kleine Tiere wie Hamster oder Fische dürfen nicht verboten werden. Grössere Haustiere benötigen eine Erlaubnis, dürfen aber nicht absolut verboten werden.",
+      "law": "OR 257",
+      "prompt": "Gemäss OR 257 dürfen kleine Haustiere (Hamster, Fische etc.) nicht verboten werden. Bitte prüfen Sie die Haustierklausel."
+    },
+    "fr": {
+      "title": "Interdiction d'animaux",
+      "core": "Les petits animaux (hamster, poissons, etc.) ne peuvent pas être interdits. Les grands animaux nécessitent une autorisation mais ne peuvent pas être interdits de manière absolue.",
+      "law": "OR 257",
+      "prompt": "Selon l'OR 257, les petits animaux (hamster, poissons, etc.) ne peuvent pas être interdits. Veuillez vérifier la clause sur les animaux."
+    },
+    "hr": {
+      "title": "Zabrana kućnih ljubimaca",
+      "core": "Male životinje poput hrčaka ili ribica ne mogu se zabraniti. Veći kućni ljubimci zahtijevaju dopuštenje, ali se ne mogu apsolutno zabraniti.",
+      "law": "OR 257",
+      "prompt": "Prema OR 257, male životinje (hrčci, ribice, itd.) ne mogu se zabraniti. Provjerite klauzulu o kućnim ljubimcima."
+    },
+    "pt": {
+      "title": "Proibição de animais de estimação",
+      "core": "Animais pequenos como hamsters ou peixes não podem ser proibidos. Animais maiores necessitam de autorização, mas não podem ser proibidos de forma absoluta.",
+      "law": "OR 257",
+      "prompt": "De acordo com o OR 257, animais pequenos (hamsters, peixes, etc.) não podem ser proibidos. Por favor, verifique a cláusula sobre animais de estimação."
+    },
+    "ta": {
+      "title": "வீட்டு விலங்கு தடை",
+      "core": "எலி அல்லது மீன் போன்ற சிறிய விலங்குகளை தடை செய்ய முடியாது. பெரிய விலங்குகள் அனுமதி தேவைப்படும், ஆனால் முழுமையாக தடை செய்ய முடியாது.",
+      "law": "OR 257",
+      "prompt": "OR 257 பிரிவின்படி, சிறிய விலங்குகள் (எலி, மீன் போன்றவை) தடை செய்ய முடியாது. வீட்டு விலங்கு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Evcil hayvan yasağı",
+      "core": "Hamster veya balık gibi küçük hayvanlar yasaklanamaz. Daha büyük evcil hayvanlar izin gerektirir ancak mutlak olarak yasaklanamaz.",
+      "law": "OR 257",
+      "prompt": "OR 257 maddesine göre, küçük hayvanlar (hamster, balık vb.) yasaklanamaz. Lütfen evcil hayvan maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Prohibición de mascotas",
+      "core": "No se pueden prohibir animales pequeños como hámsteres o peces. Las mascotas más grandes requieren autorización, pero no pueden prohibirse de forma absoluta.",
+      "law": "OR 257",
+      "prompt": "Según el OR 257, los animales pequeños (hámsteres, peces, etc.) no pueden ser prohibidos. Por favor, revise la cláusula de mascotas."
+    },
+    "it": {
+      "title": "Divieto di animali",
+      "core": "Piccoli animali come criceti o pesci non possono essere vietati. Animali più grandi richiedono autorizzazione ma non possono essere vietati in modo assoluto.",
+      "law": "OR 257",
+      "prompt": "Secondo l'OR 257, i piccoli animali (criceti, pesci, ecc.) non possono essere vietati. Verificate la clausola sugli animali."
+    },
+    "en": {
+      "title": "Pet prohibition",
+      "core": "Small animals such as hamsters or fish may not be prohibited. Larger pets require permission but cannot be absolutely forbidden.",
+      "law": "OR 257",
+      "prompt": "According to OR 257, small pets (hamsters, fish, etc.) may not be prohibited. Please check the pet clause."
+    }
+  },
+  "indexmiete": {
+    "sq": {
+      "title": "Qiraja e indeksuar",
+      "core": "Qiraja mund të rregullohet kur çmimet rriten, por vetëm sipas formulës ligjore dhe zakonisht me një afat minimal kontraktor prej 5 vjetësh.",
+      "law": "OR 269b",
+      "prompt": "Sipas OR 269b, një qira e indeksuar duhet të respektojë formulën ligjore dhe zakonisht zgjat të paktën 5 vjet. Ju lutemi, kontrolloni klauzolën e indeksimit."
+    },
+    "pl": {
+      "title": "Czynsz indeksowany",
+      "core": "Czynsz może być dostosowany w przypadku wzrostu cen, ale tylko zgodnie z ustawową formułą i zazwyczaj z minimalnym okresem umowy wynoszącym 5 lat.",
+      "law": "OR 269b",
+      "prompt": "Zgodnie z OR 269b, czynsz indeksowany musi spełniać ustawową formułę i zazwyczaj obowiązuje przez co najmniej 5 lat. Proszę sprawdzić klauzulę indeksacji."
+    },
+    "de": {
+      "title": "Indexierte Miete",
+      "core": "Die Miete kann bei steigenden Preisen angepasst werden, aber nur nach der gesetzlichen Formel und meist mit einem Mindestvertragslauf von 5 Jahren.",
+      "law": "OR 269b",
+      "prompt": "Gemäss OR 269b muss eine indexierte Miete der gesetzlichen Formel entsprechen und in der Regel mindestens 5 Jahre laufen. Bitte prüfen Sie die Indexklausel."
+    },
+    "fr": {
+      "title": "Loyer indexé",
+      "core": "Le loyer peut être adapté en cas de hausse des prix, mais uniquement selon la formule légale et généralement avec un contrat d'au moins 5 ans.",
+      "law": "OR 269b",
+      "prompt": "Selon l'OR 269b, un loyer indexé doit respecter la formule légale et dure généralement au moins 5 ans. Veuillez vérifier la clause d'indexation."
+    },
+    "hr": {
+      "title": "Indeksirana najamnina",
+      "core": "Najamnina se može prilagoditi kada cijene rastu, ali samo prema zakonskoj formuli i obično s minimalnim trajanjem ugovora od 5 godina.",
+      "law": "OR 269b",
+      "prompt": "Prema OR 269b, indeksirana najamnina mora poštivati zakonsku formulu i obično traje najmanje 5 godina. Provjerite klauzulu o indeksaciji."
+    },
+    "pt": {
+      "title": "Renda indexada",
+      "core": "A renda pode ser ajustada em caso de subida de preços, mas apenas segundo a fórmula legal e geralmente com uma duração mínima do contrato de 5 anos.",
+      "law": "OR 269b",
+      "prompt": "De acordo com o OR 269b, uma renda indexada deve respeitar a fórmula legal e normalmente dura pelo menos 5 anos. Por favor, verifique a cláusula de indexação."
+    },
+    "ta": {
+      "title": "குறியீட்டு வாடகை",
+      "core": "விலைகள் உயரும்போது வாடகையை சரிசெய்யலாம், ஆனால் சட்டப்படியான சூத்திரத்தின்படி மட்டுமே மற்றும் பொதுவாக குறைந்தபட்சம் 5 ஆண்டு ஒப்பந்த காலத்துடன்.",
+      "law": "OR 269b",
+      "prompt": "OR 269b பிரிவின்படி, குறியீட்டு வாடகை சட்டப்படியான சூத்திரத்தைப் பின்பற்ற வேண்டும் மற்றும் பொதுவாக குறைந்தபட்சம் 5 ஆண்டுகள் நீடிக்கும். குறியீட்டு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Endeksli kira",
+      "core": "Kira, fiyatlar yükseldiğinde ayarlanabilir, ancak yalnızca yasal formüle göre ve genellikle en az 5 yıllık asgari sözleşme süresiyle.",
+      "law": "OR 269b",
+      "prompt": "OR 269b maddesine göre, endeksli kira yasal formüle uymalı ve genellikle en az 5 yıl sürmelidir. Lütfen endeks maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Renta indexada",
+      "core": "La renta puede ajustarse en caso de subida de precios, pero solo según la fórmula legal y generalmente con una duración mínima del contrato de 5 años.",
+      "law": "OR 269b",
+      "prompt": "Según el OR 269b, una renta indexada debe respetar la fórmula legal y normalmente dura al menos 5 años. Por favor, revise la cláusula de indexación."
+    },
+    "it": {
+      "title": "Canone indicizzato",
+      "core": "Il canone può essere adeguato in caso di aumento dei prezzi, ma solo secondo la formula legale e generalmente con un contratto di almeno 5 anni.",
+      "law": "OR 269b",
+      "prompt": "Secondo l'OR 269b, un canone indicizzato deve rispettare la formula legale e dura generalmente almeno 5 anni. Verificate la clausola di indicizzazione."
+    },
+    "en": {
+      "title": "Indexed rent",
+      "core": "The rent may be adjusted in case of rising prices, but only according to the statutory formula and generally with a minimum contract term of 5 years.",
+      "law": "OR 269b",
+      "prompt": "According to OR 269b, an indexed rent must follow the statutory formula and usually lasts at least 5 years. Please check the indexation clause."
+    }
+  },
+  "schluessel": {
+    "sq": {
+      "title": "Depozita e çelësave / Humbja e çelësave",
+      "core": "Humbja e një çelësi mund të çojë në zëvendësimin e të gjithë sistemit të kyçjes së ndërtesës. Qiramarrësi duhet të kontrollojë sigurimin e tij të përgjegjësisë civile.",
+      "law": "OR 257",
+      "prompt": "Sipas OR 257, humbja e një çelësi mund të shkaktojë kosto të larta për zëvendësimin e të gjithë sistemit të kyçjes. Kontrolloni sigurimin tuaj të përgjegjësisë civile."
+    },
+    "pl": {
+      "title": "Depozyt kluczy / Zagubienie kluczy",
+      "core": "Zagubienie klucza może prowadzić do wymiany całego systemu zamków w budynku. Najemca powinien sprawdzić swoje ubezpieczenie odpowiedzialności cywilnej.",
+      "law": "OR 257",
+      "prompt": "Zgodnie z OR 257, zagubienie klucza może spowodować wysokie koszty wymiany całego systemu zamków. Proszę sprawdzić swoje ubezpieczenie OC."
+    },
+    "de": {
+      "title": "Schlüsseldepot / Verlust",
+      "core": "Der Verlust eines Schlüssels kann zum Austausch der gesamten Schliessanlage des Gebäudes führen. Der Mieter sollte seine Haftpflichtversicherung prüfen.",
+      "law": "OR 257",
+      "prompt": "Gemäss OR 257 kann der Verlust eines Schlüssels hohe Kosten für den Austausch der gesamten Schliessanlage verursachen. Prüfen Sie Ihre Haftpflichtversicherung."
+    },
+    "fr": {
+      "title": "Dépôt de clés / Perte de clés",
+      "core": "La perte d'une clé peut entraîner le remplacement de tout le système de fermeture de l'immeuble. Le locataire devrait vérifier son assurance responsabilité civile.",
+      "law": "OR 257",
+      "prompt": "Selon l'OR 257, la perte d'une clé peut entraîner des coûts élevés pour le remplacement de toute la serrurerie. Vérifiez votre assurance responsabilité civile."
+    },
+    "hr": {
+      "title": "Polog ključeva / Gubitak ključeva",
+      "core": "Gubitak ključa može dovesti do zamjene cijelog sustava brava u zgradi. Najmoprimac bi trebao provjeriti svoje osiguranje od odgovornosti.",
+      "law": "OR 257",
+      "prompt": "Prema OR 257, gubitak ključa može uzrokovati visoke troškove zamjene cijelog sustava brava. Provjerite svoje osiguranje od odgovornosti."
+    },
+    "pt": {
+      "title": "Depósito de chaves / Perda de chaves",
+      "core": "A perda de uma chave pode levar à substituição de todo o sistema de fechadura do edifício. O inquilino deve verificar o seu seguro de responsabilidade civil.",
+      "law": "OR 257",
+      "prompt": "De acordo com o OR 257, a perda de uma chave pode causar custos elevados com a substituição de todo o sistema de fechadura. Verifique o seu seguro de responsabilidade civil."
+    },
+    "ta": {
+      "title": "சாவி டெபாசிட் / சாவி இழப்பு",
+      "core": "ஒரு சாவியின் இழப்பு கட்டிடத்தின் முழு பூட்டு அமைப்பையும் மாற்ற வழிவகுக்கும். குத்தகையாளர் தனது பொறுப்பு காப்பீட்டை சரிபார்க்க வேண்டும்.",
+      "law": "OR 257",
+      "prompt": "OR 257 பிரிவின்படி, ஒரு சாவியின் இழப்பு முழு பூட்டு அமைப்பையும் மாற்ற உயர் செலவுகளை ஏற்படுத்தும். உங்கள் பொறுப்பு காப்பீட்டை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Anahtar depozitosu / Anahtar kaybı",
+      "core": "Bir anahtarın kaybı, binanın tüm kilit sisteminin değiştirilmesine yol açabilir. Kiracı sorumluluk sigortasını kontrol etmelidir.",
+      "law": "OR 257",
+      "prompt": "OR 257 maddesine göre, bir anahtarın kaybı tüm kilit sisteminin değiştirilmesi için yüksek maliyetlere neden olabilir. Sorumluluk sigortanızı kontrol edin."
+    },
+    "es": {
+      "title": "Depósito de llaves / Pérdida de llaves",
+      "core": "La pérdida de una llave puede conllevar la sustitución de todo el sistema de cerradura del edificio. El arrendatario debería comprobar su seguro de responsabilidad civil.",
+      "law": "OR 257",
+      "prompt": "Según el OR 257, la pérdida de una llave puede ocasionar altos costes por la sustitución de todo el sistema de cerradura. Revise su seguro de responsabilidad civil."
+    },
+    "it": {
+      "title": "Deposito chiavi / Smarrimento chiavi",
+      "core": "La perdita di una chiave può comportare la sostituzione dell'intero sistema di chiusura dell'edificio. L'inquilino dovrebbe verificare la propria assicurazione di responsabilità civile.",
+      "law": "OR 257",
+      "prompt": "Secondo l'OR 257, la perdita di una chiave può causare costi elevati per la sostituzione di tutta la serratura. Verificate la vostra assicurazione di responsabilità civile."
+    },
+    "en": {
+      "title": "Key deposit / Loss of keys",
+      "core": "The loss of a key can lead to the replacement of the entire building locking system. The tenant should check their liability insurance.",
+      "law": "OR 257",
+      "prompt": "According to OR 257, the loss of a key can cause high costs for replacing the entire locking system. Check your liability insurance."
+    }
+  },
+  "verwaltung": {
+    "sq": {
+      "title": "Tarifa e administrimit / Përgatitja e kontratës",
+      "core": "Tarifat e kërkuara nga qiradhënësi ose agjenti për 'përgatitjen e kontratës' janë përgjithësisht kosto shtesë të papranueshme.",
+      "law": "OR 257a",
+      "prompt": "Sipas OR 257a, tarifat për përgatitjen e kontratës janë përgjithësisht të papranueshme. Ju lutemi, kontrolloni nëse kosto të tilla figurojnë në kontratë."
+    },
+    "pl": {
+      "title": "Opłata administracyjna / Sporządzenie umowy",
+      "core": "Opłaty wynajmującego lub agenta za 'sporządzenie umowy' są zazwyczaj niedopuszczalnymi kosztami dodatkowymi.",
+      "law": "OR 257a",
+      "prompt": "Zgodnie z OR 257a, opłaty za sporządzenie umowy są zazwyczaj niedopuszczalne. Proszę sprawdzić, czy takie koszty występują w umowie."
+    },
+    "de": {
+      "title": "Verwaltungsgebühr",
+      "core": "Gebühren des Vermieters oder Maklers für die 'Vertragsausfertigung' sind in der Regel unzulässige Zusatzkosten.",
+      "law": "OR 257a",
+      "prompt": "Gemäss OR 257a sind Gebühren für die Vertragsausfertigung in der Regel unzulässig. Bitte prüfen Sie, ob solche Kosten im Vertrag stehen."
+    },
+    "fr": {
+      "title": "Frais de gestion / d'établissement du contrat",
+      "core": "Les frais demandés par le bailleur ou l'agence pour 'l'établissement du contrat' sont généralement des coûts supplémentaires inadmissibles.",
+      "law": "OR 257a",
+      "prompt": "Selon l'OR 257a, les frais d'établissement du contrat sont généralement inadmissibles. Veuillez vérifier si de tels frais figurent dans le contrat."
+    },
+    "hr": {
+      "title": "Administrativna naknada / Priprema ugovora",
+      "core": "Naknade najmodavca ili agenta za 'pripremu ugovora' u pravilu su nedopušteni dodatni troškovi.",
+      "law": "OR 257a",
+      "prompt": "Prema OR 257a, naknade za pripremu ugovora u pravilu su nedopuštene. Provjerite postoje li takvi troškovi u ugovoru."
+    },
+    "pt": {
+      "title": "Taxa de administração / Redação do contrato",
+      "core": "Os honorários exigidos pelo senhorio ou agência pela 'redação do contrato' são geralmente custos adicionais inadmissíveis.",
+      "law": "OR 257a",
+      "prompt": "De acordo com o OR 257a, os custos pela redação do contrato são geralmente inadmissíveis. Por favor, verifique se tais custos constam do contrato."
+    },
+    "ta": {
+      "title": "நிர்வாகக் கட்டணம்",
+      "core": "வீட்டு உரிமையாளர் அல்லது முகவரின் 'ஒப்பந்த தயாரிப்பு' கட்டணங்கள் பொதுவாக ஏற்றுக்கொள்ள முடியாத கூடுதல் செலவுகளாகும்.",
+      "law": "OR 257a",
+      "prompt": "OR 257a பிரிவின்படி, ஒப்பந்த தயாரிப்பு கட்டணங்கள் பொதுவாக ஏற்றுக்கொள்ள முடியாதவை. ஒப்பந்தத்தில் அத்தகைய செலவுகள் உள்ளதா என சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Yönetim ücreti / Sözleşme hazırlama",
+      "core": "Ev sahibi veya ajansın 'sözleşme hazırlama' ücretleri genellikle kabul edilemez ek maliyetlerdir.",
+      "law": "OR 257a",
+      "prompt": "OR 257a maddesine göre, sözleşme hazırlama ücretleri genellikle kabul edilemez. Lütfen sözleşmenizde bu tür ücretlerin olup olmadığını kontrol edin."
+    },
+    "es": {
+      "title": "Gastos de administración / Redacción del contrato",
+      "core": "Los honorarios exigidos por el arrendador o la agencia por la 'redacción del contrato' son generalmente costes adicionales inadmisibles.",
+      "law": "OR 257a",
+      "prompt": "Según el OR 257a, los gastos por la redacción del contrato son generalmente inadmisibles. Por favor, compruebe si tales costes figuran en el contrato."
+    },
+    "it": {
+      "title": "Spese di amministrazione / Redazione contratto",
+      "core": "Le spese richieste dal locatore o dall'agenzia per la 'redazione del contratto' sono generalmente costi aggiuntivi non ammessi.",
+      "law": "OR 257a",
+      "prompt": "Secondo l'OR 257a, le spese per la redazione del contratto sono generalmente non ammesse. Verificate se tali costi sono presenti nel contratto."
+    },
+    "en": {
+      "title": "Administration fee / Contract preparation",
+      "core": "Fees charged by the landlord or agency for 'contract preparation' are generally inadmissible additional costs.",
+      "law": "OR 257a",
+      "prompt": "According to OR 257a, fees for drafting the contract are generally not permitted. Please check whether such costs are included in the contract."
+    }
+  },
+  "besucher": {
+    "sq": {
+      "title": "Rregullorja e vizitorëve",
+      "core": "Qiradhënësi nuk ka të drejtë të kufizojë vizitat ose qëndrimet e shkurtra gjatë natës së mysafirëve – kjo i përket sferës private.",
+      "law": "ZGB Art. 27",
+      "prompt": "Sipas nenit 27 të Kodit Civil Zviceran (ZGB), qiradhënësi nuk mund të ndalojë vizitat ose qëndrimet e shkurtra gjatë natës së mysafirëve. Ju lutemi, kontrolloni rregulloren e vizitorëve."
+    },
+    "pl": {
+      "title": "Regulamin odwiedzin",
+      "core": "Wynajmujący nie ma prawa zakazywać noclegów lub krótkich wizyt gości – należy to do sfery prywatnej.",
+      "law": "ZGB Art. 27",
+      "prompt": "Zgodnie z art. 27 szwajcarskiego Kodeksu Cywilnego (ZGB), wynajmujący nie może zakazywać noclegów lub krótkich wizyt gości. Proszę sprawdzić regulamin odwiedzin."
+    },
+    "de": {
+      "title": "Besucherregelung",
+      "core": "Der Vermieter hat kein Recht, Übernachtungen oder Kurzbesuche von Gästen zu verbieten – dies fällt unter die Privatsphäre.",
+      "law": "ZGB Art. 27",
+      "prompt": "Gemäss ZGB Art. 27 darf der Vermieter Übernachtungen oder Kurzbesuche von Gästen nicht verbieten. Bitte prüfen Sie die Besucherregelung."
+    },
+    "fr": {
+      "title": "Règlement des visites",
+      "core": "Le bailleur n'a pas le droit de limiter les visites ou les nuitées de courte durée – cela relève de la sphère privée.",
+      "law": "ZGB Art. 27",
+      "prompt": "Selon l'art. 27 CC, le bailleur ne peut pas interdire les visites ou les nuitées de courte durée. Veuillez vérifier le règlement des visites."
+    },
+    "hr": {
+      "title": "Pravilnik o posjetiteljima",
+      "core": "Najmodavac nema pravo zabraniti noćenja ili kratke posjete gostiju – to spada u privatnu sferu.",
+      "law": "ZGB Art. 27",
+      "prompt": "Prema članku 27 Švicarskog građanskog zakonika (ZGB), najmodavac ne može zabraniti noćenja ili kratke posjete gostiju. Provjerite pravilnik o posjetiteljima."
+    },
+    "pt": {
+      "title": "Regulamentação de visitas",
+      "core": "O senhorio não tem o direito de limitar visitas ou pernoitas curtas de convidados – isto pertence à esfera privada.",
+      "law": "ZGB Art. 27",
+      "prompt": "De acordo com o art. 27 do Código Civil suíço (ZGB), o senhorio não pode proibir visitas ou pernoitas curtas de convidados. Por favor, verifique a regulamentação de visitas."
+    },
+    "ta": {
+      "title": "விருந்தினர் விதிமுறை",
+      "core": "வீட்டு உரிமையாளருக்கு விருந்தினர்களின் இரவு தங்கல் அல்லது குறுகிய வருகைகளை தடை செய்யும் உரிமை இல்லை – இது தனிப்பட்ட தளத்திற்கு உட்பட்டது.",
+      "law": "ZGB Art. 27",
+      "prompt": "ஸ்விஸ் சிவில் கோட் பிரிவு 27 இன் படி, வீட்டு உரிமையாளர் விருந்தினர்களின் இரவு தங்கல் அல்லது குறுகிய வருகைகளை தடை செய்ய முடியாது. விருந்தினர் விதிமுறையை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Ziyaretçi düzenlemesi",
+      "core": "Ev sahibinin misafirlerin gecelemelerini veya kısa ziyaretlerini kısıtlama hakkı yoktur – bu özel alana girer.",
+      "law": "ZGB Art. 27",
+      "prompt": "İsviçre Medeni Kanunu Madde 27'ye göre, ev sahibi misafirlerin gecelemelerini veya kısa ziyaretlerini yasaklayamaz. Lütfen ziyaretçi düzenlemesini kontrol edin."
+    },
+    "es": {
+      "title": "Regulación de visitas",
+      "core": "El arrendador no tiene derecho a limitar las visitas o pernoctaciones cortas de invitados – esto pertenece a la esfera privada.",
+      "law": "ZGB Art. 27",
+      "prompt": "Según el art. 27 del Código Civil suizo (ZGB), el arrendador no puede prohibir visitas o pernoctaciones cortas. Por favor, revise la regulación de visitas."
+    },
+    "it": {
+      "title": "Regolamento visite",
+      "core": "Il locatore non ha il diritto di limitare le visite o i pernottamenti di breve durata – ciò rientra nella sfera privata.",
+      "law": "ZGB Art. 27",
+      "prompt": "Secondo l'art. 27 CC, il locatore non può vietare visite o pernottamenti di breve durata. Verificate il regolamento sulle visite."
+    },
+    "en": {
+      "title": "Visitor regulation",
+      "core": "The landlord has no right to restrict visits or short overnight stays – this belongs to the private sphere.",
+      "law": "ZGB Art. 27",
+      "prompt": "According to Art. 27 of the Swiss Civil Code, the landlord may not prohibit visits or short overnight stays. Please check the visitor rules."
+    }
+  },
+  "entschaedigung": {
+    "sq": {
+      "title": "Dëmshpërblim / Gjobë konvencionale",
+      "core": "Në rast të zgjidhjes së parakohshme dhe nëse gjendet një qiramarrës zëvendësues i kualifikuar, nuk paguhet asnjë dëmshpërblim ose gjobë konvencionale.",
+      "law": "OR 264",
+      "prompt": "Sipas OR 264, në rast të zgjidhjes së parakohshme me qiramarrës zëvendësues, nuk paguhet asnjë dëmshpërblim. Ju lutemi, kontrolloni klauzolën e dëmshpërblimit."
+    },
+    "pl": {
+      "title": "Odszkodowanie / Kara umowna",
+      "core": "W przypadku wcześniejszego wypowiedzenia i znalezienia kwalifikowanego najemcy zastępczego nie należy się żadne odszkodowanie ani kara umowna.",
+      "law": "OR 264",
+      "prompt": "Zgodnie z OR 264, w przypadku wcześniejszego wypowiedzenia i znalezienia najemcy zastępczego nie należy się żadna kara. Proszę sprawdzić klauzulę odszkodowawczą."
+    },
+    "de": {
+      "title": "Strafzahlung / Konv.-Strafe",
+      "core": "Bei vorzeitiger Kündigung und Finden eines Ersatzmieters ist keine Entschädigung oder Konventionalstrafe zu zahlen.",
+      "law": "OR 264",
+      "prompt": "Gemäss OR 264 ist bei vorzeitiger Kündigung und Finden eines Ersatzmieters keine Strafzahlung fällig. Bitte prüfen Sie die Entschädigungsklausel."
+    },
+    "fr": {
+      "title": "Indemnité / Peine conventionnelle",
+      "core": "En cas de résiliation anticipée et si un locataire de remplacement est trouvé, aucune indemnité ou peine conventionnelle n'est due.",
+      "law": "OR 264",
+      "prompt": "Selon l'OR 264, en cas de résiliation anticipée avec locataire de remplacement, aucune indemnité n'est due. Veuillez vérifier la clause d'indemnité."
+    },
+    "hr": {
+      "title": "Odšteta / Ugovorna kazna",
+      "core": "U slučaju prijevremenog otkaza i pronalaska kvalificiranog zamjenskog najmoprimca, ne plaća se nikakva odšteta ili ugovorna kazna.",
+      "law": "OR 264",
+      "prompt": "Prema OR 264, u slučaju prijevremenog otkaza i pronalaska zamjenskog najmoprimca, ne dospijeva nikakva kazna. Provjerite klauzulu o odšteti."
+    },
+    "pt": {
+      "title": "Indemnização / Pena convencional",
+      "core": "Em caso de rescisão antecipada e se for encontrado um inquilino substituto qualificado, não é devida qualquer indemnização ou pena convencional.",
+      "law": "OR 264",
+      "prompt": "De acordo com o OR 264, em caso de rescisão antecipada com inquilino substituto, não é devida qualquer indemnização. Por favor, verifique a cláusula de indemnização."
+    },
+    "ta": {
+      "title": "இழப்பீடு / ஒப்பந்த ரீதியான அபராதம்",
+      "core": "முன்கூட்டிய ரத்து மற்றும் தகுதியான மாற்று குத்தகையாளர் கிடைத்தால், எந்த இழப்பீடு அல்லது ஒப்பந்த ரீதியான அபராதமும் செலுத்தப்பட வேண்டியதில்லை.",
+      "law": "OR 264",
+      "prompt": "OR 264 பிரிவின்படி, முன்கூட்டிய ரத்து மற்றும் மாற்று குத்தகையாளர் கிடைத்தால் எந்த இழப்பீடும் செலுத்தப்பட வேண்டியதில்லை. இழப்பீடு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Tazminat / Sözleşmesel ceza",
+      "core": "Erken fesih durumunda ve nitelikli yedek kiracı bulunursa, herhangi bir tazminat veya sözleşmesel ceza ödenmez.",
+      "law": "OR 264",
+      "prompt": "OR 264 maddesine göre, erken fesih ve yedek kiracı bulunması halinde herhangi bir tazminat ödenmez. Lütfen tazminat maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Indemnización / Pena convencional",
+      "core": "En caso de rescisión anticipada y si se encuentra un arrendatario sustituto cualificado, no se debe ninguna indemnización ni pena convencional.",
+      "law": "OR 264",
+      "prompt": "Según el OR 264, en caso de rescisión anticipada con arrendatario sustituto, no se debe ninguna indemnización. Por favor, revise la cláusula de indemnización."
+    },
+    "it": {
+      "title": "Indennità / Pena convenzionale",
+      "core": "In caso di disdetta anticipata e se si trova un inquilino sostitutivo, non è dovuta alcuna indennità o pena convenzionale.",
+      "law": "OR 264",
+      "prompt": "Secondo l'OR 264, in caso di disdetta anticipata con inquilino sostitutivo, non è dovuta alcuna indennità. Verificate la clausola di indennità."
+    },
+    "en": {
+      "title": "Compensation / Conventional penalty",
+      "core": "In the case of early termination and if a qualified replacement tenant is found, no compensation or contractual penalty is due.",
+      "law": "OR 264",
+      "prompt": "According to OR 264, in the event of early termination with a replacement tenant, no compensation is due. Please check the compensation clause."
+    }
+  },
+  "heizung": {
+    "sq": {
+      "title": "Ngrohja / Uji i ngrohtë",
+      "core": "Në dimër, banesa duhet të ketë të paktën 20°C, përndryshe qiramarrësi ka të drejtë për ulje të qirasë.",
+      "law": "OR 256",
+      "prompt": "Sipas OR 256, banesa duhet të ketë të paktën 20°C në dimër, përndryshe keni të drejtë për ulje të qirasë. Ju lutemi, kontrolloni klauzolën e ngrohjes."
+    },
+    "pl": {
+      "title": "Ogrzewanie / Ciepła woda",
+      "core": "Zimą mieszkanie musi mieć co najmniej 20°C, w przeciwnym razie najemca ma prawo do obniżki czynszu.",
+      "law": "OR 256",
+      "prompt": "Zgodnie z OR 256, zimą mieszkanie musi mieć co najmniej 20°C, w przeciwnym razie przysługuje prawo do obniżki czynszu. Proszę sprawdzić klauzulę ogrzewania."
+    },
+    "de": {
+      "title": "Heizung / Warmwasser",
+      "core": "Im Winter muss die Wohnung mindestens 20°C haben, sonst hat der Mieter Anspruch auf Mietzinsreduktion.",
+      "law": "OR 256",
+      "prompt": "Gemäss OR 256 muss die Wohnung im Winter mindestens 20°C warm sein, sonst haben Sie Anspruch auf Mietzinsreduktion. Bitte prüfen Sie die Heizungsklausel."
+    },
+    "fr": {
+      "title": "Chauffage / Eau chaude",
+      "core": "En hiver, le logement doit être chauffé à au moins 20°C, sinon le locataire a droit à une réduction de loyer.",
+      "law": "OR 256",
+      "prompt": "Selon l'OR 256, le logement doit atteindre au moins 20°C en hiver, sinon vous avez droit à une réduction de loyer. Veuillez vérifier la clause de chauffage."
+    },
+    "hr": {
+      "title": "Grijanje / Topla voda",
+      "core": "Zimi stan mora imati najmanje 20°C, inače najmoprimac ima pravo na smanjenje najamnine.",
+      "law": "OR 256",
+      "prompt": "Prema OR 256, zimi stan mora imati najmanje 20°C, inače imate pravo na smanjenje najamnine. Provjerite klauzulu o grijanju."
+    },
+    "pt": {
+      "title": "Aquecimento / Água quente",
+      "core": "No inverno, o apartamento deve alcançar pelo menos 20°C; caso contrário, o inquilino tem direito a uma redução da renda.",
+      "law": "OR 256",
+      "prompt": "De acordo com o OR 256, o apartamento deve ter pelo menos 20°C no inverno; caso contrário, tem direito a uma redução da renda. Por favor, verifique a cláusula de aquecimento."
+    },
+    "ta": {
+      "title": "வெப்பமாக்கல் / சூடான நீர்",
+      "core": "குளிர்காலத்தில் அடுக்குமாடி குறைந்தபட்சம் 20°C இருக்க வேண்டும், இல்லையெனில் குத்தகையாளருக்கு வாடகை குறைப்பு உரிமை உண்டு.",
+      "law": "OR 256",
+      "prompt": "OR 256 பிரிவின்படி, குளிர்காலத்தில் அடுக்குமாடி குறைந்தபட்சம் 20°C இருக்க வேண்டும், இல்லையெனில் வாடகை குறைப்பு உரிமை உங்களுக்கு உண்டு. வெப்பமாக்கல் விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Isıtma / Sıcak su",
+      "core": "Kışın daire en az 20°C olmalıdır, aksi takdirde kiracı kira indirimi hakkına sahiptir.",
+      "law": "OR 256",
+      "prompt": "OR 256 maddesine göre, kışın daire en az 20°C olmalıdır, aksi takdirde kira indirimi hakkınız vardır. Lütfen ısıtma maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Calefacción / Agua caliente",
+      "core": "En invierno, la vivienda debe alcanzar al menos 20°C; de lo contrario, el arrendatario tiene derecho a una reducción de la renta.",
+      "law": "OR 256",
+      "prompt": "Según el OR 256, la vivienda debe tener al menos 20°C en invierno; de lo contrario, tiene derecho a una reducción de la renta. Por favor, revise la cláusula de calefacción."
+    },
+    "it": {
+      "title": "Riscaldamento / Acqua calda",
+      "core": "In inverno l'appartamento deve essere riscaldato ad almeno 20°C, altrimenti l'inquilino ha diritto a una riduzione del canone.",
+      "law": "OR 256",
+      "prompt": "Secondo l'OR 256, l'appartamento deve raggiungere almeno 20°C in inverno, altrimenti avete diritto a una riduzione del canone. Verificate la clausola sul riscaldamento."
+    },
+    "en": {
+      "title": "Heating / Hot water",
+      "core": "In winter the apartment must be heated to at least 20°C, otherwise the tenant is entitled to a rent reduction.",
+      "law": "OR 256",
+      "prompt": "According to OR 256, the apartment must reach at least 20°C in winter, otherwise you are entitled to a rent reduction. Please check the heating clause."
+    }
+  },
+  "versicherungszwang": {
+    "sq": {
+      "title": "Sigurimi i detyrueshëm",
+      "core": "Qiradhënësi mund të kërkojë një sigurim, por nuk mund të imponojë një kompani specifike.",
+      "law": "UWG (E drejta e konkurrencës)",
+      "prompt": "Sipas ligjit të konkurrencës (UWG), qiradhënësi nuk mund të imponojë një kompani specifike sigurimi. Ju lutemi, kontrolloni klauzolën e sigurimit."
+    },
+    "pl": {
+      "title": "Obowiązkowe ubezpieczenie",
+      "core": "Wynajmujący może wymagać ubezpieczenia, ale nie może narzucać konkretnego towarzystwa ubezpieczeniowego.",
+      "law": "UWG (Prawo konkurencji)",
+      "prompt": "Zgodnie z prawem konkurencji (UWG), wynajmujący nie może narzucać konkretnego towarzystwa ubezpieczeniowego. Proszę sprawdzić klauzulę ubezpieczeniową."
+    },
+    "de": {
+      "title": "Versicherungszwang",
+      "core": "Der Vermieter darf eine Versicherung verlangen, aber nicht eine bestimmte Gesellschaft vorschreiben.",
+      "law": "UWG (Wettbewerbsrecht)",
+      "prompt": "Gemäss UWG darf der Vermieter keine bestimmte Versicherungsgesellschaft vorschreiben. Bitte prüfen Sie die Versicherungsklausel."
+    },
+    "fr": {
+      "title": "Obligation d'assurance",
+      "core": "Le bailleur peut exiger une assurance, mais ne peut pas imposer une compagnie d'assurance spécifique.",
+      "law": "UWG (Droit de la concurrence)",
+      "prompt": "Selon le droit de la concurrence (UWG), le bailleur ne peut pas imposer une compagnie d'assurance spécifique. Veuillez vérifier la clause d'assurance."
+    },
+    "hr": {
+      "title": "Obvezno osiguranje",
+      "core": "Najmodavac može zahtijevati osiguranje, ali ne može propisati određeno osiguravajuće društvo.",
+      "law": "UWG (Pravo tržišnog natjecanja)",
+      "prompt": "Prema pravu tržišnog natjecanja (UWG), najmodavac ne može propisati određeno osiguravajuće društvo. Provjerite klauzulu o osiguranju."
+    },
+    "pt": {
+      "title": "Seguro obrigatório",
+      "core": "O senhorio pode exigir um seguro, mas não pode impor uma companhia específica.",
+      "law": "UWG (Direito da concorrência)",
+      "prompt": "De acordo com o direito da concorrência (UWG), o senhorio não pode impor uma companhia de seguros específica. Por favor, verifique a cláusula de seguro."
+    },
+    "ta": {
+      "title": "கட்டாயக் காப்பீடு",
+      "core": "வீட்டு உரிமையாளர் காப்பீடு கோரலாம், ஆனால் குறிப்பிட்ட நிறுவனத்தை கட்டாயப்படுத்த முடியாது.",
+      "law": "UWG (போட்டி சட்டம்)",
+      "prompt": "போட்டி சட்டம் (UWG) படி, வீட்டு உரிமையாளர் குறிப்பிட்ட காப்பீட்டு நிறுவனத்தை கட்டாயப்படுத்த முடியாது. காப்பீடு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Zorunlu sigorta",
+      "core": "Ev sahibi sigorta talep edebilir, ancak belirli bir sigorta şirketini dayatamaz.",
+      "law": "UWG (Rekabet Hukuku)",
+      "prompt": "Rekabet hukukuna (UWG) göre, ev sahibi belirli bir sigorta şirketini dayatamaz. Lütfen sigorta maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Obligación de seguro",
+      "core": "El arrendador puede exigir un seguro, pero no puede imponer una compañía aseguradora específica.",
+      "law": "UWG (Derecho de la competencia)",
+      "prompt": "Según el derecho de la competencia (UWG), el arrendador no puede imponer una compañía de seguros específica. Por favor, revise la cláusula de seguro."
+    },
+    "it": {
+      "title": "Obbligo di assicurazione",
+      "core": "Il locatore può richiedere un'assicurazione, ma non può imporre una compagnia assicurativa specifica.",
+      "law": "UWG (Diritto della concorrenza)",
+      "prompt": "Secondo il diritto della concorrenza (UWG), il locatore non può imporre una compagnia assicurativa specifica. Verificate la clausola sull'assicurazione."
+    },
+    "en": {
+      "title": "Compulsory insurance",
+      "core": "The landlord may require insurance, but may not impose a specific insurance company.",
+      "law": "UWG (Unfair Competition Law)",
+      "prompt": "According to unfair competition law (UWG), the landlord may not prescribe a specific insurance company. Please check the insurance clause."
+    }
+  },
+  "zutritt": {
+    "sq": {
+      "title": "E drejta e hyrjes",
+      "core": "Qiradhënësi nuk mund të hyjë në banesë në çdo kohë. Kërkohet njoftim paraprak me një arsye të vlefshme (riparim/inspektim).",
+      "law": "OR 257h",
+      "prompt": "Sipas OR 257h, qiradhënësi nuk mund të hyjë në banesë në çdo kohë. Kërkohet njoftim paraprak me arsye të vlefshme. Ju lutemi, kontrolloni klauzolën e hyrjes."
+    },
+    "pl": {
+      "title": "Prawo dostępu",
+      "core": "Wynajmujący nie może wchodzić do mieszkania w dowolnym momencie. Wymagane jest wcześniejsze powiadomienie z ważnego powodu (naprawa/oględziny).",
+      "law": "OR 257h",
+      "prompt": "Zgodnie z OR 257h, wynajmujący nie może wchodzić do mieszkania w dowolnym momencie. Wymagane jest wcześniejsze powiadomienie z ważnego powodu. Proszę sprawdzić klauzulę dostępu."
+    },
+    "de": {
+      "title": "Zutrittsrecht",
+      "core": "Der Vermieter darf nicht jederzeit die Wohnung betreten. Es ist eine vorherige Ankündigung mit berechtigtem Grund (Reparatur/Besichtigung) erforderlich.",
+      "law": "OR 257h",
+      "prompt": "Gemäss OR 257h darf der Vermieter die Wohnung nicht jederzeit betreten. Es ist eine vorherige Ankündigung mit triftigem Grund erforderlich. Bitte prüfen Sie die Zutrittsklausel."
+    },
+    "fr": {
+      "title": "Droit d'accès",
+      "core": "Le bailleur ne peut pas entrer dans le logement à tout moment. Une annonce préalable avec un motif valable (réparation / visite) est obligatoire.",
+      "law": "OR 257h",
+      "prompt": "Selon l'OR 257h, le bailleur ne peut pas accéder au logement à tout moment. Une annonce préalable avec motif valable est requise. Veuillez vérifier la clause d'accès."
+    },
+    "hr": {
+      "title": "Pravo pristupa",
+      "core": "Najmodavac ne može ući u stan u bilo koje vrijeme. Potrebna je prethodna najava s valjanim razlogom (popravak/inspekcija).",
+      "law": "OR 257h",
+      "prompt": "Prema OR 257h, najmodavac ne može ući u stan u bilo koje vrijeme. Potrebna je prethodna najava s valjanim razlogom. Provjerite klauzulu o pristupu."
+    },
+    "pt": {
+      "title": "Direito de acesso",
+      "core": "O senhorio não pode entrar no apartamento a qualquer momento. É necessário aviso prévio com motivo válido (reparação/inspeção).",
+      "law": "OR 257h",
+      "prompt": "De acordo com o OR 257h, o senhorio não pode aceder ao apartamento a qualquer momento. É necessário aviso prévio com motivo justificado. Por favor, verifique a cláusula de acesso."
+    },
+    "ta": {
+      "title": "நுழைவு உரிமை",
+      "core": "வீட்டு உரிமையாளர் எந்த நேரத்திலும் அடுக்குமாடிக்குள் நுழைய முடியாது. செல்லுபடியான காரணத்துடன் (பழுதுபார்ப்பு/பரிசோதனை) முன் அறிவிப்பு தேவை.",
+      "law": "OR 257h",
+      "prompt": "OR 257h பிரிவின்படி, வீட்டு உரிமையாளர் எந்த நேரத்திலும் அடுக்குமாடிக்குள் நுழைய முடியாது. செல்லுபடியான காரணத்துடன் முன் அறிவிப்பு தேவை. நுழைவு விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Giriş hakkı",
+      "core": "Ev sahibi daireye istediği zaman giremez. Geçerli bir sebeple (onarım/denetim) önceden bildirim yapılması zorunludur.",
+      "law": "OR 257h",
+      "prompt": "OR 257h maddesine göre, ev sahibi daireye istediği zaman giremez. Geçerli bir sebeple önceden bildirim şarttır. Lütfen giriş maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Derecho de acceso",
+      "core": "El arrendador no puede entrar en la vivienda en cualquier momento. Se requiere un aviso previo con un motivo válido (reparación / inspección).",
+      "law": "OR 257h",
+      "prompt": "Según el OR 257h, el arrendador no puede acceder a la vivienda en cualquier momento. Se requiere un aviso previo con motivo justificado. Por favor, revise la cláusula de acceso."
+    },
+    "it": {
+      "title": "Diritto di accesso",
+      "core": "Il locatore non può entrare nell'appartamento in qualsiasi momento. È necessaria una comunicazione preventiva con un motivo valido (riparazione / visita).",
+      "law": "OR 257h",
+      "prompt": "Secondo l'OR 257h, il locatore non può accedere all'appartamento in qualsiasi momento. È richiesta una comunicazione preventiva con motivo valido. Verificate la clausola di accesso."
+    },
+    "en": {
+      "title": "Right of access",
+      "core": "The landlord may not enter the apartment at any time. Prior notice with a valid reason (repair / inspection) is required.",
+      "law": "OR 257h",
+      "prompt": "According to OR 257h, the landlord may not access the apartment at any time. Prior notice with a valid reason is mandatory. Please check the access clause."
+    }
+  },
+  "anfangsmietzins": {
+    "sq": {
+      "title": "Qiraja fillestare",
+      "core": "Brenda 30 ditëve nga nënshkrimi i kontratës, një qira fillestare tepër e lartë mund të kundërshtohet pranë autoritetit të pajtimit.",
+      "law": "OR 270",
+      "prompt": "Sipas OR 270, ju mund të kundërshtoni një qira fillestare tepër të lartë brenda 30 ditëve pranë autoritetit të pajtimit. Ju lutemi, kontrolloni qiranë fillestare."
+    },
+    "pl": {
+      "title": "Początkowy czynsz",
+      "core": "W ciągu 30 dni od podpisania umowy nadmiernie wysoki początkowy czynsz może być zakwestionowany przed organem pojednawczym.",
+      "law": "OR 270",
+      "prompt": "Zgodnie z OR 270, możesz zakwestionować nadmiernie wysoki początkowy czynsz w ciągu 30 dni przed organem pojednawczym. Proszę sprawdzić początkowy czynsz."
+    },
+    "de": {
+      "title": "Anfang Mietzins",
+      "core": "Innerhalb von 30 Tagen nach Vertragsabschluss kann ein überhöhter Anfangsmietzins bei der Schlichtungsstelle angefochten werden.",
+      "law": "OR 270",
+      "prompt": "Gemäss OR 270 können Sie einen überhöhten Anfangsmietzins innerhalb von 30 Tagen bei der Schlichtungsstelle anfechten. Bitte prüfen Sie den Anfangsmietzins."
+    },
+    "fr": {
+      "title": "Loyer initial",
+      "core": "Dans les 30 jours suivant la signature, un loyer initial excessif peut être contesté devant l'autorité de conciliation.",
+      "law": "OR 270",
+      "prompt": "Selon l'OR 270, vous pouvez contester un loyer initial excessif dans les 30 jours auprès de l'autorité de conciliation. Veuillez vérifier le loyer initial."
+    },
+    "hr": {
+      "title": "Početna najamnina",
+      "core": "Unutar 30 dana od potpisivanja ugovora, pretjerano visoka početna najamnina može se osporiti pred tijelom za mirenje.",
+      "law": "OR 270",
+      "prompt": "Prema OR 270, pretjerano visoku početnu najamninu možete osporiti u roku od 30 dana pred tijelom za mirenje. Provjerite početnu najamninu."
+    },
+    "pt": {
+      "title": "Renda inicial",
+      "core": "No prazo de 30 dias após a assinatura do contrato, uma renda inicial excessivamente alta pode ser impugnada junto da autoridade de conciliação.",
+      "law": "OR 270",
+      "prompt": "De acordo com o OR 270, pode impugnar uma renda inicial excessivamente alta no prazo de 30 dias junto da autoridade de conciliação. Por favor, verifique a renda inicial."
+    },
+    "ta": {
+      "title": "தொடக்க வாடகை",
+      "core": "ஒப்பந்தம் கையெழுத்தான 30 நாட்களுக்குள், அதிகமான தொடக்க வாடகையை சமரச அதிகாரத்திடம் எதிர்க்கலாம்.",
+      "law": "OR 270",
+      "prompt": "OR 270 பிரிவின்படி, அதிகமான தொடக்க வாடகையை 30 நாட்களுக்குள் சமரச அதிகாரத்திடம் எதிர்க்கலாம். தொடக்க வாடகையை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Başlangıç kirası",
+      "core": "Sözleşme imzalandıktan sonraki 30 gün içinde, aşırı yüksek başlangıç kirası sulh makamında itiraz edilebilir.",
+      "law": "OR 270",
+      "prompt": "OR 270 maddesine göre, aşırı yüksek başlangıç kirasını 30 gün içinde sulh makamında itiraz edebilirsiniz. Lütfen başlangıç kirasını kontrol edin."
+    },
+    "es": {
+      "title": "Renta inicial",
+      "core": "Dentro de los 30 días siguientes a la firma del contrato, se puede impugnar ante la autoridad de conciliación una renta inicial excesivamente alta.",
+      "law": "OR 270",
+      "prompt": "Según el OR 270, puede impugnar una renta inicial excesivamente alta dentro de los 30 días ante la autoridad de conciliación. Por favor, compruebe la renta inicial."
+    },
+    "it": {
+      "title": "Canone iniziale",
+      "core": "Entro 30 giorni dalla firma del contratto, un canone iniziale eccessivo può essere contestato presso l'autorità di conciliazione.",
+      "law": "OR 270",
+      "prompt": "Secondo l'OR 270, potete contestare un canone iniziale eccessivo entro 30 giorni presso l'autorità di conciliazione. Verificate il canone iniziale."
+    },
+    "en": {
+      "title": "Initial rent",
+      "core": "Within 30 days of signing the contract, an excessively high initial rent can be challenged at the conciliation authority.",
+      "law": "OR 270",
+      "prompt": "According to OR 270, you can challenge an excessively high initial rent within 30 days at the conciliation authority. Please check the initial rent."
+    }
+  },
+  "referenzzinssatz": {
+    "sq": {
+      "title": "Norma referente e interesit",
+      "core": "Nëse norma referente e interesit hipotekar bie, qiramarrësi duhet të kërkojë në mënyrë aktive një ulje të qirasë.",
+      "law": "OR 269a",
+      "prompt": "Sipas OR 269a, nëse norma referente bie, ju duhet të kërkoni në mënyrë aktive një ulje të qirasë. Ju lutemi, kontrolloni klauzolën përkatëse."
+    },
+    "pl": {
+      "title": "Referencyjna stopa procentowa",
+      "core": "W przypadku obniżenia referencyjnej stopy procentowej najemca powinien aktywnie wystąpić o obniżkę czynszu.",
+      "law": "OR 269a",
+      "prompt": "Zgodnie z OR 269a, w przypadku obniżenia referencyjnej stopy procentowej powinieneś aktywnie wystąpić o obniżkę czynszu. Proszę sprawdzić klauzulę odsetkową."
+    },
+    "de": {
+      "title": "Referenzzinssatz",
+      "core": "Bei Senkung des Referenzzinssatzes sollte der Mieter aktiv eine Mietzinsreduktion beantragen.",
+      "law": "OR 269a",
+      "prompt": "Gemäss OR 269a sollten Sie bei Senkung des Referenzzinssatzes aktiv eine Mietzinsreduktion beantragen. Bitte prüfen Sie die Zinsklausel."
+    },
+    "fr": {
+      "title": "Taux de référence",
+      "core": "En cas de baisse du taux hypothécaire de référence, le locataire devrait demander activement une réduction de loyer.",
+      "law": "OR 269a",
+      "prompt": "Selon l'OR 269a, en cas de baisse du taux de référence, vous devriez demander activement une réduction de loyer. Veuillez vérifier la clause liée au taux."
+    },
+    "hr": {
+      "title": "Referentna kamatna stopa",
+      "core": "Ako referentna kamatna stopa padne, najmoprimac bi trebao aktivno zatražiti smanjenje najamnine.",
+      "law": "OR 269a",
+      "prompt": "Prema OR 269a, ako referentna kamatna stopa padne, trebali biste aktivno zatražiti smanjenje najamnine. Provjerite klauzulu o kamatama."
+    },
+    "pt": {
+      "title": "Taxa de juro de referência",
+      "core": "Se a taxa de juro hipotecário de referência baixar, o inquilino deve solicitar ativamente uma redução da renda.",
+      "law": "OR 269a",
+      "prompt": "De acordo com o OR 269a, em caso de descida da taxa de referência, deve solicitar ativamente uma redução da renda. Por favor, verifique a cláusula correspondente."
+    },
+    "ta": {
+      "title": "குறிப்பு வட்டி விகிதம்",
+      "core": "குறிப்பு வட்டி விகிதம் குறைந்தால், குத்தகையாளர் செயல்பாட்டுடன் வாடகை குறைப்பை கோர வேண்டும்.",
+      "law": "OR 269a",
+      "prompt": "OR 269a பிரிவின்படி, குறிப்பு வட்டி விகிதம் குறைந்தால், செயல்பாட்டுடன் வாடகை குறைப்பை கோர வேண்டும். வட்டி விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Referans faiz oranı",
+      "core": "Referans faiz oranı düştüğünde, kiracı aktif olarak kira indirimi talep etmelidir.",
+      "law": "OR 269a",
+      "prompt": "OR 269a maddesine göre, referans faiz oranı düştüğünde aktif olarak kira indirimi talep etmelisiniz. Lütfen ilgili maddeyi kontrol edin."
+    },
+    "es": {
+      "title": "Tipo de interés de referencia",
+      "core": "Si baja el tipo de interés hipotecario de referencia, el arrendatario debería solicitar activamente una reducción de la renta.",
+      "law": "OR 269a",
+      "prompt": "Según el OR 269a, en caso de bajada del tipo de referencia, debería solicitar activamente una reducción de la renta. Por favor, revise la cláusula correspondiente."
+    },
+    "it": {
+      "title": "Tasso di riferimento",
+      "core": "In caso di riduzione del tasso ipotecario di riferimento, l'inquilino dovrebbe richiedere attivamente una riduzione del canone.",
+      "law": "OR 269a",
+      "prompt": "Secondo l'OR 269a, in caso di riduzione del tasso di riferimento, dovreste richiedere attivamente una riduzione del canone. Verificate la clausola sul tasso."
+    },
+    "en": {
+      "title": "Reference interest rate",
+      "core": "If the reference mortgage rate falls, the tenant should actively request a rent reduction.",
+      "law": "OR 269a",
+      "prompt": "According to OR 269a, in the event of a reduction in the reference rate, you should actively request a rent reduction. Please check the relevant clause."
+    }
+  },
+  "betrugsprävention": {
+    "sq": {
+      "title": "Parandalimi i mashtrimeve",
+      "core": "Vija e kuqe kundër mashtrimit: Asnjë pagesë para vizitës, asnjë pagesë në faqe interneti të falsifikuara.",
+      "law": "E drejta penale",
+      "prompt": "Kujdes nga mashtrimet: Asnjëherë mos paguani para vizitës ose në faqe të dyshimta. Sipas së drejtës penale, raste të tilla janë të dënueshme. Ju lutemi, qëndroni vigjilentë."
+    },
+    "pl": {
+      "title": "Zapobieganie oszustwom",
+      "core": "Czerwona linia przeciw oszustwom: Bez płatności przed oględzinami, bez płatności na fałszywych stronach internetowych.",
+      "law": "Prawo karne",
+      "prompt": "Uwaga na oszustwa: Nigdy nie płac przed oględzinami ani na podejrzanych stronach internetowych. Zgodnie z prawem karnym takie przypadki są karalne. Proszę zachować czujność."
+    },
+    "de": {
+      "title": "Betrugsprävention",
+      "core": "Betrugs-Rotlinie: Keine Zahlung vor der Besichtigung, keine Zahlung auf gefälschten Websites.",
+      "law": "Strafrecht",
+      "prompt": "Vorsicht vor Betrug: Zahlen Sie nie vor der Besichtigung oder auf verdächtigen Websites. Gemäss Strafrecht sind solche Fälle strafbar. Bitte bleiben Sie wachsam."
+    },
+    "fr": {
+      "title": "Prévention des fraudes",
+      "core": "Ligne rouge anti-arnaque : ne jamais payer avant la visite, ne pas payer sur des sites web falsifiés.",
+      "law": "Droit pénal",
+      "prompt": "Attention aux arnaques : ne payez jamais avant la visite ni sur des sites suspects. Selon le droit pénal, de tels cas sont punissables. Restez vigilant."
+    },
+    "hr": {
+      "title": "Prevencija prijevara",
+      "core": "Crvena linija protiv prijevara: Bez plaćanja prije razgledavanja, bez plaćanja na lažnim web stranicama.",
+      "law": "Kazneno pravo",
+      "prompt": "Oprez protiv prijevara: Nikada ne plaćajte prije razgledavanja ili na sumnjivim web stranicama. Prema kaznenom pravu, takvi slučajevi su kažnjivi. Budite na oprezu."
+    },
+    "pt": {
+      "title": "Prevenção de fraudes",
+      "core": "Linha vermelha anti-fraude: Nunca pagar antes da visita, nunca pagar em sites falsos.",
+      "law": "Direito penal",
+      "prompt": "Cuidado com fraudes: Nunca pague antes da visita nem em sites suspeitos. De acordo com o direito penal, estes casos são puníveis. Mantenha-se vigilante."
+    },
+    "ta": {
+      "title": "ஏமாற்று தடுப்பு",
+      "core": "ஏமாற்று எதிர்ப்பு சிவப்புக் கோடு: பார்வையிடும் முன் பணம் செலுத்த வேண்டாம், போலி இணையதளங்களில் பணம் செலுத்த வேண்டாம்.",
+      "law": "குற்றவியல் சட்டம்",
+      "prompt": "ஏமாற்றுகளுக்கு எதிராக எச்சரிக்கையாக இருங்கள்: பார்வையிடும் முன் அல்லது சந்தேகத்திற்குரிய இணையதளங்களில் ஒருபோதும் பணம் செலுத்த வேண்டாம். குற்றவியல் சட்டப்படி இத்தகைய சம்பவங்கள் தண்டனைக்குரியவை. விழிப்புடன் இருங்கள்."
+    },
+    "tr": {
+      "title": "Dolandırıcılık önleme",
+      "core": "Dolandırıcılığa karşı kırmızı çizgi: Görüntülemeden önce ödeme yok, sahte web sitelerinde ödeme yok.",
+      "law": "Ceza Hukuku",
+      "prompt": "Dolandırıcılığa karşı dikkatli olun: Asla görüntülemeden önce veya şüpheli sitelerde ödeme yapmayın. Ceza hukukuna göre bu tür vakalar cezalandırılır. Lütfen dikkatli olun."
+    },
+    "es": {
+      "title": "Prevención de fraudes",
+      "core": "Línea roja antiestafa: No pagar nunca antes de la visita, no pagar en páginas web falsas.",
+      "law": "Derecho penal",
+      "prompt": "Cuidado con las estafas: Nunca pague antes de la visita ni en sitios web sospechosos. Según el derecho penal, estos casos son punibles. Manténgase alerta."
+    },
+    "it": {
+      "title": "Prevenzione frodi",
+      "core": "Linea rossa anti-truffa: non pagare mai prima della visita, non pagare su siti web falsi.",
+      "law": "Diritto penale",
+      "prompt": "Attenzione alle truffe: non pagate mai prima della visita né su siti sospetti. Secondo il diritto penale, tali casi sono punibili. State attenti."
+    },
+    "en": {
+      "title": "Fraud prevention",
+      "core": "Anti-scam red line: Never pay before viewing the apartment, never pay on fake websites.",
+      "law": "Criminal Law",
+      "prompt": "Beware of scams: Never pay before the viewing or on suspicious websites. According to criminal law, such cases are punishable. Stay vigilant."
+    }
+  },
+  "uebergabeprotokoll": {
+    "sq": {
+      "title": "Mungesa e protokollit të dorëzimit",
+      "core": "Gjatë hyrjes dhe daljes, duhet të përpilohet një protokoll i shkruar dorëzimi (raport i gjendjes). Dorëzimet gojore nuk kanë efekt ligjor dhe lehtë çojnë në mosmarrëveshje për dëmet.",
+      "law": "OR 256a",
+      "prompt": "Sipas OR 256a, është i detyrueshëm një protokoll i shkruar dorëzimi. Dorëzimet gojore nuk kanë fuqi provuese. Ju lutemi, kontrolloni nëse është parashikuar një protokoll."
+    },
+    "pl": {
+      "title": "Brak protokołu zdawczo-odbiorczego",
+      "core": "Przy wprowadzaniu się i wyprowadzce należy sporządzić pisemny protokół zdawczo-odbiorczy (raport stanu). Przekazania ustne nie mają skutku prawnego i łatwo prowadzą do sporów dotyczących szkód.",
+      "law": "OR 256a",
+      "prompt": "Zgodnie z OR 256a, obowiązkowy jest pisemny protokół zdawczo-odbiorczy. Przekazania ustne nie mają mocy dowodowej. Proszę sprawdzić, czy protokół jest uzgodniony."
+    },
+    "de": {
+      "title": "Fehlendes Übergabeprotokoll",
+      "core": "Bei Ein- und Auszug muss ein schriftliches Übergabeprotokoll (Zustandsbericht) erstellt werden. Mündliche Übergaben haben keine Rechtswirkung und führen leicht zu Streitigkeiten bei der Schadensfeststellung.",
+      "law": "OR 256a",
+      "prompt": "Gemäss OR 256a ist ein schriftliches Übergabeprotokoll zwingend. Mündliche Übergaben haben keine Beweiskraft. Bitte prüfen Sie, ob ein Protokoll vereinbart ist."
+    },
+    "fr": {
+      "title": "Absence de procès-verbal de remise",
+      "core": "À l'entrée et à la sortie, un procès-verbal écrit (état des lieux) doit être établi. Les remises verbales n'ont aucune valeur juridique et entraînent facilement des litiges sur les dommages.",
+      "law": "OR 256a",
+      "prompt": "Selon l'OR 256a, un état des lieux écrit est obligatoire. Les remises verbales n'ont aucune force probante. Veuillez vérifier si un procès-verbal est prévu."
+    },
+    "hr": {
+      "title": "Nedostatak pisanog zapisnika o primopredaji",
+      "core": "Prilikom useljenja i iseljenja mora se sastaviti pisani zapisnik o primopredaji (izvješće o stanju). Usmene primopredaje nemaju pravni učinak i lako dovode do sporova oko štete.",
+      "law": "OR 256a",
+      "prompt": "Prema OR 256a, obvezan je pisani zapisnik o primopredaji. Usmene primopredaje nemaju dokaznu snagu. Provjerite je li zapisnik dogovoren."
+    },
+    "pt": {
+      "title": "Falta de protocolo de entrega",
+      "core": "Ao entrar e ao sair deve ser elaborado um protocolo de entrega por escrito (relatório de estado). Entregas verbais não têm efeito jurídico e facilmente dão origem a disputas sobre danos.",
+      "law": "OR 256a",
+      "prompt": "De acordo com o OR 256a, é obrigatório um protocolo de entrega por escrito. Entregas verbais não têm valor probatório. Por favor, verifique se foi previsto um protocolo."
+    },
+    "ta": {
+      "title": "ஒப்படைப்பு பதிவேட்டின் இல்லாமை",
+      "core": "உள்ளே நுழையும் மற்றும் வெளியேறும் போது எழுத்துப்பூர்வ ஒப்படைப்பு பதிவேடு (நிலை அறிக்கை) தயாரிக்கப்பட வேண்டும். வாய்மொழி ஒப்படைப்புகளுக்கு சட்டப்பூர்வ விளைவு இல்லை மற்றும் சேதம் குறித்து சுலபமாக சர்ச்சைகளை ஏற்படுத்தும்.",
+      "law": "OR 256a",
+      "prompt": "OR 256a பிரிவின்படி, எழுத்துப்பூர்வ ஒப்படைப்பு பதிவேடு கட்டாயமானது. வாய்மொழி ஒப்படைப்புகளுக்கு ஆதார சக்தி இல்லை. ஒரு பதிவேடு ஒப்புக்கொள்ளப்பட்டுள்ளதா என சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Teslim tutanağının eksikliği",
+      "core": "Giriş ve çıkış sırasında yazılı bir teslim tutanağı (durum raporu) düzenlenmelidir. Sözlü teslimlerin hukuki etkisi yoktur ve hasar konusunda kolayca anlaşmazlıklara yol açar.",
+      "law": "OR 256a",
+      "prompt": "OR 256a maddesine göre, yazılı teslim tutanağı zorunludur. Sözlü teslimlerin delil değeri yoktur. Lütfen bir tutanağın öngörülüp öngörülmediğini kontrol edin."
+    },
+    "es": {
+      "title": "Falta de acta de entrega",
+      "core": "Al entrar y al salir debe elaborarse un acta de entrega por escrito (estado de la vivienda). Las entregas verbales no tienen valor jurídico y fácilmente generan disputas sobre daños.",
+      "law": "OR 256a",
+      "prompt": "Según el OR 256a, es obligatorio un acta de entrega por escrito. Las entregas verbales no tienen valor probatorio. Por favor, compruebe si se prevé un acta."
+    },
+    "it": {
+      "title": "Assenza di verbale di consegna",
+      "core": "All'ingresso e all'uscita deve essere redatto un verbale scritto (stato dei luoghi). Le consegne verbali non hanno valore giuridico e portano facilmente a controversie sulla responsabilità dei danni.",
+      "law": "OR 256a",
+      "prompt": "Secondo l'OR 256a, è obbligatorio un verbale scritto di consegna. Le consegne verbali non hanno valore probatorio. Verificate se è previsto un verbale."
+    },
+    "en": {
+      "title": "Missing handover protocol",
+      "core": "A written handover protocol (condition report) must be prepared at both move-in and move-out. Verbal handovers have no legal value and easily lead to disputes over damages.",
+      "law": "OR 256a",
+      "prompt": "According to OR 256a, a written handover protocol is mandatory. Verbal handovers have no evidentiary value. Please check whether a protocol is provided."
+    }
+  },
+  "falsche_angaben": {
+    "sq": {
+      "title": "Deklarata të rreme për gjendjen e banesës",
+      "core": "Deklaratat e rreme të qiradhënësit për banesën (p.sh. 'si e re', 'qira e parë', 'pa defekte', 'sapo rinovuar') i bëjnë klauzolat përkatëse të pavlefshme dhe japin të drejtë për dëmshpërblim.",
+      "law": "OR 256a",
+      "prompt": "Sipas OR 256a, deklaratat e rreme të qiradhënësit (p.sh. 'si e re' ose 'sapo rinovuar') janë të pavlefshme dhe mund të krijojnë të drejta për dëmshpërblim. Ju lutemi, kontrolloni përshkrimet e banesës."
+    },
+    "pl": {
+      "title": "Fałszywe oświadczenia dotyczące stanu mieszkania",
+      "core": "Fałszywe oświadczenia wynajmującego dotyczące mieszkania (np. 'jak nowe', 'pierwszy najem', 'nienaganne', 'świeżo wyremontowane') powodują nieważność odpowiednich klauzul i uprawniają do odszkodowania.",
+      "law": "OR 256a",
+      "prompt": "Zgodnie z OR 256a, fałszywe oświadczenia wynajmującego (np. 'jak nowe' lub 'świeżo wyremontowane') są nieważne i mogą stanowić podstawę roszczeń odszkodowawczych. Proszę sprawdzić opisy mieszkania."
+    },
+    "de": {
+      "title": "Falsche Angaben zur Wohnungsbeschaffenheit",
+      "core": "Falsche Angaben des Vermieters zur Wohnung (z. B. 'neu', 'erstvermietet', 'makellos', 'frisch renoviert') machen die entsprechenden Klauseln ungültig und berechtigen zu Schadensersatz.",
+      "law": "OR 256a",
+      "prompt": "Gemäss OR 256a sind falsche Angaben des Vermieters zur Wohnung (z. B. 'neuwertig' oder 'frisch renoviert') ungültig und können Schadensersatzansprüche begründen. Bitte prüfen Sie die Beschreibungen."
+    },
+    "fr": {
+      "title": "Fausses déclarations sur l'état du logement",
+      "core": "Les fausses déclarations du bailleur sur l'état du logement (ex. 'comme neuf', 'première location', 'sans défaut', 'fraîchement rénové') rendent les clauses correspondantes nulles et permettent des demandes d'indemnisation.",
+      "law": "OR 256a",
+      "prompt": "Selon l'OR 256a, les fausses déclarations du bailleur (ex. 'comme neuf' ou 'fraîchement rénové') sont nulles et peuvent donner droit à des dommages-intérêts. Veuillez vérifier les descriptions du logement."
+    },
+    "hr": {
+      "title": "Lažne izjave o stanju stana",
+      "core": "Lažne izjave najmodavca o stanu (npr. 'kao nov', 'prvi najam', 'besprijekoran', 'svježe renoviran') čine odgovarajuće klauzule ništavnima i daju pravo na odštetu.",
+      "law": "OR 256a",
+      "prompt": "Prema OR 256a, lažne izjave najmodavca o stanu (npr. 'kao nov' ili 'svježe renoviran') su ništavne i mogu dati pravo na naknadu štete. Provjerite opise stana."
+    },
+    "pt": {
+      "title": "Declarações falsas sobre o estado do apartamento",
+      "core": "Declarações falsas do senhorio sobre o apartamento (ex.: 'como novo', 'primeiro arrendamento', 'sem defeitos', 'recentemente renovado') invalidam as cláusulas correspondentes e dão direito a indemnização.",
+      "law": "OR 256a",
+      "prompt": "De acordo com o OR 256a, declarações falsas do senhorio (ex.: 'como novo' ou 'recentemente renovado') são nulas e podem dar origem a reclamações por danos. Por favor, verifique as descrições do apartamento."
+    },
+    "ta": {
+      "title": "அடுக்குமாடியின் நிலை குறித்த தவறான அறிக்கைகள்",
+      "core": "வீட்டு உரிமையாளரின் அடுக்குமாடி குறித்த தவறான அறிக்கைகள் (எ.கா. 'புதியது', 'முதல் வாடகை', 'குறைபாடற்றது', 'புதிதாக புதுப்பிக்கப்பட்டது') தொடர்புடைய விதிகளை செல்லாதவையாக்குகின்றன மற்றும் இழப்பீடு உரிமையை அளிக்கின்றன.",
+      "law": "OR 256a",
+      "prompt": "OR 256a பிரிவின்படி, வீட்டு உரிமையாளரின் தவறான அறிக்கைகள் (எ.கா. 'புதியது போன்றது' அல்லது 'புதிதாக புதுப்பிக்கப்பட்டது') செல்லாதவை மற்றும் இழப்பீடு கோரிக்கைகளுக்கு வழிவகுக்கும். அடுக்குமாடி விளக்கங்களை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Dairenin durumu hakkında yanlış beyanlar",
+      "core": "Ev sahibinin daire hakkında yanlış beyanları (ör. 'yeni', 'ilk kira', 'kusursuz', 'yeni yenilenmiş') ilgili hükümleri geçersiz kılar ve tazminat hakkı verir.",
+      "law": "OR 256a",
+      "prompt": "OR 256a maddesine göre, ev sahibinin daire hakkında yanlış beyanları (ör. 'yeni gibi' veya 'yeni yenilenmiş') geçersizdir ve tazminat taleplerine yol açabilir. Lütfen daire açıklamalarını kontrol edin."
+    },
+    "es": {
+      "title": "Declaraciones falsas sobre el estado de la vivienda",
+      "core": "Las declaraciones falsas del arrendador sobre el estado de la vivienda (ej. 'como nueva', 'primera renta', 'sin defectos', 'recién renovada') invalidan las cláusulas correspondientes y dan derecho a indemnización.",
+      "law": "OR 256a",
+      "prompt": "Según el OR 256a, las declaraciones falsas del arrendador (ej. 'como nueva' o 'recién renovada') son nulas y pueden dar derecho a reclamaciones por daños. Por favor, revise las descripciones de la vivienda."
+    },
+    "it": {
+      "title": "Dichiarazioni false sullo stato dell'appartamento",
+      "core": "Le dichiarazioni false del locatore sullo stato dell'appartamento (es. 'come nuovo', 'prima locazione', 'senza difetti', 'appena ristrutturato') rendono nulle le clausole corrispondenti e danno diritto a risarcimento.",
+      "law": "OR 256a",
+      "prompt": "Secondo l'OR 256a, le dichiarazioni false del locatore (es. 'come nuovo' o 'appena ristrutturato') sono nulle e possono dare diritto a risarcimento danni. Verificate le descrizioni dell'appartamento."
+    },
+    "en": {
+      "title": "False statements about the apartment condition",
+      "core": "False statements by the landlord about the apartment (e.g. 'as new', 'first rental', 'flawless', 'freshly renovated') render the corresponding clauses void and may entitle the tenant to damages.",
+      "law": "OR 256a",
+      "prompt": "According to OR 256a, false statements by the landlord (e.g. 'as new' or 'freshly renovated') are void and can give rise to claims for damages. Please check the apartment descriptions."
+    }
+  },
+  "ruhezeiten": {
+    "sq": {
+      "title": "Rregullore e tepruar e orëve të qetësisë",
+      "core": "Rregullat e tepruara të qetësisë (heshtje absolute, ndalim i muzikës, asnjë vizitor pas orës 22:00, etj.) shkelin të drejtën normale të banimit të qiramarrësit dhe janë të pavlefshme.",
+      "law": "OR 257f",
+      "prompt": "Sipas OR 257f, rregulloret e tepruara të qetësisë (p.sh. heshtje absolute ose ndalim i muzikës, asnjë vizitor pas orës 22:00, etj.) janë të pavlefshme ose të papranueshme sepse shkelin të drejtën normale të banimit. Ju lutemi, kontrolloni rregulloren e shtëpisë (Hausordnung)."
+    },
+    "pl": {
+      "title": "Nadmierne regulacje ciszy",
+      "core": "Nadmierne zasady ciszy (absolutna cisza, zakaz muzyki, brak gości po 22:00 itp.) naruszają normalne prawo najemcy do zamieszkiwania i są nieważne.",
+      "law": "OR 257f",
+      "prompt": "Zgodnie z OR 257f, nadmierne regulacje ciszy (np. absolutna cisza lub zakaz muzyki, brak gości po 22:00 itp.) są nieważne lub niedopuszczalne, ponieważ naruszają normalne prawo do zamieszkiwania. Proszę sprawdzić regulamin domowy (Hausordnung)."
+    },
+    "de": {
+      "title": "Überzogene Ruhezeitenregelung",
+      "core": "Übertriebene Ruhezeitenregelungen (absolute Stille, keine Musik, keine Besucher nach 22 Uhr etc.) verletzen das normale Wohnrecht des Mieters und sind ungültig.",
+      "law": "OR 257f",
+      "prompt": "Gemäss OR 257f sind übertriebene Ruhezeitenregelungen (z. B. absolute Stille oder Verbot von Musik) ungültig. Bitte prüfen Sie die Hausordnung."
+    },
+    "fr": {
+      "title": "Règlement de repos excessif",
+      "core": "Des règles de repos excessives (silence absolu, interdiction de musique, pas de visiteurs après 22h, etc.) violent le droit normal d'habiter et sont nulles.",
+      "law": "OR 257f",
+      "prompt": "Selon l'OR 257f, les règles de repos excessives (silence absolu, interdiction de musique, pas de visiteurs après 22h, etc.) sont nulles ou inadmissibles car elles portent atteinte au droit normal d'habiter. Veuillez vérifier le règlement intérieur (Hausordnung)."
+    },
+    "hr": {
+      "title": "Pretjerani pravilnik o tišini",
+      "core": "Pretjerana pravila o tišini (apsolutna tišina, zabrana glazbe, bez posjetitelja nakon 22:00, itd.) krše normalno pravo najmoprimca na stanovanje i ništavna su.",
+      "law": "OR 257f",
+      "prompt": "Prema OR 257f, pretjerana pravila o tišini (npr. apsolutna tišina ili zabrana glazbe, bez posjetitelja nakon 22:00, itd.) su ništavna ili nedopuštena jer krše normalno pravo stanovanja. Provjerite kućni red (Hausordnung)."
+    },
+    "pt": {
+      "title": "Regulamento de silêncio excessivo",
+      "core": "Normas excessivas de silêncio (silêncio absoluto, proibição de música, nenhum convidado após as 22:00, etc.) violam o direito normal de habitação do inquilino e são nulas.",
+      "law": "OR 257f",
+      "prompt": "De acordo com o OR 257f, normas excessivas de silêncio (ex.: silêncio absoluto ou proibição de música, nenhum convidado após as 22:00, etc.) são nulas ou inadmissíveis por violarem o direito normal de habitação. Por favor, verifique o regulamento interno da casa (Hausordnung)."
+    },
+    "ta": {
+      "title": "அதிகப்படியான அமைதி நேர விதிமுறை",
+      "core": "அதிகப்படியான அமைதி விதிகள் (முழு அமைதி, இசை தடை, இரவு 22:00 மணிக்குப் பிறகு விருந்தினர் இல்லை, போன்றவை) குத்தகையாளரின் சாதாரண வசிப்பு உரிமையை மீறுகின்றன மற்றும் செல்லாதவை.",
+      "law": "OR 257f",
+      "prompt": "OR 257f பிரிவின்படி, அதிகப்படியான அமைதி நேர விதிமுறைகள் (எ.கா. முழு அமைதி அல்லது இசை தடை) செல்லாதவை. வீட்டு விதிமுறைகளை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Aşırı sessizlik saatleri düzenlemesi",
+      "core": "Aşırı sessizlik kuralları (mutlak sessizlik, müzik yasağı, saat 22:00’den sonra ziyaretçi yasağı vb.) kiracının normal oturma hakkını ihlal eder ve geçersizdir.",
+      "law": "OR 257f",
+      "prompt": "OR 257f maddesine göre, aşırı sessizlik düzenlemeleri (ör. mutlak sessizlik veya müzik yasağı, saat 22:00’den sonra ziyaretçi yasağı vb.) geçersiz veya kabul edilemezdir. Lütfen ev kurallarını (Hausordnung) kontrol edin."
+    },
+    "es": {
+      "title": "Reglamento de silencio excesivo",
+      "core": "Los reglamentos de silencio excesivos (silencio absoluto, prohibición de música, ningún invitado después de las 22:00, etc.) violan el derecho normal de vivienda y son nulos.",
+      "law": "OR 257f",
+      "prompt": "Según el OR 257f, los reglamentos de silencio excesivos (silencio absoluto, prohibición de música, ningún invitado después de las 22:00, etc.) son nulos o inadmisibles porque vulneran el derecho normal de habitar. Por favor, revise el reglamento de la casa (Hausordnung)."
+    },
+    "it": {
+      "title": "Regolamento di quiete eccessivo",
+      "core": "Regolamenti di quiete eccessivi (silenzio assoluto, divieto di musica, nessun ospite dopo le 22, ecc.) violano il diritto normale di abitazione e sono nulli.",
+      "law": "OR 257f",
+      "prompt": "Secondo l'OR 257f, i regolamenti di quiete eccessivi (silenzio assoluto, divieto di musica, nessun ospite dopo le 22, ecc.) sono nulli o inadmissibili in quanto ledono il diritto normale di abitazione. Verificate il regolamento di casa (Hausordnung)."
+    },
+    "en": {
+      "title": "Excessive quiet hours regulation",
+      "core": "Excessive quiet hours rules (absolute silence, no music, no guests after 10 p.m., etc.) violate the normal right to habitation and are void.",
+      "law": "OR 257f",
+      "prompt": "According to OR 257f, excessive quiet hours regulations (absolute silence, ban on music, no guests after 10 p.m., etc.) are void or inadmissible as they infringe on normal residential rights. Please check the house rules (Hausordnung)."
+    }
+  },
+  "muellgebuehren": {
+    "sq": {
+      "title": "Kurthet e kostove të mbeturinave",
+      "core": "Qiradhënësi nuk mund të faturojë në mënyrë indirekte kosto të paarsyeshme të mbeturinave (p.sh. qese të shtrenjta, blerje e detyrueshme e qeseve speciale). Këto kosto duhet të përfshihen në kostot shtesë dhe të llogariten saktë.",
+      "law": "OR 257a",
+      "prompt": "Sipas OR 257a, kostot e paarsyeshme të mbeturinave (p.sh. blerje e detyrueshme e qeseve speciale) nuk mund të faturohen në mënyrë indirekte. Ju lutemi, kontrolloni rregulloren e kostove të mbeturinave."
+    },
+    "pl": {
+      "title": "Pułapki na opłatach za śmieci",
+      "core": "Wynajmujący nie może pośrednio naliczać nieuzasadnionych opłat za wywóz śmieci (np. wysokie opłaty za worki, przymus zakupu specjalnych worków). Koszty te muszą być zawarte w kosztach dodatkowych i prawidłowo rozliczone.",
+      "law": "OR 257a",
+      "prompt": "Zgodnie z OR 257a, nieuzasadnione opłaty za śmieci (np. przymus zakupu worków na śmieci) nie mogą być naliczane pośrednio. Proszę sprawdzić regulację dotyczącą kosztów śmieci."
+    },
+    "de": {
+      "title": "Müllgebührenfallen",
+      "core": "Der Vermieter darf keine unangemessenen Müllgebühren versteckt berechnen (z. B. hohe Sackgebühren, Zwangskauf spezieller Säcke). Solche Kosten müssen in den Nebenkosten enthalten und korrekt abgerechnet werden.",
+      "law": "OR 257a",
+      "prompt": "Gemäss OR 257a dürfen unangemessene Müllgebühren (z. B. Zwangskauf von Müllsäcken) nicht versteckt berechnet werden. Bitte prüfen Sie die Müllkostenregelung."
+    },
+    "fr": {
+      "title": "Pièges liés aux frais de déchets",
+      "core": "Le bailleur ne peut pas facturer indirectement des frais de déchets déraisonnables (ex. sacs payants élevés, obligation d'acheter des sacs spéciaux). Ces frais doivent être inclus dans les charges et calculés correctement.",
+      "law": "OR 257a",
+      "prompt": "Selon l'OR 257a, les frais de déchets déraisonnables (ex. obligation d'acheter des sacs spéciaux) ne peuvent pas être facturés indirectement. Veuillez vérifier la réglementation des frais de déchets."
+    },
+    "hr": {
+      "title": "Zamke s naknadama za otpad",
+      "core": "Najmodavac ne može neizravno naplatiti nerazumne naknade za otpad (npr. visoke naknade za vrećice, obveznu kupnju posebnih vrećica). Ti troškovi moraju biti uključeni u sporedne troškove i ispravno obračunati.",
+      "law": "OR 257a",
+      "prompt": "Prema OR 257a, nerazumne naknade za otpad (npr. obvezna kupnja vrećica za otpad) ne mogu se neizravno naplatiti. Provjerite pravilnik o troškovima otpada."
+    },
+    "pt": {
+      "title": "Armadilhas nos custos de lixo",
+      "core": "O senhorio não pode cobrar indiretamente custos de lixo irrazoáveis (ex.: sacos caros, obrigação de comprar sacos especiais). Estes custos devem estar incluídos nos gastos acessórios e corretamente calculados.",
+      "law": "OR 257a",
+      "prompt": "De acordo com o OR 257a, não podem ser cobrados indiretamente custos de lixo irrazoáveis (ex.: obrigação de comprar sacos especiais). Por favor, verifique a regulamentação dos custos de lixo."
+    },
+    "ta": {
+      "title": "குப்பை கட்டண பொறிகள்",
+      "core": "வீட்டு உரிமையாளர் நியாயமற்ற குப்பை செலவுகளை மறைமுகமாக வசூலிக்க முடியாது (எ.கா. அதிக விலை பைகள், சிறப்பு பைகள் வாங்கும் கட்டாயம்). இந்த செலவுகள் கூடுதல் செலவுகளில் சேர்க்கப்பட்டு சரியாக கணக்கிடப்பட வேண்டும்.",
+      "law": "OR 257a",
+      "prompt": "OR 257a பிரிவின்படி, நியாயமற்ற குப்பை கட்டணங்கள் (எ.கா. சிறப்பு குப்பை பைகள் வாங்கும் கட்டாயம்) மறைமுகமாக வசூலிக்க முடியாது. குப்பை செலவு விதிமுறையை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Çöp ücreti tuzakları",
+      "core": "Ev sahibi, makul olmayan çöp masraflarını dolaylı yoldan tahsil edemez (ör. pahalı poşet ücretleri, özel poşet satın alma zorunluluğu). Bu maliyetler ek giderlere dahil edilmeli ve doğru hesaplanmalıdır.",
+      "law": "OR 257a",
+      "prompt": "OR 257a maddesine göre, makul olmayan çöp ücretleri (ör. özel çöp poşeti satın alma zorunluluğu) dolaylı olarak tahsil edilemez. Lütfen çöp maliyeti düzenlemesini kontrol edin."
+    },
+    "es": {
+      "title": "Trampas en los costes de basura",
+      "core": "El arrendador no puede cobrar indirectamente costes de basura irrazonables (ej. bolsas caras, obligación de comprar bolsas especiales). Estos costes deben incluirse en los gastos accesorios y calcularse correctamente.",
+      "law": "OR 257a",
+      "prompt": "Según el OR 257a, no pueden cobrarse indirectamente costes de basura irrazonables (ej. obligación de comprar bolsas especiales). Por favor, revise la regulación de los costes de basura."
+    },
+    "it": {
+      "title": "Trappole sui costi dei rifiuti",
+      "core": "Il locatore non può addebitare indirettamente costi di smaltimento rifiuti irragionevoli (es. sacchetti costosi, obbligo di acquisto di sacchetti speciali). Tali costi devono essere inclusi nelle spese accessorie e calcolati correttamente.",
+      "law": "OR 257a",
+      "prompt": "Secondo l'OR 257a, i costi di rifiuti irragionevoli (es. obbligo di acquisto di sacchetti speciali) non possono essere addebitati indirettamente. Verificate la regolamentazione dei costi dei rifiuti."
+    },
+    "en": {
+      "title": "Waste fee traps",
+      "core": "The landlord may not indirectly charge unreasonable waste disposal costs (e.g. expensive bags, obligation to buy special bags). Such costs must be included in the ancillary costs and correctly calculated.",
+      "law": "OR 257a",
+      "prompt": "According to OR 257a, unreasonable waste fees (e.g. compulsory purchase of special bags) may not be charged indirectly. Please check the waste cost regulation."
+    }
+  },
+  "unklare_miete": {
+    "sq": {
+      "title": "Përbërje e paqartë e qirasë",
+      "core": "Në kontratë duhet të tregohet qartë nëse bëhet fjalë për qira të ftohtë/të ngrohtë, qira neto/bruto, dhe nëse kostot shtesë janë të përfshira. Klauzolat e paqarta interpretohen në favor të qiramarrësit.",
+      "law": "OR 257",
+      "prompt": "Sipas OR 257, duhet të tregohet qartë nëse bëhet fjalë për qira të ftohtë/të ngrohtë ose kostot shtesë të përfshira/të përjashtuara. Klauzolat e paqarta interpretohen në favor të qiramarrësit. Ju lutemi, kontrolloni përbërjen e qirasë."
+    },
+    "pl": {
+      "title": "Niejasne składniki czynszu",
+      "core": "Umowa musi wyraźnie określać, czy chodzi o czynsz zimny/ciepły, czynsz netto/brutto oraz czy koszty dodatkowe są wliczone. Niejasne klauzule są interpretowane na korzyść najemcy.",
+      "law": "OR 257",
+      "prompt": "Zgodnie z OR 257, musi być wyraźnie określone, czy chodzi o czynsz zimny/ciepły czy koszty dodatkowe wliczone/wyłączone. Niejasne postanowienia są interpretowane na korzyść najemcy. Proszę sprawdzić skład czynszu."
+    },
+    "de": {
+      "title": "Unklare Mietbestandteile",
+      "core": "Im Vertrag muss klar angegeben werden, ob es sich um Kaltmiete/Warmmiete, Nettomiete/Bruttomiete handelt und ob Nebenkosten inkludiert sind. Unklare Klauseln werden zugunsten des Mieters ausgelegt.",
+      "law": "OR 257",
+      "prompt": "Gemäss OR 257 muss klar angegeben werden, ob es sich um Kalt-/Warmmiete oder inkl./exkl. Nebenkosten handelt. Unklare Regelungen werden zugunsten des Mieters ausgelegt. Bitte prüfen Sie die Mietzusammensetzung."
+    },
+    "fr": {
+      "title": "Composition du loyer peu claire",
+      "core": "Le contrat doit indiquer clairement s'il s'agit d'un loyer net / brut, charges comprises ou non. Les clauses ambiguës sont interprétées en faveur du locataire.",
+      "law": "OR 257",
+      "prompt": "Selon l'OR 257, il doit être clairement indiqué s'il s'agit d'un loyer net/brut ou charges comprises/exclues. Les clauses ambiguës sont interprétées en faveur du locataire. Veuillez vérifier la composition du loyer."
+    },
+    "hr": {
+      "title": "Nejasni sastavni dijelovi najamnine",
+      "core": "U ugovoru mora biti jasno navedeno radi li se o hladnoj/toploj najamnini, neto/bruto najamnini i jesu li sporedni troškovi uključeni. Nejasne klauzule tumače se u korist najmoprimca.",
+      "law": "OR 257",
+      "prompt": "Prema OR 257, mora biti jasno navedeno radi li se o hladnoj/toploj najamnini ili sporednim troškovima uključenim/isključenim. Nejasne odredbe tumače se u korist najmoprimca. Provjerite sastav najamnine."
+    },
+    "pt": {
+      "title": "Composição pouco clara da renda",
+      "core": "No contrato deve ser indicado claramente se se trata de renda fria/quente, renda líquida/bruta, e se os gastos acessórios estão incluídos. Cláusulas ambíguas são interpretadas a favor do inquilino.",
+      "law": "OR 257",
+      "prompt": "De acordo com o OR 257, deve ser indicado claramente se se trata de renda fria/quente ou gastos incluídos/excluídos. Cláusulas ambíguas são interpretadas a favor do inquilino. Por favor, verifique a composição da renda."
+    },
+    "ta": {
+      "title": "தெளிவற்ற வாடகை அமைப்பு",
+      "core": "ஒப்பந்தத்தில் குளிர்/சூடான வாடகை, நிகர/மொத்த வாடகை மற்றும் கூடுதல் செலவுகள் சேர்க்கப்பட்டுள்ளதா என தெளிவாகக் குறிப்பிடப்பட வேண்டும். தெளிவற்ற விதிகள் குத்தகையாளருக்கு சாதகமாக விளக்கப்படும்.",
+      "law": "OR 257",
+      "prompt": "OR 257 பிரிவின்படி, குளிர்/சூடான வாடகை அல்லது கூடுதல் செலவுகள் சேர்க்கப்பட்ட/நீக்கப்பட்டவை என தெளிவாகக் குறிப்பிடப்பட வேண்டும். தெளிவற்ற விதிகள் குத்தகையாளருக்கு சாதகமாக விளக்கப்படும். வாடகை அமைப்பை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Belirsiz kira bileşenleri",
+      "core": "Sözleşmede soğuk/sıcak kira, net/brüt kira ve ek giderlerin dahil olup olmadığı açıkça belirtilmelidir. Belirsiz hükümler kiracı lehine yorumlanır.",
+      "law": "OR 257",
+      "prompt": "OR 257 maddesine göre, soğuk/sıcak kira veya ek giderlerin dahil/hariç olduğu açıkça belirtilmelidir. Belirsiz hükümler kiracı lehine yorumlanır. Lütfen kira bileşimini kontrol edin."
+    },
+    "es": {
+      "title": "Composición poco clara de la renta",
+      "core": "En el contrato debe indicarse claramente si se trata de renta fría/caliente, renta neta/bruta y si los gastos accesorios están incluidos. Las cláusulas ambiguas se interpretan a favor del arrendatario.",
+      "law": "OR 257",
+      "prompt": "Según el OR 257, debe indicarse claramente si se trata de renta fría/caliente o gastos incluidos/excluidos. Las cláusulas ambiguas se interpretan a favor del arrendatario. Por favor, revise la composición de la renta."
+    },
+    "it": {
+      "title": "Composizione del canone poco chiara",
+      "core": "Nel contratto deve essere chiaramente indicato se si tratta di canone freddo/caldo, netto/lordo e se le spese accessorie sono incluse. Le clausole ambigue vengono interpretate a favore dell'inquilino.",
+      "law": "OR 257",
+      "prompt": "Secondo l'OR 257, deve essere chiaramente indicato se si tratta di canone freddo/caldo o spese incluse/escluse. Le clausole ambigue vengono interpretate a favore dell'inquilino. Verificate la composizione del canone."
+    },
+    "en": {
+      "title": "Unclear rent composition",
+      "core": "The contract must clearly state whether it is cold/warm rent, net/gross rent, and whether ancillary costs are included. Ambiguous clauses are interpreted in favour of the tenant.",
+      "law": "OR 257",
+      "prompt": "According to OR 257, it must be clearly indicated whether it is cold/warm rent or charges included/excluded. Ambiguous clauses are interpreted in favour of the tenant. Please check the rent breakdown."
+    }
+  },
+  "staffelmiete": {
+    "sq": {
+      "title": "Qiraja me shkallë / Rritja automatike e qirasë",
+      "core": "Qiratë me shkallë të rënë dakord ose rritjet automatike duhet të respektojnë rregullat ligjore të rregullimit dhe detyrimet e publikimit. Rritjet automatike pa bazë ligjore janë të pavlefshme.",
+      "law": "OR 269c",
+      "prompt": "Sipas OR 269c, qiratë me shkallë ose rritjet automatike duhet të respektojnë rregullat ligjore. Rritjet automatike pa bazë janë të pavlefshme. Ju lutemi, kontrolloni klauzolën e rregullimit të qirasë."
+    },
+    "pl": {
+      "title": "Czynsz schodkowy / Automatyczna podwyżka czynszu",
+      "core": "Uzgodnione czynsze schodkowe lub automatyczne podwyżki muszą spełniać ustawowe zasady dostosowania i obowiązki publikacyjne. Automatyczne podwyżki bez podstawy prawnej są nieważne.",
+      "law": "OR 269c",
+      "prompt": "Zgodnie z OR 269c, czynsze schodkowe lub automatyczne podwyżki muszą spełniać ustawowe zasady. Automatyczne podwyżki bez podstawy są nieważne. Proszę sprawdzić klauzulę dostosowania czynszu."
+    },
+    "de": {
+      "title": "Staffelmiete / Automatische Mieterhöhung",
+      "core": "Vereinbarte Staffelmieten oder automatische Mieterhöhungen müssen den gesetzlichen Anpassungsregeln und Veröffentlichungspflichten entsprechen. Grundlose automatische Erhöhungen sind ungültig.",
+      "law": "OR 269c",
+      "prompt": "Gemäss OR 269c müssen Staffelmieten oder automatische Erhöhungen den gesetzlichen Regeln entsprechen. Grundlose automatische Erhöhungen sind ungültig. Bitte prüfen Sie die Mietanpassungsklausel."
+    },
+    "fr": {
+      "title": "Loyer échelonné / Augmentation automatique",
+      "core": "Les loyers échelonnés ou augmentations automatiques convenus doivent respecter les règles légales d'adaptation et les obligations de publication. Les augmentations automatiques sans base légale sont nulles.",
+      "law": "OR 269c",
+      "prompt": "Selon l'OR 269c, les loyers échelonnés ou augmentations automatiques doivent respecter les règles légales. Les augmentations automatiques sans base sont nulles. Veuillez vérifier la clause d'adaptation du loyer."
+    },
+    "hr": {
+      "title": "Najamnina po stupnjevima / Automatsko povećanje najamnine",
+      "core": "Dogovorene najamnine po stupnjevima ili automatska povećanja moraju poštivati zakonska pravila prilagodbe i obveze objave. Automatska povećanja bez osnove su ništavna.",
+      "law": "OR 269c",
+      "prompt": "Prema OR 269c, najamnine po stupnjevima ili automatska povećanja moraju poštivati zakonska pravila. Automatska povećanja bez osnove su ništavna. Provjerite klauzulu o prilagodbi najamnine."
+    },
+    "pt": {
+      "title": "Renda escalonada / Aumento automático da renda",
+      "core": "Rendas escalonadas acordadas ou aumentos automáticos devem respeitar as normas legais de ajuste e as obrigações de publicação. Aumentos automáticos sem base legal são nulos.",
+      "law": "OR 269c",
+      "prompt": "De acordo com o OR 269c, rendas escalonadas ou aumentos automáticos devem cumprir as regras legais. Aumentos automáticos sem base são nulos. Por favor, verifique a cláusula de ajuste da renda."
+    },
+    "ta": {
+      "title": "படிநிலை வாடகை / தானியங்கி வாடகை உயர்வு",
+      "core": "ஒப்புக்கொள்ளப்பட்ட படிநிலை வாடகைகள் அல்லது தானியங்கி உயர்வுகள் சட்டப்படியான சரிசெய்தல் விதிகள் மற்றும் வெளியீட்டு கடமைகளுக்கு உட்பட்டிருக்க வேண்டும். அடிப்படையற்ற தானியங்கி உயர்வுகள் செல்லாதவை.",
+      "law": "OR 269c",
+      "prompt": "OR 269c பிரிவின்படி, படிநிலை வாடகைகள் அல்லது தானியங்கி உயர்வுகள் சட்ட விதிகளுக்கு உட்பட்டிருக்க வேண்டும். அடிப்படையற்ற தானியங்கி உயர்வுகள் செல்லாதவை. வாடகை சரிசெய்தல் விதியை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Kademeli kira / Otomatik kira artışı",
+      "core": "Kararlaştırılan kademeli kiralar veya otomatik artışlar, yasal uyarlama kurallarına ve yayın yükümlülüklerine uygun olmalıdır. Temelsiz otomatik artışlar geçersizdir.",
+      "law": "OR 269c",
+      "prompt": "OR 269c maddesine göre, kademeli kiralar veya otomatik artışlar yasal kurallara uygun olmalıdır. Temelsiz otomatik artışlar geçersizdir. Lütfen kira uyarlama maddesini kontrol edin."
+    },
+    "es": {
+      "title": "Renta escalonada / Aumento automático de la renta",
+      "core": "Las rentas escalonadas o aumentos automáticos acordados deben respetar las normas legales de ajuste y las obligaciones de publicación. Los aumentos automáticos sin base legal son nulos.",
+      "law": "OR 269c",
+      "prompt": "Según el OR 269c, las rentas escalonadas o los aumentos automáticos deben cumplir las reglas legales. Los aumentos automáticos sin base son nulos. Por favor, revise la cláusula de ajuste de la renta."
+    },
+    "it": {
+      "title": "Canone scalare / Aumento automatico",
+      "core": "I canoni scalari o gli aumenti automatici concordati devono rispettare le norme legali di adeguamento e gli obblighi di pubblicazione. Gli aumenti automatici senza base legale sono nulli.",
+      "law": "OR 269c",
+      "prompt": "Secondo l'OR 269c, i canoni scalari o gli aumenti automatici devono rispettare le regole legali. Gli aumenti automatici senza base sono nulli. Verificate la clausola di adeguamento del canone."
+    },
+    "en": {
+      "title": "Staggered rent / Automatic rent increase",
+      "core": "Agreed staggered rents or automatic increases must comply with statutory adjustment rules and publication requirements. Automatic increases without a legal basis are void.",
+      "law": "OR 269c",
+      "prompt": "According to OR 269c, staggered rents or automatic increases must follow the legal rules. Unjustified automatic increases are void. Please check the rent adjustment clause."
+    }
+  },
+  "kuendigung_termin": {
+    "sq": {
+      "title": "Datat fikse të zgjidhjes",
+      "core": "Kufizimi i datave të zgjidhjes vetëm në data specifike (p.sh. vetëm 31 dhjetor) kufizon lirinë ligjore të zgjidhjes së qiramarrësit dhe është i pavlefshëm.",
+      "law": "OR 266c",
+      "prompt": "Sipas OR 266c, datat fikse të zgjidhjes (p.sh. vetëm 31 dhjetor) janë të pavlefshme. Ju lutemi, kontrolloni datat e zgjidhjes në kontratën tuaj."
+    },
+    "pl": {
+      "title": "Stałe terminy wypowiedzenia",
+      "core": "Ograniczenie terminów wypowiedzenia tylko do określonych dat (np. tylko 31 grudnia) ogranicza ustawową wolność wypowiedzenia najemcy i jest nieważne.",
+      "law": "OR 266c",
+      "prompt": "Zgodnie z OR 266c, stałe terminy wypowiedzenia (np. tylko 31 grudnia) są nieważne. Proszę sprawdzić terminy wypowiedzenia w swojej umowie."
+    },
+    "de": {
+      "title": "Fixierte Kündigungstermine",
+      "core": "Die Festlegung nur bestimmter Kündigungstermine (z. B. nur 31.12.) schränkt die gesetzliche Kündigungsfreiheit des Mieters ein und ist ungültig.",
+      "law": "OR 266c",
+      "prompt": "Gemäss OR 266c sind festgelegte Kündigungstermine (z. B. nur 31.12.) ungültig. Bitte prüfen Sie die Kündigungstermine in Ihrem Vertrag."
+    },
+    "fr": {
+      "title": "Dates de résiliation fixes",
+      "core": "La limitation des dates de résiliation à des dates précises (ex. uniquement le 31.12.) restreint la liberté légale de résiliation du locataire et est nulle.",
+      "law": "OR 266c",
+      "prompt": "Selon l'OR 266c, les dates de résiliation fixes (ex. uniquement le 31.12.) sont nulles. Veuillez vérifier les dates de résiliation dans votre contrat."
+    },
+    "hr": {
+      "title": "Fiksni datumi otkaza",
+      "core": "Ograničenje datuma otkaza samo na određene datume (npr. samo 31. prosinca) ograničava zakonsku slobodu otkaza najmoprimca i ništavno je.",
+      "law": "OR 266c",
+      "prompt": "Prema OR 266c, fiksni datumi otkaza (npr. samo 31. prosinca) su ništavni. Provjerite datume otkaza u svom ugovoru."
+    },
+    "pt": {
+      "title": "Datas de rescisão fixas",
+      "core": "Limitar as datas de rescisão apenas a datas específicas (ex.: apenas 31 de dezembro) restringe a liberdade legal de rescisão do inquilino e é nulo.",
+      "law": "OR 266c",
+      "prompt": "De acordo com o OR 266c, datas de rescisão fixas (ex.: apenas 31 de dezembro) são nulas. Por favor, verifique as datas de rescisão no seu contrato."
+    },
+    "ta": {
+      "title": "நிலையான ரத்து தேதிகள்",
+      "core": "ரத்து தேதிகளை குறிப்பிட்ட தேதிகளுக்கு மட்டும் (எ.கா. டிசம்பர் 31 மட்டும்) வரையறுப்பது குத்தகையாளரின் சட்டப்படியான ரத்து சுதந்திரத்தை கட்டுப்படுத்துகிறது மற்றும் செல்லாதது.",
+      "law": "OR 266c",
+      "prompt": "OR 266c பிரிவின்படி, நிலையான ரத்து தேதிகள் (எ.கா. டிசம்பர் 31 மட்டும்) செல்லாதவை. உங்கள் ஒப்பந்தத்தில் ரத்து தேதிகளை சரிபார்க்கவும்."
+    },
+    "tr": {
+      "title": "Sabit fesih tarihleri",
+      "core": "Fesih tarihlerini yalnızca belirli tarihlerle sınırlamak (ör. yalnızca 31 Aralık), kiracının yasal fesih özgürlüğünü kısıtlar ve geçersizdir.",
+      "law": "OR 266c",
+      "prompt": "OR 266c maddesine göre, sabit fesih tarihleri (ör. yalnızca 31 Aralık) geçersizdir. Lütfen sözleşmenizdeki fesih tarihlerini kontrol edin."
+    },
+    "es": {
+      "title": "Fechas de rescisión fijas",
+      "core": "Limitar las fechas de rescisión solo a fechas específicas (ej. solo el 31 de diciembre) restringe la libertad legal de rescisión del arrendatario y es nulo.",
+      "law": "OR 266c",
+      "prompt": "Según el OR 266c, las fechas de rescisión fijas (ej. solo el 31 de diciembre) son nulas. Por favor, revise las fechas de rescisión en su contrato."
+    },
+    "it": {
+      "title": "Date di disdetta fisse",
+      "core": "La limitazione delle date di disdetta a date specifiche (es. solo il 31.12.) restringe la libertà legale di disdetta dell'inquilino ed è nulla.",
+      "law": "OR 266c",
+      "prompt": "Secondo l'OR 266c, le date di disdetta fisse (es. solo il 31.12.) sono nulle. Verificate le date di disdetta nel vostro contratto."
+    },
+    "en": {
+      "title": "Fixed termination dates",
+      "core": "Limiting termination to specific dates only (e.g. only 31 December) restricts the tenant's statutory freedom to terminate and is void.",
+      "law": "OR 266c",
+      "prompt": "According to OR 266c, fixed termination dates (e.g. only 31 December) are void. Please check the termination dates in your contract."
+    }
+  }
+}

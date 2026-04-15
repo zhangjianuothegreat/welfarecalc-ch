@@ -1,0 +1,732 @@
+[
+    {
+        "id": "depot_account",
+        "severity": "high",
+        "law": "OR 257e",
+        "de": [
+            "Mietzinshinterlegung",
+            "Mietkautionskonto",
+            "Sperrkonto",
+            "Privatkonto",
+            "Kaution auf mein Konto",
+            "Mietkaution auf Privatkonto",
+            "Depot auf meinem Konto",
+            "hinterlegt auf Privatkonto",
+            "Mietzinsdepot auf Privatkonto"
+        ],
+        "fr": [
+            "Compte de garantie",
+            "Compte bloqué",
+            "Garantie de loyer",
+            "Compte privé",
+            "Caution sur mon compte",
+            "dépôt sur compte privé"
+        ],
+        "it": [
+            "Conto di deposito",
+            "Conto bloccato",
+            "Cauzione sul mio conto",
+            "Conto privato",
+            "deposito su conto privato"
+        ]
+    },
+    {
+        "id": "depot_amount",
+        "severity": "high",
+        "law": "OR 257e Abs. 2",
+        "de": [
+            "3 Monatsmieten",
+            "drei Monatsmieten",
+            "3 Bruttomieten",
+            "maximal drei Monatsmieten",
+            "nicht mehr als 3 Monate",
+            "über drei Monatsmieten"
+        ],
+        "fr": [
+            "3 mois de loyer",
+            "trois mois",
+            "maximum trois",
+            "pas plus de trois mois"
+        ],
+        "it": [
+            "3 mensilità",
+            "tre mensilità",
+            "massimo tre",
+            "non più di tre mensilità"
+        ]
+    },
+    {
+        "id": "nebenkosten_low",
+        "severity": "medium",
+        "law": "OR 257a",
+        "de": [
+            "Akonto",
+            "Nebenkostenabrechnung",
+            "Heizkosten",
+            "Warmwasser",
+            "tiefer Akonto",
+            "Nachzahlung",
+            "Überraschungsrechnung"
+        ],
+        "fr": [
+            "Acompte de charges",
+            "Frais accessoires",
+            "Décompte",
+            "chauffage",
+            "eau chaude"
+        ],
+        "it": [
+            "Acconto spese",
+            "Spese accessorie",
+            "Riscaldamento",
+            "acqua calda"
+        ]
+    },
+    {
+        "id": "nebenkosten_pauschal",
+        "severity": "medium",
+        "law": "VMWG Art. 4",
+        "de": [
+            "Pauschal",
+            "Pauschale",
+            "Fixpreis",
+            "keine Abrechnung",
+            "Pauschalnebenkosten"
+        ],
+        "fr": [
+            "Forfait",
+            "Prix fixe",
+            "Pauschale",
+            "forfaitaire"
+        ],
+        "it": [
+            "Forfait",
+            "Prezzo fisso",
+            "Somma forfettaria"
+        ]
+    },
+    {
+        "id": "solidarhaftung",
+        "severity": "high",
+        "law": "OR 143",
+        "de": [
+            "Solidarhaftung",
+            "solidarisch",
+            "Mietgemeinschaft",
+            "Mitmieter",
+            "gesamtschuldnerisch"
+        ],
+        "fr": [
+            "Solidarité",
+            "solidairement",
+            "Colocataires"
+        ],
+        "it": [
+            "Solidarietà",
+            "solidalmente",
+            "Coinquilini"
+        ]
+    },
+    {
+        "id": "verwaltung",
+        "severity": "low",
+        "law": "OR 257a",
+        "de": [
+            "Schreibgebühr",
+            "Vertragsausfertigung",
+            "Bearbeitungsspesen",
+            "Verwaltungsgebühr",
+            "Vertragsgebühr"
+        ],
+        "fr": [
+            "Frais d'établissement du contrat",
+            "Frais de dossier",
+            "Frais d'écriture",
+            "Frais de traitement",
+            "Frais administratif"
+        ],
+        "it": [
+            "Spese di amministrazione",
+            "Spese di pratica",
+            "Costi di gestione contratto",
+            "Spese di cancelleria"
+        ]
+    },
+    {
+        "id": "heizung",
+        "severity": "medium",
+        "law": "OR 256",
+        "de": [
+            "Heizung",
+            "Mindesttemperatur",
+            "Heizperiode",
+            "Warmwasserversorgung",
+            "20 Grad",
+            "Winterheizung"
+        ],
+        "fr": [
+            "Chauffage",
+            "Température minimale",
+            "Période de chauffage",
+            "20 degrés"
+        ],
+        "it": [
+            "Riscaldamento",
+            "Temperatura minima",
+            "20 gradi"
+        ]
+    },
+    {
+        "id": "unklare_miete",
+        "severity": "medium",
+        "law": "OR 257",
+        "de": [
+            "warmmiete",
+            "kaltmiete",
+            "Bruttomiete",
+            "inklusive Nebenkosten",
+            "exklusive Nebenkosten",
+            "pauschal",
+            "Kaltmiete",
+            "Warmmiete"
+        ],
+        "fr": [
+            "loyer brut",
+            "loyer net",
+            "charges comprises",
+            "charges non comprises",
+            "forfait"
+        ],
+        "it": [
+            "affitto lordo",
+            "affitto netto",
+            "spese incluse",
+            "spese escluse",
+            "forfettario"
+        ]
+    },
+    {
+        "id": "mindestdauer",
+        "severity": "high",
+        "law": "OR 255",
+        "de": [
+            "Mindestdauer",
+            "Mindestmietdauer",
+            "feste Laufzeit",
+            "Verzicht auf Kündigung",
+            "befristeter Vertrag",
+            "Mindestmietzeit"
+        ],
+        "fr": [
+            "Durée minimale",
+            "Bail à loyer de durée déterminée",
+            "Renonciation à la résiliation"
+        ],
+        "it": [
+            "Durata minima",
+            "Periodo minimo",
+            "Rinuncia alla disdetta"
+        ]
+    },
+    {
+        "id": "kuendigung_frist",
+        "severity": "medium",
+        "law": "OR 266c",
+        "de": [
+            "Kündigungsfrist",
+            "6 Monate",
+            "sechs Monate",
+            "längere Kündigungsfrist"
+        ],
+        "fr": [
+            "Délai de résiliation",
+            "6 mois",
+            "six mois"
+        ],
+        "it": [
+            "Termine di disdetta",
+            "6 mesi",
+            "sei mesi"
+        ]
+    },
+    {
+        "id": "kuendigung_termin",
+        "severity": "medium",
+        "law": "OR 266c",
+        "de": [
+            "Kündigungstermine",
+            "Dezember",
+            "31.12.",
+            "Weihnachten",
+            "fixe Kündigungstermine"
+        ],
+        "fr": [
+            "Termes de résiliation",
+            "Décembre",
+            "31.12.",
+            "Noël"
+        ],
+        "it": [
+            "Scadenze di disdetta",
+            "Dicembre",
+            "31.12.",
+            "Natale"
+        ]
+    },
+    {
+        "id": "entschaedigung",
+        "severity": "high",
+        "law": "OR 264",
+        "de": [
+            "Entschädigung bei Auszug",
+            "Strafzahlung",
+            "Konventionalstrafe",
+            "Pauschale bei vorzeitiger",
+            "vorzeitige Auszugsentschädigung"
+        ],
+        "fr": [
+            "Indemnité de sortie",
+            "Peine conventionnelle",
+            "Paiement forfaitaire"
+        ],
+        "it": [
+            "Indennità di uscita",
+            "Pena convenzionale",
+            "Pagamento forfettario"
+        ]
+    },
+    {
+        "id": "staffelmiete",
+        "severity": "medium",
+        "law": "OR 269c",
+        "de": [
+            "Staffelmiete",
+            "automatische Erhöhung",
+            "Mietzinsanpassung",
+            "Stufenmiete"
+        ],
+        "fr": [
+            "Loyer échelonné",
+            "augmentation automatique",
+            "adaptation du loyer"
+        ],
+        "it": [
+            "Canone a scaglioni",
+            "Canone scalare",
+            "aumento automatico",
+            "adeguamento del canone"
+        ]
+    },
+    {
+        "id": "reparaturen_klein",
+        "severity": "low",
+        "law": "OR 259",
+        "de": [
+            "Kleiner Unterhalt",
+            "Kleinreparaturen",
+            "150 CHF",
+            "200 CHF",
+            "Selbstbehalt",
+            "1% Klausel"
+        ],
+        "fr": [
+            "Menus travaux",
+            "Petites réparations",
+            "150 CHF",
+            "200 CHF"
+        ],
+        "it": [
+            "Piccole riparazioni",
+            "Manutenzione ordinaria",
+            "150 CHF",
+            "200 CHF"
+        ]
+    },
+    {
+        "id": "reinigung",
+        "severity": "medium",
+        "law": "OR 256",
+        "de": [
+            "Professionelle Reinigung",
+            "Reinigungsfirma",
+            "Abgabereinigung",
+            "Putzfirma",
+            "professionelle Endreinigung",
+            "Reinigung durch Fachfirma",
+            "Endreinigung",
+            "Besenrein",
+            "gründliche Reinigung"
+        ],
+        "fr": [
+            "Nettoyage professionnel",
+            "Entreprise de nettoyage",
+            "Nettoyage de sortie",
+            "nettoyage final"
+        ],
+        "it": [
+            "Pulizia professionale",
+            "Impresa di pulizie",
+            "Pulizia di uscita",
+            "pulizia finale"
+        ]
+    },
+    {
+        "id": "streichen",
+        "severity": "medium",
+        "law": "OR 259",
+        "de": [
+            "neu streichen",
+            "Wände streichen",
+            "Renovationspflicht",
+            "Malerarbeiten",
+            "Streichen der Wohnung"
+        ],
+        "fr": [
+            "peinture",
+            "repeindre",
+            "rénovation",
+            "travaux de peinture"
+        ],
+        "it": [
+            "tinteggiatura",
+            "dipingere le pareti",
+            "rinnovazione"
+        ]
+    },
+    {
+        "id": "schluessel",
+        "severity": "medium",
+        "law": "OR 257",
+        "de": [
+            "Schliessanlage",
+            "Schlüsselersatz",
+            "Zylinderwechsel",
+            "Schlüsseldepot",
+            "Schlüsselverlust"
+        ],
+        "fr": [
+            "Cylindre",
+            "Changement de serrure",
+            "Remplacement des clés"
+        ],
+        "it": [
+            "Sostituzione della serratura",
+            "Cambio dei cilindri",
+            "Chiavi smarrite",
+            "Deposito chiavi"
+        ]
+    },
+    {
+        "id": "uebergabeprotokoll",
+        "severity": "high",
+        "law": "OR 256a",
+        "de": [
+            "kein Übergabeprotokoll",
+            "ohne Übergabeprotokoll",
+            "Protokoll nicht erstellt",
+            "mündliche Übergabe",
+            "keine Abnahmeprotokoll",
+            "Abnahmeprotokoll fehlt",
+            "Wohnungsabnahmeprotokoll",
+            "Zustandsprotokoll",
+            "Mängelliste fehlt"
+        ],
+        "fr": [
+            "pas de procès-verbal",
+            "sans état des lieux",
+            "remise verbale",
+            "pas d'état des lieux",
+            "procès-verbal manquant"
+        ],
+        "it": [
+            "senza verbale di consegna",
+            "consegna verbale",
+            "nessun protocollo",
+            "senza verbale",
+            "verbale di consegna mancante"
+        ]
+    },
+    {
+        "id": "falsche_angaben",
+        "severity": "medium",
+        "law": "OR 256a",
+        "de": [
+            "neuwertig",
+            "frisch renoviert",
+            "Erstbezug",
+            "ohne Mängel",
+            "einwandfrei",
+            "wie neu",
+            "renoviert",
+            "frisch renoviert",
+            "neu renoviert"
+        ],
+        "fr": [
+            "comme neuf",
+            "fraîchement rénové",
+            "première location",
+            "sans défaut",
+            "refait à neuf"
+        ],
+        "it": [
+            "come nuovo",
+            "appena ristrutturato",
+            "prima locazione",
+            "senza difetti",
+            "ristrutturato"
+        ]
+    },
+    {
+        "id": "untermiete",
+        "severity": "low",
+        "law": "OR 262",
+        "de": [
+            "Untermiete verboten",
+            "keine Untervermietung",
+            "Zustimmung des Vermieters",
+            "Untermietverbot"
+        ],
+        "fr": [
+            "Sous-location interdite",
+            "interdiction de sous-louer"
+        ],
+        "it": [
+            "Sublocazione vietata",
+            "proibizione di sublocare"
+        ]
+    },
+    {
+        "id": "haustiere",
+        "severity": "low",
+        "law": "OR 257",
+        "de": [
+            "keine Haustiere",
+            "Haustierverbot",
+            "Hunde verboten",
+            "Katzen verboten",
+            "Tiere verboten",
+            "Haustiere nicht erlaubt"
+        ],
+        "fr": [
+            "animaux interdits",
+            "interdiction d'avoir des animaux"
+        ],
+        "it": [
+            "animali vietati",
+            "divieto di tenere animali"
+        ]
+    },
+    {
+        "id": "besucher",
+        "severity": "low",
+        "law": "ZGB Art. 27",
+        "de": [
+            "Besuch",
+            "Übernachtung",
+            "Dauergast",
+            "Besucherregelung",
+            "keine Übernachtungsgäste"
+        ],
+        "fr": [
+            "Visite",
+            "Nuitée",
+            "Hôte",
+            "Règlement des visites"
+        ],
+        "it": [
+            "Visite",
+            "Pernottamento",
+            "Ospiti"
+        ]
+    },
+    {
+        "id": "zutritt",
+        "severity": "medium",
+        "law": "OR 257h",
+        "de": [
+            "jederzeit Zutritt",
+            "Kontrolle",
+            "Besichtigung ohne Voranmeldung",
+            "Zutrittsrecht jederzeit"
+        ],
+        "fr": [
+            "Droit d'accès en tout temps",
+            "Visite sans préavis"
+        ],
+        "it": [
+            "Accesso in ogni momento",
+            "Controllo senza preavviso"
+        ]
+    },
+    {
+        "id": "ruhezeiten",
+        "severity": "low",
+        "law": "OR 257f",
+        "de": [
+            "absolute Ruhe",
+            "kein Lautsprecher",
+            "keine Musik",
+            "keine Besucher nach 22",
+            "komplette Stille",
+            "Ruhezeitenregelung"
+        ],
+        "fr": [
+            "silence absolu",
+            "pas de musique",
+            "pas de visiteurs après 22h",
+            "interdiction de bruit"
+        ],
+        "it": [
+            "silenzio assoluto",
+            "niente musica",
+            "niente ospiti dopo le 22",
+            "divieto di rumore"
+        ]
+    },
+    {
+        "id": "muellgebuehren",
+        "severity": "low",
+        "law": "OR 257a",
+        "de": [
+            "Sackgebühr",
+            "Kehrichtgebühr",
+            "Entsorgungskosten",
+            "Mülltüten",
+            "Gebührenmarken",
+            "Müllgebühren"
+        ],
+        "fr": [
+            "taxe sacs poubelle",
+            "frais d'enlèvement",
+            "sacs spéciaux",
+            "taxe déchets",
+            "marques de taxe"
+        ],
+        "it": [
+            "tassa sui sacchi",
+            "costi di smaltimento",
+            "sacchetti speciali",
+            "tassa rifiuti",
+            "marche fiscali"
+        ]
+    },
+    {
+        "id": "indexmiete",
+        "severity": "medium",
+        "law": "OR 269b",
+        "de": [
+            "Indexmiete",
+            "Indexklausel",
+            "indexiert",
+            "Landesindex",
+            "LIK",
+            "indexierte Miete",
+            "Mietzinsanpassung nach Index",
+            "Indexklausel Anhang"
+        ],
+        "fr": [
+            "loyer indexé",
+            "clause d'indexation",
+            "indexation du loyer",
+            "indice des prix à la consommation",
+            "IPC"
+        ],
+        "it": [
+            "pigione indicizzata",
+            "clausola di indicizzazione",
+            "indice nazionale dei prezzi al consumo",
+            "adeguamento del canone indicizzato"
+        ]
+    },
+    {
+        "id": "versicherungszwang",
+        "severity": "medium",
+        "law": "UWG",
+        "de": [
+            "Versicherungszwang",
+            "Pflichtversicherung",
+            "Haftpflichtversicherung abschliessen",
+            "bestimmte Versicherung",
+            "bei bestimmter Gesellschaft",
+            "Versicherungspflicht"
+        ],
+        "fr": [
+            "assurance obligatoire",
+            "obligation d'assurance",
+            "assurance responsabilité civile",
+            "assurance chez une société spécifique"
+        ],
+        "it": [
+            "assicurazione obbligatoria",
+            "obbligo di assicurazione",
+            "assicurazione RC presso compagnia specifica"
+        ]
+    },
+    {
+        "id": "anfangsmietzins",
+        "severity": "high",
+        "law": "OR 270",
+        "de": [
+            "Anfangsmietzins",
+            "Anfangsmiete",
+            "initialer Mietzins",
+            "überhöhter Mietzins",
+            "missbräuchlicher Anfangsmietzins",
+            "Anfechtung des Anfangsmietzinses"
+        ],
+        "fr": [
+            "loyer initial",
+            "loyer de départ",
+            "loyer d'entrée",
+            "loyer initial excessif"
+        ],
+        "it": [
+            "pigione iniziale",
+            "canone iniziale",
+            "pigione iniziale eccessiva"
+        ]
+    },
+    {
+        "id": "referenzzinssatz",
+        "severity": "medium",
+        "law": "OR 269a",
+        "de": [
+            "Referenzzinssatz",
+            "Referenzzins",
+            "Hypothekarzinssatz",
+            "Zinssenkung",
+            "Mietzinsanpassung bei Zinssenkung",
+            "Referenzzinssatz Senkung"
+        ],
+        "fr": [
+            "taux de référence",
+            "taux hypothécaire de référence",
+            "baisse du taux de référence"
+        ],
+        "it": [
+            "tasso di riferimento",
+            "tasso ipotecario di riferimento",
+            "riduzione del tasso di riferimento"
+        ]
+    },
+    {
+        "id": "betrugsprävention",
+        "severity": "high",
+        "law": "Strafrecht",
+        "de": [
+            "Vorauszahlung vor Besichtigung",
+            "Kaution vor Schlüsselübergabe",
+            "falsche Überweisung",
+            "Zahlung vor Einzug"
+        ],
+        "fr": [
+            "paiement avant visite",
+            "caution avant clé",
+            "paiement anticipé"
+        ],
+        "it": [
+            "pagamento prima della visita",
+            "cauzione prima della consegna chiavi"
+        ]
+    }
+]

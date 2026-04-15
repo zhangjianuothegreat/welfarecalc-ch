@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>İsviçre Kira Koruyucu · 30 Risk Noktası · Gizlilik Öncelikli</title>
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f0f4f8;
+            color: #0f172a;
+            line-height: 1.5;
+        }
+
+        /* 返回主站按钮 - 固定在顶部，增大触摸区域 */
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: #ffffff;
+            color: #0f172a;
+            padding: 12px 20px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            border: 1px solid #e2e8f0;
+            min-height: 48px;
+        }
+
+        .back-to-home:hover {
+            background: #1e3a8a;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-color: #1e3a8a;
+        }
+
+        /* 核心修改：替换深色背景为清新浅蓝渐变，降低压抑感 */
+        .hero {
+            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%);
+            color: #2d3748;
+            padding: 3rem 1.5rem 6rem;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            background-image:
+                linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%),
+                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2394a3b8' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M96 49c0 2.761-2.239 5-5 5l-86 0c-2.761 0-5-2.239-5-5l0-86c0-2.761 2.239-5 5-5l86 0c2.761 0 5 2.239 5 5l0 86z' fill='%23ffffff' fill-opacity='0.4'/%3E%3C/svg%3E");
+            opacity: 0.2;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-20px, -10px) rotate(1deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+
+        .hero h1 i {
+            color: #f97316;
+            margin-right: 8px;
+        }
+
+        .hero-sub {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 1;
+            color: #475569;
+        }
+
+        .stats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-card {
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            backdrop-filter: none;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #f59e0b, #ea580c);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #0f172a;
+            border-left: 5px solid #dc2626;
+            padding-left: 1rem;
+        }
+
+        .upload-toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .upload-btn {
+            background: #f1f5f9;
+            border: 1.5px solid #cbd5e1;
+            padding: 0.8rem 1.5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all .2s;
+            min-height: 48px;
+        }
+
+        .upload-btn:hover {
+            background: #e2e8f0;
+            border-color: #3b82f6;
+        }
+
+        .knowledge-btn {
+            background: linear-gradient(95deg, #dc2626, #b91c1c);
+            border: none;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 2.5rem;
+            font-weight: 700;
+            width: 100%;
+            font-size: 1.15rem;
+            margin: 1rem 0;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
+            transition: all 0.2s;
+            min-height: 56px;
+        }
+
+        .knowledge-btn:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(95deg, #b91c1c, #991b1b);
+        }
+
+        .action-btn {
+            background: linear-gradient(95deg, #059669, #10b981);
+            color: white;
+            border: none;
+            padding: 0.9rem 1.8rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.2s;
+            font-size: 1rem;
+            min-height: 48px;
+            flex: 1;
+            justify-content: center;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(95deg, #047857, #059669);
+        }
+
+        .scam-alert {
+            background: #fff0f0;
+            border-left: 6px solid #dc2626;
+            padding: 1.2rem 1.5rem;
+            margin: 1.2rem 0 1.5rem 0;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(220, 38, 38, .1);
+        }
+
+        .scam-alert h4 {
+            margin: 0 0 .5rem 0;
+            color: #b91c1c;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 260px;
+            padding: 1.2rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 1rem;
+            font-family: monospace;
+            font-size: .95rem;
+            resize: vertical;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, .2);
+        }
+
+        .primary-btn {
+            background: #dc2626;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            min-height: 56px;
+        }
+
+        .primary-btn:hover {
+            background: #b91c1c;
+        }
+
+        .primary-btn:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+        }
+
+        .result-item {
+            border-left: 5px solid;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border-radius: 1rem;
+            background: #fefefe;
+        }
+
+        .high-risk {
+            border-left-color: #dc2626;
+            background: #fef2f2;
+        }
+
+        .medium-risk {
+            border-left-color: #f59e0b;
+            background: #fffbeb;
+        }
+
+        .low-risk {
+            border-left-color: #10b981;
+            background: #ecfdf5;
+        }
+
+        .action-box {
+            background: #f8fafc;
+            padding: .8rem;
+            border-radius: .8rem;
+            margin-top: .8rem;
+            border-left: 3px solid #3b82f6;
+            font-size: .9rem;
+        }
+
+        .confirm-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .confirm-option label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            background: #f1f5f9;
+            padding: .5rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            border: 1px solid #cbd5e1;
+            min-height: 44px;
+        }
+
+        .confirm-option input:checked+label {
+            background: #3b82f6;
+            color: white;
+            border-color: #3b82f6;
+        }
+
+        .confirm-option input {
+            display: none;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+            z-index: 2000;
+            overflow-y: auto;
+            padding: 2rem;
+        }
+
+        .modal-card {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            background: #0f172a;
+            color: white;
+            padding: 1.2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .checklist-item {
+            border-left: 4px solid #dc2626;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f9fafb;
+            border-radius: .8rem;
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .95);
+            z-index: 3000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #e2e8f0;
+            border-top: 5px solid #dc2626;
+            border-radius: 50%;
+            animation: spin 1s infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #475569;
+            font-size: .85rem;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            align-items: center;
+        }
+
+        .button-group .action-btn {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+
+            #resultArea,
+            #resultArea * {
+                visibility: visible;
+            }
+
+            #resultArea {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+
+            .hero,
+            .upload-toolbar,
+            .scam-alert,
+            .knowledge-btn,
+            footer,
+            .modal,
+            .primary-btn,
+            .button-group,
+            .confirm-group,
+            .back-to-home {
+                display: none !important;
+            }
+
+            .result-item {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .button-group {
+                flex-direction: column;
+            }
+
+            .button-group .action-btn {
+                width: 100%;
+                min-width: auto;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .stat-card {
+                padding: 0.75rem 1.25rem;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.welfarecalc.ch/" class="back-to-home" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-arrow-left"></i> Ana Siteye Dön
+    </a>
+
+    <div class="hero">
+        <h1><i class="fas fa-shield-virus"></i> İsviçre Kira Koruyucu</h1>
+        <p class="hero-sub">30+ yasal tuzak · Ücretsiz · %100 yerel ve gizli</p>
+        <div class="stats">
+            <div class="stat-card"><span class="stat-number">94%</span><br>sözleşme risk içerir</div>
+            <div class="stat-card"><span class="stat-number">CHF 1500+</span><br>ortalama depozito uyuşmazlığı</div>
+            <div class="stat-card"><span class="stat-number">30</span><br>risk noktası</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div
+            style="background: linear-gradient(135deg, #1e3a8a, #1e40af); border-radius: 1rem; padding: 1.5rem; margin: -1rem 0 1.5rem 0; text-align: center; font-size: 1rem; line-height: 1.5; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #3b82f6;">
+            <div style="font-size: 1.1rem; margin-bottom: 0.75rem;">
+                🔒 <strong>%100 yerel işleme</strong> – sözleşmeniz asla tarayıcınızdan ayrılmaz.
+            </div>
+            <div style="background: rgba(255,255,255,0.12); border-radius: 0.75rem; padding: 1rem; margin-top: 0.5rem;">
+                <strong>⚠️ Önemli Uyarı:</strong> Bu araç yalnızca bilgilendirme ve eğitim amaçlıdır. <strong>Yasal
+                    tavsiye DEĞİLDİR</strong>. Almanca sözleşmeler daha zengin kelime dağarcığı nedeniyle daha fazla
+                uyarı tetikleyebilir; Fransızca ve İtalyanca sözleşmeler genellikle daha standarttır.<br>
+                <strong>Nihai kararlar her zaman nitelikli bir avukat veya Mieterverband tarafından
+                    incelenmelidir.</strong>
+            </div>
+        </div>
+
+        <!-- 免费下载合同模板区域 -->
+        <div
+            style="background:#f0f9ff; border-radius:1.5rem; padding:1.2rem; margin: 1.5rem 0; border:1px solid #b9d8f3;">
+            <h3 style="margin:0 0 0.5rem 0; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-file-contract"></i> Ücretsiz kira sözleşmesi şablonları (resmi diller)
+            </h3>
+            <p style="font-size:0.9rem; margin-bottom:1rem;">📄 İsviçre resmi dillerinde örnek sözleşmeleri indirin –
+                yalnızca referans amaçlıdır</p>
+            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                <a href="FrenchContract.pdf" download class="upload-btn" style="text-decoration:none;">
+                    <i class="fas fa-file-pdf"></i> Fransızca (Français)
+                </a>
+                <a href="GermanContract.pdf" download class="upload-btn" style="text-decoration:none;">
+                    <i class="fas fa-file-pdf"></i> Almanca (Deutsch)
+                </a>
+                <a href="ItalianContract.pdf" download class="upload-btn" style="text-decoration:none;">
+                    <i class="fas fa-file-pdf"></i> İtalyanca (Italiano)
+                </a>
+            </div>
+
+            <!-- 双语对比版本 改为土耳其语对照 -->
+            <div style="margin-top: 1.5rem; padding-top: 1rem; border-top: 2px dashed #b9d8f3;">
+                <p style="font-size:0.95rem; margin-bottom:1rem; color:#1e3a8a;">
+                    <i class="fas fa-language"></i> <strong>Almanca, Fransızca veya İtalyanca bilmiyor musunuz? Sorun
+                        değil!</strong><br>
+                    Sizin için iki dilli karşılaştırma dosyaları hazırladık. İndirmek için tıklayın:
+                </p>
+                <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                    <a href="French_Turkish.pdf" download class="upload-btn"
+                        style="text-decoration:none; background:#e6f7ff;">
+                        <i class="fas fa-file-pdf"></i> 🇫🇷 Fransızca - Türkçe (İki Dilli)
+                    </a>
+                    <a href="German_Turkish.pdf" download class="upload-btn"
+                        style="text-decoration:none; background:#e6f7ff;">
+                        <i class="fas fa-file-pdf"></i> 🇩🇪 Almanca - Türkçe (İki Dilli)
+                    </a>
+                    <a href="Italian_Turkish.pdf" download class="upload-btn"
+                        style="text-decoration:none; background:#e6f7ff;">
+                        <i class="fas fa-file-pdf"></i> 🇮🇹 İtalyanca - Türkçe (İki Dilli)
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-upload"></i> Kira sözleşmesini içe aktar (PDF / Metin)</h2>
+            <div
+                style="background:#fef9e3; border-left:4px solid #f59e0b; padding:0.75rem 1rem; border-radius:0.75rem; margin-bottom:1rem; font-size:0.9rem;">
+                <i class="fas fa-language"></i> <strong>Dil desteği:</strong> Yalnızca İsviçre resmi dilleri — Almanca
+                (Deutsch), Fransızca (Français), İtalyanca (Italiano). Diğer diller doğru şekilde algılanmayabilir.
+            </div>
+            <div
+                style="background:#f8fafc; border-radius:1rem; padding:1rem 1.2rem; margin-bottom:1.2rem; border-left:4px solid #3b82f6;">
+                <p style="margin:0 0 0.5rem 0; font-weight:700;">
+                    <i class="fas fa-info-circle"></i> 📋 Nasıl çalışır:
+                </p>
+                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">
+                    Kira sözleşmenizi (Almanca, Fransızca veya İtalyanca) yükleyin veya yapıştırın. Aracımız, anahtar
+                    kelime eşleştirmesi kullanarak 30'dan fazla yaygın yasal riski tarar — imzalamadan önce ikinci bir
+                    çift göz gibi.
+                </p>
+                <p style="margin:0 0 0.5rem 0; font-weight:700; color:#1e3a8a;">
+                    <i class="fas fa-shield-alt"></i> 🔒 Gizliliğiniz önemlidir:
+                </p>
+                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">
+                    Her şey tarayıcınızda yerel olarak gerçekleşir. Sunucuya yükleme yok, izleme yok. Sözleşmeniz asla
+                    cihazınızdan ayrılmaz. Tarayın, sonuçları inceleyin ve sayfayı kapatın — geride hiçbir iz kalmaz.
+                </p>
+                <p
+                    style="margin:0; font-size:0.85rem; background:#fef9e3; padding:0.6rem; border-radius:0.75rem; color:#92400e;">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>Unutmayın:</strong> Bu araç bir avukat DEĞİLDİR.
+                    Sonuçlar yalnızca referans amaçlıdır ve her sorunu yakalamayabilir. Daima dikkatli olun — ikinci bir
+                    bakış asla zarar vermez. Şüphe durumunda bir profesyonele veya yerel Mieterverband'a danışın.
+                </p>
+            </div>
+
+            <div class="upload-toolbar">
+                <label class="upload-btn">
+                    <input type="file" id="pdfUpload" accept=".pdf">
+                    <i class="fas fa-file-pdf"></i> PDF sözleşme yükle
+                </label>
+                <div class="upload-btn" onclick="document.getElementById('contractInput').focus();">
+                    <i class="fas fa-keyboard"></i> Metni manuel olarak yapıştır
+                </div>
+            </div>
+
+            <div class="scam-alert">
+                <h4><i class="fas fa-exclamation-triangle"></i> İsviçre kira kırmızı çizgisi – Dolandırıcılık uyarısı
+                </h4>
+                <p>🚫 Daireyi görmeden asla ödeme yapmayın! Nakit yok, Western Union yok, "posta ile anahtar" yok.<br>
+                    ✅ Güvenlik depozitosu, kiracının adına bloke bir hesaba (Mietkautionskonto) yatırılmalıdır.</p>
+            </div>
+
+            <button class="knowledge-btn" id="showChecklistBtn">
+                <i class="fas fa-list-check"></i> 30 Risk Noktasını Görüntüle (Tam Liste)
+            </button>
+
+            <textarea id="contractInput"
+                placeholder="Almanca, Fransızca veya İtalyanca kira sözleşmenizi buraya yapıştırın…"></textarea>
+
+            <div style="display:flex;justify-content:space-between;margin:.5rem 0;font-size:0.9rem;">
+                <span id="charCounter">0 karakter</span>
+                <span><i class="fas fa-shield-alt"></i> 30 risk noktası taranıyor</span>
+            </div>
+            <button class="primary-btn" id="scanBtn"><i class="fas fa-radar"></i> Sözleşme tuzaklarını şimdi
+                tara</button>
+        </div>
+
+        <div id="resultArea" style="display:none;">
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-exclamation-triangle"></i> Risk değerlendirme raporu</h2>
+                <div id="dynamicResults"></div>
+                <div class="button-group">
+                    <button class="action-btn" id="printReportBtn">
+                        <i class="fas fa-print"></i> 🖨️ Mevcut Riskleri Yazdır
+                    </button>
+                    <button class="action-btn" id="downloadReportPdfBtn">
+                        <i class="fas fa-file-pdf"></i> 📥 PDF Olarak İndir
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer
+            style="text-align: center; padding: 2rem; color: #475569; font-size: 0.85rem; border-top: 1px solid #e2e8f0; margin-top: 2rem;">
+            <p>© 2026 İsviçre Kira Koruyucu – <a href="https://www.welfarecalc.ch/" target="_blank"
+                    rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">WelfareCalc.ch</a>
+                tarafından sunulan ücretsiz bir araç</p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://www.welfarecalc.ch/impressum.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Künye</a> |
+                <a href="https://www.welfarecalc.ch/datenschutz.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Veri Koruma</a> |
+                <a href="https://www.welfarecalc.ch/haftung.html" target="_blank" rel="noopener noreferrer"
+                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Sorumluluk Reddi</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.75rem; color: #64748b;">
+                <i class="fas fa-gavel"></i> İsviçre Borçlar Kanunu'na (OR) dayanmaktadır | Yalnızca referans amaçlıdır
+                – Yasal tavsiye DEĞİLDİR.
+                Herhangi bir sözleşmeyi imzalamadan önce daima Mieterverband veya nitelikli bir avukata danışın.
+            </p>
+        </footer>
+    </div>
+
+    <!-- 30条风险点模态框 -->
+    <div id="checklistModal" class="modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fas fa-book-skull"></i> 30 İsviçre Kira Risk Noktası</h3>
+                <span style="font-size:2rem;cursor:pointer;" id="closeModalBtn">&times;</span>
+            </div>
+            <div class="modal-body" id="modalChecklistBody"></div>
+            <div style="padding:1rem 1.5rem;background:#f8fafc;border-top:1px solid #e2e8f0;text-align:center;">
+                <button onclick="downloadChecklistPDF()" class="action-btn"
+                    style="width:100%;max-width:340px;margin:0 auto;">
+                    <i class="fas fa-download"></i> 30 Risk Noktasını PDF Olarak İndir
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <div id="loadingMsg" style="margin-top:1rem;">Veritabanı yükleniyor ve taranıyor...</div>
+    </div>
+
+    <script>
+        // ====================== 全局变量 ======================
+        let legalDatabase = [];
+        let riskPrompts = {};
+
+        // ====================== 加载 JSON 数据 ======================
+        async function loadData() {
+            const loadingMsg = document.getElementById('loadingMsg');
+            loadingMsg.textContent = "legalDatabase.json ve riskPrompts.json yükleniyor...";
+
+            try {
+                const [dbRes, promptsRes] = await Promise.all([
+                    fetch('legalDatabase.json'),
+                    fetch('riskPrompts.json')
+                ]);
+
+                if (!dbRes.ok || !promptsRes.ok) {
+                    throw new Error('JSON dosyalarından biri veya her ikisi bulunamadı');
+                }
+
+                const dbData = await dbRes.json();
+                legalDatabase = dbData.data || dbData;
+
+                riskPrompts = await promptsRes.json();
+
+                console.log('✅ legalDatabase.json ve riskPrompts.json başarıyla yüklendi');
+                loadingMsg.textContent = "Veritabanı başarıyla yüklendi!";
+                setTimeout(() => {
+                    document.getElementById('loadingOverlay').style.display = 'none';
+                }, 1000);
+
+            } catch (err) {
+                console.error('❌ JSON yükleme hatası:', err);
+                loadingMsg.innerHTML = `
+                <span style="color:red;">JSON dosyaları yüklenemedi</span><br><br>
+                Lütfen her iki dosyanın da index.html ile aynı klasörde olduğundan emin olun<br>
+                ve bu sayfayı bir yerel sunucu ile çalıştırın:<br>
+                <strong>python -m http.server 8000</strong><br><br>
+                Ardından şu adresi açın: http://localhost:8000
+            `;
+            }
+        }
+
+        // ====================== 语言检测 ======================
+        function detectContractLanguage(text) {
+            const lower = text.toLowerCase();
+            let scores = { de: 0, fr: 0, it: 0 };
+            const deMarkers = ["mietvertrag", "mieter", "vermieter", "kaution", "wohnung", "kündigung", "nebenkosten", "privatkonto", "hausordnung"];
+            const frMarkers = ["bail", "locataire", "bailleur", "caution", "logement", "résiliation", "charges", "appartement"];
+            const itMarkers = ["contratto", "inquilino", "locatore", "cauzione", "alloggio", "disdetta", "spese accessorie", "appartamento"];
+            deMarkers.forEach(w => { if (lower.includes(w)) scores.de++; });
+            frMarkers.forEach(w => { if (lower.includes(w)) scores.fr++; });
+            itMarkers.forEach(w => { if (lower.includes(w)) scores.it++; });
+            if (scores.de >= scores.fr && scores.de >= scores.it) return "de";
+            if (scores.fr >= scores.de && scores.fr >= scores.it) return "fr";
+            return "it";
+        }
+
+        // ====================== 扫描合同 ======================
+        function scanContract(text) {
+            const lower = text.toLowerCase();
+            const matchedIds = new Set();
+            for (let entry of legalDatabase) {
+                let keywords = [...(entry.de || []), ...(entry.fr || []), ...(entry.it || [])];
+                for (let kw of keywords) {
+                    if (kw && lower.includes(kw.toLowerCase())) {
+                        matchedIds.add(entry.id);
+                        break;
+                    }
+                }
+            }
+            return Array.from(matchedIds);
+        }
+
+        // ====================== 字符计数 ======================
+        function updateCharCount() {
+            const count = document.getElementById('contractInput').value.length;
+            document.getElementById('charCounter').textContent = count + " karakter";
+        }
+
+        // ====================== PDF 上传处理 ======================
+        async function handlePdfUpload(file) {
+            if (!file) return;
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'flex';
+            document.getElementById('loadingMsg').textContent = "PDF metni çıkarılıyor...";
+            try {
+                const arrayBuffer = await file.arrayBuffer();
+                const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+                let fullText = "";
+                for (let i = 1; i <= pdf.numPages; i++) {
+                    const page = await pdf.getPage(i);
+                    const content = await page.getTextContent();
+                    fullText += content.items.map(item => item.str).join(" ") + "\n";
+                }
+                document.getElementById('contractInput').value = fullText;
+                updateCharCount();
+                alert(`✅ PDF başarıyla çıkarıldı: ${pdf.numPages} sayfa`);
+            } catch (e) {
+                alert("PDF çıkarımı başarısız oldu. Lütfen metni manuel olarak yapıştırın veya bir OCR aracı kullanın.");
+            }
+            loadingOverlay.style.display = 'none';
+        }
+
+        // ====================== 生成当前风险报告的HTML内容 ======================
+        function getCurrentReportHTML() {
+            const dynamicResults = document.getElementById('dynamicResults');
+            if (!dynamicResults) return '';
+            const cloneResults = dynamicResults.cloneNode(true);
+            cloneResults.querySelectorAll('.confirm-group').forEach(el => el.remove());
+            cloneResults.querySelectorAll('input, button, .confirm-option').forEach(el => el.remove());
+
+            return `
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>İsviçre Kira Koruyucu - Risk Değerlendirme Raporu</title>
+            <style>
+                body { font-family: system-ui, sans-serif; padding: 40px; line-height: 1.6; }
+                h1 { color: #0f172a; border-bottom: 3px solid #dc2626; padding-bottom: 10px; }
+                .report-date { color: #475569; margin-bottom: 30px; }
+                .result-item { margin: 20px 0; padding: 20px; border-left: 5px solid; border-radius: 8px; background: #f9fafb; page-break-inside: avoid; }
+                .high-risk { border-left-color: #dc2626; background: #fef2f2; }
+                .medium-risk { border-left-color: #f59e0b; background: #fffbeb; }
+                .low-risk { border-left-color: #10b981; background: #ecfdf5; }
+                .action-box { background: #f1f5f9; padding: 12px; border-radius: 8px; margin-top: 10px; }
+                footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
+                .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem; }
+            </style>
+        </head>
+        <body>
+            <h1>İsviçre Kira Koruyucu - Risk Değerlendirme Raporu</h1>
+            <div class="report-date">Oluşturulma tarihi: ${new Date().toLocaleString('tr-TR')}</div>
+            <div class="disclaimer">
+                <strong>⚠️ Uyarı:</strong> Bu rapor yalnızca bilgilendirme ve eğitim amaçlıdır. 
+                Yasal tavsiye DEĞİLDİR. Herhangi bir sözleşmeyi imzalamadan önce daima nitelikli bir avukata veya Mieterverband'a danışın.
+            </div>
+            ${cloneResults.innerHTML}
+            <footer>İsviçre Kira Koruyucu – https://www.welfarecalc.ch tarafından sunulan ücretsiz bir araç • İsviçre Borçlar Kanunu'na (OR) dayanmaktadır</footer>
+        </body>
+        </html>
+        `;
+        }
+
+        function printCurrentReport() {
+            const reportHTML = getCurrentReportHTML();
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(reportHTML);
+            printWindow.document.close();
+            printWindow.focus();
+            printWindow.print();
+        }
+
+        function downloadCurrentReportAsPDF() {
+            const reportHTML = getCurrentReportHTML();
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(reportHTML);
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => {
+                printWindow.print();
+                alert("💡 Yazdırma iletişim kutusunda, raporu PDF dosyası olarak indirmek için 'PDF Olarak Kaydet' seçeneğini seçin.");
+            }, 500);
+        }
+
+        // ====================== 开始扫描 ======================
+        function startScan() {
+            const raw = document.getElementById('contractInput').value.trim();
+            if (!raw || raw.length < 30) {
+                alert("Lütfen kira sözleşmenizin en az 30 karakterini yapıştırın.");
+                return;
+            }
+
+            const scanBtn = document.getElementById('scanBtn');
+            scanBtn.disabled = true;
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'flex';
+            document.getElementById('loadingMsg').textContent = "Sözleşme 30 risk noktası için taranıyor...";
+
+            setTimeout(() => {
+                const matchedIds = scanContract(raw);
+                const contractLang = detectContractLanguage(raw);
+                const resultArea = document.getElementById('resultArea');
+                const dynamicResults = document.getElementById('dynamicResults');
+
+                let html = `
+            <div style="background:#fefce8;border:1px solid #facc15;border-radius:1rem;padding:1rem;margin-bottom:1.5rem;font-size:0.95rem;">
+                <strong>Dil notu:</strong> Almanca sözleşmeler daha zengin kelime dağarcığı nedeniyle daha fazla uyarı tetikleyebilir. 
+                Fransızca ve İtalyanca sözleşmeler genellikle daha standarttır. Bu normaldir.<br>
+                <strong>Uyarı:</strong> Bu araç yalnızca referans amaçlıdır ve yasal tavsiye DEĞİLDİR. 
+                İmzalamadan önce daima bir avukata veya Mieterverband'a danışın.
+            </div>`;
+
+                if (matchedIds.length === 0) {
+                    html += `<p style="text-align:center;color:#10b981;font-size:1.1rem;">🎉 Bu sözleşmede risk anahtar kelimesi tespit edilmedi.<br>Yine de 30 risk noktası tam listesini gözden geçirmeniz önerilir.</p>`;
+                } else {
+                    html += `<p><strong>${matchedIds.length}</strong> potansiyel risk tespit edildi. Lütfen her birini inceleyin:</p>`;
+                    for (let id of matchedIds) {
+                        const entry = legalDatabase.find(e => e.id === id);
+                        if (!entry) continue;
+
+                        const riskClass = entry.severity === 'high' ? 'high-risk' :
+                            (entry.severity === 'medium' ? 'medium-risk' : 'low-risk');
+
+                        const promptObj = riskPrompts[id] || {};
+                        // 合同语言的提示（德语/法语/意大利语）
+                        const contractPrompt = (promptObj[contractLang] && promptObj[contractLang].prompt)
+                            ? promptObj[contractLang].prompt
+                            : "Lütfen bu maddeyi bir hukuk danışmanıyla dikkatlice kontrol edin.";
+
+                        // 土耳其语的提示
+                        const turkishPrompt = (promptObj.tr && promptObj.tr.prompt)
+                            ? promptObj.tr.prompt
+                            : (promptObj.en && promptObj.en.prompt)
+                                ? promptObj.en.prompt
+                                : "Lütfen bu maddeyi bir hukuk danışmanıyla dikkatlice kontrol edin.";
+
+                        // 土耳其语的标题
+                        const titleTr = (promptObj.tr && promptObj.tr.title)
+                            ? promptObj.tr.title
+                            : (promptObj.en && promptObj.en.title)
+                                ? promptObj.en.title
+                                : id;
+
+                        // 法律引用（优先使用土耳其语）
+                        const lawRef = (promptObj.tr && promptObj.tr.law)
+                            ? promptObj.tr.law
+                            : (promptObj.en && promptObj.en.law)
+                                ? promptObj.en.law
+                                : (entry.law || "İsviçre Borçlar Kanunu");
+
+                        html += `
+                    <div class="result-item ${riskClass}">
+                        <h4>${titleTr}</h4>
+                        <div><strong>Yasa:</strong> ${lawRef}</div>
+                        <div class="action-box">
+                            <strong>📄 ${contractLang.toUpperCase()}:</strong> ${contractPrompt}<br><br>
+                            <strong>🇹🇷 Türkçe:</strong> ${turkishPrompt}
+                        </div>
+                        <div class="confirm-group">
+                            <div class="confirm-option">
+                                <input type="radio" name="confirm-${id}" id="ok-${id}" value="ok" checked>
+                                <label for="ok-${id}"><i class="fas fa-check-circle"></i> ✅ Kontrol edildi ve uyumlu</label>
+                            </div>
+                            <div class="confirm-option">
+                                <input type="radio" name="confirm-${id}" id="negotiate-${id}" value="negotiate">
+                                <label for="negotiate-${id}"><i class="fas fa-handshake"></i> ⚠️ Ev sahibi ile müzakere gerekiyor</label>
+                            </div>
+                            <div class="confirm-option">
+                                <input type="radio" name="confirm-${id}" id="problem-${id}" value="problem">
+                                <label for="problem-${id}"><i class="fas fa-times-circle"></i> ❌ Sorun bulundu, yardım gerekiyor</label>
+                            </div>
+                        </div>
+                    </div>`;
+                    }
+                }
+
+                dynamicResults.innerHTML = html;
+                resultArea.style.display = 'block';
+                loadingOverlay.style.display = 'none';
+                scanBtn.disabled = false;
+                window.scrollTo({ top: resultArea.offsetTop - 50, behavior: 'smooth' });
+            }, 120);
+        }
+
+        // ====================== 显示30条完整清单 ======================
+        function showChecklistModal() {
+            const modalBody = document.getElementById('modalChecklistBody');
+            let html = '';
+            for (let id in riskPrompts) {
+                const p = riskPrompts[id].tr || {};
+                const title = p.title || id;
+                const law = p.law || "İsviçre Borçlar Kanunu";
+                const promptText = p.prompt || "Lütfen bu maddeyi inceleyin.";
+                html += `
+            <div class="checklist-item">
+                <strong>${title}</strong>
+                <span style="background:#e2e8f0; padding:2px 8px; border-radius:20px; margin-left:10px; font-size:0.85rem;">${law}</span>
+                <div style="margin-top:10px; color:#334155;">${promptText}</div>
+            </div>`;
+            }
+            modalBody.innerHTML = html;
+            document.getElementById('checklistModal').style.display = 'block';
+        }
+
+        function downloadChecklistPDF() {
+            let pdfContent = `
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>30 İsviçre Kira Risk Noktası Kontrol Listesi</title>
+            <style>
+                body { font-family: system-ui, sans-serif; padding:40px; line-height:1.6; }
+                h1 { text-align:center; color:#0f172a; }
+                .intro { text-align:center; color:#475569; margin-bottom:30px; }
+                .risk-item { margin:25px 0; padding:20px; border-left:6px solid #dc2626; background:#fef9f9; page-break-inside: avoid; }
+                .risk-title { font-size:1.25rem; font-weight:700; margin-bottom:8px; }
+                .risk-law { color:#1e3a8a; font-weight:600; }
+                footer { margin-top:50px; text-align:center; font-size:0.8rem; color:#6b7280; }
+            </style>
+        </head>
+        <body>
+            <h1>30 İsviçre Kira Sözleşmesi Risk Noktası</h1>
+            <div class="intro">Yalnızca eğitim amaçlıdır • Yasal tavsiye değildir • Daima bir profesyonele danışın</div>
+        `;
+            for (let id in riskPrompts) {
+                const p = riskPrompts[id].tr || {};
+                pdfContent += `
+            <div class="risk-item">
+                <div class="risk-title">${p.title || id}</div>
+                <div class="risk-law">Yasa: ${p.law || "İsviçre Borçlar Kanunu"}</div>
+                <div>${p.prompt || "Lütfen bu maddeyi dikkatlice inceleyin."}</div>
+            </div>`;
+            }
+            pdfContent += `<footer>İsviçre Kira Koruyucu tarafından oluşturuldu – https://www.welfarecalc.ch ${new Date().toLocaleDateString('tr-TR')}</footer></body></html>`;
+            const printWindow = window.open('', '_blank');
+            printWindow.document.write(pdfContent);
+            printWindow.document.close();
+            printWindow.focus();
+            setTimeout(() => { printWindow.print(); }, 500);
+        }
+
+        // ====================== 事件绑定 ======================
+        document.getElementById('scanBtn').addEventListener('click', startScan);
+        document.getElementById('contractInput').addEventListener('input', updateCharCount);
+        document.getElementById('pdfUpload').addEventListener('change', (e) => {
+            if (e.target.files.length > 0) handlePdfUpload(e.target.files[0]);
+            e.target.value = '';
+        });
+        document.getElementById('showChecklistBtn').addEventListener('click', showChecklistModal);
+        document.getElementById('closeModalBtn').addEventListener('click', () => {
+            document.getElementById('checklistModal').style.display = 'none';
+        });
+        document.getElementById('printReportBtn').addEventListener('click', (e) => { e.preventDefault(); printCurrentReport(); });
+        document.getElementById('downloadReportPdfBtn').addEventListener('click', (e) => { e.preventDefault(); downloadCurrentReportAsPDF(); });
+        window.addEventListener('click', (e) => { if (e.target === document.getElementById('checklistModal')) document.getElementById('checklistModal').style.display = 'none'; });
+        window.addEventListener('load', async () => { await loadData(); updateCharCount(); });
+    </script>
+</body>
+
+</html>

@@ -198,6 +198,49 @@
             margin: 0;
         }
 
+        /* Home link styling */
+        .home-link {
+            text-align: center;
+            margin: 1rem 0 0.5rem;
+        }
+        .home-link a {
+            display: inline-block;
+            background: #ffffff;
+            color: #005f8c;
+            text-decoration: none;
+            font-weight: 700;
+            padding: 0.6rem 1.4rem;
+            border-radius: 40px;
+            border: 1px solid #0099dd;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .home-link a:hover {
+            background: #0099dd;
+            color: white;
+            border-color: #0099dd;
+            transform: translateY(-2px);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+            border-top: 1px solid #dce7f0;
+            background: #f8fafc;
+            font-size: 0.9rem;
+            color: #2d3e50;
+        }
+        footer a {
+            color: #006a9e;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 640px) {
             .hero-title { font-size: 1.95rem; }
             .hero-sub { font-size: 1.15rem; }
@@ -213,7 +256,26 @@
         <p class="hero-sub">Dešifrirajte svoj stomatološki račun i provjerite fer cijene uz službene DENTOTAR benchmarke.</p>
     </header>
 
+    <!-- 回到主页的链接 (显眼位置) -->
+    <div class="home-link">
+        <a href="https://www.welfarecalc.ch">🏠 Povratak na početnu stranicu WelfareCalc.ch</a>
+    </div>
+
     <div class="container">
+
+        <!-- ==================== HRVATSKA VERZIJA - JASNO UPOZORENJE ==================== -->
+        <div style="max-width: 1200px; margin: 0 auto; padding: 0;">
+            <div class="strong-disclaimer" style="background: #fef2f2; border-left: 6px solid #dc2626; padding: 1.4rem; margin: 1.5rem 0; border-radius: 12px; font-size: 1.02rem;">
+                <strong>⚠️ Važna pravna napomena:</strong><br><br>
+                Ovaj Revizor stomatoloških računa dostupan je <strong>isključivo u informativne svrhe i u svrhu transparentnosti</strong>. 
+                Rezultati <strong>ne predstavljaju pravni savjet, medicinski savjet niti stručni stomatološki pregled</strong>.<br><br>
+                
+                Ne preuzimamo <strong>bilo kakvu odgovornost</strong> za odluke donesene na temelju korištenja ovog alata – 
+                na primjer, osporavanje računa, odbijanje plaćanja ili ulazak u sporove s vašom stomatološkom ordinacijom.<br><br>
+                
+                Ako imate bilo kakvih nedoumica, uvijek se obratite svom stomatologu ili svom pružatelju zdravstvenog osiguranja.
+            </div>
+        </div>
 
         <div style="background:#e0f0fe; border-radius:20px; padding:12px 20px; margin-bottom:20px; text-align:center;">
             <a href="dentalblog_hr.html" style="color:#005f8c; font-weight:bold;">📖 Pogledajte cijelu seriju vodiča →</a>
@@ -312,6 +374,16 @@
             🇨🇭 Swiss Dental Bill Auditor • Neovisni projekt tvrtke <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a>
         </div>
     </div>
+
+    <!-- 新页脚 -->
+    <footer>
+        <p>WelfareCalc.ch • Besplatno • Anonimno • 2026</p>
+        <p style="margin-top: 0.6rem;">
+            <a href="/impressum_hr.html">Impressum</a> •
+            <a href="/datenschutz_hr.html">Zaštita podataka</a> •
+            <a href="/haftung_hr.html">Isključenje odgovornosti</a>
+        </p>
+    </footer>
 
     <script>
         const servicesIndex = [
