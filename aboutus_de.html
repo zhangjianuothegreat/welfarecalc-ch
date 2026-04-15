@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Über uns | WelfareCalc.ch – Einfach. Unabhängig. Transparent.</title>
+    <meta name="description" content="WelfareCalc.ch – unabhängiges, privates und kostenloses Informationsportal für Sozialleistungen, Zahnarztrechnungen und Mietverträge in der Schweiz. Datenschutzorientierte Tools, 100% lokal im Browser.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f9fe;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Hauptcontainer – deckt das ursprüngliche Styling ab, aber voll responsiv */
+        .about-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem 1.5rem;
+            line-height: 1.75;
+            color: #2c3e50;
+        }
+
+        /* originaldesign übernommen & optimiert */
+        .about-container h1 {
+            font-size: 2.4rem;
+            color: #0050a4;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .subhead {
+            font-size: 1.15rem;
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 3rem;
+            color: #2c3e50;
+            font-weight: 450;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card strong {
+            color: #0050a4;
+            font-weight: 600;
+        }
+
+        .feature-list, .tools-list {
+            margin: 1.8rem 0;
+            padding-left: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list li, .tools-list li {
+            margin-bottom: 0.65rem;
+        }
+
+        .feature-list li strong, .tools-list li strong {
+            color: #0050a4;
+        }
+
+        h2 {
+            margin: 2.5rem 0 1rem;
+            color: #0050a4;
+            font-size: 1.7rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .card h2:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        .disclaimer-note {
+            margin-top: 2rem;
+            font-size: 1rem;
+            background: #f0f7ff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 16px;
+            border-left: 4px solid #0050a4;
+        }
+
+        .contact-block {
+            text-align: center;
+            margin-top: 2rem;
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 1rem 1.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .contact-block span:first-of-type {
+            font-size: 1rem;
+        }
+
+        .contact-block a {
+            color: #0050a4;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #8bb9e0;
+        }
+
+        .contact-block a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+
+        .contact-privacy {
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.5rem;
+            color: #4b6a8b;
+        }
+
+        .footer-tagline {
+            text-align: center;
+            margin-top: 3rem;
+            color: #64748b;
+            font-size: 0.95rem;
+            border-top: 1px solid #e2edf7;
+            padding-top: 2rem;
+        }
+
+        /* responsive Anpassungen */
+        @media (max-width: 640px) {
+            .about-container {
+                padding: 1.5rem 1rem 3rem 1rem;
+            }
+            .about-container h1 {
+                font-size: 1.9rem;
+            }
+            .subhead {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.45rem;
+                margin: 1.8rem 0 0.8rem;
+            }
+            .feature-list, .tools-list {
+                padding-left: 1rem;
+                font-size: 0.98rem;
+            }
+            .contact-block {
+                max-width: 90%;
+                padding: 0.9rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 1.2rem;
+            }
+            .feature-list li, .tools-list li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* zusätzlicher Feinschliff für Lesbarkeit */
+        .card a {
+            color: #0050a4;
+            text-decoration: none;
+            border-bottom: 1px dotted #8bb9e0;
+        }
+        .card a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>Über WelfareCalc.ch</h1>
+        <div class="subhead">
+            Wir machen komplizierte Schweizer Bürokratie einfach verständlich.
+        </div>
+
+        <div class="card">
+            <p>WelfareCalc.ch ist ein <strong>unabhängiges, privates und kostenloses Informationsportal</strong> für Personen, die in der Schweiz leben oder hierher ziehen.</p>
+            
+            <p>Unser Ziel ist es, Transparenz zu schaffen in Bereichen, die für viele Menschen undurchsichtig und teuer sind:</p>
+            
+            <ul class="feature-list">
+                <li><strong>Sozialleistungen</strong> – AHV, IV, Ergänzungsleistungen (EL), Prämienverbilligung (IPV), Sozialhilfe und Familienzulagen</li>
+                <li><strong>Zahnarztrechnungen</strong> – DENTOTAR-Codes entschlüsseln und prüfen, ob Sie fair abgerechnet wurden</li>
+                <li><strong>Mietverträge</strong> – Über 30 häufige Fallstricke erkennen, bevor Sie unterschreiben</li>
+            </ul>
+            
+            <p>Alle unsere Tools laufen <strong>100% lokal in Ihrem Browser</strong>. Es werden keine personenbezogenen Daten gespeichert, keine Tracking-Tools eingesetzt und keine Daten an Dritte weitergegeben. Ihre Privatsphäre hat bei uns höchste Priorität.</p>
+            
+            <h2>Warum wir das machen</h2>
+            <p>Viele Menschen in der Schweiz – besonders Zugezogene – lassen jedes Jahr Tausende von Franken liegen, weil sie ihre Rechte nicht kennen oder die Systeme zu kompliziert finden. Gleichzeitig zahlen sie bei Zahnarzt oder Miete oft unnötig viel Geld, weil sie die Verträge und Rechnungen nicht richtig einschätzen können.</p>
+            <p>Genau hier setzen wir an: Mit einfachen, kostenlosen und datenschutzkonformen Tools helfen wir Ihnen, besser informierte Entscheidungen zu treffen.</p>
+            
+            <h2>Unsere Tools</h2>
+            <ul class="tools-list">
+                <li><strong>Sozialleistungs-Rechner</strong> – Schnell und anonym berechnen, welche Leistungen Ihnen zustehen</li>
+                <li><strong>Swiss Dental Bill Auditor</strong> – DENTOTAR-Codes entschlüsseln und Rechnungen auf faire Preise prüfen</li>
+                <li><strong>Mietvertrag-Schutz</strong> – Mietverträge auf über 30 rechtliche Risiken scannen, bevor Sie unterschreiben</li>
+            </ul>
+            
+            <div class="disclaimer-note">
+                <strong>Wichtig:</strong> Alle unsere Tools dienen ausschließlich der Information und Orientierung. 
+                Sie ersetzen keine professionelle Beratung. Bei wichtigen Entscheidungen empfehlen wir immer, den Mieterverband, eine Ausgleichskasse, einen Anwalt oder Ihren Zahnarzt zu konsultieren.
+            </div>
+        </div>
+
+        <!-- Kontakt-Block: Fragen, Anregungen oder Fehler -->
+        <div class="contact-block">
+            <span>📬 Hast du Fragen, Anregungen oder einen Fehler entdeckt?</span><br>
+            <a href="mailto:welfarecalc.ch@gmail.com">welfarecalc.ch@gmail.com</a>
+            <span class="contact-privacy">(Wir speichern keine Adressen, deine Nachricht wird vertraulich behandelt.)</span>
+        </div>
+
+        <div class="footer-tagline">
+            WelfareCalc.ch – Einfach. Unabhängig. Transparent.<br>
+            Ein privates Projekt mit dem Ziel, mehr Menschen in der Schweiz zu helfen, ihre Rechte besser zu verstehen.
+        </div>
+    </div>
+</body>
+</html>

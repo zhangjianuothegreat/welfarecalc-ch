@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Hakkımızda | WelfareCalc.ch – Basit. Bağımsız. Şeffaf.</title>
+    <meta name="description" content="WelfareCalc.ch – İsviçre'deki sosyal yardımlar, diş hekimi faturaları ve kira sözleşmeleri için bağımsız, özel ve ücretsiz bilgi platformu. Gizlilik odaklı araçlar, %100 tarayıcı içinde yerel.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f9fe;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Ana konteyner – orijinal stili korur, tamamen duyarlı */
+        .about-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem 1.5rem;
+            line-height: 1.75;
+            color: #2c3e50;
+        }
+
+        /* Orijinal tasarım iyileştirilmiş */
+        .about-container h1 {
+            font-size: 2.4rem;
+            color: #0050a4;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .subhead {
+            font-size: 1.15rem;
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 3rem;
+            color: #2c3e50;
+            font-weight: 450;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card strong {
+            color: #0050a4;
+            font-weight: 600;
+        }
+
+        .feature-list, .tools-list {
+            margin: 1.8rem 0;
+            padding-left: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list li, .tools-list li {
+            margin-bottom: 0.65rem;
+        }
+
+        .feature-list li strong, .tools-list li strong {
+            color: #0050a4;
+        }
+
+        h2 {
+            margin: 2.5rem 0 1rem;
+            color: #0050a4;
+            font-size: 1.7rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .card h2:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        .disclaimer-note {
+            margin-top: 2rem;
+            font-size: 1rem;
+            background: #f0f7ff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 16px;
+            border-left: 4px solid #0050a4;
+        }
+
+        .contact-block {
+            text-align: center;
+            margin-top: 2rem;
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 1rem 1.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .contact-block span:first-of-type {
+            font-size: 1rem;
+        }
+
+        .contact-block a {
+            color: #0050a4;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #8bb9e0;
+        }
+
+        .contact-block a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+
+        .contact-privacy {
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.5rem;
+            color: #4b6a8b;
+        }
+
+        .footer-tagline {
+            text-align: center;
+            margin-top: 3rem;
+            color: #64748b;
+            font-size: 0.95rem;
+            border-top: 1px solid #e2edf7;
+            padding-top: 2rem;
+        }
+
+        /* duyarlı düzenlemeler */
+        @media (max-width: 640px) {
+            .about-container {
+                padding: 1.5rem 1rem 3rem 1rem;
+            }
+            .about-container h1 {
+                font-size: 1.9rem;
+            }
+            .subhead {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.45rem;
+                margin: 1.8rem 0 0.8rem;
+            }
+            .feature-list, .tools-list {
+                padding-left: 1rem;
+                font-size: 0.98rem;
+            }
+            .contact-block {
+                max-width: 90%;
+                padding: 0.9rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 1.2rem;
+            }
+            .feature-list li, .tools-list li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* okunabilirlik için ekstra incelik */
+        .card a {
+            color: #0050a4;
+            text-decoration: none;
+            border-bottom: 1px dotted #8bb9e0;
+        }
+        .card a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>WelfareCalc.ch Hakkında</h1>
+        <div class="subhead">
+            Karmaşık İsviçre bürokrasisini basit ve anlaşılır hale getiriyoruz.
+        </div>
+
+        <div class="card">
+            <p>WelfareCalc.ch, İsviçre'de yaşayan veya buraya taşınan kişiler için <strong>bağımsız, özel ve ücretsiz bir bilgi platformudur</strong>.</p>
+            
+            <p>Amacımız, birçok insan için karmaşık ve pahalı olan alanlarda şeffaflık yaratmaktır:</p>
+            
+            <ul class="feature-list">
+                <li><strong>Sosyal yardımlar</strong> – AHV, IV, ek yardımlar (EL), prim indirimi (IPV), sosyal yardım ve aile ödenekleri</li>
+                <li><strong>Diş hekimi faturaları</strong> – DENTOTAR kodlarını çözmek ve adil fiyatlandırılıp fiyatlandırılmadığınızı kontrol etmek</li>
+                <li><strong>Kira sözleşmeleri</strong> – İmzalamadan önce 30'dan fazla yaygın tuzağı tanıyın</li>
+            </ul>
+            
+            <p>Tüm araçlarımız <strong>%100 tarayıcınızda yerel olarak çalışır</strong>. Hiçbir kişisel veri depolanmaz, izleme araçları kullanılmaz ve hiçbir veri üçüncü taraflarla paylaşılmaz. Gizliliğiniz bizim için en yüksek önceliğe sahiptir.</p>
+            
+            <h2>Bunu neden yapıyoruz</h2>
+            <p>İsviçre'deki pek çok kişi – özellikle yeni gelenler – haklarını bilmedikleri veya sistemleri çok karmaşık buldukları için her yıl binlerce İsviçre Frangı'nı boşa harcıyor. Aynı şekilde, diş hekimi veya kira faturalarında sözleşmeleri ve faturaları doğru değerlendiremedikleri için sıklıkla gereğinden fazla ödeme yapıyorlar.</p>
+            <p>İşte bu noktada devreye giriyoruz: Basit, ücretsiz ve gizlilik uyumlu araçlarla daha bilinçli kararlar almanıza yardımcı oluyoruz.</p>
+            
+            <h2>Araçlarımız</h2>
+            <ul class="tools-list">
+                <li><strong>Sosyal Yardım Hesaplayıcı</strong> – Hangi yardımlardan yararlanabileceğinizi hızlı ve anonim olarak hesaplayın</li>
+                <li><strong>Swiss Dental Bill Auditor (İsviçre Diş Faturası Denetleyicisi)</strong> – DENTOTAR kodlarını çözün ve faturaları adil fiyatlar açısından kontrol edin</li>
+                <li><strong>Kira Sözleşmesi Koruma</strong> – İmzalamadan önce kira sözleşmelerini 30'dan fazla yasal risk açısından tarayın</li>
+            </ul>
+            
+            <div class="disclaimer-note">
+                <strong>Önemli:</strong> Tüm araçlarımız yalnızca bilgilendirme ve yol gösterme amacı taşır. 
+                Profesyonel bir danışmanlığın yerini tutmaz. Önemli kararlarınızda her zaman kiracılar derneğine, bir denkleştirme fonuna, bir avukata veya diş hekiminize danışmanızı öneririz.
+            </div>
+        </div>
+
+        <!-- İletişim bloğu: sorular, öneriler veya hata bildirimi -->
+        <div class="contact-block">
+            <span>📬 Sorularınız, önerileriniz veya bir hata mı buldunuz?</span><br>
+            <a href="mailto:welfarecalc.ch@gmail.com">welfarecalc.ch@gmail.com</a>
+            <span class="contact-privacy">(Hiçbir e-posta adresi saklanmaz, mesajınız gizli tutulur.)</span>
+        </div>
+
+        <div class="footer-tagline">
+            WelfareCalc.ch – Basit. Bağımsız. Şeffaf.<br>
+            İsviçre'de daha fazla insanın haklarını daha iyi anlamasına yardımcı olmayı hedefleyen özel bir proje.
+        </div>
+    </div>
+</body>
+</html>

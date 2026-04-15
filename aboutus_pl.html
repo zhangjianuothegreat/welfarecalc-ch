@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>O nas | WelfareCalc.ch – Proste. Niezależne. Przejrzyste.</title>
+    <meta name="description" content="WelfareCalc.ch – niezależny, prywatny i darmowy portal informacyjny o świadczeniach socjalnych, rachunkach dentystycznych i umowach najmu w Szwajcarii. Narzędzia zorientowane na ochronę danych, w 100% działające lokalnie w przeglądarce.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f9fe;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Główny kontener – zachowuje oryginalny styl, ale w pełni responsywny */
+        .about-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem 1.5rem;
+            line-height: 1.75;
+            color: #2c3e50;
+        }
+
+        /* oryginalny design zoptymalizowany */
+        .about-container h1 {
+            font-size: 2.4rem;
+            color: #0050a4;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .subhead {
+            font-size: 1.15rem;
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 3rem;
+            color: #2c3e50;
+            font-weight: 450;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card strong {
+            color: #0050a4;
+            font-weight: 600;
+        }
+
+        .feature-list, .tools-list {
+            margin: 1.8rem 0;
+            padding-left: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list li, .tools-list li {
+            margin-bottom: 0.65rem;
+        }
+
+        .feature-list li strong, .tools-list li strong {
+            color: #0050a4;
+        }
+
+        h2 {
+            margin: 2.5rem 0 1rem;
+            color: #0050a4;
+            font-size: 1.7rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .card h2:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        .disclaimer-note {
+            margin-top: 2rem;
+            font-size: 1rem;
+            background: #f0f7ff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 16px;
+            border-left: 4px solid #0050a4;
+        }
+
+        .contact-block {
+            text-align: center;
+            margin-top: 2rem;
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 1rem 1.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .contact-block span:first-of-type {
+            font-size: 1rem;
+        }
+
+        .contact-block a {
+            color: #0050a4;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #8bb9e0;
+        }
+
+        .contact-block a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+
+        .contact-privacy {
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.5rem;
+            color: #4b6a8b;
+        }
+
+        .footer-tagline {
+            text-align: center;
+            margin-top: 3rem;
+            color: #64748b;
+            font-size: 0.95rem;
+            border-top: 1px solid #e2edf7;
+            padding-top: 2rem;
+        }
+
+        /* dostosowania responsywne */
+        @media (max-width: 640px) {
+            .about-container {
+                padding: 1.5rem 1rem 3rem 1rem;
+            }
+            .about-container h1 {
+                font-size: 1.9rem;
+            }
+            .subhead {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.45rem;
+                margin: 1.8rem 0 0.8rem;
+            }
+            .feature-list, .tools-list {
+                padding-left: 1rem;
+                font-size: 0.98rem;
+            }
+            .contact-block {
+                max-width: 90%;
+                padding: 0.9rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 1.2rem;
+            }
+            .feature-list li, .tools-list li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* dodatkowe usprawnienia czytelności */
+        .card a {
+            color: #0050a4;
+            text-decoration: none;
+            border-bottom: 1px dotted #8bb9e0;
+        }
+        .card a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>O WelfareCalc.ch</h1>
+        <div class="subhead">
+            Upraszczamy skomplikowaną szwajcarską biurokrację.
+        </div>
+
+        <div class="card">
+            <p>WelfareCalc.ch to <strong>niezależny, prywatny i darmowy portal informacyjny</strong> dla osób mieszkających w Szwajcarii lub planujących się tu przeprowadzić.</p>
+            
+            <p>Naszym celem jest zapewnienie przejrzystości w obszarach, które dla wielu ludzi są niejasne i kosztowne:</p>
+            
+            <ul class="feature-list">
+                <li><strong>Świadczenia socjalne</strong> – AHV, IV, świadczenia uzupełniające (EL), obniżka składek na ubezpieczenie zdrowotne (IPV), pomoc społeczna i zasiłki rodzinne</li>
+                <li><strong>Rachunki dentystyczne</strong> – dekodowanie kodów DENTOTAR i sprawdzenie, czy zostałeś uczciwie rozliczony</li>
+                <li><strong>Umowy najmu</strong> – wykrywanie ponad 30 typowych pułapek, zanim podpiszesz</li>
+            </ul>
+            
+            <p>Wszystkie nasze narzędzia działają <strong>w 100% lokalnie w Twojej przeglądarce</strong>. Nie przechowujemy żadnych danych osobowych, nie stosujemy narzędzi śledzących ani nie przekazujemy danych stronom trzecim. Twoja prywatność jest dla nas najwyższym priorytetem.</p>
+            
+            <h2>Dlaczego to robimy</h2>
+            <p>Wiele osób w Szwajcarii – zwłaszcza nowo przybyłych – co roku traci tysiące franków, ponieważ nie zna swoich praw lub uważa systemy za zbyt skomplikowane. Jednocześnie często przepłacają za dentystę lub wynajem, ponieważ nie potrafią prawidłowo ocenić umów i rachunków.</p>
+            <p>W tym miejscu wkraczamy my: za pomocą prostych, darmowych i zgodnych z ochroną danych narzędzi pomagamy Ci podejmować lepiej poinformowane decyzje.</p>
+            
+            <h2>Nasze narzędzia</h2>
+            <ul class="tools-list">
+                <li><strong>Kalkulator świadczeń socjalnych</strong> – Szybkie i anonimowe sprawdzenie, jakie świadczenia Ci przysługują</li>
+                <li><strong>Swiss Dental Bill Auditor</strong> – Dekodowanie kodów DENTOTAR i sprawdzanie rachunków pod kątem uczciwych cen</li>
+                <li><strong>Ochrona umowy najmu</strong> – Skanowanie umów najmu pod kątem ponad 30 zagrożeń prawnych, zanim podpiszesz</li>
+            </ul>
+            
+            <div class="disclaimer-note">
+                <strong>Ważne:</strong> Wszystkie nasze narzędzia służą wyłącznie do celów informacyjnych i orientacyjnych. 
+                Nie zastępują one profesjonalnego doradztwa. W przypadku ważnych decyzji zawsze zalecamy konsultację z miasteczkowym związkiem najemców, kasą kompensacyjną, prawnikiem lub Twoim dentystą.
+            </div>
+        </div>
+
+        <!-- Blok kontaktowy: pytania, sugestie lub błędy -->
+        <div class="contact-block">
+            <span>📬 Masz pytania, sugestie lub znalazłeś błąd?</span><br>
+            <a href="mailto:welfarecalc.ch@gmail.com">welfarecalc.ch@gmail.com</a>
+            <span class="contact-privacy">(Nie przechowujemy adresów, Twoja wiadomość jest traktowana poufnie.)</span>
+        </div>
+
+        <div class="footer-tagline">
+            WelfareCalc.ch – Proste. Niezależne. Przejrzyste.<br>
+            Prywatny projekt, którego celem jest pomoc większej liczbie osób w Szwajcarii w lepszym zrozumieniu ich praw.
+        </div>
+    </div>
+</body>
+</html>

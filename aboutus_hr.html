@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>O nama | WelfareCalc.ch – Jednostavno. Neovisno. Transparentno.</title>
+    <meta name="description" content="WelfareCalc.ch – neovisni, privatni i besplatni informativni portal za socijalne naknade, stomatološke račune i ugovore o najmu u Švicarskoj. Alati usmjereni na zaštitu podataka, 100% lokalno u pregledniku.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f9fe;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Glavni spremnik – pokriva izvorni stil, ali potpuno prilagodljiv */
+        .about-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem 1.5rem;
+            line-height: 1.75;
+            color: #2c3e50;
+        }
+
+        /* originalni dizajn preuzet i optimiziran */
+        .about-container h1 {
+            font-size: 2.4rem;
+            color: #0050a4;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+
+        .subhead {
+            font-size: 1.15rem;
+            text-align: center;
+            max-width: 780px;
+            margin: 0 auto 3rem;
+            color: #2c3e50;
+            font-weight: 450;
+        }
+
+        .card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        .card strong {
+            color: #0050a4;
+            font-weight: 600;
+        }
+
+        .feature-list, .tools-list {
+            margin: 1.8rem 0;
+            padding-left: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list li, .tools-list li {
+            margin-bottom: 0.65rem;
+        }
+
+        .feature-list li strong, .tools-list li strong {
+            color: #0050a4;
+        }
+
+        h2 {
+            margin: 2.5rem 0 1rem;
+            color: #0050a4;
+            font-size: 1.7rem;
+            font-weight: 600;
+            letter-spacing: -0.2px;
+        }
+
+        .card h2:first-of-type {
+            margin-top: 0.5rem;
+        }
+
+        .disclaimer-note {
+            margin-top: 2rem;
+            font-size: 1rem;
+            background: #f0f7ff;
+            padding: 1.2rem 1.5rem;
+            border-radius: 16px;
+            border-left: 4px solid #0050a4;
+        }
+
+        .contact-block {
+            text-align: center;
+            margin-top: 2rem;
+            background: #ffffff;
+            border-radius: 40px;
+            padding: 1rem 1.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+
+        .contact-block span:first-of-type {
+            font-size: 1rem;
+        }
+
+        .contact-block a {
+            color: #0050a4;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1px solid #8bb9e0;
+        }
+
+        .contact-block a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+
+        .contact-privacy {
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.5rem;
+            color: #4b6a8b;
+        }
+
+        .footer-tagline {
+            text-align: center;
+            margin-top: 3rem;
+            color: #64748b;
+            font-size: 0.95rem;
+            border-top: 1px solid #e2edf7;
+            padding-top: 2rem;
+        }
+
+        /* prilagodbe za responzivnost */
+        @media (max-width: 640px) {
+            .about-container {
+                padding: 1.5rem 1rem 3rem 1rem;
+            }
+            .about-container h1 {
+                font-size: 1.9rem;
+            }
+            .subhead {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            h2 {
+                font-size: 1.45rem;
+                margin: 1.8rem 0 0.8rem;
+            }
+            .feature-list, .tools-list {
+                padding-left: 1rem;
+                font-size: 0.98rem;
+            }
+            .contact-block {
+                max-width: 90%;
+                padding: 0.9rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 1.2rem;
+            }
+            .feature-list li, .tools-list li {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        /* dodatna dorada za čitljivost */
+        .card a {
+            color: #0050a4;
+            text-decoration: none;
+            border-bottom: 1px dotted #8bb9e0;
+        }
+        .card a:hover {
+            border-bottom: 1px solid #0050a4;
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>O nama – WelfareCalc.ch</h1>
+        <div class="subhead">
+            Kompliciranu švicarsku birokraciju činimo jednostavnom za razumijevanje.
+        </div>
+
+        <div class="card">
+            <p>WelfareCalc.ch je <strong>neovisni, privatni i besplatni informativni portal</strong> za osobe koje žive u Švicarskoj ili se planiraju doseliti.</p>
+            
+            <p>Naš je cilj stvoriti transparentnost u područjima koja su mnogim ljudima nejasna i skupa:</p>
+            
+            <ul class="feature-list">
+                <li><strong>Socijalne naknade</strong> – AHV, IV, dodatne naknade (EL), smanjenje premije (IPV), socijalna pomoć i obiteljski dodaci</li>
+                <li><strong>Stomatološki računi</strong> – dešifriranje DENTOTAR kodova i provjera jeste li pošteno naplaćeni</li>
+                <li><strong>Ugovori o najmu</strong> – prepoznajte više od 30 uobičajenih zamki prije nego što potpišete</li>
+            </ul>
+            
+            <p>Svi naši alati rade <strong>100% lokalno u vašem pregledniku</strong>. Ne pohranjuju se osobni podaci, ne koriste se alati za praćenje i ne dijele se podaci s trećim stranama. Vaša privatnost ima najveći prioritet kod nas.</p>
+            
+            <h2>Zašto to radimo</h2>
+            <p>Mnogi ljudi u Švicarskoj – posebno doseljenici – svake godine izgube tisuće franaka jer ne poznaju svoja prava ili smatraju da su sustavi previše komplicirani. Istodobno, često plaćaju nepotrebno puno za stomatološke usluge ili najam jer ne mogu ispravno procijeniti ugovore i račune.</p>
+            <p>Upravo tu mi ulazimo u igru: s jednostavnim, besplatnim alatima koji poštuju privatnost podataka pomažemo vam da donosite bolje informirane odluke.</p>
+            
+            <h2>Naši alati</h2>
+            <ul class="tools-list">
+                <li><strong>Kalkulator socijalnih naknada</strong> – Brzo i anonimno izračunajte na koje naknade imate pravo</li>
+                <li><strong>Swiss Dental Bill Auditor</strong> – Dešifrirajte DENTOTAR kodove i provjerite jesu li računi pošteni</li>
+                <li><strong>Zaštita ugovora o najmu</strong> – Skenirajte ugovore o najmu na više od 30 pravnih rizika prije potpisivanja</li>
+            </ul>
+            
+            <div class="disclaimer-note">
+                <strong>Važno:</strong> Svi naši alati služe isključivo u informativne svrhe i kao smjernice. 
+                Oni ne zamjenjuju stručno savjetovanje. Za važne odluke uvijek preporučujemo konzultacije sa švicarskim savezom stanara (Mieterverband), odgovarajućom kompenzacijskom službom, odvjetnikom ili vašim stomatologom.
+            </div>
+        </div>
+
+        <!-- Kontakt blok: pitanja, prijedlozi ili greške -->
+        <div class="contact-block">
+            <span>📬 Imate pitanja, prijedloge ili ste pronašli pogrešku?</span><br>
+            <a href="mailto:welfarecalc.ch@gmail.com">welfarecalc.ch@gmail.com</a>
+            <span class="contact-privacy">(Ne pohranjujemo adrese, vaša poruka se obrađuje povjerljivo.)</span>
+        </div>
+
+        <div class="footer-tagline">
+            WelfareCalc.ch – Jednostavno. Neovisno. Transparentno.<br>
+            Privatni projekt s ciljem pomoći što većem broju ljudi u Švicarskoj da bolje razumiju svoja prava.
+        </div>
+    </div>
+</body>
+</html>
