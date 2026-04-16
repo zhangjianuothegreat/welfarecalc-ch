@@ -4,7 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO 优化 -->
     <title>Švicarski Zaštitnik Najma · 30 Rizičnih Točaka · Privatnost na Prvom Mjestu</title>
+    <meta name="description" content="Besplatni alat za provjeru ugovora o najmu u Švicarskoj: odmah otkrijte 30+ pravnih rizika. 100% lokalna obrada u pregledniku • Bez slanja podataka • Podrška za njemački, francuski i talijanski jezik. Zaštitite se od skupih zamki najma.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.welfarecalc.ch/rentcheck_hr.html">
+    <meta name="keywords" content="ugovor o najmu provjera, švicarski najam, zaštita najma, mietvertrag, kaution, švicarski OR, provjera ugovora, mieterverband, rizici najma">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Švicarski Zaštitnik Najma · Besplatna provjera ugovora o najmu (30 rizika)">
+    <meta property="og:description" content="Prenesite ili zalijepite ugovor o najmu – trenutna analiza 30+ pravnih rizika. 100% privatno i lokalno u pregledniku. Zaštitite svoja prava u Švicarskoj.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_hr.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    <meta property="og:site_name" content="WelfareCalc.ch">
+    <meta property="og:locale" content="hr_HR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Švicarski Zaštitnik Najma · Besplatna provjera ugovora o najmu">
+    <meta name="twitter:description" content="30 pravnih rizika odmah otkriveno – besplatno i 100% lokalno. Bez prijenosa podataka.">
+    <meta name="twitter:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -717,6 +739,61 @@
         <div id="loadingMsg" style="margin-top:1rem;">Učitavanje baze podataka i skeniranje...</div>
     </div>
 
+    <!-- SEO Strukturirani podaci (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Švicarski Zaštitnik Najma",
+      "applicationCategory": "UtilityApplication",
+      "description": "Besplatni alat za provjeru ugovora o najmu u Švicarskoj. Otkriva 30+ pravnih rizika lokalno u pregledniku bez slanja podataka.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CHF"
+      },
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch",
+        "url": "https://www.welfarecalc.ch/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Je li provjera ugovora o najmu besplatna i privatna?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Da, alat je potpuno besplatan i obrađuje sve lokalno u vašem pregledniku. Vaš ugovor nikada ne napušta vaš uređaj."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Koje jezike podržava alat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Podržani su službeni švicarski jezici: njemački, francuski i talijanski."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zamjenjuje li ovaj alat odvjetnika ili Mieterverband?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ne. Alat služi samo u informativne i obrazovne svrhe i ne zamjenjuje stručnu pravnu pomoć."
+          }
+        }
+      ]
+    }
+    </script>
+
     <script>
         let legalDatabase = [];
         let riskPrompts = {};
@@ -885,9 +962,7 @@
                         if (!entry) continue;
                         const riskClass = entry.severity === 'high' ? 'high-risk' : (entry.severity === 'medium' ? 'medium-risk' : 'low-risk');
                         const promptObj = riskPrompts[id] || {};
-                        // 获取合同语言（德语/法语/意大利语）的提示
                         const contractPrompt = (promptObj[contractLang] && promptObj[contractLang].prompt) ? promptObj[contractLang].prompt : "Molimo provjerite ovu klauzulu s pravnim savjetnikom.";
-                        // 获取克罗地亚语的提示
                         const croatianPrompt = (promptObj.hr && promptObj.hr.prompt) ? promptObj.hr.prompt : "Molimo pažljivo provjerite ovu klauzulu s pravnim savjetnikom.";
                         const croatianTitle = (promptObj.hr && promptObj.hr.title) ? promptObj.hr.title : id;
                         const lawRef = (promptObj.hr && promptObj.hr.law) ? promptObj.hr.law : (entry.law || "Swiss Code of Obligations");
