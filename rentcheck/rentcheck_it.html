@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO 优化 -->
     <title>Swiss Rental Protector · 30 punti di rischio · Privacy al primo posto</title>
+    <meta name="description" content="Controllo gratuito del contratto di affitto in Svizzera: rileva subito oltre 30 rischi legali. 100% locale nel browser • Nessun invio dati • Supporto per tedesco, francese e italiano. Proteggi te stesso dalle trappole del contratto d'affitto.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.welfarecalc.ch/rentcheck_it.html">
+    <meta name="keywords" content="controllo contratto affitto, contratto locazione svizzera, rischi contratto affitto, protezione inquilino, cauzione affitto, Swiss Rental Protector, verifica contratto affitto, OR locazione">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Swiss Rental Protector · Controllo gratuito contratto d'affitto (30 rischi)">
+    <meta property="og:description" content="Carica o incolla il tuo contratto di affitto – analisi immediata di oltre 30 rischi legali. 100% locale e rispettoso della privacy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_it.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    <meta property="og:site_name" content="WelfareCalc.ch">
+    <meta property="og:locale" content="it_CH">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Swiss Rental Protector · Controllo gratuito contratto d'affitto">
+    <meta name="twitter:description" content="Rileva subito 30 rischi legali nel tuo contratto di locazione – gratuito e 100% locale.">
+    <meta name="twitter:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -636,6 +658,61 @@
         <div class="spinner"></div>
         <div id="loadingMsg" style="margin-top:1rem;">Caricamento database e scansione...</div>
     </div>
+
+    <!-- === SEO Strutturati Dati (JSON-LD) === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Swiss Rental Protector",
+      "applicationCategory": "UtilityApplication",
+      "description": "Strumento gratuito per controllare contratti di affitto svizzeri e rilevare oltre 30 rischi legali. 100% elaborazione locale nel browser.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CHF"
+      },
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch",
+        "url": "https://www.welfarecalc.ch/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Questo controllo del contratto di affitto è davvero gratuito e rispettoso della privacy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, lo strumento è completamente gratuito e processa tutto localmente nel tuo browser. Il contratto non lascia mai il tuo dispositivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali lingue sono supportate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il controllo supporta le tre lingue ufficiali svizzere: tedesco, francese e italiano."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Questo strumento sostituisce un avvocato o il Mieterverband?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Lo strumento ha solo scopo informativo ed educativo e non sostituisce una consulenza legale professionale."
+          }
+        }
+      ]
+    }
+    </script>
 
     <script>
         let legalDatabase = [];
