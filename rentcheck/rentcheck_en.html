@@ -4,7 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO Optimization -->
     <title>Swiss Rental Protector · 30 Risk Points · Privacy First</title>
+    <meta name="description" content="Free Swiss rental contract checker: Instantly detect 30+ legal risks in your lease. 100% local in your browser • No data upload • Supports German, French & Italian contracts. Protect yourself before signing.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.welfarecalc.ch/rentcheck_en.html">
+    <meta name="keywords" content="Swiss rental contract check, rental agreement risks, tenant protection Switzerland, lease review tool, Swiss tenancy law, security deposit, rental scam alert, OR rental contract">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Swiss Rental Protector · Free Rental Contract Risk Checker (30 Points)">
+    <meta property="og:description" content="Upload or paste your Swiss rental contract and instantly discover 30+ legal risks. 100% private, local processing in your browser. No tracking, no uploads.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_en.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    <meta property="og:site_name" content="WelfareCalc.ch">
+    <meta property="og:locale" content="en_CH">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Swiss Rental Protector · Free Rental Contract Checker">
+    <meta name="twitter:description" content="Detect 30 legal risks in your Swiss lease agreement instantly. 100% local & private. No data leaves your device.">
+    <meta name="twitter:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -696,12 +718,12 @@
             <p style="margin-top: 0.5rem;">
                 <a href="https://www.welfarecalc.ch/aboutus_en.html">About us</a> •
                 <a href="https://www.welfarecalc.ch/impressum_en.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Impressum</a> |
-                <a href="https://www.welfarecalc.ch/datenschutz_en.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Datenschutzerklärung</a> |
-                <a href="https://www.welfarecalc.ch/haftung_en.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Haftungsausschluss</a>
+                <a href="https://www.welfarecalc.ch/datenschutz_en.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Privacy Policy</a> |
+                <a href="https://www.welfarecalc.ch/haftung_en.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Disclaimer</a>
             </p>
             <p style="margin-top: 1rem; font-size: 0.75rem; color: #64748b;">
-                <i class="fas fa-gavel"></i> Based on Swiss Code of Obligations (OR) | For reference only – NOT legal advice.
-                Always consult Mieterverband or a qualified lawyer before signing any contract.
+                <i class="fas fa-gavel"></i> Based on the Swiss Code of Obligations (OR) | For reference only – NOT legal advice.
+                Always consult your tenant association or a qualified lawyer before signing a contract.
             </p>
         </footer>
     </div>
@@ -728,6 +750,61 @@
         <div class="spinner"></div>
         <div id="loadingMsg" style="margin-top:1rem;">Loading database and scanning...</div>
     </div>
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Swiss Rental Protector",
+      "applicationCategory": "UtilityApplication",
+      "description": "Free online tool to check Swiss rental contracts for over 30 legal risks. 100% local processing in the browser.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CHF"
+      },
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch",
+        "url": "https://www.welfarecalc.ch/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the rental contract checker really free and private?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, the tool is completely free and processes everything locally in your browser. Your contract never leaves your device."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which languages are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The checker supports the three official Swiss languages: German, French, and Italian."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does this tool replace a lawyer or tenant association?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This tool is for informational and educational purposes only and does not replace professional legal advice."
+          }
+        }
+      ]
+    }
+    </script>
 
     <script>
         // ====================== 全局变量 ======================
