@@ -4,7 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- SEO 优化部分 -->
     <title>Protetor de Arrendamento Suíço · 30 Pontos de Risco · Privacidade Garantida</title>
+    <meta name="description" content="Verificador gratuito de contratos de arrendamento na Suíça: Analise instantaneamente mais de 30 riscos legais. 100% local no navegador • Sem envio de dados • Suporte para Alemão, Francês e Italiano. Proteja-se de armadilhas caras no arrendamento.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.welfarecalc.ch/rentcheck_pt.html">
+    <meta name="keywords" content="contrato de arrendamento suíça, verificar contrato arrendamento, protetor arrendamento, riscos contrato arrendamento, caução suíça, Mieterverband, código obrigações suíço, arrendamento suíça português">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Protetor de Arrendamento Suíço · Verifique o seu contrato grátis (30 riscos)">
+    <meta property="og:description" content="Carregue ou cole o seu contrato de arrendamento suíço e descubra imediatamente mais de 30 riscos legais. 100% privado e local no seu navegador.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_pt.html">
+    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    <meta property="og:site_name" content="WelfareCalc.ch">
+    <meta property="og:locale" content="pt_PT">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Protetor de Arrendamento Suíço · Verifique o seu contrato grátis">
+    <meta name="twitter:description" content="Analise 30 riscos legais no seu contrato de arrendamento suíço de forma gratuita e 100% local. Sem upload, sem rastreio.">
+    <meta name="twitter:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+
     <!-- PDF.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -718,6 +740,61 @@
         <div id="loadingMsg" style="margin-top:1rem;">A carregar base de dados e a analisar...</div>
     </div>
 
+    <!-- === SEO Strukturierte Daten (JSON-LD) === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Protetor de Arrendamento Suíço",
+      "applicationCategory": "UtilityApplication",
+      "description": "Ferramenta gratuita para verificar contratos de arrendamento na Suíça, detectando mais de 30 riscos legais. Processamento 100% local no navegador.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "CHF"
+      },
+      "operatingSystem": "Web Browser",
+      "author": {
+        "@type": "Organization",
+        "name": "WelfareCalc.ch",
+        "url": "https://www.welfarecalc.ch/"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Esta ferramenta de verificação de contratos de arrendamento é realmente gratuita e privada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, é completamente gratuita e processa tudo localmente no seu navegador. O seu contrato nunca sai do seu dispositivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais idiomas são suportados?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A ferramenta suporta os três idiomas oficiais da Suíça: Alemão, Francês e Italiano."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Esta ferramenta substitui um advogado ou o Mieterverband?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. Esta ferramenta serve apenas para fins informativos e educacionais e não substitui aconselhamento jurídico profissional."
+          }
+        }
+      ]
+    }
+    </script>
+
     <script>
         let legalDatabase = [];
         let riskPrompts = {};
@@ -882,12 +959,10 @@
                         if (!entry) continue;
                         const riskClass = entry.severity === 'high' ? 'high-risk' : (entry.severity === 'medium' ? 'medium-risk' : 'low-risk');
                         const promptObj = riskPrompts[id] || {};
-                        // 修改部分：使用葡萄牙语替代英语
                         const contractPrompt = (promptObj[contractLang] && promptObj[contractLang].prompt) ? promptObj[contractLang].prompt : "Verifique esta cláusula com cuidado com um consultor jurídico.";
                         const portuguesePrompt = (promptObj.pt && promptObj.pt.prompt) ? promptObj.pt.prompt : "Verifique esta cláusula com cuidado com um consultor jurídico.";
                         const titlePt = (promptObj.pt && promptObj.pt.title) ? promptObj.pt.title : id;
                         const lawRef = (promptObj.pt && promptObj.pt.law) ? promptObj.pt.law : (entry.law || "Código das Obrigações Suíço");
-                        // 修改显示部分
                         html += `<div class="result-item ${riskClass}">
                     <h4>${titlePt}</h4>
                     <div><strong>Lei:</strong> ${lawRef}</div>
