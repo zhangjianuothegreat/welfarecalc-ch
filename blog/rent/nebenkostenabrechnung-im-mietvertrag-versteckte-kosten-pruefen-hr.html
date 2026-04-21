@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mnogi ugovori o najmu sadrže nejasne ili nedopuštene klauzule o sporednim troškovima. Najčešće zamke s paušalnim iznosima, obračunima i skrivenim troškovima jednostavno objašnjene – s izvornim klauzulama i potpuno besplatnim kontrolnim popisom od 30 rizičnih točaka s portala welfarecalc.ch.">
+    <title>Obračun sporednih troškova u ugovoru o najmu: Provjerite skrivene troškove i uštedite novac</title>
+
+    <!-- hreflang oznake - sve jezične verzije -->
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-pt.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-pl.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-ta.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-tr.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-de.html">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.55;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            background: #ffffff;
+            color: #1f2d3d;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0a2b44;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+            line-height: 1.2;
+        }
+        h1 + p {
+            font-size: 1.2rem;
+            color: #2c5282;
+            border-left: 4px solid #e67e22;
+            padding-left: 1rem;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0f3b5f;
+            margin: 1.5rem 0 0.75rem 0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.3rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e4a76;
+            margin-top: 1rem;
+        }
+        .intro {
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-radius: 20px;
+            margin: 1.2rem 0 1.8rem 0;
+            border-left: 6px solid #e67e22;
+        }
+        .risk-item {
+            background: #fefaf5;
+            border-left: 6px solid #e74c3c;
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+            border-radius: 16px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: all 0.1s ease;
+        }
+        .risk-original {
+            background: #fff1f0;
+            font-family: 'Courier New', monospace;
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            margin: 0.8rem 0;
+            border: 1px solid #fad7d2;
+            font-weight: 500;
+        }
+        .child-explain {
+            background: #e6f4ea;
+            padding: 1rem 1.3rem;
+            border-radius: 16px;
+            font-style: normal;
+            margin: 1rem 0;
+            border-left: 4px solid #2e7d32;
+            color: #1e3a2f;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #2c6e2f;
+            color: white;
+            padding: 0.9rem 2rem;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0.8rem 0;
+            transition: 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: none;
+        }
+        .cta-button:hover {
+            background: #1f4f21;
+            transform: scale(1.02);
+        }
+        .checklist-banner {
+            background: linear-gradient(105deg, #fef9e3 0%, #fff4e6 100%);
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-radius: 32px;
+            margin: 2.2rem 0;
+            border: 1px solid #ffe0b5;
+        }
+        ul, .simple-list {
+            margin: 1rem 0 1rem 1.8rem;
+        }
+        li {
+            margin: 0.4rem 0;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+            background: #fafcff;
+            border-radius: 20px;
+            padding: 1.5rem;
+        }
+        .badge-note {
+            background: #eef2f9;
+            border-radius: 20px;
+            padding: 0.6rem 1.2rem;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 650px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Obračun sporednih troškova u ugovoru o najmu</h1>
+        <p>Provjerite skrivene troškove i uštedite novac</p>
+    </header>
+
+    <nav style="margin-bottom: 1.5rem; font-size: 0.85rem;">
+    <a href="https://www.welfarecalc.ch/" style="color: #2c5282;">🏠 Početna</a>
+    <span style="color: #999;"> › </span>
+    <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html" style="color: #2c5282;">Provjera ugovora o najmu</a>
+    <span style="color: #999;"> › </span>
+    <span style="color: #e67e22;">Obračun sporednih troškova u ugovoru o najmu</span>
+    </nav>
+
+    <div class="intro">
+        <p><strong>Zamislite ovo:</strong> Na kraju godine iznenada dobijete visok dodatni račun za sporedne troškove – grijanje, vodu, domara – i zapravo ne znate na što je novac točno potrošen. Prema Barometru stanara za 2026. godinu, sporovi oko obračuna sporednih troškova među najčešćim su problemima za stanare.</p>
+        <p>Mnogi ugovori sadrže nejasne paušalne iznose, zabranjene stavke ili izostavljaju detaljan obračun. Dobra vijest: Najvažnije zamke možete prepoznati već čitanjem ugovora.</p>
+        <p>Na portalu <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html" target="_blank">welfarecalc.ch</a> možete besplatno pregledati <strong>svih 30 rizičnih točaka vezanih uz sporedne troškove</strong> – bez prijenosa ugovora. Ovdje objašnjavamo najčešće zamke jednostavno, kao da sluša petogodišnjak.</p>
+        <p>Krenimo!</p>
+    </div>
+
+    <!-- 1. Paušalni sporedni troškovi bez obračuna -->
+    <div class="risk-item">
+        <h2>1. Paušalni sporedni troškovi bez detaljnog godišnjeg obračuna</h2>
+        <div class="risk-original">
+            <strong>📄 Izvorna klauzula u ugovoru (uobičajeno):</strong><br>
+            “Naplaćuje se mjesečni paušalni iznos za sporedne troškove od 250 CHF. Od detaljnog obračuna se odustaje.”
+        </div>
+        <p><strong>⚠️ Zašto je opasno?</strong> Prema čl. 257a OR i čl. 4 Uredbe o sporednim troškovima (VMWG), sporedni troškovi moraju biti jasno navedeni u ugovoru i općenito se moraju detaljno obračunavati godišnje (predujam). Odustajanje od obračuna obično je nedopušteno – imate pravo na transparentnost i povrat preplaćenog iznosa.</p>
+        <div class="child-explain">
+            <strong>🧒 Objašnjenje za petogodišnjaka:</strong> To je kao da svaki mjesec dajete 20 franaka za školski fond, ali nikad ne saznate na što je novac stvarno potrošen – nepravedno i netransparentno.
+        </div>
+        <p><strong>✅ Ispravno:</strong> Sporedni troškovi kao predujmovi s detaljnim godišnjim obračunom na temelju stvarne potrošnje.</p>
+    </div>
+
+    <!-- 2. Sporedni troškovi nisu navedeni u ugovoru -->
+    <div class="risk-item">
+        <h2>2. Sporedni troškovi nisu izričito navedeni u ugovoru</h2>
+        <div class="risk-original">
+            <strong>📄 Izvorna klauzula:</strong><br>
+            “Preostali operativni troškovi ili drugi sporedni troškovi naplaćivat će se dodatno.”
+        </div>
+        <p><strong>⚠️ Zašto je opasno?</strong> Sporedni troškovi mogu se naplaćivati samo ako su <strong>pojedinačno i konkretno navedeni</strong> u ugovoru o najmu. Općenite formulacije poput “preostali operativni troškovi” su nevažeće – ti su troškovi tada uključeni u neto najamninu.</p>
+        <div class="child-explain">
+            <strong>🧒 Objašnjenje za petogodišnjaka:</strong> Najmodavac ne može odjednom reći “oh da, postoje i dodatni troškovi.” Sve mora biti jasno napisano unaprijed, inače to ne morate platiti.
+        </div>
+    </div>
+
+    <!-- 3. Popravci i amortizacija kao sporedni troškovi -->
+    <div class="risk-item">
+        <h2>3. Popravci, zamjene ili amortizacija u sporednim troškovima</h2>
+        <div class="risk-original">
+            <strong>📄 Izvorna klauzula:</strong><br>
+            “Popravci sustava grijanja i amortizacija sustava uključeni su u sporedne troškove.”
+        </div>
+        <p><strong>⚠️ Zašto je opasno?</strong> Popravci, zamjenska ulaganja i normalna amortizacija općenito se ne ubrajaju u sporedne troškove (osim iznimaka za ugovore o pružanju usluga ili ZEV). Te troškove mora snositi najmodavac.</p>
+        <div class="child-explain">
+            <strong>🧒 Objašnjenje za petogodišnjaka:</strong> Ako se grijanje pokvari, to je poput pokvarenog školskog autobusa – vozač (najmodavac) ga mora popraviti, a ne vi svojim džeparcem.
+        </div>
+    </div>
+
+    <!-- 4. Bez prava na uvid u račune -->
+    <div class="risk-item">
+        <h2>4. Bez ili ograničeno pravo na uvid u račune</h2>
+        <div class="risk-original">
+            <strong>📄 Izvorna klauzula:</strong><br>
+            “Stanar nema pravo na uvid u račune za obračun sporednih troškova.”
+        </div>
+        <p><strong>⚠️ Zašto je opasno?</strong> Imate zakonsko pravo na uvid u sve račune na zahtjev. Svako ograničenje je nevažeće.</p>
+        <div class="child-explain">
+            <strong>🧒 Objašnjenje za petogodišnjaka:</strong> Uvijek možete pitati “na što je točno potrošen moj novac?” i vidjeti račune.
+        </div>
+    </div>
+
+    <!-- 5. Pretjerano visok ili netočan paušal -->
+    <div class="risk-item">
+        <h2>5. Pretjerano visok paušal ili automatsko povećanje bez opravdanja</h2>
+        <div class="risk-original">
+            <strong>📄 Izvorna klauzula:</strong><br>
+            “Paušalni iznos za sporedne troškove automatski se povećava za 5 % godišnje.”
+        </div>
+        <p><strong>⚠️ Zašto je opasno?</strong> Paušalni iznosi moraju biti realni (prosjek prethodnih godina). Proizvoljna automatska povećanja su zlouporaba prava.</p>
+    </div>
+
+    <!-- 6. Bez roka ili zakasnjeli obračun -->
+    <div class="risk-item">
+        <h2>6. Bez odredbe o roku za godišnji obračun</h2>
+        <div class="risk-original">
+            <strong>📄 Izvorna klauzula:</strong><br>
+            “Obračun sporednih troškova bit će dostavljen bez fiksnog datuma.”
+        </div>
+        <p><strong>⚠️ Zašto je opasno?</strong> Obračun se općenito mora dostaviti godišnje (često u roku od 6 mjeseci nakon isteka razdoblja). Ako kasni, možete odrediti rok i kasnije osporiti obračun.</p>
+        <div class="child-explain">
+            <strong>🧒 Objašnjenje za petogodišnjaka:</strong> Najmodavac ne može čekati godinama i onda iznenada poslati veliki račun.
+        </div>
+    </div>
+
+    <!-- Kontrolni popis CTA -->
+    <div class="checklist-banner">
+        <span class="badge-note">✨ potpuno besplatno – bez registracije ✨</span>
+        <h2 style="border-bottom: none; margin-top: 0;">Želite li svih 30 rizičnih točaka o sporednim troškovima na jednom mjestu?</h2>
+        <p style="font-size: 1.1rem;">✅ Potpuni popis sa svim opasnim klauzulama – <strong>jednostavno objašnjeno</strong> i bez prijenosa podataka.</p>
+        <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html" class="cta-button" target="_blank">📋 Besplatno pogledajte kontrolni popis od 30 rizičnih točaka</a>
+        <p style="margin-top: 10px; font-size: 0.9rem;">Nema prijenosa ugovora, nema praćenja, odmah saznajte sve rizike.</p>
+    </div>
+
+    <section style="background: #f5f9fe; padding: 1.5rem; border-radius: 20px; margin: 1rem 0;">
+        <h3 style="margin-top: 0;">🔍 Sada ste razumjeli najvažnije zamke kod sporednih troškova</h3>
+        <p>S ovim znanjem možete rano prepoznati nepoštene klauzule, ispravno provjeriti obračune i izbjeći nepotrebna dodatna plaćanja. Ako imate svoj stvarni ugovor (na njemačkom, francuskom ili talijanskom), možete ga besplatno provjeriti na portalu welfarecalc.ch <strong>besplatno i 100% lokalno u svom pregledniku</strong> – potpuno anonimno i sigurno.</p>
+        <p><strong>Savjet:</strong> Uvijek zatražite detaljne račune i provjerite obračun u roku od 30 dana. Koristite predloške pisama iz udruge stanara.</p>
+        <p>📢 <strong>Podijelite ovaj članak</strong> s prijateljima koji traže stan. Time završavamo našu seriju blogova o najopasnijim klauzulama u ugovorima o najmu.</p>
+        <p><em>Ostanite informirani. Ostanite zaštićeni.</em></p>
+    </section>
+
+    <footer>
+        <p><strong>Napomena:</strong> Ovo su isključivo informativni sadržaji, a ne individualni pravni savjeti. U slučaju nedoumice uvijek se obratite udruzi stanara svog kantona. Informacije se temelje na čl. 257a–257b OR, Uredbi o sporednim troškovima (VMWG) i smjernicama Udruge stanara od 2026. godine.</p>
+        <p style="margin-top: 0.8rem;">© welfarecalc.ch – Provjera ugovora o najmu i rizične točke – 100% švicarsko, sigurno podataka, besplatno.</p>
+        <p>🔗 <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html">welfarecalc.ch/rentcheck</a> | <a href="#">Blog o stanarskom pravu</a></p>
+    </footer>
+
+</body>
+</html>

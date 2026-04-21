@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="பல வாடகை ஒப்பந்தங்களில் நியாயமற்ற வாடகை உட்பிரிவுகள் உள்ளன அல்லது குறிப்பு வட்டி விகிதம் மாறும்போது குறைப்புகளைத் தடுக்கின்றன. எளிய சொற்களில் விளக்கப்பட்ட மிகவும் பொதுவான பொறிகள் - அசல் உட்பிரிவுகள் மற்றும் welfarecalc.ch இலிருந்து முழுமையான இலவச 30-இடர்-புள்ளி காசோலைப் பட்டியலுடன்.">
+    <title>வாடகை மிக அதிகமாக உள்ளதா அல்லது அதிகரிப்பா? உங்கள் வாடகை ஒப்பந்தத்தை அதிகப்படியான வாடகை மற்றும் வாடகைக் குறைப்புக்காக எவ்வாறு சரிபார்க்கலாம்</title>
+
+    <!-- hreflang குறிச்சொற்கள் - அனைத்து மொழிப் பதிப்புகள் -->
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-pt.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-pl.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-ta.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-tr.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-de.html">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.55;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            background: #ffffff;
+            color: #1f2d3d;
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #0a2b44;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+            line-height: 1.2;
+        }
+        h1 + p {
+            font-size: 1.2rem;
+            color: #2c5282;
+            border-left: 4px solid #e67e22;
+            padding-left: 1rem;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0f3b5f;
+            margin: 1.5rem 0 0.75rem 0;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.3rem;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e4a76;
+            margin-top: 1rem;
+        }
+        .intro {
+            background: #f0f7ff;
+            padding: 1.5rem;
+            border-radius: 20px;
+            margin: 1.2rem 0 1.8rem 0;
+            border-left: 6px solid #e67e22;
+        }
+        .risk-item {
+            background: #fefaf5;
+            border-left: 6px solid #e74c3c;
+            padding: 1.2rem 1.5rem;
+            margin: 1.8rem 0;
+            border-radius: 16px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            transition: all 0.1s ease;
+        }
+        .risk-original {
+            background: #fff1f0;
+            font-family: 'Courier New', monospace;
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            margin: 0.8rem 0;
+            border: 1px solid #fad7d2;
+            font-weight: 500;
+        }
+        .child-explain {
+            background: #e6f4ea;
+            padding: 1rem 1.3rem;
+            border-radius: 16px;
+            font-style: normal;
+            margin: 1rem 0;
+            border-left: 4px solid #2e7d32;
+            color: #1e3a2f;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #2c6e2f;
+            color: white;
+            padding: 0.9rem 2rem;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 0.8rem 0;
+            transition: 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border: none;
+        }
+        .cta-button:hover {
+            background: #1f4f21;
+            transform: scale(1.02);
+        }
+        .checklist-banner {
+            background: linear-gradient(105deg, #fef9e3 0%, #fff4e6 100%);
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-radius: 32px;
+            margin: 2.2rem 0;
+            border: 1px solid #ffe0b5;
+        }
+        ul, .simple-list {
+            margin: 1rem 0 1rem 1.8rem;
+        }
+        li {
+            margin: 0.4rem 0;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.9rem;
+            background: #fafcff;
+            border-radius: 20px;
+            padding: 1.5rem;
+        }
+        .badge-note {
+            background: #eef2f9;
+            border-radius: 20px;
+            padding: 0.6rem 1.2rem;
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 650px) {
+            body { padding: 1rem; }
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>வாடகை மிக அதிகமாக உள்ளதா அல்லது அதிகரிப்பா?</h1>
+        <p>உங்கள் வாடகை ஒப்பந்தத்தை அதிகப்படியான வாடகை மற்றும் வாடகைக் குறைப்புக்காக எவ்வாறு சரிபார்க்கலாம்</p>
+    </header>
+
+    <nav style="margin-bottom: 1.5rem; font-size: 0.85rem;">
+    <a href="https://www.welfarecalc.ch/" style="color: #2c5282;">🏠 முகப்பு</a>
+    <span style="color: #999;"> › </span>
+    <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_ta.html" style="color: #2c5282;">வாடகை ஒப்பந்த சரிபார்ப்பு</a>
+    <span style="color: #999;"> › </span>
+    <span style="color: #e67e22;">வாடகை மிக அதிகமாக உள்ளதா அல்லது அதிகரிப்பா?</span>
+    </nav>
+
+    <div class="intro">
+        <p><strong>இதை கற்பனை செய்து பாருங்கள்:</strong> நீங்கள் ஒவ்வொரு மாதமும் பல நூறு ஃப்ராங்குகளை வாடகையாக செலுத்துகிறீர்கள் – மேலும் விலை உண்மையில் நியாயமானதா என்று யோசிக்கிறீர்கள். 2026 குத்தகைதாரர் கருத்துக் கணிப்பின்படி, பல குத்தகைதாரர்கள் வாடகை தங்கள் வருமானத்தில் பெரும் பகுதியைச் செலவழிப்பதாகக் கூறுகின்றனர், மேலும் கிட்டத்தட்ட பாதிப் பேர் குறிப்பு வட்டி விகிதம் குறைந்திருந்தாலும் குறைப்புக்கு கோரிக்கை விடுக்கவில்லை.</p>
+        <p>பல ஒப்பந்தங்களில் அதிகரிப்புகளை எளிதாக்கும் அல்லது குறைப்புகளைத் தடுக்கும் நியாயமற்ற உட்பிரிவுகள் உள்ளன. நல்ல செய்தி: உங்கள் ஒப்பந்தத்தைப் படிப்பதன் மூலம் மிக முக்கியமான பொறிகளை நீங்கள் அடையாளம் காணலாம்.</p>
+        <p><a href="https://www.welfarecalc.ch/rentcheck/rentcheck_ta.html" target="_blank">welfarecalc.ch</a> இல் நீங்கள் <strong>வாடகை தொடர்பான அனைத்து 30 இடர் புள்ளிகளையும் முற்றிலும் இலவசமாக</strong> பார்க்கலாம் – உங்கள் ஒப்பந்தத்தைப் பதிவேற்ற தேவையில்லை. இங்கே நாங்கள் மிகவும் பொதுவான பொறிகளை எளிய முறையில் விளக்குகிறோம்.</p>
+        <p>தொடங்குவோம்!</p>
+    </div>
+
+    <!-- 1. ஆரம்ப வாடகை மிக அதிகம் -->
+    <div class="risk-item">
+        <h2>1. சவால் செய்யும் வாய்ப்பு இல்லாத அதிகப்படியான ஆரம்ப வாடகை</h2>
+        <div class="risk-original">
+            <strong>📄 ஒப்பந்தத்தில் அசல் உட்பிரிவு (பொதுவானது):</strong><br>
+            "குத்தகைதார் ஒப்புக் கொள்ளப்பட்ட வாடகையை பொருத்தமானதாக ஏற்றுக்கொள்கிறார் மற்றும் அதை சவால் செய்யும் எந்த உரிமையையும் கைவிடுகிறார்."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> சுவிஸ் கடமைகள் சட்டத்தின் (OR) பிரிவு 270ன் படி, நீங்கள் ஆரம்ப வாடகையை <strong>சாவிகளைப் பெற்ற 30 நாட்களுக்குள்</strong> சமரச அதிகாரியிடம் துஷ்பிரயோகமாக சவால் செய்யலாம் – குறிப்பாக வீட்டுப் பற்றாக்குறை உள்ள பகுதிகளில். மொத்தமான கைவிடுதல் தவறானது.</p>
+        <div class="child-explain">
+            <strong>🧒 குழந்தை மொழியில் விளக்கம்:</strong> விற்பவர் "இந்த பொம்மை மிகவும் விலை உயர்ந்தது என்று நீங்கள் ஒருபோதும் சொல்ல முடியாது" என்று சொல்வதைப் போல. அது அனுமதிக்கப்படாது – விலை நியாயமானதா என்பதைச் சரிபார்க்க உங்களுக்கு உரிமை உண்டு.
+        </div>
+        <p><strong>✅ நீங்கள் என்ன செய்ய வேண்டும்:</strong> 30 நாள் கெடுவைப் பயன்படுத்தி தேவைப்பட்டால் சவால் செய்யுங்கள். பல கன்டோன்களில், குறிப்பிட்ட படிவம் தேவைப்படுகிறது.</p>
+    </div>
+
+    <!-- 2. தன்னிச்சையான அதிகரிப்பு உட்பிரிவு -->
+    <div class="risk-item">
+        <h2>2. சட்டப்பூர்வ நியாயப்படுத்தல் இல்லாத தன்னிச்சையான வாடகை அதிகரிப்பு</h2>
+        <div class="risk-original">
+            <strong>📄 அசல் உட்பிரிவு:</strong><br>
+            "நில உரிமையாளர் எந்த நேரத்திலும் வாடகையை 10% வரை அதிகரிக்கலாம்."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> வாடகை அதிகரிப்புகள் கண்டிப்பாக ஒழுங்குபடுத்தப்பட்டுள்ளன (OR பிரிவு 269 ff.). குறிப்பு வட்டி விகிதம் உயர்ந்திருந்தால், பணவீக்கம், அதிகரித்த செலவுகள் அல்லது மதிப்பை அதிகரிக்கும் முதலீடுகள் காரணமாக மட்டுமே அதிகரிப்புகள் அனுமதிக்கப்படுகின்றன. தன்னிச்சையான உட்பிரிவுகள் துஷ்பிரயோகமானவை.</p>
+        <div class="child-explain">
+            <strong>🧒 குழந்தை மொழி:</strong> உங்கள் பெற்றோர்கள் "நாளை முதல் நீங்கள் அதிக பாக்கெட் பணம் செலுத்த வேண்டும்" என்று அவர்களுக்கு விருப்பம் போல் சொல்ல முடியாது. ஒரு நல்ல காரணமும் தெளிவான விதிகளும் தேவை.
+        </div>
+        <p><strong>✅ சரியானது:</strong> அதிகரிப்புகள் அதிகாரப்பூர்வ அறிவிப்பு மற்றும் நியாயப்படுத்தலுடன் மட்டுமே அனுமதிக்கப்படும் – அவற்றை சமரச அதிகாரியால் மதிப்பாய்வு செய்யலாம்.</p>
+    </div>
+
+    <!-- 3. குறிப்பு வட்டி விகிதத்திற்கான தானியங்கி குறைப்பு இல்லை -->
+    <div class="risk-item">
+        <h2>3. குறிப்பு வட்டி விகிதம் குறையும் போது குறைப்பு இல்லை</h2>
+        <div class="risk-original">
+            <strong>📄 அசல் உட்பிரிவு:</strong><br>
+            "குறிப்பு வட்டி விகிதம் காரணமாக வாடகை குறைப்பு விலக்கப்பட்டுள்ளது."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> தற்போதைய குறிப்பு வட்டி விகிதம் 1.25% (2026 நிலவரப்படி). இது 0.25% குறைந்தால், நீங்கள் பொதுவாக ஒரு சதவீத குறைப்புக்கு உரிமை பெறுவீர்கள். ஒரு கைவிடுதல் பொதுவாக தவறானது.</p>
+        <div class="child-explain">
+            <strong>🧒 குழந்தை மொழி:</strong> ரொட்டியின் விலை குறைந்தால், நீங்களும் குறைவாக செலுத்த வேண்டும். நில உரிமையாளர் "என் விலை அப்படியே இருக்கும்" என்று சொல்ல முடியாது.
+        </div>
+        <p><strong>✅ நீங்கள் என்ன செய்ய வேண்டும்:</strong> செயலூக்கமாக குறைப்புக்கு கோரிக்கை விடுங்கள் (மாதிரி கடிதங்கள் குத்தகைதாரர் சங்கத்தில் கிடைக்கும்). துரதிர்ஷ்டவசமாக, பல குத்தகைதாரர்கள் இந்த வாய்ப்பை இழக்கிறார்கள்.</p>
+    </div>
+
+    <!-- 4. மறைக்கப்பட்ட துணைச் செலவுகள் -->
+    <div class="risk-item">
+        <h2>4. மறைக்கப்பட்ட துணைச் செலவுகள் அல்லது தட்டையான விகிதங்கள் மூலம் வாடகை அதிகரிப்பு</h2>
+        <div class="risk-original">
+            <strong>📄 அசல் உட்பிரிவு:</strong><br>
+            "துணைச் செலவுகளுக்கான மாதாந்திர தட்டையான விகிதம் பணவீக்கத்திற்கு தானாகவே சரிசெய்யப்படும் மற்றும் வாடகையின் ஒரு பகுதியாக கருதப்படும்."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> துணைச் செலவுகள் தனித்தனியாகவும் வெளிப்படையாகவும் கணக்கிடப்பட வேண்டும். அவை வெறுமனே வாடகையில் "மறைக்கப்பட்டு" தானாகவே அதிகரிக்க முடியாது.</p>
+        <div class="child-explain">
+            <strong>🧒 குழந்தை மொழி:</strong> உங்கள் மதிய உணவுப் பெட்டிக்கான கூடுதல் பணத்தை அது எதற்காக என்பதை விளக்காமல் உங்கள் பாக்கெட் பணத்தில் சேர்த்துவிட முடியாது.
+        </div>
+    </div>
+
+    <!-- 5. குறைபாடுகளுக்கு வாடகை குறைப்பை கைவிடுதல் -->
+    <div class="risk-item">
+        <h2>5. சொத்து குறைபாடுகளுக்கு வாடகை குறைப்பை கைவிடுதல்</h2>
+        <div class="risk-original">
+            <strong>📄 அசல் உட்பிரிவு:</strong><br>
+            "குறிப்பிடத்தக்க குறைபாடுகளுக்கும் கூட, எந்த வாடகை குறைப்பையும் குத்தகைதார் கைவிடுகிறார்."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> சொத்தின் பயன்பாட்டைக் குறைக்கும் குறைபாடுகளுக்கு (எ.கா., கசியும் ஜன்னல்கள், வெப்பமாக்கல் இல்லாமை), OR பிரிவு 259dன் கீழ் நீங்கள் விகிதாசார வாடகை குறைப்புக்கு உரிமை பெறுவீர்கள். முன்கூட்டியே உருவாக்கப்பட்ட கைவிடுதல் செல்லாது.</p>
+        <div class="child-explain">
+            <strong>🧒 குழந்தை மொழி:</strong> உங்கள் அறையின் கூரையில் ஒரு துளை இருந்து மழை பெய்தால், அது சரி செய்யப்படும் வரை நீங்கள் குறைவாக செலுத்தலாம். இந்த உரிமையை யாரும் உங்களிடமிருந்து பறிக்க முடியாது.
+        </div>
+        <p><strong>✅ சரியானது:</strong> எப்போதும் குறைபாடுகளை எழுத்துப்பூர்வமாகப் புகாரளித்து குறைப்புக்கு கோரிக்கை விடுங்கள்.</p>
+    </div>
+
+    <!-- 6. வரம்பற்ற குறியீடு அல்லது பணவீக்க உட்பிரிவு -->
+    <div class="risk-item">
+        <h2>6. வரம்பற்ற குறியீடு அல்லது பணவீக்க உட்பிரிவு</h2>
+        <div class="risk-original">
+            <strong>📄 அசல் உட்பிரிவு:</strong><br>
+            "வாடகை பணவீக்கத்திற்கு ஆண்டுதோறும் தானாகவே சரிசெய்யப்படும்."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> தானியங்கி சரிசெய்தல்கள் கடுமையான நிபந்தனைகளின் கீழ் மட்டுமே அனுமதிக்கப்படும் மற்றும் தெளிவாக வரையறுக்கப்பட வேண்டும். வரம்பற்ற உட்பிரிவுகள் துஷ்பிரயோகமாக இருக்கலாம்.</p>
+    </div>
+
+    <!-- 7. மறுசீரமைப்பிற்கான அதிகரிப்பு -->
+    <div class="risk-item">
+        <h2>7. குத்தகைதாரருக்கு பொருத்தமான பலன் இல்லாமல் மறுசீரமைப்பிற்கான வாடகை அதிகரிப்பு</h2>
+        <div class="risk-original">
+            <strong>📄 அசல் உட்பிரிவு:</strong><br>
+            "மறுசீரமைப்புகளுக்கு, நில உரிமையாளர் வாடகையை 15% அல்லது அதற்கு மேல் அதிகரிக்கலாம்."
+        </div>
+        <p><strong>⚠️ இது ஏன் ஆபத்தானது?</strong> முதலீடுகள் காரணமாக அதிகரிப்புகள் விகிதாசாரமாக இருக்க வேண்டும் மற்றும் குத்தகைதாரரை அதிகமாக சுமைப்படுத்தக் கூடாது.</p>
+    </div>
+
+    <!-- காசோலைப் பட்டியல் CTA -->
+    <div class="checklist-banner">
+        <span class="badge-note">✨ முற்றிலும் இலவசம் – பதிவு தேவையில்லை ✨</span>
+        <h2 style="border-bottom: none; margin-top: 0;">அனைத்து 30 வாடகை தொடர்பான இடர் புள்ளிகளையும் ஒரே பார்வையில் பார்க்க விரும்புகிறீர்களா?</h2>
+        <p style="font-size: 1.1rem;">✅ அனைத்து ஆபத்தான உட்பிரிவுகளின் முழுமையான பட்டியல் – <strong>எளிய சொற்களில் விளக்கப்பட்டது</strong> மற்றும் பதிவேற்றம் தேவையில்லை.</p>
+        <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_ta.html" class="cta-button" target="_blank">📋 இலவச 30-இடர்-புள்ளி காசோலைப் பட்டியலை இப்போது காண்க</a>
+        <p style="margin-top: 10px; font-size: 0.9rem;">ஒப்பந்த பதிவேற்றம் இல்லை, கண்காணிப்பு இல்லை, உடனடியாக அனைத்து அபாயங்களையும் அறிந்து கொள்ளுங்கள்.</p>
+    </div>
+
+    <section style="background: #f5f9fe; padding: 1.5rem; border-radius: 20px; margin: 1rem 0;">
+        <h3 style="margin-top: 0;">🔍 மிக முக்கியமான வாடகை பொறிகளை இப்போது நீங்கள் புரிந்துகொண்டுள்ளீர்கள்</h3>
+        <p>இந்த அறிவுடன், கையொப்பமிடுவதற்கு முன் பல சிக்கல்களைத் தவிர்க்கலாம் மற்றும் பின்னர் குறைப்புகளை செயலூக்கமாக கோரலாம். உங்கள் உண்மையான ஒப்பந்தம் (ஜெர்மன், பிரஞ்சு அல்லது இத்தாலிய மொழியில்) இருந்தால், நீங்கள் அதை welfarecalc.ch இல் <strong>இலவசமாகவும் 100% உங்கள் உலாவியிலும்</strong> சரிபார்க்கலாம் – முற்றிலும் பெயர் தெரியாமல் மற்றும் பாதுகாப்பானது.</p>
+        <p><strong>உதவிக்குறிப்பு:</strong> குறிப்பு வட்டி விகித குறைப்புகளுக்கு குத்தகைதாரர் சங்க கால்குலேட்டரைப் பயன்படுத்தவும் மற்றும் அனைத்தையும் எழுத்துப்பூர்வமாக ஆவணப்படுத்தவும்.</p>
+        <p>📢 <strong>இந்த கட்டுரையை</strong> ஒரு அடுக்குமாடி குடியிருப்பைத் தேடும் நண்பர்களுடன் பகிர்ந்து கொள்ளுங்கள். தொடரின் அடுத்த கட்டுரை: சொத்து குறைபாடுகள் மற்றும் நில உரிமையாளர் கடமைகள் – உங்கள் ஒப்பந்தம் உண்மையில் என்ன ஒழுங்குபடுத்த முடியும்.</p>
+        <p><em>தகவலறிந்து இருங்கள். பாதுகாக்கப்பட்டிருங்கள்.</em></p>
+    </section>
+
+    <footer>
+        <p><strong>மறுப்பு:</strong> இது கல்வி நோக்கங்களுக்காக மட்டுமே மற்றும் தனிப்பட்ட சட்ட ஆலோசனையை உருவாக்காது. உங்களுக்கு உறுதியாக தெரியவில்லை என்றால், எப்போதும் உங்கள் கன்டோனல் குத்தகைதாரர் சங்கத்தை தொடர்பு கொள்ளுங்கள். தகவல்கள் சுவிஸ் கடமைகள் சட்டம் (OR), தற்போதைய குறிப்பு வட்டி விகிதம் (2026 நிலவரப்படி 1.25%), மற்றும் குத்தகைதாரர் சங்க வழிகாட்டுதல்களை அடிப்படையாகக் கொண்டவை.</p>
+        <p style="margin-top: 0.8rem;">© welfarecalc.ch – வாடகை ஒப்பந்த சரிபார்ப்பு & இடர் புள்ளிகள் – 100% சுவிஸ், தரவு பாதுகாப்பானது, இலவசம்.</p>
+        <p>🔗 <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_ta.html">welfarecalc.ch/rentcheck</a> | <a href="#">வாடகை சட்ட வலைப்பதிவு</a></p>
+    </footer>
+
+</body>
+</html>
