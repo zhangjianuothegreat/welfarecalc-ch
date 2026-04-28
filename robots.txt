@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+Disallow: /links.html
+
 Sitemap: https://www.welfarecalc.ch/sitemap.xml
