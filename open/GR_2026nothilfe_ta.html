@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ta">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>அவசர உதவி அல்காரிதம் கிராபூண்டன் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+    <meta name="description"
+        content="கிராபூண்டன் மாகாணத்தில் 2026க்கான அவசர உதவி எவ்வாறு கணக்கிடப்படுகிறது? மாகாண வழிகாட்டுதல்கள் மற்றும் அதிகாரப்பூர்வ தரவுகளின் அடிப்படையில் எங்களின் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_de.html">
+
+    <meta property="og:title" content="அவசர உதவி அல்காரிதம் கிராபூண்டன் 2026 | வெளிப்படையான கணக்கீடு">
+    <meta property="og:description"
+        content="GR (கிராபூண்டன்) 2026 இல் மாகாண விதிமுறைகளின் படி அவசர உதவிக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GR_2026nothilfe_ta.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "கிராபூண்டன் 2026 அவசர உதவி கணக்கீடு",
+      "description": "GR (கிராபூண்டன்) மாகாணத்தில் அவசர உதவியை கணக்கிடுவதற்கான படிப்படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "தினசரி வயதுவந்தோர் வீதத்தை தீர்மானித்தல் (இணைக்கான சரிவு காரணி 1.65)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "குழந்தை நலன்களை கணக்கிடுதல், 3வது குழந்தையிலிருந்து போனஸ் சேர்த்தல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "மாதாந்திர தொகையாக மாற்றி அருகிலுள்ள ஃபிராங்க்கிற்கு முழுமையாக்குதல்"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ முக்கிய பாணிகள் (AG/AI உடன் ஒத்த) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026 · அவசர உதவி GR</div>
+            <h1>அவசர உதவி அல்காரிதம்: கிராபூண்டன் மாகாணம்</h1>
+            <p>2026 ஆம் ஆண்டிற்கான மாகாண நடைமுறையின்படி கணக்கீட்டு தர்க்கத்தின் வெளிப்படையான விளக்கம்</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+
+        <div class="content">
+            <p>வெளிப்படைத்தன்மை நம்பிக்கையை உருவாக்குகிறது. கிராபூண்டன் (GR) மாகாணத்தில், நிராகரிக்கப்பட்ட புகலிடக்
+                கோரிக்கையாளர்களுக்கான அவசர உதவி ஒரு குறிப்பிட்ட சரிவு மாதிரியைப் பயன்படுத்தி கணக்கிடப்படுகிறது. இங்கே
+                welfarecalc.ch இல் எங்கள் கணக்கீடுகளின் அடிப்படையை உருவாக்கும் முழு அல்காரிதத்தையும் நாங்கள்
+                வெளிப்படுத்துகிறோம்.</p>
+
+            <h2 class="section-title">1. முக்கிய அளவுருக்கள் (GR 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>அடிப்படை தினசரி வீதம் (தனிநபர்)</h4>
+                    <div class="param-value">CHF 9.00 / நாள்</div>
+                    <p><small>கூட்டு தங்குமிடம் அடிப்படை தேவைகளை உள்ளடக்கியது (செலவுப் பணம்/உணவு).</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>இணை குணகம்</h4>
+                    <div class="param-value">காரணி 1.65</div>
+                    <p><small>ஒன்றாக வாழும் இரண்டு வயதுவந்தோருக்கான குறைக்கப்பட்ட வீதம்.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>குழந்தை காரணி</h4>
+                    <div class="param-value">காரணி 0.52</div>
+                    <p><small>அடிப்படை வீதத்துடன் ஒப்பிடும்போது ஒவ்வொரு குழந்தைக்கும் கூடுதல் தேவை.</small></p>
+                </div>
+            </div>
+
+            <h2 class="section-title">2. கணக்கீட்டு படிகள் (படிப்படியாக)</h2>
+
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>வயதுவந்தோரின் தேவையின் கணக்கீடு</h3>
+                    <p>GR மாகாணம் இணைகளுக்கு 1.65 என்ற சரிவு காரணியைப் பயன்படுத்துகிறது. இதன் பொருள் இரண்டாவது நபர்
+                        தனிநபர் வீதத்தில் 65% பெறுகிறார்.</p>
+                    <div class="formula">
+                        வயதுவந்தோர் = 1 எனில்: CHF 9.00 / நாள்<br>
+                        வயதுவந்தோர் > 1 எனில்: (9.00 + (வயதுவந்தோரின் எண்ணிக்கை - 1) × 9.00 × 0.65)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>குழந்தை கூடுதல் தொகையின் கணக்கீடு</h3>
+                    <p>ஒவ்வொரு குழந்தைக்கும், வயதுவந்தோர் வீதத்தில் 52% என்ற அடிப்படை தொகை சேர்க்கப்படுகிறது. கூடுதலாக,
+                        GR மூன்றாவது குழந்தையிலிருந்து அடிப்படை வீதத்தில் 10% போனஸ் வழங்குகிறது.</p>
+                    <div class="formula">
+                        குழந்தை அடிப்படை: CHF 4.68 (9.00 × 0.52)<br>
+                        3வது குழந்தையிலிருந்து போனஸ்: + CHF 0.90 (9.00 × 0.10)<br>
+                        மொத்த குழந்தை = (குழந்தைகள் × 4.68) + (MAX(0; குழந்தைகள்-2) × 0.90)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>மாதாந்திர மாற்றம் & முழுமையாக்குதல்</h3>
+                    <p>மொத்த தினசரி தொகை மாத காரணி 30.42 ஆல் பெருக்கப்பட்டு அடுத்த முழு ஃபிராங்க்கிற்கு
+                        முழுமையாக்கப்படுகிறது.</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        மாதாந்திர உரிமை = ROUND( (மொத்த தினசரி தொகை × 30.42) ; 0 )
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                <strong>கிராபூண்டன் சிறப்பம்சங்கள்:</strong><br>
+                • <strong>தங்குமிட வகை:</strong> இந்த வீதங்கள் மாகாண கூட்டு மையங்களில் தங்குவதற்குப் பொருந்தும்.<br>
+                • <strong>முன்னுரிமை பொருள் வடிவ உதவி:</strong> அவசர உதவி முதன்மையாக பொருள் வடிவில் (தங்குமிடம்/உணவு)
+                வழங்கப்படுகிறது.<br>
+                • <strong>சட்ட அடிப்படை:</strong> மாகாண புகலிட ஒழுங்குமுறை மற்றும் GR புலம்பெயர்வு அலுவலகத்தின்
+                உத்தரவுகளின்படி.
+            </div>
+
+            <h2 class="section-title">3. ஊடாடும் நேரடி சரிபார்ப்பு</h2>
+            <div class="demo-card">
+                <div class="demo-header">🧪 அல்காரிதம் உருவகப்படுத்தி கிராபூண்டன் (2026)</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 வயதுவந்தோரின் எண்ணிக்கை</label>
+                            <input type="number" id="adultsCount" value="1" min="1">
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 குழந்தைகளின் எண்ணிக்கை</label>
+                            <input type="number" id="childrenCount" value="0" min="0">
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">கணக்கீட்டைத் தொடங்குங்கள்</button>
+
+                    <div id="liveResultPanel" class="result-panel">
+                        <h3>📐 கணக்கீட்டு சான்று (GR தர்க்கம்)</h3>
+                        <div id="stepsDetail" class="calc-steps"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(மாதாந்திர முழுமையாக்கப்பட்டது)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← முகப்புப் பக்கத்திற்குத்
+                திரும்பு</a>
+            <a href="https://www.gr.ch/DE/institutionen/verwaltung/dvs/soa/beratung/sozialberatung/Seiten/default.aspx"
+                target="_blank" class="btn-link">அதிகாரப்பூர்வ பக்கம் கிராபூண்டன் மாகாணம்</a>
+        </div>
+
+        <footer>
+            <p>மூலம்: புலம்பெயர்வு மற்றும் சிவில் சட்ட அலுவலகம் கிராபூண்டன் – நிலை 2026</p>
+            <p>welfarecalc.ch ஆல் வழங்கப்பட்டது | நியாயமான சுவிட்சர்லாந்திற்கான திறந்த அல்காரிதங்கள்</p>
+            <p>© 2026 welfarecalc.ch – வெளிப்படைத்தன்மை முன்முயற்சி</p>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const GR_PARAMS = {
+                base: 9.00,
+                coupleFactor: 0.65, // GR specific
+                childFactor: 0.52,
+                childBonus: 0.10,
+                days: 30.42
+            };
+
+            function calculateGR(adults, children) {
+                // Step 1: Adults
+                const adultDaily = (adults === 1) ? GR_PARAMS.base : (GR_PARAMS.base + (adults - 1) * GR_PARAMS.base * GR_PARAMS.coupleFactor);
+
+                // Step 2: Children
+                const childBase = children * (GR_PARAMS.base * GR_PARAMS.childFactor);
+                const childBonus = (children >= 3) ? ((children - 2) * GR_PARAMS.base * GR_PARAMS.childBonus) : 0;
+                const childTotal = childBase + childBonus;
+
+                // Step 3: Monthly total and rounding
+                const dailyTotal = adultDaily + childTotal;
+                const monthlyRaw = dailyTotal * GR_PARAMS.days;
+                const monthlyRounded = Math.round(monthlyRaw);
+
+                return { adultDaily, childTotal, childBonus, dailyTotal, monthlyRaw, monthlyRounded };
+            }
+
+            document.getElementById('runCalcBtn').addEventListener('click', function () {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const res = calculateGR(adults, children);
+
+                let bonusText = res.childBonus > 0 ? `<br>+ 3வது குழந்தையிலிருந்து போனஸ்: CHF ${res.childBonus.toFixed(2)}` : "";
+
+                document.getElementById('stepsDetail').innerHTML = `
+                <strong>📌 படி 1 (வயதுவந்தோர்):</strong> CHF ${res.adultDaily.toFixed(2)} / நாள்<br>
+                <strong>📌 படி 2 (குழந்தைகள்):</strong> CHF ${res.childTotal.toFixed(2)} / நாள் ${bonusText}<br>
+                <strong>📌 மொத்த தினசரி வீதம்:</strong> CHF ${res.dailyTotal.toFixed(2)}<br>
+                <strong>📌 மாதாந்திர (30.42 நாட்கள்):</strong> CHF ${res.monthlyRaw.toFixed(2)}<br>
+                <strong>💰 முழுமையாக்குதல் (GR தரநிலை):</strong> CHF ${res.monthlyRounded}.00
+            `;
+                document.getElementById('monthlyAmountDisplay').innerText = res.monthlyRounded + ".00 CHF";
+                document.getElementById('liveResultPanel').style.display = 'block';
+            });
+        })();
+    </script>
+</body>
+
+</html>

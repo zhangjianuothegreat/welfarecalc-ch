@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV அல்காரிதம் கான்டன் ஷ்விட்ஸ் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டிற்கான கான்டன் ஷ்விட்ஸில் பிரீமியன் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? அதிகாரப்பூர்வ AKSZ தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV அல்காரிதம் கான்டன் ஷ்விட்ஸ் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta
+    content="ஷ்விட்ஸில் (SZ) 2026 ஆம் ஆண்டிற்கான பிரீமியன் குறைப்புக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம். வருமான-சதவீத மாதிரி வெளிப்படையாக வெளியிடப்பட்டுள்ளது."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/SZ_2026IPV_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Berechnung der Prämienverbilligung Schwyz 2026",
+      "description": "Schritt-für-Schritt-Anleitung zur Ermittlung des IPV-Anspruchs im Kanton Schwyz nach dem Einkommens-Prozent-Modell.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ermittlung des anrechenbaren Einkommens (LNA) unter Berücksichtigung von 10% Vermögensaufwertung nach Freibeträgen."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Prüfung des um Kinderabzug angepassten Einkommens gegenüber der kantonalen Höchstgrenze."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Berechnung der gesamten Richtprämien und Gegenüberstellung mit dem 11%igen Selbstbehalt."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Garantieprüfung für Kinder (80%) und Jugendliche (50%) sowie Limitierung auf die effektive Prämie."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #004477;
+      --accent-gold: #c59b27;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+      <h1>IPV-அல்காரிதம்: கேன்டன் ஷ்விட்ஸ் (SZ)</h1>
+      <p>2026 ஆம் ஆண்டிற்கான வருமான-சதவீத மாதிரியின் படி கணக்கீட்டு தர்க்கத்தின் வெளிப்படையான வெளியீடு</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>அல்காரிதம் வெளிப்படைத்தன்மை நம்பிக்கையை உருவாக்குகிறது. இந்தப் பக்கத்தில், கேன்டன் ஷ்விட்ஸில் தனிப்பட்ட
+        பிரீமியம் மானியத்திற்கான (IPV) உங்கள் சாத்தியமான தகுதியை எங்கள் கால்குலேட்டர் எவ்வாறு கணித ரீதியாக துல்லியமாக
+        தீர்மானிக்கிறது என்பதை நாங்கள் விளக்குகிறோம். இந்த தர்க்கம் சட்ட விதிகள் மற்றும் அதிகாரப்பூர்வ AKSZ துண்டுப்
+        பிரசுரத்துடன் முழுமையாக ஒத்துப்போகிறது.</p>
+      <h2 class="section-title">1. முக்கிய அளவுருக்கள் (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>சுய-பங்கு (காரணி)</h4>
+          <div class="param-value">11.0 %</div>
+          <p><small>சரிசெய்யப்பட்ட வருமானத்தின் சதவீதம், இது சொந்த பங்களிப்பாக ஏற்றுக்கொள்ளத்தக்கது.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>சொத்து மதிப்பு உயர்வு</h4>
+          <div class="param-value">10.0 %</div>
+          <p><small>வரி விதிக்கக்கூடிய சொத்தின் பங்கு (கழிப்பிற்குப் பிறகு), இது வருமானமாக சேர்க்கப்படுகிறது.</small>
+          </p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை (படி படியாக)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>கணக்கில் எடுத்துக்கொள்ளத்தக்க வருமானம் (LNA)</h3>
+          <p>முதலில், சொத்தை உள்ளடக்கிய குடும்பத்தின் பொருளாதார திறன் தீர்மானிக்கப்படுகிறது:</p>
+          <div class="formula-box">
+            LNA = நிகர ஆண்டு வருமானம் + 10% × max(0, வரி விதிக்கக்கூடிய சொத்து - சொத்து கழிப்பு) + பிற கூடுதல் தொகைகள்
+          </div>
+          <p>நிலையான <strong>சொத்து கழிப்புகள்</strong> பின்வருமாறு:</p>
+          <table class="data-table">
+            <tr>
+              <th>வகை</th>
+              <th>விலக்கு தொகை (கழிப்பு)</th>
+            </tr>
+            <tr>
+              <td>ஒவ்வொரு வயது வந்த நபருக்கும்</td>
+              <td>CHF 25'000</td>
+            </tr>
+            <tr>
+              <td>ஒவ்வொரு குழந்தை / பயிற்சியில் உள்ள இளைஞருக்கும்</td>
+              <td>CHF 15'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>வருமான வரம்பு சோதனை</h3>
+          <p>தகுதி சோதனைக்கு, ஒரு நிலையான குழந்தை கழிப்பு செய்யப்படும் சுத்திகரிக்கப்பட்ட வருமானம் பயன்படுத்தப்படுகிறது:
+          </p>
+          <div class="formula-box">
+            சரிசெய்யப்பட்ட LNA = max(0, LNA - ((குழந்தைகள் + இளைஞர்களின் எண்ணிக்கை) × CHF 5'000))
+          </div>
+          <div class="alert" style="margin: 10px 0; padding: 1rem;">
+            <strong>வருமான வரம்பு:</strong> <em>சரிசெய்யப்பட்ட LNA</em> கேன்டன் வரம்பான <strong>CHF 95'980</strong> ஐ
+            மீறினால், IPV க்கான சட்டப்பூர்வ தகுதி தானாகவே முடிவடைகிறது (விலக்கு அளவுகோல்).
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>மொத்த திசை பிரீமியங்கள் 2026</h3>
+          <p>கேன்டன் ஷ்விட்ஸ் வருடாந்திர திசை பிரீமியங்களை நிர்ணயிக்கிறது, இது கேன்டன் சராசரி பிரீமியங்களில் சுமார் 90%
+            ஆகும்:</p>
+          <table class="data-table">
+            <tr>
+              <th>வகை</th>
+              <th>திசை பிரீமியம் (வருடாந்திர)</th>
+              <th>மாதாந்திர</th>
+            </tr>
+            <tr>
+              <td>வயது வந்தோர் (26 வயது மற்றும் அதற்கு மேல்)</td>
+              <td>CHF 5'583.60</td>
+              <td>CHF 465.30</td>
+            </tr>
+            <tr>
+              <td>இளைஞர்கள் (19-25 பயிற்சியில்)</td>
+              <td>CHF 3'931.20</td>
+              <td>CHF 327.60</td>
+            </tr>
+            <tr>
+              <td>குழந்தைகள் (0-18 வயது)</td>
+              <td>CHF 1'285.20</td>
+              <td>CHF 107.10</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>மானிய நிர்ணயம் &amp; சட்டப்பூர்வ உத்தரவாதங்கள்</h3>
+          <p>மைய கணித சூத்திரம் திசை பிரீமியங்களை வருமான சுய-பங்குடன் ஒப்பிடுகிறது:</p>
+          <div class="formula-box">
+            தற்காலிக மானியம் = max(0, மொத்த திசை பிரீமியங்கள் - (சரிசெய்யப்பட்ட LNA × 11%))
+          </div>
+          <p>குறைந்த வருமானத்திற்கு, சட்டப்பூர்வ <strong>குறைந்தபட்ச உத்தரவாதம்</strong> பொருந்தும் (தூய வருமான-சதவீத
+            முடிவைப் பொருட்படுத்தாமல்):</p>
+          <table class="data-table">
+            <tr>
+              <th>வகை</th>
+              <th>உத்தரவாதமான குறைந்தபட்ச மானியம்</th>
+            </tr>
+            <tr>
+              <td>குழந்தைகள் (0-18)</td>
+              <td>குழந்தை திசை பிரீமியத்தில் 80 % (CHF 1'028.16 / ஆண்டு)</td>
+            </tr>
+            <tr>
+              <td>பயிற்சியில் உள்ள இளைஞர்கள் (19-25)</td>
+              <td>இளைஞர் திசை பிரீமியத்தில் 50 % (CHF 1'965.60 / ஆண்டு)</td>
+            </tr>
+          </table>
+          <div class="formula-box" style="margin-top: 15px;">
+            மானியம் = max(தற்காலிக மானியம், குறைந்தபட்ச மானியம்)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>இறுதி தகுதி &amp; ரவுண்டிங்</h3>
+          <p>கணக்கிடப்பட்ட தகுதி நிர்வாக குறைந்தபட்ச மற்றும் அதிகபட்ச வரம்புகளுக்கு உட்பட்டது:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            வருடாந்திர IPV = min(மானியம், உண்மையான வருடாந்திர சுகாதார காப்பீட்டு பிரீமியம்)
+            மாதாந்திர செலுத்துதல் = வருடாந்திர IPV / 12 (வணிக ரீதியாக ரவுண்ட் செய்யப்பட்டது)
+          </div>
+          <p><small>*ஆண்டுக்கு CHF 100 க்கும் குறைவான தொகைகள் கேன்டன் ஒழுங்குமுறையின் படி செலுத்தப்படாது.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>கேன்டன் SZ இல் முக்கிய சிறப்புகள்:</strong><br />
+        <ul>
+          <li><strong>உண்மையான பிரீமியம் வரம்பு:</strong> மானியம் ஒருபோதும் சுகாதார காப்பீட்டு நிறுவனத்திற்கு செலுத்த
+            வேண்டிய உண்மையான பிரீமியத்தை மீறக்கூடாது.</li>
+          <li><strong>ஃபிரான்சைஸ் சரிசெய்தல்:</strong> தன்னார்வமாக தேர்ந்தெடுக்கப்பட்ட அதிக ஃபிரான்சைஸ்களுக்கு (எ.கா.
+            CHF 2'500), கேன்டன் திசை பிரீமியம் பிரீமிய சேமிப்பின் விகிதத்தில் குறைகிறது.</li>
+          <li><strong>சமூக உதவி பெறுபவர்கள்:</strong> பொருளாதார சமூக உதவி பெறும் நபர்களுக்கு, வசிக்கும் நகராட்சி மூலம்
+            தனி கணக்கீட்டு முறைகள் பொருந்தும்.</li>
+        </ul>
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
+          திரும்பு</a>
+        <a class="btn-link" href="https://www.sva-sz.ch" target="_blank">அதிகாரப்பூர்வ SVA Schwyz வலைத்தளம்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: Ausgleichskasse Schwyz (AKSZ) வழிகாட்டுதல்கள் மற்றும் துண்டுப் பிரசுரம் 2026 | welfarecalc.ch</p>
+      <p>சட்ட அறிவிப்பு: கணக்கீடுகள் தகவல் நோக்கங்களுக்காக மட்டுமே, கட்டுப்பாடற்றவை மற்றும் எந்தவொரு சட்டப்பூர்வ
+        உரிமைகோரலையும் உருவாக்காது.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

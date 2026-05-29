@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Socijalna pomoć Algoritam Kanton Vaud 2026 | Transparentan izračun | welfarecalc.ch</title>
+  <meta
+    content="Kako se izračunava Revenu d'insertion (RI) 2026 u kantonu Vaud (VD)? Otkrijte naš transparentan algoritam temeljen na LAS i SKOS smjernicama."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_hr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Socijalna pomoć Algoritam Kanton Vaud 2026 | Transparentan izračun" property="og:title" />
+  <meta content="Službena logika izračuna za Revenu d'insertion (RI) 2026 u kantonu Vaud temeljena na SKOS i LAS VD."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026SH_hr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun socijalne pomoći Vaud (RI) 2026",
+      "description": "Detaljna algoritamska raščlamba izračuna socijalne pomoći (Revenu d'insertion) u kantonu Vaud.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Provjera imovinskih olakšica (ulazni prag prema zakonu)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Utvrđivanje socijalnog egzistencijalnog minimuma (osnovne potrebe prema SKOS ljestvici 2026, najam i zdravstveno osiguranje)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Usporedba i uračunavanje optimiziranih prihoda umanjenih za stopu zaposlenosti"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">SKOS-USKLAĐENO 2026</div>
+      <h1>Algoritam socijalne pomoći: Kanton Vaud (VD)</h1>
+      <p>Transparentna dokumentacija logike izračuna za Revenu d'insertion (RI)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+    <div class="content">
+      <p>Kako se izračunava Revenu d'insertion (RI) u kantonu Vaud? Kako bismo ojačali povjerenje naših korisnika, ovdje
+        otkrivamo potpuni algoritam koji stoji iza welfarecalc.ch. Temelji se na zakonskoj osnovi Loi sur l'action
+        sociale (LAS VD), pripadajućoj uredbi (RRI) te nacionalnim SKOS smjernicama 2026.</p>
+      <h2 class="section-title">1. Provjera imovine (Ulazni prag)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Oslobođenje za pojedinca</h4>
+          <div class="param-value">CHF 6'000</div>
+          <p><small>Dodatnih CHF 3'000 po djetetu ili osobi na školovanju.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Oslobođenje za bračne parove</h4>
+          <div class="param-value">CHF 12'000</div>
+          <p><small>Nema apsolutne gornje granice za višečlana RI kućanstva.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Put izračuna (Mjesečno)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Osnovne potrebe za život (OPŽ)</h3>
+          <p>OPŽ se strogo temelji na standardiziranoj SKOS ljestvici 2026 za veličinu kućanstva:</p>
+          <table class="data-table">
+            <tr>
+              <th>Veličina kućanstva</th>
+              <th>Iznos mjesečno (2026)</th>
+            </tr>
+            <tr>
+              <td>1 osoba</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 osobe</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>3 osobe</td>
+              <td>CHF 2'017</td>
+            </tr>
+            <tr>
+              <td>4 osobe</td>
+              <td>CHF 2'320</td>
+            </tr>
+            <tr>
+              <td>5 osoba</td>
+              <td>CHF 2'623</td>
+            </tr>
+            <tr>
+              <td>Svaka dodatna osoba</td>
+              <td>+ CHF 213</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Troškovi stanovanja i zdravlje (Neto načelo)</h3>
+          <p>Uračunavanje troškova stanovanja do kantonalnog maksimuma. Za zdravstveno osiguranje u Vaudu vrijedi strogo
+            neto načelo kako bi se izbjeglo dvostruko brojanje:</p>
+          <div class="formula">
+            Priznati najam = Min(Stvarni najam, Kantonalni maksimum)<br />
+            Priznato zdravstveno osiguranje = Max(0, KVG premija - Individualno smanjenje premije IPV)
+          </div>
+          <p><small>*Napomena: Budući da IPV u kantonu Vaud ide izravno osiguravatelju, naš algoritam oduzima IPV
+              izravno na strani rashoda. Maksimalna referentna vrijednost najma za 1 osobu na kantonalnoj razini iznosi
+              CHF 1'200.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Uračunavanje prihoda i stopa zaposlenosti (Franšiza)</h3>
+          <p>Kako bi se zadržao poticaj za rad, od bruto odnosno neto prihoda od rada oduzima se zakonski iznos
+            oslobođenja prema RRI VD:</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>Prihod koji se uračunava</strong> = (Neto prihod od rada - 20% oslobođenja) + Alimentacija + Naknade
+            za nezaposlene (ALV) + Ostale mirovine
+          </div>
+          <p><small>Važno: Osiguranje za slučaj nezaposlenosti ispravno se deklarira kao ALV (Osiguranje za slučaj
+              nezaposlenosti) i uračunava se 100% kao prihod. Izravna povratna isplata IPV-a ovdje se ne broji ponovno
+              kao prihod.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Rezultat: Mjesečno pravo</h3>
+          <p>Konačna isplata socijalne pomoći (Revenu d'insertion) utvrđuje se pokrivanjem manjka:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Pravo = (OPŽ + Priznati najam + Priznato zdravstveno osiguranje + IZU*) - Prihod koji se uračunava
+          </div>
+          <p><small>*IZU = Integracijski dodatak (dodatak za dokazano sudjelovanje u integracijskim ili mjerama
+              zapošljavanja).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Važna napomena o usklađenosti sa zakonom:</strong><br />
+        Za razliku od dopunskih naknada (EL), pravo socijalne pomoći kantona Vaud (LAS) ne poznaje klizno, postotno
+        trošenje imovine pri prekoračenju ulaznog praga. Ako je likvidna imovina iznad iznosa oslobođenja, <strong>prema
+          zakonu ne postoji pravo</strong> na socijalnu pomoć sve dok imovina ne padne ispod granice.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Pokreni kalkulator</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/revenu-dinsertion-ri"
+          target="_blank">Službena stranica Kantona VD (RI)</a>
+      </div>
+    </div>
+    <footer>
+      <p>Izvori: Kanton Vaud DGCS, Loi sur l'action sociale (LAS) &amp; SKOS smjernice 2026</p>
+      <p>© 2026 welfarecalc.ch | Transparentni izračun socijalne pomoći</p>
+    </footer>
+  </div>
+</body>
+
+</html>

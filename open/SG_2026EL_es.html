@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo EL Cantón de San Galo 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calculan las Prestaciones Complementarias (PC) 2026 en el Cantón de San Galo (SG)? Descubra nuestro algoritmo transparente basado en datos oficiales de la SVA.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026EL_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Prestaciones Complementarias San Galo 2026",
+      "description": "Desglose algorítmico detallado del cálculo de las PC en el Cantón de SG (San Galo) siguiendo la reforma federal de 2026.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Asignación de residencia a una de las 3 regiones de alquiler del Cantón de San Galo."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación de las necesidades reconocidas (gastos básicos de vida, alquiler máximo y prima media del seguro de enfermedad)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación de los ingresos computables (pensiones incluyendo neutralización de la 13ª AVS, ingresos del trabajo y utilización de bienes)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificación del umbral de elegibilidad legal y cálculo final de la prestación PC (gastos menos ingresos)."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; color: var(--official-blue); }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { opacity: 0.9; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DATOS OFICIALES REFORMA 2026</div>
+        <h1>Algoritmo PC: Cantón de San Galo</h1>
+        <p>Desglose transparente de las Prestaciones Complementarias (PC) para el Cantón de San Galo (SG)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La transparencia genera confianza. Las Prestaciones Complementarias (PC) al AVS/AI han sido ajustadas fundamentalmente en 2026 según los nuevos requisitos federales. Aquí documentamos de forma precisa y matemáticamente correcta cómo nuestro motor de cálculo determina su derecho en el Cantón de San Galo.</p>
+
+        <h2 class="section-title">1. Gastos básicos de vida anuales (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Personas solas</h4>
+                <div class="param-value">CHF 20.670</div>
+                <p><small>Necesidades básicas uniformes a nivel nacional a partir del 1 de enero de 2026.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Parejas casadas</h4>
+                <div class="param-value">CHF 31.005</div>
+                <p><small>Necesidades básicas legales para cónyuges que conviven.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Ruta de cálculo precisa</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Asignación regional (regiones de alquiler)</h3>
+                <p>El Cantón de San Galo está dividido en 3 regiones según la ley federal. Nuestro algoritmo asigna el presupuesto del hogar basándose en el código postal (PLZ):</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+                    <li><strong>Región 1 (Alta):</strong> Centros principales (ej. Ciudad de San Galo, Rapperswil-Jona)</li>
+                    <li><strong>Región 2 (Media):</strong> Zonas suburbanas y municipios de tamaño mediano</li>
+                    <li><strong>Región 3 (Baja):</strong> Comunidades rurales (estándar por defecto si falta el código postal)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Gastos reconocidos (Necesidades)</h3>
+                <p>La suma matemática de todos los conceptos de gasto legalmente reconocidos se calcula de la siguiente manera:</p>
+                <div class="formula">
+                    Necesidades Totales = Gastos básicos de vida + Costos de vivienda reconocidos + Prima del seguro de enfermedad
+                </div>
+                
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Costos de vivienda reconocidos (Alquiler máximo 2026):</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Región / Tipo de hogar</th>
+                            <th>Región 1 (Alta)</th>
+                            <th>Región 2 (Media)</th>
+                            <th>Región 3 (Baja)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1 persona</strong></td>
+                            <td>CHF 18.900 (1.575/mes)</td>
+                            <td>CHF 18.300 (1.525/mes)</td>
+                            <td>CHF 16.680 (1.390/mes)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2 personas</strong></td>
+                            <td>CHF 22.320 (1.860/mes)</td>
+                            <td>CHF 21.720 (1.810/mes)</td>
+                            <td>CHF 20.160 (1.680/mes)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3 personas</strong></td>
+                            <td>CHF 24.780 (2.065/mes)</td>
+                            <td>CHF 23.760 (1.980/mes)</td>
+                            <td>CHF 22.200 (1.850/mes)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><small>*Nota para vivienda en propiedad: Para propiedades ocupadas por sus propietarios, los intereses hipotecarios reales y una asignación de mantenimiento se reconocen hasta el alquiler máximo regional respectivo.</small></p>
+
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Primas del seguro de enfermedad reconocidas:</h4>
+                <p>El algoritmo limita la prima según las directrices cantonales de la SVA SG. La fórmula es:</p>
+                <div class="formula">Prima AS reconocida = Mínimo(Prima real, Prima estándar regional)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Prima estándar regional (por año)</th>
+                            <th>Región 1</th>
+                            <th>Región 2</th>
+                            <th>Región 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Adultos (26+)</td>
+                            <td>CHF 6.564</td>
+                            <td>CHF 6.144</td>
+                            <td>CHF 5.808</td>
+                        </tr>
+                        <tr>
+                            <td>Jóvenes (11-25)</td>
+                            <td>CHF 4.752</td>
+                            <td>CHF 4.536</td>
+                            <td>CHF 4.344</td>
+                        </tr>
+                        <tr>
+                            <td>Niños (0-10)</td>
+                            <td>CHF 1.488</td>
+                            <td>CHF 1.464</td>
+                            <td>CHF 1.380</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Ingresos computables</h3>
+                <p>Sus ingresos se ponderan según las estrictas disposiciones de la LPC (Ley de Prestaciones Complementarias):</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+                    <li><strong>Pensiones y neutralización de la 13ª AVS:</strong> Los ingresos por pensiones se calculan sobre una base de 12 meses. La nueva 13ª pensión AVS introducida en 2026 se neutraliza matemáticamente por completo y no entra en el cálculo.</li>
+                    <li><strong>Ingresos del trabajo:</strong> Se concede una deducción (CHF 1.300 para personas solas / CHF 1.950 para parejas casadas). Solo 2/3 de los ingresos laborales restantes se cuentan como ingreso.</li>
+                    <li><strong>Utilización de bienes (patrimonio):</strong> Si los bienes netos superan las deducciones, una parte se contabiliza como ingreso imputado.
+                        <br><em>Deducciones:</em> CHF 30.000 (personas solas), CHF 50.000 (parejas casadas). 
+                        <br><em>Tasa para residentes en hogares de ancianos:</em> 1/5 por año. 
+                        <br><em>Tasa para pensionistas de vejez que viven en casa:</em> 1/10 por año.
+                        <br><em>Tasa para pensionistas del AI (invalidez) que viven en casa:</em> 1/15 por año.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Resultado: Derecho a PC</h3>
+                <p>La prestación PC cierra la brecha, siempre que se cumplan todos los criterios:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Prestación PC anual = Máx(0, [Gastos reconocidos] - [Ingresos computables])
+                </div>
+                <p><small>El monto del pago mensual equivale a la PC anual dividida por 12, redondeada comercialmente al franco más cercano.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Importante: El umbral de elegibilidad (límite de bienes)</strong><br>
+            Se tiene derecho legal a las Prestaciones Complementarias solo si los bienes netos imponibles son inferiores a <strong>CHF 100.000</strong> (para personas solas) o <strong>CHF 200.000</strong> (para parejas casadas). El valor de la vivienda en propiedad ocupada por el propietario está explícitamente excluido de este umbral.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Volver al Inicio</a>
+            <a href="https://www.svasg.ch/el" target="_blank" class="btn-link">Página Oficial SVA San Galo</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuente: Directrices SVA San Galo 2026, Ley Federal de Prestaciones Complementarias (LPC) y Ley de Introducción Cantonal (KeLG)</p>
+        <p>Proporcionado por welfarecalc.ch | Todos los cálculos son sin garantía legal.</p>
+    </footer>
+</div>
+
+</body>
+</html>

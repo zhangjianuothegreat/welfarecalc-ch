@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Neuchâtel Kantonu Sosyal Yardım Algoritması 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
+    <meta name="description" content="Neuchâtel Kantonu'nda (NE) 2026 yılı için sosyal yardım nasıl hesaplanır? SKOS yönergeleri ve LASoc NE esas alınarak hazırlanmış şeffaf algoritmamızı keşfedin.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/NE_2026SH_tr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NE_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NE_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NE_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NE_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NE_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NE_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NE_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NE_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NE_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NE_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NE_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NE_2026SH_de.html">
+
+    <meta property="og:title" content="Neuchâtel Kantonu Sosyal Yardım Algoritması 2026 | Şeffaf Hesaplama">
+    <meta property="og:description" content="Neuchâtel Kantonu'nda 2026 yılı sosyal yardım hesaplama mantığı, SKOS ve LASoc'a dayalı resmi hesaplama.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/NE_2026SH_tr.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Neuchâtel Sosyal Yardım Hesaplaması 2026",
+      "description": "Neuchâtel Kantonu'nda sosyal yardım hesaplamasının ayrıntılı algoritmik dökümü.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Kanton yasasına göre mal varlığı muafiyeti kontrolü"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Temel yaşam giderlerinin (2026 GBL) ve hane yapısının belirlenmesi"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Konut maliyetlerinin değerlendirilmesi ve IPV mahsup işlemi"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Çalışmayla ilgili kesintiler dikkate alınarak hesaplanabilir gelirin hesaplanması"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">SKOS UYUMLU 2026</div>
+        <h1>Sosyal Yardım Algoritması: Neuchâtel Kantonu</h1>
+        <p>Sosyal asgari geçim hesaplamasına ilişkin şeffaf dokümantasyon (NE)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Şeffaflık güvenin temelidir. Bu sayfada, welfarecalc.ch üzerinde Neuchâtel Kantonu için hesaplamaları yönlendiren tam algoritmayı açıklıyoruz. Mantık, kanton mevzuatı (LASoc) ve 2026 SKOS yönergelerine dayanmaktadır.</p>
+
+        <h2 class="section-title">1. Mal Varlığı Kontrolü (Başlangıç Eşiği)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Bekar Kişi Muafiyeti</h4>
+                <div class="param-value">6.000 İsviçre Frangı</div>
+                <p><small>Her çocuk veya eğitim/öğretimdeki kişi için ilave 3.000 İsviçre Frangı.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Çiftler İçin Muafiyet</h4>
+                <div class="param-value">12.000 İsviçre Frangı</div>
+                <p><small>Hane başına azami toplam muafiyet 15.000 İsviçre Frangı ile sınırlıdır.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Hesaplama Yöntemi (Aylık)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Temel Yaşam Giderleri (TYG)</h3>
+                <p>NE Kantonu 2026 TYG'si, SKOS yaşam maliyeti düzenlemesini içerir:</p>
+                <table class="data-table">
+                    <tr><th>Hane Büyüklüğü</th><th>Aylık Tutar (2026)</th></tr>
+                    <tr><td>1 Kişi</td><td>1.061 İsviçre Frangı</td></tr>
+                    <tr><td>2 Kişi</td><td>1.624 İsviçre Frangı</td></tr>
+                    <tr><td>Ek Yetişkin</td><td>400 İsviçre Frangı</td></tr>
+                    <tr><td>11 Yaş Altı Çocuk</td><td>391 İsviçre Frangı</td></tr>
+                    <tr><td>11 - 15 Yaş Arası Çocuk</td><td>699 İsviçre Frangı</td></tr>
+                    <tr><td>15 Yaş Üstü / Eğitimdeki Çocuk</td><td>1.061 İsviçre Frangı</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Konut Giderleri ve Sağlık Sigortası</h3>
+                <p>Gerçek maliyetler, kanton maksimumuna kadar dikkate alınır. NE Kantonu'nda IPV (bireysel prim indirimi) ilkesi önceliklidir:</p>
+                <div class="formula">
+                    Tanınan İhtiyaç = Kira (azami tutara kadar) + (Sağlık Sigortası Primi - IPV Katkısı)
+                </div>
+                <p><small>*Not: Hesaplayıcımız kanton kira limitlerini kullanır (örneğin 1 kişi için yaklaşık 1.200 İsviçre Frangı).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Gelir Değerlendirmesi ve Çalışmayla İlgili Kesinti</h3>
+                <p>Mesleki entegrasyonu teşvik etmek için gelirin bir kısmı sayılmaz:</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+                    <strong>Hesaplanabilir Gelir</strong> = Net kazanç - Çalışmayla ilgili kesinti (%20)
+                </div>
+                <p><small>Ücretli istihdam için ayrıca 100 İsviçre Frangı/ay entegrasyon ödeneği (IZU) verilir.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Sonuç: Aylık Hak Kazanım Tutarı</h3>
+                <p>İhtiyaçların karşılanması fark hesaplaması ile belirlenir:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Hak Kazanım Tutarı = Toplam İhtiyaç - (Gelir + Azaltılmış Mal Varlığı*)
+                </div>
+                <p><small>*Aşan mal varlığı 120 aylık (10 yıl) bir bölen kullanılarak sayılır.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>NE Kantonu'na özel özellik:</strong><br>
+            Bireysel prim indirimi (IPV), Neuchâtel Kantonu'nda hesaplamaya doğrudan entegre edilmiştir. Yalnızca kalan sağlık sigortası maliyetleri bütçede ihtiyaç olarak kabul edilir.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Hesaplayıcıyı Başlat</a>
+            <a href="https://www.ne.ch/themes/social" target="_blank" class="btn-link">Resmi NE Kantonu Web Sitesi</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kaynaklar: Loi sur l’action sociale (LASoc NE) & SKOS Yönergeleri 2026</p>
+        <p>© 2026 welfarecalc.ch | Şeffaf Sosyal Yardım Hesaplaması</p>
+    </footer>
+</div>
+
+</body>
+</html>

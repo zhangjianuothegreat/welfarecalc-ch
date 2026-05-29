@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Solothurn Kantonu IPV Algoritması 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
+  <meta
+    content="Solothurn kantonunda 2026 yılı prim indirimi (IPV) nasıl hesaplanır? Resmi AKSO verilerine dayanan şeffaf algoritmamızı keşfedin."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_tr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Solothurn Kantonu IPV Algoritması 2026 | Şeffaf Hesaplama" property="og:title" />
+  <meta content="Solothurn'da (SO) 2026 yılı prim indirimi için resmi hesaplama mantığı." property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/SO_2026IPV_tr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Solothurn 2026 Prim İndirimi Hesaplaması",
+      "description": "Solothurn kantonunda IPV'nin yasal olarak belirlenmesi için adım adım kılavuz.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Muafiyet tutarından sonra %5 varlık dönüşümü ile esas alınacak gelirin (LNA) belirlenmesi"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Giriş eşiği ve gelir üst sınırının (80.000 CHF) kontrolü"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "%9 ile %15 arasında doğrusal artan kişisel katkı payının hesaplanması"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Çocuklar (%80) ve genç yetişkinler (%50) için yasal asgari garantilerin uygulanması"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">RESMİ VERİLER 2026</div>
+      <h1>IPV Algoritması: Solothurn Kantonu (SO)</h1>
+      <p>2026 yılı için hesaplama mantığının şeffaf bir şekilde açıklanması</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+    <div class="content">
+      <p>Şeffaflık yoluyla güven. Burada, hesaplayıcımızın Solothurn kantonundaki potansiyel prim indiriminizi nasıl
+        belirlediğini açıklıyoruz. Bu algoritma, Solothurn Denkleştirme Fonu'nun (AKSO) yasal dayanaklarına (BGS 831.1)
+        sıkı sıkıya bağlıdır.</p>
+      <h2 class="section-title">1. Temel Parametreler (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Artımsal Kişisel Katkı Payı</h4>
+          <div class="param-value">%9.0 — %15.0</div>
+          <p><small>Düzeltilmiş net gelire (RDU) bağlıdır.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Varlık Dönüşümü</h4>
+          <div class="param-value">%5.0</div>
+          <p><small>İndirim sonrası vergilendirilebilir varlıkların gelire eklenen kısmı.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Hesaplama Yolu</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Esas Alınacak Net Gelir (LNA)</h3>
+          <p>Öncelikle, varlıklar da dahil edilerek ekonomik performans belirlenir:</p>
+          <div class="formula-box">
+            <strong>[Net Gelir]</strong> + <strong>[%5 × (Vergilendirilebilir Varlıklar - Muafiyet Tutarı)]</strong>
+          </div>
+          <p><small>Not: Kanton, %5 dönüşümü uygulanmadan önce medeni duruma göre vergilendirilebilir varlıklar
+              üzerinden bir indirim öngörmektedir.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Kesintiler ve Düzeltilmiş Gelir (RDU)</h3>
+          <p>Düzeltilmiş net geliri (RDU) elde etmek için LNA'dan sosyal ve çocuk kesintileri yapılır:</p>
+          <div class="formula-box">
+            <strong>RDU = Maks(0, LNA - Toplam Kesintiler)</strong>
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Kategori</th>
+              <th>Kesinti Tutarı (yıllık)</th>
+            </tr>
+            <tr>
+              <td>Bekarlar (Tek kişi)</td>
+              <td>12.000 CHF</td>
+            </tr>
+            <tr>
+              <td>Evli Çiftler / Birlikte Yaşayan Çiftler</td>
+              <td>18.000 CHF</td>
+            </tr>
+            <tr>
+              <td>Eğitimdeki Çocuk / Genç Yetişkin Başına</td>
+              <td>+ 6.000 CHF</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>2026 Resmi Yönlendirme Primleri (yıllık)</h3>
+          <p>Hükümet Konseyi tarafından 2026 yılı için belirlenen standartlaştırılmış yıllık yönlendirme primleri
+            şunlardır:</p>
+          <table class="data-table">
+            <tr>
+              <th>Kategori</th>
+              <th>Aylık</th>
+              <th>Yıllık (Hesaplama Bazı)</th>
+            </tr>
+            <tr>
+              <td>Yetişkinler (26 yaş ve üzeri)</td>
+              <td>422 CHF</td>
+              <td>5.064 CHF</td>
+            </tr>
+            <tr>
+              <td>Genç Yetişkinler (19-25, eğitimde)</td>
+              <td>305 CHF</td>
+              <td>3.660 CHF</td>
+            </tr>
+            <tr>
+              <td>Çocuklar (0-18)</td>
+              <td>98 CHF</td>
+              <td>1.176 CHF</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Artımsal Kişisel Katkı Payı Oranı</h3>
+          <p>Gelirden beklenen kişisel katkı payı, 40.000 CHF ile 120.000 CHF arasındaki RDU için doğrusal olarak artar:
+          </p>
+          <div class="formula-box">
+            RDU ≤ 40.000 ise: <strong>Oran = %9</strong><br />
+            RDU ≥ 120.000 ise: <strong>Oran = %15</strong><br />
+            Aradaki değerlerde: <strong>Oran = %9 + %6 × ((RDU - 40.000) / 80.000)</strong>
+          </div>
+          <div class="formula-box" style="background: #eef2ff;">
+            <strong>Kişisel Katkı Payı (CHF) = RDU × Kişisel Katkı Payı Oranı</strong>
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Sübvansiyon Belirlemesi &amp; Asgari Garanti</h3>
+          <p>Geçici sübvansiyon, yönlendirme primlerinden kişisel katkı payının çıkarılmasıyla elde edilir. Aynı zamanda
+            çocuklar ve gençler için yasal asgari garanti devreye girer:</p>
+          <div class="formula-box">
+            Geçici Sübvansiyon = Maks(0, [Toplam Yönlendirme Primleri] - [Kişisel Katkı Payı])
+          </div>
+          <p>Gelirden bağımsız olarak, yönlendirme priminin aşağıdaki asgari payları garanti edilmiştir:</p>
+          <table class="data-table">
+            <tr>
+              <th>Yararlanıcı Kategori</th>
+              <th>Garanti Edilen Pay</th>
+            </tr>
+            <tr>
+              <td>Çocuklar (Asgari İndirim)</td>
+              <td>Yönlendirme Primesinin %80'i (Yıllık 940,80 CHF)</td>
+            </tr>
+            <tr>
+              <td>Eğitimdeki Genç Yetişkinler</td>
+              <td>Yönlendirme Primesinin %50'si (Yıllık 1.830,00 CHF)</td>
+            </tr>
+          </table>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Hak = Maks(Geçici Sübvansiyon, Yasal Asgari Garanti)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Ödeme Limitleri</h3>
+          <p>Son olarak, hesaplanan hak idari asgari sınıra göre kontrol edilir:</p>
+          <div class="formula-box">
+            Yıllık sübvansiyon &lt; <strong>240 CHF</strong> ise: <strong>Ödeme = 0</strong>
+          </div>
+          <p><small>*Hak ayrıca sigortalının fiilen ödediği prim ile sınırlandırılmıştır.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Önemli Gelir ve Varlık Sınırları:</strong><br />
+        Esas alınacak net gelir (LNA) <strong>80.000 CHF</strong> tutarını aşarsa, Solothurn kantonunda genellikle IPV
+        hakkı yoktur (giriş eşiği), ancak özel zor durumlar veya çok sayıda çocuk olması durumunda istisnalar olabilir.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Ana Sayfaya Dön</a>
+        <a class="btn-link" href="https://www.akso.ch/dienstleistungen/praemienverbilligung-ipv" target="_blank">Resmi
+          AKSO Web Sitesini Ziyaret Edin</a>
+      </div>
+    </div>
+    <footer>
+      <p>Kaynak: AKSO (Solothurn Denkleştirme Fonu) Yönergeleri &amp; Parametreleri 2026 | welfarecalc.ch</p>
+      <p>Yasal Uyarı: Hesaplama matrisi yalnızca bilgilendirme amaçlıdır ve yasal olarak bağlayıcı bir karar teşkil
+        etmez.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

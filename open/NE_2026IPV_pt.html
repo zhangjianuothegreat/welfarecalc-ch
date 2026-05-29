@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo IPV Cantão Neuchâtel 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Como é calculada a redução de prémios (IPV) 2026 no Cantão de Neuchâtel (NE)? Descubra o nosso algoritmo transparente baseado nas categorias S1-S15.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/NE_2026IPV_pt.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NE_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NE_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NE_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NE_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NE_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NE_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NE_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NE_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NE_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NE_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NE_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NE_2026IPV_de.html">
+
+    <meta property="og:title" content="Algoritmo IPV Cantão Neuchâtel 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo para a redução de prémios 2026 em Neuchâtel (S1-S15).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/NE_2026IPV_pt.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da Redução de Prémios Neuchâtel 2026",
+      "description": "Instruções para determinar o direito ao IPV no Cantão NE com base no sistema de classificação S1-S15.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo do rendimento relevante (LNA) incluindo a parte de 30% da fortuna"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Classificação nas classes cantonais S1 a S15"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do subsídio mensal por categoria de pessoa"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DADOS OFICIAIS 2026</div>
+        <h1>Algoritmo IPV: Cantão Neuchâtel (NE)</h1>
+        <p>Divulgação transparente da lógica de cálculo (sistema S1 a S15)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Para garantir o mais alto nível de confiança, divulgamos a arquitetura matemática da nossa calculadora para o Cantão de Neuchâtel. Este algoritmo é baseado nos regulamentos oficiais do Conselho de Estado de 12.11.2025.</p>
+
+        <h2 class="section-title">1. Parâmetros Principais (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Classificação</h4>
+                <div class="param-value">S1 — S15</div>
+                <p><small>Atribuição com base no rendimento relevante (LNA).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Parte da Fortuna</h4>
+                <div class="param-value">30.0 %</div>
+                <p><small>Percentagem dos ativos líquidos adicionada ao rendimento.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Percurso de Cálculo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Rendimento Relevante (LNA)</h3>
+                <p>O LNA (Rendimento determinante) no Cantão NE é determinado da seguinte forma:</p>
+                <div class="formula-box">
+                    <strong>LNA</strong> = (Rendimento líquido - Deduções) + <strong>[30% dos ativos*]</strong>
+                </div>
+                <p><small>*Dedução sobre ativos: CHF 4.000 (Solteiro) / CHF 8.000 (Casal) + CHF 2.000 por criança.</small></p>
+                <p><strong>Importante:</strong> Aplicam-se limites mínimos de rendimento: CHF 15.000 (Solteiro) ou CHF 20.000 (Casal).</p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Prémios de Referência 2026</h3>
+                <p>Estes valores servem de base para o limite dos subsídios:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Categoria</th><th>Prémio Anual</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Adultos</td><td>CHF 7.716 / ano (643 / mês)</td></tr>
+                        <tr><td>Jovens adultos (em formação)</td><td>CHF 5.808 / ano (484 / mês)</td></tr>
+                        <tr><td>Crianças (0-18)</td><td>CHF 1.920 / ano (160 / mês)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Classificação e Subsídio</h3>
+                <p>Com base no LNA, ocorre a atribuição a uma das 15 classes:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Classe S1:</strong> Subsídio mais elevado (ex: Adulto CHF 611/mês)</li>
+                    <li><strong>Classe S15:</strong> Subsídio mais baixo (ex: Adulto CHF 41/mês)</li>
+                    <li><strong>Crianças:</strong> Recebem o prémio de referência completo (CHF 160/mês) em todas as classes S1-S15.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Fatores de Correção</h3>
+                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                    Subsídio final = Subsídio × (1 - % de redução da franquia)
+                </div>
+                <p><small>Específico para NE: Aqueles que escolhem uma franquia elevada recebem um subsídio proporcionalmente reduzido.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Automação no Cantão NE:</strong><br>
+            A partir de 2026, Neuchâtel implementa um sistema "quase-automático". A nossa calculadora ajuda-o a verificar antecipadamente a sua classificação para validar corretamente a sua confirmação do OCAB.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Voltar à Página Inicial</a>
+            <a href="https://www.ne.ch" target="_blank" class="btn-link">Site Oficial do OCAB</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Conselho de Estado do Cantão Neuchâtel & Diretrizes OCAB 2026 | welfarecalc.ch</p>
+        <p>Aviso legal: Esta apresentação serve a transparência algorítmica e não é juridicamente vinculativa.</p>
+    </footer>
+</div>
+
+</body>
+</html>

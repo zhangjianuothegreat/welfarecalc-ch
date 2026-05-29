@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV Algorithm Canton Vaud 2026 | Transparent Calculation (RDU) | welfarecalc.ch</title>
+  <meta
+    content="How is the premium reduction (IPV) 2026 calculated in the Canton of Vaud? Discover the official two-stage model (Subside ordinaire &amp; spécifique) based on the RDU."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV Algorithm Canton Vaud 2026 | Transparent Calculation (RDU)" property="og:title" />
+  <meta
+    content="The exact mathematical algorithm of the premium reduction 2026 in the Canton of Vaud. Official formulas transparently disclosed."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calculation of the premium reduction Vaud 2026",
+      "description": "Step-by-step guide to determining IPV entitlement in the Canton of Vaud using the RDU model.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determination of the RDU (Revenu déterminant unifié) by adding pillar 3a and asset adjustment (6.7%)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculation of the ordinary subsidy (Subside ordinaire) via the cantonal mathematical progression curve."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Review and top-up through the specific subsidy (Subside spécifique), if the remaining premium exceeds 10% of the RDU."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--swiss-red);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .step-body h3 {
+      color: var(--official-blue);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .formula-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1.25rem;
+      border-radius: 6px;
+      margin: 0.75rem 0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table th,
+    .parameter-table td {
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .parameter-table th {
+      background: #f1f5f9;
+      color: var(--official-blue);
+      font-weight: 600;
+    }
+
+    .parameter-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .alert {
+      background: #fef2f2;
+      border-left: 4px solid var(--swiss-red);
+      padding: 1.25rem;
+      border-radius: 6px;
+      color: #991b1b;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      background: #002244;
+    }
+
+    .btn-home {
+      background: #64748b;
+    }
+
+    .btn-home:hover {
+      background: #475569;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="update-tag">OFFICIAL ALGORITHM 2026</span>
+      <h1>Premium Reduction Canton Vaud (VD) 2026</h1>
+      <p>The official two-stage mathematical core for calculating Subside Ordinaire and Spécifique</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+    <div class="content">
+      <p>Unlike cantons with rigid income brackets, the Canton of Vaud uses a highly developed, socially equitable
+        <strong>RDU model (Revenu déterminant unifié)</strong>. The canton's goal is to cover the burden of compulsory
+        health insurance (KVG) to approx. <strong>10% of the relevant income</strong>.</p>
+      <h2 class="section-title">Cantonal Parameters for 2026</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Maximum Monthly Subsidy (Adults)</h4>
+          <div class="param-value">CHF 331.00 / Month</div>
+        </div>
+        <div class="param-card">
+          <h4>Minimum Monthly Subsidy (Adults)</h4>
+          <div class="param-value">CHF 30.00 / Month</div>
+        </div>
+        <div class="param-card">
+          <h4>Asset Adjustment Rate (RDU)</h4>
+          <div class="param-value">6.7% (1/15th of net assets)</div>
+        </div>
+        <div class="param-card">
+          <h4>Deductible Ceiling (Burden)</h4>
+          <div class="param-value">10.0% of RDU</div>
+        </div>
+      </div>
+      <h2 class="section-title">Official Reference Premiums 2026 (OVAM)</h2>
+      <p>The calculation does not consider your actual luxury deductible or supplementary insurance, but the cantonal
+        reference premiums (Primes de référence 2026) set by the Council of State:</p>
+      <table class="parameter-table">
+        <thead>
+          <tr>
+            <th>Age Group (Code)</th>
+            <th>Region 1 (Urban, e.g., Lausanne)</th>
+            <th>Region 2 (Rural)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Adults (26 years and older)</strong></td>
+            <td>CHF 4'212 / year (351.-/month)</td>
+            <td>CHF 3'912 / year (326.-/month)</td>
+          </tr>
+          <tr>
+            <td><strong>Young Adults (19 - 25 years)</strong></td>
+            <td>CHF 2'820 / year (235.-/month)</td>
+            <td>CHF 2'580 / year (215.-/month)</td>
+          </tr>
+          <tr>
+            <td><strong>Children (0 - 18 years)</strong></td>
+            <td>CHF 1'188 / year (99.-/month)</td>
+            <td>CHF 1'068 / year (89.-/month)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="section-title">Step-by-Step Calculation Logic</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Determination of the Adjusted RDU</h3>
+          <p>The cantonal RDU is based on the definitive tax assessment, adjusted for specific Vaud legislation
+            (exclusion of private debts and additions):</p>
+          <div class="formula-box">
+            RDU = Taxable net income <br />
+            + Deductions for payments into pillar 3a <br />
+            + Health insurance premiums deducted for tax purposes <br />
+            + [Available net assets - allowance] × 6.7% <br />
+            - Lump-sum deductions (e.g., married couple deduction: CHF 4'400, child deduction: CHF 1'300)
+          </div>
+          <p><small>*Note: In the Canton of Vaud, private debts or mortgages are NOT considered as a reduction in the
+              IPV asset test!</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Calculation of the Ordinary Subsidy (Subside ordinaire)</h3>
+          <p>The Canton of Vaud uses a logarithmically smoothed, progressive curve function to calculate the ordinary
+            entitlement. For standard UER households, the following mathematical parameters apply:</p>
+          <div class="formula-box">
+            If RDU ≤ CHF 16'000 (Limit C6): <br />
+              Subside_Ordinaire = Maximum reference premium of the household <br /><br />
+            If CHF 16'000 &lt; RDU ≤ CHF 40'000 (Limit A6): <br />
+              Curve Factor = P6 (2.3) &amp; Q6 (0.8) <br />
+              Subside_Ordinaire = Calculated via the sliding cantonal decompression curve formula. <br /><br />
+            Application of legal minimum limits: <br />
+              The monthly ordinary subsidy per adult is set at a minimum of CHF 30.00 and capped at a maximum of CHF
+            331.00.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>The Safety Net: Specific Subsidy (Subside spécifique)</h3>
+          <p>This is the most important correction factor that standard calculators miss. If, after deducting the
+            ordinary subsidy, the remaining premium burden on the household is unreasonably high, the 10% safety net
+            applies:</p>
+          <div class="formula-box">
+            Allowable household premium burden = Total reference premiums of the household <br />
+            Remaining burden = Allowable household premium burden - Subside_Ordinaire_Year <br /><br />
+            Cantonal reasonableness threshold = RDU × 10% <br /><br />
+            If remaining burden &gt; Reasonableness threshold: <br />
+              Subside_Spécifique = Remaining burden - Reasonableness threshold <br />
+            Otherwise: <br />
+              Subside_Spécifique = 0
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Final Total Entitlement &amp; Capping</h3>
+          <p>The definitive payout amount results from the addition of both subsidy components and is limited by the
+            actual, effective premium of the insured person:</p>
+          <div class="formula-box">
+            Entitlement_Absolute = Subside_Ordinaire + Subside_Spécifique <br />
+            Final_Entitlement = Min(Entitlement_Absolute, Effective_Health_Insurance_Premium_Household)
+          </div>
+          <p><small>Amounts under CHF 100.00 per year are not paid out for efficiency reasons (de minimis
+              threshold).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Asset Exclusion Limit (Upper Limit):</strong><br />
+        If the adjusted net assets (without deduction of debts) exceed <strong>CHF 100'000</strong> for single persons
+        or <strong>CHF 160'000</strong> for married couples, the legal entitlement to the premium reduction in the
+        Canton of Vaud expires completely – regardless of how low the RDU income may be.
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Back to Homepage</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie"
+          target="_blank">Official Website Canton VD</a>
+      </div>
+    </div>
+    <footer>
+      <p>Source: General Secretariat of the General Directorate for Social Cohesion (DGCS) &amp; Office vaudois de
+        l'assurance-maladie (OVAM), Canton of Vaud 2026. Provided by <a href="https://www.welfarecalc.ch"
+          target="_blank">welfarecalc.ch</a>.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

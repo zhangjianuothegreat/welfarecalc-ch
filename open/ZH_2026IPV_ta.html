@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IPV அல்காரிதம் சூரிச் கேன்டன் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+    <meta
+        content="2026 ஆம் ஆண்டில் சூரிச் கேன்டனில் பிரீமியம் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? அதிகாரப்பூர்வ SVA தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_ta.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="IPV அல்காரிதம் சூரிச் கேன்டன் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+    <meta content="சூரிச் கேன்டனில் (ZH) 2026 ஆம் ஆண்டிற்கான பிரீமியம் குறைப்புக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/ZH_2026IPV_ta.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "சூரிக் 2026 பிரீமியம் குறைப்பு கணக்கீடு",
+      "description": "ZH கன்டோனில் IPV உரிமையை தீர்மானிப்பதற்கான படி-படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "10% சொத்து நுகர்வு உட்பட பொருந்தக்கூடிய வருமானத்தை (LNA) தீர்மானித்தல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "கன்டோனல் சொத்து-கடுமை வரம்புகளை சரிபார்த்தல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "குறைந்த வருமானம் கொண்ட குடும்பங்களுக்கான பிளவு கணக்கீடு (குழந்தை பாதுகாப்பு விதி)"
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula-box {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
+
+        .highlight-red {
+            color: #be123c;
+            font-weight: bold;
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+            <h1>IPV-அல்காரிதம்: சூரிக் கன்டோன் (ZH)</h1>
+            <p>2026 ஆம் ஆண்டிற்கான கணக்கீட்டு தர்க்கத்தின் வெளிப்படையான வெளிப்பாடு</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+        <div class="content">
+            <p>வெளிப்படைத்தன்மை மூலம் நம்பிக்கை. சூரிக் கன்டோனில் உங்கள் சாத்தியமான பிரீமியம் குறைப்பை (IPV) எங்கள்
+                கால்குலேட்டர் எவ்வாறு தீர்மானிக்கிறது என்பதை இங்கு நாங்கள் வெளிப்படுத்துகிறோம். இந்த அல்காரிதம் SVA
+                சூரிக் மற்றும் 2026 ஆம் ஆண்டிற்கான கன்டோனல் ஒழுங்குமுறையின் சட்டப்பூர்வ விதிமுறைகளை கண்டிப்பாக
+                அடிப்படையாகக் கொண்டது.</p>
+            <h2 class="section-title">1. முக்கிய அளவுருக்கள் (2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>கழிப்பு விகிதம் (சுய பங்கு)</h4>
+                    <div class="param-value">தனிநபர்கள்: 8.4 %<br />குடும்பங்கள்: 10.5 %</div>
+                    <p><small>பொருந்தக்கூடிய வருமானத்தில் சுய பங்காக ஏற்கத்தக்க சதவீத பங்கு.</small>
+                    </p>
+                </div>
+                <div class="param-card">
+                    <h4>சொத்து நுகர்வு விகிதம்</h4>
+                    <div class="param-value">10.0 %</div>
+                    <p><small>வரி விதிக்கக்கூடிய நிகர சொத்தின் (விலக்கு தொகையை கழித்த பின்) வருமானத்துடன் சேர்க்கப்படும்
+                            பங்கு.</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. கணக்கீட்டு முறை</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>பொருந்தக்கூடிய வருமானம் (LNA)</h3>
+                    <p>பொருந்தக்கூடிய வருமானம் உங்கள் பொருளாதார திறனை தீர்மானிக்கிறது மற்றும் வரி தரவுகளை அடிப்படையாகக்
+                        கொண்டது:</p>
+                    <div class="formula-box">
+                        <strong>LNA = [நிகர வருமானம்*] + [10% × (வரி விதிக்கக்கூடிய சொத்து -
+                            சொத்து விலக்கு தொகை)]</strong>
+                    </div>
+                    <p><small>*குறிப்பு: நிகர வருமானம் கன்டோனல் வழிகாட்டுதல்களின்படி சில கழிப்புகளுக்காக (எ.கா., தூண் 2
+                            கொள்முதல் பங்களிப்புகள்) சரிசெய்யப்படுகிறது.</small></p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>திருமண நிலை / வகை</th>
+                                <th>சொத்து விலக்கு தொகை</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>தனிநபர்கள் / ஒற்றை பெற்றோர் குடும்பங்கள்</td>
+                                <td>CHF 75'000</td>
+                            </tr>
+                            <tr>
+                                <td>திருமணமானவர்கள் / தம்பதிகள்</td>
+                                <td>CHF 150'000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>அதிகாரப்பூர்வ குறிப்பு பிரீமியங்கள் 2026</h3>
+                    <p>சூரிக் கன்டோன் நகராட்சிகளை 3 பிரீமியம் பகுதிகளாக பிரிக்கிறது. IPV கணக்கீடு சராசரி பிரீமியத்தில்
+                        70% (திசை பிரீமியம்) அடிப்படையாகக் கொண்டது:</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>பகுதி</th>
+                                <th>பெரியவர்கள் (26 மற்றும் மேல்)</th>
+                                <th>இளம் பெரி. (19-25 பயிற்சியில்)</th>
+                                <th>குழந்தைகள் (0-18)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>பகுதி 1</strong> (எ.கா., சூரிக் நகரம்)</td>
+                                <td>CHF 7'704 / வருடம்</td>
+                                <td>CHF 5'532 / வருடம்</td>
+                                <td>CHF 1'854 / வருடம்</td>
+                            </tr>
+                            <tr>
+                                <td><strong>பகுதி 2</strong> (எ.கா., வின்டர்தர்)</td>
+                                <td>CHF 7'020 / வருடம்</td>
+                                <td>CHF 5'040 / வருடம்</td>
+                                <td>CHF 1'686 / வருடம்</td>
+                            </tr>
+                            <tr>
+                                <td><strong>பகுதி 3</strong> (கிராமப்புற நகராட்சிகள்)</td>
+                                <td>CHF 6'540 / வருடம்</td>
+                                <td>CHF 4'692 / வருடம்</td>
+                                <td>CHF 1'566 / வருடம்</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>சுய பங்கு கணக்கீடு (பிளவு சிறப்பு விதி)</h3>
+                    <p>சுய பங்கு (சுய பங்கு) வருமான நிலைக்கு ஏற்ப வேறுபடுத்தப்பட்ட முறையில் தீர்மானிக்கப்படுகிறது:</p>
+                    <h4 style="margin-top:10px; color:var(--official-blue);">A. நிலையான கணக்கீடு (சாதாரண வருமானம்
+                        உள்ளவர்கள்)
+                    </h4>
+                    <div class="formula-box">
+                        சுய பங்கு = அதிகபட்சம்([மொத்த குறிப்பு பிரீமியம்] × 30%, LNA × கழிப்பு விகிதம்)
+                    </div>
+                    <h4 style="margin-top:15px; color:var(--official-blue);">B. குறைந்த வருமானம் கொண்ட குடும்பங்களுக்கான
+                        சிறப்பு
+                        ஒழுங்குமுறை</h4>
+                    <p>ஒரு குடும்பம் (குழந்தைகள் அல்லது பயிற்சியில் உள்ள இளைஞர்களுடன்) கன்டோனல் வருமான வரம்புகளுக்குக்
+                        கீழே இருந்தால் (<strong>CHF 70'500</strong> பயிற்சி இல்லாமல் / <strong>CHF 94'000</strong>
+                        பயிற்சியுடன்), சட்டப்பூர்வ <strong>குழந்தை பாதுகாப்பு</strong> பிளவு முறை மூலம்
+                        செயல்படுத்தப்படுகிறது:
+                    </p>
+                    <ul style="margin-left:20px; font-size:0.95rem; color:#475569;">
+                        <li><strong>குழந்தைகள்:</strong> அவர்களின் குறிப்பு பிரீமியத்தில் 20% நிலையான சுய பங்கை மட்டுமே
+                            ஏற்கிறார்கள்.</li>
+                        <li><strong>பயிற்சியில் உள்ள இளம் பெரியவர்கள்:</strong> அவர்களின் குறிப்பு பிரீமியத்தில் 50%
+                            குறைக்கப்பட்ட சுய பங்கை ஏற்கிறார்கள்.</li>
+                        <li><strong>பெரியவர்கள்:</strong> மீதமுள்ள வருமான கழிப்பை ஏற்கிறார்கள், குறைந்தபட்சம்
+                            பெரியவர்களின் குறிப்பு பிரீமியத்தில் 30% ஆகும்.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                    <h3>இறுதி உரிமை (IPV நன்மை)</h3>
+                    <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                        கோட்பாட்டு உரிமை = அதிகபட்சம்(0, [மொத்த குறிப்பு பிரீமியங்கள்] - [மொத்த சுய பங்கு])
+                    </div>
+                    <p><small>பயனுள்ள IPV நன்மை உண்மையில் சுகாதார காப்பீட்டு நிறுவனத்திற்கு செலுத்தப்பட்ட வருடாந்திர
+                            பிரீமியத்தால் வரையறுக்கப்படுகிறது. கட்டணம் மாதந்தோறும் (முழு பிராங்குகளாக வட்டமிடப்பட்டு)
+                            செய்யப்படுகிறது.</small></p>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>முழுமையான சொத்து-கடுமை வரம்பை கவனிக்கவும்:</strong><br />
+                சூரிக் கன்டோனில், வரி விதிக்கக்கூடிய நிகர சொத்து <strong>CHF 150'000</strong> (தனிநபர்களுக்கு) அல்லது
+                <strong>CHF 300'000</strong> (திருமணமான தம்பதிகளுக்கு) ஐ தாண்டினால், தற்போதைய வருமானம் எவ்வளவு குறைவாக
+                இருந்தாலும், IPV க்கான எந்த உரிமையும் தானாகவே முடிவடைகிறது.
+            </div>
+            <div style="text-align: center;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்பு பக்கத்திற்குத்
+                    திரும்பு</a>
+                <a class="btn-link" href="https://svazurich.ch/ipv" target="_blank">அதிகாரப்பூர்வ SVA சூரிக்
+                    வலைத்தளம்</a>
+            </div>
+        </div>
+        <footer>
+            <p>ஆதாரம்: SVA சூரிக் வழிகாட்டுதல்கள் &amp; கன்டோனல் ஒழுங்குமுறைகள் 2026 | welfarecalc.ch ஆல் வழங்கப்பட்டது
+            </p>
+            <p>சட்ட அறிவிப்பு: இந்த சுருக்கம் தகவல் நோக்கங்களுக்காக மட்டுமே மற்றும் செயல்படுத்தக்கூடிய சட்ட உரிமையை
+                உருவாக்காது.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

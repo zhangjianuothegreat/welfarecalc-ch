@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Algorithme d'aide d'urgence Canton de Schwytz 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta
+        content="Comment est calculée l'aide d'urgence 2026 dans le canton de Schwytz (SZ) ? Algorithme officiel basé sur la loi sur les migrations et la dernière réglementation des cartes de paiement 2026."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_fr.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algorithme d'aide d'urgence Canton de Schwytz 2026 | Calcul transparent" property="og:title" />
+    <meta
+        content="Logique de calcul officielle pour l'aide d'urgence 2026 dans le canton de Schwytz, y compris la carte de paiement sans espèces."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/SZ_2026nothilfe_fr.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de l'aide d'urgence Schwyz 2026",
+      "description": "Guide étape par étape pour calculer l'aide d'urgence légale dans le canton de Schwyz en tenant compte de l'hébergement collectif et de la carte de paiement.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du taux journalier pour adulte basé sur le facteur de couple"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ajout de la allocation pour enfants incluant une dégression progressive à partir du 3ème enfant"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Attribution du montant total sur la carte de paiement électronique du canton de Schwyz"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ Einheitlicher Core-Stil (Identisch mit AG und AI) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+            --card-warning: #fffbeb;
+            --border-warning: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: var(--card-warning);
+            border: 1px solid #fef3c7;
+            border-left: 5px solid var(--border-warning);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-danger {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-left: 5px solid var(--swiss-red);
+            color: #991b1b;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo Rechner */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+        }
+
+        .action-area {
+            text-align: right;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-calc {
+            background: var(--swiss-red);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-calc:hover {
+            background: #b91c1c;
+        }
+
+        .result-panel {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .result-title {
+            font-weight: bold;
+            color: #166534;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .amount-big {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #15803d;
+            margin: 0.5rem 0;
+        }
+
+        .steps-detail {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="update-tag">STANDARD CANTONAL OFFICIEL : 2026</span>
+            <h1>Algorithme d'aide d'urgence Canton de Schwyz (SZ)</h1>
+            <p>Divulgation transparente du modèle de calcul mathématique conformément à la loi sur les migrations (MigG)
+            </p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+        <div class="content">
+            <h3 class="section-title">1. Bases légales &amp; Directives</h3>
+            <p>L'octroi de l'aide d'urgence dans le canton de Schwyz repose sur l'art. 12 de la Constitution fédérale
+                (Cst.) ainsi que sur la législation cantonale du Conseil cantonal de Schwyz. Contrairement à l'aide
+                sociale ordinaire pour les requérants d'asile, l'aide d'urgence ne couvre que la garantie de l'existence
+                minimale.</p>
+            <div class="alert alert-danger">
+                <strong>⚠️ Modification légale importante à partir d'avril 2026 :</strong><br />
+                Conformément à la loi sur les migrations révisée par le Conseil cantonal de Schwyz (introduction de la
+                monnaie électronique sans espèces pour les requérants d'asile et les personnes renvoyées), les avoirs
+                d'aide d'urgence calculés ne seront <strong>en principe plus versés en espèces</strong>. Les montants
+                seront entièrement crédités sur une <strong>carte de paiement électronique (carte de débit)</strong>.
+                Les paiements en espèces sont limités à des exceptions minimes (par exemple, billets de bus).
+            </div>
+            <h3 class="section-title">2. Paramètres système 2026 (Hébergement collectif)</h3>
+            <p>Étant donné que les requérants d'asile déboutés dans le canton de Schwyz sont hébergés dans des
+                hébergements collectifs cantonaux (par exemple, le centre d'aide d'urgence de Kaltbach), les prestations
+                en nature pour le logement et l'infrastructure sont prioritaires. Les taux journaliers pour les besoins
+                personnels sont fixés comme suit :</p>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Taux journalier de base (personne seule)</h4>
+                    <div class="param-value">CHF 8.00 / jour</div>
+                </div>
+                <div class="param-card">
+                    <h4>Facteur de couple (couple_factor)</h4>
+                    <div class="param-value">1.68 (CHF 13.44 pour les couples)</div>
+                </div>
+                <div class="param-card">
+                    <h4>Allocation pour enfants (Enfants 1 &amp; 2)</h4>
+                    <div class="param-value">CHF 4.16 / jour (Facteur 0.52)</div>
+                </div>
+                <div class="param-card">
+                    <h4>Dégression à partir du 3ème enfant</h4>
+                    <div class="param-value">Facteur 0.10 (Facteur bonus)</div>
+                </div>
+            </div>
+            <h3 class="section-title">3. L'algorithme de calcul mathématique</h3>
+            <p>La détermination du droit mensuel à l'aide d'urgence s'effectue via une boucle mathématique en trois
+                étapes :</p>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <strong>Calcul du montant de base pour adulte ($A_{daily}$)</strong>
+                    <p>En fonction de la structure du ménage (personne seule ou couple marié/concubinage), le facteur
+                        dégressif est appliqué :</p>
+                    <div class="formula">
+                        Si adults == 1 : A_daily = 8.00 <br />
+                        Si adults &gt;= 2 : A_daily = 8.00 * 1.68 + (adults - 2) * 8.00
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <strong>Calcul de l'allocation pour enfants ($C_{daily}$)</strong>
+                    <p>Pour les deux premiers enfants, l'allocation régulière (facteur 0.52) est calculée. À partir du
+                        3ème enfant, une réduction dégressive s'applique, pour laquelle un facteur bonus de 0.10 est
+                        ajouté pour chaque enfant supplémentaire :</p>
+                    <div class="formula">
+                        Si children &lt;= 2 : C_daily = children * (8.00 * 0.52)<br />
+                        Si children &gt; 2 : C_daily = 2 * (8.00 * 0.52) + (children - 2) * (8.00 * 0.10)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <strong>Projection temporelle et arrondi commercial</strong>
+                    <p>L'aide d'urgence dans le canton de Schwyz est accordée au jour le jour. Pour la planification
+                        mensuelle standard dans le système, la valeur moyenne exacte de 30.42 jours par mois est
+                        utilisée et arrondie commercialement.</p>
+                    <div class="formula">
+                        Total_Mois_Brut = (A_daily + C_daily) * 30.42 <br />
+                        Final_Mois = Math.round(Total_Mois_Brut)
+                    </div>
+                </div>
+            </div>
+            <h3 class="section-title">4. Validation interactive (Algorithme en direct)</h3>
+            <p>Utilisez ce panneau de test pour vérifier directement l'exactitude mathématique du code exécuté en
+                backend de welfarecalc.ch.</p>
+            <div class="demo-card">
+                <div class="demo-header">Simulateur d'algorithme SZ</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="adultsCount">Nombre d'adultes dans le ménage</label>
+                            <input id="adultsCount" max="10" min="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label for="childrenCount">Nombre d'enfants (moins de 18 ans)</label>
+                            <input id="childrenCount" max="15" min="0" type="number" value="0" />
+                        </div>
+                    </div>
+                    <div class="action-area">
+                        <button class="btn-calc" id="runCalcBtn" type="button">Exécuter l'algorithme</button>
+                    </div>
+                    <div class="result-panel" id="liveResultPanel">
+                        <div class="result-title">🎯 Avoir d'aide d'urgence calculé (Mois) :</div>
+                        <div class="amount-big" id="monthlyAmountDisplay">0.00 CHF</div>
+                        <p style="font-size:0.85rem; color:#15803d; font-weight:bold; margin-bottom:10px;">
+                            💳 Ce montant est entièrement transféré sur la carte de paiement schwytzoise conformément à
+                            la loi cantonale.
+                        </p>
+                        <strong>Protocole mathématique :</strong>
+                        <div class="steps-detail" id="stepsDetail">
+                            -- Effectuez le calcul --
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert" style="background:#f0fdfa; border-left-color:#0d9488; text-align:center;">
+                <strong>Garantie de transparence :</strong> Ce code source reflète exactement la logique de calcul qui
+                est implémentée sur nos serveurs suisses pour le traitement des données du canton de Schwyz. Aucune
+                donnée personnelle n'est stockée ou transmise à des tiers.
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch">Vers la page principale</a>
+                <a class="btn-link" href="https://www.sz.ch" target="_blank">Site officiel du Canton de SZ</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 welfarecalc.ch — Outil de calcul suisse indépendant pour les prestations sociales. Ce n'est pas un
+                site web officiel d'une autorité.</p>
+            <p>Note de droit d'auteur : La divulgation sert la transparence et le renforcement de la confiance sur
+                Internet.</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            "use strict";
+
+            // Paramètres officiels validés du canton de Schwyz pour 2026
+            const SZ_PARAMS = {
+                daily_cash: 8.00,             // Taux journalier de base dans le canton de Schwyz
+                couple_factor: 1.68,          // Facteur d'échelle pour les couples
+                child_addon_factor: 0.52,     // Facteur pour les deux premiers enfants (CHF 4.16)
+                child_from3_bonus_factor: 0.10, // Facteur dégressif à partir du 3ème enfant (CHF 0.80)
+                days_per_month: 30.42         // Diviseur mensuel suisse standardisé
+            };
+
+            function computeSZNothilfe(adults, children) {
+                // Étape 1 : Calcul des adultes
+                let adultDaily = 0;
+                if (adults === 1) {
+                    adultDaily = SZ_PARAMS.daily_cash;
+                } else if (adults >= 2) {
+                    // Le premier couple est mis à l'échelle avec couple_factor, chaque adulte supplémentaire reçoit le taux de base complet
+                    adultDaily = (SZ_PARAMS.daily_cash * SZ_PARAMS.couple_factor) + ((adults - 2) * SZ_PARAMS.daily_cash);
+                }
+
+                // Étape 2 : Calcul des enfants (avec échelonnement dégressif)
+                let childDaily = 0;
+                if (children > 0) {
+                    if (children <= 2) {
+                        childDaily = children * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_addon_factor);
+                    } else {
+                        // Les 2 premiers enfants reçoivent l'allocation complète
+                        const baseChildrenDaily = 2 * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_addon_factor);
+                        // Chaque enfant supplémentaire reçoit le taux bonus réduit
+                        const extraChildrenDaily = (children - 2) * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_from3_bonus_factor);
+                        childDaily = baseChildrenDaily + extraChildrenDaily;
+                    }
+                }
+
+                // Étape 3 : Agrégation et projection
+                const totalDaily = adultDaily + childDaily;
+                const rawMonthly = totalDaily * SZ_PARAMS.days_per_month;
+                const roundedMonthly = Math.round(rawMonthly); // Arrondi commercial au franc entier
+
+                return {
+                    adultDaily: adultDaily,
+                    childDaily: childDaily,
+                    totalDaily: totalDaily,
+                    rawMonthly: rawMonthly,
+                    roundedMonthly: roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+
+                // Validation des entrées
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) { adults = 1; adultsInput.value = 1; }
+                if (isNaN(children) || children < 0) { children = 0; childrenInput.value = 0; }
+
+                // Exécution de l'algorithme
+                const res = computeSZNothilfe(adults, children);
+
+                // Génération de la sortie HTML
+                const stepsHtml = `
+                <strong>📌 Étape 1 – Adultes :</strong> CHF ${res.adultDaily.toFixed(2)} / jour (dégression de couple appliquée)<br>
+                <strong>📌 Étape 2 – Enfants :</strong> CHF ${res.childDaily.toFixed(2)} / jour (dégression à partir du 3ème enfant prise en compte)<br>
+                <strong>📌 Taux journalier total :</strong> CHF ${res.totalDaily.toFixed(2)} / jour<br>
+                <strong>📌 Projection mensuelle :</strong> CHF ${res.totalDaily.toFixed(2)} × 30.42 jours = CHF ${res.rawMonthly.toFixed(2)}<br>
+                <strong>💰 Arrondi commercial :</strong> CHF ${res.roundedMonthly}.00 (crédit sur carte de paiement)
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly}.00 CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            // Liaison des écouteurs d'événements
+            document.getElementById('runCalcBtn').addEventListener('click', updateDemo);
+
+            // Amélioration UX optionnelle : Mise à jour automatique lors de la saisie
+            document.getElementById('adultsCount').addEventListener('input', updateDemo);
+            document.getElementById('childrenCount').addEventListener('input', updateDemo);
+        })();
+    </script>
+</body>
+
+</html>

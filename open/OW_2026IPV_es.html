@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo IPV Cantón de Obwalden 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calcula la reducción de primas (IPV) en el Cantón de Obwalden para 2026? Descubra nuestro algoritmo transparente basado en las directrices oficiales de AKOW.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/OW_2026IPV_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/OW_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/OW_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/OW_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/OW_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/OW_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/OW_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/OW_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/OW_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/OW_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/OW_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/OW_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/OW_2026IPV_de.html">
+
+    <meta property="og:title" content="Algoritmo IPV Cantón de Obwalden 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo para la reducción de primas (IPV) 2026 en Obwalden (OW).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/OW_2026IPV_es.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Reducción de Primas Obwalden 2026",
+      "description": "Guía paso a paso para determinar el derecho a IPV en el Cantón de Obwalden.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinar la renta computable incluyendo la contribución de activos"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificar los límites cantonales de ingresos (50k / 75k CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcular la retención propia progresiva y las primas estándar"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Aplicar las garantías mínimas legales para niños y jóvenes adultos"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; line-height: 1.5; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; font-size: 0.95rem; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem; transition: background 0.2s; }
+        .btn-link:hover { opacity: 0.9; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DATOS OFICIALES 2026</div>
+        <h1>Algoritmo IPV: Cantón de Obwalden (OW)</h1>
+        <p>Cálculo transparente de su reducción de primas para el año de derecho 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Confianza a través de la transparencia. Aquí revelamos cómo nuestra calculadora determina su posible reducción de primas (IPV) en el Cantón de Obwalden (OW). Este algoritmo se basa estrictamente en las directrices legales de la Ausgleichskasse Obwalden (AKOW) para el año 2026.</p>
+
+        <h2 class="section-title">1. Parámetros Clave (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Retención propia progresiva</h4>
+                <div class="param-value">Desde tasa base 9.50%</div>
+                <p><small>Aumenta en 0.01% por cada CHF 100 de renta computable por encima de CHF 35,000.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Recargo por patrimonio</h4>
+                <div class="param-value">10.0%</div>
+                <p><small>Parte de los activos imponibles añadida a la renta.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Metodología de Cálculo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Renta Computable</h3>
+                <p>Primero, determinamos su capacidad económica basada en las deducciones cantonales:</p>
+                <div class="formula-box">
+                    <strong>Renta Computable</strong> = (Ingreso bruto - Deducciones totales) + 10% de los activos imponibles
+                </div>
+                <table class="data-table">
+                    <tr><th>Categoría / Tipo de deducción</th><th>Asignación / Deducción (2026)</th></tr>
+                    <tr><td>Deducción por cónyuge / pareja registrada</td><td>CHF 7,000</td></tr>
+                    <tr><td>Deducción por hijo/a o joven en formación</td><td>CHF 7,000</td></tr>
+                    <tr><td>Deducciones legales admisibles</td><td>Gastos profesionales, contribuciones de manutención, deducciones de seguros, costes médicos, etc.</td></tr>
+                    <tr><td>Valor mínimo de renta</td><td>CHF 0 (Los valores negativos se fijan a 0)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Límites Cantonales de Ingresos (Umbrales)</h3>
+                <p>Si la renta computable supera los siguientes umbrales, no existe derecho legal a la IPV:</p>
+                <table class="data-table">
+                    <tr><th>Tipo de hogar</th><th>Límite de ingresos (2026)</th><th>Estado del derecho si se supera</th></tr>
+                    <tr><td>Personas solas / parejas <strong>sin hijos</strong></td><td>CHF 50,000</td><td>Sin derecho (Subsidio = 0)</td></tr>
+                    <tr><td>Familias / padres solteros <strong>con hijos</strong></td><td>CHF 75,000</td><td>Sin derecho (Subsidio = 0)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Primas Estándar Totales 2026</h3>
+                <p>El Cantón de Obwalden define valores anuales de referencia (primas estándar) para el seguro obligatorio de salud:</p>
+                <table class="data-table">
+                    <tr><th>Grupo de edad / Situación</th><th>Prima Estándar (2026)</th></tr>
+                    <tr><td>Adultos (26 años y más)</td><td>CHF 5,018.40 / año</td></tr>
+                    <tr><td>Jóvenes adultos (19-25 años, en formación)</td><td>CHF 3,570.00 / año</td></tr>
+                    <tr><td>Niños (0-18 años)</td><td>CHF 1,380.00 / año</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Retención Propia Progresiva y Derecho Teórico</h3>
+                <p>La contribución razonable propia (retención propia) aumenta progresivamente con el aumento de los ingresos:</p>
+                <div class="formula-box">
+                    Si ingresos ≤ CHF 35,000:<br>
+                    <strong>Tasa = 9.50%</strong><br><br>
+                    Si ingresos > CHF 35,000:<br>
+                    <strong>Tasa = 9.50% + (Piso((Ingresos - 35,000) / 100) × 0.01%)</strong><br><br>
+                    <strong>Retención propia</strong> = Renta Computable × Tasa<br>
+                    <strong>Derecho Teórico</strong> = Máx(0, Primas Estándar Totales - Retención propia)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Garantías Mínimas Legales (Subsidio Mínimo)</h3>
+                <p>Para aliviar específicamente a familias y jóvenes adultos, se aplican subsidios mínimos fijos por debajo de ciertos umbrales de ingresos:</p>
+                <table class="data-table">
+                    <tr><th>Grupo objetivo</th><th>Condición (Renta Computable)</th><th>Subsidio Mínimo Garantizado</th></tr>
+                    <tr><td>Niños (1.er a 3.er hijo)</td><td>Por debajo de CHF 50,000</td><td><strong>80%</strong> de la prima estándar infantil (CHF 1,104 / niño)</td></tr>
+                    <tr><td>Niños (a partir del 4.º hijo)</td><td>Por debajo de CHF 50,000</td><td><strong>100%</strong> de la prima estándar infantil (CHF 1,380 / niño)</td></tr>
+                    <tr><td>Jóvenes adultos (en formación)</td><td>Por debajo de CHF 25,000</td><td><strong>50%</strong> de la prima estándar juvenil (CHF 1,785 / persona)</td></tr>
+                </table>
+                <div class="formula-box" style="background: #fff1f2; margin-top: 15px;">
+                    <span class="highlight-red">Subsidio Calculado</span> = Máx(Derecho Teórico, Garantía Mínima Legal)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">6</div>
+            <div class="step-body">
+                <h3>Limitación Final y Desembolso</h3>
+                <p>El monto final del pago de IPV se limita de la siguiente manera:</p>
+                <div class="formula-box">
+                    • <strong>Beneficio Anual</strong> = Mín(Subsidio Calculado, Prima Real del Seguro de Salud)<br>
+                    • <strong>Beneficio Mensual</strong> = Beneficio Anual / 12 (redondeado al franco más cercano)
+                </div>
+                <p><small>Nota: En el Cantón de Obwalden, el beneficio generalmente se paga directamente mediante la compensación con su compañía de seguros de salud.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Particularidades para el año de derecho 2026:</strong><br>
+            • <strong>13ª renta AVS:</strong> Según la ordenanza cantonal, la 13ª renta de vejez AVS pagada a partir de 2026 <strong>no tiene ningún impacto negativo</strong> en el derecho a IPV.<br>
+            • <strong>Renta hipotética:</strong> Para las personas aseguradas con una carga laboral voluntaria a tiempo parcial, la renta para determinar la necesidad puede ser extrapolada a una carga laboral hipotética a tiempo completo (según disposiciones revisadas a partir de 2026).
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Volver a la Página Principal</a>
+            <a href="https://www.akow.ch/dienstleistungen/praemienverbilligung" target="_blank" class="btn-link">Visitar Sitio Oficial AKOW</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuente: Directrices de la Ausgleichskasse Obwalden (AKOW) y resoluciones del Consejo Cantonal 2026 | Proporcionado por welfarecalc.ch</p>
+        <p>Aviso legal: Este resumen algorítmico es solo para fines informativos y no constituye un derecho legal.</p>
+    </footer>
+</div>
+
+</body>
+</html>

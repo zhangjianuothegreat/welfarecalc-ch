@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bern Kantonu 2026 Acil Yardım Algoritması | Şeffaf Hesaplama | welfarecalc.ch</title>
+    <meta name="description" content="Bern Kantonu'nda 2026 yılı için acil yardım nasıl hesaplanır? Resmi kanton yönergeleri ve yasalarına (EG AIG ve AsylG) dayanan şeffaf algoritmamızı keşfedin.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_de.html">
+
+    <!-- Open Graph / Sosyal Paylaşım -->
+    <meta property="og:title" content="Bern Kantonu 2026 Acil Yardım Algoritması | Şeffaf Hesaplama">
+    <meta property="og:description" content="Bern Kantonu 2026 acil yardım için resmi hesaplama mantığı, yönergeler ve yasalar.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BE_2026nothilfe_tr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Schema Yapılandırılmış Veri (JSON-LD) BE algoritma açıklaması için -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Bern Kantonu 2026 Acil Yardım Hesaplaması",
+      "description": "Azalan hane halkı modelini kullanarak Bern Kantonu'nda acil yardımın adım adım hesaplanması.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Toplam kişi sayısını belirleyin (yetişkinler + çocuklar)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Hane halkı büyüklüğüne göre azalma matrisini uygulayın (kişi başına günlük ücret)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Aylık ekstrapolasyon (30.42 gün) ve 0.05 CHF'ye yuvarlama"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Tutarlı Stil ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; }
+        .input-item input:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 0.5rem; color: #475569; background: transparent; padding: 0.5rem 0 0 0; }
+        @media (max-width: 720px) {
+            .content { padding: 1.5rem; }
+            .step-box { padding-left: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">RESMİ VERİ 2026 · Acil Yardım BE</div>
+        <h1>Acil Yardım Algoritması: Bern Kantonu</h1>
+        <p>2026 kanton yönergelerine göre hesaplama mantığının şeffaf sunumu (Azalan Hane Modeli)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Güven, şeffaflık yoluyla olur. Bern Kantonu'nda sınır dışı kararı olan kişiler için acil yardım, azalan hane halkı modeli kullanılarak hesaplanır. İşte 2026 yılına yönelik tam algoritmayı açıklıyoruz — EG AIG ve AsylG yasalarına ve Sığınma ve Mülteci İşleri Koordinasyon Ofisi'nin uzman bilgilerine dayanmaktadır.</p>
+
+        <h2 class="section-title">1. Sistem Parametreleri ve 2026 Tarifeleri</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Temel Günlük Ücret (N ≤ 3)</h4>
+                <div class="param-value">CHF 10.00 / gün kişi başı</div>
+                <p><small>1 ila 3 kişilik haneler için (azalma yok).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>4. Kişiden İtibaren Azalma</h4>
+                <div class="param-value">- CHF 0.50 ek kişi başı</div>
+                <p><small>4 kişiden itibaren kişi başı günlük ücret kademeli olarak azalır.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Sınır Tarifesi (N ≥ 8)</h4>
+                <div class="param-value">+ CHF 4.00 ekstra kişi başı</div>
+                <p><small>7 kişi için baz CHF 56.00, ardından azalan artış.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Hesaplama Adımları (Adım Adım)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Hane Halkı Büyüklüğünü Belirleyin</h3>
+                <p>Hesaplama, aynı konaklama birimindeki desteklenen tüm kişilerin (yetişkinler + çocuklar) toplam sayısına dayanır. Bern Kantonu acil yardımda sabit oranlı azalan sistem kullandığından çocuklar yetişkinlerle aynı şekilde sayılır.</p>
+                <div class="formula">
+                    N = Yetişkin sayısı + Çocuk sayısı
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Azalma Matrisini Uygulayın (Günlük Ücret)</h3>
+                <p>Hane halkı büyüklüğüne bağlı olarak, toplam günlük tutar aşağıdaki kamu düzenlemesine göre hesaplanır:</p>
+                <div class="formula">
+                    Eğer N ≤ 3: Günlük ücret = N × 10.00<br>
+                    Eğer 4 ≤ N ≤ 7: Günlük ücret = N × (10.00 - (N - 3) × 0.50)<br>
+                    Eğer N ≥ 8: Günlük ücret = 56.00 + (N - 7) × 4.00
+                </div>
+                <p><small>Örnek 4 kişi → 4 × 9.50 CHF = 38.00 CHF/gün; 5 kişi → 5 × 9.00 CHF = 45.00 CHF/gün; 8 kişi → 56.00 CHF + 4.00 = 60.00 CHF/gün.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Aylık Ekstrapolasyon ve Yuvarlama</h3>
+                <p>Toplam günlük tutar, 30.42 (aylık ortalama gün sayısı) ile çarpılır. Ardından, İsviçre sosyal yardım uygulamasında alışılageldiği üzere 0.05 CHF'ye (5 sent) ticari yuvarlama uygulanır.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Aylık yardım = YUVARLA( (Toplam günlük tutar × 30.42) ; 0.05 )
+                </div>
+                <table class="data-table">
+                    <thead><tr><th>Yuvarlama Kuralı</th><th>Örnek</th></tr></thead>
+                    <tbody>
+                        <tr><td>En yakın 0.05 CHF'ye</td><td>247.83 → 247.85 CHF</td></tr>
+                        <tr><td>0.025'in altında aşağı yuvarla</td><td>312.52 → 312.50 CHF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Bern Kantonu'nda acil yardıma ilişkin önemli ek bilgiler:</strong><br>
+            • Acil yardım öncelikle ayni yardımlar (barınma, yemek) şeklinde sağlanır; nakit yardım en düşük seviyede tutulur.<br>
+            • Bern Kantonu'nda 7'den fazla kişiden oluşan haneler için özel bir kural geçerlidir (7 kişi için baz 56.00 CHF/gün, ardından ek kişi başı 4.00 CHF).<br>
+            • İkamet izni olmayan ve kesinleşmiş sınır dışı kararı bulunan kişiler yalnızca acil yardım alma hakkına sahiptir, olağan sosyal yardım alamazlar.
+        </div>
+
+        <h2 class="section-title">3. Veri Kaynakları ve Yasal Dayanak</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Kanton Yasası:</strong> Sığınma ve Mülteci Konularında Sosyal Yardım Yasası (GSA) ve Yabancılar ve Entegrasyon Yasası ile Sığınma Yasası'na Giriş Yasası (EG AIG ve AsylG).</li>
+            <li><strong>Uygulama Uygulaması:</strong> Bern Kantonu Sığınma ve Mülteci İşleri Koordinasyon Ofisi'nin (KKF) yönergeleri ve uzman bilgileri.</li>
+            <li><strong>Subsidiarite:</strong> Temel tıbbi bakım ve fiziksel barınma (ayni yardımlar), geri dönüş merkezindeki yetkili kuruluşlar tarafından doğrudan sağlanır.</li>
+            <li><strong>WelfareCalc – Veri durumu:</strong> Ocak 2026, tüm parametreler resmi olarak incelenmiştir.</li>
+        </ul>
+
+        <!-- Canlı Demo / etkileşimli hesaplayıcı (tam entegre stil) -->
+        <div class="demo-card">
+            <div class="demo-header">🧪 Şeffaflık Kontrolü: Bern Kantonu Canlı Acil Yardım Hesaplayıcısı</div>
+            <div class="demo-body">
+                <p>Resmi algoritmaya (Azalan Model) göre Bern Kantonu (2026) için hesaplamayı simüle edin.</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Yetişkin sayısı</label>
+                        <input type="number" id="adultsCount" value="1" min="1" step="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Çocuk sayısı (0-17 yaş)</label>
+                        <input type="number" id="childrenCount" value="0" min="0" step="1">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Algoritmayı başlat</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Hesaplama kanıtı (Adım 1–3)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(5 sentime yuvarlanmış aylık acil yardım tutarı)</span></div>
+                    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Toplu konaklama, azalan hane ölçeklendirmesine dayanmaktadır. Nihai hesaplama yetkili makam tarafından yapılır.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Ana sayfaya dön</a>
+            <a href="https://www.be.ch/de/start" target="_blank" class="btn-link">Resmi BE sitesi</a>
+            <a href="https://www.skos.ch" target="_blank" class="btn-link">SKOS Yönergeleri</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kaynak: Bern Kantonu – EG AIG ve AsylG, KKF Sığınma ve Mülteci İşleri Yönergeleri 2026</p>
+        <p>welfarecalc.ch tarafından sağlanmıştır | Bu bilgi şeffaflık amacı taşır ve yasal olarak bağlayıcı tavsiye yerine geçmez.</p>
+        <p>© 2026 welfarecalc.ch – İsviçre için açık algoritmalar</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        // Bern'e özgü azalma matrisine göre hesaplama (değişmeyen algoritma)
+        function computeBENothilfe(adults, children) {
+            const totalPersons = adults + children;
+            let dailyTotal = 0;
+            let stepText = "";
+
+            if (totalPersons <= 3) {
+                dailyTotal = totalPersons * 10.00;
+                stepText = `[Kural 1] Hanede ${totalPersons} kişi (≤ 3):\n  ${totalPersons} × 10.00 CHF = ${dailyTotal.toFixed(2)} CHF / gün`;
+            } else if (totalPersons === 4) {
+                dailyTotal = 4 * 9.50;
+                stepText = `[Kural 2] Hanede 4 kişi (ücret kişi başı 9.50 CHF'ye düşer):\n  4 × 9.50 CHF = ${dailyTotal.toFixed(2)} CHF / gün`;
+            } else if (totalPersons === 5) {
+                dailyTotal = 5 * 9.00;
+                stepText = `[Kural 2] Hanede 5 kişi (ücret kişi başı 9.00 CHF'ye düşer):\n  5 × 9.00 CHF = ${dailyTotal.toFixed(2)} CHF / gün`;
+            } else if (totalPersons === 6) {
+                dailyTotal = 6 * 8.50;
+                stepText = `[Kural 2] Hanede 6 kişi (ücret kişi başı 8.50 CHF'ye düşer):\n  6 × 8.50 CHF = ${dailyTotal.toFixed(2)} CHF / gün`;
+            } else if (totalPersons === 7) {
+                dailyTotal = 7 * 8.00;
+                stepText = `[Kural 2] Hanede 7 kişi (ücret kişi başı 8.00 CHF'ye düşer):\n  7 × 8.00 CHF = ${dailyTotal.toFixed(2)} CHF / gün`;
+            } else {
+                const extra = totalPersons - 7;
+                dailyTotal = 56.00 + (extra * 4.00);
+                stepText = `[Kural 3] Hanede ${totalPersons} kişi (≥ 8):\n  7 kişi için baz = 56.00 CHF\n  + ${extra} ek kişi × 4.00 CHF = ${(extra*4).toFixed(2)} CHF\n  Toplam günlük ücret = ${dailyTotal.toFixed(2)} CHF / gün`;
+            }
+
+            const avgDaysMonth = 30.42;
+            const rawMonthly = dailyTotal * avgDaysMonth;
+            // 0.05 CHF'ye (5 sent) yuvarlama standart uygulama
+            const roundedMonthly = Math.round(rawMonthly * 20) / 20;
+
+            return {
+                totalPersons,
+                dailyTotal,
+                stepText,
+                rawMonthly,
+                finalFormatted: roundedMonthly.toFixed(2)
+            };
+        }
+        
+        function updateDemo() {
+            const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+            const children = parseInt(document.getElementById('childrenCount').value) || 0;
+            
+            const result = computeBENothilfe(adults, children);
+            
+            // Detaylı adım gösterimi
+            const stepsHtml = `
+                <strong>📌 Adım 1 – Hane halkı değerlendirmesi:</strong> ${adults} yetişkin, ${children} çocuk → Toplam N = ${result.totalPersons}<br>
+                <strong>📌 Adım 2 – Uygulanan azalma matrisi:</strong><br>${result.stepText.replace(/\n/g, '<br>')}<br>
+                <strong>📌 Adım 3 – Aylık faktör ekstrapolasyonu (30.42 gün):</strong> ${result.dailyTotal.toFixed(2)} CHF × 30.42 = ${result.rawMonthly.toFixed(4)} CHF<br>
+                <strong>💰 Kanton standardına göre en yakın 5 sentime yuvarlama:</strong> ${result.finalFormatted} CHF
+            `;
+            
+            const stepsDiv = document.getElementById('stepsDetail');
+            if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+            
+            const amountSpan = document.getElementById('monthlyAmountDisplay');
+            if (amountSpan) amountSpan.innerText = `${result.finalFormatted} CHF`;
+            
+            const resultPanel = document.getElementById('liveResultPanel');
+            if (resultPanel) resultPanel.style.display = 'block';
+        }
+        
+        // Olay yöneticileri
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            //updateDemo();
+        });
+        
+        const adultsField = document.getElementById('adultsCount');
+        const childrenField = document.getElementById('childrenCount');
+        if (adultsField && childrenField) {
+            const autoUpdate = () => updateDemo();
+            adultsField.addEventListener('input', autoUpdate);
+            childrenField.addEventListener('input', autoUpdate);
+        }
+    })();
+</script>
+</body>
+</html>

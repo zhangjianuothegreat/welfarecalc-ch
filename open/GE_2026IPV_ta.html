@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPV வழிமுறை: ஜெனீவா பகுதி (GE) 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+    <meta name="description" content="ஜெனீவா பகுதியில் 2026 ஆம் ஆண்டிற்கான பிரீமியக் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? அதிகாரப்பூர்வ SAM வழிகாட்டுதல்களின் அடிப்படையில் எங்கள் வெளிப்படையான வழிமுறையைக் கண்டறியவும்.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GE_2026IPV_ta.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GE_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GE_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GE_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GE_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GE_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GE_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GE_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GE_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GE_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GE_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GE_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GE_2026IPV_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "ஜெனீவா 2026 பிரீமியக் குறைப்பு கணக்கீடு",
+      "description": "ஜெனீவா பகுதியில் IPV உரிமையை (RDU முறை) தீர்மானிக்க படிப்படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "சொத்து நுகர்வு உள்ளிட்ட ஒருங்கிணைந்த நிர்ணயிக்கப்பட்ட வருமானத்தின் (RDU) கணக்கீடு"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "வருமானக் குழுக்கள் G1 முதல் G9 வரை வகைப்படுத்துதல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "அதிக வருமானத்திற்கான 10 சதவீத விதியின் சரிபார்ப்பு"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+        <h1>IPV வழிமுறை: ஜெனீவா பகுதி (GE)</h1>
+        <p>2026 ஆம் ஆண்டிற்கான கணக்கீட்டு தர்க்கத்தின் (RDU முறை) வெளிப்படையான விளக்கம்</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>நம்பிக்கையை வெளிப்படைத்தன்மை மூலம் அடையலாம். ஜெனீவா பகுதியில், பிரீமியக் குறைப்பு (IPV) <strong>Revenu déterminant unifié (RDU)</strong> அடிப்படையில் கணக்கிடப்படுகிறது. <i>Service de l'assurance-maladie (SAM)</i> இன் சட்டத் தேவைகளை எங்கள் அமைப்பு எவ்வாறு செயல்படுத்துகிறது என்பதை இங்கே வெளிப்படுத்துகிறோம்.</p>
+
+        <h2 class="section-title">1. முக்கிய அளவுருக்கள் (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>RDU சொத்துப் பங்கு</h4>
+                <div class="param-value">6.67 % (1/15)</div>
+                <p><small>வருடாந்திர வருமானமாகக் கணக்கிடப்படும் வரிவிதிப்புக்குட்பட்ட சொத்துகளின் பங்கு.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>சுமை வாசல்</h4>
+                <div class="param-value">10.0 %</div>
+                <p><small>அதிக வருமானங்களுக்கான அதிகபட்ச நியாயமான சுகாதார காப்பீட்டு பிரீமியச் சுமை.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. கணக்கீட்டு செயல்முறை</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>RDU ஐ தீர்மானித்தல்</h3>
+                <p>தொடர்புடைய வருமானம் (RDU) கணித ரீதியாக பின்வருமாறு வரையறுக்கப்படுகிறது:</p>
+                <div class="formula-box">
+                    <strong>RDU</strong> = (நிகர வருமானம்) + (வரிவிதிப்புக்குட்பட்ட சொத்துக்கள் / 15) - (செலுத்தப்பட்ட ஜீவனாம்சம்)
+                </div>
+                <p><small>குறிப்பு: நிகர வருமானம் பொதுவாக மொத்த வருமானத்தில் 95% ஆகும், பகுதி வரிவிதிப்பு நடைமுறையின்படி.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>வருமானக் குழுக்களாக வகைப்படுத்துதல்</h3>
+                <p>RDU அடிப்படையில், குடும்பங்கள் ஒன்பது குழுக்களில் (G1-G9) ஒன்றுக்கு ஒதுக்கப்படுகின்றன:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>குழு</th><th>வயது வந்தோர்</th><th>இளம் வயதினர் (19-25)</th><th>குழந்தைகள்</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>G1 (அதிகபட்சம்)</td><td>CHF 348 / மாதம்</td><td>CHF 231 / மாதம்</td><td>CHF 132 / மாதம்</td></tr>
+                        <tr><td>G5 (நடுத்தர)</td><td>CHF 164 / மாதம்</td><td>CHF 231 / மாதம்</td><td>CHF 132 / மாதம்</td></tr>
+                        <tr><td>G9 (குறைந்தபட்சம்*)</td><td>CHF 0</td><td>CHF 106 / மாதம்</td><td>CHF 67 / மாதம்</td></tr>
+                    </tbody>
+                </table>
+                <p><small>*G9 என்பது "Aide d'office" என்பதைக் குறிக்கிறது; குழந்தைகளைக் கொண்ட குடும்பங்களுக்கு RDU வழக்கமான வாசலைத் தாண்டினால்.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>சிறப்பு வழக்கு: அதிக வருமானம் (கலை. 10% விதி)</h3>
+                <p>நிலையான வரம்புகள் மீறப்படும்போது, ஒரு சமூகப் பாதுகாப்பு வழிமுறை பொருந்தும்:</p>
+                <div class="formula-box">
+                    <strong>நிபந்தனை:</strong> வருமானம் > CHF 200,000 அல்லது சொத்துக்கள் > CHF 250,000<br>
+                    <strong>உரிமை</strong> = Max(0, [உண்மையான பிரீமியம்] - [RDU இன் 10%])
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>ஜெனீவா குடும்பங்களுக்கான முக்கிய குறிப்பு:</strong><br>
+            மற்ற பகுதிகளைப் போலல்லாமல், ஜெனீவாவில் கொடுப்பனவுகள் பொதுவாக காப்பீடு செய்யப்பட்ட நபருக்கு நேரடியாகச் செய்யப்படுகின்றன அல்லது காப்பீட்டாளரின் பிரீமியம் விலைப்பட்டியலுக்கு நேரடியாக ஈடுசெய்யப்படுகின்றன. தாமதமான பதிவுகளுக்கான காலக்கெடு நவம்பர் 30, 2026 அன்று முடிவடைகிறது.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">கால்குலேட்டருக்குத் திரும்பு</a>
+            <a href="https://www.ge.ch/organisation/service-assurance-maladie" target="_blank" class="btn-link">அதிகாரப்பூர்வ GE.CH வலைத்தளம்</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>மூலம்: Service de l'assurance-maladie (SAM) ஜெனீவா 2026 | welfarecalc.ch</p>
+        <p>கணித மாதிரிகள் வழிகாட்டுதலுக்கு மட்டுமே. SAM இன் அதிகாரப்பூர்வ அறிவிப்புகள் மட்டுமே சட்டப்பூர்வமாக பிணைக்கப்பட்டுள்ளன.</p>
+    </footer>
+</div>
+
+</body>
+</html>

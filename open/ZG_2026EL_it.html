@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo EL Canton Zugo 2026 | Calcolo Trasparente | welfarecalc.ch</title>
+  <meta
+    content="Come vengono calcolate le prestazioni complementari (EL) 2026 nel Canton Zugo? Scoprite il nostro algoritmo trasparente basato sui dati ufficiali AK Zug."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_it.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="x-default" rel="alternate" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo delle Prestazioni Complementari Zugo 2026",
+      "description": "Analisi algoritmica dettagliata del calcolo delle PC nel Canton Zugo (Regione 2).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del fabbisogno di spesa riconosciuto (fabbisogno di base, affitto Regione 2, premio cassa malati)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo dei redditi con rigorosa neutralizzazione della 13ª rendita AVS e consumo del patrimonio"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione della rendita PC (Spese riconosciute meno Redditi computabili)"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DATI UFFICIALI 2026</div>
+      <h1>Algoritmo PC: Canton Zugo</h1>
+      <p>Analisi trasparente delle Prestazioni Complementari (PC) per l'anno 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+    <div class="content">
+      <p>La trasparenza crea fiducia. Le Prestazioni Complementari (PC) all'AVS/AI sono un sistema regolato con
+        precisione. Qui documentiamo in modo matematicamente e giuridicamente esatto come il nostro calcolatore
+        determina il suo diritto nel Canton Zugo secondo la LPC, l'OPC e le direttive della Cassa di Compensazione Zugo
+        (AK Zugo).</p>
+      <h2 class="section-title">1. Fabbisogno di base annuo (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Persone sole</h4>
+          <div class="param-value">CHF 20'670</div>
+          <p><small>Importo forfettario uniforme a livello nazionale per il fabbisogno vitale.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Coppie sposate</h4>
+          <div class="param-value">CHF 31'005</div>
+          <p><small>Fabbisogno di base uniforme a livello nazionale per le coppie sposate.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Il percorso di calcolo nel Canton Zugo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Spese riconosciute (Fabbisogno)</h3>
+          <p>La somma matematica delle voci di spesa legalmente riconosciute:</p>
+          <div class="formula">
+            Spese totali = Fabbisogno di base + Canone d'affitto riconoscibile + Premio cassa malati
+          </div>
+          <h4>Canone d'affitto riconoscibile (Il Canton Zugo è interamente considerato Regione 2)</h4>
+          <table class="data-table">
+            <tr>
+              <th>Dimensione del nucleo familiare</th>
+              <th>Importo massimo mensile</th>
+              <th>Limite annuo p.a.</th>
+            </tr>
+            <tr>
+              <td>1 persona</td>
+              <td>CHF 1'525</td>
+              <td>CHF 18'300</td>
+            </tr>
+            <tr>
+              <td>2 persone</td>
+              <td>CHF 1'810</td>
+              <td>CHF 21'720</td>
+            </tr>
+            <tr>
+              <td>3 persone</td>
+              <td>CHF 1'980</td>
+              <td>CHF 23'760</td>
+            </tr>
+            <tr>
+              <td>4+ persone</td>
+              <td>CHF 2'160</td>
+              <td>CHF 25'920</td>
+            </tr>
+          </table>
+          <p><small>*Regolamenti speciali: Per le comunità abitative (WG) vale un importo massimo fisso di CHF 905/mese.
+              Per la proprietà abitativa viene riconosciuta una somma forfettaria per costi accessori di CHF
+              3'480/anno.</small></p>
+          <h4 style="margin-top: 1.2rem;">Premi cassa malati riconoscibili (Logica di priorità)</h4>
+          <p>Il nostro algoritmo calcola la cassa malati rigorosamente secondo il principio del minimo legale:</p>
+          <div class="formula">
+            Premio riconosciuto = Math.min(Premio effettivo, Premio medio cantonale)
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Fascia d'età (Canton Zugo 2026)</th>
+              <th>Premio medio cantonale p.a.</th>
+            </tr>
+            <tr>
+              <td>Adulti (da 26 anni)</td>
+              <td>CHF 5'028</td>
+            </tr>
+            <tr>
+              <td>Giovani adulti (11-25)</td>
+              <td>CHF 3'636</td>
+            </tr>
+            <tr>
+              <td>Bambini (0-10)</td>
+              <td>CHF 1'194</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Redditi computabili</h3>
+          <p>Il confronto dei redditi rettificati avviene secondo chiare disposizioni legali:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-bottom: 1rem;">
+            <li><strong>13ª rendita AVS (Neutralizzazione):</strong> Poiché la 13ª rendita AVS dal 2026 non deve avere
+              effetto sulle PC per legge, il nostro algoritmo calcola i redditi da rendita rigorosamente sulla base di
+              massimo 12 rendite mensili (neutralizzazione legale completa).</li>
+            <li><strong>Reddito da lavoro:</strong> Computo di 2/3 dell'importo che supera l'importo esente (CHF 1'300
+              per persone sole / CHF 1'950 per coppie sposate).</li>
+            <li><strong>Consumo del patrimonio:</strong> (Patrimonio netto rettificato meno importo esente) diviso per
+              il divisore 10 (per pensionati AVS) o 15 (per pensionati AI).</li>
+          </ul>
+          <table class="data-table">
+            <tr>
+              <th>Importi esenti PC per il consumo del patrimonio</th>
+              <th>Importo esente</th>
+            </tr>
+            <tr>
+              <td>Persone sole</td>
+              <td>CHF 30'000</td>
+            </tr>
+            <tr>
+              <td>Coppie sposate</td>
+              <td>CHF 50'000</td>
+            </tr>
+            <tr>
+              <td>Proprietà abitativa ad uso proprio (Standard)</td>
+              <td>CHF 112'500</td>
+            </tr>
+            <tr>
+              <td>Proprietà abitativa ad uso proprio (per coppie sposate / assegno per grandi invalidi)</td>
+              <td>CHF 187'500</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Risultato: Calcolo della rendita PC</h3>
+          <p>Se esiste un divario di copertura, ne deriva il diritto annuale:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            PC annuale = Math.max(0, [Spese riconosciute] - [Redditi computabili])
+          </div>
+          <p>L'importo di pagamento mensile corrisponde alla PC annuale divisa per 12, arrotondato commercialmente al
+            franco intero successivo.</p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Importante: La soglia patrimoniale legale (soglia di accesso)</strong><br />
+        Un diritto generale alle Prestazioni Complementari è legalmente escluso se il patrimonio netto (senza il valore
+        di una proprietà abitativa ad uso proprio) supera i seguenti valori soglia:
+        <ul style="margin-left: 20px; margin-top: 5px;">
+          <li><strong>CHF 100'000</strong> per persone sole</li>
+          <li><strong>CHF 200'000</strong> per coppie sposate</li>
+        </ul>
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Torna alla pagina iniziale</a>
+        <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/ergaenzungsleistungen" target="_blank">Sito
+          ufficiale AK Zugo</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fonte: Ufficio federale delle assicurazioni sociali (UFAS), Legge federale sulle prestazioni complementari
+        (LPC) &amp; direttive cantonali della Cassa di compensazione Zugo (AK Zugo) 2026</p>
+      <p>Fornito da welfarecalc.ch | Algoritmi trasparenti senza garanzia legale.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

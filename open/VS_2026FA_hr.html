@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Dječji doplatak (FA) algoritam Kanton Valais 2026 | welfarecalc.ch</title>
+  <meta
+    content="Kako se izračunavaju dječji doplatci (FA) 2026. u Kantonu Valais (VS)? Otkrijte naš transparentni algoritam za dječje, obrazovne, rođendanske i posvojiteljske doplatke."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_hr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritam dječjeg doplatka Kanton Valais 2026 | Transparentan izračun" property="og:title" />
+  <meta
+    content="Službena logika izračuna za stupnjevane dječje i obrazovne doplatke te rođendanske doplatke 2026. u Valaisu."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VS_2026FA_hr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun doplataka za djecu Valais 2026",
+      "description": "Vodič korak po korak za zakonski izračun dječjih doplataka, obrazovnih doplataka i jednokratnih rođendanskih/posvojiteljskih doplataka u Kantonu Valais.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Provjera statusa po djetetu: Dječji doplatak (do 16 odnosno 20) ili obrazovni doplatak (od 16 do max. 25)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Određivanje mjesečnog iznosa uzimajući u obzir degresivnu/progresivnu ljestvicu od 3. djeteta."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Provjera jednokratnih kantonalnih doplataka za rođenje ili posvojenje (uključujući faktor za više djece)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Izračun godišnjeg ukupnog prava: (Mjesečni iznos × 12) + Jednokratni doplatci."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.8rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .param-value {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+      color: var(--official-blue);
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+      font-size: 1rem;
+      overflow-x: auto;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">USKLAĐENO S FAMZG 2026</div>
+      <h1>FA Algoritam: Kanton Valais</h1>
+      <p>Transparentna dokumentacija doplataka za djecu (dječji, obrazovni, rođendanski i posvojiteljski doplatci)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+    <div class="content">
+      <p>U Švicarskoj su doplatci za djecu zakonski regulirani (FamZG). Kanton Valais (VS) u međukantonalnoj usporedbi
+        tradicionalno odobrava više stope, kao i degresivnu/progresivnu ljestvicu od 3. djeteta te dodatne jednokratne
+        doplatke. Naš kalkulator koristi službene tarife CIVAF-a za 2026. kako bi potpuno transparentno raščlanio vaše
+        pravo.</p>
+      <h2 class="section-title">1. Mjesečne stope &amp; Jednokratni doplatci (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Dječji doplatak (1. i 2. dijete)</h4>
+          <div class="param-value">CHF 327 / mjesec</div>
+          <p><small>Do navršene 16. godine života (odnosno 20 godina u slučaju nesposobnosti za rad).</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Dječji doplatak (od 3. djeteta)</h4>
+          <div class="param-value">CHF 435 / mjesec</div>
+          <p><small>Povećana stopa za velike obitelji od trećeg djeteta koje ispunjava uvjete.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Obrazovni doplatak (1. i 2. dijete)</h4>
+          <div class="param-value">CHF 477 / mjesec</div>
+          <p><small>Od 16. godine do kraja obrazovanja (maks. do 25. rođendana).</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Obrazovni doplatak (od 3. djeteta)</h4>
+          <div class="param-value">CHF 585 / mjesec</div>
+          <p><small>Povećana obrazovna stopa od trećeg djeteta na obrazovanju.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Način izračuna</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Određivanje kategorije</h3>
+          <p>Algoritam zasebno provjerava dob i status obrazovanja svakog prijavljenog djeteta:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+            <li><strong>0 - 16 godina (odnosno do 20 godina u slučaju nesposobnosti za rad):</strong> Razvrstavanje u
+              kategoriju <em>Dječji doplatak</em>.</li>
+            <li><strong>16 - 25 godina:</strong> Razvrstavanje u kategoriju <em>Obrazovni doplatak</em> (ako je dokazano
+              formalno obrazovanje ili studij).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Izračun ukupnog mjesečnog iznosa</h3>
+          <p>Budući da Kanton Valais primjenjuje ljestvicu od 3. djeteta, zbroj se ne množi čisto linearno, već slijedi
+            hijerarhijsko stupnjevanje unutar kategorija:</p>
+          <h4 style="margin-top: 10px; font-size: 1rem; color: var(--official-blue);">A) Formula za dječji doplatak
+            (childMonthly):</h4>
+          <p>Ako je broj mlađe djece (numChildren) manji od 3:</p>
+          <div class="formula">childMonthly = numChildren × 327</div>
+          <p>Ako je broj mlađe djece (numChildren) veći ili jednak 3:</p>
+          <div class="formula">childMonthly = (2 × 327) + ((numChildren - 2) × 435)</div>
+          <h4 style="margin-top: 15px; font-size: 1rem; color: var(--official-blue);">B) Formula za obrazovni doplatak
+            (educationMonthly):</h4>
+          <p>Ako je broj mladih na obrazovanju (numEducation) manji od 3:</p>
+          <div class="formula">educationMonthly = numEducation × 477</div>
+          <p>Ako je broj mladih na obrazovanju (numEducation) veći ili jednak 3:</p>
+          <div class="formula">educationMonthly = (2 × 477) + ((numEducation - 2) × 585)</div>
+          <div style="background: #f1f5f9; padding: 10px; margin-top: 10px; border-radius: 6px; font-size: 0.9rem;">
+            <strong>Ukupno mjesečno pravo = childMonthly + educationMonthly</strong>
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Jednokratni doplatci (Rođenje / Posvojenje)</h3>
+          <p>Za razliku od mnogih njemačkih kantona, Valais odobrava velikodušne jednokratne isplate pri rođenju ili
+            posvojenju djeteta. Algoritam pritom razlikuje između pojedinačnih i višestrukih događaja:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Vrsta događaja</th>
+                <th>Izračun / Iznos po djetetu (VS)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Pojedinačno rođenje</strong> (numNewborns = 1)</td>
+                <td>Paušalno CHF 2'142</td>
+              </tr>
+              <tr>
+                <td><strong>Višestruko rođenje</strong> (numNewborns &gt; 1)</td>
+                <td>CHF 3'213 × broj novorođenčadi</td>
+              </tr>
+              <tr>
+                <td><strong>Pojedinačno posvojenje</strong> (numAdoptions = 1)</td>
+                <td>Paušalno CHF 2'142</td>
+              </tr>
+              <tr>
+                <td><strong>Istovremeno posvojenje više djece</strong> (numAdoptions &gt; 1)</td>
+                <td>CHF 3'213 × broj posvojene djece</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><small>*Napomena: Radi prevencije prijevara i algoritamske validacije, naša osnovna jezgra provodi
+              obrambene korake validacije, npr. <code>numNewborns &lt;= numChildren</code>.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Određivanje godišnjeg pravaMatematičko povezivanje mjesečnih ponavljajućih naknada s jednokratnim
+            doplatcima ovisnim o događaju daje konačni godišnji proračun:
+            <div
+              style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace; font-size: 1.05rem;">
+              Godišnji iznos = (childMonthly + educationMonthly) × 12 + birthAllowance + adoptionAllowance
+            </div>
+          </h3>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Pravo na naknadu &amp; Red prvenstva:</strong><br />
+        Prema čl. 12 FamZG, za isto dijete može se primati samo jedan doplatak. Ako su oba roditelja zaposlena, savezni
+        zakonski red prvenstva (prvo pravo kod primarno zaposlenog roditelja u mjestu prebivališta djeteta) regulira
+        dodjelu. Isplata se u pravilu vrši izravno putem mjesečne plaće poslodavca.
+      </div>
+      <div style="text-align: center;">
+        <a aria-label="Idi na kalkulator" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">Pokreni kalkulator</a>
+        <a aria-label="Idi na službenu CIVAF Valais stranicu" class="btn-link" href="https://www.civafvs.ch"
+          target="_blank">Službena CIVAF Valais stranica</a>
+      </div>
+    </div>
+    <footer>
+      <p>Izvor: Kantonalni fond za obiteljske naknade Valaisa (CIVAF) smjernice 2026 &amp; Savezni zakon o obiteljskim
+        naknadama (FamZG)</p>
+      <p>© 2026 welfarecalc.ch | Transparentan izračun obiteljskih naknada</p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Aid Algorithm Canton Graubünden 2026 | Transparent Calculation | welfarecalc.ch</title>
+    <meta name="description"
+        content="How is emergency aid calculated in the Canton of Graubünden for 2026? Discover our transparent algorithm based on cantonal guidelines and official data.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Emergency Aid Algorithm Canton Graubünden 2026 | Transparent Calculation">
+    <meta property="og:description"
+        content="Official calculation logic for emergency aid 2026 in GR (Graubünden) based on cantonal regulations.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GR_2026nothilfe_en.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Emergency Aid Calculation Graubünden 2026",
+      "description": "Step-by-step guide to calculating emergency aid in the Canton of GR (Graubünden).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determine the adult daily rate (couple degression factor 1.65)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculate child benefits including bonus from the 3rd child onward"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Extrapolate to monthly amount and round to the nearest franc"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Core Styles (aligned with AG/AI) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">OFFICIAL DATA 2026 · Emergency Aid GR</div>
+            <h1>Emergency Aid Algorithm: Canton Graubünden</h1>
+            <p>Transparent presentation of the calculation logic for 2026 according to cantonal practice</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+        <div class="content">
+            <p>Transparency builds trust. In the Canton of Graubünden (GR), emergency aid for rejected asylum seekers is
+                calculated using a specific degressive model. Here we disclose the full algorithm that forms the basis
+                of our calculations on welfarecalc.ch.</p>
+
+            <h2 class="section-title">1. Key Parameters (GR 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Base Daily Rate (Single)</h4>
+                    <div class="param-value">CHF 9.00 / day</div>
+                    <p><small>Collective accommodation incl. basic needs (pocket money/meals).</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Couple Coefficient</h4>
+                    <div class="param-value">Factor 1.65</div>
+                    <p><small>Reduced rates for two cohabiting adults.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Child Factor</h4>
+                    <div class="param-value">Factor 0.52</div>
+                    <p><small>Additional need per child compared to the base rate.</small></p>
+                </div>
+            </div>
+
+            <h2 class="section-title">2. Calculation Steps (Step by Step)</h2>
+
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Calculation of Adult Need</h3>
+                    <p>The Canton of GR uses a degression factor of 1.65 for couples. This means the second person
+                        receives 65% of the single rate.</p>
+                    <div class="formula">
+                        If adults = 1: CHF 9.00 / day<br>
+                        If adults > 1: (9.00 + (number of adults - 1) × 9.00 × 0.65)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Calculation of Child Supplements</h3>
+                    <p>For each child, a basic amount of 52% of the adult rate is added. Additionally, GR grants a bonus
+                        of 10% of the base rate from the 3rd child onward.</p>
+                    <div class="formula">
+                        Child base: CHF 4.68 (9.00 × 0.52)<br>
+                        Bonus from 3rd child: + CHF 0.90 (9.00 × 0.10)<br>
+                        Total child = (children × 4.68) + (MAX(0; children-2) × 0.90)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Monthly Extrapolation & Rounding</h3>
+                    <p>The total daily amount is multiplied by the monthly factor 30.42 and rounded to the next full
+                        franc.</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        Monthly entitlement = ROUND( (Total daily amount × 30.42) ; 0 )
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                <strong>Graubünden Specifics:</strong><br>
+                • <strong>Accommodation type:</strong> These rates apply to accommodation in cantonal collective
+                centers.<br>
+                • <strong>Benefits in kind priority:</strong> Emergency aid is primarily provided in kind
+                (accommodation/food).<br>
+                • <strong>Legal basis:</strong> According to the cantonal asylum ordinance and directives of the GR
+                Migration Office.
+            </div>
+
+            <h2 class="section-title">3. Interactive Live Check</h2>
+            <div class="demo-card">
+                <div class="demo-header">🧪 Algorithm Simulator Graubünden (2026)</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Number of Adults</label>
+                            <input type="number" id="adultsCount" value="1" min="1">
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Number of Children</label>
+                            <input type="number" id="childrenCount" value="0" min="0">
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Start Calculation</button>
+
+                    <div id="liveResultPanel" class="result-panel">
+                        <h3>📐 Calculation Proof (GR Logic)</h3>
+                        <div id="stepsDetail" class="calc-steps"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(monthly rounded)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Back to Home</a>
+            <a href="https://www.gr.ch/DE/institutionen/verwaltung/dvs/soa/beratung/sozialberatung/Seiten/default.aspx"
+                target="_blank" class="btn-link">Official page Canton of GR</a>
+        </div>
+
+        <footer>
+            <p>Source: Office for Migration and Civil Law Graubünden – Status 2026</p>
+            <p>Provided by welfarecalc.ch | Open algorithms for a fair Switzerland</p>
+            <p>© 2026 welfarecalc.ch – Transparency Initiative</p>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const GR_PARAMS = {
+                base: 9.00,
+                coupleFactor: 0.65, // GR specific
+                childFactor: 0.52,
+                childBonus: 0.10,
+                days: 30.42
+            };
+
+            function calculateGR(adults, children) {
+                // Step 1: Adults
+                const adultDaily = (adults === 1) ? GR_PARAMS.base : (GR_PARAMS.base + (adults - 1) * GR_PARAMS.base * GR_PARAMS.coupleFactor);
+
+                // Step 2: Children
+                const childBase = children * (GR_PARAMS.base * GR_PARAMS.childFactor);
+                const childBonus = (children >= 3) ? ((children - 2) * GR_PARAMS.base * GR_PARAMS.childBonus) : 0;
+                const childTotal = childBase + childBonus;
+
+                // Step 3: Monthly total and rounding
+                const dailyTotal = adultDaily + childTotal;
+                const monthlyRaw = dailyTotal * GR_PARAMS.days;
+                const monthlyRounded = Math.round(monthlyRaw);
+
+                return { adultDaily, childTotal, childBonus, dailyTotal, monthlyRaw, monthlyRounded };
+            }
+
+            document.getElementById('runCalcBtn').addEventListener('click', function () {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const res = calculateGR(adults, children);
+
+                let bonusText = res.childBonus > 0 ? `<br>+ Bonus from 3rd child: CHF ${res.childBonus.toFixed(2)}` : "";
+
+                document.getElementById('stepsDetail').innerHTML = `
+                <strong>📌 Step 1 (Adults):</strong> CHF ${res.adultDaily.toFixed(2)} / day<br>
+                <strong>📌 Step 2 (Children):</strong> CHF ${res.childTotal.toFixed(2)} / day ${bonusText}<br>
+                <strong>📌 Total Daily Rate:</strong> CHF ${res.dailyTotal.toFixed(2)}<br>
+                <strong>📌 Monthly (30.42 days):</strong> CHF ${res.monthlyRaw.toFixed(2)}<br>
+                <strong>💰 Rounding (GR standard):</strong> CHF ${res.monthlyRounded}.00
+            `;
+                document.getElementById('monthlyAmountDisplay').innerText = res.monthlyRounded + ".00 CHF";
+                document.getElementById('liveResultPanel').style.display = 'block';
+            });
+        })();
+    </script>
+</body>
+
+</html>

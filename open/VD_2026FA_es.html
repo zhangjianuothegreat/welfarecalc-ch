@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <title>Asignaciones Familiares (AF) Algoritmo Cantón de Vaud 2026 | welfarecalc.ch</title>
+    <meta
+        content="¿Cómo se calculan las Asignaciones Familiares (AF) 2026 en el Cantón de Vaud (VD)? Descubra nuestro algoritmo transparente para asignaciones por hijos, formación y nacimiento."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algoritmo de Asignaciones Familiares Cantón de Vaud 2026 | Cálculo Transparente"
+        property="og:title" />
+    <meta content="Lógica de cálculo oficial para asignaciones por hijos, formación y nacimiento 2026 en Vaud (VD)."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/VD_2026FA_es.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de las Asignaciones Familiares Vaud 2026",
+      "description": "Guía paso a paso para la determinación matemática precisa de las asignaciones familiares en el Cantón de Vaud (VD) considerando el orden jerárquico global.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación de edad y estado para determinar la categoría de derecho (asignación por hijo, formación o incapacidad laboral)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del índice de orden global del niño (orden jerárquico por edad) en todo el hogar."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Asignación del monto mensual basado en el coeficiente de orden jerárquico (aumentado a partir del 3er hijo)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Aplicación de asignaciones únicas (nacimiento / adopción) diferenciadas según sea único o múltiple."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del derecho anual y aplicación de validaciones algorítmicas defensivas como límites de ingresos."
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #0ea5e9;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 1.25rem;
+        }
+
+        @media (min-width: 640px) {
+            body {
+                padding: 1.5rem;
+            }
+
+            .content {
+                padding: 2.5rem;
+            }
+
+            header {
+                padding: 3rem 1.5rem;
+            }
+
+            .update-tag {
+                font-size: 0.85rem;
+            }
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2rem 0 1.25rem;
+            font-size: 1.35rem;
+        }
+
+        @media (min-width: 640px) {
+            .section-title {
+                font-size: 1.5rem;
+                margin: 2.5rem 0 1.5rem;
+            }
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 480px) {
+            .grid-params {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .param-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .step-box {
+                padding-left: 4rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.2rem;
+            height: 2.2rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 640px) {
+            .step-num {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.2rem;
+                border-width: 4px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.1rem;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 640px) {
+            .step-body {
+                padding: 1.5rem;
+            }
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            display: table;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .table-responsive .data-table {
+            margin-top: 0;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #334155;
+        }
+
+        .data-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+        }
+
+        @media (min-width: 640px) {
+
+            .data-table th,
+            .data-table td {
+                padding: 12px 14px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* 核心修复：流式高级数学公式排版容器 */
+        .formula-container {
+            background: #eef2ff;
+            border-left: 4px solid #4f46e5;
+            padding: 1rem;
+            margin: 12px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.88rem;
+            color: var(--official-blue);
+            overflow-x: auto;
+        }
+
+        .formula-title {
+            font-family: monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .math-block {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-weight: bold;
+            line-height: 1.5;
+            white-space: nowrap;
+            /* 拒绝在手机端进行任何逻辑断行 */
+        }
+
+        .math-row {
+            margin: 0.4rem 0;
+            padding-left: 0.5rem;
+        }
+
+        .math-indent {
+            padding-left: 1.5rem;
+            color: #334155;
+            font-weight: normal;
+        }
+
+        .math-sign {
+            color: var(--swiss-red);
+            font-weight: bold;
+            padding: 0 4px;
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 640px) {
+            .alert {
+                padding: 1.5rem;
+            }
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 10px 20px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        @media (min-width: 640px) {
+            .btn-link {
+                padding: 12px 28px;
+                margin: 0.5rem;
+            }
+        }
+
+        .btn-link:hover {
+            opacity: 0.95;
+            text-decoration: none;
+            transform: translateY(-1px);
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.8rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (min-width: 640px) {
+            footer {
+                padding: 3rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        ul,
+        .alert ul {
+            padding-left: 1.25rem;
+        }
+
+        code {
+            background: #f1f5f9;
+            color: #b91c1c;
+            padding: 0.15rem 0.3rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .step-body ul {
+            margin-top: 0.5rem;
+        }
+
+        .step-body ul li {
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">CONFORME A LA LAF 2026</div>
+            <h1>Algoritmo FA: Cantón de Vaud (Vaud)</h1>
+            <p>Documentación transparente de las Asignaciones Familiares (asignaciones por hijos, formación y
+                nacimiento)</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+        <div class="content">
+            <p>En Suiza, las asignaciones familiares están reguladas por ley (LAF). Nuestra calculadora utiliza las
+                regulaciones cantonales específicas del Cantón de Vaud (VD) para 2026, para determinar su derecho con
+                precisión. El algoritmo de Vaud se caracteriza por un índice global del hogar (orden jerárquico) y
+                generosas asignaciones únicas. La transparencia es importante para nosotros.</p>
+            <h2 class="section-title">1. Tasas mensuales y montos únicos (2026)</h2>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Tipo de asignación</th>
+                            <th>1.º &amp; 2.º hijo (Estándar)</th>
+                            <th>A partir del 3.er hijo (Aumentado)</th>
+                            <th>Requisito / Límite de edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Asignación por hijo</strong></td>
+                            <td>CHF 322 / mes</td>
+                            <td>CHF 365 / mes</td>
+                            <td>Desde el mes de nacimiento hasta los 16 años cumplidos.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Asignación por formación</strong></td>
+                            <td>CHF 425 / mes</td>
+                            <td>CHF 468 / mes</td>
+                            <td>Desde los 16 hasta máx. 25 años (comprobante de formación).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hijos con incapacidad laboral</strong></td>
+                            <td>CHF 425 / mes</td>
+                            <td>CHF 468 / mes</td>
+                            <td>Desde los 16 hasta máx. 20 años (comprobante de enfermedad/invalidez).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Asignación por nacimiento</strong></td>
+                            <td colspan="2">CHF 1'617 (único) / CHF 3'234 (por hijo en partos múltiples)</td>
+                            <td>Única al nacer vivo o a partir de la 24.ª semana de embarazo.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Asignación por adopción</strong></td>
+                            <td colspan="2">CHF 1'617 (caso individual) / CHF 3'234 (por hijo en adopción grupal)</td>
+                            <td>Única al acoger legalmente a menores para su adopción.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="section-title">2. La vía de cálculo precisa (Lógica central)</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Determinación de la categoría</h3>
+                    <p>El algoritmo verifica la edad y el estado laboral o de salud de cada hijo:</p>
+                    <ul>
+                        <li><strong>0 a 16 años:</strong> Asignación a la categoría <code>Asignación por hijo</code>.
+                        </li>
+                        <li><strong>16 a 25 años:</strong> Asignación a la categoría
+                            <code>Asignación por formación</code>,
+                            siempre que se presente un comprobante de formación válido y no se supere el límite de
+                            ingresos legal.</li>
+                        <li><strong>16 a 20 años (Incapacidad laboral):</strong> Asignación a la categoría
+                            <code>Hijos con incapacidad laboral</code> (el monto del derecho corresponde a la asignación
+                            por formación).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Determinación del orden jerárquico global del hogar (Rang de l'enfant)</h3>
+                    <p><strong>Factor algorítmico crítico:</strong> La escala a partir del 3.er hijo no se calcula por
+                        separado según categorías en el Cantón de Vaud. Se crea una lista global de todos los hijos con
+                        derecho a asignación en el hogar y se ordena por edad de forma descendente.</p>
+                    <div class="formula-container">
+                        <div class="formula-title">Asignación_Índice_Hogar:</div>
+                        <div class="math-block">
+                            <div class="math-row">Ordenar_Hijos_por_Edad(<span
+                                    style="color:#64748b;">Descendente</span>);</div>
+                            <div class="math-row">Hijo_1 (Mayor) <span class="math-sign">→</span> Índice 1 <span
+                                    class="math-indent">(Tarifa estándar)</span></div>
+                            <div class="math-row">Hijo_2           <span class="math-sign">→</span> Índice 2 <span
+                                    class="math-indent">(Tarifa estándar)</span></div>
+                            <div class="math-row">Hijo_3           <span class="math-sign">→</span> Índice 3 <span
+                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Tarifa aumentada desde
+                                    3.er hijo)</span></div>
+                            <div class="math-row">Hijo_n           <span class="math-sign">→</span> Índice n <span
+                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Tarifa aumentada desde
+                                    3.er hijo)</span></div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #475569;"><small><em>Esto asegura que, por ejemplo,
+                                un tercer hijo que esté en formación reciba la tarifa aumentada completa de CHF 468,
+                                incluso si los dos primeros hijos más pequeños solo reciben asignaciones por
+                                hijo.</em></small></p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Cálculo del monto mensual</h3>
+                    <p>La suma matemática se forma dinámicamente según los índices determinados:</p>
+                    <div class="formula-container">
+                        <div class="formula-title">Derecho_Total_Mensual:</div>
+                        <div class="math-block">
+                            <div class="math-row">Derecho_Total_Mensual = ∑ [ Tarifa ( Categoría, Índice ) ]</div>
+                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Donde:
+                            </div>
+                            <div class="math-row">• Si Índice ≤ 2:</div>
+                            <div class="math-indent">Asignación por hijo = 322 CHF | Formación / Incapacidad = 425 CHF
+                            </div>
+                            <div class="math-row">• Si Índice ≥ 3:</div>
+                            <div class="math-indent" style="color:#b8860b; font-weight:bold;">Asignación por hijo = 365
+                                CHF | Formación / Incapacidad = 468 CHF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                    <h3>Cálculo de asignaciones únicas (Nacimiento / Adopción)</h3>
+                    <p>El algoritmo verifica si hubo un nacimiento o adopción en el año de cálculo y distingue
+                        estrictamente entre partos únicos y múltiples:</p>
+                    <div class="formula-container">
+                        <div class="formula-title">Total_Asignaciones_Únicas:</div>
+                        <div class="math-block">
+                            <div class="math-row">Total_Asignaciones_Únicas = Número_Hijos <span
+                                    class="math-sign">×</span> Monto_Único_por_Hijo</div>
+                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+                                Parámetros:</div>
+                            <div class="math-row">• Único (Número_Hijos == 1):</div>
+                            <div class="math-indent">Monto_Único_por_Hijo = 1'617 CHF</div>
+                            <div class="math-row">• Múltiples (Número_Hijos ≥ 2):</div>
+                            <div class="math-indent">Monto_Único_por_Hijo = 3'234 CHF <span
+                                    style="color:#64748b; font-weight:normal;">(por hijo)</span></div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
+                        <em>Ejemplo: Parto doble → 2 × 3'234 CHF = 6'468 CHF Total.<br />
+                            Único → 1 × 1'617 CHF = 1'617 CHF Total.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">5</div>
+                <div class="step-body">
+                    <h3>Determinación del derecho anual</h3>
+                    <p>La agregación al derecho total anual es:</p>
+                    <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
+                        <div class="formula-title" style="color:#a855f7;">Cálculo_Monto_Anual:</div>
+                        <div class="math-block" style="color:#6b21a8;">
+                            <div class="math-row">Monto Anual = ( Derecho_Total_Mensual <span class="math-sign">×</span>
+                                12 ) <span class="math-sign">+</span> Total_Asignaciones_Únicas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title">3. Validación defensiva y límites algorítmicos</h2>
+            <div class="alert"
+                style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
+                <strong>Barreras de seguridad integradas (Validación anti-errores):</strong>
+                <ul>
+                    <li><strong>Límite de ingresos para hijos en formación:</strong> Si un hijo en formación
+                        (16-25 años) gana un ingreso laboral imponible propio superior a <strong>CHF 30'240 /
+                            año</strong> (o CHF 2'520 / mes), el derecho a la asignación se extingue
+                        inmediatamente en el algoritmo del motor central (Resultado = 0).</li>
+                    <li><strong>Prohibición de percepción simultánea (Principio de exclusión):</strong> Para el mismo
+                        hijo nunca se puede
+                        conceder simultáneamente una asignación por hijo y una asignación por formación.</li>
+                    <li><strong>Límite de edad:</strong> El derecho a la asignación por hijo finaliza al final del
+                        mes en que el hijo cumple 16 años. El derecho a la asignación por formación
+                        finaliza el día después de cumplir 25 años o al finalizar la formación antes de tiempo.</li>
+                </ul>
+            </div>
+            <div class="alert">
+                <strong>Derecho según la ley federal:</strong><br />
+                Solo uno de los progenitores puede percibir la asignación. Se aplica un orden de prioridad legal según
+                el Art. 12
+                LAF, si ambos progenitores trabajan (p. ej., principalmente aquel con la actividad principal en el
+                cantón de residencia del hijo).
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a aria-label="Ir a la calculadora" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+                    target="_blank">Iniciar calculadora</a>
+                <a aria-label="Ir al sitio web oficial del Cantón de Vaud" class="btn-link"
+                    href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales"
+                    target="_blank">Sitio oficial
+                    CCVD Cantón de Vaud</a>
+            </div>
+        </div>
+        <footer>
+            <p>Fuente: Directrices 2026 de la Caisse cantonale vaudoise de compensation AVS (CCVD) &amp; Ley federal
+                sobre las Asignaciones Familiares (LAF)</p>
+            <p>© 2026 welfarecalc.ch | Cálculo transparente de Asignaciones Familiares</p>
+        </footer>
+    </div>
+</body>
+
+</html>

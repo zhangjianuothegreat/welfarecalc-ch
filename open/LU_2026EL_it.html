@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo PC Cantone Lucerna 2026 | Calcolo Trasparente | welfarecalc.ch</title>
+    <meta name="description" content="Come vengono calcolate le Prestazioni Complementari (PC) nel 2026 nel Cantone di Lucerna? Scopri il nostro algoritmo trasparente basato sui dati ufficiali WAS Lucerna.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/LU_2026EL_it.html">
+    
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/LU_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/LU_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/LU_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/LU_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/LU_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/LU_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/LU_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/LU_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/LU_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/LU_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/LU_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/LU_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo delle Prestazioni Complementari Lucerna 2026",
+      "description": "Ripartizione algoritmica ufficiale del calcolo delle PC nel Canton Lucerna.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del fabbisogno riconosciuto (fabbisogno di base, importi massimi dell'affitto regionale, forfait per le assicurazioni malattia)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Considerazione delle entrate (rendite AVS/AI, reddito da lavoro e consumo del patrimonio)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo della rendita PC annuale (eccedenza delle spese)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DATI UFFICIALI 2026</div>
+        <h1>Algoritmo PC: Cantone di Lucerna</h1>
+        <p>Ripartizione trasparente delle Prestazioni Complementari (PC) per l'anno 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La trasparenza è la base del nostro calcolatore. In questa sezione riveliamo la logica matematica alla base del calcolo delle PC per il Cantone di Lucerna. Il nostro algoritmo si basa rigorosamente sulla legge federale (LPC) e sulle disposizioni cantonali di WAS Lucerna.</p>
+
+        <h2 class="section-title">1. Fabbisogno di base annuale (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Persone sole</h4>
+                <div class="param-value">CHF 20'670</div>
+                <p><small>Importo forfettario per le spese di sussistenza dal 01.01.2026.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Coppie sposate</h4>
+                <div class="param-value">CHF 31'005</div>
+                <p><small>Fabbisogno di base comune per partner nello stesso nucleo familiare.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Procedura algoritmica</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Fabbisogno riconosciuto</h3>
+                <p>Innanzitutto calcoliamo la somma delle spese legalmente riconosciute:</p>
+                <div class="formula">
+                    Fabbisogno di base + Affitto (incl. spese accessorie) + Forfait assicurazione malattia
+                </div>
+                <table class="data-table">
+                    <tr><th>Importi massimi affitto LU 2026 (mensili)</th><th>Regione 2*</th><th>Regione 3**</th></tr>
+                    <tr><td>Persona sola (1 persona)</td><td>CHF 1'525</td><td>CHF 1'390</td></tr>
+                    <tr><td>Coppie sposate (2 persone)</td><td>CHF 1'810</td><td>CHF 1'680</td></tr>
+                    <tr><td>Nucleo familiare di 3 persone</td><td>CHF 1'980</td><td>CHF 1'850</td></tr>
+                </table>
+                <p><small>*Regione 2: Città di Lucerna, Kriens, Horw, Ebikon, Emmen.<br>**Regione 3: Restanti comuni del Canton Lucerna.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Entrate computabili</h3>
+                <p>Successivamente, il calcolatore determina i redditi computabili:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Rendite:</strong> Rendite AVS/AI (la 13esima rendita AVS viene neutralizzata).</li>
+                    <li><strong>Reddito da lavoro:</strong> Computo dei 2/3 del reddito dopo deduzione degli importi esenti.</li>
+                    <li><strong>Consumo del patrimonio:</strong> (Patrimonio netto – importo esente) / 10 (rendita AVS) o 1/15 (AI).</li>
+                </ul>
+                <table class="data-table">
+                    <tr><th>Importi esenti PC (patrimonio)</th><th>Importo</th></tr>
+                    <tr><td>Persona sola</td><td>CHF 30'000</td></tr>
+                    <tr><td>Coppie sposate</td><td>CHF 50'000</td></tr>
+                    <tr><td>Abitazione di proprietà ad uso proprio</td><td>CHF 112'500</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Risultato: diritto alle PC</h3>
+                <p>La differenza tra fabbisogno e entrate dà l’importo delle PC:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    PC annuali = [Fabbisogno] – [Entrate computabili]
+                </div>
+                <p><small>Se il risultato è negativo, non sussiste alcun diritto alle PC.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Importante: soglia patrimoniale</strong><br>
+            Nel Cantone di Lucerna, il diritto alle PC sussiste solo se il patrimonio netto è inferiore a <strong>CHF 100'000</strong> (persone sole) o <strong>CHF 200'000</strong> (coppie sposate). Gli immobili ad uso proprio non sono considerati in questa soglia.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Torna alla home</a>
+            <a href="https://www.was-luzern.ch/ergaenzungsleistungen-el" target="_blank" class="btn-link">Sito ufficiale WAS Lucerna</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Direttive WAS Lucerna 2026 e Ufficio federale delle assicurazioni sociali (UFAS)</p>
+        <p>Fornito da welfarecalc.ch | Dati senza garanzia.</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>சமூக உதவி அல்காரிதம் டிச்சின் கேன்டன் (டிசினோ) 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் டிச்சின் கேன்டனில் (TI) சமூக உதவி எவ்வாறு கணக்கிடப்படுகிறது? LAPS, LAS மற்றும் SKOS வழிகாட்டுதல்களின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="சமூக உதவி அல்காரிதம் டிச்சின் கேன்டன் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta
+    content="SKOS மற்றும் LAS அடிப்படையில் டிச்சின் கேன்டனில் (TI) 2026 ஆம் ஆண்டிற்கான பொருளாதார சமூக உதவிக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "டிசின் (டிசினோ) 2026 சமூக உதவி கணக்கீடு",
+      "description": "TI கன்டோனில் (LAPS/LAS) பொருளாதார சமூக உதவி கணக்கீட்டின் விரிவான வழிமுறை பகுப்பாய்வு.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "LAS இன் படி சொத்து விலக்குகளை சரிபார்த்தல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "சமூக வாழ்வாதார குறைந்தபட்சத்தை நிர்ணயித்தல் (TI அடிப்படை தேவை, வீட்டுவசதி, நிகர சுகாதார காப்பீடு)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "வருமான விலக்கு உட்பட கணக்கில் எடுத்துக்கொள்ளக்கூடிய வருமானத்தை கண்டறிதல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "மாதாந்திர உரிமையை கண்டறிய வேறுபாடு கணக்கீடு"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">SKOS-இணக்கம் 2026</div>
+      <h1>சமூக உதவி அல்காரிதம்: டிசின் கன்டோன் (டிசினோ)</h1>
+      <p>சமூக வாழ்வாதார குறைந்தபட்சத்திற்கான (TI) கணக்கீட்டு தர்க்கத்தின் வெளிப்படையான ஆவணப்படுத்தல்</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>டிசின் கன்டோனில் சமூக உதவி எவ்வாறு கணக்கிடப்படுகிறது? எங்கள் பயனர்களின் நம்பிக்கையை வலுப்படுத்த,
+        welfarecalc.ch-க்குப் பின்னால் உள்ள முழுமையான அல்காரிதத்தை இங்கு வெளிப்படுத்துகிறோம். இது கன்டோனல் சட்டம் (Legge
+        sull'assistenza sociale - LAS TI), LAPS வழிகாட்டுதல்கள் மற்றும் ஒருங்கிணைக்கப்பட்ட SKOS 2026 வழிகாட்டுதல்களை
+        அடிப்படையாகக் கொண்டது.</p>
+      <h2 class="section-title">1. சொத்து சரிபார்ப்பு (நுழைவுத் தடை)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>தனி நபர் / தம்பதியருக்கான விலக்கு</h4>
+          <div class="param-value">CHF 6'000 / 12'000</div>
+          <p><small>ஒரு குழந்தைக்கு CHF 3'000 கூடுதலாக. ஒரு ஆதரவு அலகுக்கு அதிகபட்ச மொத்த விலக்கு CHF 15'000 ஆக
+              வரையறுக்கப்பட்டுள்ளது.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>சொத்து நுகர்வு</h4>
+          <div class="param-value">வகுத்தி 10 ஆண்டுகள்</div>
+          <p><small>விலக்குத் தொகையை மீறும் சொத்து, 120 மாதங்களுக்கு நேர்கோட்டு முறையில் மாத வருமானமாக
+              கணக்கிடப்படுகிறது.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை (மாதந்தோறும்)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>வாழ்க்கைக்கான அடிப்படைத் தேவை (GBL)</h3>
+          <p>GBL ஆனது உணவு, உடை, எரிசக்தி மற்றும் அன்றாட வீட்டு நிர்வாகச் செலவுகளை உள்ளடக்கியது:</p>
+          <table class="data-table">
+            <tr>
+              <th>வீட்டு அளவு</th>
+              <th>மாதத்திற்கான தொகை (2026)</th>
+            </tr>
+            <tr>
+              <td>1 நபர்</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 நபர்கள்</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>3 நபர்கள்</td>
+              <td>CHF 1'974</td>
+            </tr>
+            <tr>
+              <td>4 நபர்கள்</td>
+              <td>CHF 2'271</td>
+            </tr>
+            <tr>
+              <td>5 நபர்கள்</td>
+              <td>CHF 2'568</td>
+            </tr>
+            <tr>
+              <td>ஒவ்வொரு கூடுதல் நபர்</td>
+              <td>+ CHF 216</td>
+            </tr>
+          </table>
+          <p><small>*குறிப்பு: பயிற்சியில் உள்ள அல்லது பெற்றோர் வீட்டில் வசிக்கும் இளம் வயதினருக்கு, டிசின் கன்டோனில்
+              குறைக்கப்பட்ட கன்டோனல் விகிதங்கள் (Forfait Giovani) பொருந்தும்.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>வீட்டுச் செலவு &amp; சுகாதார காப்பீடு</h3>
+          <p>உண்மையான வீட்டு மற்றும் கட்டாய சுகாதாரச் செலவுகள் சட்டப்பூர்வ அதிகபட்சம் வரை கணக்கில்
+            எடுத்துக்கொள்ளப்படுகின்றன:</p>
+          <div class="formula">
+            அங்கீகரிக்கப்பட்ட வாடகை (மொத்த) + நிகர சுகாதார காப்பீட்டு பிரீமியம் (KVG)
+          </div>
+          <p><small>*முக்கியம்: TI கன்டோனில் வீட்டு அளவு மற்றும் பகுதிகள்/நகராட்சிகளுக்கு ஏற்ப அதிகபட்ச வாடகை வரம்புகள்
+              படிநிலையாக உள்ளன (1 நபருக்கான குறிப்பு மதிப்பு தோராயமாக CHF 1'100). சுகாதார காப்பீட்டு பிரீமியங்களுக்கு,
+              கன்டோனல் நடைமுறையின்படி, சாதாரண கன்டோனல் பிரீமியம் மானியம் (IPV / RIPAM) முன்கூட்டியே நேரடியாகக்
+              கழிக்கப்படுகிறது; அதிகபட்சமாக கன்டோனல் சராசரி பிரீமியம் விகிதம் அங்கீகரிக்கப்படுகிறது.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>வருமான கணக்கீடு &amp; வேலை விலக்கு</h3>
+          <p>மொத்த அல்லது நிகர வேலை வருமானத்தில் இருந்து, வேலை ஊக்கத்தை பராமரிக்க ஒரு விலக்குத் தொகை வழங்கப்படுகிறது
+            (வருமான விலக்கு):</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>கணக்கில் எடுத்துக்கொள்ளக்கூடிய வருமானம்</strong> = மற்ற வருமானம் + (நிகர வேலை வருமானம் × 80%)
+          </div>
+          <p><small>வேலை வருமானத்தில் 20% ஒரு மொத்த வேலை விலக்கு பயன்படுத்தப்படுகிறது. குழந்தை கொடுப்பனவுகள்,
+              ஓய்வூதியங்கள் (AHV/IV) மற்றும் பிற LAPS நலன்கள் 100% வருமானமாக கருதப்படுகின்றன.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>முடிவு: மாதாந்திர உரிமை</h3>
+          <p>இறுதி பொருளாதார உதவியானது ஆதரவு அலகின் தேவை பற்றாக்குறையிலிருந்து பெறப்படுகிறது:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            உரிமை = (GBL + வாடகை + நிகர சுகாதார காப்பீடு + IZU*) - (கணக்கில் எடுத்துக்கொள்ளக்கூடிய வருமானம் + சொத்து
+            நுகர்வு)
+          </div>
+          <p><small>*IZU = ஒருங்கிணைப்பு கொடுப்பனவு. பயனுள்ள பணிக்கு ஈடாக அல்லது வேலை செய்பவர்கள், டிசின் கன்டோனில்
+              மாதத்திற்கு CHF 100 என்ற மொத்த ஒருங்கிணைப்பு கொடுப்பனவைப் பெறலாம்.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>டிசின் கன்டோனில் பொறுப்பான அதிகாரி:</strong><br />
+        ஒருங்கிணைப்பு மற்றும் செலுத்துதல் <strong>Ufficio del sostegno sociale e dell'inserimento (USSI)</strong> மூலம்
+        மேற்கொள்ளப்படுகிறது.<br />
+        முகவரி: Viale Officina 6, 6501 Bellinzona | தொலைபேசி: +41 91 814 70 51 | மின்னஞ்சல்: dss-ussi@ti.ch<br />
+        <em>கவுண்டர் திறக்கும் நேரம்:</em> திங்கள் முதல் வெள்ளி வரை காலை 08:30–11:45 மற்றும் பிற்பகல் பொது சேவை
+        மையத்தில் 14:00–16:00 வரை (முன்கூட்டியே சந்திப்பு முன்பதிவு செய்ய கடுமையாக பரிந்துரைக்கப்படுகிறது).
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">கால்குலேட்டரைத் தொடங்கவும்</a>
+        <a class="btn-link"
+          href="https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps"
+          target="_blank">டிசின் கன்டோன் அதிகாரப்பூர்வ பக்கம் (LAPS)</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரங்கள்: டிசின் கன்டோன் (IAS / USSI), Legge sull'assistenza sociale (LAS TI) &amp; SKOS வழிகாட்டுதல்கள் 2026
+      </p>
+      <p>© 2026 welfarecalc.ch | வெளிப்படையான சமூக உதவி கணக்கீடு</p>
+    </footer>
+  </div>
+</body>
+
+</html>

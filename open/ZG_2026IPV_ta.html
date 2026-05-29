@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV அல்காரிதம் கான்டன் சுக் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் கான்டன் சுக்கில் தனிப்பட்ட பிரீமியம் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? Ausgleichskasse Zug இன் அதிகாரப்பூர்வ தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV அல்காரிதம் கான்டன் சுக் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta
+    content="கான்டன் சுக் (ZG) இல் 2026 ஆம் ஆண்டிற்கான தனிப்பட்ட பிரீமியம் குறைப்புக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/ZG_2026IPV_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "கன்டோன் சுக் 2026 தனிப்பட்ட பிரீமியம் மானிய கணக்கீடு",
+      "description": "கன்டோன் சுக்கில் IPV மானியத்தை வெளிப்படையாக நிர்ணயிப்பதற்கான படி-படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "சொத்தின் 10% சேர்த்து, அடிப்படை வருமானத்தை (LNA) நிர்ணயித்தல்."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "8% காரணியின் அடிப்படையில் தனிப்பட்ட சுய-பங்களிப்பை நிர்ணயித்தல்."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "குழந்தைகள் மற்றும் இளைஞர்களுக்கான சட்டப்பூர்வ குறைந்தபட்ச உத்தரவாதங்களுடன் ஒப்பிடுதல்."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .legal-info-links {
+      margin-top: 10px;
+      font-size: 0.85rem;
+    }
+
+    .legal-info-links a {
+      color: var(--official-blue);
+      text-decoration: underline;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+      <h1>IPV-அல்காரிதம்: கன்டோன் சுக் (ZG)</h1>
+      <p>2026 ஆம் ஆண்டிற்கான உங்கள் தனிப்பட்ட பிரீமியம் மானியத்தின் வெளிப்படையான கணக்கீடு</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>வெளிப்படைத்தன்மை மூலம் நம்பிக்கை. கன்டோன் சுக்கில் உங்கள் சாத்தியமான தனிப்பட்ட பிரீமியம் மானியத்தை (IPV) எங்கள்
+        கால்குலேட்டர் எவ்வாறு நிர்ணயிக்கிறது என்பதை இங்கு நாங்கள் வெளிப்படுத்துகிறோம். இந்த அல்காரிதம் கன்டோன் சுக் (BGS
+        842.6) இன் சட்டப்பூர்வ அடிப்படைகள் மற்றும் சுக் இழப்பீட்டு நிதியத்தின் வழிகாட்டுதல்களை கண்டிப்பாக அடிப்படையாகக்
+        கொண்டது.</p>
+      <h2 class="section-title">1. முக்கிய அளவுருக்கள் (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>சுய-பங்களிப்பு காரணி</h4>
+          <div class="param-value">8.0 %</div>
+          <p><small>சுகாதார காப்பீட்டு பிரீமியங்களுக்கு ஏற்கத்தக்க அடிப்படை வருமானத்தின் பங்கு.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>சொத்து சேர்ப்பு</h4>
+          <div class="param-value">10.0 %</div>
+          <p><small>வரி விதிக்கக்கூடிய நிகர சொத்தின் சதவீதம், இது கணக்கிடக்கூடிய வருமானமாக சேர்க்கப்படுகிறது.</small>
+          </p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>அடிப்படை வருமானம் (LNA)</h3>
+          <p>முதலில், குடும்பத்தின் பொருளாதார திறன் கணக்கிடப்படுகிறது. கன்டோன் சுக்கில், வரி விதிக்கக்கூடிய நிகர
+            சொத்தில் 10% வருமான அங்கமாக சேர்க்கப்படுகிறது:</p>
+          <div class="formula-box">
+            <strong>LNA</strong> = Max(0, [வரி விதிக்கக்கூடிய நிகர வருமானம்] + [தன்னார்வ 2வது தூண்] + [தூண் 3a] + ([வரி
+            விதிக்கக்கூடிய சொத்து] × 10%) - [குழந்தை கழிவு])
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>கழிவு வகை</th>
+              <th>தொகை (ஒரு நபருக்கு)</th>
+            </tr>
+            <tr>
+              <td>ஒரு குழந்தைக்கு / இளைஞர் பயிற்சி வகைக்கான மொத்த கழிவு</td>
+              <td>CHF 8'500</td>
+            </tr>
+          </table>
+          <div class="alert" style="margin-top: 15px; padding: 10px 15px;">
+            <strong>வருமான வரம்பு:</strong> கணக்கிடப்பட்ட LNA <strong>CHF 89'900</strong> தொகையை மீறினால், IPV மீதான
+            சட்டப்பூர்வ உரிமை முற்றிலும் நீங்கும்.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>சொத்து விலக்கு வரம்பு சோதனை</h3>
+          <p>வருமான சோதனைக்கு கூடுதலாக, ஒரு கடுமையான சொத்து மேல் வரம்பு (ஹார்ட் லிமிட்) விலக்கு அளவுகோலாக பொருந்தும்:
+          </p>
+          <table class="data-table">
+            <tr>
+              <th>குடும்ப வகை</th>
+              <th>முழுமையான சொத்து வரம்பு</th>
+            </tr>
+            <tr>
+              <td>தனி நபர்</td>
+              <td>CHF 150'000</td>
+            </tr>
+            <tr>
+              <td>திருமணமான தம்பதிகள் / பதிவு செய்யப்பட்ட கூட்டாண்மைகள்</td>
+              <td>CHF 300'000</td>
+            </tr>
+          </table>
+          <p style="margin-top:10px;"><small>வரி விதிக்கக்கூடிய சொத்து இந்த கன்டோன் வரம்பு மதிப்புகளுக்கு மேல்
+              இருந்தால், மானியங்களுக்கு உரிமை இருக்காது.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>கன்டோன் வழிகாட்டு பிரீமியங்கள் 2026</h3>
+          <p>வழிகாட்டு பிரீமியங்கள் கணக்கீட்டிற்காக கன்டோனால் நிர்ணயிக்கப்பட்ட நிலையான சராசரி பிரீமியங்களை
+            பிரதிநிதித்துவப்படுத்துகின்றன:</p>
+          <table class="data-table">
+            <tr>
+              <th>வகை</th>
+              <th>வழிகாட்டு பிரீமியம் (ஆண்டுக்கு)</th>
+            </tr>
+            <tr>
+              <td>வயதுவந்தோர் (26 வயது மற்றும் அதற்கு மேல்)</td>
+              <td>CHF 5'916 / ஆண்டு</td>
+            </tr>
+            <tr>
+              <td>இளைஞர்கள் (19-25 வயது, பயிற்சியில்)</td>
+              <td>CHF 4'140 / ஆண்டு</td>
+            </tr>
+            <tr>
+              <td>குழந்தைகள் (0-18 வயது)</td>
+              <td>CHF 1'392 / ஆண்டு</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>தனிப்பட்ட சுய-பங்களிப்பின் கணக்கீடு</h3>
+          <p>ஏற்கத்தக்க சொந்த பங்கு அடிப்படை வருமானத்தை (LNA) அடிப்படையாகக் கொண்டது:</p>
+          <div class="formula-box">
+            <strong>சுய-பங்களிப்பு</strong> = LNA × 8.0%
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>கோட்பாட்டு மானியத்தின் நிர்ணயம்</h3>
+          <p>கோட்பாட்டு மானியத் தொகையானது, கூட்டப்பட்ட வழிகாட்டு பிரீமியங்களுக்கும் தனிப்பட்ட சுய-பங்களிப்புக்கும்
+            இடையிலான வித்தியாசத்திலிருந்து உருவாகிறது:</p>
+          <div class="formula-box">
+            <strong>கோட்பாட்டு மானியம்</strong> = Max(0, [மொத்த கன்டோன் வழிகாட்டு பிரீமியங்கள்] - [சுய-பங்களிப்பு])
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>குறைந்தபட்ச உத்தரவாதங்களின் பயன்பாடு (குழந்தை &amp; இளைஞர் பாதுகாப்பு)</h3>
+          <p>குடும்பங்களை வரி ரீதியாக நிவாரணம் செய்ய, குறைந்த மற்றும் நடுத்தர வருமானங்களில் குழந்தைகள் மற்றும்
+            பயிற்சியில் உள்ள இளைஞர்களுக்கான சட்டப்பூர்வ குறைந்தபட்ச உத்தரவாதம் செயல்படுகிறது:</p>
+          <div class="formula-box">
+            <strong>குறைந்தபட்ச உத்தரவாதம்</strong> = (குழந்தைகளின் எண்ணிக்கை × CHF 1'392 × 80%) + (பயிற்சியில் உள்ள
+            இளைஞர்களின் எண்ணிக்கை × CHF 4'140 × 50%)
+
+            <strong>கோட்பாட்டு மானிய திருத்தம்</strong> = Max(கோட்பாட்டு மானியம், குறைந்தபட்ச உத்தரவாதம்)
+          </div>
+          <p><small>வழக்கமாக கணக்கிடப்பட்ட குடும்ப மானியம், குழந்தை மற்றும் இளைஞர் தொகைகளின் இந்த சட்டப்பூர்வ
+              குறைந்தபட்ச வரம்பை விட குறைவாக இருந்தால், அதற்கு பதிலாக குறைந்தபட்ச உத்தரவாதத் தொகை வழங்கப்படும்.</small>
+          </p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">7</div>
+        <div class="step-body">
+          <h3>செலுத்து வரம்பு மற்றும் இறுதி வரம்பு</h3>
+          <p>இறுதி ஆண்டு IPV செலுத்துதல் ஒரு குறைந்தபட்ச வரம்புக்கு உட்பட்டது மற்றும் உண்மையில் செலுத்தப்பட்ட
+            பிரீமியத்தால் வரையறுக்கப்படுகிறது:</p>
+          <div class="formula-box">
+            1. செலுத்து வரம்பு: (கோட்பாட்டு மானிய திருத்தம் &lt; CHF 100) எனில் → உரிமை = 0 CHF
+            2. இறுதி ஆண்டு மானியம் = Min(சுற்று(கோட்பாட்டு மானிய திருத்தம்), உண்மையான ஆண்டு பிரீமியம்)
+            3. மாதாந்திர வரவு = சுற்று(இறுதி ஆண்டு மானியம் / 12)
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>சட்டப்பூர்வ அறிவிப்பு:</strong><br />
+        இந்த கண்ணோட்டம் வழிமுறை வெளிப்படைத்தன்மை மற்றும் வலை கால்குலேட்டரின் செயல்பாடு குறித்த விளக்கத்திற்காகும். இது
+        அதிகாரப்பூர்வ உத்தரவு அல்லது சட்ட ஆலோசனையை பிரதிநிதித்துவப்படுத்தாது.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
+          திரும்பு</a>
+        <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/praemienverbilligung" target="_blank">சுக்
+          இழப்பீட்டு நிதியத்தின் IPV‑நுழைவாயில்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: சுக் இழப்பீட்டு நிதியம் &amp; கன்டோன் சட்டத் தொகுப்பு (BGS 842.6) 2026 | welfarecalc.ch ஆல்
+        வழங்கப்பட்டது</p>
+      <div class="legal-info-links">
+        <a href="https://bgs.zg.ch/app/de/texts_of_law/842.1" target="_blank">சட்ட அடிப்படைகள் (EG KVG)</a>
+        <a href="https://www.akzug.ch" target="_blank">சுக் இழப்பீட்டு நிதியம்</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

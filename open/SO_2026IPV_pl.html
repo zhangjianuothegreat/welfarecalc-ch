@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorytm IPV Kanton Solothurn 2026 | Przejrzyste obliczenia | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczana jest dotacja do składek (IPV) w 2026 roku w kantonie Solothurn? Odkryj nasz przejrzysty algorytm oparty na oficjalnych danych AKSO.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SO_2026IPV_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SO_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SO_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SO_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SO_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SO_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SO_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SO_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SO_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SO_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SO_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SO_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SO_2026IPV_de.html">
+
+    <meta property="og:title" content="Algorytm IPV Kanton Solothurn 2026 | Przejrzyste obliczenia">
+    <meta property="og:description" content="Oficjalna logika obliczeniowa dotacji do składek na rok 2026 w Solothurn (SO).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/SO_2026IPV_pl.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie dotacji na składki Solothurn 2026",
+      "description": "Instrukcja krok po kroku dotycząca ustawowego ustalania IPV w kantonie Solothurn.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ustalenie dochodu podlegającego opodatkowaniu (LNA) z 5% konwersją majątku po odliczeniu kwoty wolnej"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Sprawdzenie progu wejścia i górnej granicy dochodu (80 000 CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Obliczenie liniowej progresywnej składki własnej między 9% a 15%"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Zastosowanie ustawowych gwarancji minimalnych dla dzieci (80%) i młodych dorosłych (50%)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">OFICJALNE DANE 2026</div>
+        <h1>Algorytm IPV: Kanton Solothurn (SO)</h1>
+        <p>Przejrzyste ujawnienie logiki obliczeniowej na rok 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Zaufanie dzięki przejrzystości. Tutaj ujawniamy, w jaki sposób nasz kalkulator określa Twoją potencjalną dotację na składki w kantonie Solothurn. Algorytm ten opiera się ściśle na podstawach prawnych (BGS 831.1) Kasy Wyrównawczej Solothurn (AKSO).</p>
+
+        <h2 class="section-title">1. Kluczowe parametry (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Progresywna składka własna</h4>
+                <div class="param-value">9.0 % — 15.0 %</div>
+                <p><small>Zależna od skorygowanego dochodu netto (RDU).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Konwersja majątku</h4>
+                <div class="param-value">5.0 %</div>
+                <p><small>Udział majątku podlegającego opodatkowaniu po odliczeniu, który jest doliczany do dochodu.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Ścieżka obliczeniowa</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Dochód netto podlegający opodatkowaniu (LNA)</h3>
+                <p>Najpierw określa się zdolność ekonomiczną z uwzględnieniem majątku:</p>
+                <div class="formula-box">
+                    <strong>[Dochód netto]</strong> + <strong>[5% × (Majątek podlegający opodatkowaniu - Kwota wolna)]</strong>
+                </div>
+                <p><small>Uwaga: Kanton przewiduje odliczenie od majątku podlegającego opodatkowaniu w zależności od stanu cywilnego, zanim zacznie obowiązywać 5% konwersja.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Odliczenia i dochód skorygowany (RDU)</h3>
+                <p>Od dochodu LNA odejmuje się odliczenia socjalne i na dzieci, aby uzyskać skorygowany dochód netto (RDU):</p>
+                <div class="formula-box">
+                    <strong>RDU = Max(0, LNA - Łączne odliczenia)</strong>
+                </div>
+                <table class="data-table">
+                    <tr><th>Kategoria</th><th>Kwota odliczenia (rocznie)</th></tr>
+                    <tr><td>Osoby samotne</td><td>CHF 12 000</td></tr>
+                    <tr><td>Małżeństwa / pary żyjące w konkubinacie</td><td>CHF 18 000</td></tr>
+                    <tr><td>Na dziecko / młodego dorosłego w edukacji</td><td>+ CHF 6 000</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Oficjalne składki referencyjne 2026 (roczne)</h3>
+                <p>Znormalizowane roczne składki referencyjne ustalone przez Radę Rządową na rok 2026 wynoszą:</p>
+                <table class="data-table">
+                    <tr><th>Kategoria</th><th>Miesięcznie</th><th>Rocznie (podstawa obliczeń)</th></tr>
+                    <tr><td>Dorośli (od 26 lat)</td><td>CHF 422</td><td>CHF 5 064</td></tr>
+                    <tr><td>Młodzi dorośli (19-25, w edukacji)</td><td>CHF 305</td><td>CHF 3 660</td></tr>
+                    <tr><td>Dzieci (0-18)</td><td>CHF 98</td><td>CHF 1 176</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Progresywna stawka składki własnej</h3>
+                <p>Rozsądny udział własny w dochodzie wzrasta liniowo między RDU 40 000 CHF a 120 000 CHF:</p>
+                <div class="formula-box">
+                    Jeśli RDU ≤ 40 000: <strong>Stawka = 9%</strong><br>
+                    Jeśli RDU ≥ 120 000: <strong>Stawka = 15%</strong><br>
+                    Pomiędzy: <strong>Stawka = 9% + 6% × ((RDU - 40 000) / 80 000)</strong>
+                </div>
+                <div class="formula-box" style="background: #eef2ff;">
+                    <strong>Udział własny (CHF) = RDU × Stawka składki własnej</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Określenie dotacji i gwarancja minimalna</h3>
+                <p>Wstępna dotacja wynika ze składek referencyjnych pomniejszonych o udział własny. Jednocześnie obowiązuje ustawowa gwarancja minimalna dla dzieci i młodzieży:</p>
+                <div class="formula-box">
+                    Wstępna dotacja = Max(0, [Łączne składki referencyjne] - [Udział własny])
+                </div>
+                <p>Niezależnie od dochodu gwarantowane są następujące minimalne udziały składki referencyjnej:</p>
+                <table class="data-table">
+                    <tr><th>Kategoria beneficjentów</th><th>Gwarantowany udział</th></tr>
+                    <tr><td>Dzieci (minimalna redukcja)</td><td>80 % składki referencyjnej (CHF 940.80 / rok)</td></tr>
+                    <tr><td>Młodzi dorośli w edukacji</td><td>50 % składki referencyjnej (CHF 1 830.00 / rok)</td></tr>
+                </table>
+                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                    Uprawnienie = Max(Wstępna dotacja, Ustawowa gwarancja minimalna)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">6</div>
+            <div class="step-body">
+                <h3>Limity wypłat</h3>
+                <p>Na koniec obliczone uprawnienie jest sprawdzane pod kątem administracyjnego minimum:</p>
+                <div class="formula-box">
+                    Jeśli roczna dotacja &lt; <strong>CHF 240</strong>: <strong>Wypłata = 0</strong>
+                </div>
+                <p><small>*Uprawnienie jest dodatkowo ograniczone przez faktycznie opłaconą składkę przez ubezpieczonego.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Ważne limity dochodów i majątku:</strong><br>
+            Jeśli podlegający opodatkowaniu dochód netto (LNA) przekracza kwotę <strong>CHF 80 000</strong>, w kantonie Solothurn co do zasady nie przysługuje prawo do IPV (próg wejścia), chyba że występują szczególne przypadki trudne lub duża liczba dzieci.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Powrót do strony głównej</a>
+            <a href="https://www.akso.ch/dienstleistungen/praemienverbilligung-ipv" target="_blank" class="btn-link">Odwiedź oficjalną stronę AKSO</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Źródło: AKSO (Kasa Wyrównawcza Solothurn) Wytyczne i parametry 2026 | welfarecalc.ch</p>
+        <p>Informacja prawna: Macierz obliczeniowa służy wyłącznie celom informacyjnym i nie stanowi prawnie wiążącej decyzji.</p>
+    </footer>
+</div>
+
+</body>
+</html>

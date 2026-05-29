@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Algoritam za hitnu pomoć Kanton Schwyz 2026 | Transparentan izračun | welfarecalc.ch</title>
+    <meta
+        content="Kako se izračunava hitna pomoć 2026. u Kantonu Schwyz (SZ)? Službeni algoritam temeljen na Zakonu o migracijama i najnovijoj regulativi o bezgotovinskim karticama za 2026."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_hr.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algoritam za hitnu pomoć Kanton Schwyz 2026 | Transparentan izračun" property="og:title" />
+    <meta
+        content="Službena logika izračuna za hitnu pomoć 2026. u Kantonu Schwyz, uključujući bezgotovinsku karticu za plaćanje."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/SZ_2026nothilfe_hr.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun hitne pomoći Schwyz 2026",
+      "description": "Vodič korak po korak za izračun zakonske hitne pomoći u Kantonu Schwyz uzimajući u obzir kolektivni smještaj i platnu karticu.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Određivanje dnevnog iznosa za odrasle na temelju faktora para"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Dodavanje doplatka za djecu uključujući degresivno smanjenje od 3. djeteta"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Dodjela ukupnog iznosa na elektroničku platnu karticu Kantona Schwyz"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ Einheitlicher Core-Stil (Identisch mit AG und AI) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+            --card-warning: #fffbeb;
+            --border-warning: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: var(--card-warning);
+            border: 1px solid #fef3c7;
+            border-left: 5px solid var(--border-warning);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-danger {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-left: 5px solid var(--swiss-red);
+            color: #991b1b;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo Rechner */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+        }
+
+        .action-area {
+            text-align: right;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-calc {
+            background: var(--swiss-red);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-calc:hover {
+            background: #b91c1c;
+        }
+
+        .result-panel {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .result-title {
+            font-weight: bold;
+            color: #166534;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .amount-big {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #15803d;
+            margin: 0.5rem 0;
+        }
+
+        .steps-detail {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="update-tag">SLUŽBENI KANTONALNI STANDARD: 2026</span>
+            <h1>Algoritam za hitnu pomoć Kanton Schwyz (SZ)</h1>
+            <p>Transparentno otkrivanje matematičkog modela izračuna prema Zakonu o migracijama (MigG)</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+        <div class="content">
+            <h3 class="section-title">1. Zakonske osnove i smjernice</h3>
+            <p>Dodjela hitne pomoći u Kantonu Schwyz temelji se na čl. 12 Saveznog ustava (BV) te kantonalnom
+                zakonodavstvu Kantonalnog vijeća Schwyz. Za razliku od redovne socijalne pomoći za azilante, hitna pomoć
+                pokriva samo apsolutno osiguranje egzistencije.</p>
+            <div class="alert alert-danger">
+                <strong>⚠️ Važna zakonska promjena od travnja 2026.:</strong><br />
+                Prema revidiranom Zakonu o migracijama Kantonalnog vijeća Schwyz (uvođenje bezgotovinskog plastičnog
+                novca za tražitelje azila i odbijene osobe), izračunata sredstva hitne pomoći <strong>se u načelu više
+                    ne isplaćuju u gotovini</strong>. Iznosi se u potpunosti odobravaju na elektroničku <strong>platnu
+                    karticu (debitnu karticu)</strong>. Isplate u gotovini ograničene su na minimalne iznimke (npr.
+                autobusne karte).
+            </div>
+            <h3 class="section-title">2. Parametri sustava 2026 (kolektivni smještaj)</h3>
+            <p>Budući da su odbijeni tražitelji azila u Kantonu Schwyz smješteni u kantonalnim kolektivnim smještajima
+                (npr. prihvatilište za hitnu pomoć Kaltbach), usluge u naravi za smještaj i infrastrukturu imaju
+                prednost. Dnevni iznosi za osobne potrebe utvrđeni su kako slijedi:</p>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Osnovni dnevni iznos (pojedinac)</h4>
+                    <div class="param-value">CHF 8,00 / dan</div>
+                </div>
+                <div class="param-card">
+                    <h4>Faktor para (couple_factor)</h4>
+                    <div class="param-value">1,68 (CHF 13,44 za parove)</div>
+                </div>
+                <div class="param-card">
+                    <h4>Doplatak za djecu (Djeca 1 i 2)</h4>
+                    <div class="param-value">CHF 4,16 / dan (Faktor 0,52)</div>
+                </div>
+                <div class="param-card">
+                    <h4>Degresija od 3. djeteta</h4>
+                    <div class="param-value">Faktor 0,10 (Bonus faktor)</div>
+                </div>
+            </div>
+            <h3 class="section-title">3. Matematički algoritam izračuna</h3>
+            <p>Utvrđivanje mjesečnog prava na hitnu pomoć odvija se kroz trostupanjsku matematičku petlju:</p>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <strong>Izračun osnovnog iznosa za odrasle ($A_{daily}$)</strong>
+                    <p>Ovisno o strukturi kućanstva (pojedinac ili bračni par/izvanbračna zajednica) primjenjuje se
+                        degresivni faktor:</p>
+                    <div class="formula">
+                        Ako adults == 1: A_daily = 8,00 <br />
+                        Ako adults &gt;= 2: A_daily = 8,00 * 1,68 + (adults - 2) * 8,00
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <strong>Izračun doplatka za djecu ($C_{daily}$)</strong>
+                    <p>Za prvo dvoje djece izračunava se redovni doplatak (faktor 0,52). Od 3. djeteta primjenjuje se
+                        degresivno smanjenje, pri čemu se za svako dodatno dijete dodaje bonus faktor od 0,10:</p>
+                    <div class="formula">
+                        Ako children &lt;= 2: C_daily = children * (8,00 * 0,52)<br />
+                        Ako children &gt; 2: C_daily = 2 * (8,00 * 0,52) + (children - 2) * (8,00 * 0,10)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <strong>Vremenska ekstrapolacija i komercijalno zaokruživanje</strong>
+                    <p>Hitna pomoć se u Kantonu Schwyz odobrava po danu. Za standardno mjesečno planiranje u sustavu
+                        koristi se točna prosječna vrijednost od 30,42 dana mjesečno i komercijalno zaokružuje.</p>
+                    <div class="formula">
+                        Total_Mjesec_Sirovo = (A_daily + C_daily) * 30,42 <br />
+                        Final_Mjesec = Math.round(Total_Mjesec_Sirovo)
+                    </div>
+                </div>
+            </div>
+            <h3 class="section-title">4. Interaktivna validacija (algoritam uživo)</h3>
+            <p>Koristite ovu testnu ploču za izravnu provjeru matematičke točnosti koda koji se izvodi u pozadini
+                welfarecalc.ch.</p>
+            <div class="demo-card">
+                <div class="demo-header">SZ Simulator algoritma</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="adultsCount">Broj odraslih u kućanstvu</label>
+                            <input id="adultsCount" max="10" min="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label for="childrenCount">Broj djece (mlađe od 18 godina)</label>
+                            <input id="childrenCount" max="15" min="0" type="number" value="0" />
+                        </div>
+                    </div>
+                    <div class="action-area">
+                        <button class="btn-calc" id="runCalcBtn" type="button">Izvrši algoritam</button>
+                    </div>
+                    <div class="result-panel" id="liveResultPanel">
+                        <div class="result-title">🎯 Izračunato sredstvo hitne pomoći (mjesečno):</div>
+                        <div class="amount-big" id="monthlyAmountDisplay">0,00 CHF</div>
+                        <p style="font-size:0.85rem; color:#15803d; font-weight:bold; margin-bottom:10px;">
+                            💳 Ovo se sredstvo, prema kantonalnom zakonu, u cijelosti prenosi na Schwyz platnu karticu.
+                        </p>
+                        <strong>Matematički protokol:</strong>
+                        <div class="steps-detail" id="stepsDetail">
+                            -- Izvršite izračun --
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert" style="background:#f0fdfa; border-left-color:#0d9488; text-align:center;">
+                <strong>Jamstvo transparentnosti:</strong> Ovaj izvorni kod točno odražava logiku izračuna koja je
+                implementirana na našim švicarskim poslužiteljima za obradu podataka Kantona Schwyz. Ne pohranjuju se
+                niti prosljeđuju trećim stranama nikakvi osobni podaci.
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch">Na glavnu stranicu</a>
+                <a class="btn-link" href="https://www.sz.ch" target="_blank">Službena web stranica Kantona SZ</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 welfarecalc.ch — Neovisni švicarski alat za izračun socijalnih davanja. Nije službena web stranica
+                tijela.</p>
+            <p>Napomena o autorskim pravima: Otkrivanje služi transparentnosti i jačanju povjerenja na internetu.</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            "use strict";
+
+            // Službeni validirani parametri Kantona Schwyz za 2026
+            const SZ_PARAMS = {
+                daily_cash: 8.00,             // Osnovni dnevni iznos u Kantonu Schwyz
+                couple_factor: 1.68,          // Faktor skaliranja za parove
+                child_addon_factor: 0.52,     // Faktor za prvo dvoje djece (CHF 4.16)
+                child_from3_bonus_factor: 0.10, // Degresivni faktor od 3. djeteta (CHF 0.80)
+                days_per_month: 30.42         // Standardizirani švicarski mjesečni djelitelj
+            };
+
+            function computeSZNothilfe(adults, children) {
+                // Korak 1: Izračun za odrasle
+                let adultDaily = 0;
+                if (adults === 1) {
+                    adultDaily = SZ_PARAMS.daily_cash;
+                } else if (adults >= 2) {
+                    // Prvi par skaliran s couple_factor, svaka dodatna odrasla osoba dobiva puni osnovni iznos
+                    adultDaily = (SZ_PARAMS.daily_cash * SZ_PARAMS.couple_factor) + ((adults - 2) * SZ_PARAMS.daily_cash);
+                }
+
+                // Korak 2: Izračun za djecu (s degresivnim stupnjevanjem)
+                let childDaily = 0;
+                if (children > 0) {
+                    if (children <= 2) {
+                        childDaily = children * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_addon_factor);
+                    } else {
+                        // Prvo dvoje djece dobiva puni doplatak
+                        const baseChildrenDaily = 2 * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_addon_factor);
+                        // Svako dodatno dijete dobiva smanjeni bonus iznos
+                        const extraChildrenDaily = (children - 2) * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_from3_bonus_factor);
+                        childDaily = baseChildrenDaily + extraChildrenDaily;
+                    }
+                }
+
+                // Korak 3: Agregacija i ekstrapolacija
+                const totalDaily = adultDaily + childDaily;
+                const rawMonthly = totalDaily * SZ_PARAMS.days_per_month;
+                const roundedMonthly = Math.round(rawMonthly); // Komercijalno zaokruživanje na cijeli franak
+
+                return {
+                    adultDaily: adultDaily,
+                    childDaily: childDaily,
+                    totalDaily: totalDaily,
+                    rawMonthly: rawMonthly,
+                    roundedMonthly: roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+
+                // Validacija unosa
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) { adults = 1; adultsInput.value = 1; }
+                if (isNaN(children) || children < 0) { children = 0; childrenInput.value = 0; }
+
+                // Izvrši algoritam
+                const res = computeSZNothilfe(adults, children);
+
+                // Generiraj HTML izlaz
+                const stepsHtml = `
+                <strong>📌 Korak 1 – Odrasli:</strong> CHF ${res.adultDaily.toFixed(2)} / dan (primijenjena degresija para)<br>
+                <strong>📌 Korak 2 – Djeca:</strong> CHF ${res.childDaily.toFixed(2)} / dan (uzeta u obzir degresija od 3. djeteta)<br>
+                <strong>📌 Ukupni dnevni iznos:</strong> CHF ${res.totalDaily.toFixed(2)} / dan<br>
+                <strong>📌 Mjesečna ekstrapolacija:</strong> CHF ${res.totalDaily.toFixed(2)} × 30,42 dana = CHF ${res.rawMonthly.toFixed(2)}<br>
+                <strong>💰 Komercijalno zaokruživanje:</strong> CHF ${res.roundedMonthly}.00 (odobrenje na platnu karticu)
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly}.00 CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            // Poveži slušače događaja
+            document.getElementById('runCalcBtn').addEventListener('click', updateDemo);
+
+            // Opcionalno poboljšanje korisničkog iskustva: Automatsko ažuriranje pri unosu
+            document.getElementById('adultsCount').addEventListener('input', updateDemo);
+            document.getElementById('childrenCount').addEventListener('input', updateDemo);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo dell'assistenza sociale Cantone di Soletta 2026 | Calcolo trasparente | welfarecalc.ch</title>
+  <meta
+    content="Come viene calcolata l'assistenza sociale 2026 nel Cantone di Soletta? Scoprite il nostro algoritmo trasparente basato sulle linee guida SKOS e sul diritto cantonale."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_it.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo dell'assistenza sociale Cantone di Soletta 2026 | Calcolo trasparente" property="og:title" />
+  <meta content="Logica di calcolo ufficiale per l'assistenza sociale 2026 nel Cantone di Soletta basata su SKOS."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/SO_2026SH_it.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo dell'assistenza sociale Soletta 2026",
+      "description": "Suddivisione algoritmica dettagliata del calcolo dell'assistenza sociale nel Cantone di Soletta (SO).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verifica della franchigia patrimoniale (soglia d'ingresso)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del fabbisogno di base per il sostentamento (GBL secondo SKOS 2026)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo dei costi di alloggio riconosciuti e dei premi di cassa malati netti"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Confronto dei redditi imponibili dedotte le franchigie"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME SKOS 2026</div>
+      <h1>Algoritmo dell'Assistenza Sociale: Cantone di Soletta</h1>
+      <p>Documentazione trasparente della logica di calcolo per il minimo esistenziale sociale (SO)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+    <div class="content">
+      <p>Come viene calcolata l'assistenza sociale nel Cantone di Soletta? Per rafforzare la fiducia dei nostri utenti,
+        divulghiamo qui l'algoritmo completo che sta alla base di welfarecalc.ch. Esso si basa sulla Legge
+        sull'assistenza sociale di Soletta (SHG) e sulle linee guida ufficiali SKOS 2026.</p>
+      <h2 class="section-title">1. Verifica patrimoniale (La soglia d'ingresso)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Franchigia per singolo</h4>
+          <div class="param-value">CHF 6'000</div>
+          <p><small>Più CHF 3'000 per figlio o persona in formazione.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Franchigia per coppie</h4>
+          <div class="param-value">CHF 12'000</div>
+          <p><small>Franchigia totale massima limitata a CHF 15'000 per unità di sostegno.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Il percorso di calcolo (Mensile)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Fabbisogno di base per il sostentamento (GBL)</h3>
+          <p>Il GBL copre i costi per cibo, vestiario, energia e fabbisogno quotidiano secondo l'adeguamento al rincaro
+            SKOS 2026:</p>
+          <table class="data-table">
+            <tr>
+              <th>Dimensione del nucleo / Gruppo di persone</th>
+              <th>Importo mensile (2026)</th>
+            </tr>
+            <tr>
+              <td>1 persona (singolo)</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 persone (coppia)</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>Adulto aggiuntivo nel nucleo</td>
+              <td>CHF 400</td>
+            </tr>
+            <tr>
+              <td>Bambino sotto gli 11 anni</td>
+              <td>CHF 391</td>
+            </tr>
+            <tr>
+              <td>Bambino tra 11 e 15 anni</td>
+              <td>CHF 699</td>
+            </tr>
+            <tr>
+              <td>Giovani in formazione (oltre 15 anni)</td>
+              <td>CHF 1'061</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Costi di alloggio &amp; Salute</h3>
+          <p>Riconoscimento dei costi effettivi di affitto e della cassa malati fino al massimo legale:</p>
+          <div class="formula">
+            Costi di alloggio riconosciuti = Min(Affitto effettivo, Massimo cantonale)
+          </div>
+          <p>Per la copertura medica di base (LAMal) vale il principio della deduzione IPV:</p>
+          <div class="formula">
+            Fabbisogno cassa malati = Max(0, Premio effettivo - Contributo IPV)
+          </div>
+          <p><small>*Nota: Il modello di stima si basa sulle direttive cantonali sui canoni d'affitto (es. valore
+              indicativo ca. CHF 1'000 per un singolo, scaglionato in base alla dimensione del nucleo).</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Calcolo del reddito &amp; Detrazioni</h3>
+          <p>Dal reddito netto da lavoro viene dedotta una franchigia (franchigia per lavoro) per promuovere
+            l'indipendenza economica:</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>Reddito imponibile</strong> = Reddito netto - Deduzione per lavoro (20% del salario, max. CHF 400)
+          </div>
+          <p><small>Altri redditi come rendite, alimenti o residui di crediti IPV vengono aggiunti al 100% come
+              entrate.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Risultato: Diritto mensile</h3>
+          <p>Il sostegno finanziario si determina coprendo il minimo esistenziale sociale:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Diritto = (GBL + Costi di alloggio + Fabbisogno cassa malati + IZU*) - (Reddito imponibile)
+          </div>
+          <p><small>*IZU = Indennità d'integrazione per comprovate prestazioni lavorative o d'integrazione (da CHF 100 a
+              CHF 300).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Disposizioni patrimoniali nel Cantone SO:</strong><br />
+        Se il patrimonio disponibile al primo esame supera la franchigia definita, secondo la prassi cantonale non
+        esiste in linea di principio alcun diritto all'assistenza sociale economica. Il patrimonio eccedente deve essere
+        interamente utilizzato prima di ricevere le prestazioni.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Avvia il calcolatore</a>
+        <a class="btn-link"
+          href="https://so.ch/verwaltung/departement-des-innern/amt-fuer-gesellschaft-und-soziales/sozialhilfe-und-asyl/sozialhilfe/"
+          target="_blank">Sito ufficiale Cantone SO</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fonti: Legge cantonale di Soletta sull'assistenza sociale (SHG) &amp; Linee guida SKOS 2026</p>
+      <p>© 2026 welfarecalc.ch | Calcolo trasparente dell'assistenza sociale</p>
+    </footer>
+  </div>
+</body>
+
+</html>

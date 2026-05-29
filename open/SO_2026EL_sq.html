@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="sq">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmi EL Kantoni Solothurn 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+  <meta
+    content="Si llogariten Shtesat Kompensuese (EL) 2026 në Kantonin Solothurn? Zbuloni algoritmin tonë transparent bazuar në të dhënat zyrtare të SVA/AKSO."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_sq.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_de.html" hreflang="x-default" rel="alternate" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e Shtesave Kompensuese Solothurn 2026",
+      "description": "Zbërthimi i detajuar zyrtar algoritmik i llogaritjes së EL në Kantonin Solothurn (SO) për vitin 2026.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i nevojës së njohur të shpenzimeve duke marrë parasysh nevojën bazë, rajonet e qirasë së Solothurnit (Rajoni 2/3) dhe primet udhëzuese të sigurimit shëndetësor."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Llogaritja e të ardhurave të llogaritshme duke përfshirë zbritjet ligjore të fitimit (rregulli 2/3) dhe neutralizimin e rreptë të pensionit të 13-të të AHV-së."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i pensionit EL nga diferenca e shpenzimeve të njohura dhe të ardhurave të llogaritshme pas kontrollit të pragut të pasurisë."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+      color: var(--official-blue);
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">TË DHËNA ZYRTARE 2026</div>
+      <h1>Algoritmi EL: Kantoni Solothurn (SO)</h1>
+      <p>Zbërthim transparent dhe ligjërisht konform i Shtesave Kompensuese (EL) për vitin 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+    <div class="content">
+      <p>Transparenca krijon besim. Shtesat Kompensuese (EL) të AHV/IV garantojnë mbulimin e nevojave ekzistenciale.
+        Këtu dokumentojmë në mënyrë të plotë dhe matematikisht të saktë se si llogaritësi ynë përcakton të drejtën tuaj
+        në Kantonin Solothurn bazuar në udhëzimet federale (ELG/ELV) dhe rregulloret kantonale të AKSO-s.</p>
+      <h2 class="section-title">1. Nevoja Bazë Vjetore (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Persona Beqarë</h4>
+          <div class="param-value">CHF 20'670</div>
+          <p><small>Shuma e paushallit të harmonizuar në nivel federal për nevojat jetike.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Çifte të Martuara</h4>
+          <div class="param-value">CHF 31'005</div>
+          <p><small>Nevoja bazë e përbashkët ligjore për të dy bashkëshortët.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Rruga e Saktë e Llogaritjes</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Shpenzimet e Njohura (Nevoja)</h3>
+          <p>Llogaritja mbledh të gjitha zërat e shpenzimeve ligjërisht të llogaritshme të familjes:</p>
+          <div class="formula">
+            Shpenzimet e Njohura = Nevoja Bazë + Qiraja (deri në maksimum) + Primi Udhëzues i Sigurimit Shëndetësor +
+            Shtesa për Fëmijë
+          </div>
+          <h4 style="margin-top: 15px; color: var(--official-blue);">Maksimumet e Qirasë në Kantonin Solothurn (2026)
+          </h4>
+          <p><small>Komunat në Kantonin Solothurn bëjnë pjesë në rajonet 2 dhe 3. Sistemi ynë i cakton kufijtë
+              automatikisht sipas kodit postar (PLZ):</small></p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Madhësia e Familjes</th>
+                <th>Rajoni 2 (Urban) për vit</th>
+                <th>Rajoni 3 (Standard/Fshatar) për vit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 Person</td>
+                <td>CHF 18'300 (CHF 1'525/Muaj)</td>
+                <td>CHF 16'680 (CHF 1'390/Muaj)</td>
+              </tr>
+              <tr>
+                <td>2 Persona</td>
+                <td>CHF 21'720 (CHF 1'810/Muaj)</td>
+                <td>CHF 20'160 (CHF 1'680/Muaj)</td>
+              </tr>
+              <tr>
+                <td>3 Persona</td>
+                <td>CHF 23'760 (CHF 1'980/Muaj)</td>
+                <td>CHF 22'200 (CHF 1'850/Muaj)</td>
+              </tr>
+              <tr>
+                <td>4+ Persona</td>
+                <td>CHF 25'920 (CHF 2'160/Muaj)</td>
+                <td>CHF 24'000 (CHF 2'000/Muaj)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><small>*Shtesat e veçanta: Për bashkësitë e banimit (WG) zbatohet një e drejtë federale e reduktuar (Rajoni
+              2: CHF 905/Muaj, Rajoni 3: CHF 840/Muaj). Prona e banuar nga pronari merret parasysh me një shumë të
+              paushallit prej CHF 3'480 në vit. Banesat e përshtatshme për karroca marrin një shtesë deri në CHF 6'900
+              në vit.</small></p>
+          <h4 style="margin-top: 15px; color: var(--official-blue);">Primet Udhëzuese të Sigurimit Shëndetësor Solothurn
+            2026</h4>
+          <p><small>Primi aktual merret parasysh, por maksimumi deri në primin mesatar kantonal (primi
+              udhëzues):</small></p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+            <li><strong>Të rriturit (nga 26 vjeç):</strong> maks. CHF 7'224 në vit</li>
+            <li><strong>Të rinjtë e rritur (19-25 vjeç):</strong> maks. CHF 5'220 në vit</li>
+            <li><strong>Fëmijët (deri në 18 vjeç):</strong> maks. CHF 1'668 në vit</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Të Ardhurat e Llogaritshme</h3>
+          <p>Nevojës i kundërvihen të ardhurat e modifikuara sipas kritereve të ELG:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 10px;">
+            <li><strong>Neutralizimi i Pensionit të 13-të të AHV-së:</strong> Që nga futja e pensionit të 13-të të
+              AHV-së në vitin 2026, ky izolohet në përputhje me kushtetutën dhe <strong>nuk</strong> llogaritet si e
+              ardhur. Vetëm 12 pensionet e rregullta mujore përfshihen në llogaritje. Format e tjera të pensionit
+              (BVG/Fondi i Pensionit) regjistrohen plotësisht.</li>
+            <li><strong>Rregullimi Ligjor i të Ardhurave nga Punësimi:</strong> Të ardhurat bruto nga punësimi nuk
+              preken plotësisht. Bëhet një zbritje ligjore (CHF 1'000 për beqarët, CHF 1'500 për çiftet e martuara). Nga
+              shuma e mbetur, **vetëm 2/3 (66.67%)** llogaritet si e ardhur.</li>
+            <li><strong>Konsumimi i Pasurisë (Zbritja e Shumës së Liruar):</strong> Nga pasuria neto e pastër zbriten
+              shuma të drejta të liruara. Pjesa e mbetur ndahet me pjesëtuesin ligjor (1/10 për pensionistët e AHV-së,
+              1/15 për pensionistët e IV-së):</li>
+          </ul>
+          <table class="data-table" style="margin-top: 15px;">
+            <thead>
+              <tr>
+                <th>Kategoria</th>
+                <th>Shuma e Liruar (Zvogëlim i të Ardhurave)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Persona Beqarë</td>
+                <td>CHF 30'000</td>
+              </tr>
+              <tr>
+                <td>Çifte të Martuara</td>
+                <td>CHF 50'000</td>
+              </tr>
+              <tr>
+                <td>Fëmijët (për çdo fëmijë)</td>
+                <td>CHF 15'000</td>
+              </tr>
+              <tr>
+                <td>Prona e Banuar nga Pronari (Standard)</td>
+                <td>CHF 112'500 <small>(Rritje në CHF 300'000 e mundur për çiftet e martuara/pensionistët e
+                    IV-së)</small></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Rezultati: Pensioni Vjetor EL</h3>
+          <p>Shtesa Kompensuese ligjore mbyll saktësisht hendekun matematikor të mbulimit:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Pensioni Vjetor EL = [Shpenzimet e Njohura] - [Të Ardhurat e Llogaritshme]
+          </div>
+          <p><small>Nëse rezultati është mbi zero dhe të gjitha pragjet e hyrjes janë përmbushur, ekziston një e drejtë
+              ligjore. Pagesa bëhet mujore (EL Vjetore / 12).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>E rëndësishme: Pragu Ligjor i Pasurisë (Pragu i Hyrjes)</strong><br />
+        Një e drejtë për Shtesa Kompensuese ekziston në parim vetëm nëse pasuria neto e rregulluar (pa vlerën e një
+        prone të banuar nga pronari) është nën **CHF 100'000** për beqarët, përkatësisht **CHF 200'000** për çiftet e
+        martuara. Për fëmijët, ky prag rritet për nga CHF 50'000 secili.
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Kthehu te Faqja Kryesore</a>
+        <a class="btn-link" href="https://www.akso.ch/dienstleistungen/ergaenzungsleistungen-el" target="_blank">Faqja
+          Zyrtare e SVA/AKSO Solothurn</a>
+      </div>
+    </div>
+    <footer>
+      <p>Burimi: Rregulloret Zbatuese të Arkesë Kompensuese të Solothurnit (AKSO) 2026 &amp; Ligji Federal për Shtesat
+        Kompensuese (ELG)</p>
+      <p>Ofruar nga welfarecalc.ch | Të gjitha llogaritjet bëhen pa garanci ligjore.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

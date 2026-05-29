@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>EL Algoritam Kanton Uri 2026 | Transparentni izračun | welfarecalc.ch</title>
+  <meta
+    content="Kako se izračunavaju doplatne naknade (EL) 2026. u Kantonu Uri? Otkrijte naš transparentni algoritam temeljen na službenim SVS podacima."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_hr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_de.html" hreflang="x-default" rel="alternate" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun doplatnih naknada Uri 2026",
+      "description": "Detaljna algoritamska raščlamba izračuna EL u kantonu Uri.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Utvrđivanje priznatih potreba za izdacima (životne potrebe 2026, ograničenje najamnine regija 3, efektivna premija zdravstvenog osiguranja)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Uračunavanje usklađenih prihoda uz neutralizaciju 13. AHV mirovine te trošenje imovine"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Utvrđivanje zakonske EL mirovine iz razlike izdataka minus prihodi"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">SLUŽBENI PODACI 2026</div>
+      <h1>EL Algoritam: Kanton Uri</h1>
+      <p>Transparentna raščlamba doplatnih naknada (EL) za kanton UR</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+    <div class="content">
+      <p>Transparentnost gradi povjerenje. Naš model izračuna za kanton Uri strogo se temelji na obvezujućim odredbama
+        Saveznog zakona o doplatnim naknadama (ELG 2026) te kantonalnim provedbenim propisima SVS Uri.</p>
+      <h2 class="section-title">1. Godišnje osnovne potrebe (Zakonska prilagodba 2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Samačke osobe</h4>
+          <div class="param-value">CHF 21'510</div>
+          <p><small>Savezno prilagođen iznos za opće životne troškove od 2026.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Bračni parovi</h4>
+          <div class="param-value">CHF 32'265</div>
+          <p><small>Osnovne potrebe za supružnike koji žive zajedno u kućanstvu.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Službeni put izračuna</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Priznati izdaci (Potrebe)</h3>
+          <p>Prvo algoritam utvrđuje zbroj zakonski priznatih stavki izdataka godišnje:</p>
+          <div class="formula">
+            Ukupni_Izdaci = Osnovne_potrebe + Priznata_najamnina + Priznata_premija_ZZO
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Maksimalni iznosi najamnine (Regija 3 - Cijeli kanton Uri)</th>
+              <th>Iznos godišnje (bez sporednih troškova)</th>
+            </tr>
+            <tr>
+              <td>Kućanstvo s 1 osobom</td>
+              <td>CHF 16'680 (CHF 1'390/mj)</td>
+            </tr>
+            <tr>
+              <td>Kućanstvo s 2 osobe</td>
+              <td>CHF 20'160 (CHF 1'680/mj)</td>
+            </tr>
+            <tr>
+              <td>Kućanstvo s 3 osobe</td>
+              <td>CHF 22'200 (CHF 1'850/mj)</td>
+            </tr>
+          </table>
+          <p><small>*Napomena: Uvećano za paušalni iznos sporednih troškova prema saveznom pravu. Za vlasnike se
+              uračunava paušalni iznos sporednih troškova od CHF 3'480 godišnje. Doplatak za invalidska kolica povećava
+              ograničenje za CHF 6'900 godišnje.</small></p>
+          <h4 style="margin-top: 15px; color: var(--official-blue);">Logika premija zdravstvenog osiguranja (ELG čl. 11)
+          </h4>
+          <p>Algoritam provjerava efektivnu premiju podnositelja zahtjeva:</p>
+          <div class="formula" style="font-size: 0.85rem;">
+            Priznata_premija_ZZO = Math.min(Efektivna_premija, Kantonalna_prosječna_premija)
+          </div>
+          <p><small>*Kantonalna smjernica UR 2026 kao maksimalna gornja granica: Odrasli CHF 5'850/godina, Mlade odrasle
+              osobe CHF 4'195/godina, Djeca CHF 1'337/godina.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Prihodi koji se mogu uračunati</h3>
+          <p>Zatim se svi prihodi i imovina precizno suprotstavljaju:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+            <li><strong>Primanje mirovine (Neutralizacija 13. AHV mirovine):</strong> Novouvedena 13. AHV mirovina iz
+              2026. matematički se isključuje kako bi se zaštitilo pravo na EL. Osnovica prihoda ostaje 12-mjesečna
+              mirovina.</li>
+            <li><strong>Dohodak od rada:</strong> Usklađen za neoporezive iznose (CHF 1'300 samačke osobe / CHF 1'950
+              bračni parovi). Samo 2/3 preostalog iznosa uračunava se kao prihod.</li>
+            <li><strong>Trošenje imovine (Mjesto stanovanja kod kuće):</strong><br />
+              <span class="formula" style="display:inline-block; padding:4px 10px; margin:5px 0;">(Neto imovina -
+                Neoporezivi iznos imovine) / Djelitelj</span><br />
+              Djelitelj = 10 za starosne umirovljenike (AHV) | Djelitelj = 15 za invalidske umirovljenike (IV).
+            </li>
+          </ul>
+          <table class="data-table">
+            <tr>
+              <th>EL neoporezivi iznosi (Imovina)</th>
+              <th>Neoporezivi iznos</th>
+            </tr>
+            <tr>
+              <td>Samačke osobe</td>
+              <td>CHF 30'000</td>
+            </tr>
+            <tr>
+              <td>Bračni parovi</td>
+              <td>CHF 50'000</td>
+            </tr>
+            <tr>
+              <td>Dodatak po djetetu</td>
+              <td>CHF 15'000</td>
+            </tr>
+            <tr>
+              <td>Vlastita nekretnina za stanovanje (osnovica)</td>
+              <td>CHF 112'500</td>
+            </tr>
+            <tr>
+              <td>Vlastita nekretnina za stanovanje (partner u domu)</td>
+              <td>CHF 300'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Rezultat: EL naknada</h3>
+          <p>Ako postoji financijski jaz i ako su ispunjene zakonske granične vrijednosti, proizlazi godišnja EL
+            mirovina:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Godišnja EL naknada = Max(0, Ukupni_izdaci - Prihodi_koji_se_mogu_uračunati)
+          </div>
+          <p><small>Mjesečna isplata odgovara godišnjoj naknadi podijeljenoj s 12, zaokruženo na sljedeći franak prema
+              trgovačkim pravilima.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Važno: Zakonski prag za ulazak (Gornja granica imovine)</strong><br />
+        Zakonsko pravo na EL u osnovi je isključeno ako neto imovina (bez uzimanja u obzir vrijednosti vlastite
+        nekretnine za stanovanje) prelazi sljedeće granične vrijednosti:<br />
+        • <strong>CHF 100'000</strong> za samačke osobe<br />
+        • <strong>CHF 200'000</strong> za bračne parove (uvećano za <strong>CHF 50'000</strong> po djetetu).
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Povratak na početnu stranicu</a>
+        <a class="btn-link" href="https://www.svsuri.ch" target="_blank">Službena web stranica SVS Uri</a>
+      </div>
+    </div>
+    <footer>
+      <p>Izvor: Savezni ured za socijalno osiguranje (BSV) &amp; SVS Uri provedbene smjernice 2026</p>
+      <p>Omogućeno od strane welfarecalc.ch | Inicijativa za transparentnost u digitalnoj upravi | Bez pravne garancije.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

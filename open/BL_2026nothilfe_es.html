@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Ayuda de Emergencia Cantón de Basilea-Campiña 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calcula la ayuda de emergencia en el Cantón de Basilea-Campiña (BL) para 2026? Descubra nuestro algoritmo transparente basado en la Ordenanza de Asistencia Social oficial SGS 850.11.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritmo de Ayuda de Emergencia Cantón de Basilea-Campiña 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para ayuda de emergencia 2026 en el Cantón BL basada en la legislación cantonal de asistencia social.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026nothilfe_es.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Ayuda de Emergencia Basilea-Campiña 2026",
+      "description": "Guía paso a paso para la determinación legal de la ayuda de emergencia en el Cantón de Basilea-Campiña (SGS 850.11).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinar la tarifa diaria aplicable por persona según el estatus legal"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Multiplicar la tarifa diaria por el número de todos los miembros del hogar (tasa per cápita / recuento de personas)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcular el beneficio mensual basado en los días calendario reales del mes"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ estilos profesionales centrales, idénticos a la página AG/AI ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        header p { color: #cbd5e1; font-size: 1.05rem; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        .step-body h3 { color: var(--official-blue); margin-bottom: 0.5rem; font-size: 1.15rem; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; color: #475569; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); font-size: 0.95rem; }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; font-size: 0.95rem; }
+        
+        .btn-container { text-align: center; margin: 3rem 0 1rem; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s, transform 0.2s; }
+        .btn-link:hover { background: #002244; transform: translateY(-1px); text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        /* Estilos interactivos de demostración en vivo */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 220px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.4rem; }
+        .input-item input, .input-item select { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; color: #334155; }
+        .input-item input:focus, .input-item select:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; line-height: 1.5; color: #334155; border: 1px solid #e2e8f0; }
+        .final-amount { font-size: 1.3rem; font-weight: bold; color: var(--swiss-red); display: flex; justify-content: space-between; align-items: center; background: white; padding: 0.6rem 1rem; border-radius: 6px; border: 1px solid #e2e8f0; }
+        
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid #e2e8f0; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">VIGENCIA 2026</div>
+        <h1>Algoritmo de Ayuda de Emergencia | Cantón de Basilea-Campiña (BL)</h1>
+        <p>Lógica de cálculo oficial y transparente para la asistencia económica de emergencia según la ley cantonal</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Este documento divulga el algoritmo de cálculo preciso utilizado para determinar la ayuda de emergencia legal (para solicitantes de asilo, personas sujetas a expulsión e individuos sin derechos de residencia elegibles) en el Cantón de Basilea-Campiña para el año 2026. Esto sirve para la total transparencia y verificabilidad para ciudadanos, servicios de asesoramiento y personas afectadas.</p>
+
+        <h2 class="section-title">1. Base Legal y Parámetros 2026</h2>
+        <p>La ayuda de emergencia garantiza el mínimo vital absoluto según el Art. 12 de la Constitución Federal Suiza. En el Cantón de Basilea-Campiña se rige por la <strong>Ordenanza Cantonal de Asistencia Social (SHV, SGS 850.11) § 18a</strong> y la <strong>Ordenanza Cantonal de Asilo (kAV, SGS 850.19) § 9</strong>.</p>
+        
+        <p>A diferencia de la asistencia social estándar, la ayuda de emergencia en BL <strong>no aplica ningún factor de escala degresivo (coeficiente de hogar)</strong>. Las prestaciones se proporcionan estrictamente sobre una <strong>base per cápita</strong> (monto fijo diario por persona), ya que el alojamiento y la atención médica básica se proporcionan directamente como beneficios en especie por el cantón o los municipios.</p>
+
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Ayuda de emergencia regular (§ 18a párr. 5 SHV)</h4>
+                <div class="param-value">CHF 10.60 <span style="font-size:0.85rem; font-weight:normal; color:#64748b;">/ día & persona</span></div>
+                <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.5rem;">Para personas obligadas a abandonar Suiza, personas con una decisión de no entrada (NAI) legalmente vinculante, etc.</p>
+            </div>
+            <div class="param-card">
+                <h4>Personas transeúntes / sin título de residencia</h4>
+                <div class="param-value">CHF 8.55 <span style="font-size:0.85rem; font-weight:normal; color:#64748b;">/ día & persona</span></div>
+                <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.5rem;">Según § 18a párr. 2 SHV / § 9 kAV para personas sin domicilio de residencia válido relacionado con el apoyo.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. El Algoritmo de Cálculo (Paso a Paso)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinar la tarifa diaria por persona</h3>
+                <p>Primero, se identifica el estatus legal de las personas afectadas para establecer la tarifa diaria correcta:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Categoría / Estatus legal</th>
+                            <th>Base legal</th>
+                            <th>Tarifa diaria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Receptores regulares de ayuda de emergencia (personas obligadas a salir / alojamiento colectivo)</td>
+                            <td>SGS 850.11 § 18a párr. 5</td>
+                            <td><strong>CHF 10.60</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Personas sin domicilio de apoyo / transeúntes / estatus kAV</td>
+                            <td>SGS 850.11 § 18a párr. 2 / SGS 850.19</td>
+                            <td><strong>CHF 8.55</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Cálculo per cápita del hogar</h3>
+                <p>La tarifa diaria se aplica por igual a adultos y niños. Se realiza una agregación lineal de todas las personas que viven en el mismo hogar (o unidad de alojamiento asignada):</p>
+                <div class="formula">
+                    Tarifa diaria total = (Número de adultos + Número de niños) × Tarifa diaria
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Proyección mensual y desembolso</h3>
+                <p>En el Cantón de Basilea-Campiña, la ayuda de emergencia se calcula sobre una base diaria precisa para el mes de contabilidad respectivo o semanalmente. Para la presupuestación mensual, se utiliza el número exacto de días calendario (28, 29, 30 o 31 días) de ese mes. <strong>No</strong> hay multiplicación fija con un promedio anual ficticio (por ejemplo, 30.42) para evitar diferencias de efectivo y redondeo.</p>
+                <div class="formula">
+                    Monto mensual = Tarifa diaria total × Días calendario del mes
+                </div>
+                <p>El monto mensual final se redondea comercialmente al 0.05 CHF más cercano.</p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota importante sobre prestaciones en especie:</strong> Los montos de CHF 10.60 o CHF 8.55 cubren exclusivamente la asignación en efectivo para alimentos, higiene y gastos diarios de vida. El alojamiento, la calefacción, la electricidad y la atención médica de emergencia se proporcionan principalmente como beneficios directos <strong>en especie</strong> según § 18a párr. 1 SHV y no se pagan a las personas afectadas.
+        </div>
+
+
+        <h2 class="section-title">3. Calculadora Interactiva en Vivo (Demostración del Algoritmo)</h2>
+        <p>Pruebe la lógica oficial de cálculo de BL directamente. Ingrese el tamaño de su hogar, seleccione la tarifa aplicable y el mes de facturación.</p>
+
+        <div class="demo-card">
+            <div class="demo-header">
+                📊 Módulo de cálculo en vivo según texto legal BL 2026
+            </div>
+            <div class="demo-body">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="adultsCount">Número de adultos en el hogar:</label>
+                        <input type="number" id="adultsCount" min="1" value="2">
+                    </div>
+                    <div class="input-item">
+                        <label for="childrenCount">Número de niños en el hogar:</label>
+                        <input type="number" id="childrenCount" min="0" value="2">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="nothilfeType">Estatus de ayuda de emergencia aplicable:</label>
+                        <select id="nothilfeType">
+                            <option value="10.60">Ayuda de emergencia regular (§ 18a párr. 5 SHV) - CHF 10.60 / día</option>
+                            <option value="8.55">Personas transeúntes / Sin domicilio (§ 18a párr. 2 SHV) - CHF 8.55 / día</option>
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <label for="calcMonth">Mes de facturación (para días exactos):</label>
+                        <select id="calcMonth">
+                            <option value="31">Enero / Marzo / Mayo / Julio / Agosto / Octubre / Diciembre (31 días)</option>
+                            <option value="30" selected>Abril / Junio / Septiembre / Noviembre (30 días)</option>
+                            <option value="28">Febrero (año común - 28 días)</option>
+                            <option value="29">Febrero (año bisiesto - 29 días)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="demo-btn" id="runCalcBtn">Calcular ahora</button>
+
+                <div class="result-panel" id="liveResultPanel">
+                    <h3>Pasos de cálculo y registro de transparencia:</h3>
+                    <div class="calc-steps" id="stepsDetail">
+                    </div>
+                    <div class="final-amount">
+                        <span>Derecho de prestación para el mes seleccionado:</span>
+                        <span id="monthlyAmountDisplay">0.00 CHF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://www.welfarecalc.ch" class="btn-link btn-home">« Volver a la calculadora principal</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" class="btn-link">Algoritmo Cantón AG »</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 welfarecalc.ch | Iniciativa de transparencia para algoritmos suizos de asistencia social.</p>
+        <p style="font-size: 0.75rem; margin-top: 0.5rem;">Descargo de responsabilidad: Esta documentación abierta refleja la situación legal a partir de 2026. Los cálculos de casos individuales son responsabilidad de las autoridades municipales y cantonales competentes.</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        "use strict";
+
+        function computeBLNothilfe(adults, children, rate, days) {
+            const totalPeople = adults + children;
+            const dailyTotal = totalPeople * rate;
+            const rawMonthly = dailyTotal * days;
+            
+            // Redondear a los 0.05 CHF más cercanos según la contabilidad cantonal estándar
+            const roundedMonthly = Math.round(rawMonthly * 20) / 20;
+
+            return {
+                totalPeople,
+                dailyTotal,
+                rawMonthly,
+                roundedMonthly
+            };
+        }
+
+        function updateDemo() {
+            const adults = parseInt(document.getElementById('adultsCount').value) || 0;
+            const children = parseInt(document.getElementById('childrenCount').value) || 0;
+            const rate = parseFloat(document.getElementById('nothilfeType').value);
+            const days = parseInt(document.getElementById('calcMonth').value);
+
+            if (adults < 1 && children < 1) {
+                alert("Por favor, ingrese al menos una persona en el hogar.");
+                return;
+            }
+
+            const res = computeBLNothilfe(adults, children, rate, days);
+
+            const stepsHtml = `
+            <strong>📌 Paso 1 - Tamaño del hogar (per cápita):</strong><br>
+            &nbsp;&nbsp;${adults} adulto(s) + ${children} niño(s) = ${res.totalPeople} personas en total.<br><br>
+            <strong>📌 Paso 2 - Tarifa diaria total:</strong><br>
+            &nbsp;&nbsp;${res.totalPeople} personas × CHF ${rate.toFixed(2)} = <strong>CHF ${res.dailyTotal.toFixed(2)} / día</strong><br><br>
+            <strong>📌 Paso 3 - Proyección mensual:</strong><br>
+            &nbsp;&nbsp;CHF ${res.dailyTotal.toFixed(2)} × ${days} días calendario = CHF ${res.rawMonthly.toFixed(4)} (bruto)<br><br>
+            <strong>💰 Paso 4 - Redondeo comercial (al 0.05 CHF más cercano):</strong><br>
+            &nbsp;&nbsp;Monto final de desembolso = <strong>CHF ${res.roundedMonthly.toFixed(2)}</strong>
+            `;
+
+            document.getElementById('stepsDetail').innerHTML = stepsHtml;
+            document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly.toFixed(2)} CHF`;
+            document.getElementById('liveResultPanel').style.display = 'block';
+        }
+
+        // Registrar los eventos de los elementos
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+
+        // Actualización en vivo para una mejor experiencia de usuario
+        const formElements = ['adultsCount', 'childrenCount', 'nothilfeType', 'calcMonth'];
+        formElements.forEach(function(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.addEventListener('input', updateDemo);
+                element.addEventListener('change', updateDemo);
+            }
+        });
+
+        // Ejecutar cálculo inicial al cargar la página
+        window.addEventListener('DOMContentLoaded', function() {
+            //updateDemo();
+        });
+    })();
+</script>
+</body>
+</html>

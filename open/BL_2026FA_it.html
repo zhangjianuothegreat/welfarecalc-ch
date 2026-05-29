@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="it-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Assegni familiari (AF) Algoritmo Canton Basilea Campagna 2026 | welfarecalc.ch</title>
+    <meta name="description" content="Come vengono calcolati gli assegni familiari (AF) 2026 nel Canton Basilea Campagna? Scopri il nostro algoritmo trasparente per assegni per figli e di formazione.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026FA_it.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+
+    <meta property="og:title" content="Algoritmo Assegni familiari Canton Basilea Campagna 2026 | Calcolo trasparente">
+    <meta property="og:description" content="Logica di calcolo ufficiale per assegni per figli e di formazione 2026 nel Canton Basilea Campagna (BL).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026FA_it.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo assegni familiari Basilea Campagna 2026",
+      "description": "Guida passo-passo al calcolo legale degli assegni per figli e di formazione nel Canton BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione della categoria di diritto in base all'età e allo stato di formazione."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo dell'importo mensile totale senza progressione cantonale."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verifica di eventuali assegni una tantum (assegni di nascita e adozione: CHF 0 in BL)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo dell'importo annuo totale e verifica del limite di reddito AVS."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME LAFam 2026</div>
+        <h1>Algoritmo AF: Canton Basilea Campagna</h1>
+        <p>Documentazione trasparente degli assegni familiari (assegni per figli e di formazione) per BL</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Nel Canton Basilea Campagna (BL) gli assegni familiari sono disciplinati dalle disposizioni federali della Legge sugli assegni familiari (LAFam). Il nostro calcolatore utilizza i parametri cantonali ufficiali per l'anno 2026, garantendo una verifica completa e trasparente del diritto.</p>
+
+        <h2 class="section-title">1. Importi mensili BL (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Assegno per figli</h4>
+                <div class="param-value">CHF 215 / mese</div>
+                <p><small>Dal mese di nascita fino al compimento del 16° anno d'età.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Assegno di formazione</h4>
+                <div class="param-value">CHF 268 / mese</div>
+                <p><small>Dai 16 anni (o dai 15 anni in caso di formazione postobbligatoria) fino a max 25 anni.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Procedura di calcolo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinazione della categoria e limiti d'età</h3>
+                <p>L'algoritmo verifica singolarmente età, stato lavorativo e situazione formativa di ogni figlio:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Figli sotto i 16 anni:</strong> Diritto generale all'assegno per figli (CHF 215).</li>
+                    <li><strong>Giovani in formazione postobbligatoria (dai 15 anni):</strong> Possibilità di diritto anticipato all'assegno di formazione (CHF 268).</li>
+                    <li><strong>Giovani dai 16 ai 25 anni:</strong> Diritto all'assegno di formazione, purché sia in corso una formazione certificata o un percorso universitario.</li>
+                    <li><strong>Figli inabili al lavoro:</strong> Prolungamento del diritto all'assegno per figli (CHF 215) fino al compimento del 20° anno d'età.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Calcolo dell'importo mensile totale</h3>
+                <p>La somma mensile si basa su un calcolo puramente lineare. Il Canton Basilea Campagna non prevede aumenti progressivi a partire dal terzo figlio:</p>
+                <div class="formula">
+                    Importo mensile = (numero assegni per figli × CHF 215) + (numero assegni di formazione × CHF 268)
+                </div>
+                <p><small>*Importante: per ogni figlio, secondo l'art. 3 LAFam, è possibile ricevere un solo tipo di assegno alla volta (principio di esclusione).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Assegni una tantum (nascita/adozione)</h3>
+                <p>Il Canton Basilea Campagna, secondo il decreto cantonale, <strong>non concede</strong> assegni di nascita o adozione una tantum.</p>
+                <table class="data-table">
+                    <tr><th>Tipo di assegno</th><th>Importo (BL)</th></tr>
+                    <tr><td>Assegno di nascita</td><td>CHF 0</td></tr>
+                    <tr><td>Assegno di adozione</td><td>CHF 0</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Limiti di reddito e importo annuo</h3>
+                <p>L'algoritmo moltiplica l'importo mensile validato per i mesi di diritto dell'anno solare in corso:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Importo annuo = (Importo mensile totale) × 12
+                </div>
+                <p><strong>Limitazione reddito (validazione di contesto):</strong> Se un figlio in formazione percepisce un reddito proprio soggetto ad AVS superiore a <strong>CHF 2'520 / mese</strong> (CHF 30'240 / anno), il diritto all'assegno di formazione decade completamente.</p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Ordine di priorità secondo il diritto federale:</strong><br>
+            Se entrambi i genitori lavorano, l'algoritmo evita i doppi assegni attenendosi rigorosamente all'ordine di priorità legale secondo l'art. 12 LAFam (luogo di pagamento, primo e secondo impiego).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Vai al calcolatore">Avvia calcolatore</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/personalamt/beruf-und-privates/familien-und-erziehungszulagen-1" target="_blank" class="btn-link" aria-label="Pagina ufficiale della Cassa di compensazione AVS Basilea Campagna">Pagina ufficiale SVA BL</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Direttive della Cassa di compensazione AVS Basilea Campagna 2026 & Legge federale sugli assegni familiari (LAFam)</p>
+        <p>© 2026 welfarecalc.ch | Calcolo trasparente degli assegni familiari</p>
+    </footer>
+</div>
+
+</body>
+</html>

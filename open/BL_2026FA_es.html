@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Prestaciones Familiares (PF) Algoritmo Cantón de Basilea-Campiña 2026 | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calculan las Prestaciones Familiares (PF) para 2026 en el cantón de Basilea-Campiña? Descubra nuestro algoritmo transparente para asignaciones por hijo y por formación.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026FA_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+
+    <meta property="og:title" content="Algoritmo de Prestaciones Familiares Cantón de Basilea-Campiña 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para asignaciones por hijo y por formación 2026 en el cantón de Basilea-Campiña (BL).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026FA_es.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Prestaciones Familiares Basilea-Campiña 2026",
+      "description": "Guía paso a paso del cálculo legal de asignaciones por hijo y por formación en el Cantón BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinar la categoría de derecho basada en la edad y la situación educativa."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcular el total mensual sin progresión cantonal."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificar prestaciones únicas (las prestaciones por nacimiento y adopción son 0 CHF en el Cantón BL)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcular el total anual y verificar el umbral de ingresos AHV."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME A FAMZG 2026</div>
+        <h1>Algoritmo PF: Cantón de Basilea-Campiña</h1>
+        <p>Documentación transparente de las Prestaciones Familiares (asignaciones por hijo y por formación) para BL</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>En el cantón de Basilea-Campiña (BL), las prestaciones familiares se rigen por la Ley Federal de Prestaciones por Hijo (FamZG). Nuestra calculadora utiliza los parámetros cantonales oficiales para el año 2026, garantizando una verificación completa y transparente de su derecho.</p>
+
+        <h2 class="section-title">1. Tasas Mensuales BL (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Asignación por Hijo</h4>
+                <div class="param-value">CHF 215 / mes</div>
+                <p><small>Desde el mes de nacimiento hasta el final del 16.º año de edad.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Asignación por Formación</h4>
+                <div class="param-value">CHF 268 / mes</div>
+                <p><small>Desde los 16 años (o desde los 15 años para educación posobligatoria) hasta un máximo de 25 años.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Metodología de Cálculo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinación de Categoría y Límites de Edad</h3>
+                <p>El algoritmo verifica individualmente la edad, situación laboral y educativa de cada hijo:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Hijos menores de 16 años:</strong> Derecho general a la asignación por hijo (CHF 215).</li>
+                    <li><strong>Jóvenes en formación posobligatoria (a partir de 15 años):</strong> Posibilidad de acceso anticipado a la asignación por formación (CHF 268).</li>
+                    <li><strong>Jóvenes de 16 a 25 años:</strong> Derecho a la asignación por formación, siempre que cursen estudios o formación acreditada.</li>
+                    <li><strong>Hijos con discapacidad que no pueden trabajar:</strong> Derecho extendido a la asignación por hijo (CHF 215) hasta el final del 20.º año de edad.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Cálculo del Importe Mensual Total</h3>
+                <p>El total mensual se basa en un cálculo puramente lineal. El Cantón de Basilea-Campiña no prevé incrementos progresivos a partir del tercer hijo:</p>
+                <div class="formula">
+                    Derecho Mensual = (Número de asignaciones por hijo × CHF 215) + (Número de asignaciones por formación × CHF 268)
+                </div>
+                <p><small>*Importante: Según el art. 3 de la FamZG, solo se puede reclamar un tipo de prestación por hijo a la vez (principio de exclusión).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Prestaciones Únicas (Nacimiento/Adopción)</h3>
+                <p>Según decreto cantonal, el Cantón de Basilea-Campiña <strong>no</strong> concede prestaciones únicas por nacimiento o adopción.</p>
+                <table class="data-table">
+                    <tr><th>Tipo de prestación</th><th>Importe (BL)</th></tr>
+                    <tr><td>Prestación por nacimiento</td><td>CHF 0</td></tr>
+                    <tr><td>Prestación por adopción</td><td>CHF 0</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Límites de Ingresos y Derecho Anual</h3>
+                <p>El algoritmo multiplica el importe mensual validado por el número de meses del año natural en curso:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Importe Anual = (Total Mensual del Derecho) × 12
+                </div>
+                <p><strong>Limitación por ingresos (validación complementaria):</strong> Si un hijo en formación percibe un ingreso sujeto a AHV superior a <strong>CHF 2.520 / mes</strong> (CHF 30.240 / año), el derecho a la asignación por formación se revoca por completo.</p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Orden de prioridad según la ley federal:</strong><br>
+            Si ambos padres trabajan, el algoritmo evita reclamaciones duplicadas aplicando estrictamente el orden de prioridad legal según el art. 12 FamZG (lugar de reclamación de la prestación, empleo principal y secundario).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Ir a la calculadora">Lanzar Calculadora</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/personalamt/beruf-und-privates/familien-und-erziehungszulagen-1" target="_blank" class="btn-link" aria-label="Página oficial SVA Basilea-Campiña">Página Oficial SVA BL</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuente: Directrices SVA Basilea-Campiña 2026 y Ley Federal de Prestaciones por Hijo (FamZG)</p>
+        <p>© 2026 welfarecalc.ch | Cálculo Transparente de Prestaciones Familiares</p>
+    </footer>
+</div>
+
+</body>
+</html>

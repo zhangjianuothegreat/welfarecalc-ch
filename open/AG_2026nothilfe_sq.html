@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Konfigurimi SEO -->
+    <title>Algoritmi i Ndihmës Emergjente Kantoni Aargau 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Si llogaritet ndihma emergjente në Kantonin e Aargaut për vitin 2026? Zbuloni algoritmin tonë transparent bazuar në udhëzimet zyrtare kantonal dhe SHG.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical & hreflang (duke treguar versionin shqip) -->
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_de.html">
+
+    <!-- Open Graph / Ndarje Sociale -->
+    <meta property="og:title" content="Algoritmi i Ndihmës Emergjente Kantoni Aargau 2026 | Llogaritje Transparente">
+    <meta property="og:description" content="Logjika zyrtare e llogaritjes për ndihmën emergjente 2026 në Aargau bazuar në SHG dhe Manualin e Mirëqenies Sociale.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/AG_2026nothilfe_sq.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Schema Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e Ndihmës Emergjente Aargau 2026",
+      "description": "Udhëzues hap pas hapi për llogaritjen e ndihmës emergjente në Kantonin e Aargaut (akomodim kolektiv).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i tarifave ditore për të rritur (person i vetëm ose çift)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Shtimi i shtesave për fëmijë"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ekstrapolimi në shumën mujore me rrumbullakim në CHF 0.05"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Stilimi konsistent (identik me origjinalin) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        /* Demo kartela */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; }
+        .input-item input:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 0.5rem; color: #475569; background: transparent; padding: 0.5rem 0 0 0; }
+        @media (max-width: 720px) {
+            .content { padding: 1.5rem; }
+            .step-box { padding-left: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">TË DHËNA ZYRTARE 2026 · NDIHMË EMERGJENTE</div>
+        <h1>Algoritmi i Ndihmës Emergjente: Kantoni i Aargaut</h1>
+        <p>Llogaritje transparente e ndihmës emergjente sipas Ligjit për Mirëqenien Sociale (SHG) dhe Manualit të Aargaut 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Besim përmes transparencës. Ndihma emergjente për personat subjekt i vendimit për largim llogaritet në Kantonin e Aargaut sipas kritereve të qarta ligjore. Këtu zbulojmë algoritmin e plotë që mbështet kalkulatorin tonë – bazuar në udhëzime zyrtare nga autoritetet kantonal.</p>
+
+        <h2 class="section-title">1. Parametrat Bazë të Ndihmës Emergjente (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Tarifa bazë ditore (person i vetëm)</h4>
+                <div class="param-value">CHF 8.00 / ditë</div>
+                <p><small>Akomodim kolektiv, përfshirë ushqim & nevojat bazë.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Tarifa fikse për çift</h4>
+                <div class="param-value">CHF 13.60 / ditë</div>
+                <p><small>Për dy të rritur në të njëjtin institucion (degresion).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Shtesa për fëmijë</h4>
+                <div class="param-value">CHF 4.15 / ditë për fëmijë</div>
+                <p><small>Deri në moshën 18 vjeç, pavarësisht nga numri.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Metoda e Llogaritjes (Hap pas Hapi)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Përcakto tarifën ditore për të rritur</h3>
+                <p>Së pari, përcaktohet shuma bazë ditore bazuar në numrin e të rriturve:</p>
+                <div class="formula">
+                    Person i vetëm: CHF 8.00 në ditë<br>
+                    Çift i martuar / partneritet (2 të rritur): CHF 13.60 në ditë (personi i vetëm + 70% shtesë)
+                </div>
+                <p><small>Nëse ka më shumë se 2 të rritur për njësi mbështetëse, çdo i rritur shtesë tarifohet me tarifën e personit të vetëm (sipas praktikës së Aargaut).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Shto shtesat për fëmijë</h3>
+                <p>Për çdo fëmijë (< 18 vjeç), shtohet një shumë fikse prej CHF 4.15 në ditë. Shtesa mbulon nevojat shtesë për ushqim, higjienë dhe veshje.</p>
+                <div class="formula">
+                    Shuma totale ditore = Tarifa ditore e të rriturve + (Numri i fëmijëve × CHF 4.15)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Ekstrapolimi mujor dhe rrumbullakimi</h3>
+                <p>Ndihma emergjente llogaritet në bazë të 30.42 ditëve (muaji mesatar). Shuma përfundimtare rrumbullakoset komercialisht në 5 Rappen (0.05 CHF), siç është zakon në zbatimin kantonal.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    E drejta mujore = RRUMBAKULLO( (Shuma totale ditore × 30.42) ; 0.05 )
+                </div>
+                <table class="data-table">
+                    <thead><tr><th>Rregulla e rrumbullakimit</th><th>Shembull</th></tr></thead>
+                    <tbody>
+                        <tr><td>Rrumbullakimi në 0.05 më të afërt</td><td>247.83 → 247.85 CHF</td></tr>
+                        <tr><td>Rrumbullakimi poshtë nën 0.025</td><td>312.52 → 312.50 CHF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Informacion i rëndësishëm shtesë mbi ndihmën emergjente:</strong><br>
+            • Ndihma emergjente sigurohet kryesisht në natyrë (akomodim, vakte); leja në para mbahet minimale.<br>
+            • Asetet që tejkalojnë lejimin (CHF 5,000 për person / maks. CHF 15,000 për familje) duhet të përdoren së pari.<br>
+            • Personat pa leje qëndrimi që i nënshtrohen një vendimi të formës së prerë për largim, kanë të drejtë vetëm për ndihmë emergjente, jo për mirëqenie sociale të zakonshme.
+        </div>
+
+        <h2 class="section-title">3. Burimet e të dhënave & bazat ligjore</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Ligji për Mirëqenien Sociale (SHG) Kantoni i Aargaut</strong> – veçanërisht dispozitat për ndihmën emergjente në situata emergjence.</li>
+            <li><strong>Manuali i Mirëqenies Sociale të Aargaut, kapitulli "Ndihma emergjente për personat e detyruar të largohen"</strong> – tarifat ditore të përditësuara 2026.</li>
+            <li><strong>Udhëzimet SKOS (specifikim)</strong> në kombinim me direktivat kantonal.</li>
+            <li><strong>WelfareCalc – statusi i të dhënave:</strong> Janar 2026, të gjithë parametrat të verifikuar zyrtarisht.</li>
+        </ul>
+
+        <!-- Demo interaktive / kontrollues transparence -->
+        <div class="demo-card">
+            <div class="demo-header">🧪 Kontroll transparent: Testo kalkulatorin e ndihmës emergjente live</div>
+            <div class="demo-body">
+                <p>Simulo llogaritjen sipas algoritmit zyrtar për Kantonin e Aargaut (2026).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Numri i të rriturve</label>
+                        <input type="number" id="adultsCount" value="1" min="1" step="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Numri i fëmijëve (0-17 vjeç)</label>
+                        <input type="number" id="childrenCount" value="0" min="0" step="1">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Filloni algoritmin</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Dëshmi e llogaritjes (sipas hapave 1–3)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(shuma mujore e ndihmës emergjente, e rrumbullakosur në 5 Rappen)</span></div>
+                    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Bazuar në akomodim kolektiv, pa shtesa individuale. Llogaritja përfundimtare nga SVA/Shërbimet Sociale.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Kthehu në fillim</a>
+            <a href="https://www.ag.ch/de/themen/asyl-fluechtlingswesen/sozialhilfe-nothilfe" target="_blank" class="btn-link">Faqja zyrtare Kantoni AG</a>
+            <a href="https://www.skos.ch" target="_blank" class="btn-link">Udhëzimet SKOS</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Burimi: Kantoni i Aargaut – Ligji për Mirëqenien Sociale (SHG), Manuali i Mirëqenies Sociale 2026, Rekomandimet SKOS</p>
+        <p>Ofruar nga welfarecalc.ch | Ky informacion shërben për transparencë dhe nuk zëvendëson këshillimin ligjërisht të detyrueshëm.</p>
+        <p>© 2026 welfarecalc.ch – Algoritme të hapura për Zvicrën</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        // Parametrat sipas specifikimeve zyrtare (AG 2026)
+        const RATES = {
+            singleAdultDaily: 8.00,      // Person i vetëm në ditë
+            coupleDaily: 13.60,          // Tarifë fikse për dy të rritur
+            childDaily: 4.15,            // Për fëmijë
+            avgDaysMonth: 30.42,
+            extraAdultSolo: 8.00         // i rritur shtesë përtej 2
+        };
+
+        // Rrumbullakimi në 0.05 (5 Rappen)
+        function roundToFiveRappen(value) {
+            // Konvertohet në Rappen: *20, rrumbullakoset, /20
+            return Math.round(value * 20) / 20;
+        }
+
+        function computeNothilfe(adults, children) {
+            let adultDaily = 0;
+            if (adults === 1) {
+                adultDaily = RATES.singleAdultDaily;
+            } else if (adults === 2) {
+                adultDaily = RATES.coupleDaily;
+            } else if (adults >= 3) {
+                // Dy personat e parë = tarifa fikse çifti 13.60, secili i rritur shtesë + tarifë personi i vetëm 8.00
+                adultDaily = RATES.coupleDaily + (adults - 2) * RATES.extraAdultSolo;
+            }
+            
+            const childDailyTotal = children * RATES.childDaily;
+            const totalDaily = adultDaily + childDailyTotal;
+            const rawMonthly = totalDaily * RATES.avgDaysMonth;
+            const roundedMonthly = roundToFiveRappen(rawMonthly);
+            const finalFormatted = roundedMonthly.toFixed(2);
+            
+            return {
+                adultDaily: adultDaily,
+                childDailyTotal: childDailyTotal,
+                totalDaily: totalDaily,
+                rawMonthly: rawMonthly,
+                roundedMonthly: roundedMonthly,
+                finalFormatted: finalFormatted
+            };
+        }
+        
+        function updateDemo() {
+            const adultsInput = document.getElementById('adultsCount');
+            const childrenInput = document.getElementById('childrenCount');
+            let adults = parseInt(adultsInput.value, 10);
+            let children = parseInt(childrenInput.value, 10);
+            
+            if (isNaN(adults) || adults < 1) adults = 1;
+            if (isNaN(children) || children < 0) children = 0;
+            
+            const result = computeNothilfe(adults, children);
+            
+            let adultDesc = '';
+            if (adults === 1) adultDesc = `Person i vetëm: CHF ${result.adultDaily.toFixed(2)} / ditë`;
+            else if (adults === 2) adultDesc = `Tarifë fikse për çift: CHF ${result.adultDaily.toFixed(2)} / ditë`;
+            else adultDesc = `${adults} të rritur (bazë çifti + ${adults-2} shtesë): CHF ${result.adultDaily.toFixed(2)} / ditë`;
+            
+            const stepsHtml = `
+                <strong>📌 Hapi 1 – Të rriturit:</strong> ${adultDesc}<br>
+                <strong>📌 Hapi 2 – Shtesat për fëmijë:</strong> ${children} fëmijë × CHF ${RATES.childDaily} = CHF ${result.childDailyTotal.toFixed(2)} / ditë<br>
+                <strong>📌 Shuma paraprake ditore:</strong> CHF ${result.totalDaily.toFixed(2)}<br>
+                <strong>📌 Hapi 3 – Faktori mujor (30.42 ditë):</strong> CHF ${result.totalDaily.toFixed(2)} × 30.42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Rrumbullakimi në 5 Rappen (standard kantonal):</strong> CHF ${result.finalFormatted}
+            `;
+            
+            const stepsDiv = document.getElementById('stepsDetail');
+            if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+            const amountSpan = document.getElementById('monthlyAmountDisplay');
+            if (amountSpan) amountSpan.innerText = `${result.finalFormatted} CHF`;
+            
+            const resultPanel = document.getElementById('liveResultPanel');
+            if (resultPanel) resultPanel.style.display = 'block';
+        }
+        
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+        // Thirrja fillestare pas ngarkimit
+        window.addEventListener('DOMContentLoaded', () => {
+            //updateDemo();
+        });
+        
+        // Rillogarit automatikisht në ndryshim të inputeve (për përvojë më të mirë)
+        const adultsField = document.getElementById('adultsCount');
+        const childrenField = document.getElementById('childrenCount');
+        if (adultsField && childrenField) {
+            const autoUpdate = () => updateDemo();
+            adultsField.addEventListener('input', autoUpdate);
+            childrenField.addEventListener('input', autoUpdate);
+        }
+    })();
+</script>
+</body>
+</html>

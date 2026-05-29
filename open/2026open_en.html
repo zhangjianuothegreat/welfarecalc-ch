@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TRANSLATE: Meta Tags -->
+    <title>Social Benefits Query | welfarecalc.ch</title>
+    <meta name="description"
+        content="Find the official calculation algorithm for social welfare (SH), supplementary benefits (EL), family allowances (FA), individual premium reduction (IPV), and emergency aid (NH) in your canton. Transparent and privacy-compliant.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
+    <link rel="alternate" hreflang="de-ch" href="https://www.welfarecalc.ch/open/2026open_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/2026open_en.html">
+    <link rel="alternate" hreflang="fr-ch" href="https://www.welfarecalc.ch/open/2026open_fr.html">
+    <link rel="alternate" hreflang="it-ch" href="https://www.welfarecalc.ch/open/2026open_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/2026open_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/2026open_pt.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/2026open_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/2026open_hr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/2026open_sq.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/2026open_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/2026open_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/2026open_de.html">
+
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/2026open_en.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Social Benefits Query 2026 | welfarecalc.ch">
+    <meta property="og:description"
+        content="Find the official calculation algorithm for social welfare, supplementary benefits, family allowances, IPV, and emergency aid in your canton.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/2026open_en.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en">
+
+    <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "welfarecalc.ch",
+      "url": "https://www.welfarecalc.ch",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.welfarecalc.ch/open/{state}_2026{welfare}_en.html"
+        },
+        "query-input": "required name=state; required name=welfare"
+      },
+      "inLanguage": "en"
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+            --error-red: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #0ea5e9;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .hero-search {
+            background: linear-gradient(135deg, #f0f4fa 0%, #e9edf3 100%);
+            padding: 2rem 2rem;
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        .search-card {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            padding: 1.8rem 2rem;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            transition: transform 0.1s ease;
+        }
+
+        .search-row {
+            margin-bottom: 1.25rem;
+        }
+
+        .search-row label {
+            display: block;
+            font-weight: 700;
+            color: var(--official-blue);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+
+        .search-row select {
+            width: 100%;
+            padding: 14px 18px;
+            font-size: 1rem;
+            border-radius: 14px;
+            border: 1.5px solid #cbd5e1;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .search-row select:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.15);
+        }
+
+        .select-error {
+            border-color: var(--error-red) !important;
+            background-color: #fef2f2 !important;
+        }
+
+        .error-text {
+            color: var(--error-red);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+            display: none;
+            font-weight: 600;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .action-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            min-width: 240px;
+            letter-spacing: 0.5px;
+        }
+
+        .search-button-style {
+            background: var(--official-blue);
+        }
+
+        .home-button-style {
+            background: var(--swiss-red);
+        }
+
+        .action-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            filter: brightness(1.02);
+        }
+
+        .home-button-style:hover {
+            background: #c91c12;
+        }
+
+        .search-button-style:hover {
+            background: #002244;
+        }
+
+        @media (max-width: 560px) {
+            .button-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .action-btn {
+                width: 100%;
+                padding: 14px 20px;
+            }
+        }
+
+        .content-below {
+            padding: 2rem 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 1.8rem 0 1.2rem;
+            font-size: 1.5rem;
+        }
+
+        .info-box {
+            background: #eef2ff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .info-box p {
+            margin-bottom: 0.75rem;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-box strong {
+            color: var(--official-blue);
+        }
+
+        .disclaimer {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.25rem;
+            margin: 1.8rem 0 0;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #475569;
+        }
+
+        .disclaimer strong {
+            color: #b45309;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .content-box,
+        iframe {
+            display: none;
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 1rem;
+            }
+
+            .hero-search {
+                padding: 1.5rem;
+            }
+
+            .search-card {
+                padding: 1.5rem;
+            }
+
+            .content-below {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <!-- TRANSLATE: Header Section -->
+            <div class="update-tag">🔍 TRANSPARENT ALGORITHMS 2026</div>
+            <h1>Swiss Social Benefits Query</h1>
+            <p>Find the official calculation algorithm for your canton</p>
+        </header>
+
+        <div class="hero-search">
+            <div class="search-card">
+                <!-- Dropdown 1: Kanton -->
+                <div class="search-row">
+                    <!-- TRANSLATE -->
+                    <label for="state">📍 1. Select canton</label>
+                    <select id="state">
+                        <option value="">📌 Select canton</option>
+                        <option value="AG">Aargau (AG)</option>
+                        <option value="AI">Appenzell Innerrhoden (AI)</option>
+                        <option value="AR">Appenzell Ausserrhoden (AR)</option>
+                        <option value="BE">Bern (BE)</option>
+                        <option value="BL">Basel-Landschaft (BL)</option>
+                        <option value="BS">Basel-Stadt (BS)</option>
+                        <option value="FR">Fribourg (FR)</option>
+                        <option value="GE">Geneva (GE)</option>
+                        <option value="GL">Glarus (GL)</option>
+                        <option value="GR">Graubünden (GR)</option>
+                        <option value="JU">Jura (JU)</option>
+                        <option value="LU">Lucerne (LU)</option>
+                        <option value="NE">Neuchâtel (NE)</option>
+                        <option value="NW">Nidwalden (NW)</option>
+                        <option value="OW">Obwalden (OW)</option>
+                        <option value="SG">St. Gallen (SG)</option>
+                        <option value="SH">Schaffhausen (SH)</option>
+                        <option value="SO">Solothurn (SO)</option>
+                        <option value="SZ">Schwyz (SZ)</option>
+                        <option value="TG">Thurgau (TG)</option>
+                        <option value="TI">Ticino (TI)</option>
+                        <option value="UR">Uri (UR)</option>
+                        <option value="VD">Vaud (VD)</option>
+                        <option value="VS">Valais (VS)</option>
+                        <option value="ZG">Zug (ZG)</option>
+                        <option value="ZH">Zurich (ZH)</option>
+                    </select>
+                    <!-- TRANSLATE: Error message -->
+                    <div id="state-error" class="error-text">⚠️ Please select a canton.</div>
+                </div>
+
+                <!-- Dropdown 2: Leistungsart -->
+                <div class="search-row">
+                    <!-- TRANSLATE -->
+                    <label for="welfare">📋 2. Select benefit category</label>
+                    <select id="welfare">
+                        <option value="">📋 Select benefit type</option>
+                        <option value="SH">🏠 Social welfare (SH)</option>
+                        <option value="IPV">💊 Individual premium reduction (IPV)</option>
+                        <option value="EL">👴 Supplementary benefits (EL)</option>
+                        <option value="FA">👨‍👩‍👧 Family allowances (FA)</option>
+                        <option value="nothilfe">🚨 Emergency aid (NH)</option>
+                    </select>
+                    <!-- TRANSLATE: Error message -->
+                    <div id="welfare-error" class="error-text">⚠️ Please select a benefit type.</div>
+                </div>
+
+                <div class="button-group">
+                    <!-- TRANSLATE -->
+                    <button class="action-btn search-button-style" onclick="searchAndRedirect()">🔍 Search & open algorithm</button>
+                    <a href="https://www.welfarecalc.ch" class="action-btn home-button-style">🏠 Back to homepage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-below">
+            <!-- Info Box -->
+            <div class="info-box">
+                <!-- TRANSLATE: Info Box Content -->
+                <p>🇨🇭 <strong>About welfarecalc.ch</strong></p>
+                <p>We are a team of engineers and developers based in Switzerland. Our goal is to make the complex Swiss social benefit systems understandable and accessible to everyone. This platform is a <strong>non-profit project</strong> born out of a commitment to transparency and fairness.</p>
+
+                <p>📄 <strong>How our algorithms are created</strong><br>
+                    Our calculation logic is based exclusively on official, publicly available documents – including cantonal laws (SHG, ELG, FamZG, KVG), SKOS guidelines, and ordinances from compensation funds. Each algorithm is carefully derived from these sources and transparently documented.</p>
+
+                <p>🌍 <strong>Multilingualism & transparency</strong><br>
+                    Switzerland is diverse. That's why we provide all algorithms in <strong>11 languages</strong>: German, French, Italian, English, Spanish, Portuguese, Polish, Croatian, Albanian, Turkish, and Tamil. This ensures that as many people as possible can understand the information relevant to them.</p>
+
+                <p>📌 <strong>How to use this page</strong><br>
+                    Select your canton and the desired benefit type above. Then click "Search & open algorithm". You will be redirected directly to the corresponding algorithm – in a new tab or the same window (depending on your browser settings). The red button "Back to homepage" will take you back to the main welfarecalc.ch page at any time.</p>
+            </div>
+
+            <!-- Rechtlicher Hinweis -->
+            <div class="disclaimer">
+                <!-- TRANSLATE: Disclaimer -->
+                <strong>⚠️ Important legal notice</strong><br>
+                The algorithms and calculations presented on this website are based on publicly available official documents and have been derived by us to the best of our knowledge and belief. Due to the complexity of the social benefit systems and individual circumstances (income, assets, family situation, housing situation, etc.), actual entitlements may differ in individual cases.
+                <strong>All information is for informational purposes only and has no legally binding effect.</strong> For a binding decision, please contact the competent authority (social insurance institution, municipal administration, or social services). welfarecalc.ch accepts no liability for decisions made based on this information.
+            </div>
+        </div>
+
+        <footer>
+            <!-- TRANSLATE: Footer -->
+            <p>© 2026 welfarecalc.ch | Transparent calculation of social benefits</p>
+            <p>Sources: Cantonal laws (SHG, ELG, FamZG, KVG), SKOS guidelines 2026, compensation fund ordinances</p>
+            <p>A non-profit project by engineers for transparency in Switzerland</p>
+        </footer>
+    </div>
+
+    <noscript>
+        <div
+            style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
+            ⚠️ JavaScript is disabled. Please enable JavaScript to use the search function.
+        </div>
+    </noscript>
+
+    <script>
+        // Configuration
+        const LANG = "en";
+        const BASE_PATH = "https://www.welfarecalc.ch/open/";
+
+        function searchAndRedirect() {
+            const stateSelect = document.getElementById("state");
+            const welfareSelect = document.getElementById("welfare");
+            const stateError = document.getElementById("state-error");
+            const welfareError = document.getElementById("welfare-error");
+
+            let hasError = false;
+
+            // Reset Error Styles
+            stateSelect.classList.remove("select-error");
+            welfareSelect.classList.remove("select-error");
+            stateError.style.display = "none";
+            welfareError.style.display = "none";
+
+            // Validation Logic
+            if (!stateSelect.value) {
+                stateSelect.classList.add("select-error");
+                stateError.style.display = "block";
+                hasError = true;
+            }
+            if (!welfareSelect.value) {
+                welfareSelect.classList.add("select-error");
+                welfareError.style.display = "block";
+                hasError = true;
+            }
+
+            if (hasError) {
+                // Focus on the first empty field gracefully without generic alerts
+                if (!stateSelect.value) {
+                    stateSelect.focus();
+                } else {
+                    welfareSelect.focus();
+                }
+                return;
+            }
+
+            const state = stateSelect.value;
+            const welfare = welfareSelect.value;
+            const fileName = `${state}_2026${welfare}_${LANG}.html`;
+            const fullUrl = BASE_PATH + fileName;
+
+            window.location.href = fullUrl;
+        }
+
+        // Keyboard Shortcuts (Enter key)
+        function handleEnterOnSelect(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                searchAndRedirect();
+            }
+        }
+
+        const stateField = document.getElementById("state");
+        const welfareField = document.getElementById("welfare");
+
+        if (stateField) stateField.addEventListener('keypress', handleEnterOnSelect);
+        if (welfareField) welfareField.addEventListener('keypress', handleEnterOnSelect);
+    </script>
+
+</body>
+
+</html>

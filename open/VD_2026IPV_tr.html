@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV Algoritması Vaud Kantonu 2026 | Şeffaf Hesaplama (RDU) | welfarecalc.ch</title>
+  <meta
+    content="Vaud Kantonu'nda 2026 yılı prim indirimi (IPV) nasıl hesaplanır? RDU'ya dayalı resmi iki aşamalı modeli (Olağan ve Özel Sübvansiyon) keşfedin."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV Algoritması Vaud Kantonu 2026 | Şeffaf Hesaplama (RDU)" property="og:title" />
+  <meta
+    content="Vaud Kantonu'nda 2026 yılı prim indiriminin tam matematiksel algoritması. Resmi formüller şeffaf bir şekilde açıklanmıştır."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Vaud 2026 Prim İndirimi Hesaplaması",
+      "description": "RDU modelini kullanarak Vaud Kantonunda IPV hakkının belirlenmesi için adım adım kılavuz.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Sütun 3a ve varlık eklemesinin (%6.7) eklenmesiyle RDU'nun (Birleştirilmiş Belirleyici Gelir) belirlenmesi."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Kanton matematiksel ilerleme eğrisi üzerinden olağan sübvansiyonun (Subside ordinaire) hesaplanması."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Kalan prim RDU'nun %10'unu aşarsa, özel sübvansiyon (Subside spécifique) ile kontrol ve artırım."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--swiss-red);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .step-body h3 {
+      color: var(--official-blue);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .formula-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1.25rem;
+      border-radius: 6px;
+      margin: 0.75rem 0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table th,
+    .parameter-table td {
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .parameter-table th {
+      background: #f1f5f9;
+      color: var(--official-blue);
+      font-weight: 600;
+    }
+
+    .parameter-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .alert {
+      background: #fef2f2;
+      border-left: 4px solid var(--swiss-red);
+      padding: 1.25rem;
+      border-radius: 6px;
+      color: #991b1b;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      background: #002244;
+    }
+
+    .btn-home {
+      background: #64748b;
+    }
+
+    .btn-home:hover {
+      background: #475569;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="update-tag">RESMİ ALGORİTMA 2026</span>
+      <h1>Vaud Kantonu (VD) 2026 Prim İndirimi</h1>
+      <p>Olağan ve Özel Sübvansiyonun hesaplanması için resmi iki aşamalı matematik çekirdeği</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+    <div class="content">
+      <p>Katı gelir dilimlerine sahip kantonların aksine, Vaud Kantonu, son derece gelişmiş, sosyal açıdan adil bir
+        <strong>RDU Modeli (Birleştirilmiş Belirleyici Gelir)</strong> kullanır. Kantonun amacı, zorunlu sağlık
+        sigortasının (KVG) getirdiği yükü, ilgili gelirin yaklaşık <strong>%10'u</strong> ile sınırlamaktır.</p>
+      <h2 class="section-title">2026 Yılı Kanton Parametreleri</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Maksimum Aylık Sübvansiyon (Yetişkinler)</h4>
+          <div class="param-value">CHF 331.00 / Ay</div>
+        </div>
+        <div class="param-card">
+          <h4>Minimum Aylık Sübvansiyon (Yetişkinler)</h4>
+          <div class="param-value">CHF 30.00 / Ay</div>
+        </div>
+        <div class="param-card">
+          <h4>Varlık Ekleme Oranı (RDU)</h4>
+          <div class="param-value">%6.7 (Net Varlıkların 1/15'i)</div>
+        </div>
+        <div class="param-card">
+          <h4>Katılım Payı Üst Sınırı (Yük)</h4>
+          <div class="param-value">RDU'nun %10.0'ı</div>
+        </div>
+      </div>
+      <h2 class="section-title">2026 Resmi Referans Primleri (OVAM)</h2>
+      <p>Hesaplama, sizin gerçek lüks muafiyetinizi veya ek sigortalarınızı değil, Devlet Konseyi tarafından belirlenen
+        kanton referans primlerini (2026 Referans Primleri) dikkate alır:</p>
+      <table class="parameter-table">
+        <thead>
+          <tr>
+            <th>Yaş Grubu (Kod)</th>
+            <th>Bölge 1 (Kentsel, örn. Lozan)</th>
+            <th>Bölge 2 (Kırsal)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Yetişkinler (26 yaş ve üzeri)</strong></td>
+            <td>CHF 4'212 / Yıl (351.-/Ay)</td>
+            <td>CHF 3'912 / Yıl (326.-/Ay)</td>
+          </tr>
+          <tr>
+            <td><strong>Genç Yetişkinler (19 - 25 yaş)</strong></td>
+            <td>CHF 2'820 / Yıl (235.-/Ay)</td>
+            <td>CHF 2'580 / Yıl (215.-/Ay)</td>
+          </tr>
+          <tr>
+            <td><strong>Çocuklar (0 - 18 yaş)</strong></td>
+            <td>CHF 1'188 / Yıl (99.-/Ay)</td>
+            <td>CHF 1'068 / Yıl (89.-/Ay)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="section-title">Adım Adım Hesaplama Mantığı</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Düzeltilmiş RDU'nun Belirlenmesi</h3>
+          <p>Kanton RDU'su, belirli Vaud mevzuatına göre düzeltilmiş (özel borçların hariç tutulması ve eklemeler) kesin
+            vergi beyannamesine dayanır:</p>
+          <div class="formula-box">
+            RDU = Vergiye Tabi Net Gelir <br />
+            + Sütun 3a'ya yapılan ödemeler için kesintiler <br />
+            + Vergiden düşülen sağlık sigortası primleri <br />
+            + [Kullanılabilir Net Varlık - Muafiyet Tutarı] × %6.7 <br />
+            - Toplu Kesintiler (örn. Evli Çift İndirimi: CHF 4'400, Çocuk İndirimi: CHF 1'300)
+          </div>
+          <p><small>*Not: Vaud Kantonunda, IPV varlık testinde özel borçlar veya ipotekler azaltıcı olarak dikkate
+              alınmaz!</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Olağan Sübvansiyonun Hesaplanması (Subside ordinaire)</h3>
+          <p>Vaud Kantonu, olağan hakkı hesaplamak için logaritmik olarak düzleştirilmiş, aşamalı bir eğri fonksiyonu
+            kullanır. Standart UER haneleri için aşağıdaki matematiksel parametreler geçerlidir:</p>
+          <div class="formula-box">
+            RDU ≤ CHF 16'000 (Sınır C6) ise: <br />
+              Olağan_Sübvansiyon = Hanenin Maksimum Referans Primi <br /><br />
+            CHF 16'000 &lt; RDU ≤ CHF 40'000 (Sınır A6) ise: <br />
+              Eğri Faktörü = P6 (2.3) &amp; Q6 (0.8) <br />
+              Olağan_Sübvansiyon = Kayan kanton dekompresyon eğrisi formülü ile hesaplanır. <br /><br />
+            Yasal asgari sınırların uygulanması: <br />
+              Yetişkin başına aylık olağan sübvansiyon minimum CHF 30.00 olarak belirlenir ve maksimum CHF 331.00 ile
+            sınırlandırılır.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Güvenlik Ağı: Özel Sübvansiyon (Subside spécifique)</h3>
+          <p>Bu, standart hesaplayıcıların gözden kaçırdığı en önemli düzeltme faktörüdür. Olağan sübvansiyon
+            düşüldükten sonra hanenin kalan prim yükü makul olmayan bir şekilde yüksekse, %10'luk koruma kalkanı devreye
+            girer:</p>
+          <div class="formula-box">
+            İzin Verilen Hane Prim Yükü = Hanenin Toplam Referans Primleri <br />
+            Kalan Yük = İzin Verilen Hane Prim Yükü - Olağan_Sübvansiyon_Yıllık <br /><br />
+            Kanton Makuliyet Eşiği = RDU × %10 <br /><br />
+            Kalan Yük &gt; Makuliyet Eşiği ise: <br />
+              Özel_Sübvansiyon = Kalan Yük - Makuliyet Eşiği <br />
+            Aksi takdirde: <br />
+              Özel_Sübvansiyon = 0
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Nihai Toplam Hak &amp; Tavan Sınırlaması</h3>
+          <p>Kesin ödeme tutarı, her iki sübvansiyon bileşeninin toplanmasıyla elde edilir ve sigortalının gerçek, fiili
+            primi ile sınırlandırılır:</p>
+          <div class="formula-box">
+            Hak_Mutlak = Olağan_Sübvansiyon + Özel_Sübvansiyon <br />
+            Nihai_Hak = Min(Hak_Mutlak, Hane_Effektif_Sağlık_Sigortası_Primi)
+          </div>
+          <p><small>Yıllık CHF 100.00'ün altındaki tutarlar verimlilik gerekçesiyle ödenmez (önemsizlik sınırı).</small>
+          </p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Varlık Hariç Tutma Sınırı (Üst Sınır):</strong><br />
+        Düzeltilmiş net varlık (borçlar düşülmeden) bekarlar için <strong>CHF 100'000</strong> veya evli çiftler için
+        <strong>CHF 160'000</strong> değerini aşarsa, RDU geliri ne kadar düşük olursa olsun, Vaud Kantonunda prim
+        indirimi yasal hakkı tamamen sona erer.
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Ana Sayfaya Dön</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie"
+          target="_blank">VD Kantonu Resmi Web Sitesi</a>
+      </div>
+    </div>
+    <footer>
+      <p>Kaynak: Sosyal Uyum Genel Müdürlüğü (DGCS) Genel Sekreterliği &amp; Vaud Sağlık Sigortası Dairesi (OVAM), Vaud
+        Kantonu 2026. <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a> tarafından sağlanmıştır.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

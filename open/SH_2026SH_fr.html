@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aide sociale – Algorithme du canton de Schaffhouse 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta name="description" content="Comment l'aide sociale est-elle calculée en 2026 dans le canton de Schaffhouse (SH) ? Découvrez notre algorithme transparent basé sur les directives SKOS et le droit cantonal.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SH_2026SH_fr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SH_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SH_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SH_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SH_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SH_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SH_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SH_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SH_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SH_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SH_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SH_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SH_2026SH_de.html">
+
+    <meta property="og:title" content="Aide sociale – Algorithme du canton de Schaffhouse 2026 | Calcul transparent">
+    <meta property="og:description" content="Logique de calcul officielle de l'aide sociale pour 2026 dans le canton de Schaffhouse selon les normes SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/SH_2026SH_fr.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de l'aide sociale à Schaffhouse 2026",
+      "description": "Détail algorithmique de la prestation d'aide sociale dans le canton de Schaffhouse.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Vérification de la déduction de fortune (seuil d'entrée)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du besoin de base pour l'entretien (BBE 2026)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Prise en compte des coûts régionaux de logement et d'assurance maladie"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Déduction des revenus et incitations au travail"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME AUX NORMES SKOS 2026</div>
+        <h1>Algorithme de l'aide sociale : Canton de Schaffhouse</h1>
+        <p>Documentation transparente de la logique de calcul pour le minimum vital social (SH)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Comment l'aide sociale est-elle calculée dans le canton de Schaffhouse ? Pour renforcer la confiance de nos utilisateurs, nous dévoilons ici l'intégralité de l'algorithme derrière welfarecalc.ch. Il repose sur la loi cantonale sur l'aide sociale (SHG) ainsi que sur les directives SKOS 2026.</p>
+
+        <h2 class="section-title">1. Vérification des avoirs (le seuil d'entrée)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Déduction pour une personne seule</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>+ CHF 3'000 par enfant ou personne en formation.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Déduction pour couples</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Déduction maximale totale plafonnée à CHF 15'000 par ménage.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Méthode de calcul (mensuel)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Besoin de base pour l'entretien (BBE)</h3>
+                <p>Le BBE couvre les frais de nourriture, d'habillement et de gestion du ménage selon l'adaptation au renchérissement SKOS :</p>
+                <table class="data-table">
+                    <tr><th>Taille du ménage</th><th>Montant par mois (2026)</th></tr>
+                    <tr><td>1 personne</td><td>CHF 1'061</td></tr>
+                    <tr><td>2 personnes</td><td>CHF 1'624</td></tr>
+                    <tr><td>3 personnes</td><td>CHF 2'017</td></tr>
+                    <tr><td>Chaque personne supplémentaire</td><td>Selon l'échelle SKOS</td></tr>
+                </table>
+                <p><small>*Remarque : Les jeunes adultes en formation bénéficient de montants BBE spécifiques selon leur situation d'hébergement.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Logement et santé</h3>
+                <p>Prise en compte des frais de logement effectifs et des primes d'assurance maladie :</p>
+                <div class="formula">
+                    Frais de logement reconnus = Min(Loyer effectif, Maximum régional)
+                </div>
+                <p><small>*Important : Notre calculateur utilise les limites de loyer différenciées du canton de Schaffhouse (ex. ville de Schaffhouse environ CHF 1'000 à 1'200 pour un ménage de 1 à 2 personnes).</small></p>
+                <div class="formula">
+                    Assurance maladie = Prime effective (LAMal) - Réduction individuelle des primes (RIP)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Déduction des revenus et abattement pour revenus d'activité lucrative (ARAL)</h3>
+                <p>Un abattement est déduit du revenu net d'activité lucrative afin de maintenir l'incitation au travail :</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+                    <strong>Revenu à prendre en compte</strong> = Revenu net - ARAL (max. selon directives cantonales)
+                </div>
+                <p><small>Les autres revenus (tels que rentes, pensions alimentaires ou indemnités journalières) ainsi que la consommation de la fortune sont comptabilisés à 100% comme revenus.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Résultat : Droit mensuel à l'aide sociale</h3>
+                <p>Le montant final de l'aide sociale résulte du calcul de la différence :</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Droit = (BBE + Loyer + Assurance maladie) - (Revenus à prendre en compte)
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Remarque sur l'intégration et prestations spéciales :</strong><br>
+            Les personnes qui remplissent l'obligation de travailler ou qui s'efforcent activement de s'intégrer sur le plan social/professionnel peuvent bénéficier d'une allocation d'intégration (IZL). De plus, des prestations liées à la situation (SIL) peuvent être accordées pour couvrir des dépenses particulières.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lancer le calculateur</a>
+            <a href="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Departement-des-Innern/Sozialamt/Sozialhilfe-1226809-DE.html" target="_blank" class="btn-link">Site officiel du canton de Schaffhouse</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sources : Loi cantonale sur l'aide sociale de Schaffhouse & directives SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Calcul transparent de l'aide sociale</p>
+    </footer>
+</div>
+
+</body>
+</html>

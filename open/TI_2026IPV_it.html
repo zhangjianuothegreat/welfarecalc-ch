@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo IPV Cantone Ticino 2026 | Calcolo Trasparente | welfarecalc.ch</title>
+  <meta
+    content="Come viene calcolata la riduzione dei premi (IPV) 2026 nel Cantone Ticino? Scoprite il nostro algoritmo trasparente basato sul sistema ufficiale LAPS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_it.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo IPV Cantone Ticino 2026 | Calcolo Trasparente" property="og:title" />
+  <meta content="Logica di calcolo ufficiale per la riduzione dei premi 2026 in Ticino (TI) basata sul sistema LAPS."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TI_2026IPV_it.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo della riduzione dei premi Ticino 2026",
+      "description": "Guida passo-passo per determinare il diritto all'IPV nel Cantone Ticino basata sul modello LAPS.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del reddito disponibile LAPS (RD)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del tasso di sovvenzione (Lambda) in base alle fasce di reddito"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Applicazione della garanzia minima federale e verifica dei casi di rigore"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DATI UFFICIALI 2026</div>
+      <h1>Algoritmo IPV: Cantone Ticino (TI)</h1>
+      <p>Divulgazione trasparente del modello di calcolo basato sul sistema LAPS</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+    <div class="content">
+      <p>Fiducia attraverso la trasparenza. Qui sveliamo come il nostro calcolatore determina la vostra potenziale
+        riduzione dei premi nel Cantone Ticino (TI). Questo algoritmo si basa rigorosamente sulle direttive armonizzate
+        del sistema LAPS cantonale.</p>
+      <h2 class="section-title">1. Parametri chiave (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Consumo patrimoniale (LAPS)</h4>
+          <div class="param-value">1/15 (6,67 %)</div>
+          <p><small>Quota del patrimonio imponibile aggiunta annualmente al reddito.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Sovvenzione minima</h4>
+          <div class="param-value">CHF 120 / anno</div>
+          <p><small>Gli importi inferiori a questa soglia per persona non vengono erogati.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Il percorso di calcolo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Reddito disponibile (RD) secondo LAPS</h3>
+          <p>Il sistema LAPS calcola il reddito disponibile rettificato (Reddito Disponibile) come segue:</p>
+          <div class="formula-box">
+            <strong>RD</strong> = ([Reddito netto] + [Reddito patrimoniale] + [Patrimonio imponibile / 15]) -
+            ([Contributi sociali] + [Mantenimento] + [Spese professionali (max. 4'000)] + [Oneri per interessi (max.
+            3'000)])
+          </div>
+          <p><small>Nota: Il valore RD calcolato è limitato a un minimo di CHF 0, qualora le deduzioni superino le
+              entrate.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Premi di riferimento ufficiali (PMR) 2026</h3>
+          <p>I valori di riferimento cantonali per i costi assicurativi annuali in Ticino:</p>
+          <table class="data-table">
+            <tr>
+              <td>Adulti (adult)</td>
+              <td>CHF 8'016 / anno</td>
+            </tr>
+            <tr>
+              <td>Giovani adulti (young_adult, fino a 25 in formazione)</td>
+              <td>CHF 6'143 / anno</td>
+            </tr>
+            <tr>
+              <td>Bambini (child, 0-18)</td>
+              <td>CHF 1'827 / anno</td>
+            </tr>
+          </table>
+          <div class="formula-box" style="margin-top: 10px;">
+            <strong>PMR Totale</strong> = (Numero adulti × 8'016) + (Numero giovani adulti × 6'143) + (Numero bambini ×
+            1'827)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Determinazione del tasso di sovvenzione (λ)</h3>
+          <p>Il tasso di sovvenzione (λ) è determinato rigorosamente per fasce in base al valore RD calcolato:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Reddito disponibile LAPS (RD)</th>
+                <th>Tasso di sovvenzione (λ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>RD ≤ CHF 20'000</td>
+                <td>85 %</td>
+              </tr>
+              <tr>
+                <td>CHF 20'000 &lt; RD ≤ CHF 35'000</td>
+                <td>65 %</td>
+              </tr>
+              <tr>
+                <td>CHF 35'000 &lt; RD ≤ CHF 50'000</td>
+                <td>45 %</td>
+              </tr>
+              <tr>
+                <td>CHF 50'000 &lt; RD ≤ CHF 70'000</td>
+                <td>25 %</td>
+              </tr>
+              <tr>
+                <td>CHF 70'000 &lt; RD ≤ CHF 90'000</td>
+                <td>10 %</td>
+              </tr>
+              <tr>
+                <td>RD &gt; CHF 90'000</td>
+                <td>0 %</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Diritto &amp; Garanzia minima federale</h3>
+          <p>La sovvenzione provvisoria viene calcolata come: <code>PMR Totale × λ</code></p>
+          <p>Per le famiglie nella <strong>fascia di reddito media e bassa (RD ≤ CHF 50'000)</strong> si applica inoltre
+            la garanzia minima federale legale per bambini e giovani adulti:</p>
+          <table class="data-table">
+            <tr>
+              <th>Categoria</th>
+              <th>Quota minima legale garantita</th>
+            </tr>
+            <tr>
+              <td>Bambini (0-18)</td>
+              <td>80 % del premio di riferimento (CHF 1'461.60)</td>
+            </tr>
+            <tr>
+              <td>Giovani in formazione</td>
+              <td>50 % del premio di riferimento (CHF 3'071.50)</td>
+            </tr>
+          </table>
+          <div class="formula-box" style="margin-top:10px;">
+            Se RD ≤ 50'000:<br />
+            <strong>Diritto</strong> = Max([PMR Totale × λ], [Somma garanzie minime federali])
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Diritto finale &amp; Tetto massimo per casi di rigore</h3>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Diritto annuale = Min(Diritto arrotondato per eccesso, Premio cassa malati effettivo)
+          </div>
+          <p style="margin-top: 10px;"><small><strong>Soglia di irrilevanza:</strong> Se il diritto totale calcolato è
+              inferiore a CHF 120 per membro della famiglia e anno, il diritto decade completamente.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Particolarità nel Cantone Ticino:</strong><br />
+        Il modello ticinese utilizza per la protezione sociale il <strong>modello LAPS</strong>, che armonizza e combina
+        le componenti di reddito e patrimonio, invece di applicare, come altri cantoni, limiti patrimoniali rigidi a CHF
+        100'000.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Torna alla homepage</a>
+        <a class="btn-link" href="https://www4.ti.ch/dss/dipartimento" target="_blank">Sito ufficiale del Cantone
+          Ticino</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fonte: Dipartimento della sanità e della socialità (DSS) Cantone Ticino 2026 | welfarecalc.ch</p>
+      <p>Nota legale: Questo riepilogo è a scopo informativo e non costituisce un diritto legale.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

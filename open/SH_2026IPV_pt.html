@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo IPV Cantão Schaffhausen 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Como é calculada a redução de prémios (IPV) 2026 no Cantão de Schaffhausen? Descubra o nosso algoritmo transparente com base nos dados oficiais da SVA.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SH_2026IPV_pt.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SH_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SH_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SH_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SH_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SH_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SH_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SH_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SH_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SH_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SH_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SH_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SH_2026IPV_de.html">
+
+    <meta property="og:title" content="Algoritmo IPV Cantão Schaffhausen 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para a redução de prémios 2026 no Cantão de Schaffhausen.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/SH_2026IPV_pt.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da Redução de Prémios Schaffhausen 2026",
+      "description": "Guia passo a passo para o cálculo estatutário do IPV no Cantão de Schaffhausen.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do rendimento avaliável (LNA)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificação do limiar de rendimento cantonal"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do prémio de referência total cantonal"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo da franquia e garantias mínimas"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DADOS OFICIAIS 2026</div>
+        <h1>Algoritmo IPV: Cantão de Schaffhausen</h1>
+        <p>Divulgação transparente da lógica de cálculo para o ano de 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Confiança através da transparência. Aqui descrevemos matematicamente como a nossa calculadora determina a sua potencial redução de prémios (IPV) no Cantão de Schaffhausen. Este algoritmo segue rigorosamente as diretrizes oficiais da SVA Schaffhausen.</p>
+
+        <h2 class="section-title">1. Parâmetros Centrais (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Franquia / Coparticipação</h4>
+                <div class="param-value">15.0 %</div>
+                <p><small>Parte do rendimento avaliável considerada suportável para o seguro de saúde.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Taxa de Depleção de Ativos</h4>
+                <div class="param-value">15.0 %</div>
+                <p><small>Percentagem do património tributável adicionada ao rendimento.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Limiar Máx. de Rendimento</h4>
+                <div class="param-value">CHF 80'000</div>
+                <p><small>Se o LNA exceder este valor, a elegibilidade é completamente perdida.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Percurso do Cálculo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Rendimento Avaliável (LNA)</h3>
+                <p>Primeiro, determinamos a sua capacidade económica de acordo com as especificações cantonais:</p>
+                <div class="formula-box">
+                    LNA = Máx(0, <strong>[Rendimento anual líquido]</strong> + (<strong>[Ativos tributáveis]</strong> × 15%) + <strong>[Componentes adicionais]</strong> - <strong>[Abatimento/Dedução]</strong>)
+                </div>
+                <table class="data-table">
+                    <tr><th>Categoria</th><th>Abatimento (Dedução)</th></tr>
+                    <tr><td>Pessoa singular (Individual)</td><td>CHF 4'500</td></tr>
+                    <tr><td>Casais / Coabitantes</td><td>CHF 9'000</td></tr>
+                    <tr><td>Por criança / Jovem adulto em formação</td><td>+ CHF 4'500</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Verificação do Limiar de Rendimento</h3>
+                <p>O cantão limita o acesso ao IPV através de um teto rigoroso para o rendimento avaliável:</p>
+                <div class="formula-box">
+                    Se <strong>LNA > CHF 80'000</strong> &rarr; <span class="highlight-red">Direito = CHF 0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Prémio de Referência Total 2026</h3>
+                <p>Os prémios de referência são os valores de referência definidos pelo Cantão de Schaffhausen para 2026:</p>
+                <table class="data-table">
+                    <tr><th>Categoria</th><th>Prémio de Referência (Anual)</th></tr>
+                    <tr><td>Adultos (26 anos ou mais)</td><td>CHF 5'320</td></tr>
+                    <tr><td>Jovens adultos (19-25 em formação)</td><td>CHF 3'724</td></tr>
+                    <tr><td>Crianças (0-18 anos)</td><td>CHF 1'220</td></tr>
+                </table>
+                <div class="formula-box" style="margin-top: 10px;">
+                    <strong>Prémio de Referência Total</strong> = &sum; (Prémios de referência individuais de todos os membros do agregado)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Franquia e Redução Preliminar</h3>
+                <p>A franquia estatutária (15%) é subtraída do prémio de referência total:</p>
+                <div class="formula-box">
+                    Valor da franquia = Máx(0, LNA) × 15%<br>
+                    <strong>Redução preliminar</strong> = Máx(0, Prémio de Referência Total - Valor da franquia)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Verificação das Garantias Mínimas (KVG)</h3>
+                <p>Para crianças e jovens adultos em formação, aplica-se a proteção mínima estatutária para rendimentos baixos e médios:</p>
+                <table class="data-table">
+                    <tr><th>Categoria</th><th>Parte estatutária garantida</th></tr>
+                    <tr><td>Crianças (proteção de referência)</td><td>80% do prémio de referência para crianças (CHF 976)</td></tr>
+                    <tr><td>Jovens em formação</td><td>50% do prémio de referência para jovens (CHF 1'862)</td></tr>
+                </table>
+                <div class="formula-box" style="margin-top: 10px;">
+                    Piso mínimo = (&sum; crianças × CHF 976) + (&sum; jovens adultos × CHF 1'862)<br>
+                    <strong>Redução ajustada</strong> = Máx(Redução preliminar, Piso mínimo)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">6</div>
+            <div class="step-body">
+                <h3>Pagamento Mínimo e Limite Máximo</h3>
+                <p>Finalmente, ocorre o arredondamento, juntamente com o limite máximo determinado pelo prémio real pago:</p>
+                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                    Redução anual final = Mín(Redução ajustada [arredondada ao franco mais próximo], Prémio anual real)
+                </div>
+                <p style="margin-top: 10px;"><small><strong>Limiar de minimis:</strong> Se o direito anual calculado for inferior a <strong>CHF 100</strong>, o pagamento é totalmente dispensado (Redução = 0).</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota legal sobre referências cruzadas:</strong><br>
+            A submissão oficial e a avaliação juridicamente vinculativa são realizadas exclusivamente pela SVA Schaffhausen. Os passos aqui apresentados servem para clarificação algorítmica e visam aumentar a transparência na web.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Voltar à Página Inicial</a>
+            <a href="https://www.svash.ch/ipv" target="_blank" class="btn-link">Visitar Site Oficial da SVA</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Folha Informativa da SVA Schaffhausen e Diretrizes 2026 | Fornecido por welfarecalc.ch</p>
+        <p>Este resumo é apenas para fins informativos e não constitui um direito legal.</p>
+    </footer>
+</div>
+
+</body>
+</html>

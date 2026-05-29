@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo IPV Cantone dei Grigioni 2026 | Calcolo Trasparente | welfarecalc.ch</title>
+    <meta name="description" content="Come viene calcolata la riduzione dei premi (IPV) 2026 nel Cantone dei Grigioni? Scopri il nostro algoritmo trasparente basato sulle linee guida ufficiali KPVG GR.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GR_2026IPV_it.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GR_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GR_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GR_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GR_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GR_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GR_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GR_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GR_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GR_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GR_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GR_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GR_2026IPV_de.html">
+
+    <meta property="og:title" content="Algoritmo IPV Cantone dei Grigioni 2026 | Calcolo Trasparente">
+    <meta property="og:description" content="Logica di calcolo ufficiale per la riduzione dei premi 2026 nel Cantone dei Grigioni (GR).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GR_2026IPV_it.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo della riduzione dei premi Grigioni 2026",
+      "description": "Logica dettagliata per determinare il diritto all'IPV nel Cantone GR.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del reddito determinante (LNA) inclusa la quota patrimoniale del 10%"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Detrazione delle franchigie cantonali"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Applicazione della partecipazione personale scalare (8-12%)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #1a5276;
+            --accent-gold: #e74c3c;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; overflow-x: auto; }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">VERSIONE CORRETTA 2026</div>
+        <h1>Algoritmo IPV: Cantone dei Grigioni (GR)</h1>
+        <p>Trasparenza della logica di calcolo per l'anno 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Crediamo nella trasparenza algoritmica. Qui scopri come il nostro sistema calcola il tuo diritto alla riduzione dei premi nel Cantone dei Grigioni. Questa logica si basa sulla KPVG GR e sulle disposizioni di esecuzione della SVA GR.</p>
+
+        <h2 class="section-title">1. Parametri chiave (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Aliquota di partecipazione personale</h4>
+                <div class="param-value">8.0 % — 12.0 %</div>
+                <p><small>Graduata in base all'importo dell'eccedenza.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Quota patrimoniale</h4>
+                <div class="param-value">10.0 %</div>
+                <p><small>Parte del patrimonio imponibile considerata come reddito.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Percorso di calcolo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Reddito determinante (LNA)</h3>
+                <p>Il LNA nel Cantone GR viene calcolato in modo specifico:</p>
+                <div class="formula-box">
+                    LNA = [Reddito netto] + [10% patrimonio] - [Contributi previdenza pilastro 2/3a*]
+                </div>
+                <p><small>*Importante: contrariamente ad altri cantoni, nei Grigioni i contributi previdenziali sono deducibili.</small></p>
+                <table class="data-table">
+                    <tr><th>Categoria</th><th>Detrazione base</th></tr>
+                    <tr><td>Persone sole</td><td>CHF 12'000</td></tr>
+                    <tr><td>Coniugati / coppie</td><td>CHF 18'000</td></tr>
+                    <tr><td>Per figlio (in età scolastica)</td><td>+ CHF 6'000</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Premi di riferimento 2026 (Regione 2)</h3>
+                <p>I Grigioni sono suddivisi in 3 regioni. Ecco i valori per la regione standard 2:</p>
+                <table class="data-table">
+                    <tr><td>Adulti</td><td>CHF 5'820 / anno</td></tr>
+                    <tr><td>Giovani adulti</td><td>CHF 4'280 / anno</td></tr>
+                    <tr><td>Bambini (0-18)</td><td>CHF 1'380 / anno</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Eccedenza e partecipazione personale</h3>
+                <p>La partecipazione personale aumenta progressivamente:</p>
+                <div class="formula-box">
+                    Eccedenza = LNA - Detrazione totale<br>
+                    Partecipazione personale = Eccedenza × [8% fino a 12%]
+                </div>
+                <p><small>L'aliquota è dell'8% per eccedenze ridotte e sale fino al 12% oltre CHF 40'000.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Sgravio speciale per i figli</h3>
+                <p>Con un LNA inferiore a CHF 85'000, la partecipazione personale per i figli viene ulteriormente ridotta:</p>
+                <table class="data-table">
+                    <tr><th>Fascia LNA</th><th>Sgravio</th></tr>
+                    <tr><td>Fino a CHF 55'000</td><td>100% (fattore 0.0)</td></tr>
+                    <tr><td>CHF 65'001 - 80'000</td><td>40% (fattore 0.6)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota importante:</strong><br>
+            I contributi inferiori a CHF 100 all'anno non vengono erogati. Il contributo massimo è sempre limitato dal premio effettivamente pagato.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Torna alla home page</a>
+            <a href="https://www.sva.gr.ch/ipv.html" target="_blank" class="btn-link">Sito ufficiale SVA GR</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Linee guida SVA Grigioni 2026 | KPVG GR | welfarecalc.ch</p>
+        <p>Nota legale: Questo calcolo è una stima e non costituisce un diritto legale.</p>
+    </footer>
+</div>
+
+</body>
+</html>

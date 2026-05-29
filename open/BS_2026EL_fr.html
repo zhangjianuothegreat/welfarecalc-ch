@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorithme PC Canton de Bâle-Ville 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta name="description" content="Comment sont calculées les prestations complémentaires (PC) 2026 dans le canton de Bâle-Ville ? Découvrez notre algorithme transparent basé sur les données officielles BS et la réforme LPC.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BS_2026EL_fr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BS_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BS_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BS_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BS_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BS_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BS_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BS_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BS_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BS_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BS_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BS_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BS_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul PC Bâle-Ville 2026",
+      "description": "Guide étape par étape pour le calcul algorithmique des prestations complémentaires dans le canton de BS.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination des dépenses reconnues (max loyer région 1 à Bâle-Ville)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du revenu déterminant incluant correction 12/13 pour rentes AVS."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du droit aux PC comme différence."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+            --bs-brand: #006699; /* Bleu spécifique pour Bâle-Ville */
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--bs-brand); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--bs-brand); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--bs-brand); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--bs-brand); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--bs-brand); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--bs-brand); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--bs-brand); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
+        <h1>Algorithme PC : Canton de Bâle-Ville</h1>
+        <p>Détail transparent des Prestations complémentaires (PC) pour le canton urbain</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La transparence est la base de la confiance dans le domaine des assurances sociales. Notre algorithme pour le <strong>canton de Bâle-Ville (BS)</strong> suit strictement la réforme LPC 2021/2026 et les directives cantonales spécifiques de l’Office des contributions sociales de Bâle-Ville.</p>
+
+        <h2 class="section-title">1. Besoin de base annuel (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Personne seule</h4>
+                <div class="param-value">CHF 20'670</div>
+                <p><small>Standard fédéral annuel pour les besoins courants de la vie.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Couples mariés</h4>
+                <div class="param-value">CHF 31'005</div>
+                <p><small>Besoin de base pour les couples vivant sous le même toit.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Méthode de calcul pour BS</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Dépenses reconnues (besoin)</h3>
+                <p>Bâle-Ville appartient à la <strong>région de loyer 1</strong> (centres). Les valeurs limites y sont les plus élevées :</p>
+                <div class="formula">
+                    Besoin de base + Loyer reconnu + Prime moyenne d’assurance-maladie
+                </div>
+                <table class="data-table">
+                    <tr><th>Plafonds de loyer BS (région 1) 2026</th><th>Montant par an</th></tr>
+                    <tr><td>1 personne</td><td>CHF 18'900 (CHF 1'575/mois)</td></tr>
+                    <tr><td>2 personnes</td><td>CHF 22'320 (CHF 1'860/mois)</td></tr>
+                    <tr><td>3 personnes</td><td>CHF 24'780 (CHF 2'065/mois)</td></tr>
+                </table>
+                <p><small>La prime d’assurance-maladie est prise en compte jusqu’à la prime moyenne cantonale (BS) d’environ CHF 7'759/an (adulte).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Revenus déterminants</h3>
+                <p>Particularité 2026 : la neutralisation de la 13e rente AVS.</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Contrôle des rentes :</strong> Les rentes AVS/AI ne sont prises en compte qu’à hauteur de 12/13 afin que la nouvelle 13e rente ne réduise pas le droit aux PC.</li>
+                    <li><strong>Revenu du travail :</strong> Déduction du montant exonéré (CHF 1'400 pour isolé / CHF 2'100 pour couples), puis prise en compte des 2/3.</li>
+                    <li><strong>Utilisation de la fortune :</strong> (Fortune - montant exempté) / 10 (pour AVS) ou 1/15 (pour AI).</li>
+                </ul>
+                <table class="data-table">
+                    <tr><th>Valeurs patrimoniales BS</th><th>Montant</th></tr>
+                    <tr><td>Montant forfaitaire général exempté</td><td>CHF 30'000 (couples : 50k)</td></tr>
+                    <tr><td>Seuil d’entrée (fortune nette)</td><td>CHF 100'000 (couples : 200k)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Résultat : PC mensuelles</h3>
+                <p>La différence entre vos dépenses reconnues et vos revenus détermine le droit :</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Montant annuel des PC = [Total des dépenses reconnues] - [Total des revenus]
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Important pour les résidents de BS :</strong><br>
+            Dans le canton de Bâle-Ville, les frais de maladie et d’invalidité sont en outre indemnisés en plus de la rente mensuelle PC, pour autant qu’ils soient justifiés et reconnus.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Retour à l’accueil</a>
+            <a href="https://www.bs.ch/themen/finanzielle-hilfe/leistungen/ergaenzungsleistungen" target="_blank" class="btn-link">Page officielle ASB Bâle-Ville</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source : Office des contributions sociales de Bâle-Ville (ASB) & réforme LPC 2021/2026</p>
+        <p>Fourni par welfarecalc.ch | Tous les calculs sont donnés sans garantie légale.</p>
+    </footer>
+</div>
+
+</body>
+</html>

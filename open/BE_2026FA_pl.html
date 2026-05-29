@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorytm dodatków rodzinnych (FA) – Kanton Berno 2026 | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczane są dodatki rodzinne (FA) 2026 w kantonie Berno? Poznaj nasz przejrzysty algorytm dotyczący dodatków na dziecko i dodatków edukacyjnych.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026FA_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026FA_de.html">
+
+    <meta property="og:title" content="Algorytm dodatków rodzinnych – Kanton Berno 2026 | Przejrzyste obliczenia">
+    <meta property="og:description" content="Oficjalna logika obliczania dodatków na dziecko i dodatków edukacyjnych 2026 w kantonie Berno.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BE_2026FA_pl.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie dodatków rodzinnych w kantonie Berno 2026",
+      "description": "Krok po kroku – zgodne z prawem obliczanie dodatków na dziecko i dodatków edukacyjnych w kantonie Berno.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Sprawdzenie progu dochodowego (630 CHF/miesiąc)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Segmentacja wiekowa i kategoryzacja na dziecko (16 / 20 / 25 lat)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Obliczenie stawek miesięcznych bez progresji (250 CHF / 310 CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Wykluczenie świadczeń jednorazowych i zsumowanie rocznego przysługującego dodatku"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">ZGODNY Z USTAWĄ FAMZG 2026</div>
+        <h1>Algorytm dodatków rodzinnych: Kanton Berno</h1>
+        <p>Przejrzysta dokumentacja dodatków rodzinnych na rok 2026 (Kanton Berno / BE)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>W kantonie Berno (BE) dodatki rodzinne reguluje kantonalna ustawa o dodatkach rodzinnych (KFamZG). Nasz model obliczeniowy stosuje stawki obowiązujące w 2026 r., aby w pełni przejrzyście i zrozumiale określić przysługujące Ci świadczenie.</p>
+
+        <h2 class="section-title">1. Miesięczne stawki dla BE (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Dodatek na dziecko</h4>
+                <div class="param-value">250 CHF / miesiąc</div>
+                <p><small>Obowiązuje dla dzieci do ukończenia 16. roku życia.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Dodatek edukacyjny</h4>
+                <div class="param-value">310 CHF / miesiąc</div>
+                <p><small>Od ukończenia 16. roku życia do zakończenia wstępnego kształcenia / szkolenia zawodowego (maksymalnie do 25. roku życia).</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Schemat obliczeń</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Sprawdzenie uprawnień i minimalnego dochodu</h3>
+                <p>Algorytm najpierw weryfikuje minimalne wymagania prawne zgodnie z federalną ustawą o dodatkach rodzinnych (FamZG):</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Minimalny dochód:</strong> Pełne prawo do dodatku istnieje, jeśli podlegający składkom AHV dochód z pracy wynosi co najmniej <strong>630 CHF miesięcznie</strong> (lub 7 560 CHF rocznie).</li>
+                    <li><strong>Zbieg roszczeń:</strong> Jeśli oboje rodzice są zatrudnieni, ustawowa kolejność (art. 12 FamZG) określa, kto ma pierwszeństwo. Podwójne wypłaty są bezwzględnie blokowane.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Segmentacja wiekowa i kategoryzacja</h3>
+                <p>Każde dziecko jest automatycznie przypisywane do kategorii na podstawie dokładnej daty urodzenia:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Od 0 do ukończenia 16. roku życia:</strong> Prawo do dodatku na dziecko (250 CHF). Dodatek wygasa z końcem miesiąca, w którym dziecko kończy 16 lat.</li>
+                    <li><strong>Po ukończeniu 16. roku życia, maksymalnie do 25 lat:</strong> Prawo do dodatku edukacyjnego (310 CHF), pod warunkiem ważnego zaświadczenia o zapisaniu na edukację/szkolenie. Uprawnienie wygasa wcześniej po ukończeniu edukacji/szkolenia lub najpóźniej z upływem 25. roku życia.</li>
+                    <li><strong>Dzieci z niepełnosprawnością:</strong> Dzieci, które z powodu upośledzenia zdrowia są trwale niezdolne do pracy, otrzymują dodatek na dziecko przedłużony do ukończenia <strong>20. roku życia</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Obliczenie miesięcznej łącznej kwoty</h3>
+                <p>Kanton Berno stosuje liniowy model obliczeniowy, bez progresji ani wzrostu w zależności od liczby dzieci (brak zróżnicowania od trzeciego dziecka lub dodatków uzależnionych od wieku):</p>
+                <div class="formula">
+                    (liczba dzieci &lt; 16 lat × 250 CHF) + (liczba dzieci w edukacji/szkoleniu × 310 CHF)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Świadczenia jednorazowe i roczne uprawnienie</h3>
+                <p>Kanton Berno nie przewiduje jednorazowych dodatków porodowych ani adopcyjnych w standardowym systemie dla pracowników i osób samozatrudnionych.</p>
+                <table class="data-table">
+                    <tr><th>Rodzaj dodatku</th><th>Kwota (BE)</th></tr>
+                    <tr><td>Dodatek porodowy</td><td>0 CHF</td></tr>
+                    <tr><td>Dodatek adopcyjny</td><td>0 CHF</td></tr>
+                </table>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Całkowite roczne uprawnienie = (Miesięczna suma całkowita) × 12
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Ważna uwaga dotycząca klauzuli rolniczej:</strong><br>
+            Niniejszy algorytm odzwierciedla zasady dla pracowników pozarolniczych i osób samozatrudnionych. Odrębne przepisy federalne (FLG) mają zastosowanie do pracowników rolnych, z różnymi stawkami oraz dodatkowym uprawnieniem do dodatku gospodarstwa domowego (100 CHF/miesiąc).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Przejdź do kalkulatora">Uruchom kalkulator</a>
+            <a href="https://www.akbern.ch/de/Versicherungen/FZ/Familienzulagen.html" target="_blank" class="btn-link" aria-label="Oficjalna strona AK Bern">Oficjalna strona AK Bern</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Źródła: Wytyczne Urzędu Kompensacyjnego Kantonu Berno (AK Bern) na 2026 r. oraz ustawa o dodatkach rodzinnych (KFamZG, BSG 832.71)</p>
+        <p>© 2026 welfarecalc.pl | Przejrzyste obliczanie dodatków rodzinnych</p>
+    </footer>
+</div>
+
+</body>
+</html>

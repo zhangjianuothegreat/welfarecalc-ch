@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- SEO 基础配置 -->
+  <title>IPV அல்காரிதம் கான்டன் வாலிஸ் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் கான்டன் வாலிஸ் (VS) இல் பிரீமியம் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? அதிகாரப்பூர்வ CCVS தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <!-- Canonical & 多语言交替标签 (hreflang) - 核心 SEO 项 -->
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <!-- Open Graph / 社交分享 SEO -->
+  <meta content="IPV அல்காரிதம் கான்டன் வாலிஸ் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta content="வாலிஸ் (VS) இல் 2026 ஆம் ஆண்டிற்கான பிரீமியம் குறைப்புக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VS_2026IPV_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <!-- Schema 结构化数据 (JSON-LD) - 提高搜索结果丰富度 -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "வாலிஸ் 2026 பிரீமியம் குறைப்பு கணக்கீடு",
+      "description": "கான்டன் வாலிஸ் (VS) இல் IPV கணக்கிடுவதற்கான படிப்படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "கடுமையான சொத்து வரம்பு சோதனை"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "தீர்மானிக்கும் வருமானத்தை (RD) கண்டறிதல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "குழந்தை மற்றும் இளைஞர் விலக்குகள் (குடும்ப வரிவிலக்குகள்)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "மானிய விகிதத்தை தீர்மானித்தல் (Barème 2026)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "2026 ஆம் ஆண்டின் கான்டோனல் வழிகாட்டுதல் பிரீமியங்களைப் பயன்படுத்துதல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "இறுதி கணக்கீட்டு உரிமை & வரம்பு"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+      <h1>IPV-அல்காரிதம்: கான்டன் வாலிஸ் (VS)</h1>
+      <p>2026 ஆம் ஆண்டிற்கான கணக்கீட்டு தர்க்கத்தின் வெளிப்படையான வெளிப்பாடு</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>வெளிப்படைத்தன்மை பற்றிய எங்கள் தத்துவத்திற்கு இணங்க, கான்டன் வாலிஸின் IPV கால்குலேட்டருக்கான கணித அடித்தளத்தை
+        இங்கு வெளிப்படுத்துகிறோம். இந்த அல்காரிதம் CCVS (கான்டோனல் இழப்பீட்டு நிதி வாலிஸ்) இன் சட்டப்பூர்வ விதிமுறைகளை
+        கண்டிப்பாக அடிப்படையாகக் கொண்டுள்ளது.</p>
+      <h2 class="section-title">1. முக்கிய அளவுருக்கள் (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>சொத்து கூடுதல் (RD)</h4>
+          <div class="param-value">5.0 %</div>
+          <p><small>நிகர சொத்தின் பங்கு, இது வரி விதிக்கக்கூடிய வருமானத்துடன் சேர்க்கப்படுகிறது.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>குழந்தைகள் / இளைஞர்களுக்கான உத்தரவாதம்</h4>
+          <div class="param-value">80 %</div>
+          <p><small>வழிகாட்டுதல் பிரீமியத்தின் நிலையான குறைப்பு விகிதம் (பெற்றோரின் மானிய விகிதத்தை சாராமல்).</small>
+          </p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>கடுமையான சொத்து வரம்பு</h3>
+          <p>வருமான சோதனை நடைபெறுவதற்கு முன், சட்டம் குடும்பத்தின் சரிசெய்யப்பட்ட நிகர சொத்தை சரிபார்க்கிறது. இது
+            சட்டப்பூர்வ வரம்பு மதிப்புகளுக்கு மேல் இருந்தால், IPV க்கான உரிமை முற்றிலும் நீக்கப்படும்:</p>
+          <table class="data-table">
+            <tr>
+              <th>வகை</th>
+              <th>அதிகபட்ச நிகர சொத்து</th>
+            </tr>
+            <tr>
+              <td>தனி நபர்கள்</td>
+              <td>CHF 100'000</td>
+            </tr>
+            <tr>
+              <td>திருமணமானவர்கள் / குடும்பங்கள்</td>
+              <td>CHF 150'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>தீர்மானிக்கும் வருமானம் (RD)</h3>
+          <p>தீர்மானிக்கும் வருமானம் (Revenu déterminant, RD) 2024 ஆம் ஆண்டின் இறுதி வரி மதிப்பீட்டை அடிப்படையாகக்
+            கொண்டது. வாலிஸில், சொத்து ஒரு சட்டப்பூர்வ கூடுதல் விகிதம் (5%) மூலம் நேரடியாக வருமான அங்கமாக
+            சேர்க்கப்படுகிறது:</p>
+          <div class="formula-box">
+            RD = வரி விதிக்கக்கூடிய வருமானம் + (நிகர சொத்து × 5%) + எதிர்மறை சொத்து வருமானம் + தூண் 3a விலக்குகள் -
+            செலுத்தப்பட்ட ஜீவனாம்சம்/பராமரிப்பு கொடுப்பனவுகள்
+          </div>
+          <p><small>*குறிப்பு: சொத்துக்களிலிருந்து எதிர்மறை வருமானம் மற்றும் கட்டுப்படுத்தப்பட்ட சுய-ஓய்வூதியம் (தூண்
+              3a) இல் செய்யப்பட்ட வைப்புத்தொகைகள் சமூக நீதியைப் பேணுவதற்காக மீண்டும் வருமானத்துடன்
+              சேர்க்கப்படுகின்றன.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>குழந்தை மற்றும் இளைஞர் விலக்குகள் (குடும்ப வரிவிலக்குகள்)</h3>
+          <p>கணக்கிடப்பட்ட தீர்மானிக்கும் வருமானத்திலிருந்து (RD), குடும்பத்தில் எத்தனை ஆதரவுக்குரிய குழந்தைகள் அல்லது
+            பயிற்சியில் உள்ள இளைஞர்கள் வசிக்கிறார்கள் என்பதைப் பொறுத்து வரிவிலக்குகள் கழிக்கப்படுகின்றன (குறைந்துவரும்
+            விலக்கு):</p>
+          <table class="data-table">
+            <tr>
+              <th>வகை</th>
+              <th>RD இலிருந்து வருடாந்திர வரிவிலக்கு</th>
+            </tr>
+            <tr>
+              <td>1வது குழந்தை / இளைஞர்</td>
+              <td>CHF 12'000</td>
+            </tr>
+            <tr>
+              <td>2வது குழந்தை / இளைஞர்</td>
+              <td>CHF 10'000</td>
+            </tr>
+            <tr>
+              <td>3வது குழந்தை / இளைஞர்</td>
+              <td>CHF 8'000</td>
+            </tr>
+            <tr>
+              <td>4வது குழந்தை / இளைஞர் முதல்</td>
+              <td>ஒரு நபருக்கு CHF 6'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>மானிய விகிதம் (Barème 2026)</h3>
+          <p>வரிவிலக்குகளைக் கழித்த பிறகு, இறுதி சரிசெய்யப்பட்ட RD பெரியவர்களுக்கான மானிய நிலையை தீர்மானிக்கிறது.
+            கான்டன் வாலிஸ் 70% முதல் 5% வரை 7 நிலை மானியங்களைக் கொண்டுள்ளது:</p>
+          <table class="data-table">
+            <tr>
+              <th>சரிசெய்யப்பட்ட RD (தனி நபர்)</th>
+              <th>சரிசெய்யப்பட்ட RD (திருமணமானவர்/தம்பதி)</th>
+              <th>மானிய விகிதம் (பெரியவர்கள்)</th>
+            </tr>
+            <tr>
+              <td>CHF 24'200 வரை</td>
+              <td>CHF 37'100 வரை</td>
+              <td><strong>70%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 24'201 – 27'200</td>
+              <td>CHF 37'101 – 41'400</td>
+              <td><strong>50%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 27'201 – 30'200</td>
+              <td>CHF 41'401 – 45'700</td>
+              <td><strong>40%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 30'201 – 33'200</td>
+              <td>CHF 45'701 – 50'000</td>
+              <td><strong>30%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 33'201 – 36'200</td>
+              <td>CHF 50'001 – 54'300</td>
+              <td><strong>20%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 36'201 – 39'200</td>
+              <td>CHF 54'301 – 58'600</td>
+              <td><strong>10%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 39'201 – 42'200</td>
+              <td>CHF 58'601 – 62'900</td>
+              <td><strong>5%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 42'200 க்கு மேல்</td>
+              <td>CHF 62'900 க்கு மேல்</td>
+              <td><strong>0% (உரிமை இல்லை)</strong></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>கான்டோனல் வழிகாட்டுதல் பிரீமியங்கள் 2026</h3>
+          <p>மானிய விகிதம் உங்கள் உண்மையான சுகாதார காப்பீட்டு பிரீமியத்தில் பயன்படுத்தப்படாமல், மாநில கவுன்சிலால்
+            நிர்ணயிக்கப்பட்ட சராசரி கான்டோனல் வழிகாட்டுதல் பிரீமியத்தில் (Primes de référence) பயன்படுத்தப்படுகிறது.
+            முழு கான்டன் வாலிஸுக்கும் 2026 இல் பின்வரும் மதிப்புகள் பொருந்தும்:</p>
+          <table class="data-table">
+            <tr>
+              <th>நபர் வகை</th>
+              <th>வருடாந்திர வழிகாட்டுதல் பிரீமியம் (CHF)</th>
+            </tr>
+            <tr>
+              <td>பெரியவர்கள் (26 வயது மற்றும் அதற்கு மேல்)</td>
+              <td>CHF 5'340</td>
+            </tr>
+            <tr>
+              <td>இளைஞர்கள் (19–25 வயது)</td>
+              <td>CHF 4'128</td>
+            </tr>
+            <tr>
+              <td>குழந்தைகள் (0–18 வயது)</td>
+              <td>CHF 1'248</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>இறுதி உரிமை &amp; வரம்பு</h3>
+          <p>மானியம் குடும்பத்தில் உள்ள ஒவ்வொரு நபருக்கும் கணக்கிடப்படுகிறது:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            பெரியவர்களுக்கான மானியம் = வழிகாட்டுதல் பிரீமியம் × தீர்மானிக்கப்பட்ட மானிய விகிதம் (5% – 70%)<br />
+            குழந்தைகளுக்கான மானியம் = வழிகாட்டுதல் பிரீமியம் × 80% (சட்டப்பூர்வ நிலையான உத்தரவாதம்)
+          </div>
+          <p><strong>வரம்பு விதி:</strong> இதன் விளைவாக வரும் தொகை சுகாதார காப்பீட்டு நிறுவனத்திற்கு உண்மையில்
+            செலுத்தப்பட்ட பிரீமியத்துடன் ஒப்பிடப்படுகிறது. மானியம் ஒருபோதும் உண்மையான பிரீமியத்தை மீறக்கூடாது (உண்மையான
+            பிரீமியத்திற்கு வரம்பிடப்பட்டது).</p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>கான்டன் வாலிஸில் சிறப்பு அம்சம் (குழந்தைகளுக்கான கூட்டாட்சி விதிமுறை):</strong><br />
+        KVG இன் கட்டுரை 65 பத்தி 1bis இன் படி, கான்டன் வாலிஸ் குறைந்த மற்றும் நடுத்தர வருமானம் உள்ள குழந்தைகள் மற்றும்
+        பயிற்சியில் உள்ள இளைஞர்களுக்கு, பெற்றோர்கள் குறைந்த நிலை (எ.கா. 10% அல்லது 20%) பெற்றாலும், <strong>வழிகாட்டுதல்
+          பிரீமியத்தில் 80%</strong> நிலையான குறைப்பு விகிதத்தை வழங்குகிறது.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
+          திரும்பு</a>
+        <a class="btn-link"
+          href="https://www.ahvwallis.ch/de/Versicherungen/IPV-Pramienverbilligungen-in-der-Krankenversicherung/Pramienverbilligung/Praemienverbilligung.html"
+          target="_blank">அதிகாரப்பூர்வ CCVS இணையதளத்தைப் பார்வையிடவும்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: கான்டோனல் இழப்பீட்டு நிதி வாலிஸ் (CCVS) &amp; சுகாதாரம், சமூக விவகாரங்கள் மற்றும் கலாச்சாரத் துறை
+        (DGSK) 2026 | welfarecalc.ch</p>
+      <p>இந்த சுருக்கம் தகவல் நோக்கங்களுக்காக மட்டுமே மற்றும் சட்டப்பூர்வமாக கட்டுப்படுவதில்லை.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- SEO 基础配置 (Kanton Zürich) -->
+    <title>Algorithme d'aide d'urgence Canton de Zurich 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta
+        content="Comment est calculée l'aide d'urgence 2026 dans le canton de Zurich ? Découvrez notre algorithme transparent basé sur les directives cantonales officielles et l'art. 12 Cst."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <!-- Canonical & 多语言交替标签 (hreflang) 符合 AG/AI 风格，完整保留 -->
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_fr.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <!-- Open Graph / 社交分享 -->
+    <meta content="Algorithme d'aide d'urgence Canton de Zurich 2026 | Calcul transparent" property="og:title" />
+    <meta
+        content="Logique de calcul officielle pour l'aide d'urgence 2026 dans le canton de Zurich basée sur la SHG et les directives cantonales."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/ZH_2026nothilfe_fr.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <!-- Schema 结构化数据 (JSON-LD) 风格与 AG/AI 完全一致 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de l'aide d'urgence Canton de Zurich 2026",
+      "description": "Guide étape par étape pour calculer l'aide d'urgence dans le canton de Zurich (hébergement collectif / modèle mixte).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination des taux journaliers adultes avec facteur de couple (dégression)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ajout des suppléments pour enfants incluant le bonus de progression dès le 3ème enfant"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Projection mensuelle avec arrondi au franc suisse entier"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ 与 AG / AI 页面完全一致的核心样式 (复制自 AG_2026nothilfe_de.html) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo 卡片适配原有风格 (完全继承 AG/AI 样式) */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--official-blue);
+            font-size: 1.2rem;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            color: #475569;
+            background: transparent;
+            padding: 0.5rem 0 0 0;
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 1.5rem;
+            }
+
+            .step-box {
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">DONNÉES OFFICIELLES 2026 · Aide d'urgence ZH</div>
+            <h1>Algorithme de l'aide d'urgence : Canton de Zurich</h1>
+            <p>Calcul transparent de l'aide d'urgence conformément à l'art. 12 Cst. &amp; aux directives cantonales de
+                la Direction de la sécurité ZH 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+        <div class="content">
+            <p>La confiance grâce à la transparence. L'aide d'urgence pour les personnes faisant l'objet d'une décision
+                de renvoi ou en cours de procédure d'asile est calculée dans le canton de Zurich selon des critères
+                clairs et dégressifs. Nous dévoilons ici l'algorithme complet – basé sur les directives cantonales
+                officielles (2026) et le droit fédéral (RS 851.1).</p>
+            <h2 class="section-title">1. Paramètres fondamentaux de l'aide d'urgence (Zurich 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Taux journalier de base (personne seule)</h4>
+                    <div class="param-value" id="zhBaseDailyDisplay">CHF 10.25 / jour</div>
+                    <p><small>Hébergement collectif, montant en espèces incluant part de nourriture &amp; besoins de
+                            base.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Facteur de couple (dégression)</h4>
+                    <div class="param-value" id="zhCoupleFactorDisplay">Facteur 1.82</div>
+                    <p><small>La deuxième personne adulte reçoit 82% du taux de base en supplément.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Facteur de supplément pour enfant</h4>
+                    <div class="param-value" id="zhChildFactorDisplay">Facteur 0.62</div>
+                    <p><small>Par enfant : 62% du taux de base.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Bonus de progression (dès le 3ème enfant)</h4>
+                    <div class="param-value" id="zhBonusFactorDisplay">+12% par enfant supplémentaire</div>
+                    <p><small>Levier supplémentaire à partir du troisième enfant (12% du taux de base).</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. Le processus de calcul (étape par étape)</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Détermination du taux journalier adulte (modèle de dégression)</h3>
+                    <p>Tout d'abord, le montant de base quotidien est déterminé en fonction du nombre d'adultes. Le
+                        canton de Zurich utilise un facteur de couple de 1.82 (c'est-à-dire que la deuxième personne
+                        reçoit une majoration de 82%) :</p>
+                    <div class="formula" id="adultFormulaStatic">
+                        Personne seule : CHF 10.25 par jour<br />
+                        Ménage multiple : 10.25 + (Adultes - 1) × 10.25 × 0.82
+                    </div>
+                    <p><small>Pour 2 adultes, le taux journalier résultant est de CHF 18.66, pour 3 adultes CHF 27.07,
+                            etc.</small></p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Suppléments pour enfants &amp; bonus de progression</h3>
+                    <p>Pour chaque enfant (&lt; 18 ans), un supplément de 62% du taux de base est accordé. À partir du
+                        troisième enfant, un bonus de progression supplémentaire de 12% du taux de base par enfant
+                        supplémentaire s'applique afin de soutenir adéquatement les familles nombreuses.</p>
+                    <div class="formula" id="childFormulaStatic">
+                        Base enfants = Nombre d'enfants × (10.25 × 0.62)<br />
+                        Bonus (dès le 3ème enfant) = (Enfants - 2) × (10.25 × 0.12)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Projection mensuelle &amp; arrondi</h3>
+                    <p>L'aide d'urgence est calculée sur la base de 30.42 jours (mois moyen). Le montant final est
+                        arrondi commercialement au franc suisse entier selon la norme cantonale (pas de pas de 0
+                        Rappen).</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        Droit mensuel = ARRONDI( (Montant journalier total × 30.42) ; 0 )
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Règle d'arrondi ZH</th>
+                                <th>Exemple</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arrondi commercial à 1 CHF</td>
+                                <td>CHF 247.83 → CHF 248.00</td>
+                            </tr>
+                            <tr>
+                                <td>Arrondi en dessous de .50</td>
+                                <td>CHF 312.49 → CHF 312.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Particularités du canton de Zurich (mixed housing) :</strong><br />
+                • L'aide d'urgence en espèces pure couvre la nourriture et les besoins de base immédiats. Les frais
+                d'hébergement (hébergement collectif) sont facturés directement aux exploitants et ne sont pas inclus
+                dans ce montant en espèces.<br />
+                • Les franchises sur la fortune sont basées sur la pratique de la PC / aide d'urgence (max. CHF 4'000
+                par personne).<br />
+                • Les personnes faisant l'objet d'une décision de renvoi exécutoire ont droit à l'aide d'urgence, et non
+                à l'aide sociale ordinaire (conforme à l'art. 12 Cst.).
+            </div>
+            <h2 class="section-title">3. Sources de données &amp; bases juridiques</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Loi fédérale sur la compétence en matière d'aide d'urgence (RS 851.1)</strong> – concrétise
+                    l'art. 12 Cst.</li>
+                <li><strong>Directives de la Direction de la sécurité du canton de Zurich, Office social</strong> – taux
+                    journaliers et facteurs mis à jour 2026.</li>
+                <li><strong>Directives CSIAS en complément des dérogations cantonales</strong> (facteur de couple 1.82,
+                    facteur enfant 0.62, bonus de progression 0.12).</li>
+                <li><strong>WelfareCalc – État des données :</strong> Janvier 2026, tous les paramètres vérifiés par les
+                    autorités.</li>
+            </ul>
+            <!-- Live-Demo / interactif (intégré stylistiquement exactement comme AG/AI) -->
+            <div class="demo-card">
+                <div class="demo-header">🧪 Vérification de transparence : Testez en direct le calculateur d'aide
+                    d'urgence du canton de Zurich</div>
+                <div class="demo-body">
+                    <p>Simulez le calcul selon l'algorithme officiel pour le canton de Zurich (2026).</p>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Nombre d'adultes</label>
+                            <input id="adultsCount" min="1" step="1" type="number" value="2" />
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Nombre d'enfants (0-17 ans)</label>
+                            <input id="childrenCount" min="0" step="1" type="number" value="3" />
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Lancer l'algorithme</button>
+                    <div class="result-panel" id="liveResultPanel">
+                        <h3>📐 Preuve de calcul (selon étapes 1–3 / Logique ZH)</h3>
+                        <div class="calc-steps" id="stepsDetail"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(montant mensuel de l'aide d'urgence, arrondi à 1 CHF)</span>
+                        </div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Basé sur le modèle
+                            hébergement collectif + montant en espèces ZH. Calcul final par le service social.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">← Retour à l'accueil</a>
+                <a class="btn-link" href="https://www.zh.ch" target="_blank">Site officiel du Canton de Zurich</a>
+                <a class="btn-link" href="https://www.skos.ch" target="_blank">Directives CSIAS</a>
+            </div>
+        </div>
+        <footer>
+            <p>Source : Canton de Zurich – Directives de l'Office social / Direction de la sécurité, Loi fédérale RS
+                851.1, CSIAS 2026</p>
+            <p>Fourni par welfarecalc.ch | Ces informations servent à la transparence et ne remplacent pas un conseil
+                juridiquement contraignant.</p>
+            <p>© 2026 welfarecalc.ch – Algorithmes ouverts pour la Suisse</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            // ============================================================
+            // KANTON ZÜRICH 2026 – Offizielle Parameter (keine Änderung am Algorithmus, exakte Übernahme aus Ihrem ZH Code)
+            // Daten gemäss nothilfeData Objekt: daily_cash = 10.25, couple_factor = 1.82, child_addon_factor = 0.62, child_from3_bonus_factor = 0.12
+            // Rundung auf ganzen Franken (kaufmännisch)
+            // Core-Logik identisch zu Ihrem bereitgestellten ZH-Skript (computeAdultDaily, computeChildDaily)
+            // ============================================================
+            const ZH_CONFIG = {
+                dailyCash: 10.25,          // daily_cash ZH
+                coupleFactor: 1.82,        // couple_factor (zweite Person 82% Aufschlag)
+                childAddonFactor: 0.62,    // child_addon_factor ZH
+                childFrom3Bonus: 0.12,     // child_from3_bonus_factor (ZH spezifisch 0.12)
+                avgDaysMonth: 30.42
+            };
+
+            // Rundung auf 1 CHF (kaufmännisch)
+            function roundToFranc(value) {
+                return Math.round(value);
+            }
+
+            // Erwachsenenberechnung (Degression)
+            function computeAdultDaily(adults, dailyRate, coupleFac) {
+                if (adults === 1) return dailyRate;
+                // exakte Formel: dailyRate + (adults-1) * dailyRate * coupleFac
+                return dailyRate + (adults - 1) * dailyRate * coupleFac;
+            }
+
+            // Kinderberechnung inkl. Progressionsbonus ab 3. Kind (wie vom ZH-Skript übernommen)
+            function computeChildDaily(children, dailyRate, childFactor, bonusFactor) {
+                if (children <= 0) return 0;
+                let baseChild = children * dailyRate * childFactor;
+                if (children >= 3 && bonusFactor > 0) {
+                    const bonusEligibleChildren = children - 2; // ab dem 3. Kind greift Bonus
+                    baseChild += bonusEligibleChildren * dailyRate * bonusFactor;
+                }
+                return baseChild;
+            }
+
+            // Gesamte Berechnung (Tagessatz, Monat, Rundung) – exakte Logik wie im Original ZH Rechner
+            function computeNothilfeZH(adults, children) {
+                const adultDaily = computeAdultDaily(adults, ZH_CONFIG.dailyCash, ZH_CONFIG.coupleFactor);
+                const childDaily = computeChildDaily(children, ZH_CONFIG.dailyCash, ZH_CONFIG.childAddonFactor, ZH_CONFIG.childFrom3Bonus);
+                const totalDaily = adultDaily + childDaily;
+                const rawMonthly = totalDaily * ZH_CONFIG.avgDaysMonth;
+                const roundedMonthly = roundToFranc(rawMonthly);
+                return {
+                    adultDaily,
+                    childDaily,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly
+                };
+            }
+
+            // UI Update – inklusive Schritt-für-Schritt Darstellung analog zu AG/AI Seiten
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+                if (isNaN(adults) || adults < 1) adults = 1;
+                if (isNaN(children) || children < 0) children = 0;
+
+                const result = computeNothilfeZH(adults, children);
+
+                // Dynamische Beschreibung für Schritt 1 (Erwachsene)
+                let adultDesc = '';
+                if (adults === 1) {
+                    adultDesc = `Personne seule : CHF ${ZH_CONFIG.dailyCash.toFixed(2)} / jour`;
+                } else {
+                    adultDesc = `${adults} adultes (dégression facteur de couple ${ZH_CONFIG.coupleFactor}) : CHF ${result.adultDaily.toFixed(2)} / jour (Base ${ZH_CONFIG.dailyCash} + ${adults - 1} × ${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.coupleFactor})`;
+                }
+
+                // Schritt 2 Kinderbeschreibung inkl. Progressionsbonus
+                let childDescription = `${children} enfant(s) → Supplément de base : ${children} × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childAddonFactor}) = CHF ${(children * ZH_CONFIG.dailyCash * ZH_CONFIG.childAddonFactor).toFixed(2)} / jour`;
+                if (children >= 3 && ZH_CONFIG.childFrom3Bonus > 0) {
+                    const bonusCount = children - 2;
+                    const bonusAmount = bonusCount * ZH_CONFIG.dailyCash * ZH_CONFIG.childFrom3Bonus;
+                    childDescription += ` + Bonus dès le 3ème enfant : ${bonusCount} × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childFrom3Bonus}) = CHF ${bonusAmount.toFixed(2)} / jour`;
+                }
+                childDescription += ` → total supplément enfant : CHF ${result.childDaily.toFixed(2)} / jour`;
+
+                const stepsHtml = `
+                <strong>📌 Étape 1 – Adultes (dégression) :</strong> ${adultDesc}<br>
+                <strong>📌 Étape 2 – Suppléments pour enfants & bonus de progression (ZH) :</strong> ${childDescription}<br>
+                <strong>📌 Taux journalier provisoire (Adultes + Enfants) :</strong> CHF ${result.totalDaily.toFixed(2)}<br>
+                <strong>📌 Étape 3 – Facteur mensuel (30.42 jours) :</strong> CHF ${result.totalDaily.toFixed(2)} × 30.42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Arrondi au franc suisse entier (pratique cantonale ZH) :</strong> CHF ${result.roundedMonthly.toFixed(2)}
+            `;
+
+                const stepsDiv = document.getElementById('stepsDetail');
+                if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+                const amountSpan = document.getElementById('monthlyAmountDisplay');
+                if (amountSpan) amountSpan.innerText = `${result.roundedMonthly.toFixed(2)} CHF`;
+
+                const resultPanel = document.getElementById('liveResultPanel');
+                if (resultPanel) resultPanel.style.display = 'block';
+            }
+
+            // Parameter in den Karten und Formeln ebenfalls dynamisch setzen (Konsistenz)
+            function setStaticParameterDisplay() {
+                const baseEl = document.getElementById('zhBaseDailyDisplay');
+                if (baseEl) baseEl.innerText = `CHF ${ZH_CONFIG.dailyCash.toFixed(2)} / jour`;
+                const coupleEl = document.getElementById('zhCoupleFactorDisplay');
+                if (coupleEl) coupleEl.innerText = `Facteur ${ZH_CONFIG.coupleFactor}`;
+                const childFactorEl = document.getElementById('zhChildFactorDisplay');
+                if (childFactorEl) childFactorEl.innerText = `Facteur ${ZH_CONFIG.childAddonFactor}`;
+                const bonusEl = document.getElementById('zhBonusFactorDisplay');
+                if (bonusEl) bonusEl.innerText = `+${(ZH_CONFIG.childFrom3Bonus * 100).toFixed(0)}% par enfant supplémentaire`;
+
+                const adultFormulaDiv = document.getElementById('adultFormulaStatic');
+                if (adultFormulaDiv) {
+                    adultFormulaDiv.innerHTML = `Personne seule : CHF ${ZH_CONFIG.dailyCash.toFixed(2)} par jour<br>
+                Ménage multiple : ${ZH_CONFIG.dailyCash.toFixed(2)} + (Adultes - 1) × ${ZH_CONFIG.dailyCash.toFixed(2)} × ${ZH_CONFIG.coupleFactor}`;
+                }
+                const childFormulaDiv = document.getElementById('childFormulaStatic');
+                if (childFormulaDiv) {
+                    childFormulaDiv.innerHTML = `Base enfants = Nombre d'enfants × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childAddonFactor})<br>
+                Bonus (dès le 3ème enfant) = (Enfants - 2) × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childFrom3Bonus})`;
+                }
+            }
+
+            // Event Listeners für Buttons und Inputs (Auto-Update wie AG/AI)
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            if (adultsField && childrenField) {
+                const autoUpdate = () => updateDemo();
+                adultsField.addEventListener('input', autoUpdate);
+                childrenField.addEventListener('input', autoUpdate);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                setStaticParameterDisplay();
+                // Initialen Beispielhaushalt berechnen (2 Erwachsene, 3 Kinder wie im ZH Vorschlag)
+                //updateDemo();
+            });
+        })();
+    </script>
+</body>
+
+</html>

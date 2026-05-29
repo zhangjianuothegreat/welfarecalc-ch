@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Aide sociale – Algorithme Bâle-Campagne 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta name="description" content="Comment l'aide sociale 2026 est-elle calculée dans le canton de Bâle-Campagne (BL) ? Découvrez notre algorithme transparent basé sur les normes SKOS et le droit cantonal.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026SH_fr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
+
+    <meta property="og:title" content="Aide sociale – Algorithme Bâle-Campagne 2026 | Calcul transparent">
+    <meta property="og:description" content="Logique officielle de calcul de l'aide sociale 2026 à Bâle-Campagne sur la base des normes SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026SH_fr.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de l'aide sociale Bâle-Campagne 2026",
+      "description": "Détail algorithmique du calcul de l'aide sociale dans le canton de BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Vérification des seuils de fortune comme condition d'entrée"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du minimum existentiel mensuel (besoin de base selon SKOS, régions de logement A/B/C, assurance maladie déduction FAIP)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Prise en compte des revenus d'activité et accessoires après déduction"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du droit mensuel à l'aide économique"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME SKOS 2026</div>
+        <h1>Algorithme de l'aide sociale : Canton de Bâle-Campagne</h1>
+        <p>Documentation transparente de la logique de calcul du minimum existentiel (BL)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Comment l'aide sociale est-elle calculée dans le canton de Bâle-Campagne ? Afin de renforcer la confiance de nos utilisateurs, nous divulguons ici l'algorithme mathématiquement précis qui se cache derrière welfarecalc.ch. Il repose sur la loi sur l'aide sociale (SHG BL), l'ordonnance cantonale ainsi que les dernières directives SKOS 2026.</p>
+
+        <h2 class="section-title">1. Vérification des avoirs (seuil d'entrée)</h2>
+        <p style="margin-bottom: 1rem;"><small>Avant de calculer un droit mensuel, le système vérifie les avoirs liquides de l'unité d'aide. Un droit existe uniquement si le critère du seuil de fortune est rempli :</small></p>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Seuil pour une personne seule</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>+ CHF 3'000 par enfant ou personne en formation.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Seuil couples / familles</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Montant forfaitaire maximal par unité d'aide dans le canton de BL.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Processus de calcul (mensuel)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Besoin de base pour l'entretien (BBE)</h3>
+                <p>Le BBE couvre les frais de nourriture, d'habillement, d'énergie et de conduite du ménage conformément aux normes SKOS 2026 :</p>
+                <table class="data-table">
+                    <tr><th>Taille du ménage</th><th>Montant mensuel (2026)</th></tr>
+                    <tr><td>1 personne</td><td>CHF 1'061</td></tr>
+                    <tr><td>2 personnes</td><td>CHF 1'624</td></tr>
+                    <tr><td>3 personnes</td><td>CHF 2'017</td></tr>
+                    <tr><td>4 personnes</td><td>CHF 2'320</td></tr>
+                    <tr><td>5 personnes</td><td>CHF 2'623</td></tr>
+                    <tr><td>À partir de 6 personnes</td><td>+ CHF 231 par personne supplémentaire</td></tr>
+                </table>
+                <p style="margin-top: 0.8rem;"><small>*Remarque sur l'échelle SKOS : notre moteur central v3.1 prend en compte la réduction dégressive pour les forfaits enfants et jeunes conformément à la pratique cantonale.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Régions de logement et plafonds de loyer</h3>
+                <p>Les frais de logement effectifs (loyer brut charges comprises) sont pris en charge jusqu'au maximum régional respectif :</p>
+                <div class="formula">
+                    Loyer reconnu = Min(Loyer effectif, Plafond régional)
+                </div>
+                <table class="data-table">
+                    <tr><th>Taille du ménage</th><th>Région A (niveau élevé)</th><th>Région B (standard)</th><th>Région C (rural)</th></tr>
+                    <tr><td>1 personne</td><td>CHF 1'100</td><td>CHF 1'000</td><td>CHF 900</td></tr>
+                    <tr><td>2 personnes</td><td>CHF 1'300</td><td>CHF 1'200</td><td>CHF 1'100</td></tr>
+                    <tr><td>3 personnes</td><td>CHF 1'500</td><td>CHF 1'400</td><td>CHF 1'300</td></tr>
+                    <tr><td>4 personnes</td><td>CHF 1'700</td><td>CHF 1'600</td><td>CHF 1'500</td></tr>
+                    <tr><td>5+ personnes</td><td>CHF 1'900</td><td>CHF 1'800</td><td>CHF 1'700</td></tr>
+                </table>
+                <p style="margin-top: 0.8rem;"><small>La région B sert de valeur standard par défaut si aucune commune spécifique n'est renseignée dans le système.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Coûts de santé & déduction FAIP optimisée</h3>
+                <p>La prime d'assurance maladie obligatoire (LAMal) est prise en charge jusqu'au plafond cantonal (prime moyenne), déduction faite de la réduction individuelle des primes (FAIP) :</p>
+                <div class="formula">
+                    Besoin net LAMal = Max(0, Prime LAMal - FAIP mensuelle)
+                </div>
+                <p><small>Important : Comme la FAIP dans le canton de BL est généralement versée directement à l'assureur, notre algorithme élimine les excédents calculatoires résiduels afin d'éviter tout revenu fictif.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Prise en compte des revenus & incitation à l'emploi (FDR)</h3>
+                <p>Une déduction forfaitaire est appliquée au revenu net d'activité afin de maintenir la motivation à travailler :</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace;">
+                    Revenu pris en compte = Salaire net - FDR (20% du salaire, max. CHF 400 par mois)
+                </div>
+                <p><small>Les autres revenus (pensions alimentaires, rentes, allocations familiales) sont ajoutés à 100% comme revenus.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Résultat : Droit mensuel à l'aide</h3>
+                <p>Contrairement aux estimations annuelles, notre système calcule strictement par mois afin de suivre précisément les fluctuations de revenus :</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace;">
+                    Droit (mensuel) = Max(0, Besoin total - Revenus totaux)
+                </div>
+                <p><small>Où : Besoin total = BBE + Loyer + Net LAMal + Allocations d'intégration (A Int)</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Allocations d'intégration (A Int) :</strong><br>
+            Pour promouvoir l'intégration professionnelle et sociale, la loi du canton de Bâle-Campagne prévoit des allocations mensuelles de <strong>CHF 100</strong> pour les personnes exerçant une activité lucrative (sous réserve de la classification par l'autorité compétente).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lancer le calculateur</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" target="_blank" class="btn-link">Site officiel du canton de BL</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sources : Loi sur l'aide sociale du canton de Bâle-Campagne (SHG) & directives SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Calcul transparent de l'aide sociale</p>
+    </footer>
+</div>
+
+</body>
+</html>

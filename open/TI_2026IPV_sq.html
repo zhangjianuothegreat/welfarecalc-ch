@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html lang="sq">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmi IPV Kantoni Ticino 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+  <meta
+    content="Si llogaritet subvencioni i primave (IPV) 2026 në Kantonin Ticino? Zbuloni algoritmin tonë transparent bazuar në sistemin zyrtar LAPS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_sq.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmi IPV Kantoni Ticino 2026 | Llogaritje Transparente" property="og:title" />
+  <meta content="Logjika zyrtare e llogaritjes për subvencionin e primave 2026 në Ticino (TI) bazuar në sistemin LAPS."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TI_2026IPV_sq.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e subvencionit të primeve Ticino 2026",
+      "description": "Udhëzues hap pas hapi për përcaktimin e të drejtës për IPV në Kantonin Ticino bazuar në modelin LAPS.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i të ardhurave në dispozicion sipas LAPS (RD)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i normës së subvencionit (Lambda) sipas niveleve të të ardhurave"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Zbatimi i garancisë minimale federale dhe kontrolli i rasteve të vështira"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">TË DHËNA ZYRTARE 2026</div>
+      <h1>Algoritmi IPV: Kantoni Ticino (TI)</h1>
+      <p>Zbulim transparent i modelit të llogaritjes bazuar në sistemin LAPS</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+    <div class="content">
+      <p>Besim përmes transparencës. Këtu zbulojmë se si llogaritësi ynë përcakton subvencionin tuaj të mundshëm të
+        primeve në Kantonin Ticino (TI). Ky algoritëm bazohet rreptësisht në udhëzimet e harmonizuara të sistemit
+        kantonal LAPS.</p>
+      <h2 class="section-title">1. Parametrat Kryesorë (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Konsumimi i Pasurisë (LAPS)</h4>
+          <div class="param-value">1/15 (6.67 %)</div>
+          <p><small>Pjesa e pasurisë së tatueshme që i shtohet të ardhurave çdo vit.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Subvencioni Minimal</h4>
+          <div class="param-value">CHF 120 / Vit</div>
+          <p><small>Shumat nën këtë kufi për person nuk paguhen.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Rruga e Llogaritjes</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Të ardhurat në dispozicion (RD) sipas LAPS</h3>
+          <p>Sistemi LAPS llogarit të ardhurat e rregulluara në dispozicion (Reddito Disponibile) si më poshtë:</p>
+          <div class="formula-box">
+            <strong>RD</strong> = ([Të ardhurat neto] + [Fitimi nga pasuria] + [Pasuria e tatueshme / 15]) -
+            ([Kontributet sociale] + [Mbështetja] + [Shpenzimet profesionale (maks. 4'000)] + [Shpenzimet e interesit
+            (maks. 3'000)])
+          </div>
+          <p><small>Shënim: Vlera e llogaritur RD kufizohet në minimumin CHF 0 nëse zbritjet tejkalojnë të
+              ardhurat.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Primet zyrtare të referencës (PMR) 2026</h3>
+          <p>Vlerat udhëzuese kantonal për kostot vjetore të sigurimit në Ticino:</p>
+          <table class="data-table">
+            <tr>
+              <td>Të rritur (adult)</td>
+              <td>CHF 8'016 / Vit</td>
+            </tr>
+            <tr>
+              <td>Të rinj (young_adult, deri në 25 vjeç në arsim)</td>
+              <td>CHF 6'143 / Vit</td>
+            </tr>
+            <tr>
+              <td>Fëmijë (child, 0-18)</td>
+              <td>CHF 1'827 / Vit</td>
+            </tr>
+          </table>
+          <div class="formula-box" style="margin-top: 10px;">
+            <strong>Totali PMR</strong> = (Nr. i rritur × 8'016) + (Nr. i të rinjve × 6'143) + (Nr. i fëmijëve × 1'827)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Përcaktimi i normës së subvencionit (λ)</h3>
+          &gt;Norma e subvencionit (λ) përcaktohet rreptësisht në faza sipas vlerës së llogaritur RD:
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Të ardhurat në dispozicion LAPS (RD)</th>
+                <th>Norma e subvencionit (λ)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>RD ≤ CHF 20'000</td>
+                <td>85 %</td>
+              </tr>
+              <tr>
+                <td>CHF 20'000 &lt; RD ≤ CHF 35'000</td>
+                <td>65 %</td>
+              </tr>
+              <tr>
+                <td>CHF 35'000 &lt; RD ≤ CHF 50'000</td>
+                <td>45 %</td>
+              </tr>
+              <tr>
+                <td>CHF 50'000 &lt; RD ≤ CHF 70'000</td>
+                <td>25 %</td>
+              </tr>
+              <tr>
+                <td>CHF 70'000 &lt; RD ≤ CHF 90'000</td>
+                <td>10 %</td>
+              </tr>
+              <tr>
+                <td>RD &gt; CHF 90'000</td>
+                <td>0 %</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>E Drejta &amp; Garancia Minimale Federale</h3>
+          <p>Subvencioni paraprak llogaritet nga: <code>Totali PMR × λ</code></p>
+          <p>Për familjet në <strong>nivelin e mesëm dhe të ulët të të ardhurave (RD ≤ CHF 50'000)</strong> hyn në fuqi
+            garancia minimale ligjore federale për fëmijët dhe të rinjtë:</p>
+          <table class="data-table">
+            <tr>
+              <th>Kategoria</th>
+              <th>Pjesa minimale ligjore e garantuar</th>
+            </tr>
+            <tr>
+              <td>Fëmijë (0-18)</td>
+              <td>80 % e primit referues (CHF 1'461.60)</td>
+            </tr>
+            <tr>
+              <td>Të rinj në arsim</td>
+              <td>50 % e primit referues (CHF 3'071.50)</td>
+            </tr>
+          </table>
+          <div class="formula-box" style="margin-top:10px;">
+            Nëse RD ≤ 50'000:<br />
+            <strong>E Drejta</strong> = Max([Totali PMR × λ], [Shuma e garancive minimale federale])
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>E Drejta Përfundimtare &amp; Kapaku i Rasteve të Vështira</h3>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            E drejta vjetore = Min(E drejta e rrumbullakosur lart, Primi aktual i sigurimit shëndetësor)
+          </div>
+          <p style="margin-top: 10px;"><small><strong>Kufiri i parëndësisë:</strong> Nëse e drejta totale e llogaritur
+              është më pak se CHF 120 për anëtar të familjes në vit, e drejta humbet plotësisht.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Veçanti në Kantonin Ticino:</strong><br />
+        Modeli Ticino përdor për sigurinë sociale <strong>modelin LAPS</strong>, i cili harmonizon dhe bashkon
+        komponentët e të ardhurave dhe pasurisë, në vend që të aplikojë kufij të fortë pasurie si kantonet e tjera në
+        CHF 100'000.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Kthehu te faqja kryesore</a>
+        <a class="btn-link" href="https://www4.ti.ch/dss/dipartimento" target="_blank">Faqja zyrtare e Kantonit
+          Ticino</a>
+      </div>
+    </div>
+    <footer>
+      <p>Burimi: Dipartimento della sanità e della socialità (DSS) Kantoni Ticino 2026 | welfarecalc.ch</p>
+      <p>Shënim ligjor: Ky përmbledhje është për qëllime informative dhe nuk krijon të drejta ligjore.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

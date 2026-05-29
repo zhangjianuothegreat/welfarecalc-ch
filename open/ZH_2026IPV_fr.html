@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Algorithme IPV Canton de Zurich 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta
+        content="Comment est calculée la réduction de prime (IPV) 2026 dans le canton de Zurich ? Découvrez notre algorithme transparent basé sur les données officielles de la SVA."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_fr.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algorithme IPV Canton de Zurich 2026 | Calcul transparent" property="og:title" />
+    <meta content="Logique de calcul officielle pour la réduction de prime 2026 dans le canton de Zurich (ZH)."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/ZH_2026IPV_fr.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de la réduction de prime Zurich 2026",
+      "description": "Guide étape par étape pour déterminer le droit à l'IPV dans le canton de ZH.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du revenu déterminant (LNA) incl. 10% de consommation de la fortune"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Vérification des limites cantonales de rigueur liées à la fortune"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du splitting pour les familles à faible revenu (règle de protection de l'enfant)"
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula-box {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
+
+        .highlight-red {
+            color: #be123c;
+            font-weight: bold;
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
+            <h1>Algorithme IPV : Canton de Zurich (ZH)</h1>
+            <p>Divulgation transparente de la logique de calcul pour l'année 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+        <div class="content">
+            <p>La confiance par la transparence. Nous dévoilons ici comment notre calculateur détermine votre
+                potentielle réduction de prime (IPV) dans le canton de Zurich. Cet algorithme est basé strictement sur
+                les directives légales de la SVA Zurich ainsi que sur l'ordonnance cantonale pour l'année 2026.</p>
+            <h2 class="section-title">1. Paramètres clés (2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Taux de déduction (Quote-part)</h4>
+                    <div class="param-value">Individus : 8.4 %<br />Familles : 10.5 %</div>
+                    <p><small>Pourcentage du revenu déterminant considéré comme part propre supportable.</small>
+                    </p>
+                </div>
+                <div class="param-card">
+                    <h4>Taux de consommation de la fortune</h4>
+                    <div class="param-value">10.0 %</div>
+                    <p><small>Part de la fortune nette imposable (après déduction de la franchise) qui est ajoutée au
+                            revenu.</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. Le chemin de calcul</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Revenu déterminant (LNA)</h3>
+                    <p>Le revenu déterminant définit votre capacité économique et se base sur les données fiscales :</p>
+                    <div class="formula-box">
+                        <strong>LNA = [Revenu net*] + [10% × (Fortune imposable - Franchise sur la fortune)]</strong>
+                    </div>
+                    <p><small>*Remarque : Le revenu net est corrigé selon les directives cantonales pour certaines
+                            déductions (par ex. cotisations d'achat pilier 2).</small></p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>État civil / Catégorie</th>
+                                <th>Franchise sur la fortune</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Personnes seules / Familles monoparentales</td>
+                                <td>CHF 75'000</td>
+                            </tr>
+                            <tr>
+                                <td>Mariés / Couples mariés</td>
+                                <td>CHF 150'000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Primes de référence officielles 2026</h3>
+                    <p>Le canton de Zurich divise les communes en 3 régions de primes. Le calcul IPV est basé sur 70% de
+                        la prime moyenne (prime de référence) :</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Région</th>
+                                <th>Adultes (dès 26 ans)</th>
+                                <th>Jeunes adultes (19-25 en formation)</th>
+                                <th>Enfants (0-18)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Région 1</strong> (p. ex. Ville de Zurich)</td>
+                                <td>CHF 7'704 / an</td>
+                                <td>CHF 5'532 / an</td>
+                                <td>CHF 1'854 / an</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Région 2</strong> (p. ex. Winterthour)</td>
+                                <td>CHF 7'020 / an</td>
+                                <td>CHF 5'040 / an</td>
+                                <td>CHF 1'686 / an</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Région 3</strong> (Communes rurales)</td>
+                                <td>CHF 6'540 / an</td>
+                                <td>CHF 4'692 / an</td>
+                                <td>CHF 1'566 / an</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Calcul de la part propre (Règle spéciale de splitting)</h3>
+                    <p>La part propre (quote-part) est déterminée de manière différenciée selon le niveau de revenu :
+                    </p>
+                    <h4 style="margin-top:10px; color:var(--official-blue);">A. Calcul standard (revenus normaux)</h4>
+                    <div class="formula-box">
+                        Part propre = Max([Prime de référence totale] × 30%, LNA × Taux de déduction)
+                    </div>
+                    <h4 style="margin-top:15px; color:var(--official-blue);">B. Règlement spécial pour les familles à
+                        faible revenu</h4>
+                    <p>Si une famille (avec enfants ou jeunes en formation) se situe en dessous des limites de revenu
+                        cantonales (<strong>CHF 70'500</strong> sans formation / <strong>CHF 94'000</strong> avec
+                        formation), la <strong>protection de l'enfant</strong> légale s'applique via la procédure de
+                        splitting :</p>
+                    <ul style="margin-left:20px; font-size:0.95rem; color:#475569;">
+                        <li><strong>Enfants :</strong> Supportent une part propre fixe de seulement 20% de leur prime de
+                            référence.</li>
+                        <li><strong>Jeunes adultes en formation :</strong> Supportent une part propre réduite de 50% de
+                            leur prime de référence.</li>
+                        <li><strong>Adultes :</strong> Supportent la déduction de revenu restante, mais au moins 30% de
+                            la prime de référence adulte.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                    <h3>Droit final (Avantage IPV)</h3>
+                    <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                        Droit théorique = Max(0, [Primes de référence totales] - [Part propre totale])
+                    </div>
+                    <p><small>L'avantage IPV effectif est plafonné par la prime annuelle effectivement payée à la caisse
+                            maladie. Le versement est effectué mensuellement (arrondi au franc entier).</small></p>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Respecter la limite absolue de rigueur sur la fortune :</strong><br />
+                Dans le canton de Zurich, tout droit à l'IPV s'éteint automatiquement si la fortune nette imposable
+                dépasse <strong>CHF 150'000</strong> (pour les personnes seules) ou <strong>CHF 300'000</strong> (pour
+                les couples mariés) – indépendamment du niveau actuel du revenu.
+            </div>
+            <div style="text-align: center;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Retour à la page
+                    d'accueil</a>
+                <a class="btn-link" href="https://svazurich.ch/ipv" target="_blank">Site officiel SVA Zurich</a>
+            </div>
+        </div>
+        <footer>
+            <p>Source : Directives SVA Zurich &amp; ordonnances cantonales 2026 | Fourni par welfarecalc.ch</p>
+            <p>Avis juridique : Ce résumé sert exclusivement à des fins d'information et ne constitue pas une prétention
+                juridique exécutoire.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

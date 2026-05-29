@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Family Allowances (FA) Algorithm Canton Basel-Landschaft 2026 | welfarecalc.ch</title>
+    <meta name="description" content="How are Family Allowances (FA) calculated for 2026 in the canton of Basel-Landschaft? Discover our transparent algorithm for child and education allowances.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026FA_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+
+    <meta property="og:title" content="Family Allowances Algorithm Canton Basel-Landschaft 2026 | Transparent Calculation">
+    <meta property="og:description" content="Official calculation logic for child and education allowances 2026 in the canton of Basel-Landschaft (BL).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026FA_en.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calculation of Family Allowances Basel-Landschaft 2026",
+      "description": "Step-by-step guide to the statutory calculation of child allowances and education allowances in Canton BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determine the entitlement category based on age and education status."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculate the total monthly entitlement without cantonal progression."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Check for one-time allowances (birth and adoption allowances are CHF 0 in Canton BL)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Compute the total annual entitlement and verify the AHV income threshold."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">FAMZG-COMPLIANT 2026</div>
+        <h1>FA Algorithm: Canton Basel-Landschaft</h1>
+        <p>Transparent documentation of Family Allowances (Child and Education Allowances) for BL</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>In the canton of Basel-Landschaft (BL), family allowances are governed by the federal Family Allowances Act (FamZG). Our calculator uses the official cantonal parameters for the year 2026 to ensure a complete and transparent verification of your entitlement.</p>
+
+        <h2 class="section-title">1. Monthly Rates BL (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Child Allowance</h4>
+                <div class="param-value">CHF 215 / month</div>
+                <p><small>From the month of birth until the end of the 16th year of age.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Education Allowance</h4>
+                <div class="param-value">CHF 268 / month</div>
+                <p><small>From age 16 (or from age 15 for post-compulsory education) up to max. age 25.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Calculation Methodology</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Category Determination & Age Limits</h3>
+                <p>The algorithm checks the age, employment status, and educational situation of each child individually:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Children under 16 years:</strong> General entitlement to child allowance (CHF 215).</li>
+                    <li><strong>Youth in post-compulsory education (from age 15):</strong> Early entitlement to education allowance (CHF 268) possible.</li>
+                    <li><strong>Youth aged 16 to 25 years:</strong> Entitlement to education allowance, provided certified education or studies are underway.</li>
+                    <li><strong>Children unable to work due to disability:</strong> Extended entitlement to child allowance (CHF 215) until the end of the 20th year of age.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Total Monthly Amount Calculation</h3>
+                <p>The monthly total is based on a purely linear calculation. The Canton of Basel-Landschaft does not provide progressive increases from the third child onward:</p>
+                <div class="formula">
+                    Monthly Entitlement = (Number of Child Allowances × CHF 215) + (Number of Education Allowances × CHF 268)
+                </div>
+                <p><small>*Important: According to FamZG Art. 3, only one type of allowance can be claimed per child at any given time (exclusion principle).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>One-Time Allowances (Birth/Adoption)</h3>
+                <p>According to cantonal decree, the Canton of Basel-Landschaft grants <strong>no</strong> one-time birth or adoption allowances.</p>
+                <table class="data-table">
+                    <tr><th>Allowance Type</th><th>Amount (BL)</th></tr>
+                    <tr><td>Birth Allowance</td><td>CHF 0</td></tr>
+                    <tr><td>Adoption Allowance</td><td>CHF 0</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Income Limits & Annual Entitlement</h3>
+                <p>The algorithm multiplies the validated monthly amount by the number of months in the current calendar year:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Annual Amount = (Monthly Total Entitlement) × 12
+                </div>
+                <p><strong>Income Limitation (Background Validation):</strong> If a child in education earns an AHV-taxable income exceeding <strong>CHF 2,520 / month</strong> (CHF 30,240 / year), the entitlement to education allowance is completely revoked.</p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Priority Order According to Federal Law:</strong><br>
+            If both parents work, the algorithm prevents double claims by strictly adhering to the statutory priority order according to FamZG Art. 12 (place of benefit claim, primary and secondary employment).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Go to calculator">Launch Calculator</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/personalamt/beruf-und-privates/familien-und-erziehungszulagen-1" target="_blank" class="btn-link" aria-label="Official SVA Basel-Landschaft page">Official SVA BL Page</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source: SVA Basel-Landschaft Guidelines 2026 & Federal Act on Family Allowances (FamZG)</p>
+        <p>© 2026 welfarecalc.ch | Transparent Family Allowance Calculation</p>
+    </footer>
+</div>
+
+</body>
+</html>

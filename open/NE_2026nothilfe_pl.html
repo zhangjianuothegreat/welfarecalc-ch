@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorytm Pomocy Doraźnej Kanton Neuchâtel 2026 | Przejrzyste Obliczenia | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczana jest pomoc doraźna w kantonie Neuchâtel na rok 2026? Poznaj nasz przejrzysty algorytm oparty na oficjalnych wytycznych kantonalnych (ANCAM).">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NE_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algorytm Pomocy Doraźnej Kanton Neuchâtel 2026 | Przejrzyste Obliczenia">
+    <meta property="og:description" content="Oficjalna logika obliczania pomocy doraźnej na 2026 rok w kantonie Neuchâtel zgodnie z LASoc i ANCAM.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/NE_2026nothilfe_pl.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie pomocy doraźnej Neuchâtel 2026",
+      "description": "Instrukcja krok po kroku do prawnego ustalenia pomocy doraźnej w kantonie Neuchâtel (NE).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Zidentyfikuj wszystkie obecne i uprawnione osoby w gospodarstwie domowym (dorośli i dzieci)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Pomnóż liczbę osób przez oficjalną miesięczną ryczałtową kwotę CHF 320.00."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Oblicz dokładne dzienne i roczne odpowiedniki do kontroli wypłat."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Główny system stylów - zgodny ze stronami AG/AI ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -0.5px; }
+        header p { color: #cbd5e1; font-size: 1rem; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        .step-body h3 { color: var(--official-blue); margin-bottom: 0.5rem; font-size: 1.15rem; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; color: #475569; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: 'Courier New', monospace; font-weight: bold; color: var(--official-blue); font-size: 1rem; }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; font-size: 0.95rem; }
+        
+        /* Interaktywny moduł Live-Demo */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; }
+        .input-item input:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        
+        .result-panel { margin-top: 1.5rem; padding: 1.5rem; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 8px; display: none; }
+        .result-panel h4 { color: #166534; font-size: 1.1rem; margin-bottom: 0.7rem; }
+        .main-amount { font-size: 2rem; font-weight: 800; color: #15803d; margin: 0.5rem 0; }
+        .steps-detail { font-size: 0.9rem; color: #3f6212; line-height: 1.7; background: rgba(255,255,255,0.7); padding: 12px; border-radius: 6px; margin-top: 10px; border-left: 3px solid #22c55e; }
+        
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid #e2e8f0; background: #f8fafc; }
+        .btn-container { text-align: center; margin-top: 2.5rem; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="update-tag">STATUS: ZGODNE Z PRZEPISAMI NA 2026</span>
+        <h1>Algorytm Pomocy Doraźnej – Kanton Neuchâtel (NE)</h1>
+        <p>Przejrzyste przedstawienie prawnej logiki obliczeń na bieżący rok 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Niniejszy dokument przedstawia oficjalny algorytm obliczania pomocy doraźnej (<em>Aide d'urgence</em>) w kantonie Neuchâtel. Przejrzystość naszych algorytmów jest fundamentem rzetelnego i niezależnego doradztwa socjalnego na <strong>welfarecalc.ch</strong>.</p>
+
+        <h2 class="section-title">1. Parametry prawne (stan na 2026)</h2>
+        <p>W przeciwieństwie do kantonów takich jak Argowia czy Appenzell Innerrhoden, które stosują dzienne współczynniki degresji, kanton Neuchâtel ustanawia stałą miesięczną ryczałtową kwotę na każdą obecną, uprawnioną osobę.</p>
+        
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Miesięczna ryczałtowa kwota (na osobę)</h4>
+                <div class="param-value">CHF 320.00</div>
+            </div>
+            <div class="param-card">
+                <h4>Podstawa obliczeń</h4>
+                <div class="param-value">Indywidualne / Równe traktowanie</div>
+            </div>
+            <div class="param-card">
+                <h4>Wytyczne kantonalne</h4>
+                <div class="param-value">ANCAM Art. 5 ust. 2</div>
+            </div>
+            <div class="param-card">
+                <h4>Zakwaterowanie i świadczenia rzeczowe</h4>
+                <div class="param-value">Zbiorowe (zapewniane oddzielnie)</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Algorytm obliczeniowy krok po kroku</h2>
+        
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="content-step">
+                <div class="step-body">
+                    <h3>Określenie wielkości gospodarstwa domowego</h3>
+                    <p>Identyfikowana jest dokładna liczba osób mieszkających w tym samym gospodarstwie domowym (lub zakwaterowaniu zbiorowym), które spełniają kryteria otrzymywania pomocy doraźnej zgodnie z prawem kantonalnym. W algorytmie Neuchâtel nie ma matematycznego rozróżnienia między dorosłymi a dziećmi w zakresie podstawowego uprawnienia do pomocy doraźnej.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="content-step">
+                <div class="step-body">
+                    <h3>Zastosowanie ustawowej miesięcznej ryczałtowej kwoty</h3>
+                    <p>Całkowite miesięczne uprawnienie jest wyprowadzane bezpośrednio przez pomnożenie liczby uprawnionych osób przez prawnie określoną kwotę ryczałtową.</p>
+                    <div class="formula">
+                        Kwota miesięczna = (Liczba dorosłych + Liczba dzieci) × CHF 320.00
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="content-step">
+                <div class="step-body">
+                    <h3>Skalowanie czasowe (dzień / rok)</h3>
+                    <p>Do tymczasowych lub niepełnomiesięcznych rozliczeń system używa oficjalnego szwajcarskiego przeciętnego miesiąca wynoszącego 30,4167 dni (365 dni / 12 miesięcy).</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Metryka</th>
+                                <th>Wzór obliczeniowy</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Odpowiednik dzienny</th>
+                                <td><code>Kwota miesięczna / 30,42</code> (zaokrąglenie handlowe)</th>
+                            </tr>
+                            <tr>
+                                <td>Odpowiednik roczny</th>
+                                <td><code>Kwota miesięczna × 12</code></th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Uwaga prawna i źródło:</strong> Zgodnie z dekretem kantonalnym lub <em>Arrêté fixant les normes pour le calcul de l'aide matérielle (ANCAM - RSN 831.02) z 4 listopada 1998 r. (wersja 2026) art. 5 ust. 2</em>, ryczałtowa kwota pomocy doraźnej wynosi dokładnie <strong>CHF 320.00 miesięcznie</strong>. Świadczenia rzeczowe za zakwaterowanie i podstawową opiekę medyczną są zapewniane bezpośrednio przez właściwe władze kantonalne.
+        </div>
+
+        <h2 class="section-title">3. Interaktywny live algorytm (Demo)</h2>
+        <p>Przetestuj oficjalną logikę bezpośrednio w tym piaskownicy kalkulatora. Wynik odpowiada dokładnie podstawowemu mechanizmowi naszego głównego kalkulatora.</p>
+
+        <div class="demo-card">
+            <div class="demo-header">
+                📊 Piaskownica Obliczeń na Żywo – Kanton Neuchâtel
+            </div>
+            <div class="demo-body">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="adultsCount">Liczba dorosłych w gospodarstwie domowym:</label>
+                        <input type="number" id="adultsCount" min="1" value="1">
+                    </div>
+                    <div class="input-item">
+                        <label for="childrenCount">Liczba dzieci (poniżej 18 lat):</label>
+                        <input type="number" id="childrenCount" min="0" value="0">
+                    </div>
+                </div>
+                <button type="button" class="demo-btn" id="runCalcBtn">Wykonaj Algorytm</button>
+
+                <div class="result-panel" id="liveResultPanel">
+                    <h4>Obliczone końcowe uprawnienie:</h4>
+                    <div class="main-amount" id="monthlyAmountDisplay">0.00 CHF</div>
+                    <p style="font-size:0.85rem; color:#475569;">Gwarantowana miesięczna ryczałtowa kwota zgodnie z wytycznymi ANCAM.</p>
+                    
+                    <div class="steps-detail" id="stepsDetail">
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://www.welfarecalc.ch" class="btn-link btn-home">← Powrót do welfarecalc.ch</a>
+            <a href="https://www.ne.ch/themes/migration-et-integration/accueil-et-accompagnement-en-matiere-dasile" class="btn-link" target="_blank" rel="noopener">Oficjalna strona kantonu NE ↗</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 welfarecalc.ch &bull; Otwarte algorytmy dla maksymalnej przejrzystości i zaufania w szwajcarskim systemie opieki społecznej.
+    </footer>
+</div>
+
+<script>
+    (function() {
+        "use strict";
+
+        // Oficjalne parametry kantonalne dla Neuchâtel 2026
+        const NE_PARAMS = {
+            monthlyForfaitPerCapita: 320.00,
+            daysPerMonth: 30.42
+        };
+
+        function computeNENothilfe(adults, children) {
+            const totalPersons = adults + children;
+            const monthlyTotal = totalPersons * NE_PARAMS.monthlyForfaitPerCapita;
+            const dailyEquivalent = monthlyTotal / NE_PARAMS.daysPerMonth;
+            const annualEquivalent = monthlyTotal * 12;
+
+            return {
+                totalPersons: totalPersons,
+                monthlyTotal: monthlyTotal,
+                dailyEquivalent: dailyEquivalent,
+                annualEquivalent: annualEquivalent
+            };
+        }
+
+        function updateDemo() {
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            
+            let adults = parseInt(adultsField.value, 10);
+            let children = parseInt(childrenField.value, 10);
+            
+            if (isNaN(adults)) adults = 1;
+            if (isNaN(children)) children = 0;
+            
+            if (adults < 1 && children === 0) {
+                alert("Proszę określić co najmniej 1 osobę.");
+                return;
+            }
+
+            const result = computeNENothilfe(adults, children);
+
+            // Aktualizacja głównego wyświetlania
+            const amountSpan = document.getElementById('monthlyAmountDisplay');
+            if (amountSpan) {
+                amountSpan.innerText = result.monthlyTotal.toFixed(2) + " CHF";
+            }
+
+            // Szczegółowe kroki obliczeń
+            const stepsDiv = document.getElementById('stepsDetail');
+            if (stepsDiv) {
+                stepsDiv.innerHTML = `
+                    <strong>📌 Krok 1 – Skład gospodarstwa domowego:</strong> ${adults} osoba(y) dorosłe, ${children} dziecko(ci) = łącznie ${result.totalPersons} osób.<br>
+                    <strong>📌 Krok 2 – Mnożenie:</strong> ${result.totalPersons} osób × CHF ${NE_PARAMS.monthlyForfaitPerCapita.toFixed(2)} (stała ryczałtowa kwota zgodnie z ANCAM Art. 5).<br>
+                    <strong>💰 Całkowite miesięczne uprawnienie:</strong> CHF ${result.monthlyTotal.toFixed(2)}<br>
+                    <hr style="margin:8px 0; border:0; border-top:1px dashed #bbf7d0;">
+                    <strong>📉 Odpowiednik dzienny (podstawa 30,42 dni):</strong> CHF ${result.dailyEquivalent.toFixed(2)} / dzień<br>
+                    <strong>📈 Projekcja roczna:</strong> CHF ${result.annualEquivalent.toFixed(2)} / rok
+                `;
+            }
+
+            // Pokazanie panelu wyników
+            const resultPanel = document.getElementById('liveResultPanel');
+            if (resultPanel) {
+                resultPanel.style.display = 'block';
+            }
+        }
+
+        // Powiązanie nasłuchiwania zdarzeń
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+
+        // Aktualizacja na żywo przy bezpośrednim wprowadzaniu danych dla lepszego UX
+        const adultsCountInput = document.getElementById('adultsCount');
+        const childrenCountInput = document.getElementById('childrenCount');
+        if (adultsCountInput && childrenCountInput) {
+            adultsCountInput.addEventListener('input', updateDemo);
+            childrenCountInput.addEventListener('input', updateDemo);
+        }
+        
+        // Uruchomienie początkowej kalkulacji po pełnym załadowaniu DOM
+        window.addEventListener('DOMContentLoaded', () => {
+            //updateDemo(); // Natychmiastowe wywołanie, aby pokazać wartości startowe
+        });
+    })();
+</script>
+</body>
+</html>

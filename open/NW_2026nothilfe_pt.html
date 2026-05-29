@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO / Configuração Base -->
+    <title>Algoritmo de Ajuda de Emergência Cantão Nidwalden 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Como é calculada a ajuda de emergência no Cantão de Nidwalden para 2026? Descubra o nosso algoritmo transparente baseado nas diretrizes cantonais oficiais e na SHG.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical & hreflang (apontando para o original alemão como canónico, mas esta é a versão portuguesa) -->
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NW_2026nothilfe_de.html">
+
+    <!-- Open Graph / Partilha Social -->
+    <meta property="og:title" content="Algoritmo de Ajuda de Emergência Cantão Nidwalden 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para ajuda de emergência 2026 em Nidwalden com base na SHG e Manual de Assistência Social.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/NW_2026nothilfe_pt.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Dados estruturados Schema.org (JSON-LD) em Português -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da Ajuda de Emergência Nidwalden 2026",
+      "description": "Instruções passo-a-passo para calcular a ajuda de emergência no Cantão de Nidwalden (alojamento coletivo).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinar as taxas diárias para adultos com degressão (individual ou casal)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Adicionar subsídios para crianças, incluindo bónus para famílias numerosas a partir do 3.º filho"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Extrapolar para o valor mensal e arredondar para CHF 0,05"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Estilo idêntico à página original ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        /* Cartão de demonstração interativa */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; }
+        .input-item input:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 0.5rem; color: #475569; background: transparent; padding: 0.5rem 0 0 0; }
+        @media (max-width: 720px) {
+            .content { padding: 1.5rem; }
+            .step-box { padding-left: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">DADOS OFICIAIS 2026 · Ajuda de Emergência NW</div>
+        <h1>Algoritmo de Ajuda de Emergência: Cantão Nidwalden</h1>
+        <p>Cálculo transparente da ajuda de emergência de acordo com a Lei de Assistência Social (SHG) e o Manual Nidwalden 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Confiança através da transparência. A ajuda de emergência para pessoas sujeitas a uma decisão de afastamento é calculada no Cantão de Nidwalden de acordo com critérios legais claros. Aqui divulgamos o algoritmo completo que fundamenta a nossa calculadora – com base nas diretrizes cantonais oficiais.</p>
+
+        <h2 class="section-title">1. Parâmetros Essenciais da Ajuda de Emergência (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Taxa diária base (pessoa solteira)</h4>
+                <div class="param-value">CHF 8,00 / dia</div>
+                <p><small>Alojamento coletivo, incluindo refeições e necessidades básicas.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Fator de degressão para casal</h4>
+                <div class="param-value">1,68 (para a segunda pessoa)</div>
+                <p><small>Para dois adultos na mesma instalação (degressivo).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Subsídio por criança (valor base)</h4>
+                <div class="param-value">52% da taxa base ≈ CHF 4,16 / dia por criança</div>
+                <p><small>Até aos 18 anos, independentemente do número de crianças.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Bónus para família numerosa (a partir do 3.º filho)</h4>
+                <div class="param-value">+10% da taxa base (CHF 0,80) por cada criança adicional</div>
+                <p><small>Apoio adicional a partir do terceiro filho.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Método de Cálculo (Passo a Passo)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinar a taxa diária para adultos (degressão)</h3>
+                <p>Primeiro, determina-se a taxa diária base com base no número de adultos. O Cantão de Nidwalden aplica um modelo degressivo para refletir as economias de escala doméstica:</p>
+                <div class="formula">
+                    Pessoa solteira: CHF 8,00 por dia<br>
+                    Casal (2 adultos): CHF 8,00 + 8,00 × 1,68 = CHF 13,44 por dia<br>
+                    Para mais de 2 adultos: Cada pessoa adicional recebe CHF 8,00 × 1,68 extra (aumento degressivo).
+                </div>
+                <p><small>Prática de acordo com as diretrizes do Cantão de Nidwalden: os efeitos de sinergia são considerados de forma justa.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Subsídios para crianças e bónus para família numerosa</h3>
+                <p>Por cada criança (< 18 anos), é adicionado um subsídio de 52% da taxa diária base para adultos (CHF 8,00). Para apoiar famílias numerosas, o Cantão de Nidwalden concede um bónus adicional de 10% da taxa base para cada criança além da segunda.</p>
+                <div class="formula">
+                    Total base crianças = Número de crianças × (CHF 8,00 × 0,52)<br>
+                    Bónus a partir do 3.º filho: (Número de crianças - 2) × (CHF 8,00 × 0,10)<br>
+                    Total diário = Taxa diária adultos + Total base crianças + Bónus
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Extrapolação mensal e arredondamento</h3>
+                <p>A ajuda de emergência é calculada com base em 30,42 dias (mês médio). O valor final é arredondado comercialmente para 5 cêntimos (CHF 0,05), conforme padrão na implementação cantonal.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Direito mensal = ARRED( (Total diário × 30,42) ; 0,05 )
+                </div>
+                <table class="data-table">
+                    <thead><tr><th>Regra de arredondamento</th><th>Exemplo</th></tr></thead>
+                    <tbody>
+                        <tr><td>Arredondar para o 0,05 CHF mais próximo</td><td>247,83 → 247,85 CHF</td></tr>
+                        <tr><td>Arredondar para baixo abaixo de 0,025</td><td>312,52 → 312,50 CHF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Informações complementares importantes sobre a ajuda de emergência no Cantão de Nidwalden:</strong><br>
+            • A ajuda de emergência é fornecida principalmente em espécie (alojamento, refeições); a componente em numerário é mantida ao mínimo.<br>
+            • Os bens que excedam o montante de isenção (CHF 5.000 por pessoa / máx. CHF 15.000 por agregado familiar) devem ser utilizados em primeiro lugar.<br>
+            • Pessoas sem autorização de residência e com ordem de afastamento legalmente vinculativa têm direito apenas a ajuda de emergência, não a assistência social ordinária.<br>
+            • O bónus para o terceiro e subsequentes filhos segue a política social de apoio a famílias numerosas no Cantão de Nidwalden.
+        </div>
+
+        <h2 class="section-title">3. Fontes de Dados & Base Legal</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Lei de Assistência Social (SHG) do Cantão de Nidwalden</strong> – nomeadamente as disposições sobre ajuda de emergência em situações urgentes.</li>
+            <li><strong>Manual de Assistência Social de Nidwalden, Capítulo "Ajuda de emergência para pessoas obrigadas a sair do país"</strong> – taxas diárias atualizadas 2026.</li>
+            <li><strong>Diretrizes SKOS (especificação)</strong> em conjunto com as diretivas cantonais.</li>
+            <li><strong>WelfareCalc – estado dos dados:</strong> Janeiro de 2026, todos os parâmetros revistos oficialmente.</li>
+        </ul>
+
+        <!-- Demonstração interativa / testador ao vivo -->
+        <div class="demo-card">
+            <div class="demo-header">🧪 Verificação de Transparência: Calculadora de Ajuda de Emergência Cantão NW - Teste ao Vivo</div>
+            <div class="demo-body">
+                <p>Simule o cálculo de acordo com o algoritmo oficial do Cantão de Nidwalden (2026), incluindo o bónus para família numerosa.</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Número de adultos</label>
+                        <input type="number" id="adultsCount" value="1" min="1" step="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Número de crianças (0-17 anos)</label>
+                        <input type="number" id="childrenCount" value="0" min="0" step="1">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Executar algoritmo</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Comprovativo do cálculo (de acordo com os passos 1–3)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0,00 CHF</span> <span style="font-size: 0.9rem;">(montante mensal da ajuda de emergência, arredondado a 5 cêntimos)</span></div>
+                    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Baseado em alojamento coletivo, sem suplementos individuais. Cálculo final pelos serviços sociais. O bónus para família numerosa é adicionado automaticamente a partir do 3.º filho.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Voltar à página inicial</a>
+            <a href="https://www.nw.ch" target="_blank" class="btn-link">Site oficial Cantão NW</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Cantão de Nidwalden – Lei de Assistência Social (SHG), Manual de Assistência Social 2026, recomendações SKOS</p>
+        <p>Fornecido por welfarecalc.ch | Esta informação serve a transparência e não substitui aconselhamento juridicamente vinculativo.</p>
+        <p>© 2026 welfarecalc.ch – Algoritmos abertos para a Suíça</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        // Parâmetros de acordo com as especificações oficiais (Nidwalden 2026)
+        const RATES = {
+            baseAdultDaily: 8.00,           // pessoa solteira por dia
+            coupleDegressionFactor: 1.68,    // fator de degressão para 2º e adultos adicionais
+            childBaseFactor: 0.52,           // 52% da taxa base por criança (necessidades básicas)
+            childBonusFactor: 0.10,          // adicional de 10% da taxa base a partir do 3º filho
+            avgDaysMonth: 30.42,
+        };
+
+        // Arredondar para 0,05 CHF (5 cêntimos) – arredondamento comercial
+        function roundToFiveRappen(value) {
+            return Math.round(value * 20) / 20;
+        }
+
+        function computeNothilfeNW(adults, children) {
+            // Passo 1: Taxa diária para adultos com degressão (prática NW)
+            let adultDaily = RATES.baseAdultDaily;
+            if (adults >= 2) {
+                // Para cada pessoa além da primeira: suplemento degressivo (fator 1,68 sobre a taxa base)
+                adultDaily = RATES.baseAdultDaily + (adults - 1) * RATES.baseAdultDaily * RATES.coupleDegressionFactor;
+            }
+            
+            // Passo 2: Subsídios para crianças (base + bónus família numerosa a partir do 3º filho)
+            let childBaseTotal = children * (RATES.baseAdultDaily * RATES.childBaseFactor);
+            let childBonusTotal = 0;
+            if (children >= 3) {
+                const bonusChildrenCount = children - 2; // 3º filho = 1 bónus, 4º filho = 2 bónus, etc.
+                childBonusTotal = bonusChildrenCount * (RATES.baseAdultDaily * RATES.childBonusFactor);
+            }
+            const childDailyTotal = childBaseTotal + childBonusTotal;
+            
+            // Total diário
+            const totalDaily = adultDaily + childDailyTotal;
+            
+            // Passo 3: Extrapolação mensal e arredondamento a 5 cêntimos
+            const rawMonthly = totalDaily * RATES.avgDaysMonth;
+            const roundedMonthly = roundToFiveRappen(rawMonthly);
+            const finalFormatted = roundedMonthly.toFixed(2).replace('.', ',');
+            
+            return {
+                adultDaily,
+                childBaseDaily: childBaseTotal,
+                childBonusDaily: childBonusTotal,
+                childDailyTotal,
+                totalDaily,
+                rawMonthly,
+                roundedMonthly,
+                finalFormatted
+            };
+        }
+        
+        function updateDemo() {
+            const adultsInput = document.getElementById('adultsCount');
+            const childrenInput = document.getElementById('childrenCount');
+            let adults = parseInt(adultsInput.value, 10);
+            let children = parseInt(childrenInput.value, 10);
+            
+            if (isNaN(adults)) adults = 1;
+            if (isNaN(children)) children = 0;
+            if (adults < 1) adults = 1;
+            if (children < 0) children = 0;
+            
+            adultsInput.value = adults;
+            childrenInput.value = children;
+            
+            const result = computeNothilfeNW(adults, children);
+            
+            // Passo 1 descrição (Português)
+            let adultDesc = '';
+            if (adults === 1) {
+                adultDesc = `Pessoa solteira: CHF ${result.adultDaily.toFixed(2).replace('.', ',')} / dia`;
+            } else {
+                adultDesc = `${adults} adulto(s) (degressão: 1ª pessoa CHF 8,00 taxa base, cada pessoa adicional + CHF ${(RATES.baseAdultDaily * RATES.coupleDegressionFactor).toFixed(2).replace('.', ',')}): CHF ${result.adultDaily.toFixed(2).replace('.', ',')} / dia`;
+            }
+            
+            // Passo 2 descrição (Português)
+            let childDesc = '';
+            if (children === 0) {
+                childDesc = `Sem crianças → subsídio CHF 0,00 / dia`;
+            } else {
+                let basePerChild = (RATES.baseAdultDaily * RATES.childBaseFactor).toFixed(2).replace('.', ',');
+                childDesc = `${children} criança(s) × CHF ${basePerChild} = CHF ${result.childBaseDaily.toFixed(2).replace('.', ',')} / dia (subsídio base)`;
+                if (children >= 3) {
+                    let bonusPerChild = (RATES.baseAdultDaily * RATES.childBonusFactor).toFixed(2).replace('.', ',');
+                    let bonusCount = children - 2;
+                    childDesc += ` + bónus família numerosa (a partir do 3.º filho): ${bonusCount} × CHF ${bonusPerChild} = CHF ${result.childBonusDaily.toFixed(2).replace('.', ',')} / dia`;
+                }
+                childDesc += ` → total crianças: CHF ${result.childDailyTotal.toFixed(2).replace('.', ',')} / dia`;
+            }
+            
+            // Formatar valores com vírgula para exibição amigável em PT
+            const totalDailyFormatted = result.totalDaily.toFixed(2).replace('.', ',');
+            const rawMonthlyFormatted = result.rawMonthly.toFixed(4).replace('.', ',');
+            const finalFormattedDisplay = result.finalFormatted;
+            
+            const stepsHtml = `
+                <strong>📌 Passo 1 – Adultos:</strong> ${adultDesc}<br>
+                <strong>📌 Passo 2 – Subsídios para crianças:</strong> ${childDesc}<br>
+                <strong>📌 Taxa diária intermédia:</strong> CHF ${totalDailyFormatted}<br>
+                <strong>📌 Passo 3 – Fator mensal (30,42 dias):</strong> CHF ${totalDailyFormatted} × 30,42 = CHF ${rawMonthlyFormatted}<br>
+                <strong>💰 Arredondado a 5 cêntimos (padrão cantonal):</strong> CHF ${finalFormattedDisplay}
+            `;
+            
+            const stepsDiv = document.getElementById('stepsDetail');
+            if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+            const amountSpan = document.getElementById('monthlyAmountDisplay');
+            if (amountSpan) amountSpan.innerText = `${finalFormattedDisplay} CHF`;
+            
+            const resultPanel = document.getElementById('liveResultPanel');
+            if (resultPanel) resultPanel.style.display = 'block';
+        }
+        
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+        
+        const adultsField = document.getElementById('adultsCount');
+        const childrenField = document.getElementById('childrenCount');
+        if (adultsField && childrenField) {
+            const autoUpdate = () => updateDemo();
+            adultsField.addEventListener('input', autoUpdate);
+            childrenField.addEventListener('input', autoUpdate);
+        }
+        
+        // Inicializar a demonstração após o carregamento da página
+        window.addEventListener('DOMContentLoaded', () => {
+            // updateDemo();
+        });
+    })();
+</script>
+</body>
+</html>

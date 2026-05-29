@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPV algoritam Jura 2026 | Transparentni izračun | welfarecalc.ch</title>
+    <meta name="description" content="Kako se izračunava smanjenje premije (IPV) 2026. u kantonu Jura (JU)? Otkrijte naš transparentni algoritam temeljen na Arrêté des Gouvernements jurassien.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/JU_2026IPV_hr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/JU_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/JU_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/JU_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/JU_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/JU_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/JU_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/JU_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/JU_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/JU_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/JU_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/JU_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/JU_2026IPV_de.html">
+
+    <meta property="og:title" content="IPV algoritam Jura 2026 | Transparentni izračun">
+    <meta property="og:description" content="Službena logika izračuna za smanjenje premije 2026. u kantonu Jura (JU).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/JU_2026IPV_hr.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun smanjenja premije (IPV) Jura 2026",
+      "description": "Korak-po-korak upute za određivanje podobnosti za IPV u kantonu Jura.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Provjera praga imovine (maks. 150.000 CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Izračun relevantnog dohotka (LNA)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Određivanje osnovne subvencije i dodataka za djecu"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">SLUŽBENI PODACI 2026</div>
+        <h1>IPV algoritam: Kanton Jura (JU)</h1>
+        <p>Transparentno otkrivanje logike izračuna za 2026. godinu</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>U skladu s našom filozofijom transparentnosti, otkrivamo matematičku osnovu za IPV kalkulator Kantona Jura. Ovaj se algoritam temelji na <em>Arrêté des Gouvernements jurassien</em> od 30. listopada 2025.</p>
+
+        <h2 class="section-title">1. Ključni parametri (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Prag imovine</h4>
+                <div class="param-value">150.000 CHF</div>
+                <p><small>Ako se premaši, u načelu nema prava na IPV.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Trošenje imovine (pridodavanje)</h4>
+                <div class="param-value">5,0 %</div>
+                <p><small>Postotak neto imovine koji se računa kao fiktivni dohodak.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Korak-po-korak izračun</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Relevantni dohodak (LNA)</h3>
+                <p>Ekonomska osnovica (LNA) utvrđuje se na sljedeći način:</p>
+                <div class="formula-box">
+                    <strong>[Oporezivi dohodak]</strong> + <strong>[5% neto imovine]</strong> - <strong>[Izdvajanja za uzdržavanje (alimentacije)]</strong>
+                </div>
+                <table class="data-table">
+                    <tr><th>Prag dohotka (LNA)</th><th>Status</th></tr>
+                    <tr><td>26.999 CHF</td><td>Samac / Bez djece</td></tr>
+                    <tr><td>52.999 CHF</td><td>Kućanstva s djecom</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Osnovna subvencija i dodaci</h3>
+                <p>Kanton Jura kombinira fiksnu osnovnu subvenciju s posebnim dodacima:</p>
+                <ul style="margin-left: 1.5rem; font-size: 0.95rem;">
+                    <li><strong>Osnovna subvencija:</strong> Ovisno o razredu LNA (maks. 2.700 CHF/godišnje).</li>
+                    <li><strong>Dodatak za dijete:</strong> 1.200 CHF / godišnje po djetetu.</li>
+                    <li><strong>Dodatak za obrazovanje:</strong> 2.352 CHF / godišnje po osobi (< 25 godina).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Dodatak za kućanstvo (linearno smanjenje)</h3>
+                <p>Za kućanstva s djecom i LNA < 18.000 CHF, izračunava se dodatni iznos:</p>
+                <div class="formula-box">
+                    Mjesečni dodatak = 300 - (LNA / 18.000) × (300 - 15)
+                </div>
+                <p><small>Ovaj se iznos odobrava po roditelju i linearno se smanjuje kako dohodak raste.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Gornja granica prava</h3>
+                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                    Pravo = Min([Osnovna subvencija + Dodaci + Dodatak], [Stvarna premija])
+                </div>
+                <p><small>Za kućanstva s djecom minimalno pravo iznosi 120 CHF/godišnje ako je subvencija izračunata.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Važna napomena:</strong><br>
+            Ovdje prikazane vrijednosti temelje se na kantonalnoj uredbi za 2026. godinu. LNA u kantonu Jura uračunava trošenje imovine umjerenije (5%) nego npr. kanton Aargau (20%).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Natrag na početnu stranicu</a>
+            <a href="https://www.ecasjura.ch/fr/Assurances/Assurance-maladie/Primes-2026-et-obligation-de-s-assurer/Primes-2026-et-obligation-de-s-assurer.html" target="_blank" class="btn-link">Službene stranice (ECAS Jura)</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Izvor: Caisse de compensation du canton du Jura (ECAS) 2026 | welfarecalc.ch</p>
+        <p>Odricanje od odgovornosti: Ovaj izračun služi samo u informativne svrhe i ne stvara nikakvo zakonsko pravo.</p>
+    </footer>
+</div>
+
+</body>
+</html>

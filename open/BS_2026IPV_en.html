@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <title>IPV Algorithm Canton Basel-Stadt 2026 | Transparent Calculation | welfarecalc.ch</title>
+    <meta name="description" content="How is the premium reduction (IPV) 2026 calculated in the Canton of Basel-Stadt? Discover our transparent open-source algorithm based on official legal guidelines of the KVO Basel-Stadt.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BS_2026IPV_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BS_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BS_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BS_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BS_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BS_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BS_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BS_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BS_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BS_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
+
+    <meta property="og:title" content="IPV Algorithm Canton Basel-Stadt 2026 | Transparent Calculation">
+    <meta property="og:description" content="Official calculation logic for premium reduction (IPV) 2026 in the Canton of Basel-Stadt (BS).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BS_2026IPV_en.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Calculation of Premium Reduction Basel-Stadt 2026",
+        "description": "Step-by-step guide to mathematically determining IPV entitlement in the Canton of Basel-Stadt for the year 2026.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Determine Asset Allowance",
+                "text": "Deduct CHF 50'000 for single persons or CHF 100'000 for married couples from net assets."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Calculate Relevant Income (LNA)",
+                "text": "LNA = Net income + 10% of excess assets - alimony paid."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Assign Income Group",
+                "text": "Classify the household into one of 22 standardized cantonal income groups."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Determine Flat-Rate Subsidy",
+                "text": "Extract monthly cantonal flat-rate contributions for adults, young adults, and children."
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        header h1 { font-size: 1.8rem; line-height: 1.3; margin-bottom: 0.5rem; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        .step-body h3 { margin-bottom: 0.75rem; color: var(--official-blue); }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { opacity: 0.9; text-decoration: underline; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-official { background: var(--official-blue); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        
+        .param-table-wrapper { overflow-x: auto; margin: 15px 0; border-radius: 8px; }
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: 'Courier New', monospace; font-weight: 500; color: #003366; overflow-x: auto; word-break: break-word; white-space: pre-wrap; }
+        
+        /* ========= Mobile responsive optimizations ========= */
+        @media (max-width: 640px) {
+            body { padding: 0.75rem; }
+            .content { padding: 1.5rem; }
+            header { padding: 2rem 1rem; }
+            header h1 { font-size: 1.5rem; }
+            .section-title { font-size: 1.35rem; margin: 1.8rem 0 1rem; }
+            .step-box { padding-left: 3rem; }
+            .step-num { width: 2.5rem; height: 2.5rem; font-size: 1rem; border-width: 3px; }
+            .step-body { padding: 1rem; }
+            .btn-link { display: block; margin: 0.7rem 0; text-align: center; width: 100%; }
+            .grid-params { grid-template-columns: 1fr; gap: 1rem; }
+            .param-card { padding: 1rem; }
+            .data-table th, .data-table td { padding: 8px 6px; font-size: 0.85rem; }
+            .alert { padding: 1rem; font-size: 0.95rem; }
+            .formula-box { font-size: 0.85rem; padding: 12px; }
+            footer { padding: 2rem 1rem; font-size: 0.8rem; }
+        }
+        
+        @media (max-width: 380px) {
+            .step-box { padding-left: 2.5rem; }
+            .step-num { width: 2rem; height: 2rem; font-size: 0.85rem; }
+            .step-body { padding: 0.8rem; }
+            .param-value { font-size: 1rem; }
+            .data-table th, .data-table td { font-size: 0.75rem; padding: 6px 4px; }
+        }
+        
+        .alert, .step-body, .param-card, footer p, .btn-link {
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+        
+        .param-table-wrapper::-webkit-scrollbar { height: 6px; }
+        .param-table-wrapper::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 4px; }
+        .param-table-wrapper::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CANTON BASEL-STADT (BS) · OFFICIAL KVO 2026</div>
+        <h1>IPV Algorithm: Canton Basel-Stadt</h1>
+        <p>Transparent calculation of your premium reduction for the year 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Trust through transparency. We disclose how our calculator determines your potential premium reduction (IPV) in the Canton of Basel-Stadt. This algorithm strictly follows the legal provisions of the Basel-Stadt KVO.</p>
+
+        <h2 class="section-title">1. Core Parameters (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Asset Depletion Rate</h4>
+                <div class="param-value">10.0 %</div>
+                <p><small>Share of net assets (above allowance) added to income.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Income Groups</h4>
+                <div class="param-value">22 Levels</div>
+                <p><small>Degressive scaling of IPV contributions.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. The Calculation Pathway</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determination of Asset Allowance</h3>
+                <p>First, the household's taxable net assets are analyzed. If assets exceed the statutory allowances for 2026, the excess amount is partially added to the income.</p>
+                
+                <div class="param-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Household Type</th><th>Allowance (2026)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Single person</td><td>CHF 50'000</td></tr>
+                            <tr><td>Married couples / Registered partnerships</td><td>CHF 100'000</td></tr>
+                            <tr><td>Supplement per child / person in initial education</td><td>+ CHF 15'000</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Calculation of Relevant Income (LNA)</h3>
+                <p>The income relevant for premium reduction (LNA) is derived from net income plus a 10% depletion of excess assets, minus verifiable alimony paid.</p>
+                
+                <div class="formula-box">
+                    AssetSurplus = Max(0, TaxableAssets - Allowance)<br>
+                    LNA = NetIncome + (AssetSurplus × 10%) - AlimonyPaid
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Classification into 22 Income Groups</h3>
+                <p>Depending on the calculated LNA and the exact household size (number of adults + children), the household is placed into a degressive table (Groups 1 to max 22). The interval thresholds increase uniformly by CHF 1'250 per group.</p>
+                
+                <div class="param-table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr><th>Household Size (Persons)</th><th>Income Limit Group 1 (Min)</th><th>Income Limit Group 22 (Max)</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1 person (e.g., single)</td><td>CHF 23'125</td><td>CHF 49'375</td></tr>
+                            <tr><td>2 persons (e.g., couple)</td><td>CHF 37'000</td><td>CHF 63'250</td></tr>
+                            <tr><td>3 persons</td><td>CHF 47'000</td><td>CHF 73'250</td></tr>
+                            <tr><td>4 persons</td><td>CHF 55'000</td><td>CHF 81'250</td></tr>
+                            <tr><td>5+ persons (graduated progressively)</td><td>+ CHF 6'000 / pers.</td><td>+ CHF 6'000 / pers.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Determination of Cantonal Flat-Rate Contribution</h3>
+                <p>The entitlement is not reduced based on the effective insurance plan chosen, but credited as a fixed cantonal flat-rate lump sum. This incentivizes cost-efficient insurance models (HMO/family doctor).</p>
+                
+                <div class="formula-box">
+                    MonthlySubsidy_Total = (Adults × Rate_A) + (In_Education × Rate_B) + (Children × Rate_C)
+                </div>
+                <p><small>*Note: If the calculated LNA exceeds the maximum threshold of Group 22, the IPV entitlement for 2026 is completely void (entitlement = CHF 0).</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Key Feature in Canton Basel-Stadt:</strong><br>
+            The system in Basel-Stadt is strongly degressive. Households in Group 1 receive the maximum reference premium subsidy (up to 100% of the standardized basic premium), while middle-income classes receive progressively less support until entitlement fully ceases from Group 22.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" rel="noopener noreferrer" class="btn-link btn-home">Back to Homepage</a>
+            <a href="https://www.bs.ch/themen/finanzielle-hilfe/leistungen/praemienverbilligung" target="_blank" rel="noopener noreferrer" class="btn-link btn-official">Visit Official Website of the Social Contributions Office</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source: Social Contributions Office of the Canton of Basel-Stadt (Ordinance on Health Insurance KVO) | Provided by welfarecalc.ch</p>
+        <p>This summary is for informational purposes only and is not legally binding.</p>
+    </footer>
+</div>
+
+</body>
+</html>

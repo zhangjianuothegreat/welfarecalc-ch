@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPV Algoritması Obwalden Kantonu 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
+    <meta name="description" content="Obwalden Kantonu'nda 2026 yılı için prim indirimi (IPV) nasıl hesaplanır? Resmi AKOW yönergelerine dayanan şeffaf algoritmamızı keşfedin.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/OW_2026IPV_tr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/OW_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/OW_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/OW_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/OW_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/OW_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/OW_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/OW_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/OW_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/OW_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/OW_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/OW_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/OW_2026IPV_de.html">
+
+    <meta property="og:title" content="IPV Algoritması Obwalden Kantonu 2026 | Şeffaf Hesaplama">
+    <meta property="og:description" content="Obwalden'de (OW) 2026 prim indirimi (IPV) için resmi hesaplama mantığı.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/OW_2026IPV_tr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obwalden 2026 Prim İndirimi Hesaplama",
+      "description": "Obwalden Kantonu'nda IPV hak sahipliğini belirlemek için adım adım kılavuz.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Varlık katkısı dahil sayılabilir geliri belirleyin"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Kanton gelir sınırlarını kontrol edin (50k / 75k CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Kademeli öz pay ve standart primleri hesaplayın"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Çocuklar ve genç yetişkinler için yasal asgari garantileri uygulayın"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; line-height: 1.5; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; font-size: 0.95rem; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 0.95rem; transition: background 0.2s; }
+        .btn-link:hover { opacity: 0.9; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">RESMİ VERİLER 2026</div>
+        <h1>IPV Algoritması: Obwalden Kantonu (OW)</h1>
+        <p>2026 hak sahipliği yılı için prim indiriminizin şeffaf hesaplaması</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Şeffaflık sayesinde güven. Hesaplayıcımızın Obwalden (OW) Kantonu'ndaki potansiyel prim indiriminizi (IPV) nasıl belirlediğini burada açıklıyoruz. Bu algoritma, 2026 yılı için Ausgleichskasse Obwalden (AKOW) yasal yönergelerine tamamen dayanmaktadır.</p>
+
+        <h2 class="section-title">1. Temel Parametreler (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Kademeli Öz Pay (Self-Retention)</h4>
+                <div class="param-value">%9.50 Baz Oranından Başlar</div>
+                <p><small>Sayılabilir gelirin 35.000 CHF üzerindeki her 100 CHF'si için %0.01 artar.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Varlık Ek Ücreti</h4>
+                <div class="param-value">%10.0</div>
+                <p><small>Vergilendirilebilir varlıkların gelire eklenen kısmı.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Hesaplama Metodolojisi</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Sayılabilir Gelir</h3>
+                <p>İlk olarak, ekonomik kapasitenizi kanton kesintilerine göre belirleriz:</p>
+                <div class="formula-box">
+                    <strong>Sayılabilir Gelir</strong> = (Brüt gelir - Toplam kesintiler) + Vergilendirilebilir varlıkların %10'u
+                </div>
+                <table class="data-table">
+                    <tr><th>Kategori / Kesinti Türü</th><th>İstisna / Kesinti (2026)</th></tr>
+                    <tr><td>Evli / Kayıtlı partner kesintisi</td><td>7.000 CHF</td></tr>
+                    <tr><td>Çocuk / eğitimdeki genç başına kesinti</td><td>7.000 CHF</td></tr>
+                    <tr><td>İzin verilen yasal kesintiler</td><td>Mesleki giderler, nafaka katkıları, sigorta kesintileri, tıbbi maliyetler, vb.</td></tr>
+                    <tr><td>Asgari gelir değeri</td><td>0 CHF (Negatif değerler 0 olarak ayarlanır)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Kanton Gelir Sınırları (Eşik Değerler)</h3>
+                <p>Sayılabilir gelir aşağıdaki eşikleri aşarsa, IPV için yasal hak yoktur:</p>
+                <table class="data-table">
+                    <tr><th>Hane Türü</th><th>Gelir Sınırı (2026)</th><th>Aşılması Halinde Hak Durumu</th></tr>
+                    <tr><td>Çocuksuz bekar kişiler / çiftler</td><td>50.000 CHF</td><td>Hak yok (Sübvansiyon = 0)</td></tr>
+                    <tr><td>Çocuklu aileler / bekar ebeveynler</td><td>75.000 CHF</td><td>Hak yok (Sübvansiyon = 0)</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>2026 Yılı Toplam Standart Primleri</h3>
+                <p>Obwalden Kantonu, zorunlu sağlık sigortası için yıllık referans değerlerini (standart primler) tanımlar:</p>
+                <table class="data-table">
+                    <tr><th>Yaş Grubu / Durum</th><th>Standart Prim (2026)</th></tr>
+                    <tr><td>Yetişkinler (26 yaş ve üzeri)</td><td>5.018,40 CHF / yıl</td></tr>
+                    <tr><td>Genç yetişkinler (19-25 yaş, eğitimde)</td><td>3.570,00 CHF / yıl</td></tr>
+                    <tr><td>Çocuklar (0-18 yaş)</td><td>1.380,00 CHF / yıl</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Kademeli Öz Pay (Self-Retention) ve Teorik Hak</h3>
+                <p>Makul kişisel katkı (öz pay), artan gelirle birlikte kademeli olarak yükselir:</p>
+                <div class="formula-box">
+                    Eğer gelir ≤ 35.000 CHF ise:<br>
+                    <strong>Oran = %9,50</strong><br><br>
+                    Eğer gelir > 35.000 CHF ise:<br>
+                    <strong>Oran = %9,50 + (Floor((Gelir - 35.000) / 100) × %0,01)</strong><br><br>
+                    <strong>Öz Pay</strong> = Sayılabilir Gelir × Oran<br>
+                    <strong>Teorik Hak</strong> = Maksimum(0, Toplam Standart Primler - Öz Pay)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Yasal Asgari Garantiler (Minimum Sübvansiyon)</h3>
+                <p>Aileleri ve genç yetişkinleri özel olarak rahatlatmak için, belirli gelir eşiklerinin altında sabit asgari garantiler geçerlidir:</p>
+                <table class="data-table">
+                    <tr><th>Hedef Grup</th><th>Koşul (Sayılabilir Gelir)</th><th>Garantili Asgari Sübvansiyon</th></tr>
+                    <tr><td>Çocuklar (1. ila 3. çocuk)</td><td>50.000 CHF altında</td><td>Çocuk standart priminin <strong>%80'i</strong> (çocuk başına 1.104 CHF)</td></tr>
+                    <tr><td>Çocuklar (4. ve sonraki çocuklar)</td><td>50.000 CHF altında</td><td>Çocuk standart priminin <strong>%100'ü</strong> (çocuk başına 1.380 CHF)</td></tr>
+                    <tr><td>Genç yetişkinler (eğitimde)</td><td>25.000 CHF altında</td><td>Genç standart priminin <strong>%50'si</strong> (kişi başına 1.785 CHF)</td></tr>
+                </table>
+                <div class="formula-box" style="background: #fff1f2; margin-top: 15px;">
+                    <span class="highlight-red">Hesaplanan Hak</span> = Maksimum(Teorik Hak, Yasal Asgari Garanti)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">6</div>
+            <div class="step-body">
+                <h3>Nihai Sınırlama ve Ödeme</h3>
+                <p>Nihai IPV ödeme tutarı aşağıdaki gibi sınırlandırılır:</p>
+                <div class="formula-box">
+                    • <strong>Yıllık Fayda</strong> = Min(Hesaplanan Hak, Gerçek Sağlık Sigortası Primi)<br>
+                    • <strong>Aylık Fayda</strong> = Yıllık Fayda / 12 (en yakın frank'a yuvarlanır)
+                </div>
+                <p><small>Not: Obwalden Kantonu'nda fayda genellikle sağlık sigortanızla doğrudan mutabakat yoluyla ödenir.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>2026 hak sahipliği yılına özel özellikler:</strong><br>
+            • <strong>13. AHV emekli maaşı:</strong> Kanton yönetmeliğine göre, 2026'dan itibaren ödenen 13. AHV yaşlılık maaşının IPV hakkı üzerinde <strong>olumsuz bir etkisi yoktur</strong>.<br>
+            • <strong>Varsayımsal gelir:</strong> Gönüllü yarı zamanlı çalışma yükü olan sigortalılar için, ihtiyaç tespitinde gelir, varsayımsal tam zamanlı çalışma yüküne yansıtılabilir (2026 itibarıyla revize edilen hükümlere göre).
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Ana Sayfaya Dön</a>
+            <a href="https://www.akow.ch/dienstleistungen/praemienverbilligung" target="_blank" class="btn-link">Resmi AKOW Web Sitesini Ziyaret Edin</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kaynak: Ausgleichskasse Obwalden (AKOW) yönergeleri & Kanton Meclisi kararları 2026 | welfarecalc.ch tarafından sağlanmıştır</p>
+        <p>Yasal uyarı: Bu algoritmik özet yalnızca bilgilendirme amaçlıdır ve yasal bir hak teşkil etmez.</p>
+    </footer>
+</div>
+
+</body>
+</html>

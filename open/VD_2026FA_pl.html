@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
+    <title>Algorytm zasiłków rodzinnych (FA) Kanton Vaud 2026 | welfarecalc.ch</title>
+    <meta
+        content="Jak obliczane są zasiłki rodzinne (FA) w 2026 roku w kantonie Vaud (VD)? Odkryj nasz przejrzysty algorytm dla zasiłków na dzieci, kształcenie i urodzenie."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algorytm zasiłków rodzinnych Kanton Vaud 2026 | Przejrzyste obliczenia" property="og:title" />
+    <meta
+        content="Oficjalna logika obliczeniowa dla zasiłków na dzieci, kształcenie i urodzenie w 2026 roku w kantonie Vaud (VD)."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie zasiłków rodzinnych Vaud 2026",
+      "description": "Instrukcja krok po kroku precyzyjnego matematycznego określania zasiłków rodzinnych w kantonie Vaud (VD) z uwzględnieniem globalnej hierarchii.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Sprawdzenie wieku i statusu w celu określenia kategorii uprawnień (zasiłek na dziecko, edukacyjny lub na dziecko niezdolne do pracy)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Określenie globalnego wskaźnika hierarchii dzieci (ranking według wieku) w całym gospodarstwie domowym."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Przypisanie miesięcznej kwoty na podstawie współczynnika hierarchii (podwyższony od 3. dziecka)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Zastosowanie zasiłków jednorazowych (poród / adopcja) zróżnicowanych dla pojedynczego dziecka lub bliźniąt."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Określenie rocznego uprawnienia i zastosowanie defensywnych walidacji algorytmicznych, takich jak limity dochodowe."
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #0ea5e9;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 1.25rem;
+        }
+
+        @media (min-width: 640px) {
+            body {
+                padding: 1.5rem;
+            }
+
+            .content {
+                padding: 2.5rem;
+            }
+
+            header {
+                padding: 3rem 1.5rem;
+            }
+
+            .update-tag {
+                font-size: 0.85rem;
+            }
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2rem 0 1.25rem;
+            font-size: 1.35rem;
+        }
+
+        @media (min-width: 640px) {
+            .section-title {
+                font-size: 1.5rem;
+                margin: 2.5rem 0 1.5rem;
+            }
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 480px) {
+            .grid-params {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 1.5rem;
+            }
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.25rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.8rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .param-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 640px) {
+            .step-box {
+                padding-left: 4rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.2rem;
+            height: 2.2rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1rem;
+            border: 2px solid #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (min-width: 640px) {
+            .step-num {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.2rem;
+                border-width: 4px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.1rem;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 640px) {
+            .step-body {
+                padding: 1.5rem;
+            }
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            display: table;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .table-responsive .data-table {
+            margin-top: 0;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px 8px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.85rem;
+            color: #334155;
+        }
+
+        .data-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.85rem;
+        }
+
+        @media (min-width: 640px) {
+
+            .data-table th,
+            .data-table td {
+                padding: 12px 14px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* 核心修复：流式高级数学公式排版容器 */
+        .formula-container {
+            background: #eef2ff;
+            border-left: 4px solid #4f46e5;
+            padding: 1rem;
+            margin: 12px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.88rem;
+            color: var(--official-blue);
+            overflow-x: auto;
+        }
+
+        .formula-title {
+            font-family: monospace;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #4f46e5;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+
+        .math-block {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-weight: bold;
+            line-height: 1.5;
+            white-space: nowrap;
+            /* 拒绝在手机端进行任何逻辑断行 */
+        }
+
+        .math-row {
+            margin: 0.4rem 0;
+            padding-left: 0.5rem;
+        }
+
+        .math-indent {
+            padding-left: 1.5rem;
+            color: #334155;
+            font-weight: normal;
+        }
+
+        .math-sign {
+            color: var(--swiss-red);
+            font-weight: bold;
+            padding: 0 4px;
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 640px) {
+            .alert {
+                padding: 1.5rem;
+            }
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 10px 20px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        @media (min-width: 640px) {
+            .btn-link {
+                padding: 12px 28px;
+                margin: 0.5rem;
+            }
+        }
+
+        .btn-link:hover {
+            opacity: 0.95;
+            text-decoration: none;
+            transform: translateY(-1px);
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.8rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (min-width: 640px) {
+            footer {
+                padding: 3rem 1.5rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        ul,
+        .alert ul {
+            padding-left: 1.25rem;
+        }
+
+        code {
+            background: #f1f5f9;
+            color: #b91c1c;
+            padding: 0.15rem 0.3rem;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .step-body ul {
+            margin-top: 0.5rem;
+        }
+
+        .step-body ul li {
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">ZGODNY Z FAMZG 2026</div>
+            <h1>Algorytm FA: Kanton Vaud (Waadt)</h1>
+            <p>Przejrzysta dokumentacja zasiłków rodzinnych (na dzieci, edukacyjnych i porodowych)</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+        <div class="content">
+            <p>W Szwajcarii zasiłki rodzinne są regulowane ustawowo (FamZG). Nasz kalkulator wykorzystuje szczegółowe
+                przepisy kantonalne kantonu Vaud (VD) na rok 2026, aby precyzyjnie określić Twoje uprawnienia.
+                Algorytm Vaud wyróżnia się globalnym wskaźnikiem gospodarstwa domowego (hierarchia) oraz hojnymi
+                zasiłkami jednorazowymi. Przejrzystość jest dla nas ważna.</p>
+            <h2 class="section-title">1. Stawki miesięczne i kwoty jednorazowe (2026)</h2>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rodzaj zasiłku</th>
+                            <th>1. i 2. dziecko (standard)</th>
+                            <th>Od 3. dziecka (podwyższony)</th>
+                            <th>Warunek / granica wieku</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Zasiłek na dziecko</strong></td>
+                            <td>CHF 322 / miesiąc</td>
+                            <td>CHF 365 / miesiąc</td>
+                            <td>Od miesiąca urodzenia do ukończenia 16. roku życia.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zasiłek edukacyjny</strong></td>
+                            <td>CHF 425 / miesiąc</td>
+                            <td>CHF 468 / miesiąc</td>
+                            <td>Od 16. do maks. 25. roku życia (potwierdzenie kształcenia).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dzieci niezdolne do pracy</strong></td>
+                            <td>CHF 425 / miesiąc</td>
+                            <td>CHF 468 / miesiąc</td>
+                            <td>Od 16. do maks. 20. roku życia (potwierdzenie choroby/niepełnosprawności).</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zasiłek porodowy</strong></td>
+                            <td colspan="2">CHF 1'617 (jedno dziecko) / CHF 3'234 (na dziecko przy bliźniętach)</td>
+                            <td>Jednorazowo przy żywym urodzeniu lub od 24. tygodnia ciąży.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Zasiłek adopcyjny</strong></td>
+                            <td colspan="2">CHF 1'617 (przypadek pojedynczy) / CHF 3'234 (na dziecko przy adopcji
+                                grupowej)</td>
+                            <td>Jednorazowo przy prawomocnym przyjęciu małoletniego do adopcji.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="section-title">2. Precyzyjna ścieżka obliczeniowa (logika podstawowa)</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Określenie kategorii</h3>
+                    <p>Algorytm sprawdza wiek oraz status zatrudnienia lub zdrowia każdego dziecka:</p>
+                    <ul>
+                        <li><strong>0 do 16 lat:</strong> Przypisanie do kategorii <code>Zasiłek na dziecko</code>.</li>
+                        <li><strong>16 do 25 lat:</strong> Przypisanie do kategorii <code>Zasiłek edukacyjny</code>,
+                            o ile istnieje ważne potwierdzenie kształcenia i nie został przekroczony ustawowy limit
+                            dochodów.</li>
+                        <li><strong>16 do 20 lat (Niezdolne do pracy):</strong> Przypisanie do kategorii
+                            <code>Dzieci niezdolne do pracy</code> (wysokość świadczenia odpowiada zasiłkowi
+                            edukacyjnemu).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Określenie globalnej hierarchii w gospodarstwie domowym (Rang de l'enfant)</h3>
+                    <p><strong>Krytyczny czynnik algorytmu:</strong> Progresja od 3. dziecka w kantonie
+                        Vaud nie jest obliczana oddzielnie według kategorii. Tworzona jest globalna lista wszystkich
+                        dzieci uprawnionych do zasiłku w gospodarstwie domowym, sortowana malejąco według wieku.</p>
+                    <div class="formula-container">
+                        <div class="formula-title">Przypisanie_Indeksu_Gospodarstwa:</div>
+                        <div class="math-block">
+                            <div class="math-row">Sortuj_Dzieci_według_Wieku(<span
+                                    style="color:#64748b;">Malejąco</span>);</div>
+                            <div class="math-row">Dziecko_1 (Najstarsze) <span class="math-sign">→</span> Indeks 1 <span
+                                    class="math-indent">(Stawka standardowa)</span></div>
+                            <div class="math-row">Dziecko_2           <span class="math-sign">→</span> Indeks 2 <span
+                                    class="math-indent">(Stawka standardowa)</span></div>
+                            <div class="math-row">Dziecko_3           <span class="math-sign">→</span> Indeks 3 <span
+                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Stawka podwyższona od
+                                    3. dziecka)</span></div>
+                            <div class="math-row">Dziecko_n           <span class="math-sign">→</span> Indeks n <span
+                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Stawka podwyższona od
+                                    3. dziecka)</span></div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #475569;"><small><em>Gwarantuje to, że
+                                na przykład trzecie dziecko, które kształci się, otrzyma pełną podwyższoną stawkę
+                                CHF 468, nawet jeśli pierwsze dwoje młodszych dzieci pobiera tylko zasiłki na
+                                dziecko.</em></small></p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Obliczenie miesięcznej kwoty</h3>
+                    <p>Suma matematyczna tworzona jest dynamicznie na podstawie określonych indeksów:</p>
+                    <div class="formula-container">
+                        <div class="formula-title">Miesięczne_Uprawnienie_Łączne:</div>
+                        <div class="math-block">
+                            <div class="math-row">Miesięczne_Uprawnienie_Łączne = ∑ [ Stawka ( Kategoria, Indeks ) ]
+                            </div>
+                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Gdzie:
+                            </div>
+                            <div class="math-row">• Jeśli Indeks ≤ 2:</div>
+                            <div class="math-indent">Zasiłek na dziecko = 322 CHF | Edukacyjny / Niezdolny do pracy =
+                                425 CHF</div>
+                            <div class="math-row">• Jeśli Indeks ≥ 3:</div>
+                            <div class="math-indent" style="color:#b8860b; font-weight:bold;">Zasiłek na dziecko = 365
+                                CHF | Edukacyjny / Niezdolny do pracy = 468 CHF</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                    <h3>Obliczenie zasiłków jednorazowych (poród / adopcja)</h3>
+                    <p>Algorytm sprawdza, czy w roku obliczeniowym miał miejsce poród lub adopcja, i
+                        ściśle rozróżnia między urodzeniem pojedynczym a mnogim:</p>
+                    <div class="formula-container">
+                        <div class="formula-title">Zasiłki_Jednorazowe_Łącznie:</div>
+                        <div class="math-block">
+                            <div class="math-row">Zasiłki_Jednorazowe_Łącznie = Liczba_Dzieci <span
+                                    class="math-sign">×</span> Kwota_Jednorazowa_na_Dziecko</div>
+                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+                                Parametry:</div>
+                            <div class="math-row">• Pojedyncze (Liczba_Dzieci == 1):</div>
+                            <div class="math-indent">Kwota_Jednorazowa_na_Dziecko = 1'617 CHF</div>
+                            <div class="math-row">• Bliźnięta (Liczba_Dzieci ≥ 2):</div>
+                            <div class="math-indent">Kwota_Jednorazowa_na_Dziecko = 3'234 CHF <span
+                                    style="color:#64748b; font-weight:normal;">(na dziecko)</span></div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
+                        <em>Przykład: Poród bliźniaczy → 2 × 3'234 CHF = 6'468 CHF Łącznie.<br />
+                            Pojedynczy → 1 × 1'617 CHF = 1'617 CHF Łącznie.</em>
+                    </p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">5</div>
+                <div class="step-body">
+                    <h3>Określenie rocznego uprawnienia</h3>
+                    <p>Agregacja do rocznego całkowitego uprawnienia wygląda następująco:</p>
+                    <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
+                        <div class="formula-title" style="color:#a855f7;">Obliczenie_Kwoty_Rocznej:</div>
+                        <div class="math-block" style="color:#6b21a8;">
+                            <div class="math-row">Kwota_Roczna = ( Miesięczne_Uprawnienie_Łączne <span
+                                    class="math-sign">×</span> 12 ) <span class="math-sign">+</span>
+                                Zasiłki_Jednorazowe_Łącznie</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title">3. Defensywna walidacja i granice algorytmiczne</h2>
+            <div class="alert"
+                style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
+                <strong>Zintegrowane zabezpieczenia (Walidacja anty-błędna):</strong>
+                <ul>
+                    <li><strong>Limit dochodów dla dzieci w edukacji:</strong> Jeśli dziecko w edukacji
+                        (16-25 lat) osiąga własny dochód podlegający opodatkowaniu przekraczający <strong>CHF 30'240 /
+                            rok</strong> (lub CHF 2'520 / miesiąc), uprawnienie do zasiłku w algorytmie
+                        podstawowym wygasa natychmiast (wynik = 0).</li>
+                    <li><strong>Zakaz jednoczesnego pobierania (zasada wykluczenia):</strong> Dla tego samego dziecka
+                        nigdy nie można
+                        przyznać jednocześnie zasiłku na dziecko i zasiłku edukacyjnego.</li>
+                    <li><strong>Obcięcie granic wieku:</strong> Uprawnienie do zasiłku na dziecko wygasa z końcem
+                        miesiąca, w którym dziecko kończy 16. rok życia. Uprawnienie do zasiłku edukacyjnego
+                        wygasa w dniu po ukończeniu 25. roku życia lub po przedwczesnym zakończeniu kształcenia.</li>
+                </ul>
+            </div>
+            <div class="alert">
+                <strong>Uprawnienie zgodnie z prawem federalnym:</strong><br />
+                Tylko jeden rodzic może pobierać zasiłek. Obowiązuje ustawowa kolejność pierwszeństwa zgodnie z art. 12
+                FamZG, jeśli oboje rodzice są aktywni zawodowo (np. przede wszystkim ten, który ma główne miejsce pracy
+                w
+                kantonie zamieszkania dziecka).
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a aria-label="Przejdź do kalkulatora" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+                    target="_blank">Uruchom kalkulator</a>
+                <a aria-label="Przejdź do oficjalnej strony kantonu Vaud" class="btn-link"
+                    href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales"
+                    target="_blank">Oficjalna
+                    strona CCVD Vaud</a>
+            </div>
+        </div>
+        <footer>
+            <p>Źródło: Caisse cantonale vaudoise de compensation AVS (CCVD) Wytyczne 2026 &amp; Ustawa federalna o
+                zasiłkach rodzinnych (FamZG)</p>
+            <p>© 2026 welfarecalc.ch | Przejrzyste obliczanie zasiłków rodzinnych</p>
+        </footer>
+    </div>
+</body>
+
+</html>

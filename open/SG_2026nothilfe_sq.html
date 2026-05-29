@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algoritmi i Ndihmës Emergjente Kantoni St. Gallen 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+    <meta name="description"
+        content="Si llogaritet ndihma emergjente (Nothilfe) 2026 në Kantonin e St. Gallen? Zbuloni algoritmin tonë transparent bazuar në udhëzimet zyrtare kantonal dhe Ordinancën për Azilin.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritmi i Ndihmës Emergjente Kantoni St. Gallen 2026 | Llogaritje Transparente">
+    <meta property="og:description"
+        content="Logjika zyrtare e llogaritjes për ndihmën emergjente 2026 në Kantonin SG bazuar në ordinancat dhe udhëzimet kantonal.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/SG_2026nothilfe_sq.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e Ndihmës Emergjente St. Gallen 2026",
+      "description": "Udhëzime hap pas hapi për llogaritjen e ndihmës emergjente në Kantonin St. Gallen (akomodim kolektiv).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktoni tarifën ditore për të rritur me faktor degresiv për çift"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Shtoni shumat shtesë për fëmijë"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ekstrapolimi mujor dhe rrumbullakimi komercial në 10 Rappen (0.10 CHF)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Sistemi kryesor i stilit konsistent me faqet AG dhe AI ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Demo interaktive - kartela e drejtpërdrejtë */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--official-blue);
+            font-size: 1.2rem;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 1.5rem;
+            }
+
+            .step-box {
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">TË DHËNAT ZYRTARE 2026 · NDIHMA EMERGJENTE SG</div>
+            <h1>Algoritmi i Ndihmës Emergjente: Kantoni i St. Gallen</h1>
+            <p>Llogaritja transparente e ndihmës emergjente sipas Ordinancës për Azilin (sGS 381.12) Kantoni St. Gallen 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+
+        <div class="content">
+            <p>Besim përmes transparencës. Ndihma emergjente për personat e detyruar të largohen nga Zvicra përcaktohet në Kantonin e St. Gallen sipas kërkesave të sakta ligjore. Këtu zbulojmë algoritmin e rregulluar zyrtar që përbën bazën e motorit tonë të llogaritjes.</p>
+
+            <h2 class="section-title">1. Parametrat Bazë të Ndihmës Emergjente (SG 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Tarifa Ditore Bazë (Personi i vetëm)</h4>
+                    <div class="param-value">CHF 10.00 / ditë</div>
+                    <p><small>Nevojat bazë për një person të vetëm në një strukturë akomodimi kolektiv.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Shuma e Përgjithshme për Çift (Degresive)</h4>
+                    <div class="param-value">Faktori 1.72 (CHF 17.20 / ditë)</div>
+                    <p><small>Dy të rritur në të njëjtën familje marrin 172% e tarifës individuale së bashku.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Shtesa për Fëmijë</h4>
+                    <div class="param-value">Faktori 0.55 (CHF 5.50 / ditë)</div>
+                    <p><small>Shumë shtesë për fëmijë (55% e tarifës bazë për të rritur).</small></p>
+                </div>
+            </div>
+
+            <h2 class="section-title">2. Rruga e Llogaritjes (Hap pas Hapi)</h2>
+
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Përcaktimi i Tarifës Ditore për të Rritur</h3>
+                    <p>Kantoni i St. Gallen përdor një model degresiv për të llogaritur kursimet në familje:</p>
+                    <div class="formula">
+                        Nëse të rritur = 1: CHF 10.00 në ditë<br>
+                        Nëse të rritur = 2: CHF 17.20 në ditë (Tarifa bazë × 1.72)<br>
+                        Nëse të rritur > 2: CHF 17.20 + (numri i të rriturve - 2) × CHF 7.20 në ditë
+                    </div>
+                    <p><small>Shënim: Sipas praktikës kantonal, për çdo të rritur shtesë brenda së njëjtës njësi mbështetëse, shtohet tarifa degresive prej CHF 7.20.</small></p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Shtimi i Shumës Shtesë për Fëmijë</h3>
+                    <p>Për secilin fëmijë (< 18 vjeç) që jeton në familje, shtohet një shumë e përgjithshme, e cila korrespondon saktësisht me 55% të tarifës bazë për të rritur:</p>
+                    <div class="formula">
+                        Shuma totale ditore për fëmijë = Numri i fëmijëve × (10.00 × 0.55) = Numri i fëmijëve × CHF 5.50 / ditë
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Ekstrapolimi Mujor dhe Rrumbullakimi Administrativ</h3>
+                    <p>E drejta totale ditore ekstrapolohet bazuar në faktorin statistikor mujor (30.42 ditë). Rrumbullakimi komercial kryhet në Kantonin SG sipas standardit në 10 Rappen më të afërt (0.10 CHF).</p>
+                    <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        E drejta mujore = RRUMBAKULLOJ( (Shuma totale ditore × 30.42) ; 0.10 )
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                <strong>Kufizime të rëndësishme administrative në Kantonin SG:</strong><br>
+                • <strong>Prioriteti i përfitimeve në natyrë:</strong> Ndihma emergjente në Kantonin e St. Gallen sigurohet kryesisht si përfitime në natyrë (akomodim në struktura kolektive, shpërndarje e drejtpërdrejtë e ushqimit ose kupona). Shuma e parave e llogaritur këtu zbatohet vetëm nëse përfitimet në natyrë nuk mund të sigurohen plotësisht.<br>
+                • <strong>Asnjë e drejtë afatgjatë:</strong> Ndihma emergjente siguron vetëm mbijetesën ditë për ditë (Neni 12 BV). Pagesat paraprake mujore ose vjetore janë ligjërisht të përjashtuara. Llogaritja mujore shërben vetëm për qëllime statistikore.
+            </div>
+
+            <h2 class="section-title">3. Burimet e të Dhënave dhe Baza Ligjore</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Ordinanca për Azilin e Kantonit St. Gallen (AsylV, sGS 381.12)</strong> – Rregullimi i ndihmës emergjente dhe akomodimit.</li>
+                <li><strong>Ligji për Mirëqenien Sociale Publike (Ligji për Mirëqenien Sociale, sGS 381.1)</strong> – Dispozitat shtesë kantonal.</li>
+                <li><strong>Kushtetuta Federale Zvicerane (Neni 12 BV)</strong> – E drejta kushtetuese për ndihmë në rast nevoje.</li>
+                <li><strong>WelfareCalc – Statusi i të Dhënave të Hapura:</strong> I vlefshëm për vitin 2026.</li>
+            </ul>
+
+            <div class="demo-card">
+                <div class="demo-header">🧪 Kontrolli i Transparencës: Test i drejtpërdrejtë i Llogaritësit të Ndihmës Emergjente SG</div>
+                <div class="demo-body">
+                    <p>Simuloni llogaritjen zyrtare për Kantonin St. Gallen (2026) në kohë reale.</p>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Numri i të rriturve</label>
+                            <input type="number" id="adultsCount" value="1" min="1" step="1">
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Numri i fëmijëve (0-17 vjeç)</label>
+                            <input type="number" id="childrenCount" value="0" min="0" step="1">
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Ekzekuto algoritmin</button>
+
+                    <div id="liveResultPanel" class="result-panel">
+                        <h3>📐 Regjistri zyrtar i llogaritjes (Kantoni SG)</h3>
+                        <div id="stepsDetail" class="calc-steps"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(Vlera statistikore referuese mujore, e rrumbullakosur në 10 Rappen)</span></div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Kjo llogaritje simulon kufijtë maksimalë kantonale për pagesat në para në akomodim kolektiv.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Kthehu te faqja kryesore</a>
+                <a href="https://www.sg.ch" target="_blank" class="btn-link">Faqja Zyrtare e Kantonit SG</a>
+                <a href="https://www.fedlex.admin.ch/eli/cc/1999/358/de" target="_blank"
+                    class="btn-link">Ligji Federal për Azilin (AsylG)</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Burimi: Kantoni i St. Gallen – Departamenti i Brendshëm, Ordinanca për Azilin (AsylV) 2026</p>
+            <p>Ofruar nga welfarecalc.ch | Iniciativa e transparencës për algoritme të hapura administrative në Zvicër</p>
+            <p>© 2026 welfarecalc.ch – Iniciativa e Algoritmit të Hapur</p>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            // Parametrat e vlefshme zyrtarisht për SG 2026
+            const CONFIG = {
+                baseDailyCash: 10.00,       // Tarifa bazë për person të vetëm
+                coupleFactor: 1.72,         // 172% për çiftet (17.20 CHF)
+                childFactor: 0.55,          // 55% e tarifës bazë për fëmijë (5.50 CHF)
+                extraAdultRate: 7.20,       // Shtesa degresive për çdo të rritur shtesë (17.20 - 10.00)
+                avgDaysMonth: 30.42
+            };
+
+            // Rrumbullakimi komercial në 10 Rappen (0.10 CHF)
+            function roundToTenRappen(value) {
+                return Math.round(value * 10) / 10;
+            }
+
+            function computeSGEmergencyAid(adults, children) {
+                let adultDaily = 0;
+                let adultDesc = '';
+
+                // Logjika e saktë administrative degresive
+                if (adults === 1) {
+                    adultDaily = CONFIG.baseDailyCash;
+                    adultDesc = `Person i vetëm: CHF ${CONFIG.baseDailyCash.toFixed(2)} / ditë`;
+                } else if (adults === 2) {
+                    adultDaily = CONFIG.baseDailyCash * CONFIG.coupleFactor;
+                    adultDesc = `Shuma e përgjithshme për çift (degresive): CHF ${adultDaily.toFixed(2)} / ditë`;
+                } else {
+                    adultDaily = (CONFIG.baseDailyCash * CONFIG.coupleFactor) + (adults - 2) * CONFIG.extraAdultRate;
+                    adultDesc = `${adults} të rritur (baza çift + ${adults - 2} persona shtesë degresivë): CHF ${adultDaily.toFixed(2)} / ditë`;
+                }
+
+                const childDailyTotal = children * (CONFIG.baseDailyCash * CONFIG.childFactor);
+                const totalDaily = adultDaily + childDailyTotal;
+                const rawMonthly = totalDaily * CONFIG.avgDaysMonth;
+                const roundedMonthly = roundToTenRappen(rawMonthly);
+
+                return {
+                    adultDaily,
+                    adultDesc,
+                    childDailyTotal,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly,
+                    finalFormatted: roundedMonthly.toFixed(2)
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) adults = 1;
+                if (isNaN(children) || children < 0) children = 0;
+
+                const result = computeSGEmergencyAid(adults, children);
+
+                const stepsHtml = `
+                <strong>📌 Hapi 1 – Të rriturit:</strong> ${result.adultDesc}<br>
+                <strong>📌 Hapi 2 – Shtesat për fëmijë:</strong> ${children} fëmijë × (CHF 10.00 × 55%) = CHF ${result.childDailyTotal.toFixed(2)} / ditë<br>
+                <strong>📌 Tarifa totale e përkohshme ditore:</strong> CHF ${result.totalDaily.toFixed(2)} / ditë<br>
+                <strong>📌 Hapi 3 – Llogaritja mujore (30.42 ditë):</strong> CHF ${result.totalDaily.toFixed(2)} × 30.42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Rrumbullakuar në 10 Rappen (standardi kantonal SG):</strong> CHF ${result.finalFormatted}
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${result.finalFormatted} CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+
+            // Përditësim i drejtpërdrejtë në ndryshimin e inputeve
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            if (adultsField && childrenField) {
+                adultsField.addEventListener('input', updateDemo);
+                childrenField.addEventListener('input', updateDemo);
+            }
+        })();
+    </script>
+</body>
+
+</html>

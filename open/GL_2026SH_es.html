@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Asistencia Social Cantón de Glaris 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calcula la asistencia social en el Cantón de Glaris (GL) para 2026? Descubra nuestro algoritmo transparente basado en las directrices SKOS y la ley cantonal.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GL_2026SH_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GL_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GL_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GL_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GL_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GL_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GL_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GL_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GL_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GL_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GL_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GL_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GL_2026SH_de.html">
+
+    <meta property="og:title" content="Algoritmo de Asistencia Social Cantón GL 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para asistencia social 2026 en Glaris basada en SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GL_2026SH_es.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Asistencia Social Glaris 2026",
+      "description": "Desglose algorítmico detallado del cálculo de asistencia social en el Cantón de Glaris.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación de asignación de activos"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinar necesidades básicas (SKOS 2026)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcular costes de vivienda y seguro de enfermedad"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Compensar ingresos y consumo de activos"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME A SKOS 2026</div>
+        <h1>Algoritmo de Asistencia Social: Cantón de Glaris</h1>
+        <p>Documentación transparente de la lógica de cálculo del mínimo vital social (GL)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>¿Cómo se calcula la asistencia social en el Cantón de Glaris? La confianza se construye con transparencia. Aquí divulgamos el algoritmo completo detrás de welfarecalc.ch. La lógica se basa en la Ley de Asistencia Social de Glaris (SHG) y en las directrices SKOS 2026.</p>
+
+        <h2 class="section-title">1. Verificación de activos (Umbral de entrada)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Asignación para persona sola</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>Más CHF 3'000 por hijo/persona en formación.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Asignación para parejas</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Límite máximo total de CHF 15'000 por hogar.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Método de cálculo (mensual)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Necesidades básicas para la vida (NBV)</h3>
+                <p>La NBV 2026 en el Cantón GL cubre los costes de alimentación, vestimenta y hogar:</p>
+                <table class="data-table">
+                    <thead><tr><th>Tamaño del hogar</th><th>Importe mensual (2026)</th></tr></thead>
+                    <tbody>
+                        <tr><td>1 persona</td><td>CHF 1.061</td></tr>
+                        <tr><td>2 personas</td><td>CHF 1.624</td></tr>
+                        <tr><td>3 personas</td><td>CHF 2.017</td></tr>
+                        <tr><td>4 personas</td><td>CHF 2.313</td></tr>
+                        <tr><td>5 personas</td><td>CHF 2.609</td></tr>
+                        <tr><td>Cada persona adicional</td><td>+ CHF 221</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Costes de vivienda y salud</h3>
+                <p>Reconocimiento de los costes reales de alquiler hasta el valor estándar cantonal y las primas del seguro de enfermedad:</p>
+                <div class="formula">
+                    Costes reconocidos = Alquiler (hasta máx.) + Prima Neta LAMal (después de RPC)
+                </div>
+                <p><small>*Nota: En el Cantón GL, primero se aplica la Reducción Individual de Primas (RPC). Solo se cubren los costes restantes.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Deducción de ingresos y subsidio por empleo</h3>
+                <p>Para fomentar la reincorporación al trabajo, el Cantón GL concede una deducción de los ingresos del trabajo:</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+                    <strong>Ingreso evaluable</strong> = Ingreso neto - Asignación (20%, máx. CHF 400)
+                </div>
+                <p><small>Las pensiones, manutenciones y otras prestaciones sociales cuentan como ingreso al 100%.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Resultado: Derecho mensual</h3>
+                <p>El cálculo de la diferencia determina el pago real:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Prestación = (Necesidad) - (Ingresos + Consumo de activos)
+                </div>
+                <p><small>El consumo de activos es 1/120 (durante 10 años) de los activos que excedan la asignación, aplicado mensualmente.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Subsidio de integración (IZU):</strong><br>
+            Las personas empleadas o en medidas de integración pueden recibir un subsidio adicional de <strong>CHF 100 a CHF 300</strong> en el Cantón de Glaris.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lanzar Calculadora</a>
+            <a href="https://www.gl.ch/verwaltung/volkswirtschaft-und-inneres/soziales/sozialhilfe.html/978" target="_blank" class="btn-link">Página Oficial Cantón GL</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuentes: Ley de Asistencia Social de Glaris & Directrices SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Cálculo Transparente de Asistencia Social</p>
+    </footer>
+</div>
+
+</body>
+</html>

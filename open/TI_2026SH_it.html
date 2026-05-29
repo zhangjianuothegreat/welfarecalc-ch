@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo dell'assistenza sociale Cantone Ticino (TI) 2026 | Calcolo trasparente | welfarecalc.ch</title>
+  <meta
+    content="Come viene calcolata l'assistenza sociale 2026 nel Cantone Ticino (TI)? Scoprite il nostro algoritmo trasparente basato sulle direttive LAPS, LAS e SKOS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_it.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo dell'assistenza sociale Cantone Ticino 2026 | Calcolo trasparente" property="og:title" />
+  <meta
+    content="Logica di calcolo ufficiale per l'assistenza sociale economica 2026 nel Cantone Ticino (TI) basata su SKOS e LAS."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TI_2026SH_it.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo dell'assistenza sociale Ticino (TI) 2026",
+      "description": "Analisi algoritmica dettagliata del calcolo dell'assistenza sociale economica nel Cantone TI (LAPS/LAS).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verifica delle franchigie patrimoniali secondo LAS"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del minimo esistenziale sociale (fabbisogno di base TI, alloggio, cassa malati netta)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del reddito computabile inclusa la deduzione dal reddito da lavoro"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo della differenza per determinare il diritto mensile"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME SKOS 2026</div>
+      <h1>Algoritmo dell'assistenza sociale: Cantone Ticino (TI)</h1>
+      <p>Documentazione trasparente della logica di calcolo per il minimo esistenziale sociale (TI)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+    <div class="content">
+      <p>Come viene calcolata l'assistenza sociale nel Cantone Ticino? Per rafforzare la fiducia dei nostri utenti,
+        rendiamo pubblico qui l'algoritmo completo che sta alla base di welfarecalc.ch. Esso si basa sulla legislazione
+        cantonale (Legge sull'assistenza sociale - LAS TI), sulle direttive LAPS e sulle direttive SKOS armonizzate
+        2026.</p>
+      <h2 class="section-title">1. Verifica patrimoniale (Il primo ostacolo)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Franchigia per singolo / coppia</h4>
+          <div class="param-value">CHF 6'000 / 12'000</div>
+          <p><small>Più CHF 3'000 per figlio. La franchigia massima totale è limitata a CHF 15'000 per nucleo
+              assistenziale.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Consumo del patrimonio</h4>
+          <div class="param-value">Divisore 10 anni</div>
+          <p><small>Il patrimonio eccedente la franchigia viene computato linearmente su 120 mesi come reddito
+              mensile.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Il percorso di calcolo (Mensile)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Fabbisogno di base per il sostentamento (GBL)</h3>
+          <p>Il GBL copre i costi per alimentazione, abbigliamento, energia e gestione domestica quotidiana:</p>
+          <table class="data-table">
+            <tr>
+              <th>Dimensione del nucleo familiare</th>
+              <th>Importo mensile (2026)</th>
+            </tr>
+            <tr>
+              <td>1 persona</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 persone</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>3 persone</td>
+              <td>CHF 1'974</td>
+            </tr>
+            <tr>
+              <td>4 persone</td>
+              <td>CHF 2'271</td>
+            </tr>
+            <tr>
+              <td>5 persone</td>
+              <td>CHF 2'568</td>
+            </tr>
+            <tr>
+              <td>Ogni persona aggiuntiva</td>
+              <td>+ CHF 216</td>
+            </tr>
+          </table>
+          <p><small>*Nota: Per i giovani adulti in formazione o che vivono nella famiglia d'origine, nel Cantone Ticino
+              si applicano tariffe cantonali ridotte (Forfait Giovani).</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Costi d'alloggio e assicurazione malattia</h3>
+          <p>Computo dei costi effettivi d'alloggio e sanitari obbligatori fino al rispettivo massimo legale:</p>
+          <div class="formula">
+            Affitto riconosciuto (lordo) + Premio cassa malati netto (LAMal)
+          </div>
+          <p><small>*Importante: I massimi d'affitto nel Cantone TI sono scaglionati per dimensione del nucleo e
+              regioni/comuni (valore indicativo per 1 persona ca. CHF 1'100). Per i premi di cassa malati, secondo la
+              prassi cantonale, il riduzione ordinaria del premio cantonale (IPV / RIPAM) viene dedotta direttamente in
+              anticipo; viene riconosciuto al massimo il premio medio cantonale.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Computo del reddito e deduzione per lavoro</h3>
+          <p>Dal reddito da lavoro lordo o netto viene concessa una franchigia per mantenere l'incentivo al lavoro
+            (deduzione dal reddito):</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>Reddito computabile</strong> = Altri redditi + (Reddito da lavoro netto × 80%)
+          </div>
+          <p><small>Viene applicata una deduzione forfettaria per lavoro del 20% sul reddito da lavoro. Gli assegni
+              familiari, le rendite (AVS/AI) e altre prestazioni LAPS sono considerati al 100% come entrate.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Risultato: Diritto mensile</h3>
+          <p>L'aiuto economico finale risulta dalla copertura del fabbisogno scoperto del nucleo assistenziale:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Diritto = (GBL + Affitto + Cassa malati netta + IZU*) - (Reddito computabile + Consumo patrimonio)
+          </div>
+          <p><small>*IZU = Indennità d'integrazione. Le persone che forniscono una controprestazione effettiva o
+              un'attività lavorativa possono ricevere nel Cantone Ticino un'indennità d'integrazione forfettaria di CHF
+              100 al mese.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Autorità competente nel Cantone Ticino:</strong><br />
+        Il coordinamento e l'erogazione avvengono tramite l'<strong>Ufficio del sostegno sociale e dell'inserimento
+          (USSI)</strong>.<br />
+        Indirizzo: Viale Officina 6, 6501 Bellinzona | Tel: +41 91 814 70 51 | E-mail: dss-ussi@ti.ch<br />
+        <em>Orari d'apertura:</em> Dal lunedì al venerdì dalle 08:30 alle 11:45 e al pomeriggio presso lo Sportello
+        pubblico dalle 14:00 alle 16:00 (Si raccomanda vivamente la prenotazione di un appuntamento).
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Avvia il calcolatore</a>
+        <a class="btn-link"
+          href="https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps"
+          target="_blank">Sito ufficiale Cantone TI (LAPS)</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fonti: Cantone Ticino (IAS / USSI), Legge sull'assistenza sociale (LAS TI) e Direttive SKOS 2026</p>
+      <p>© 2026 welfarecalc.ch | Calcolo trasparente dell'assistenza sociale</p>
+    </footer>
+  </div>
+</body>
+
+</html>

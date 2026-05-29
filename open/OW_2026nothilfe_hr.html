@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritam za izračun nužne pomoći – Kanton Obwalden 2026 | Transparentni izračun | welfarecalc.ch</title>
+    <meta name="description" content="Kako se izračunava nužna pomoć u kantonu Obwalden (OW) za 2026.? Otkrijte naš transparentni algoritam temeljen na službenim kantonalnim smjernicama i AsylG-u.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/OW_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritam nužne pomoći Kanton Obwalden 2026 | Transparentni izračun">
+    <meta property="og:description" content="Službena logika izračuna za nužnu pomoć 2026. u kantonu OW na temelju azilnog zakona i kantonalnih direktiva.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/OW_2026nothilfe_hr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun nužne pomoći Obwalden 2026",
+      "description": "Korak-po-korak vodič kroz zakonski izračun nužne pomoći u kantonu OW (kolektivni smještaj).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Odredite osnovnu stopu za odrasle koristeći faktor para (degresija)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Dodajte linearni dodatak za djecu bez bonusa za veliku obitelj."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ekstrapolirajte na mjesečne i godišnje iznose s komercijalnim zaokruživanjem na cijele franke."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Profesionalni švicarski administrativni stil ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        /* Interaktivna Live-Demo */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin-bottom: 0.5rem; color: var(--official-blue); }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-grid { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .final-amount { font-size: 1.2rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        @media (max-width: 720px) {
+            .content { padding: 1.5rem; }
+            .step-box { padding-left: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">SLUŽBENI PODACI 2026 · Nužna pomoć OW</div>
+        <h1>Algoritam nužne pomoći: Kanton Obwalden</h1>
+        <p>Transparentni prikaz logike izračuna prema kantonalnim direktivama i saveznom zakonu 2026.</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Povjerenje se gradi apsolutnom transparentnošću. U kantonu Obwalden (OW) zakonski model nužne pomoći strogo se temelji na pružanju pomoći u naturi uz minimalne novčane dodatke. U nastavku otkrivamo točan matematički algoritam koji pokreće izračun na welfarecalc.ch za 2026. godinu.</p>
+
+        <h2 class="section-title">1. Zakonski parametri za kanton OW (2026.)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Osnovni novčani dodatak (samac)</h4>
+                <div class="param-value">CHF 8,00 / dan</div>
+                <p><small>Iznos dnevnog džeparca za jednu osobu u kolektivnom centru.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Faktor para / Degresivni faktor</h4>
+                <div class="param-value">Faktor 1,68</div>
+                <p><small>Višečlana kućanstva primaju degresivni faktor od 168% za dodatne odrasle osobe.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Faktor dodatka za djecu</h4>
+                <div class="param-value">Faktor 0,52</div>
+                <p><small>Dodatni iznos po djetetu iznosi 52% osnovne stope za odrasle.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Koraci izračuna (korak po korak)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Odredite dnevnu stopu za odrasle</h3>
+                <p>Kanton Obwalden primjenjuje degresivni sustav (ekonomija obujma) čim je više od jedne poslovno sposobne odrasle osobe prijavljeno u jedinicu za podršku:</p>
+                <div class="formula">
+                    Ako je odraslih = 1: CHF 8,00 / dan<br>
+                    Ako je odraslih > 1: 8,00 + (broj odraslih - 1) × 8,00 × 1,68
+                </div>
+                <p><small>Napomena: Druga odrasla osoba (npr. supružnik) zapravo prima 68% osnovnog iznosa (CHF 5,44 dnevno).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Izračunajte dodatak za djecu</h3>
+                <p>Za svako dijete koje živi u istom kućanstvu (mlađe od 18 godina ili u obrazovanju) dodjeljuje se iznos od 52% osnovnog prava:</p>
+                <div class="formula">
+                    Dnevni iznos za djecu = Broj djece × (8,00 × 0,52) = Broj djece × CHF 4,16 / dan
+                </div>
+                <p><small>Posebnost: Za razliku od progresivnih sustava, kanton OW ne dodjeljuje dodatni bonus za treće dijete (faktor ostaje fiksno 0,0).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Mjesečna i godišnja ekstrapolacija</h3>
+                <p>Za pružanje statističkih godišnjih i mjesečnih pregleda, točan dnevni ukupni iznos ekstrapolira se pomoću standardiziranog mjesečnog faktora (30,42 dana) i komercijalno zaokružuje na najbliži cijeli franak:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Mjesečno pravo (procjena) = ZAOKRUŽI( Dnevna ukupna stopa × 30,42 ; 0 )<br>
+                    Godišnje pravo (procjena) = ZAOKRUŽI( Dnevna ukupna stopa × 30,42 × 12 ; 0 )
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Posebnosti provedbe u kantonu OW:</strong><br>
+            • <strong>Primat kolektivnog smještaja:</strong> Izračuni se primjenjuju isključivo na smještaj u kantonalnim kolektivnim centrima (smještaj i obroci pokrivaju se kao izravna pomoć u naturi).<br>
+            • <strong>Subsidijarnost:</strong> Imovina koja premašuje zakonski iznos izuzeća mora se u potpunosti iscrpiti prije nego što se ostvari bilo kakvo pravo na novčane isplate.<br>
+            • <strong>Pravna osnova:</strong> Čl. 82 Saveznog zakona o azilu (AsylG) u uskoj koordinaciji s kantonalnim smjernicama za provedbu (nothilfe_smjernice_2026).
+        </div>
+
+        <h2 class="section-title">3. Izvori podataka i pravni okviri</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Švicarski zakon o azilu (AsylG)</strong> – Reguliranje nužne pomoći u slučaju pravomoćnih odluka o protjerivanju.</li>
+            <li><strong>Smjernice Ureda za socijalne službe Kantona Obwalden</strong> (status podataka: siječanj 2026., službeno provjereno).</li>
+            <li><strong>WelfareCalc inicijativa otvorenog algoritma</strong> – Validirani matematički ključni pokazatelji za Središnju Švicarsku.</li>
+        </ul>
+
+        <div class="demo-card">
+            <div class="demo-header">🧪 Provjera transparentnosti: Testirajte kalkulator nužne pomoći OW uživo</div>
+            <div class="demo-body">
+                <p>Simulirajte izračun uživo prema službenom državnom algoritmu Kantona Obwalden (2026.).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Broj odraslih osoba</label>
+                        <input type="number" id="adultsCount" value="1" min="1" step="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Broj djece</label>
+                        <input type="number" id="childrenCount" value="0" min="0" step="1">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Pokreni algoritam</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Dokaz izračuna (OW logika)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div class="final-grid">
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0 CHF</span> <span style="font-size: 0.9rem;">/ mjesec</span></div>
+                        <div><span class="final-amount" id="annualAmountDisplay">0 CHF</span> <span style="font-size: 0.9rem;">/ godina</span></div>
+                    </div>
+                    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Izračun temeljen na standardnim kolektivnim parametrima za 2026. Samo odluke kantonalnog ureda za socijalne službe su pravno obvezujuće.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Povratak na početnu stranicu</a>
+            <a href="https://www.ow.ch" target="_blank" class="btn-link">Službene stranice Kantona OW</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Izvor: Kanton Obwalden – Odjel za unutarnje poslove / Smjernice Ureda za socijalne službe 2026.</p>
+        <p>Omogućuje welfarecalc.ch | Transparentni izračuni socijalnih naknada i algoritama za Švicarsku</p>
+        <p>© 2026 welfarecalc.ch – Open Algorithm Initiative</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        // OW 2026 Službeni sustav parametara
+        const PARAMS = {
+            dailyCash: 8.00,
+            coupleFactor: 1.68,
+            childFactor: 0.52,
+            avgDaysMonth: 30.42
+        };
+
+        function computeOWNothilfe(adults, children) {
+            // Korak 1: Izračun za odrasle (degresijski princip)
+            let adultDaily = 0;
+            if (adults === 1) {
+                adultDaily = PARAMS.dailyCash;
+            } else {
+                adultDaily = PARAMS.dailyCash + (adults - 1) * PARAMS.dailyCash * PARAMS.coupleFactor;
+            }
+            
+            // Korak 2: Izračun za djecu (linearni faktor)
+            const childDailyTotal = children * (PARAMS.dailyCash * PARAMS.childFactor);
+            
+            // Korak 3: Ukupna dnevna stopa i mjesečna/godišnja ekstrapolacija
+            const totalDaily = adultDaily + childDailyTotal;
+            
+            const rawMonthly = totalDaily * PARAMS.avgDaysMonth;
+            const rawAnnual = rawMonthly * 12;
+            
+            // Komercijalno zaokruživanje na cijeli CHF (standard Kantona OW)
+            const roundedMonthly = Math.round(rawMonthly);
+            const roundedAnnual = Math.round(rawAnnual);
+            
+            return {
+                adultDaily,
+                childDailyTotal,
+                totalDaily,
+                rawMonthly,
+                roundedMonthly,
+                roundedAnnual
+            };
+        }
+        
+        function updateDemo() {
+            const adultsInput = document.getElementById('adultsCount');
+            const childrenInput = document.getElementById('childrenCount');
+            let adults = parseInt(adultsInput.value, 10);
+            let children = parseInt(childrenInput.value, 10);
+            
+            if (isNaN(adults) || adults < 1) adults = 1;
+            if (isNaN(children) || children < 0) children = 0;
+            
+            const res = computeOWNothilfe(adults, children);
+            
+            let adultDesc = adults === 1 
+                ? `Samac: CHF ${res.adultDaily.toFixed(2)} / dan` 
+                : `${adults} odraslih (degresivno): CHF 8,00 + (${adults} - 1) × 8,00 × 1,68 = CHF ${res.adultDaily.toFixed(2)} / dan`;
+            
+            const stepsHtml = `
+                <strong>📌 Korak 1 – Odrasli:</strong> ${adultDesc}<br>
+                <strong>📌 Korak 2 – Djeca:</strong> ${children} dijete/djece × (8,00 × 0,52) = CHF ${res.childDailyTotal.toFixed(2)} / dan<br>
+                <strong>📌 Privremena dnevna stopa:</strong> CHF ${res.totalDaily.toFixed(2)} / dan<br>
+                <strong>📌 Korak 3 – Mjesečni faktor (30,42 dana):</strong> CHF ${res.totalDaily.toFixed(2)} × 30,42 = CHF ${res.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Komercijalno zaokruživanje (na cijeli franak):</strong> Standardizirano prema OW provedbenoj praksi
+            `;
+            
+            document.getElementById('stepsDetail').innerHTML = stepsHtml;
+            document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly} CHF`;
+            document.getElementById('annualAmountDisplay').innerText = `${res.roundedAnnual} CHF`;
+            document.getElementById('liveResultPanel').style.display = 'block';
+        }
+        
+        const runBtn = document.getElementById('runCalcBtn');
+        if (runBtn) runBtn.addEventListener('click', updateDemo);
+        
+        // Događaji za ažuriranje u stvarnom vremenu
+        const adultsField = document.getElementById('adultsCount');
+        const childrenField = document.getElementById('childrenCount');
+        if (adultsField && childrenField) {
+            adultsField.addEventListener('input', updateDemo);
+            childrenField.addEventListener('input', updateDemo);
+        }
+        
+        // Inicijalno pozivanje da se prikažu početne vrijednosti
+        //updateDemo();
+    })();
+</script>
+</body>
+</html>

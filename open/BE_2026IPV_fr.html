@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Configuration SEO de base -->
+    <title>Algorithme RMP 2026 Canton de Berne | Calcul transparent | welfarecalc.ch</title>
+    <meta name="description" content="Comment la Réduction des primes d'assurance-maladie (RMP) 2026 est-elle calculée dans le canton de Berne ? Découvrez notre algorithme transparent basé sur le modèle par paliers officiel de l'Office des assurances sociales (OAS).">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Balises canoniques & hreflang (multilingue) - Élément SEO essentiel -->
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026IPV_fr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026IPV_de.html">
+
+    <!-- Open Graph / Réseaux sociaux SEO -->
+    <meta property="og:title" content="Algorithme RMP Canton de Berne 2026 | Calcul transparent">
+    <meta property="og:description" content="Logique de calcul officielle du modèle par paliers bernois 2026.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BE_2026IPV_fr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Données structurées Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de la réduction des primes d'assurance-maladie Berne 2026",
+      "description": "Explication du modèle par paliers bernois pour déterminer le droit à la RMP.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du revenu déterminant (LNA) y compris la correction de la fortune"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du palier de revenu (1 à 5)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Détermination de la subvention mensuelle par personne et par région"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.85rem; text-transform: uppercase; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; border-left: 4px solid var(--official-blue); }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
+        .btn-link:hover { background: #002244; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #c51a11; }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CANTON DE BERNE - DONNÉES 2026</div>
+        <h1>Algorithme RMP : Canton de Berne</h1>
+        <p>Présentation transparente du modèle par paliers bernois pour l'année 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La confiance naît de la transparence. Nous dévoilons ici la logique mathématique utilisée par notre système pour calculer votre droit à la réduction des primes d'assurance-maladie (RMP) dans le canton de Berne. Cet algorithme est basé sur le modèle par paliers officiel de l'Office des assurances sociales (OAS).</p>
+
+        <h2 class="section-title">1. Paramètres clés (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Prise en compte de la fortune</h4>
+                <div class="param-value">5.0 %</div>
+                <p><small>5% de la fortune nette corrigée sont ajoutés au revenu.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Exonération de fortune</h4>
+                <div class="param-value">CHF 17'000</div>
+                <p><small>Ce montant est déduit de la fortune nette par personne.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Déduction pour activité lucrative</h4>
+                <div class="param-value">Max. CHF 3'000</div>
+                <p><small>5% du revenu d'activité lucrative, limité à CHF 3'000.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Méthode de calcul</h2>
+
+        <!-- Étape 1 -->
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Revenu déterminant (LNA)</h3>
+                <p>Le LNA (revenu déterminant pour la réduction des primes) détermine votre classement :</p>
+                <div class="formula-box">
+                    LNA = Revenu imposable + (Fortune nette corrigée × 5%) - Déductions sociales - Déduction pour activité lucrative
+                </div>
+                <table class="data-table">
+                    <tr><th>Catégorie</th><th>Déduction sociale 2026</th></tr>
+                    <tr><td>Couples / 2 adultes</td><td>CHF 13'000</td></tr>
+                    <tr><td>Familles monoparentales</td><td>CHF 9'750</td></tr>
+                    <tr><td>Personnes seules</td><td>CHF 2'200</td></tr>
+                    <tr><td>1er enfant / Jeune adulte</td><td>+ CHF 15'000</td></tr>
+                    <tr><td>2ème enfant</td><td>+ CHF 12'500</td></tr>
+                    <tr><td>Chaque enfant supplémentaire</td><td>+ CHF 10'000</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Palier de revenu 2026</h3>
+                <p>Selon le LNA, vous êtes attribué à l'un des cinq paliers suivants :</p>
+                <table class="data-table">
+                    <tr><th>Palier</th><th>LNA max.</th><th>Éligibilité</th></tr>
+                    <tr><td>Palier 1</td><td>CHF 9'000</td><td>Tous</td></tr>
+                    <tr><td>Palier 2</td><td>CHF 17'000</td><td>Tous</td></tr>
+                    <tr><td>Palier 3</td><td>CHF 25'000</td><td>Tous</td></tr>
+                    <tr><td>Palier 4</td><td>CHF 35'000</td><td>Tous</td></tr>
+                    <tr><td>Palier 5</td><td>CHF 45'000</td><td>Familles uniquement</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Subvention mensuelle (Région 2)</h3>
+                <p>Montants mensuels indicatifs pour la région de primes 2 (agglomération) :</p>
+                <table class="data-table">
+                    <tr><th>Palier</th><th>Adultes</th><th>Jeunes adultes*</th><th>Enfants*</th></tr>
+                    <tr><td>Palier 1</td><td>CHF 221.00</td><td>CHF 239.25</td><td>CHF 119.30</td></tr>
+                    <tr><td>Palier 2</td><td>CHF 147.00</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                    <tr><td>Palier 3</td><td>CHF 107.00</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                    <tr><td>Palier 4</td><td>CHF 67.00</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                    <tr><td>Palier 5</td><td>CHF 33.50</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                </table>
+                <p><small>*Remarque : Dans les paliers 2 à 5, les enfants et les jeunes adultes ne reçoivent aucune subvention dans le canton de Berne.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Règle de limitation :</strong><br>
+            Le droit annuel calculé est toujours limité par la <strong>prime effectivement payée</strong>. Si la RMP calculée est supérieure à votre prime, le montant est réduit à hauteur de la prime.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Retour au calculateur</a>
+            <a href="https://www.asv.dij.be.ch/de/start.html" target="_blank" class="btn-link">Site officiel OAS Berne</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source : Office des assurances sociales du canton de Berne (OAS) | Version de l'algorithme : v2026.1</p>
+        <p>WelfareCalc ne garantit pas l'exactitude des informations ; seule la décision de l'OAS fait foi.</p>
+    </footer>
+</div>
+
+</body>
+</html>

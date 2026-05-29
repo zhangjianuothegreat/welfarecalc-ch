@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algorithme PC Canton d'Uri 2026 | Calcul transparent | welfarecalc.ch</title>
+  <meta
+    content="Comment sont calculées les prestations complémentaires (PC) 2026 dans le canton d'Uri ? Découvrez notre algorithme transparent basé sur les données officielles SVS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_fr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026EL_de.html" hreflang="x-default" rel="alternate" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul des Prestations Complémentaires Uri 2026",
+      "description": "Ventilation algorithmique détaillée du calcul des PC dans le canton d'Uri.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination des dépenses reconnues (besoin vital 2026, plafond de loyer région 3, prime d'assurance-maladie effective)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Imputation des revenus ajustés avec neutralisation de la 13e rente AVS et désépargne"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul de la rente PC légale résultant de la différence entre les dépenses et les revenus"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
+      <h1>Algorithme PC : Canton d'Uri</h1>
+      <p>Ventilation transparente des Prestations Complémentaires (PC) pour le canton d'UR</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+    <div class="content">
+      <p>La transparence crée la confiance. Notre modèle de calcul pour le canton d'Uri est strictement basé sur les
+        directives contraignantes de la loi fédérale sur les prestations complémentaires (LPC 2026) ainsi que sur les
+        dispositions d'exécution cantonales de l'AVS Uri.</p>
+      <h2 class="section-title">1. Besoin de base annuel (Adaptation légale 2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Personne seule</h4>
+          <div class="param-value">CHF 21'510</div>
+          <p><small>Montant adapté au niveau fédéral pour les frais généraux de subsistance dès 2026.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Couples mariés</h4>
+          <div class="param-value">CHF 32'265</div>
+          <p><small>Besoin de base pour les conjoints vivant ensemble dans un même ménage.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Le chemin de calcul officiel</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Dépenses reconnues (Besoin)</h3>
+          <p>L'algorithme détermine d'abord la somme des postes de dépenses légalement reconnus par année :</p>
+          <div class="formula">
+            Total_Dépenses = Besoin_de_base + Loyer_reconnu + Prime_Maladie_reconnue
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Plafonds de loyer (Région 3 - Tout le canton d'Uri)</th>
+              <th>Montant p.a. (hors charges)</th>
+            </tr>
+            <tr>
+              <td>Ménage d'1 personne</td>
+              <td>CHF 16'680 (CHF 1'390/Mois)</td>
+            </tr>
+            <tr>
+              <td>Ménage de 2 personnes</td>
+              <td>CHF 20'160 (CHF 1'680/Mois)</td>
+            </tr>
+            <tr>
+              <td>Ménage de 3 personnes</td>
+              <td>CHF 22'200 (CHF 1'850/Mois)</td>
+            </tr>
+          </table>
+          <p><small>*Remarque : S'ajoute le forfait de charges selon le droit fédéral. Pour les propriétaires, un
+              forfait de charges de CHF 3'480 p.a. est imputé. Une majoration pour fauteuil roulant augmente la limite
+              de CHF 6'900 p.a.</small></p>
+          <h4 style="margin-top: 15px; color: var(--official-blue);">Logique des primes d'assurance-maladie (LPC Art.
+            11)</h4>
+          <p>L'algorithme vérifie la prime effective du requérant :</p>
+          <div class="formula" style="font-size: 0.85rem;">
+            Prime_Maladie_reconnue = Math.min(Prime_Effective, Prime_Moyenne_Cantonale)
+          </div>
+          <p><small>*Prime de référence cantonale UR 2026 comme plafond maximum : Adultes CHF 5'850/an, Jeunes adultes
+              CHF 4'195/an, Enfants CHF 1'337/an.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Revenus imputables</h3>
+          <p>Ensuite, tous les revenus et éléments de fortune sont précisément mis en regard :</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+            <li><strong>Perception de rentes (Neutralisation de la 13e rente AVS) :</strong> La 13e rente AVS,
+              nouvellement introduite en 2026, est mathématiquement exclue afin de protéger le droit aux PC. La base de
+              revenu reste la rente sur 12 mois.</li>
+            <li><strong>Revenu d'activité lucrative :</strong> Ajusté des franchises (CHF 1'300 pour une personne seule
+              / CHF 1'950 pour les couples mariés). Seuls 2/3 du montant restant sont imputés comme revenu.</li>
+            <li><strong>Désépargne (Domicile à domicile) :</strong><br />
+              <span class="formula" style="display:inline-block; padding:4px 10px; margin:5px 0;">(Fortune_nette -
+                Franchise_sur_la_fortune) / Diviseur</span><br />
+              Diviseur = 10 pour les rentiers de vieillesse (AVS) | Diviseur = 15 pour les rentiers invalides (AI).
+            </li>
+          </ul>
+          <table class="data-table">
+            <tr>
+              <th>Franchises PC (Fortune)</th>
+              <th>Franchise</th>
+            </tr>
+            <tr>
+              <td>Personne seule</td>
+              <td>CHF 30'000</td>
+            </tr>
+            <tr>
+              <td>Couples mariés</td>
+              <td>CHF 50'000</td>
+            </tr>
+            <tr>
+              <td>Supplément par enfant</td>
+              <td>CHF 15'000</td>
+            </tr>
+            <tr>
+              <td>Immeuble habité par le propriétaire (Base)</td>
+              <td>CHF 112'500</td>
+            </tr>
+            <tr>
+              <td>Immeuble habité par le propriétaire (Partenaire en home)</td>
+              <td>CHF 300'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Résultat : Prestation PC</h3>
+          <p>S'il existe un découvert financier et que les seuils légaux sont respectés, la rente PC annuelle est
+            calculée :</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Prestation PC annuelle = Max(0, Total_Dépenses - Revenus_Imputables)
+          </div>
+          <p><small>Le versement mensuel correspond à la prestation annuelle divisée par 12, arrondie commercialement au
+              franc le plus proche.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Important : Le seuil d'entrée légal (Plafond de fortune)</strong><br />
+        Un droit légal aux PC est en principe exclu si la fortune nette (sans tenir compte de la valeur de l'immeuble
+        habité par le propriétaire) dépasse les seuils suivants :<br />
+        • <strong>CHF 100'000</strong> pour une personne seule<br />
+        • <strong>CHF 200'000</strong> pour les couples mariés (plus <strong>CHF 50'000</strong> par enfant).
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Retour à la page d'accueil</a>
+        <a class="btn-link" href="https://www.svsuri.ch" target="_blank">Site officiel AVS Uri</a>
+      </div>
+    </div>
+    <footer>
+      <p>Source : Office fédéral des assurances sociales (OFAS) &amp; Directives d'exécution AVS Uri 2026</p>
+      <p>Fourni par welfarecalc.ch | Initiative de transparence pour l'administration numérique | Sans garantie légale.
+      </p>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>நோதில்ஃபே அல்காரிதம் கான்டன் வாட் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+    <meta
+        content="2026 ஆம் ஆண்டில் கான்டன் வாட் (VD) இல் நோதில்ஃபே எவ்வாறு கணக்கிடப்படுகிறது? அதிகாரப்பூர்வ EVAM வழிகாட்டுதல்கள் மற்றும் LARA அடிப்படையில் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_ta.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="நோதில்ஃபே அல்காரிதம் கான்டன் வாட் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+    <meta
+        content="LARA மற்றும் EVAM வழிகாட்டுதல்களின் அடிப்படையில் கான்டன் வாட் இல் 2026 ஆம் ஆண்டிற்கான நோதில்ஃபேவின் அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/VD_2026nothilfe_ta.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "வௌட் 2026 அவசர உதவி கணக்கீடு",
+      "description": "EVAM வழியாக வௌட் கேண்டனில் அவசர உதவியை (Aide d'urgence) சட்டப்பூர்வமாக நிர்ணயிப்பதற்கான படிப்படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "இயற்கைப் பலன்களுக்கான (தங்குமிடம் மற்றும் உணவு) முதன்மை உரிமையை சரிபார்த்தல்."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "கூட்டு உணவு வசதி இல்லாதபோது, ஒரு நபருக்கு CHF 9.50 என்ற நேர்கோட்டு தினசரி பணத் தொகையை கணக்கிடுதல்."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "மொத்தச் சுற்றுக்கணக்கீடுகள் இல்லாமல், சம்பந்தப்பட்ட மாதத்தின் சரியான காலண்டர் நாட்களால் பெருக்குதல்."
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ 与 AG / AI 页面高度统一的瑞士官方专业风格样式 ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-danger {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-left: 5px solid var(--swiss-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo 交互卡片 */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input,
+        .input-item select {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus,
+        .input-item select:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            color: var(--official-blue);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .steps-detail {
+            font-size: 0.9rem;
+            color: #334155;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="update-tag">அதிகாரப்பூர்வ அல்காரிதம் - நிலை 2026</span>
+            <h1>அவசர உதவி கணக்கீடு வௌட் கேண்டன் (VD)</h1>
+            <p>LARA மற்றும் EVAM வழிகாட்டுதல்களின்படி கேண்டனல் கணக்கீட்டு மாதிரியின் வெளிப்படையான வெளிப்பாடு</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+        <div class="content">
+            <div class="alert-danger">
+                <strong>கூட்டாட்சி அரசியலமைப்பு (சரத்து 12 BV) பற்றிய முக்கிய சட்டப்பூர்வ குறிப்பு:</strong><br />
+                அவசர உதவி (Aide d'urgence) என்பது அரசியலமைப்புப்படி <u>வழக்கமான</u> சமூக உதவி (Aide sociale/RI) அல்ல.
+                இது மனித கண்ணியத்தைப் பாதுகாப்பதற்காக கடுமையான நெருக்கடி சூழ்நிலைகளை சமாளிப்பதற்கு மட்டுமே பயன்படுகிறது.
+                வௌட் கேண்டனில், இந்த சலுகை <strong>EVAM</strong> (Etablissement vaudois d'accueil des migrants) மூலம்
+                செயல்படுத்தப்படுகிறது மற்றும் கண்டிப்பாக <strong>இயற்கைப் பலனாக</strong> (தங்குமிடம், கூட்டு உணவு,
+                சுகாதார பொருட்கள்) முன்னுரிமை அளிக்கப்படுகிறது. பணப் பலன்கள் இரண்டாம் நிலையில் மட்டுமே வழங்கப்படுகின்றன.
+            </div>
+            <h2 class="section-title">1. சட்டப்பூர்வ அளவுருக்கள் (2026 பணம் பெறும் அணுகுமுறை)</h2>
+            <p>ஒரு குறிப்பிட்ட வழக்கில் EVAM ஆல் கூட்டு உணவு வசதியை வழங்க முடியாமல், ஆதரவு பணமாக வழங்கப்பட வேண்டுமானால்,
+                2026 ஆம் ஆண்டில் பின்வரும் நேர்கோட்டு அதிகபட்ச விகிதங்கள் பொருந்தும்:</p>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>ஒரு நபர் / நாள் மொத்தத் தொகை</h4>
+                    <div class="param-value">CHF 9.50</div>
+                    <p style="font-size:0.8rem; color:#64748b; margin-top:4px;">பெரியவர்கள் மற்றும் குழந்தைகளுக்கு சமமாக
+                        பொருந்தும்</p>
+                </div>
+                <div class="param-card">
+                    <h4>தங்குமிட முறை</h4>
+                    <div class="param-value">கூட்டு (கேண்டன்)</div>
+                    <p style="font-size:0.8rem; color:#64748b; margin-top:4px;">வீட்டுச் செலவுகள் நேரடியாக EVAM ஆல்
+                        ஏற்கப்படுகின்றன</p>
+                </div>
+                <div class="param-card">
+                    <h4>குடும்ப பின்னடைவு</h4>
+                    <div class="param-value">இல்லை (நேர்கோடு)</div>
+                    <p style="font-size:0.8rem; color:#64748b; margin-top:4px;">ஜோடி குணகங்கள் அல்லது பல நபர் கழிப்புகள்
+                        இல்லை</p>
+                </div>
+            </div>
+            <h2 class="section-title">2. கணித கணக்கீட்டு செயல்முறை</h2>
+            <p>வௌட் கேண்டனில் வழங்கப்படும் அவசர உதவியின் நிர்ணயம், கேண்டன் சார்ந்த அளவிடுதல் காரணிகள் இல்லாமல்
+                படிப்படியாக மேற்கொள்ளப்படுகிறது:</p>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h4>மொத்த தினசரி விகிதத்தை நிர்ணயித்தல் (தலைவிகிதம்)</h4>
+                    <p>வௌட் கேண்டனின் அவசர உதவியில் சமூக குடும்ப கட்டமைப்புகள் பிரதிபலிக்கப்படாததால் (அரசியலமைப்பு
+                        குறைந்தபட்ச உதவி தொடர்பான நீதித்துறை முடிவுகள்), அனைத்து குடும்ப உறுப்பினர்களும் வயதைப்
+                        பொருட்படுத்தாமல் நேர்கோட்டில் சேர்க்கப்படுகிறார்கள்.</p>
+                    <div class="formula">தினசரி பட்ஜெட் = (பெரியவர்களின் எண்ணிக்கை + குழந்தைகளின் எண்ணிக்கை) × CHF 9.50
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h4>உண்மையான காலண்டர் நாட்களின் அடிப்படையில் முன்கணிப்பு</h4>
+                    <p>வழக்கமான சமூக உதவி அல்லது துணை சலுகைகள் (EL) போலல்லாமல், வௌட் அவசர உதவியில் 30.42 நாட்கள் என்ற
+                        மொத்த மாத காரணி இல்லை. பணம் செலுத்துதல், சம்பந்தப்பட்ட காலண்டர் மாதத்தின் (28, 29, 30 அல்லது 31
+                        நாட்கள்) நாட்களை அடிப்படையாகக் கொண்டது.</p>
+                    <div class="formula">மாதத் தொகை (மொத்தம்) = தினசரி பட்ஜெட் × காலண்டர் நாட்கள் (எ.கா. 30 அல்லது 31)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h4>வணிக ரீதியான சுற்றுக்கணக்கீடு</h4>
+                    <p>கணக்கிடப்பட்ட மாதாந்திர தொகையானது, EVAM பணம் செலுத்தும் தரநிலையின்படி, வழக்கமான வணிக தசம
+                        இடத்திற்கு (0.01 CHF) சுற்றுக்கணக்கிடப்படுகிறது.</p>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>சுகாதார காப்பீடு பற்றிய குறிப்பு:</strong> கட்டாய சுகாதார பராமரிப்பு காப்பீட்டின் (KVG)
+                பிரீமியம் மற்றும் தேவையான மருத்துவ அவசர சிகிச்சைகள் ஆகியவை EVAM ஆல் நேரடியாக மொத்த ஒப்பந்தங்களின் மூலம்
+                ஏற்கப்படுகின்றன, மேலும் அவை தனிப்பட்ட பண பட்ஜெட்டில் தோன்றாது.
+            </div>
+            <h2 class="section-title">3. ஊடாடும் நேரடி கால்குலேட்டர் (2026 நிலை)</h2>
+            <p>வௌட் கேண்டனின் சட்டப்பூர்வ விதிமுறைகளின்படி welfarecalc.ch இன் வெளிப்படையான அல்காரிதத்தைப் புரிந்துகொள்ள
+                இந்த டெமோ கருவியைப் பயன்படுத்தவும்.</p>
+            <div class="demo-card">
+                <div class="demo-header">🧮 உருவகப்படுத்துதல் தொகுதி வௌட் கேண்டன் (Aide d'urgence)</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="adultsCount">பெரியவர்களின் எண்ணிக்கை:</label>
+                            <input id="adultsCount" min="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label for="childrenCount">குழந்தைகளின் எண்ணிக்கை (18 வயதுக்குட்பட்டவர்கள்):</label>
+                            <input id="childrenCount" min="0" type="number" value="0" />
+                        </div>
+                        <div class="input-item">
+                            <label for="monthDays">சலுகை மாதம் (நாட்கள்):</label>
+                            <select id="monthDays">
+                                <option value="31">மார்ச் / மே / ஜூலை / ஆக / அக் / டிச (31 நாட்கள்)</option>
+                                <option selected="" value="30">ஏப்ரல் / ஜூன் / செப் / நவ (30 நாட்கள்)</option>
+                                <option value="28">பிப்ரவரி (28 நாட்கள்)</option>
+                                <option value="29">பிப்ரவரி - லீப் ஆண்டு (29 நாட்கள்)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn" type="button">அல்காரிதத்தை இயக்கவும்</button>
+                    <div class="result-panel" id="liveResultPanel">
+                        <h3>கணக்கிடப்பட்ட அவசர உதவி (துணை பண உரிமை):</h3>
+                        <div style="font-size: 1.8rem; font-weight: bold; color: var(--swiss-red); margin: 0.5rem 0;">
+                            <span id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size:1rem; color:#64748b; font-weight:normal;">/ மாதம்</span>
+                        </div>
+                        <div class="steps-detail" id="stepsDetail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title">4. வெளிப்படைத்தன்மை சான்றிதழின் ஒப்பீடு</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>கணக்கீட்டு கூறு</th>
+                        <th>வௌட் கேண்டன் (EVAM விதிமுறை)</th>
+                        <th>welfarecalc.ch செயலாக்கம்</th>
+                        <th>சரிபார்ப்பு</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>தனிநபர் அடிப்படைத் தேவை</td>
+                        <td>CHF 9.50 / நாள் (துணை)</td>
+                        <td>CHF 9.50 / நாள்</td>
+                        <td><span style="color:green; font-weight:bold;">✓ இணக்கம்</span></td>
+                    </tr>
+                    <tr>
+                        <td>பல நபர் குணகங்கள்</td>
+                        <td>இல்லை (தூய நேர்கோட்டு தலை மொத்தத் தொகை)</td>
+                        <td>அளவிடுதல் இல்லாமல் சரியான நேர்கோடு</td>
+                        <td><span style="color:green; font-weight:bold;">✓ இணக்கம்</span></td>
+                    </tr>
+                    <tr>
+                        <td>குழந்தை கூடுதல் தொகை (கல்வி)</td>
+                        <td>LARA இன் படி விலக்கு</td>
+                        <td>கூடுதல் போனஸ்கள் எதுவும் செயலில் இல்லை</td>
+                        <td><span style="color:green; font-weight:bold;">✓ இணக்கம்</span></td>
+                    </tr>
+                    <tr>
+                        <td>கால காரணி</td>
+                        <td>சலுகை மாதத்தின் உண்மையான காலண்டர் நாட்கள்</td>
+                        <td>மாறும் நாள் தேர்வு (28-31)</td>
+                        <td><span style="color:green; font-weight:bold;">✓ இணக்கம்</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 3rem; text-align: center;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch">முகப்புப் பக்கத்திற்கு</a>
+                <a class="btn-link" href="https://www.vd.ch/population/population-etrangere/aide-aux-migrants-evam"
+                    rel="nofollow" target="_blank">அதிகாரப்பூர்வ EVAM பக்கம்</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 welfarecalc.ch - சுவிஸ் சமூக உதவி கணக்கீடுகளுக்கான சுயாதீன தளம். அனைத்து கணக்கீடுகளும் எந்தவொரு
+                பொறுப்பும் இல்லாமல் வழங்கப்படுகின்றன. சட்ட நடவடிக்கைக்கான வழி தடுக்கப்பட்டுள்ளது.</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            "use strict";
+
+            function computeVDNothilfe(adults, children, days) {
+                const ratePerPerson = 9.50;
+                const totalPeople = adults + children;
+                const totalDaily = totalPeople * ratePerPerson;
+                const rawMonthly = totalDaily * days;
+
+                // Kaufmannsrundung auf 2 Dezimalstellen
+                const roundedMonthly = Math.round(rawMonthly * 100) / 100;
+
+                return {
+                    ratePerPerson,
+                    totalPeople,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 0;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const days = parseInt(document.getElementById('monthDays').value) || 30;
+
+                if (adults < 1 && children > 0) {
+                    alert("அவசர உதவி நிலையில், பெற்றோர் அல்லது உடன் வரும் வயது வந்த நபர் இல்லாமல் ஒரு குடும்பத்தை சட்டப்பூர்வமாக பதிவு செய்ய முடியாது.");
+                    return;
+                }
+                if (adults < 1) return;
+
+                const res = computeVDNothilfe(adults, children, days);
+
+                const stepsHtml = `
+                <strong>📌 படி 1 – நபர்களின் சேர்க்கை:</strong> ${adults} பெரியவர்(கள்) + ${children} குழந்தை(கள்) = மொத்தம் ${res.totalPeople} நபர்கள்.<br>
+                <strong>📌 படி 2 – தினசரி விகித கணக்கீடு:</strong> ${res.totalPeople} நபர்கள் × CHF ${res.ratePerPerson.toFixed(2)} = <strong>CHF ${res.totalDaily.toFixed(2)} / நாள்</strong>.<br>
+                <strong>📌 படி 3 – மாத காரணி (${days} காலண்டர் நாட்கள்):</strong> CHF ${res.totalDaily.toFixed(2)} × ${days} நாட்கள் = CHF ${res.rawMonthly.toFixed(2)}.<br>
+                <strong>💰 இறுதி முடிவு (வணிக ரீதியாக சுற்றுக்கணக்கிடப்பட்டது):</strong> <strong>CHF ${res.roundedMonthly.toFixed(2)}</strong> (இயற்கை உணவு வசதி இல்லாதபோது மட்டுமே பணம் வழங்கப்படும்).
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly.toFixed(2)} CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+
+            // Automatische Echtzeit-Berechnung bei Input-Änderungen für verbesserte UX
+            const inputs = ['adultsCount', 'childrenCount', 'monthDays'];
+            inputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', updateDemo);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Dodatki rodzinne (FA) Algorytm Kanton Turgowia 2026 | welfarecalc.ch</title>
+  <meta
+    content="Jak obliczane są dodatki rodzinne (FA) w 2026 roku w kantonie Turgowia? Odkryj nasz przejrzysty algorytm dla dodatków na dzieci i dodatków edukacyjnych."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_pl.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algorytm dodatków rodzinnych Kanton Turgowia 2026 | Przejrzyste obliczenia" property="og:title" />
+  <meta content="Oficjalna logika obliczeniowa dla dodatków na dzieci i dodatków edukacyjnych 2026 w kantonie Turgowia."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TG_2026FA_pl.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie zasiłków rodzinnych Turgowia 2026",
+      "description": "Instrukcja krok po kroku dotycząca obliczania zasiłków na dzieci i zasiłków edukacyjnych w kantonie Turgowia.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Określenie kategorii (zasiłek na dziecko vs. zasiłek edukacyjny)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Obliczenie miesięcznej kwoty całkowitej"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Sprawdzenie jednorazowych zasiłków (urodzenie/adopcja)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ustalenie rocznego całkowitego roszczenia"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      opacity: 0.9;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">ZGODNY Z FAMZG 2026</div>
+      <h1>Algorytm FA: Kanton Turgowia</h1>
+      <p>Przejrzysta dokumentacja zasiłków rodzinnych (zasiłki na dzieci i zasiłki edukacyjne)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+    <div class="content">
+      <p>W Szwajcarii zasiłki rodzinne są regulowane ustawowo (FamZG). Nasz kalkulator wykorzystuje specyficzne stawki
+        kantonalne kantonu Turgowia na rok 2026, aby precyzyjnie określić Twoje uprawnienia. Przejrzystość buduje
+        zaufanie.</p>
+      <h2 class="section-title">1. Stawki miesięczne (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Zasiłek na dziecko</h4>
+          <div class="param-value">CHF 215 / miesiąc</div>
+          <p><small>Dla dzieci od 0 do ukończenia 16. roku życia. (Stawka dzienna dla niepełnych miesięcy: CHF
+              7.20)</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Zasiłek edukacyjny</h4>
+          <div class="param-value">CHF 280 / miesiąc</div>
+          <p><small>Od 16. roku życia do końca edukacji (maks. 25 lat). (Stawka dzienna dla niepełnych miesięcy: CHF
+              9.35)</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Sposób obliczania</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Określenie kategorii</h3>
+          <p>Algorytm sprawdza wiek i status każdego dziecka:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; padding-top: 5px;">
+            <li><strong>0 - 16 lat:</strong> Prawo do zasiłku na dziecko.</li>
+            <li><strong>16 - 25 lat:</strong> Prawo do zasiłku edukacyjnego (wymagane potwierdzenie kształcenia).</li>
+            <li><strong>Dzieci niezdolne do pracy:</strong> Prawo do zasiłku na dziecko do ukończenia 20. roku życia.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Obliczenie kwoty miesięcznej</h3>
+          <p>Suma tworzona jest liniowo z odpowiednich stawek indywidualnych:</p>
+          <div class="formula">
+            Całkowita kwota miesięczna = (Liczba dzieci &lt; 16 × CHF 215) + (Liczba w trakcie edukacji × CHF 280)
+          </div>
+          <p><small>*Uwaga: W kantonie Turgowia nie ma stopniowania ani podwyżek dla dużych rodzin (od 3. dziecka), jak
+              to jest praktykowane w niektórych innych kantonach zachodnioszwajcarskich.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Zasiłki jednorazowe (urodzenie/adopcja)</h3>
+          <p>Kanton Turgowia w ustawie (TG FamZV) <strong>nie przyznaje</strong> jednorazowych zasiłków z tytułu
+            urodzenia lub adopcji.</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Rodzaj zasiłku</th>
+                <th>Kwota w kantonie Turgowia (TG)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Zasiłek porodowy</td>
+                <td>CHF 0</td>
+              </tr>
+              <tr>
+                <td>Zasiłek adopcyjny</td>
+                <td>CHF 0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Ustalenie rocznego roszczenia</h3>
+          <p>Wypłata następuje standardowo za pośrednictwem pracodawcy lub kantonalnej kasy wyrównawczej dla rodzin:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Kwota roczna = (Miesięczne całkowite roszczenie) × 12
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Uprawnienia i regulacje:</strong><br />
+        Obowiązuje ustawa federalna o zasiłkach rodzinnych (FamZG). Tylko jedno z rodziców może pobierać zasiłek. Jeśli
+        oboje rodzice pracują, ustawowa kolejność pierwszeństwa (art. 12 FamZG) reguluje roszczenie podstawowe. Ponadto
+        należy osiągnąć minimalny dochód AHV.
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a aria-label="Przejdź do kalkulatora" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">Uruchom kalkulator</a>
+        <a aria-label="Przejdź do oficjalnej strony SVZ Turgowia" class="btn-link"
+          href="https://www.svztg.ch/dienstleistungen/familienzulagen-famz-flg/erwerbstaetige" target="_blank">Oficjalna
+          strona SVZ Turgowia</a>
+      </div>
+    </div>
+    <footer>
+      <p>Źródło: Centrum Ubezpieczeń Społecznych Turgowia (SVZ TG) Wytyczne 2026 i Ustawa federalna o zasiłkach
+        rodzinnych (FamZG)</p>
+      <p>© 2026 welfarecalc.ch | Przejrzyste obliczanie zasiłków rodzinnych dla Szwajcarii</p>
+    </footer>
+  </div>
+</body>
+
+</html>

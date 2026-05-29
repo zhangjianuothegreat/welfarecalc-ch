@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+
+<html lang="sq">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Algoritmi i Ndihmës Emergjente Kantoni Ticino 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+    <meta
+        content="Si llogaritet ndihma emergjente 2026 në Kantonin Ticino (Tessin)? Zbuloni algoritmin tonë transparent bazuar në udhëzimet zyrtare kantonal të DSS."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_sq.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/TI_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algoritmi i Ndihmës Emergjente Kantoni Ticino 2026 | Llogaritje Transparente" property="og:title" />
+    <meta
+        content="Logjika zyrtare e llogaritjes për ndihmën emergjente 2026 në Ticino bazuar në udhëzimet e Departamentit të Shëndetësisë dhe Socialitetit (DSS)."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/TI_2026nothilfe_sq.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e Ndihmës Emergjente Ticino 2026",
+      "description": "Udhëzim hap pas hapi për llogaritjen e ndihmës emergjente ekonomike në Kantonin e Ticinos (strehim kolektiv).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i tarifës ditore degresive për të rritur (Personi i parë CHF 10.00, çdo person tjetër CHF 7.50)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Shtimi i shumës fikse për fëmijë prej CHF 5.70 në ditë"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Projeksioni mujor (30.42 ditë) me rrumbullakim matematikor"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ Stili vizual i markës kryesore plotësisht identik me faqen AG / AI ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Paraqitja e kartave ndërvepruese Live-Demo */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--official-blue);
+            font-size: 1.2rem;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 1.5rem;
+            }
+
+            .step-box {
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">TË DHËNA ZYRTARE 2026 · Ndihma Emergjente TI</div>
+            <h1>Algoritmi i Ndihmës Emergjente: Kantoni Ticino</h1>
+            <p>Llogaritje transparente e ndihmës emergjente ekonomike sipas udhëzimeve kantonale të DSS Ticino 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+        <div class="content">
+            <p>Besim përmes transparencës. Ndihma emergjente ekonomike (Soccorso d'emergenza) për personat me një vendim
+                të formës së prerë për largim përcaktohet në Kantonin e Ticinos sipas kritereve të qarta ligjore. Këtu
+                ne zbulojmë algoritmin e plotë mbi të cilin bazohet moduli ynë i llogaritjes – i përshtatur saktësisht
+                me praktikën zyrtare në vitin 2026.</p>
+            <h2 class="section-title">1. Parametrat Ligjorë për Ticino (2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Tarifa bazë ditore (1 i rritur)</h4>
+                    <div class="param-value">CHF 10.00 / ditë</div>
+                    <p><small>Nevoja bazë për ushqim, veshje dhe higjienë personale për një individ.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Të rriturit shoqërues (Degresion)</h4>
+                    <div class="param-value">CHF 7.50 / ditë</div>
+                    <p><small>Shumë fikse për çdo person tjetër të rritur në të njëjtën familje.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Shtesa për fëmijë</h4>
+                    <div class="param-value">CHF 5.70 / ditë për fëmijë</div>
+                    <p><small>Shumë fikse shtesë për çdo të mitur (pa bonuse progresive për shumë fëmijë).</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. Rruga Zyrtare e Llogaritjes (Hap pas Hapi)</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Përcaktimi i tarifës ditore degresive për të rritur</h3>
+                    <p>Ticino aplikon një model degresiv me çmim fiks absolut për të pasqyruar përparësitë e shkallës në
+                        familjet e përbashkëta:</p>
+                    <div class="formula">
+                        Nëse të rritur = 1: CHF 10.00 në ditë<br />
+                        Nëse të rritur &gt; 1: CHF 10.00 + (Numri i të rriturve - 1) × CHF 7.50 në ditë
+                    </div>
+                    <p><small>Në krahasim me shumëzuesit thjesht përqindje, kjo qasje absolute me shkallë përfaqëson një
+                            përafrim më të saktë me praktikën reale kantonale të pagesave.</small></p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Shtimi i shtesave për fëmijë</h3>
+                    <p>Për çdo fëmijë që jeton në familje, shtohet një shumë fikse lineare prej CHF 5.70 në ditë. Sipas
+                        udhëzimeve restriktive të ndihmës emergjente, një progresion artificial (bonus nga fëmija i
+                        3-të) nuk zbatohet në kontekstin e ndihmës emergjente.</p>
+                    <div class="formula">
+                        Shuma ditore për fëmijë = Numri i fëmijëve × CHF 5.70<br />
+                        Shuma totale ditore = Tarifa ditore e të rriturve + Shuma ditore për fëmijë
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Projeksioni mujor dhe rrumbullakimi matematikor</h3>
+                    <p>Tarifa ditore e akumuluar projektohet në bazë mujore duke përdorur mesataren vjetore të
+                        standardizuar prej 30.42 ditësh. Shuma përfundimtare rrumbullakoset në frangun e plotë më të
+                        afërt sipas rregullave standarde tregtare.</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        E drejta mujore = ROUND( (Shuma totale ditore × 30.42) ; 0 )
+                    </div>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Veçoritë e ndihmës emergjente në Kantonin e Ticinos:</strong><br />
+                • <strong>Përparësia e përfitimeve në natyrë:</strong> Strehimi (caktimi në një qendër kolektive
+                kantonale / Centro collettivo) si dhe sigurimi i detyrueshëm shëndetësor KVG merren përsipër
+                drejtpërdrejt nga kantoni si përfitim në natyrë (Sachleistungen) dhe nuk përfshihen në shumën në
+                para.<br />
+                • <strong>Subsidiariteti:</strong> Mjetet financiare personale (përjashtimi i pasurisë maks. CHF 5'000)
+                duhet të jenë shteruar plotësisht përpara se të mund të paraqitet një kërkesë.<br />
+                • <strong>Mënyra e pagesës:</strong> Megjithëse projeksioni matematikor bëhet mbi 30.42 ditë, zyrat
+                lokale rezervojnë të drejtën t'i dorëzojnë fondet në baza ditore ose javore përmes kuponëve të vlerës.
+            </div>
+            <h2 class="section-title">3. Burimet e të Dhënave dhe Bazat Ligjore</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Legge sull’asilo e l’assistenza ai rifugiati (LAsi)</strong> e Kantonit të Ticinos.</li>
+                <li><strong>Udhëzimet e Departamentit të Shëndetësisë dhe Socialitetit (DSS)</strong> – Seksioni për
+                    Çështjet e Azilit dhe Refugjatëve (UAM).</li>
+                <li><strong>Kushtetuta Federale Art. 12 (BV)</strong> – E drejta për ndihmë në situata emergjente si
+                    themel kushtetues.</li>
+                <li><strong>Statusi i të Dhënave të WelfareCalc:</strong> Kontrolluar në Janar 2026 për përputhje me
+                    rregulloret kantonale.</li>
+            </ul>
+            <div class="demo-card">
+                <div class="demo-header">🧪 Kontroll i Transparencës: Testoni drejtpërdrejt Llogaritësin e Ndihmës
+                    Emergjente të Ticinos</div>
+                <div class="demo-body">
+                    <p>Simuloni këtu llogaritjen e saktë sipas algoritmit të korrigjuar zyrtarisht të Ticinos (2026).
+                    </p>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Numri i të rriturve</label>
+                            <input id="adultsCount" min="1" step="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Numri i fëmijëve (nën 18 vjeç)</label>
+                            <input id="childrenCount" min="0" step="1" type="number" value="0" />
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Ekzekuto Algoritmin</button>
+                    <div class="result-panel" id="liveResultPanel">
+                        <h3>📐 Dëshmi Llogaritjeje (Logjika Kantonale TI)</h3>
+                        <div class="calc-steps" id="stepsDetail"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(shuma mujore, e rrumbullakosur në frangun më të
+                                afërt)</span></div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Vlerësim i bazuar në
+                            parametrat standardë për strehimin kolektiv pa marrë parasysh nevojat individuale mjekësore
+                            të veçanta.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">← Te Faqja Kryesore</a>
+                <a class="btn-link" href="https://www4.ti.ch/tich/stato-e-organizzazione" target="_blank">Faqja Zyrtare
+                    e Kantonit të Ticinos (DSS)</a>
+            </div>
+        </div>
+        <footer>
+            <p>Burimi: Republika dhe Kantoni Ticino – Departamenti i Shëndetësisë dhe Socialitetit (DSS) 2026</p>
+            <p>Ofruar nga welfarecalc.ch | Modelet transparente të llogaritjes krijojnë besim në sistemin social
+                zviceran.</p>
+            <p>© 2026 welfarecalc.ch – Nisma e Algoritmit të Hapur për Zvicrën</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            // Parametrat zyrtarë të pastruar për TI (2026)
+            const TI_PARAMS = {
+                primaryAdultDaily: 10.00,   // I rrituri i parë
+                secondaryAdultDaily: 7.50,  // Çdo i rritur tjetër (degresion)
+                childDaily: 5.70,           // Çdo fëmijë fiks
+                avgDaysMonth: 30.42
+            };
+
+            function computeTINothilfe(adults, children) {
+                // Hapi 1: Llogaritja degresive e të rriturve
+                let adultDailyTotal = 0;
+                if (adults === 1) {
+                    adultDailyTotal = TI_PARAMS.primaryAdultDaily;
+                } else {
+                    adultDailyTotal = TI_PARAMS.primaryAdultDaily + (adults - 1) * TI_PARAMS.secondaryAdultDaily;
+                }
+
+                // Hapi 2: Llogaritja e fëmijëve (Shumë fikse lineare pa bonus artificial)
+                const childDailyTotal = children * TI_PARAMS.childDaily;
+
+                // Hapi 3: Akumulimi i tarifës ditore dhe projeksioni
+                const totalDaily = adultDailyTotal + childDailyTotal;
+                const rawMonthly = totalDaily * TI_PARAMS.avgDaysMonth;
+                const roundedMonthly = Math.round(rawMonthly); // Standard TI: Rrumbullakimi në franga të plota
+
+                return {
+                    adultDailyTotal,
+                    childDailyTotal,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) adults = 1;
+                if (isNaN(children) || children < 0) children = 0;
+
+                const res = computeTINothilfe(adults, children);
+
+                let adultDesc = '';
+                if (adults === 1) {
+                    adultDesc = `Personi i parë: CHF ${TI_PARAMS.primaryAdultDaily.toFixed(2)} / ditë`;
+                } else {
+                    adultDesc = `Personi i parë (CHF ${TI_PARAMS.primaryAdultDaily.toFixed(2)}) + ${adults - 1} person(a) tjetër (× CHF ${TI_PARAMS.secondaryAdultDaily.toFixed(2)}) = CHF ${res.adultDailyTotal.toFixed(2)} / ditë`;
+                }
+
+                const stepsHtml = `
+                <strong>📌 Hapi 1 – Të rriturit:</strong> ${adultDesc}<br>
+                <strong>📌 Hapi 2 – Shtesat për fëmijë:</strong> ${children} fëmijë × CHF ${TI_PARAMS.childDaily.toFixed(2)} = CHF ${res.childDailyTotal.toFixed(2)} / ditë<br>
+                <strong>📌 Tarifa totale ditore paraprake:</strong> CHF ${res.totalDaily.toFixed(2)} / ditë<br>
+                <strong>📌 Hapi 3 – Faktori mujor (30.42 ditë):</strong> CHF ${res.totalDaily.toFixed(2)} × 30.42 = CHF ${res.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Rrumbullakuar në frangun më të afërt (Zbatimi TI):</strong> CHF ${res.roundedMonthly}.00
+            `;
+
+                const stepsDiv = document.getElementById('stepsDetail');
+                if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+
+                const amountSpan = document.getElementById('monthlyAmountDisplay');
+                if (amountSpan) amountSpan.innerText = `${res.roundedMonthly}.00 CHF`;
+
+                const resultPanel = document.getElementById('liveResultPanel');
+                if (resultPanel) resultPanel.style.display = 'block';
+            }
+
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+
+            // Optimizim UX: Rillogaritje automatike gjatë futjes së të dhënave
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            if (adultsField && childrenField) {
+                adultsField.addEventListener('input', updateDemo);
+                childrenField.addEventListener('input', updateDemo);
+            }
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo de Assistência Social Cantão Tessino (Ticino) 2026 | Cálculo Transparente | welfarecalc.ch</title>
+  <meta
+    content="Como é calculada a assistência social em 2026 no Cantão Tessino (TI)? Descubra nosso algoritmo transparente baseado nas diretrizes LAPS, LAS e SKOS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo de Assistência Social Cantão Tessino 2026 | Cálculo Transparente" property="og:title" />
+  <meta
+    content="Lógica oficial de cálculo para a Assistência Social Econômica 2026 no Cantão Tessino (TI) com base nas diretrizes SKOS e LAS."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da Assistência Social Tessino (Ticino) 2026",
+      "description": "Detalhamento algorítmico do cálculo da assistência social económica no Cantão TI (LAPS/LAS).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificação das isenções de património de acordo com a LAS"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Definição do mínimo existencial social (Necessidades básicas TI, Habitação, Seguro de saúde líquido)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do rendimento considerável, incluindo dedução do rendimento do trabalho"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo da diferença para determinar o direito mensal"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME SKOS 2026</div>
+      <h1>Algoritmo de Assistência Social: Cantão Tessino (Ticino)</h1>
+      <p>Documentação transparente da lógica de cálculo para o mínimo existencial social (TI)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+    <div class="content">
+      <p>Como é calculada a assistência social no Cantão Tessino? Para fortalecer a confiança dos nossos utilizadores,
+        divulgamos aqui o algoritmo completo por detrás do welfarecalc.ch. Este baseia-se na legislação cantonal (Legge
+        sull'assistenza sociale - LAS TI), nas diretrizes LAPS e nas diretrizes harmonizadas SKOS 2026.</p>
+      <h2 class="section-title">1. Verificação de Património (A Barreira de Entrada)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Isenção Individual / Casal</h4>
+          <div class="param-value">CHF 6'000 / 12'000</div>
+          <p><small>Mais CHF 3'000 por criança. A isenção total máxima está limitada a CHF 15'000 por unidade de
+              apoio.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Consumo de Património</h4>
+          <div class="param-value">Divisor 10 anos</div>
+          <p><small>O património que excede a isenção é considerado linearmente como rendimento mensal durante 120
+              meses.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. O Percurso de Cálculo (Mensal)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Necessidades Básicas de Vida (NBV)</h3>
+          <p>As NBV cobrem os custos com alimentação, vestuário, energia e gestão doméstica diária:</p>
+          <table class="data-table">
+            <tr>
+              <th>Dimensão do Agregado</th>
+              <th>Valor por Mês (2026)</th>
+            </tr>
+            <tr>
+              <td>1 Pessoa</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 Pessoas</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>3 Pessoas</td>
+              <td>CHF 1'974</td>
+            </tr>
+            <tr>
+              <td>4 Pessoas</td>
+              <td>CHF 2'271</td>
+            </tr>
+            <tr>
+              <td>5 Pessoas</td>
+              <td>CHF 2'568</td>
+            </tr>
+            <tr>
+              <td>Cada Pessoa Adicional</td>
+              <td>+ CHF 216</td>
+            </tr>
+          </table>
+          <p><small>*Nota: Para jovens adultos em formação ou que vivem na casa dos pais, aplicam-se no Cantão Tessino
+              taxas cantonais reduzidas (Forfait Giovani).</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Custos de Habitação &amp; Seguro de Saúde</h3>
+          <p>Consideração dos custos efetivos de habitação e de saúde obrigatória até ao respetivo máximo legal:</p>
+          <div class="formula">
+            Renda Reconhecida (Bruta) + Prémio Líquido do Seguro de Saúde (LAMal)
+          </div>
+          <p><small>*Importante: Os máximos de renda são escalonados no Cantão TI por dimensão do agregado e
+              região/município (valor de referência para 1 pessoa aprox. CHF 1'100). No caso dos prémios de seguro de
+              saúde, de acordo com a prática cantonal, a redução ordinária do prémio cantonal (IPV / RIPAM) é deduzida
+              diretamente; é reconhecido no máximo o prémio médio cantonal.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Consideração do Rendimento &amp; Dedução do Trabalho</h3>
+          <p>Do rendimento bruto ou líquido do trabalho é concedida uma isenção para manter o incentivo ao trabalho
+            (dedução do rendimento):</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>Rendimento Considerável</strong> = Outros Rendimentos + (Rendimento Líquido do Trabalho × 80%)
+          </div>
+          <p><small>É aplicada uma dedução fixa de 20% sobre o rendimento do trabalho. Abonos de família, pensões
+              (AHV/IV) e outras prestações LAPS são considerados 100% como receita.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Resultado: Direito Mensal</h3>
+          <p>A ajuda económica final resulta do défice de cobertura das necessidades da unidade de apoio:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Direito = (NBV + Renda + Seguro Saúde Líquido + IZU*) - (Rendimento Considerável + Consumo de Património)
+          </div>
+          <p><small>*IZU = Subsídio de Integração. Pessoas que prestam uma contrapartida efetiva ou trabalho podem
+              receber no Cantão Tessino um subsídio de integração fixo de CHF 100 por mês.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Autoridade Competente no Cantão Tessino:</strong><br />
+        A coordenação e o pagamento são feitos através do <strong>Ufficio del sostegno sociale e dell'inserimento
+          (USSI)</strong>.<br />
+        Endereço: Viale Officina 6, 6501 Bellinzona | Tel: +41 91 814 70 51 | E-mail: dss-ussi@ti.ch<br />
+        <em>Horário de Atendimento:</em> Segunda a Sexta, das 08:30–11:45 e à tarde no balcão público das 14:00–16:00
+        (Recomenda-se vivamente a marcação prévia de uma consulta).
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Iniciar Calculadora</a>
+        <a class="btn-link"
+          href="https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps"
+          target="_blank">Página Oficial do Cantão TI (LAPS)</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fontes: Cantão Tessino (IAS / USSI), Legge sull'assistenza sociale (LAS TI) &amp; Diretrizes SKOS 2026</p>
+      <p>© 2026 welfarecalc.ch | Cálculo Transparente da Assistência Social</p>
+    </footer>
+  </div>
+</body>
+
+</html>

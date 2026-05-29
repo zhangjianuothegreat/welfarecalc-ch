@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPV கணக்கீட்டு முறை: ஃப்ரிபூர்க் மாநிலம் 2026 | வெளிப்படையான மாதிரி | welfarecalc.ch</title>
+    <meta name="description" content="ஃப்ரிபூர்க் மாநிலத்தில் 2026 ஆம் ஆண்டிற்கான பிரீமியம் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? எங்களது வெளிப்படையான ஸ்மூத்திங் மாதிரியை ECASFR அதிகாரப்பூர்வ தரவுகளின் அடிப்படையில் அறிந்து கொள்ளுங்கள்.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/FR_2026IPV_ta.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/FR_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/FR_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/FR_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/FR_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/FR_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/FR_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/FR_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/FR_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/FR_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/FR_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/FR_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/FR_2026IPV_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "ஃப்ரிபூர்க் 2026 பிரீமியம் குறைப்புக் கணக்கீடு",
+      "description": "ஃப்ரிபூர்க் மாநிலத்தில் IPV ஐத் தீர்மானிக்கப் பயன்படுத்தப்படும் ஸ்மூத்திங் மாதிரியின் விளக்கம்.",
+      "step": [
+        { "@type": "HowToStep", "text": "தொடர்புடைய வருமானத்தை (LNA) தீர்மானித்தல்" },
+        { "@type": "HowToStep", "text": "வருமான வாசலுக்கான தூரத்தைக் கணக்கிடுதல்" },
+        { "@type": "HowToStep", "text": "60 ஸ்மூத்திங் நிலைகளில் மானிய விகிதத்தைத் தீர்மானித்தல்" }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+        <h1>IPV வழிமுறை: ஃப்ரிபூர்க் மாநிலம்</h1>
+        <p>60 நிலைகள் (Palier) கொண்ட ஸ்மூத்திங் மாதிரியின் முழு வெளிப்படைத்தன்மை</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>முழுமையான வெளிப்படைத்தன்மை: ஃப்ரிபூர்க் மாநிலத்திற்கான 2026 ஆம் ஆண்டு பிரீமியம் குறைப்பு (IPV) ஐ எங்கள் கால்குலேட்டர் எவ்வாறு தீர்மானிக்கிறது என்பதை இங்கே நீங்கள் துல்லியமாக அறிவீர்கள். இந்த வழிமுறை ECASFR இன் அதிகாரப்பூர்வ 60-நிலை ஸ்மூத்திங் மாதிரியைப் பயன்படுத்துகிறது.</p>
+
+        <h2 class="section-title">1. மைய அளவுருக்கள் (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>வருமான வாசல் (தொடக்கப் புள்ளி)</h4>
+                <div class="param-value">CHF 37,000 (தனி நபர்)</div>
+                <p><small>உரிமை நிலையைத் தீர்மானிப்பதற்கான அடிப்படை.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>செல்வக் கூடுதல் கட்டணம்</h4>
+                <div class="param-value">5.0 %</div>
+                <p><small>நிகர சொத்துகளின் விகிதம், வருமானத்துடன் சேர்க்கப்படும்.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. கணக்கீட்டுப் படிகள்</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>தொடர்புடைய வருமானம் (LNA)</h3>
+                <p>LNA உங்கள் வரித் தரவுகளிலிருந்து பின்வருமாறு கணக்கிடப்படுகிறது:</p>
+                <div class="formula-box">
+                    <strong>[நிகர வருமானம்]</strong> + <strong>[நிகர சொத்துகளில் 5%]</strong> - <strong>[குழந்தைக் கழிவு: ஒரு குழந்தைக்கு CHF 5,000]</strong>
+                </div>
+                <p><small>கூடுதலாக, செலுத்தப்பட்ட ஜீவனாம்சம் அல்லது பராமரிப்புப் பங்களிப்புகள் கழிக்கப்படும்.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>குறிப்புப் பிரீமியங்கள் (மாதாந்திரம்)</h3>
+                <p>ஃப்ரிபூர்க் மாநிலம் 2026 ஆம் ஆண்டிற்கான பின்வரும் சம வீதத் தொகைகளைப் பயன்படுத்துகிறது:</p>
+                <table class="data-table">
+                    <tr><th>பிரிவு</th><th>மாதத்திற்கான தொகை</th></tr>
+                    <tr><td>வயது வந்தோர் (26 வயது மற்றும் அதற்கு மேல்)</td><td>CHF 495 / மாதம்</td></tr>
+                    <tr><td>இளம் வயது வந்தோர் (19-25 வயது)</td><td>CHF 415 / மாதம்</td></tr>
+                    <tr><td>குழந்தைகள் (0-18 வயது)</td><td>CHF 136 / மாதம்</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>ஸ்மூத்திங் மாதிரி (60 நிலைகள் / பாலியர்கள்)</h3>
+                <p>ஃப்ரிபூர்க் நேரியல் ஸ்மூத்திங்கைப் பயன்படுத்துகிறது. முதலில், தனிநபர் வருமான வாசலுக்கான சதவீத தூரம் தீர்மானிக்கப்படுகிறது:</p>
+                <div class="formula-box">
+                    <strong>தூரம் % = [(வாசல் தொகை - LNA) / வாசல் தொகை] × 100</strong>
+                </div>
+                <p>இந்த தூரத்தின் அடிப்படையில், <strong>மானிய விகிதம் (1% முதல் 65% வரை)</strong> 60 நிலைகள் முழுவதும் நேரியல் முறையில் இடைச்செருகல் செய்யப்படுகிறது.</p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>சார்ந்திருப்போருக்கான குறைந்தபட்ச உத்தரவாதம்</h3>
+                <p>கணக்கிடப்பட்ட விகிதத்தைப் பொருட்படுத்தாமல், மாநிலம் உத்தரவாதம் அளிக்கிறது:</p>
+                <table class="data-table">
+                    <tr><th>பிரிவு</th><th>உத்தரவாத விகிதம்</th></tr>
+                    <tr><td>குழந்தைகள்</td><td>குறைந்தபட்சம் 80 %</td></tr>
+                    <tr><td>கல்வி/பயிற்சியில் உள்ள இளைஞர்கள்</td><td>குறைந்தபட்சம் 50 %</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>விலக்கு அளவுகோல்கள்:</strong><br>
+            நிகர சொத்துகள் <strong>CHF 250,000</strong> ஐ விட அதிகமாக இருந்தாலோ அல்லது நிகர வருமானம் <strong>CHF 150,000</strong> ஐ விட அதிகமாக இருந்தாலோ, ஃப்ரிபூர்க் மாநிலத்தில் பொதுவாக IPV க்கான உரிமை இருக்காது.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">முகப்புப் பக்கத்திற்குத் திரும்புக</a>
+            <a href="https://www.ecasfr.ch/rpi" target="_blank" class="btn-link">அதிகாரப்பூர்வ ECASFR இணையத்தளம்</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>மூலம்: ECASFR வழிகாட்டுதல்கள் 2026 | welfarecalc.ch - சமூக வெளிப்படைத்தன்மைக்கான உங்கள் கூட்டாளி</p>
+        <p>சட்ட அறிவிப்பு: இந்தக் கணக்கீடு ஒரு மதிப்பீடாகும் மற்றும் சட்டப்பூர்வமாக கட்டுப்படுத்தப்படாது.</p>
+    </footer>
+</div>
+
+</body>
+</html>

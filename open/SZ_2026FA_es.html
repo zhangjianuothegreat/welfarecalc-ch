@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo de Asignaciones Familiares (AF) Cantón de Schwyz 2026 | welfarecalc.ch</title>
+  <meta
+    content="¿Cómo se calculan las Asignaciones Familiares (AF) 2026 en el Cantón de Schwyz? Descubra nuestro algoritmo transparente para asignaciones por hijos, formación y nacimiento."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_es.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo de Asignaciones Familiares Cantón SZ 2026 | Cálculo Transparente" property="og:title" />
+  <meta
+    content="Lógica de cálculo oficial para asignaciones por hijos, formación y nacimiento 2026 en el Cantón de Schwyz."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/SZ_2026FA_es.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de las Asignaciones Familiares Schwyz 2026",
+      "description": "Guía paso a paso para calcular las asignaciones por hijos, asignaciones de formación y asignaciones por nacimiento en el Cantón de Schwyz.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinación de la categoría por hijo (Asignación por hijos vs. Asignación de formación basada en la edad y el estado de formación)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo del importe básico mensual utilizando las tasas cantonales de CHF 230 y CHF 280."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Adición de asignaciones únicas (Asignación por nacimiento de CHF 1'000 por recién nacido)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del derecho anual total final."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME A LA LAF 2026</div>
+      <h1>Algoritmo FA: Cantón de Schwyz</h1>
+      <p>Documentación transparente de las Asignaciones Familiares para el año 2026 (SZ)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+    <div class="content">
+      <p>El Cantón de Schwyz (SZ) regula las Asignaciones Familiares según la Ley Federal (LAF) y las disposiciones
+        cantonales. Nuestra calculadora de transparencia utiliza las tasas legales oficiales del Cantón de Schwyz para
+        2026, garantizando un cálculo matemáticamente preciso y comprensible.</p>
+      <h2 class="section-title">1. Tasas mensuales SZ (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Asignación por hijos</h4>
+          <div class="param-value">CHF 230 / Mes</div>
+          <p><small>Válido para niños de 0 a los 16 años cumplidos.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Asignación de formación</h4>
+          <div class="param-value">CHF 280 / Mes</div>
+          <p><small>A partir de los 16 años hasta el final de la formación (máx. 25 años).</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. El método de cálculo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Determinación de la categoría</h3>
+          <p>El algoritmo clasifica a cada hijo según la edad y el estado de formación:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem;">
+            <li><strong>0 - 16 años:</strong> Derecho pleno a la asignación ordinaria por hijos (CHF 230).</li>
+            <li><strong>16 - 25 años:</strong> Derecho a la asignación de formación (CHF 280), siempre que se presente
+              un comprobante de formación reconocido y los ingresos anuales del trabajo del hijo no superen los CHF
+              29'400.</li>
+            <li><strong>Hijos incapacitados para el trabajo:</strong> Derecho a la asignación por hijos (CHF 230)
+              prorrogado hasta los 20 años.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Cálculo del importe mensual</h3>
+          <p>El Cantón de Schwyz aplica un modelo tarifario lineal. No hay aumento ni escalonamiento a partir del 3er
+            hijo (sin asignación para familias numerosas):</p>
+          <div class="formula">
+            Suma mensual = (Número de hijos × CHF 230) + (Número en formación × CHF 280)
+          </div>
+          <p><small>*Nota: Las tasas se aplican de manera uniforme desde el primer hijo, independientemente del tamaño
+              de la familia.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Asignaciones únicas (Nacimiento/Adopción)</h3>
+          <p>El Cantón de Schwyz concede una asignación única por nacimiento, pero la ley cantonal <strong>no</strong>
+            prevé una asignación por adopción.</p>
+          <table class="data-table">
+            <tr>
+              <th>Tipo de asignación</th>
+              <th>Importe (SZ)</th>
+            </tr>
+            <tr>
+              <td>Asignación por nacimiento</td>
+              <td>CHF 1'000 <small>(por recién nacido; en caso de partos múltiples se multiplica en
+                  consecuencia)</small></td>
+            </tr>
+            <tr>
+              <td>Asignación por adopción</td>
+              <td>CHF 0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Determinación del derecho anual</h3>
+          <p>Los derechos mensuales se anualizan y las asignaciones únicas se suman matemáticamente al final:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Importe anual = (Suma base mensual × 12) + (Número de recién nacidos × CHF 1'000)
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Subsidiariedad y orden de prioridad:</strong><br />
+        Solo existe un derecho por hijo. Si ambos progenitores trabajan o trabajan en diferentes cantones, el orden de
+        prioridad legal según el Art. 12 LAF decide sobre el cobro principal. Se calcularán los posibles pagos
+        diferenciales (asignaciones diferenciales) si el derecho del segundo beneficiario en otro cantón resultara ser
+        mayor.
+      </div>
+      <div style="text-align: center;">
+        <a aria-label="Iniciar calculadora" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">Iniciar calculadora</a>
+        <a aria-label="Ir al sitio oficial de la SVA Schwyz" class="btn-link" href="https://www.sva-sz.ch"
+          target="_blank">Sitio oficial de la SVA Schwyz</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fuente: Directrices SVA Schwyz 2026, Ordenanza de ejecución de la LAF en el Cantón de Schwyz y Ley Federal
+        sobre Asignaciones Familiares (LAF)</p>
+      <p>© 2026 welfarecalc.ch | Cálculo transparente de Asignaciones Familiares</p>
+    </footer>
+  </div>
+</body>
+
+</html>

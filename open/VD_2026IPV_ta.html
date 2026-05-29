@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV அல்காரிதம் கான்டன் வாட் 2026 | வெளிப்படையான கணக்கீடு (RDU) | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் கான்டன் வாட் இல் பிரீமியம் குறைப்பு (IPV) எவ்வாறு கணக்கிடப்படுகிறது? RDU அடிப்படையிலான அதிகாரப்பூர்வ இரண்டு-நிலை மாதிரியை (Subside ordinaire &amp; spécifique) கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV அல்காரிதம் கான்டன் வாட் 2026 | வெளிப்படையான கணக்கீடு (RDU)" property="og:title" />
+  <meta
+    content="கான்டன் வாட் இல் 2026 ஆம் ஆண்டிற்கான பிரீமியம் குறைப்பின் துல்லியமான கணித அல்காரிதம். அதிகாரப்பூர்வ சூத்திரங்கள் வெளிப்படையாக வெளியிடப்பட்டுள்ளன."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Berechnung der Prämienverbilligung Vaud 2026",
+      "description": "Schritt-für-Schritt-Anleitung zur Ermittlung des IPV-Anspruchs im Kanton Vaud mittels des RDU-Modells.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ermittlung des RDU (Revenu déterminant unifié) unter Hinzurechnung von Säule 3a und Vermögensaufrechnung (6.7%)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Berechnung des ordentlichen Subsidiums (Subside ordinaire) über die kantonale mathematische Progressionskurve."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Prüfung und Aufstockung durch das spezifische Subsidium (Subside spécifique), falls die Restprämie 10% des RDU übersteigt."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--swiss-red);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .step-body h3 {
+      color: var(--official-blue);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .formula-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1.25rem;
+      border-radius: 6px;
+      margin: 0.75rem 0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table th,
+    .parameter-table td {
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .parameter-table th {
+      background: #f1f5f9;
+      color: var(--official-blue);
+      font-weight: 600;
+    }
+
+    .parameter-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .alert {
+      background: #fef2f2;
+      border-left: 4px solid var(--swiss-red);
+      padding: 1.25rem;
+      border-radius: 6px;
+      color: #991b1b;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      background: #002244;
+    }
+
+    .btn-home {
+      background: #64748b;
+    }
+
+    .btn-home:hover {
+      background: #475569;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="update-tag">அதிகாரப்பூர்வ அல்காரிதம் 2026</span>
+      <h1>கன்டோன் வாட்டில் (VD) பிரீமியம் குறைப்பு 2026</h1>
+      <p>சாதாரண மற்றும் சிறப்பு மானியங்களை (Subside Ordinaire மற்றும் Spécifique) கணக்கிடுவதற்கான அதிகாரப்பூர்வ
+        இரண்டு-நிலை கணித மையம்</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>நிலையான வருமானப் படிநிலைகளைக் கொண்ட கன்டோன்களைப் போலல்லாமல், கன்டோன் வாட் (Vaud) ஒரு உயர் வளர்ச்சியடைந்த, சமூக
+        நீதியான <strong>RDU மாதிரியை (Revenu déterminant unifié)</strong> பயன்படுத்துகிறது. கன்டோனின் நோக்கம், கட்டாய
+        சுகாதார காப்பீட்டின் (KVG) சுமையை தோராயமாக <strong>பொருந்தும் வருமானத்தில் 10%</strong> ஆக மூடுவதாகும்.</p>
+      <h2 class="section-title">2026 ஆம் ஆண்டிற்கான கன்டோனல் அளவுருக்கள்</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>அதிகபட்ச மாதாந்திர மானியம் (பெரியவர்கள்)</h4>
+          <div class="param-value">CHF 331.00 / மாதம்</div>
+        </div>
+        <div class="param-card">
+          <h4>குறைந்தபட்ச மாதாந்திர மானியம் (பெரியவர்கள்)</h4>
+          <div class="param-value">CHF 30.00 / மாதம்</div>
+        </div>
+        <div class="param-card">
+          <h4>சொத்து கணக்கீட்டு விகிதம் (RDU)</h4>
+          <div class="param-value">6.7% (நிகர சொத்தில் 1/15)</div>
+        </div>
+        <div class="param-card">
+          <h4>சுய-பங்களிப்பு உச்சவரம்பு (சுமை)</h4>
+          <div class="param-value">RDU இன் 10.0%</div>
+        </div>
+      </div>
+      <h2 class="section-title">2026 அதிகாரப்பூர்வ குறிப்பு பிரீமியங்கள் (OVAM)</h2>
+      <p>கணக்கீடு உங்கள் உண்மையான ஆடம்பர ஃபிரான்சைஸ் அல்லது கூடுதல் காப்பீடுகளை கணக்கில் எடுத்துக்கொள்ளாமல், மாநில
+        கவுன்சிலால் நிர்ணயிக்கப்பட்ட கன்டோனல் குறிப்பு பிரீமியங்களை (Primes de référence 2026) கருத்தில் கொள்கிறது:</p>
+      <table class="parameter-table">
+        <thead>
+          <tr>
+            <th>வயதுப் பிரிவு (குறியீடு)</th>
+            <th>பிராந்தியம் 1 (நகர்ப்புறம், எ.கா. லொசேன்)</th>
+            <th>பிராந்தியம் 2 (கிராமப்புறம்)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>பெரியவர்கள் (26 வயது மற்றும் மேல்)</strong></td>
+            <td>CHF 4'212 / ஆண்டு (351.-/மாதம்)</td>
+            <td>CHF 3'912 / ஆண்டு (326.-/மாதம்)</td>
+          </tr>
+          <tr>
+            <td><strong>இளம் பெரியவர்கள் (19 - 25 வயது)</strong></td>
+            <td>CHF 2'820 / ஆண்டு (235.-/மாதம்)</td>
+            <td>CHF 2'580 / ஆண்டு (215.-/மாதம்)</td>
+          </tr>
+          <tr>
+            <td><strong>குழந்தைகள் (0 - 18 வயது)</strong></td>
+            <td>CHF 1'188 / ஆண்டு (99.-/மாதம்)</td>
+            <td>CHF 1'068 / ஆண்டு (89.-/மாதம்)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="section-title">படி-படியாக கணக்கீட்டு தர்க்கம்</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>சரிசெய்யப்பட்ட RDU ஐ தீர்மானித்தல்</h3>
+          <p>கன்டோனல் RDU என்பது இறுதி வரி மதிப்பீட்டின் அடிப்படையிலானது, இது குறிப்பிட்ட வாட் சட்டங்களின்படி
+            சரிசெய்யப்படுகிறது (தனியார் கடன்களை விலக்குதல் மற்றும் சேர்த்தல்):</p>
+          <div class="formula-box">
+            RDU = வரி விதிக்கக்கூடிய நிகர வருமானம் <br />
+            + தூண் 3a வைப்புத்தொகைக்கான விலக்குகள் <br />
+            + வரியில் கழிக்கப்பட்ட சுகாதார காப்பீட்டு பிரீமியங்கள் <br />
+            + [கிடைக்கும் நிகர சொத்து - விலக்கு தொகை] × 6.7% <br />
+            - மொத்த விலக்குகள் (எ.கா., தம்பதியர் விலக்கு: CHF 4'400, குழந்தை விலக்கு: CHF 1'300)
+          </div>
+          <p><small>*குறிப்பு: கன்டோன் வாட்டில், IPV சொத்து சோதனையின் போது தனியார் கடன்கள் அல்லது அடமானங்கள் குறைக்கும்
+              காரணிகளாக கருதப்படுவதில்லை!</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>சாதாரண மானியத்தின் கணக்கீடு (Subside ordinaire)</h3>
+          <p>கன்டோன் வாட், சாதாரண உரிமையைக் கணக்கிட, மடக்கை முறையில் மென்மையாக்கப்பட்ட, முற்போக்கான வளைவு செயல்பாட்டைப்
+            பயன்படுத்துகிறது. UER நிலையான குடும்பங்களுக்கு பின்வரும் கணித அளவுருக்கள் பொருந்தும்:</p>
+          <div class="formula-box">
+            RDU ≤ CHF 16'000 (வரம்பு C6) எனில்: <br />
+              சாதாரண_மானியம் = குடும்பத்தின் அதிகபட்ச குறிப்பு பிரீமியம் <br /><br />
+            CHF 16'000 &lt; RDU ≤ CHF 40'000 (வரம்பு A6) எனில்: <br />
+              வளைவு காரணி = P6 (2.3) &amp; Q6 (0.8) <br />
+              சாதாரண_மானியம் = நெகிழும் கன்டோனல் டிகம்ப்ரஷன் வளைவு சூத்திரத்தின் மூலம் கணக்கிடப்படுகிறது. <br /><br />
+            சட்டப்பூர்வ குறைந்தபட்ச வரம்புகளின் பயன்பாடு: <br />
+              ஒவ்வொரு பெரியவருக்கும் மாதாந்திர சாதாரண மானியம் குறைந்தபட்சம் CHF 30.00 ஆக நிர்ணயிக்கப்பட்டு, அதிகபட்சம்
+            CHF 331.00 ஆக வரையறுக்கப்படுகிறது.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>பாதுகாப்பு வலை: சிறப்பு மானியம் (Subside spécifique)</h3>
+          <p>இது மிக முக்கியமான திருத்தக் காரணியாகும், இதை நிலையான கால்குலேட்டர்கள் தவறவிடுகின்றன. சாதாரண மானியத்தைக்
+            கழித்த பிறகு, குடும்பத்தின் மீதமுள்ள பிரீமிய சுமை தாங்க முடியாத அளவுக்கு அதிகமாக இருந்தால், 10% பாதுகாப்பு
+            கவசம் செயல்படுத்தப்படுகிறது:</p>
+          <div class="formula-box">
+            அனுமதிக்கப்பட்ட குடும்ப பிரீமிய சுமை = குடும்பத்தின் மொத்த குறிப்பு பிரீமியங்கள் <br />
+            மீதி சுமை = அனுமதிக்கப்பட்ட குடும்ப பிரீமிய சுமை - சாதாரண_மானியம்_ஆண்டு <br /><br />
+            கன்டோனல் தாங்குதிறன் வரம்பு = RDU × 10% <br /><br />
+            மீதி சுமை &gt; தாங்குதிறன் வரம்பு எனில்: <br />
+              சிறப்பு_மானியம் = மீதி சுமை - தாங்குதிறன் வரம்பு <br />
+            இல்லையெனில்: <br />
+              சிறப்பு_மானியம் = 0
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>இறுதி மொத்த உரிமை &amp; வரம்பு நிர்ணயம்</h3>
+          <p>இறுதி செலுத்தும் தொகை, இரண்டு மானிய கூறுகளின் கூட்டுத்தொகையிலிருந்து பெறப்படுகிறது மற்றும் காப்பீடு
+            செய்தவரின் உண்மையான, பயனுள்ள பிரீமியத்தால் வரையறுக்கப்படுகிறது:</p>
+          <div class="formula-box">
+            உரிமை_முழுமையானது = சாதாரண_மானியம் + சிறப்பு_மானியம் <br />
+            இறுதி_உரிமை = சிறுமம்(உரிமை_முழுமையானது, குடும்பத்தின்_பயனுள்ள_சுகாதார_காப்பீட்டு_பிரீமியம்)
+          </div>
+          <p><small>ஆண்டுக்கு CHF 100.00 க்கும் குறைவான தொகைகள் செயல்திறன் காரணங்களுக்காக செலுத்தப்படுவதில்லை (சிறு தொகை
+              வரம்பு).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>சொத்து விலக்கு வரம்பு (மேல் வரம்பு):</strong><br />
+        தனி நபருக்கு சரிசெய்யப்பட்ட நிகர சொத்து (கடன்களைக் கழிக்காமல்) <strong>CHF 100'000</strong> அல்லது திருமணமான
+        தம்பதிகளுக்கு <strong>CHF 160'000</strong> ஐ தாண்டினால், RDU வருமானம் எவ்வளவு குறைவாக இருந்தாலும், கன்டோன்
+        வாட்டில் பிரீமியம் குறைப்புக்கான சட்டப்பூர்வ உரிமை முற்றிலும் முடிவடைகிறது.
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
+          திரும்பு</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie"
+          target="_blank">கன்டோன் VD அதிகாரப்பூர்வ வலைத்தளம்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: சமூக ஒருங்கிணைப்புக்கான பொது இயக்குநரகத்தின் பொதுச் செயலகம் (DGCS) &amp; Office vaudois de
+        l'assurance-maladie (OVAM), கன்டோன் வாட் 2026. <a href="https://www.welfarecalc.ch"
+          target="_blank">welfarecalc.ch</a> மூலம் வழங்கப்பட்டது.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

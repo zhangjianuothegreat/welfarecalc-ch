@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>இ எல் அல்காரிதம் கன்டன் செயின்ட் கேலன் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+    <meta name="description" content="கன்டன் செயின்ட் கேலனில் (SG) 2026-க்கான துணைநலன்கள் (EL) எவ்வாறு கணக்கிடப்படுகின்றன? அதிகாரப்பூர்வ SVA தரவுகளின் அடிப்படையில் எங்களது வெளிப்படையான அல்காரிதத்தைக் கண்டறியுங்கள்.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026EL_ta.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "துணைநலன்கள் கணக்கீடு செயின்ட் கேலன் 2026",
+      "description": "2026 மத்திய சீர்திருத்தத்தைப் பின்பற்றி, கன்டன் எஸ்ஜி (செயின்ட் கேலன்) இல் இ எல் கணக்கீட்டின் விரிவான அல்காரிதம் பகுப்பாய்வு.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "கன்டன் செயின்ட் கேலனின் 3 வாடகைப் பகுதிகளில் ஒன்றிற்கு வசிப்பிட ஒதுக்கீடு."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "அங்கீகரிக்கப்பட்ட தேவைகளை நிர்ணயித்தல் (அடிப்படை வாழ்க்கைச் செலவுகள், அதிகபட்ச வாடகை, மற்றும் சராசரி சுகாதார காப்பீட்டு பிரீமியம்)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "கணக்கில் எடுத்துக்கொள்ளப்படும் வருமானத்தை நிர்ணயித்தல் (13-வது AHV நடுநிலையாக்கத்தை உள்ளடக்கிய ஓய்வூதியங்கள், சம்பாதித்த வருமானம், மற்றும் சொத்து குறைப்பு)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "சட்டத் தகுதி வாசலைச் சரிபார்த்தல் மற்றும் இறுதி இ எல் நன்மை கணக்கீடு (செலவுகள் கழித்தல் வருமானம்)."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; color: var(--official-blue); }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { opacity: 0.9; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">அதிகாரப்பூர்வ சீர்திருத்தத் தரவு 2026</div>
+        <h1>இ எல் அல்காரிதம்: கன்டன் செயின்ட் கேலன்</h1>
+        <p>கன்டன் செயின்ட் கேலன் (SG) க்கான துணைநலன்கள் (EL) பற்றிய வெளிப்படையான பகுப்பாய்வு</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>வெளிப்படைத்தன்மை நம்பிக்கையை உருவாக்குகிறது. AHV/IVக்கான துணைநலன்கள் (EL) 2026 ஆம் ஆண்டில் புதிய மத்திய தேவைகளின்படி அடிப்படையில் சரிசெய்யப்பட்டுள்ளன. கன்டன் செயின்ட் கேலனில் உங்கள் தகுதியை எங்கள் கணக்கீட்டு இயந்திரம் எவ்வாறு தீர்மானிக்கிறது என்பதை இங்கே துல்லியமாகவும் கணித ரீதியாகவும் சரியாகவும் ஆவணப்படுத்துகிறோம்.</p>
+
+        <h2 class="section-title">1. வருடாந்திர அடிப்படை வாழ்க்கைச் செலவுகள் (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>தனிநபர்கள்</h4>
+                <div class="param-value">CHF 20,670</div>
+                <p><small>ஜனவரி 1, 2026 நிலவரப்படி நாடு முழுவதும் ஒரே மாதிரியான அடிப்படைத் தேவைகள்.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>திருமணமான தம்பதிகள்</h4>
+                <div class="param-value">CHF 31,005</div>
+                <p><small>ஒன்றாக வசிக்கும் வாழ்க்கைத் துணைவர்களுக்கான சட்டப்பூர்வ அடிப்படைத் தேவைகள்.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. துல்லியமான கணக்கீட்டுப் பாதை</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>பிராந்திய ஒதுக்கீடு (வாடகைப் பகுதிகள்)</h3>
+                <p>கன்டன் செயின்ட் கேலன் மத்தியச் சட்டத்தின்படி 3 பகுதிகளாகப் பிரிக்கப்பட்டுள்ளது. எங்கள் அல்காரிதம், தபால்குறியீட்டின் (PLZ) அடிப்படையில் வீட்டு வரவு செலவுத் திட்டத்தை ஒதுக்குகிறது:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+                    <li><strong>பகுதி 1 (உயர்):</strong> முக்கிய மையங்கள் (எ.கா., செயின்ட் கேலன் நகரம், ரப்பர்ஸ்வில்-ஜோனா)</li>
+                    <li><strong>பகுதி 2 (மிதமான):</strong> புறநகர் பகுதிகள் மற்றும் நடுத்தர அளவிலான நகராட்சிகள்</li>
+                    <li><strong>பகுதி 3 (தாழ்வு):</strong> கிராமப்புற சமூகங்கள் (PLZ இல்லையெனில் இயல்புநிலை மாற்று)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>அங்கீகரிக்கப்பட்ட செலவுகள் (தேவைகள்)</h3>
+                <p>சட்டப்பூர்வமாக அங்கீகரிக்கப்பட்ட அனைத்துச் செலவுப் பொருட்களின் கூட்டுத்தொகை பின்வருமாறு கணக்கிடப்படுகிறது:</p>
+                <div class="formula">
+                    மொத்தத் தேவைகள் = அடிப்படை வாழ்க்கைச் செலவுகள் + அங்கீகரிக்கப்பட்ட வீட்டுச் செலவுகள் + சுகாதார காப்பீட்டு பிரீமியம்
+                </div>
+                
+                <h4 style="margin-top: 15px; color: var(--official-blue);">அங்கீகரிக்கப்பட்ட வீட்டுச் செலவுகள் (அதிகபட்ச வாடகை 2026):</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>பகுதி / வீட்டு வகை</th>
+                            <th>பகுதி 1 (உயர்)</th>
+                            <th>பகுதி 2 (மிதமான)</th>
+                            <th>பகுதி 3 (தாழ்வு)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1 நபர்</strong></td>
+                            <td>CHF 18,900 (1,575/மாதம்)</td>
+                            <td>CHF 18,300 (1,525/மாதம்)</td>
+                            <td>CHF 16,680 (1,390/மாதம்)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2 நபர்கள்</strong></td>
+                            <td>CHF 22,320 (1,860/மாதம்)</td>
+                            <td>CHF 21,720 (1,810/மாதம்)</td>
+                            <td>CHF 20,160 (1,680/மாதம்)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3 நபர்கள்</strong></td>
+                            <td>CHF 24,780 (2,065/மாதம்)</td>
+                            <td>CHF 23,760 (1,980/மாதம்)</td>
+                            <td>CHF 22,200 (1,850/மாதம்)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><small>*சொந்த வீட்டு உரிமைக்கான குறிப்பு: சொந்தமாகப் பயன்படுத்தும் சொத்துகளுக்கு, உண்மையான அடமான வட்டி மற்றும் பராமரிப்புப் படி, அந்தந்த பிராந்திய அதிகபட்ச வாடகை வரை அங்கீகரிக்கப்படும்.</small></p>
+
+                <h4 style="margin-top: 15px; color: var(--official-blue);">அங்கீகரிக்கப்பட்ட சுகாதார காப்பீட்டு பிரீமியங்கள்:</h4>
+                <p>அல்காரிதம், SVA SG இன் கன்டன் வழிகாட்டுதல்களின்படி பிரீமியத்தை வரம்புக்குட்படுத்துகிறது. சூத்திரம்:</p>
+                <div class="formula">அங்கீகரிக்கப்பட்ட HI பிரீமியம் = Min(உண்மையான பிரீமியம், பிராந்திய நிலையான பிரீமியம்)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>பிராந்திய நிலையான பிரீமியம் (ஆண்டுக்கு)</th>
+                            <th>பகுதி 1</th>
+                            <th>பகுதி 2</th>
+                            <th>பகுதி 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>பெரியவர்கள் (26+)</td>
+                            <td>CHF 6,564</td>
+                            <td>CHF 6,144</td>
+                            <td>CHF 5,808</td>
+                        </tr>
+                        <tr>
+                            <td>இளைஞர்கள் (11-25)</td>
+                            <td>CHF 4,752</td>
+                            <td>CHF 4,536</td>
+                            <td>CHF 4,344</td>
+                        </tr>
+                        <tr>
+                            <td>குழந்தைகள் (0-10)</td>
+                            <td>CHF 1,488</td>
+                            <td>CHF 1,464</td>
+                            <td>CHF 1,380</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>கணக்கில் எடுத்துக்கொள்ளப்படும் வருமானம்</h3>
+                <p>உங்கள் வருமானம் ELG (துணைநலன்கள் சட்டம்) இன் கடுமையான விதிகளின்படி எடைபோடப்படுகிறது:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+                    <li><strong>ஓய்வூதியங்கள் & 13-வது AHV நடுநிலையாக்கம்:</strong> ஓய்வூதிய வருமானம் 12 மாத அடிப்படையில் கணக்கிடப்படுகிறது. 2026 ஆம் ஆண்டு முதல் புதிதாக அறிமுகப்படுத்தப்பட்ட 13-வது AHV ஓய்வூதியம் கணித ரீதியாக முழுமையாக நடுநிலையாக்கப்பட்டு, கணக்கீட்டில் நுழையாது.</li>
+                    <li><strong>சம்பாதித்த வருமானம்:</strong> ஒரு படி விலக்கு அனுமதிக்கப்படுகிறது (தனிநபர்களுக்கு CHF 1,300 / திருமணமான தம்பதிகளுக்கு CHF 1,950). மீதமுள்ள சம்பாதித்த வருமானத்தில் 2/3 மட்டுமே வருமானமாகக் கணக்கிடப்படுகிறது.</li>
+                    <li><strong>சொத்து குறைப்பு:</strong> நிகர சொத்துக்கள் படி விலக்குகளை விட அதிகமாக இருந்தால், ஒரு பகுதி கணக்கிடப்பட்ட வருமானமாக எடுத்துக்கொள்ளப்படுகிறது.
+                        <br><em>படி விலக்குகள்:</em> CHF 30,000 (தனிநபர்கள்), CHF 50,000 (திருமணமான தம்பதிகள்). 
+                        <br><em>நர்சிங் ஹோம் வாசிகளுக்கான விகிதம்:</em> வருடத்திற்கு 1/5. 
+                        <br><em>வீட்டில் வசிக்கும் முதியோர் ஓய்வூதியதாரர்களுக்கான விகிதம்:</em> வருடத்திற்கு 1/10.
+                        <br><em>வீட்டில் வசிக்கும் IV (இயலாமை) ஓய்வூதியதாரர்களுக்கான விகிதம்:</em> வருடத்திற்கு 1/15.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>முடிவு: EL தகுதி</h3>
+                <p>அனைத்து அளவுகோல்களும் பூர்த்தி செய்யப்பட்டால், EL நன்மை இடைவெளியை மூடுகிறது:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    ஆண்டு EL நன்மை = Max(0, [அங்கீகரிக்கப்பட்ட செலவுகள்] - [கணக்கில் எடுத்துக்கொள்ளப்படும் வருமானம்])
+                </div>
+                <p><small>மாதாந்திரக் கொடுப்பனவுத் தொகை, ஆண்டு EL ஐ 12 ஆல் வகுத்து, அருகிலுள்ள ஃபிராங்கிற்கு வணிக ரீதியாக வட்டமிடுவதற்குச் சமம்.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>முக்கியமானது: தகுதி வாசல் (சொத்து வாசல்)</strong><br>
+            வரி விதிக்கக்கூடிய நிகர சொத்துக்கள் <strong>CHF 100,000</strong> (தனிநபர்களுக்கு) அல்லது <strong>CHF 200,000</strong> (திருமணமான தம்பதிகளுக்கு) க்குக் கீழே இருந்தால் மட்டுமே துணைநலன்களுக்கான சட்டப்பூர்வ தகுதி உள்ளது. சொந்தமாகப் பயன்படுத்தும் குடியிருப்பு சொத்தின் மதிப்பு இந்த வாசலில் இருந்து வெளிப்படையாக விலக்கப்பட்டுள்ளது.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">முகப்புப் பக்கத்திற்குத் திரும்பு</a>
+            <a href="https://www.svasg.ch/el" target="_blank" class="btn-link">அதிகாரப்பூர்வ SVA செயின்ட் கேலன் பக்கம்</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>ஆதாரம்: SVA செயின்ட் கேலன் வழிகாட்டுதல்கள் 2026, துணைநலன்களுக்கான மத்தியச் சட்டம் (ELG) & கன்டன் அறிமுகச் சட்டம் (KeLG)</p>
+        <p>welfarecalc.ch ஆல் வழங்கப்பட்டது | அனைத்துக் கணக்கீடுகளும் சட்டப்பூர்வ உத்தரவாதம் இல்லாதவை.</p>
+    </footer>
+</div>
+
+</body>
+</html>

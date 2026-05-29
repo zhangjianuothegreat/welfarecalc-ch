@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Dodatki rodzinne (FA) – algorytm dla kantonu Bazylea-Okreg 2026 | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczane są dodatki rodzinne w 2026 roku w kantonie Bazylea-Okreg? Poznaj nasz przejrzysty algorytm dla dodatków na dziecko i dodatków edukacyjnych.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026FA_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026FA_de.html">
+
+    <meta property="og:title" content="Algorytm dodatków rodzinnych – kanton Bazylea-Okreg 2026 | Przejrzyste obliczenia">
+    <meta property="og:description" content="Oficjalna logika obliczania dodatków na dziecko i dodatków edukacyjnych na rok 2026 w kantonie Bazylea-Okreg (BL).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026FA_pl.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie dodatków rodzinnych w kantonie Bazylea-Okreg 2026",
+      "description": "Krok po kroku – ustawowy algorytm dodatków na dziecko oraz dodatków edukacyjnych w kantonie BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Określenie kategorii uprawnień na podstawie wieku i statusu edukacyjnego."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Obliczenie całkowitego miesięcznego świadczenia (bez progresji kantonalnej)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Sprawdzenie jednorazowych dodatków (dodatki porodowe i adopcyjne = 0 CHF w kantonie BL)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Wyliczenie rocznego świadczenia i weryfikacja progu dochodowego z AHV."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.5px; }
+        .param-value { font-size: 1.3rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: 'Courier New', monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #c41a10; }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">ZGODNY Z FAMZG 2026</div>
+        <h1>Algorytm FA: Kanton Bazylea-Okreg</h1>
+        <p>Przejrzysta dokumentacja dodatków rodzinnych (dodatki na dziecko i dodatki edukacyjne) dla kantonu BL</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>W kantonie Bazylea-Okreg (BL) dodatki rodzinne regulowane są przez federalną ustawę o dodatkach rodzinnych (FamZG). Nasz kalkulator wykorzystuje oficjalne parametry kantonalne na rok 2026, aby zapewnić całkowicie przejrzystą weryfikację Twoich uprawnień.</p>
+
+        <h2 class="section-title">1. Miesięczne stawki BL (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Dodatek na dziecko</h4>
+                <div class="param-value">215 CHF / miesiąc</div>
+                <p><small>Od miesiąca urodzenia do końca 16. roku życia.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Dodatek edukacyjny</h4>
+                <div class="param-value">268 CHF / miesiąc</div>
+                <p><small>Od 16. roku życia (lub od 15 lat w przypadku kształcenia obowiązkowego po szkole podstawowej) maksymalnie do 25. roku życia.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Metodologia obliczeń</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Określenie kategorii uprawnień i granice wieku</h3>
+                <p>Algorytm sprawdza indywidualnie wiek, status zatrudnienia oraz sytuację edukacyjną każdego dziecka:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Dzieci poniżej 16 lat:</strong> Ogólne prawo do dodatku na dziecko (215 CHF).</li>
+                    <li><strong>Młodzież w kształceniu obowiązkowym po szkole podstawowej (od 15 lat):</strong> Możliwość wcześniejszego otrzymywania dodatku edukacyjnego (268 CHF).</li>
+                    <li><strong>Młodzież w wieku 16–25 lat:</strong> Prawo do dodatku edukacyjnego, pod warunkiem ukończenia certyfikowanej edukacji lub studiów.</li>
+                    <li><strong>Dziecko niezdolne do pracy z powodu niepełnosprawności:</strong> Przedłużone prawo do dodatku na dziecko (215 CHF) do końca 20. roku życia.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Obliczenie całkowitej miesięcznej kwoty</h3>
+                <p>Miesięczna suma opiera się na liniowym obliczeniu. Kanton Bazylea-Okreg nie przewiduje progresywnych podwyżek od trzeciego dziecka:</p>
+                <div class="formula">
+                    Miesięczne świadczenie = (liczba dodatków na dziecko × 215 CHF) + (liczba dodatków edukacyjnych × 268 CHF)
+                </div>
+                <p><small>*Ważne: Zgodnie z art. 3 FamZG, na jedno dziecko można otrzymywać tylko jeden rodzaj dodatku na raz (zasada wykluczenia).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Dodatki jednorazowe (urodzenie/adopcja)</h3>
+                <p>Zgodnie z dekretem kantonalnym, kanton Bazylea-Okreg <strong>nie przyznaje</strong> jednorazowych dodatków z tytułu urodzenia ani adopcji.</p>
+                <table class="data-table">
+                    <tr><th>Rodzaj dodatku</th><th>Kwota (BL)</th></tr>
+                    <tr><td>Dodatek porodowy</td><td>0 CHF</td></tr>
+                    <tr><td>Dodatek adopcyjny</td><td>0 CHF</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Limity dochodowe i roczne świadczenie</h3>
+                <p>Algorytm mnoży zweryfikowaną kwotę miesięczną przez liczbę miesięcy w bieżącym roku kalendarzowym:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Roczna kwota = (miesięczna suma świadczeń) × 12
+                </div>
+                <p><strong>Ograniczenie dochodowe (walidacja pomocnicza):</strong> Jeśli dziecko uczące się osiąga dochód podlegający opodatkowaniu AHV przekraczający <strong>2 520 CHF miesięcznie</strong> (30 240 CHF rocznie), prawo do dodatku edukacyjnego zostaje całkowicie cofnięte.</p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Kolejność pierwszeństwa zgodnie z prawem federalnym:</strong><br>
+            Jeśli oboje rodziców pracuje, algorytm zapobiega podwójnym roszczeniom poprzez ścisłe przestrzeganie ustawowej kolejności pierwszeństwa (miejsce zgłoszenia świadczenia, zatrudnienie główne i dodatkowe) zgodnie z art. 12 FamZG.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Przejdź do kalkulatora">Uruchom kalkulator</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/personalamt/beruf-und-privates/familien-und-erziehungszulagen-1" target="_blank" class="btn-link" aria-label="Oficjalna strona SVA Bazylea-Okreg">Oficjalna strona SVA BL</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Źródło: Wytyczne SVA Basel-Landschaft 2026 oraz Federalna ustawa o dodatkach rodzinnych (FamZG)</p>
+        <p>© 2026 welfarecalc.ch | Przejrzyste obliczanie dodatków rodzinnych</p>
+    </footer>
+</div>
+
+</body>
+</html>

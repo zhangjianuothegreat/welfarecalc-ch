@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmi EL Kantoni St. Gallen 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Si llogariten Përfitimet Plotësuese (EL) 2026 në Kantonin e Shën GALLIT (SG)? Zbuloni algoritmin tonë transparent bazuar në të dhënat zyrtare të SVA.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026EL_sq.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e Përfitimeve Plotësuese St. Gallen 2026",
+      "description": "Zbërthimi i detajuar algoritmik i llogaritjes së EL në Kantonin SG (St. Gallen) sipas reformës federale 2026.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Caktimi i vendbanimit në një nga 3 rajonet e qirasë së Kantonit të St. Gallen."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i nevojave të njohura (shpenzimet bazë të jetesës, qiraja maksimale dhe primi mesatar i sigurimit shëndetësor)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i të ardhurave të llogaritshme (pensionet përfshirë neutralizimin e 13-të të AHV, të ardhurat nga puna dhe amortizimi i aseteve)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verifikimi i pragut ligjor të përfitueshmërisë dhe llogaritja përfundimtare e përfitimit EL (shpenzimet minus të ardhurat)."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; color: var(--official-blue); }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { opacity: 0.9; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">TË DHËNA ZYRTARE TË REFORMËS 2026</div>
+        <h1>Algoritmi EL: Kantoni i Shën Gallit (St. Gallen)</h1>
+        <p>Zbërthim transparent i Përfitimeve Plotësuese (EL) për Kantonin e Shën Gallit (SG)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Transparenca ndërton besim. Përfitimet Plotësuese (EL) për AHV/IV janë rregulluar rrënjësisht në vitin 2026 sipas kërkesave të reja federale. Këtu dokumentojmë saktësisht dhe matematikisht saktë se si motori ynë i llogaritjes përcakton të drejtën tuaj në Kantonin e Shën Gallit.</p>
+
+        <h2 class="section-title">1. Shpenzimet Vjetore Bazë të Jetesës (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Personat beqarë</h4>
+                <div class="param-value">CHF 20,670</div>
+                <p><small>Nevojat bazë uniforme në mbarë vendin që nga 1 janari 2026.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Çiftet e martuara</h4>
+                <div class="param-value">CHF 31,005</div>
+                <p><small>Nevojat bazë ligjore për bashkëshortët që jetojnë së bashku.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Rruga e Saktë e Llogaritjes</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Caktimi rajonal (rajonet e qirasë)</h3>
+                <p>Kantoni i Shën Gallit është i ndarë në 3 rajone sipas ligjit federal. Algoritmi ynë cakton buxhetin e familjes bazuar në kodin postar (PLZ):</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+                    <li><strong>Rajoni 1 (I lartë):</strong> Qendrat kryesore (p.sh., Qyteti i Shën Gallit, Rapperswil-Jona)</li>
+                    <li><strong>Rajoni 2 (I mesëm):</strong> Zonat periferike dhe komunat e mesme</li>
+                    <li><strong>Rajoni 3 (I ulët):</strong> Komunat rurale (standard i paracaktuar nëse mungon kodi postar)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Shpenzimet e njohura (Nevojat)</h3>
+                <p>Shuma matematikore e të gjithë zërave të shpenzimeve të njohura ligjërisht llogaritet si më poshtë:</p>
+                <div class="formula">
+                    Totali i Nevojave = Shpenzimet Bazë të Jetesës + Kostot e Njohura të Banesës + Primi i Sigurimit Shëndetësor
+                </div>
+                
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Kostot e Njohura të Banesës (Qiraja Maksimale 2026):</h4>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rajoni / Lloji i familjes</th>
+                            <th>Rajoni 1 (I lartë)</th>
+                            <th>Rajoni 2 (I mesëm)</th>
+                            <th>Rajoni 3 (I ulët)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1 person</strong></td>
+                            <td>CHF 18,900 (1,575/muaj)</td>
+                            <td>CHF 18,300 (1,525/muaj)</td>
+                            <td>CHF 16,680 (1,390/muaj)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>2 persona</strong></td>
+                            <td>CHF 22,320 (1,860/muaj)</td>
+                            <td>CHF 21,720 (1,810/muaj)</td>
+                            <td>CHF 20,160 (1,680/muaj)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>3 persona</strong></td>
+                            <td>CHF 24,780 (2,065/muaj)</td>
+                            <td>CHF 23,760 (1,980/muaj)</td>
+                            <td>CHF 22,200 (1,850/muaj)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p><small>*Shënim për pronësinë e banesës: Për pronat në pronësi të banuesit, interesi aktual i hipotekës dhe një lejë për mirëmbajtje njihen deri në qiranë maksimale rajonale përkatëse.</small></p>
+
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Primet e njohura të sigurimit shëndetësor:</h4>
+                <p>Algoritmi vendos kufirin e primit sipas udhëzimeve kantonal të SVA SG. Formula është:</p>
+                <div class="formula">Primi i Njohur i Shëndetësisë = Min(Primi Aktual, Primi Standard Rajonal)</div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Primi Standard Rajonal (në vit)</th>
+                            <th>Rajoni 1</th>
+                            <th>Rajoni 2</th>
+                            <th>Rajoni 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Të rriturit (26+)</td>
+                            <td>CHF 6,564</td>
+                            <td>CHF 6,144</td>
+                            <td>CHF 5,808</td>
+                        </tr>
+                        <tr>
+                            <td>Të rinjtë (11-25)</td>
+                            <td>CHF 4,752</td>
+                            <td>CHF 4,536</td>
+                            <td>CHF 4,344</td>
+                        </tr>
+                        <tr>
+                            <td>Fëmijët (0-10)</td>
+                            <td>CHF 1,488</td>
+                            <td>CHF 1,464</td>
+                            <td>CHF 1,380</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Të ardhurat e llogaritshme</h3>
+                <p>Të ardhurat tuaja peshohen sipas dispozitave strikte të ELG (Ligji për Përfitimet Plotësuese):</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+                    <li><strong>Pensionet & neutralizimi i 13-të i AHV:</strong> Të ardhurat nga pensionet llogariten në bazë 12-mujore. Pensioni i 13-të i AHV i sapo futur nga viti 2026 neutralizohet matematikisht plotësisht dhe nuk hyn në llogaritje.</li>
+                    <li><strong>Të ardhurat nga puna:</strong> Jepet një lejë (CHF 1,300 për beqarët / CHF 1,950 për çiftet e martuara). Vetëm 2/3 e të ardhurave të mbetura nga puna llogariten si të ardhura.</li>
+                    <li><strong>Amortizimi i aseteve (pasurisë):</strong> Nëse aktivet neto tejkalojnë lejet, një pjesë llogaritet si e ardhur e imputuar.
+                        <br><em>Lejet:</em> CHF 30,000 (persona beqarë), CHF 50,000 (çifte të martuara). 
+                        <br><em>Norma për banorët e shtëpive të kujdesit:</em> 1/5 në vit. 
+                        <br><em>Norma për pensionistët e pleqërisë që jetojnë në shtëpi:</em> 1/10 në vit.
+                        <br><em>Norma për pensionistët e IV (aftësia e kufizuar) që jetojnë në shtëpi:</em> 1/15 në vit.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Rezultati: E Drejta për EL</h3>
+                <p>Përfitimi EL mbyll hendekun, me kusht që të plotësohen të gjitha kriteret:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Përfitimi Vjetor EL = Max(0, [Shpenzimet e Njohura] - [Të ardhurat e Llogaritshme])
+                </div>
+                <p><small>Shuma e pagesës mujore është e barabartë me EL vjetore pjesëtuar me 12, e rrumbullakosur komercialisht në frangun më të afërt.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>E rëndësishme: Pragu i Përfitueshmërisë (Pragu i Aseteve)</strong><br>
+            E drejta ligjore për Përfitime Plotësuese ekziston vetëm nëse aktivet neto të tatueshme janë nën <strong>CHF 100,000</strong> (për personat beqarë) ose <strong>CHF 200,000</strong> (për çiftet e martuara). Vlera e pronës rezidenciale në pronësi të banuesit përjashtohet në mënyrë eksplicite nga ky prag.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Kthehu te Faqja Kryesore</a>
+            <a href="https://www.svasg.ch/el" target="_blank" class="btn-link">Faqja Zyrtare e SVA St. Gallen</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Burimi: Udhëzimet e SVA St. Gallen 2026, Ligji Federal për Përfitimet Plotësuese (ELG) dhe Ligji Kantonal i Zbatimit (KeLG)</p>
+        <p>Ofruar nga welfarecalc.ch | Të gjitha llogaritjet janë pa garanci ligjore.</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorytm pomocy społecznej kanton Bazylea-Okreg 2026 | Przejrzyste obliczenia | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczana jest pomoc społeczna na rok 2026 w kantonie Bazylea-Okreg (BL)? Odkryj nasz przejrzysty algorytm oparty na wytycznych SKOS i prawie kantonalnym.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026SH_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
+
+    <meta property="og:title" content="Algorytm pomocy społecznej kanton BL 2026 | Przejrzyste obliczenia">
+    <meta property="og:description" content="Oficjalna logika obliczania pomocy społecznej na 2026 rok w Bazylea-Okreg na podstawie SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026SH_pl.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie pomocy społecznej Bazylea-Okreg 2026",
+      "description": "Szczegółowe zestawienie algorytmu obliczania pomocy społecznej w kantonie BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Sprawdź progi majątkowe jako warunek wejścia"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Określ miesięczne minimum socjalne (podstawowe potrzeby SKOS, regiony mieszkaniowe A/B/C, ubezpieczenie zdrowotne minus IPV)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Uwzględnij skorygowane dochody z pracy i dodatkowe przychody"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Oblicz miesięczne świadczenie z pomocy społecznej"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">ZGODNE Z SKOS 2026</div>
+        <h1>Algorytm pomocy społecznej: kanton Bazylea-Okreg</h1>
+        <p>Przejrzysta dokumentacja logiki obliczania minimum socjalnego (BL)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Jak obliczana jest pomoc społeczna w kantonie Bazylea-Okreg? Aby wzmocnić zaufanie użytkowników, ujawniamy precyzyjny matematycznie algorytm stojący za welfarecalc.ch. Opiera się on na ustawie o pomocy społecznej (SHG BL), rozporządzeniu kantonalnym oraz najnowszych wytycznych SKOS 2026.</p>
+
+        <h2 class="section-title">1. Kontrola majątku (próg wejścia)</h2>
+        <p style="margin-bottom: 1rem;"><small>Przed obliczeniem miesięcznego świadczenia system sprawdza płynne aktywa jednostki wsparcia. Uprawnienie istnieje tylko wtedy, gdy spełnione jest kryterium progu majątkowego:</small></p>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Próg dla osoby samotnej</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>Plus CHF 3'000 na dziecko lub osobę w trakcie edukacji/szkolenia.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Próg dla par małżeńskich / rodzin</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Maksymalny próg dla jednostki wsparcia w kantonie BL.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Ścieżka obliczeniowa (miesięczna)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Podstawowe koszty utrzymania (BLE)</h3>
+                <p>BLE obejmuje koszty wyżywienia, odzieży, energii i utrzymania gospodarstwa domowego zgodnie z SKOS 2026:</p>
+                <table class="data-table">
+                    <tr><th>Liczba osób w gospodarstwie</th><th>Kwota miesięcznie (2026)</th></tr>
+                    <tr><td>1 osoba</td><td>CHF 1'061</td></tr>
+                    <tr><td>2 osoby</td><td>CHF 1'624</td></tr>
+                    <tr><td>3 osoby</td><td>CHF 2'017</td></tr>
+                    <tr><td>4 osoby</td><td>CHF 2'320</td></tr>
+                    <tr><td>5 osób</td><td>CHF 2'623</td></tr>
+                    <tr><td>Od 6 osób</td><td>+ CHF 231 za każdą dodatkową osobę</td></tr>
+                </table>
+                <p style="margin-top: 0.8rem;"><small>*Uwaga dotycząca skali SKOS: Nasz podstawowy silnik v3.1 automatycznie uwzględnia degresywną redukcję dla dodatków na dzieci i młodzież zgodnie z praktyką kantonalną dla większych gospodarstw domowych.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Regiony mieszkaniowe i maksymalne czynsze</h3>
+                <p>Rzeczywiste koszty mieszkaniowe (czynsz brutto wraz z kosztami dodatkowymi) są uznawane do odpowiedniego maksimum regionalnego:</p>
+                <div class="formula">
+                    Uznany czynsz = Min(Rzeczywisty czynsz, Maksimum regionalne)
+                </div>
+                <table class="data-table">
+                    <tr><th>Liczba osób</th><th>Region A (Wysoki)</th><th>Region B (Standardowy)</th><th>Region C (Wiejski)</th></tr>
+                    <tr><td>1 osoba</td><td>CHF 1'100</td><td>CHF 1'000</td><td>CHF 900</td></tr>
+                    <tr><td>2 osoby</td><td>CHF 1'300</td><td>CHF 1'200</td><td>CHF 1'100</td></tr>
+                    <tr><td>3 osoby</td><td>CHF 1'500</td><td>CHF 1'400</td><td>CHF 1'300</td></tr>
+                    <tr><td>4 osoby</td><td>CHF 1'700</td><td>CHF 1'600</td><td>CHF 1'500</td></tr>
+                    <tr><td>5+ osób</td><td>CHF 1'900</td><td>CHF 1'800</td><td>CHF 1'700</td></tr>
+                </table>
+                <p style="margin-top: 0.8rem;"><small>Region B służy jako standardowe rozwiązanie zastępcze w systemie, jeśli nie zapisano konkretnej gminy.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Koszty zdrowia i optymalizacja potrącenia IPV</h3>
+                <p>Obowiązkowe ubezpieczenie zdrowotne (KVG) jest pokrywane do kantonalnego limitu (średnia składka), pomniejszone o indywidualną redukcję składki (IPV):</p>
+                <div class="formula">
+                    Potrzeba netto na ubezpieczenie zdrowotne = Max(0, Składka KVG - Miesięczne IPV)
+                </div>
+                <p><small>Wskazówka: Ponieważ IPV w kantonie BL trafia bezpośrednio do ubezpieczyciela, nasz algorytm eliminuje wszelkie pozostałości nadwyżek obliczeniowych, aby uniknąć fikcyjnego dochodu.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Rozliczanie dochodów i zachęta do pracy (EFB)</h3>
+                <p>Od dochodu netto z pracy odliczany jest dodatek motywacyjny, aby utrzymać motywację do pracy:</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace;">
+                    Dochód podlegający ocenie = Wynagrodzenie netto - EFB (20% wynagrodzenia, maks. CHF 400 miesięcznie)
+                </div>
+                <p><small>Inne wpływy, takie jak alimenty, renty czy dodatki na dzieci, są doliczane do dochodu w 100%.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Wynik: Miesięczne świadczenie</h3>
+                <p>W przeciwieństwie do czysto rocznych szacunków, nasz system oblicza ściśle miesięczne kwoty, aby dokładnie śledzić wahania dochodów:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace;">
+                    Świadczenie (miesięczne) = Max(0, Całkowita potrzeba - Całkowity dochód)
+                </div>
+                <p><small>Gdzie: Całkowita potrzeba = BLE + Czynsz + Netto ubezpieczenie zdrowotne + Dodatki integracyjne (IZL)</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Dodatki za zatrudnienie i integrację (IZL):</strong><br>
+            Aby promować integrację zawodową i społeczną, prawo kantonu Bazylea-Okreg przewiduje miesięczne dodatki w wysokości <strong>CHF 100</strong> dla osób zatrudnionych (z zastrzeżeniem oficjalnej klasyfikacji).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Uruchom kalkulator</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" target="_blank" class="btn-link">Oficjalna strona kantonu BL</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Źródła: Ustawa o pomocy społecznej kantonu Bazylea-Okreg (SHG) i wytyczne SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Przejrzyste obliczanie pomocy społecznej</p>
+    </footer>
+</div>
+
+</body>
+</html>

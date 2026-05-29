@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Asistencia Social - Cantón de Lucerna 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calcula la asistencia social en el Cantón de Lucerna para 2026? Descubra nuestro algoritmo transparente basado en las directrices SKOS y la ley cantonal (SHG LU).">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/LU_2026SH_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/LU_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/LU_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/LU_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/LU_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/LU_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/LU_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/LU_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/LU_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/LU_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/LU_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/LU_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/LU_2026SH_de.html">
+
+    <meta property="og:title" content="Algoritmo de Asistencia Social - Cantón de Lucerna 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo para la asistencia social 2026 en el Cantón de Lucerna basada en las directrices SKOS y la ley cantonal (SHG LU).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/LU_2026SH_es.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Asistencia Social Lucerna 2026",
+      "description": "Desglose algorítmico detallado del cálculo de asistencia social en el Cantón de Lucerna.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación de exención de activos (exención máxima CHF 15,000)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación de los gastos básicos de subsistencia (GBL 2026)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo de costos de vivienda y seguro médico aprobados después de la deducción IPV"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME A SKOS 2026</div>
+        <h1>Algoritmo de Asistencia Social: Cantón de Lucerna</h1>
+        <p>Documentación transparente de la lógica de cálculo para el ingreso mínimo garantizado (LU)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Confianza a través de la transparencia. Aquí divulgamos el algoritmo completo que impulsa los cálculos para el Cantón de Lucerna en welfarecalc.ch. La lógica se basa en la Ley de Asistencia Social de Lucerna (SHG LU) y las directrices SKOS 2026.</p>
+
+        <h2 class="section-title">1. Verificación de Activos (El umbral)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Exención de activos por hogar</h4>
+                <div class="param-value">Individual: CHF 6,000 | Pareja: CHF 12,000</div>
+                <p><small>Más CHF 3,000 por hijo. Exención máxima total de CHF 15,000.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Reducción de activos (ingreso implícito)</h4>
+                <div class="param-value">1/10 por año</div>
+                <p><small>Los activos excedentes se tratan como ingreso implícito distribuido en 10 años.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Ruta de Cálculo (Mensual)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Gastos básicos de subsistencia (GBL)</h3>
+                <p>El GBL en el Cantón de Lucerna se determina según la composición del hogar (tarifas 2026):</p>
+                <table class="data-table">
+                    <thead><tr><th>Categoría</th><th>Monto mensual (2026)</th></tr></thead>
+                    <tbody>
+                        <tr><td>Persona sola</td><td>CHF 1,061</td></tr>
+                        <tr><td>Pareja / Hogar de 2 personas</td><td>CHF 1,624</td></tr>
+                        <tr><td>Adulto adicional</td><td>+ CHF 400</td></tr>
+                        <tr><td>Niño (11–15 años)</td><td>CHF 699</td></tr>
+                        <tr><td>Niño (menor de 11 años)</td><td>CHF 391</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Costos de vivienda y primacía del IPV (reducción individual de primas)</h3>
+                <p>El alquiler real se considera hasta el máximo cantonal:</p>
+                <div class="formula">
+                    Alquiler reconocido = Mín(Alquiler real, Referencia cantonal)
+                </div>
+                <p><strong>Seguro médico (KVG):</strong> En el Cantón de Lucerna, las prestaciones del IPV (reducción individual de primas) se deducen directamente de la prima.</p>
+                <div class="formula">
+                    Necesidad de seguro médico = Máx(0, Prima - IPV mensual)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Ingresos del trabajo y deducciones</h3>
+                <p>Para fomentar el empleo, se concede una exención de ingresos:</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+                    <strong>Ingreso evaluable</strong> = Salario neto - 20% de deducción (asignación por gastos laborales)
+                </div>
+                <p><small>Adicionalmente, se puede conceder una asignación de integración (IZU) de CHF 100 si la persona está empleada.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Resultado: Derecho mensual</h3>
+                <p>El cálculo de la diferencia determina el monto de asistencia mensual:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Derecho = (GBL + Alquiler + Restante seguro médico + IZU) - (Ingreso evaluable + Reducción implícita de activos)
+                </div>
+                <p><small>Si el resultado es negativo o cero, no se concede asistencia. El apoyo social cubre el déficit hasta la necesidad calculada.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota sobre los límites máximos de alquiler:</strong><br>
+            En el Cantón de Lucerna, los montos máximos de alquiler reconocidos varían según el tamaño del hogar (ej. CHF 1,100 para 1 persona, CHF 1,300 para 2 personas). Nuestro algoritmo utiliza los puntos de referencia cantonales promedio más recientes para una estimación justa.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lanzar calculadora</a>
+            <a href="https://gruezi.lu.ch/soziale_sicherheit/sozialhilfe" target="_blank" class="btn-link">Sitio web oficial cantón LU</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuentes: SHG/SHV del Cantón de Lucerna y directrices SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Cálculo transparente de asistencia social</p>
+    </footer>
+</div>
+
+</body>
+</html>

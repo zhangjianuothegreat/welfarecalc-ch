@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Social Welfare Algorithm Canton Basel-Landschaft 2026 | Transparent Calculation | welfarecalc.ch</title>
+    <meta name="description" content="How is social welfare 2026 calculated in the canton of Basel-Landschaft (BL)? Discover our transparent algorithm based on SKOS guidelines and cantonal law.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026SH_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
+
+    <meta property="og:title" content="Social Welfare Algorithm Canton BL 2026 | Transparent Calculation">
+    <meta property="og:description" content="Official calculation logic for social welfare 2026 in Basel-Landschaft based on SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026SH_en.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Social Welfare Calculation Basel-Landschaft 2026",
+      "description": "Detailed algorithmic breakdown of social welfare calculation in Canton BL.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Check asset allowances as entry threshold"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determine monthly social subsistence level (SKOS basic needs, housing regions A/B/C, health insurance minus IPV)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Account for adjusted earned and additional income"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculate monthly economic welfare entitlement"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">SKOS-COMPLIANT 2026</div>
+        <h1>Social Welfare Algorithm: Canton Basel-Landschaft</h1>
+        <p>Transparent documentation of the calculation logic for the social subsistence minimum (BL)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>How is social welfare calculated in the canton of Basel-Landschaft? To strengthen user trust, we disclose the mathematically precise algorithm behind welfarecalc.ch. It is based on the Social Welfare Act (SHG BL), the cantonal ordinance, and the latest SKOS guidelines 2026.</p>
+
+        <h2 class="section-title">1. Asset Check (The Entry Threshold)</h2>
+        <p style="margin-bottom: 1rem;"><small>Before a monthly entitlement is calculated, the system checks the liquid assets of the support unit. Entitlement exists only if the allowance criterion is met:</small></p>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Allowance Single Person</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>Plus CHF 3'000 per child or person in education/training.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Allowance Married Couples / Families</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Maximum allowance per support unit in Canton BL.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. The Calculation Pathway (Monthly)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Basic Living Expenses (BLE)</h3>
+                <p>The BLE covers costs for food, clothing, energy, and household management according to SKOS 2026:</p>
+                <table class="data-table">
+                    <tr><th>Household size</th><th>Amount per month (2026)</th></tr>
+                    <tr><td>1 person</td><td>CHF 1'061</td></tr>
+                    <tr><td>2 persons</td><td>CHF 1'624</td></tr>
+                    <tr><td>3 persons</td><td>CHF 2'017</td></tr>
+                    <tr><td>4 persons</td><td>CHF 2'320</td></tr>
+                    <tr><td>5 persons</td><td>CHF 2'623</td></tr>
+                    <tr><td>From 6 persons</td><td>+ CHF 231 for each additional person</td></tr>
+                </table>
+                <p style="margin-top: 0.8rem;"><small>*Note on the SKOS scale: Our core engine v3.1 automatically accounts for the degressive reduction for child and youth allowances according to cantonal practice for larger households.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Housing Regions & Rent Ceilings</h3>
+                <p>Actual housing costs (gross rent including ancillary costs) are recognized up to the respective regional maximum:</p>
+                <div class="formula">
+                    Recognized Rent = Min(Actual Rent, Regional Maximum)
+                </div>
+                <table class="data-table">
+                    <tr><th>Household size</th><th>Region A (High level)</th><th>Region B (Standard)</th><th>Region C (Rural)</th></tr>
+                    <tr><td>1 person</td><td>CHF 1'100</td><td>CHF 1'000</td><td>CHF 900</td></tr>
+                    <tr><td>2 persons</td><td>CHF 1'300</td><td>CHF 1'200</td><td>CHF 1'100</td></tr>
+                    <tr><td>3 persons</td><td>CHF 1'500</td><td>CHF 1'400</td><td>CHF 1'300</td></tr>
+                    <tr><td>4 persons</td><td>CHF 1'700</td><td>CHF 1'600</td><td>CHF 1'500</td></tr>
+                    <tr><td>5+ persons</td><td>CHF 1'900</td><td>CHF 1'800</td><td>CHF 1'700</td></tr>
+                </table>
+                <p style="margin-top: 0.8rem;"><small>Region B serves as the standard fallback in the system if no specific municipality is recorded.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Health Costs & Optimized IPV Offset</h3>
+                <p>Mandatory health insurance (KVG) is covered up to the cantonal ceiling (average premium), minus the Individual Premium Reduction (IPV):</p>
+                <div class="formula">
+                    Net Health Insurance Need = Max(0, KVG Premium - Monthly IPV)
+                </div>
+                <p><small>Important: Since IPV in Canton BL flows directly to the insurer, our algorithm eliminates any remaining calculation surpluses to avoid phantom income.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Income Accounting & Work Incentive (EFB)</h3>
+                <p>An allowance is deducted from net earned income to maintain motivation to work:</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace;">
+                    Assessable Income = Net Salary - EFB (20% of salary, max. CHF 400 per month)
+                </div>
+                <p><small>Other inflows such as alimony, pensions, or child allowances are added to income at 100%.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Result: Monthly Entitlement</h3>
+                <p>Unlike pure annual estimates, our system calculates strictly monthly to track income fluctuations accurately:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace;">
+                    Entitlement (Monthly) = Max(0, Total Need - Total Income)
+                </div>
+                <p><small>Where: Total Need = BLE + Rent + Net Health Insurance + Integration Supplements (IZL)</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Employment & integration supplements (IZL):</strong><br>
+            To promote professional and social integration, the law of the canton of Basel-Landschaft provides monthly supplements of <strong>CHF 100</strong> for employed persons (subject to official classification).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Launch Calculator</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" target="_blank" class="btn-link">Official Canton BL Page</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sources: Canton of Basel-Landschaft Social Welfare Act (SHG) & SKOS Guidelines 2026</p>
+        <p>© 2026 welfarecalc.ch | Transparent Social Welfare Calculation</p>
+    </footer>
+</div>
+
+</body>
+</html>

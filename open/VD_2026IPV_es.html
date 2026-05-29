@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo IPV Cantón de Vaud 2026 | Cálculo Transparente (RDU) | welfarecalc.ch</title>
+  <meta
+    content="¿Cómo se calcula la reducción de primas (IPV) 2026 en el Cantón de Vaud? Descubra el modelo oficial de dos etapas (Subsidio ordinario y específico) basado en el RDU."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo IPV Cantón de Vaud 2026 | Cálculo Transparente (RDU)" property="og:title" />
+  <meta
+    content="El algoritmo matemático exacto de la reducción de primas 2026 en el Cantón de Vaud. Fórmulas oficiales divulgadas de forma transparente."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de la reducción de primas Vaud 2026",
+      "description": "Guía paso a paso para determinar el derecho a IPV en el Cantón de Vaud utilizando el modelo RDU.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del RDU (Revenu déterminant unifié) añadiendo el pilar 3a y la imputación de patrimonio (6.7%)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo del subsidio ordinario (Subside ordinaire) mediante la curva de progresión matemática cantonal."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificación y complemento mediante el subsidio específico (Subside spécifique), si la prima restante supera el 10% del RDU."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--swiss-red);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .step-body h3 {
+      color: var(--official-blue);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .formula-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1.25rem;
+      border-radius: 6px;
+      margin: 0.75rem 0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table th,
+    .parameter-table td {
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .parameter-table th {
+      background: #f1f5f9;
+      color: var(--official-blue);
+      font-weight: 600;
+    }
+
+    .parameter-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .alert {
+      background: #fef2f2;
+      border-left: 4px solid var(--swiss-red);
+      padding: 1.25rem;
+      border-radius: 6px;
+      color: #991b1b;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      background: #002244;
+    }
+
+    .btn-home {
+      background: #64748b;
+    }
+
+    .btn-home:hover {
+      background: #475569;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="update-tag">ALGORITMO OFICIAL 2026</span>
+      <h1>Reducción de Primas Cantón de Vaud (VD) 2026</h1>
+      <p>El núcleo matemático oficial de dos etapas para calcular el Subsidio Ordinario y Específico</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+    <div class="content">
+      <p>A diferencia de los cantones con tramos de renta rígidos, el Cantón de Vaud utiliza un modelo <strong>RDU
+          (Revenu déterminant unifié)</strong> altamente desarrollado y socialmente justo. El objetivo del cantón es
+        cubrir la carga del seguro obligatorio de asistencia sanitaria (LAMal) en aproximadamente un <strong>10% de la
+          renta determinante</strong>.</p>
+      <h2 class="section-title">Parámetros Cantonales para 2026</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Subsidio mensual máximo (Adultos)</h4>
+          <div class="param-value">CHF 331.00 / mes</div>
+        </div>
+        <div class="param-card">
+          <h4>Subsidio mensual mínimo (Adultos)</h4>
+          <div class="param-value">CHF 30.00 / mes</div>
+        </div>
+        <div class="param-card">
+          <h4>Tasa de imputación patrimonial (RDU)</h4>
+          <div class="param-value">6.7% (1/15 del patrimonio neto)</div>
+        </div>
+        <div class="param-card">
+          <h4>Límite máximo de carga soportable</h4>
+          <div class="param-value">10.0% del RDU</div>
+        </div>
+      </div>
+      <h2 class="section-title">Primas de Referencia Oficiales 2026 (OVAM)</h2>
+      <p>El cálculo no considera su franquicia lujosa efectiva ni seguros complementarios, sino las primas de referencia
+        cantonales fijadas por el Consejo de Estado (Primas de referencia 2026):</p>
+      <table class="parameter-table">
+        <thead>
+          <tr>
+            <th>Grupo de edad (Código)</th>
+            <th>Región 1 (Urbana, ej. Lausana)</th>
+            <th>Región 2 (Rural)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Adultos (a partir de 26 años)</strong></td>
+            <td>CHF 4'212 / año (351.-/mes)</td>
+            <td>CHF 3'912 / año (326.-/mes)</td>
+          </tr>
+          <tr>
+            <td><strong>Adultos jóvenes (19 - 25 años)</strong></td>
+            <td>CHF 2'820 / año (235.-/mes)</td>
+            <td>CHF 2'580 / año (215.-/mes)</td>
+          </tr>
+          <tr>
+            <td><strong>Niños (0 - 18 años)</strong></td>
+            <td>CHF 1'188 / año (99.-/mes)</td>
+            <td>CHF 1'068 / año (89.-/mes)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="section-title">Lógica de Cálculo Paso a Paso</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Determinación del RDU Ajustado</h3>
+          <p>El RDU cantonal se basa en la liquidación fiscal definitiva, ajustada según las legislaciones específicas
+            de Vaud (exclusión de deudas privadas y adiciones):</p>
+          <div class="formula-box">
+            RDU = Renta neta imponible <br />
+            + Deducciones por aportes al pilar 3a <br />
+            + Primas de seguro médico deducidas fiscalmente <br />
+            + [Patrimonio neto disponible - Exención] × 6.7% <br />
+            - Deducciones estándar (ej. Deducción por pareja: CHF 4'400, Deducción por hijo: CHF 1'300)
+          </div>
+          <p><small>*Nota: En el Cantón de Vaud, las deudas privadas o hipotecas NO se consideran de forma reductora en
+              la prueba de patrimonio para la IPV.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Cálculo del subsidio ordinario (Subside ordinaire)</h3>
+          <p>El Cantón de Vaud utiliza una función de curva progresiva logarítmicamente suavizada para calcular el
+            derecho ordinario. Para los hogares estándar UER, se aplican los siguientes parámetros matemáticos:</p>
+          <div class="formula-box">
+            Si RDU ≤ CHF 16'000 (Límite C6): <br />
+              Subsidio_Ordinario = Prima de referencia máxima del hogar <br /><br />
+            Si CHF 16'000 &lt; RDU ≤ CHF 40'000 (Límite A6): <br />
+              Factor de curva = P6 (2.3) y Q6 (0.8) <br />
+              Subsidio_Ordinario = Calculado mediante la fórmula cantonal de curva de descompresión progresiva.
+            <br /><br />
+            Aplicación de los límites mínimos legales: <br />
+              El subsidio ordinario mensual por adulto se fija en un mínimo de CHF 30.00 y tiene un tope máximo de CHF
+            331.00.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>La red de seguridad: Subsidio específico (Subside spécifique)</h3>
+          <p>Este es el factor de corrección más importante que omiten las calculadoras estándar. Si después de deducir
+            el subsidio ordinario, la carga de prima restante del hogar es excesivamente alta, se activa el blindaje del
+            10%:</p>
+          <div class="formula-box">
+            Carga de prima admisible del hogar = Primas de referencia totales del hogar <br />
+            Carga restante = Carga de prima admisible del hogar - Subsidio_Ordinario_Año <br /><br />
+            Umbral de soportabilidad cantonal = RDU × 10% <br /><br />
+            Si Carga restante &gt; Umbral de soportabilidad: <br />
+              Subsidio_Específico = Carga restante - Umbral de soportabilidad <br />
+            De lo contrario: <br />
+              Subsidio_Específico = 0
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Derecho total final y limitación</h3>
+          <p>El monto de pago definitivo resulta de la suma de ambos componentes del subsidio y está limitado por la
+            prima real y efectiva del asegurado:</p>
+          <div class="formula-box">
+            Derecho_Absoluto = Subsidio_Ordinario + Subsidio_Específico <br />
+            Derecho_Final = Mín(Derecho_Absoluto, Prima_Seguro_Salud_Efectiva_Hogar)
+          </div>
+          <p><small>Los montos inferiores a CHF 100.00 por año no se pagan por razones de eficiencia (límite de
+              minimis).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Límite de exclusión patrimonial (tope superior):</strong><br />
+        Si el patrimonio neto ajustado (sin deducción de deudas) supera los <strong>CHF 100'000</strong> para solteros o
+        <strong>CHF 160'000</strong> para parejas casadas, el derecho legal a la reducción de primas en el Cantón de
+        Vaud se extingue por completo, independientemente de cuán bajo sea el ingreso RDU.
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Volver a la página de inicio</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie"
+          target="_blank">Sitio web oficial Cantón de VD</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fuente: Secretaría General de la Dirección General de Cohesión Social (DGCS) &amp; Office vaudois de
+        l'assurance-maladie (OVAM), Cantón de Vaud 2026. Proporcionado por <a href="https://www.welfarecalc.ch"
+          target="_blank">welfarecalc.ch</a>.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

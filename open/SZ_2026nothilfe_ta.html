@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>நோதில்ஃபே அல்காரிதம் கான்டன் ஷ்விட்ஸ் 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+    <meta
+        content="2026 ஆம் ஆண்டில் கான்டன் ஷ்விட்ஸ் (SZ) இல் நோதில்ஃபே எவ்வாறு கணக்கிடப்படுகிறது? குடியேற்றச் சட்டம் மற்றும் 2026 ஆம் ஆண்டின் சமீபத்திய பண அட்டை ஒழுங்குமுறையின் அடிப்படையில் அதிகாரப்பூர்வ அல்காரிதம்."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_ta.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/SZ_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="நோதில்ஃபே அல்காரிதம் கான்டன் ஷ்விட்ஸ் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+    <meta
+        content="கான்டன் ஷ்விட்ஸில் 2026 ஆம் ஆண்டிற்கான நோதில்ஃபேவுக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம், பணமில்லா பண அட்டை உட்பட."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/SZ_2026nothilfe_ta.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Berechnung der Nothilfe Schwyz 2026",
+      "description": "Schritt-für-Schritt-Anleitung zur Berechnung der gesetzlichen Nothilfe im Kanton Schwyz unter Berücksichtigung der Kollektivunterkunft und der Bezahlkarte.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ermittlung des Erwachsenen-Tagessatzes basierend auf dem Paarfaktor"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Addition des Kinderzuschlags inklusive degressiver Abstufung ab dem 3. Kind"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Zuweisung des Gesamtbetrags auf die elektronische Bezahlkarte des Kantons Schwyz"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ Einheitlicher Core-Stil (Identisch mit AG und AI) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+            --card-warning: #fffbeb;
+            --border-warning: #f59e0b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: var(--card-warning);
+            border: 1px solid #fef3c7;
+            border-left: 5px solid var(--border-warning);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-danger {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-left: 5px solid var(--swiss-red);
+            color: #991b1b;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo Rechner */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+        }
+
+        .action-area {
+            text-align: right;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-calc {
+            background: var(--swiss-red);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-calc:hover {
+            background: #b91c1c;
+        }
+
+        .result-panel {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .result-title {
+            font-weight: bold;
+            color: #166534;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .amount-big {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #15803d;
+            margin: 0.5rem 0;
+        }
+
+        .steps-detail {
+            background: white;
+            border: 1px solid #e2e8f0;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="update-tag">அதிகாரப்பூர்வ கன்டோன் நிலை: 2026</span>
+            <h1>அவசர உதவி கணக்கீட்டு முறை ஷ்விட்ஸ் கன்டோன் (SZ)</h1>
+            <p>குடியேற்றச் சட்டத்தின் (MigG) படி கணித கணக்கீட்டு மாதிரியின் வெளிப்படையான வெளிப்பாடு</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+        <div class="content">
+            <h3 class="section-title">1. சட்ட அடிப்படைகள் &amp; வழிகாட்டுதல்கள்</h3>
+            <p>ஷ்விட்ஸ் கன்டோனில் அவசர உதவி வழங்குவது கூட்டாட்சி அரசியலமைப்பின் (BV) கட்டுரை 12 மற்றும் ஷ்விட்ஸ் கன்டோன்
+                கவுன்சிலின் கன்டோன் சட்டத்தின் அடிப்படையில் அமைந்துள்ளது. வழக்கமான அகதி சமூக உதவியைப் போலல்லாமல், அவசர
+                உதவி முழுமையான வாழ்வாதாரப் பாதுகாப்பை மட்டுமே உள்ளடக்கியது.</p>
+            <div class="alert alert-danger">
+                <strong>⚠️ ஏப்ரல் 2026 முதல் முக்கியமான சட்ட மாற்றம்:</strong><br />
+                ஷ்விட்ஸ் கன்டோன் கவுன்சிலால் திருத்தப்பட்ட குடியேற்றச் சட்டத்தின் படி (அகதிகள் மற்றும்
+                நிராகரிக்கப்பட்டவர்களுக்கு ரொக்கமில்லா பிளாஸ்டிக் பணம் அறிமுகம்), கணக்கிடப்பட்ட அவசர உதவித் தொகைகள்
+                <strong>அடிப்படையில் இனி ரொக்கமாக வழங்கப்படாது</strong>. தொகைகள் முழுமையாக ஒரு மின்னணு <strong>கட்டண
+                    அட்டை (டெபிட் கார்டு)</strong> க்கு வரவு வைக்கப்படும். ரொக்கப் பணம் வழங்குவது குறைந்தபட்ச
+                விதிவிலக்குகளுக்கு (எ.கா., பஸ் டிக்கெட்டுகள்) மட்டுப்படுத்தப்பட்டுள்ளது.
+            </div>
+            <h3 class="section-title">2. 2026 அமைப்பு அளவுருக்கள் (கூட்டுத் தங்குமிடம்)</h3>
+            <p>ஷ்விட்ஸ் கன்டோனில் நிராகரிக்கப்பட்ட அகதிகள் கன்டோன் கூட்டுத் தங்குமிடங்களில் (எ.கா., அவசர உதவி தங்குமிடம்
+                கால்ட்பாக்) தங்க வைக்கப்பட்டுள்ளதால், தங்குமிடம் மற்றும் உள்கட்டமைப்புக்கான பொருள் சேவைகள் முன்னுரிமை
+                பெறுகின்றன. தனிப்பட்ட தேவைகளுக்கான தினசரி விகிதங்கள் பின்வருமாறு நிர்ணயிக்கப்பட்டுள்ளன:</p>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>அடிப்படை தினசரி விகிதம் (தனி நபர்)</h4>
+                    <div class="param-value">CHF 8.00 / நாள்</div>
+                </div>
+                <div class="param-card">
+                    <h4>ஜோடி காரணி (couple_factor)</h4>
+                    <div class="param-value">1.68 (ஜோடிகளுக்கு CHF 13.44)</div>
+                </div>
+                <div class="param-card">
+                    <h4>குழந்தை கூடுதல் (குழந்தைகள் 1 &amp; 2)</h4>
+                    <div class="param-value">CHF 4.16 / நாள் (காரணி 0.52)</div>
+                </div>
+                <div class="param-card">
+                    <h4>3வது குழந்தையிலிருந்து குறைப்பு</h4>
+                    <div class="param-value">காரணி 0.10 (போனஸ் காரணி)</div>
+                </div>
+            </div>
+            <h3 class="section-title">3. கணித கணக்கீட்டு வழிமுறை</h3>
+            <p>மாதாந்திர அவசர உதவி உரிமையை நிர்ணயிப்பது மூன்று-நிலை கணித சுழற்சி மூலம் மேற்கொள்ளப்படுகிறது:</p>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <strong>வயது வந்தோர் அடிப்படைத் தொகையின் கணக்கீடு ($A_{daily}$)</strong>
+                    <p>வீட்டு அமைப்பைப் பொறுத்து (தனி நபர் அல்லது திருமணமான தம்பதிகள்/கூட்டுவாழ்வு), குறைக்கும் காரணி
+                        பயன்படுத்தப்படுகிறது:</p>
+                    <div class="formula">
+                        adults == 1 எனில்: A_daily = 8.00 <br />
+                        adults &gt;= 2 எனில்: A_daily = 8.00 * 1.68 + (adults - 2) * 8.00
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <strong>குழந்தை கூடுதல் கணக்கீடு ($C_{daily}$)</strong>
+                    <p>முதல் இரண்டு குழந்தைகளுக்கு, வழக்கமான கூடுதல் (காரணி 0.52) கணக்கிடப்படுகிறது. 3வது
+                        குழந்தையிலிருந்து, ஒரு குறைக்கும் குறைப்பு செயல்படுத்தப்படுகிறது, இதில் ஒவ்வொரு கூடுதல்
+                        குழந்தைக்கும் 0.10 போனஸ் காரணி சேர்க்கப்படுகிறது:</p>
+                    <div class="formula">
+                        children &lt;= 2 எனில்: C_daily = children * (8.00 * 0.52)<br />
+                        children &gt; 2 எனில்: C_daily = 2 * (8.00 * 0.52) + (children - 2) * (8.00 * 0.10)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <strong>கால அதிகரிப்பு மற்றும் வணிக ரீதியான ரவுண்டிங்</strong>
+                    <p>ஷ்விட்ஸ் கன்டோனில் அவசர உதவி நாட்கள் அடிப்படையில் வழங்கப்படுகிறது. அமைப்பில் நிலையான மாதத்
+                        திட்டமிடலுக்கு, ஒரு மாதத்திற்கு சரியான சராசரி மதிப்பான 30.42 நாட்கள் பயன்படுத்தப்பட்டு வணிக
+                        ரீதியாக ரவுண்ட் செய்யப்படுகிறது.</p>
+                    <div class="formula">
+                        Total_Monat_Raw = (A_daily + C_daily) * 30.42 <br />
+                        Final_Monat = Math.round(Total_Monat_Raw)
+                    </div>
+                </div>
+            </div>
+            <h3 class="section-title">4. ஊடாடும் சரிபார்ப்பு (நேரடி வழிமுறை)</h3>
+            <p>welfarecalc.ch இன் பின்புலத்தில் இயங்கும் குறியீட்டின் கணிதத் துல்லியத்தை நேரடியாகச் சரிபார்க்க இந்த
+                சோதனைப் பலகத்தைப் பயன்படுத்தவும்.</p>
+            <div class="demo-card">
+                <div class="demo-header">SZ-அல்காரிதம் சிமுலேட்டர்</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="adultsCount">வீட்டில் உள்ள வயது வந்தோர் எண்ணிக்கை</label>
+                            <input id="adultsCount" max="10" min="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label for="childrenCount">குழந்தைகளின் எண்ணிக்கை (18 வயதுக்குட்பட்டவர்கள்)</label>
+                            <input id="childrenCount" max="15" min="0" type="number" value="0" />
+                        </div>
+                    </div>
+                    <div class="action-area">
+                        <button class="btn-calc" id="runCalcBtn" type="button">அல்காரிதத்தை இயக்கவும்</button>
+                    </div>
+                    <div class="result-panel" id="liveResultPanel">
+                        <div class="result-title">🎯 கணக்கிடப்பட்ட அவசர உதவி இருப்பு (மாதம்):</div>
+                        <div class="amount-big" id="monthlyAmountDisplay">0.00 CHF</div>
+                        <p style="font-size:0.85rem; color:#15803d; font-weight:bold; margin-bottom:10px;">
+                            💳 இந்த இருப்பு கன்டோன் சட்டத்தின் படி முழுமையாக ஷ்விட்ஸ் கட்டண அட்டைக்கு மாற்றப்படும்.
+                        </p>
+                        <strong>கணித பதிவேடு:</strong>
+                        <div class="steps-detail" id="stepsDetail">
+                            -- கணக்கீட்டை இயக்கவும் --
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert" style="background:#f0fdfa; border-left-color:#0d9488; text-align:center;">
+                <strong>வெளிப்படைத்தன்மை உத்தரவாதம்:</strong> இந்த மூலக் குறியீடு, ஷ்விட்ஸ் கன்டோனின் தரவு
+                செயலாக்கத்திற்காக எங்கள் சுவிஸ் சேவையகங்களில் செயல்படுத்தப்பட்ட கணக்கீட்டு தர்க்கத்தை துல்லியமாக
+                பிரதிபலிக்கிறது. எந்தவொரு தனிப்பட்ட தரவும் சேமிக்கப்படவோ அல்லது மூன்றாம் தரப்பினருடன் பகிரப்படவோ
+                மாட்டாது.
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch">முகப்புப் பக்கத்திற்கு</a>
+                <a class="btn-link" href="https://www.sz.ch" target="_blank">SZ கன்டோன் அதிகாரப்பூர்வ இணையதளம்</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 welfarecalc.ch — சமூக நலன்களுக்கான சுயாதீன சுவிஸ் கணக்கீட்டு கருவி. அதிகாரப்பூர்வ அரசு இணையதளம்
+                அல்ல.</p>
+            <p>பதிப்புரிமை அறிவிப்பு: இணையத்தில் வெளிப்படைத்தன்மை மற்றும் நம்பிக்கையை வலுப்படுத்துவதற்காக இந்த
+                வெளிப்பாடு வழங்கப்படுகிறது.</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            "use strict";
+
+            // Offizielle validierte Parameter des Kantons Schwyz für 2026
+            const SZ_PARAMS = {
+                daily_cash: 8.00,             // Basis-Tagessatz im Kanton Schwyz
+                couple_factor: 1.68,          // Skalierungsfaktor für Paare
+                child_addon_factor: 0.52,     // Faktor für die ersten zwei Kinder (CHF 4.16)
+                child_from3_bonus_factor: 0.10, // Degressiver Faktor ab dem 3. Kind (CHF 0.80)
+                days_per_month: 30.42         // Standardisierter Schweizer Monatsdivisor
+            };
+
+            function computeSZNothilfe(adults, children) {
+                // Schritt 1: Berechnung Erwachsene
+                let adultDaily = 0;
+                if (adults === 1) {
+                    adultDaily = SZ_PARAMS.daily_cash;
+                } else if (adults >= 2) {
+                    // Erstes Paar skaliert mit couple_factor, jede weitere erwachsene Person erhält den vollen Basissatz
+                    adultDaily = (SZ_PARAMS.daily_cash * SZ_PARAMS.couple_factor) + ((adults - 2) * SZ_PARAMS.daily_cash);
+                }
+
+                // Schritt 2: Berechnung Kinder (mit degressiver Staffelung)
+                let childDaily = 0;
+                if (children > 0) {
+                    if (children <= 2) {
+                        childDaily = children * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_addon_factor);
+                    } else {
+                        // Die ersten 2 Kinder erhalten vollen Zuschlag
+                        const baseChildrenDaily = 2 * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_addon_factor);
+                        // Jedes weitere Kind erhält den reduzierten Bonus-Satz
+                        const extraChildrenDaily = (children - 2) * (SZ_PARAMS.daily_cash * SZ_PARAMS.child_from3_bonus_factor);
+                        childDaily = baseChildrenDaily + extraChildrenDaily;
+                    }
+                }
+
+                // Schritt 3: Aggregation und Hochrechnung
+                const totalDaily = adultDaily + childDaily;
+                const rawMonthly = totalDaily * SZ_PARAMS.days_per_month;
+                const roundedMonthly = Math.round(rawMonthly); // Kaufmännische Rundung auf ganzen Franken
+
+                return {
+                    adultDaily: adultDaily,
+                    childDaily: childDaily,
+                    totalDaily: totalDaily,
+                    rawMonthly: rawMonthly,
+                    roundedMonthly: roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+
+                // Input-Validierung
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) { adults = 1; adultsInput.value = 1; }
+                if (isNaN(children) || children < 0) { children = 0; childrenInput.value = 0; }
+
+                // Algorithmus ausführen
+                const res = computeSZNothilfe(adults, children);
+
+                // HTML-Ausgabe generieren
+                const stepsHtml = `
+                <strong>📌 படி 1 – வயது வந்தோர்:</strong> CHF ${res.adultDaily.toFixed(2)} / நாள் (ஜோடி குறைப்பு பயன்படுத்தப்பட்டது)<br>
+                <strong>📌 படி 2 – குழந்தைகள்:</strong> CHF ${res.childDaily.toFixed(2)} / நாள் (3வது குழந்தையிலிருந்து குறைப்பு கருத்தில் கொள்ளப்பட்டது)<br>
+                <strong>📌 மொத்த தினசரி விகிதம்:</strong> CHF ${res.totalDaily.toFixed(2)} / நாள்<br>
+                <strong>📌 மாதாந்திர அதிகரிப்பு:</strong> CHF ${res.totalDaily.toFixed(2)} × 30.42 நாட்கள் = CHF ${res.rawMonthly.toFixed(2)}<br>
+                <strong>💰 வணிக ரீதியான ரவுண்டிங்:</strong> CHF ${res.roundedMonthly}.00 (கட்டண அட்டைக்கு வரவு)
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly}.00 CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            // Event-Listener binden
+            document.getElementById('runCalcBtn').addEventListener('click', updateDemo);
+
+            // Optionale UX-Verbesserung: Automatische Aktualisierung bei Eingabe
+            document.getElementById('adultsCount').addEventListener('input', updateDemo);
+            document.getElementById('childrenCount').addEventListener('input', updateDemo);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>குடும்ப கொடுப்பனவுகள் (FA) அல்காரிதம் கான்டன் ஷ்விட்ஸ் 2026 | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் கான்டன் ஷ்விட்ஸில் குடும்ப கொடுப்பனவுகள் (FA) எவ்வாறு கணக்கிடப்படுகின்றன? குழந்தை, பயிற்சி மற்றும் பிறப்பு கொடுப்பனவுகளுக்கான எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SZ_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="குடும்ப கொடுப்பனவுகள் அல்காரிதம் கான்டன் SZ 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta
+    content="கான்டன் ஷ்விட்ஸில் 2026 ஆம் ஆண்டிற்கான குழந்தை, பயிற்சி மற்றும் பிறப்பு கொடுப்பனவுகளுக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/SZ_2026FA_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "ஷ்விட்ஸ் 2026 குடும்ப கொடுப்பனவுகள் கணக்கீடு",
+      "description": "ஷ்விட்ஸ் கேன்டனில் குழந்தை கொடுப்பனவுகள், பயிற்சி கொடுப்பனவுகள் மற்றும் பிறப்பு கொடுப்பனவுகளை கணக்கிடுவதற்கான படி-படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "ஒவ்வொரு குழந்தைக்கும் வகையை தீர்மானித்தல் (குழந்தை கொடுப்பனவு vs. பயிற்சி கொடுப்பனவு வயது மற்றும் பயிற்சி நிலையை அடிப்படையாகக் கொண்டது)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "CHF 230 மற்றும் CHF 280 என்ற கேன்டன் விகிதங்களைப் பயன்படுத்தி மாதாந்திர அடிப்படைத் தொகையை கணக்கிடுதல்."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "ஒரு முறை கொடுப்பனவுகளைச் சேர்த்தல் (ஒவ்வொரு பிறந்த குழந்தைக்கும் CHF 1'000 பிறப்பு கொடுப்பனவு)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "இறுதி வருடாந்திர மொத்த உரிமையை தீர்மானித்தல்."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">FAMZG-இணக்கம் 2026</div>
+      <h1>FA-அல்காரிதம்: ஷ்விட்ஸ் கேன்டன்</h1>
+      <p>2026 ஆம் ஆண்டிற்கான (SZ) குடும்ப கொடுப்பனவுகளின் வெளிப்படையான ஆவணப்படுத்தல்</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>ஷ்விட்ஸ் கேன்டன் (SZ) கூட்டாட்சி சட்டம் (FamZG) மற்றும் கேன்டன் விதிமுறைகளின்படி குடும்ப கொடுப்பனவுகளை
+        ஒழுங்குபடுத்துகிறது. எங்கள் வெளிப்படைத்தன்மை கால்குலேட்டர், கணித ரீதியாக துல்லியமான மற்றும் புரிந்துகொள்ளக்கூடிய
+        கணக்கீட்டை உறுதிப்படுத்த 2026 ஆம் ஆண்டிற்கான ஷ்விட்ஸ் கேன்டனின் அதிகாரப்பூர்வ சட்ட விகிதங்களைப்
+        பயன்படுத்துகிறது.</p>
+      <h2 class="section-title">1. மாத விகிதங்கள் SZ (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>குழந்தை கொடுப்பனவு</h4>
+          <div class="param-value">CHF 230 / மாதம்</div>
+          <p><small>0 முதல் 16 வயது முடிவடையும் வரையிலான குழந்தைகளுக்கு செல்லுபடியாகும்.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>பயிற்சி கொடுப்பனவு</h4>
+          <div class="param-value">CHF 280 / மாதம்</div>
+          <p><small>16 வயது முதல் பயிற்சி முடியும் வரை (அதிகபட்சம் 25 வயது).</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>வகையை தீர்மானித்தல்</h3>
+          <p>அல்காரிதம் ஒவ்வொரு குழந்தையையும் வயது மற்றும் பயிற்சி நிலையின் அடிப்படையில் வகைப்படுத்துகிறது:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem;">
+            <li><strong>0 - 16 வயது:</strong> சாதாரண குழந்தை கொடுப்பனவுக்கான முழு உரிமை (CHF 230).</li>
+            <li><strong>16 - 25 வயது:</strong> அங்கீகரிக்கப்பட்ட பயிற்சி சான்று இருந்தால் மற்றும் குழந்தையின் வருடாந்திர
+              வருமானம் CHF 29'400 ஐ தாண்டவில்லை என்றால் பயிற்சி கொடுப்பனவுக்கான உரிமை (CHF 280).</li>
+            <li><strong>வேலை செய்ய இயலாத குழந்தைகள்:</strong> குழந்தை கொடுப்பனவுக்கான உரிமை (CHF 230) 20 வயது வரை
+              நீட்டிக்கப்படுகிறது.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>மாதாந்திர தொகையின் கணக்கீடு</h3>
+          <p>ஷ்விட்ஸ் கேன்டன் ஒரு நேரியல் கட்டண மாதிரியைப் பயன்படுத்துகிறது. 3வது குழந்தையிலிருந்து எந்த அதிகரிப்பு
+            அல்லது படிநிலையும் இல்லை (பெரிய குடும்ப கொடுப்பனவு இல்லை):</p>
+          <div class="formula">
+            மாதத் தொகை = (குழந்தைகளின் எண்ணிக்கை × CHF 230) + (பயிற்சியில் உள்ளவர்களின் எண்ணிக்கை × CHF 280)
+          </div>
+          <p><small>*குறிப்பு: குடும்ப அளவைப் பொருட்படுத்தாமல் முதல் குழந்தையிலிருந்து விகிதங்கள் ஒரே மாதிரியாக
+              பொருந்தும்.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>ஒரு முறை கொடுப்பனவுகள் (பிறப்பு/தத்தெடுப்பு)</h3>
+          <p>ஷ்விட்ஸ் கேன்டன் ஒரு முறை பிறப்பு கொடுப்பனவை வழங்குகிறது, ஆனால் கேன்டன் சட்டம் <strong>எந்த</strong>
+            தத்தெடுப்பு கொடுப்பனவையும் வழங்கவில்லை.</p>
+          <table class="data-table">
+            <tr>
+              <th>கொடுப்பனவு வகை</th>
+              <th>தொகை (SZ)</th>
+            </tr>
+            <tr>
+              <td>பிறப்பு கொடுப்பனவு</td>
+              <td>CHF 1'000 <small>(ஒவ்வொரு பிறந்த குழந்தைக்கும்; இரட்டைக் குழந்தைகள் மற்றும் பல குழந்தைகளுக்கு
+                  அதற்கேற்ப பெருக்கப்படுகிறது)</small></td>
+            </tr>
+            <tr>
+              <td>தத்தெடுப்பு கொடுப்பனவு</td>
+              <td>CHF 0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>வருடாந்திர உரிமையை தீர்மானித்தல்</h3>
+          <p>மாதாந்திர உரிமைகள் ஆண்டுக்கு கணக்கிடப்பட்டு, ஒரு முறை கொடுப்பனவுகள் இறுதியில் கணித ரீதியாக
+            சேர்க்கப்படுகின்றன:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            வருடாந்திர தொகை = (மாதாந்திர அடிப்படைத் தொகை × 12) + (பிறந்த குழந்தைகளின் எண்ணிக்கை × CHF 1'000)
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>துணைநிலை &amp; முன்னுரிமை வரிசை:</strong><br />
+        ஒரு குழந்தைக்கு ஒரே ஒரு உரிமை மட்டுமே உள்ளது. பெற்றோர் இருவரும் வேலை செய்தால் அல்லது வெவ்வேறு கேன்டன்களில்
+        பணிபுரிந்தால், FamZG இன் பிரிவு 12 இன் படி சட்ட முன்னுரிமை வரிசை முதல் உரிமையை தீர்மானிக்கிறது. இரண்டாவது
+        உரிமையாளரின் உரிமை வேறொரு கேன்டனில் அதிகமாக இருந்தால், சாத்தியமான வேறுபாடு கொடுப்பனவுகள் (வேறுபாடு
+        கொடுப்பனவுகள்) கணக்கிடப்படும்.
+      </div>
+      <div style="text-align: center;">
+        <a aria-label="கால்குலேட்டரைத் தொடங்கு" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">கால்குலேட்டரைத் தொடங்கு</a>
+        <a aria-label="அதிகாரப்பூர்வ SVA ஷ்விட்ஸ் பக்கத்திற்கு" class="btn-link" href="https://www.sva-sz.ch"
+          target="_blank">அதிகாரப்பூர்வ SVA ஷ்விட்ஸ் பக்கம்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: SVA ஷ்விட்ஸ் வழிகாட்டுதல்கள் 2026, ஷ்விட்ஸ் கேன்டனில் FamZG செயலாக்க ஒழுங்குமுறை &amp; கூட்டாட்சி
+        குடும்ப கொடுப்பனவுகள் சட்டம் (FamZG)</p>
+      <p>© 2026 welfarecalc.ch | வெளிப்படையான குடும்ப கொடுப்பனவு கணக்கீடு</p>
+    </footer>
+  </div>
+</body>
+
+</html>

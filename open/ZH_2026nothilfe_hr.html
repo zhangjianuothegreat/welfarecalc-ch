@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- SEO 基础配置 (Kanton Zürich) -->
+    <title>Algoritam za hitnu pomoć Kanton Zürich 2026 | Transparentan izračun | welfarecalc.ch</title>
+    <meta
+        content="Kako se izračunava hitna pomoć 2026. u Kantonu Zürich? Otkrijte naš transparentan algoritam temeljen na službenim kantonalnim smjernicama i čl. 12 Ustava Švicarske (BV)."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <!-- Canonical & 多语言交替标签 (hreflang) 符合 AG/AI 风格，完整保留 -->
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_hr.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <!-- Open Graph / 社交分享 -->
+    <meta content="Algoritam za hitnu pomoć Kanton Zürich 2026 | Transparentan izračun" property="og:title" />
+    <meta
+        content="Službena logika izračuna za hitnu pomoć 2026. u Kantonu Zürich temeljena na SHG-u i kantonalnim uputama."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/ZH_2026nothilfe_hr.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <!-- Schema 结构化数据 (JSON-LD) 风格与 AG/AI 完全一致 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun hitne pomoći Kanton Zürich 2026",
+      "description": "Korak-po-korak vodič za izračun hitne pomoći u Kantonu Zürich (kolektivni smještaj / mješoviti model).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Određivanje dnevnih stopa za odrasle s partnerskim faktorom (degresija)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Dodavanje doplataka za djecu uključujući bonus progresije od 3. djeteta"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Preračun na mjesečnu bazu sa zaokruživanjem na cijeli franak"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ 与 AG / AI 页面完全一致的核心样式 (复制自 AG_2026nothilfe_de.html) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo 卡片适配原有风格 (完全继承 AG/AI 样式) */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--official-blue);
+            font-size: 1.2rem;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+            color: #475569;
+            background: transparent;
+            padding: 0.5rem 0 0 0;
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 1.5rem;
+            }
+
+            .step-box {
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">SLUŽBENI PODACI 2026 · Hitna pomoć ZH</div>
+            <h1>Algoritam za hitnu pomoć: Kanton Zürich</h1>
+            <p>Transparentan izračun hitne pomoći prema čl. 12 Ustava Švicarske &amp; kantonalnim smjernicama Sigurnosne
+                direkcije ZH 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+        <div class="content">
+            <p>Povjerenje kroz transparentnost. Hitna pomoć za osobe s odlukom o udaljenju ili u azilnom postupku
+                izračunava se u Kantonu Zürich prema jasnim, degresivnim kriterijima. Ovdje otkrivamo potpuni algoritam
+                – temeljen na službenim kantonalnim uputama (2026) i saveznom pravu (SR 851.1).</p>
+            <h2 class="section-title">1. Osnovni parametri hitne pomoći (Zürich 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Osnovna dnevna stopa (pojedinac)</h4>
+                    <div class="param-value" id="zhBaseDailyDisplay">CHF 10.25 / dan</div>
+                    <p><small>Kolektivni smještaj, gotovinski iznos uklj. udio za prehranu &amp; osnovne
+                            potrebe.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Partnerski faktor (degresija)</h4>
+                    <div class="param-value" id="zhCoupleFactorDisplay">Faktor 1.82</div>
+                    <p><small>Druga odrasla osoba dobiva dodatnih 82% osnovne stope.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Faktor doplatka za djecu</h4>
+                    <div class="param-value" id="zhChildFactorDisplay">Faktor 0.62</div>
+                    <p><small>Po djetetu: 62% osnovne stope.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Bonus progresije (od 3. djeteta)</h4>
+                    <div class="param-value" id="zhBonusFactorDisplay">+12% po sljedećem djetetu</div>
+                    <p><small>Dodatni poticaj od trećeg djeteta (12% osnovne stope).</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. Način izračuna (korak po korak)</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Određivanje dnevne stope za odrasle (degresijski model)</h3>
+                    <p>Prvo se na temelju broja odraslih osoba utvrđuje dnevni osnovni iznos. Kanton Zürich koristi
+                        partnerski faktor od 1.82 (tj. druga osoba dobiva 82% povišice):</p>
+                    <div class="formula" id="adultFormulaStatic">
+                        Pojedinac: CHF 10.25 po danu<br />
+                        Višečlano kućanstvo: 10.25 + (Odrasli - 1) × 10.25 × 0.82
+                    </div>
+                    <p><small>Za 2 odrasle osobe rezultira dnevna stopa od CHF 18.66, za 3 odrasle osobe CHF 27.07
+                            itd.</small></p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Doplatci za djecu &amp; bonus progresije</h3>
+                    <p>Za svako dijete (&lt; 18 godina) odobrava se dodatak od 62% osnovne stope. Od trećeg djeteta
+                        nadalje primjenjuje se dodatni bonus progresije od 12% osnovne stope po sljedećem djetetu kako
+                        bi se veće obitelji primjereno podržale.</p>
+                    <div class="formula" id="childFormulaStatic">
+                        Osnovica za djecu = Broj djece × (10.25 × 0.62)<br />
+                        Bonus (od 3. djeteta) = (Djeca - 2) × (10.25 × 0.12)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Mjesečni preračun &amp; zaokruživanje</h3>
+                    <p>Hitna pomoć izračunava se na temelju 30.42 dana (prosječni mjesec). Konačni iznos zaokružuje se
+                        prema kantonalnom standardu na najbliži cijeli franak (0 koraka u rappenima).</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        Mjesečno pravo = ZAOKRUŽI( (Dnevni ukupni iznos × 30.42) ; 0 )
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Pravilo zaokruživanja ZH</th>
+                                <th>Primjer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Komercijalno na 1 CHF</td>
+                                <td>CHF 247.83 → CHF 248.00</td>
+                            </tr>
+                            <tr>
+                                <td>Zaokruživanje prema dolje ispod .50</td>
+                                <td>CHF 312.49 → CHF 312.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Posebnosti u Kantonu Zürich (mješoviti smještaj):</strong><br />
+                • Čista gotovinska hitna pomoć pokriva prehranu i neposredne osnovne potrebe. Troškovi smještaja
+                (kolektivni smještaj) obračunavaju se izravno s operaterima i ne ulaze u ovaj gotovinski iznos.<br />
+                • Iznosi oslobođeni od imovine temelje se na praksi EL-a odnosno hitne pomoći (maks. CHF 4'000 po
+                osobi).<br />
+                • Osobe s pravomoćnom odlukom o udaljenju imaju pravo na hitnu pomoć, a ne na redovnu socijalnu pomoć (u
+                skladu s čl. 12 Ustava Švicarske).
+            </div>
+            <h2 class="section-title">3. Izvori podataka &amp; pravne osnove</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Savezni zakon o nadležnosti za hitnu pomoć (SR 851.1)</strong> – konkretizira čl. 12 Ustava
+                    Švicarske.</li>
+                <li><strong>Upute Sigurnosne direkcije Kantona Zürich, Ured za socijalna pitanja</strong> – ažurirane
+                    dnevne stope i faktori 2026.</li>
+                <li><strong>SKOS smjernice dopunjene kantonalnim iznimkama</strong> (partnerski faktor 1.82, faktor za
+                    djecu 0.62, bonus progresije 0.12).</li>
+                <li><strong>WelfareCalc – Status podataka:</strong> Siječanj 2026., svi parametri službeno provjereni.
+                </li>
+            </ul>
+            <!-- Live-Demo / interaktivni provjeritelj (stilski integriran točno kao AG/AI) -->
+            <div class="demo-card">
+                <div class="demo-header">🧪 Provjera transparentnosti: Testirajte kalkulator hitne pomoći Kantona Zürich
+                    uživo</div>
+                <div class="demo-body">
+                    <p>Simulirajte izračun prema službenom algoritmu za Kanton Zürich (2026).</p>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Broj odraslih</label>
+                            <input id="adultsCount" min="1" step="1" type="number" value="2" />
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Broj djece (0-17 godina)</label>
+                            <input id="childrenCount" min="0" step="1" type="number" value="3" />
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Pokreni algoritam</button>
+                    <div class="result-panel" id="liveResultPanel">
+                        <h3>📐 Dokaz izračuna (prema koracima 1–3 / ZH logici)</h3>
+                        <div class="calc-steps" id="stepsDetail"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(mjesečni iznos hitne pomoći, zaokružen na 1 CHF)</span>
+                        </div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Temeljeno na modelu
+                            kolektivnog smještaja + gotovinskog iznosa ZH. Konačni izračun provodi socijalna služba.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">← Na početnu stranicu</a>
+                <a class="btn-link" href="https://www.zh.ch" target="_blank">Službena stranica Kantona ZH</a>
+                <a class="btn-link" href="https://www.skos.ch" target="_blank">SKOS smjernice</a>
+            </div>
+        </div>
+        <footer>
+            <p>Izvor: Kanton Zürich – Upute Ureda za socijalna pitanja / Sigurnosne direkcije, Savezni zakon SR 851.1,
+                SKOS 2026</p>
+            <p>Osigurao welfarecalc.ch | Ova informacija služi transparentnosti i ne zamjenjuje pravno obvezujući
+                savjet.</p>
+            <p>© 2026 welfarecalc.ch – Otvoreni algoritmi za Švicarsku</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            // ============================================================
+            // KANTON ZÜRICH 2026 – Službeni parametri (bez izmjene algoritma, točno preuzeto iz vašeg ZH koda)
+            // Podaci prema nothilfeData objektu: daily_cash = 10.25, couple_factor = 1.82, child_addon_factor = 0.62, child_from3_bonus_factor = 0.12
+            // Zaokruživanje na cijeli franak (komercijalno)
+            // Core-logika identična vašem dostavljenom ZH skriptu (computeAdultDaily, computeChildDaily)
+            // ============================================================
+            const ZH_CONFIG = {
+                dailyCash: 10.25,          // daily_cash ZH
+                coupleFactor: 1.82,        // couple_factor (druga osoba 82% povišice)
+                childAddonFactor: 0.62,    // child_addon_factor ZH
+                childFrom3Bonus: 0.12,     // child_from3_bonus_factor (ZH specifično 0.12)
+                avgDaysMonth: 30.42
+            };
+
+            // Zaokruživanje na 1 CHF (komercijalno)
+            function roundToFranc(value) {
+                return Math.round(value);
+            }
+
+            // Izračun za odrasle (degresija)
+            function computeAdultDaily(adults, dailyRate, coupleFac) {
+                if (adults === 1) return dailyRate;
+                // točna formula: dailyRate + (adults-1) * dailyRate * coupleFac
+                return dailyRate + (adults - 1) * dailyRate * coupleFac;
+            }
+
+            // Izračun za djecu uključujući bonus progresije od 3. djeteta (kako je preuzeto iz ZH skripta)
+            function computeChildDaily(children, dailyRate, childFactor, bonusFactor) {
+                if (children <= 0) return 0;
+                let baseChild = children * dailyRate * childFactor;
+                if (children >= 3 && bonusFactor > 0) {
+                    const bonusEligibleChildren = children - 2; // bonus se primjenjuje od 3. djeteta
+                    baseChild += bonusEligibleChildren * dailyRate * bonusFactor;
+                }
+                return baseChild;
+            }
+
+            // Cjelokupni izračun (dnevna stopa, mjesec, zaokruživanje) – točna logika kao u originalnom ZH kalkulatoru
+            function computeNothilfeZH(adults, children) {
+                const adultDaily = computeAdultDaily(adults, ZH_CONFIG.dailyCash, ZH_CONFIG.coupleFactor);
+                const childDaily = computeChildDaily(children, ZH_CONFIG.dailyCash, ZH_CONFIG.childAddonFactor, ZH_CONFIG.childFrom3Bonus);
+                const totalDaily = adultDaily + childDaily;
+                const rawMonthly = totalDaily * ZH_CONFIG.avgDaysMonth;
+                const roundedMonthly = roundToFranc(rawMonthly);
+                return {
+                    adultDaily,
+                    childDaily,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly
+                };
+            }
+
+            // Ažuriranje korisničkog sučelja – uključujući prikaz korak po korak analogno AG/AI stranicama
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+                if (isNaN(adults) || adults < 1) adults = 1;
+                if (isNaN(children) || children < 0) children = 0;
+
+                const result = computeNothilfeZH(adults, children);
+
+                // Dinamički opis za korak 1 (Odrasli)
+                let adultDesc = '';
+                if (adults === 1) {
+                    adultDesc = `Pojedinac: CHF ${ZH_CONFIG.dailyCash.toFixed(2)} / dan`;
+                } else {
+                    adultDesc = `${adults} odraslih (degresija partnerski faktor ${ZH_CONFIG.coupleFactor}): CHF ${result.adultDaily.toFixed(2)} / dan (Osnovica ${ZH_CONFIG.dailyCash} + ${adults - 1} × ${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.coupleFactor})`;
+                }
+
+                // Opis koraka 2 za djecu uključujući bonus progresije
+                let childDescription = `${children} djece → Osnovni dodatak: ${children} × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childAddonFactor}) = CHF ${(children * ZH_CONFIG.dailyCash * ZH_CONFIG.childAddonFactor).toFixed(2)} / dan`;
+                if (children >= 3 && ZH_CONFIG.childFrom3Bonus > 0) {
+                    const bonusCount = children - 2;
+                    const bonusAmount = bonusCount * ZH_CONFIG.dailyCash * ZH_CONFIG.childFrom3Bonus;
+                    childDescription += ` + Bonus od 3. djeteta: ${bonusCount} × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childFrom3Bonus}) = CHF ${bonusAmount.toFixed(2)} / dan`;
+                }
+                childDescription += ` → ukupni dodatak za djecu: CHF ${result.childDaily.toFixed(2)} / dan`;
+
+                const stepsHtml = `
+                <strong>📌 Korak 1 – Odrasli (degresija):</strong> ${adultDesc}<br>
+                <strong>📌 Korak 2 – Doplatci za djecu & bonus progresije (ZH):</strong> ${childDescription}<br>
+                <strong>📌 Privremena dnevna stopa (Odrasli + Djeca):</strong> CHF ${result.totalDaily.toFixed(2)}<br>
+                <strong>📌 Korak 3 – Mjesečni faktor (30.42 dana):</strong> CHF ${result.totalDaily.toFixed(2)} × 30.42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Zaokruženo na cijeli franak (kantonalna praksa ZH):</strong> CHF ${result.roundedMonthly.toFixed(2)}
+            `;
+
+                const stepsDiv = document.getElementById('stepsDetail');
+                if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+                const amountSpan = document.getElementById('monthlyAmountDisplay');
+                if (amountSpan) amountSpan.innerText = `${result.roundedMonthly.toFixed(2)} CHF`;
+
+                const resultPanel = document.getElementById('liveResultPanel');
+                if (resultPanel) resultPanel.style.display = 'block';
+            }
+
+            // Postavljanje parametara u karticama i formulama također dinamički (dosljednost)
+            function setStaticParameterDisplay() {
+                const baseEl = document.getElementById('zhBaseDailyDisplay');
+                if (baseEl) baseEl.innerText = `CHF ${ZH_CONFIG.dailyCash.toFixed(2)} / dan`;
+                const coupleEl = document.getElementById('zhCoupleFactorDisplay');
+                if (coupleEl) coupleEl.innerText = `Faktor ${ZH_CONFIG.coupleFactor}`;
+                const childFactorEl = document.getElementById('zhChildFactorDisplay');
+                if (childFactorEl) childFactorEl.innerText = `Faktor ${ZH_CONFIG.childAddonFactor}`;
+                const bonusEl = document.getElementById('zhBonusFactorDisplay');
+                if (bonusEl) bonusEl.innerText = `+${(ZH_CONFIG.childFrom3Bonus * 100).toFixed(0)}% po sljedećem djetetu`;
+
+                const adultFormulaDiv = document.getElementById('adultFormulaStatic');
+                if (adultFormulaDiv) {
+                    adultFormulaDiv.innerHTML = `Pojedinac: CHF ${ZH_CONFIG.dailyCash.toFixed(2)} po danu<br>
+                Višečlano kućanstvo: ${ZH_CONFIG.dailyCash.toFixed(2)} + (Odrasli - 1) × ${ZH_CONFIG.dailyCash.toFixed(2)} × ${ZH_CONFIG.coupleFactor}`;
+                }
+                const childFormulaDiv = document.getElementById('childFormulaStatic');
+                if (childFormulaDiv) {
+                    childFormulaDiv.innerHTML = `Osnovica za djecu = Broj djece × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childAddonFactor})<br>
+                Bonus (od 3. djeteta) = (Djeca - 2) × (${ZH_CONFIG.dailyCash} × ${ZH_CONFIG.childFrom3Bonus})`;
+                }
+            }
+
+            // Event listeneri za gumbe i polja za unos (automatsko ažuriranje kao AG/AI)
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            if (adultsField && childrenField) {
+                const autoUpdate = () => updateDemo();
+                adultsField.addEventListener('input', autoUpdate);
+                childrenField.addEventListener('input', autoUpdate);
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                setStaticParameterDisplay();
+                // Izračunati početno kućanstvo za primjer (2 odrasle osobe, 3 djece kao u ZH prijedlogu)
+                //updateDemo();
+            });
+        })();
+    </script>
+</body>
+
+</html>

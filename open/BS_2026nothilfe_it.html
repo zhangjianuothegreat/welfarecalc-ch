@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo Aiuto di Emergenza Canton Basilea Città 2026 | Calcolo Trasparente | welfarecalc.ch</title>
+    <meta name="description" content="Come viene calcolato l'aiuto di emergenza 2026 nel Canton Basilea Città (BS)? Scopri il nostro algoritmo trasparente basato sulle linee guida cantonali e sulla legge sull'assistenza sociale.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BS_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritmo Aiuto di Emergenza Canton Basilea Città 2026 | Calcolo Trasparente">
+    <meta property="og:description" content="Logica di calcolo ufficiale per l'aiuto di emergenza 2026 a Basilea Città basata su ordinanze cantonali.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BS_2026nothilfe_it.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo dell'aiuto di emergenza Basilea Città 2026",
+      "description": "Guida passo-passo per il calcolo dell'aiuto di emergenza nel Canton BS (Basilea Città).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del fabbisogno giornaliero di base (base 11 CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Applicazione del fattore degressivo per coppie e supplementi per bambini"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo dell'importo mensile con arrotondamento commerciale a 1 CHF"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; }
+        
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: 0.2s; }
+        .btn-link:hover { background: #002244; }
+        .btn-home { background: var(--swiss-red); }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        @media (max-width: 720px) {
+            .content { padding: 1.5rem; }
+            .step-box { padding-left: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">DATI UFFICIALI 2026 · Aiuto emergenza BS</div>
+        <h1>Algoritmo Aiuto di Emergenza: Canton Basilea Città</h1>
+        <p>Calcolo trasparente dell'aiuto di emergenza secondo le linee guida cantonali e la LAVS BS 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Basilea Città adotta un modello trasparente per garantire il minimo vitale. Di seguito sveliamo l'algoritmo ufficiale per il 2026. Rispetto ad altri cantoni, Basilea Città si distingue per una tariffa giornaliera di base più elevata, per rispondere allo standard di vita urbano.</p>
+
+        <h2 class="section-title">1. Parametri chiave (BS 2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Tariffa giornaliera base (persona singola)</h4>
+                <div class="param-value">CHF 11.00 / giorno</div>
+                <p><small>Tariffa più alta della Svizzera, inclusa paghetta per bisogni personali.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Fattore coppia (degressione)</h4>
+                <div class="param-value">Fattore 1.80</div>
+                <p><small>I nuclei familiari ricevono il 180% della tariffa base (CHF 19.80 per 2 pers.).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Fattore supplemento minori</h4>
+                <div class="param-value">Fattore 0.60</div>
+                <p><small>Importo aggiuntivo per bambino: 60% della tariffa base (CHF 6.60 / giorno).</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Il percorso di calcolo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinazione del fabbisogno per adulti</h3>
+                <p>Basilea Città utilizza un modello degressivo per nuclei familiari di più persone:</p>
+                <div class="formula">
+                    Persona singola: CHF 11.00 / giorno<br>
+                    Coppia/Più persone: 11.00 + (adulti - 1) × 11.00 × 0.80
+                </div>
+                <p><small>Nota: a partire dalla seconda persona adulta, il fabbisogno è ponderato all'80%.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Aggiunta della somma forfetaria per minori</h3>
+                <p>Ogni minore riceve un fattore fisso di 0.60 sulla tariffa base, indipendentemente dal numero:</p>
+                <div class="formula">
+                    Totale minori = Numero minori × (11.00 × 0.60) = Numero × CHF 6.60 / giorno
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Proiezione mensile e arrotondamento</h3>
+                <p>L'importo giornaliero viene moltiplicato per il fattore standard svizzero di 30.42. L'importo finale a Basilea Città viene arrotondato al franco intero più vicino.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Assegno mensile = ARROTONDA( (Totale giornaliero × 30.42) ; 0 )
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Note importanti per Basilea Città:</strong><br>
+            • Le tariffe si applicano per l'alloggio nei centri di accoglienza cantonali.<br>
+            • I premi dell'assicurazione malattia e le cure mediche d'urgenza sono coperti separatamente.<br>
+            • In caso di assenza ingiustificata, l'importo in contanti può essere ridotto.
+        </div>
+
+        <h2 class="section-title">3. Fonti dei dati e aspetti legali</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Legge sull'assistenza sociale Basilea Città (SG 890.100)</strong>.</li>
+            <li><strong>Linee guida per il sostegno ai richiedenti asilo (BS)</strong>.</li>
+            <li><strong>WelfareCalc – Stato:</strong> Gennaio 2026, parametri basati sulla pianificazione di bilancio BS.</li>
+        </ul>
+
+        <div class="demo-card">
+            <div class="demo-header">🧪 Verifica trasparenza: prova dal vivo l'aiuto emergenza BS</div>
+            <div class="demo-body">
+                <p>Calcola l'aiuto di emergenza secondo l'algoritmo ufficiale BS (2026).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Numero adulti</label>
+                        <input type="number" id="adultsCount" value="1" min="1" step="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Numero minori</label>
+                        <input type="number" id="childrenCount" value="0" min="0" step="1">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Esegui algoritmo</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Prova di calcolo (Logica BS)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(mensile arrotondato)</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Pagina iniziale</a>
+            <a href="https://www.sozialhilfe.bs.ch" target="_blank" class="btn-link">Sito ufficiale Canton BS</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Canton Basilea Città – Dipartimento economia, sociale e ambiente 2026</p>
+        <p>Fornito da welfarecalc.ch | Calcoli sociali trasparenti per la Svizzera</p>
+        <p>© 2026 welfarecalc.ch – Open Algorithm Initiative</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const PARAMS = {
+            baseDaily: 11.00,
+            coupleFactor: 0.80, // supplemento per ogni ulteriore adulto
+            childFactor: 0.60,
+            avgDaysMonth: 30.42
+        };
+
+        function computeBSNothilfe(adults, children) {
+            // Passo 1: Adulti
+            let adultDaily = 0;
+            if (adults === 1) {
+                adultDaily = PARAMS.baseDaily;
+            } else {
+                adultDaily = PARAMS.baseDaily + (adults - 1) * PARAMS.baseDaily * PARAMS.coupleFactor;
+            }
+            
+            // Passo 2: Minori
+            const childDailyTotal = children * (PARAMS.baseDaily * PARAMS.childFactor);
+            
+            // Passo 3: Calcolo mensile
+            const totalDaily = adultDaily + childDailyTotal;
+            const rawMonthly = totalDaily * PARAMS.avgDaysMonth;
+            const roundedMonthly = Math.round(rawMonthly); // arrotondamento al franco pieno
+            
+            return {
+                adultDaily,
+                childDailyTotal,
+                totalDaily,
+                rawMonthly,
+                roundedMonthly
+            };
+        }
+        
+        function updateDemo() {
+            const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+            const children = parseInt(document.getElementById('childrenCount').value) || 0;
+            const res = computeBSNothilfe(adults, children);
+            
+            const stepsHtml = `
+                <strong>📌 Passo 1 – Adulti:</strong> CHF ${res.adultDaily.toFixed(2)} / giorno (degressione BS 0.8 applicata)<br>
+                <strong>📌 Passo 2 – Minori:</strong> ${children} × CHF 6.60 = CHF ${res.childDailyTotal.toFixed(2)} / giorno<br>
+                <strong>📌 Totale giornaliero:</strong> CHF ${res.totalDaily.toFixed(2)}<br>
+                <strong>📌 Mese (30.42 giorni):</strong> CHF ${res.totalDaily.toFixed(2)} × 30.42 = CHF ${res.rawMonthly.toFixed(2)}<br>
+                <strong>💰 Arrotondamento (standard BS):</strong> CHF ${res.roundedMonthly}.00
+            `;
+            
+            document.getElementById('stepsDetail').innerHTML = stepsHtml;
+            document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly}.00 CHF`;
+            document.getElementById('liveResultPanel').style.display = 'block';
+        }
+        
+        document.getElementById('runCalcBtn').addEventListener('click', updateDemo);
+        //window.addEventListener('DOMContentLoaded', updateDemo);
+    })();
+</script>
+</body>
+</html>

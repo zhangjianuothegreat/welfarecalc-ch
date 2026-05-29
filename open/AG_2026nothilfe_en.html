@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Base Configuration -->
+    <title>Emergency Aid Algorithm Canton Aargau 2026 | Transparent Calculation | welfarecalc.ch</title>
+    <meta name="description" content="How is emergency aid calculated in the Canton of Aargau for 2026? Discover our transparent algorithm based on official cantonal guidelines and SHG.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical & hreflang tags (pointing to English version) -->
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/AG_2026nothilfe_de.html">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="Emergency Aid Algorithm Canton Aargau 2026 | Transparent Calculation">
+    <meta property="og:description" content="Official calculation logic for emergency aid 2026 in Aargau based on SHG & Social Welfare Handbook.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/AG_2026nothilfe_en.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Schema Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Emergency Aid Calculation Aargau 2026",
+      "description": "Step-by-step guide to calculating emergency aid in the Canton of Aargau (collective accommodation).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determination of adult daily rates (single person or couple)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Addition of child supplements"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Extrapolation to monthly amount with rounding to CHF 0.05"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Consistent core styling (identical to original) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        /* Live-Demo card styling */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; }
+        .input-item input:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 0.5rem; color: #475569; background: transparent; padding: 0.5rem 0 0 0; }
+        @media (max-width: 720px) {
+            .content { padding: 1.5rem; }
+            .step-box { padding-left: 3rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">OFFICIAL DATA 2026 · EMERGENCY AID</div>
+        <h1>Emergency Aid Algorithm: Canton of Aargau</h1>
+        <p>Transparent calculation of emergency aid according to the Social Welfare Act (SHG) & Aargau Handbook 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Trust through transparency. Emergency aid for persons subject to a departure decision is calculated in the Canton of Aargau according to clear legal criteria. Here we disclose the complete algorithm that underpins our calculator – based on official guidelines from cantonal authorities.</p>
+
+        <h2 class="section-title">1. Basic Emergency Aid Parameters (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Basic daily rate (single person)</h4>
+                <div class="param-value">CHF 8.00 / day</div>
+                <p><small>Collective accommodation, incl. meals & basic needs.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Couple flat rate</h4>
+                <div class="param-value">CHF 13.60 / day</div>
+                <p><small>For two adults in the same facility (degression).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Child supplement</h4>
+                <div class="param-value">CHF 4.15 / day per child</div>
+                <p><small>Up to the age of 18, regardless of the number.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Calculation Method (Step by Step)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determine the adult daily rate</h3>
+                <p>First, the daily basic amount is determined based on the number of adults:</p>
+                <div class="formula">
+                    Single person: CHF 8.00 per day<br>
+                    Married couple / partnership (2 adults): CHF 13.60 per day (single + 70% supplement)
+                </div>
+                <p><small>If there are more than 2 adults per support unit, each additional adult is charged at the single rate (according to Aargau practice).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Add child supplements</h3>
+                <p>For each child (< 18 years), a fixed amount of CHF 4.15 per day is added. The supplement covers additional needs for food, hygiene, and clothing.</p>
+                <div class="formula">
+                    Daily total amount = Adult daily rate + (Number of children × CHF 4.15)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Monthly extrapolation & rounding</h3>
+                <p>Emergency aid is calculated based on 30.42 days (average month). The final amount is rounded commercially to 5 Rappen (0.05 CHF), as is customary in cantonal implementation.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Monthly entitlement = ROUND( (Daily total amount × 30.42) ; 0.05 )
+                </div>
+                <table class="data-table">
+                    <thead><tr><th>Rounding rule</th><th>Example</th></tr></thead>
+                    <tbody>
+                        <tr><td>Round to nearest 0.05</td><td>247.83 → 247.85 CHF</td></tr>
+                        <tr><td>Round down below 0.025</td><td>312.52 → 312.50 CHF</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Important additional information on emergency aid:</strong><br>
+            • Emergency aid is primarily provided in kind (accommodation, meals); the cash allowance is kept to a minimum.<br>
+            • Assets exceeding the allowance (CHF 5,000 per person / max. CHF 15,000 per household) must be used first.<br>
+            • Persons without a residence permit who are subject to a legally binding departure decision are only entitled to emergency aid, not to ordinary social welfare.
+        </div>
+
+        <h2 class="section-title">3. Data sources & legal foundations</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Social Welfare Act (SHG) Canton of Aargau</strong> – particularly provisions on emergency aid in emergency situations.</li>
+            <li><strong>Aargau Social Welfare Handbook, chapter "Emergency aid for persons required to leave the country"</strong> – updated daily rates 2026.</li>
+            <li><strong>SKOS guidelines (specification)</strong> in combination with cantonal directives.</li>
+            <li><strong>WelfareCalc – data status:</strong> January 2026, all parameters officially verified.</li>
+        </ul>
+
+        <!-- Live-Demo / interactive checker (stylistically integrated) -->
+        <div class="demo-card">
+            <div class="demo-header">🧪 Transparency check: Test the emergency aid calculator live</div>
+            <div class="demo-body">
+                <p>Simulate the calculation according to the official algorithm for the Canton of Aargau (2026).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Number of adults</label>
+                        <input type="number" id="adultsCount" value="1" min="1" step="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Number of children (0-17 years)</label>
+                        <input type="number" id="childrenCount" value="0" min="0" step="1">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Start algorithm</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Calculation proof (according to steps 1–3)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(monthly emergency aid amount, rounded to 5 Rappen)</span></div>
+                    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Based on collective accommodation, without individual supplements. Final calculation by SVA/Social Services.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Back to home</a>
+            <a href="https://www.ag.ch/de/themen/asyl-fluechtlingswesen/sozialhilfe-nothilfe" target="_blank" class="btn-link">Official page Canton AG</a>
+            <a href="https://www.skos.ch" target="_blank" class="btn-link">SKOS Guidelines</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source: Canton of Aargau – Social Welfare Act (SHG), Social Welfare Handbook 2026, SKOS recommendations</p>
+        <p>Provided by welfarecalc.ch | This information serves transparency and does not replace legally binding advice.</p>
+        <p>© 2026 welfarecalc.ch – Open algorithms for Switzerland</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        // Parameters according to official specifications (AG 2026)
+        const RATES = {
+            singleAdultDaily: 8.00,      // Single person per day
+            coupleDaily: 13.60,          // Fixed rate for two adults
+            childDaily: 4.15,            // Per child
+            avgDaysMonth: 30.42,
+            extraAdultSolo: 8.00         // additional adult beyond 2 (if more than 2)
+        };
+
+        // Rounding to 0.05 (5 Rappen)
+        function roundToFiveRappen(value) {
+            // Convert to Rappen: *20, round, /20
+            return Math.round(value * 20) / 20;
+        }
+
+        function computeNothilfe(adults, children) {
+            let adultDaily = 0;
+            if (adults === 1) {
+                adultDaily = RATES.singleAdultDaily;
+            } else if (adults === 2) {
+                adultDaily = RATES.coupleDaily;
+            } else if (adults >= 3) {
+                // First two persons = couple flat rate 13.60, each additional adult + single daily rate 8.00
+                adultDaily = RATES.coupleDaily + (adults - 2) * RATES.extraAdultSolo;
+            }
+            
+            const childDailyTotal = children * RATES.childDaily;
+            const totalDaily = adultDaily + childDailyTotal;
+            const rawMonthly = totalDaily * RATES.avgDaysMonth;
+            const roundedMonthly = roundToFiveRappen(rawMonthly);
+            const finalFormatted = roundedMonthly.toFixed(2);
+            
+            return {
+                adultDaily: adultDaily,
+                childDailyTotal: childDailyTotal,
+                totalDaily: totalDaily,
+                rawMonthly: rawMonthly,
+                roundedMonthly: roundedMonthly,
+                finalFormatted: finalFormatted
+            };
+        }
+        
+        function updateDemo() {
+            const adultsInput = document.getElementById('adultsCount');
+            const childrenInput = document.getElementById('childrenCount');
+            let adults = parseInt(adultsInput.value, 10);
+            let children = parseInt(childrenInput.value, 10);
+            
+            if (isNaN(adults) || adults < 1) adults = 1;
+            if (isNaN(children) || children < 0) children = 0;
+            
+            const result = computeNothilfe(adults, children);
+            
+            let adultDesc = '';
+            if (adults === 1) adultDesc = `Single person: CHF ${result.adultDaily.toFixed(2)} / day`;
+            else if (adults === 2) adultDesc = `Couple flat rate: CHF ${result.adultDaily.toFixed(2)} / day`;
+            else adultDesc = `${adults} adults (couple basis + ${adults-2} additional): CHF ${result.adultDaily.toFixed(2)} / day`;
+            
+            const stepsHtml = `
+                <strong>📌 Step 1 – Adults:</strong> ${adultDesc}<br>
+                <strong>📌 Step 2 – Child supplements:</strong> ${children} child(ren) × CHF ${RATES.childDaily} = CHF ${result.childDailyTotal.toFixed(2)} / day<br>
+                <strong>📌 Preliminary daily rate:</strong> CHF ${result.totalDaily.toFixed(2)}<br>
+                <strong>📌 Step 3 – Monthly factor (30.42 days):</strong> CHF ${result.totalDaily.toFixed(2)} × 30.42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Rounded to 5 Rappen (cantonal standard):</strong> CHF ${result.finalFormatted}
+            `;
+            
+            const stepsDiv = document.getElementById('stepsDetail');
+            if (stepsDiv) stepsDiv.innerHTML = stepsHtml;
+            const amountSpan = document.getElementById('monthlyAmountDisplay');
+            if (amountSpan) amountSpan.innerText = `${result.finalFormatted} CHF`;
+            
+            const resultPanel = document.getElementById('liveResultPanel');
+            if (resultPanel) resultPanel.style.display = 'block';
+        }
+        
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+        // Initial call on load
+        window.addEventListener('DOMContentLoaded', () => {
+            //updateDemo();
+        });
+        
+        // Also recalc automatically on input change (better UX)
+        const adultsField = document.getElementById('adultsCount');
+        const childrenField = document.getElementById('childrenCount');
+        if (adultsField && childrenField) {
+            const autoUpdate = () => updateDemo();
+            adultsField.addEventListener('input', autoUpdate);
+            childrenField.addEventListener('input', autoUpdate);
+        }
+    })();
+</script>
+</body>
+</html>

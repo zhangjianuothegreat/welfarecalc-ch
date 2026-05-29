@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algorytm IPV Kanton Zug 2026 | Przejrzyste obliczenia | welfarecalc.ch</title>
+  <meta
+    content="Jak obliczana jest Indywidualna Dopłata do Składek (IPV) w 2026 roku w kantonie Zug? Odkryj nasz przejrzysty algorytm oparty na oficjalnych danych Ausgleichskasse Zug."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pl.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algorytm IPV Kanton Zug 2026 | Przejrzyste obliczenia" property="og:title" />
+  <meta content="Oficjalna logika obliczeniowa Indywidualnej Dopłaty do Składek 2026 w kantonie Zug (ZG)."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/ZG_2026IPV_pl.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie Indywidualnej Ulgi w Składkach Zug 2026",
+      "description": "Instrukcja krok po kroku dotycząca przejrzystego określania subwencji IPV w kantonie Zug.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ustalenie dochodu podlegającego opodatkowaniu (LNA) z doliczeniem 10% majątku."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Określenie indywidualnej części własnej na podstawie współczynnika 8%."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Porównanie z ustawowymi gwarancjami minimalnymi dla dzieci i młodzieży."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .legal-info-links {
+      margin-top: 10px;
+      font-size: 0.85rem;
+    }
+
+    .legal-info-links a {
+      color: var(--official-blue);
+      text-decoration: underline;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">OFICJALNE DANE 2026</div>
+      <h1>Algorytm IPV: Kanton Zug (ZG)</h1>
+      <p>Przejrzyste obliczenie Twojej Indywidualnej Ulgi w Składkach na rok 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+    <div class="content">
+      <p>Zaufanie dzięki przejrzystości. Tutaj ujawniamy, w jaki sposób nasz kalkulator określa Twoją potencjalną
+        Indywidualną Ulgę w Składkach (IPV) w kantonie Zug. Algorytm ten opiera się ściśle na podstawach prawnych
+        kantonu Zug (BGS 842.6) oraz wytycznych Ausgleichskasse Zug.</p>
+      <h2 class="section-title">1. Kluczowe parametry (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Współczynnik części własnej</h4>
+          <div class="param-value">8.0 %</div>
+          <p><small>Udział dochodu podlegającego opodatkowaniu, który jest uznawany za możliwy do poniesienia na składki
+              ubezpieczenia zdrowotnego.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Doliczenie majątku</h4>
+          <div class="param-value">10.0 %</div>
+          <p><small>Procentowy udział podlegającego opodatkowaniu majątku netto, który jest doliczany jako dochód
+              podlegający opodatkowaniu.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Sposób obliczania</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Dochód podlegający opodatkowaniu (LNA)</h3>
+          <p>Najpierw obliczana jest zdolność ekonomiczna gospodarstwa domowego. W kantonie Zug podlegający
+            opodatkowaniu majątek netto jest doliczany w 10% jako składnik dochodu:</p>
+          <div class="formula-box">
+            <strong>LNA</strong> = Max(0, [Dochód netto podlegający opodatkowaniu] + [Dobrowolny II filar] + [Filar 3a]
+            + ([Majątek podlegający opodatkowaniu] × 10%) - [Odliczenie na dzieci])
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Kategoria odliczenia</th>
+              <th>Kwota (na osobę)</th>
+            </tr>
+            <tr>
+              <td>Odliczenie ryczałtowe na dziecko / młodzież w kategorii kształcenia</td>
+              <td>CHF 8'500</td>
+            </tr>
+          </table>
+          <div class="alert" style="margin-top: 15px; padding: 10px 15px;">
+            <strong>Limit dochodowy:</strong> Jeśli obliczone LNA przekroczy kwotę <strong>CHF 89'900</strong>, ustawowe
+            prawo do IPV wygasa całkowicie.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Sprawdzenie granicy wykluczającej majątek</h3>
+          <p>Oprócz testu dochodowego obowiązuje ścisły górny limit majątku (twardy limit) jako kryterium wykluczenia:
+          </p>
+          <table class="data-table">
+            <tr>
+              <th>Typ gospodarstwa domowego</th>
+              <th>Bezwzględny limit majątku</th>
+            </tr>
+            <tr>
+              <td>Osoba samotna</td>
+              <td>CHF 150'000</td>
+            </tr>
+            <tr>
+              <td>Małżeństwa / Zarejestrowane związki partnerskie</td>
+              <td>CHF 300'000</td>
+            </tr>
+          </table>
+          <p style="margin-top:10px;"><small>Jeśli podlegający opodatkowaniu majątek przekracza te kantonalne progi, nie
+              ma prawa do subwencji.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Kantonalne składki referencyjne 2026</h3>
+          <p>Składki referencyjne reprezentują kantonalnie ustalone standardowe średnie składki do obliczeń:</p>
+          <table class="data-table">
+            <tr>
+              <th>Kategoria</th>
+              <th>Składka referencyjna (rocznie)</th>
+            </tr>
+            <tr>
+              <td>Dorośli (od 26 lat)</td>
+              <td>CHF 5'916 / rok</td>
+            </tr>
+            <tr>
+              <td>Młodzi dorośli (19-25 lat, w trakcie kształcenia)</td>
+              <td>CHF 4'140 / rok</td>
+            </tr>
+            <tr>
+              <td>Dzieci (0-18 lat)</td>
+              <td>CHF 1'392 / rok</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Obliczenie indywidualnej części własnej</h3>
+          <p>Możliwy do poniesienia udział własny opiera się na dochodzie podlegającym opodatkowaniu (LNA):</p>
+          <div class="formula-box">
+            <strong>Część własna</strong> = LNA × 8.0%
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Ustalenie teoretycznej subwencji</h3>
+          <p>Teoretyczna wysokość subwencji wynika z różnicy między zsumowanymi składkami referencyjnymi a indywidualną
+            częścią własną:</p>
+          <div class="formula-box">
+            <strong>Subwencja teoretyczna</strong> = Max(0, [Łączne kantonalne składki referencyjne] - [Część własna])
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Zastosowanie gwarancji minimalnych (ochrona dzieci i młodzieży)</h3>
+          <p>Aby odciążyć rodziny podatkowo, przy niskich i średnich dochodach stosuje się ustawową gwarancję minimalną
+            dla dzieci i młodzieży w trakcie kształcenia:</p>
+          <div class="formula-box">
+            <strong>Gwarancja minimalna</strong> = (Liczba dzieci × CHF 1'392 × 80%) + (Liczba młodzieży w trakcie
+            kształc. × CHF 4'140 × 50%)
+
+            <strong>Korekta subwencji teoretycznej</strong> = Max(Subwencja teoretyczna, Gwarancja minimalna)
+          </div>
+          <p><small>Jeśli regularnie obliczona subwencja dla gospodarstwa domowego jest niższa niż ta ustawowa dolna
+              granica ryczałtów na dzieci i młodzież, wówczas przyznawana jest kwota gwarancji minimalnej.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">7</div>
+        <div class="step-body">
+          <h3>Próg wypłaty i ostateczne ograniczenie</h3>
+          <p>Ostateczna roczna wypłata IPV podlega minimalnemu progowi i jest ograniczona przez faktycznie opłaconą
+            składkę:</p>
+          <div class="formula-box">
+            1. Próg wypłaty: Jeśli (Korekta subwencji teoretycznej &lt; CHF 100) → prawo = 0 CHF
+            2. Ostateczna subwencja roczna = Min(Zaokrąglenie(Korekta subwencji teoretycznej), Rzeczywista składka
+            roczna)
+            3. Miesięczne uznanie = Zaokrąglenie(Ostateczna subwencja roczna / 12)
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Uwaga prawna:</strong><br />
+        Ten przegląd służy przejrzystości algorytmicznej i wyjaśnieniu działania kalkulatora internetowego. Nie stanowi
+        on oficjalnej decyzji ani porady prawnej.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Powrót do strony głównej</a>
+        <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/praemienverbilligung" target="_blank">Portal IPV
+          Ausgleichskasse Zug</a>
+      </div>
+    </div>
+    <footer>
+      <p>Źródło: Ausgleichskasse Zug &amp; kantonalny zbiór przepisów (BGS 842.6) 2026 | Dostarczone przez
+        welfarecalc.ch</p>
+      <div class="legal-info-links">
+        <a href="https://bgs.zg.ch/app/de/texts_of_law/842.1" target="_blank">Podstawy prawne (EG KVG)</a>
+        <a href="https://www.akzug.ch" target="_blank">Ausgleichskasse Zug</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

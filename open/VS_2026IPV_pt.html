@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!-- SEO 基础配置 -->
+  <title>Algoritmo IPV Cantão Valais 2026 | Cálculo Transparente | welfarecalc.ch</title>
+  <meta
+    content="Como é calculada a redução de prêmios (IPV) 2026 no Cantão Valais (VS)? Descubra nosso algoritmo transparente baseado em dados oficiais do CCVS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <!-- Canonical & 多语言交替标签 (hreflang) - 核心 SEO 项 -->
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pt.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <!-- Open Graph / 社交分享 SEO -->
+  <meta content="Algoritmo IPV Cantão Valais 2026 | Cálculo Transparente" property="og:title" />
+  <meta content="Lógica oficial de cálculo para a redução de prêmios 2026 no Valais (VS)." property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VS_2026IPV_pt.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <!-- Schema 结构化数据 (JSON-LD) - 提高搜索结果丰富度 -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo do subsídio de prémio Valais 2026",
+      "description": "Guia passo a passo para calcular o IPV no Cantão de Valais (VS).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificação do limite rigoroso de património"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do rendimento determinante (RD)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Deduções para crianças e jovens (isenções familiares)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinação da taxa de subsídio (Tabela 2026)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Aplicação dos prémios de referência cantonais 2026"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Direito final ao subsídio e limite máximo"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DADOS OFICIAIS 2026</div>
+      <h1>Algoritmo IPV: Cantão de Valais (VS)</h1>
+      <p>Divulgação transparente da lógica de cálculo para o ano de 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+    <div class="content">
+      <p>Em conformidade com a nossa filosofia de transparência, divulgamos aqui a base matemática para a calculadora
+        IPV do Cantão de Valais. Este algoritmo baseia-se estritamente nas disposições legais da CCVS (Caixa de
+        Compensação Cantonal de Valais).</p>
+      <h2 class="section-title">1. Parâmetros Principais (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Acréscimo de Património (RD)</h4>
+          <div class="param-value">5.0 %</div>
+          <p><small>Parte do património líquido que é adicionada ao rendimento tributável.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Garantia Crianças / Jovens</h4>
+          <div class="param-value">80 %</div>
+          <p><small>Taxa de redução fixa do prémio de referência (independentemente da taxa de subsídio dos
+              pais).</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. O Processo de Cálculo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Limite Rigoroso de Património</h3>
+          <p>Antes de qualquer verificação de rendimento, a lei examina o património líquido ajustado do agregado
+            familiar. Se este exceder os limites legais, o direito ao IPV é totalmente eliminado:</p>
+          <table class="data-table">
+            <tr>
+              <th>Categoria</th>
+              <th>Património Líquido Máximo</th>
+            </tr>
+            <tr>
+              <td>Pessoas Solteiras</td>
+              <td>CHF 100'000</td>
+            </tr>
+            <tr>
+              <td>Casados / Famílias</td>
+              <td>CHF 150'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Rendimento Determinante (RD)</h3>
+          <p>O rendimento determinante (Revenu déterminant, RD) baseia-se na liquidação fiscal definitiva do ano de
+            2024. Em Valais, o património é adicionado diretamente como componente de rendimento através de uma taxa de
+            acréscimo legal (5%):</p>
+          <div class="formula-box">
+            RD = Rendimento Tributável + (Património Líquido × 5%) + Rendimentos Negativos de Imóveis + Deduções Pilar
+            3a - Pensões de Alimentos/Pensões de Sustento Pagas
+          </div>
+          <p><small>*Nota: Rendimentos negativos de imóveis, bem como pagamentos efetuados para a previdência privada
+              vinculada (Pilar 3a), são adicionados ao rendimento para garantir a justiça social.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Deduções para Crianças e Jovens (Isenções Familiares)</h3>
+          <p>Do rendimento determinante (RD) calculado, são deduzidas isenções, dependendo de quantas crianças ou jovens
+            adultos em formação a cargo vivem no agregado familiar (dedução degressiva):</p>
+          <table class="data-table">
+            <tr>
+              <th>Categoria</th>
+              <th>Isenção do RD (anual)</th>
+            </tr>
+            <tr>
+              <td>1.ª criança / jovem adulto</td>
+              <td>CHF 12'000</td>
+            </tr>
+            <tr>
+              <td>2.ª criança / jovem adulto</td>
+              <td>CHF 10'000</td>
+            </tr>
+            <tr>
+              <td>3.ª criança / jovem adulto</td>
+              <td>CHF 8'000</td>
+            </tr>
+            <tr>
+              <td>A partir da 4.ª criança / jovem adulto</td>
+              <td>CHF 6'000 por pessoa</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Taxa de Subsídio (Tabela 2026)</h3>
+          <p>Após a dedução das isenções, o RD ajustado final determina o nível de subsídio para os adultos. O Cantão de
+            Valais conhece 7 níveis, de 70% a 5% de subsídio:</p>
+          <table class="data-table">
+            <tr>
+              <th>RD Ajustado (Solteiro)</th>
+              <th>RD Ajustado (Casado/Casal)</th>
+              <th>Taxa de Subsídio (Adultos)</th>
+            </tr>
+            <tr>
+              <td>até CHF 24'200</td>
+              <td>até CHF 37'100</td>
+              <td><strong>70%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 24'201 – 27'200</td>
+              <td>CHF 37'101 – 41'400</td>
+              <td><strong>50%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 27'201 – 30'200</td>
+              <td>CHF 41'401 – 45'700</td>
+              <td><strong>40%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 30'201 – 33'200</td>
+              <td>CHF 45'701 – 50'000</td>
+              <td><strong>30%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 33'201 – 36'200</td>
+              <td>CHF 50'001 – 54'300</td>
+              <td><strong>20%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 36'201 – 39'200</td>
+              <td>CHF 54'301 – 58'600</td>
+              <td><strong>10%</strong></td>
+            </tr>
+            <tr>
+              <td>CHF 39'201 – 42'200</td>
+              <td>CHF 58'601 – 62'900</td>
+              <td><strong>5%</strong></td>
+            </tr>
+            <tr>
+              <td>acima de CHF 42'200</td>
+              <td>acima de CHF 62'900</td>
+              <td><strong>0% (Sem Direito)</strong></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Prémios de Referência Cantonais 2026</h3>
+          <p>A taxa de subsídio não é aplicada ao seu prémio de seguro de saúde real efetivo, mas sim ao prémio de
+            referência cantonal médio (Primes de référence) fixado pelo Conselho de Estado. Para todo o Cantão de
+            Valais, aplicam-se os seguintes valores em 2026:</p>
+          <table class="data-table">
+            <tr>
+              <th>Categoria de Pessoa</th>
+              <th>Prémio de Referência por Ano (CHF)</th>
+            </tr>
+            <tr>
+              <td>Adultos (a partir de 26 anos)</td>
+              <td>CHF 5'340</td>
+            </tr>
+            <tr>
+              <td>Jovens Adultos (19–25 anos)</td>
+              <td>CHF 4'128</td>
+            </tr>
+            <tr>
+              <td>Crianças (0–18 anos)</td>
+              <td>CHF 1'248</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Direito Final &amp; Limite Máximo</h3>
+          <p>O subsídio é calculado por pessoa no agregado familiar:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Subsídio Adultos = Prémio de Referência × taxa de subsídio apurada (5% – 70%)<br />
+            Subsídio Crianças = Prémio de Referência × 80% (garantia fixa legal)
+          </div>
+          <p><strong>Regra de Limite Máximo:</strong> O montante resultante é comparado com o prémio efetivamente pago à
+            seguradora de saúde. O subsídio nunca pode exceder o prémio real (limitado ao prémio efetivo).</p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Particularidade no Cantão de Valais (Diretriz Federal para Crianças):</strong><br />
+        De acordo com o Art. 65, Par. 1bis KVG, o Cantão de Valais concede a crianças e jovens adultos em formação com
+        rendimentos baixos e médios uma taxa de redução fixa de <strong>80% do prémio de referência</strong>,
+        independentemente de os pais receberem um nível inferior (por exemplo, 10% ou 20%).
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Voltar à página inicial</a>
+        <a class="btn-link"
+          href="https://www.ahvwallis.ch/de/Versicherungen/IPV-Pramienverbilligungen-in-der-Krankenversicherung/Pramienverbilligung/Praemienverbilligung.html"
+          target="_blank">Visitar o site oficial da CCVS</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fonte: Caixa de Compensação Cantonal de Valais (CCVS) &amp; Departamento de Saúde, Assuntos Sociais e Cultura
+        (DGSK) 2026 | welfarecalc.ch</p>
+      <p>Este resumo serve para informação e não é juridicamente vinculativo.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

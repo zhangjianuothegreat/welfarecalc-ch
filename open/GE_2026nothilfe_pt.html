@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Ajuda de Emergência Cantão de Genebra (GE) 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Como é calculada a ajuda de emergência em 2026 no Cantão de Genebra (GE)? Descubra o nosso algoritmo transparente baseado nas diretrizes oficiais do Hospice général.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritmo de Ajuda de Emergência Cantão de Genebra 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para ajuda de emergência 2026 em Genebra (GE) com base nas diretrizes cantonais.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GE_2026nothilfe_pt.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da Ajuda de Emergência Genebra 2026",
+      "description": "Guia passo a passo para calcular a ajuda de emergência (Aide d'urgence) no Cantão de Genebra.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinar a taxa diária para adulto usando o fator de parceiro (1.78)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Adicionar subsídios por criança (fator 0.60) e bónus para família numerosa"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Extrapolação mensal e arredondamento comercial"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Estilos Principais Unificados ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        
+        /* Estilos da Demonstração Interativa */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">DADOS OFICIAIS 2026 · AJUDA DE EMERGÊNCIA GE</div>
+        <h1>Algoritmo de Ajuda de Emergência: Cantão de Genebra</h1>
+        <p>Representação transparente da lógica de cálculo (Aide d'urgence) de acordo com as diretrizes de 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>No Cantão de Genebra (GE), a ajuda de emergência para pessoas obrigadas a deixar a Suíça é coordenada pelo <strong>Hospice général</strong>. Para promover a confiança através da transparência, divulgamos o algoritmo de cálculo completo para o ano de 2026.</p>
+
+        <h2 class="section-title">1. Parâmetros de Cálculo (Genebra 2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Taxa Diária Base (adulto solteiro)</h4>
+                <div class="param-value">CHF 10.00 / dia</div>
+                <p><small>Valor base para um adulto em alojamento individual.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Fator de Parceiro (segundo adulto)</h4>
+                <div class="param-value">Fator 1.78</div>
+                <p><small>Fator de degressão para casais ou agregados familiares partilhados.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Suplemento por Criança</h4>
+                <div class="param-value">CHF 6.00 / dia</div>
+                <p><small>Equivalente a 60% da taxa base para adulto por criança.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Método de Cálculo (Passo a Passo)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinar a Taxa Diária para Adulto</h3>
+                <p>Genebra utiliza um fator progressivo para a segunda pessoa no agregado familiar:</p>
+                <div class="formula">
+                    Número de adultos = 1: CHF 10.00<br>
+                    Número de adultos > 1: (10.00 + (número de adultos - 1) × 10.00 × 0.78)
+                </div>
+                <p><small>Um casal recebe CHF 17.80 por dia (modelo de degressão).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Subsídios por Criança e Bónus para Família Numerosa</h3>
+                <p>Cada criança recebe CHF 6.00 por dia. A partir da 3.ª criança, é concedido um bónus adicional de 10% da taxa base (CHF 1.00) de acordo com a base federal:</p>
+                <div class="formula">
+                    Total diário para crianças = (número de crianças × 6.00) + (SE crianças >= 3 ENTÃO (crianças - 2) × 1.00 SENÃO 0)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Extrapolação Mensal e Arredondamento</h3>
+                <p>O total diário é multiplicado pelo fator mensal 30.42 e arredondado comercialmente para o franco suíço mais próximo.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Valor mensal = ARREDONDAR( (Taxa Diária Total × 30.42) ; 0 )
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota importante para Genebra (GE):</strong><br>
+            • As taxas aplicam-se a <strong>alojamento individual</strong>. Se alojado em centros coletivos com refeições, os benefícios em espécie são deduzidos diretamente do benefício em dinheiro.<br>
+            • Base legal: Loi sur l'insertion et l'aide sociale individuelle (LIASI) e diretrizes do Hospice général 2026.
+        </div>
+
+        <div class="demo-card">
+            <div class="demo-header">🧪 Verificação de Transparência: Teste ao Vivo da Ajuda de Emergência de Genebra</div>
+            <div class="demo-body">
+                <p>Simule o cálculo de acordo com o algoritmo GE (2026).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Número de adultos</label>
+                        <input type="number" id="adultsCount" value="1" min="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Número de crianças</label>
+                        <input type="number" id="childrenCount" value="0" min="0">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Executar algoritmo</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Comprovativo de cálculo (lógica GE)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(valor mensal arredondado)</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Voltar à página inicial</a>
+            <a href="https://www.ge.ch" target="_blank" class="btn-link">Site oficial Cantão GE</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Hospice général Genebra – Ajuda de Emergência 2026</p>
+        <p>Fornecido por welfarecalc.ch | Algoritmos abertos para a Suíça</p>
+        <p>© 2026 welfarecalc.ch – Iniciativa de Algoritmos Abertos</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const PARAMS = {
+            baseDaily: 10.00,
+            partnerFactor: 0.78,
+            childRate: 6.00,
+            bonusRate: 1.00,
+            avgDays: 30.42
+        };
+
+        function computeGENothilfe(adults, children) {
+            // Cálculo de adultos com degressão
+            let adultDaily = (adults === 1) ? PARAMS.baseDaily : (PARAMS.baseDaily + (adults - 1) * PARAMS.baseDaily * PARAMS.partnerFactor);
+            
+            // Crianças + bónus para família numerosa
+            let childDaily = children * PARAMS.childRate;
+            let bonus = (children >= 3) ? (children - 2) * PARAMS.bonusRate : 0;
+            let totalChildDaily = childDaily + bonus;
+            
+            // Totais e arredondamento mensal
+            let totalDaily = adultDaily + totalChildDaily;
+            let rawMonthly = totalDaily * PARAMS.avgDays;
+            let roundedMonthly = Math.round(rawMonthly);
+            
+            return { adultDaily, totalChildDaily, totalDaily, rawMonthly, roundedMonthly, bonus };
+        }
+        
+        const runButton = document.getElementById('runCalcBtn');
+        if (runButton) {
+            runButton.addEventListener('click', function() {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const res = computeGENothilfe(adults, children);
+                
+                const stepsDiv = document.getElementById('stepsDetail');
+                if (stepsDiv) {
+                    stepsDiv.innerHTML = `
+                        <strong>📌 Adultos:</strong> CHF ${res.adultDaily.toFixed(2)} / dia<br>
+                        <strong>📌 Crianças:</strong> CHF ${res.totalChildDaily.toFixed(2)} / dia (incluindo CHF ${res.bonus.toFixed(2)} de bónus)<br>
+                        <strong>📌 Taxa diária total:</strong> CHF ${res.totalDaily.toFixed(2)}<br>
+                        <strong>📌 Mensal (30.42 dias):</strong> CHF ${res.rawMonthly.toFixed(2)}<br>
+                        <strong>💰 Valor mensal final arredondado:</strong> CHF ${res.roundedMonthly}.00
+                    `;
+                }
+                const monthlyDisplay = document.getElementById('monthlyAmountDisplay');
+                if (monthlyDisplay) {
+                    monthlyDisplay.innerText = `${res.roundedMonthly}.00 CHF`;
+                }
+                const resultPanel = document.getElementById('liveResultPanel');
+                if (resultPanel) {
+                    resultPanel.style.display = 'block';
+                }
+            });
+        }
+    })();
+</script>
+</body>
+</html>

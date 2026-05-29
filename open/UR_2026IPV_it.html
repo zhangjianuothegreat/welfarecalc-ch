@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo IPV Cantone Uri 2026 | Calcolo Trasparente | welfarecalc.ch</title>
+  <meta
+    content="Come viene calcolata la riduzione dei premi (IPV) 2026 nel Cantone Uri? Scopri il nostro algoritmo trasparente basato sui dati ufficiali SVS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_it.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo IPV Cantone Uri 2026 | Calcolo Trasparente" property="og:title" />
+  <meta content="Logica di calcolo ufficiale per la riduzione dei premi 2026 nel Cantone Uri (UR)."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/UR_2026IPV_it.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo del sussidio per i premi Uri 2026",
+      "description": "Guida passo-passo per determinare il diritto all'IPV nel Cantone UR (modello della franchigia).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione del reddito determinante, inclusa la maggiorazione patrimoniale del 15%"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione dei premi di riferimento cantonali per categoria d'età"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo della franchigia dell'8,5% e confronto con la garanzia minima legale"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DATI UFFICIALI 2026</div>
+      <h1>Algoritmo IPV: Cantone Uri (UR)</h1>
+      <p>Divulgazione trasparente della logica di calcolo per l'anno 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+    <div class="content">
+      <p>Fiducia attraverso la trasparenza. Qui riveliamo come il nostro calcolatore universale determina il suo
+        potenziale sussidio per i premi (IPV) nel Cantone Uri. Questo algoritmo matematico si basa rigorosamente sulle
+        disposizioni legali dell'Ufficio delle assicurazioni sociali di Uri (SVS Uri).</p>
+      <h2 class="section-title">1. Parametri chiave (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Franchigia a carico proprio</h4>
+          <div class="param-value">8.5 %</div>
+          <p><small>Ridotta dal 9,75%. Quota familiare a carico proprio sul reddito IPV.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Aliquota di imputazione patrimoniale</h4>
+          <div class="param-value">15.0 %</div>
+          <p><small>Percentuale fissa del patrimonio imponibile aggiunta al reddito.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Il percorso di calcolo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Reddito IPV determinante</h3>
+          <p>La capacità economica della famiglia si basa sui dati fiscali cantonali, integrati da un afflusso
+            patrimoniale ipotetico:</p>
+          <div class="formula-box">
+            <strong>Reddito_IPV</strong> = [Reddito netto] + ([Patrimonio imponibile] × 15%) - [Alimenti versati]
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Premi di riferimento cantonali 2026</h3>
+          <p>Il Consiglio di Stato del Cantone Uri definisce il volume standardizzato dei premi annui come segue:</p>
+          <table class="data-table">
+            <tr>
+              <th>Gruppo di età / persone</th>
+              <th>Premio di riferimento legale (CHF / anno)</th>
+            </tr>
+            <tr>
+              <td><strong>Adulti</strong> (da 26 anni e 19–25 anni senza formazione)</td>
+              <td>CHF 4'368</td>
+            </tr>
+            <tr>
+              <td><strong>Giovani adulti</strong> (19–25 anni, in formazione)</td>
+              <td>CHF 2'844</td>
+            </tr>
+            <tr>
+              <td><strong>Bambini</strong> (fino a 18 anni)</td>
+              <td>CHF 1'104</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Premio_Riferimento_Totale</strong> = (Numero_Adulti × 4'368) + (Numero_Giovani_Adult_in_Formazione ×
+            2'844) + (Numero_Bambini × 1'104)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Franchigia &amp; Garanzia sociale minima</h3>
+          <p>Innanzitutto, viene calcolata la franchigia familiare ordinaria:</p>
+          <div class="formula-box">
+            <strong>Franchigia_Familiare</strong> = Reddito_IPV × 8.5%
+          </div>
+          <p>Se il <code>Reddito_IPV</code> determinato è pari o inferiore a **CHF 90'000**, si applica la **garanzia
+            minima** cantonale per proteggere le famiglie:</p>
+          <table class="data-table">
+            <tr>
+              <th>Categoria (con Reddito IPV ≤ CHF 90'000)</th>
+              <th>Importo minimo garantito</th>
+            </tr>
+            <tr>
+              <td>Bambini (fino a 18 anni)</td>
+              <td>80% del premio di riferimento (= <strong>CHF 883.20</strong> / anno)</td>
+            </tr>
+            <tr>
+              <td>Giovani adulti in formazione (19-25)</td>
+              <td>50% del premio di riferimento (= <strong>CHF 1'422.00</strong> / anno)</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Importo_Minimo_Garantito</strong> = (Numero_Bambini × 883.20) + (Numero_Giovani_Adult_in_Formazione
+            × 1'422.00)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Diritto finale</h3>
+          <p>Il motore di calcolo determina il diritto ordinario e lo confronta dinamicamente:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Diritto_Ordinario = Premio_Riferimento_Totale - Franchigia_Familiare <br />
+            Diritto_Finale = Max(Diritto_Ordinario, Importo_Minimo_Garantito)
+          </div>
+          <p><small>Il diritto IPV finale è limitato dal premio familiare effettivamente pagato e viene arrotondato
+              commercialmente al franco intero.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Nota importante sulla verifica patrimoniale:</strong><br />
+        A differenza dei modelli con limiti patrimoniali fissi, il Cantone Uri utilizza un sistema flessibile. Valori
+        patrimoniali estremamente elevati portano automaticamente, tramite la maggiorazione del 15% nel primo passo, a
+        una franchigia elevata, eliminando matematicamente in modo preciso e socialmente equo un potenziale diritto.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Torna alla pagina iniziale</a>
+        <a class="btn-link" href="https://www.ur.ch" target="_blank">Sito web ufficiale del Cantone Uri</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fonte: Ordinanza di esecuzione sul sussidio per i premi del Cantone Uri 2026 | welfarecalc.ch</p>
+      <p>Questo riepilogo serve a informare sulla trasparenza algoritmica e non costituisce un diritto legale.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

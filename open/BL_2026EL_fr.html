@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorithme des PC 2026 Bâle-Campagne | Calcul Transparent | welfarecalc.ch</title>
+    <meta name="description" content="Comment sont calculées les prestations complémentaires (PC) 2026 dans le canton de Bâle-Campagne ? Découvrez notre algorithme transparent basé sur les données officielles de la SVA-BL.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026EL_fr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul des prestations complémentaires Bâle-Campagne 2026",
+      "description": "Répartition algorithmique détaillée du calcul des PC dans le canton de Bâle-Campagne.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination des dépenses reconnues (besoins de base, valeurs locatives régionales, primes d'assurance-maladie)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Imputation des revenus corrigés (exclusion de la 13e rente AVS, déductions pour revenu d'activité, consommation de la fortune)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du montant des PC (dépenses totales moins revenus imputables)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
+        <h1>Algorithme des PC : Canton de Bâle-Campagne</h1>
+        <p>Ventilation transparente des prestations complémentaires (PC) pour le canton de Bâle-Campagne</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La transparence crée la confiance. Les prestations complémentaires (PC) à l'AVS/AI interviennent là où les rentes de base ne couvrent pas entièrement les coûts de la vie. Nous documentons ici précisément comment notre moteur de calcul détermine votre droit dans le canton de Bâle-Campagne, en toute conformité avec la loi.</p>
+
+        <h2 class="section-title">1. Besoins de base annuels (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Personne seule</h4>
+                <div class="param-value">CHF 20'670</div>
+                <p><small>Montant forfaitaire harmonisé au niveau fédéral pour le coût de la vie.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Couples mariés</h4>
+                <div class="param-value">CHF 31'005</div>
+                <p><small>Besoins de base légaux combinés pour les deux époux.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Méthode de calcul officielle</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Dépenses reconnues (besoins)</h3>
+                <p>Notre algorithme agrège d'abord tous les postes de dépenses légalement reconnus selon les valeurs maximales cantonales :</p>
+                <div class="formula">
+                    Besoins de base + Loyer (jusqu'au plafond régional) + Prime de référence d'assurance-maladie
+                </div>
+                
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Plafonds de loyers 2026 dans le canton de BL</h4>
+                <p><small>Le canton de Bâle-Campagne comprend les régions 2 et 3 selon les directives fédérales. En cas de données NPA incomplètes, l'algorithme utilise la valeur standard (région 2).</small></p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Taille du ménage</th>
+                            <th>Région 2 (Moyenne) p.a.</th>
+                            <th>Région 3 (Rural) p.a.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1 personne</td>
+                            <td>CHF 18'300 (CHF 1'525/mois)</td>
+                            <td>CHF 16'680 (CHF 1'390/mois)</td>
+                        </tr>
+                        <tr>
+                            <td>2 personnes</td>
+                            <td>CHF 21'720 (CHF 1'810/mois)</td>
+                            <td>CHF 20'160 (CHF 1'680/mois)</td>
+                        </tr>
+                        <tr>
+                            <td>3 personnes</td>
+                            <td>CHF 23'760 (CHF 1'980/mois)</td>
+                            <td>CHF 22'200 (CHF 1'850/mois)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Primes de référence d'assurance-maladie reconnues (BL 2026)</h4>
+                <table class="data-table">
+                    <tr><td>Adultes (dès 26 ans)</td><td>CHF 4'596 p.a.</td></tr>
+                    <tr><td>Jeunes adultes (19-25 ans)</td><td>CHF 3'816 p.a.</td></tr>
+                    <tr><td>Enfants (jusqu'à 18 ans)</td><td>CHF 1'968 p.a.</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Revenus imputables</h3>
+                <p>Les dépenses sont comparées aux revenus et à la fortune corrigés :</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+                    <li><strong>Rentes et réforme de la 13e rente AVS 2026 :</strong> Les rentes ordinaires sont comptées à 100% comme revenu. <em>Important :</em> Conformément à la décision fédérale, la nouvelle 13e rente AVS introduite en 2026 est totalement exclue de l'algorithme des PC (elle n'est pas ajoutée comme revenu) afin d'éviter une réduction des prestations complémentaires.</li>
+                    <li><strong>Revenu d'activité lucrative :</strong> Calcul après déduction du montant exonéré (CHF 1'000 pour une personne seule / CHF 1'500 pour un couple). Le montant excédentaire est imputé aux 2/3 (facteur 0.666667).</li>
+                    <li><strong>Consommation de la fortune :</strong> (Fortune nette + valeur imposable du logement au-delà du plafond - montant exempté) / diviseur. Le diviseur est de 10 pour les rentiers AVS et de 15 pour les rentiers AI.</li>
+                </ul>
+                
+                <table class="data-table">
+                    <tr><th>Montants exemptés (fortune générale)</th><th>Montant</th></tr>
+                    <tr><td>Personne seule</td><td>CHF 30'000</td></tr>
+                    <tr><td>Couples mariés</td><td>CHF 50'000</td></tr>
+                    <tr><td>Exonération pour logement occupé par son propriétaire (standard)</td><td>CHF 112'500</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Résultat : Droit aux PC</h3>
+                <p>La différence détermine le montant annuel ou mensuel des PC :</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    PC annuelles = Max(0, Dépenses reconnues - Revenus imputables)
+                </div>
+                <p><small>Le montant mensuel est obtenu en divisant par 12 puis arrondi commercialement au franc supérieur.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Important : Seuil de fortune (seuil d'entrée)</strong><br>
+            Un droit légal aux PC n'existe dans le canton de Bâle-Campagne que si la fortune nette (déduction faite des dettes et de la valeur de base du logement occupé par son propriétaire) est inférieure à <strong>CHF 100'000</strong> pour les personnes seules ou à <strong>CHF 200'000</strong> pour les couples mariés.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Retour à la page d'accueil</a>
+            <a href="https://www.sva-bl.ch/de/ausgleichskasse/ergaenzungsleistungen-zur-ahv/iv-el" target="_blank" class="btn-link">Site officiel SVA Bâle-Campagne</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source : Directives de la SVA Bâle-Campagne 2026 &amp; Loi fédérale sur les prestations complémentaires (LPC)</p>
+        <p>Fourni par welfarecalc.ch | Tous les calculs sont des estimations sans engagement et sans garantie légale.</p>
+    </footer>
+</div>
+
+</body>
+</html>

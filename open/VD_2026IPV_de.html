@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPV Algorithmus Kanton Vaud 2026 | Transparente Berechnung (RDU) | welfarecalc.ch</title>
+    <meta name="description" content="Wie wird die Prämienverbilligung (IPV) 2026 im Kanton Vaud berechnet? Entdecken Sie das offizielle Zwei-Stufen-Modell (Subside ordinaire & spécifique) basierend auf dem RDU.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html">
+
+    <meta property="og:title" content="IPV Algorithmus Kanton Vaud 2026 | Transparente Berechnung (RDU)">
+    <meta property="og:description" content="Der exakte mathematische Algorithmus der Prämienverbilligung 2026 im Kanton Vaud. Offizielle Formeln transparent offengelegt.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/VD_2026IPV_de.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Berechnung der Prämienverbilligung Vaud 2026",
+      "description": "Schritt-für-Schritt-Anleitung zur Ermittlung des IPV-Anspruchs im Kanton Vaud mittels des RDU-Modells.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ermittlung des RDU (Revenu déterminant unifié) unter Hinzurechnung von Säule 3a und Vermögensaufrechnung (6.7%)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Berechnung des ordentlichen Subsidiums (Subside ordinaire) über die kantonale mathematische Progressionskurve."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Prüfung und Aufstockung durch das spezifische Subsidium (Subside spécifique), falls die Restprämie 10% des RDU übersteigt."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 3.5rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 2.5rem; height: 2.5rem; background: var(--swiss-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.1rem; }
+        .step-body h3 { color: var(--official-blue); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        
+        .formula-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 1.25rem; border-radius: 6px; margin: 0.75rem 0; font-family: 'Consolas', 'Courier New', monospace; font-size: 0.95rem; }
+        
+        .parameter-table { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.95rem; }
+        .parameter-table th, .parameter-table td { padding: 0.75rem; border: 1px solid #e2e8f0; text-align: left; }
+        .parameter-table th { background: #f1f5f9; color: var(--official-blue); font-weight: 600; }
+        .parameter-table tr:nth-child(even) { background: #f8fafc; }
+        
+        .alert { background: #fef2f2; border-left: 4px solid var(--swiss-red); padding: 1.25rem; border-radius: 6px; color: #991b1b; margin: 2rem 0; font-size: 0.95rem; }
+        .btn-link { display: inline-block; padding: 0.75rem 1.5rem; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin: 0.5rem; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; }
+        .btn-home { background: #64748b; }
+        .btn-home:hover { background: #475569; }
+        
+        footer { background: #1e293b; color: #94a3b8; text-align: center; padding: 1.5rem; font-size: 0.85rem; margin-top: 3rem; }
+        footer a { color: #cbd5e1; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <span class="update-tag">OFFIZIELLER ALGORITHMUS 2026</span>
+        <h1>Prämienverbilligung Kanton Vaud (VD) 2026</h1>
+        <p>Der offizielle Zwei-Stufen-Mathematik-Kern zur Berechnung von Subside Ordinaire und Spécifique</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
+        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Im Gegensatz zu Kantonen mit starren Einkommensstufen nutzt der Kanton Vaud (Waadt) ein hochentwickeltes, sozial gerechtes <strong>RDU-Modell (Revenu déterminant unifié)</strong>. Das Ziel des Kantons ist es, die Belastung durch die obligatorische Krankenpflegeversicherung (KVG) auf ca. <strong>10% des maßgebenden Einkommens</strong> zu decken.</p>
+
+        <h2 class="section-title">Kantonale Parameter für 2026</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Maximales Monats-Subsidium (Erwachsene)</h4>
+                <div class="param-value">CHF 331.00 / Monat</div>
+            </div>
+            <div class="param-card">
+                <h4>Minimales Monats-Subsidium (Erwachsene)</h4>
+                <div class="param-value">CHF 30.00 / Monat</div>
+            </div>
+            <div class="param-card">
+                <h4>Vermögens-Aufrechnungssatz (RDU)</h4>
+                <div class="param-value">6.7% (1/15tel der Reinvermögen)</div>
+            </div>
+            <div class="param-card">
+                <h4>Selbstbehalts-Obergrenze (Belastung)</h4>
+                <div class="param-value">10.0% des RDU</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Offizielle Referenzprämien 2026 (OVAM)</h2>
+        <p>Die Berechnung berücksichtigt nicht Ihre effektive Luxus-Franchise oder Zusatzversicherungen, sondern die vom Staatsrat festgelegten kantonalen Referenzprämien (Primes de référence 2026):</p>
+        <table class="parameter-table">
+            <thead>
+                <tr>
+                    <th>Altersgruppe (Code)</th>
+                    <th>Region 1 (Städtisch, z.B. Lausanne)</th>
+                    <th>Region 2 (Ländlich)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Erwachsene (ab 26 Jahre)</strong></td>
+                    <td>CHF 4'212 / Jahr (351.-/Mt.)</td>
+                    <td>CHF 3'912 / Jahr (326.-/Mt.)</td>
+                </tr>
+                <tr>
+                    <td><strong>Junge Erwachsene (19 - 25 Jahre)</strong></td>
+                    <td>CHF 2'820 / Jahr (235.-/Mt.)</td>
+                    <td>CHF 2'580 / Jahr (215.-/Mt.)</td>
+                </tr>
+                <tr>
+                    <td><strong>Kinder (0 - 18 Jahre)</strong></td>
+                    <td>CHF 1'188 / Jahr (99.-/Mt.)</td>
+                    <td>CHF 1'068 / Jahr (89.-/Mt.)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="section-title">Schritt-für-Schritt Berechnungslogik</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Ermittlung des Bereinigten RDU</h3>
+                <p>Das kantonale RDU basiert auf der definitiven Steuerveranlagung, bereinigt um die spezifischen Waadtländer Gesetzgebungen (Ausschluss von Privatschulden und Hinzurechnungen):</p>
+                <div class="formula-box">
+                    RDU = Steuerbares Nettoeinkommen <br>
+                    + Abzüge für Einzahlungen in die Säule 3a <br>
+                    + Steuerlich abgezogene Krankenkassenprämien <br>
+                    + [Verfügbares Reinvermögen - Freibetrag] × 6.7% <br>
+                    - Pauschalabzüge (z.B. Ehepaar-Abzug: CHF 4'400, Kinderabzug: CHF 1'300)
+                </div>
+                <p><small>*Hinweis: Im Kanton Vaud werden private Schulden oder Hypotheken beim IPV-Vermögenstest NICHT mindernd berücksichtigt!</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Berechnung des ordentlichen Subsidiums (Subside ordinaire)</h3>
+                <p>Der Kanton Vaud nutzt zur Berechnung des ordentlichen Anspruchs eine logarithmisch geglättete, progressive Kurvenfunktion. Für UER-Standardhaushalte gelten folgende mathematische Parameter:</p>
+                <div class="formula-box">
+                    Wenn RDU ≤ CHF 16'000 (Grenze C6): <br>
+                    &nbsp;&nbsp;Subside_Ordinaire = Maximale Referenzprämie des Haushalts <br><br>
+                    Wenn CHF 16'000 < RDU ≤ CHF 40'000 (Grenze A6): <br>
+                    &nbsp;&nbsp;Kurven-Faktor = P6 (2.3) & Q6 (0.8) <br>
+                    &nbsp;&nbsp;Subside_Ordinaire = Berechnet über die gleitende kantonale Dekompressions-Kurvenformel. <br><br>
+                    Anwendung der gesetzlichen Mindestgrenzen: <br>
+                    &nbsp;&nbsp;Das monatliche ordentliche Subsidium pro Erwachsenem wird auf minimal CHF 30.00 festgesetzt und deckelt bei maximal CHF 331.00.
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Das Sicherheitsnetz: Spezifisches Subsidium (Subside spécifique)</h3>
+                <p>Dies ist der wichtigste Korrekturfaktor, den Standard-Rechner vermissen lassen. Wenn nach Abzug des ordentlichen Subsidiums die verbleibende Prämienlast des Haushalts unzumutbar hoch ist, greift der 10%-Sicherungsschirm:</p>
+                <div class="formula-box">
+                    Zulässige Haushalts-Prämenlast = Gesamte Referenzprämien des Haushalts <br>
+                    Restlast = Zulässige Haushalts-Prämenlast - Subside_Ordinaire_Jahr <br><br>
+                    Kantonale Zumutbarkeitsschwelle = RDU × 10% <br><br>
+                    Wenn Restlast > Zumutbarkeitsschwelle: <br>
+                    &nbsp;&nbsp;Subside_Spécifique = Restlast - Zumutbarkeitsschwelle <br>
+                    Ansonsten: <br>
+                    &nbsp;&nbsp;Subside_Spécifique = 0
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Finaler Gesamtanspruch & Plafonierung</h3>
+                <p>Der definitive Auszahlungsbetrag ergibt sich aus der Addition beider Subsidien-Komponenten und wird durch die echte, effektive Prämie des Versicherten limitiert:</p>
+                <div class="formula-box">
+                    Anspruch_Absolut = Subside_Ordinaire + Subside_Spécifique <br>
+                    Finaler_Anspruch = Min(Anspruch_Absolut, Effektive_Krankenkassenprämie_Haushalt)
+                </div>
+                <p><small>Beträge unter CHF 100.00 pro Jahr werden aus Effizienzgründen nicht ausbezahlt (Bagatellgrenze).</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Vermögens-Ausschlussgrenze (Obergrenze):</strong><br>
+            Übersteigt das bereinigte Reinvermögen (ohne Abzug von Schulden) <strong>CHF 100'000</strong> bei Alleinstehenden bzw. <strong>CHF 160'000</strong> bei verheirateten Paaren, erlischt der gesetzliche Anspruch auf die Prämienverbilligung im Kanton Vaud vollständig – unabhängig davon, wie niedrig das RDU-Einkommen sein mag.
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Zurück zur Startseite</a>
+            <a href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie" target="_blank" class="btn-link">Offizielle Webseite Kanton VD</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Quelle: Generalsekretariat der Generaldirektion für den sozialen Zusammenhalt (DGCS) & Office vaudois de l'assurance-maladie (OVAM), Kanton Vaud 2026. Bereitgestellt durch <a href="https://www.welfarecalc.ch" target="_blank">welfarecalc.ch</a>.</p>
+    </footer>
+</div>
+
+</body>
+</html>

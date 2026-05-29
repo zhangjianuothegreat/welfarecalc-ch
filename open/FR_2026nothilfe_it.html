@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo dell'assistenza di emergenza (Nothilfe) Canton Friburgo (FR) 2026 | Calcolo trasparente | welfarecalc.ch</title>
+    <meta name="description" content="Come viene calcolata l'assistenza di emergenza 2026 nel Canton Friburgo? Scopri il nostro algoritmo trasparente basato sulle linee guida cantonali ufficiali e sulla legge sull'asilo.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/FR_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritmo dell'assistenza di emergenza Canton Friburgo 2026 | Calcolo trasparente">
+    <meta property="og:description" content="Logica di calcolo ufficiale per l'assistenza di emergenza 2026 a Friburgo basata sulle ordinanze cantonali.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/FR_2026nothilfe_it.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcolo dell'assistenza di emergenza Friburgo 2026",
+      "description": "Guida passo-passo per il calcolo dell'assistenza di emergenza nel Canton FR (alloggio collettivo).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinazione della tariffa giornaliera di base per adulti (singolo o coppia)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcolo degli importi per i bambini in base al fattore cantonale"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Proiezione mensile e arrotondamento commerciale al franco intero"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Stili principali (in linea con AG/AI) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s; }
+        .btn-link:hover { background: #002244; text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        
+        /* Demo Card */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">DATI UFFICIALI 2026 · Assistenza d’emergenza FR</div>
+        <h1>Algoritmo dell'assistenza d'emergenza: Canton Friburgo</h1>
+        <p>Rappresentazione trasparente della logica di calcolo secondo le linee guida cantonali 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
+        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La fiducia nasce dalla trasparenza. Nel Canton Friburgo (FR), l'assistenza d'emergenza si basa su un modello a fattori specifico. Qui divulghiamo l'intero algoritmo per l'anno 2026 per offrire la massima chiarezza a persone interessate e centri di consulenza.</p>
+
+        <h2 class="section-title">1. Parametri di calcolo (FR 2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Tariffa giornaliera di base (singolo)</h4>
+                <div class="param-value">CHF 8.50 / giorno</div>
+                <p><small>Fabbisogno di base per una persona sola in un alloggio collettivo.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Fattore di coppia</h4>
+                <div class="param-value">Fattore 1.68</div>
+                <p><small>Due adulti nello stesso nucleo famigliare ricevono 1.68 volte la tariffa individuale.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Fattore aggiuntivo per bambini</h4>
+                <div class="param-value">Fattore 0.53</div>
+                <p><small>Importo aggiuntivo per bambino (53% della tariffa base).</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Procedura di calcolo (passo dopo passo)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinazione della tariffa giornaliera per adulti</h3>
+                <p>La tariffa giornaliera si calcola sulla base della tariffa base e del numero di adulti tenendo conto della degressione:</p>
+                <div class="formula">
+                    Persona sola: CHF 8.50<br>
+                    Coppia / Due persone: 8.50 + (2 - 1) × 8.50 × 1.68 = CHF 22.78
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Aggiunta della tariffa giornaliera per bambini</h3>
+                <p>Per ogni bambino viene aggiunto un importo pari al 53% della tariffa base:</p>
+                <div class="formula">
+                    Supplemento per bambino: 8.50 × 0.53 = CHF 4.505<br>
+                    Importo giornaliero per bambini = Numero di bambini × CHF 4.51 (arrotondato)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Proiezione mensile e arrotondamento</h3>
+                <p>L'importo totale viene proiettato su 30.42 giorni e, nel Canton FR, arrotondato commercialmente al franco intero successivo.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Assegno mensile = ARROTONDA( (Importo giornaliero totale × 30.42) ; 0 )
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota sul Canton FR:</strong><br>
+            • <strong>Prestazioni in natura:</strong> L'assistenza d'emergenza viene fornita principalmente attraverso l'alloggio e il vitto in strutture collettive.<br>
+            • <strong>Competenza:</strong> Il calcolo è effettuato dall'Ufficio cantonale delle azioni sociali (SAS).
+        </div>
+
+        <h2 class="section-title">3. Fonti dei dati e basi giuridiche</h2>
+        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+            <li><strong>Legge sull'assistenza sociale (SHG FR)</strong>.</li>
+            <li><strong>Legge sull'asilo (AsylG)</strong> – Art. 82 (Assistenza d'emergenza).</li>
+            <li><strong>Direttive della Direzione della sanità e degli affari sociali (GSD)</strong>.</li>
+            <li><strong>WelfareCalc – Stato dei dati:</strong> Gennaio 2026.</li>
+        </ul>
+
+        <div class="demo-card">
+            <div class="demo-header">🧪 Verifica di trasparenza: testa l'assistenza d'emergenza FR dal vivo</div>
+            <div class="demo-body">
+                <p>Simula il calcolo secondo l'algoritmo FR (2026).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Adulti</label>
+                        <input type="number" id="adultsCount" value="1" min="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Bambini</label>
+                        <input type="number" id="childrenCount" value="0" min="0">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Avvia il calcolo</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Prova di calcolo (Logica FR)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(importo mensile arrotondato)</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Pagina iniziale</a>
+            <a href="https://www.fr.ch/dsas/sasoc" target="_blank" class="btn-link">Sito ufficiale Canton FR</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Canton Friburgo – Ufficio delle azioni sociali / SAS 2026</p>
+        <p>© 2026 welfarecalc.ch – Open Algorithm Initiative</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const PARAMS = {
+            baseDaily: 8.50,
+            coupleFactor: 1.68,
+            childFactor: 0.53,
+            avgDaysMonth: 30.42
+        };
+
+        function computeFRNothilfe(adults, children) {
+            let adultDaily = 0;
+            if (adults === 1) {
+                adultDaily = PARAMS.baseDaily;
+            } else {
+                adultDaily = PARAMS.baseDaily + (adults - 1) * PARAMS.baseDaily * PARAMS.coupleFactor;
+            }
+            const childDaily = children * (PARAMS.baseDaily * PARAMS.childFactor);
+            const totalDaily = adultDaily + childDaily;
+            const rawMonthly = totalDaily * PARAMS.avgDaysMonth;
+            const roundedMonthly = Math.round(rawMonthly);
+            
+            return { adultDaily, childDaily, totalDaily, rawMonthly, roundedMonthly };
+        }
+        
+        document.getElementById('runCalcBtn').addEventListener('click', () => {
+            const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+            const children = parseInt(document.getElementById('childrenCount').value) || 0;
+            const res = computeFRNothilfe(adults, children);
+            
+            document.getElementById('stepsDetail').innerHTML = `
+                <strong>Step 1 (Adulti):</strong> CHF ${res.adultDaily.toFixed(2)} / giorno<br>
+                <strong>Step 2 (Bambini):</strong> ${children} × (8.50 × 0.53) = CHF ${res.childDaily.toFixed(2)} / giorno<br>
+                <strong>Step 3 (Totale):</strong> CHF ${res.totalDaily.toFixed(2)} × 30.42 = CHF ${res.rawMonthly.toFixed(2)}
+            `;
+            document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly}.00 CHF`;
+            document.getElementById('liveResultPanel').style.display = 'block';
+        });
+    })();
+</script>
+</body>
+</html>

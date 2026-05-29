@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Asignaciones Familiares (AF) Cantón de San Galo 2026 | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calculan las Asignaciones Familiares (AF) para 2026 en el Cantón de San Galo? Descubra nuestro algoritmo transparente para subsidios por hijo y por educación.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026FA_es.html">
+    
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026FA_de.html">
+
+    <meta property="og:title" content="Algoritmo de Asignaciones Familiares Cantón de San Galo 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo para subsidios por hijo y por educación 2026 en el Cantón de San Galo.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/SG_2026FA_es.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Asignaciones Familiares San Galo 2026",
+      "description": "Guía paso a paso del cálculo legal de subsidios por hijo y por educación en el Cantón de San Galo.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación de elegibilidad e ingreso AHV (ingreso mínimo CHF 630/mes)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Clasificación: Subsidio por hijo (CHF 245) o Subsidio por educación (CHF 298)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Exclusión de subsidios únicos (nacimiento/adopción = CHF 0 en Cantón SG)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinar el derecho anual total mediante suma lineal."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CUMPLE CON FAMZG 2026</div>
+        <h1>Algoritmo de AF: Cantón de San Galo</h1>
+        <p>Documentación transparente de las asignaciones familiares (subsidios por hijo y por educación) para el año 2026 (SG)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>En Suiza, las asignaciones familiares están reguladas por la ley (FamZG). Nuestra calculadora utiliza las tasas cantonales específicas del Cantón de San Galo para 2026 a fin de determinar con precisión su derecho. La transparencia es importante para nosotros.</p>
+
+        <h2 class="section-title">1. Tasas mensuales SG (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Subsidio por hijo</h4>
+                <div class="param-value">CHF 245 / mes</div>
+                <p><small>Para hijos desde 0 hasta los 16 años.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Subsidio por educación</h4>
+                <div class="param-value">CHF 298 / mes</div>
+                <p><small>Desde los 16 años hasta el final de la educación (máx. 25 años).</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Proceso de cálculo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determinación de la categoría y verificación de elegibilidad</h3>
+                <p>El algoritmo comprueba la edad, el estado y los requisitos mínimos legales para cada hijo:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Ingreso mínimo de los padres:</strong> Para tener derecho a las asignaciones completas, el progenitor que recibe la asignación debe tener un ingreso sujeto a AHV de al menos <strong>CHF 630 / mes</strong> (CHF 7'560 / año).</li>
+                    <li><strong>0 - 16 años:</strong> Derecho a subsidio por hijo (CHF 245).</li>
+                    <li><strong>16 - 25 años:</strong> Derecho a subsidio por educación (CHF 298), siempre que el hijo esté en educación o formación reconocida y el ingreso personal anual del hijo no supere <strong>CHF 30,240</strong>.</li>
+                    <li><strong>Hijos con discapacidad:</strong> Derecho a subsidio por hijo hasta los 20 años si no pueden trabajar.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Cálculo del monto mensual</h3>
+                <p>El Cantón de San Galo utiliza un modelo matemático lineal sin escalado progresivo por número de hijos o niveles adicionales por edad:</p>
+                <div class="formula">
+                    Suma mensual = (Número de hijos × CHF 245) + (Número en educación/formación × CHF 298)
+                </div>
+                <p><small>*Importante: En el Cantón de San Galo no hay aumento para familias numerosas (a partir del tercer hijo) ni niveles separados por edad (como en ZH o LU).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Subsidios únicos (nacimiento/adopción)</h3>
+                <p>A diferencia de otros cantones, el Cantón de San Galo <strong>no</strong> concede subsidios únicos por nacimiento o adopción.</p>
+                <table class="data-table">
+                    <tr><th>Tipo de subsidio</th><th>Monto (SG)</th></tr>
+                    <tr><td>Subsidio de nacimiento</td><td>CHF 0</td></tr>
+                    <tr><td>Subsidio de adopción</td><td>CHF 0</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Determinación del derecho anual</h3>
+                <p>El pago se realiza mensualmente a través del empleador o directamente mediante la Caja de Compensación Familiar (SVA SG):</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Monto anual = (Subsidio total mensual) × 12
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Elegibilidad y orden de prioridad:</strong><br>
+            Los subsidios para un mismo hijo se pagan una sola vez. Si ambos padres tienen un empleo remunerado, el orden de prioridad legal según el Art. 12 FamZG determina estrictamente el derecho principal (basado en el lugar de trabajo, la custodia y el mayor ingreso AHV).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Ir a la calculadora">Iniciar calculadora</a>
+            <a href="https://www.svasg.ch/produkte/fam/" target="_blank" class="btn-link" aria-label="Ir a la página oficial de SVA San Galo">Página oficial SVA San Galo</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuente: Directrices SVA San Galo 2026 & Ley Federal de Asignaciones Familiares (FamZG)</p>
+        <p>© 2026 welfarecalc.ch | Cálculo transparente de asignaciones familiares</p>
+    </footer>
+</div>
+
+</body>
+</html>

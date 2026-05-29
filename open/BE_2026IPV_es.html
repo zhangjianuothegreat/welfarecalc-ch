@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Configuración Básica SEO -->
+    <title>Algoritmo IPV Cantón de Berna 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calcula la reducción de la prima (IPV) 2026 en el Cantón de Berna? Descubra nuestro algoritmo transparente basado en el modelo oficial por niveles de la Oficina de Seguros Sociales (ASV).">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Etiquetas canónicas y hreflang - SEO esencial -->
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026IPV_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026IPV_de.html">
+
+    <!-- Open Graph / Redes Sociales SEO -->
+    <meta property="og:title" content="Algoritmo IPV Cantón de Berna 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo para el modelo bernés por niveles 2026.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BE_2026IPV_es.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <!-- Datos Estructurados Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Reducción de Prima Berna 2026",
+      "description": "Explicación del modelo bernés por niveles para determinar la elegibilidad a la IPV.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo de la renta relevante (LNA) incluyendo ajuste de activos"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del nivel de ingresos (1 a 5)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del subsidio mensual por persona y región"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.85rem; text-transform: uppercase; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; border-left: 4px solid var(--official-blue); }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
+        .btn-link:hover { background: #002244; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #c51a11; }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CANTÓN DE BERNA - DATOS 2026</div>
+        <h1>Algoritmo IPV: Cantón de Berna</h1>
+        <p>Divulgación transparente del modelo bernés por niveles para el año 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La confianza se construye con transparencia. Aquí revelamos la lógica matemática que utiliza nuestro sistema para calcular su derecho a la reducción de primas en el Cantón de Berna. Este algoritmo se basa en el modelo oficial por niveles de la Oficina de Seguros Sociales (ASV).</p>
+
+        <h2 class="section-title">1. Parámetros Clave (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Tasa de Imputación de Activos</h4>
+                <div class="param-value">5.0 %</div>
+                <p><small>Se añade a los ingresos el 5% de los activos netos ajustados.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Deducción de Activos</h4>
+                <div class="param-value">CHF 17,000</div>
+                <p><small>Esta cantidad se deduce de los activos netos por persona.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Deducción de Ingresos del Trabajo</h4>
+                <div class="param-value">Máx. CHF 3,000</div>
+                <p><small>5% de los ingresos del trabajo, tope de CHF 3,000.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Pasos del Cálculo</h2>
+
+        <!-- Paso 1 -->
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Renta Relevante (LNA)</h3>
+                <p>La LNA determina su clasificación:</p>
+                <div class="formula-box">
+                    LNA = Ingreso Imponible + (Activos Ajustados × 5%) - Deducciones Sociales - Deducción Ingresos del Trabajo
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Categoría</th><th>Deducción Social 2026</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Parejas casadas / 2 adultos</td><td>CHF 13,000</td></tr>
+                        <tr><td>Familias monoparentales</td><td>CHF 9,750</td></tr>
+                        <tr><td>Personas solas</td><td>CHF 2,200</td></tr>
+                        <tr><td>1er hijo / Joven adulto</td><td>+ CHF 15,000</td></tr>
+                        <tr><td>2º hijo</td><td>+ CHF 12,500</td></tr>
+                        <tr><td>Cada hijo adicional</td><td>+ CHF 10,000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Niveles de Ingreso 2026</h3>
+                <p>Según la LNA, se le asigna a uno de los cinco niveles:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Nivel</th><th>LNA hasta máx.</th><th>Elegible</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Nivel 1</td><td>CHF 9,000</td><td>Todos</td></tr>
+                        <tr><td>Nivel 2</td><td>CHF 17,000</td><td>Todos</td></tr>
+                        <tr><td>Nivel 3</td><td>CHF 25,000</td><td>Todos</td></tr>
+                        <tr><td>Nivel 4</td><td>CHF 35,000</td><td>Todos</td></tr>
+                        <tr><td>Nivel 5</td><td>CHF 45,000</td><td>Solo familias</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Paso 3 -->
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Subsidio Mensual (Región 2)</h3>
+                <p>Ejemplo de montos mensuales para la región de prima 2 (aglomeración):</p>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Nivel</th><th>Adultos</th><th>Jóvenes Adultos*</th><th>Niños*</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Nivel 1</td><td>CHF 221.00</td><td>CHF 239.25</td><td>CHF 119.30</td></tr>
+                        <tr><td>Nivel 2</td><td>CHF 147.00</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                        <tr><td>Nivel 3</td><td>CHF 107.00</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                        <tr><td>Nivel 4</td><td>CHF 67.00</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                        <tr><td>Nivel 5</td><td>CHF 33.50</td><td>CHF 0.00</td><td>CHF 0.00</td></tr>
+                    </tbody>
+                </table>
+                <p><small>*Nota: En los niveles 2-5, los niños y jóvenes adultos en el Cantón de Berna no reciben subsidios.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Regla de Tope:</strong><br>
+            El derecho anual calculado está siempre limitado por la <strong>prima efectivamente pagada</strong>. Si el derecho a IPV excede su prima, el monto se reduce al importe de la prima.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Volver a la Calculadora</a>
+            <a href="https://www.asv.dij.be.ch/de/start.html" target="_blank" class="btn-link">Sitio Oficial ASV Berna</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuente: Oficina de Seguros Sociales del Cantón de Berna (ASV) | Versión del Algoritmo: v2026.1</p>
+        <p>WelfareCalc no asume responsabilidad por la exactitud; solo la decisión oficial de la ASV es legalmente vinculante.</p>
+    </footer>
+</div>
+
+</body>
+</html>

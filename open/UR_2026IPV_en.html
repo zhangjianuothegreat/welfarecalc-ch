@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV Algorithm Canton Uri 2026 | Transparent Calculation | welfarecalc.ch</title>
+  <meta
+    content="How is the premium reduction (IPV) 2026 calculated in Canton Uri? Discover our transparent algorithm based on official SVS data."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_en.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV Algorithm Canton Uri 2026 | Transparent Calculation" property="og:title" />
+  <meta content="Official calculation logic for the premium reduction 2026 in Canton Uri (UR)."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/UR_2026IPV_en.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calculation of the premium reduction Uri 2026",
+      "description": "Step-by-step guide to determining IPV entitlement in the canton of UR (deductible model).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determination of the relevant income including 15% asset surcharge"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determination of the cantonal reference premiums per age category"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculation of the deductible of 8.5% and comparison with the statutory minimum guarantee"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">OFFICIAL DATA 2026</div>
+      <h1>IPV Algorithm: Canton Uri (UR)</h1>
+      <p>Transparent disclosure of the calculation logic for the year 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+    <div class="content">
+      <p>Trust through transparency. Here we disclose how our universal calculator determines your potential premium
+        reduction (IPV) in the canton of Uri. This mathematical algorithm is strictly based on the legal requirements of
+        the Social Insurance Office Uri (SVS Uri).</p>
+      <h2 class="section-title">1. Core Parameters (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Personal Deductible</h4>
+          <div class="param-value">8.5 %</div>
+          <p><small>Reduced from 9.75%. The household's own contribution to the PV income.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Asset Surcharge Rate</h4>
+          <div class="param-value">15.0 %</div>
+          <p><small>Fixed percentage of taxable assets added to income.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. The Calculation Path</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Relevant PV Income</h3>
+          <p>The economic capacity of the household is based on cantonal tax data, expanded by a hypothetical asset
+            inflow:</p>
+          <div class="formula-box">
+            <strong>PV_Income</strong> = [Net Income] + ([Taxable Assets] × 15%) - [Alimony Paid]
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Cantonal Reference Premiums 2026</h3>
+          <p>The Government Council of the Canton of Uri defines the standardized target premium volume per year as
+            follows:</p>
+          <table class="data-table">
+            <tr>
+              <th>Age / Person Group</th>
+              <th>Statutory Reference Premium (CHF / Year)</th>
+            </tr>
+            <tr>
+              <td><strong>Adults</strong> (from 26 years and 19–25 years without education)</td>
+              <td>CHF 4'368</td>
+            </tr>
+            <tr>
+              <td><strong>Young Adults</strong> (19–25 years, in education)</td>
+              <td>CHF 2'844</td>
+            </tr>
+            <tr>
+              <td><strong>Children</strong> (up to 18 years)</td>
+              <td>CHF 1'104</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Total_Reference_Premium</strong> = (Number_Adults × 4'368) + (Number_Young_Adults_in_Education ×
+            2'844) + (Number_Children × 1'104)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Deductible &amp; Social Minimum Guarantee</h3>
+          <p>First, the ordinary household deductible is calculated:</p>
+          <div class="formula-box">
+            <strong>Household_Deductible</strong> = PV_Income × 8.5%
+          </div>
+          <p>If the determined <code>PV_Income</code> is at or below **CHF 90'000**, the cantonal **Minimum Guarantee**
+            applies to protect families:</p>
+          <table class="data-table">
+            <tr>
+              <th>Category (for PV Income ≤ CHF 90'000)</th>
+              <th>Guaranteed Minimum Amount</th>
+            </tr>
+            <tr>
+              <td>Children (up to 18 years)</td>
+              <td>80% of the reference premium (= <strong>CHF 883.20</strong> / year)</td>
+            </tr>
+            <tr>
+              <td>Young Adults in Education (19-25)</td>
+              <td>50% of the reference premium (= <strong>CHF 1'422.00</strong> / year)</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Guaranteed_Minimum_Amount</strong> = (Number_Children × 883.20) + (Number_Young_Adults_in_Education
+            × 1'422.00)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Final Entitlement</h3>
+          <p>The calculation engine determines the ordinary entitlement and dynamically compares it:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Ordinary_Entitlement = Total_Reference_Premium - Household_Deductible <br />
+            Final_Entitlement = Max(Ordinary_Entitlement, Guaranteed_Minimum_Amount)
+          </div>
+          <p><small>The final IPV entitlement is capped by the effectively paid household premium and rounded
+              commercially to whole francs.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Important note on asset testing:</strong><br />
+        In contrast to models with rigid asset limits, the Canton of Uri uses a fluid system. Extremely high asset
+        values automatically lead to a high deductible via the 15% surcharge in the first step, whereby a potential
+        entitlement is mathematically precisely and socially fairly eliminated.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Back to homepage</a>
+        <a class="btn-link" href="https://www.ur.ch" target="_blank">Official website Canton Uri</a>
+      </div>
+    </div>
+    <footer>
+      <p>Source: Enforcement Ordinance on Premium Reduction of the Canton of Uri 2026 | welfarecalc.ch</p>
+      <p>This summary is for information on algorithmic transparency and does not constitute a legal claim.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

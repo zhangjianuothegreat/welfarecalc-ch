@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorytm Pomocy Społecznej - Kanton Obwalden 2026 | Przejrzyste Obliczenia | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczana jest pomoc społeczna w kantonie Obwalden (OW) na 2026 rok? Poznaj nasz przejrzysty algorytm oparty na wytycznych SKOS i prawie kantonalnym.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/OW_2026SH_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/OW_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/OW_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/OW_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/OW_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/OW_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/OW_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/OW_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/OW_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/OW_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/OW_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/OW_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/OW_2026SH_de.html">
+
+    <meta property="og:title" content="Algorytm Pomocy Społecznej - Kanton Obwalden 2026 | Przejrzyste Obliczenia">
+    <meta property="og:description" content="Oficjalna logika obliczania pomocy społecznej na 2026 rok w Obwalden, oparta na wytycznych SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/OW_2026SH_pl.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie pomocy społecznej w Obwalden 2026",
+      "description": "Szczegółowe zestawienie algorytmu obliczania pomocy społecznej w kantonie Obwalden (OW).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Weryfikacja limitu majątku zgodnie z rewizją SKOS 2026"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Obliczenie społecznego minimum egzystencji na podstawie wielkości gospodarstwa domowego"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ocena kosztów mieszkaniowych zgodnie z limitami kantonalnymi w kantonie OW"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Porównanie dochodu netto po odliczeniu dodatku za pracę zarobkową"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">ZGODNE Z WYTYCZNYMI SKOS 2026</div>
+        <h1>Algorytm Pomocy Społecznej: Kanton Obwalden</h1>
+        <p>Przejrzysta dokumentacja logiki obliczania społecznego minimum egzystencji (OW)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Zaufanie buduje się poprzez absolutną przejrzystość. Udostępniamy tutaj kompletny algorytm, który napędza obliczenia dla kantonu Obwalden (OW) na stronie welfarecalc.ch. Logika w pełni jest zgodna z przepisami ustawy o pomocy społecznej kantonu Obwalden (SHG OW) oraz z ogólnoszwajcarskimi wytycznymi SKOS 2026.</p>
+
+        <h2 class="section-title">1. Kontrola majątku (Próg początkowy)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Limit dla osoby samotnej</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>Zwiększony zgodnie z rewizją SKOS obowiązującą od 01.01.2026 (poprzednio CHF 4'000).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Limit dla par / rodzin</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Plus CHF 3'000 na każde dziecko. Całkowity maksymalny limit wynosi CHF 15'000 na jednostkę pomocową.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Ścieżka obliczeniowa (Miesięcznie)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Podstawowy zasiłek na utrzymanie (BLA)</h3>
+                <p>BLA pokrywa koszty żywności, odzieży, energii i prowadzenia gospodarstwa domowego. Jest obliczany ściśle według oficjalnej jednostki pomocowej SKOS (liczba osób w tym samym gospodarstwie domowym):</p>
+                <table class="data-table">
+                    <tr><th>Wielkość gospodarstwa domowego</th><th>Kwota miesięcznie (SKOS 2026)</th></tr>
+                    <tr><td>1 osoba</td><td>CHF 1'061</td></tr>
+                    <tr><td>2 osoby</td><td>CHF 1'624</td></tr>
+                    <tr><td>3 osoby</td><td>CHF 1'954</td></tr>
+                    <tr><td>4 osoby</td><td>CHF 2'240</td></tr>
+                    <tr><td>5 osób</td><td>CHF 2'526</td></tr>
+                    <tr><td>Każda dodatkowa osoba</td><td>+ CHF 201</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Koszty mieszkaniowe (Limity czynszu w kantonie OW)</h3>
+                <p>Alokacja rzeczywistych kosztów najmu (czynsz brutto łącznie z kosztami dodatkowymi i ogrzewaniem) do oficjalnie uznawanego maksimum kantonalnego:</p>
+                <table class="data-table">
+                    <tr><th>Wielkość gospodarstwa domowego</th><th>Maks. uznawany czynsz brutto (Kanton OW)</th></tr>
+                    <tr><td>1 osoba</td><td>CHF 1'100</td></tr>
+                    <tr><td>2 osoby</td><td>CHF 1'400</td></tr>
+                    <tr><td>3 osoby</td><td>CHF 1'650</td></tr>
+                    <tr><td>4 osoby</td><td>CHF 1'850</td></tr>
+                    <tr><td>5+ osób</td><td>CHF 2'000</td></tr>
+                </table>
+                <div class="formula" style="margin-top: 15px;">
+                    Uznawany czynsz = Min(Rzeczywisty czynsz, Maksimum kantonalne)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Koszty zdrowotne i obniżka składki IPV</h3>
+                <p>Koszty obowiązkowego ubezpieczenia zdrowotnego (KVG) są uwzględniane w budżecie. Zgodnie z oficjalną praktyką kantonu OW, Indywidualna Redukcja Składki (IPV) jest najpierw bezpośrednio stosowana:</p>
+                <div class="formula">
+                    Uznawana potrzeba składki = Max(0, Składka KVG - Miesięczna IPV)
+                </div>
+                <p><small>*Uwaga: stosuje się albo kantonalną składkę referencyjną, albo rzeczywistą składkę (jeśli jest niższa).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Dochód i dodatek za pracę zarobkową (EFB)</h3>
+                <p>Aby zapewnić zachęty do podjęcia pracy zarobkowej, osoby zatrudnione otrzymują ryczałtowy dodatek od swojego dochodu netto. Jest on obliczany w następujący sposób:</p>
+                <div class="formula">
+                    Dochód podlegający ocenie = Dochód netto - EFB (Min(400, Max(200, Dochód netto × 0,2)))
+                </div>
+                <p><small>Inne dochody (np. dodatki na dzieci, wszystkie rodzaje emerytur, alimenty) oraz wykorzystanie majątku (jeśli majątek przekracza limity) są wliczane w całości do dochodu.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Wynik: Miesięczne uprawnienie</h3>
+                <p>Ostateczna prawna wypłata pomocy społecznej w kantonie Obwalden wynika z matematycznego deficytu pokrycia:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Uprawnienie = (BLA + Uznawany czynsz + Potrzeba składki zdrowotnej + IE*) - (Dochód podlegający ocenie)
+                </div>
+                <p><small>*IE = dodatek integracyjny za możliwe do zweryfikowania działania integracyjne lub pracę zarobkową (zwykle od CHF 100 do CHF 300 miesięcznie).</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Wykorzystanie majątku w kantonie Obwalden (OW):</strong><br>
+            Aktywa płynne i majątek przekraczający limity kantonalne podczas wstępnej oceny muszą zostać wykorzystane przed otrzymaniem ekonomicznej pomocy społecznej. W przypadku nieruchomości stosuje się kantonalne przepisy dotyczące zabezpieczenia hipotecznego i obowiązku zwrotu.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Uruchom kalkulator</a>
+            <a href="https://www.rsd-obwalden.ch" target="_blank" class="btn-link">Oficjalna strona Regionalnych Służb Społecznych OW</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Źródła: Ustawa o pomocy społecznej kantonu Obwalden (SHG OW) i wytyczne SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Przejrzyste obliczanie pomocy społecznej</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EL Algorithmus Kanton Schaffhausen 2026 | Przejrzyste obliczenia | welfarecalc.ch</title>
+    <meta name="description" content="Jak obliczane są świadczenia uzupełniające (EL) w kantonie Schaffhausen na 2026 rok? Poznaj nasz przejrzysty algorytm oparty na oficjalnych danych SVA-SH.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SH_2026EL_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SH_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SH_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SH_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SH_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SH_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SH_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SH_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SH_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SH_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SH_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SH_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SH_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie świadczeń uzupełniających Schaffhausen 2026",
+      "description": "Szczegółowe omówienie algorytmu obliczania EL dla kantonu Schaffhausen.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Określenie uznanych wydatków (podstawowe potrzeby, maksymalny czynsz dla Regionu 3, ryczałt na ubezpieczenie zdrowotne)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ocena dochodu z uwzględnieniem ustawowych odliczeń od dochodu z pracy i uszczuplenia majątku"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Określenie kwoty EL poprzez porównanie uznanych wydatków i dochodu podlegającego zaliczeniu"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">OFICJALNE DANE 2026</div>
+        <h1>Algorytm EL: Kanton Schaffhausen</h1>
+        <p>Przejrzyste zestawienie świadczeń uzupełniających (EL) dla kantonu Schaffhausen</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Przejrzystość buduje zaufanie. Świadczenia uzupełniające (EL) do AHV/IV gwarantują pokrycie podstawowych kosztów utrzymania. Nasz model obliczeniowy dla kantonu Schaffhausen ściśle przestrzega ustawy federalnej o świadczeniach uzupełniających (ELG 2021-2026) oraz oficjalnych wytycznych kantonalnych SVA Schaffhausen.</p>
+
+        <h2 class="section-title">1. Roczne podstawowe potrzeby (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Osoby samotne</h4>
+                <div class="param-value">20 670 CHF</div>
+                <p><small>Jednolita kwota ogólnokrajowa od stycznia 2026 r. na ogólne wydatki na życie.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Pary małżeńskie</h4>
+                <div class="param-value">31 005 CHF</div>
+                <p><small>Połączone podstawowe potrzeby par małżeńskich mieszkających razem.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Szczegółowa ścieżka obliczeniowa</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Uznane wydatki (potrzeby)</h3>
+                <p>Najpierw sumujemy wszystkie prawnie uznane pozycje wydatków w kantonie Schaffhausen:</p>
+                <div class="formula">
+                    Uznane wydatki = Podstawowe potrzeby + Uznany czynsz (do limitu) + Ryczałt na ubezpieczenie zdrowotne
+                </div>
+                
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Maksymalny czynsz 2026 (Kanton SH ustalony jako Region 3)</h4>
+                <table class="data-table">
+                    <tr><th>Liczba osób w gospodarstwie domowym</th><th>Limit miesięczny</th><th>Limit roczny</th></tr>
+                    <tr><td>1 osoba</td><td>1 390 CHF</td><td>16 680 CHF</td></tr>
+                    <tr><td>2 osoby</td><td>1 680 CHF</td><td>20 160 CHF</td></tr>
+                    <tr><td>3 osoby</td><td>1 850 CHF</td><td>22 200 CHF</td></tr>
+                    <tr><td>4 osoby</td><td>2 000 CHF</td><td>24 000 CHF</td></tr>
+                    <tr><td>5+ osób</td><td>2 000 CHF</td><td>24 000 CHF</td></tr>
+                </table>
+                
+                <h4 style="margin-top: 15px; color: var(--official-blue);">Kantonalny ryczałt na ubezpieczenie zdrowotne (SVA SH 2026)</h4>
+                <p><small>W obliczeniach EL kantonalna średnia składka jest w pełni uznawana jako stały ryczałt:</small></p>
+                <table class="data-table">
+                    <tr><th>Kategoria</th><th>Kwota rocznie</th><th>Kwota miesięcznie</th></tr>
+                    <tr><td>Dorośli (w wieku 26+)</td><td>5 808 CHF</td><td>484 CHF</td></tr>
+                    <tr><td>Młodzi dorośli (18–25 lat)</td><td>4 344 CHF</td><td>362 CHF</td></tr>
+                    <tr><td>Dzieci (do 17 lat)</td><td>1 380 CHF</td><td>115 CHF</td></tr>
+                </table>
+                <p style="margin-top: 10px;"><small>*Uwaga dla właścicieli domów: W przypadku własnej nieruchomości mieszkalnej uznaje się stały ryczałt na koszty dodatkowe w wysokości 3 480 CHF rocznie.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Dochód podlegający zaliczeniu</h3>
+                <p>Wszystkie dochody są oceniane zgodnie z prawnie zgodnymi zasadami EL:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+                    <li><strong>Świadczenia emerytalne (AHV/IV):</strong> 12 miesięcy regularnych świadczeń emerytalnych. Ustawowa 13. emerytura AHV jest w pełni neutralizowana w obliczeniach EL zgodnie z decyzją federalną i nie jest wliczana do dochodu.</li>
+                    <li><strong>Dochód z pracy:</strong> Korekta o ustawowy dodatek (1 500 CHF dla samotnych / 2 250 CHF dla par małżeńskich). Tylko 2/3 dochodu przekraczającego dodatek jest wliczane do dochodu.</li>
+                    <li><strong>Uszczuplenie majątku:</strong> Stała część majątku netto po odliczeniu dodatku majątkowego:
+                        <div class="formula">Uszczuplenie majątku = max(0, (Majątek netto - Dodatek majątkowy) / Dzielnik)</div>
+                        <small>Dzielnik: Emeryci (AHV) = 10 | Osoby niepełnosprawne (IV) = 15.</small>
+                    </li>
+                </ul>
+                
+                <table class="data-table">
+                    <tr><th>Dodatki majątkowe EL</th><th>Kwota</th></tr>
+                    <tr><td>Osoby samotne</td><td>30 000 CHF</td></tr>
+                    <tr><td>Pary małżeńskie</td><td>50 000 CHF</td></tr>
+                    <tr><td>Własna nieruchomość mieszkalna</td><td>112 500 CHF</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Wynik: Ustawowe prawo do EL</h3>
+                <p>EL pokrywa matematyczną różnicę między uznanymi potrzebami a dochodem podlegającym zaliczeniu:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Roczna kwota EL = [Uznane wydatki] - [Dochód podlegający zaliczeniu]
+                </div>
+                <p><small>Miesięczna kwota płatności jest równa rocznej kwocie EL podzielonej przez 12, zaokrąglonej handlowo do najbliższego franka.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Ważne: Próg majątkowy (próg kwalifikowalności)</strong><br>
+            Ustawowe prawo do świadczeń uzupełniających istnieje tylko wtedy, gdy podlegający opodatkowaniu majątek netto jest niższy niż <strong>100 000 CHF</strong> (dla osób samotnych) lub <strong>200 000 CHF</strong> (dla par małżeńskich). Wartość własnej nieruchomości mieszkalnej nie jest wliczana do tego progu kwalifikowalności.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Powrót do strony głównej</a>
+            <a href="https://www.svash.ch/el" target="_blank" class="btn-link">Oficjalna strona SVA Schaffhausen</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Źródło: Wytyczne SVA Schaffhausen 2026 oraz Ustawa federalna o świadczeniach uzupełniających (ELG)</p>
+        <p>Dostarczone przez welfarecalc.ch | Informacje bez gwarancji prawnej.</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo IPV Cantón Zug 2026 | Cálculo Transparente | welfarecalc.ch</title>
+  <meta
+    content="¿Cómo se calcula la Reducción Individual de Primas (IPV) 2026 en el Cantón Zug? Descubra nuestro algoritmo transparente basado en datos oficiales de la Caja de Compensación de Zug."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_es.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo IPV Cantón Zug 2026 | Cálculo Transparente" property="og:title" />
+  <meta content="Lógica de cálculo oficial para la Reducción Individual de Primas 2026 en el Cantón Zug (ZG)."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/ZG_2026IPV_es.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de la Reducción Individual de Primas Zug 2026",
+      "description": "Guía paso a paso para la determinación transparente del subsidio IPV en el Cantón de Zug.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinación de la renta determinante (LNA) añadiendo el 10% del patrimonio."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación de la franquicia individual basada en el factor del 8%."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Comparación con las garantías mínimas legales para niños y jóvenes."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      white-space: pre-wrap;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    .legal-info-links {
+      margin-top: 10px;
+      font-size: 0.85rem;
+    }
+
+    .legal-info-links a {
+      color: var(--official-blue);
+      text-decoration: underline;
+      margin-right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DATOS OFICIALES 2026</div>
+      <h1>Algoritmo IPV: Cantón de Zug (ZG)</h1>
+      <p>Cálculo transparente de su Reducción Individual de Primas para el año 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+    <div class="content">
+      <p>Confianza a través de la transparencia. Aquí revelamos cómo nuestra calculadora determina su posible Reducción
+        Individual de Primas (IPV) en el Cantón de Zug. Este algoritmo se basa estrictamente en los fundamentos legales
+        del Cantón de Zug (BGS 842.6) así como en las directrices de la Caja de Compensación de Zug.</p>
+      <h2 class="section-title">1. Parámetros clave (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Factor de franquicia</h4>
+          <div class="param-value">8.0 %</div>
+          <p><small>Proporción de la renta determinante que se considera razonable para las primas del seguro de
+              enfermedad.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Imputación patrimonial</h4>
+          <div class="param-value">10.0 %</div>
+          <p><small>Porcentaje del patrimonio neto imponible que se añade como renta imputable.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. El proceso de cálculo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Renta determinante (LNA)</h3>
+          <p>Primero se calcula la capacidad económica del hogar. En el Cantón de Zug, el patrimonio neto imponible se
+            añade en un 10% como componente de renta:</p>
+          <div class="formula-box">
+            <strong>LNA</strong> = Máx(0, [Renta neta imponible] + [2º pilar voluntario] + [Pilar 3a] + ([Patrimonio
+            imponible] × 10%) - [Deducción por hijos])
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Categoría de deducción</th>
+              <th>Importe (por persona)</th>
+            </tr>
+            <tr>
+              <td>Deducción global por hijo / categoría de formación juvenil</td>
+              <td>CHF 8'500</td>
+            </tr>
+          </table>
+          <div class="alert" style="margin-top: 15px; padding: 10px 15px;">
+            <strong>Límite de renta:</strong> Si la LNA calculada supera la cantidad de <strong>CHF 89'900</strong>, el
+            derecho legal a la IPV se extingue por completo.
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Verificación del límite de exclusión patrimonial</h3>
+          <p>Adicionalmente a la verificación de la renta, se aplica un límite máximo de patrimonio estricto (Límite
+            duro) como criterio de exclusión:</p>
+          <table class="data-table">
+            <tr>
+              <th>Tipo de hogar</th>
+              <th>Límite de patrimonio absoluto</th>
+            </tr>
+            <tr>
+              <td>Persona sola</td>
+              <td>CHF 150'000</td>
+            </tr>
+            <tr>
+              <td>Parejas casadas / Uniones registradas</td>
+              <td>CHF 300'000</td>
+            </tr>
+          </table>
+          <p style="margin-top:10px;"><small>Si el patrimonio imponible supera estos umbrales cantonales, no existe
+              derecho a subsidios.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Primas de referencia cantonales 2026</h3>
+          <p>Las primas de referencia representan las primas medias estándar fijadas por el cantón para el cálculo:</p>
+          <table class="data-table">
+            <tr>
+              <th>Categoría</th>
+              <th>Prima de referencia (anual)</th>
+            </tr>
+            <tr>
+              <td>Adultos (a partir de 26 años)</td>
+              <td>CHF 5'916 / año</td>
+            </tr>
+            <tr>
+              <td>Jóvenes adultos (19-25 años, en formación)</td>
+              <td>CHF 4'140 / año</td>
+            </tr>
+            <tr>
+              <td>Niños (0-18 años)</td>
+              <td>CHF 1'392 / año</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Cálculo de la franquicia individual</h3>
+          <p>La parte imputable a cargo propio se basa en la renta determinante (LNA):</p>
+          <div class="formula-box">
+            <strong>Franquicia</strong> = LNA × 8.0%
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Determinación del subsidio teórico</h3>
+          <p>El importe del subsidio teórico resulta de la diferencia entre las primas de referencia sumadas y la
+            franquicia individual:</p>
+          <div class="formula-box">
+            <strong>Subsidio teórico</strong> = Máx(0, [Total de primas de referencia cantonales] - [Franquicia])
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">6</div>
+        <div class="step-body">
+          <h3>Aplicación de las garantías mínimas (Protección infantil y juvenil)</h3>
+          <p>Para aliviar fiscalmente a las familias, en rentas bajas y medias se aplica la garantía mínima legal para
+            niños y jóvenes en formación:</p>
+          <div class="formula-box">
+            <strong>Garantía mínima</strong> = (Número de niños × CHF 1'392 × 80%) + (Número de jóvenes en form. × CHF
+            4'140 × 50%)
+
+            <strong>Corrección del subsidio teórico</strong> = Máx(Subsidio teórico, Garantía mínima)
+          </div>
+          <p><small>Si el subsidio familiar calculado regularmente resulta inferior a este límite mínimo legal de las
+              sumas fijas por niños y jóvenes, se concede en su lugar el importe de la garantía mínima.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">7</div>
+        <div class="step-body">
+          <h3>Umbral de pago y limitación final</h3>
+          <p>El pago anual final de la IPV está sujeto a un límite mínimo y está limitado por la prima realmente pagada:
+          </p>
+          <div class="formula-box">
+            1. Umbral de pago: Si (Corrección del subsidio teórico &lt; CHF 100) → Derecho = 0 CHF
+            2. Subsidio anual final = Mín(Redondeo(Corrección del subsidio teórico), Prima anual real)
+            3. Abono mensual = Redondeo(Subsidio anual final / 12)
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Aviso legal:</strong><br />
+        Esta visión general sirve para la transparencia algorítmica y la información sobre el funcionamiento de la
+        calculadora web. No constituye una notificación oficial ni asesoramiento jurídico.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Volver a la página de inicio</a>
+        <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/praemienverbilligung" target="_blank">Portal IPV
+          de la Caja de Compensación de Zug</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fuente: Caja de Compensación de Zug &amp; Colección de leyes cantonales (BGS 842.6) 2026 | Proporcionado por
+        welfarecalc.ch</p>
+      <div class="legal-info-links">
+        <a href="https://bgs.zg.ch/app/de/texts_of_law/842.1" target="_blank">Base legal (EG KVG)</a>
+        <a href="https://www.akzug.ch" target="_blank">Caja de Compensación de Zug</a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

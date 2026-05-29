@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Algorytm Pomocy Doraźnej Kanton St. Gallen 2026 | Przejrzyste Obliczenia | welfarecalc.ch</title>
+    <meta name="description"
+        content="Jak obliczana jest pomoc doraźna (Nothilfe) 2026 w Kantonie St. Gallen? Poznaj nasz przejrzysty algorytm oparty na oficjalnych wytycznych kantonalnych i rozporządzeniu azylowym.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algorytm Pomocy Doraźnej Kanton St. Gallen 2026 | Przejrzyste Obliczenia">
+    <meta property="og:description"
+        content="Oficjalna logika obliczania pomocy doraźnej 2026 w Kantonie SG na podstawie rozporządzeń i wytycznych kantonalnych.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Obliczanie pomocy doraźnej St. Gallen 2026",
+      "description": "Instrukcje krok po kroku dotyczące obliczania pomocy doraźnej w Kantonie St. Gallen (zakwaterowanie zbiorowe).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Określenie dziennej stawki dla dorosłych z degresywnym współczynnikiem dla par"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Dodanie kwot dodatku na dziecko"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Ekstrapolacja miesięczna i zaokrąglenie handlowe do 10 centymów (0,10 CHF)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ System stylów zgodny z wersjami AG i AI ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Demo interaktywne */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--official-blue);
+            font-size: 1.2rem;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 1.5rem;
+            }
+
+            .step-box {
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">OFICJALNE DANE 2026 · POMOC DORAŹNA SG</div>
+            <h1>Algorytm Pomocy Doraźnej: Kanton St. Gallen</h1>
+            <p>Przejrzyste obliczanie pomocy doraźnej zgodnie z rozporządzeniem azylowym (sGS 381.12) Kantonu St. Gallen 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
+        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+    </div>
+    
+
+        <div class="content">
+            <p>Zaufanie poprzez przejrzystość. Pomoc doraźna dla osób zobowiązanych do opuszczenia Szwajcarii jest określana w Kantonie St. Gallen zgodnie z precyzyjnymi wymogami prawnymi. Przedstawiamy dostosowany, oficjalny algorytm stanowiący podstawę naszego silnika obliczeniowego.</p>
+
+            <h2 class="section-title">1. Podstawowe parametry pomocy doraźnej (SG 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Podstawowa stawka dzienna (osoba samotna)</h4>
+                    <div class="param-value">CHF 10.00 / dzień</div>
+                    <p><small>Podstawowe potrzeby osoby samotnej w obiekcie zakwaterowania zbiorowego.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Ryczałt dla pary (degresywny)</h4>
+                    <div class="param-value">Współczynnik 1.72 (CHF 17.20 / dzień)</div>
+                    <p><small>Dwie osoby dorosłe w tym samym gospodarstwie domowym otrzymują 172% stawki indywidualnej łącznie.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Dodatek na dziecko</h4>
+                    <div class="param-value">Współczynnik 0.55 (CHF 5.50 / dzień)</div>
+                    <p><small>Dodatkowa kwota na dziecko (55% podstawowej stawki dla osoby dorosłej).</small></p>
+                </div>
+            </div>
+
+            <h2 class="section-title">2. Ścieżka obliczeniowa (krok po kroku)</h2>
+
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Określenie dziennej stawki dla osób dorosłych</h3>
+                    <p>Kanton St. Gallen stosuje model degresywny uwzględniający oszczędności w gospodarstwie domowym:</p>
+                    <div class="formula">
+                        Jeśli osób dorosłych = 1: CHF 10.00 dziennie<br>
+                        Jeśli osób dorosłych = 2: CHF 17.20 dziennie (stawka podstawowa × 1,72)<br>
+                        Jeśli osób dorosłych > 2: CHF 17.20 + (liczba dorosłych - 2) × CHF 7.20 dziennie
+                    </div>
+                    <p><small>Uwaga: Zgodnie z praktyką kantonalną, za każdą dodatkową osobę dorosłą w ramach tej samej jednostki pomocowej dodawana jest degresywna stawka CHF 7.20.</small></p>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Dodanie dodatku na dziecko</h3>
+                    <p>Dla każdego dziecka (&lt; 18 lat) mieszkającego w gospodarstwie domowym dodawana jest ryczałtowa kwota, która odpowiada dokładnie 55% podstawowej stawki dla osoby dorosłej:</p>
+                    <div class="formula">
+                        Łączna dzienna kwota na dzieci = Liczba dzieci × (10,00 × 0,55) = Liczba dzieci × CHF 5,50 / dzień
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Ekstrapolacja miesięczna i zaokrąglenie administracyjne</h3>
+                    <p>Łączne dzienne uprawnienie jest ekstrapolowane przy użyciu współczynnika miesiąca statystycznego (30,42 dni). Zaokrąglenie handlowe (standard w Kantonie SG) odbywa się do najbliższych 10 centymów (0,10 CHF).</p>
+                    <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        Miesięczna należność = ZAOKR( (Łączna kwota dzienna × 30,42) ; 0,10 )
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                <strong>Ważne ograniczenia administracyjne w Kantonie SG:</strong><br>
+                • <strong>Pierwszeństwo świadczeń rzeczowych:</strong> Pomoc doraźna w Kantonie St. Gallen jest udzielana przede wszystkim jako świadczenia rzeczowe (zakwaterowanie w strukturach zbiorowych, bezpośrednia dystrybucja żywności lub bony). Obliczona tutaj kwota gotówkowa ma zastosowanie tylko wtedy, gdy świadczenia rzeczowe nie mogą być w pełni zapewnione.<br>
+                • <strong>Brak długoterminowego uprawnienia:</strong> Pomoc doraźna zabezpiecza jedynie przetrwanie z dnia na dzień (Art. 12 BV). Miesięczne lub roczne zaliczki są prawnie wykluczone. Miesięczne obliczenie służy wyłącznie celom statystycznym.
+            </div>
+
+            <h2 class="section-title">3. Źródła danych i podstawa prawna</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Rozporządzenie azylowe Kantonu St. Gallen (AsylV, sGS 381.12)</strong> – Regulacja pomocy doraźnej i zakwaterowania.</li>
+                <li><strong>Ustawa o publicznej pomocy społecznej (Ustawa o pomocy społecznej, sGS 381.1)</strong> – Uzupełniające przepisy kantonalne.</li>
+                <li><strong>Szwajcarska Konstytucja Federalna (Art. 12 BV)</strong> – Konstytucyjne prawo do pomocy w potrzebie.</li>
+                <li><strong>WelfareCalc – Dane otwarte:</strong> Zatwierdzone na rok 2026.</li>
+            </ul>
+
+            <div class="demo-card">
+                <div class="demo-header">🧪 Test przejrzystości: Interaktywny kalkulator pomocy doraźnej SG</div>
+                <div class="demo-body">
+                    <p>Symuluj oficjalne obliczenia dla Kantonu St. Gallen (2026) w czasie rzeczywistym.</p>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Liczba osób dorosłych</label>
+                            <input type="number" id="adultsCount" value="1" min="1" step="1">
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Liczba dzieci (0-17 lat)</label>
+                            <input type="number" id="childrenCount" value="0" min="0" step="1">
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Wykonaj algorytm</button>
+
+                    <div id="liveResultPanel" class="result-panel">
+                        <h3>📐 Oficjalny zapis obliczeniowy (Kanton SG)</h3>
+                        <div id="stepsDetail" class="calc-steps"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(Miesięczna wartość statystyczna odniesienia, zaokrąglona do 10 centymów)</span></div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Obliczenie symuluje kantonalne maksymalne limity wypłat gotówkowych w zakwaterowaniu zbiorowym.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Powrót do strony głównej</a>
+                <a href="https://www.sg.ch" target="_blank" class="btn-link">Oficjalna strona Kantonu SG</a>
+                <a href="https://www.fedlex.admin.ch/eli/cc/1999/358/de" target="_blank"
+                    class="btn-link">Federalna ustawa azylowa (AsylG)</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Źródło: Kanton St. Gallen – Departament Spraw Wewnętrznych, Rozporządzenie azylowe (AsylV) 2026</p>
+            <p>Dostarczone przez welfarecalc.ch | Inicjatywa przejrzystości dla otwartych algorytmów administracyjnych w Szwajcarii</p>
+            <p>© 2026 welfarecalc.ch – Inicjatywa Otwartego Algorytmu</p>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            // Oficjalnie zatwierdzone parametry dla SG 2026
+            const CONFIG = {
+                baseDailyCash: 10.00,       // Stawka podstawowa dla osoby samotnej
+                coupleFactor: 1.72,         // 172% dla par (17,20 CHF)
+                childFactor: 0.55,          // 55% stawki podstawowej na dziecko (5,50 CHF)
+                extraAdultRate: 7.20,       // Degresywny dodatek za każdą dodatkową osobę dorosłą (17,20 - 10,00)
+                avgDaysMonth: 30.42
+            };
+
+            // Zaokrąglenie handlowe do 10 centymów (0,10 CHF)
+            function roundToTenRappen(value) {
+                return Math.round(value * 10) / 10;
+            }
+
+            function computeSGEmergencyAid(adults, children) {
+                let adultDaily = 0;
+                let adultDesc = '';
+
+                // Poprawiona logika degresji administracyjnej
+                if (adults === 1) {
+                    adultDaily = CONFIG.baseDailyCash;
+                    adultDesc = `Osoba samotna: CHF ${CONFIG.baseDailyCash.toFixed(2)} / dzień`;
+                } else if (adults === 2) {
+                    adultDaily = CONFIG.baseDailyCash * CONFIG.coupleFactor;
+                    adultDesc = `Ryczałt dla pary (degresywny): CHF ${adultDaily.toFixed(2)} / dzień`;
+                } else {
+                    adultDaily = (CONFIG.baseDailyCash * CONFIG.coupleFactor) + (adults - 2) * CONFIG.extraAdultRate;
+                    adultDesc = `${adults} dorosłych (podstawa dla pary + ${adults - 2} dodatkowe osoby degresywne): CHF ${adultDaily.toFixed(2)} / dzień`;
+                }
+
+                const childDailyTotal = children * (CONFIG.baseDailyCash * CONFIG.childFactor);
+                const totalDaily = adultDaily + childDailyTotal;
+                const rawMonthly = totalDaily * CONFIG.avgDaysMonth;
+                const roundedMonthly = roundToTenRappen(rawMonthly);
+
+                return {
+                    adultDaily,
+                    adultDesc,
+                    childDailyTotal,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly,
+                    finalFormatted: roundedMonthly.toFixed(2)
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) adults = 1;
+                if (isNaN(children) || children < 0) children = 0;
+
+                const result = computeSGEmergencyAid(adults, children);
+
+                const stepsHtml = `
+                <strong>📌 Krok 1 – Osoby dorosłe:</strong> ${result.adultDesc}<br>
+                <strong>📌 Krok 2 – Dodatki na dzieci:</strong> ${children} dziecko(dzieci) × (CHF 10,00 × 55%) = CHF ${result.childDailyTotal.toFixed(2)} / dzień<br>
+                <strong>📌 Tymczasowa łączna stawka dzienna:</strong> CHF ${result.totalDaily.toFixed(2)} / dzień<br>
+                <strong>📌 Krok 3 – Obliczenie miesięczne (30,42 dni):</strong> CHF ${result.totalDaily.toFixed(2)} × 30,42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Zaokrąglenie do 10 centymów (standard kantonalny SG):</strong> CHF ${result.finalFormatted}
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${result.finalFormatted} CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+
+            // Aktualizacja na żywo po zmianie pól
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            if (adultsField && childrenField) {
+                adultsField.addEventListener('input', updateDemo);
+                childrenField.addEventListener('input', updateDemo);
+            }
+        })();
+    </script>
+</body>
+
+</html>

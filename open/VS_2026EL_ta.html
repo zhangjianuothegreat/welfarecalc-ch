@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>EL அல்காரிதம் கான்டன் வாலிஸ் (VS) 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் கான்டன் வாலிஸில் கூடுதல் நலன்கள் (EL) எவ்வாறு கணக்கிடப்படுகின்றன? அதிகாரப்பூர்வ CCVS தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026EL_de.html" hreflang="x-default" rel="alternate" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "வாலிஸ் (VS) 2026 துணை நலன்களின் கணக்கீடு",
+      "description": "பிராந்திய வாடகை விலைகள் மற்றும் கூட்டாட்சி சீர்திருத்தத்தை கணக்கில் கொண்டு வாலிஸ் கன்டோனில் EL கணக்கீட்டின் விரிவான வழிமுறைப் பிரிப்பு.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "நிகர சொத்தில் சட்டப்பூர்வ நுழைவு வரம்பை சரிபார்த்தல் (விலக்கு அளவுகோல்)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "அங்கீகரிக்கப்பட்ட தேவையை தீர்மானித்தல் (கூட்டாட்சி அடிப்படைத் தேவை, வாலிஸ் வாடகை அதிகபட்சம், கன்டோனல் சுகாதார காப்பீட்டு மொத்தத் தொகை)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "சரிசெய்யப்பட்ட வருமானத்தைக் கணக்கிடுதல் (13வது AHV ஓய்வூதியத்தை நடுநிலையாக்குதல், வருமான மொத்தத் தொகைகள், சொத்து நுகர்வு)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "கணித இடைவெளியிலிருந்து இறுதி EL தொகையைக் கண்டறிதல்."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+      color: var(--official-blue);
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .region-note {
+      font-size: 0.8rem;
+      color: #64748b;
+      padding: 5px 10px;
+      background: #f8fafc;
+      border-radius: 4px;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+      overflow-x: auto;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
+      <h1>EL அல்காரிதம்: வாலிஸ் கன்டோன் (VS)</h1>
+      <p>2026 ஆம் ஆண்டிற்கான துணை நலன்களின் (EL) வெளிப்படையான பிரிப்பு</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>வெளிப்படைத்தன்மை நம்பிக்கையை உருவாக்குகிறது. AHV/IV க்கான துணை நலன்கள் (EL) அரசியலமைப்பு ரீதியான வாழ்வாதார
+        குறைந்தபட்சத்தை உத்தரவாதம் செய்கின்றன. கூட்டாட்சி சட்டம் (ELG 2026) மற்றும் CCVS இன் கன்டோனல் செயலாக்க
+        வழிகாட்டுதல்களின் அடிப்படையில், வாலிஸ் கன்டோனில் உங்கள் உரிமையை எங்கள் மைய கணிப்பான் எவ்வாறு துல்லியமாக
+        தீர்மானிக்கிறது என்பதை இங்கே ஆவணப்படுத்துகிறோம்.</p>
+      <h2 class="section-title">1. சட்டப்பூர்வ நுழைவு வரம்பு (சொத்து சோதனை)</h2>
+      <p>கணித உரிமை தீர்மானிக்கப்படுவதற்கு முன், ஒரு சட்டப்பூர்வ தடுப்பு சோதனை (விலக்கு அளவுகோல்) மேற்கொள்ளப்படுகிறது.
+        வரி விதிக்கக்கூடிய நிகர சொத்து சட்டப்பூர்வ வரம்பை மீறினால், EL க்கு <strong>உரிமை இல்லை</strong>.</p>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>தனி நபர்கள்</h4>
+          <div class="param-value">CHF 100'000</div>
+          <p><small>தனி நபர்களுக்கான கடுமையான சொத்து வரம்பு.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>தம்பதிகள்</h4>
+          <div class="param-value">CHF 200'000</div>
+          <p><small>திருமணமான தம்பதிகளுக்கான கடுமையான சொத்து வரம்பு.</small></p>
+        </div>
+      </div>
+      <p><small>*குறிப்பு: இந்த முதன்மை நுழைவு வரம்பில் சுயமாக வசிக்கும் சொத்தின் மதிப்பு கணக்கில்
+          எடுத்துக்கொள்ளப்படவில்லை.</small></p>
+      <h2 class="section-title">2. விரிவான கணக்கீட்டு முறை</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>அங்கீகரிக்கப்பட்ட செலவுகள் (தேவை)</h3>
+          <p>முதலில், கணினி அனைத்து சட்டப்பூர்வமாக அங்கீகரிக்கப்பட்ட செலவு உருப்படிகளைத் தொகுக்கிறது:</p>
+          <div class="formula">
+            அங்கீகரிக்கப்பட்ட செலவுகள் = அடிப்படைத் தேவை + வாடகை (வரம்பு வரை) + சுகாதார காப்பீட்டு மொத்தத் தொகை
+          </div>
+          <h4 style="margin-top:1rem; color:var(--official-blue);">A) கூட்டாட்சி வாழ்க்கைச் செலவு அடிப்படைத் தேவை</h4>
+          <p>ஜனவரி 2026 முதல் கூட்டாட்சி ஒருங்கிணைந்த மொத்தத் தொகை:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-bottom: 1rem;">
+            <li>தனி நபர்கள்: <strong>CHF 20'670</strong> ஆண்டுக்கு</li>
+            <li>தம்பதிகள்: <strong>CHF 31'005</strong> ஆண்டுக்கு</li>
+          </ul>
+          <h4 style="color:var(--official-blue);">B) வாலிஸ் கன்டோனில் பிராந்திய வாடகை அதிகபட்சம் (2026)</h4>
+          <p>வாலிஸ் கன்டோன் நகராட்சிகளை பிராந்தியம் 2 (மையங்கள்) மற்றும் பிராந்தியம் 3 (கிராமப்புறம்) என பிரிக்கிறது.
+            உங்கள் அஞ்சல் குறியீட்டின் அடிப்படையில் எங்கள் கணிப்பான் வரம்புகளை ஒதுக்குகிறது:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>வீட்டு அளவு</th>
+                <th>பிராந்தியம் 2 (மையங்கள்)*</th>
+                <th>பிராந்தியம் 3 (மற்ற நகராட்சிகள்)**</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 நபர்</td>
+                <td>CHF 18'300 (CHF 1'525/மாதம்)</td>
+                <td>CHF 16'680 (CHF 1'390/மாதம்)</td>
+              </tr>
+              <tr>
+                <td>2 நபர்கள்</td>
+                <td>CHF 21'720 (CHF 1'810/மாதம்)</td>
+                <td>CHF 20'160 (CHF 1'680/மாதம்)</td>
+              </tr>
+              <tr>
+                <td>3 நபர்கள்</td>
+                <td>CHF 23'760 (CHF 1'980/மாதம்)</td>
+                <td>CHF 22'200 (CHF 1'850/மாதம்)</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="region-note">* பிராந்தியம் 2 வாலிஸ் மையங்களான சியோன், மார்டிஞ்சி, மான்டே, விஸ்ப், பிரிக்-கிளிஸ்
+            ஆகியவற்றை உள்ளடக்கியது.</div>
+          <div class="region-note" style="margin-top:2px;">** பிராந்தியம் 3 மற்ற அனைத்து வாலிஸ் நகராட்சிகளையும் (மலைப்
+            பகுதிகள் மற்றும் கிராமப்புறம்) உள்ளடக்கியது.</div>
+          <h4 style="margin-top:1rem; color:var(--official-blue);">C) வாலிஸ் சுகாதார காப்பீட்டு பிரீமியம் மொத்தத் தொகை
+            2026</h4>
+          <p>உண்மையான பிரீமியம் கணக்கிடப்படவில்லை, மாறாக கன்டோனல் சராசரி பிரீமியம் (WEL இன் படி மொத்தத் தொகை)
+            கணக்கிடப்படுகிறது:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem;">
+            <li>வயதுவந்தோர் (26 வயதுக்கு மேல்): <strong>CHF 6'732</strong> ஆண்டுக்கு</li>
+            <li>இளம் வயதுவந்தோர் (18–25 வயது): <strong>CHF 4'988</strong> ஆண்டுக்கு</li>
+            <li>குழந்தைகள் (17 வயது வரை): <strong>CHF 1'629</strong> ஆண்டுக்கு</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>கணக்கிடக்கூடிய வருமானம்</h3>
+          <p>தேவையுடன் மாற்றியமைக்கப்பட்ட வருமானம் ஒப்பிடப்படுகிறது:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem;">
+            <li><strong>ஓய்வூதியங்கள் &amp; 13வது AHV ஓய்வூதியம்:</strong> வழக்கமான ஓய்வூதியங்கள் 100%
+              கணக்கிடப்படுகின்றன. 2026 முதல் வழங்கப்படும் 13வது AHV ஓய்வூதியம் சட்டப்பூர்வமாக முழுமையாக
+              நடுநிலையாக்கப்பட்டுள்ளது (அல்காரிதத்தில் கணித ரீதியாக நீக்கப்பட்டு கருத்தில் கொள்ளப்படவில்லை).</li>
+            <li><strong>வேலை வருமானம்:</strong> சட்டப்பூர்வ விலக்கு தொகையால் சரிசெய்யப்பட்டது (CHF 1'300 தனி நபர் / CHF
+              1'950 தம்பதிகள்). மீதமுள்ள தொகையில் 2/3 மட்டுமே வருமானமாக பதிவு செய்யப்படுகிறது.</li>
+            <li><strong>சொத்து நுகர்வு:</strong> நிகர சொத்து விலக்கு தொகையை (CHF 30'000 தனி நபர் / CHF 50'000 தம்பதிகள்)
+              மீறினால், வயது முதிர்ந்த ஓய்வூதியதாரர்களுக்கு விலக்கு தொகையை மீறும் பகுதி 1/10 ஆகவும் (IV
+              ஓய்வூதியதாரர்களுக்கு 1/15 ஆகவும்) ஆண்டு வருமானமாக கணக்கிடப்படுகிறது.</li>
+          </ul>
+          <table class="data-table" style="margin-top:1rem;">
+            <tr>
+              <th>சொத்து விலக்கு தொகை (சுயமாக வசிக்கும்)</th>
+              <th>தொகை</th>
+            </tr>
+            <tr>
+              <td>உரிமையாளர்களுக்கான நிலையான விலக்கு தொகை</td>
+              <td>CHF 112'500</td>
+            </tr>
+            <tr>
+              <td>அதிகரிக்கப்பட்ட விலக்கு தொகை (எ.கா., கூட்டாளியின் நர்சிங் ஹோம் நுழைவு)</td>
+              <td>CHF 300'000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>முடிவு: EL ஓய்வூதியத்தின் கணக்கீடு</h3>
+          <p>அங்கீகரிக்கப்பட்ட செலவுகளுக்கும் வருமானத்திற்கும் இடையே ஒரு பற்றாக்குறை இருந்தால், இந்த பற்றாக்குறை ஆண்டு
+            துணை நலனாக வழங்கப்படுகிறது:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            ஆண்டு EL ஓய்வூதியம் = [அங்கீகரிக்கப்பட்ட செலவுகள்] - [கணக்கிடக்கூடிய வருமானம்]
+          </div>
+          <p><small>மாதாந்திர செலுத்துதல் ஆண்டுத் தொகையை 12 ஆல் வகுத்து, அடுத்த பிராங்கிற்கு வணிக ரீதியாக
+              வட்டமிடப்பட்டதாகும்.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>அல்காரிதம் வெளிப்படைத்தன்மை &amp; தர உத்தரவாதம்</strong><br />
+        welfarecalc.ch இன் கணித மைய இயந்திரம் தொடர்ந்து தரவு சேகரிப்பைத் தவிர்த்து உங்கள் தனியுரிமையைப் பாதுகாக்கிறது.
+        கணக்கீட்டு அணி வாலிஸ் கன்டோனல் சமூக காப்பீட்டு மையத்தின் (CCVS) சரியான நடைமுறையை பிரதிபலிக்கிறது.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
+          திரும்பு</a>
+        <a class="btn-link"
+          href="https://www.ahvwallis.ch/de/Versicherungen/EL/Erganzungsleistungen/Erganzungsleistungen.html"
+          target="_blank">அதிகாரப்பூர்வ CCVS வாலிஸ் பக்கம்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: வாலிஸ் கன்டோனல் சமூக காப்பீட்டு மையம் (CCVS) வழிகாட்டுதல்கள் 2026 &amp; துணை நலன்கள் கூட்டாட்சி சட்டம்
+        (ELG)</p>
+      <p>welfarecalc.ch ஆல் வழங்கப்பட்டது | சட்டப்பூர்வ உத்தரவாதம் இல்லாத தகவல்.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

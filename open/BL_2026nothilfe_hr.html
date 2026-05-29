@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritam za nužnu pomoć Kanton Basel-Landschaft 2026 | Transparentan izračun | welfarecalc.ch</title>
+    <meta name="description" content="Kako se izračunava nužna pomoć u Kantonu Basel-Landschaft (BL) za 2026. godinu? Otkrijte naš transparentni algoritam temeljen na službenoj socijalnoj uredbi SGS 850.11.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Algoritam za nužnu pomoć Kanton Basel-Landschaft 2026 | Transparentan izračun">
+    <meta property="og:description" content="Službena logika izračuna za nužnu pomoć 2026. u Kantonu BL na temelju kantonalnog socijalnog zakonodavstva.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026nothilfe_hr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun nužne pomoći Basel-Landschaft 2026",
+      "description": "Vodič korak po korak kroz zakonsko određivanje nužne pomoći u Kantonu Basel-Landschaft (SGS 850.11).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Odredite primjenjivu dnevnu stopu po osobi prema pravnom statusu"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Pomnožite dnevnu stopu s brojem svih članova kućanstva (stopa po glavi stanovnika / broj članova)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Izračunajte mjesečnu naknadu na temelju stvarnih kalendarskih dana u mjesecu"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ core professional styles identical to AG/AI page ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        header p { color: #cbd5e1; font-size: 1.05rem; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        .step-body h3 { color: var(--official-blue); margin-bottom: 0.5rem; font-size: 1.15rem; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; color: #475569; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); font-size: 0.95rem; }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; font-size: 0.95rem; }
+        
+        .btn-container { text-align: center; margin: 3rem 0 1rem; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; transition: background 0.2s, transform 0.2s; }
+        .btn-link:hover { background: #002244; transform: translateY(-1px); text-decoration: none; }
+        .btn-home { background: var(--swiss-red); }
+        .btn-home:hover { background: #b91c1c; }
+        
+        /* Live demo interactive styles */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 220px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.4rem; }
+        .input-item input, .input-item select { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: white; transition: 0.2s; color: #334155; }
+        .input-item input:focus, .input-item select:focus { outline: none; border-color: var(--official-blue); box-shadow: 0 0 0 2px rgba(0,51,102,0.1); }
+        
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; font-size: 1rem; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .result-panel h3 { margin: 0 0 0.5rem 0; color: var(--official-blue); font-size: 1.2rem; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; line-height: 1.5; color: #334155; border: 1px solid #e2e8f0; }
+        .final-amount { font-size: 1.3rem; font-weight: bold; color: var(--swiss-red); display: flex; justify-content: space-between; align-items: center; background: white; padding: 0.6rem 1rem; border-radius: 6px; border: 1px solid #e2e8f0; }
+        
+        footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; border-top: 1px solid #e2e8f0; margin-top: 3rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">STATUS 2026</div>
+        <h1>Algoritam za nužnu pomoć | Kanton Basel-Landschaft (BL)</h1>
+        <p>Službena i transparentna logika izračuna za ekonomsku nužnu pomoć prema kantonalnom zakonu</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Ovaj dokument otkriva precizan algoritam izračuna koji se koristi za određivanje zakonske nužne pomoći (za tražitelje azila, osobe podložne udaljenju i pojedince bez prava na boravak) u Kantonu Basel-Landschaft za 2026. godinu. Služi potpunoj transparentnosti i provjerljivosti za građane, savjetodavne službe i pogođene osobe.</p>
+
+        <h2 class="section-title">1. Pravna osnova i parametri za 2026.</h2>
+        <p>Nužna pomoć jamči apsolutni egzistencijalni minimum prema članku 12. Švicarskog saveznog ustava. U Kantonu Basel-Landschaft regulirana je kantonalnom <strong>Uredbom o socijalnoj skrbi (SHV, SGS 850.11) § 18a</strong> i <strong>Kantonalnom uredbom o azilu (kAV, SGS 850.19) § 9</strong>.</p>
+        
+        <p>Za razliku od standardne socijalne pomoći, nužna pomoć u BL ne primjenjuje <strong>degresivni faktor skaliranja (koeficijent kućanstva)</strong>. Naknade se osiguravaju isključivo na <strong>principu po glavi stanovnika</strong> (fiksni dnevni iznos po osobi), budući da smještaj i osnovnu medicinsku skrb izravno pružaju kanton ili općine kao natur-korisnosti (beneficije u naravi).</p>
+
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Redovna nužna pomoć (§ 18a st. 5 SHV)</h4>
+                <div class="param-value">CHF 10.60 <span style="font-size:0.85rem; font-weight:normal; color:#64748b;">/ dan i osoba</span></div>
+                <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.5rem;">Za osobe koje moraju napustiti Švicarsku, osobe s pravomoćnom odlukom o neulasku (NAI) itd.</p>
+            </div>
+            <div class="param-card">
+                <h4>Prolazne osobe / bez boravišnog statusa</h4>
+                <div class="param-value">CHF 8.55 <span style="font-size:0.85rem; font-weight:normal; color:#64748b;">/ dan i osoba</span></div>
+                <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.5rem;">Prema § 18a st. 2 SHV / § 9 kAV za osobe bez valjanog boravišta povezanog s potporom.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Algoritam izračuna (korak po korak)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Odredite dnevnu stopu po osobi</h3>
+                <p>Prvo se utvrđuje pravni status dotičnih osoba kako bi se odredila ispravna dnevna stopa:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Kategorija / Pravni status</th>
+                            <th>Pravna osnova</th>
+                            <th>Dnevna stopa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Primatelji redovne nužne pomoći (osobe obvezne na odlazak / kolektivni smještaj)</td>
+                            <td>SGS 850.11 § 18a st. 5</td>
+                            <td><strong>CHF 10.60</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Osobe bez boravišta povezanog s potporom / prolaznici / status kAV</td>
+                            <td>SGS 850.11 § 18a st. 2 / SGS 850.19</td>
+                            <td><strong>CHF 8.55</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Izračun po glavi stanovnika u kućanstvu</h3>
+                <p>Dnevna stopa primjenjuje se jednako na odrasle i djecu. Provodi se linearno zbrajanje svih osoba koje žive u istom kućanstvu (ili dodijeljenoj smještajnoj jedinici):</p>
+                <div class="formula">
+                    Ukupna dnevna stopa = (Broj odraslih + Broj djece) × Dnevna stopa
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Mjesečna projekcija i isplata</h3>
+                <p>U Kantonu Basel-Landschaft, nužna pomoć izračunava se na preciznoj dnevnoj bazi za odgovarajući obračunski mjesec ili tjedan. Za mjesečno planiranje koristi se točan broj kalendarskih dana (28, 29, 30 ili 31 dan) tog mjeseca. <strong>Ne</strong> postoji fiksno množenje s fiktivnim godišnjim prosjekom (npr. 30,42) kako bi se izbjegle gotovinske razlike i razlike zaokruživanja.</p>
+                <div class="formula">
+                    Mjesečni iznos = Ukupna dnevna stopa × Broj kalendarskih dana u mjesecu
+                </div>
+                <p>Konačni mjesečni iznos zaokružuje se komercijalno na najbližih 0,05 CHF.</p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Važna napomena o naknadama u naravi (natur-korisnosti):</strong> Iznosi od 10,60 CHF ili 8,55 CHF pokrivaju isključivo gotovinski dodatak za hranu, higijenu i svakodnevne životne potrebe. Smještaj, grijanje, struja i hitna medicinska skrb osiguravaju se prvenstveno kao izravne <strong>naknade u naravi</strong> prema § 18a st. 1 SHV i ne isplaćuju se dotičnim osobama.
+        </div>
+
+
+        <h2 class="section-title">3. Interaktivni kalkulator uživo (demo algoritma)</h2>
+        <p>Testirajte službenu logiku izračuna BL izravno. Unesite veličinu svog kućanstva, odaberite primjenjivu stopu i obračunski mjesec.</p>
+
+        <div class="demo-card">
+            <div class="demo-header">
+                📊 Modul izračuna uživo prema BL zakonskom tekstu 2026
+            </div>
+            <div class="demo-body">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="adultsCount">Broj odraslih osoba u kućanstvu:</label>
+                        <input type="number" id="adultsCount" min="1" value="2">
+                    </div>
+                    <div class="input-item">
+                        <label for="childrenCount">Broj djece u kućanstvu:</label>
+                        <input type="number" id="childrenCount" min="0" value="2">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="nothilfeType">Primjenjivi status nužne pomoći:</label>
+                        <select id="nothilfeType">
+                            <option value="10.60">Redovna nužna pomoć (§ 18a st. 5 SHV) - CHF 10,60 / dan</option>
+                            <option value="8.55">Prolazne osobe / bez boravišta (§ 18a st. 2 SHV) - CHF 8,55 / dan</option>
+                        </select>
+                    </div>
+                    <div class="input-item">
+                        <label for="calcMonth">Obračunski mjesec (za točan broj dana):</label>
+                        <select id="calcMonth">
+                            <option value="31">Siječanj / Ožujak / Svibanj / Srpanj / Kolovoz / Listopad / Prosinac (31 dan)</option>
+                            <option value="30" selected>Travanj / Lipanj / Rujan / Studeni (30 dana)</option>
+                            <option value="28">Veljača (obična godina - 28 dana)</option>
+                            <option value="29">Veljača (prestupna godina - 29 dana)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="demo-btn" id="runCalcBtn">Izračunaj odmah</button>
+
+                <div class="result-panel" id="liveResultPanel">
+                    <h3>Koraci izračuna i transparentni zapis:</h3>
+                    <div class="calc-steps" id="stepsDetail">
+                    </div>
+                    <div class="final-amount">
+                        <span>Pravo za odabrani mjesec:</span>
+                        <span id="monthlyAmountDisplay">0,00 CHF</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <a href="https://www.welfarecalc.ch" class="btn-link btn-home">« Povratak na glavni kalkulator</a>
+            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" class="btn-link">Algoritam Kantona AG »</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 welfarecalc.ch | Inicijativa za transparentnost švicarskih algoritama socijalne skrbi.</p>
+        <p style="font-size: 0.75rem; margin-top: 0.5rem;">Odricanje od odgovornosti: Ova otvorena dokumentacija odražava pravno stanje od 2026. godine. Izračune pojedinačnih slučajeva u nadležnosti su odgovarajućih općinskih i kantonalnih tijela.</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        "use strict";
+
+        function computeBLNothilfe(adults, children, rate, days) {
+            const totalPeople = adults + children;
+            const dailyTotal = totalPeople * rate;
+            const rawMonthly = dailyTotal * days;
+            
+            // Zaokruživanje na najbližih 0,05 CHF prema standardnom kantonalnom računovodstvu
+            const roundedMonthly = Math.round(rawMonthly * 20) / 20;
+
+            return {
+                totalPeople,
+                dailyTotal,
+                rawMonthly,
+                roundedMonthly
+            };
+        }
+
+        function updateDemo() {
+            const adults = parseInt(document.getElementById('adultsCount').value) || 0;
+            const children = parseInt(document.getElementById('childrenCount').value) || 0;
+            const rate = parseFloat(document.getElementById('nothilfeType').value);
+            const days = parseInt(document.getElementById('calcMonth').value);
+
+            if (adults < 1 && children < 1) {
+                alert("Unesite najmanje jednu osobu u kućanstvo.");
+                return;
+            }
+
+            const res = computeBLNothilfe(adults, children, rate, days);
+
+            const stepsHtml = `
+            <strong>📌 Korak 1 - Veličina kućanstva (po glavi stanovnika):</strong><br>
+            &nbsp;&nbsp;${adults} odraslih + ${children} djece = ${res.totalPeople} ukupno osoba.<br><br>
+            <strong>📌 Korak 2 - Ukupna dnevna stopa:</strong><br>
+            &nbsp;&nbsp;${res.totalPeople} osoba × CHF ${rate.toFixed(2)} = <strong>CHF ${res.dailyTotal.toFixed(2)} / dan</strong><br><br>
+            <strong>📌 Korak 3 - Mjesečna projekcija:</strong><br>
+            &nbsp;&nbsp;CHF ${res.dailyTotal.toFixed(2)} × ${days} kalendarskih dana = CHF ${res.rawMonthly.toFixed(4)} (nezaokruženo)<br><br>
+            <strong>💰 Korak 4 - Komercijalno zaokruživanje (na najbližih 0,05 CHF):</strong><br>
+            &nbsp;&nbsp;Konačni iznos za isplatu = <strong>CHF ${res.roundedMonthly.toFixed(2)}</strong>
+            `;
+
+            document.getElementById('stepsDetail').innerHTML = stepsHtml;
+            document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly.toFixed(2)} CHF`;
+            document.getElementById('liveResultPanel').style.display = 'block';
+        }
+
+        // Registracija event listenera
+        const btn = document.getElementById('runCalcBtn');
+        if (btn) {
+            btn.addEventListener('click', updateDemo);
+        }
+
+        // Automatsko ažuriranje pri promjeni polja za bolje korisničko iskustvo
+        const formElements = ['adultsCount', 'childrenCount', 'nothilfeType', 'calcMonth'];
+        formElements.forEach(function(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.addEventListener('input', updateDemo);
+                element.addEventListener('change', updateDemo);
+            }
+        });
+
+        // Pokretanje početnog izračuna nakon učitavanja stranice
+        window.addEventListener('DOMContentLoaded', function() {
+            //updateDemo();
+        });
+    })();
+</script>
+</body>
+</html>

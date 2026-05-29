@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Family Allowances (FA) Algorithm Canton Lucerne 2026 | welfarecalc.ch</title>
+    <meta name="description" content="How are family allowances (FA) calculated in the Canton of Lucerne for 2026? Discover our transparent algorithm for child and education allowances including birth allowances.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/LU_2026FA_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/LU_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/LU_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/LU_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/LU_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/LU_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/LU_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/LU_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/LU_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/LU_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/LU_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/LU_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/LU_2026FA_de.html">
+
+    <meta property="og:title" content="Family Allowances Algorithm Canton Lucerne 2026 | Transparent Calculation">
+    <meta property="og:description" content="Official calculation logic for child, education and birth allowances 2026 in Lucerne.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/LU_2026FA_en.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calculation of Family Allowances Lucerne 2026",
+      "description": "Step-by-step guide to calculating child allowances, education allowances and birth allowances in the Canton of Lucerne.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Age assessment (differentiation child allowance under/over 12 years)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Check education status (education allowance from age 16)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Add one-time birth or adoption allowance"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculate total annual entitlement"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">FAMZG COMPLIANT 2026</div>
+        <h1>FA Algorithm: Canton of Lucerne</h1>
+        <p>Transparent documentation of family allowances for the year 2026 (LU)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>In the Canton of Lucerne (LU), family allowances are governed by cantonal law as well as federal law (FamZG). Our calculator implements the specific age-based differentiation and one-time allowances of the Canton of Lucerne for 2026.</p>
+
+        <h2 class="section-title">1. Monthly Rates & One-Time Payments (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Child allowance (up to 12)</h4>
+                <div class="param-value">CHF 215 / month</div>
+                <p><small>For children up to the completed 12th year of age.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Child allowance (from 12)</h4>
+                <div class="param-value">CHF 260 / month</div>
+                <p><small>Increased rate from age 12 up to age 16.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Education allowance</h4>
+                <div class="param-value">CHF 268 / month</div>
+                <p><small>From age 16 until the end of education (max. age 25).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Birth / Adoption</h4>
+                <div class="param-value">CHF 1,075</div>
+                <p><small>One-time allowance per child in the Canton of Lucerne.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Calculation Method</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Age-based differentiation</h3>
+                <p>Unlike many other cantons, Lucerne differentiates the child allowance after the 12th birthday:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>0 - 12 years:</strong> CHF 215 per child per month.</li>
+                    <li><strong>12 - 16 years:</strong> CHF 260 per child per month.</li>
+                    <li><strong>16 - 25 years:</strong> CHF 268 per child per month (in education).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Monthly amount calculation</h3>
+                <p>The algorithm sums the amounts based on the age reference date:</p>
+                <div class="formula">
+                    (n1 × 215) + (n2 × 260) + (n education × 268)
+                </div>
+                <p><small>where n1 = children < 12 years and n2 = children between 12-16 years.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>One-time allowances</h3>
+                <p>Lucerne grants a birth or adoption allowance. This is added to the total amount in the year of the event.</p>
+                <table class="data-table">
+                    <tr><th>Type of allowance</th><th>Amount (LU)</th></tr>
+                    <tr><td>Birth allowance</td><td>CHF 1,075</td></tr>
+                    <tr><td>Adoption allowance</td><td>CHF 1,075</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Determining the annual entitlement</h3>
+                <p>The formula for the total year including one-time benefits:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Annual amount = (Monthly sum × 12) + One-time allowances
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Note on payment:</strong><br>
+            Allowances are generally paid out together with the salary. Self-employed persons in the Canton of Lucerne settle accounts directly with the compensation fund WAS Lucerne.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Launch calculator">Launch calculator</a>
+            <a href="https://www.was-luzern.ch/familienzulagen" target="_blank" class="btn-link" aria-label="Go to official WAS Lucerne page">Official WAS Lucerne page</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source: WAS Compensation Fund Lucerne Guidelines 2026 & FamZG</p>
+        <p>© 2026 welfarecalc.ch | Transparent family allowance calculation</p>
+    </footer>
+</div>
+
+</body>
+</html>

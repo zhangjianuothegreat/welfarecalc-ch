@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EL Algoritması Aargau Kantonu 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
+    <meta name="description" content="Aargau Kantonu'nda 2026 yılı için Ek Yardımlar (EL) nasıl hesaplanır? Resmi SVA verilerine dayanan şeffaf algoritmamızı keşfedin.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/AG_2026EL_tr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/AG_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/AG_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/AG_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/AG_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/AG_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/AG_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/AG_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/AG_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/AG_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/AG_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/AG_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/AG_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Ek Yardımlar (EL) Hesaplama Aargau 2026",
+      "description": "Aargau'da EL hesaplamasının ayrıntılı algoritmik dökümü.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Tanınan harcama ihtiyaçlarının belirlenmesi (temel ihtiyaçlar, kira, sağlık sigortası)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Gelirin toplanması (AHV/IV emekli maaşları, varlık tüketimi, kazanılan gelir)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "EL tutarının hesaplanması (giderler eksi gelir)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">RESMİ VERİLER 2026</div>
+        <h1>EL Algoritması: Aargau Kantonu</h1>
+        <p>2026 yılı için Ek Yardımların (EL) şeffaf dökümü</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Şeffaflık güven inşa eder. AHV/IV'ye yönelik Ek Yardımlar (EL) karmaşık bir alandır. Burada, hesaplama makinemizin, federal ve kantonal düzenlemelere dayanarak uygunluğunuzu nasıl belirlediğini belgeliyoruz.</p>
+
+        <h2 class="section-title">1. Yıllık Temel İhtiyaçlar (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Bekar kişiler</h4>
+                <div class="param-value">20.670 CHF</div>
+                <p><small>Genel yaşam giderleri için tutar.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Evli çiftler</h4>
+                <div class="param-value">31.005 CHF</div>
+                <p><small>Her iki eş için ortak temel ihtiyaçlar.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Hesaplama Metodolojisi</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Tanınan Giderler</h3>
+                <p>İlk olarak, yasal olarak tanınan tüm giderleri toplarız:</p>
+                <div class="formula">
+                    Temel ihtiyaçlar + Brüt kira (üst sınıra kadar) + Ortalama sağlık sigortası primi
+                </div>
+                <table class="data-table">
+                    <tr><th>2026 Azami kira (Kategori Bölge 2)</th><th>Yıllık tutar</th></tr>
+                    <tr><td>Bekar kişiler</td><td>18.300 CHF (1.525 CHF/ay)</td></tr>
+                    <tr><td>Evli çiftler</td><td>21.780 CHF (1.815 CHF/ay)</td></tr>
+                </table>
+                <p><small>*Not: Aargau'nun kırsal bölgeleri (Bölge 3) için biraz daha düşük limitler geçerlidir.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Değerlendirilebilir Gelir</h3>
+                <p>Ardından, geliriniz harcamalardan düşülür:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Emekli maaşları:</strong> 12 aylık AHV veya IV (13. ay maaşı nötrleştirilir).</li>
+                    <li><strong>Varlık tüketimi:</strong> (Net varlıklar - muafiyet) / 10 (yaşlılık aylığı alanlar için).</li>
+                    <li><strong>Kazanılan gelir:</strong> Standart yasal kesinti ile azaltılır.</li>
+                </ul>
+                <table class="data-table">
+                    <tr><th>Varlık muafiyetleri</th><th>Muafiyet tutarı</th></tr>
+                    <tr><td>Bekar kişiler</td><td>30.000 CHF</td></tr>
+                    <tr><td>Evli çiftler</td><td>50.000 CHF</td></tr>
+                    <tr><td>Sahibi tarafından kullanılan mülk</td><td>112.500 CHF</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>EL Yardımının Hesaplanması</h3>
+                <p>EL, giderler ve gelir arasındaki farkı karşılar:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Yıllık EL = [Tanınan Giderler] - [Değerlendirilebilir Gelir]
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Önemli: Varlık eşiği (Hak kazanma eşiği)</strong><br>
+            2021 itibarıyla, EL'den yararlanma hakkı yalnızca net varlıkların <strong>100.000 CHF</strong> (bekarlar) veya <strong>200.000 CHF</strong>'nin (evli çiftler) altında olması durumunda mevcuttur. Sahibi tarafından kullanılan mülkler bu hesaplamaya dahil edilmez.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Ana Sayfaya Dön</a>
+            <a href="https://www.sva-aargau.ch/el" target="_blank" class="btn-link">Resmi SVA Aargau Sayfası</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Kaynak: SVA Aargau Yönergeleri 2026 & Federal Ek Yardımlar Yasası (ELG)</p>
+        <p>welfarecalc.ch tarafından sağlanmıştır | Bilgiler yasal garanti kapsamında değildir.</p>
+    </footer>
+</div>
+
+</body>
+</html>

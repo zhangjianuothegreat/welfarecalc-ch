@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorithmes des allocations familiales (AF) Canton d'Appenzell Rhodes-Extérieures 2026 | welfarecalc.ch</title>
+    <meta name="description" content="Comment sont calculées les allocations familiales (AF) 2026 dans le canton d'Appenzell Rhodes-Extérieures ? Découvrez notre algorithme transparent pour les allocations pour enfants et de formation.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/AR_2026FA_fr.html">
+    
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/AR_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/AR_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/AR_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/AR_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/AR_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/AR_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/AR_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/AR_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/AR_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/AR_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/AR_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/AR_2026FA_de.html">
+
+    <meta property="og:title" content="Algorithme des allocations familiales Canton AR 2026 | Calcul transparent">
+    <meta property="og:description" content="Logique de calcul officielle pour les allocations pour enfants et de formation 2026 dans le canton d'Appenzell Rhodes-Extérieures.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/AR_2026FA_fr.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul des allocations familiales Appenzell Rhodes-Extérieures 2026",
+      "description": "Guide étape par étape pour déterminer les allocations pour enfants et de formation dans le canton d'AR.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du type d'allocation en fonction de l'âge et du statut de formation."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Application des taux cantonaux : 230 CHF pour les enfants, 290 CHF pour les jeunes en formation."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Vérification des prestations uniques (allocations de naissance dans le canton d'AR = 0 CHF)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du montant total annuel (montant mensuel x 12)."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME LAFam 2026</div>
+        <h1>Algorithme des AF : Canton d'Appenzell Rhodes-Extérieures</h1>
+        <p>Documentation transparente des allocations familiales pour l'année 2026 (AR)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Dans le canton d'Appenzell Rhodes-Extérieures (AR), les allocations familiales sont basées sur la loi fédérale (LAFam) et les dispositions d'exécution cantonales. Notre algorithme calcule vos droits avec précision sur la base des taux 2026.</p>
+
+        <h2 class="section-title">1. Taux mensuels AR (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Allocation pour enfants</h4>
+                <div class="param-value">CHF 230 / mois</div>
+                <p><small>Pour les enfants à partir du mois de naissance jusqu'à l'âge de 16 ans révolus.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Allocation de formation</h4>
+                <div class="param-value">CHF 290 / mois</div>
+                <p><small>Dès 16 ans (ou 15 ans en cas de formation justifiée) jusqu'à 25 ans maximum.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Démarche de calcul</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Détermination de la catégorie</h3>
+                <p>L'algorithme vérifie pour chaque enfant les conditions d'ouverture du droit :</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>0 - 16 ans :</strong> Droit à l'allocation pour enfants (CHF 230).</li>
+                    <li><strong>16 - 25 ans :</strong> Droit à l'allocation de formation (CHF 290), à condition qu'une formation reconnue soit suivie.</li>
+                    <li><strong>Enfants invalides :</strong> L'allocation pour enfants est accordée jusqu'à l'âge de 20 ans.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Calcul du montant mensuel total</h3>
+                <p>En Argovie et à Appenzell Rhodes-Extérieures, il n'y a pas de majoration pour les familles nombreuses (pas de supplément à partir du 3e enfant) :</p>
+                <div class="formula">
+                    (Nombre d'enfants × CHF 230) + (Nombre en formation × CHF 290)
+                </div>
+                <p><small>*Important : L'algorithme ne prend en compte qu'un seul type d'allocation par enfant (pas de cumul).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Allocations uniques (naissance / adoption)</h3>
+                <p>Le canton d'Appenzell Rhodes-Extérieures ne prévoit <strong>aucune</strong> allocation de naissance ou d'adoption par la loi.</p>
+                <table class="data-table">
+                    <tr><th>Type d'allocation</th><th>Montant (AR)</th></tr>
+                    <tr><td>Allocation de naissance</td><td>CHF 0</td></tr>
+                    <tr><td>Allocation d'adoption</td><td>CHF 0</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Détermination du droit annuel</h3>
+                <p>Le versement est généralement effectué mensuellement par l'employeur ou directement par la caisse de compensation (par exemple pour les indépendants) :</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Montant annuel = (Somme mensuelle) × 12
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Remarque concernant l'ordre de priorité :</strong><br>
+            Si les deux parents exercent une activité lucrative, l'art. 12 LAFam règle le droit au versement. Notre algorithme part du principe que le premier bénéficiaire désigné est utilisé.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Lancer le calculateur">Lancer le calculateur</a>
+            <a href="https://www.sovar.ch/online-services/formulare/familienzulagen-fak-flg" target="_blank" class="btn-link" aria-label="Page officielle de SoVAR">Page officielle SoVAR (AR)</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source : Sozialversicherungen Appenzell Ausserrhoden (SoVAR) 2026 & LAFam</p>
+        <p>© 2026 welfarecalc.ch | Calcul transparent des allocations familiales</p>
+    </footer>
+</div>
+
+</body>
+</html>

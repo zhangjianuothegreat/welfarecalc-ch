@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Asistencia Social - Cantón de Obwalden 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="¿Cómo se calcula la asistencia social en el Cantón de Obwalden (OW) para 2026? Descubra nuestro algoritmo transparente basado en las directrices SKOS y la ley cantonal.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/OW_2026SH_es.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/OW_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/OW_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/OW_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/OW_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/OW_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/OW_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/OW_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/OW_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/OW_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/OW_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/OW_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/OW_2026SH_de.html">
+
+    <meta property="og:title" content="Algoritmo de Asistencia Social - Cantón de Obwalden 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo para la asistencia social 2026 en Obwalden basada en SKOS.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/OW_2026SH_es.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Asistencia Social Obwalden 2026",
+      "description": "Desglose algorítmico detallado del cálculo de asistencia social en el Cantón de Obwalden (OW).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación del límite de activos según la revisión SKOS 2026"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo del mínimo vital social basado en el tamaño del hogar"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Evaluación de costos de vivienda según los límites cantonales de OW"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Comparación del ingreso neto menos el subsidio por empleo"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME A SKOS 2026</div>
+        <h1>Algoritmo de Asistencia Social: Cantón de Obwalden</h1>
+        <p>Documentación transparente de la lógica de cálculo para el mínimo vital social (OW)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La confianza se construye con transparencia absoluta. Divulgamos aquí el algoritmo completo que impulsa los cálculos para el Cantón de Obwalden (OW) en welfarecalc.ch. La lógica cumple plenamente con las disposiciones legales de la Ley de Asistencia Social de Obwalden (SHG OW) y las directrices armonizadas SKOS 2026 para toda Suiza.</p>
+
+        <h2 class="section-title">1. Verificación de Activos (El Umbral Inicial)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Asignación para una sola persona</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>Aumentada según la revisión SKOS vigente a partir del 01.01.2026 (anteriormente CHF 4'000).</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Asignación para parejas / familias</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>Más CHF 3'000 por hijo. Límite máximo total de asignación de CHF 15'000 por unidad de asistencia.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. El Camino del Cálculo (Mensual)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Asignación Básica de Vida (ABV)</h3>
+                <p>La ABV cubre los costos de alimentación, vestimenta, energía y gestión del hogar. Se calcula estrictamente según la unidad de asistencia SKOS oficial (número de personas en el mismo hogar):</p>
+                <table class="data-table">
+                    <tr><th>Tamaño del hogar</th><th>Monto por mes (SKOS 2026)</th></tr>
+                    <tr><td>1 persona</td><td>CHF 1'061</td></tr>
+                    <tr><td>2 personas</td><td>CHF 1'624</td></tr>
+                    <tr><td>3 personas</td><td>CHF 1'954</td></tr>
+                    <tr><td>4 personas</td><td>CHF 2'240</td></tr>
+                    <tr><td>5 personas</td><td>CHF 2'526</td></tr>
+                    <tr><td>Cada persona adicional</td><td>+ CHF 201</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Costos de Vivienda (Límites de Alquiler Cantón OW)</h3>
+                <p>Asignación de los costos de alquiler reales (alquiler bruto incluyendo gastos accesorios y calefacción) hasta el máximo oficial reconocido por el cantón:</p>
+                <table class="data-table">
+                    <tr><th>Tamaño del hogar</th><th>Alquiler bruto máximo reconocido (Cantón OW)</th></tr>
+                    <tr><td>1 persona</td><td>CHF 1'100</td></tr>
+                    <tr><td>2 personas</td><td>CHF 1'400</td></tr>
+                    <tr><td>3 personas</td><td>CHF 1'650</td></tr>
+                    <tr><td>4 personas</td><td>CHF 1'850</td></tr>
+                    <tr><td>5+ personas</td><td>CHF 2'000</td></tr>
+                </table>
+                <div class="formula" style="margin-top: 15px;">
+                    Alquiler reconocido = Mín(Alquiler real, Máximo cantonal)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Costos de Salud y Reducción de Primas IPV</h3>
+                <p>Los costos del seguro de salud obligatorio (KVG) se incluyen en el presupuesto. Según la práctica oficial del Cantón de OW, la Reducción Individual de Primas (IPV) se aplica directamente primero:</p>
+                <div class="formula">
+                    Necesidad de prima reconocida = Máx(0, Prima KVG - IPV mensual)
+                </div>
+                <p><small>*Nota: Se utiliza la prima de referencia cantonal o la prima real (si es menor).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Ingresos y Subsidio por Empleo (EFB)</h3>
+                <p>Para garantizar incentivos para reanudar una actividad laboral remunerada, las personas empleadas reciben una asignación global sobre sus ingresos netos. Se calcula de la siguiente manera:</p>
+                <div class="formula">
+                    Ingreso evaluable = Ingreso neto - EFB (Mín(400, Máx(200, Ingreso neto × 0.2)))
+                </div>
+                <p><small>Otros ingresos (ej., asignaciones familiares, todo tipo de pensiones, pensiones alimenticias) y el consumo de activos (si los activos exceden las asignaciones) se cuentan completamente como ingreso.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Resultado: Derecho Mensual</h3>
+                <p>El pago final legal de asistencia social en el Cantón de Obwalden resulta del déficit de cobertura matemático:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Derecho = (ABV + Alquiler reconocido + Necesidad de seguro médico + IE*) - (Ingreso evaluable)
+                </div>
+                <p><small>*IE = Subsidio de integración por esfuerzos de integración verificables o empleo remunerado (generalmente CHF 100 a CHF 300 por mes).</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Agotamiento de Activos en el Cantón de Obwalden (OW):</strong><br>
+            Los activos líquidos y la riqueza que excedan las asignaciones cantonales durante la evaluación inicial deben agotarse antes de recibir asistencia social económica. Con respecto a los bienes inmuebles, se aplican las disposiciones cantonales sobre garantías hipotecarias y obligaciones de reembolso.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Iniciar Calculadora</a>
+            <a href="https://www.rsd-obwalden.ch" target="_blank" class="btn-link">Sitio Oficial Servicios Sociales Regionales OW</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fuentes: Ley de Asistencia Social del Cantón de Obwalden (SHG OW) y Directrices SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Cálculo Transparente de Asistencia Social</p>
+    </footer>
+</div>
+
+</body>
+</html>

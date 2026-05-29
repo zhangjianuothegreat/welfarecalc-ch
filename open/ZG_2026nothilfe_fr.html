@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Algorithme d'aide d'urgence Canton de Zoug 2026 | Calcul transparent | welfarecalc.ch</title>
+    <meta
+        content="Comment est calculée l'aide d'urgence 2026 dans le canton de Zoug ? Découvrez notre algorithme transparent basé sur les directives légales officielles du canton de Zoug."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_fr.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZG_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algorithme d'aide d'urgence Canton de Zoug 2026 | Calcul transparent" property="og:title" />
+    <meta
+        content="Logique de calcul officielle pour l'aide d'urgence 2026 dans le canton de Zoug basée sur la loi sur l'aide sociale du canton de Zoug."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/ZG_2026nothilfe_fr.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de l'aide d'urgence Zoug 2026",
+      "description": "Guide étape par étape pour la détermination légale des prestations en espèces de l'aide d'urgence dans le canton de Zoug (hébergement collectif).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du taux journalier adulte échelonné selon le nombre de personnes"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Addition linéaire des suppléments pour enfants sans dégression"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Projection sur le mois moyen avec arrondi au franc supérieur"
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ 与 AG 和 AI 页面完全保持高度一致的官方蓝金视觉框架 ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo 卡片 */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--official-blue);
+            font-size: 1.2rem;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 720px) {
+            .content {
+                padding: 1.5rem;
+            }
+
+            .step-box {
+                padding-left: 3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">DONNÉES OFFICIELLES 2026 · Aide d'urgence ZG</div>
+            <h1>Algorithme d'aide d'urgence : Canton de Zoug</h1>
+            <p>Calcul transparent de l'aide d'urgence selon la loi sur l'aide sociale (LAS) &amp; les directives
+                cantonales de Zoug 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+        <div class="content">
+            <p>Confiance grâce à la transparence algorithmique. L'aide d'urgence (selon l'art. 12 Cst.) pour les
+                personnes devant quitter le pays ou faisant l'objet d'une décision de renvoi exécutoire est strictement
+                traitée comme un forfait absolu dans le canton de Zoug. Nous dévoilons ici la logique mathématique
+                vérifiée, basée sur les directives de l'office cantonal des affaires sociales de Zoug.</p>
+            <h2 class="section-title">1. Paramètres légaux de l'aide d'urgence (Zoug 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Taux journalier de base (personne seule)</h4>
+                    <div class="param-value">CHF 12.00 / jour</div>
+                    <p><small>S'applique à une personne adulte vivant seule dans un hébergement collectif.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Forfait pour couple</h4>
+                    <div class="param-value">CHF 18.00 / jour</div>
+                    <p><small>Montant fixe pour deux adultes mariés ou vivant en partenariat.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Montant forfaitaire pour enfant</h4>
+                    <div class="param-value">CHF 7.00 / jour par enfant</div>
+                    <p><small>Montant linéaire par enfant mineur (pas de réduction dégressive).</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. Le mode de calcul officiel (étape par étape)</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Détermination du taux journalier adulte</h3>
+                    <p>Le canton de Zoug ne calcule pas les taux pour adultes via des facteurs en pourcentage, mais
+                        utilise une matrice de montants cantonale absolue :</p>
+                    <div class="formula">
+                        Nombre d'adultes = 1 : CHF 12.00 / jour<br />
+                        Nombre d'adultes = 2 : CHF 18.00 / jour<br />
+                        Nombre d'adultes ≥ 3 : CHF 18.00 + (Nombre d'adultes - 2) × CHF 8.50 / jour
+                    </div>
+                    <p><small>Remarque : Pour les ménages de familles nombreuses dans des hébergements collectifs, un
+                            taux individuel réduit de CHF 8.50 est appliqué à partir du troisième adulte.</small></p>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Ajout du montant forfaitaire pour enfant</h3>
+                    <p>Pour chaque enfant déclaré dans le ménage (moins de 18 ans) ou élément de soutien encore en
+                        formation, un taux journalier fixe de CHF 7.00 est ajouté.</p>
+                    <div class="formula">
+                        Montant total journalier = Taux journalier adulte + (Nombre d'enfants × CHF 7.00)
+                    </div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Projection mensuelle &amp; arrondi administratif</h3>
+                    <p>La transformation en droit mensuel s'effectue via le facteur standard suisse de 30,42 jours. La
+                        valeur résultante est strictement arrondie commercialement au <strong>franc supérieur (1.00
+                            CHF)</strong>.</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        Droit mensuel = ARRONDI( (Montant total journalier × 30,42) ; 0 )
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Pratique d'arrondi Canton de Zoug</th>
+                                <th>Exemple</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arrondi commercial à 1.00 CHF près</td>
+                                <td>421,49 → 421.00 CHF</td>
+                            </tr>
+                            <tr>
+                                <td>Arrondi commercial à 1.00 CHF près</td>
+                                <td>584,50 → 585.00 CHF</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Particularités cantonales de l'aide d'urgence à Zoug (ZG) :</strong><br />
+                • <strong>Priorité aux prestations en nature :</strong> Les montants calculés représentent l'argent de
+                poche pour la nourriture et l'hygiène. Le logement et les soins médicaux d'urgence sont entièrement
+                fournis sous forme de prestations en nature par le canton.<br />
+                • <strong>Limites de fortune :</strong> Un droit théorique s'éteint si les liquidités ou les actifs
+                dépassent le montant exonéré cantonal.<br />
+                • <strong>Pas de dégression pour les familles nombreuses :</strong> L'allocation pour enfant reste
+                stable à CHF 7.00/jour même à partir du 3ème enfant.
+            </div>
+            <h2 class="section-title">3. Sources de données &amp; bases juridiques</h2>
+            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                <li><strong>Loi sur l'aide sociale du canton de Zoug (LAS-ZG, BGS 861.1)</strong> – Ancrage légal de
+                    l'aide transitoire en situation de détresse.</li>
+                <li><strong>Directives de l'office des affaires sociales du canton de Zoug</strong> – Fixation
+                    officielle par les autorités des taux de versement en espèces pour l'aide d'urgence économique 2026.
+                </li>
+                <li><strong>Constitution fédérale de la Confédération suisse (art. 12 Cst.)</strong> – Droit à l'aide en
+                    situation de détresse.</li>
+                <li><strong>Validation des données WelfareCalc :</strong> État janvier 2026, audit mathématique
+                    effectué.</li>
+            </ul>
+            <div class="demo-card">
+                <div class="demo-header">🧪 Vérification de transparence : Testez en direct le calculateur d'aide
+                    d'urgence ZG</div>
+                <div class="demo-body">
+                    <p>Simulez le calcul selon l'algorithme officiel zougois pour l'année 2026.</p>
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Nombre d'adultes</label>
+                            <input id="adultsCount" min="1" step="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Nombre d'enfants (0-17 ans)</label>
+                            <input id="childrenCount" min="0" step="1" type="number" value="0" />
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Lancer l'algorithme</button>
+                    <div class="result-panel" id="liveResultPanel">
+                        <h3>📐 Preuve de calcul (Logique administrative du canton de Zoug)</h3>
+                        <div class="calc-steps" id="stepsDetail"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(montant mensuel de l'aide d'urgence, arrondi au franc
+                                entier)</span></div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Le calcul s'applique aux
+                            hébergements collectifs cantonaux. Seule la décision du service cantonal fait foi.</p>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">← Retour à l'accueil</a>
+                <a class="btn-link" href="https://www.zg.ch" target="_blank">Site officiel du Canton de ZG</a>
+            </div>
+        </div>
+        <footer>
+            <p>Source : Canton de Zoug – Office des affaires sociales, directives cantonales relatives à la LAS 2026,
+                art. 12 Cst.</p>
+            <p>Fourni par welfarecalc.ch | Cette divulgation algorithmique sert la transparence et ne constitue pas un
+                conseil juridique.</p>
+            <p>© 2026 welfarecalc.ch – Open Algorithm Initiative pour la Suisse</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            // Exakte Parameter gemäss Vorgaben des Kantons Zug (2026)
+            const ZG_RATES = {
+                singleAdultDaily: 12.00,
+                coupleDaily: 18.00,
+                extraAdultDaily: 8.50,
+                childDaily: 7.00,
+                avgDaysMonth: 30.42
+            };
+
+            function computeZugNothilfe(adults, children) {
+                // Schritt 1: Gestufte Erwachsenen-Matrix
+                let adultDaily = 0;
+                let adultCalculationMethod = '';
+
+                if (adults === 1) {
+                    adultDaily = ZG_RATES.singleAdultDaily;
+                    adultCalculationMethod = `Forfait personne seule : CHF ${ZG_RATES.singleAdultDaily.toFixed(2)} / jour`;
+                } else if (adults === 2) {
+                    adultDaily = ZG_RATES.coupleDaily;
+                    adultCalculationMethod = `Forfait couple : CHF ${ZG_RATES.coupleDaily.toFixed(2)} / jour`;
+                } else {
+                    adultDaily = ZG_RATES.coupleDaily + (adults - 2) * ZG_RATES.extraAdultDaily;
+                    adultCalculationMethod = `Ménage de plusieurs personnes (base couple + ${adults - 2} adultes supplémentaires) : CHF ${adultDaily.toFixed(2)} / jour`;
+                }
+
+                // Schritt 2: Lineare Kinder-Addition
+                const childDailyTotal = children * ZG_RATES.childDaily;
+
+                // Schritt 3: Tagessatz Gesamt & Hochrechnung
+                const totalDaily = adultDaily + childDailyTotal;
+                const rawMonthly = totalDaily * ZG_RATES.avgDaysMonth;
+
+                // Zuger Standard: Runden auf den nächsten vollen Franken
+                const roundedMonthly = Math.round(rawMonthly);
+
+                return {
+                    adultDaily,
+                    adultCalculationMethod,
+                    childDailyTotal,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adultsInput = document.getElementById('adultsCount');
+                const childrenInput = document.getElementById('childrenCount');
+
+                let adults = parseInt(adultsInput.value, 10);
+                let children = parseInt(childrenInput.value, 10);
+
+                if (isNaN(adults) || adults < 1) adults = 1;
+                if (isNaN(children) || children < 0) children = 0;
+
+                const result = computeZugNothilfe(adults, children);
+
+                const stepsHtml = `
+                <strong>📌 Étape 1 – Adultes :</strong> ${result.adultCalculationMethod}<br>
+                <strong>📌 Étape 2 – Supplément pour enfant :</strong> ${children} enfant(s) &times; CHF ${ZG_RATES.childDaily.toFixed(2)} = CHF ${result.childDailyTotal.toFixed(2)} / jour<br>
+                <strong>📌 Taux journalier total déterminé :</strong> CHF ${result.totalDaily.toFixed(2)} / jour<br>
+                <strong>📌 Étape 3 – Facteur mensuel (30,42 jours) :</strong> CHF ${result.totalDaily.toFixed(2)} &times; 30,42 = CHF ${result.rawMonthly.toFixed(4)}<br>
+                <strong>💰 Arrondi commercial (Standard canton de Zoug) :</strong> CHF ${result.roundedMonthly}.00
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${result.roundedMonthly}.00 CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+
+            // UX: Automatische Berechnung bei Input-Änderung
+            const adultsField = document.getElementById('adultsCount');
+            const childrenField = document.getElementById('childrenCount');
+            if (adultsField && childrenField) {
+                adultsField.addEventListener('input', updateDemo);
+                childrenField.addEventListener('input', updateDemo);
+            }
+        })();
+    </script>
+</body>
+
+</html>

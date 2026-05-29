@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Abonos de Família (AF) Cantão de Berna 2026 | welfarecalc.ch</title>
+    <meta name="description" content="Como são calculados os Abonos de Família (AF) 2026 no Cantão de Berna? Descubra o nosso algoritmo transparente para abonos por filho e abonos de formação.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026FA_pt.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026FA_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026FA_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026FA_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026FA_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026FA_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026FA_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026FA_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026FA_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026FA_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026FA_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026FA_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026FA_de.html">
+
+    <meta property="og:title" content="Algoritmo de Abonos de Família do Cantão de Berna 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica de cálculo oficial para abonos por filho e de formação 2026 no Cantão de Berna.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BE_2026FA_pt.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de Abonos de Família Berna 2026",
+      "description": "Cálculo legal passo a passo de abonos por filho e abonos de formação no Cantão de Berna.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificação do limite de rendimento (CHF 630/mês)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Segmentação etária e categorização por criança (16 / 20 / 25 anos)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo das taxas mensais sem progressão (CHF 250 / CHF 310)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Exclusão de pagamentos únicos e agregação do direito anual total"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #0ea5e9; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME A LEI FAMZG 2026</div>
+        <h1>Algoritmo para Abonos de Família: Cantão de Berna</h1>
+        <p>Documentação transparente dos abonos de família para o ano de 2026 (Cantão de Berna / BE)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>No Cantão de Berna (BE), os abonos de família são regidos pela lei cantonal sobre abonos de família (KFamZG). O nosso modelo de cálculo aplica as taxas válidas para 2026 para determinar o seu direito individual de forma totalmente transparente e rastreável.</p>
+
+        <h2 class="section-title">1. Taxas Mensais BE (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Abono por filho</h4>
+                <div class="param-value">CHF 250 / mês</div>
+                <p><small>Válido para crianças até aos 16 anos completos.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Abono de formação</h4>
+                <div class="param-value">CHF 310 / mês</div>
+                <p><small>A partir dos 16 anos até ao fim da formação inicial (idade máxima 25 anos).</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Fluxo de Cálculo</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Verificação de Elegibilidade e Rendimento Mínimo</h3>
+                <p>O algoritmo verifica primeiro os requisitos mínimos legais de acordo com a Lei Federal de Abonos de Família (FamZG):</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Rendimento mínimo:</strong> O direito total existe apenas se o rendimento do trabalho sujeito a AVS for de pelo menos <strong>CHF 630 por mês</strong> (ou CHF 7'560 por ano).</li>
+                    <li><strong>Pedidos concorrentes:</strong> Se ambos os pais estiverem empregados, a ordem de prioridade legal (Art. 12 FamZG) determina quem tem o direito principal. Pagamentos duplicados são estritamente bloqueados.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Segmentação Etária e Categorização</h3>
+                <p>Cada criança é automaticamente atribuída a uma categoria com base na data de nascimento exata:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>0 até aos 16 anos completos:</strong> Direito a abono por filho (CHF 250). O direito expira no final do mês em que ocorre o 16.º aniversário.</li>
+                    <li><strong>Após o 16.º ano de idade até no máximo 25 anos:</strong> Direito a abono de formação (CHF 310), desde que haja um certificado de matrícula educacional válido. O direito expira antecipadamente no final do período de formação/educação ou o mais tardar ao completar 25 anos.</li>
+                    <li><strong>Crianças com deficiência:</strong> Crianças permanentemente incapazes de trabalhar devido a uma deficiência de saúde recebem o abono por filho estendido até ao final do seu <strong>20.º ano de idade</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Cálculo do Valor Total Mensal</h3>
+                <p>O Cantão de Berna utiliza um modelo de cálculo linear sem progressão ou aumento baseado no número de filhos (nenhuma diferenciação a partir do terceiro filho ou suplementos por idade):</p>
+                <div class="formula">
+                    (Número de filhos &lt; 16 anos × CHF 250) + (Número de filhos em educação/formação × CHF 310)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Abonos Únicos e Direito Anual</h3>
+                <p>O Cantão de Berna <strong>não</strong> concede abonos de nascimento ou adoção únicos dentro do sistema padrão para empregados e trabalhadores independentes.</p>
+                <table class="data-table">
+                    <tr><th>Tipo de abono</th><th>Montante (BE)</th></tr>
+                    <tr><td>Abono de nascimento</td><td>CHF 0</td></tr>
+                    <tr><td>Abono de adoção</td><td>CHF 0</td></tr>
+                </table>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Direito anual total = (Valor total mensal) × 12
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Nota importante sobre a cláusula agrícola:</strong><br>
+            Este algoritmo reflete as regras para empregados não-agrícolas e trabalhadores independentes. Regras federais separadas (FLG) aplicam-se aos empregados agrícolas, com taxas diferentes e um direito adicional a abono familiar (CHF 100/mês).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home" aria-label="Ir para o calculador">Iniciar Calculador</a>
+            <a href="https://www.akbern.ch/de/Versicherungen/FZ/Familienzulagen.html" target="_blank" class="btn-link" aria-label="Ir para a página oficial da AK Bern">Página Oficial da AK Bern</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fonte: Diretrizes 2026 da Caixa de Compensação do Cantão de Berna (AK Bern) & Lei de Abonos de Família (KFamZG, BSG 832.71)</p>
+        <p>© 2026 welfarecalc.ch | Cálculo Transparente de Abonos de Família</p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo de Assistência Social Cantão de Vaud 2026 | Cálculo Transparente | welfarecalc.ch</title>
+  <meta
+    content="Como é calculado o Revenu d'insertion (RI) 2026 no Cantão de Vaud (VD)? Descubra nosso algoritmo transparente baseado nas diretrizes LAS e SKOS."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pt.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo de Assistência Social Cantão de Vaud 2026 | Cálculo Transparente" property="og:title" />
+  <meta
+    content="Lógica oficial de cálculo para o Revenu d'insertion (RI) 2026 no Cantão de Vaud com base nas diretrizes SKOS e LAS VD."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026SH_pt.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da Assistência Social Vaud (RI) 2026",
+      "description": "Detalhamento algorítmico do cálculo da assistência social (Revenu d'insertion) no Cantão de Vaud.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificação das isenções de património (limiar de entrada segundo a lei)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do mínimo existencial social (necessidades básicas conforme escala SKOS 2026, renda e seguro de saúde)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Comparação e dedução dos rendimentos otimizados menos a quota de ganho"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME SKOS 2026</div>
+      <h1>Algoritmo de Assistência Social: Cantão de Vaud (VD)</h1>
+      <p>Documentação transparente da lógica de cálculo do Revenu d'insertion (RI)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+    <div class="content">
+      <p>Como é calculado o Revenu d'insertion (RI) no Cantão de Vaud? Para fortalecer a confiança dos nossos
+        utilizadores, divulgamos aqui o algoritmo completo que está por trás do welfarecalc.ch. Ele baseia-se no
+        fundamento legal da Loi sur l'action sociale (LAS VD), no respetivo regulamento (RRI) e nas diretrizes nacionais
+        SKOS 2026.</p>
+      <h2 class="section-title">1. Verificação de Património (O Limiar de Entrada)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Isenção para Pessoa Singular</h4>
+          <div class="param-value">CHF 6'000</div>
+          <p><small>Acrescido de CHF 3'000 por filho ou pessoa em formação.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Isenção para Casais</h4>
+          <div class="param-value">CHF 12'000</div>
+          <p><small>Não existe limite máximo absoluto para agregados familiares RI com muitos filhos.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. O Percurso de Cálculo (Mensal)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Necessidades Básicas de Subsistência (NBS)</h3>
+          <p>As NBS baseiam-se estritamente na escala SKOS padronizada de 2026 para a dimensão do agregado familiar:</p>
+          <table class="data-table">
+            <tr>
+              <th>Dimensão do Agregado Familiar</th>
+              <th>Valor por Mês (2026)</th>
+            </tr>
+            <tr>
+              <td>1 Pessoa</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 Pessoas</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>3 Pessoas</td>
+              <td>CHF 2'017</td>
+            </tr>
+            <tr>
+              <td>4 Pessoas</td>
+              <td>CHF 2'320</td>
+            </tr>
+            <tr>
+              <td>5 Pessoas</td>
+              <td>CHF 2'623</td>
+            </tr>
+            <tr>
+              <td>Cada Pessoa Adicional</td>
+              <td>+ CHF 213</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Despesas de Habitação &amp; Saúde (Princípio Líquido)</h3>
+          <p>Consideração das despesas de habitação até ao máximo cantonal. No seguro de saúde, aplica-se no Cantão de
+            Vaud o estrito princípio líquido para evitar duplas contagens:</p>
+          <div class="formula">
+            Renda Reconhecida = Min(Renda Efetiva, Máximo Cantonal)<br />
+            Seguro de Saúde Reconhecido = Max(0, Prémio KVG - Subsídio Individual de Prémio IPV)
+          </div>
+          <p><small>*Nota: Como o IPV no Cantão de Vaud é pago diretamente à seguradora, o nosso algoritmo deduz o IPV
+              diretamente do lado da despesa. O valor de referência máximo da renda para 1 pessoa é de CHF 1'200 a nível
+              cantonal.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Dedução de Rendimentos &amp; Quota de Ganho (Franquia)</h3>
+          <p>Para manter o incentivo ao trabalho, é deduzido do rendimento bruto ou líquido do trabalho um montante
+            isento legal de acordo com o RRI VD:</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>Rendimento Considerável</strong> = (Rendimento Líquido do Trabalho - 20% de Franquia) + Pensões de
+            Alimentos + Subsídios de Desemprego + Outras Pensões
+          </div>
+          <p><small>Importante: O seguro de desemprego é corretamente declarado como ALV (Seguro de Desemprego) e
+              considerado como rendimento a 100%. Um reembolso direto do IPV não é contado novamente como receita
+              aqui.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Resultado: Direito Mensal</h3>
+          <p>O pagamento final da assistência social (Revenu d'insertion) é determinado pela cobertura do défice:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Direito = (NBS + Renda Reconhecida + Seguro de Saúde Reconhecido + IZU*) - Rendimento Considerável
+          </div>
+          <p><small>*IZU = Subsídio de Integração (subsídio por participação comprovada em medidas de integração ou
+              emprego).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Aviso Importante sobre Conformidade Legal:</strong><br />
+        Ao contrário dos Complementos (EL), o direito de assistência social do Cantão de Vaud (LAS) não prevê um consumo
+        de património gradual e percentual quando o limiar de entrada é ultrapassado. Se o património líquido estiver
+        acima do montante isento, <strong>não há direito</strong> à assistência social por lei, até que o património
+        caia abaixo do limite.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Iniciar Calculadora</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/revenu-dinsertion-ri"
+          target="_blank">Página Oficial Cantão VD (RI)</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fontes: Cantão de Vaud DGCS, Loi sur l'action sociale (LAS) &amp; Diretrizes SKOS 2026</p>
+      <p>© 2026 welfarecalc.ch | Cálculo Transparente da Assistência Social</p>
+    </footer>
+  </div>
+</body>
+
+</html>

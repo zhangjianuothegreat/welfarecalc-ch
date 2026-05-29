@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV Algoritması Uri Kantonu 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
+  <meta
+    content="Uri kantonunda 2026 yılı prim indirimi (IPV) nasıl hesaplanır? Resmi SVS verilerine dayanan şeffaf algoritmamızı keşfedin."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_tr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV Algoritması Uri Kantonu 2026 | Şeffaf Hesaplama" property="og:title" />
+  <meta content="Uri kantonunda (UR) 2026 yılı prim indirimi için resmi hesaplama mantığı." property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/UR_2026IPV_tr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Uri Prim İndirimi Hesaplaması 2026",
+      "description": "UR kantonunda IPV hakkının belirlenmesi için adım adım kılavuz (muafiyet modeli).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "%15 varlık eklemesi dahil geçerli gelirin belirlenmesi"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Yaş kategorisine göre kanton yönlendirme primlerinin belirlenmesi"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "%8,5 muafiyet oranının hesaplanması ve yasal asgari garanti ile karşılaştırılması"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">RESMİ VERİLER 2026</div>
+      <h1>IPV Algoritması: Uri Kantonu (UR)</h1>
+      <p>2026 Yılı Hesaplama Mantığının Şeffaf Sunumu</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+    <div class="content">
+      <p>Şeffaflık yoluyla güven. Evrensel hesaplayıcımızın Uri kantonunda potansiyel prim indiriminizi (IPV) nasıl
+        belirlediğini burada açıklıyoruz. Bu matematiksel algoritma, Uri Sosyal Sigortalar Kurumu'nun (SVS Uri) yasal
+        düzenlemelerine sıkı sıkıya bağlıdır.</p>
+      <h2 class="section-title">1. Temel Parametreler (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Kişisel Muafiyet Oranı</h4>
+          <div class="param-value">%8,5</div>
+          <p><small>%9,75'ten düşürüldü. Hanehalkının PV gelirinden kendi payına düşen kısım.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Varlık Ekleme Oranı</h4>
+          <div class="param-value">%15,0</div>
+          <p><small>Gelire eklenen vergilendirilebilir varlıkların sabit yüzdesi.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Hesaplama Yöntemi</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Geçerli PV Geliri</h3>
+          <p>Hanehalkının ekonomik gücü, varsayımsal bir varlık girişi ile genişletilmiş kanton vergi verilerine
+            dayanır:</p>
+          <div class="formula-box">
+            <strong>PV_Geliri</strong> = [Net Gelir] + ([Vergilendirilebilir Varlık] × %15) - [Ödenen Nafaka]
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Kanton Yönlendirme Primleri 2026</h3>
+          <p>Uri Kantonu Hükümet Konseyi, yıllık standart prim hacmini aşağıdaki gibi tanımlar:</p>
+          <table class="data-table">
+            <tr>
+              <th>Yaş / Kişi Grubu</th>
+              <th>Yasal Yönlendirme Primi (CHF / Yıl)</th>
+            </tr>
+            <tr>
+              <td><strong>Yetişkinler</strong> (26 yaş ve üzeri ile eğitimde olmayan 19-25 yaş arası)</td>
+              <td>CHF 4'368</td>
+            </tr>
+            <tr>
+              <td><strong>Genç Yetişkinler</strong> (eğitimde olan 19-25 yaş arası)</td>
+              <td>CHF 2'844</td>
+            </tr>
+            <tr>
+              <td><strong>Çocuklar</strong> (18 yaşına kadar)</td>
+              <td>CHF 1'104</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Toplam_Yönlendirme_Primi</strong> = (Yetişkin_Sayısı × 4'368) + (Eğitimdeki_Genç_Yetişkin_Sayısı ×
+            2'844) + (Çocuk_Sayısı × 1'104)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Muafiyet &amp; Sosyal Asgari Garanti</h3>
+          <p>Öncelikle olağan hanehalkı muafiyet oranı hesaplanır:</p>
+          <div class="formula-box">
+            <strong>Hanehalkı_Muafiyeti</strong> = PV_Geliri × %8,5
+          </div>
+          <p>Hesaplanan <code>PV_Geliri</code> **CHF 90'000** veya altındaysa, aileleri korumak için kantonun **asgari
+            garantisi** devreye girer:</p>
+          <table class="data-table">
+            <tr>
+              <th>Kategori (PV-Geliri ≤ CHF 90'000 ise)</th>
+              <th>Garanti Edilen Asgari Tutar</th>
+            </tr>
+            <tr>
+              <td>Çocuklar (18 yaşına kadar)</td>
+              <td>Yönlendirme priminin %80'i (= <strong>CHF 883.20</strong> / Yıl)</td>
+            </tr>
+            <tr>
+              <td>Eğitimdeki Genç Yetişkinler (19-25)</td>
+              <td>Yönlendirme priminin %50'si (= <strong>CHF 1'422.00</strong> / Yıl)</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Garanti_Edilen_Asgari_Tutar</strong> = (Çocuk_Sayısı × 883.20) + (Eğitimdeki_Genç_Yetişkin_Sayısı ×
+            1'422.00)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Nihai Hak</h3>
+          <p>Hesaplama motoru olağan hakkı belirler ve dinamik olarak karşılaştırır:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Olağan_Hak = Toplam_Yönlendirme_Primi - Hanehalkı_Muafiyeti <br />
+            Nihai_Hak = Maksimum(Olağan_Hak, Garanti_Edilen_Asgari_Tutar)
+          </div>
+          <p><small>Nihai IPV hakkı, fiilen ödenen hanehalkı primi ile sınırlandırılır ve ticari olarak tam İsviçre
+              Frankına yuvarlanır.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Varlık İncelemesine İlişkin Önemli Not:</strong><br />
+        Katı varlık sınırları olan modellerin aksine, Uri Kantonu akıcı bir sistem kullanır. Aşırı yüksek varlıklar, ilk
+        adımdaki %15'lik ekleme yoluyla otomatik olarak yüksek bir muafiyete yol açar ve böylece potansiyel bir hak
+        matematiksel olarak hassas ve sosyal açıdan adil bir şekilde kendiliğinden ortadan kalkar.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Ana Sayfaya Dön</a>
+        <a class="btn-link" href="https://www.ur.ch" target="_blank">Uri Kantonu Resmi Web Sitesi</a>
+      </div>
+    </div>
+    <footer>
+      <p>Kaynak: Uri Kantonu Prim İndirimi Uygulama Yönetmeliği 2026 | welfarecalc.ch</p>
+      <p>Bu özet, algoritmik şeffaflık hakkında bilgi verme amacı taşır ve yasal bir hak oluşturmaz.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

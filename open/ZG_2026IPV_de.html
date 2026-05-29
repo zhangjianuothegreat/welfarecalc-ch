@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>IPV Algorithmus Kanton Zug 2026 | Transparente Berechnung | welfarecalc.ch</title>
+    <meta name="description" content="Wie wird die Individuelle Prämienverbilligung (IPV) 2026 im Kanton Zug berechnet? Entdecken Sie unseren transparenten Algorithmus basierend auf offiziellen Daten der Ausgleichskasse Zug.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/ZG_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/ZG_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/ZG_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/ZG_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/ZG_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/ZG_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/ZG_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/ZG_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/ZG_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/ZG_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html">
+
+    <meta property="og:title" content="IPV Algorithmus Kanton Zug 2026 | Transparente Berechnung">
+    <meta property="og:description" content="Offizielle Berechnungslogik für die Individuelle Prämienverbilligung 2026 im Kanton Zug (ZG).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/ZG_2026IPV_de.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Berechnung der Individuellen Prämienverbilligung Zug 2026",
+      "description": "Schritt-für-Schritt-Anleitung zur transparenten Ermittlung der IPV-Subvention im Kanton Zug.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Ermittlung des massgebenden Einkommens (LNA) unter Zurechnung von 10% des Vermögens."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Bestimmung des individuellen Selbstbehalts anhand des 8% Faktors."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Abgleich mit den gesetzlichen Mindestgarantien für Kinder und Jugendliche."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; line-height: 1.4; white-space: pre-wrap; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+        .legal-info-links { margin-top: 10px; font-size: 0.85rem; }
+        .legal-info-links a { color: var(--official-blue); text-decoration: underline; margin-right: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">OFFIZIELLE DATEN 2026</div>
+        <h1>IPV-Algorithmus: Kanton Zug (ZG)</h1>
+        <p>Transparente Berechnung Ihrer Individuellen Prämienverbilligung für das Jahr 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
+        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Vertrauen durch Transparenz. Hier legen wir offen, wie unser Rechner Ihre potenzielle Individuelle Prämienverbilligung (IPV) im Kanton Zug ermittelt. Dieser Algorithmus basiert strikt auf den gesetzlichen Grundlagen des Kantons Zug (BGS 842.6) sowie den Richtlinien der Ausgleichskasse Zug.</p>
+
+        <h2 class="section-title">1. Kernparameter (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Selbstbehalt-Faktor</h4>
+                <div class="param-value">8.0 %</div>
+                <p><small>Anteil des massgebenden Einkommens, der für Krankenversicherungsprämien zumutbar ist.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Vermögensanrechnung</h4>
+                <div class="param-value">10.0 %</div>
+                <p><small>Prozentsatz des steuerbaren Reinvermögens, der als anrechenbares Einkommen aufaddiert wird.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Der Berechnungsweg</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Massgebendes Einkommen (LNA)</h3>
+                <p>Zuerst wird die wirtschaftliche Leistungsfähigkeit des Haushalts berechnet. Im Kanton Zug wird das steuerbare Reinvermögen zu 10% als Einkommenskomponente hinzugerechnet:</p>
+                <div class="formula-box">
+<strong>LNA</strong> = Max(0, [Steuerbares Nettoeinkommen] + [Freiwillige 2. Säule] + [Säule 3a] + ([Steuerbares Vermögen] × 10%) - [Kinderabzug])
+                </div>
+                <table class="data-table">
+                    <tr><th>Abzugskategorie</th><th>Betrag (pro Person)</th></tr>
+                    <tr><td>Pauschalabzug pro Kind / jugendliche Ausbildungskategorie</td><td>CHF 8'500</td></tr>
+                </table>
+                <div class="alert" style="margin-top: 15px; padding: 10px 15px;">
+                    <strong>Einkommensgrenze:</strong> Übersteigt das berechnete LNA den Betrag von <strong>CHF 89'900</strong>, erlischt der gesetzliche Anspruch auf IPV vollständig.
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Prüfung der Vermögens-Ausschlussgrenze</h3>
+                <p>Zusätzlich zur Einkommensprüfung gilt eine strikte Vermögens-Obergrenze (Hard Limit) als Ausschlusskriterium:</p>
+                <table class="data-table">
+                    <tr><th>Haushaltstyp</th><th>Absolute Vermögensgrenze</th></tr>
+                    <tr><td>Alleinstehende Person</td><td>CHF 150'000</td></tr>
+                    <tr><td>Ehepaare / Eingetragene Partnerschaften</td><td>CHF 300'000</td></tr>
+                </table>
+                <p style="margin-top:10px;"><small>Liegt das steuerbare Vermögen über diesen kantonalen Schwellenwerten, besteht kein Anspruch auf Subventionen.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Kantonale Richtprämien 2026</h3>
+                <p>Die Richtprämien repräsentieren die kantonal festgelegten Standard-Durchschnittsprämien für die Berechnung:</p>
+                <table class="data-table">
+                    <tr><th>Kategorie</th><th>Richtprämie (jährlich)</th></tr>
+                    <tr><td>Erwachsene (ab 26 Jahren)</td><td>CHF 5'916 / Jahr</td></tr>
+                    <tr><td>Junge Erwachsene (19-25 Jahre, in Ausbildung)</td><td>CHF 4'140 / Jahr</td></tr>
+                    <tr><td>Kinder (0-18 Jahre)</td><td>CHF 1'392 / Jahr</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Berechnung des individuellen Selbstbehalts</h3>
+                <p>Der zumutbare Eigenanteil basiert auf dem massgebenden Einkommen (LNA):</p>
+                <div class="formula-box">
+<strong>Selbstbehalt</strong> = LNA × 8.0%
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">5</div>
+            <div class="step-body">
+                <h3>Ermittlung der theoretischen Subvention</h3>
+                <p>Die theoretische Subventionshöhe ergibt sich aus der Differenz der summierten Richtprämien und dem individuellen Selbstbehalt:</p>
+                <div class="formula-box">
+<strong>Theoretische Subvention</strong> = Max(0, [Totale kantonale Richtprämien] - [Selbstbehalt])
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">6</div>
+            <div class="step-body">
+                <h3>Anwendung der Mindestgarantien (Kinder- & Jugendschutz)</h3>
+                <p>Um Familien steuerlich zu entlasten, greift bei niedrigen und mittleren Einkommen die gesetzliche Mindestgarantie für Kinder und Jugendliche in Ausbildung:</p>
+                <div class="formula-box">
+<strong>Mindestgarantie</strong> = (Anzahl Kinder × CHF 1'392 × 80%) + (Anzahl Jugendliche in Ausb. × CHF 4'140 × 50%)
+
+<strong>Theoretische Subvention Korrektur</strong> = Max(Theoretische Subvention, Mindestgarantie)
+                </div>
+                <p><small>Sollte die regulär berechnete Haushaltssubvention niedriger ausfallen als diese gesetzliche Untergrenze der Kinder- und Jugendpauschalen, wird stattdessen der Betrag der Mindestgarantie gewährt.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">7</div>
+            <div class="step-body">
+                <h3>Auszahlungsschwelle und finale Begrenzung</h3>
+                <p>Die endgültige jährliche IPV-Auszahlung unterliegt einer Mindestgrenze und wird durch die real bezahlte Prämie gedeckelt:</p>
+                <div class="formula-box">
+1. Auszahlungsschwelle: Wenn (Theoretische Subvention Korrektur &lt; CHF 100) &rarr; Anspruch = 0 CHF
+2. Finale Jährliche Subvention = Min(Rundung(Theoretische Subvention Korrektur), Tatsächliche jährliche Prämie)
+3. Monatliche Gutschrift = Rundung(Finale Jährliche Subvention / 12)
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Rechtlicher Hinweis:</strong><br>
+            Diese Übersicht dient der algorithmischen Transparenz und Aufklärung über die Funktionsweise des Web-Rechners. Sie stellt keine offizielle Verfügung oder Rechtsberatung dar.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Zurück zur Startseite</a>
+            <a href="https://www.akzug.ch/dienstleistungen/praemienverbilligung" target="_blank" class="btn-link">IPV‑Portal der Ausgleichskasse Zug</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Quelle: Ausgleichskasse Zug & kantonale Erlass-Sammlung (BGS 842.6) 2026 | Bereitgestellt von welfarecalc.ch</p>
+        <div class="legal-info-links">
+            <a href="https://bgs.zg.ch/app/de/texts_of_law/842.1" target="_blank">Gesetzliche Grundlagen (EG KVG)</a>
+            <a href="https://www.akzug.ch" target="_blank">Ausgleichskasse Zug</a>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>

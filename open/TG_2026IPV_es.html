@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo IPV Cantón de Turgovia 2026 | Cálculo transparente | welfarecalc.ch</title>
+  <meta
+    content="¿Cómo se calcula la reducción de primas (IPV) 2026 en el Cantón de Turgovia? Descubra nuestro algoritmo transparente basado en las directrices oficiales del SVZ."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_es.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo IPV Cantón de Turgovia 2026 | Cálculo transparente" property="og:title" />
+  <meta content="Lógica de cálculo oficial para la reducción de primas 2026 en Turgovia." property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TG_2026IPV_es.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de la reducción de primas Turgovia 2026",
+      "description": "Guía paso a paso para determinar el derecho a IPV en el Cantón de Turgovia basado en el impuesto simple.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación del límite de patrimonio (el patrimonio imponible debe ser CHF 0)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del impuesto simple al 100% para definir la categoría (Cat. A, B o C)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificación del derecho para niños y jóvenes adultos en formación"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Comparación con las primas reales del seguro de enfermedad y el límite mínimo de pago"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">DIRECTRICES OFICIALES 2026</div>
+      <h1>Algoritmo IPV: Cantón de Turgovia (TG)</h1>
+      <p>Divulgación transparente de la lógica de cálculo para el año 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+    <div class="content">
+      <p>Confianza a través de la transparencia. Aquí revelamos cómo nuestra calculadora determina su posible reducción
+        de primas en el Cantón de Turgovia (TG). A diferencia de los modelos basados en porcentajes de ingresos, la
+        lógica de cálculo de Turgovia se basa fundamentalmente en el modelo fiscal del <strong>impuesto simple al
+          100%</strong>.</p>
+      <h2 class="section-title">1. Parámetros clave (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Factor determinante</h4>
+          <div class="param-value">Impuesto simple (100%)</div>
+          <p><small>La clasificación se realiza directamente a través del importe del impuesto base, no a través del
+              ingreso neto.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Límite de patrimonio</h4>
+          <div class="param-value">CHF 0 (Absoluto)</div>
+          <p><small>El patrimonio imponible de la liquidación provisional o definitiva debe ser de Fr. 0.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. El proceso de cálculo</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Criterio de exclusión y verificación patrimonial</h3>
+          <p>Primero se verifica la barrera patrimonial absoluta. El sistema exige:</p>
+          <div class="formula-box">
+            Si <strong>[Patrimonio imponible] &gt; 0</strong> → <span class="highlight-red">Sin derecho (Derecho =
+              0)</span>
+          </div>
+          <p><small>Nota: En el Cantón de Turgovia, cualquier patrimonio imponible superior a CHF 0 conduce a la pérdida
+              total del derecho a IPV.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Clasificación por categoría para adultos</h3>
+          <p>Si el patrimonio es de CHF 0, el <strong>impuesto cantonal simple al 100%</strong> (según los datos
+            fiscales provisionales del año anterior) determina la categoría IPV y la correspondiente reducción fija
+            global por adulto:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>Impuesto simple al 100% (CHF)</th>
+                <th>Aporte IPV fijo (CHF / año)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Categoría A</strong></td>
+                <td>0.00 hasta 400.00</td>
+                <td>CHF 3'408</td>
+              </tr>
+              <tr>
+                <td><strong>Categoría B</strong></td>
+                <td>400.01 hasta 600.00</td>
+                <td>CHF 2'556</td>
+              </tr>
+              <tr>
+                <td><strong>Categoría C</strong></td>
+                <td>600.01 hasta 800.00</td>
+                <td>CHF 1'704</td>
+              </tr>
+              <tr>
+                <td><strong>Sin derecho</strong></td>
+                <td>&gt; 800.00</td>
+                <td>CHF 0</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="formula-box">
+            <strong>[Total subsidio adultos]</strong> = Número de adultos × Aporte IPV fijo de la categoría
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Derecho para niños (0 - 18 años)</h3>
+          <p>Los niños reciben en el Cantón de Turgovia una suma global independiente, desvinculada del aporte para
+            adultos. El límite superior del impuesto simple se incrementa significativamente para las familias:</p>
+          <div class="formula-box">
+            Si <strong>[Impuesto simple al 100%] ≤ 1'600.00 CHF</strong>:<br />
+            <strong>[Total subsidio niños]</strong> = Número de niños × <strong>CHF 1'236 / año</strong>
+          </div>
+          <p><small>Si el impuesto simple al 100% supera los CHF 1'600, el derecho para niños desaparece por
+              completo.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Derecho para jóvenes adultos en formación (19 - 25 años)</h3>
+          <p>Para jóvenes adultos que en 2026 se encuentren en una formación legalmente reconocida (aprendizaje
+            profesional o estudios), se aplica un límite porcentual basado en la prima media cantonal:</p>
+          <div class="formula-box">
+            Válido solo si <strong>[Impuesto simple al 100%] ≤ 800.00 CHF</strong>:<br />
+            Aporte por persona = 50% de la prima KVG efectiva, limitado al máximo del 50% de la prima media cantonal
+            (CHF 4'752).<br />
+            <strong>Subsidio máximo</strong> = <strong>CHF 2'376 / año</strong> (CHF 198 / mes)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Limitación de pago e insignificancia</h3>
+          <p>El derecho IPV anual final resulta de la suma de los miembros del hogar calificados, pero está sujeto a dos
+            estrictos controles matemáticos:</p>
+          <div class="formula-box">
+            1. <strong>Límite efectivo:</strong> Derecho total = Min(Derecho calculado, Primas KVG realmente
+            pagadas)<br />
+            2. <strong>Pago mínimo:</strong> Si el derecho total &lt; <strong>CHF 30</strong> → Derecho = <span
+              class="highlight-red">CHF 0</span>
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Aviso importante sobre el procedimiento en Turgovia:</strong><br />
+        El Cantón de Turgovia opera un <strong>procedimiento de solicitud proactivo</strong>. Los municipios determinan
+        automáticamente en primavera (marzo/abril) las personas potencialmente elegibles basándose en los datos fiscales
+        provisionales y les envían por correo postal el formulario de solicitud prellenado. Este debe ser revisado,
+        firmado y presentado a más tardar el <strong>31 de diciembre de 2026</strong>. Quien no reciba formularios (por
+        ejemplo, debido a mudanza o una disminución masiva de ingresos), debe solicitarlos activamente en el municipio o
+        en línea.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Volver a la página de inicio</a>
+        <a class="btn-link" href="https://svztg.ch" target="_blank">Sitio web oficial SVZ Turgovia</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fuente: Centro de Seguro Social del Cantón de Turgovia (SVZ TG) Directrices 2026 | Proporcionado por
+        welfarecalc.ch</p>
+      <p>Aviso legal: Esta descripción algorítmica es únicamente con fines informativos y de transparencia y no
+        constituye una disposición legalmente vinculante.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

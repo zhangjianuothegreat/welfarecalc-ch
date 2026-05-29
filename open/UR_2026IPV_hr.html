@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>IPV Algoritam Kanton Uri 2026 | Transparentan izračun | welfarecalc.ch</title>
+  <meta
+    content="Kako se izračunava premijski popust (IPV) 2026 u Kantonu Uri? Otkrijte naš transparentan algoritam temeljen na službenim SVS podacima."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_hr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/UR_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="IPV Algoritam Kanton Uri 2026 | Transparentan izračun" property="og:title" />
+  <meta content="Službena logika izračuna za premijski popust 2026 u Kantonu Uri (UR)." property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/UR_2026IPV_hr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun premijskog popusta Uri 2026",
+      "description": "Vodič korak po korak za određivanje prava na IPV u kantonu UR (model vlastitog udjela).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Utvrđivanje mjerodavnog dohotka uključujući 15% imovinskog dodatka"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Određivanje kantonalnih smjernih premija po dobnim kategorijama"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Izračun vlastitog udjela od 8.5% i usklađivanje sa zakonskom minimalnom garancijom"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">SLUŽBENI PODACI 2026</div>
+      <h1>IPV Algoritam: Kanton Uri (UR)</h1>
+      <p>Transparentno otkrivanje logike izračuna za godinu 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+    <div class="content">
+      <p>Povjerenje kroz transparentnost. Ovdje otkrivamo kako naš univerzalni kalkulator utvrđuje vaš potencijalni
+        premijski popust (IPV) u kantonu Uri. Ovaj matematički algoritam strogo se temelji na zakonskim odredbama Ureda
+        za socijalno osiguranje Uri (SVS Uri).</p>
+      <h2 class="section-title">1. Ključni parametri (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Vlastiti odbitak</h4>
+          <div class="param-value">8.5 %</div>
+          <p><small>Smanjeno s 9.75%. Vlastiti udio kućanstva u dohotku za premijski popust.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Stopa imovinskog dodatka</h4>
+          <div class="param-value">15.0 %</div>
+          <p><small>Fiksni postotak oporezive imovine koji se dodaje dohotku.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Put izračuna</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Mjerodavni dohodak za premijski popust</h3>
+          <p>Ekonomska snaga kućanstva temelji se na kantonalnim poreznim podacima, proširenim hipotetskim priljevom
+            imovine:</p>
+          <div class="formula-box">
+            <strong>PV_Dohodak</strong> = [Neto dohodak] + ([Oporeziva imovina] × 15%) - [Plaćena alimentacija]
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Kantonalne smjerne premije 2026</h3>
+          <p>Vlada kantona Uri definira standardizirani godišnji ciljani premijski volumen kako slijedi:</p>
+          <table class="data-table">
+            <tr>
+              <th>Dobna / Osobna skupina</th>
+              <th>Zakonska smjerna premija (CHF / godina)</th>
+            </tr>
+            <tr>
+              <td><strong>Odrasli</strong> (od 26 godina te 19–25 godina bez obrazovanja)</td>
+              <td>CHF 4'368</td>
+            </tr>
+            <tr>
+              <td><strong>Mlade odrasle osobe</strong> (19–25 godina, na školovanju)</td>
+              <td>CHF 2'844</td>
+            </tr>
+            <tr>
+              <td><strong>Djeca</strong> (do 18 godina)</td>
+              <td>CHF 1'104</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Ukupna_smjerna_premija</strong> = (Broj_odraslih × 4'368) + (Broj_mladih_odraslih_na_skolovanju ×
+            2'844) + (Broj_djece × 1'104)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Vlastiti odbitak &amp; Socijalna minimalna garancija</h3>
+          <p>Prvo se izračunava redovni vlastiti odbitak kućanstva:</p>
+          <div class="formula-box">
+            <strong>Vlastiti_odbitak_kućanstva</strong> = PV_Dohodak × 8.5%
+          </div>
+          <p>Ako je utvrđeni <code>PV_Dohodak</code> na ili ispod **CHF 90'000**, na snagu stupa kantonalna **minimalna
+            garancija** za zaštitu obitelji:</p>
+          <table class="data-table">
+            <tr>
+              <th>Kategorija (pri PV_Dohotku ≤ CHF 90'000)</th>
+              <th>Garanitrani minimalni iznos</th>
+            </tr>
+            <tr>
+              <td>Djeca (do 18 godina)</td>
+              <td>80% smjerne premije (= <strong>CHF 883.20</strong> / godina)</td>
+            </tr>
+            <tr>
+              <td>Mlade odrasle osobe na školovanju (19-25)</td>
+              <td>50% smjerne premije (= <strong>CHF 1'422.00</strong> / godina)</td>
+            </tr>
+          </table>
+          <div class="formula-box">
+            <strong>Garanitrani_minimalni_iznos</strong> = (Broj_djece × 883.20) + (Broj_mladih_odraslih_na_skolovanju ×
+            1'422.00)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Konačno pravo</h3>
+          <p>Pogonski program izračuna utvrđuje redovno pravo i dinamički ga usklađuje:</p>
+          <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+            Redovno_pravo = Ukupna_smjerna_premija - Vlastiti_odbitak_kućanstva <br />
+            Konačno_pravo = Maksimum(Redovno_pravo, Garanitrani_minimalni_iznos)
+          </div>
+          <p><small>Konačno IPV pravo ograničeno je stvarno plaćenom premijom kućanstva i zaokružuje se na pune franke
+              prema trgovačkim pravilima.</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Važna napomena o provjeri imovine:</strong><br />
+        Za razliku od modela s krutim imovinskim granicama, kanton Uri koristi fleksibilan sustav. Ekstremno visoke
+        imovinske vrijednosti automatski dovode do visokog vlastitog odbitka putem 15% dodatka u prvom koraku, čime se
+        potencijalno pravo matematički precizno i socijalno pravedno samo eliminira.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Povratak na početnu stranicu</a>
+        <a class="btn-link" href="https://www.ur.ch" target="_blank">Službena web stranica Kantona Uri</a>
+      </div>
+    </div>
+    <footer>
+      <p>Izvor: Provedbena uredba o premijskom popustu Kantona Uri 2026 | welfarecalc.ch</p>
+      <p>Ovaj sažetak služi za informiranje o algoritamskoj transparentnosti i ne predstavlja pravnu osnovu.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

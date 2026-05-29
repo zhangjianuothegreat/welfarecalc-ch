@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritmo de Apoio Social Cantão dos Grisões 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta name="description" content="Como é calculado o apoio social no Cantão dos Grisões (GR) para 2026? Descubra o nosso algoritmo transparente com base nas diretrizes SKOS e na lei cantonal.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GR_2026SH_pt.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GR_2026SH_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GR_2026SH_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GR_2026SH_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GR_2026SH_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GR_2026SH_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GR_2026SH_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GR_2026SH_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GR_2026SH_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GR_2026SH_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GR_2026SH_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GR_2026SH_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GR_2026SH_de.html">
+
+    <meta property="og:title" content="Algoritmo de Apoio Social Cantão dos Grisões 2026 | Cálculo Transparente">
+    <meta property="og:description" content="Lógica oficial de cálculo do apoio social 2026 nos Grisões com base nas SKOS e SHG GR.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GR_2026SH_pt.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo do Apoio Social Grisões 2026",
+      "description": "Detalhamento algorítmico completo do cálculo do apoio social no Cantão dos Grisões.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificar a tolerância de ativos (limite de entrada)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcular as despesas básicas de subsistência (GBL) com fatores específicos de GR"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinar os limites máximos regionais de renda (Regiões A, B, C)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Comparar rendimentos e deduções do IPV"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #16a34a; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">CONFORME AS SKOS 2026</div>
+        <h1>Algoritmo de Apoio Social: Cantão dos Grisões</h1>
+        <p>Documentação transparente da lógica de cálculo do mínimo de subsistência social (GR)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Como é calculado o apoio social no Cantão dos Grisões? Para reforçar a confiança do utilizador, divulgamos o algoritmo completo por trás do welfarecalc.ch. Baseia-se na Lei Cantonal de Apoio Social (SHG GR) e nas diretrizes SKOS 2026.</p>
+
+        <h2 class="section-title">1. Verificação de Ativos (Limite de Entrada)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Tolerância para Pessoa Solteira</h4>
+                <div class="param-value">CHF 6'000</div>
+                <p><small>Mais CHF 3'000 por criança ou pessoa em formação.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Tolerância para Casais</h4>
+                <div class="param-value">CHF 12'000</div>
+                <p><small>A tolerância total máxima é limitada a CHF 15'000 por agregado familiar.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Percurso de Cálculo (Mensal)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Despesas Básicas de Subsistência (GBL)</h3>
+                <p>O GBL de 2026 segue o ajuste do custo de vida das SKOS, com fatores específicos de GR para jovens adultos:</p>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Dimensão do Agregado</th><th>Montante por Mês (2026)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1 pessoa</td><td>CHF 1'061</td></tr>
+                        <tr><td>2 pessoas</td><td>CHF 1'624</td></tr>
+                        <tr><td>Adulto adicional</td><td>+ CHF 400</td></tr>
+                        <tr><td>Criança (11-15 anos)</td><td>CHF 699</td></tr>
+                        <tr><td>Criança (menos de 11 anos)</td><td>CHF 391</td></tr>
+                    </tbody>
+                </table>
+                <p><small>*Especificidade GR: Jovens adultos em formação (19-25 anos) recebem frequentemente uma taxa reduzida (80% do GBL).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Despesas de Habitação (Máximos Regionais)</h3>
+                <p>Os Grisões distinguem três regiões de preços de renda (A, B, C) com base nos níveis de mercado locais:</p>
+                <div class="formula">
+                    Renda Reconhecida = Mínimo(Renda Real, Máximo Regional)
+                </div>
+                <p><small>Região A (centros como Chur/St. Moritz): Máximos mais elevados.<br>Região B: Padrão.<br>Região C: Áreas rurais com máximos mais baixos.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Seguro de Saúde e IPV</h3>
+                <p>Os custos do seguro básico são reconhecidos após dedução da Redução Individual de Prémios (IPV):</p>
+                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+                    <strong>Custos Líquidos de Saúde</strong> = Prémio Mensal - (IPV Anual / 12)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Rendimento e Tolerância de Ganhos</h3>
+                <p>Para incentivar o trabalho, o Cantão dos Grisões concede uma tolerância de rendimento (EFB) sobre o rendimento líquido do trabalho:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Direito = (Necessidades*) - (Rendimento Líquido - EFB) - (Outros Rendimentos)
+                </div>
+                <p><small>*Necessidades = GBL + Habitação + Seguro de Saúde + possível Tolerância de Integração (IZU).</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Tolerância de Integração (IZU) nos Grisões:</strong><br>
+            Os trabalhadores nos Grisões podem receber uma tolerância de integração de <strong>CHF 100</strong> por mês, desde que estejam envolvidos num emprego regular.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Usar Calculadora</a>
+            <a href="https://www.gr.ch/DE/institutionen/verwaltung/dvs/soa/beratung/finanzielle-unterstuetzung/sozialhilfe-einfach-erkl%C3%A4rt/Seiten/default.aspx" target="_blank" class="btn-link">Site Oficial do Cantão GR</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Fontes: Lei de Apoio Social dos Grisões (SHG GR) & Diretrizes SKOS 2026</p>
+        <p>© 2026 welfarecalc.ch | Cálculo Transparente de Apoio Social</p>
+    </footer>
+</div>
+
+</body>
+</html>

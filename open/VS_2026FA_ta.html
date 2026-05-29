@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>குடும்ப கொடுப்பனவுகள் (FA) அல்காரிதம் வாலிஸ் கேண்டன் 2026 | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் வாலிஸ் கேண்டனில் (VS) குடும்ப கொடுப்பனவுகள் (FA) எவ்வாறு கணக்கிடப்படுகின்றன? குழந்தை, பயிற்சி, பிறப்பு மற்றும் தத்தெடுப்பு கொடுப்பனவுகளுக்கான எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VS_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="குடும்ப கொடுப்பனவுகள் அல்காரிதம் வாலிஸ் கேண்டன் 2026 | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta
+    content="2026 ஆம் ஆண்டில் வாலிஸில் படிநிலை குழந்தை மற்றும் பயிற்சி கொடுப்பனவுகள் மற்றும் பிறப்பு கொடுப்பனவுகளுக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VS_2026FA_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "வாலிஸ் 2026 குடும்ப கொடுப்பனவுகள் கணக்கீடு",
+      "description": "வாலிஸ் கன்டோனில் குழந்தை கொடுப்பனவுகள், பயிற்சி கொடுப்பனவுகள் மற்றும் ஒருமுறை பிறப்பு/தத்தெடுப்பு கொடுப்பனவுகளை சட்டப்பூர்வமாக கணக்கிடுவதற்கான படிப்படியான வழிகாட்டி.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "ஒவ்வொரு குழந்தைக்கும் நிலை சரிபார்ப்பு: குழந்தை கொடுப்பனவு (16 அல்லது 20 வயது வரை) அல்லது பயிற்சி கொடுப்பனவு (16 முதல் அதிகபட்சம் 25 வயது வரை)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "3வது குழந்தையிலிருந்து குறையும்/அதிகரிக்கும் படிநிலையை கருத்தில் கொண்டு மாதாந்திர தொகையை தீர்மானித்தல்."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "பிறப்பு அல்லது தத்தெடுப்புக்கான ஒருமுறை கன்டோனல் கொடுப்பனவுகளை சரிபார்த்தல் (பல குழந்தை காரணி உட்பட)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "வருடாந்திர மொத்த உரிமையின் மதிப்பீடு: (மாதாந்திர தொகை × 12) + ஒருமுறை கொடுப்பனவுகள்."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.2rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.8rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .param-value {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+      color: var(--official-blue);
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+      font-size: 1rem;
+      overflow-x: auto;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">FAMZG-இணக்கம் 2026</div>
+      <h1>FA-வழிமுறை: வாலிஸ் கன்டோன்</h1>
+      <p>குடும்ப கொடுப்பனவுகளின் வெளிப்படையான ஆவணப்படுத்தல் (குழந்தை, பயிற்சி, பிறப்பு மற்றும் தத்தெடுப்பு
+        கொடுப்பனவுகள்)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>சுவிட்சர்லாந்தில், குடும்ப கொடுப்பனவுகள் சட்டப்பூர்வமாக கட்டுப்படுத்தப்படுகின்றன (FamZG). வாலிஸ் கன்டோன் (VS)
+        பாரம்பரியமாக பிற கன்டோன்களுடன் ஒப்பிடும்போது அதிக விகிதங்களையும், 3வது குழந்தையிலிருந்து குறையும்/அதிகரிக்கும்
+        படிநிலையையும், கூடுதல் ஒருமுறை கொடுப்பனவுகளையும் வழங்குகிறது. எங்கள் கால்குலேட்டர் உங்கள் உரிமையை முற்றிலும்
+        வெளிப்படையாக உடைத்துக் காட்ட CIVAF 2026 இன் அதிகாரப்பூர்வ கட்டணங்களைப் பயன்படுத்துகிறது.</p>
+      <h2 class="section-title">1. மாதாந்திர விகிதங்கள் &amp; ஒருமுறை கொடுப்பனவுகள் (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>குழந்தை கொடுப்பனவு (1வது &amp; 2வது குழந்தை)</h4>
+          <div class="param-value">CHF 327 / மாதம்</div>
+          <p><small>16 வயது நிறைவு வரை (அல்லது வேலை செய்ய இயலாமை ஏற்பட்டால் 20 வயது வரை).</small></p>
+        </div>
+        <div class="param-card">
+          <h4>குழந்தை கொடுப்பனவு (3வது குழந்தையிலிருந்து)</h4>
+          <div class="param-value">CHF 435 / மாதம்</div>
+          <p><small>மூன்றாவது தகுதியான குழந்தையிலிருந்து பெரிய குடும்பங்களுக்கான அதிகரித்த விகிதம்.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>பயிற்சி கொடுப்பனவு (1வது &amp; 2வது குழந்தை)</h4>
+          <div class="param-value">CHF 477 / மாதம்</div>
+          <p><small>16 வயது முதல் பயிற்சி முடியும் வரை (அதிகபட்சம் 25வது பிறந்தநாள் வரை).</small></p>
+        </div>
+        <div class="param-card">
+          <h4>பயிற்சி கொடுப்பனவு (3வது குழந்தையிலிருந்து)</h4>
+          <div class="param-value">CHF 585 / மாதம்</div>
+          <p><small>பயிற்சியில் உள்ள மூன்றாவது குழந்தையிலிருந்து அதிகரித்த பயிற்சி விகிதம்.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>வகையை தீர்மானித்தல்</h3>
+          <p>வழிமுறையானது பதிவு செய்யப்பட்ட ஒவ்வொரு குழந்தையின் வயது மற்றும் பயிற்சி நிலையை தனித்தனியாக சரிபார்க்கிறது:
+          </p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+            <li><strong>0 - 16 வயது (அல்லது வேலை செய்ய இயலாமை ஏற்பட்டால் 20 வயது வரை):</strong> <em>குழந்தை
+                கொடுப்பனவு</em> வகையில் வகைப்படுத்தல்.</li>
+            <li><strong>16 - 25 வயது:</strong> <em>பயிற்சி கொடுப்பனவு</em> வகையில் வகைப்படுத்தல் (முறையான பயிற்சி அல்லது
+              படிப்பு நிரூபிக்கப்பட்டால்).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>மாதாந்திர மொத்த தொகையின் கணக்கீடு</h3>
+          <p>வாலிஸ் கன்டோன் 3வது குழந்தையிலிருந்து ஒரு படிநிலையைப் பயன்படுத்துவதால், கூட்டுத்தொகை முற்றிலும்
+            நேர்கோட்டில் பெருக்கப்படாமல், வகைகளுக்குள் ஒரு படிநிலை வேறுபாட்டைப் பின்பற்றுகிறது:</p>
+          <h4 style="margin-top: 10px; font-size: 1rem; color: var(--official-blue);">A) குழந்தை கொடுப்பனவுக்கான
+            சூத்திரம் (childMonthly):</h4>
+          <p>இளைய குழந்தைகளின் எண்ணிக்கை (numChildren) 3 ஐ விட குறைவாக இருந்தால்:</p>
+          <div class="formula">childMonthly = numChildren × 327</div>
+          <p>இளைய குழந்தைகளின் எண்ணிக்கை (numChildren) 3 ஐ விட அதிகமாக அல்லது சமமாக இருந்தால்:</p>
+          <div class="formula">childMonthly = (2 × 327) + ((numChildren - 2) × 435)</div>
+          <h4 style="margin-top: 15px; font-size: 1rem; color: var(--official-blue);">B) பயிற்சி கொடுப்பனவுக்கான
+            சூத்திரம் (educationMonthly):</h4>
+          <p>பயிற்சியில் உள்ள இளைஞர்களின் எண்ணிக்கை (numEducation) 3 ஐ விட குறைவாக இருந்தால்:</p>
+          <div class="formula">educationMonthly = numEducation × 477</div>
+          <p>பயிற்சியில் உள்ள இளைஞர்களின் எண்ணிக்கை (numEducation) 3 ஐ விட அதிகமாக அல்லது சமமாக இருந்தால்:</p>
+          <div class="formula">educationMonthly = (2 × 477) + ((numEducation - 2) × 585)</div>
+          <div style="background: #f1f5f9; padding: 10px; margin-top: 10px; border-radius: 6px; font-size: 0.9rem;">
+            <strong>மாதாந்திர மொத்த உரிமை = childMonthly + educationMonthly</strong>
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>ஒருமுறை கொடுப்பனவுகள் (பிறப்பு / தத்தெடுப்பு)</h3>
+          <p>பல ஜெர்மன் மொழி சுவிஸ் கன்டோன்களைப் போலல்லாமல், வாலிஸ் ஒரு குழந்தையின் பிறப்பு அல்லது தத்தெடுப்பின் போது
+            தாராளமான ஒருமுறை கொடுப்பனவுகளை வழங்குகிறது. வழிமுறையானது ஒற்றை மற்றும் பல குழந்தை நிகழ்வுகளுக்கு இடையே
+            வேறுபடுத்துகிறது:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>நிகழ்வு வகை</th>
+                <th>ஒரு குழந்தைக்கான கணக்கீடு / தொகை (VS)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>ஒற்றை பிறப்பு</strong> (numNewborns = 1)</td>
+                <td>CHF 2'142 மொத்த தொகை</td>
+              </tr>
+              <tr>
+                <td><strong>பல குழந்தை பிறப்பு</strong> (numNewborns &gt; 1)</td>
+                <td>CHF 3'213 × புதிதாகப் பிறந்த குழந்தைகளின் எண்ணிக்கை</td>
+              </tr>
+              <tr>
+                <td><strong>ஒற்றை தத்தெடுப்பு</strong> (numAdoptions = 1)</td>
+                <td>CHF 2'142 மொத்த தொகை</td>
+              </tr>
+              <tr>
+                <td><strong>ஒரே நேரத்தில் பல குழந்தைகளை தத்தெடுத்தல்</strong> (numAdoptions &gt; 1)</td>
+                <td>CHF 3'213 × தத்தெடுக்கப்பட்ட குழந்தைகளின் எண்ணிக்கை</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><small>*குறிப்பு: மோசடி தடுப்பு மற்றும் வழிமுறை சரிபார்ப்புக்காக, எங்கள் முக்கிய இயந்திரம் பாதுகாப்பு
+              சரிபார்ப்பு படிகளை மேற்கொள்கிறது, எ.கா., <code>numNewborns &lt;= numChildren</code>.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>வருடாந்திர உரிமையை தீர்மானித்தல்</h3>
+          <p>மாதந்தோறும் திரும்பும் பலன்களை நிகழ்வு சார்ந்த ஒருமுறை கொடுப்பனவுகளுடன் கணித ரீதியாக இணைப்பது இறுதி
+            வருடாந்திர பட்ஜெட்டை வழங்குகிறது:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace; font-size: 1.05rem;">
+            வருடாந்திர தொகை = (childMonthly + educationMonthly) × 12 + birthAllowance + adoptionAllowance
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>உரிமை &amp; முன்னுரிமை வரிசை:</strong><br />
+        FamZG இன் பிரிவு 12 இன் படி, ஒரே குழந்தைக்கு ஒரு கொடுப்பனவு மட்டுமே பெற முடியும். இரண்டு பெற்றோர்களும் வேலை
+        செய்தால், கூட்டமைப்பின் சட்டப்பூர்வ முன்னுரிமை வரிசை (குழந்தையின் வசிப்பிடத்தில் முதன்மையாக வேலை செய்பவருக்கு
+        முதல் உரிமை) ஒதுக்கீட்டை ஒழுங்குபடுத்துகிறது. கட்டணம் பொதுவாக முதலாளியின் மாத சம்பளத்தின் மூலம் நேரடியாக
+        செலுத்தப்படுகிறது.
+      </div>
+      <div style="text-align: center;">
+        <a aria-label="கால்குலேட்டருக்கு" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">கால்குலேட்டரைத் தொடங்கவும்</a>
+        <a aria-label="அதிகாரப்பூர்வ CIVAF வாலிஸ் பக்கத்திற்கு" class="btn-link" href="https://www.civafvs.ch"
+          target="_blank">அதிகாரப்பூர்வ CIVAF வாலிஸ் பக்கம்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரம்: வாலிஸ் கன்டோனல் குடும்ப இழப்பீட்டு நிதி (CIVAF) வழிகாட்டுதல்கள் 2026 &amp; குடும்ப கொடுப்பனவுகள் மீதான
+        கூட்டமைப்பு சட்டம் (FamZG)</p>
+      <p>© 2026 welfarecalc.ch | வெளிப்படையான குடும்ப கொடுப்பனவு கணக்கீடு</p>
+    </footer>
+  </div>
+</body>
+
+</html>

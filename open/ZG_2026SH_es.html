@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmo de Asistencia Social Cantón Zug 2026 | Cálculo Transparente | welfarecalc.ch</title>
+  <meta
+    content="¿Cómo se calcula la asistencia social 2026 en el Cantón Zug (ZG)? Descubra nuestro algoritmo transparente basado en las directrices SKOS y el derecho cantonal."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_es.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmo de Asistencia Social Cantón Zug 2026 | Cálculo Transparente" property="og:title" />
+  <meta content="Lógica de cálculo oficial para la asistencia social 2026 en el Cantón Zug basada en SKOS."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/ZG_2026SH_es.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de la Asistencia Social Zug 2026",
+      "description": "Desglose algorítmico detallado del cálculo de la asistencia social en el Cantón Zug.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Verificación de la franquicia de patrimonio (umbral de entrada)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del mínimo existencial social (necesidades básicas y máximos de alquiler uniformes)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Comparación y deducción de los ingresos computables"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME SKOS 2026</div>
+      <h1>Algoritmo de Asistencia Social: Cantón Zug</h1>
+      <p>Documentación transparente de la lógica de cálculo para el mínimo existencial social (ZG)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+    <div class="content">
+      <p>¿Cómo se calcula la asistencia social en el Cantón Zug? Para fortalecer la confianza de nuestros usuarios,
+        revelamos aquí el algoritmo completo que respalda welfarecalc.ch. Se basa en la Ley de Asistencia Social del
+        Cantón Zug (SHG ZG) así como en las directrices SKOS 2026.</p>
+      <h2 class="section-title">1. Verificación de Patrimonio (El Umbral de Entrada)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Franquicia Individual</h4>
+          <div class="param-value">CHF 10'000</div>
+          <p><small>Más CHF 4'000 por hijo o persona en formación.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Franquicia Parejas Casadas</h4>
+          <div class="param-value">CHF 20'000</div>
+          <p><small>Franquicia total máxima limitada a CHF 25'000 por unidad de apoyo.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. El Proceso de Cálculo (Mensual)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Necesidades Básicas para la Vida (GBL)</h3>
+          <p>El GBL cubre los costos de alimentación, vestimenta y gestión general del hogar:</p>
+          <table class="data-table">
+            <tr>
+              <th>Tamaño del Hogar</th>
+              <th>Monto por Mes (2026)</th>
+            </tr>
+            <tr>
+              <td>1 Persona</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 Personas</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>3 Personas</td>
+              <td>CHF 1'974</td>
+            </tr>
+            <tr>
+              <td>4 Personas</td>
+              <td>CHF 2'271</td>
+            </tr>
+            <tr>
+              <td>5 Personas</td>
+              <td>CHF 2'568</td>
+            </tr>
+            <tr>
+              <td>Cada persona adicional</td>
+              <td>+ CHF 216</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Costos de Vivienda y Salud</h3>
+          <p>El Cantón Zug, a diferencia de otros cantones, aplica máximos de alquiler uniformes sin graduaciones
+            regionales:</p>
+          <table class="data-table">
+            <tr>
+              <th>Tamaño del Hogar</th>
+              <th>Alquiler Bruto Máximo Permitido (Mes)</th>
+            </tr>
+            <tr>
+              <td>1 Persona</td>
+              <td>CHF 1'500</td>
+            </tr>
+            <tr>
+              <td>2 Personas</td>
+              <td>CHF 1'800</td>
+            </tr>
+            <tr>
+              <td>3 Personas</td>
+              <td>CHF 2'100</td>
+            </tr>
+            <tr>
+              <td>4 Personas</td>
+              <td>CHF 2'400</td>
+            </tr>
+            <tr>
+              <td>5+ Personas</td>
+              <td>CHF 2'700</td>
+            </tr>
+          </table>
+          <div class="formula">
+            Costos de Vivienda Reconocidos = Mín(Alquiler Efectivo, Máximo Cantonal)
+          </div>
+          <p><small>Seguro de Salud: Se considera la prima efectiva (seguro básico KVG) menos la reducción individual de
+              prima (IPV). Los valores negativos se limitan a 0.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Cómputo de Ingresos y Franquicias</h3>
+          <p>Del ingreso bruto por actividad laboral se deduce una franquicia de ingresos (EFB) para mantener la
+            motivación laboral:</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>Ingreso Computable</strong> = Ingreso Neto - EFB (20% del salario bruto, máx. CHF 400 por pers.)
+          </div>
+          <p><small>Otros ingresos (pensiones, alimentos, asignaciones familiares) se consideran al 100% como ingresos
+              sin deducciones.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Resultado: Derecho Mensual</h3>
+          <p>El cálculo de la diferencia determina el apoyo mensual:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Derecho = (GBL + Alquiler Reconocido + Prima SS*) - (Ingresos Computables)
+          </div>
+          <p><small>*Prima SS = Prima Neta después de deducir la reducción de prima cantonal (IPV).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Principio de Subsidiariedad e Integración en el Cantón Zug:</strong><br />
+        Si el patrimonio líquido supera la franquicia permitida, no existe derecho a la asistencia social desde el
+        principio. Las personas que cumplen con una obligación laboral o realizan servicios de integración especiales
+        pueden recibir adicionalmente un subsidio de integración (IZU) de <strong>CHF 100</strong> por mes.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Iniciar Calculadora</a>
+        <a class="btn-link" href="https://zg.ch/de/soziales/sozialhilfe" target="_blank">Sitio Oficial Cantón ZG</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fuentes: Ley de Asistencia Social del Cantón Zug (SHG ZG) y Directrices SKOS 2026</p>
+      <p>© 2026 welfarecalc.ch | Cálculo Transparente de Asistencia Social</p>
+    </footer>
+  </div>
+</body>
+
+</html>

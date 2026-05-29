@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>EL Algoritam Kanton Bern 2026 | Transparentni Izračun | welfarecalc.ch</title>
+    <meta name="description" content="Kako se izračunavaju dopunske beneficije (EL) u kantonu Bern za 2026. godinu? Otkrijte naš transparentni algoritam temeljen na službenim podacima AKB-a.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026EL_hr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun dopunskih beneficija Bern 2026",
+      "description": "Detaljan algoritamski prikaz izračuna EL u kantonu Bern.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Određivanje priznatih troškova (osnovne potrebe, stanarina, zdravstveno osiguranje prema regijama BE)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Uračunavanje prihoda (AHV/IV, usklađeni zarađeni prihod, smanjenje imovine)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Izračun EL beneficije (pokrivanje manjka uz neutralnost 13. AHV mirovine)"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">PODACI ZA KANTON BE 2026</div>
+        <h1>EL Algoritam: Kanton Bern</h1>
+        <p>Transparentni prikaz izračuna dopunskih beneficija (EL) na temelju smjernica AKB-a</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Kanton Bern primjenjuje kantonalne posebnosti pri izračunu EL-a, posebno u pogledu raspodjele troškova stanovanja po regijama i paušalnih iznosa za zdravstveno osiguranje. Ovdje možete saznati kako naš kalkulator utvrđuje vaše pravo za 2026. godinu.</p>
+
+        <h2 class="section-title">1. Godišnje osnovne potrebe (2026.)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Samci</h4>
+                <div class="param-value">20.670 CHF</div>
+                <p><small>Nacionalno usklađeni iznos za troškove života.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Bračni parovi</h4>
+                <div class="param-value">31.005 CHF</div>
+                <p><small>Osnovne potrebe za bračne parove ili osobe s djecom.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Koraci izračuna za Bern</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Priznati troškovi</h3>
+                <p>Bern je podijeljen u tri regije (npr. grad Bern = Regija 1). Izračunavamo:</p>
+                <div class="formula">
+                    Osnovne potrebe + Stanarina (do ograničenja) + Prosječna premija zdravstvenog osiguranja BE
+                </div>
+                <table class="data-table">
+                    <tr><th>Maksimalna stanarina BE (primjer regija 1)</th><th>Iznos godišnje</th></tr>
+                    <tr><td>Kućanstvo s 1 osobom</td><td>18.900 CHF (1.575 CHF/mjesečno)</td></tr>
+                    <tr><td>Kućanstvo s 2 osobe</td><td>22.320 CHF (1.860 CHF/mjesečno)</td></tr>
+                </table>
+                <p><small>*Važno: Paušalni iznos za zdravstveno osiguranje u kantonu Bern utvrđuje izravno AKB i može se razlikovati od stvarnih premija.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Prihod koji se može uračunati</h3>
+                <p>Svi prihodi procjenjuju se prema reformi EL-a iz 2021. i prilagodbama AHV-a za 2026. godinu:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>13. AHV mirovina:</strong> Prema saveznim propisima, ona je <u>neutralna</u> i ne računa se kao prihod.</li>
+                    <li><strong>Zarađeni prihod:</strong> Odbitak odbitka (1.500 CHF za samce), zatim se 2/3 preostalog prihoda uzima u obzir.</li>
+                    <li><strong>Smanjenje imovine:</strong> (Imovina - odbitak) / 10 (za umirovljenike).</li>
+                </ul>
+                <table class="data-table">
+                    <tr><th>Odbitci za imovinu (reforma 2021.)</th><th>Odbitak</th></tr>
+                    <tr><td>Samci</td><td>30.000 CHF</td></tr>
+                    <tr><td>Bračni parovi</td><td>50.000 CHF</td></tr>
+                    <tr><td>Stambena nekretnina za vlastite potrebe</td><td>112.500 CHF</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Rezultat: Pravo na EL</h3>
+                <p>EL beneficija zatvara financijski jaz:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Godišnji EL = [Zbroj priznatih troškova] - [Prihod koji se može uračunati]
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Prag imovine (uvjet za ostvarivanje prava)</strong><br>
+            U kantonu Bern nema prava na EL ako neto imovina (isključujući nekretnine) prelazi <strong>100.000 CHF</strong> (samci) ili <strong>200.000 CHF</strong> (bračni parovi).
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Natrag na početnu stranicu</a>
+            <a href="https://www.akbern.ch" target="_blank" class="btn-link">Službene stranice AK Bern</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Izvor: Ured za naknade Kantona Bern (AKB) & Savezni ured za socijalno osiguranje (FSIO) 2026.</p>
+        <p>Omogućuje welfarecalc.ch | Sve informacije bez jamstva.</p>
+    </footer>
+</div>
+
+</body>
+</html>

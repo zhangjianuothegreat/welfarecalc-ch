@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>EL Algorithm Canton Zug 2026 | Transparent Calculation | welfarecalc.ch</title>
+  <meta
+    content="How are supplementary benefits (EL) calculated in the Canton of Zug in 2026? Discover our transparent algorithm based on official AK Zug data."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_en.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="x-default" rel="alternate" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calculation of Supplementary Benefits Zug 2026",
+      "description": "Detailed algorithmic breakdown of the EL calculation in the canton of Zug (Region 2).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determination of recognized expenditure requirements (basic needs, rent Region 2, health insurance premium)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Crediting of income under strict neutralization of the 13th AHV pension and asset consumption"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determination of the EL pension (Recognized expenses minus Creditable income)"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">OFFICIAL DATA 2026</div>
+      <h1>EL Algorithm: Canton Zug</h1>
+      <p>Transparent breakdown of Supplementary Benefits (EL) for the year 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+    <div class="content">
+      <p>Transparency creates trust. Supplementary Benefits (EL) to AHV/IV are a precisely regulated system. Here we
+        document mathematically and legally exactly how our calculator determines your entitlement in the canton of Zug
+        according to ELG, WEL, and the guidelines of the Compensation Office Zug (AK Zug).</p>
+      <h2 class="section-title">1. Annual Basic Needs (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Single Persons</h4>
+          <div class="param-value">CHF 20'670</div>
+          <p><small>Nationally uniform flat rate for living expenses.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>Married Couples</h4>
+          <div class="param-value">CHF 31'005</div>
+          <p><small>Nationally uniform basic needs for married couples.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. The Calculation Method in Canton Zug</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Recognized Expenses (Needs)</h3>
+          <p>The mathematical sum of the legally recognized expense items:</p>
+          <div class="formula">
+            Total Expenses = Basic Needs + Recognizable Rent + Health Insurance Premium
+          </div>
+          <h4>Recognizable Rent (Canton Zug is entirely considered Region 2)</h4>
+          <table class="data-table">
+            <tr>
+              <th>Household Size</th>
+              <th>Monthly Maximum Amount</th>
+              <th>Annual Limit p.a.</th>
+            </tr>
+            <tr>
+              <td>1 Person</td>
+              <td>CHF 1'525</td>
+              <td>CHF 18'300</td>
+            </tr>
+            <tr>
+              <td>2 Persons</td>
+              <td>CHF 1'810</td>
+              <td>CHF 21'720</td>
+            </tr>
+            <tr>
+              <td>3 Persons</td>
+              <td>CHF 1'980</td>
+              <td>CHF 23'760</td>
+            </tr>
+            <tr>
+              <td>4+ Persons</td>
+              <td>CHF 2'160</td>
+              <td>CHF 25'920</td>
+            </tr>
+          </table>
+          <p><small>*Special regulations: For shared apartments (WG) a fixed maximum amount of CHF 905/month applies.
+              For owner-occupied property, a flat rate for ancillary costs of CHF 3'480/year is credited.</small></p>
+          <h4 style="margin-top: 1.2rem;">Recognizable Health Insurance Premiums (Priority Logic)</h4>
+          <p>Our algorithm calculates the health insurance strictly according to the legal minimum principle:</p>
+          <div class="formula">
+            Credited Premium = Math.min(Actual Premium, Cantonal Average Premium)
+          </div>
+          <table class="data-table">
+            <tr>
+              <th>Age Group (Canton Zug 2026)</th>
+              <th>Cantonal Average Premium p.a.</th>
+            </tr>
+            <tr>
+              <td>Adults (26+)</td>
+              <td>CHF 5'028</td>
+            </tr>
+            <tr>
+              <td>Young Adults (11-25)</td>
+              <td>CHF 3'636</td>
+            </tr>
+            <tr>
+              <td>Children (0-10)</td>
+              <td>CHF 1'194</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Creditable Income</h3>
+          <p>The comparison of adjusted income is carried out according to clear legal requirements:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-bottom: 1rem;">
+            <li><strong>13th AHV Pension (Neutralization):</strong> Since the 13th AHV pension must legally not be
+              effective for EL from 2026, our algorithm credits pension income strictly on the basis of a maximum of 12
+              monthly pensions (complete legal neutralization).</li>
+            <li><strong>Earned Income:</strong> Crediting of 2/3 of the amount exceeding the allowance (CHF 1'300 single
+              persons / CHF 1'950 married couples).</li>
+            <li><strong>Asset Consumption:</strong> (Adjusted net assets minus allowance) divided by the divisor 10 (for
+              old-age pensioners) or 15 (for disability pensioners).</li>
+          </ul>
+          <table class="data-table">
+            <tr>
+              <th>EL Allowances for Asset Consumption</th>
+              <th>Allowance</th>
+            </tr>
+            <tr>
+              <td>Single Persons</td>
+              <td>CHF 30'000</td>
+            </tr>
+            <tr>
+              <td>Married Couples</td>
+              <td>CHF 50'000</td>
+            </tr>
+            <tr>
+              <td>Owner-occupied Property (Standard)</td>
+              <td>CHF 112'500</td>
+            </tr>
+            <tr>
+              <td>Owner-occupied Property (for married couples / helplessness allowance)</td>
+              <td>CHF 187'500</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Result: Calculation of the EL Pension</h3>
+          <p>If there is a coverage gap, the annual entitlement results from this:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Annual EL = Math.max(0, [Recognized Expenses] - [Creditable Income])
+          </div>
+          <p>The monthly payout amount corresponds to the annual EL divided by 12, rounded commercially to the nearest
+            whole franc.</p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Important: The legal asset threshold (entry threshold)</strong><br />
+        A general entitlement to supplementary benefits is legally excluded if the net assets (excluding the value of an
+        owner-occupied property) exceed the following threshold values:
+        <ul style="margin-left: 20px; margin-top: 5px;">
+          <li><strong>CHF 100'000</strong> for single persons</li>
+          <li><strong>CHF 200'000</strong> for married couples</li>
+        </ul>
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Back to Homepage</a>
+        <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/ergaenzungsleistungen" target="_blank">Official
+          AK Zug Website</a>
+      </div>
+    </div>
+    <footer>
+      <p>Source: Federal Social Insurance Office (BSV), Federal Act on Supplementary Benefits (ELG) &amp; cantonal
+        guidelines of the Compensation Office Zug (AK Zug) 2026</p>
+      <p>Provided by welfarecalc.ch | Transparent algorithms without legal guarantee.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

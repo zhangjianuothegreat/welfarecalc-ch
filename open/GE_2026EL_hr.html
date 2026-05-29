@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algoritam za EL u Ženevi 2026. | Transparentan izračun | welfarecalc.ch</title>
+    <meta name="description" content="Kako se izračunavaju dopunske naknade (EL) u kantonu Ženeva (Genève) za 2026. godinu? Otkrijte naš transparentan algoritam temeljen na službenim podacima SPC-a Ženeve.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GE_2026EL_hr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GE_2026EL_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GE_2026EL_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GE_2026EL_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GE_2026EL_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GE_2026EL_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GE_2026EL_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GE_2026EL_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GE_2026EL_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GE_2026EL_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GE_2026EL_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GE_2026EL_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GE_2026EL_de.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Izračun dopunskih naknada (EL) za Ženevu 2026.",
+      "description": "Detaljan prikaz algoritma za izračun EL u kantonu Ženeva (SPC).",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Utvrdite priznate troškove (osnovne potrebe, najamnina prema regiji 1, premije zdravstvenog osiguranja)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Uračunljivi dohodak i umanjenje imovine (specifični odbici SPC-a Ženeve)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Izračun godišnjeg iznosa EL naknade"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">SLUŽBENI PODACI ZA 2026.</div>
+        <h1>EL Algoritam: Kanton Ženeva</h1>
+        <p>Transparentan prikaz izračuna dopunskih naknada (Ergänzungsleistungen) za 2026. godinu</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
+        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>Transparentnost gradi povjerenje. Kanton Ženeva (Genève) primjenjuje posebne kantonalne odredbe unutar saveznog okvira. Ovdje dokumentiramo kako naš kalkulator utvrđuje vaše pravo na EL naknadu na temelju službenih smjernica SPC-a Ženeve.</p>
+
+        <h2 class="section-title">1. Godišnji osnovni životni troškovi (2026.)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Samac / samica</h4>
+                <div class="param-value">20.670 CHF</div>
+                <p><small>Nacionalno usklađeni iznos za osnovne potrebe kućanstva.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Bračni parovi</h4>
+                <div class="param-value">31.005 CHF</div>
+                <p><small>Kombinirane osnovne potrebe za oba partnera.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Detaljan tijek izračuna</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Priznati izdaci (potrebe)</h3>
+                <p>Ženeva pripada <strong>Regiji 1</strong> (urbani centri), što znači da se primjenjuju najviši gornji limiti za najamninu u Švicarskoj:</p>
+                <div class="formula">
+                    Osnovne potrebe + Bruto najamnina (do limita) + Prosječna premija zdravstvenog osiguranja
+                </div>
+                <table class="data-table">
+                    <tr><th>Limiti najamnine Ženeva 2026. (Regija 1)</th><th>Iznos godišnje</th></tr>
+                    <tr><td>Kućanstvo s 1 osobom</td><td>17.400 CHF (1.450 CHF/mjesečno)</td></tr>
+                    <tr><td>Kućanstvo s 2 osobe</td><td>20.400 CHF (1.700 CHF/mjesečno)</td></tr>
+                    <tr><td>Kućanstvo s 3 osobe</td><td>23.400 CHF (1.950 CHF/mjesečno)</td></tr>
+                </table>
+                <p><small>*Napomena: Kao regija s visokim troškovima, Ženeva primjenjuje maksimume kategorije 1.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Uračunljivi dohodak</h3>
+                <p>Vaš dohodak procjenjuje se prema pravilima EL SPC-a Ženeve:</p>
+                <ul style="margin-left: 20px; font-size: 0.95rem;">
+                    <li><strong>Mirovine:</strong> AHV ili IV mirovine (isključujući 13. AHV mirovinu).</li>
+                    <li><strong>Umanjenje imovine:</strong> (Neto imovina - odbitak) / 10 za OASI, odnosno / 15 za DI.</li>
+                    <li><strong>Zarađeni dohodak:</strong> 2/3 dohotka nakon odbitka paušalnog odbitka (1.300 CHF za samca / 1.950 CHF za parove).</li>
+                </ul>
+                <table class="data-table">
+                    <tr><th>Odbici od imovine (Ženeva)</th><th>Iznos oslobođen</th></tr>
+                    <tr><td>Samci</td><td>30.000 CHF</td></tr>
+                    <tr><td>Bračni parovi</td><td>50.000 CHF</td></tr>
+                    <tr><td>Nekretnina u vlasništvu za stanovanje</td><td>112.500 CHF</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Rezultat EL naknade</h3>
+                <p>Razlika daje vaš mjesečni iznos prava:</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Godišnja EL = [Ukupno priznatih izdataka] - [Uračunljivi dohodak]
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Važno: Imovinski prag (uvjet za pristup)</strong><br>
+            U Ženevi se EL isplaćuje samo ako je neto imovina (isključujući vrijednost nekretnine u kojoj osoba stanuje) niža od <strong>100.000 CHF</strong> za samce, odnosno <strong>200.000 CHF</strong> za bračne parove.
+        </div>
+
+        <div style="text-align: center;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Povratak na početnu stranicu</a>
+            <a href="https://www.ocas.ch" target="_blank" class="btn-link">Službena stranica SPC Ženeva (OCAS)</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Izvor: Service des prestations complémentaires (SPC) Ženeva & Savezni zakon o dopunskim naknadama (ELG) 2026.</p>
+        <p>Omogućuje welfarecalc.ch | Informacije bez pravne garancije.</p>
+    </footer>
+</div>
+
+</body>
+</html>

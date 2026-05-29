@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Asignaciones Familiares (AF) Algoritmo Cantón de Zug 2026 | welfarecalc.ch</title>
+  <meta
+    content="¿Cómo se calculan las Asignaciones Familiares (AF) 2026 en el Cantón de Zug? Descubra nuestro algoritmo transparente para asignaciones por hijos y asignaciones por formación."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_es.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/ZG_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Asignaciones Familiares Algoritmo Cantón de Zug 2026 | Cálculo Transparente" property="og:title" />
+  <meta content="Lógica de cálculo oficial para asignaciones por hijos y por formación 2026 en Zug."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/ZG_2026FA_es.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo de las Asignaciones Familiares Zug 2026",
+      "description": "Guía paso a paso para el cálculo legal de las asignaciones por hijos y de formación en el Cantón de Zug.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del derecho según la edad y el estado de formación (conformidad con la LAF)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificación de los límites de ingresos para los padres (ingreso mínimo) e hijos en formación."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo del monto total mensual según las tasas cantonales (330 CHF / 385 CHF)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Determinación del derecho anual total (sin asignaciones únicas)."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+      color: var(--official-blue);
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME A LA LAF 2026</div>
+      <h1>Algoritmo FA: Cantón de Zug</h1>
+      <p>Documentación transparente de las Asignaciones Familiares (asignaciones por hijos y de formación)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+    </div>
+    
+    <div class="content">
+      <p>En Suiza, las asignaciones familiares están reguladas por la ley federal sobre asignaciones familiares (LAF).
+        El Cantón de Zug (ZG) concede asignaciones cantonales que superan los mínimos legales federales. Nuestra
+        calculadora calcula su derecho con precisión según las directrices oficiales de Zug para el año 2026.</p>
+      <h2 class="section-title">1. Tasas mensuales ZG (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Asignación por hijos</h4>
+          <div class="param-value">CHF 330 / mes</div>
+          <p><small>Para hijos hasta los 16 años cumplidos (o 20 años cumplidos en caso de incapacidad laboral).</small>
+          </p>
+        </div>
+        <div class="param-card">
+          <h4>Asignación de formación</h4>
+          <div class="param-value">CHF 330 hasta CHF 385</div>
+          <p><small>CHF 330 (15–18 años) y CHF 385 (desde los 18 hasta un máximo de 25 años cumplidos).</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. El método de cálculo oficial</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Requisitos y límites de ingresos</h3>
+          <p>Antes de conceder las asignaciones, el algoritmo verifica los obstáculos legales:</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+            <li><strong>Ingreso mínimo de los padres:</strong> El progenitor solicitante debe tener un ingreso sujeto al
+              AVS de al menos <strong>CHF 630 por mes</strong> (o CHF 7'560 por año) para ser considerado empleado.</li>
+            <li><strong>Límite de ingresos para hijos en formación:</strong> Si un hijo está en formación y obtiene un
+              ingreso laboral propio (por ejemplo, salario de aprendizaje) superior a <strong>CHF 2'520 por mes</strong>
+              (CHF 30'240 por año), el derecho a la asignación de formación se pierde por completo.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Determinación de la categoría y límites de edad</h3>
+          <p>El algoritmo clasifica a cada hijo según la edad y el estado de formación:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Categoría y Estado</th>
+                <th>Rango de edad</th>
+                <th>Monto mensual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Asignación por hijos</strong> (Estándar)</td>
+                <td>0 hasta los 16 años cumplidos</td>
+                <td>CHF 330</td>
+              </tr>
+              <tr>
+                <td><strong>Asignación por hijos</strong> (Incapacidad laboral)</td>
+                <td>16 hasta los 20 años cumplidos</td>
+                <td>CHF 330</td>
+              </tr>
+              <tr>
+                <td><strong>Asignación de formación</strong> (en formación)</td>
+                <td>Desde los 15 hasta los 18 años cumplidos</td>
+                <td>CHF 330</td>
+              </tr>
+              <tr>
+                <td><strong>Asignación de formación</strong> (en formación)</td>
+                <td>Desde los 18 hasta un máximo de 25 años</td>
+                <td>CHF 385</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><small>*Nota: En el Cantón de Zug no hay aumento ni escalonamiento a partir del 3er hijo o según la edad
+              dentro de la asignación por hijos (sin aumento automático a partir de los 12 años).</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Cálculo del monto total mensual</h3>
+          <p>La suma mensual se determina mediante la suma precisa de los hijos calificados:</p>
+          <div class="formula">
+            Suma mensual = (Número de asignaciones por hijos y de formación ≤ 18 × CHF 330) + (Número de asignaciones de
+            formación &gt; 18 × CHF 385)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Asignaciones únicas (Nacimiento/Adopción)</h3>
+          <p>El Cantón de Zug, a diferencia de otros cantones (como GE, VS o FR), <strong>no</strong> concede
+            asignaciones únicas por nacimiento o adopción.</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Tipo de asignación</th>
+                <th>Monto (ZG)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Asignación por nacimiento</td>
+                <td>CHF 0</td>
+              </tr>
+              <tr>
+                <td>Asignación por adopción</td>
+                <td>CHF 0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Determinación del derecho anual</h3>
+          <p>El pago se realiza mensualmente a través del empleador o de la Caja Cantonal de Compensación Familiar (AK
+            Zug):</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Monto anual = (Derecho mensual total) × 12
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Derecho a la prestación y orden de prioridad:</strong><br />
+        Por cada hijo solo se paga una asignación. Si ambos padres trabajan, el orden de prioridad legal según el Art.
+        12 LAF regula el derecho primario (orden: progenitor empleado, custodia, domicilio del hijo, ingreso AVS más
+        alto).
+      </div>
+      <div style="text-align: center;">
+        <a aria-label="Ir a la calculadora" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">Iniciar calculadora</a>
+        <a aria-label="Ir al sitio oficial de AK Zug" class="btn-link" href="https://www.akzug.ch" target="_blank">Sitio
+          oficial de AK Zug</a>
+      </div>
+    </div>
+    <footer>
+      <p>Fuente: Directrices 2026 de la Caja de Compensación de Zug (AK ZUG) y Ley Federal sobre Asignaciones Familiares
+        (LAF)</p>
+      <p>© 2026 welfarecalc.ch | Cálculo transparente de Asignaciones Familiares</p>
+    </footer>
+  </div>
+</body>
+
+</html>

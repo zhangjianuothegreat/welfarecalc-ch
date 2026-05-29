@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Algorithme IPV Canton de Bâle-Campagne 2026 | Calcul Transparent | welfarecalc.ch</title>
+    <meta name="description" content="Comment la réduction individuelle des primes (IPV) 2026 est-elle calculée dans le canton de Bâle-Campagne ? Découvrez notre algorithme transparent basé sur les données officielles de la SVA.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026IPV_fr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026IPV_de.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026IPV_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026IPV_it.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026IPV_en.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026IPV_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026IPV_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026IPV_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026IPV_hr.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026IPV_pl.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026IPV_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026IPV_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026IPV_de.html">
+
+    <meta property="og:title" content="Algorithme IPV Canton de Bâle-Campagne 2026 | Calcul Transparent">
+    <meta property="og:description" content="Logique de calcul officielle pour la réduction individuelle des primes (IPV) 2026 dans le canton de Bâle-Campagne (BL).">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/BL_2026IPV_fr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul de la réduction individuelle des primes Bâle-Campagne 2026",
+      "description": "Guide étape par étape pour déterminer le droit à l'IPV dans le canton de Bâle-Campagne.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du revenu déterminant (LNA) en tenant compte de l'utilisation de la fortune."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Définition des primes de référence cantonales pour l'année 2026."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul de la déduction sur le revenu et détermination du droit final à l'IPV."
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .data-table th { text-align: left; background: #f8fafc; padding: 10px; border-bottom: 2px solid #e2e8f0; font-size: 0.9rem; }
+        .data-table td { padding: 10px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+        .formula-box { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-size: 0.95rem; }
+        .highlight-red { color: #be123c; font-weight: bold; }
+
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
+        <h1>Algorithme IPV : Canton de Bâle-Campagne (BL)</h1>
+        <p>Divulgation transparente de la logique de calcul pour l'année 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>La confiance grâce à la transparence. Nous détaillons ici comment notre calculateur détermine votre réduction individuelle des primes (IPV) potentielle dans le canton de Bâle-Campagne. Cet algorithme mathématique est strictement conforme aux exigences légales officielles de la SVA Bâle-Campagne.</p>
+
+        <h2 class="section-title">1. Paramètres clés (2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Taux de déduction sur le revenu</h4>
+                <div class="param-value">7.75 %</div>
+                <p><small>Part du revenu déterminant considérée comme supportable pour l'assurance maladie.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Utilisation de la fortune</h4>
+                <div class="param-value">10.0 %</div>
+                <p><small>Part de la fortune imposable ajoutée au revenu pur.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Processus de calcul</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Revenu déterminant (LNA)</h3>
+                <p>Nous évaluons d'abord la capacité économique des personnes vivant dans le ménage :</p>
+                <div class="formula-box">
+                    <strong>LNA = [Revenu net annuel (pur)] + ([Fortune imposable] × 10%) - [Pensions alimentaires versées]</strong>
+                </div>
+                <p><small>Remarque pour 2026 : Dans le canton de Bâle-Campagne, aucune déduction distincte pour enfant n'est plus accordée au niveau du revenu à partir de cette année. Le soutien aux familles est assuré directement par la réduction des primes de référence pour les enfants.</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Primes de référence uniformes 2026</h3>
+                <p>Le canton de Bâle-Campagne établit chaque année des coûts d'assurance standardisés par catégorie d'âge :</p>
+                <table class="data-table">
+                    <thead>
+                        <tr><th>Catégorie</th><th>Prime de référence (par an)</th><th>Prime de référence (par mois)</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Adultes (dès 26 ans)</td><td>CHF 4'596</td><td>CHF 383</td></tr>
+                        <tr><td>Jeunes adultes (18–25 ans)</td><td>CHF 3'816</td><td>CHF 318</td></tr>
+                        <tr><td>Enfants (0–17 ans)</td><td>CHF 1'968</td><td>CHF 164</td></tr>
+                    </tbody>
+                </table>
+                <div class="formula-box" style="margin-top: 15px;">
+                    <strong>[Prime de référence totale] = (Nb adultes × 4'596) + (Nb jeunes adultes × 3'816) + (Nb enfants × 1'968)</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Droit théorique (subvention)</h3>
+                <p>La part supportable par le ménage (déduction sur le revenu) est soustraite de la prime de référence totale :</p>
+                <div class="formula-box">
+                    <strong>[Déduction sur le revenu] = LNA × 7.75%</strong>
+                </div>
+                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                    [Subvention théorique] = Max(0, [Prime de référence totale] - [Déduction sur le revenu])
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">4</div>
+            <div class="step-body">
+                <h3>Droit final & limitation</h3>
+                <p>Le paiement annuel effectif est limité par la prime effectivement payée pour l'assurance de base (LAMal/OKP) :</p>
+                <div class="formula-box">
+                    <strong>[IPV annuelle] = Min(Arrondi([Subvention théorique]), [Prime annuelle réelle*])</strong>
+                </div>
+                <p><small>*Important : seule la prime de l'assurance de base légale est prise en compte ; les assurances complémentaires privées (LCA) sont légalement exclues. Tous les montants sont arrondis à la franc suisse près.</small></p>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Limite de fortune (seuil strict) :</strong><br>
+            Si la fortune imposable dépasse <strong>CHF 100'000</strong> pour une personne seule ou <strong>CHF 200'000</strong> pour les couples/ménages de deux personnes, le droit légal à l'IPV dans le canton de BL s'éteint complètement, quel que soit le revenu réalisé.
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Retour à l'accueil</a>
+            <a href="https://www.sva-bl.ch/de/ausgleichskasse/individuelle-praemienverbilligung-ipv" target="_blank" class="btn-link">Site officiel de la SVA</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source : Directives SVA Bâle-Campagne 2026 | Fourni par welfarecalc.ch</p>
+        <p>Avertissement juridique : Ce résumé est fourni à titre d'information transparente et ne crée aucun droit légal.</p>
+    </footer>
+</div>
+
+</body>
+</html>

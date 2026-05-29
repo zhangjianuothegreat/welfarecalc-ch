@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Allocations familiales (AF) Algorithme du canton de Thurgovie 2026 | welfarecalc.ch</title>
+  <meta
+    content="Comment sont calculées les allocations familiales (AF) 2026 dans le canton de Thurgovie ? Découvrez notre algorithme transparent pour les allocations pour enfants et les allocations de formation."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_fr.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026FA_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algorithme des allocations familiales du canton de Thurgovie 2026 | Calcul transparent"
+    property="og:title" />
+  <meta
+    content="Logique de calcul officielle pour les allocations pour enfants et de formation 2026 dans le canton de Thurgovie."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TG_2026FA_fr.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calcul des allocations familiales Thurgovie 2026",
+      "description": "Guide étape par étape pour le calcul des allocations pour enfants et des allocations de formation dans le canton de Thurgovie.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Détermination de la catégorie (allocation pour enfant vs. allocation de formation)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calcul du montant total mensuel"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Vérification des allocations uniques (naissance/adoption)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Détermination du droit annuel total"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #0ea5e9;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      opacity: 0.9;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">CONFORME LAFam 2026</div>
+      <h1>Algorithme AF : Canton de Thurgovie</h1>
+      <p>Documentation transparente des allocations familiales (allocations pour enfants et de formation)</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
+        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+    </div>
+    
+    <div class="content">
+      <p>En Suisse, les allocations familiales sont régies par la loi (LAFam). Notre calculateur utilise les taux
+        cantonaux spécifiques du canton de Thurgovie pour 2026 afin de déterminer précisément votre droit. La
+        transparence crée la confiance.</p>
+      <h2 class="section-title">1. Taux mensuels (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Allocation pour enfant</h4>
+          <div class="param-value">CHF 215 / mois</div>
+          <p><small>Pour les enfants de 0 à 16 ans révolus. (Taux journalier pour les mois partiels : CHF 7.20)</small>
+          </p>
+        </div>
+        <div class="param-card">
+          <h4>Allocation de formation</h4>
+          <div class="param-value">CHF 280 / mois</div>
+          <p><small>Dès 16 ans jusqu'à la fin de la formation (max. 25 ans). (Taux journalier pour les mois partiels :
+              CHF 9.35)</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Le processus de calcul</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Détermination de la catégorie</h3>
+          <p>L'algorithme vérifie l'âge et le statut de chaque enfant :</p>
+          <ul style="margin-left: 20px; font-size: 0.95rem; padding-top: 5px;">
+            <li><strong>0 - 16 ans :</strong> Droit à l'allocation pour enfant.</li>
+            <li><strong>16 - 25 ans :</strong> Droit à l'allocation de formation (preuve de formation requise).</li>
+            <li><strong>Enfants incapables de travailler :</strong> Droit à l'allocation pour enfant jusqu'à 20 ans
+              révolus.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Calcul du montant mensuel</h3>
+          <p>Le total est la somme linéaire des taux individuels respectifs :</p>
+          <div class="formula">
+            Montant total mensuel = (Nombre d'enfants &lt; 16 × CHF 215) + (Nombre en formation × CHF 280)
+          </div>
+          <p><small>*Remarque : Dans le canton de Thurgovie, il n'y a pas de palier ou d'augmentation pour les familles
+              nombreuses (dès le 3ème enfant), comme c'est le cas dans certains autres cantons romands.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Allocations uniques (Naissance/Adoption)</h3>
+          <p>Le canton de Thurgovie n'accorde <strong>pas</strong> d'allocations uniques de naissance ou d'adoption dans
+            sa loi (TG FamZV).</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Type d'allocation</th>
+                <th>Montant dans le canton de Thurgovie (TG)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Allocation de naissance</td>
+                <td>CHF 0</td>
+              </tr>
+              <tr>
+                <td>Allocation d'adoption</td>
+                <td>CHF 0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Détermination du droit annuel</h3>
+          <p>Le versement est effectué de manière standardisée par l'employeur ou la caisse cantonale de compensation
+            des allocations familiales :</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            Montant annuel = (Droit total mensuel) × 12
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Droit &amp; Réglementation :</strong><br />
+        La loi fédérale sur les allocations familiales (LAFam) s'applique. Un seul parent peut percevoir l'allocation.
+        Si les deux parents exercent une activité lucrative, l'ordre de priorité légal (art. 12 LAFam) régit le droit
+        prioritaire. De plus, le revenu minimal AVS doit être atteint.
+      </div>
+      <div style="text-align: center; margin-top: 2rem;">
+        <a aria-label="Accéder au calculateur" class="btn-link btn-home" href="https://www.welfarecalc.ch"
+          target="_blank">Lancer le calculateur</a>
+        <a aria-label="Vers la page officielle de la SVZ Thurgovie" class="btn-link"
+          href="https://www.svztg.ch/dienstleistungen/familienzulagen-famz-flg/erwerbstaetige" target="_blank">Page
+          officielle SVZ Thurgovie</a>
+      </div>
+    </div>
+    <footer>
+      <p>Source : Directives 2026 du Centre d'assurances sociales de Thurgovie (SVZ TG) &amp; Loi fédérale sur les
+        allocations familiales (LAFam)</p>
+      <p>© 2026 welfarecalc.ch | Calcul transparent des allocations familiales pour la Suisse</p>
+    </footer>
+  </div>
+</body>
+
+</html>

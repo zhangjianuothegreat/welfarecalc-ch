@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Emergency Aid Algorithm Canton Vaud 2026 | Transparent Calculation | welfarecalc.ch</title>
+    <meta
+        content="How is emergency aid calculated in 2026 in the Canton of Vaud (VD)? Discover the transparent algorithm based on the official EVAM guidelines and LARA."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_en.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/VD_2026nothilfe_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Emergency Aid Algorithm Canton Vaud 2026 | Transparent Calculation" property="og:title" />
+    <meta
+        content="Official calculation logic for emergency aid 2026 in the Canton of Vaud based on LARA &amp; EVAM guidelines."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/VD_2026nothilfe_en.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Calculation of Emergency Aid Vaud 2026",
+      "description": "Step-by-step guide to the legal determination of emergency aid (Aide d'urgence) in the Canton of Vaud via EVAM.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Check primary entitlement to benefits in kind (accommodation and meals)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Calculation of the linear daily cash amount of CHF 9.50 per person in the absence of collective catering."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Multiplication by the exact calendar days of the respective reference month without flat-rate rounding."
+        }
+      ]
+    }
+    </script>
+    <style>
+        /* ============ Swiss official professional style highly consistent with AG / AI pages ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-danger {
+            background: #fef2f2;
+            border: 1px solid #fee2e2;
+            border-left: 5px solid var(--swiss-red);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .btn-home:hover {
+            background: #b91c1c;
+        }
+
+        /* Live-Demo interactive card */
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input,
+        .input-item select {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            background: white;
+            transition: 0.2s;
+        }
+
+        .input-item input:focus,
+        .input-item select:focus {
+            outline: none;
+            border-color: var(--official-blue);
+            box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.1);
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .result-panel h3 {
+            color: var(--official-blue);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .steps-detail {
+            font-size: 0.9rem;
+            color: #334155;
+            margin-top: 0.8rem;
+            line-height: 1.5;
+            background: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+            font-size: 0.85rem;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <span class="update-tag">OFFICIAL ALGORITHM - STATUS 2026</span>
+            <h1>Emergency Aid Calculation Canton Vaud (VD)</h1>
+            <p>Transparent disclosure of the cantonal calculation model according to LARA and EVAM guidelines</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+        <div class="content">
+            <div class="alert-danger">
+                <strong>Important legal notice regarding the Federal Constitution (Art. 12 BV):</strong><br />
+                Emergency aid (Aide d'urgence) is constitutionally <u>not</u> regular social welfare (Aide sociale/RI).
+                It serves exclusively to bridge acute emergencies to preserve human dignity. In the Canton of Vaud, this
+                benefit is administered by <strong>EVAM</strong> (Etablissement vaudois d'accueil des migrants) and
+                strictly prioritized as a <strong>benefit in kind</strong> (accommodation, collective meals, hygiene
+                items). Cash benefits only arise subsidiarily.
+            </div>
+            <h2 class="section-title">1. Legal Parameters (Cash Benefit Approach 2026)</h2>
+            <p>If EVAM cannot provide collective meals in an individual case and the support must be paid out in cash,
+                the following linear maximum rates apply in 2026:</p>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Flat rate per person / day</h4>
+                    <div class="param-value">CHF 9.50</div>
+                    <p style="font-size:0.8rem; color:#64748b; margin-top:4px;">Applies uniformly to adults and children
+                    </p>
+                </div>
+                <div class="param-card">
+                    <h4>Accommodation Mode</h4>
+                    <div class="param-value">Collective (Canton)</div>
+                    <p style="font-size:0.8rem; color:#64748b; margin-top:4px;">Housing costs are covered directly by
+                        EVAM</p>
+                </div>
+                <div class="param-card">
+                    <h4>Household Degression</h4>
+                    <div class="param-value">None (Linear)</div>
+                    <p style="font-size:0.8rem; color:#64748b; margin-top:4px;">No couple coefficients or multi-person
+                        deductions</p>
+                </div>
+            </div>
+            <h2 class="section-title">2. The Mathematical Calculation Process</h2>
+            <p>The determination of the paid emergency aid in the Canton of Vaud is carried out step by step without
+                canton-specific scaling factors:</p>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h4>Determination of the total daily rate (per capita share)</h4>
+                    <p>Since no social family structures are mapped in the cantonal emergency aid Vaud (case law on the
+                        constitutional minimum assistance), all household members are aggregated linearly regardless of
+                        age.</p>
+                    <div class="formula">Daily budget = (Number of adults + Number of children) × CHF 9.50</div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h4>Projection based on actual calendar days</h4>
+                    <p>In contrast to ordinary social welfare or supplementary benefits (EL), Vaud emergency aid does
+                        not have a flat monthly factor of 30.42 days. The payout is based exactly on the days of the
+                        relevant calendar month (28, 29, 30 or 31 days).</p>
+                    <div class="formula">Monthly amount (gross) = Daily budget × Calendar days (e.g., 30 or 31)</div>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h4>Commercial rounding</h4>
+                    <p>The calculated monthly amount is rounded to the standard commercial decimal place (0.01 CHF)
+                        according to the EVAM payout standard.</p>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Note on health insurance coverage:</strong> The premium for compulsory health insurance (KVG) as
+                well as necessary acute medical treatments are covered directly by EVAM within the framework of
+                flat-rate contracts and do not appear in the individual cash budget.
+            </div>
+            <h2 class="section-title">3. Interactive Live Calculator (As of 2026)</h2>
+            <p>Use this demo tool to understand the transparent algorithm from welfarecalc.ch according to the legal
+                requirements of the Canton of Vaud.</p>
+            <div class="demo-card">
+                <div class="demo-header">🧮 Simulation Module Canton Vaud (Aide d'urgence)</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label for="adultsCount">Number of Adults:</label>
+                            <input id="adultsCount" min="1" type="number" value="1" />
+                        </div>
+                        <div class="input-item">
+                            <label for="childrenCount">Number of Children (under 18):</label>
+                            <input id="childrenCount" min="0" type="number" value="0" />
+                        </div>
+                        <div class="input-item">
+                            <label for="monthDays">Reference Month (Days):</label>
+                            <select id="monthDays">
+                                <option value="31">March / May / July / Aug / Oct / Dec (31 days)</option>
+                                <option selected="" value="30">April / June / Sept / Nov (30 days)</option>
+                                <option value="28">February (28 days)</option>
+                                <option value="29">February - Leap Year (29 days)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn" type="button">Run Algorithm</button>
+                    <div class="result-panel" id="liveResultPanel">
+                        <h3>Calculated Emergency Aid (Subsidiary Cash Entitlement):</h3>
+                        <div style="font-size: 1.8rem; font-weight: bold; color: var(--swiss-red); margin: 0.5rem 0;">
+                            <span id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size:1rem; color:#64748b; font-weight:normal;">/ Month</span>
+                        </div>
+                        <div class="steps-detail" id="stepsDetail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title">4. Transparency Certification Comparison</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Calculation Component</th>
+                        <th>Canton Vaud (EVAM Specification)</th>
+                        <th>welfarecalc.ch Implementation</th>
+                        <th>Validation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Basic needs individual</td>
+                        <td>CHF 9.50 / day (Subsidiary)</td>
+                        <td>CHF 9.50 / day</td>
+                        <td><span style="color:green; font-weight:bold;">✓ Conform</span></td>
+                    </tr>
+                    <tr>
+                        <td>Multi-person coefficients</td>
+                        <td>None (Pure linear per capita flat rate)</td>
+                        <td>Exactly linear without scaling</td>
+                        <td><span style="color:green; font-weight:bold;">✓ Conform</span></td>
+                    </tr>
+                    <tr>
+                        <td>Child allowance (educational)</td>
+                        <td>Exclusion according to LARA</td>
+                        <td>No additional bonuses active</td>
+                        <td><span style="color:green; font-weight:bold;">✓ Conform</span></td>
+                    </tr>
+                    <tr>
+                        <td>Period factor</td>
+                        <td>Actual calendar days of the reference month</td>
+                        <td>Dynamic day selection (28-31)</td>
+                        <td><span style="color:green; font-weight:bold;">✓ Conform</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="margin-top: 3rem; text-align: center;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch">Go to Homepage</a>
+                <a class="btn-link" href="https://www.vd.ch/population/population-etrangere/aide-aux-migrants-evam"
+                    rel="nofollow" target="_blank">Official EVAM Page</a>
+            </div>
+        </div>
+        <footer>
+            <p>© 2026 welfarecalc.ch - Independent platform for Swiss social welfare calculations. All calculations are
+                without guarantee. Legal recourse is excluded.</p>
+        </footer>
+    </div>
+    <script>
+        (function () {
+            "use strict";
+
+            function computeVDNothilfe(adults, children, days) {
+                const ratePerPerson = 9.50;
+                const totalPeople = adults + children;
+                const totalDaily = totalPeople * ratePerPerson;
+                const rawMonthly = totalDaily * days;
+
+                // Commercial rounding to 2 decimal places
+                const roundedMonthly = Math.round(rawMonthly * 100) / 100;
+
+                return {
+                    ratePerPerson,
+                    totalPeople,
+                    totalDaily,
+                    rawMonthly,
+                    roundedMonthly
+                };
+            }
+
+            function updateDemo() {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 0;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const days = parseInt(document.getElementById('monthDays').value) || 30;
+
+                if (adults < 1 && children > 0) {
+                    alert("A household in emergency aid status cannot legally be recorded without a custodial or accompanying adult person.");
+                    return;
+                }
+                if (adults < 1) return;
+
+                const res = computeVDNothilfe(adults, children, days);
+
+                const stepsHtml = `
+                <strong>📌 Step 1 – Aggregation of Persons:</strong> ${adults} adult(s) + ${children} child(ren) = ${res.totalPeople} persons total.<br>
+                <strong>📌 Step 2 – Daily Rate Calculation:</strong> ${res.totalPeople} persons × CHF ${res.ratePerPerson.toFixed(2)} = <strong>CHF ${res.totalDaily.toFixed(2)} / day</strong>.<br>
+                <strong>📌 Step 3 – Monthly Factor (${days} calendar days):</strong> CHF ${res.totalDaily.toFixed(2)} × ${days} days = CHF ${res.rawMonthly.toFixed(2)}.<br>
+                <strong>💰 Final Result (Commercially rounded):</strong> <strong>CHF ${res.roundedMonthly.toFixed(2)}</strong> (Payout occurs only in the absence of collective catering).
+            `;
+
+                document.getElementById('stepsDetail').innerHTML = stepsHtml;
+                document.getElementById('monthlyAmountDisplay').innerText = `${res.roundedMonthly.toFixed(2)} CHF`;
+                document.getElementById('liveResultPanel').style.display = 'block';
+            }
+
+            const btn = document.getElementById('runCalcBtn');
+            if (btn) {
+                btn.addEventListener('click', updateDemo);
+            }
+
+            // Automatic real-time calculation on input changes for improved UX
+            const inputs = ['adultsCount', 'childrenCount', 'monthDays'];
+            inputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', updateDemo);
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>

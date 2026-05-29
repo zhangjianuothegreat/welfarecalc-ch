@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Algoritmo IPV Cantão de Zurique 2026 | Cálculo Transparente | welfarecalc.ch</title>
+    <meta
+        content="Como é calculada a redução de prêmios (IPV) 2026 no Cantão de Zurique? Descubra nosso algoritmo transparente baseado em dados oficiais da SVA."
+        name="description" />
+    <meta content="index, follow" name="robots" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pt.html" rel="canonical" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_de.html" hreflang="de" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_it.html" hreflang="it" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_en.html" hreflang="en" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_es.html" hreflang="es" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+    <link href="https://www.welfarecalc.ch/open/ZH_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+    <meta content="Algoritmo IPV Cantão de Zurique 2026 | Cálculo Transparente" property="og:title" />
+    <meta content="Lógica oficial de cálculo para a redução de prêmios 2026 no Cantão de Zurique (ZH)."
+        property="og:description" />
+    <meta content="https://www.welfarecalc.ch/open/ZH_2026IPV_pt.html" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="summary" name="twitter:card" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Cálculo da redução de prémios Zurique 2026",
+      "description": "Guia passo a passo para determinar o direito ao IPV no Cantão de ZH.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determinação do rendimento relevante (LNA) incl. 10% de consumo de património"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Verificação dos limites cantonais de dureza patrimonial"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Cálculo de splitting para famílias de baixos rendimentos (regra de proteção infantil)"
+        }
+      ]
+    }
+    </script>
+    <style>
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .data-table th {
+            text-align: left;
+            background: #f8fafc;
+            padding: 10px;
+            border-bottom: 2px solid #e2e8f0;
+            font-size: 0.9rem;
+        }
+
+        .data-table td {
+            padding: 10px;
+            border-bottom: 1px solid #f1f5f9;
+            font-size: 0.95rem;
+        }
+
+        .formula-box {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.95rem;
+        }
+
+        .highlight-red {
+            color: #be123c;
+            font-weight: bold;
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">DADOS OFICIAIS 2026</div>
+            <h1>Algoritmo IPV: Cantão de Zurique (ZH)</h1>
+            <p>Divulgação transparente da lógica de cálculo para o ano de 2026</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
+        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+    </div>
+    
+        <div class="content">
+            <p>Confiança através da transparência. Aqui divulgamos como o nosso calculador determina a sua potencial
+                redução de prémios
+                (IPV) no Cantão de Zurique. Este algoritmo baseia-se estritamente nas disposições legais da
+                SVA Zurique, bem como no regulamento cantonal para o ano de 2026.</p>
+            <h2 class="section-title">1. Parâmetros principais (2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Taxa de dedução (participação própria)</h4>
+                    <div class="param-value">Indivíduos: 8.4 %<br />Famílias: 10.5 %</div>
+                    <p><small>Percentagem do rendimento relevante considerada como parte própria razoável.</small>
+                    </p>
+                </div>
+                <div class="param-card">
+                    <h4>Taxa de consumo de património</h4>
+                    <div class="param-value">10.0 %</div>
+                    <p><small>Parte do património líquido tributável (após dedução da isenção) que é adicionada ao
+                            rendimento.</small></p>
+                </div>
+            </div>
+            <h2 class="section-title">2. O caminho do cálculo</h2>
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Rendimento relevante (LNA)</h3>
+                    <p>O rendimento relevante determina a sua capacidade económica e baseia-se nos dados fiscais:</p>
+                    <div class="formula-box">
+                        <strong>LNA = [Rendimento líquido*] + [10% × (Património tributável -
+                            Isenção de património)]</strong>
+                    </div>
+                    <p><small>*Nota: O rendimento líquido é corrigido de acordo com as diretrizes cantonais para certas
+                            deduções (ex. contribuições de compra do pilar 2).</small></p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Estado civil / Categoria</th>
+                                <th>Isenção de património</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Solteiros / Famílias monoparentais</td>
+                                <td>CHF 75'000</td>
+                            </tr>
+                            <tr>
+                                <td>Casados / Casais</td>
+                                <td>CHF 150'000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Prémios de referência oficiais 2026</h3>
+                    <p>O Cantão de Zurique divide os municípios em 3 regiões de prémios. O cálculo do IPV baseia-se em
+                        70% do prémio médio (prémio de referência):</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Região</th>
+                                <th>Adultos (a partir de 26)</th>
+                                <th>Jovens adultos (19-25 em formação)</th>
+                                <th>Crianças (0-18)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Região 1</strong> (ex. Cidade de Zurique)</td>
+                                <td>CHF 7'704 / ano</td>
+                                <td>CHF 5'532 / ano</td>
+                                <td>CHF 1'854 / ano</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Região 2</strong> (ex. Winterthur)</td>
+                                <td>CHF 7'020 / ano</td>
+                                <td>CHF 5'040 / ano</td>
+                                <td>CHF 1'686 / ano</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Região 3</strong> (Municípios rurais)</td>
+                                <td>CHF 6'540 / ano</td>
+                                <td>CHF 4'692 / ano</td>
+                                <td>CHF 1'566 / ano</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Cálculo da parte própria (regra especial de splitting)</h3>
+                    <p>A parte própria (participação própria) é determinada de forma diferenciada consoante o escalão de
+                        rendimento:</p>
+                    <h4 style="margin-top:10px; color:var(--official-blue);">A. Cálculo padrão (rendimentos normais)
+                    </h4>
+                    <div class="formula-box">
+                        Parte própria = Máx([Prémio de referência total] × 30%, LNA × Taxa de dedução)
+                    </div>
+                    <h4 style="margin-top:15px; color:var(--official-blue);">B. Regulamentação especial para
+                        famílias de baixos rendimentos</h4>
+                    <p>Se uma família (com crianças ou jovens em formação) estiver abaixo dos limites de rendimento
+                        cantonais (<strong>CHF 70'500</strong> sem formação / <strong>CHF 94'000</strong> com
+                        formação), aplica-se a <strong>proteção infantil</strong> legal através do processo de
+                        splitting:
+                    </p>
+                    <ul style="margin-left:20px; font-size:0.95rem; color:#475569;">
+                        <li><strong>Crianças:</strong> Suportam apenas uma parte própria fixa de 20% do seu prémio de
+                            referência.</li>
+                        <li><strong>Jovens adultos em formação:</strong> Suportam uma parte própria reduzida de
+                            50% do seu prémio de referência.</li>
+                        <li><strong>Adultos:</strong> Suportam a dedução de rendimento restante, mas pelo menos 30%
+                            do prémio de referência para adultos.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="step-box">
+                <div class="step-num">4</div>
+                <div class="step-body">
+                    <h3>Direito final (Benefício IPV)</h3>
+                    <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+                        Direito teórico = Máx(0, [Prémios de referência totais] - [Parte própria total])
+                    </div>
+                    <p><small>O benefício IPV efetivo é limitado pelo prémio anual efetivamente pago à seguradora de
+                            saúde. O pagamento é efetuado mensalmente (arredondado para francos inteiros).</small></p>
+                </div>
+            </div>
+            <div class="alert">
+                <strong>Atenção ao limite absoluto de dureza patrimonial:</strong><br />
+                No Cantão de Zurique, qualquer direito ao IPV extingue-se automaticamente se o património líquido
+                tributável
+                exceder <strong>CHF 150'000</strong> (para solteiros) ou <strong>CHF 300'000</strong> (para casais
+                casados) – independentemente de quão baixo seja o rendimento atual.
+            </div>
+            <div style="text-align: center;">
+                <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Voltar à página
+                    inicial</a>
+                <a class="btn-link" href="https://svazurich.ch/ipv" target="_blank">Site oficial da SVA Zurique</a>
+            </div>
+        </div>
+        <footer>
+            <p>Fonte: Diretrizes da SVA Zurique &amp; regulamentos cantonais 2026 | Fornecido por welfarecalc.ch</p>
+            <p>Aviso legal: Este resumo serve exclusivamente para fins informativos e não constitui um direito legal
+                exequível.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="ta">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>சோலோதுர்ன் கேண்டன் 2026 சமூக உதவி அல்காரிதம் | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
+  <meta
+    content="2026 ஆம் ஆண்டில் சோலோதுர்ன் கேண்டனில் சமூக உதவி எவ்வாறு கணக்கிடப்படுகிறது? SKOS வழிகாட்டுதல்கள் மற்றும் கேண்டனல் சட்டத்தின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_ta.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/SO_2026SH_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="சோலோதுர்ன் கேண்டன் 2026 சமூக உதவி அல்காரிதம் | வெளிப்படையான கணக்கீடு" property="og:title" />
+  <meta content="SKOS அடிப்படையில் சோலோதுர்ன் கேண்டனில் 2026 சமூக உதவிக்கான அதிகாரப்பூர்வ கணக்கீட்டு தர்க்கம்."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/SO_2026SH_ta.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "சோலோதுர்ன் சமூக உதவி கணக்கீடு 2026",
+      "description": "சோலோதுர்ன் கேண்டனில் (SO) சமூக உதவி கணக்கீட்டின் விரிவான வழிமுறைப் பகுப்பாய்வு.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "சொத்து விலக்கு வரம்பைச் சரிபார்த்தல் (நுழைவுத் தடை)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "வாழ்க்கைக்கான அடிப்படைத் தேவையை நிர்ணயித்தல் (SKOS 2026 இன் படி GBL)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "அங்கீகரிக்கப்பட்ட வீட்டுச் செலவுகள் மற்றும் நிகர சுகாதார காப்பீட்டு பிரீமியங்களைக் கணக்கிடுதல்"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "விலக்குகளைக் கழித்த பிறகு கணக்கில் எடுத்துக்கொள்ளக்கூடிய வருமானங்களை ஒப்பிடுதல்"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #16a34a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-weight: bold;
+      color: var(--official-blue);
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">SKOS-இணக்கம் 2026</div>
+      <h1>சமூக உதவி அல்காரிதம்: சோலோதுர்ன் கேண்டன்</h1>
+      <p>சமூக வாழ்வாதார குறைந்தபட்சத்திற்கான (SO) கணக்கீட்டு தர்க்கத்தின் வெளிப்படையான ஆவணப்படுத்தல்</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
+        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+    </div>
+    
+    <div class="content">
+      <p>சோலோதுர்ன் கேண்டனில் சமூக உதவி எவ்வாறு கணக்கிடப்படுகிறது? எங்கள் பயனர்களின் நம்பிக்கையை வலுப்படுத்த,
+        welfarecalc.ch-க்குப் பின்னால் உள்ள முழுமையான அல்காரிதத்தை இங்கு நாங்கள் வெளிப்படுத்துகிறோம். இது சோலோதுர்ன்
+        சமூக உதவிச் சட்டம் (SHG) மற்றும் அதிகாரப்பூர்வ SKOS வழிகாட்டுதல்கள் 2026 ஆகியவற்றை அடிப்படையாகக் கொண்டது.</p>
+      <h2 class="section-title">1. சொத்து சரிபார்ப்பு (நுழைவுத் தடை)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>தனி நபருக்கான விலக்கு</h4>
+          <div class="param-value">CHF 6'000</div>
+          <p><small>ஒரு குழந்தை அல்லது பயிற்சியில் உள்ள நபருக்கு கூடுதலாக CHF 3'000.</small></p>
+        </div>
+        <div class="param-card">
+          <h4>தம்பதிகளுக்கான விலக்கு</h4>
+          <div class="param-value">CHF 12'000</div>
+          <p><small>ஒரு ஆதரவு அலகுக்கு அதிகபட்ச மொத்த விலக்கு CHF 15'000 ஆக வரையறுக்கப்பட்டுள்ளது.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. கணக்கீட்டு முறை (மாதந்தோறும்)</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>வாழ்க்கைக்கான அடிப்படைத் தேவை (GBL)</h3>
+          <p>GBL ஆனது SKOS பணவீக்க சரிசெய்தல் 2026 இன் படி உணவு, உடை, ஆற்றல் மற்றும் அன்றாடத் தேவைகளுக்கான செலவுகளை
+            உள்ளடக்கியது:</p>
+          <table class="data-table">
+            <tr>
+              <th>வீட்டு அளவு / நபர்கள் குழு</th>
+              <th>மாதத்திற்கான தொகை (2026)</th>
+            </tr>
+            <tr>
+              <td>1 நபர் (தனி நபர்)</td>
+              <td>CHF 1'061</td>
+            </tr>
+            <tr>
+              <td>2 நபர்கள் (ஜோடி)</td>
+              <td>CHF 1'624</td>
+            </tr>
+            <tr>
+              <td>வீட்டில் கூடுதல் வயது வந்தோர்</td>
+              <td>CHF 400</td>
+            </tr>
+            <tr>
+              <td>11 வயதுக்குட்பட்ட குழந்தை</td>
+              <td>CHF 391</td>
+            </tr>
+            <tr>
+              <td>11 முதல் 15 வயது வரையிலான குழந்தை</td>
+              <td>CHF 699</td>
+            </tr>
+            <tr>
+              <td>பயிற்சியில் உள்ள இளைஞர்கள் (15 வயதுக்கு மேல்)</td>
+              <td>CHF 1'061</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>வீட்டுச் செலவுகள் &amp; சுகாதாரம்</h3>
+          <p>உண்மையான வாடகைச் செலவுகள் மற்றும் சட்டப்பூர்வ அதிகபட்சம் வரையிலான சுகாதார காப்பீட்டைக் கணக்கில்
+            எடுத்துக்கொள்வது:</p>
+          <div class="formula">
+            அங்கீகரிக்கப்பட்ட வீட்டுச் செலவுகள் = Min(உண்மையான வாடகை, கேண்டன் அதிகபட்சம்)
+          </div>
+          <p>அடிப்படை மருத்துவ பராமரிப்புக்கு (KVG), IPV குறைப்பு கொள்கை பொருந்தும்:</p>
+          <div class="formula">
+            சுகாதார காப்பீட்டுத் தேவை = Max(0, உண்மையான பிரீமியம் - IPV பங்களிப்பு)
+          </div>
+          <p><small>*குறிப்பு: மதிப்பீட்டு மாதிரியானது கேண்டன் வாடகை வழிகாட்டுதல்களை அடிப்படையாகக் கொண்டது (எ.கா., ஒரு
+              தனி நபருக்கு தோராயமாக CHF 1'000, வீட்டு அளவுக்கு ஏற்ப வரிசைப்படுத்தப்பட்டது).</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>வருமானக் கணக்கீடு &amp; விலக்குகள்</h3>
+          <p>நிகர வேலை வருமானத்திலிருந்து ஒரு விலக்குத் தொகை (வேலை விலக்கு) கழிக்கப்படுகிறது, இது பொருளாதார சுதந்திரத்தை
+            ஊக்குவிக்கிறது:</p>
+          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+            <strong>கணக்கில் எடுத்துக்கொள்ளக்கூடிய வருமானம்</strong> = நிகர வருமானம் - வேலை விலக்கு (சம்பளத்தில் 20%,
+            அதிகபட்சம் CHF 400)
+          </div>
+          <p><small>ஓய்வூதியங்கள், ஜீவனாம்சம் அல்லது மீதமுள்ள IPV நிலுவைகள் போன்ற பிற வருமானங்கள் 100% வருமானமாக
+              சேர்க்கப்படுகின்றன.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>முடிவு: மாதாந்திர உரிமை</h3>
+          <p>நிதி உதவியானது சமூக வாழ்வாதார குறைந்தபட்சத்தை ஈடுகட்டுவதன் மூலம் தீர்மானிக்கப்படுகிறது:</p>
+          <div
+            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+            உரிமை = (GBL + வீட்டுச் செலவுகள் + சுகாதார காப்பீட்டுத் தேவை + IZU*) - (கணக்கில் எடுத்துக்கொள்ளக்கூடிய
+            வருமானம்)
+          </div>
+          <p><small>*IZU = நிரூபிக்கப்பட்ட வேலை அல்லது ஒருங்கிணைப்பு சேவைகளுக்கான ஒருங்கிணைப்பு கொடுப்பனவு (CHF 100
+              முதல் CHF 300 வரை).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>SO கேண்டனில் சொத்து விதிகள்:</strong><br />
+        ஆரம்ப சோதனையில் கிடைக்கக்கூடிய சொத்து வரையறுக்கப்பட்ட விலக்கு வரம்பை மீறினால், கேண்டன் நடைமுறையின்படி பொருளாதார
+        சமூக உதவிக்கு பொதுவாக உரிமை இருக்காது. அதிகப்படியான சொத்து பெறுவதற்கு முன்பு முழுமையாக செலவிடப்பட வேண்டும்.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">கால்குலேட்டரைத் தொடங்கவும்</a>
+        <a class="btn-link"
+          href="https://so.ch/verwaltung/departement-des-innern/amt-fuer-gesellschaft-und-soziales/sozialhilfe-und-asyl/sozialhilfe/"
+          target="_blank">SO கேண்டன் அதிகாரப்பூர்வ பக்கம்</a>
+      </div>
+    </div>
+    <footer>
+      <p>ஆதாரங்கள்: சோலோதுர்ன் கேண்டன் சமூக உதவிச் சட்டம் (SHG) &amp; SKOS வழிகாட்டுதல்கள் 2026</p>
+      <p>© 2026 welfarecalc.ch | வெளிப்படையான சமூக உதவி கணக்கீடு</p>
+    </footer>
+  </div>
+</body>
+
+</html>

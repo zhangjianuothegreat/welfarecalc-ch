@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>2026 Graubünden Kantonu Acil Yardım Algoritması | Şeffaf Hesaplama | welfarecalc.ch</title>
+    <meta name="description"
+        content="2026 yılında Graubünden Kantonu'nda acil yardım nasıl hesaplanır? Kanton yönergeleri ve resmi verilere dayanan şeffaf algoritmamızı keşfedin.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GR_2026nothilfe_de.html">
+
+    <meta property="og:title" content="2026 Graubünden Kantonu Acil Yardım Algoritması | Şeffaf Hesaplama">
+    <meta property="og:description"
+        content="GR (Graubünden) için 2026 yılı acil yardım resmi hesaplama mantığı, kanton düzenlemelerine dayanır.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GR_2026nothilfe_tr.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Graubünden 2026 Acil Yardım Hesaplaması",
+      "description": "GR (Graubünden) Kantonu'nda acil yardım hesaplama adım adım kılavuzu.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Yetişkin günlük ücretini belirleyin (çift için değresyon faktörü 1.65)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "3. çocuktan itibaren bonus dahil çocuk yardımlarını hesaplayın"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Aylık tutara tahmin edin ve en yakın franka yuvarlayın"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Temel Stiller (AG/AI ile uyumlu) ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: #1e293b;
+            line-height: 1.6;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--official-blue);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-bottom: 6px solid var(--accent-gold);
+        }
+
+        .update-tag {
+            background: #d97706;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        .section-title {
+            color: var(--official-blue);
+            border-bottom: 2px solid var(--accent-gold);
+            padding-bottom: 8px;
+            margin: 2.5rem 0 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .grid-params {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .param-card {
+            background: #f1f5f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--official-blue);
+        }
+
+        .param-card h4 {
+            font-size: 0.85rem;
+            color: #64748b;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .param-value {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--official-blue);
+        }
+
+        .step-box {
+            position: relative;
+            padding-left: 4rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .step-num {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3rem;
+            height: 3rem;
+            background: var(--official-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .step-body {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .formula {
+            background: #eef2ff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            font-family: monospace;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .alert {
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 12px 28px;
+            background: var(--official-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn-link:hover {
+            background: #002244;
+            text-decoration: none;
+        }
+
+        .btn-home {
+            background: var(--swiss-red);
+        }
+
+        .demo-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            margin: 2rem 0 1rem;
+            overflow: hidden;
+        }
+
+        .demo-header {
+            background: #f1f5f9;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: var(--official-blue);
+        }
+
+        .demo-body {
+            padding: 1.5rem;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-item {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-item label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e293b;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-item input {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        button.demo-btn {
+            background: var(--official-blue);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        button.demo-btn:hover {
+            background: #002244;
+            transform: translateY(-1px);
+        }
+
+        .result-panel {
+            margin-top: 1.8rem;
+            padding: 1.2rem;
+            background: #eef2ff;
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-gold);
+            display: none;
+        }
+
+        .calc-steps {
+            font-family: monospace;
+            background: white;
+            padding: 0.8rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .final-amount {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #be123c;
+            background: #fff1f2;
+            padding: 0.6rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1.5rem;
+            background: #f8fafc;
+            color: #64748b;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="update-tag">RESMİ VERİ 2026 · Acil Yardım GR</div>
+            <h1>Acil Yardım Algoritması: Graubünden Kantonu</h1>
+            <p>2026 yılı için kanton uygulamasına göre hesaplama mantığının şeffaf sunumu</p>
+        </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
+        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+    </div>
+    
+
+        <div class="content">
+            <p>Şeffaflık güven inşa eder. Graubünden (GR) Kantonu'nda, reddedilen sığınmacılar için acil yardım, belirli
+                bir azalan (degresif) model kullanılarak hesaplanır. Burada welfarecalc.ch üzerindeki hesaplamalarımızın
+                temelini oluşturan tüm algoritmayı açıklıyoruz.</p>
+
+            <h2 class="section-title">1. Temel Parametreler (GR 2026)</h2>
+            <div class="grid-params">
+                <div class="param-card">
+                    <h4>Temel Günlük Ücret (Bekar)</h4>
+                    <div class="param-value">9.00 CHF / gün</div>
+                    <p><small>Toplu konaklama dahil temel ihtiyaçlar (harçlık/yemek).</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Çift Katsayısı</h4>
+                    <div class="param-value">Faktör 1.65</div>
+                    <p><small>Birlikte yaşayan iki yetişkin için indirimli oranlar.</small></p>
+                </div>
+                <div class="param-card">
+                    <h4>Çocuk Faktörü</h4>
+                    <div class="param-value">Faktör 0.52</div>
+                    <p><small>Temel ücrete kıyasla çocuk başına ek ihtiyaç.</small></p>
+                </div>
+            </div>
+
+            <h2 class="section-title">2. Hesaplama Adımları (Adım Adım)</h2>
+
+            <div class="step-box">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                    <h3>Yetişkin İhtiyacının Hesaplanması</h3>
+                    <p>Graubünden Kantonu, çiftler için 1.65 değresyon faktörü kullanır. Bu, ikinci kişinin bekar
+                        ücretinin %65'ini aldığı anlamına gelir.</p>
+                    <div class="formula">
+                        Yetişkin sayısı = 1 ise: 9.00 CHF / gün<br>
+                        Yetişkin sayısı > 1 ise: (9.00 + (yetişkin_sayısı - 1) × 9.00 × 0.65)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                    <h3>Çocuk Ek Ödemelerinin Hesaplanması</h3>
+                    <p>Her çocuk için yetişkin ücretinin %52'si tutarında temel bir miktar eklenir. Ayrıca GR, 3.
+                        çocuktan itibaren temel ücretin %10'u oranında bir bonus tanır.</p>
+                    <div class="formula">
+                        Çocuk temel: 4.68 CHF (9.00 × 0.52)<br>
+                        3. çocuktan itibaren bonus: + 0.90 CHF (9.00 × 0.10)<br>
+                        Toplam çocuk = (çocuk_sayısı × 4.68) + (MAKS(0; çocuk_sayısı-2) × 0.90)
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-box">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                    <h3>Aylık Tahmin ve Yuvarlama</h3>
+                    <p>Toplam günlük tutar, 30.42 aylık faktörü ile çarpılır ve bir sonraki tam franka yuvarlanır.</p>
+                    <div
+                        style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                        Aylık hak = YUVARLA( (Toplam günlük tutar × 30.42) ; 0 )
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert">
+                <strong>Graubünden'e Özgü Detaylar:</strong><br>
+                • <strong>Konaklama türü:</strong> Bu oranlar kanton toplu merkezlerindeki konaklama için
+                geçerlidir.<br>
+                • <strong>Ayni yardım önceliği:</strong> Acil yardım öncelikle ayni olarak sağlanır
+                (konaklama/yiyecek).<br>
+                • <strong>Yasal dayanak:</strong> Kanton sığınma yönetmeliği ve GR Göç Dairesi yönergelerine göre.
+            </div>
+
+            <h2 class="section-title">3. Etkileşimli Canlı Kontrol</h2>
+            <div class="demo-card">
+                <div class="demo-header">🧪 Algoritma Simülatörü Graubünden (2026)</div>
+                <div class="demo-body">
+                    <div class="input-group">
+                        <div class="input-item">
+                            <label>👤 Yetişkin Sayısı</label>
+                            <input type="number" id="adultsCount" value="1" min="1">
+                        </div>
+                        <div class="input-item">
+                            <label>🧒 Çocuk Sayısı</label>
+                            <input type="number" id="childrenCount" value="0" min="0">
+                        </div>
+                    </div>
+                    <button class="demo-btn" id="runCalcBtn">Hesaplamayı Başlat</button>
+
+                    <div id="liveResultPanel" class="result-panel">
+                        <h3>📐 Hesaplama Kanıtı (GR Mantığı)</h3>
+                        <div id="stepsDetail" class="calc-steps"></div>
+                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
+                                style="font-size: 0.9rem;">(aylık yuvarlanmış)</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Ana Sayfaya Dön</a>
+            <a href="https://www.gr.ch/DE/institutionen/verwaltung/dvs/soa/beratung/sozialberatung/Seiten/default.aspx"
+                target="_blank" class="btn-link">Resmi sayfa Graubünden Kantonu</a>
+        </div>
+
+
+        <footer>
+            <p>Kaynak: Graubünden Göç ve Medeni Hukuk Dairesi – Durum 2026</p>
+            <p>welfarecalc.ch tarafından sağlanmıştır | Adil bir İsviçre için açık algoritmalar</p>
+            <p>© 2026 welfarecalc.ch – Şeffaflık Girişimi</p>
+        </footer>
+    </div>
+
+    <script>
+        (function () {
+            const GR_PARAMS = {
+                base: 9.00,
+                coupleFactor: 0.65, // GR'ye özel
+                childFactor: 0.52,
+                childBonus: 0.10,
+                days: 30.42
+            };
+
+            function calculateGR(adults, children) {
+                // Adım 1: Yetişkinler
+                const adultDaily = (adults === 1) ? GR_PARAMS.base : (GR_PARAMS.base + (adults - 1) * GR_PARAMS.base * GR_PARAMS.coupleFactor);
+
+                // Adım 2: Çocuklar
+                const childBase = children * (GR_PARAMS.base * GR_PARAMS.childFactor);
+                const childBonus = (children >= 3) ? ((children - 2) * GR_PARAMS.base * GR_PARAMS.childBonus) : 0;
+                const childTotal = childBase + childBonus;
+
+                // Adım 3: Aylık toplam ve yuvarlama
+                const dailyTotal = adultDaily + childTotal;
+                const monthlyRaw = dailyTotal * GR_PARAMS.days;
+                const monthlyRounded = Math.round(monthlyRaw);
+
+                return { adultDaily, childTotal, childBonus, dailyTotal, monthlyRaw, monthlyRounded };
+            }
+
+            document.getElementById('runCalcBtn').addEventListener('click', function () {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const res = calculateGR(adults, children);
+
+                let bonusText = res.childBonus > 0 ? `<br>+ 3. çocuktan itibaren bonus: ${res.childBonus.toFixed(2)} CHF` : "";
+
+                document.getElementById('stepsDetail').innerHTML = `
+                <strong>📌 Adım 1 (Yetişkinler):</strong> ${res.adultDaily.toFixed(2)} CHF / gün<br>
+                <strong>📌 Adım 2 (Çocuklar):</strong> ${res.childTotal.toFixed(2)} CHF / gün ${bonusText}<br>
+                <strong>📌 Toplam Günlük Ücret:</strong> ${res.dailyTotal.toFixed(2)} CHF<br>
+                <strong>📌 Aylık (30.42 gün):</strong> ${res.monthlyRaw.toFixed(2)} CHF<br>
+                <strong>💰 Yuvarlama (GR standardı):</strong> ${res.monthlyRounded}.00 CHF
+            `;
+                document.getElementById('monthlyAmountDisplay').innerText = res.monthlyRounded + ".00 CHF";
+                document.getElementById('liveResultPanel').style.display = 'block';
+            });
+        })();
+    </script>
+</body>
+
+</html>

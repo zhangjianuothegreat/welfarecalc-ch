@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+
+<html lang="sq">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmi IPV Kantoni Vaud 2026 | Llogaritje Transparente (RDU) | welfarecalc.ch</title>
+  <meta
+    content="Si llogaritet subvencioni i primave (IPV) 2026 në Kantonin Vaud? Zbuloni modelin zyrtar me dy faza (Subside ordinaire &amp; spécifique) bazuar në RDU."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmi IPV Kantoni Vaud 2026 | Llogaritje Transparente (RDU)" property="og:title" />
+  <meta
+    content="Algoritmi i saktë matematik i subvencionit të primave 2026 në Kantonin Vaud. Formulat zyrtare të zbuluara në mënyrë transparente."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e subvencionit të primeve Vaud 2026",
+      "description": "Udhëzues hap pas hapi për përcaktimin e të drejtës për IPV në Kantonin Vaud duke përdorur modelin RDU.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i RDU (Revenu déterminant unifié) duke shtuar shtyllën 3a dhe llogaritjen e pasurisë (6.7%)."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Llogaritja e subvencionit të zakonshëm (Subside ordinaire) përmes kurbës progresive matematikore kantonale."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Kontrolli dhe rritja përmes subvencionit specifik (Subside spécifique), nëse primi i mbetur tejkalon 10% të RDU."
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: var(--swiss-red);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .step-body h3 {
+      color: var(--official-blue);
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+
+    .formula-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 1.25rem;
+      border-radius: 6px;
+      margin: 0.75rem 0;
+      font-family: 'Consolas', 'Courier New', monospace;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .parameter-table th,
+    .parameter-table td {
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    .parameter-table th {
+      background: #f1f5f9;
+      color: var(--official-blue);
+      font-weight: 600;
+    }
+
+    .parameter-table tr:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .alert {
+      background: #fef2f2;
+      border-left: 4px solid var(--swiss-red);
+      padding: 1.25rem;
+      border-radius: 6px;
+      color: #991b1b;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+    }
+
+    .btn-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      margin: 0.5rem;
+      transition: background 0.2s;
+    }
+
+    .btn-link:hover {
+      background: #002244;
+    }
+
+    .btn-home {
+      background: #64748b;
+    }
+
+    .btn-home:hover {
+      background: #475569;
+    }
+
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.85rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #cbd5e1;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <span class="update-tag">ALGORITMI ZYRTAR 2026</span>
+      <h1>Subvencioni i Primeve Kantoni Vaud (VD) 2026</h1>
+      <p>Bërthama zyrtare matematikore me dy faza për llogaritjen e Subside Ordinaire dhe Spécifique</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+    <div class="content">
+      <p>Ndryshe nga kantonet me shkallë të ngurtë të ardhurash, Kantoni Vaud përdor një model shumë të zhvilluar dhe
+        socialisht të drejtë <strong>RDU (Revenu déterminant unifié)</strong>. Qëllimi i kantonit është të mbulojë
+        barrën e sigurimit të detyrueshëm të kujdesit shëndetësor (LAMal) në rreth <strong>10% të të ardhurave
+          përcaktuese</strong>.</p>
+      <h2 class="section-title">Parametrat Kantonalë për 2026</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Subvencioni Maksimal Mujor (Të rritur)</h4>
+          <div class="param-value">CHF 331.00 / muaj</div>
+        </div>
+        <div class="param-card">
+          <h4>Subvencioni Minimal Mujor (Të rritur)</h4>
+          <div class="param-value">CHF 30.00 / muaj</div>
+        </div>
+        <div class="param-card">
+          <h4>Norma e Llogaritjes së Pasurisë (RDU)</h4>
+          <div class="param-value">6.7% (1/15 e pasurisë neto)</div>
+        </div>
+        <div class="param-card">
+          <h4>Kufiri i Sipërm i Vetë-Mbajtjes (Barra)</h4>
+          <div class="param-value">10.0% e RDU</div>
+        </div>
+      </div>
+      <h2 class="section-title">Primet Zyrtare të Referencës 2026 (OVAM)</h2>
+      <p>Llogaritja nuk merr parasysh franshizën tuaj aktuale luksoze ose sigurimet plotësuese, por primet kantonale të
+        referencës të përcaktuara nga Këshilli i Shtetit (Primes de référence 2026):</p>
+      <table class="parameter-table">
+        <thead>
+          <tr>
+            <th>Grupmosha (Kodi)</th>
+            <th>Rajoni 1 (Urban, p.sh. Lozanë)</th>
+            <th>Rajoni 2 (Rural)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Të rritur (nga 26 vjeç)</strong></td>
+            <td>CHF 4'212 / vit (351.-/muaj)</td>
+            <td>CHF 3'912 / vit (326.-/muaj)</td>
+          </tr>
+          <tr>
+            <td><strong>Të rinj (19 - 25 vjeç)</strong></td>
+            <td>CHF 2'820 / vit (235.-/muaj)</td>
+            <td>CHF 2'580 / vit (215.-/muaj)</td>
+          </tr>
+          <tr>
+            <td><strong>Fëmijë (0 - 18 vjeç)</strong></td>
+            <td>CHF 1'188 / vit (99.-/muaj)</td>
+            <td>CHF 1'068 / vit (89.-/muaj)</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="section-title">Logjika e Llogaritjes Hap pas Hapi</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Përcaktimi i RDU-së së Rregulluar</h3>
+          <p>RDU kantonale bazohet në vlerësimin përfundimtar tatimor, të rregulluar për legjislacionet specifike të
+            Vaud-it (përjashtimi i borxheve private dhe shtesave):</p>
+          <div class="formula-box">
+            RDU = Të ardhurat neto të tatueshme <br />
+            + Zbritjet për kontributet në shtyllën 3a <br />
+            + Primet e sigurimit shëndetësor të zbritura nga taksat <br />
+            + [Pasuria neto e disponueshme - Shuma e përjashtuar] × 6.7% <br />
+            - Zbritjet standarde (p.sh., zbritja për çift: CHF 4'400, zbritja për fëmijë: CHF 1'300)
+          </div>
+          <p><small>*Shënim: Në Kantonin Vaud, borxhet private ose hipotekat NUK merren parasysh për ulje në testin e
+              pasurisë për IPV!</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Llogaritja e Subvencionit të Zakonshëm (Subside ordinaire)Kantoni Vaud përdor për llogaritjen e të drejtës
+            së zakonshme një funksion kurbe progresive të zbutur në mënyrë logaritmike. Për familjet standarde UER,
+            zbatohen parametrat e mëposhtëm matematikor:
+            <div class="formula-box">
+              Nëse RDU ≤ CHF 16'000 (kufiri C6): <br />
+                Subvencioni_I_Zakonshëm = Primi maksimal i referencës së familjes <br /><br />
+              Nëse CHF 16'000 &lt; RDU ≤ CHF 40'000 (kufiri A6): <br />
+                Faktori i kurbës = P6 (2.3) &amp; Q6 (0.8) <br />
+                Subvencioni_I_Zakonshëm = Llogaritet përmes formulës së lëvizshme kantonale të kurbës së dekompresimit.
+              <br /><br />
+              Zbatimi i kufijve minimalë ligjorë: <br />
+                Subvencioni i zakonshëm mujor për të rritur caktohet në minimum CHF 30.00 dhe kufizohet në maksimum CHF
+              331.00.
+            </div>
+          </h3>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Rrjeti i Sigurisë: Subvencioni Specifik (Subside spécifique)</h3>
+          <p>Ky është faktori më i rëndësishëm korrigjues që mungon në llogaritësit standardë. Nëse pas zbritjes së
+            subvencionit të zakonshëm, barra e mbetur e primeve të familjes është tepër e lartë, aktivizohet mburoja
+            mbrojtëse prej 10%:</p>
+          <div class="formula-box">
+            Barra e lejuar e primeve të familjes = Totali i primeve të referencës së familjes <br />
+            Barra e mbetur = Barra e lejuar e primeve të familjes - Subvencioni_I_Zakonshëm_Vjetor <br /><br />
+            Pragu kantonal i përballueshmërisë = RDU × 10% <br /><br />
+            Nëse Barra e mbetur &gt; Pragu i përballueshmërisë: <br />
+              Subvencioni_Specifik = Barra e mbetur - Pragu i përballueshmërisë <br />
+            Përndryshe: <br />
+              Subvencioni_Specifik = 0
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>E Drejta Përfundimtare Totale dhe Kufizimi</h3>
+          <p>Shuma përfundimtare e pagesës rezulton nga mbledhja e të dy komponentëve të subvencionit dhe kufizohet nga
+            primi real dhe efektiv i të siguruarit:</p>
+          <div class="formula-box">
+            E_Drejta_Absolute = Subvencioni_I_Zakonshëm + Subvencioni_Specifik <br />
+            E_Drejta_Përfundimtare = Min(E_Drejta_Absolute, Primi_Efektiv_i_Sigurimit_Shëndetësor_të_Familjes)
+          </div>
+          <p><small>Shumat nën CHF 100.00 në vit nuk paguhen për arsye efikasiteti (kufiri i vogëlsisë).</small></p>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Kufiri i Përjashtimit të Pasurisë (Kufiri i Sipërm):</strong><br />
+        Nëse pasuria neto e rregulluar (pa zbritjen e borxheve) tejkalon <strong>CHF 100'000</strong> për beqarët ose
+        <strong>CHF 160'000</strong> për çiftet e martuara, e drejta ligjore për subvencionimin e primeve në Kantonin
+        Vaud shuhet plotësisht – pavarësisht se sa të ulëta mund të jenë të ardhurat RDU.
+      </div>
+      <div style="text-align: center; margin-top: 2.5rem;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Kthehu te faqja kryesore</a>
+        <a class="btn-link"
+          href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie"
+          target="_blank">Faqja Zyrtare e Kantonit VD</a>
+      </div>
+    </div>
+    <footer>
+      <p>Burimi: Sekretariati i Përgjithshëm i Drejtorisë së Përgjithshme për Kohezionin Social (DGCS) &amp; Zyra
+        Vaudoise e Sigurimit Shëndetësor (OVAM), Kantoni Vaud 2026. Ofruar nga <a href="https://www.welfarecalc.ch"
+          target="_blank">welfarecalc.ch</a>.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

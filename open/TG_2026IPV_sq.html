@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+
+<html lang="sq">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Algoritmi IPV i Kantonit Thurgau 2026 | Llogaritje Transparente | welfarecalc.ch</title>
+  <meta
+    content="Si llogaritet subvencioni i primeve (IPV) 2026 në Kantonin Thurgau? Zbuloni algoritmin tonë transparent bazuar në udhëzimet zyrtare të SVZ-së."
+    name="description" />
+  <meta content="index, follow" name="robots" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_sq.html" rel="canonical" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_de.html" hreflang="de" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_fr.html" hreflang="fr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_it.html" hreflang="it" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_en.html" hreflang="en" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_es.html" hreflang="es" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_pt.html" hreflang="pt" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_sq.html" hreflang="sq" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_hr.html" hreflang="hr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_pl.html" hreflang="pl" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_tr.html" hreflang="tr" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_ta.html" hreflang="ta" rel="alternate" />
+  <link href="https://www.welfarecalc.ch/open/TG_2026IPV_de.html" hreflang="x-default" rel="alternate" />
+  <meta content="Algoritmi IPV i Kantonit Thurgau 2026 | Llogaritje Transparente" property="og:title" />
+  <meta content="Logjika zyrtare e llogaritjes për subvencionimin e primeve 2026 në Thurgau."
+    property="og:description" />
+  <meta content="https://www.welfarecalc.ch/open/TG_2026IPV_sq.html" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta content="summary" name="twitter:card" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Llogaritja e subvencionit të primit Thurgau 2026",
+      "description": "Udhëzues hap pas hapi për përcaktimin e të drejtës për IPV në Kantonin Thurgau bazuar në taksën e thjeshtë.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Kontrollimi i kufirit të pasurisë (pasuria e tatueshme duhet të jetë 0 CHF)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Përcaktimi i taksës së thjeshtë në 100% për të përcaktuar kategorinë (Kat. A, B ose C)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Kontrollimi i të drejtës për fëmijë dhe të rinj në arsimim"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Krahasimi me primet aktuale të sigurimit shëndetësor dhe kufiri minimal i pagesës"
+        }
+      ]
+    }
+    </script>
+  <style>
+    :root {
+      --swiss-red: #e62117;
+      --official-blue: #003366;
+      --accent-gold: #b8860b;
+      --bg-light: #f8fafc;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-light);
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 1.5rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    header {
+      background: var(--official-blue);
+      color: white;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-bottom: 6px solid var(--accent-gold);
+    }
+
+    .update-tag {
+      background: #d97706;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .content {
+      padding: 2.5rem;
+    }
+
+    .section-title {
+      color: var(--official-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 8px;
+      margin: 2.5rem 0 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .grid-params {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .param-card {
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border-left: 4px solid var(--official-blue);
+    }
+
+    .param-card h4 {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .param-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--official-blue);
+    }
+
+    .step-box {
+      position: relative;
+      padding-left: 4rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .step-num {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3rem;
+      height: 3rem;
+      background: var(--official-blue);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border: 4px solid #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .step-body {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 10px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    .data-table th {
+      text-align: left;
+      background: #f8fafc;
+      padding: 10px;
+      border-bottom: 2px solid #e2e8f0;
+      font-size: 0.9rem;
+    }
+
+    .data-table td {
+      padding: 10px;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.95rem;
+    }
+
+    .formula-box {
+      background: #eef2ff;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    .highlight-red {
+      color: #be123c;
+      font-weight: bold;
+    }
+
+    .alert {
+      background: #fffbeb;
+      border: 1px solid #fef3c7;
+      border-left: 5px solid #f59e0b;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      border-radius: 8px;
+    }
+
+    .btn-link {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 12px 28px;
+      background: var(--official-blue);
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn-home {
+      background: var(--swiss-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.9rem;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="update-tag">UDHËZIME ZYRTARE 2026</div>
+      <h1>Algoritmi IPV: Kantoni Thurgau (TG)</h1>
+      <p>Zbulim transparent i logjikës së llogaritjes për vitin 2026</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
+        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+    </div>
+    
+    <div class="content">
+      <p>Besim përmes transparencës. Këtu zbulojmë se si llogaritësi ynë përcakton subvencionin tuaj të mundshëm të
+        primit në Kantonin Thurgau (TG). Ndryshe nga modelet e përqindjes së të ardhurave, logjika e llogaritjes së
+        Thurgaut bazohet në thelb në modelin tatimor të <strong>taksës së thjeshtë në 100%</strong>.</p>
+      <h2 class="section-title">1. Parametrat Kryesorë (2026)</h2>
+      <div class="grid-params">
+        <div class="param-card">
+          <h4>Faktor Përcaktues</h4>
+          <div class="param-value">Taksa e Thjeshtë (100%)</div>
+          <p><small>Klasifikimi bëhet drejtpërdrejt përmes shumës së taksës bazë, jo përmes të ardhurave neto.</small>
+          </p>
+        </div>
+        <div class="param-card">
+          <h4>Kufiri i Pasurisë</h4>
+          <div class="param-value">CHF 0 (Absolut)</div>
+          <p><small>Pasuria e tatueshme e vlerësimit provizor ose përfundimtar duhet të jetë 0 Fr.</small></p>
+        </div>
+      </div>
+      <h2 class="section-title">2. Rruga e Llogaritjes</h2>
+      <div class="step-box">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Kriteri i Përjashtimit &amp; Kontrolli i Pasurisë</h3>
+          <p>Së pari, kontrollohet pengesa absolute e pasurisë. Sistemi kërkon:</p>
+          <div class="formula-box">
+            Nëse <strong>[Pasuria e Tatueshme] &gt; 0</strong> → <span class="highlight-red">Nuk ka të drejtë (E drejta
+              = 0)</span>
+          </div>
+          <p><small>Shënim: Në Kantonin Thurgau, çdo pasuri e tatueshme mbi 0 CHF çon në humbjen e plotë të së drejtës
+              për IPV.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Klasifikimi i Kategorisë për të Rritur</h3>
+          <p>Nëse pasuria është 0 CHF, <strong>taksa e thjeshtë shtetërore në 100%</strong> (sipas të dhënave provizore
+            tatimore të vitit paraardhës) përcakton kategorinë IPV dhe subvencionin fiks paushall përkatës për të
+            rritur:</p>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Kategoria</th>
+                <th>Taksa e Thjeshtë në 100% (CHF)</th>
+                <th>Kontributi Fiks IPV (CHF / Vit)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Kategoria A</strong></td>
+                <td>0.00 deri 400.00</td>
+                <td>CHF 3'408</td>
+              </tr>
+              <tr>
+                <td><strong>Kategoria B</strong></td>
+                <td>400.01 deri 600.00</td>
+                <td>CHF 2'556</td>
+              </tr>
+              <tr>
+                <td><strong>Kategoria C</strong></td>
+                <td>600.01 deri 800.00</td>
+                <td>CHF 1'704</td>
+              </tr>
+              <tr>
+                <td><strong>Nuk ka të drejtë</strong></td>
+                <td>&gt; 800.00</td>
+                <td>CHF 0</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="formula-box">
+            <strong>[Totali i Subvencionit për të Rritur]</strong> = Numri i të rriturve × Kontributi Fiks IPV i
+            kategorisë
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>E drejta për Fëmijë (0 - 18 vjeç)</h3>
+          <p>Fëmijët në Kantonin Thurgau marrin një shumë fikse të pavarur, të shkëputur nga kontributi i të rriturve.
+            Kufiri i sipërm i taksës së thjeshtë për familjet është rritur ndjeshëm:</p>
+          <div class="formula-box">
+            Nëse <strong>[Taksa e Thjeshtë në 100%] ≤ 1'600.00 CHF</strong>:<br />
+            <strong>[Totali i Subvencionit për Fëmijë]</strong> = Numri i fëmijëve × <strong>CHF 1'236 / Vit</strong>
+          </div>
+          <p><small>Nëse taksa e thjeshtë në 100% është më shumë se 1'600 CHF, e drejta e fëmijëve humbet
+              plotësisht.</small></p>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>E drejta për të Rinj në Arsimim (19 - 25 vjeç)</h3>
+          <p>Për të rinjtë që janë në një arsimim të njohur ligjërisht në vitin 2026 (praktikë profesionale ose
+            studime), zbatohet një kufi përqindjeje bazuar në primin mesatar kantonal:</p>
+          <div class="formula-box">
+            Vlen vetëm nëse <strong>[Taksa e Thjeshtë në 100%] ≤ 800.00 CHF</strong>:<br />
+            Kontributi për person = 50% e primit efektiv të KVG-së, i kufizuar në maksimum 50% të primit mesatar
+            kantonal (CHF 4'752).<br />
+            <strong>Subvencioni Maksimal</strong> = <strong>CHF 2'376 / Vit</strong> (CHF 198 / Muaj)
+          </div>
+        </div>
+      </div>
+      <div class="step-box">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>Kufizimi i Pagesës dhe Parëndësia</h3>
+          <p>E drejta përfundimtare vjetore IPV rrjedh nga mbledhja e anëtarëve të kualifikuar të familjes, por i
+            nënshtrohet dy kontrolleve strikte matematikore:</p>
+          <div class="formula-box">
+            1. <strong>Kufiri Efektiv:</strong> E drejta totale = Min(E drejta e llogaritur, Primet e paguara realisht
+            të KVG-së)<br />
+            2. <strong>Pagesa Minimale:</strong> Nëse e drejta totale &lt; <strong>CHF 30</strong> → E drejta = <span
+              class="highlight-red">CHF 0</span>
+          </div>
+        </div>
+      </div>
+      <div class="alert">
+        <strong>Shënim i rëndësishëm procedural në Thurgau:</strong><br />
+        Kantoni Thurgau praktikon një <strong>procedurë proaktive aplikimi</strong>. Komunat përcaktojnë automatikisht
+        në pranverë (Mars/Prill) personat potencialisht të drejtë, bazuar në të dhënat provizore tatimore, dhe u
+        dërgojnë atyre formularin e aplikimit të parapërgatitur me postë. Ky duhet të kontrollohet, nënshkruhet dhe
+        dorëzohet brenda datës <strong>31 Dhjetor 2026</strong>. Kush nuk merr formularë (p.sh. për shkak të lëvizjes
+        ose përkeqësimit të madh të të ardhurave), duhet ta kërkojë atë në mënyrë aktive nga komuna ose online.
+      </div>
+      <div style="text-align: center;">
+        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Kthehu te Faqja Kryesore</a>
+        <a class="btn-link" href="https://svztg.ch" target="_blank">Faqja Zyrtare e SVZ Thurgau</a>
+      </div>
+    </div>
+    <footer>
+      <p>Burimi: Qendra e Sigurimeve Shoqërore Kantoni Thurgau (SVZ TG) Udhëzimet 2026 | Ofruar nga welfarecalc.ch</p>
+      <p>Mohim përgjegjësie: Kjo pasqyrë algoritmike shërben vetëm për qëllime informimi dhe transparence dhe nuk përbën
+        një vendim ligjërisht të detyrueshëm.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

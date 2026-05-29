@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Emergency Aid Algorithm Canton Geneva (GE) 2026 | Transparent Calculation | welfarecalc.ch</title>
+    <meta name="description" content="How is emergency aid calculated in 2026 in the Canton of Geneva (GE)? Discover our transparent algorithm based on the official guidelines of the Hospice général.">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_es.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_pt.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_tr.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_sq.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_pl.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_hr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GE_2026nothilfe_de.html">
+
+    <meta property="og:title" content="Emergency Aid Algorithm Canton Geneva 2026 | Transparent Calculation">
+    <meta property="og:description" content="Official calculation logic for emergency aid 2026 in Geneva (GE) based on cantonal guidelines.">
+    <meta property="og:url" content="https://www.welfarecalc.ch/open/GE_2026nothilfe_en.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Emergency Aid Calculation Geneva 2026",
+      "description": "Step-by-step guide to calculating emergency aid (Aide d'urgence) in the Canton of Geneva.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "text": "Determine daily adult rate using the partner factor (1.78)"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Add child allowances (factor 0.60) and large family bonus"
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Monthly extrapolation and commercial rounding"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* ============ Unified Core Styles ============ */
+        :root {
+            --swiss-red: #e62117;
+            --official-blue: #003366;
+            --accent-gold: #b8860b;
+            --bg-light: #f8fafc;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+        body { background-color: var(--bg-light); color: #1e293b; line-height: 1.6; padding: 1.5rem; }
+        .container { max-width: 960px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        
+        header { background: var(--official-blue); color: white; padding: 3rem 1.5rem; text-align: center; border-bottom: 6px solid var(--accent-gold); }
+        .update-tag { background: #d97706; color: white; padding: 4px 12px; border-radius: 4px; font-size: 0.85rem; font-weight: bold; margin-bottom: 1rem; display: inline-block; }
+        
+        .content { padding: 2.5rem; }
+        .section-title { color: var(--official-blue); border-bottom: 2px solid var(--accent-gold); padding-bottom: 8px; margin: 2.5rem 0 1.5rem; font-size: 1.5rem; }
+        
+        .grid-params { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+        .param-card { background: #f1f5f9; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--official-blue); }
+        .param-card h4 { font-size: 0.85rem; color: #64748b; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .param-value { font-size: 1.25rem; font-weight: 700; color: var(--official-blue); }
+        
+        .step-box { position: relative; padding-left: 4rem; margin-bottom: 2.5rem; }
+        .step-num { position: absolute; left: 0; top: 0; width: 3rem; height: 3rem; background: var(--official-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem; border: 4px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .step-body { background: #fff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 10px; }
+        
+        .formula { background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace; font-weight: bold; color: var(--official-blue); }
+        .alert { background: #fffbeb; border: 1px solid #fef3c7; border-left: 5px solid #f59e0b; padding: 1.5rem; margin: 1.5rem 0; border-radius: 8px; }
+        
+        /* Interactive Demo Styles */
+        .demo-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; margin: 2rem 0 1rem; overflow: hidden; }
+        .demo-header { background: #f1f5f9; padding: 1rem 1.5rem; border-bottom: 1px solid #e2e8f0; font-weight: bold; color: var(--official-blue); }
+        .demo-body { padding: 1.5rem; }
+        .input-group { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+        .input-item { flex: 1; min-width: 180px; }
+        .input-item label { display: block; font-weight: 600; font-size: 0.85rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .input-item input { width: 100%; padding: 0.7rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+        button.demo-btn { background: var(--official-blue); color: white; border: none; padding: 0.7rem 1.8rem; border-radius: 6px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+        button.demo-btn:hover { background: #002244; transform: translateY(-1px); }
+        .result-panel { margin-top: 1.8rem; padding: 1.2rem; background: #eef2ff; border-radius: 10px; border-left: 4px solid var(--accent-gold); display: none; }
+        .calc-steps { font-family: monospace; background: white; padding: 0.8rem; border-radius: 6px; margin-bottom: 0.8rem; font-size: 0.9rem; }
+        .final-amount { font-size: 1.3rem; font-weight: 800; color: #be123c; background: #fff1f2; padding: 0.6rem 1rem; border-radius: 8px; display: inline-block; }
+        
+        .btn-link { display: inline-block; margin: 0.5rem; padding: 12px 28px; background: var(--official-blue); color: white; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn-home { background: var(--swiss-red); }
+        
+        footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="update-tag">OFFICIAL 2026 DATA · EMERGENCY AID GE</div>
+        <h1>Emergency Aid Algorithm: Canton of Geneva</h1>
+        <p>Transparent representation of the calculation logic (Aide d'urgence) according to 2026 guidelines</p>
+    </header>
+
+    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
+        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
+        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
+        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+    </div>
+    
+
+    <div class="content">
+        <p>In the Canton of Geneva (GE), emergency aid for persons required to leave Switzerland is coordinated by the <strong>Hospice général</strong>. To foster trust through transparency, we disclose the complete calculation algorithm for the year 2026.</p>
+
+        <h2 class="section-title">1. Calculation Parameters (Geneva 2026)</h2>
+        <div class="grid-params">
+            <div class="param-card">
+                <h4>Base Daily Rate (single adult)</h4>
+                <div class="param-value">CHF 10.00 / day</div>
+                <p><small>Basic amount for an adult person in individual accommodation.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Partner Factor (second adult)</h4>
+                <div class="param-value">Factor 1.78</div>
+                <p><small>Degression factor for couples or shared households.</small></p>
+            </div>
+            <div class="param-card">
+                <h4>Child Surcharge</h4>
+                <div class="param-value">CHF 6.00 / day</div>
+                <p><small>Equivalent to 60% of the adult base rate per child.</small></p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Calculation Method (Step by Step)</h2>
+
+        <div class="step-box">
+            <div class="step-num">1</div>
+            <div class="step-body">
+                <h3>Determine Daily Adult Rate</h3>
+                <p>Geneva uses a progressive factor for the second person in the household:</p>
+                <div class="formula">
+                    Number of adults = 1: CHF 10.00<br>
+                    Number of adults > 1: (10.00 + (number of adults - 1) × 10.00 × 0.78)
+                </div>
+                <p><small>A couple receives CHF 17.80 per day (degression model).</small></p>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">2</div>
+            <div class="step-body">
+                <h3>Child Allowances & Large Family Bonus</h3>
+                <p>Each child receives CHF 6.00 per day. From the 3rd child onward, an additional bonus of 10% of the base rate (CHF 1.00) is granted according to the federal basis:</p>
+                <div class="formula">
+                    Child daily total = (number of children × 6.00) + (IF children >= 3 THEN (children - 2) × 1.00 ELSE 0)
+                </div>
+            </div>
+        </div>
+
+        <div class="step-box">
+            <div class="step-num">3</div>
+            <div class="step-body">
+                <h3>Monthly Extrapolation & Rounding</h3>
+                <p>The daily total is multiplied by the monthly factor 30.42 and rounded commercially to the nearest Swiss franc.</p>
+                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+                    Monthly amount = ROUND( (Total Daily Rate × 30.42) ; 0 )
+                </div>
+            </div>
+        </div>
+
+        <div class="alert">
+            <strong>Important note for Geneva (GE):</strong><br>
+            • The rates apply to <strong>individual accommodation</strong>. If accommodated in collective centers with meals, benefits in kind are deducted directly from the cash benefit.<br>
+            • Legal basis: Loi sur l'insertion et l'aide sociale individuelle (LIASI) & Hospice général guidelines 2026.
+        </div>
+
+        <div class="demo-card">
+            <div class="demo-header">🧪 Transparency Check: Geneva Emergency Aid live test</div>
+            <div class="demo-body">
+                <p>Simulate the calculation according to the GE algorithm (2026).</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label>👤 Number of adults</label>
+                        <input type="number" id="adultsCount" value="1" min="1">
+                    </div>
+                    <div class="input-item">
+                        <label>🧒 Number of children</label>
+                        <input type="number" id="childrenCount" value="0" min="0">
+                    </div>
+                </div>
+                <button class="demo-btn" id="runCalcBtn">Run algorithm</button>
+                
+                <div id="liveResultPanel" class="result-panel">
+                    <h3>📐 Calculation proof (GE logic)</h3>
+                    <div id="stepsDetail" class="calc-steps"></div>
+                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(monthly rounded)</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Back to homepage</a>
+            <a href="https://www.ge.ch" target="_blank" class="btn-link">Official website Canton GE</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Source: Hospice général Geneva – Emergency Aid 2026</p>
+        <p>Provided by welfarecalc.ch | Open algorithms for Switzerland</p>
+        <p>© 2026 welfarecalc.ch – Open Algorithm Initiative</p>
+    </footer>
+</div>
+
+<script>
+    (function() {
+        const PARAMS = {
+            baseDaily: 10.00,
+            partnerFactor: 0.78,
+            childRate: 6.00,
+            bonusRate: 1.00,
+            avgDays: 30.42
+        };
+
+        function computeGENothilfe(adults, children) {
+            // Adults calculation with degression
+            let adultDaily = (adults === 1) ? PARAMS.baseDaily : (PARAMS.baseDaily + (adults - 1) * PARAMS.baseDaily * PARAMS.partnerFactor);
+            
+            // Children + large family bonus
+            let childDaily = children * PARAMS.childRate;
+            let bonus = (children >= 3) ? (children - 2) * PARAMS.bonusRate : 0;
+            let totalChildDaily = childDaily + bonus;
+            
+            // Totals and monthly rounding
+            let totalDaily = adultDaily + totalChildDaily;
+            let rawMonthly = totalDaily * PARAMS.avgDays;
+            let roundedMonthly = Math.round(rawMonthly);
+            
+            return { adultDaily, totalChildDaily, totalDaily, rawMonthly, roundedMonthly, bonus };
+        }
+        
+        const runButton = document.getElementById('runCalcBtn');
+        if (runButton) {
+            runButton.addEventListener('click', function() {
+                const adults = parseInt(document.getElementById('adultsCount').value) || 1;
+                const children = parseInt(document.getElementById('childrenCount').value) || 0;
+                const res = computeGENothilfe(adults, children);
+                
+                const stepsDiv = document.getElementById('stepsDetail');
+                if (stepsDiv) {
+                    stepsDiv.innerHTML = `
+                        <strong>📌 Adults:</strong> CHF ${res.adultDaily.toFixed(2)} / day<br>
+                        <strong>📌 Children:</strong> CHF ${res.totalChildDaily.toFixed(2)} / day (incl. CHF ${res.bonus.toFixed(2)} bonus)<br>
+                        <strong>📌 Total daily rate:</strong> CHF ${res.totalDaily.toFixed(2)}<br>
+                        <strong>📌 Monthly (30.42 days):</strong> CHF ${res.rawMonthly.toFixed(2)}<br>
+                        <strong>💰 Final rounded monthly amount:</strong> CHF ${res.roundedMonthly}.00
+                    `;
+                }
+                const monthlyDisplay = document.getElementById('monthlyAmountDisplay');
+                if (monthlyDisplay) {
+                    monthlyDisplay.innerText = `${res.roundedMonthly}.00 CHF`;
+                }
+                const resultPanel = document.getElementById('liveResultPanel');
+                if (resultPanel) {
+                    resultPanel.style.display = 'block';
+                }
+            });
+        }
+    })();
+</script>
+</body>
+</html>
