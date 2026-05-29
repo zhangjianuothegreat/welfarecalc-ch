@@ -4,38 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>Llogaritësi i Përfitimeve Sociale, Audituesi Dentar & Mbrojtësi i Qirasë | WelfareCalc.ch</title>
-    <meta name="description" content="Mjete falas zvicerane: Llogaritni përfitimet AVS/AI/ND, deshifroni faturat dentare dhe skanoni kontratat e qirasë për 30+ rreziqe ligjore. 100% private, pa regjistrim, përpunim lokal.">
-
+    <title>Llogaritësi i Përfitimeve Sociale, Kontrolluesi i Faturave Dentare & Kontrolluesi i Kontratës së Qirasë | WelfareCalc.ch</title>
+    <meta name="description" content="Mjete falas zvicerane: Llogaritni përfitimet AHV/IV/EL, dekodoni faturat dentare dhe kontrolloni kontratat e qirasë për mbi 30 rreziqe ligjore. 100% private, pa regjistrim, përpunim lokal.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
+        }
         .container { max-width: 1200px; width: 100%; flex: 1; }
         .hero { text-align: center; margin-bottom: 2rem; }
-        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
-        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
-        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
-        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
-        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
-        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
-        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
-        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
-        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
-        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
-        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
-        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
-        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
-        .seo-info li { margin: 0.4rem 0; }
-        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
-        .footer a { color: #0050a4; text-decoration: none; }
-        @media (max-width: 480px) {
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
+        }
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
+        }
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
+        }
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
+        }
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
+        }
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
+        }
+        .tool-card:active { 
+            transform: scale(0.97); 
+            background: #f0f4f8;
+            border-color: #0050a4; 
+        }
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
+        }
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
+        }
+        .tool-title { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
+        }
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
+            }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
+        }
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
+        }
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
+        }
+        .seo-info li { 
+            margin: 0.4rem 0; 
+        }
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
+        }
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
+        }
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .tools-grid { grid-template-columns: 1fr; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
@@ -43,93 +182,103 @@
     <div class="container">
         <div class="hero">
             <h1>WelfareCalc.ch</h1>
-            <div class="slogan">Ndalo të hamendësosh. Fillo të dish.</div>
+            <div class="slogan">Ndaloni së hamendësuari. Filloni të dini.</div>
             <p class="subtitle">
-                Mjete falas zvicerane: Llogaritësi i Përfitimeve Sociale • Audituesi i Faturave Dentare • Skanuesi i Kontratës së Qirasë.<br>
-                Pa regjistrim. Pa gjurmim. Gjithçka funksionon lokal në shfletuesin tuaj.
+                Mjete falas zvicerane: Llogaritësi i Përfitimeve Sociale • Transparenca e Algoritmeve • Kontrolluesi i Faturave Dentare • Kontrolluesi i Kontratës së Qirasë.<br>
+                Pa regjistrim. Pa gjurmim. Gjithçka funksionon lokalisht në shfletuesin tuaj.
             </p>
         </div>
-
         <div style="display: flex; justify-content: center;">
-            <div class="choice-instruction">📌 Zgjidh deshifruesin tënd</div>
+            <div class="choice-instruction">📌 Zgjidhni dekoderin tuaj</div>
         </div>
-
         <div class="tools-grid">
             <a href="https://www.welfarecalc.ch/sq.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
                 <div class="tool-title">Llogaritësi i Përfitimeve Sociale</div>
                 <div class="tool-description">
-                    Zbuloni saktësisht se çfarë ju detyrohet shteti — AVS, AI, ND, ulje të primeve.
-                    <strong>Ndalo t’i lësh mijëra franga në tryezë.</strong>
+                    Zbuloni saktësisht se çfarë keni të drejtë ligjërisht – AHV, IV, EL, zbritje të primit.
+                    <strong>Mos hiqni dorë më nga paratë që ju takojnë.</strong>
+                </div>
+            </a>
+
+            <a href="https://www.welfarecalc.ch/open/2026open_sq.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Transparenca e Algoritmeve</div>
+                <div class="tool-description">
+                    Shikoni algoritmin zyrtar të llogaritjes për AHV, IV, EL, IPV dhe ndihmën sociale – specifik sipas kantonit dhe i kuptueshëm.
+                    <strong>100% transparent • Pa kuti të zezë • I hapur për të gjithë.</strong>
                 </div>
             </a>
             
             <a href="https://www.welfarecalc.ch/blog/sq/dental/dental_sq.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
-                <div class="tool-title">Auditori i Faturave Dentare Zvicerane</div>
+                <div class="tool-title">Kontrolluesi i Faturave Dentare</div>
                 <div class="tool-description">
-                    Vlera e fshehur e pikës (Taxpunktwert) dhe kodet DENTOTAR po ju zbrapsin xhepin pa u ndjerë.
-                    <strong>Deshifro faturën tënde dentare dhe ndalo të paguash tepër — sot.</strong>
+                    Vlerat e fshehura të pikëve tatimore dhe kodet DENTOTAR po zbrazin llogarinë tuaj në heshtje.
+                    <strong>Dekodoni faturën tuaj dentare dhe mos paguani më tepër – që sot.</strong>
                 </div>
             </a>
 
-            <!-- Mbrojtësi i Qirasë Zvicerane -->
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_sq.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">Mbrojtësi i Qirasë Zvicerane</div>
+                <div class="tool-title">Kontrolluesi i Kontratës së Qirasë</div>
                 <div class="tool-description">
-                    Skano kontratën e qirasë për 30+ kurthe ligjore përpara se të nënshkruash.<br>
-                    <strong>Falas • 100% privat • Përpunim lokal.</strong><br>
-                    Asnjëherë mos nënshkruaj një Mietvertrag / Kontratë qiraje të rrezikshme.
+                    Kontrolloni kontratën tuaj të qirasë për mbi 30 kurthe ligjore përpara se të nënshkruani.<br>
+                    <strong>Falas • 100% private • Përpunim lokal.</strong><br>
+                    Mos nënshkruani më kurrë një kontratë qiraje të rrezikshme.
                 </div>
             </a>
         </div>
-
         <div class="seo-info">
-            <h2>Paketa jote e mbijetesës për kostot e jetesës në Zvicër</h2>
-            <p>WelfareCalc.ch siguron transparencën që sistemi shpesh nuk e ofron. Përdor <strong>Llogaritësin e Përfitimeve Sociale</strong> për të kërkuar atë që ju takon (AVS, AI, ND), <strong>Auditorin e Faturave Dentare Zvicerane</strong> për të deshifruar tarifat e fshehura dhe <strong>Mbrojtësin e Qirasë Zvicerane</strong> për të skanuar kontratat e qirasë për klauzola të padrejta përpara se të nënshkruani.</p>
+            <h2>Kompleti juaj i mbijetesës për kostot e jetesës në Zvicër</h2>
+            <p>WelfareCalc.ch ofron transparencën që sistemi shpesh nuk e ofron. Përdorni <strong>Llogaritësin e Përfitimeve Sociale</strong> për të marrë atë që keni të drejtë ligjërisht (AHV, IV, EL), <strong>Transparencën e Algoritmeve</strong> për të zbuluar logjikën e llogaritjes, <strong>Kontrolluesin e Faturave Dentare</strong> për të deshifruar tarifat e fshehura dhe <strong>Kontrolluesin e Kontratës së Qirasë</strong> për të kontrolluar kontratat e qirasë për klauzola të padrejta përpara nënshkrimit.</p>
             
-            <h3>Ndalo të paguash dentistin më shumë se ç’duhet</h3>
-            <p>Faturat dentare zvicerane janë shkruar në një gjuhë sekrete pikësh tatimore (TP) dhe vlerash pikësh (Taxpunktwert). Udhëzuesi ynë zbulon:</p>
+            <h3>🔓 100% algoritme transparente – pa kuti të zezë</h3>
+            <p>WelfareCalc.ch është i vetmi portal që zbulon <strong>algoritmet zyrtare të llogaritjes për AHV, IV, Përfitimet Plotësuese (EL), Zbritjen Individuale të Primit (IPV) dhe Ndihmën Sociale</strong>. Zgjidhni kantonin tuaj dhe llojin e dëshiruar të përfitimit – do të shihni saktësisht se sipas cilave formula dhe ligjeve llogaritet e drejta juaj. Asnjë logjikë e fshehur, asnjë sistem pronësor. <strong>100% transparent, 100% i kuptueshëm.</strong></p>
+
+            <h3>Ndaloni së paguari tepër tek dentisti</h3>
+            <p>Faturat dentare zvicerane janë shkruar në një gjuhë sekrete me pikë tatimore (TP) dhe vlera pikësh tatimore. Guida jonë zbulon:</p>
             <ul>
-                <li><strong>Kurthi DENTOTAR</strong> – Si përdoren kodet si 4.0000 dhe 4.1110 për të fryrë faturën tuaj.</li>
-                <li><strong>Kthimi i investimit të sigurimit</strong> – Pse shumica e sigurimeve dentare plotësuese janë në fakt "gabim matematikor" për të rriturit.</li>
-                <li><strong>Normat e fshehura</strong> – Pse i njëjti mbushje kushton 110 CHF në një klinikë dhe 160 CHF në një tjetër.</li>
-                <li><strong>Të drejtat e pacientit</strong> – Si të kërkoni një mendim të dytë dhe të kundërshtoni planet e trajtimit "të urgjentshëm".</li>
+                <li><strong>Kurthi DENTOTAR</strong> – Si përdoren kodet 4.0000 dhe 4.1110 për të fryrë faturën tuaj.</li>
+                <li><strong>Kthimi nga investimi i sigurimeve</strong> – Pse shumica e sigurimeve shtesë dentare për të rriturit janë një "katastrofë matematikore".</li>
+                <li><strong>Tarifat e fshehura</strong> – Pse e njëjta mbushje kushton 110 CHF në një klinikë dhe 160 CHF në një tjetër.</li>
+                <li><strong>Të drejtat tuaja si pacient</strong> – Si të kërkoni një mendim të dytë dhe të kundërshtoni planet e trajtimit "të urgjentshëm".</li>
             </ul>
 
-            <h3>Mbro veten kur merr me qira në Zvicër</h3>
-            <p>Po lëviz në Zvicër ose po ndërron banesë? Kontratat e qirasë (Mietvertrag / Bail / Contratto) shpesh përmbajnë rreziqe të fshehura që mund t'ju kushtojnë mijëra franga më vonë. <strong>Mbrojtësi i Qirasë Zvicerane</strong> skanon kontratën tuaj për 30+ gracka të zakonshme ligjore — plotësisht falas dhe 100% në shfletuesin tuaj.</p>
+            <h3>Mbrojeni veten kur merrni me qira në Zvicër</h3>
+            <p>Lëvizja në Zvicër apo ndërrimi i banesës? Kontratat e qirasë shpesh përmbajnë rreziqe të fshehura që mund t'ju kushtojnë mijëra franga më vonë. <strong>Kontrolluesi i Kontratës së Qirasë</strong> skanon kontratën tuaj për mbi 30 kurthe të zakonshme ligjore – plotësisht falas dhe 100% lokalisht në shfletuesin tuaj.</p>
             <ul>
-                <li>Klauzola të paligjshme ose të tepruara të depozitës</li>
-                <li>Detyrime të padrejta për rinovim dhe pastrim</li>
-                <li>Rregulla problematike të ndërprerjes dhe afate njoftimi</li>
-                <li>Kosto të fshehura dhe ndalime të ndaluara</li>
+                <li>Depozita garantie të paligjshme ose të tepërta</li>
+                <li>Detyrime të padrejta rinovimi dhe pastrimi</li>
+                <li>Rregulla dhe afate problematike të zgjidhjes së kontratës</li>
+                <li>Kosto të fshehura dhe kufizime të ndaluara</li>
             </ul>
-            <p><strong>Këshillë:</strong> Gjithmonë skanoni kontratën tuaj përpara se të nënshkruani dhe konsultohuni me Mieterverband nëse shfaqen ndonjë shenjë paralajmëruese.</p>
-           
-            <h3>Përfitimet sociale – Merrni atë që ju takon</h3>
-            <p>Shumë banorë në Zvicër humbasin mijëra franga sepse procesi i aplikimit është frikësues. Ne thjeshtojmë udhëzimet e vitit 2026 për AVS, AI dhe Uljen e Primeve (IPV).</p>
+            <p><strong>Këshillë:</strong> Gjithmonë skanoni kontratën tuaj përpara se të nënshkruani dhe në rast sinjalesh paralajmëruese, konsultohuni me shoqatën e qiramarrësve.</p>
             
-            <h3>Shumëgjuhësh dhe privatësi në radhë të parë</h3>
-            <p>Ne besojmë se qartësia financiare dhe ligjore duhet të jetë e arritshme për të gjithë. Mjetet tona ofrojnë mbështetje shumëgjuhëshe dhe funksionojnë <strong>lokal në shfletuesin tuaj</strong>. Asnjë e dhënë nuk ruhet apo gjurmohet.</p>
+            <h3>Përfitimet sociale – Merrni atë që ju takon</h3>
+            <p>Shumë banorë të Zvicrës humbin mijëra franga sepse procesi i aplikimit duket frikësues. Ne thjeshtojmë udhëzimet 2026 për AHV, IV dhe zbritjen e primit (IPV).</p>
+            
+            <h3>Shumëgjuhësh dhe i fokusuar te privatësia</h3>
+            <p>Ne besojmë se qartësia financiare dhe ligjore duhet të jetë e arritshme për të gjithë. Mjetet tona ofrojnë mbështetje shumëgjuhëshe dhe funksionojnë <strong>lokalisht në shfletuesin tuaj</strong>. Asnjë e dhënë nuk ruhet apo gjurmohet.</p>
             
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Të dhënat e verifikuara sipas standardeve zyrtare 2026 nga <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">Zyra Federale e Sigurimeve Sociale (FSIO)</a> dhe <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">Zyra Federale e Shëndetit Publik (FOPH)</a>.
+                📌 Të dhënat e verifikuara sipas standardeve zyrtare 2026 të <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> und <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
             </p>
         </div>
     </div>
-
     <div class="footer">
         <p>WelfareCalc.ch • Falas • Anonim • 2026</p>
         <p style="margin-top: 0.6rem;">
-            <a href="aboutus_sq.html">About us</a> •
-            <a href="impressum_sq.html">Impresum</a> • 
-            <a href="datenschutz_sq.html">Politika e privatësisë</a> • 
-            <a href="haftung_sq.html">Heqja e përgjegjësisë</a>
+            <a href="aboutus_sq.html">Rreth nesh</a> •
+            <a href="impressum_sq.html">Impresum</a> •
+            <a href="datenschutz_sq.html">Mbrojtja e të dhënave</a> •
+            <a href="haftung_sq.html">Përgjegjësia ligjore</a>
         </p>
     </div>
 </body>

@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>Swiss Benefits Calculator, Dental Decoder & Rental Protector | WelfareCalc.ch</title>
-    <meta name="description" content="Free Swiss tools: Calculate AHV/IV/EL benefits, decode dental bills, and scan rental contracts for 30+ legal risks. 100% private, no registration, local processing.">
+    <title>Social Benefits Calculator, Dental Bill Checker & Rental Contract Analyzer | WelfareCalc.ch</title>
+    <meta name="description" content="Free Swiss tools: Calculate AHV/IV/EL benefits, decode dental bills, and check rental agreements for over 30 legal risks. 100% private, no registration, local processing.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-   
+
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -82,8 +95,8 @@
             touch-action: manipulation; 
         }
         .tool-card:active { 
-            transform: scale(0.98); 
-            background: #fdfdfd; 
+            transform: scale(0.97); 
+            background: #f0f4f8;
             border-color: #0050a4; 
         }
         @media (hover: hover) { 
@@ -126,7 +139,7 @@
             color: #0050a4; 
             margin-bottom: 1rem; 
             font-weight: 600; 
-        }
+            }
         .seo-info h3 { 
             font-size: 1.2rem; 
             color: #333; 
@@ -157,9 +170,10 @@
             color: #0050a4; 
             text-decoration: none; 
         }
-        @media (max-width: 480px) {
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .tools-grid { grid-template-columns: 1fr; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
@@ -167,9 +181,9 @@
     <div class="container">
         <div class="hero">
             <h1>WelfareCalc.ch</h1>
-            <div class="slogan">Stop Guessing. Start Knowing.</div>
+            <div class="slogan">Stop guessing. Start knowing.</div>
             <p class="subtitle">
-                Free Swiss tools: Social Benefits Calculator • Dental Bill Decoder • Rental Contract Scanner.<br>
+                Free Swiss tools: Social Benefits Calculator • Algorithm Transparency • Dental Bill Checker • Rental Contract Analyzer.<br>
                 No registration. No tracking. Everything runs locally in your browser.
             </p>
         </div>
@@ -179,67 +193,81 @@
         <div class="tools-grid">
             <a href="https://www.welfarecalc.ch/en.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
-                <div class="tool-title">Swiss Benefits Calculator</div>
+                <div class="tool-title">Social Benefits Calculator</div>
                 <div class="tool-description">
-                    Find out exactly what the state owes you — AHV, IV, EL, premium reductions.
-                    <strong>Stop leaving thousands of francs on the table.</strong>
-                </div>
-            </a>
-           
-            <a href="https://www.welfarecalc.ch/blog/en/dental/dental_en.html" class="tool-card" target="_blank" rel="noopener noreferrer">
-                <div class="tool-icon">🦷💰</div>
-                <div class="tool-title">Swiss Dental Bill Auditor</div>
-                <div class="tool-description">
-                    Hidden Taxpunktwert and DENTOTAR codes are quietly draining your money.
-                    <strong>Decode your dental bill and stop overpaying — today.</strong>
+                    Find out exactly what you are legally entitled to – AHV, IV, EL, premium reductions.
+                    <strong>Stop leaving money on the table that is rightfully yours.</strong>
                 </div>
             </a>
 
-            <!-- Swiss Rental Protector -->
+            <a href="https://www.welfarecalc.ch/open/2026open_en.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Algorithm Transparency</div>
+                <div class="tool-description">
+                    See the official calculation algorithm for AHV, IV, EL, IPV, and social assistance – canton-specific & fully traceable.
+                    <strong>100% transparent • No black box • Open to everyone.</strong>
+                </div>
+            </a>
+            
+            <a href="https://www.welfarecalc.ch/blog/en/dental/dental_en.html" class="tool-card" target="_blank" rel="noopener noreferrer">
+                <div class="tool-icon">🦷💰</div>
+                <div class="tool-title">Dental Bill Checker</div>
+                <div class="tool-description">
+                    Hidden tax point values and DENTOTAR codes silently drain your account.
+                    <strong>Decode your dental bill and stop overpaying – today.</strong>
+                </div>
+            </a>
+
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_en.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">Swiss Rental Protector</div>
+                <div class="tool-title">Rental Contract Checker</div>
                 <div class="tool-description">
-                    Scan your rental contract for 30+ legal traps before signing.<br>
+                    Scan your rental agreement for over 30 legal pitfalls before you sign.<br>
                     <strong>Free • 100% private • Local processing.</strong><br>
-                    Never sign a risky Mietvertrag / Bail again.
+                    Never sign a risky lease again.
                 </div>
             </a>
         </div>
         <div class="seo-info">
-            <h2>Your Survival Kit for Swiss Life Costs</h2>
-            <p>WelfareCalc.ch provides the transparency that the system often lacks. Use our <strong>Social Benefits Calculator</strong> to claim what you’re entitled to (AHV, IV, EL), the <strong>Swiss Dental Bill Auditor</strong> to decode hidden charges, and the <strong>Swiss Rental Protector</strong> to scan rental contracts for unfair clauses before you sign.</p>
-           
-            <h3>Stop Overpaying Your Dentist</h3>
-            <p>Swiss dental bills are written in a secret language of tax points (TP) and point values (Taxpunktwert). Our guide exposes:</p>
+            <h2>Your survival kit for Swiss cost of living</h2>
+            <p>WelfareCalc.ch provides the transparency that the system often lacks. Use our <strong>Social Benefits Calculator</strong> to claim what you are legally entitled to (AHV, IV, EL), the <strong>Algorithm Transparency</strong> tool to expose the calculation logic, the <strong>Dental Bill Checker</strong> to decode hidden fees, and the <strong>Rental Contract Checker</strong> to review rental agreements for unfair clauses before signing.</p>
+            
+            <h3>🔓 100% transparent algorithms – no black box</h3>
+            <p>WelfareCalc.ch is the only portal that openly reveals the <strong>official calculation algorithms for AHV, IV, Supplementary Benefits (EL), Individual Premium Reduction (IPV), and social assistance</strong>. Select your canton and the benefit type – you will see exactly which formulas and laws determine your entitlement. No hidden logic, no proprietary system. <strong>100% transparent, 100% traceable.</strong></p>
+
+            <h3>Stop overpaying at the dentist</h3>
+            <p>Swiss dental bills are written in a secret language of tax points (TP) and tax point values. Our guide reveals:</p>
             <ul>
-                <li><strong>The DENTOTAR Trap</strong> – How codes like 4.0000 and 4.1110 are used to inflate your bill.</li>
-                <li><strong>Insurance ROI</strong> – Why most supplementary dental insurance is actually a "math fail" for adults.</li>
-                <li><strong>Hidden Rates</strong> – Why the same filling costs 110 CHF at one clinic and 160 CHF at another.</li>
-                <li><strong>Patient Rights</strong> – How to request a second opinion and challenge "urgent" treatment plans.</li>
+                <li><strong>The DENTOTAR trap</strong> – How codes like 4.0000 and 4.1110 are used to inflate your invoice.</li>
+                <li><strong>Insurance ROI</strong> – Why most dental supplementary insurance for adults is a "mathematical disaster".</li>
+                <li><strong>Hidden fees</strong> – Why the same filling costs 110 CHF in one practice and 160 CHF in another.</li>
+                <li><strong>Your patient rights</strong> – How to request a second opinion and challenge "urgent" treatment plans.</li>
             </ul>
 
-            <h3>Protect Yourself When Renting in Switzerland</h3>
-            <p>Moving to Switzerland or changing apartments? Rental contracts (Mietvertrag / Bail / Contratto) often contain hidden risks that can cost you thousands of francs later. Our <strong>Swiss Rental Protector</strong> scans your contract for 30+ common legal pitfalls — completely free and 100% in your browser.</p>
+            <h3>Protect yourself when renting in Switzerland</h3>
+            <p>Moving to Switzerland or changing apartments? Rental contracts often contain hidden risks that can cost you thousands of francs later. Our <strong>Rental Contract Checker</strong> scans your agreement for over 30 common legal pitfalls – completely free and 100% local in your browser.</p>
             <ul>
-                <li>Illegal or excessive deposit clauses</li>
+                <li>Unlawful or excessive deposits</li>
                 <li>Unfair renovation and cleaning obligations</li>
-                <li>Problematic termination rules and notice periods</li>
-                <li>Hidden costs and prohibited restrictions</li>
+                <li>Problematic termination rules and deadlines</li>
+                <li>Hidden costs and forbidden restrictions</li>
             </ul>
-            <p><strong>Tip:</strong> Always scan your contract before signing and consult Mieterverband if any red flags appear.</p>
-           
-            <h3>Social Benefits – Get What You Are Entitled To</h3>
-            <p>Many residents in Switzerland miss out on thousands of francs because the application process is intimidating. We simplify the 2026 guidelines for AHV, IV, and Premium Reductions (IPV).</p>
-           
-            <h3>Multilingual & Privacy-First</h3>
+            <p><strong>Tip:</strong> Always scan your contract before signing and consult the tenants' association if any red flags appear.</p>
+            
+            <h3>Social benefits – get what you deserve</h3>
+            <p>Many residents of Switzerland leave thousands of francs unclaimed because the application process feels intimidating. We simplify the 2026 guidelines for AHV, IV, and premium reductions (IPV).</p>
+            
+            <h3>Multilingual & privacy-focused</h3>
             <p>We believe financial and legal clarity should be accessible to everyone. Our tools offer multilingual support and run <strong>locally in your browser</strong>. No data is stored or tracked.</p>
-           
+            
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Data verified against official 2026 standards from the <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO</a> and <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH</a>.
+                📌 Data verified according to official 2026 standards of the <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> and <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
             </p>
         </div>
     </div>
@@ -247,7 +275,7 @@
         <p>WelfareCalc.ch • Free • Anonymous • 2026</p>
         <p style="margin-top: 0.6rem;">
             <a href="aboutus_en.html">About us</a> •
-            <a href="impressum_en.html">Imprint</a> •
+            <a href="impressum_en.html">Impressum</a> •
             <a href="datenschutz_en.html">Privacy Policy</a> •
             <a href="haftung_en.html">Disclaimer</a>
         </p>

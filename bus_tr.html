@@ -4,38 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>İsviçre Yardım Hesaplayıcısı, Diş Denetçisi ve Kira Koruyucusu | WelfareCalc.ch</title>
-    <meta name="description" content="Ücretsiz İsviçre araçları: AHV/AVS, IV/AI, ek yardımları hesaplayın, diş faturalarını deşifre edin ve kira sözleşmelerini 30+ yasal risk için tarayın. %100 gizli, kayıt yok, yerel işleme.">
-
+    <title>Sosyal Yardım Hesaplayıcı, Diş Faturası Denetleyicisi ve Kira Sözleşmesi Denetleyicisi | WelfareCalc.ch</title>
+    <meta name="description" content="Ücretsiz İsviçre araçları: AHV/IV/EL yardımlarını hesaplayın, diş faturalarını çözümleyin ve kira sözleşmelerini 30'dan fazla yasal risk açısından kontrol edin. %100 gizli, kayıt gerekmez, yerel işleme.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
+        }
         .container { max-width: 1200px; width: 100%; flex: 1; }
         .hero { text-align: center; margin-bottom: 2rem; }
-        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
-        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
-        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
-        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
-        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
-        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
-        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
-        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
-        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
-        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
-        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
-        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
-        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
-        .seo-info li { margin: 0.4rem 0; }
-        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
-        .footer a { color: #0050a4; text-decoration: none; }
-        @media (max-width: 480px) {
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
+        }
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
+        }
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
+        }
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
+        }
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
+        }
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
+        }
+        .tool-card:active { 
+            transform: scale(0.97); 
+            background: #f0f4f8;
+            border-color: #0050a4; 
+        }
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
+        }
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
+        }
+        .tool-title { 
+            font-size: 1.7rem; /* 微调：为长单词留出空间 */
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
+            word-wrap: break-word; /* 优化：防止土耳其语长单词溢出 */
+            word-break: break-word;
+        }
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
+            }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
+        }
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
+        }
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
+        }
+        .seo-info li { 
+            margin: 0.4rem 0; 
+        }
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
+        }
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
+        }
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .tools-grid { grid-template-columns: 1fr; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
@@ -43,92 +184,106 @@
     <div class="container">
         <div class="hero">
             <h1>WelfareCalc.ch</h1>
-            <div class="slogan">Tahmin Etmeyi Bırakın. Kesin Olarak Bilin.</div>
+            <div class="slogan">Tahmin etmeyi bırakın. Bilmeye başlayın.</div>
             <p class="subtitle">
-                Ücretsiz İsviçre araçları: Sosyal Yardım Hesaplayıcısı • Diş Faturası Kod Çözücü • Kira Sözleşmesi Tarayıcısı.<br>
+                Ücretsiz İsviçre araçları: Sosyal yardım hesaplayıcısı • Algoritma şeffaflığı • Diş faturası denetleyicisi • Kira sözleşmesi denetleyicisi.<br>
                 Kayıt yok. İzleme yok. Her şey tarayıcınızda yerel olarak çalışır.
             </p>
         </div>
-
         <div style="display: flex; justify-content: center;">
-            <div class="choice-instruction">📌 Kod Çözücünüzü Seçin</div>
+            <div class="choice-instruction">📌 Kod çözücünüzü seçin</div>
         </div>
-
         <div class="tools-grid">
+            <!-- 1. Sosyal Yardım Hesaplayıcısı -->
             <a href="https://www.welfarecalc.ch/tr.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
-                <div class="tool-title">İsviçre Yardım Hesaplayıcısı</div>
+                <div class="tool-title">Sosyal Yardım Hesaplayıcısı</div>
                 <div class="tool-description">
-                    Devletin size tam olarak ne borçlu olduğunu öğrenin — AHV/AVS, IV/AI, ek yardımlar (EL), prim indirimleri.
-                    <strong>Binlerce frangı masada bırakmayın.</strong>
+                    AHV, IV, EL (Ek Yardımlar) ve prim indirimi dahil olmak üzere yasal olarak hak kazandığınız ödenekleri tam olarak öğrenin.
+                    <strong>Yasal olarak hakkınız olan paradan mahrum kalmayın.</strong>
+                </div>
+            </a>
+
+            <!-- 2. Algoritma Şeffaflığı -->
+            <a href="https://www.welfarecalc.ch/open/2026open_tr.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Algoritma Şeffaflığı</div>
+                <div class="tool-description">
+                    AHV, IV, EL, IPV ve sosyal yardım için resmi hesaplama algoritmasını görün – kantona özel ve anlaşılır.
+                    <strong>%100 şeffaf • Kara kutu yok • Herkese açık.</strong>
                 </div>
             </a>
             
+            <!-- 3. Diş Faturası Denetleyicisi -->
             <a href="https://www.welfarecalc.ch/blog/tr/dental/dental_tr.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
-                <div class="tool-title">İsviçre Diş Faturası Denetçisi</div>
+                <div class="tool-title">Diş Faturası Denetleyicisi</div>
                 <div class="tool-description">
-                    Gizli Taxpunktwert ve DENTOTAR kodları sessizce paranızı tüketiyor.
-                    <strong>Diş faturanızı deşifre edin ve bugün fazla ödemeyi durdurun.</strong>
+                    Gizli puan değerleri ve DENTOTAR kodları sessizce hesabınızı boşaltıyor.
+                    <strong>Diş faturanızı çözümleyin ve artık fazla ödemeyin – hemen bugün.</strong>
                 </div>
             </a>
 
-            <!-- İsviçre Kira Koruyucusu -->
+            <!-- 4. Kira Sözleşmesi Denetleyicisi -->
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_tr.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">İsviçre Kira Koruyucusu</div>
+                <div class="tool-title">Kira Sözleşmesi Denetleyicisi</div>
                 <div class="tool-description">
-                    İmzalamadan önce kira sözleşmenizi 30'dan fazla yasal tuzak için tarayın.<br>
+                    İmzalamadan önce kira sözleşmenizi 30'dan fazla yasal tuzak açısından kontrol edin.<br>
                     <strong>Ücretsiz • %100 gizli • Yerel işleme.</strong><br>
-                    Riskli bir Mietvertrag / kira sözleşmesi / kefalet asla imzalamayın.
+                    Bir daha asla riskli bir kira sözleşmesi imzalamayın.
                 </div>
             </a>
         </div>
-
         <div class="seo-info">
-            <h2>İsviçre Yaşam Maliyetleri İçin Hayat Kurtarıcı Setiniz</h2>
-            <p>WelfareCalc.ch, sistemin çoğu zaman eksik bıraktığı şeffaflığı sağlar. <strong>Sosyal Yardım Hesaplayıcımızı</strong> kullanarak hakkınız olanı talep edin (AHV/AVS, IV/AI, EL), <strong>İsviçre Diş Faturası Denetçisi</strong> ile gizli ücretleri deşifre edin ve <strong>İsviçre Kira Koruyucusu</strong> ile imzalamadan önce kira sözleşmelerini haksız maddelere karşı tarayın.</p>
+            <h2>İsviçre Yaşam Maliyetleri İçin Hayatta Kalma Kiti</h2>
+            <p>WelfareCalc.ch, sistemin çoğu zaman eksik bıraktığı şeffaflığı sunar. Yasal olarak hakkınız olanı (AHV, IV, EL) almak için <strong>Sosyal Yardım Hesaplayıcımızı</strong>, hesaplama mantığını açıkça görmek için <strong>Algoritma Şeffaflığını</strong>, gizli ücretleri çözmek için <strong>Diş Faturası Denetleyicisini</strong> ve imzalamadan önce kira sözleşmelerini haksız maddelere karşı kontrol etmek için <strong>Kira Sözleşmesi Denetleyicisini</strong> kullanın.</p>
             
-            <h3>Diş Hekiminize Fazla Ödemeyi Durdurun</h3>
-            <p>İsviçre diş faturaları, vergi puanları (TP) ve puan değerlerinin (Taxpunktwert) gizli bir dilinde yazılır. Rehberimiz şunları ortaya koyar:</p>
+            <h3>🔓 %100 şeffaf algoritmalar – kara kutu yok</h3>
+            <p>WelfareCalc.ch, <strong>AHV, IV, Ergänzungsleistungen (EL - Ek Yardımlar), Bireysel Prim İndirimi (IPV / Prämienverbilligung) ve sosyal yardım için resmi hesaplama algoritmalarını</strong> açıklayan tek portaldır. Kantonunuzu ve istediğiniz yardım türünü seçin – hakkınızın hangi formüller ve yasalar temelinde hesaplandığını tam olarak görürsünüz. Gizli mantık yok, tescilli sistem yok. <strong>%100 şeffaf, %100 anlaşılır.</strong></p>
+
+            <h3>Diş hekiminde fazla ödeme yapmayı bırakın</h3>
+            <p>İsviçre diş faturaları, puan (TP) ve puan değerlerinden oluşan gizli bir dille yazılır. Rehberimiz şunları ortaya koyuyor:</p>
             <ul>
-                <li><strong>DENTOTAR Tuzağı</strong> – 4.0000 ve 4.1110 gibi kodların faturanızı nasıl şişirdiği.</li>
-                <li><strong>Sigorta Yatırım Getirisi</strong> – Yetişkinler için çoğu ek diş sigortasının neden "matematiksel bir hata" olduğu.</li>
-                <li><strong>Gizli Ücretler</strong> – Aynı dolgunun bir klinikte 110 CHF, diğerinde 160 CHF olmasının nedeni.</li>
-                <li><strong>Hasta Hakları</strong> – İkinci görüş talebi ve "acil" tedavi planlarına nasıl itiraz edileceği.</li>
+                <li><strong>DENTOTAR tuzağı</strong> – 4.0000 ve 4.1110 gibi kodların faturanızı nasıl şişirmek için kullanıldığı.</li>
+                <li><strong>Sigortaların yatırım getirisi</strong> – Yetişkinler için çoğu diş ek sigortasının neden "matematiksel bir felaket" olduğu.</li>
+                <li><strong>Gizli tarifeler</strong> – Aynı dolgunun bir muayenehanede neden 110 CHF, diğerinde 160 CHF'ye mal olduğu.</li>
+                <li><strong>Hasta haklarınız</strong> – İkinci bir görüş talep etme ve "acil" tedavi planlarına itiraz etme yolları.</li>
             </ul>
 
-            <h3>İsviçre'de Kiralarken Kendinizi Koruyun</h3>
-            <p>İsviçre'ye taşınıyor veya daire mi değiştiriyorsunuz? Kira sözleşmeleri (Mietvertrag / Kira sözleşmesi / Bail / Contratto) genellikle daha sonra size binlerce franga mal olabilecek gizli riskler içerir. <strong>İsviçre Kira Koruyucusu</strong> sözleşmenizi 30'dan fazla yaygın yasal tuzak için tarar — tamamen ücretsiz ve %100 tarayıcınızda.</p>
+            <h3>İsviçre'de kiracı olarak kendinizi koruyun</h3>
+            <p>İsviçre'ye taşınmak veya daire değiştirmek mi? Kira sözleşmeleri genellikle daha sonra size binlerce frank kaybettirebilecek gizli riskler içerir. <strong>Kira Sözleşmesi Denetleyicimiz</strong>, sözleşmenizi 30'dan fazla yaygın yasal tuzak için tarar – tamamen ücretsiz ve %100 tarayıcınızda yerel olarak.</p>
             <ul>
-                <li>Yasadışı veya aşırı depozito şartları</li>
+                <li>Geçersiz veya aşırı yüksek depozito</li>
                 <li>Haksız yenileme ve temizlik yükümlülükleri</li>
-                <li>Sorunlu fesih kuralları ve bildirim süreleri</li>
+                <li>Sorunlu fesih kuralları ve süreleri</li>
                 <li>Gizli maliyetler ve yasaklanmış kısıtlamalar</li>
             </ul>
-            <p><strong>İpucu:</strong> Sözleşmeyi imzalamadan ÖNCE daima tarayın ve herhangi bir kırmızı bayrak görünürse Mieterverband (Kiracılar Birliği)'ne danışın.</p>
-           
-            <h3>Sosyal Yardımlar – Hakkınız Olanı Alın</h3>
-            <p>İsviçre'deki birçok kişi, başvuru süreci göz korkutucu olduğu için binlerce frangı kaçırır. Burada AHV/AVS, IV/AI ve Prim İndirimleri (IPV) için 2026 kılavuzlarını basitleştiriyoruz.</p>
+            <p><strong>İpucu:</strong> Sözleşmenizi her zaman imzalamadan önce tarayın ve uyarı işaretleri durumunda kiracı derneğine (Asyıl / Mieterverband) danışın.</p>
             
-            <h3>Çok Dilli ve Gizlilik Öncelikli</h3>
-            <p>Finansal ve yasal netliğin herkes için erişilebilir olması gerektiğine inanıyoruz. Araçlarımız çok dilli destek sunar ve <strong>doğrudan tarayıcınızda yerel olarak çalışır</strong>. Hiçbir veri saklanmaz veya izlenmez.</p>
+            <h3>Sosyal yardımlar – Hakkınız olanı alın</h3>
+            <p>İsviçre'deki birçok kişi, başvuru süreci göz korkutucu göründüğü için binlerce frangı boşa harcıyor. 2026 yönergelerini AHV, IV ve prim indirimi (IPV) için basitleştiriyoruz.</p>
+            
+            <h3>Çok dilli ve gizlilik odaklı</h3>
+            <p>Finansal ve yasal netliğin herkes için erişilebilir olması gerektiğine inanıyoruz. Araçlarımız çok dilli destek sunar ve <strong>tarayıcınızda yerel olarak çalışır</strong>. Hiçbir veri saklanmaz veya izlenmez.</p>
             
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Veriler, <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO (BSV)</a> ve <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH (BAG)</a>'nin 2026 resmi standartlarına göre doğrulanmıştır.
+                📌 Veriler, <strong>Federal Sosyal Sigortalar Ofisi (BSV)</strong> ve <strong>Federal Sağlık Ofisi (BAG)</strong>'nin 2026 resmi standartlarına göre kontrol edilmiştir.
             </p>
         </div>
     </div>
-
     <div class="footer">
         <p>WelfareCalc.ch • Ücretsiz • Anonim • 2026</p>
         <p style="margin-top: 0.6rem;">
-            <a href="aboutus_tr.html">About us</a> •
+            <a href="aboutus_tr.html">Hakkımızda</a> •
             <a href="impressum_tr.html">Künye</a> •
-            <a href="datenschutz_tr.html">Gizlilik Politikası</a> •
+            <a href="datenschutz_tr.html">Veri Koruma Beyanı</a> •
             <a href="haftung_tr.html">Sorumluluk Reddi</a>
         </p>
     </div>

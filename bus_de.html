@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>Sozialleistungs-Rechner, Zahnrechnungs-Prüfer & Mietvertrag-Schutz | WelfareCalc.ch</title>
+    <title>Sozialleistungs-Rechner, Zahnrechnungs-Prüfer & Mietvertrag-Checker | WelfareCalc.ch</title>
     <meta name="description" content="Kostenlose Schweizer Tools: AHV/IV/EL-Leistungen berechnen, Zahnrechnungen dekodieren und Mietverträge auf über 30 rechtliche Risiken prüfen. 100% privat, keine Registrierung, lokale Verarbeitung.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-   
+
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { 
@@ -82,8 +95,8 @@
             touch-action: manipulation; 
         }
         .tool-card:active { 
-            transform: scale(0.98); 
-            background: #fdfdfd; 
+            transform: scale(0.97); 
+            background: #f0f4f8; /* 优化：增强触觉点击反馈 */
             border-color: #0050a4; 
         }
         @media (hover: hover) { 
@@ -126,7 +139,7 @@
             color: #0050a4; 
             margin-bottom: 1rem; 
             font-weight: 600; 
-        }
+            }
         .seo-info h3 { 
             font-size: 1.2rem; 
             color: #333; 
@@ -157,9 +170,11 @@
             color: #0050a4; 
             text-decoration: none; 
         }
-        @media (max-width: 480px) {
+        /* 增加断点安全保护，防止小横屏上文字被左右极限挤压 */
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .tools-grid { grid-template-columns: 1fr; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
@@ -169,7 +184,7 @@
             <h1>WelfareCalc.ch</h1>
             <div class="slogan">Hör auf zu raten. Fang an zu wissen.</div>
             <p class="subtitle">
-                Kostenlose Schweizer Tools: Sozialleistungs-Rechner • Zahnrechnungs-Prüfer • Mietvertrag-Schutz.<br>
+                Kostenlose Schweizer Tools: Sozialleistungs-Rechner • Algorithmen-Transparenz • Zahnrechnungs-Prüfer • Mietvertrag-Checker.<br>
                 Keine Registrierung. Kein Tracking. Alles läuft lokal in Ihrem Browser.
             </p>
         </div>
@@ -181,27 +196,38 @@
                 <div class="tool-icon">⚖️📊</div>
                 <div class="tool-title">Sozialleistungs-Rechner</div>
                 <div class="tool-description">
-                    Finden Sie genau heraus, was der Staat Ihnen schuldet – AHV, IV, EL, Prämienverbilligung.
-                    <strong>Hören Sie auf, Tausende von Franken liegen zu lassen.</strong>
+                    Finden Sie genau heraus, worauf Sie gesetzlichen Anspruch haben – AHV, IV, EL, Prämienverbilligung.
+                    <strong>Verzichten Sie nicht länger auf Geld, das Ihnen zusteht.</strong>
                 </div>
             </a>
-           
+
+            <a href="https://www.welfarecalc.ch/open/2026open_de.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Algorithmen-Transparenz</div>
+                <div class="tool-description">
+                    Sehen Sie den offiziellen Berechnungsalgorithmus für AHV, IV, EL, IPV und Sozialhilfe – kantonspezifisch & nachvollziehbar.
+                    <strong>100% transparent • Keine Blackbox • Für alle offen.</strong>
+                </div>
+            </a>
+            
             <a href="https://www.welfarecalc.ch/blog/de/dental/dental_de.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
                 <div class="tool-title">Zahnrechnungs-Prüfer</div>
                 <div class="tool-description">
-                    Versteckter Taxpunktwert und DENTOTAR-Codes zapfen still Ihr Konto leer.
+                    Versteckte Taxpunktwerte und DENTOTAR-Codes zapfen still Ihr Konto leer.
                     <strong>Dekodieren Sie Ihre Zahnrechnung und zahlen Sie nicht länger zu viel – noch heute.</strong>
                 </div>
             </a>
 
-            <!-- Swiss Rental Protector (Deutsch) -->
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_de.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">Mietvertrag-Schutz</div>
+                <div class="tool-title">Mietvertrag-Checker</div>
                 <div class="tool-description">
                     Prüfen Sie Ihren Mietvertrag auf über 30 rechtliche Fallstricke, bevor Sie unterschreiben.<br>
                     <strong>Kostenlos • 100% privat • Lokale Verarbeitung.</strong><br>
@@ -211,8 +237,11 @@
         </div>
         <div class="seo-info">
             <h2>Ihr Überlebenskit für die Schweizer Lebenshaltungskosten</h2>
-            <p>WelfareCalc.ch bietet die Transparenz, die das System oft vermissen lässt. Nutzen Sie unseren <strong>Sozialleistungs-Rechner</strong>, um zu bekommen, was Ihnen zusteht (AHV, IV, EL), den <strong>Zahnrechnungs-Prüfer</strong>, um versteckte Gebühren zu entschlüsseln, und den neuen <strong>Mietvertrag-Schutz</strong>, um Mietverträge vor der Unterzeichnung auf unfaire Klauseln zu prüfen.</p>
-           
+            <p>WelfareCalc.ch bietet die Transparenz, die das System oft vermissen lässt. Nutzen Sie unseren <strong>Sozialleistungs-Rechner</strong>, um zu bekommen, was Ihnen rechtlich zusteht (AHV, IV, EL), die <strong>Algorithmen-Transparenz</strong>, um die Berechnungslogik offen zu legen, den <strong>Zahnrechnungs-Prüfer</strong>, um versteckte Gebühren zu entschlüsseln, und den <strong>Mietvertrag-Checker</strong>, um Mietverträge vor der Unterzeichnung auf unfaire Klauseln zu prüfen.</p>
+            
+            <h3>🔓 100% transparente Algorithmen – keine Blackbox</h3>
+            <p>WelfareCalc.ch ist das einzige Portal, das die <strong>offiziellen Berechnungsalgorithmen für AHV, IV, Ergänzungsleistungen (EL), Individuelle Prämienverbilligung (IPV) und Sozialhilfe</strong> offenlegt. Wählen Sie Ihren Kanton und die gewünschte Leistungsart – Sie sehen genau, nach welchen Formeln und Gesetzen Ihr Anspruch berechnet wird. Keine versteckte Logik, kein proprietäres System. <strong>100% transparent, 100% nachvollziehbar.</strong></p>
+
             <h3>Hören Sie auf, beim Zahnarzt zu viel zu bezahlen</h3>
             <p>Schweizer Zahnrechnungen sind in einer Geheimsprache aus Taxpunkten (TP) und Taxpunktwerten verfasst. Unser Ratgeber enthüllt:</p>
             <ul>
@@ -223,7 +252,7 @@
             </ul>
 
             <h3>Schützen Sie sich beim Mieten in der Schweiz</h3>
-            <p>Umzug in die Schweiz oder Wohnungswechsel? Mietverträge (Mietvertrag / Bail / Contratto) enthalten oft versteckte Risiken, die Sie später Tausende von Franken kosten können. Unser <strong>Mietvertrag-Schutz</strong> scannt Ihren Vertrag auf über 30 häufige rechtliche Fallstricke – komplett kostenlos und 100 % lokal in Ihrem Browser.</p>
+            <p>Umzug in die Schweiz oder Wohnungswechsel? Mietverträge enthalten oft versteckte Risiken, die Sie später Tausende von Franken kosten können. Unser <strong>Mietvertrag-Checker</strong> scannt Ihren Vertrag auf über 30 häufige rechtliche Fallstricke – komplett kostenlos und 100 % lokal in Ihrem Browser.</p>
             <ul>
                 <li>Unzulässige oder überhöhte Kautionen</li>
                 <li>Unfaire Renovierungs- und Reinigungspflichten</li>
@@ -231,15 +260,15 @@
                 <li>Versteckte Kosten und verbotene Einschränkungen</li>
             </ul>
             <p><strong>Tipp:</strong> Scannen Sie Ihren Vertrag immer vor der Unterzeichnung und konsultieren Sie bei Warnsignalen den Mieterverband.</p>
-           
+            
             <h3>Sozialleistungen – Holen Sie sich, was Ihnen zusteht</h3>
             <p>Viele Einwohner der Schweiz verschenken Tausende von Franken, weil der Antragsprozess einschüchternd wirkt. Wir vereinfachen die Richtlinien 2026 für AHV, IV und Prämienverbilligung (IPV).</p>
-           
+            
             <h3>Mehrsprachig & datenschutzorientiert</h3>
             <p>Wir glauben, dass finanzielle und rechtliche Klarheit für alle zugänglich sein sollte. Unsere Tools bieten mehrsprachige Unterstützung und laufen <strong>lokal in Ihrem Browser</strong>. Keine Daten werden gespeichert oder nachverfolgt.</p>
-           
+            
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Daten geprüft nach offiziellen Standards 2026 des <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> und <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
+                📌 Daten geprüft nach den offiziellen Standards 2026 des <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> und <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
             </p>
         </div>
     </div>

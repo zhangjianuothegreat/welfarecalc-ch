@@ -4,38 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>Kalkulator Świadczeń, Audyt Rachunków Dentystycznych i Ochrona Najemcy | WelfareCalc.ch</title>
-    <meta name="description" content="Darmowe szwajcarskie narzędzia: Oblicz świadczenia AHV/IV/EL, odczytaj ukryte koszty rachunków dentystycznych i skontroluj umowę najmu pod kątem 30+ pułapek prawnych. W 100% prywatnie, bez rejestracji, lokalne przetwarzanie.">
-
+    <title>Kalkulator świadczeń społecznych, weryfikator rachunków dentystycznych i weryfikator umów najmu | WelfareCalc.ch</title>
+    <meta name="description" content="Darmowe narzędzia szwajcarskie: obliczanie świadczeń AHV/IV/EL, dekodowanie rachunków dentystycznych i sprawdzanie umów najmu pod kątem ponad 30 zagrożeń prawnych. 100% prywatne, bez rejestracji, lokalne przetwarzanie.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+
+    <!-- Hreflang Tags (SEO Optimization) -->
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f8f9fa; color: #1a1a1a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 2rem 1rem; padding-bottom: max(2rem, env(safe-area-inset-bottom)); }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
+        }
         .container { max-width: 1200px; width: 100%; flex: 1; }
         .hero { text-align: center; margin-bottom: 2rem; }
-        .hero h1 { font-family: 'Roboto', sans-serif; font-size: 2.4rem; font-weight: 700; color: #0050a4; margin-bottom: 0.6rem; line-height: 1.2; }
-        .hero .slogan { font-size: 1.2rem; font-weight: 500; color: #333; margin-bottom: 0.5rem; }
-        .hero .subtitle { font-size: 0.95rem; color: #555; max-width: 680px; margin: 0 auto; padding: 0 0.5rem; line-height: 1.5; }
-        .choice-instruction { text-align: center; font-size: 1.35rem; font-weight: 600; color: #0050a4; margin: 1.2rem 0 2rem; background: #eef3fc; display: inline-block; width: auto; padding: 0.5rem 1.8rem; border-radius: 60px; letter-spacing: -0.2px; }
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin: 1rem 0 2.5rem; }
-        .tool-card { background: white; border-radius: 28px; padding: 2rem 1.5rem; text-align: center; text-decoration: none; transition: all 0.25s ease; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); border: 1px solid #e0e8f0; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 260px; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
-        .tool-card:active { transform: scale(0.98); background: #fdfdfd; border-color: #0050a4; }
-        @media (hover: hover) { .tool-card:hover { transform: translateY(-6px); box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); border-color: #0050a4; background: #ffffff; } }
-        .tool-icon { font-size: 3.5rem; margin-bottom: 1rem; line-height: 1; }
-        .tool-title { font-size: 1.8rem; font-weight: 700; color: #0050a4; margin-bottom: 0.75rem; letter-spacing: -0.3px; }
-        .tool-description { font-size: 0.95rem; color: #3a546d; line-height: 1.5; max-width: 260px; margin-top: 0.25rem; }
-        .seo-info { margin-top: 3rem; padding: 2rem; background: #ffffff; border-radius: 16px; border: 1px solid #e0e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .seo-info h2 { font-size: 1.4rem; color: #0050a4; margin-bottom: 1rem; font-weight: 600; }
-        .seo-info h3 { font-size: 1.2rem; color: #333; margin: 1rem 0 0.5rem; font-weight: 600; }
-        .seo-info p { line-height: 1.6; color: #4a5568; margin-bottom: 0.75rem; }
-        .seo-info ul { margin: 0.5rem 0 1rem 1.5rem; color: #4a5568; }
-        .seo-info li { margin: 0.4rem 0; }
-        .footer { margin-top: 2rem; padding: 1.5rem 0 0.5rem; text-align: center; color: #666; font-size: 0.85rem; width: 100%; }
-        .footer a { color: #0050a4; text-decoration: none; }
-        @media (max-width: 480px) {
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
+        }
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
+        }
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
+        }
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
+        }
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
+        }
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
+        }
+        .tool-card:active { 
+            transform: scale(0.97); 
+            background: #f0f4f8;
+            border-color: #0050a4; 
+        }
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
+        }
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
+        }
+        .tool-title { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
+        }
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
+            }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
+        }
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
+        }
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
+        }
+        .seo-info li { 
+            margin: 0.4rem 0; 
+        }
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
+        }
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
+        }
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .tools-grid { grid-template-columns: 1fr; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
@@ -45,90 +184,104 @@
             <h1>WelfareCalc.ch</h1>
             <div class="slogan">Przestań zgadywać. Zacznij wiedzieć.</div>
             <p class="subtitle">
-                Darmowe szwajcarskie narzędzia: Kalkulator Świadczeń Socjalnych • Dekoder Rachunków Dentystycznych • Skaner Umów Najmu.<br>
-                Bez rejestracji. Bez śledzenia. Wszystko działa lokalnie w twojej przeglądarce.
+                Darmowe narzędzia szwajcarskie: Kalkulator świadczeń społecznych • Przejrzystość algorytmów • Weryfikator rachunków dentystycznych • Weryfikator umów najmu.<br>
+                Bez rejestracji. Bez śledzenia. Wszystko działa lokalnie w Twojej przeglądarce.
             </p>
         </div>
-
         <div style="display: flex; justify-content: center;">
-            <div class="choice-instruction">📌 Wybierz swoje narzędzie</div>
+            <div class="choice-instruction">📌 Wybierz swój dekoder</div>
         </div>
-
         <div class="tools-grid">
+            <!-- 1. Kalkulator świadczeń -->
             <a href="https://www.welfarecalc.ch/pl.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
-                <div class="tool-title">Kalkulator Świadczeń Szwajcarskich</div>
+                <div class="tool-title">Kalkulator świadczeń</div>
                 <div class="tool-description">
-                    Sprawdź dokładnie, ile państwo ci się należy — AHV, IV, EL, redukcje składek.
-                    <strong>Przestań zostawiać tysiące franków na stole.</strong>
+                    Sprawdź dokładnie, do czego masz ustawowe prawo – AHV, IV, EL, obniżka składek (IPV).
+                    <strong>Nie rezygnuj dłużej z pieniędzy, które Ci się należą.</strong>
+                </div>
+            </a>
+
+            <!-- 2. Przejrzystość algorytmów -->
+            <a href="https://www.welfarecalc.ch/open/2026open_pl.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Przejrzystość algorytmów</div>
+                <div class="tool-description">
+                    Zobacz oficjalny algorytm obliczeń dla AHV, IV, EL, IPV i pomocy społecznej – uwzględniający specyfikę kantonu i w pełni zrozumiały.
+                    <strong>100% przejrzyste • Bez czarnej skrzynki • Otwarte dla wszystkich.</strong>
                 </div>
             </a>
             
+            <!-- 3. Weryfikator rachunków dentystycznych -->
             <a href="https://www.welfarecalc.ch/blog/pl/dental/dental_pl.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
-                <div class="tool-title">Audytor Rachunków Dentystycznych</div>
+                <div class="tool-title">Weryfikator rachunków dentystycznych</div>
                 <div class="tool-description">
-                    Ukryte Taxpunktwert i kody DENTOTAR po cichu opróżniają twój portfel.
-                    <strong>Odszyfruj rachunek dentystyczny i przestań przepłacać — już dziś.</strong>
+                    Ukryte wartości punktów taryfowych i kody DENTOTAR opróżniają Twoje konto po cichu.
+                    <strong>Odszyfruj swój rachunek dentystyczny i nie przepłacaj już dziś.</strong>
                 </div>
             </a>
 
-            <!-- Szwajcarski Ochrona Najemcy -->
+            <!-- 4. Weryfikator umów najmu -->
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_pl.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">Szwajcarski Ochrona Najemcy</div>
+                <div class="tool-title">Weryfikator umów najmu</div>
                 <div class="tool-description">
-                    Skanuj swoją umowę najmu w poszukiwaniu 30+ pułapek prawnych przed podpisaniem.<br>
-                    <strong>Darmowe • W 100% prywatne • Lokalne przetwarzanie.</strong><br>
-                    Nigdy więcej nie podpisuj ryzykownego Mietvertrag / Bail.
+                    Sprawdź swoją umowę najmu pod kątem ponad 30 pułapek prawnych, zanim podpiszesz.<br>
+                    <strong>Bezpłatnie • 100% prywatnie • Lokalne przetwarzanie.</strong><br>
+                    Nigdy więcej nie podpisuj ryzykownej umowy najmu.
                 </div>
             </a>
         </div>
-
         <div class="seo-info">
             <h2>Twój zestaw przetrwania na szwajcarskie koszty życia</h2>
-            <p>WelfareCalc.ch zapewnia przejrzystość, której często brakuje w systemie. Użyj naszego <strong>Kalkulatora Świadczeń Społecznych</strong>, aby ubiegać się o to, co ci się należy (AHV, IV, EL), <strong>Audytora Rachunków Dentystycznych</strong> do odczytania ukrytych opłat oraz <strong>Szwajcarskiego Ochrony Najemcy</strong> do skanowania umów najmu w poszukiwaniu nieuczciwych klauzul, zanim je podpiszesz.</p>
+            <p>WelfareCalc.ch zapewnia przejrzystość, której często brakuje w systemie. Skorzystaj z naszego <strong>Kalkulatora świadczeń społecznych</strong>, aby otrzymać to, co Ci się prawnie należy (AHV, IV, EL), z <strong>Przejrzystości algorytmów</strong>, aby poznać logikę obliczeń, z <strong>Weryfikatora rachunków dentystycznych</strong>, aby odszyfrować ukryte opłaty, oraz z <strong>Weryfikatora umów najmu</strong>, aby przed podpisaniem umowy najmu sprawdzić nieuczciwe klauzule.</p>
             
-            <h3>Przestań przepłacać swojemu dentyście</h3>
-            <p>Szwajcarskie rachunki dentystyczne są pisane w tajemnym języku punktów taryfowych (TP) i wartości punktowej (Taxpunktwert). Nasz przewodnik ujawnia:</p>
+            <h3>🔓 100% przejrzyste algorytmy – bez czarnej skrzynki</h3>
+            <p>WelfareCalc.ch to jedyny portal, który ujawnia <strong>oficjalne algorytmy obliczeniowe dla AHV, IV, świadczeń uzupełniających (EL), indywidualnych ulg na składki (IPV) i pomocy społecznej</strong>. Wybierz swój kanton i żądany rodzaj świadczenia – zobaczysz dokładnie, według jakich formuł i przepisów oblicza się Twoje prawo. Żadnej ukrytej logiki, żadnego zastrzeżonego systemu. <strong>100% przejrzyste, 100% zrozumiałe.</strong></p>
+
+            <h3>Przestań przepłacać u dentysty</h3>
+            <p>Szwajcarskie rachunki dentystyczne są spisane w tajemnym języku punktów taryfowych (TP) i wartości punktów. Nasz poradnik ujawnia:</p>
             <ul>
                 <li><strong>Pułapka DENTOTAR</strong> – Jak kody takie jak 4.0000 i 4.1110 są używane do zawyżania rachunku.</li>
-                <li><strong>Zwrot z inwestycji w ubezpieczenie</strong> – Dlaczego większość dodatkowych ubezpieczeń dentystycznych to dla dorosłych "matematyczna porażka".</li>
-                <li><strong>Ukryte stawki</strong> – Dlaczego to samo wypełnienie kosztuje 110 CHF w jednej klinice i 160 CHF w innej.</li>
-                <li><strong>Prawa pacjenta</strong> – Jak poprosić o drugą opinię i zakwestionować "pilne" plany leczenia.</li>
+                <li><strong>ROI ubezpieczeń</strong> – Dlaczego większość dodatkowych ubezpieczeń dentystycznych dla dorosłych to "matematyczna katastrofa".</li>
+                <li><strong>Ukryte taryfy</strong> – Dlaczego to samo wypełnienie w jednej praktyce kosztuje 110 CHF, a w innej 160 CHF.</li>
+                <li><strong>Twoje prawa jako pacjenta</strong> – Jak domagać się drugiej opinii i kwestionować "pilne" plany leczenia.</li>
             </ul>
 
             <h3>Chroń się podczas wynajmu w Szwajcarii</h3>
-            <p>Przeprowadzka do Szwajcarii lub zmiana mieszkania? Umowy najmu (Mietvertrag / Bail / Contratto) często zawierają ukryte ryzyka, które mogą później kosztować cię tysiące franków. Nasz <strong>Szwajcarski Ochrona Najemcy</strong> skanuje twoją umowę w poszukiwaniu 30+ typowych pułapek prawnych — całkowicie za darmo i w 100% w twojej przeglądarce.</p>
+            <p>Przeprowadzka do Szwajcarii lub zmiana mieszkania? Umowy najmu często zawierają ukryte ryzyka, które mogą Cię później kosztować tysiące franków. Nasz <strong>Weryfikator umów najmu</strong> skanuje Twoją umowę pod kątem ponad 30 typowych pułapek prawnych – całkowicie bezpłatnie i w 100% lokalnie w Twojej przeglądarce.</p>
             <ul>
-                <li>Nielegalne lub wygórowane klauzule dotyczące kaucji</li>
-                <li>Nieuczciwe obowiązki remontowe i sprzątające</li>
-                <li>Problematyczne zasady wypowiedzenia i okresy wypowiedzenia</li>
-                <li>Ukryte koszty i niedozwolone ograniczenia</li>
+                <li>Niedopuszczalne lub wygórowane kaucje</li>
+                <li>Nieuczciwe obowiązki remontowe i sprzątania</li>
+                <li>Problematyczne zasady wypowiedzenia i terminy</li>
+                <li>Ukryte koszty i zakazane ograniczenia</li>
             </ul>
-            <p><strong>Wskazówka:</strong> Zawsze skanuj swoją umowę przed podpisaniem i skonsultuj się z Mieterverband, jeśli pojawią się jakiekolwiek czerwone flagi.</p>
-           
-            <h3>Świadczenia społeczne – otrzymaj to, co ci się należy</h3>
-            <p>Wielu mieszkańców Szwajcarii traci tysiące franków, ponieważ proces aplikacyjny jest onieśmielający. Upraszczamy wytyczne na 2026 rok dotyczące AHV, IV i redukcji składek (IPV).</p>
+            <p><strong>Wskazówka:</strong> Zawsze skanuj swoją umowę przed podpisaniem, a w przypadku ostrzeżeń skonsultuj się ze związkiem najemców.</p>
             
-            <h3>Wielojęzyczny i z poszanowaniem prywatności</h3>
-            <p>Wierzymy, że przejrzystość finansowa i prawna powinna być dostępna dla każdego. Nasze narzędzia oferują wsparcie wielojęzyczne i działają <strong>lokalnie w twojej przeglądarce</strong>. Żadne dane nie są przechowywane ani śledzone.</p>
+            <h3>Świadczenia społeczne – otrzymaj to, co Ci się należy</h3>
+            <p>Wielu mieszkańców Szwajcarii traci tysiące franków, ponieważ proces składania wniosków wydaje się onieśmielający. Upraszczamy wytyczne na rok 2026 dla AHV, IV i indywidualnych obniżek składek (IPV).</p>
+            
+            <h3>Wielojęzyczność & ochrona danych</h3>
+            <p>Wierzymy, że przejrzystość finansowa i prawna powinna być dostępna dla każdego. Nasze narzędzia oferują wsparcie wielojęzyczne i działają <strong>lokalnie w Twojej przeglądarce</strong>. Żadne dane nie są przechowywane ani śledzone.</p>
             
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Dane zweryfikowane zgodnie z oficjalnymi standardami na 2026 rok z <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">FSIO</a> i <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">FOPH</a>.
+                📌 Dane sprawdzone zgodnie z oficjalnymi standardami 2026 <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> i <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
             </p>
         </div>
     </div>
-
     <div class="footer">
-        <p>WelfareCalc.ch • Darmowe • Anonimowe • 2026</p>
+        <p>WelfareCalc.ch • Bezpłatnie • Anonimowo • 2026</p>
         <p style="margin-top: 0.6rem;">
-            <a href="aboutus_pl.html">About us</a> •
-            <a href="impressum_pl.html">Impressum</a> • 
-            <a href="datenschutz_pl.html">Polityka prywatności</a> • 
+            <a href="aboutus_pl.html">O nas</a> •
+            <a href="impressum_pl.html">Nota prawna</a> •
+            <a href="datenschutz_pl.html">Ochrona danych</a> •
             <a href="haftung_pl.html">Wyłączenie odpowiedzialności</a>
         </p>
     </div>

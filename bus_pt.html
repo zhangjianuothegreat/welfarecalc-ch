@@ -1,365 +1,283 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>Benefícios Suíços, Auditor Dentário e Protetor de Arrendamento | WelfareCalc.ch</title>
-    <meta name="description" content="Ferramentas gratuitas na Suíça: Calcule benefícios AVS/AI/PC, descodifique faturas de dentista e analise contratos de arrendamento para mais de 30 riscos legais. 100% privado, sem registo, processamento local.">
-
-    <!-- Fontes e estilos – mesmo design moderno do referencial -->
+    <title>Calculadora de Prestações Sociais, Auditor de Faturas Dentárias e Verificador de Contratos de Arrendamento | WelfareCalc.ch</title>
+    <meta name="description" content="Ferramentas gratuitas para a Suíça: calcular prestações AVS/AI/PC, descodificar faturas dentárias e verificar contratos de arrendamento quanto a mais de 30 riscos legais. 100% privado, sem registo, processamento local.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
         }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #f8f9fa;
-            color: #1a1a1a;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 1rem;
-            padding-bottom: max(2rem, env(safe-area-inset-bottom));
+        .container { max-width: 1200px; width: 100%; flex: 1; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
         }
-
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            flex: 1;
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
         }
-
-        /* Secção Hero – identidade da marca */
-        .hero {
-            text-align: center;
-            margin-bottom: 2rem;
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
         }
-
-        .hero h1 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: #0050a4;
-            margin-bottom: 0.6rem;
-            line-height: 1.2;
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
         }
-
-        .hero .slogan {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #333;
-            margin-bottom: 0.5rem;
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
         }
-
-        .hero .subtitle {
-            font-size: 0.95rem;
-            color: #555;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 0 0.5rem;
-            line-height: 1.5;
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
         }
-
-        /* Instrução de seleção – crachá moderno */
-        .choice-instruction {
-            text-align: center;
-            font-size: 1.35rem;
-            font-weight: 600;
-            color: #0050a4;
-            margin: 1.2rem 0 2rem;
-            background: #eef3fc;
-            display: inline-block;
-            width: auto;
-            padding: 0.5rem 1.8rem;
-            border-radius: 60px;
-            letter-spacing: -0.2px;
+        .tool-card:active { 
+            transform: scale(0.97); 
+            background: #f0f4f8;
+            border-color: #0050a4; 
         }
-
-        /* Grelha para os três cartões */
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 1rem 0 2.5rem;
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
         }
-
-        .tool-card {
-            background: white;
-            border-radius: 28px;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e0e8f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 260px;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
         }
-
-        .tool-card:active {
-            transform: scale(0.98);
-            background: #fdfdfd;
-            border-color: #0050a4;
+        .tool-title { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
         }
-
-        @media (hover: hover) {
-            .tool-card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12);
-                border-color: #0050a4;
-                background: #ffffff;
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
             }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
         }
-
-        .tool-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            line-height: 1;
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
         }
-
-        .tool-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0050a4;
-            margin-bottom: 0.75rem;
-            letter-spacing: -0.3px;
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
         }
-
-        .tool-description {
-            font-size: 0.95rem;
-            color: #3a546d;
-            line-height: 1.5;
-            max-width: 260px;
-            margin-top: 0.25rem;
+        .seo-info li { 
+            margin: 0.4rem 0; 
         }
-
-        /* Bloco de informação SEO – mesmo estilo do referencial */
-        .seo-info {
-            margin-top: 3rem;
-            padding: 2rem;
-            background: #ffffff;
-            border-radius: 16px;
-            border: 1px solid #e0e8f0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
         }
-
-        .seo-info h2 {
-            font-size: 1.4rem;
-            color: #0050a4;
-            margin-bottom: 1rem;
-            font-weight: 600;
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
         }
-
-        .seo-info h3 {
-            font-size: 1.2rem;
-            color: #333;
-            margin: 1rem 0 0.5rem;
-            font-weight: 600;
-        }
-
-        .seo-info p {
-            line-height: 1.6;
-            color: #4a5568;
-            margin-bottom: 0.75rem;
-        }
-
-        .seo-info ul {
-            margin: 0.5rem 0 1rem 1.5rem;
-            color: #4a5568;
-        }
-
-        .seo-info li {
-            margin: 0.4rem 0;
-        }
-
-        .footer {
-            margin-top: 2rem;
-            padding: 1.5rem 0 0.5rem;
-            text-align: center;
-            color: #666;
-            font-size: 0.85rem;
-            width: 100%;
-        }
-
-        .footer a {
-            color: #0050a4;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Pontos de interrupção responsivos – idênticos ao design de referência */
-        @media (min-width: 641px) and (max-width: 1024px) {
-            body { padding: 2rem 1.5rem; }
-            .hero h1 { font-size: 2.8rem; }
-            .hero .slogan { font-size: 1.35rem; }
-            .hero .subtitle { font-size: 1rem; }
-            .choice-instruction { font-size: 1.5rem; margin: 1rem 0 2rem; padding: 0.6rem 2rem; }
-            .tools-grid { gap: 2rem; }
-            .tool-card { padding: 2rem 1.5rem; min-height: 280px; }
-            .tool-icon { font-size: 4rem; }
-            .tool-title { font-size: 2rem; }
-            .tool-description { font-size: 1rem; }
-            .seo-info h2 { font-size: 1.6rem; }
-            .seo-info h3 { font-size: 1.3rem; }
-        }
-
-        @media (min-width: 1025px) {
-            body { padding: 3rem 1.5rem; }
-            .hero { margin-bottom: 2rem; }
-            .hero h1 { font-size: 3.2rem; }
-            .hero .slogan { font-size: 1.4rem; }
-            .hero .subtitle { font-size: 1.15rem; }
-            .choice-instruction { font-size: 1.6rem; margin: 1.5rem 0 2.2rem; padding: 0.7rem 2.4rem; }
-            .tools-grid { gap: 2.5rem; margin: 2rem 0 3rem; }
-            .tool-card { padding: 2.5rem 2rem; min-height: 310px; }
-            .tool-icon { font-size: 4.5rem; margin-bottom: 1.2rem; }
-            .tool-title { font-size: 2.2rem; }
-            .tool-description { font-size: 1.05rem; max-width: 300px; }
-            .footer { margin-top: 3rem; }
-            .seo-info h2 { font-size: 1.8rem; }
-            .seo-info h3 { font-size: 1.4rem; }
-        }
-
-        @media (max-width: 480px) {
-            body { padding: 1rem 0.75rem; padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .hero .slogan { font-size: 1rem; }
-            .hero .subtitle { font-size: 0.85rem; }
-            .choice-instruction { font-size: 1.1rem; margin: 0.5rem 0 1.5rem; padding: 0.4rem 1.2rem; }
-            .tools-grid { gap: 1rem; grid-template-columns: 1fr; }
-            .tool-card { padding: 1.2rem 1rem; min-height: 180px; }
-            .tool-icon { font-size: 2.6rem; margin-bottom: 0.4rem; }
-            .tool-title { font-size: 1.5rem; }
-            .tool-description { font-size: 0.8rem; }
-            .footer { font-size: 0.7rem; margin-top: 1.5rem; }
-            .seo-info { padding: 1rem; margin-top: 1.5rem; }
-            .seo-info h2 { font-size: 1.2rem; }
-            .seo-info h3 { font-size: 1rem; }
-        }
-
-        @media (min-width: 481px) and (max-width: 640px) {
-            .tools-grid { gap: 1.2rem; grid-template-columns: 1fr; }
-            .tool-card { padding: 1.4rem 1rem; min-height: 200px; }
-            .tool-icon { font-size: 3rem; }
-            .tool-title { font-size: 1.6rem; }
-        }
-
-        @media (pointer: coarse) {
-            .tools-grid { gap: 1rem; }
-            .tool-card { min-height: 170px; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Secção Hero com a marca WelfareCalc.ch -->
         <div class="hero">
             <h1>WelfareCalc.ch</h1>
-            <div class="slogan">Pare de especular. Passe a saber.</div>
+            <div class="slogan">Pare de adivinhar. Comece a saber.</div>
             <p class="subtitle">
-                Ferramentas suíças gratuitas: Calculadora de Benefícios Sociais • Auditor de Faturas Dentárias • Scanner de Contratos de Arrendamento.<br>
-                Sem registo. Sem rastreio. Tudo funciona localmente no seu navegador.
+                Ferramentas gratuitas para a Suíça: Calculadora de Prestações Sociais • Transparência Algorítmica • Auditor de Faturas Dentárias • Verificador de Contratos de Arrendamento.<br>
+                Sem registo. Sem rastreamento. Tudo funciona localmente no seu navegador.
             </p>
         </div>
-
-        <!-- Instrução de seleção centralizada -->
         <div style="display: flex; justify-content: center;">
-            <div class="choice-instruction">📌 Escolha a sua ferramenta</div>
+            <div class="choice-instruction">📌 Selecione a sua ferramenta de análise</div>
         </div>
-
-        <!-- Grelha com três cartões: Calculadora de Benefícios, Auditor Dentário, Protetor de Arrendamento -->
         <div class="tools-grid">
             <a href="https://www.welfarecalc.ch/pt.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
-                <div class="tool-title">Calculadora de Benefícios Sociais</div>
+                <div class="tool-title">Calculadora de Prestações Sociais</div>
                 <div class="tool-description">
-                    Descubra exatamente o que o Estado lhe deve — AVS, AI, prestações complementares, redução de prémios.
-                    <strong>Pare de deixar milhares de francos em cima da mesa.</strong>
+                    Descubra exatamente a que tem direito por lei – AVS, AI, PC e Redução de Prémios (IPV).
+                    <strong>Não continue a abdicar do dinheiro que lhe é devido.</strong>
                 </div>
             </a>
 
+            <a href="https://www.welfarecalc.ch/open/2026open_pt.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Transparência Algorítmica</div>
+                <div class="tool-description">
+                    Veja o algoritmo de cálculo oficial para AVS, AI, PC, IPV e apoio social – específico por cantão e compreensível.
+                    <strong>100% transparente • Sem caixa-negra • Aberto para todos.</strong>
+                </div>
+            </a>
+            
             <a href="https://www.welfarecalc.ch/blog/pt/dental/dental_pt.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
                 <div class="tool-title">Auditor de Faturas Dentárias</div>
                 <div class="tool-description">
-                    O Taxpunktwert oculto e os códigos DENTOTAR estão a sugar o seu dinheiro silenciosamente.
-                    <strong>Decifre a sua fatura dentária e pare de pagar a mais — hoje.</strong>
+                    Valores de ponto ocultos e códigos DENTOTAR sugam silenciosamente a sua conta bancária.
+                    <strong>Descodifique a sua fatura dentária e pare de pagar a mais – ainda hoje.</strong>
                 </div>
             </a>
 
-            <!-- Protetor de Arrendamento Suíço (novo cartão) -->
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_pt.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">Protetor de Arrendamento Suíço</div>
+                <div class="tool-title">Verificador de Contratos de Arrendamento</div>
                 <div class="tool-description">
-                    Analise o seu contrato de arrendamento para identificar mais de 30 armadilhas legais antes de assinar.<br>
-                    <strong>Grátis • 100% privado • Processamento local.</strong><br>
-                    Nunca mais assine um Mietvertrag / Bail arriscado.
+                    Verifique o seu contrato de arrendamento quanto a mais de 30 armadilhas legais antes de assinar.<br>
+                    <strong>Gratuito • 100% privado • Processamento local.</strong><br>
+                    Nunca mais assine um contrato de arrendamento arriscado.
                 </div>
             </a>
         </div>
-
-        <!-- Bloco de informação otimizado para SEO – agora com a nova secção sobre arrendamento -->
         <div class="seo-info">
-            <h2>O Seu Kit de Sobrevivência para Custos de Vida na Suíça</h2>
-            <p>A WelfareCalc.ch oferece a transparência que o sistema muitas vezes esconde. Utilize a nossa <strong>Calculadora de Benefícios Sociais</strong> para reivindicar o que lhe é devido (AVS, AI, PC), o <strong>Auditor de Faturas Dentárias Suíço</strong> para descodificar custos ocultos, e o <strong>Protetor de Arrendamento Suíço</strong> para analisar contratos de arrendamento à procura de cláusulas abusivas antes de assinar.</p>
+            <h2> O seu kit de sobrevivência para o custo de vida na Suíça</h2>
+            <p>O WelfareCalc.ch oferece a transparência que o sistema muitas vezes não mostra. Use a nossa <strong>Calculadora de Prestações Sociais</strong> para obter aquilo a que tem direito legal (AVS, AI, PC), a <strong>Transparência Algorítmica</strong> para revelar a lógica de cálculo, o <strong>Auditor de Faturas Dentárias</strong> para descodificar taxas ocultas e o <strong>Verificador de Contratos de Arrendamento</strong> para verificar cláusulas abusivas antes de assinar.</p>
             
-            <h3>Proteja-se ao Arrendar na Suíça</h3>
-            <p>A mudar-se para a Suíça ou a trocar de apartamento? Os contratos de arrendamento (Mietvertrag / Bail / Contratto) contêm frequentemente riscos ocultos que lhe podem custar milhares de francos mais tarde. O nosso <strong>Protetor de Arrendamento Suíço</strong> analisa o seu contrato para identificar mais de 30 armadilhas legais comuns — completamente gratuito e 100% no seu navegador.</p>
-            <ul>
-                <li>Cláusulas de depósito ilegais ou excessivas</li>
-                <li>Obrigações abusivas de renovação e limpeza</li>
-                <li>Regras de rescisão e prazos de aviso problemáticos</li>
-                <li>Custos ocultos e restrições proibidas</li>
-            </ul>
-            <p><strong>Dica:</strong> Analise sempre o seu contrato antes de assinar e consulte a Associação de Inquilinos (Mieterverband / Asloca) caso apareçam sinais de alerta.</p>
+            <h3>🔓 100% algoritmos transparentes – sem caixa-negra</h3>
+            <p>O WelfareCalc.ch é o único portal que divulga os <strong>algoritmos oficiais de cálculo para AVS, AI, Prestações Complementares (PC), Redução Individual de Prémios (IPV) e apoio social</strong>. Escolha o seu cantão e o tipo de prestação pretendida – verá exatamente as fórmulas e leis que determinam o seu direito. Sem lógica oculta, sem sistema proprietário. <strong>100% transparente, 100% compreensível.</strong></p>
 
-            <h3>Pare de Pagar a Mais ao Seu Dentista</h3>
-            <p>As faturas dentárias na Suíça são escritas numa linguagem secreta de pontos fiscais (TP) e valores por ponto (Taxpunktwert). O nosso guia expõe:</p>
+            <h3>Pare de pagar a mais no dentista</h3>
+            <p>As faturas dentárias suíças são escritas numa linguagem complexa de pontos (TP) e valores por ponto. O nosso guia revela:</p>
             <ul>
-                <li><strong>A Armadilha DENTOTAR</strong> – Como códigos como 4.0000 e 4.1110 são usados para inflacionar a sua fatura.</li>
-                <li><strong>ROI do Seguro</strong> – Porque é que a maioria dos seguros dentários complementares é, na verdade, um "erro matemático" para adultos.</li>
-                <li><strong>Taxas Ocultas</strong> – Porque é que a mesma obturação custa 110 CHF numa clínica e 160 CHF noutra.</li>
-                <li><strong>Direitos do Paciente</strong> – Como solicitar uma segunda opinião e contestar planos de tratamento "urgentes".</li>
+                <li><strong>A armadilha DENTOTAR</strong> – Como os códigos 4.0000 e 4.1110 são usados para inflacionar a sua fatura.</li>
+                <li><strong>ROI dos seguros</strong> – Por que a maioria dos seguros complementares de saúde dentária para adultos é um "desastre matemático".</li>
+                <li><strong>Tarifas escondidas</strong> – Porque a mesma obturação custa 110 CHF num consultório e 160 CHF noutro.</li>
+                <li><strong>Os seus direitos como paciente</strong> – Como pedir uma segunda opinião e contestar planos de tratamento "urgentes".</li>
             </ul>
+
+            <h3>Proteja-se ao arrendar na Suíça</h3>
+            <p>Mudança para a Suíça ou troca de apartamento? Os contratos de arrendamento contêm frequentemente riscos ocultos que podem custar-lhe milhares de francos mais tarde. O nosso <strong>Verificador de Contratos de Arrendamento</strong> analisa o seu contrato em relação a mais de 30 armadilhas legais comuns – completamente gratuito e 100% local no seu navegador.</p>
+            <ul>
+                <li>Depósitos de garantia inadmissíveis ou excessivos</li>
+                <li>Obrigações abusivas de renovação e limpeza</li>
+                <li>Regras e prazos de rescisão problemáticos</li>
+                <li>Custos ocultos e cláusulas ilegais</li>
+            </ul>
+            <p><strong>Dica:</strong> Analise sempre o seu contrato antes de assinar e consulte a associação de inquilinos (Asloca) se houver sinais de alerta.</p>
             
-            <h3>Benefícios Sociais – Receba o Que é Seu Por Direito</h3>
-            <p>Muitos residentes na Suíça perdem milhares de francos porque o processo de candidatura é intimidante. Simplificamos as diretrizes de 2026 para AVS, AI e Reduções de Prémios (IPV).</p>
+            <h3>Prestações sociais – Receba aquilo a que tem direito</h3>
+            <p>Muitos residentes na Suíça perdem milhares de francos porque o processo de candidatura parece intimidante. Simplificamos as diretrizes de 2026 para AVS, AI e redução de prémios (IPV).</p>
             
-            <h3>Multilingue e Focado na Privacidade</h3>
+            <h3>Multilíngue e focado na privacidade</h3>
             <p>Acreditamos que a clareza financeira e legal deve ser acessível a todos. As nossas ferramentas oferecem suporte multilíngue e funcionam <strong>localmente no seu navegador</strong>. Nenhum dado é armazenado ou rastreado.</p>
             
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Dados verificados de acordo com as normas oficiais de 2026 do <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">Gabinete Federal de Seguros Sociais (FSIO)</a> e do <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">Gabinete Federal de Saúde Pública (FOPH)</a>.
+                📌 Dados verificados de acordo com as normas oficiais de 2026 do <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV</a> e <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG</a>.
             </p>
         </div>
     </div>
-
-    <!-- Rodapé com links legais (consistente com o design de referência) -->
     <div class="footer">
         <p>WelfareCalc.ch • Gratuito • Anónimo • 2026</p>
         <p style="margin-top: 0.6rem;">
-            <a href="aboutus_pt.html">About us</a> •
-            <a href="impressum_pt.html">Impressum</a> • 
-            <a href="datenschutz_pt.html">Política de Privacidade</a> • 
-            <a href="haftung_pt.html">Renúncia de Responsabilidade</a>
+            <a href="aboutus_pt.html">Sobre nós</a> •
+            <a href="impressum_pt.html">Aviso Legal</a> •
+            <a href="datenschutz_pt.html">Política de Privacidade</a> •
+            <a href="haftung_pt.html">Exclusão de responsabilidade</a>
         </p>
     </div>
 </body>

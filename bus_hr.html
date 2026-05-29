@@ -4,257 +4,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5.0">
     <link rel="llms" href="/llms.txt" />
-    <title>Kalkulator socijalnih naknada, Revizor zubarskih računa i Zaštitnik najma | WelfareCalc.ch</title>
-    <meta name="description" content="Besplatni švicarski alati: Izračunajte AVS/AI/dodatne naknade, dekodirajte zubarske račune i skenirajte ugovore o najmu na 30+ pravnih rizika. 100% privatno, bez registracije, lokalna obrada.">
-
+    <title>Kalkulator socijalnih davanja, Provjera stomatoloških računa i Provjera ugovora o najmu | WelfareCalc.ch</title>
+    <meta name="description" content="Besplatni švicarski alati: izračunajte AHV/IV/EL naknade, dekodirajte stomatološke račune i provjerite ugovore o najmu na više od 30 pravnih rizika. 100% privatno, lokalna obrada.">
     <link href="https://fonts.bunny.net/css?family=inter:wght@400;500;600;700|roboto:wght@400;500;700" rel="stylesheet">
-    
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/bus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/bus_en.html" />
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/bus_fr.html" />
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/bus_it.html" />
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/bus_es.html" />
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/bus_pt.html" />
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/bus_pl.html" />
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/bus_hr.html" />
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/bus_sq.html" />
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/bus_tr.html" />
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/bus_ta.html" />
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/bus_de.html" />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, sans-serif; 
+            background: #f8f9fa; 
+            color: #1a1a1a; 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 2rem 1rem; 
+            padding-bottom: max(2rem, env(safe-area-inset-bottom)); 
         }
-
-        body {
-            font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background: #f8f9fa;
-            color: #1a1a1a;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 2rem 1rem;
-            padding-bottom: max(2rem, env(safe-area-inset-bottom));
+        .container { max-width: 1200px; width: 100%; flex: 1; }
+        .hero { text-align: center; margin-bottom: 2rem; }
+        .hero h1 { 
+            font-family: 'Roboto', sans-serif; 
+            font-size: 2.4rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.6rem; 
+            line-height: 1.2; 
         }
-
-        .container {
-            max-width: 1200px;
-            width: 100%;
-            flex: 1;
+        .hero .slogan { 
+            font-size: 1.2rem; 
+            font-weight: 500; 
+            color: #333; 
+            margin-bottom: 0.5rem; 
         }
-
-        .hero {
-            text-align: center;
-            margin-bottom: 2rem;
+        .hero .subtitle { 
+            font-size: 0.95rem; 
+            color: #555; 
+            max-width: 680px; 
+            margin: 0 auto; 
+            padding: 0 0.5rem; 
+            line-height: 1.5; 
         }
-
-        .hero h1 {
-            font-family: 'Roboto', sans-serif;
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: #0050a4;
-            margin-bottom: 0.6rem;
-            line-height: 1.2;
+        .choice-instruction { 
+            text-align: center; 
+            font-size: 1.35rem; 
+            font-weight: 600; 
+            color: #0050a4; 
+            margin: 1.2rem 0 2rem; 
+            background: #eef3fc; 
+            display: inline-block; 
+            width: auto; 
+            padding: 0.5rem 1.8rem; 
+            border-radius: 60px; 
+            letter-spacing: -0.2px; 
         }
-
-        .hero .slogan {
-            font-size: 1.2rem;
-            font-weight: 500;
-            color: #333;
-            margin-bottom: 0.5rem;
+        .tools-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 2rem; 
+            margin: 1rem 0 2.5rem; 
         }
-
-        .hero .subtitle {
-            font-size: 0.95rem;
-            color: #555;
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 0 0.5rem;
-            line-height: 1.5;
+        .tool-card { 
+            background: white; 
+            border-radius: 28px; 
+            padding: 2rem 1.5rem; 
+            text-align: center; 
+            text-decoration: none; 
+            transition: all 0.25s ease; 
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); 
+            border: 1px solid #e0e8f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 260px; 
+            -webkit-tap-highlight-color: transparent; 
+            touch-action: manipulation; 
         }
-
-        .choice-instruction {
-            text-align: center;
-            font-size: 1.35rem;
-            font-weight: 600;
-            color: #0050a4;
-            margin: 1.2rem 0 2rem;
-            background: #eef3fc;
-            display: inline-block;
-            width: auto;
-            padding: 0.5rem 1.8rem;
-            border-radius: 60px;
-            letter-spacing: -0.2px;
+        .tool-card:active { 
+            transform: scale(0.97); 
+            background: #f0f4f8;
+            border-color: #0050a4; 
         }
-
-        .tools-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 1rem 0 2.5rem;
+        @media (hover: hover) { 
+            .tool-card:hover { 
+                transform: translateY(-6px); 
+                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12); 
+                border-color: #0050a4; 
+                background: #ffffff; 
+            } 
         }
-
-        .tool-card {
-            background: white;
-            border-radius: 28px;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e0e8f0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 260px;
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
+        .tool-icon { 
+            font-size: 3.5rem; 
+            margin-bottom: 1rem; 
+            line-height: 1; 
         }
-
-        .tool-card:active {
-            transform: scale(0.98);
-            background: #fdfdfd;
-            border-color: #0050a4;
+        .tool-title { 
+            font-size: 1.8rem; 
+            font-weight: 700; 
+            color: #0050a4; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -0.3px; 
         }
-
-        @media (hover: hover) {
-            .tool-card:hover {
-                transform: translateY(-6px);
-                box-shadow: 0 20px 30px rgba(0, 80, 164, 0.12);
-                border-color: #0050a4;
-                background: #ffffff;
+        .tool-description { 
+            font-size: 0.95rem; 
+            color: #3a546d; 
+            line-height: 1.5; 
+            max-width: 260px; 
+            margin-top: 0.25rem; 
+        }
+        .seo-info { 
+            margin-top: 3rem; 
+            padding: 2rem; 
+            background: #ffffff; 
+            border-radius: 16px; 
+            border: 1px solid #e0e8f0; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+        }
+        .seo-info h2 { 
+            font-size: 1.4rem; 
+            color: #0050a4; 
+            margin-bottom: 1rem; 
+            font-weight: 600; 
             }
+        .seo-info h3 { 
+            font-size: 1.2rem; 
+            color: #333; 
+            margin: 1rem 0 0.5rem; 
+            font-weight: 600; 
         }
-
-        .tool-icon {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            line-height: 1;
+        .seo-info p { 
+            line-height: 1.6; 
+            color: #4a5568; 
+            margin-bottom: 0.75rem; 
         }
-
-        .tool-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #0050a4;
-            margin-bottom: 0.75rem;
-            letter-spacing: -0.3px;
+        .seo-info ul { 
+            margin: 0.5rem 0 1rem 1.5rem; 
+            color: #4a5568; 
         }
-
-        .tool-description {
-            font-size: 0.95rem;
-            color: #3a546d;
-            line-height: 1.5;
-            max-width: 260px;
-            margin-top: 0.25rem;
+        .seo-info li { 
+            margin: 0.4rem 0; 
         }
-
-        .seo-info {
-            margin-top: 3rem;
-            padding: 2rem;
-            background: #ffffff;
-            border-radius: 16px;
-            border: 1px solid #e0e8f0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        .footer { 
+            margin-top: 2rem; 
+            padding: 1.5rem 0 0.5rem; 
+            text-align: center; 
+            color: #666; 
+            font-size: 0.85rem; 
+            width: 100%; 
         }
-
-        .seo-info h2 {
-            font-size: 1.4rem;
-            color: #0050a4;
-            margin-bottom: 1rem;
-            font-weight: 600;
+        .footer a { 
+            color: #0050a4; 
+            text-decoration: none; 
         }
-
-        .seo-info h3 {
-            font-size: 1.2rem;
-            color: #333;
-            margin: 1rem 0 0.5rem;
-            font-weight: 600;
-        }
-
-        .seo-info p {
-            line-height: 1.6;
-            color: #4a5568;
-            margin-bottom: 0.75rem;
-        }
-
-        .seo-info ul {
-            margin: 0.5rem 0 1rem 1.5rem;
-            color: #4a5568;
-        }
-
-        .seo-info li {
-            margin: 0.4rem 0;
-        }
-
-        .footer {
-            margin-top: 2rem;
-            padding: 1.5rem 0 0.5rem;
-            text-align: center;
-            color: #666;
-            font-size: 0.85rem;
-            width: 100%;
-        }
-
-        .footer a {
-            color: #0050a4;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (min-width: 641px) and (max-width: 1024px) {
-            body { padding: 2rem 1.5rem; }
-            .hero h1 { font-size: 2.8rem; }
-            .hero .slogan { font-size: 1.35rem; }
-            .hero .subtitle { font-size: 1rem; }
-            .choice-instruction { font-size: 1.5rem; margin: 1rem 0 2rem; padding: 0.6rem 2rem; }
-            .tools-grid { gap: 2rem; }
-            .tool-card { padding: 2rem 1.5rem; min-height: 280px; }
-            .tool-icon { font-size: 4rem; }
-            .tool-title { font-size: 2rem; }
-            .tool-description { font-size: 1rem; }
-            .seo-info h2 { font-size: 1.6rem; }
-            .seo-info h3 { font-size: 1.3rem; }
-        }
-
-        @media (min-width: 1025px) {
-            body { padding: 3rem 1.5rem; }
-            .hero { margin-bottom: 2rem; }
-            .hero h1 { font-size: 3.2rem; }
-            .hero .slogan { font-size: 1.4rem; }
-            .hero .subtitle { font-size: 1.15rem; }
-            .choice-instruction { font-size: 1.6rem; margin: 1.5rem 0 2.2rem; padding: 0.7rem 2.4rem; }
-            .tools-grid { gap: 2.5rem; margin: 2rem 0 3rem; }
-            .tool-card { padding: 2.5rem 2rem; min-height: 310px; }
-            .tool-icon { font-size: 4.5rem; margin-bottom: 1.2rem; }
-            .tool-title { font-size: 2.2rem; }
-            .tool-description { font-size: 1.05rem; max-width: 300px; }
-            .footer { margin-top: 3rem; }
-            .seo-info h2 { font-size: 1.8rem; }
-            .seo-info h3 { font-size: 1.4rem; }
-        }
-
-        @media (max-width: 480px) {
-            body { padding: 1rem 0.75rem; padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+        @media (max-width: 640px) {
             .hero h1 { font-size: 1.8rem; }
-            .hero .slogan { font-size: 1rem; }
-            .hero .subtitle { font-size: 0.85rem; }
-            .choice-instruction { font-size: 1.1rem; margin: 0.5rem 0 1.5rem; padding: 0.4rem 1.2rem; }
-            .tools-grid { gap: 1rem; grid-template-columns: 1fr; }
-            .tool-card { padding: 1.2rem 1rem; min-height: 180px; }
-            .tool-icon { font-size: 2.6rem; margin-bottom: 0.4rem; }
-            .tool-title { font-size: 1.5rem; }
-            .tool-description { font-size: 0.8rem; }
-            .footer { font-size: 0.7rem; margin-top: 1.5rem; }
-            .seo-info { padding: 1rem; margin-top: 1.5rem; }
-            .seo-info h2 { font-size: 1.2rem; }
-            .seo-info h3 { font-size: 1rem; }
-        }
-
-        @media (min-width: 481px) and (max-width: 640px) {
-            .tools-grid { gap: 1.2rem; grid-template-columns: 1fr; }
-            .tool-card { padding: 1.4rem 1rem; min-height: 200px; }
-            .tool-icon { font-size: 3rem; }
-            .tool-title { font-size: 1.6rem; }
-        }
-
-        @media (pointer: coarse) {
-            .tools-grid { gap: 1rem; }
-            .tool-card { min-height: 170px; }
+            .tools-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+            .tool-description { max-width: 100%; }
         }
     </style>
 </head>
@@ -264,90 +184,104 @@
             <h1>WelfareCalc.ch</h1>
             <div class="slogan">Prestanite nagađati. Počnite znati.</div>
             <p class="subtitle">
-                Besplatni švicarski alati: Kalkulator socijalnih naknada • Revizor zubarskih računa • Skeniranje ugovora o najmu.<br>
-                Bez registracije. Bez praćenja. Sve se izvodi lokalno u vašem pregledniku.
+                Besplatni švicarski alati: Kalkulator socijalnih davanja • Transparentnost algoritama • Provjera stomatoloških računa • Provjera ugovora o najmu.<br>
+                Bez registracije. Bez praćenja. Sve se obrađuje lokalno u vašem pregledniku.
             </p>
         </div>
-
         <div style="display: flex; justify-content: center;">
             <div class="choice-instruction">📌 Odaberite svoj dekoder</div>
         </div>
-
         <div class="tools-grid">
+            <!-- 1. Kalkulator -->
             <a href="https://www.welfarecalc.ch/hr.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">⚖️📊</div>
-                <div class="tool-title">Kalkulator švicarskih naknada</div>
+                <div class="tool-title">Kalkulator socijalnih davanja</div>
                 <div class="tool-description">
-                    Saznajte točno što vam država duguje — AVS, AI, dodatne naknade, sniženje premija.
-                    <strong>Prestanite ostavljati tisuće franaka na stolu.</strong>
+                    Saznajte točno na što imate zakonsko pravo – AHV, IV, EL, smanjenje premije osiguranja (IPV).
+                    <strong>Nemojte više odustajati od novca koji vam pripada.</strong>
                 </div>
             </a>
 
+            <!-- 2. Transparentnost -->
+            <a href="https://www.welfarecalc.ch/open/2026open_hr.html" 
+               class="tool-card" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                <div class="tool-icon">🔓📐</div>
+                <div class="tool-title">Transparentnost algoritama</div>
+                <div class="tool-description">
+                    Pogledajte službeni algoritam izračuna za AHV, IV, EL, IPV i socijalnu pomoć – prilagođeno kantonima i provjerljivo.
+                    <strong>100% transparentno • Bez crne kutije • Otvoreno za sve.</strong>
+                </div>
+            </a>
+            
+            <!-- 3. Stomatološki računi -->
             <a href="https://www.welfarecalc.ch/blog/hr/dental/dental_hr.html" class="tool-card" target="_blank" rel="noopener noreferrer">
                 <div class="tool-icon">🦷💰</div>
-                <div class="tool-title">Švicarski revizor zubarskih računa</div>
+                <div class="tool-title">Provjera stomatoloških računa</div>
                 <div class="tool-description">
-                    Skriveni Taxpunktwert i DENTOTAR kodovi tiho vam isušuju novčanik.
-                    <strong>Dekodirajte svoj zubarski račun i prestanite preplaćivati — već danas.</strong>
+                    Skrivene vrijednosti bodova (TP) i DENTOTAR kodovi tiho iscrpljuju vaš račun.
+                    <strong>Dekodirajte svoj stomatološki račun i nemojte više plaćati previše – već danas.</strong>
                 </div>
             </a>
 
-            <!-- Swiss Rental Protector -->
+            <!-- 4. Ugovor o najmu -->
             <a href="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html" 
                class="tool-card" 
                target="_blank" 
                rel="noopener noreferrer">
                 <div class="tool-icon">🏠🛡️</div>
-                <div class="tool-title">Švicarski zaštitnik najma</div>
+                <div class="tool-title">Provjera ugovora o najmu</div>
                 <div class="tool-description">
-                    Skenirajte ugovor o najmu na više od 30 pravnih zamki prije potpisivanja.<br>
+                    Provjerite svoj ugovor o najmu na više od 30 pravnih zamki prije nego što potpišete.<br>
                     <strong>Besplatno • 100% privatno • Lokalna obrada.</strong><br>
-                    Nikada više ne potpišite rizični Mietvertrag / Bail.
+                    Nikada više ne potpišite rizični ugovor o najmu.
                 </div>
             </a>
         </div>
-
         <div class="seo-info">
-            <h2>Vaš komplet za preživljavanje u švicarskim životnim troškovima</h2>
-            <p>WelfareCalc.ch pruža transparentnost koju sustav često nema. Koristite naš <strong>Kalkulator socijalnih naknada</strong> kako biste ostvarili svoja prava (AVS, AI, dodatne naknade), <strong>Švicarski revizor zubarskih računa</strong> za dekodiranje skrivenih naknada i <strong>Švicarski zaštitnik najma</strong> za skeniranje ugovora o najmu na nepoštene klauzule prije nego što potpišete.</p>
+            <h2>Vaš komplet za preživljavanje za švicarske životne troškove</h2>
+            <p>WelfareCalc.ch pruža transparentnost koju sustav često izostavlja. Iskoristite naš <strong>Kalkulator socijalnih davanja</strong> kako biste dobili ono na što imate zakonsko pravo (AHV, IV, EL), <strong>Transparentnost algoritama</strong> kako biste otkrili logiku izračuna, <strong>Provjeru stomatoloških računa</strong> za dešifriranje skrivenih naknada i <strong>Provjeru ugovora o najmu</strong> za provjeru nepravednih klauzula prije potpisivanja.</p>
             
-            <h3>Prestanite preplaćivati svog zubara</h3>
-            <p>Švicarski zubarski računi napisani su tajnim jezikom poreznih bodova (TP) i vrijednosti bodova (Taxpunktwert). Naš vodič otkriva:</p>
+            <h3>🔓 100% transparentni algoritmi – nema crne kutije</h3>
+            <p>WelfareCalc.ch jedini je portal koji otkriva <strong>službene algoritme izračuna za AHV, IV, dopunska davanja (EL), individualno smanjenje premije (IPV) i socijalnu pomoć</strong>. Odaberite svoj kanton i željenu vrstu naknade – vidjet ćete točno prema kojim formulama i zakonima se izračunava vaše pravo. Nema skrivene logike, nema vlasničkog sustava. <strong>100% transparentno, 100% provjerljivo.</strong></p>
+
+            <h3>Prestanite preplaćivati kod stomatologa</h3>
+            <p>Švicarski stomatološki računi napisani su tajnim jezikom bodova (TP) i vrijednosti bodova. Naš vodič otkriva:</p>
             <ul>
-                <li><strong>DENTOTAR zamka</strong> – Kako se kodovi poput 4.0000 i 4.1110 koriste za napuhavanje vašeg računa.</li>
-                <li><strong>ROI osiguranja</strong> – Zašto je većina dodatnog dentalnog osiguranja za odrasle zapravo "matematički promašaj".</li>
-                <li><strong>Skrivene stope</strong> – Zašto ista plomba košta 110 CHF u jednoj klinici i 160 CHF u drugoj.</li>
-                <li><strong>Prava pacijenata</strong> – Kako zatražiti drugo mišljenje i osporiti "hitne" planove liječenja.</li>
+                <li><strong>Zamka DENTOTAR-a</strong> – Kako se kodovi poput 4.0000 i 4.1110 koriste za napuhavanje vašeg računa.</li>
+                <li><strong>ROI osiguranja</strong> – Zašto je većina dodatnih stomatoloških osiguranja za odrasle "matematička katastrofa".</li>
+                <li><strong>Skrivene tarife</strong> – Zašto ista plomba u jednoj ordinaciji košta 110 CHF, a u drugoj 160 CHF.</li>
+                <li><strong>Vaša prava kao pacijenta</strong> – Kako zatražiti drugo mišljenje i osporiti "hitne" planove liječenja.</li>
             </ul>
 
-            <h3>Zaštitite se prilikom najma stana u Švicarskoj</h3>
-            <p>Selite se u Švicarsku ili mijenjate stan? Ugovori o najmu (Mietvertrag / Bail / Contratto di locazione) često sadrže skrivene rizike koji vas kasnije mogu koštati tisuće franaka. Naš <strong>Švicarski zaštitnik najma</strong> besplatno skenira vaš ugovor na više od 30 uobičajenih pravnih zamki — potpuno besplatno i 100% u vašem pregledniku.</p>
+            <h3>Zaštitite se prilikom najma u Švicarskoj</h3>
+            <p>Preseljenje u Švicarsku ili promjena stana? Ugovori o najmu često sadrže skrivene rizike koji vas kasnije mogu koštati tisuće franaka. Naša <strong>Provjera ugovora o najmu</strong> skenira vaš ugovor na više od 30 uobičajenih pravnih zamki – potpuno besplatno i 100% lokalno u vašem pregledniku.</p>
             <ul>
-                <li>Nedopuštene ili pretjerane klauzule o pologu (depozitu)</li>
-                <li>Nepoštene obveze renoviranja i čišćenja</li>
-                <li>Problematična pravila otkaza i otkazni rokovi</li>
+                <li>Nedopušteni ili pretjerani polog (kaucija)</li>
+                <li>Nepravedne obveze renoviranja i čišćenja</li>
+                <li>Problematična pravila otkaza i rokovi</li>
                 <li>Skriveni troškovi i zabranjena ograničenja</li>
             </ul>
-            <p><strong>Savjet:</strong> Uvijek skenirajte ugovor prije potpisivanja i obratite se Mieterverband (udruzi stanara) ako se pojave bilo kakvi znakovi upozorenja.</p>
+            <p><strong>Savjet:</strong> Uvijek skenirajte svoj ugovor prije potpisivanja i posavjetujte se sa savezom stanara (Mieterverband) ako primijetite znakove upozorenja.</p>
             
-            <h3>Socijalne naknade – Dobijte ono što vam pripada</h3>
-            <p>Mnogi stanovnici Švicarske propuštaju tisuće franaka jer je postupak prijave zastrašujući. Pojednostavljujemo smjernice za 2026. za AVS, AI i sniženja premija (IPV).</p>
+            <h3>Socijalna davanja – Dobijte ono što vam pripada</h3>
+            <p>Mnogi stanovnici Švicarske poklanjaju tisuće franaka jer im proces podnošenja zahtjeva djeluje zastrašujuće. Pojednostavljujemo smjernice za 2026. godinu za AHV, IV i smanjenje premije (IPV).</p>
             
-            <h3>Višejezično i s privatnošću na prvom mjestu</h3>
-            <p>Vjerujemo da financijska i pravna jasnoća treba biti dostupna svima. Naši alati nude višejezičnu podršku i rade <strong>lokalno u vašem pregledniku</strong>. Ne pohranjuju se nikakvi podaci niti se vrši praćenje.</p>
+            <h3>Višejezično i zaštita podataka</h3>
+            <p>Vjerujemo da bi financijska i pravna jasnoća trebale biti dostupne svima. Naši alati pružaju višejezičnu podršku i rade <strong>lokalno u vašem pregledniku</strong>. Nijedan podatak se ne pohranjuje niti prati.</p>
             
             <p style="margin-top: 1rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
-                📌 Podaci provjereni prema službenim standardima za 2026. od strane <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV-a (Savezni ured za socijalno osiguranje)</a> i <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG-a (Savezni ured za javno zdravlje)</a>.
+                📌 Podaci provjereni prema službenim smjernicama <a href="https://www.bsv.admin.ch/" rel="nofollow noopener" target="_blank">BSV-a</a> i <a href="https://www.bag.admin.ch/" rel="nofollow noopener" target="_blank">BAG-a</a> za 2026. godinu.
             </p>
         </div>
     </div>
-
     <div class="footer">
-        <p>WelfareCalc.ch • Besplatno • Anonimno • 2026</p>
+        <p>WelfareCalc.ch • Besplatno • Anonimno • 2026.</p>
         <p style="margin-top: 0.6rem;">
-            <a href="aboutus_hr.html">About us</a> •
-            <a href="impressum_hr.html">Impresum</a> • 
-            <a href="datenschutz_hr.html">Zaštita podataka</a> • 
+            <a href="aboutus_hr.html">O nama</a> •
+            <a href="impressum_hr.html">Impresum</a> •
+            <a href="datenschutz_hr.html">Zaštita podataka</a> •
             <a href="haftung_hr.html">Odricanje od odgovornosti</a>
         </p>
     </div>
