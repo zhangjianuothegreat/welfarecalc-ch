@@ -2,248 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="llms" href="/llms.txt" />
-    <title>About Us | WelfareCalc.ch – Simple. Independent. Transparent.</title>
-    <meta name="description" content="WelfareCalc.ch – independent, private, and free information portal for social benefits, dental bills, and rental contracts in Switzerland. Privacy-focused tools, 100% local in your browser.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - WelfareCalc.ch</title>
+    <meta name="description" content="Learn more about WelfareCalc.ch – our mission for algorithm transparency, uncompromising data protection, and independent calculations for Switzerland.">
+    
+    <!-- SEO & Internationalization (Hreflang) -->
+    <link rel="canonical" href="https://welfarecalc.ch/aboutus_en.html" />
+    
+    <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/aboutus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/aboutus_en.html" />
+    <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/aboutus_es.html" />
+    <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/aboutus_fr.html" />
+    <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/aboutus_hr.html" />
+    <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/aboutus_it.html" />
+    <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/aboutus_pl.html" />
+    <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/aboutus_pt.html" />
+    <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/aboutus_sq.html" />
+    <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/aboutus_ta.html" />
+    <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/aboutus_tr.html" />
+    <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/aboutus_de.html" />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
         }
-
         body {
-            background: #f4f9fe;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
-            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
         }
-
-        /* Main container – responsive layout */
-        .about-container {
-            max-width: 1100px;
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem 1.5rem 4rem 1.5rem;
-            line-height: 1.75;
-            color: #2c3e50;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-
-        /* original design enhanced */
-        .about-container h1 {
-            font-size: 2.4rem;
-            color: #0050a4;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: -0.3px;
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-
-        .subhead {
-            font-size: 1.15rem;
-            text-align: center;
-            max-width: 780px;
-            margin: 0 auto 3rem;
-            color: #2c3e50;
-            font-weight: 450;
-        }
-
-        .card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-            transition: box-shadow 0.2s ease;
-        }
-
-        .card p {
-            margin-bottom: 1.25rem;
-            font-size: 1.05rem;
-        }
-
-        .card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .card strong {
-            color: #0050a4;
-            font-weight: 600;
-        }
-
-        .feature-list, .tools-list {
-            margin: 1.8rem 0;
-            padding-left: 1.2rem;
-            font-size: 1.05rem;
-        }
-
-        .feature-list li, .tools-list li {
-            margin-bottom: 0.65rem;
-        }
-
-        .feature-list li strong, .tools-list li strong {
-            color: #0050a4;
-        }
-
         h2 {
-            margin: 2.5rem 0 1rem;
-            color: #0050a4;
-            font-size: 1.7rem;
-            font-weight: 600;
-            letter-spacing: -0.2px;
+            color: var(--primary-color);
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
         }
-
-        .card h2:first-of-type {
-            margin-top: 0.5rem;
+        p {
+            margin: 15px 0;
+            text-align: justify;
         }
-
-        .disclaimer-note {
-            margin-top: 2rem;
-            font-size: 1rem;
-            background: #f0f7ff;
-            padding: 1.2rem 1.5rem;
-            border-radius: 16px;
-            border-left: 4px solid #0050a4;
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
         }
-
-        .contact-block {
-            text-align: center;
-            margin-top: 2rem;
-            background: #ffffff;
-            border-radius: 40px;
-            padding: 1rem 1.5rem;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-        }
-
-        .contact-block span:first-of-type {
-            font-size: 1rem;
-        }
-
-        .contact-block a {
-            color: #0050a4;
-            font-weight: 500;
-            text-decoration: none;
-            border-bottom: 1px solid #8bb9e0;
-        }
-
-        .contact-block a:hover {
-            border-bottom: 1px solid #0050a4;
-        }
-
-        .contact-privacy {
-            font-size: 0.85rem;
-            display: block;
-            margin-top: 0.5rem;
-            color: #4b6a8b;
-        }
-
-        .footer-tagline {
-            text-align: center;
-            margin-top: 3rem;
-            color: #64748b;
-            font-size: 0.95rem;
-            border-top: 1px solid #e2edf7;
-            padding-top: 2rem;
-        }
-
-        /* responsive adjustments */
-        @media (max-width: 640px) {
-            .about-container {
-                padding: 1.5rem 1rem 3rem 1rem;
-            }
-            .about-container h1 {
-                font-size: 1.9rem;
-            }
-            .subhead {
-                font-size: 1rem;
-                margin-bottom: 2rem;
-            }
-            .card {
-                padding: 1.5rem;
-            }
-            h2 {
-                font-size: 1.45rem;
-                margin: 1.8rem 0 0.8rem;
-            }
-            .feature-list, .tools-list {
-                padding-left: 1rem;
-                font-size: 0.98rem;
-            }
-            .contact-block {
-                max-width: 90%;
-                padding: 0.9rem 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card {
-                padding: 1.2rem;
-            }
-            .feature-list li, .tools-list li {
-                margin-bottom: 0.5rem;
-            }
-        }
-
-        /* readability refinements */
-        .card a {
-            color: #0050a4;
-            text-decoration: none;
-            border-bottom: 1px dotted #8bb9e0;
-        }
-        .card a:hover {
-            border-bottom: 1px solid #0050a4;
+        .footer-note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="about-container">
-        <h1>About WelfareCalc.ch</h1>
-        <div class="subhead">
-            We make complex Swiss bureaucracy easy to understand.
-        </div>
 
-        <div class="card">
-            <p>WelfareCalc.ch is an <strong>independent, private, and free information portal</strong> for people living in Switzerland or moving here.</p>
-            
-            <p>Our goal is to create transparency in areas that are often confusing and costly for many people:</p>
-            
-            <ul class="feature-list">
-                <li><strong>Social benefits</strong> – AHV, IV, supplementary benefits (EL), premium reduction (IPV), social welfare, and family allowances</li>
-                <li><strong>Dental bills</strong> – Decode DENTOTAR codes and check whether you've been charged fairly</li>
-                <li><strong>Rental contracts</strong> – Identify over 30 common pitfalls before you sign</li>
-            </ul>
-            
-            <p>All our tools run <strong>100% locally in your browser</strong>. No personal data is stored, no tracking tools are used, and no data is shared with third parties. Your privacy is our highest priority.</p>
-            
-            <h2>Why we do this</h2>
-            <p>Every year, many people in Switzerland – especially newcomers – leave thousands of francs on the table because they don't know their rights or find the systems too complicated. At the same time, they often pay unnecessarily high amounts for dental treatment or rent because they can't properly assess invoices and contracts.</p>
-            <p>That's exactly where we step in: with simple, free, and privacy-compliant tools, we help you make better-informed decisions.</p>
-            
-            <h2>Our tools</h2>
-            <ul class="tools-list">
-                <li><strong>Social Benefits Calculator</strong> – Quickly and anonymously find out which benefits you are entitled to</li>
-                <li><strong>Swiss Dental Bill Auditor</strong> – Decode DENTOTAR codes and verify if your bill is fair</li>
-                <li><strong>Rental Contract Protector</strong> – Scan rental agreements for over 30 legal risks before you sign</li>
-            </ul>
-            
-            <div class="disclaimer-note">
-                <strong>Important:</strong> All our tools are for informational and guidance purposes only. 
-                They do not replace professional advice. For important decisions, we always recommend consulting a tenants' association, a compensation fund, a lawyer, or your dentist.
-            </div>
-        </div>
+<div class="container">
+    <h1>About Us — WelfareCalc.ch</h1>
+    
+    <p>Welcome to <strong>WelfareCalc.ch</strong>. We are an independent, purely function-oriented Swiss platform that helps citizens carry out complex legal and financial calculations quickly, precisely, and accessibly. Our offering includes specialized calculators such as the DENTOTAR dental bill checker, lease agreement reviews, and precise simulations for cantonal social benefits.</p>
 
-        <!-- Contact block: questions, feedback, or bug reports -->
-        <div class="contact-block">
-            <span>📬 Have questions, suggestions, or found an error?</span><br>
-            <a href="mailto:welfarecalc.ch@gmail.com">welfarecalc.ch@gmail.com</a>
-            <span class="contact-privacy">(We do not store any email addresses; your message will be treated confidentially.)</span>
-        </div>
+    <h2>Algorithm Transparency & Official Data Sources</h2>
+    <p>The calculations on WelfareCalc.ch are strictly based on the official legal requirements of the federal government and the individual implementing provisions of the 26 Swiss cantons (e.g., for the priority per-capita deductible logic of individual premium reductions or the regional imputed rental value limits for supplementary benefits)[cite: 3, 5].</p>
+    <p>To ensure maximum integrity, we not only refrain from any background data collection but also disclose the calculation logic: over 1,400 transparent algorithm disclosures have been implemented for all cantons[cite: 3, 5]. This makes every calculation step 100% mathematically and legally traceable for you, authorities, or subject matter experts.</p>
 
-        <div class="footer-tagline">
-            WelfareCalc.ch – Simple. Independent. Transparent.<br>
-            A private project dedicated to helping more people in Switzerland understand their rights.
-        </div>
+    <h2>Uncompromising Privacy („Privacy-First“ Layout)</h2>
+    <div class="highlight-box">
+        <strong>Important note on data protection:</strong> All calculations on this website are performed entirely locally in your web browser. None of the financial, health, or personal data you enter is transmitted to our servers, stored there, or evaluated[cite: 3]. Your privacy remains absolutely untouched.
     </div>
+
+    <h2>Why we do this</h2>
+    <p>Accessing state funding, checking rental rates, or understanding a dental bill according to the DENTOTAR system often requires in-depth expertise[cite: 3, 5]. Our goal is to lower this barrier. We provide you with a clear, ad-free, and privacy-compliant tool that serves as a reliable orientation aid in everyday Swiss legal and administrative matters.</p>
+
+    <h2>Who we are</h2>
+    <p>Behind WelfareCalc.ch there is neither a large corporation nor a government agency, but an independent Swiss development project dedicated to digital transparency and consumer protection[cite: 2, 3]. We believe that important calculation tools should be freely accessible to everyone, mathematically precise, and usable without the risk of data misuse[cite: 3].</p>
+
+    <h2>Contact</h2>
+    <p>Do you have questions about our calculators, feedback on algorithm labeling, or suggestions? You can reach us at any time by email at: <a href="mailto:welfarecalc@gmail.com">welfarecalc@gmail.com</a>. (We do not collect email addresses for marketing purposes and will only use your contact to respond to your inquiry).</p>
+
+    <div class="footer-note">
+        <p><em>Disclaimer: The calculators provided here are for guidance and information purposes only. They do not replace binding legal information from official bodies, cantonal social services, or professional legal and tax advice.</em></p>
+    </div>
+</div>
+
 </body>
 </html>
