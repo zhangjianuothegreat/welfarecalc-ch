@@ -2,243 +2,111 @@
 <html lang="ta">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="llms" href="/llms.txt" />
-    <title>எங்களைப் பற்றி | WelfareCalc.ch – எளிமையானது. சுயாதீனமானது. வெளிப்படையானது.</title>
-    <meta name="description" content="WelfareCalc.ch – சுயாதீனமான, தனிப்பட்ட மற்றும் இலவச தகவல் வலைவாசல். சுவிட்சர்லாந்தில் சமூக நலன்கள், பல் மருத்துவ பில்கள் மற்றும் குத்தகை ஒப்பந்தங்களுக்கான தனியுரிமை மையப்படுத்தப்பட்ட கருவிகள். 100% உலாவியிலேயே இயங்கும்.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>எங்களைப் பற்றி - WelfareCalc.ch</title>
+    <meta name="description" content="WelfareCalc.ch பற்றி மேலும் அறிக – அல்காரிதம் வெளிப்படைத்தன்மை, உறுதியான தரவு பாதுகாப்பு மற்றும் சுவிட்சர்லாந்திற்கான சுயாதீன கணக்கீடுகளுக்கான எங்களது பணி.">
+    
+    <!-- SEO & பன்னாட்டாக்கம் (Hreflang) -->
+    <link rel="canonical" href="https://welfarecalc.ch/aboutus_ta.html" />
+    
+    <link rel="alternate" hreflang="de" href="https://welfarecalc.ch/aboutus_de.html" />
+    <link rel="alternate" hreflang="en" href="https://welfarecalc.ch/aboutus_en.html" />
+    <link rel="alternate" hreflang="es" href="https://welfarecalc.ch/aboutus_es.html" />
+    <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/aboutus_fr.html" />
+    <link rel="alternate" hreflang="hr" href="https://welfarecalc.ch/aboutus_hr.html" />
+    <link rel="alternate" hreflang="it" href="https://welfarecalc.ch/aboutus_it.html" />
+    <link rel="alternate" hreflang="pl" href="https://welfarecalc.ch/aboutus_pl.html" />
+    <link rel="alternate" hreflang="pt" href="https://welfarecalc.ch/aboutus_pt.html" />
+    <link rel="alternate" hreflang="sq" href="https://welfarecalc.ch/aboutus_sq.html" />
+    <link rel="alternate" hreflang="ta" href="https://welfarecalc.ch/aboutus_ta.html" />
+    <link rel="alternate" hreflang="tr" href="https://welfarecalc.ch/aboutus_tr.html" />
+    <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/aboutus_de.html" />
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
         }
-
         body {
-            background: #f4f9fe;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, 'Noto Sans', sans-serif;
-            line-height: 1.5;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px 20px;
         }
-
-        .about-container {
-            max-width: 1100px;
+        .container {
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem 1.5rem 4rem 1.5rem;
-            line-height: 1.75;
-            color: #2c3e50;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
-
-        .about-container h1 {
-            font-size: 2.4rem;
-            color: #0050a4;
-            margin-bottom: 1.5rem;
-            text-align: center;
-            font-weight: 700;
-            letter-spacing: -0.3px;
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
         }
-
-        .subhead {
-            font-size: 1.15rem;
-            text-align: center;
-            max-width: 780px;
-            margin: 0 auto 3rem;
-            color: #2c3e50;
-            font-weight: 450;
-        }
-
-        .card {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 20px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
-            transition: box-shadow 0.2s ease;
-        }
-
-        .card p {
-            margin-bottom: 1.25rem;
-            font-size: 1.05rem;
-        }
-
-        .card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .card strong {
-            color: #0050a4;
-            font-weight: 600;
-        }
-
-        .feature-list, .tools-list {
-            margin: 1.8rem 0;
-            padding-left: 1.2rem;
-            font-size: 1.05rem;
-        }
-
-        .feature-list li, .tools-list li {
-            margin-bottom: 0.65rem;
-        }
-
-        .feature-list li strong, .tools-list li strong {
-            color: #0050a4;
-        }
-
         h2 {
-            margin: 2.5rem 0 1rem;
-            color: #0050a4;
-            font-size: 1.7rem;
-            font-weight: 600;
-            letter-spacing: -0.2px;
+            color: var(--primary-color);
+            margin-top: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
         }
-
-        .card h2:first-of-type {
-            margin-top: 0.5rem;
+        p {
+            margin: 15px 0;
+            text-align: justify;
         }
-
-        .disclaimer-note {
-            margin-top: 2rem;
-            font-size: 1rem;
-            background: #f0f7ff;
-            padding: 1.2rem 1.5rem;
-            border-radius: 16px;
-            border-left: 4px solid #0050a4;
+        .highlight-box {
+            background-color: #ebf8ff;
+            border-left: 4px solid #3182ce;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
         }
-
-        .contact-block {
-            text-align: center;
-            margin-top: 2rem;
-            background: #ffffff;
-            border-radius: 40px;
-            padding: 1rem 1.5rem;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-        }
-
-        .contact-block span:first-of-type {
-            font-size: 1rem;
-        }
-
-        .contact-block a {
-            color: #0050a4;
-            font-weight: 500;
-            text-decoration: none;
-            border-bottom: 1px solid #8bb9e0;
-        }
-
-        .contact-block a:hover {
-            border-bottom: 1px solid #0050a4;
-        }
-
-        .contact-privacy {
-            font-size: 0.85rem;
-            display: block;
-            margin-top: 0.5rem;
-            color: #4b6a8b;
-        }
-
-        .footer-tagline {
-            text-align: center;
-            margin-top: 3rem;
-            color: #64748b;
-            font-size: 0.95rem;
-            border-top: 1px solid #e2edf7;
-            padding-top: 2rem;
-        }
-
-        @media (max-width: 640px) {
-            .about-container {
-                padding: 1.5rem 1rem 3rem 1rem;
-            }
-            .about-container h1 {
-                font-size: 1.9rem;
-            }
-            .subhead {
-                font-size: 1rem;
-                margin-bottom: 2rem;
-            }
-            .card {
-                padding: 1.5rem;
-            }
-            h2 {
-                font-size: 1.45rem;
-                margin: 1.8rem 0 0.8rem;
-            }
-            .feature-list, .tools-list {
-                padding-left: 1rem;
-                font-size: 0.98rem;
-            }
-            .contact-block {
-                max-width: 90%;
-                padding: 0.9rem 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .card {
-                padding: 1.2rem;
-            }
-            .feature-list li, .tools-list li {
-                margin-bottom: 0.5rem;
-            }
-        }
-
-        .card a {
-            color: #0050a4;
-            text-decoration: none;
-            border-bottom: 1px dotted #8bb9e0;
-        }
-        .card a:hover {
-            border-bottom: 1px solid #0050a4;
+        .footer-note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="about-container">
-        <h1>WelfareCalc.ch பற்றி</h1>
-        <div class="subhead">
-            சிக்கலான சுவிஸ் நிர்வாகச் சிக்கல்களை எளிமையாகப் புரிந்து கொள்ள வைக்கிறோம்.
-        </div>
 
-        <div class="card">
-            <p>WelfareCalc.ch என்பது சுவிட்சர்லாந்தில் வாழும் அல்லது இங்கு குடிபெயரும் நபர்களுக்கான <strong>சுயாதீனமான, தனிப்பட்ட மற்றும் இலவச தகவல் வலைவாசல்</strong> ஆகும்.</p>
-            
-            <p>பலருக்குப் புரியாமலும், அதிக செலவுமிக்கதாகவும் இருக்கும் பகுதிகளில் வெளிப்படைத்தன்மையை உருவாக்குவதே எங்கள் நோக்கம்:</p>
-            
-            <ul class="feature-list">
-                <li><strong>சமூக நலன்கள்</strong> – AHV, IV, நிரப்பு நலன்கள் (EL), பிரீமியம் குறைப்பு (IPV), சமூக உதவி மற்றும் குடும்ப கொடுப்பனவுகள்</li>
-                <li><strong>பல் மருத்துவக் கட்டணப் பட்டியல்கள்</strong> – DENTOTAR குறியீடுகளைப் புரிந்துகொண்டு, உங்களுக்கு நியாயமான விலை கணக்கிடப்பட்டுள்ளதா என சரிபார்க்க</li>
-                <li><strong>வாடகை ஒப்பந்தங்கள்</strong> – கையெழுத்திடும் முன் 30+ பொதுவான சிக்கல் புள்ளிகளை அடையாளம் காண</li>
-            </ul>
-            
-            <p>எங்களின் அனைத்துக் கருவிகளும் <strong>100% உங்கள் உலாவியிலேயே இயங்குகின்றன</strong>. தனிப்பட்ட தரவு எதுவும் சேமிக்கப்படுவதில்லை, கண்காணிப்புக் கருவிகள் எதுவும் பயன்படுத்தப்படுவதில்லை, எந்தத் தரவும் மூன்றாம் தரப்பினருடன் பகிரப்படுவதில்லை. உங்கள் தனியுரிமைக்கு நாங்கள் மிக உயர்ந்த முன்னுரிமை அளிக்கிறோம்.</p>
-            
-            <h2>நாங்கள் ஏன் இதைச் செய்கிறோம்</h2>
-            <p>சுவிட்சர்லாந்தில் உள்ள பலர் – குறிப்பாகப் புதிதாக வந்தவர்கள் – தங்கள் உரிமைகளைத் தெரியாமல் அல்லது அமைப்புகள் மிகவும் சிக்கலானவை எனக் கருதி ஒவ்வோர் ஆண்டும் ஆயிரக்கணக்கான பிராங்குகளை இழக்கின்றனர். அதே நேரத்தில், பல் மருத்துவம் அல்லது வாடகைக்கான செலவுகளைச் சரியாக மதிப்பிட முடியாமல் தேவைக்கு அதிகமாகச் செலுத்துகின்றனர்.</p>
-            <p>இங்குதான் நாங்கள் களமிறங்குகிறோம்: எளிமையான, இலவச மற்றும் தனியுரிமைக்கு இசைவான கருவிகள் மூலம், சிறந்த தகவலறிந்த முடிவுகளை எடுக்க உங்களுக்கு உதவுகிறோம்.</p>
-            
-            <h2>எங்களின் கருவிகள்</h2>
-            <ul class="tools-list">
-                <li><strong>சமூக நலன் கால்குலேட்டர்</strong> – உங்களுக்கு என்னென்ன நலன்கள் கிடைக்கும் என விரைவாகவும் பெயர் தெரியாமலும் கணக்கிட</li>
-                <li><strong>சுவிஸ் பல் மருத்துவ பில் ஆடிட்டர்</strong> – DENTOTAR குறியீடுகளைப் புரிந்துகொண்டு, நியாயமான விலைகளுக்கான பில்களைச் சரிபார்க்க</li>
-                <li><strong>வாடகை ஒப்பந்த பாதுகாப்பு</strong> – கையெழுத்திடும் முன், 30+ சட்ட ரிஸ்குகளுக்கான வாடகை ஒப்பந்தங்களை ஆய்வு செய்ய</li>
-            </ul>
-            
-            <div class="disclaimer-note">
-                <strong>முக்கியம்:</strong> எங்களின் அனைத்துக் கருவிகளும் தகவல் மற்றும் வழிகாட்டலுக்கு மட்டுமே. 
-                அவை தொழில்முறை ஆலோசனைக்கு மாற்றாகாது. முக்கியமான முடிவுகளுக்கு, குத்தகையாளர் சங்கம், நிவாரண நிதி அலுவலகம், ஒரு வழக்கறிஞர் அல்லது உங்கள் பல் மருத்துவரை அணுகுமாறு பரிந்துரைக்கிறோம்.
-            </div>
-        </div>
+<div class="container">
+    <h1>எங்களைப் பற்றி — WelfareCalc.ch</h1>
+    
+    <p><strong>WelfareCalc.ch</strong> க்கு வரவேற்கிறோம். நாங்கள் ஒரு சுயாதீனமான, முற்றிலும் செயல்பாட்டு சார்ந்த சுவிஸ் தளமாகும். இது குடிமக்கள் சிக்கலான சட்ட மற்றும் நிதிக் கணக்கீடுகளை விரைவாக, துல்லியமாக மற்றும் தடையின்றி மேற்கொள்ள உதவுகிறது. எங்களது சலுகையில் DENTOTAR பல் மருத்துவர் பில் சரிபார்ப்பு, குத்தகை ஒப்பந்த சரிபார்ப்பு மற்றும் கன்டோனல் சமூக நலன்களுக்கான துல்லியமான உருவகப்படுத்துதல்கள் போன்ற சிறப்பு கால்குலேட்டர்கள் அடங்கும்.</p>
 
-        <div class="contact-block">
-            <span>📬 கேள்விகள், பரிந்துரைகள் அல்லது பிழை ஏதும் கண்டுபிடித்தீர்களா?</span><br>
-            <a href="mailto:welfarecalc.ch@gmail.com">welfarecalc.ch@gmail.com</a>
-            <span class="contact-privacy">(நாங்கள் எந்த மின்னஞ்சல் முகவரிகளையும் சேமிப்பதில்லை, உங்கள் செய்தி ரகசியமாகக் கையாளப்படும்.)</span>
-        </div>
+    <h2>அல்காரிதம் வெளிப்படைத்தன்மை & அதிகாரப்பூர்வ தரவு மூலங்கள்</h2>
+    <p>WelfareCalc.ch இல் உள்ள கணக்கீடுகள் கூட்டாட்சியின் அதிகாரப்பூர்வ சட்ட விதிமுறைகள் மற்றும் 26 சுவிஸ் கன்டோன்களின் தனிப்பட்ட செயல்பாட்டு விதிமுறைகளை கண்டிப்பாக அடிப்படையாகக் கொண்டவை (எ.கா., முன்னுரிமை தலைவிகித தொகை தர்க்கம் அல்லது பூர்த்தி நலன்களின் பிராந்திய குத்தகை மதிப்பு வரம்புகளுக்கு)[cite: 3, 5].</p>
+    <p>அதிகபட்ச நேர்மையை உறுதிப்படுத்த, நாங்கள் எந்த பின்னணி தரவு சேகரிப்பையும் தவிர்ப்பது மட்டுமல்லாமல், கணக்கீட்டு தர்க்கத்தையும் வெளிப்படுத்துகிறோம்: அனைத்து கன்டோன்களுக்கும் 1,400 க்கும் மேற்பட்ட வெளிப்படையான அல்காரிதம் வெளிப்படுத்தல்கள் செயல்படுத்தப்பட்டுள்ளன[cite: 3, 5]. இதனால், ஒவ்வொரு கணக்கீட்டு படியும் உங்களுக்காகவோ, அதிகாரிகளுக்காகவோ அல்லது துறை நிபுணர்களுக்காகவோ கணித மற்றும் சட்டப்பூர்வமாக 100% கண்காணிக்கத்தக்கதாக இருக்கும்.</p>
 
-        <div class="footer-tagline">
-            WelfareCalc.ch – எளிமையானது. சுயாதீனமானது. வெளிப்படையானது.<br>
-            சுவிட்சர்லாந்தில் உள்ள மேலும் பலருக்கு தங்கள் உரிமைகளை நன்கு புரிந்துகொள்ள உதவும் நோக்கில் ஒரு தனிப்பட்ட திட்டம்.
-        </div>
+    <h2>உறுதியான தனியுரிமை ("Privacy-First" வடிவமைப்பு)</h2>
+    <div class="highlight-box">
+        <strong>தரவு பாதுகாப்பு குறித்த முக்கிய குறிப்பு:</strong> இணையதளத்தில் உள்ள அனைத்து கணக்கீடுகளும் முழுமையாக உங்கள் உலாவியில் உள்நாட்டில் நிகழ்கின்றன. நீங்கள் உள்ளிடும் எந்த நிதி, சுகாதார அல்லது தனிப்பட்ட தரவும் எங்கள் சேவையகங்களுக்கு அனுப்பப்படுவதில்லை, அங்கு சேமிக்கப்படுவதில்லை அல்லது பகுப்பாய்வு செய்யப்படுவதில்லை[cite: 3]. உங்கள் தனியுரிமை முற்றிலும் பாதுகாக்கப்படுகிறது.
     </div>
+
+    <h2>நாங்கள் ஏன் இதை செய்கிறோம்</h2>
+    <p>அரசாங்க மானியங்களை அணுகுவதற்கு, வாடகை விகிதங்களை சரிபார்ப்பதற்கு அல்லது DENTOTAR முறைப்படி பல் மருத்துவர் பில் ஒன்றைப் புரிந்துகொள்வதற்கு பெரும்பாலும் ஆழமான நிபுணத்துவ அறிவு தேவைப்படுகிறது[cite: 3, 5]. இந்த தடையை குறைப்பதே எங்கள் குறிக்கோள். நாங்கள் உங்களுக்கு தெளிவான, விளம்பரமற்ற மற்றும் தரவு பாதுகாப்பு இணக்கமான ஒரு கருவியை வழங்குகிறோம், இது சுவிஸ் அன்றாட மற்றும் சட்ட விஷயங்களில் உங்களுக்கு நம்பகமான வழிகாட்டுதலாக செயல்படுகிறது.</p>
+
+    <h2>நாங்கள் யார்</h2>
+    <p>WelfareCalc.ch க்கு பின்னால் எந்த பெருநிறுவனமோ அல்லது அரசாங்க நிறுவனமோ இல்லை, மாறாக டிஜிட்டல் வெளிப்படைத்தன்மை மற்றும் நுகர்வோர் பாதுகாப்பிற்காக அர்ப்பணிக்கப்பட்ட ஒரு சுயாதீன சுவிஸ் மேம்பாட்டு திட்டமாகும்[cite: 2, 3]. முக்கியமான கணக்கீட்டு கருவிகள் அனைவருக்கும் இலவசமாக அணுகக்கூடியதாகவும், கணித ரீதியாக துல்லியமாகவும், தரவு தவறாக பயன்படுத்தப்படும் ஆபத்து இல்லாமல் பயன்படுத்தக்கூடியதாகவும் இருக்க வேண்டும் என்று நாங்கள் நம்புகிறோம்[cite: 3].</p>
+
+    <h2>தொடர்பு</h2>
+    <p>எங்கள் கால்குலேட்டர்கள் குறித்து கேள்விகள் உள்ளதா? அல்காரிதம் பெயரிடல் குறித்து கருத்து தெரிவிக்க வேண்டுமா? அல்லது ஆலோசனைகள் ஏதேனும் உள்ளதா? மின்னஞ்சல் மூலம் எங்களை எப்போதும் தொடர்பு கொள்ளலாம்: <a href="mailto:welfarecalc@gmail.com">welfarecalc@gmail.com</a>. (நாங்கள் சந்தைப்படுத்தல் நோக்கங்களுக்காக மின்னஞ்சல் முகவரிகளை சேகரிப்பதில்லை, மேலும் உங்கள் தொடர்பை உங்கள் கோரிக்கைக்கு பதிலளிப்பதற்கு மட்டுமே பயன்படுத்துகிறோம்).</p>
+
+    <div class="footer-note">
+        <p><em>தரப்பு பொறுப்பு மறுப்பு: இங்கு வழங்கப்படும் கால்குலேட்டர்கள் வழிகாட்டுதல் மற்றும் தகவல் நோக்கங்களுக்காக மட்டுமே. அவை அதிகாரப்பூர்வ அமைப்புகள், கன்டோனல் சமூக பணி அலுவலகங்கள் அல்லது தொழில்முறை சட்ட மற்றும் வரி ஆலோசனையின் கட்டாய தகவல்களை மாற்றுவதில்லை.</em></p>
+    </div>
+</div>
+
 </body>
 </html>
