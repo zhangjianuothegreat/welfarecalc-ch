@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>SPC Genève 2026 : Prestations complémentaires – Calcul, plafonds loyer & fortune | WelfareCalc.ch</title>
+  <meta name="description" content="SPC Genève 2026 : comment sont calculées les prestations complémentaires (PC) ? Plafonds loyer région 1, exonérations fortune, seuil d’accès. Vérifiez vos droits gratuitement.">
+  <meta name="keywords" content="SPC Genève, prestations complémentaires Genève, PC Genève 2026, calcul PC Genève, allocations familiales Genève, OCAS, EL Genève">
+
+  <!-- Canonical & Hreflang – uniquement versions existantes -->
+  <link rel="canonical" href="https://welfarecalc.ch/blog/fr/spc-geneve-2026-prestations-complementaires.html" />
+  <link rel="alternate" hreflang="fr" href="https://welfarecalc.ch/blog/fr/spc-geneve-2026-prestations-complementaires.html" />
+  <link rel="alternate" hreflang="x-default" href="https://welfarecalc.ch/blog/fr/spc-geneve-2026-prestations-complementaires.html" />
+
+  <!-- Bunny Fonts -->
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=playfair+display:wght@400;500;700&family=lato:wght@300;400;700" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Lato', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    .site-header {
+      background: white;
+      border-bottom: 1px solid #e0e8f0;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    .site-header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .site-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0050a4;
+      text-decoration: none;
+    }
+    .site-title a {
+      color: #0050a4;
+      text-decoration: none;
+    }
+    .language-selector a {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.9rem;
+      color: #0050a4;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      background: transparent;
+    }
+    .language-selector a:hover { background: #e6f0ff; }
+    .blog-content {
+      background: white;
+      border-radius: 24px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      border: 1px solid #e0e8f0;
+    }
+    .blog-content h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: #0050a4;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    .blog-content h2 {
+      font-size: 1.6rem;
+      color: #0050a4;
+      margin: 1.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #e0e8f0;
+    }
+    .blog-content h3 { font-size: 1.3rem; color: #333; margin: 1.2rem 0 0.8rem; }
+    .blog-content p { margin-bottom: 1rem; color: #2d3748; }
+    .blog-content ul, .blog-content ol { margin: 1rem 0 1rem 1.8rem; }
+    .blog-content li { margin: 0.5rem 0; }
+    .blog-content strong { color: #0050a4; }
+    .cta-box {
+      background: linear-gradient(135deg, #0050a4 0%, #003a7a 100%);
+      color: white;
+      border-radius: 20px;
+      padding: 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,80,164,0.2);
+    }
+    .cta-box h3 { color: white; font-size: 1.5rem; margin-bottom: 0.5rem; border: none; }
+    .cta-box p { color: rgba(255,255,255,0.95); margin-bottom: 1rem; }
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #0050a4;
+      padding: 0.8rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: all 0.2s ease;
+      margin-top: 0.5rem;
+    }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .info-box {
+      background: #e6f0ff;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #0050a4;
+    }
+    .warning-box {
+      background: #fff3e0;
+      border-radius: 16px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      border-left: 4px solid #e67e22;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: #f8fafc;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .data-table th {
+      background: #e6f0ff;
+      padding: 12px;
+      text-align: left;
+      font-weight: 700;
+      color: #0050a4;
+    }
+    .data-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e0e8f0;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid #e0e8f0;
+      padding-bottom: 1rem;
+    }
+    .faq-question { font-weight: 700; color: #0050a4; font-size: 1.1rem; margin-bottom: 0.5rem; }
+    .faq-answer { color: #4a5568; }
+    footer {
+      margin-top: auto;
+      padding: 1.5rem 1rem;
+      text-align: center;
+      color: #666;
+      font-size: 0.85rem;
+      border-top: 1px solid #e0e8f0;
+      background: white;
+    }
+    footer a { color: #0050a4; text-decoration: none; }
+    @media (max-width: 640px) {
+      .blog-content { padding: 1.2rem; }
+      .blog-content h1 { font-size: 1.6rem; }
+      .blog-content h2 { font-size: 1.3rem; }
+    }
+  </style>
+
+  <!-- FAQ Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quel est le plafond de loyer pour les PC à Genève en 2026 ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Genève appartient à la Région 1 (centres). Pour une personne seule, le plafond est de CHF 17'400 par an (CHF 1'450/mois), pour un couple CHF 20'400/an (CHF 1'700/mois)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quel est le seuil de fortune pour avoir droit aux PC à Genève ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "À Genève, le droit aux PC existe si la fortune nette est inférieure à CHF 100'000 (personne seule) ou CHF 200'000 (couples). La propriété occupée par son propriétaire n'est pas prise en compte dans ce seuil."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les prestations complémentaires sont-elles de l'aide sociale ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non. Les PC ne sont PAS de l'aide sociale. Elles n'influencent pas votre statut de séjour (permis C) et ne sont généralement pas à rembourser."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Où puis-je vérifier gratuitement mon droit aux PC à Genève ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vous pouvez utiliser le calculateur WelfareCalc.ch, entièrement gratuit et anonyme, qui applique les règles officielles du SPC Genève 2026."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <div class="site-title"><a href="/fr.html">🇨🇭 WelfareCalc.ch</a></div>
+    <div class="language-selector"><a href="/fr.html">← Retour au calculateur</a></div>
+  </div>
+</header>
+
+<main>
+<div class="container">
+  <div class="blog-content">
+
+    <h1>SPC Genève 2026 : Prestations complémentaires – Calcul, plafonds loyer & fortune (guide complet)</h1>
+
+    <p><strong>« Ma rente AVS ne suffit pas à Genève – ai-je droit aux prestations complémentaires (PC) ? »</strong> Cette question, nous l’entendons très souvent. Le coût de la vie dans le canton de Genève est parmi les plus élevés de Suisse, et de nombreux retraités ou personnes invalides ne savent pas qu'elles peuvent recevoir <strong>plusieurs centaines de francs par mois</strong> via le SPC Genève.</p>
+
+    <div class="info-box">
+      <p>👉 <strong>À retenir :</strong> Les prestations complémentaires (PC) ne sont <strong>PAS de l'aide sociale</strong>. Elles n'ont <strong>aucune influence négative</strong> sur votre statut de séjour (permis C) et ne doivent généralement pas être remboursées.</p>
+    </div>
+
+    <h2>Qu'est-ce que le SPC Genève ?</h2>
+    <p>Le <strong>Service des prestations complémentaires (SPC) du canton de Genève</strong> est l'autorité qui calcule et verse les <strong>prestations complémentaires à l'AVS et à l'AI (PC)</strong>. Ces prestations interviennent lorsque la rente AVS ou AI, ajoutée aux revenus et à la fortune, ne suffit pas à couvrir les <strong>besoins vitaux reconnus</strong> (frais de subsistance, loyer, primes d'assurance-maladie).</p>
+    <p>En 2026, Genève applique des règles spécifiques issues de la <strong>Loi fédérale sur les prestations complémentaires (LPC)</strong> combinées aux dispositions cantonales – notamment pour les <strong>plafonds de loyer</strong> et les <strong>exonérations de fortune</strong>.</p>
+
+    <h2>Genève : Région 1 – les plafonds de loyer les plus élevés</h2>
+    <p>Le canton de Genève appartient à la <strong>Région 1</strong> (centres urbains à coût élevé). Cela se traduit par des plafonds de loyer nettement supérieurs à ceux d'autres cantons.</p>
+
+    <table class="data-table">
+      <tr><th>Ménage</th><th>Plafond loyer annuel (Région 1)</th><th>Plafond mensuel</th></tr>
+      <tr><td>Personne seule</td><td>CHF 17'400</td><td>CHF 1'450</td></tr>
+      <tr><td>Couple (2 personnes)</td><td>CHF 20'400</td><td>CHF 1'700</td></tr>
+      <tr><td>3 personnes</td><td>CHF 23'400</td><td>CHF 1'950</td></tr>
+    </table>
+
+    <div class="warning-box">
+      <p>⚠️ <strong>Attention :</strong> Si votre loyer effectif dépasse ces plafonds, le SPC Genève ne prend en compte que le montant maximal autorisé pour le calcul des PC.</p>
+    </div>
+
+    <h2>Besoins de base annuels 2026 (montants AVS/AI)</h2>
+    <p>La Confédération définit des montants de base harmonisés pour les frais de subsistance :</p>
+    <ul>
+      <li><strong>Personne seule :</strong> CHF 20'670 par an</li>
+      <li><strong>Couples :</strong> CHF 31'005 par an</li>
+    </ul>
+    <p>À ces montants s'ajoutent le <strong>loyer reconnu (plafonné)</strong> ainsi que les <strong>primes d'assurance-maladie</strong> effectives (déduction faite des subsides éventuels).</p>
+
+    <h2>Comment le SPC Genève calcule vos PC en 2026 (formule officielle)</h2>
+    <p>Le calcul se déroule en trois étapes :</p>
+    <ol>
+      <li><strong>Dépenses reconnues</strong> = besoins de base + loyer (plafonné) + primes maladie</li>
+      <li><strong>Revenus pris en compte</strong> = rentes AVS/AI + utilisation de la fortune + ⅔ du revenu professionnel (après déductions)</li>
+      <li><strong>PC annuelles</strong> = Dépenses – Revenus</li>
+    </ol>
+
+    <div class="info-box">
+      <p>📐 <strong>Exemple concret (personne seule à Genève 2026) :</strong><br>
+      Besoins CHF 20'670 + loyer CHF 17'400 + primes CHF 3'600 = dépenses CHF 41'670.<br>
+      Revenu : rente AVS CHF 28'000 + utilisation fortune CHF 1'000 = revenu CHF 29'000.<br>
+      <strong>PC annuelles = CHF 12'670 (soit environ CHF 1'055/mois).</strong></p>
+    </div>
+
+    <h2>Exonérations de fortune et seuil d'accès – spécificités Genève</h2>
+    <p>Le canton de Genève applique deux règles importantes concernant la fortune :</p>
+
+    <h3>1. Exonérations de fortune (avant utilisation)</h3>
+    <table class="data-table">
+      <tr><th>Catégorie</th><th>Montant exonéré</th></tr>
+      <tr><td>Personne seule</td><td>CHF 30'000</td></tr>
+      <tr><td>Couples</td><td>CHF 50'000</td></tr>
+      <tr><td>Propriété occupée par son propriétaire</td><td>CHF 112'500</td></tr>
+    </table>
+    <p>La fortune nette <strong>après exonération</strong> est ensuite divisée par 10 (AVS) ou 15 (AI) et ajoutée comme revenu fictif.</p>
+
+    <h3>2. Seuil d'accès (condition impérative)</h3>
+    <div class="warning-box">
+      <p>🔴 <strong>À Genève, un droit aux PC existe UNIQUEMENT si la fortune nette (sans la propriété occupée) est inférieure à :</strong><br>
+      – CHF 100'000 pour une personne seule<br>
+      – CHF 200'000 pour les couples</p>
+    </div>
+
+    <h2>Erreurs fréquentes avec le SPC Genève</h2>
+    <ul>
+      <li>❌ « Je possède un appartement, donc je n'ai pas droit. » → Faux. La propriété occupée bénéficie d'une exonération élevée (CHF 112'500) et n'est pas comptée dans le seuil d'accès.</li>
+      <li>❌ « Les PC, c'est comme l'aide sociale. » → Non. Les PC ne sont pas remboursables et n'affectent pas le permis C.</li>
+      <li>❌ « Je peux demander à tout moment, sans délai. » → Oui pour les PC, mais mieux vaut agir vite pour ne pas perdre des mois de versement.</li>
+    </ul>
+
+    <div class="cta-box">
+      <h3>📢 Vérifiez maintenant vos droits aux PC Genève 2026</h3>
+      <p>Gratuit • Anonyme • Prise en compte des règles SPC Genève (Région 1, plafonds loyer, seuil fortune).</p>
+      <a href="https://welfarecalc.ch/bus_fr.html" class="cta-button" target="_blank">👉 Vérifier mon droit aux PC →</a>
+    </div>
+
+    <h2>Algorithme transparent – pourquoi nous publions les détails</h2>
+    <p>Chez <strong>WelfareCalc.ch</strong>, nous croyons que la transparence crée la confiance. C'est pourquoi nous avons publié l'intégralité de <strong>l'algorithme officiel du SPC Genève 2026</strong> : besoins de base, plafonds loyer région 1, utilisation de la fortune, seuil d'accès et formules de calcul.</p>
+    <p>👉 <strong>Document de référence (algorithme complet) :</strong> <a href="https://www.welfarecalc.ch/open/GE_2026EL_fr.html" target="_blank">https://www.welfarecalc.ch/open/GE_2026EL_fr.html</a></p>
+
+    <h2>Autres aides disponibles dans le canton de Genève</h2>
+    <ul>
+      <li><strong>Allocations familiales 2026 :</strong> Genève verse des montants supérieurs au minimum légal.</li>
+      <li><strong>Subsides d'assurance-maladie (RIP) :</strong> Réduction des primes selon le revenu.</li>
+      <li><strong>Allocations de maternité (APG) :</strong> 14 semaines d'indemnités journalières.</li>
+    </ul>
+    <p>Notre calculateur principal <strong><a href="https://welfarecalc.ch/bus_fr.html" target="_blank">welfarecalc.ch/bus_fr</a></strong> prend en compte l'ensemble de ces prestations en une seule vérification.</p>
+
+    <div class="cta-box">
+      <h3>👉 Ne laissez pas passer votre argent</h3>
+      <p>Des milliers de Genevois ont droit aux PC sans le savoir. Vérifiez en 2 minutes – anonyme et gratuit.</p>
+      <a href="https://welfarecalc.ch/bus_fr.html" class="cta-button" target="_blank">Accéder au calculateur gratuit →</a>
+    </div>
+
+    <h2>Questions fréquentes sur le SPC Genève 2026 (FAQ)</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">Question : Quel est le plafond de loyer pour les PC à Genève en 2026 ?</div>
+      <div class="faq-answer">Genève appartient à la Région 1. Pour une personne seule : CHF 17'400/an (CHF 1'450/mois). Pour un couple : CHF 20'400/an (CHF 1'700/mois).</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Question : Quel est le seuil de fortune pour avoir droit aux PC à Genève ?</div>
+      <div class="faq-answer">À Genève, la fortune nette (hors propriété occupée) doit être inférieure à CHF 100'000 (personne seule) ou CHF 200'000 (couples).</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Question : Les PC sont-elles de l'aide sociale ?</div>
+      <div class="faq-answer">Non. Les prestations complémentaires ne sont PAS de l'aide sociale. Elles n'influencent pas le permis C et ne sont généralement pas remboursables.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Question : Où puis-je vérifier gratuitement mon droit aux PC ?</div>
+      <div class="faq-answer">Sur WelfareCalc.ch – le calculateur applique les règles officielles du SPC Genève 2026. Gratuit, anonyme et sans inscription.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Question : Mes données sont-elles sécurisées dans le calculateur ?</div>
+      <div class="faq-answer">Oui. Le calculateur fonctionne 100 % dans votre navigateur. Aucune donnée n'est envoyée à un serveur. Vous restez complètement anonyme.</div>
+    </div>
+
+    <p><em>État : mars 2026 – sur la base des directives du Service des prestations complémentaires (SPC) Genève et de la LPC. Cet article ne remplace pas un conseil individuel.</em></p>
+
+    <h2>📚 Articles connexes</h2>
+    <ul>
+      <li><a href="allocations-familiales-2026.html">Allocations familiales 2026 : montants par canton</a></li>
+      <li><a href="subsidies-assurance-maladie-2026.html">Subsides d'assurance-maladie 2026</a></li>
+      <li><a href="prestations-complementaires-2026.html">Prestations complémentaires (PC) – guide général</a></li>
+      <li><a href="chomage-maternite-2026.html">Chômage & maternité 2026 : vos droits</a></li>
+    </ul>
+
+  </div>
+</div>
+</main>
+
+<footer>
+  <p>WelfareCalc.ch • Gratuit • Anonyme • 2026</p>
+  <p><a href="/impressum_fr.html">Impressum</a> • <a href="/datenschutz_fr.html">Protection des données</a></p>
+</footer>
+
+</body>
+</html>
