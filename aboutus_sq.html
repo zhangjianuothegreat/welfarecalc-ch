@@ -24,58 +24,69 @@
 
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --text-color: #333;
+            --primary-color: #0050a4;
+            --text-color: #2c3e50;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+            --border-color: #e9ecef;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
             padding: 40px 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
         h1 {
             color: var(--primary-color);
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
             margin-top: 0;
+            font-size: 1.85rem;
+            font-weight: 600;
         }
         h2 {
             color: var(--primary-color);
             margin-top: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
         }
         p {
             margin: 15px 0;
             text-align: justify;
         }
-        ul {
-            padding-left: 20px;
-            margin: 15px 0;
-        }
-        li {
-            margin-bottom: 10px;
-            text-align: justify;
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
         }
         .footer-note {
             font-size: 0.9em;
-            color: #666;
+            color: #6c7a89;
             margin-top: 40px;
             border-top: 1px solid var(--border-color);
             padding-top: 20px;
+            text-align: center;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -84,52 +95,42 @@
 <div class="container">
     <h1>Rreth nesh — WelfareCalc.ch</h1>
 
-    <p>Mirësevini në <strong>WelfareCalc.ch</strong>. Ne jemi një platformë e pavarur zvicerane cívic-tech me një qëllim të qartë: T'ju ndihmojmë të kryeni llogaritje dhe verifikime të ndërlikuara zyrtare shpejt, saktë dhe pa mundim – qoftë në simulimet e përfitimeve sociale kantonale, kontrollin e faturave dentare DENTOTAR, apo kontrollin e konformitetit të kontratës së qirasë.</p>
+    <p>Mirësevini në <strong>WelfareCalc.ch</strong>. Ne jemi një platformë e pavarur zvicerane e teknologjisë qytetare (civic-tech), e orientuar ekskluzivisht drejt funksionalitetit. Qëllimi ynë është i qartë: Të ndihmojmë qytetarët të kryejnë llogaritje dhe verifikime të ndërlikuara zyrtare shpejt, saktë dhe në mënyrë të qasshme – qoftë në simulimet e përfitimeve sociale kantonale, kontrollin e faturave dentare DENTOTAR® apo kontrollin e konformitetit të kontratave të qirasë.</p>
 
     <h2>Zvicra është komplekse – veçanërisht në përfitimet sociale, kostot shëndetësore dhe ligjin e qirasë</h2>
-    <p>Zvicra është një vend i vogël, por ka 26 kantone – dhe secili kanton ka rregullat e veta për përfitimet sociale. Këto rregulla gjithashtu ndryshojnë rregullisht. Ky sistem jashtëzakonisht i fragmentuar jo vetëm që i mbingarkon të sapoardhurit, por gjithashtu shkakton konfuzion edhe tek zviceranët vendas.</p>
-    <p>Por jo vetëm ndihma sociale është e ndërlikuar. Gjithashtu në jetën e përditshme hasim asimetri të thella informacioni dhe zona shumë të specializuara:</p>
-    
-    <ul>
-        <li><strong>Sistemi i faturimit DENTOTAR për trajtimet dentare:</strong> Zërat e faturës janë shpesh të paqartë. Personat e zakonshëm mezi mund të verifikojnë nëse fatura është korrekt apo nëse vlerat e pikëve të taksës përputhen me udhëzimet zyrtare.</li>
-        <li><strong>Ligji kompleks i qirasë:</strong> Norma e interesit referencë (Referenzzinssatz), kostot ndihmëse dhe rregulloret për depozitimin e qirasë – qiramarrësit shpesh janë në disavantazh për shkak të mungesës së informacionit transparent.</li>
-    </ul>
+    <p>Zvicra ka një strukturë të decentralizuar të përbërë nga 26 kantone – dhe secili prej tyre zbaton rregullat e veta, jashtëzakonisht komplekse, për ndihmat dhe përfitimet sociale. Këto rregullore ndryshojnë në mënyrë periodike. Ky sistem shumë i fragmentuar jo vetëm që krijon vështirësi për të sapoardhurit, por gjithashtu shkakton asimetri informacioni dhe konfuzion të vazhdueshëm edhe mes vetë zviceranëve vendas.</p>
+    <p>Sidoqoftë, sistemi i ndihmës sociale nuk është e vetmja fushë opake. Në jetën e përditshme, ne ndeshim shpesh pengesa administrative të specializuara dhe mungesë informacioni:</p>
+    <p><strong>Sistemi i faturimit DENTOTAR® për trajtimet dentare:</strong> Zërat e detajuar në fatura janë shpesh të pakuptueshëm për publikun e gjerë. Qytetarët e thjeshtë e kanë shumë të vështirë të verifikojnë nëse fatura është e saktë apo nëse vlerat e pikëve tarifore përputhen plotësisht me udhëzimet zyrtare.</p>
+    <p><strong>Ligji kompleks i qirasë:</strong> Norma e interesit referencë (Referenzzinssatz), kostot shtesë (Nebenkosten) dhe rregullat për depozitën e garancisë – qiramarrësit shpesh gjenden në disavantazh për shkak të mungesës së qasjes në të dhëna të qarta dhe të verifikuara.</p>
+    <p>Dokumentet zyrtare janë të mbingarkuara me terma teknikë dhe paragrafë ligjorë të ndërlikuar. Ne ndërhyjmë pikërisht këtu për të mbushur këtë boshllëk informacioni.</p>
 
-    <p>Dokumentet zyrtare janë plot me terma teknikë dhe paragrafë të vështirë për t'u kuptuar. Kushdo që dëshiron të dijë dhe të zbatojë të drejtat e veta, shpesh përballet me një punë të mundimshme detektivi.</p>
-    <p>Pikërisht këtu ndërhyjmë ne.</p>
+    <h2>Qëllimi ynë: Të përkthejmë rregullat e ndërlikuara në një gjuhë të kuptueshme</h2>
+    <p>Ideja për këtë projekt lindi nga një parim i thjeshtë: të zbuten pabarazitë në qasjen ndaj informacionit dhe të përkthehen udhëzimet e ndërlikuara, logjikat e faturimit dhe tekstet ligjore në një gjuhë të qartë, të drejtpërdrejtë dhe të kuptueshme.</p>
+    <p>Ne dëshirojmë t'ju shpjegojmë sa më thjesht të jetë e mundur rregullat komplekse të përfitimeve sociale kantonale, logjikën DENTOTAR® dhe klauzolat më të rëndësishme të ligjit të qirasë, në mënyrë që të kuptoni plotësisht të drejtat dhe detyrimet tuaja.</p>
+    <p>Duke qenë se Zvicra është një vend shumëgjuhësh dhe këtu jetojnë banorë nga prejardhje të ndryshme, ne i ofrojmë mjetet tona në 11 gjuhë. Gjuha nuk duhet të jetë pengesë kur bëhet fjala për qasjen në informacione jetike për jetën e përditshme.</p>
+    <p>Ne nuk zëvendësojmë autoritetet zyrtare dhe nuk japim vendime ligjërisht të detyrueshme. Ne funksionojmë si një çelës digjital që lehtëson qasjen në një sistem rregullator shpesh të errët. Në afat të gjatë, qëllimi ynë është ta shndërrojmë WelfareCalc në një platformë të hapur njohurish për peizazhin social, shëndetësor dhe të qirasë në Zvicër – neutrale, transparente dhe e qasshme për të gjithë.</p>
 
-    <h2>Qëllimi ynë: Të përkthejmë rregullat e ndërlikuara në gjuhë të kuptueshme</h2>
-    <p>Ideja për këtë projekt lindi nga një mendim i thjeshtë: Zhdukja e pabarazive të informacionit – dhe përkthimi i udhëzimeve të ndërlikuara, logjikave të faturimit dhe teksteve ligjore në gjuhë të qartë dhe të kuptueshme.</p>
-    <p>Ne duam t'jua shpjegojmë sa më thjesht të jetë e mundur rregullat komplekse të përfitimeve sociale kantonale, logjikën DENTOTAR dhe klauzolat kryesore të ligjit të qirasë – në mënyrë që ju t'i kuptoni vërtet të drejtat dhe detyrimet tuaja.</p>
-    <p>Duke qenë se Zvicra është shumëgjuhëshe dhe shumë njerëz me gjuhë të ndryshme amtare jetojnë këtu, ne ofrojmë përmbajtjen tonë në 11 gjuhë. Gjuha nuk duhet të jetë pengesë kur bëhet fjalë për qasjen në informacione të rëndësishme.</p>
-    <p>Ne nuk zëvendësojmë autoritetet dhe nuk japim vendime ligjërisht të detyrueshme. Ne e konsiderojmë veten si një çelës digjital që ju lehtëson qasjen në një rregullore shpesh të errët. Afatgjatë, ne dëshirojmë ta shndërrojmë WelfareCalc në një lloj "Wikipedia" për peizazhin zviceran të çështjeve sociale, shëndetësisë dhe ligjit të qirasë – të hapur, neutral dhe të përdorshëm për të gjithë.</p>
+    <h2>Transparenca e algoritmeve dhe burimet zyrtare të të dhënave</h2>
+    <p>Logjika e llogaritjes dhe algoritmet e dokumentuara në WelfareCalc.ch bazohen rreptësisht në të dhënat publike të Zyrës Federale të Sigurimeve Sociale (BSV / OFAS), në legjislacionet në fuqi të 26 autoriteteve kantonale dhe në udhëzimet zyrtare të tarifës DENTOTAR® të përcaktuar për mjekët dentistë zviceranë (të përditësuara për ciklin e politikave të vitit 2026).</p>
+    <p>Për të garantuar integritet maksimal, ne refuzojmë përdorimin e sistemeve të mbyllura "kuti e zezë" dhe shfaqim plotësisht logjikën tonë matematiko-ligjore: kemi implementuar mbi <strong>1.400 specifika transparente të algoritmeve</strong> për të gjitha kantonet. Në këtë mënyrë, çdo hap llogaritjeje është plotësisht i verifikueshëm nga ju, autoritetet apo ekspertët e pavarur. <em>(Shënim: Kodi burimor i logjikës sonë të llogaritjes është i disponueshëm për rishikim publik dhe auditim të pavarur).</em></p>
 
-    <h2>Ekipi ynë: Jo një korporatë, por një rreth i përkushtuar vullnetarësh</h2>
-    <p>Pas WelfareCalc nuk qëndron as një korporatë e madhe as një institucion shtetëror, por një ekip i vogël, jofitimprurës vullnetarësh. Ne e mirëmbajmë këtë platformë në kohën tonë të lirë dhe sjellim përvoja nga fusha të ndryshme:</p>
-    
-    <ul>
-        <li>🌐 Inxhinierë rrjeti, përgjegjës për arkitekturën e sistemit dhe mbrojtjen e të dhënave</li>
-        <li>🏛️ Punonjës të administratës zvicerane, që e njohin mirë sistemin social</li>
-        <li>⚖️ Studentë të drejtësisë nga Universiteti i Cyrihut</li>
-        <li>🗣️ Vullnetarë shumëgjuhësh, që kujdesen për përkthimet dhe lokalizimet</li>
-    </ul>
+    <h2>Privatësi absolute (Parimi "Privacy-First")</h2>
+    <div class="highlight-box">
+        <strong>Njoftim i rëndësishëm për mbrojtjen e të dhënave (në përputhje me Ligjin Federal Zviceran për Mbrojtjen e Të Dhënave - revDSG / LPD):</strong><br>
+        Tài gjitha llogaritjet në këtë faqë interneti procesohen <strong>ekspluzivisht në nivel lokal në shfletuesin tuaj të internetit</strong>. Asnjë nga të dhënat financiare, shëndetësore, kontraktuale apo personale të koduara nuk dërgohet në serverët tanë, nuk ruhet atje dhe nuk përdoret për qëllime të analizave statistikore. Privatësia juaj mbetet plotësisht e mbrojtur. Përpunimi ndodh në mënyrë të përkohshme në kujtesën RAM të pajisjes suaj.
+    </div>
 
-    <p>Çdo publikim i algoritmit – qoftë për llogaritjen e përfitimeve sociale, kontrollin DENTOTAR apo kontrollin e kontratës së qirasë – kontrollohet nga ne brenda ekipit.</p>
-    <p>But le të jemi të sinqertë: Edhe ne bëjmë gabime. Sistemi zviceran është i madh dhe kompleks. Ne nuk mund të garantojmë që të gjitha të dhënat dhe logjikat janë 100% pa gabime. Prandaj, ne i kushtojmë rëndësi të madhe transparencës dhe mirëpresim çdo formë të kontrollit publik.</p>
+    <h2>Kush jemi ne: Një projekt i pavarur Civic-Tech</h2>
+    <p>Pas WelfareCalc.ch nuk qëndron një korporatë e madhe apo një institucion shtetëror. Ky është një projekt digjital i pavarur dhe plotësisht i vetëfinancuar, i përkushtuar ndaj transparencës dhe mbrojtjes së konsumatorit në Zvicër. Ne besojmë se mjetet thelbësore të llogaritjes duhet të jenë të qasshme lirisht për të gjithë, matematikisht të sakta dhe të sigurta për t'u përdorur, pa rrezikun e shfrytëzimit komercial apo monetizimit të të dhënave tuaja personale.</p>
+    <p>Sistemi zviceran është i gjerë dhe fuqimisht i federalizuar, prandaj ne verifikojmë me përpjekje maksimale çdo algoritëm duke e krahasuar me llogaritësit kantonale zyrtarë. Nëse, pavarësisht përpjekjeve tona, vëreni mospërputhje ose tarifa kantonale të papërditësuara, reagimi juaj do të jetë një ndihmë e çmuar për të vazhduar përmirësimin e këtij mjeti komunitar.</p>
 
-    <h2>Algoritme transparente dhe llogaritje lokale – Privatësia juaj është prioritet</h2>
-    <p>Të gjitha llogaritjet në <strong>WelfareCalc.ch</strong> bazohen rreptësisht në kërkesat ligjore të federatës, si dhe në rregulloret kantonale të zbatimit. Që të ndiheni plotësisht të sigurt, ne ndjekim dy parime kryesore:</p>
-    <p><strong>Transparencë 100% e algoritmeve tona:</strong> Ne nuk punojmë me "kuti të zeza". Për të gjithë kantonet dhe fushat e aplikimit, kemi implementuar mbi 1.400 zbulime transparente të algoritmeve. Çdo hap llogaritjeje është plotësisht i gjurmueshëm matematikisht dhe ligjërisht.</p>
-    <p><strong>Asnjë mbledhje të dhënash (llogaritje lokale në shfletues):</strong> Privatësia juaj i përket juve. Të gjitha llogaritjet dhe verifikimet ndodhin ekskluzivisht në shfletuesin tuaj lokal. Të dhënat që futni – qoftë të ardhurat tuaja, të dhëna të ndjeshme financiare apo informacione faturash – nuk dërgohen kurrë në serverët tanë, nuk ruhen atje dhe nuk përdoren për qëllime analize.</p>
-
-    <h2>⚠️ Shënim i rëndësishëm dhe ndihma juaj</h2>
-    <p>Të gjitha rezultatet dhe verifikimet e ofruara nga ne shërbejnë vetëm për qëllime informimi dhe si ndihmë orientuese. Ato nuk janë ligjërisht të detyrueshme dhe nuk zëvendësojnë vendimet zyrtare. Në çdo rast, vendimi përfundimtar i autoritetit përgjegjës, siguruesit shëndetësor, institucionit të pajtimit apo zyrës sociale kantonale është ai që ka vlerë.</p>
-    <p>Nëse hasni ndonjë gabim gjatë përdorimit të mjeteve tona – qoftë sepse rregullat kantonale nuk janë të përditësuara ose logjika e llogaritjes nuk është e saktë – ju lutemi na e tregoni.</p>
-    <p>📧 Adresa jonë e email-it: <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
-    <p>Çdo reagim na ndihmon ta bëjmë kët' ofertë më të besueshme. Ju garantojmë se do ta përdorim kontaktin tuaj vetëm për t'iu përgjigjur kërkesës suaj dhe për të përmirësuar mjetet – kurrë për qëllime reklamimi.</p>
+    <h2>Kontakt dhe mbështetje</h2>
+    <p>Keni pyetje rreth llogaritësve tanë, komente mbi algoritme specifike apo sugjerime të përgjithshme? Mund të na kontaktoni në çdo kohë përmes postës elektronike:</p>
+    <p>📧 <strong>E-mail:</strong> <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
+    <p><em>(Ne nuk mbledhim adresa e-mail për qëllime marketingu dhe do ta përdorim mesazhin tuaj rreptësisht për t'iu përgjigjur kërkesës suaj specifike).</em></p>
 
     <div class="footer-note">
-        <p><em>Përgjegjësia: Llogaritësit e ofruar këtu shërbejnë për orientim dhe informim. Ata nuk zëvendësojnë informacionin ligjërisht të detyrueshëm nga institucionet zyrtare, zyrat sociale kantonale apo këshillimin profesional ligjor dhe tatimor.</em></p>
+        <p><em>Njoftim ligjor: Llogaritësit e ofruar këtu shërbejnë ekskluzivisht si orientim dhe informacion i përgjithshëm. Ata nuk zëvendësojnë informacionet detyruese të institucioneve zyrtare, zyrave sociale kantonale, Shoqatës së Qiramarrësve (Asloca / Mieterverband) apo këshillimin profesional të natyrës juridike, mjekësore apo tatimore.</em></p>
     </div>
 </div>
 
