@@ -24,58 +24,69 @@
 
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --text-color: #333;
+            --primary-color: #0050a4;
+            --text-color: #2c3e50;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+            --border-color: #e9ecef;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
             padding: 40px 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
         h1 {
             color: var(--primary-color);
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
             margin-top: 0;
+            font-size: 1.85rem;
+            font-weight: 600;
         }
         h2 {
             color: var(--primary-color);
             margin-top: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
         }
         p {
             margin: 15px 0;
             text-align: justify;
         }
-        ul {
-            padding-left: 20px;
-            margin: 15px 0;
-        }
-        li {
-            margin-bottom: 10px;
-            text-align: justify;
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
         }
         .footer-note {
             font-size: 0.9em;
-            color: #666;
+            color: #6c7a89;
             margin-top: 40px;
             border-top: 1px solid var(--border-color);
             padding-top: 20px;
+            text-align: center;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -84,52 +95,42 @@
 <div class="container">
     <h1>O nas — WelfareCalc.ch</h1>
 
-    <p>Witamy na <strong>WelfareCalc.ch</strong>. Jesteśmy niezależną, szwajcarską platformą civic-tech z jasnym celem: pomagamy Państwu szybko, dokładnie i bez wysiłku przeprowadzać skomplikowane obliczenia urzędowe i weryfikacje rachunków – czy to w przypadku symulacji świadczeń socjalnych na poziomie kantonów, weryfikacji rachunków stomatologicznych DENTOTAR, czy kontroli zgodności umów najmu.</p>
+    <p>Witamy na <strong>WelfareCalc.ch</strong>. Jesteśmy niezależną, szwajcarską platformą civic-tech nastawioną wyłącznie na funkcjonalność. Nasz cel jest jasny: pomagamy obywatelom szybko, dokładnie i w przystępny sposób przeprowadzać skomplikowane obliczenia urzędowe oraz weryfikacje rachunków – zarówno w przypadku symulacji świadczeń socjalnych na poziomie kantonów, kontroli rachunków stomatologicznych DENTOTAR®, jak i sprawdzania zgodności umów najmu mieszkań.</p>
 
     <h2>Szwajcaria jest złożona – zwłaszcza jeśli chodzi o świadczenia socjalne, koszty opieki zdrowotnej i prawo najmu</h2>
-    <p>Szwajcaria to mały kraj, ale ma 26 kantonów – a każdy kanton ma własne zasady dotyczące świadczeń socjalnych. Zasady te zmieniają się ponadto regularnie. Ten niezwykle rozdrobniony system przytłacza nie tylko osoby, które niedawno się tu przeprowadziły, ale nawet rodowitych Szwajcarów i Szwajcarki, wprowadzając ich w zakłopotanie.</p>
-    <p>Jednak nie tylko pomoc społeczna jest skomplikowana. W życiu codziennym napotykamy również wysoce wyspecjalizowane „luki informacyjne”:</p>
-    
-    <ul>
-        <li><strong>System rozliczeniowy DENTOTAR dla leczenia stomatologicznego:</strong> pozycje na rachunku są często nieprzejrzyste. Osoby nieposiadające wiedzy specjalistycznej mają trudności ze sprawdzeniem, czy rachunek jest poprawny oraz czy wartości punktów taryfowych odpowiadają wytycznym.</li>
-        <li><strong>Złożone prawo najmu:</strong> referencyjna stopa procentowa (Referenzzinssatz), koszty dodatkowe i przepisy dotyczące depozytu – najemcy i najemczynie często znajdują się w niekorzystnej sytuacji z powodu asymetrii informacyjnej.</li>
-    </ul>
+    <p>Szwajcaria to kraj o zdecentralizowanej strukturze składający się z 26 kantonów – a każdy kanton stosuje własne, wysoce skomplikowane zasady dotyczące świadczeń socjalnych. Przepisy te podlegają ponadto regularnym zmianom. Ten niezwykle rozdrobniony system stanowi poważne obciążenie dla osób nowo przybyłych, a także generuje istotną asymetrię informacyjną i dezorientację wśród rodowitych Szwajcarów.</p>
+    <p>Jednak pomoc społeczna to nie jedyny nieprzejrzysty obszar. W życiu codziennym regularnie napotykamy wyspecjalizowane bariery administracyjne i luki informacyjne:</p>
+    <p><strong>System rozliczeniowy DENTOTAR® dla leczenia stomatologicznego:</strong> Pozycje na rachunkach są często mało czytelne. Pacjentom indywidualnym niezwykle trudno jest zweryfikować, czy specyfikacja jest poprawna oraz czy wartości punktów taryfowych odpowiadają oficjalnym wytycznym.</p>
+    <p><strong>Złożone prawo najmu:</strong> Referencyjna stopa procentowa (Referenzzinssatz), koszty dodatkowe oraz przepisy dotyczące depozytu zabezpieczającego – najemcy często znajdują się w niekorzystnej sytuacji ze względu na brak dostępu do jasnych i sprawdzonych danych.</p>
+    <p>Oficjalne dokumenty przepełnione są fachową terminologią i trudnymi do zrozumienia paragrafami prawnymi. Wkraczamy dokładnie tam, gdzie pojawia się potrzeba przełamania tych barier informacyjnych.</p>
 
-    <p>Dokumenty urzędowe pełne są fachowej terminologii i trudnych do zrozumienia paragrafów. Kto chce znać i dochodzić swoich praw, często staje przed żmudną pracą detektywistyczną.</p>
-    <p>Właśnie w tym miejscu wkraczamy my.</p>
+    <h2>Nasz cel: Tłumaczenie skomplikowanych przepisów na zrozumiały język</h2>
+    <p>Pomysł na ten projekt zrodził się z prostej myśli: zmniejszać nierówności w dostępie do informacji oraz przekładać skomplikowane wytyczne, logikę rozliczeń i teksty prawne na jasny, bezpośredni i zrozumiały język.</p>
+    <p>Chcemy wyjaśniać Państwu złożone przepisy dotyczące świadczeń socjalnych na poziomie kantonów, logikę DENTOTAR® oraz kluczowe klauzule prawa najmu w możliwie najprostszy sposób – tak, aby każdy mógł realnie zrozumieć swoje prawa i obowiązki.</p>
+    <p>Ponieważ Szwajcaria jest krajem wielojęzycznym, w którym mieszkają osoby o różnych językach ojczystych, udostępniamy nasze narzędzia w 11 językach. Język nie powinien stanowić bariery w dostępie do informacji kluczowych dla codziennego funkcjonowania.</p>
+    <p>Nie zastępujemy organów państwowych ani nie wydajemy wiążących prawnie decyzji. Działamy jako cyfrowy klucz, który ułatwia dostęp do często nieprzejrzystego systemu przepisów. W dłuższej perspektywie dążymy do przekształcenia WelfareCalc w otwartą platformę wiedzy o szwajcarskim systemie socjalnym, zdrowotnym i mieszkaniowym – neutralną, transparentną i dostępną dla każdego.</p>
 
-    <h2>Nasz cel: tłumaczenie skomplikowanych przepisów na zrozumiały język</h2>
-    <p>Pomysł na ten projekt zrodził się z prostej myśli: zmniejszać nierówności informacyjne – i przekładać skomplikowane wytyczne, logikę rozliczeń i teksty prawne na jasny, zrozumiały język.</p>
-    <p>Chcemy wyjaśniać Państwu złożone przepisy dotyczące świadczeń socjalnych na poziomie kantonów, logikę DENTOTAR oraz najważniejsze klauzule prawa najmu w możliwie najprostszy sposób – tak, abyście naprawdę rozumieli swoje prawa i obowiązki.</p>
-    <p>Ponieważ Szwajcaria jest wielojęzyczna i żyje tu wiele osób o różnych językach ojczystych, udostępniamy nasze treści w 11 językach. Język nie powinien być barierą, jeśli chodzi o dostęp do ważnych informacji.</p>
-    <p>Nie zastępujemy urzędów ani nie wydajemy wiążących prawnie decyzji. Rozumiemy się jako cyfrowy klucz, który ułatwia dostęp do często nieprzejrzystego systemu przepisów. W dłuższej perspektywie chcemy uczynić z WelfareCalc swego rodzaju „Wikipedię” dla szwajcarskiego krajobrazu socjalnego, zdrowotnego i prawa najmu – otwartą, neutralną i dostępną dla wszystkich.</p>
+    <h2>Przejrzystość algorytmów i oficjalne źródła danych</h2>
+    <p>Logika obliczeń oraz algorytmy udokumentowane na stronie WelfareCalc.ch opierają się ściśle na publicznych danych Federalnego Urzędu ds. Ubezpieczeń Społecznych (BSV / OFAS), przepisach prawnych 26 organów kantonalnych oraz oficjalnych wytycznych taryfy DENTOTAR® ustanowionej dla szwajcarskich lekarzy stomatologów (stan na rok 2026).</p>
+    <p>W celu zapewnienia absolutnej integralności odrzucamy stosowanie systemów typu „czarna skrzynka” i w pełni ujawniamy naszą logikę kalkulacyjną: wdrożyliśmy ponad <strong>1 400 przejrzystych specyfikacji algorytmów</strong> dla wszystkich kantonów. Dzięki temu każdy etap obliczeń jest matematycznie i prawnie weryfikowalny dla Państwa, urzędów oraz niezależnych ekspertów. <em>(Uwaga: Kod źródłowy naszej logiki obliczeniowej jest publicznie dostępny do wglądu i niezależnego audytu).</em></p>
 
-    <h2>Nasz zespół: nie korporacja, ale zaangażowane grono wolontariuszy</h2>
-    <p>Za WelfareCalc nie stoi ani wielki koncern, ani instytucja państwowa, ale mały, non-profitowy zespół wolontariuszy. Pielęgnujemy tę platformę w wolnym czasie i wnosimy różnorodne doświadczenia:</p>
-    
-    <ul>
-        <li>🌐 Inżynierowie sieci, odpowiedzialni za architekturę systemu i ochronę danych</li>
-        <li>🏛️ Pracownicy administracji szwajcarskiej, znający system socjalny od podszewki</li>
-        <li>⚖️ Studenci prawa Uniwersytetu w Zurychu</li>
-        <li>🗣️ Wielojęzyczni wolontariusze, którzy zajmują się tłumaczeniami i lokalizacją</li>
-    </ul>
+    <h2>Bezkompromisowa prywatność (Zasada „Privacy-First”)</h2>
+    <div class="highlight-box">
+        <strong>Ważny komunikat dotyczący ochrony danych (zgodnie ze szwajcarską federalną ustawą o ochronie danych - revDSG / LPD):</strong><br>
+        Wszystkie obliczenia na tej stronie internetowej są wykonywane <strong>wyłącznie lokalnie w Państwa przeglądarce internetowej</strong>. Żadne wprowadzane dane finansowe, medyczne, kontraktowe ani osobiste nie są przesyłane na nasze serwery, przechowywane tam ani wykorzystywane do analiz statystycznych. Państwa prywatność pozostaje nienaruszona. Przetwarzanie danych odbywa się w sposób ulotny w pamięci RAM Państwa własnego urządzenia.
+    </div>
 
-    <p>Każda publikacja algorytmu – czy to dotycząca obliczania świadczeń socjalnych, weryfikacji DENTOTAR, czy kontroli umowy najmu – jest przez nas wewnętrznie sprawdzana.</p>
-    <p>Bądźmy jednak szczerzy: my też popełniamy błędy. System szwajcarski jest ogromny i złożony. Nie możemy zagwarantować, że wszystkie dane i logiki są w 100% wolne od błędów. Dlatego przywiązujemy największą wagę do przejrzystości i z radością witamy każdą formę publicznej kontroli.</p>
+    <h2>Kim jesteśmy: Niezależny projekt Civic-Tech</h2>
+    <p>Za WelfareCalc.ch nie stoi wielka korporacja ani instytucja państwowa. Jest to niezależny i w pełni samofinansujący się projekt cyfrowy, którego misją jest zapewnienie przejrzystości oraz ochrona praw konsumentów w Szwajcarii. Wierzymy, że kluczowe narzędzia kalkulacyjne powinny być swobodnie dostępne dla każdego, dokładne pod względem matematycznym i bezpieczne w użyciu – bez ryzyka komercyjnego wykorzystywania lub monetyzacji Państwa danych osobowych.</p>
+    <p>Szwajcarski system prawno-administracyjny jest ogromny i silnie sfederalizowany, dlatego skrupulatnie weryfikujemy każdy algorytm, porównując go z oficjalnymi kalkulatorami kantonalnymi. Jeśli mimo naszych starań zauważą Państwo rozbieżności lub nieaktualne stawki kantonalne, Państwa informacja zwrotna będzie dla nas niezwykle cenną pomocą w ciągłym udoskonalaniu tego narzędzia.</p>
 
-    <h2>Przejrzyste algorytmy i lokalne obliczenia – ochrona danych na pierwszym miejscu</h2>
-    <p>Wszystkie obliczenia na <strong>WelfareCalc.ch</strong> opierają się ściśle na przepisach federalnych oraz kantonalnych przepisach wykonawczych. Abyście mogli czuć się w pełni bezpieczni, kierujemy się dwiema głównymi zasadami:</p>
-    <p><strong>100% przejrzystości naszych algorytmów:</strong> Nie pracujemy z „czarnymi skrzynkami”. Dla wszystkich kantonów i obszarów zastosowań wdrożyliśmy ponad 1 400 przejrzystych ujawnień algorytmów. Każdy krok obliczeniowy jest w pełni zrozumiały matematycznie i prawnie.</p>
-    <p><strong>Brak gromadzenia danych (obliczenia lokalne w przeglądarce):</strong> Państwa prywatność należy do Państwa. Wszelkie obliczenia i weryfikacje odbywają się wyłącznie w Państwa lokalnej przeglądarce. Wprowadzone dane – czy to dochód, wrażliwe dane finansowe, czy informacje z rachunków – nigdy nie są przesyłane na nasze serwery, tam przechowywane ani wykorzystywane do celów analitycznych.</p>
-
-    <h2>⚠️ Ważne zastrzeżenie i Państwa pomoc</h2>
-    <p>Wszystkie udostępniane przez nas wyniki i weryfikacje służą wyłącznie celom informacyjnym i jako pomoc orientacyjna. Nie są one prawnie wiążące i nie zastępują oficjalnych decyzji. W każdym przypadku decydujące znaczenie ma oficjalna decyzja właściwego organu, kasy chorych, komisji rozjemczej lub urzędu opieki społecznej.</p>
-    <p>Jeśli podczas korzystania z naszych narzędzi natkną się Państwo na błędy – czy to nieaktualne przepisy kantonalne, czy niespójną logikę obliczeniową – prosimy o zgłoszenie tego nam.</p>
-    <p>📧 Nasz adres e-mail: <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
-    <p>Każda informacja zwrotna pomaga nam uczynić tę ofertę bardziej niezawodną. Zapewniamy, że wykorzystamy Państwa kontakt wyłącznie w celu odpowiedzi na Państwa zapytanie i ulepszenia narzędzi – nigdy w celach reklamowych.</p>
+    <h2>Kontakt i wsparcie</h2>
+    <p>Mają Państwo pytania dotyczące naszych kalkulatorów, uwagi do konkretnych algorytmów lub ogólne sugestie? Zapraszamy do kontaktu e-mailowego w dowolnym momencie:</p>
+    <p>📧 <strong>E-mail:</strong> <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
+    <p><em>(Nie gromadzimy adresów e-mail w celach marketingowych. Państwa wiadomość zostanie wykorzystana wyłącznie w celu udzielenia odpowiedzi na konkretne zapytanie).</em></p>
 
     <div class="footer-note">
-        <p><em>Zastrzeżenie: Udostępniane tutaj kalkulatory służą celom orientacyjnym i informacyjnym. Nie zastępują one wiążących prawnie informacji udzielanych przez oficjalne instytucje, kantonalne urzędy opieki społecznej ani profesjonalne porady prawne i podatkowe.</em></p>
+        <p><em>Zastrzeżenie prawne: Udostępnione tutaj kalkulatory służą wyłącznie celom orientacyjnym i ogólnoinformacyjnym. Nie zastępują one prawnie wiążących informacji udzielanych przez oficjalne instytucje, kantonalne urzędy opieki społecznej, Szwajcarskie Stowarzyszenie Najemców (Mieterverband / ASLOCA) ani profesjonalnych porad prawnych, medycznych czy podatkowych.</em></p>
     </div>
 </div>
 
