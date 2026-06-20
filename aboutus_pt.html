@@ -24,58 +24,69 @@
 
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --text-color: #333;
+            --primary-color: #0050a4;
+            --text-color: #2c3e50;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+            --border-color: #e9ecef;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
             padding: 40px 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
         h1 {
             color: var(--primary-color);
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
             margin-top: 0;
+            font-size: 1.85rem;
+            font-weight: 600;
         }
         h2 {
             color: var(--primary-color);
             margin-top: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
         }
         p {
             margin: 15px 0;
             text-align: justify;
         }
-        ul {
-            padding-left: 20px;
-            margin: 15px 0;
-        }
-        li {
-            margin-bottom: 10px;
-            text-align: justify;
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 8px;
         }
         .footer-note {
             font-size: 0.9em;
-            color: #666;
+            color: #6c7a89;
             margin-top: 40px;
             border-top: 1px solid var(--border-color);
             padding-top: 20px;
+            text-align: center;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -84,52 +95,42 @@
 <div class="container">
     <h1>Sobre nós — WelfareCalc.ch</h1>
 
-    <p>Bem-vindo ao <strong>WelfareCalc.ch</strong>. Somos uma plataforma cívica e tecnológica independente da Suíça com um objetivo claro: ajudá-lo a realizar cálculos administrativos complexos e verificações de faturas de forma rápida, precisa e sem esforço – seja na simulação de prestações sociais cantonais, na verificação de faturas de dentista DENTOTAR ou na verificação de conformidade de contratos de arrendamento.</p>
+    <p>Bem-vindo ao <strong>WelfareCalc.ch</strong>. Somos uma plataforma cívica e tecnológica suíça independente, orientada exclusivamente para a funcionalidade. O nosso objetivo é claro: ajudar os cidadãos a realizar cálculos administrativos complexos e verificações de faturas de forma rápida, precisa e acessível – seja na simulação de prestações sociais cantonais, no controlo de faturas dentárias DENTOTAR® ou na verificação de conformidade de contratos de arrendamento habitacional.</p>
 
     <h2>A Suíça é complexa – especialmente em matéria de prestações sociais, custos de saúde e direito de arrendamento</h2>
-    <p>A Suíça é um país pequeno, mas tem 26 cantões – e cada cantão tem as suas próprias regras para as prestações sociais. Além disso, estas regras mudam regularmente. Este sistema extremamente fragmentado não só sobrecarrega os recém-chegados, como também causa confusão repetidamente entre os próprios suíços de nascimento.</p>
-    <p>Mas não é só a assistência social que é complicada. No dia a dia, também nos deparamos com "lacunas de informação" altamente especializadas:</p>
-    
-    <ul>
-        <li><strong>O sistema de faturação DENTOTAR para tratamentos dentários:</strong> os itens da fatura são muitas vezes confusos. Os leigos dificilmente conseguem verificar se a faturação está correta ou se os valores dos pontos-tabela estão em conformidade com as diretrizes.</li>
-        <li><strong>O complexo direito de arrendamento:</strong> taxa de juro de referência, custos acessórios e as regras para depósito de renda – os inquilinos estão frequentemente em desvantagem devido a assimetrias de informação.</li>
-    </ul>
+    <p>A Suíça possui uma estrutura descentralizada composta por 26 cantões – e cada um aplica as suas próprias regras, altamente complexas, para as prestações sociais. Além disso, estas regulamentações mudam periodicamente. Este sistema extremamente fragmentado não só sobrecarrega os recém-chegados, como também gera assimetrias de informação e confusão recorrente mesmo entre os próprios cidadãos suíços nativos.</p>
+    <p>Contudo, o sistema de segurança social não é o único domínio opaco. No quotidiano, deparamo-nos frequentemente com barreiras administrativas especializadas e lacunas de informação:</p>
+    <p><strong>O sistema de faturação DENTOTAR® para tratamentos dentários:</strong> Os itens discriminados nas faturas são muitas vezes incompreensíveis para o público geral. Os particulares dificilmente conseguem verificar se a faturação está correta ou se os valores dos pontos tarifários correspondem rigorosamente às diretrizes oficiais.</p>
+    <p><strong>O complexo direito de arrendamento:</strong> Taxa de juro de referência (Referenzzinssatz), custos acessórios (Nebenkosten) e as normas relativas ao depósito de garantia – os inquilinos encontram-se frequentemente em desvantagem devido à falta de acesso a dados claros e validados.</p>
+    <p>Os documentos oficiais estão repletos de termos técnicos e parágrafos jurídicos de difícil interpretação. É exatamente aqui que intervimos para reduzir este fosso informativo.</p>
 
-    <p>Os documentos oficiais estão cheios de termos técnicos e parágrafos de difícil compreensão. Quem quer conhecer e fazer valer os seus direitos enfrenta, muitas vezes, um trabalho de detetive moroso.</p>
-    <p>É exatamente aqui que intervimos.</p>
+    <h2>O nosso objetivo: Traduzir regras complicadas para uma linguagem compreensível</h2>
+    <p>A ideia para este projeto nasceu de um princípio simples: mitigar os desequilíbrios no acesso à informação e traduzir diretrizes complexas, lógicas de faturação e textos legais para uma linguagem clara, direta e compreensível.</p>
+    <p>Queremos explicar-lhe as regras complexas das prestações sociais cantonais, a lógica DENTOTAR® e as cláusulas mais importantes do direito de arrendamento da forma mais simples possível, para que possa compreender plenamente os seus direitos e deveres.</p>
+    <p>Dado que a Suíça é um país multilingue e acolhe residentes de diversas origens, disponibilizamos as nossas ferramentas em 11 idiomas. A língua não deve constituir uma barreira no acesso a informações vitais para o dia a dia.</p>
+    <p>Não substituímos as autoridades públicas nem emitimos decisões juridicamente vinculativas. Atuamos como uma chave digital que facilita o acesso a um ecossistema normativo muitas vezes opaco. A longo prazo, o nosso objetivo é transformar o WelfareCalc numa plataforma aberta de conhecimento para o panorama social, da saúde e do arrendamento na Suíça – neutra, transparente e acessível a todos.</p>
 
-    <h2>O nosso objetivo: traduzir regras complicadas para uma linguagem compreensível</h2>
-    <p>A ideia para este projeto nasceu de um pensamento simples: reduzir os desequilíbrios de informação – e traduzir diretrizes complexas, lógicas de faturação e textos legais para uma linguagem clara e compreensível.</p>
-    <p>Queremos explicar-lhe as regras complexas das prestações sociais cantonais, a lógica DENTOTAR e as cláusulas mais importantes do direito de arrendamento da forma mais simples possível – para que compreenda realmente os seus direitos e deveres.</p>
-    <p>Como a Suíça é multilíngue e muitas pessoas de diferentes línguas maternas vivem aqui, disponibilizamos os nossos conteúdos em 11 idiomas. O idioma não deve ser uma barreira quando se trata de aceder a informações importantes.</p>
-    <p>Não substituímos as autoridades nem emitimos decisões juridicamente vinculativas. Entendemo-nos como uma chave digital que facilita o acesso a um conjunto de regras muitas vezes opaco. A longo prazo, queremos transformar o WelfareCalc numa espécie de "Wikipedia" para o panorama social, de saúde e de direito de arrendamento da Suíça – aberto, neutro e utilizável por todos.</p>
+    <h2>Transparência dos algoritmos e fontes de dados oficiais</h2>
+    <p>A lógica de cálculo e os algoritmos documentados no WelfareCalc.ch baseiam-se estritamente nos dados públicos do Instituto Federal de Seguros Sociais (BSV / OFAS), nas legislações vigentes das 26 autoridades cantonais e nas diretrizes oficiais da tarifa DENTOTAR® estipulada para os médicos dentistas suíços (atualizado para o ciclo de políticas de 2026).</p>
+    <p>Para garantir a máxima integridade, rejeitamos o uso de sistemas baseados em "caixas negras" e expomos integralmente a nossa lógica matemática: implementámos mais de <strong>1.400 especificações de algoritmos transparentes</strong> para todos os cantões. Desta forma, cada etapa de cálculo é matemática e juridicamente verificável por si, por autoridades ou por auditores independentes. <em>(Nota: O código-fonte da nossa lógica de cálculo está disponível para revisão pública e auditoria independente).</em></p>
 
-    <h2>A nossa equipa: não é uma corporação, mas um círculo empenhado de voluntários</h2>
-    <p>Por trás do WelfareCalc não está uma grande corporação nem uma entidade estatal, mas sim uma pequena equipa sem fins lucrativos de voluntários. Mantemos esta plataforma no nosso tempo livre e trazemos diferentes formações:</p>
-    
-    <ul>
-        <li>🌐 Engenheiros de rede, responsáveis pela arquitetura do sistema e pela proteção de dados</li>
-        <li>🏛️ Funcionários da administração suíça, que conhecem bem o sistema social</li>
-        <li>⚖️ Estudantes de Direito da Universidade de Zurique</li>
-        <li>🗣️ Voluntários multilíngues que tratam das traduções e localizações</li>
-    </ul>
+    <h2>Privacidade absoluta (Abordagem "Privacy-First")</h2>
+    <div class="highlight-box">
+        <strong>Aviso importante sobre a proteção de dados (em conformidade com a LPD / revDSG suíça):</strong><br>
+        Todos os cálculos efetuados neste sítio Web são processados <strong>exclusivamente a nível local no seu navegador de Internet</strong>. Nenhum dos dados financeiros, de saúde, contratuais ou pessoais introduzidos é transmitido aos nossos servidores, armazenado ou utilizado para fins de análise estatística. A sua privacidade permanece estritamente salvaguardada. O processamento ocorre de forma volátil na memória RAM do seu próprio dispositivo.
+    </div>
 
-    <p>Cada publicação de algoritmo – seja para o cálculo de prestações sociais, para a verificação DENTOTAR ou para o controlo de contratos de arrendamento – é verificada internamente por nós.</p>
-    <p>Mas sejamos honestos: também nós cometemos erros. O sistema suíço é enorme e complexo. Não podemos garantir que todos os dados e lógicas estejam 100% isentos de erros. Por isso, damos a máxima importância à transparência e acolhemos qualquer forma de controlo público.</p>
+    <h2>Quem somos: Um projeto independente de Civic-Tech</h2>
+    <p>Por trás do WelfareCalc.ch não está uma grande corporação nem uma entidade estatal. Trata-se de um projeto digital independente e totalmente autofinanciado, comprometido com a transparência e com a defesa do consumidor na Suíça. Acreditamos que as ferramentas essenciais de cálculo devem ser de livre acesso, matematicamente precisas e seguras para utilização, sem o risco de exploração comercial ou monetização dos seus dados pessoais.</p>
+    <p>Sendo o sistema suíço vasto e fortemente federalizado, verificamos meticulosamente cada algoritmo comparando-o com as calculadoras cantonais oficiais. Se, apesar dos nossos esforços, detetar discrepâncias ou tarifas cantonais desatualizadas, o seu feedback será um contributo valioso para continuarmos a aperfeiçoar esta ferramenta comunitária.</p>
 
-    <h2>Algoritmos transparentes e cálculo local – a sua proteção de dados é a prioridade</h2>
-    <p>Todos os cálculos no <strong>WelfareCalc.ch</strong> baseiam-se estritamente nos requisitos legais da Confederação, bem como nas disposições de execução cantonais. Para que se sinta completamente seguro, seguimos dois princípios centrais:</p>
-    <p><strong>100% de transparência dos nossos algoritmos:</strong> Não trabalhamos com "caixas negras". Implementámos mais de 1.400 divulgações de algoritmos transparentes para todos os cantões e áreas de aplicação. Cada etapa de cálculo é matematicamente e juridicamente totalmente rastreável.</p>
-    <p><strong>Sem recolha de dados (cálculo local no navegador):</strong> A sua privacidade pertence-lhe. Todos os cálculos e verificações são realizados exclusivamente no seu navegador local. Os dados que introduz – seja o seu rendimento, dados financeiros sensíveis ou informações de faturação – nunca são transmitidos aos nossos servidores, nem aí armazenados ou utilizados para fins analíticos.</p>
-
-    <h2>⚠️ Aviso importante e a sua colaboração</h2>
-    <p>Todos os resultados e verificações que disponibilizamos destinam-se exclusivamente a fins informativos e como orientação. Não são juridicamente vinculativos e não substituem decisões oficiais. Em qualquer caso, prevalece a decisão oficial da autoridade competente, da seguradora de saúde, da comissão de conciliação ou do serviço social.</p>
-    <p>Se encontrar erros ao utilizar as nossas ferramentas – seja porque as regras cantonais não estão atualizadas ou porque uma lógica de cálculo não está correta – informe-nos, por favor.</p>
-    <p>📧 O nosso endereço de e-mail: <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
-    <p>Cada comentário ajuda-nos a tornar esta oferta mais fiável. Garantimos que utilizaremos o seu contacto exclusivamente para responder à sua solicitação e para melhorar as ferramentas – nunca para fins publicitários.</p>
+    <h2>Contacto e suporte</h2>
+    <p>Tem dúvidas sobre as nossas calculadoras, comentários sobre algoritmos específicos ou sugestões gerais? Pode contactar-nos a qualquer momento por correio eletrónico:</p>
+    <p>📧 <strong>E-mail:</strong> <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
+    <p><em>(Não recolhemos endereços de e-mail para fins de marketing e utilizaremos a sua mensagem estritamente para responder à sua questão específica).</em></p>
 
     <div class="footer-note">
-        <p><em>Aviso legal: As calculadoras aqui disponibilizadas destinam-se a orientação e informação. Não substituem informações juridicamente vinculativas por parte de entidades oficiais, serviços sociais cantonais ou aconselhamento jurídico e fiscal profissional.</em></p>
+        <p><em>Aviso legal: As calculadoras aqui disponibilizadas servem apenas como orientação e informação geral. Não substituem as informações vinculativas das entidades oficiais, dos serviços sociais cantonais, da Associação de Inquilinos (Asloca / Mieterverband) ou de aconselhamento profissional de natureza jurídica, médica ou fiscal.</em></p>
     </div>
 </div>
 
