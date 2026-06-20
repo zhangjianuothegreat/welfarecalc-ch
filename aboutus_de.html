@@ -24,57 +24,69 @@
 
     <style>
         :root {
-            --primary-color: #2c3e50;
-            --text-color: #333;
+            --primary-color: #0050a4;
+            --text-color: #2c3e50;
             --bg-color: #f8f9fa;
             --card-bg: #ffffff;
-            --border-color: #e2e8f0;
+            --border-color: #e9ecef;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            line-height: 1.7;
             color: var(--text-color);
             background-color: var(--bg-color);
             margin: 0;
             padding: 40px 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
         }
         h1 {
             color: var(--primary-color);
             border-bottom: 2px solid var(--border-color);
             padding-bottom: 10px;
             margin-top: 0;
+            font-size: 1.85rem;
+            font-weight: 600;
         }
         h2 {
             color: var(--primary-color);
             margin-top: 30px;
             border-bottom: 1px solid var(--border-color);
             padding-bottom: 5px;
+            font-size: 1.3rem;
+            font-weight: 500;
         }
         p {
             margin: 15px 0;
             text-align: justify;
         }
         .highlight-box {
-            background-color: #ebf8ff;
-            border-left: 4px solid #3182ce;
-            padding: 15px;
+            background-color: #f0f7ff;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px 20px;
             margin: 20px 0;
-            border-radius: 0 4px 4px 0;
+            border-radius: 8px;
         }
         .footer-note {
             font-size: 0.9em;
-            color: #666;
+            color: #6c7a89;
             margin-top: 40px;
             border-top: 1px solid var(--border-color);
             padding-top: 20px;
+            text-align: center;
+        }
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -83,44 +95,42 @@
 <div class="container">
     <h1>Über uns — WelfareCalc.ch</h1>
 
-    <p>Willkommen bei <strong>WelfareCalc.ch</strong>. Wir sind eine unabhängige Schweizer Civic-Tech-Plattform mit einem klaren Ziel: Wir helfen Ihnen, komplizierte behördliche Berechnungen und Rechnungsprüfungen schnell, genau und mühelos durchzuführen – sei es bei kantonalen Sozialleistungssimulationen, der DENTOTAR-Zahnarztrechnungsprüfung oder der Mietvertrags-Konformitätsprüfung.</p>
+    <p>Willkommen bei <strong>WelfareCalc.ch</strong>. Wir sind eine unabhängige, rein funktionsorientierte Schweizer Civic-Tech-Plattform mit einem klaren Ziel: Wir helfen Bürgerinnen und Bürgern dabei, komplizierte behördliche Berechnungen und Rechnungsprüfungen schnell, genau und barrierefrei durchzuführen – sei es bei kantonalen Sozialleistungssimulationen, der DENTOTAR®-Zahnarztrechnungsprüfung oder der Mietvertrags-Konformitätsprüfung.</p>
 
     <h2>Die Schweiz ist komplex – besonders bei Sozialleistungen, Gesundheitskosten und Mietrecht</h2>
-    <p>Die Schweiz ist ein kleines Land, aber sie hat 26 Kantone – und jeder Kanton hat seine eigenen Regeln für Sozialleistungen. Diese Regeln ändern sich zudem regelmässig. Dieses äusserst fragmentierte System überfordert nicht nur kürzlich Zugezogene, sondern sorgt selbst bei gebürtigen Schweizerinnen und Schweizern immer wieder für Verwirrung.</p>
-    <p>Doch nicht nur die Sozialhilfe ist kompliziert. Auch im Alltag begegnen uns hochspezialisierte «Informationslöcher»:</p>
-    <p>Das DENTOTAR-Abrechnungssystem für Zahnbehandlungen: Die Rechnungsposten sind oft unübersichtlich. Laien können kaum nachvollziehen, ob die Abrechnung korrekt ist oder ob die Taxpunktwerte den Vorgaben entsprechen.</p>
-    <p>Das komplexe Mietrecht: Referenzzinssatz, Nebenkosten und die Regelungen zur Hinterlegung der Miete – Mieterinnen und Mieter sind aufgrund von Informationsasymmetrien häufig im Nachteil.</p>
-    <p>Behördliche Dokumente sind voller Fachbegriffe und schwer verständlicher Paragrafen. Wer seine Rechte kennen und durchsetzen möchte, steht oft vor einer mühsamen Detektivarbeit.</p>
-    <p>Genau hier setzen wir an.</p>
+    <p>Die Schweiz ist ein kleines Land, aber sie hat 26 Kantone – und jeder Kanton hat seine eigenen, hochkomplexen Regeln für Sozialleistungen. Diese Regeln ändern sich zudem regelmässig. Dieses äusserst fragmentierte System überfordert nicht nur kürzlich Zugezogene, sondern sorgt selbst bei gebürtigen Schweizerinnen und Schweizern immer wieder für Informationsasymmetrien und Unklarheiten.</p>
+    <p>Doch nicht nur die Sozialhilfe ist kompliziert. Auch im Alltag begegnen uns hochspezialisierte administrative Hürden:</p>
+    <p><strong>Das DENTOTAR®-Abrechnungssystem für Zahnbehandlungen:</strong> Die Rechnungsposten sind oft unübersichtlich. Laien können kaum nachvollziehen, ob die Abrechnung korrekt ist oder ob die Taxpunktwerte den offiziellen Vorgaben entsprechen.</p>
+    <p><strong>Das komplexe Mietrecht:</strong> Referenzzinssatz, Nebenkosten und die Regelungen zur Hinterlegung der Miete – Mieterinnen und Mieter sind aufgrund von Informationsdefiziten häufig im Nachteil.</p>
+    <p>Behördliche Dokumente sind voller Fachbegriffe und schwer verständlicher Paragrafen. Genau hier setzen wir an, um diese Hürden abzubauen.</p>
 
     <h2>Unser Ziel: Komplizierte Regeln in verständliche Sprache übersetzen</h2>
     <p>Die Idee zu diesem Projekt entstand aus einem schlichten Gedanken: Informationsungleichgewichte abbauen – und komplizierte Richtlinien, Abrechnungslogiken und Gesetzestexte in klare, verständliche Sprache übersetzen.</p>
-    <p>Wir möchten Ihnen die komplexen Regeln der kantonalen Sozialleistungen, die DENTOTAR-Logik und die wichtigsten Klauseln im Mietrecht so einfach wie möglich erklären – damit Sie Ihre Rechte und Pflichten wirklich verstehen.</p>
-    <p>Da die Schweiz mehrsprachig ist und viele Menschen mit unterschiedlichen Muttersprachen hier leben, bieten wir unsere Inhalte in 11 Sprachen an. Sprache soll keine Barriere sein, wenn es um den Zugang zu wichtigen Informationen geht.</p>
-    <p>Wir ersetzen keine Behörden und geben keine rechtsverbindlichen Entscheidungen ab. Wir verstehen uns als digitaler Schlüssel, der Ihnen den Zugang zu einem oft undurchsichtigen Regelwerk erleichtert. Langfristig möchten wir WelfareCalc zu einer Art «Wikipedia» für die Schweizer Sozial-, Gesundheits- und Mietrechtslandschaft machen – offen, neutral und für alle nutzbar.</p>
+    <p>Wir möchten Ihnen die komplexen Regeln der kantonalen Sozialleistungen, die DENTOTAR®-Logik und die wichtigsten Klauseln im Mietrecht so einfach wie möglich erklären – damit Sie Ihre Rechte und Pflichten wirklich verstehen.</p>
+    <p>Da die Schweiz mehrsprachig ist und viele Menschen mit unterschiedlichen Muttersprachen hier leben, bieten wir unsere Inhalte in 11 Sprachen an. Sprache soll keine Barriere sein, wenn es um den Zugang zu wichtigen Alltagsinformationen geht.</p>
+    <p>Wir ersetzen keine Behörden und geben keine rechtsverbindlichen Entscheidungen ab. Wir verstehen uns als digitaler Schlüssel, der Ihnen den Zugang zu einem oft undurchsichtigen Regelwerk erleichtert. Langfristig möchten wir WelfareCalc zu einer Art offenen Wissensplattform für die Schweizer Sozial-, Gesundheits- und Mietrechtslandschaft machen – neutral und für alle nutzbar.</p>
 
-    <h2>Unser Team: Kein Konzern, sondern ein engagierter Kreis von Freiwilligen</h2>
-    <p>Hinter WelfareCalc steht weder ein Grosskonzern noch eine staatliche Stelle, sondern ein kleines, gemeinnütziges Team von Freiwilligen. Wir pflegen diese Plattform in unserer Freizeit und bringen unterschiedliche Hintergründe mit:</p>
-    <p>🌐 Netzwerkingenieure, die für die Systemarchitektur und den Datenschutz verantwortlich sind</p>
-    <p>🏛️ Schweizer Verwaltungsangestellte, die das Sozialsystem genau kennen</p>
-    <p>⚖️ Jurastudierende der Universität Zürich</p>
-    <p>🗣️ Mehrsprachige Freiwillige, die für die Übersetzungen und Lokalisierungen sorgen</p>
-    <p>Jede Algorithmus-Veröffentlichung – sei es zur Sozialleistungsberechnung, zur DENTOTAR-Prüfung oder zur Mietvertragskontrolle – wird von uns intern geprüft.</p>
-    <p>Aber seien wir ehrlich: Auch wir machen Fehler. Das Schweizer System ist riesig und komplex. Wir können nicht garantieren, dass alle Daten und Logiken zu 100 Prozent fehlerfrei sind. Deshalb legen wir grössten Wert auf Transparenz und begrüssen jede Form von öffentlicher Kontrolle.</p>
+    <h2>Algorithmen-Transparenz &amp; Offizielle Datenquellen</h2>
+    <p>Die Berechnungslogik und die offengelegten Algorithmen auf WelfareCalc.ch basieren strikt auf den öffentlich zugänglichen Angaben des Bundesamts für Sozialversicherungen (BSV), den Gesetzestexten der 26 kantonalen Stellen sowie dem offiziellen DENTOTAR®-Tarif der Schweizer Zahnärzte (Stand 2026).</p>
+    <p>Um maximale Integrität zu gewährleisten, verzichten wir auf jegliche Black-Box-Systeme und legen die Berechnungslogik vollständig offen: Für alle Kantone wurden über <strong>1'400 transparente Algorithmus-Disclosures</strong> implementiert. Jeder Rechenschritt ist somit für Sie, Behörden oder Fachexperten mathematisch und rechtlich vollständig nachvollziehbar. <em>(Hinweis: Unser Quellcode für die Berechnungslogik ist zur öffentlichen Überprüfung und unabhängigen Auditierung freigegeben.)</em></p>
 
-    <h2>Transparente Algorithmen und lokale Berechnung – Ihr Datenschutz steht an erster Stelle</h2>
-    <p>Alle Berechnungen auf <strong>WelfareCalc.ch</strong> basieren strikt auf den gesetzlichen Vorgaben des Bundes sowie den kantonalen Ausführungsbestimmungen. Damit Sie sich vollkommen sicher fühlen können, verfolgen wir zwei zentrale Prinzipien:</p>
-    <p><strong>100 % Transparenz unserer Algorithmen:</strong> Wir arbeiten nicht mit «Black Boxes». Für alle Kantone und Anwendungsbereiche haben wir über 1'400 transparente Algorithmus-Disclosures implementiert. Jeder Rechenschritt ist mathematisch und rechtlich vollständig nachvollziehbar.</p>
-    <p><strong>Keine Datenerfassung (lokale Berechnung im Browser):</strong> Ihre Privatsphäre gehört Ihnen. Sämtliche Berechnungen und Prüfungen finden ausschliesslich in Ihrem lokalen Browser statt. Die von Ihnen eingegebenen Daten – sei es Ihr Einkommen, sensible Finanzdaten oder Rechnungsinformationen – werden niemals an unsere Server übermittelt, dort gespeichert oder zu Analysezwecken genutzt.</p>
+    <h2>Kompromisslose Privatsphäre („Privacy-First“ Layout)</h2>
+    <div class="highlight-box">
+        <strong>Wichtiger Hinweis zum Datenschutz (revDSG-konform):</strong><br>
+        Alle Berechnungen auf dieser Website erfolgen <strong>vollständig lokal in Ihrem Webbrowser</strong>. Es werden keine von Ihnen eingegebenen Finanz-, Gesundheits-, Mietvertrags- oder persönlichen Daten an unsere Server übermittelt, dort gespeichert oder zu Analysezwecken genutzt. Ihre Privatsphäre bleibt absolut unangetastet. Die Verarbeitung läuft flüchtig im Arbeitsspeicher Ihres eigenen Endgeräts.
+    </div>
 
-    <h2>⚠️ Wichtiger Hinweis und Ihre Mithilfe</h2>
-    <p>Alle von uns bereitgestellten Ergebnisse und Prüfungen dienen ausschliesslich zu Informationszwecken und als Orientierungshilfe. Sie sind rechtlich nicht verbindlich und ersetzen keine offiziellen Bescheide. Massgeblich ist in jedem Fall der offizielle Entscheid der zuständigen Behörde, der Krankenkasse, der Schlichtungsstelle oder des Sozialamts.</p>
-    <p>Sollten Sie bei der Nutzung unserer Tools auf Fehler stossen – sei es, dass kantonale Regeln nicht aktuell sind oder eine Berechnungslogik nicht stimmt – dann teilen Sie uns dies bitte mit.</p>
-    <p>📧 Unsere E-Mail-Adresse: <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
-    <p>Jede Rückmeldung hilft uns, dieses Angebot zuverlässiger zu machen. Wir versichern Ihnen, dass wir Ihre Kontaktaufnahme ausschliesslich zur Beantwortung Ihrer Anfrage und zur Verbesserung der Tools verwenden – niemals für Werbezwecke.</p>
+    <h2>Wer wir sind: Ein unabhängiges Civic-Tech-Projekt</h2>
+    <p>Hinter WelfareCalc.ch steht kein Grosskonzern und keine staatliche Behörde, sondern ein unabhängiges, rein eigenfinanziertes Digital-Projekt, das sich der Transparenz und dem Konsumentenschutz in der Schweiz verschrieben hat. Wir glauben, dass wichtige Berechnungswerkzeuge für jedermann frei zugänglich, mathematisch präzise und ohne das Risiko des Datenmissbrauchs nutzbar sein sollten.</p>
+    <p>Da das Schweizer System riesig und hochgradig föderalistisch ist, prüfen wir alle Algorithmen mit größter Sorgfalt gegen die offiziellen kantonalen Rechner. Sollten Sie dennoch auf Diskrepanzen oder veraltete kantonalen Tarife stoßen, freuen wir uns über Ihre Mithilfe, um dieses Angebot für alle zuverlässiger zu machen.</p>
+
+    <h2>Kontakt &amp; Support</h2>
+    <p>Haben Sie Fragen zu unseren Rechnern, Feedback zur Benennung von Algorithmen oder Anregungen? Sie erreichen uns jederzeit per E-Mail unter:</p>
+    <p>📧 <strong>E-Mail:</strong> <a href="mailto:contact@welfarecalc.ch">contact@welfarecalc.ch</a></p>
+    <p><em>(Wir erfassen keine E-Mail-Adressen für Marketingzwecke und nutzen Ihre Kontaktaufnahme ausschließlich zur Beantwortung Ihres konkreten Anliegens.)</em></p>
 
     <div class="footer-note">
-        <p><em>Disclaimer: Die hier bereitgestellten Rechner dienen der Orientierung und Information. Sie ersetzen keine rechtsverbindliche Auskunft durch offizielle Stellen, kantonale Sozialämter oder eine professionelle Rechts- und Steuerberatung.</em></p>
+        <p><em>Disclaimer: Die hier bereitgestellten Rechner dienen der Orientierung und Information. Sie ersetzen keine rechtsverbindliche Auskunft durch offizielle Stellen, kantonale Sozialämter, den Mieterverband oder eine professionelle Rechts-, Medizin- und Steuerberatung.</em></p>
     </div>
 </div>
 
