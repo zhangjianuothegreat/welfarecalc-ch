@@ -186,13 +186,15 @@
       border: 1px solid #e0e8f0;
       box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
-    .seo-static-content h1 {
+    /* ✅ 修复：将 H1 改为 H2，避免多个 H1 标记 */
+    .seo-static-content h2 {
       font-family: 'Playfair Display', serif;
       font-size: 1.8rem;
       color: #0050a4;
       margin-bottom: 1rem;
+      font-weight: 600;
     }
-    .seo-static-content h2 {
+    .seo-static-content h3 {
       font-size: 1.3rem;
       color: #333;
       margin-bottom: 0.75rem;
@@ -345,10 +347,10 @@
       .crowd-instruction {
         font-size: 1.6rem;
       }
-      .seo-static-content h1 {
+      .seo-static-content h2 {
         font-size: 2.2rem;
       }
-      .seo-static-content h2 {
+      .seo-static-content h3 {
         font-size: 1.5rem;
       }
     }
@@ -371,10 +373,10 @@
       .seo-static-content {
         padding: 1rem;
       }
-      .seo-static-content h1 {
+      .seo-static-content h2 {
         font-size: 1.4rem;
       }
-      .seo-static-content h2 {
+      .seo-static-content h3 {
         font-size: 1.1rem;
       }
     }
@@ -384,6 +386,7 @@
 
 <header class="site-header">
   <div class="container">
+    <!-- ✅ 唯一的 H1 标记：网站品牌标题 -->
     <h1 class="site-title">🇨🇭 WelfareCalc.ch</h1>
     <div class="language-selector">
       <a href="index.html">← Change Language</a>
@@ -428,10 +431,12 @@
     <!-- Dynamic algorithm container - contains SEO-friendly static initial content -->
     <div id="app" class="app-container">
       <div class="seo-static-content">
-        <h1>Swiss Social Benefits Calculator – Free & Anonymous</h1>
+        <!-- ✅ 修复：将原 H1 改为 H2，标题层级更合理 -->
+        <h2>Swiss Social Benefits Calculator – Free &amp; Anonymous</h2>
         <p>Our tool helps you quickly determine your eligibility for AHV, IV, supplementary benefits, and social assistance. Select your situation above to start the personalized calculation.</p>
-        
-        <h2>Which benefits are calculated?</h2>
+
+        <!-- ✅ 修复：将原 H2 改为 H3，保持正确标题层级 -->
+        <h3>Which benefits are calculated?</h3>
         <p>The WelfareCalc.ch calculator covers the following Swiss social benefits (calculation based on the latest guidelines, as of 2026):</p>
         <ul>
           <li><strong>AHV/IV</strong> – Old-age and Survivors' Insurance / Disability Insurance</li>
@@ -439,24 +444,27 @@
           <li><strong>Unemployment Compensation</strong> – unemployment benefits and short-time work compensation</li>
           <li><strong>Premium Reduction (IPV)</strong> – health insurance premium reductions</li>
           <li><strong>Social Assistance</strong> – cantonal and municipal support</li>
-          <li><strong>Scholarships & Training Contributions</strong> – for students and vocational training</li>
+          <li><strong>Scholarships &amp; Training Contributions</strong> – for students and vocational training</li>
           <li><strong>Family Allowances</strong> – child and education allowances</li>
         </ul>
-        
-        <h2>Who is the calculator suitable for?</h2>
+
+        <!-- ✅ 修复：将原 H2 改为 H3，保持正确标题层级 -->
+        <h3>Who is the calculator suitable for?</h3>
         <p>The calculator is optimized for the following groups: individuals, families, unemployed persons, students, retirees, low-income individuals, persons with disabilities, protection seekers, and pregnant women.</p>
-        
-        <h2>Free, anonymous and privacy-compliant</h2>
+
+        <!-- ✅ 修复：将原 H2 改为 H3 -->
+        <h3>Free, anonymous and privacy-compliant</h3>
         <p>Using WelfareCalc.ch is completely <strong>free</strong> and requires <strong>no registration</strong>. No personal data is stored. Your inputs remain anonymous and are not shared with third parties.</p>
-        
+
         <!-- Additional blog teaser inside static content to enhance SEO and long-tail matrix, hidden when calculator runs -->
         <div id="staticBlogSection" class="blog-section" style="background: #f0f4fa; border-radius: 16px; padding: 1.5rem; margin: 1rem 0 1rem; border-left: 4px solid #0050a4;">
-          <h3>📖 Latest Guides</h3>
+          <!-- ✅ 修复：将原 H3 改为 H4 -->
+          <h4>📖 Latest Guides</h4>
           <p><strong>➡️ <a href="blog/en/social-benefits-2026.html">Money from the Government? 7 Swiss Social Benefits 2026 You Might Be Missing (incl. Calculator)</a></strong></p>
           <p>Find out which benefits you are entitled to – from AHV and IV to premium reductions. With practical tips on cantonal differences and deadlines.</p>
           <p style="margin-top: 0.75rem;">📚 <a href="blog/en/index.html">View all guides →</a></p>
         </div>
-        
+
         <!-- External authority link: Official source of the Federal Social Insurance Office (FSIO) -->
         <p style="margin-top: 1.5rem; font-size: 0.9rem; border-top: 1px solid #e0e8f0; padding-top: 1rem;">
           📌 For official information, also visit the 
@@ -478,7 +486,7 @@
     <a href="haftung_en.html">Disclaimer</a>
   </p>
   <p style="margin-top: 0.6rem;">
-    <a href="blog/en/index.html">📚 All Guides & Blog</a>
+    <a href="blog/en/index.html">📚 All Guides &amp; Blog</a>
   </p>
 </footer>
 
