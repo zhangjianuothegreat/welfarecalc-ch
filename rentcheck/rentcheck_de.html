@@ -16,14 +16,6 @@
         content="Mietvertrag prüfen, Mietvertrag Check, Schweizer Mietrecht, Mieterschutz, Mietkaution, Mietvertrag Risiken, Mietvertrag analysieren, OR Miete, Mieterverband">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Schweizer Mieterschutz · Mietvertrag gratis prüfen (30 Risiken)">
-    <meta property="og:description"
-        content="Laden Sie Ihren Mietvertrag hoch oder fügen Sie ihn ein – sofortige Analyse von über 30 rechtlichen Risiken. 100% datenschutzkonform und lokal im Browser.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck/rentcheck_de.html">
-    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
-    <meta property="og:site_name" content="WelfareCalc.ch">
-    <meta property="og:locale" content="de_CH">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -542,6 +534,15 @@
             }
         }
     </style>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
+    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_de.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de">
+
 </head>
 
 <body>
@@ -1043,7 +1044,16 @@
                 footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
                 .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem; }
             </style>
-            </head>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
+    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_de.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de">
+
+</head>
             <body>
             <h1>Schweizer Mieterschutz - Risikobewertungsbericht</h1>
             <div class="report-date">Erstellt am: ${new Date().toLocaleString('de-CH')}</div>
@@ -1154,7 +1164,17 @@
         }
 
         function downloadChecklistPDF() {
-            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Schweizer Mietrisikopunkte</title><style>body{font-family:system-ui;padding:40px;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;}</style></head><body><h1>30 Schweizer Mietvertrag-Risikopunkte</h1><div>Nur zu Bildungszwecken – Keine Rechtsberatung</div>`;
+            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Schweizer Mietrisikopunkte</title><style>body{font-family:system-ui;padding:40px;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;}</style>    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
+    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_de.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de">
+
+</head><body><h1>30 Schweizer Mietvertrag-Risikopunkte</h1><div>Nur zu Bildungszwecken – Keine Rechtsberatung</div>`;
             for (let id in riskPrompts) {
                 const p = riskPrompts[id].de || {};
                 pdfContent += `<div class="risk-item"><strong>${p.title || id}</strong> (${p.law || "OR"})<br>${p.prompt || ""}</div>`;

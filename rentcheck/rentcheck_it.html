@@ -16,14 +16,6 @@
         content="controllo contratto affitto, contratto locazione svizzera, rischi contratto affitto, protezione inquilino, cauzione affitto, Swiss Rental Protector, verifica contratto affitto, OR locazione">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Swiss Rental Protector · Controllo gratuito contratto d'affitto (30 rischi)">
-    <meta property="og:description"
-        content="Carica o incolla il tuo contratto di affitto – analisi immediata di oltre 30 rischi legali. 100% locale e rispettoso della privacy.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck/rentcheck_it.html">
-    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
-    <meta property="og:site_name" content="WelfareCalc.ch">
-    <meta property="og:locale" content="it_CH">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -543,6 +535,15 @@
             }
         }
     </style>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
+    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_it.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it">
+
 </head>
 
 <body>
@@ -1026,7 +1027,16 @@
             footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
             .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem; }
         </style>
-        </head>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
+    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_it.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it">
+
+</head>
         <body>
             <h1>Swiss Rental Protector - Rapporto di valutazione dei rischi</h1>
             <div class="report-date">Generato il: ${new Date().toLocaleString()}</div>
@@ -1141,7 +1151,16 @@
         function downloadChecklistPDF() {
             let pdfContent = `<html><head><meta charset="UTF-8"><title>30 punti di rischio contratti d'affitto svizzeri</title>
             <style>body { font-family: system-ui, sans-serif; padding:40px; line-height:1.6; } h1 { text-align:center; } .risk-item { margin:25px 0; padding:20px; border-left:6px solid #dc2626; background:#fef9f9; page-break-inside: avoid; } .risk-title { font-size:1.25rem; font-weight:700; } .risk-law { color:#1e3a8a; } footer { margin-top:50px; text-align:center; }</style>
-            </head><body><h1>30 punti di rischio per contratti d'affitto in Svizzera</h1><div style="text-align:center; margin-bottom:30px;">Solo a scopo educativo • Non è un parere legale • Consulta un professionista</div>`;
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
+    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_it.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="it">
+
+</head><body><h1>30 punti di rischio per contratti d'affitto in Svizzera</h1><div style="text-align:center; margin-bottom:30px;">Solo a scopo educativo • Non è un parere legale • Consulta un professionista</div>`;
             for (let id in riskPrompts) {
                 const p = riskPrompts[id].it || {};
                 pdfContent += `<div class="risk-item"><div class="risk-title">${p.title || id}</div><div class="risk-law">Legge: ${p.law || "Codice delle Obbligazioni svizzero"}</div><div>${p.prompt || "Verifica attentamente questa clausola."}</div></div>`;

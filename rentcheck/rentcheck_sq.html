@@ -16,15 +16,6 @@
         content="kontratë qiraje Zvicër, kontroll kontratë qiraje, mbrojtje qiramarrësi Zvicër, depozitë qiraje, rreziqe kontratë qiraje, Mietvertrag check, OR Zvicër">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title"
-        content="Mbrojtësi i Qirasë Zvicerane · Kontroll falas i kontratës së qirasë (30 pika rreziku)">
-    <meta property="og:description"
-        content="Ngarkoni ose ngjisni kontratën tuaj të qirasë – analizë e menjëhershme e mbi 30 rreziqeve ligjore. 100% privat dhe lokal në shfletuesin tuaj.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_sq.html">
-    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
-    <meta property="og:site_name" content="WelfareCalc.ch">
-    <meta property="og:locale" content="sq_AL">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -541,6 +532,15 @@
             }
         }
     </style>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Llogaritesi i Perfitimeve Zvicerane 2026 | 26 Kantone + Kontroll Faturash">
+    <meta property="og:description" content="Llogarit AVS, AI, PC dhe uljet e primeve ne te 26 kantonet zvicerane. Perfshin auditorin e faturave dentare dhe kontrolluesin e kontratave te qirase. 100% anonim ne shfletues. 11 gjuhe.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_sq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sq">
+
 </head>
 
 <body>
@@ -1039,7 +1039,17 @@
             .action-box { background: #f1f5f9; padding: 12px; border-radius: 8px; margin-top: 10px; }
             footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
             .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
-        </style></head>
+        </style>    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Llogaritesi i Perfitimeve Zvicerane 2026 | 26 Kantone + Kontroll Faturash">
+    <meta property="og:description" content="Llogarit AVS, AI, PC dhe uljet e primeve ne te 26 kantonet zvicerane. Perfshin auditorin e faturave dentare dhe kontrolluesin e kontratave te qirase. 100% anonim ne shfletues. 11 gjuhe.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_sq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sq">
+
+</head>
         <body><h1>Raporti i Vlerësimit të Rrezikut - Qira Zvicerane</h1>
         <div class="report-date">Gjeneruar më: ${new Date().toLocaleString('sq')}</div>
         <div class="disclaimer"><strong>⚠️ Mohim përgjegjësie:</strong> Ky raport është vetëm për qëllime informuese. NUK është këshillë ligjore. Konsultohuni gjithmonë me një avokat ose Mieterverband.</div>
@@ -1119,7 +1129,17 @@
         }
 
         function downloadChecklistPDF() {
-            let pdfContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>30 Pikat e Rrezikut të Qirasë Zvicerane</title><style>body{font-family:system-ui,sans-serif;padding:40px;}h1{text-align:center;}.risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;page-break-inside:avoid;}.risk-title{font-size:1.25rem;font-weight:700;}</style></head><body><h1>30 Pikat e Rrezikut të Kontratës së Qirasë Zvicerane</h1><div style="text-align:center;margin-bottom:30px;">Vetëm për qëllime arsimore • Nuk është këshillë ligjore</div>`;
+            let pdfContent = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>30 Pikat e Rrezikut të Qirasë Zvicerane</title><style>body{font-family:system-ui,sans-serif;padding:40px;}h1{text-align:center;}.risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;page-break-inside:avoid;}.risk-title{font-size:1.25rem;font-weight:700;}</style>    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Llogaritesi i Perfitimeve Zvicerane 2026 | 26 Kantone + Kontroll Faturash">
+    <meta property="og:description" content="Llogarit AVS, AI, PC dhe uljet e primeve ne te 26 kantonet zvicerane. Perfshin auditorin e faturave dentare dhe kontrolluesin e kontratave te qirase. 100% anonim ne shfletues. 11 gjuhe.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_sq.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sq">
+
+</head><body><h1>30 Pikat e Rrezikut të Kontratës së Qirasë Zvicerane</h1><div style="text-align:center;margin-bottom:30px;">Vetëm për qëllime arsimore • Nuk është këshillë ligjore</div>`;
             for (let id in riskPrompts) {
                 const p = riskPrompts[id].sq || {};
                 pdfContent += `<div class="risk-item"><div class="risk-title">${p.title || id}</div><div><strong>Ligji:</strong> ${p.law || "Swiss Code of Obligations"}</div><div>${p.prompt || "Ju lutemi shqyrtoni me kujdes këtë klauzolë."}</div></div>`;

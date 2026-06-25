@@ -16,14 +16,6 @@
         content="ugovor o najmu provjera, švicarski najam, zaštita najma, mietvertrag, kaution, švicarski OR, provjera ugovora, mieterverband, rizici najma">
 
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Švicarski Zaštitnik Najma · Besplatna provjera ugovora o najmu (30 rizika)">
-    <meta property="og:description"
-        content="Prenesite ili zalijepite ugovor o najmu – trenutna analiza 30+ pravnih rizika. 100% privatno i lokalno u pregledniku. Zaštitite svoja prava u Švicarskoj.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html">
-    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
-    <meta property="og:site_name" content="WelfareCalc.ch">
-    <meta property="og:locale" content="hr_HR">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -544,6 +536,15 @@
             }
         }
     </style>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kalkulator Svicarskih Naknada 2026 | 26 Kantona + Provjera Racuna">
+    <meta property="og:description" content="Izracunajte AVS, AI, PC i smanjenja premija u svih 26 svicarskih kantona. Ukljucuje reviziju stomatoloskih racuna i provjeru ugovora o najmu. 100% anonimno u pregledniku. 11 jezika.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_hr.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hr">
+
 </head>
 
 <body>
@@ -1049,7 +1050,16 @@
             .action-box { background: #f1f5f9; padding: 12px; border-radius: 8px; margin-top: 10px; }
             footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
             .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem; }</style>
-            </head><body><h1>Švicarski Zaštitnik Najma - Izvješće o procjeni rizika</h1>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kalkulator Svicarskih Naknada 2026 | 26 Kantona + Provjera Racuna">
+    <meta property="og:description" content="Izracunajte AVS, AI, PC i smanjenja premija u svih 26 svicarskih kantona. Ukljucuje reviziju stomatoloskih racuna i provjeru ugovora o najmu. 100% anonimno u pregledniku. 11 jezika.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_hr.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hr">
+
+</head><body><h1>Švicarski Zaštitnik Najma - Izvješće o procjeni rizika</h1>
             <div class="report-date">Generirano: ${new Date().toLocaleString()}</div>
             <div class="disclaimer"><strong>⚠️ Napomena:</strong> Ovo izvješće je samo informativnog i obrazovnog karaktera. Nije pravni savjet. Uvijek se posavjetujte s odvjetnikom ili Mieterverbandom prije potpisivanja ugovora.</div>
             ${cloneResults.innerHTML}<footer>Švicarski Zaštitnik Najma – Besplatni alat od https://www.welfarecalc.ch • Temeljeno na Švicarskom zakonu o obveznim odnosima (OR)</footer></body></html>`;
@@ -1140,7 +1150,17 @@
 
         function downloadChecklistPDF() {
             let pdfContent = `<html><head><meta charset="UTF-8"><title>30 švicarskih rizičnih točaka u najmu - Popis</title>
-            <style>body { font-family: system-ui, sans-serif; padding:40px; line-height:1.6; } h1 { text-align:center; } .intro { text-align:center; color:#475569; margin-bottom:30px; } .risk-item { margin:25px 0; padding:20px; border-left:6px solid #dc2626; background:#fef9f9; page-break-inside: avoid; } .risk-title { font-size:1.25rem; font-weight:700; } .risk-law { color:#1e3a8a; font-weight:600; } footer { margin-top:50px; text-align:center; }</style></head>
+            <style>body { font-family: system-ui, sans-serif; padding:40px; line-height:1.6; } h1 { text-align:center; } .intro { text-align:center; color:#475569; margin-bottom:30px; } .risk-item { margin:25px 0; padding:20px; border-left:6px solid #dc2626; background:#fef9f9; page-break-inside: avoid; } .risk-title { font-size:1.25rem; font-weight:700; } .risk-law { color:#1e3a8a; font-weight:600; } footer { margin-top:50px; text-align:center; }</style>    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Kalkulator Svicarskih Naknada 2026 | 26 Kantona + Provjera Racuna">
+    <meta property="og:description" content="Izracunajte AVS, AI, PC i smanjenja premija u svih 26 svicarskih kantona. Ukljucuje reviziju stomatoloskih racuna i provjeru ugovora o najmu. 100% anonimno u pregledniku. 11 jezika.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_hr.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="hr">
+
+</head>
             <body><h1>30 švicarskih rizičnih točaka u ugovorima o najmu</h1><div class="intro">Samo u obrazovne svrhe • Nije pravni savjet • Uvijek se posavjetujte sa stručnjakom</div>`;
             for (let id in riskPrompts) {
                 const p = riskPrompts[id].hr || {};

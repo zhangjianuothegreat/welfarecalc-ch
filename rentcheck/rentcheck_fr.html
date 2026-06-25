@@ -16,15 +16,6 @@
         content="contrat de bail vérifier, bail suisse risque, protecteur de bail, dépôt de garantie, ASLOCA, code des obligations, bail locataire, analyse contrat bail">
 
     <!-- Open Graph / Réseaux sociaux -->
-    <meta property="og:title"
-        content="Protecteur de Bail Suisse · Vérifiez votre contrat de bail gratuitement (30 risques)">
-    <meta property="og:description"
-        content="Analysez votre contrat de bail suisse en quelques secondes. Plus de 30 pièges juridiques détectés. 100% confidentiel et local dans votre navigateur.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck/rentcheck_fr.html">
-    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
-    <meta property="og:site_name" content="WelfareCalc.ch">
-    <meta property="og:locale" content="fr_CH">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -542,6 +533,15 @@
             }
         }
     </style>
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
+    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_fr.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr">
+
 </head>
 
 <body>
@@ -1019,7 +1019,17 @@
             .action-box { background: #f1f5f9; padding: 12px; border-radius: 8px; margin-top: 10px; }
             footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
             .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; }
-        </style></head>
+        </style>    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
+    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_fr.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr">
+
+</head>
         <body>
             <h1>Protecteur de Bail Suisse - Rapport d'évaluation</h1>
             <div class="report-date">Généré le : ${new Date().toLocaleString()}</div>
@@ -1132,7 +1142,17 @@
         }
 
         function downloadChecklistPDF() {
-            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Points de risque bail Suisse</title><style>body{font-family:system-ui;padding:40px;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;page-break-inside:avoid;}</style></head><body><h1>30 points de risque - contrat de bail Suisse</h1><div style="text-align:center;">À but éducatif uniquement</div>`;
+            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Points de risque bail Suisse</title><style>body{font-family:system-ui;padding:40px;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;page-break-inside:avoid;}</style>    
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
+    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
+    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_fr.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr">
+
+</head><body><h1>30 points de risque - contrat de bail Suisse</h1><div style="text-align:center;">À but éducatif uniquement</div>`;
             for (let id in riskPrompts) {
                 const p = riskPrompts[id].fr || {};
                 pdfContent += `<div class="risk-item"><div><strong>${p.title || id}</strong></div><div>Loi : ${p.law || "Code des obligations"}</div><div>${p.prompt || ""}</div></div>`;
