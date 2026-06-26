@@ -6,869 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <link rel="llms" href="/llms.txt" />
 
-    <!-- SEO 基础优化 -->
-    <title>Schweizer Mieterschutz · 30 Risikopunkte · Datenschutz zuerst</title>
-    <meta name="description"
-        content="Kostenloser Mietvertrag-Check Schweiz: Sofort 30+ rechtliche Risiken erkennen. 100% lokal im Browser • Keine Datenübertragung • Für Deutsch, Französisch und Italienisch. Schutz vor teuren Mietfallen.">
+    <title>WelfareCalc | Mietvertrag prüfen – 30 Risikopunkte sofort erkennen</title>
+    <meta name="description" content="Kostenloser Mietvertrag-Check Schweiz: 30+ rechtliche Risiken erkennen. 100% lokal im Browser – keine Datenübertragung. Jetzt Mietvertrag prüfen!">
     <meta name="robots" content="index, follow">
+    
     <link rel="canonical" href="https://www.welfarecalc.ch/rentcheck/rentcheck_de.html">
-    <meta name="keywords"
-        content="Mietvertrag prüfen, Mietvertrag Check, Schweizer Mietrecht, Mieterschutz, Mietkaution, Mietvertrag Risiken, Mietvertrag analysieren, OR Miete, Mieterverband">
-
-    <!-- Open Graph / Social Media -->
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Schweizer Mieterschutz · Mietvertrag gratis prüfen">
-    <meta name="twitter:description"
-        content="30 rechtliche Fallstricke sofort erkennen – kostenlos & 100% lokal. Kein Upload, kein Tracking.">
-    <meta name="twitter:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
-
-    <!-- PDF.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #f0f4f8;
-            color: #0f172a;
-            line-height: 1.5;
-        }
-
-        /* Zurück-Button */
-        .back-to-home {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            background: #ffffff;
-            color: #0f172a;
-            padding: 12px 20px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            transition: all 0.2s ease;
-            border: 1px solid #e2e8f0;
-            min-height: 48px;
-        }
-
-        .back-to-home:hover {
-            background: #1e3a8a;
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            border-color: #1e3a8a;
-        }
-
-        /* Hero-Bereich */
-        .hero {
-            background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%);
-            color: #2d3748;
-            padding: 3rem 1.5rem 6rem;
-            text-align: center;
-            background-image:
-                linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%),
-                url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2394a3b8' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M96 49c0 2.761-2.239 5-5 5l-86 0c-2.761 0-5-2.239-5-5l0-86c0-2.761 2.239-5 5-5l86 0c2.761 0 5 2.239 5 5l0 86z' fill='%23ffffff' fill-opacity='0.4'/%3E%3C/svg%3E");
-            opacity: 0.2;
-            animation: float 20s linear infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-
-            50% {
-                transform: translate(-20px, -10px) rotate(1deg);
-            }
-
-            100% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-        }
-
-        .hero h1 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-            margin-bottom: 1rem;
-            color: #2563eb;
-        }
-
-        .hero h1 i {
-            color: #f97316;
-            margin-right: 8px;
-        }
-
-        .hero-sub {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            color: #475569;
-        }
-
-        .stats {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .stat-card {
-            background: #ffffff;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            padding: 1rem 2rem;
-            border-radius: 2rem;
-            font-weight: 600;
-            border: 1px solid #e2e8f0;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #f59e0b, #ea580c);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto 3rem;
-            padding: 0 1.5rem;
-        }
-
-        .card {
-            background: white;
-            border-radius: 1.5rem;
-            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .section-title {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            color: #0f172a;
-            border-left: 5px solid #dc2626;
-            padding-left: 1rem;
-        }
-
-        .upload-toolbar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .upload-btn {
-            background: #f1f5f9;
-            border: 1.5px solid #cbd5e1;
-            padding: 0.8rem 1.5rem;
-            border-radius: 2rem;
-            cursor: pointer;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all .2s;
-            min-height: 48px;
-        }
-
-        .upload-btn:hover {
-            background: #e2e8f0;
-            border-color: #3b82f6;
-        }
-
-        .knowledge-btn {
-            background: linear-gradient(95deg, #dc2626, #b91c1c);
-            border: none;
-            color: white;
-            padding: 1rem 2rem;
-            border-radius: 2.5rem;
-            font-weight: 700;
-            width: 100%;
-            font-size: 1.15rem;
-            margin: 1rem 0;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            box-shadow: 0 6px 12px rgba(220, 38, 38, 0.3);
-            transition: all 0.2s;
-            min-height: 56px;
-        }
-
-        .knowledge-btn:hover {
-            transform: translateY(-3px);
-            background: linear-gradient(95deg, #b91c1c, #991b1b);
-        }
-
-        .action-btn {
-            background: linear-gradient(95deg, #059669, #10b981);
-            color: white;
-            border: none;
-            padding: 0.9rem 1.8rem;
-            border-radius: 2rem;
-            font-weight: 700;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            transition: all 0.2s;
-            font-size: 1rem;
-            min-height: 48px;
-            flex: 1;
-            justify-content: center;
-        }
-
-        .action-btn:hover {
-            transform: translateY(-2px);
-            background: linear-gradient(95deg, #047857, #059669);
-        }
-
-        .scam-alert {
-            background: #fff0f0;
-            border-left: 6px solid #dc2626;
-            padding: 1.2rem 1.5rem;
-            margin: 1.2rem 0 1.5rem 0;
-            border-radius: 1rem;
-            box-shadow: 0 4px 12px rgba(220, 38, 38, .1);
-        }
-
-        .scam-alert h4 {
-            margin: 0 0 .5rem 0;
-            color: #b91c1c;
-            font-size: 1.2rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        textarea {
-            width: 100%;
-            min-height: 260px;
-            padding: 1.2rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 1rem;
-            font-family: monospace;
-            font-size: .95rem;
-            resize: vertical;
-        }
-
-        textarea:focus {
-            outline: none;
-            border-color: #3b82f6;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, .2);
-        }
-
-        .primary-btn {
-            background: #dc2626;
-            color: white;
-            border: none;
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-            border-radius: 3rem;
-            margin-top: 1rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            min-height: 56px;
-        }
-
-        .primary-btn:hover {
-            background: #b91c1c;
-        }
-
-        .primary-btn:disabled {
-            background: #94a3b8;
-            cursor: not-allowed;
-        }
-
-        .result-item {
-            border-left: 5px solid;
-            padding: 1.2rem;
-            margin-bottom: 1.2rem;
-            border-radius: 1rem;
-            background: #fefefe;
-        }
-
-        .high-risk {
-            border-left-color: #dc2626;
-            background: #fef2f2;
-        }
-
-        .medium-risk {
-            border-left-color: #f59e0b;
-            background: #fffbeb;
-        }
-
-        .low-risk {
-            border-left-color: #10b981;
-            background: #ecfdf5;
-        }
-
-        .action-box {
-            background: #f8fafc;
-            padding: .8rem;
-            border-radius: .8rem;
-            margin-top: .8rem;
-            border-left: 3px solid #3b82f6;
-            font-size: .9rem;
-        }
-
-        .confirm-group {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .confirm-option label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-            background: #f1f5f9;
-            padding: .5rem;
-            border-radius: 2rem;
-            cursor: pointer;
-            border: 1px solid #cbd5e1;
-            min-height: 44px;
-        }
-
-        .confirm-option input:checked+label {
-            background: #3b82f6;
-            color: white;
-            border-color: #3b82f6;
-        }
-
-        .confirm-option input {
-            display: none;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0, 0, 0, .6);
-            z-index: 2000;
-            overflow-y: auto;
-            padding: 2rem;
-        }
-
-        .modal-card {
-            max-width: 800px;
-            margin: 2rem auto;
-            background: white;
-            border-radius: 1.5rem;
-            overflow: hidden;
-        }
-
-        .modal-header {
-            background: #0f172a;
-            color: white;
-            padding: 1.2rem 1.5rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .modal-body {
-            padding: 1.5rem;
-            max-height: 70vh;
-            overflow-y: auto;
-        }
-
-        .checklist-item {
-            border-left: 4px solid #dc2626;
-            margin-bottom: 1rem;
-            padding: 1rem;
-            background: #f9fafb;
-            border-radius: .8rem;
-        }
-
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(255, 255, 255, .95);
-            z-index: 3000;
-            display: none;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #e2e8f0;
-            border-top: 5px solid #dc2626;
-            border-radius: 50%;
-            animation: spin 1s infinite;
-        }
-
-        @keyframes spin {
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #475569;
-            font-size: .85rem;
-        }
-
-        .button-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            align-items: center;
-        }
-
-        .button-group .action-btn {
-            flex: 1;
-            min-width: 180px;
-        }
-
-        @media print {
-            body * {
-                visibility: hidden;
-            }
-
-            #resultArea,
-            #resultArea * {
-                visibility: visible;
-            }
-
-            #resultArea {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-            }
-
-            .hero,
-            .upload-toolbar,
-            .scam-alert,
-            .knowledge-btn,
-            footer,
-            .modal,
-            .primary-btn,
-            .button-group,
-            .confirm-group,
-            .back-to-home {
-                display: none !important;
-            }
-
-            .result-item {
-                break-inside: avoid;
-                page-break-inside: avoid;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .button-group {
-                flex-direction: column;
-            }
-
-            .button-group .action-btn {
-                width: 100%;
-                min-width: auto;
-            }
-
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-
-            .stat-card {
-                padding: 0.75rem 1.25rem;
-            }
-
-            .stat-number {
-                font-size: 1.5rem;
-            }
-
-            .card {
-                padding: 1.5rem;
-            }
-        }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_de.html">
+    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/rentcheck/rentcheck_de.html">
+    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/rentcheck/rentcheck_en.html">
+    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/rentcheck/rentcheck_fr.html">
+    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/rentcheck/rentcheck_it.html">
+    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/rentcheck/rentcheck_es.html">
+    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/rentcheck/rentcheck_pl.html">
+    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/rentcheck/rentcheck_pt.html">
+    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/rentcheck/rentcheck_sq.html">
+    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/rentcheck/rentcheck_hr.html">
+    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/rentcheck/rentcheck_tr.html">
+    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/rentcheck/rentcheck_ta.html">
+    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/">
+
+    <!-- ========== Open Graph / Social Media ========== -->
+    <meta property="og:title" content="WelfareCalc | Mietvertrag prüfen – 30 Risikopunkte sofort erkennen">
+    <meta property="og:description" content="Kostenloser Mietvertrag-Check Schweiz: 30+ rechtliche Risiken erkennen. 100% lokal im Browser – keine Datenübertragung. Jetzt prüfen!">
+    <meta property="og:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="WelfareCalc Mietvertrag-Check – 30 Risikopunkte erkennen">
+    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck/rentcheck_de.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de">
+    <meta property="og:site_name" content="WelfareCalc">
 
-</head>
+    <!-- ========== Twitter Card ========== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@WelfareCalc">
+    <meta name="twitter:creator" content="@WelfareCalc">
+    <meta name="twitter:title" content="WelfareCalc | Mietvertrag prüfen – 30 Risikopunkte sofort erkennen">
+    <meta name="twitter:description" content="Kostenloser Mietvertrag-Check Schweiz: 30+ rechtliche Risiken erkennen. 100% lokal im Browser. Jetzt prüfen!">
+    <meta name="twitter:image" content="https://www.welfarecalc.ch/og-rentcheck.jpg">
+    <meta name="twitter:image:alt" content="WelfareCalc Mietvertrag-Check – 30 Risikopunkte erkennen">
 
-<body>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Schweizer Mietvertrag-Check",
+      "headline": "Mietvertrag prüfen – 30 Risikopunkte sofort erkennen",
+      "description": "Kostenloses Tool zur Prüfung von Schweizer Mietverträgen auf über 30 rechtliche Risiken. 100% lokal im Browser, keine Datenübertragung.",
+      "url": "https://www.welfarecalc.ch/rentcheck/rentcheck_de.html",
+      "inLanguage": "de",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "WelfareCalc",
+        "url": "https://www.welfarecalc.ch/"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Startseite",
+            "item": "https://www.welfarecalc.ch/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Mietvertrag prüfen",
+            "item": "https://www.welfarecalc.ch/rentcheck/rentcheck_de.html"
+          }
+        ]
+      }
+    }
+    </script>
 
-    <a href="https://www.welfarecalc.ch/" class="back-to-home" target="_blank" rel="noopener noreferrer">
-        <i class="fas fa-arrow-left"></i> Zurück zur Hauptseite
-    </a>
-
-    <div class="hero">
-        <h1><i class="fas fa-shield-virus"></i> Schweizer Mieterschutz</h1>
-        <p class="hero-sub">30+ rechtliche Fallstricke · Kostenlos · 100% lokal & privat</p>
-        <div class="stats">
-            <div class="stat-card"><span class="stat-number">94%</span><br>Verträge verstecken Risiken</div>
-            <div class="stat-card"><span class="stat-number">CHF 1500+</span><br>durchschnittlicher Mietzinsstreit</div>
-            <div class="stat-card"><span class="stat-number">30</span><br>Risikopunkte</div>
-        </div>
-    </div>
-
-    <div class="container">
-        <!-- Haftungsausschluss -->
-        <div
-            style="background: linear-gradient(135deg, #1e3a8a, #1e40af); border-radius: 1rem; padding: 1.5rem; margin: -1rem 0 1.5rem 0; text-align: center; font-size: 1rem; line-height: 1.5; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #3b82f6;">
-            <div style="font-size: 1.1rem; margin-bottom: 0.75rem;">
-                🔒 <strong>100% lokale Verarbeitung</strong> – Ihr Vertrag verlässt niemals Ihren Browser.
-            </div>
-            <div style="background: rgba(255,255,255,0.12); border-radius: 0.75rem; padding: 1rem; margin-top: 0.5rem;">
-                <strong>⚠️ Wichtiger Haftungsausschluss:</strong> Dieses Tool dient nur zu Informations- und
-                Bildungszwecken.
-                Es ist <strong>KEINE Rechtsberatung</strong>. Deutsche Verträge lösen aufgrund des reichhaltigeren
-                Wortschatzes mehr Warnungen aus;
-                französische und italienische Verträge sind tendenziell standardisierter.<br>
-                <strong>Endgültige Entscheidungen sollten immer mit einem qualifizierten Anwalt oder dem Mieterverband
-                    besprochen werden.</strong>
-            </div>
-        </div>
-
-        <!-- Kostenlose Mietvertragsvorlagen -->
-        <div
-            style="background:#f0f9ff; border-radius:1.5rem; padding:1.2rem; margin: 1.5rem 0; border:1px solid #b9d8f3;">
-            <h3 style="margin:0 0 0.5rem 0; display:flex; align-items:center; gap:8px;">
-                <i class="fas fa-file-contract"></i> Kostenlose Mietvertragsvorlagen (Amtssprachen)
-            </h3>
-            <p style="font-size:0.9rem; margin-bottom:1rem;">📄 Laden Sie Beispielverträge in den Schweizer Amtssprachen
-                herunter – nur als Referenz</p>
-            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
-                <a href="FrenchContract.pdf" download class="upload-btn" style="text-decoration:none;">
-                    <i class="fas fa-file-pdf"></i> Französisch (Français)
-                </a>
-                <a href="GermanContract.pdf" download class="upload-btn" style="text-decoration:none;">
-                    <i class="fas fa-file-pdf"></i> Deutsch (Deutsch)
-                </a>
-                <a href="ItalianContract.pdf" download class="upload-btn" style="text-decoration:none;">
-                    <i class="fas fa-file-pdf"></i> Italienisch (Italiano)
-                </a>
-            </div>
-        </div>
-
-        <div class="card">
-            <h2 class="section-title"><i class="fas fa-upload"></i> Mietvertrag importieren (PDF / Text)</h2>
-            <div
-                style="background:#fef9e3; border-left:4px solid #f59e0b; padding:0.75rem 1rem; border-radius:0.75rem; margin-bottom:1rem; font-size:0.9rem;">
-                <i class="fas fa-language"></i> <strong>Sprachunterstützung:</strong> Nur Schweizer Amtssprachen —
-                Deutsch, Französisch, Italienisch. Andere Sprachen werden möglicherweise nicht korrekt erkannt.
-            </div>
-            <div
-                style="background:#f8fafc; border-radius:1rem; padding:1rem 1.2rem; margin-bottom:1.2rem; border-left:4px solid #3b82f6;">
-                <p style="margin:0 0 0.5rem 0; font-weight:700;">
-                    <i class="fas fa-info-circle"></i> 📋 So funktioniert's:
-                </p>
-                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">
-                    Laden Sie Ihren Mietvertrag (Deutsch, Französisch oder Italienisch) hoch oder fügen Sie ihn ein.
-                    Unser Tool scannt mit Hilfe von Schlüsselwörtern nach über 30 häufigen rechtlichen Risiken – wie ein
-                    zweites Paar Augen, bevor Sie unterschreiben.
-                </p>
-                <p style="margin:0 0 0.5rem 0; font-weight:700; color:#1e3a8a;">
-                    <i class="fas fa-shield-alt"></i> 🔒 Ihre Privatsphäre ist wichtig:
-                </p>
-                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">
-                    Alles geschieht lokal in Ihrem Browser. Keine Uploads, keine Server, kein Tracking. Ihr Vertrag
-                    verlässt nie Ihr Gerät.
-                    Scannen Sie ihn, überprüfen Sie die Ergebnisse und schließen Sie die Seite – es bleibt keine Spur
-                    zurück.
-                </p>
-                <p
-                    style="margin:0; font-size:0.85rem; background:#fef9e3; padding:0.6rem; border-radius:0.75rem; color:#92400e;">
-                    <i class="fas fa-exclamation-triangle"></i> <strong>Denken Sie daran:</strong> Dieses Tool ist KEIN
-                    Anwalt.
-                    Die Ergebnisse dienen nur als Referenz und erfassen möglicherweise nicht jedes Problem.
-                    Im Zweifelsfall konsultieren Sie einen Fachanwalt oder Ihren lokalen Mieterverband.
-                </p>
-            </div>
-
-            <div class="upload-toolbar">
-                <label class="upload-btn">
-                    <input type="file" id="pdfUpload" accept=".pdf">
-                    <i class="fas fa-file-pdf"></i> PDF-Vertrag hochladen
-                </label>
-                <div class="upload-btn" onclick="document.getElementById('contractInput').focus();">
-                    <i class="fas fa-keyboard"></i> Text manuell einfügen
-                </div>
-            </div>
-
-            <div class="scam-alert">
-                <h4><i class="fas fa-exclamation-triangle"></i> Schweizer Mietwarnung – Betrugsalarm</h4>
-                <p>🚫 Niemals vor der Besichtigung bezahlen! Kein Bargeld, keine Western Union, keine "Schlüssel per
-                    Post".<br>
-                    ✅ Die Mietkaution muss auf einem Sperrkonto (Mietkautionskonto) auf den Namen des Mieters hinterlegt
-                    werden.</p>
-            </div>
-
-            <button class="knowledge-btn" id="showChecklistBtn">
-                <i class="fas fa-list-check"></i> Alle 30 Risikopunkte anzeigen (Vollständige Checkliste)
-            </button>
-
-            <textarea id="contractInput"
-                placeholder="Fügen Sie hier Ihren deutschen, französischen oder italienischen Mietvertrag ein …"></textarea>
-
-            <div style="display:flex;justify-content:space-between;margin:.5rem 0;font-size:0.9rem;">
-                <span id="charCounter">0 Zeichen</span>
-                <span><i class="fas fa-shield-alt"></i> 30 Risikopunkte werden gescannt</span>
-            </div>
-            <button class="primary-btn" id="scanBtn"><i class="fas fa-radar"></i> Mietvertragsrisiken jetzt
-                scannen</button>
-        </div>
-
-        <div id="resultArea" style="display:none;">
-            <div class="card">
-                <h2 class="section-title"><i class="fas fa-exclamation-triangle"></i> Risikobewertungsbericht</h2>
-                <div id="dynamicResults"></div>
-                <div class="button-group">
-                    <button class="action-btn" id="printReportBtn">
-                        <i class="fas fa-print"></i> 🖨️ Aktuelle Risiken drucken
-                    </button>
-                    <button class="action-btn" id="downloadReportPdfBtn">
-                        <i class="fas fa-file-pdf"></i> 📥 Als PDF herunterladen
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <p>© 2026 Schweizer Mieterschutz – Ein kostenloses Tool von <a href="https://www.welfarecalc.ch/"
-                    target="_blank" rel="noopener noreferrer"
-                    style="color: #2563eb; text-decoration: none;">WelfareCalc.ch</a></p>
-            <p style="margin-top: 0.5rem;">
-                <a href="https://www.welfarecalc.ch/aboutus_de.html">About us</a> •
-                <a href="https://www.welfarecalc.ch/impressum.html" target="_blank" rel="noopener noreferrer"
-                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Impressum</a> |
-                <a href="https://www.welfarecalc.ch/datenschutz.html" target="_blank" rel="noopener noreferrer"
-                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Datenschutzerklärung</a> |
-                <a href="https://www.welfarecalc.ch/haftung.html" target="_blank" rel="noopener noreferrer"
-                    style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Haftungsausschluss</a>
-            </p>
-            <p style="margin-top: 1rem; font-size: 0.75rem; color: #64748b;">
-                <i class="fas fa-gavel"></i> Basierend auf dem Schweizer Obligationenrecht (OR) | Nur zu Referenzzwecken
-                – KEINE Rechtsberatung.
-                Konsultieren Sie immer den Mieterverband oder einen qualifizierten Anwalt, bevor Sie einen Vertrag
-                unterschreiben.
-            </p>
-        </footer>
-        <!-- ========== 博客文章 SEO 引流模块 (2列卡片网格) ========== -->
-        <div style="margin: 3rem 0 1rem 0;">
-            <h3
-                style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px;">
-                <i class="fas fa-newspaper" style="color: #dc2626;"></i>
-                Mietrecht Ratgeber & Blog-Artikel
-            </h3>
-
-            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
-
-                <!-- 卡片 1 - 红色 -->
-                <div
-                    style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
-                    <div style="padding: 1.2rem;">
-                        <div
-                            style="display: inline-block; background: #dc2626; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
-                            ⚠️ PFLEICHTLEKTÜRE
-                        </div>
-                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Die 10
-                            gefährlichsten Klauseln</h4>
-                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Illegale
-                            Kautionshandhabung, "perfekte Reinigung"-Fallstricke, einseitige Mietzinserhöhungen –
-                            erkennen Sie die Fallen vor der Unterschrift.</p>
-                        <a href="https://www.welfarecalc.ch/blog/rent/die-10-gefaehrlichsten-klauseln-im-schweizer-mietvertrag-de.html"
-                            target="_blank"
-                            style="color: #dc2626; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Zum
-                            Artikel →</a>
-                    </div>
-                </div>
-
-                <!-- 卡片 2 - 橙色 -->
-                <div
-                    style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
-                    <div style="padding: 1.2rem;">
-                        <div
-                            style="display: inline-block; background: #f59e0b; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
-                            💰 Kautions-Fallen
-                        </div>
-                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
-                            Mietkaution: Häufigste Fallen</h4>
-                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Maximal 3
-                            Monatsmieten? Verzinsung? Barzahlung verboten? So schützen Sie Ihre Kaution vor unfairen
-                            Abzügen.</p>
-                        <a href="https://www.welfarecalc.ch/blog/rent/mietkaution-im-schweizer-mietvertrag-die-haeufigsten-fallen-de.html"
-                            target="_blank"
-                            style="color: #f59e0b; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Zum
-                            Artikel →</a>
-                    </div>
-                </div>
-
-                <!-- 卡片 3 - 蓝色 -->
-                <div
-                    style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
-                    <div style="padding: 1.2rem;">
-                        <div
-                            style="display: inline-block; background: #3b82f6; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
-                            ⏱️ KÜNDIGUNG & SCHUTZ
-                        </div>
-                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
-                            Kündigungsfristen & Kündigungsschutz</h4>
-                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Zu kurze
-                            Kündigungsfristen? Automatische Verlängerungsfallen? Kennen Sie die gesetzliche
-                            3-Monatsregel.</p>
-                        <a href="https://www.welfarecalc.ch/blog/rent/kuendigungsfristen-und-kuendigungsschutz-im-mietvertrag-de.html"
-                            target="_blank"
-                            style="color: #3b82f6; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Zum
-                            Artikel →</a>
-                    </div>
-                </div>
-
-                <!-- 卡片 4 - 绿色 -->
-                <div
-                    style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
-                    <div style="padding: 1.2rem;">
-                        <div
-                            style="display: inline-block; background: #10b981; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
-                            📈 MIETZINS & REFERENZSATZ
-                        </div>
-                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Mietzins
-                            zu hoch oder Erhöhung?</h4>
-                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">
-                            Unzulässige Verzichtsklauseln, Referenzzinssatz-Senkung (1,25% im 2026), Indexklauseln und
-                            versteckte Mieterhöhungen.</p>
-                        <a href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-de.html"
-                            target="_blank"
-                            style="color: #10b981; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Zum
-                            Artikel →</a>
-                    </div>
-                </div>
-
-                <!-- 卡片 5 - 紫色 -->
-                <div
-                    style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
-                    <div style="padding: 1.2rem;">
-                        <div
-                            style="display: inline-block; background: #8b5cf6; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
-                            🧾 NEBENKOSTEN
-                        </div>
-                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
-                            Nebenkostenabrechnung & versteckte Kosten</h4>
-                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Pauschalen
-                            ohne Abrechnung? Nicht zulässige Positionen? Recht auf Belegeinsicht – so sparen Sie bares
-                            Geld.</p>
-                        <a href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-de.html"
-                            target="_blank"
-                            style="color: #8b5cf6; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Zum
-                            Artikel →</a>
-                    </div>
-                </div>
-
-                <!-- 卡片 6 - 红色 -->
-                <div
-                    style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
-                    <div style="padding: 1.2rem;">
-                        <div
-                            style="display: inline-block; background: #ef4444; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
-                            🔧 REPARATUREN & MÄNGEL
-                        </div>
-                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">
-                            Wohnungsmängel & Vermieterpflichten</h4>
-                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Wer zahlt
-                            für defekte Heizung? Verzicht auf Mietzinsreduktion? Übermässige Kleinreparaturklauseln –
-                            schützen Sie sich.</p>
-                        <a href="https://www.welfarecalc.ch/blog/rent/wohnungsmaengel-und-vermieterpflichten-im-mietvertrag-de.html"
-                            target="_blank"
-                            style="color: #ef4444; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Zum
-                            Artikel →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 醒目的按钮 -->
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://www.welfarecalc.ch/blog/rent/rent_blog_de.html" target="_blank"
-                    style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(95deg, #1e3a8a, #2563eb); color: white; padding: 0.9rem 2rem; border-radius: 3rem; font-weight: 700; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3); transition: transform 0.2s;">
-                    <i class="fas fa-book-open"></i> Alle Blog-Artikel anzeigen
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-        <!-- ========== 博客模块结束 ========== -->
-    </div>
-
-    <!-- Modal für 30 Risikopunkte -->
-    <div id="checklistModal" class="modal">
-        <div class="modal-card">
-            <div class="modal-header">
-                <h3><i class="fas fa-book-skull"></i> 30 Schweizer Mietrisikopunkte</h3>
-                <span style="font-size:2rem;cursor:pointer;" id="closeModalBtn">&times;</span>
-            </div>
-            <div class="modal-body" id="modalChecklistBody"></div>
-            <div style="padding:1rem 1.5rem;background:#f8fafc;border-top:1px solid #e2e8f0;text-align:center;">
-                <button onclick="downloadChecklistPDF()" class="action-btn"
-                    style="width:100%;max-width:340px;margin:0 auto;">
-                    <i class="fas fa-download"></i> 30 Risikopunkte als PDF herunterladen
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="loadingOverlay" class="loading-overlay">
-        <div class="spinner"></div>
-        <div id="loadingMsg" style="margin-top:1rem;">Lade Datenbank und scanne …</div>
-    </div>
-
-    <!-- === SEO Strukturierte Daten (JSON-LD) === -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -922,6 +132,308 @@
       ]
     }
     </script>
+
+    <!-- ========== PDF.js ========== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* ===== 样式代码与之前完全相同（此处省略以节省篇幅，实际部署时需保留完整样式） ===== */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #f0f4f8; color: #0f172a; line-height: 1.5; }
+        .back-to-home { position: fixed; top: 20px; right: 20px; z-index: 1000; background: #ffffff; color: #0f172a; padding: 12px 20px; border-radius: 40px; text-decoration: none; font-weight: 700; font-size: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; gap: 8px; transition: all 0.2s ease; border: 1px solid #e2e8f0; min-height: 48px; }
+        .back-to-home:hover { background: #1e3a8a; color: white; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.2); border-color: #1e3a8a; }
+        .hero { background: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%); color: #2d3748; padding: 3rem 1.5rem 6rem; text-align: center; background-image: linear-gradient(135deg, #e8f4f8 0%, #f0f8fb 100%), url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2394a3b8' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E"); position: relative; overflow: hidden; }
+        .hero::after { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M96 49c0 2.761-2.239 5-5 5l-86 0c-2.761 0-5-2.239-5-5l0-86c0-2.761 2.239-5 5-5l86 0c2.761 0 5 2.239 5 5l0 86z' fill='%23ffffff' fill-opacity='0.4'/%3E%3C/svg%3E"); opacity: 0.2; animation: float 20s linear infinite; }
+        @keyframes float { 0% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(-20px, -10px) rotate(1deg); } 100% { transform: translate(0, 0) rotate(0deg); } }
+        .hero h1 { font-size: 2.4rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; color: #2563eb; }
+        .hero h1 i { color: #f97316; margin-right: 8px; }
+        .hero-sub { font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem; color: #475569; }
+        .stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1.5rem; }
+        .stat-card { background: #ffffff; box-shadow: 0 4px 12px rgba(0,0,0,0.05); padding: 1rem 2rem; border-radius: 2rem; font-weight: 600; border: 1px solid #e2e8f0; }
+        .stat-number { font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #f59e0b, #ea580c); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .container { max-width: 1100px; margin: 0 auto 3rem; padding: 0 1.5rem; }
+        .card { background: white; border-radius: 1.5rem; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1); padding: 2rem; margin-bottom: 2rem; }
+        .section-title { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; color: #0f172a; border-left: 5px solid #dc2626; padding-left: 1rem; }
+        .upload-toolbar { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem; }
+        .upload-btn { background: #f1f5f9; border: 1.5px solid #cbd5e1; padding: 0.8rem 1.5rem; border-radius: 2rem; cursor: pointer; font-weight: 600; display: inline-flex; align-items: center; gap: 10px; transition: all .2s; min-height: 48px; }
+        .upload-btn:hover { background: #e2e8f0; border-color: #3b82f6; }
+        .knowledge-btn { background: linear-gradient(95deg, #dc2626, #b91c1c); border: none; color: white; padding: 1rem 2rem; border-radius: 2.5rem; font-weight: 700; width: 100%; font-size: 1.15rem; margin: 1rem 0; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 6px 12px rgba(220,38,38,0.3); transition: all 0.2s; min-height: 56px; }
+        .knowledge-btn:hover { transform: translateY(-3px); background: linear-gradient(95deg, #b91c1c, #991b1b); }
+        .action-btn { background: linear-gradient(95deg, #059669, #10b981); color: white; border: none; padding: 0.9rem 1.8rem; border-radius: 2rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; transition: all 0.2s; font-size: 1rem; min-height: 48px; flex: 1; justify-content: center; }
+        .action-btn:hover { transform: translateY(-2px); background: linear-gradient(95deg, #047857, #059669); }
+        .scam-alert { background: #fff0f0; border-left: 6px solid #dc2626; padding: 1.2rem 1.5rem; margin: 1.2rem 0 1.5rem 0; border-radius: 1rem; box-shadow: 0 4px 12px rgba(220,38,38,.1); }
+        .scam-alert h4 { margin: 0 0 .5rem 0; color: #b91c1c; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        textarea { width: 100%; min-height: 260px; padding: 1.2rem; border: 2px solid #e2e8f0; border-radius: 1rem; font-family: monospace; font-size: .95rem; resize: vertical; }
+        textarea:focus { outline: none; border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,.2); }
+        .primary-btn { background: #dc2626; color: white; border: none; width: 100%; padding: 1rem; font-size: 1.1rem; font-weight: 700; border-radius: 3rem; margin-top: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 12px; min-height: 56px; }
+        .primary-btn:hover { background: #b91c1c; }
+        .primary-btn:disabled { background: #94a3b8; cursor: not-allowed; }
+        .result-item { border-left: 5px solid; padding: 1.2rem; margin-bottom: 1.2rem; border-radius: 1rem; background: #fefefe; }
+        .high-risk { border-left-color: #dc2626; background: #fef2f2; }
+        .medium-risk { border-left-color: #f59e0b; background: #fffbeb; }
+        .low-risk { border-left-color: #10b981; background: #ecfdf5; }
+        .action-box { background: #f8fafc; padding: .8rem; border-radius: .8rem; margin-top: .8rem; border-left: 3px solid #3b82f6; font-size: .9rem; }
+        .confirm-group { display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap; }
+        .confirm-option label { display: flex; align-items: center; justify-content: center; gap: 6px; background: #f1f5f9; padding: .5rem; border-radius: 2rem; cursor: pointer; border: 1px solid #cbd5e1; min-height: 44px; }
+        .confirm-option input:checked+label { background: #3b82f6; color: white; border-color: #3b82f6; }
+        .confirm-option input { display: none; }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 2000; overflow-y: auto; padding: 2rem; }
+        .modal-card { max-width: 800px; margin: 2rem auto; background: white; border-radius: 1.5rem; overflow: hidden; }
+        .modal-header { background: #0f172a; color: white; padding: 1.2rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        .modal-body { padding: 1.5rem; max-height: 70vh; overflow-y: auto; }
+        .checklist-item { border-left: 4px solid #dc2626; margin-bottom: 1rem; padding: 1rem; background: #f9fafb; border-radius: .8rem; }
+        .loading-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,.95); z-index: 3000; display: none; justify-content: center; align-items: center; flex-direction: column; }
+        .spinner { width: 50px; height: 50px; border: 5px solid #e2e8f0; border-top: 5px solid #dc2626; border-radius: 50%; animation: spin 1s infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        footer { text-align: center; padding: 2rem; color: #475569; font-size: .85rem; }
+        .button-group { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; align-items: center; }
+        .button-group .action-btn { flex: 1; min-width: 180px; }
+        @media print { body * { visibility: hidden; } #resultArea, #resultArea * { visibility: visible; } #resultArea { position: absolute; left: 0; top: 0; width: 100%; } .hero, .upload-toolbar, .scam-alert, .knowledge-btn, footer, .modal, .primary-btn, .button-group, .confirm-group, .back-to-home { display: none !important; } .result-item { break-inside: avoid; page-break-inside: avoid; } }
+        @media (max-width: 640px) { .button-group { flex-direction: column; } .button-group .action-btn { width: 100%; min-width: auto; } .hero h1 { font-size: 1.8rem; } .stat-card { padding: 0.75rem 1.25rem; } .stat-number { font-size: 1.5rem; } .card { padding: 1.5rem; } }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="https://www.welfarecalc.ch/" class="back-to-home" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-arrow-left"></i> Zurück zur Hauptseite
+    </a>
+
+    <div class="hero">
+        <h1><i class="fas fa-shield-virus"></i> Mietvertrag prüfen – Schweizer Mieterschutz</h1>
+        <p class="hero-sub">30+ rechtliche Fallstricke · Kostenlos · 100% lokal & privat</p>
+        <div class="stats">
+            <div class="stat-card"><span class="stat-number">94%</span><br>Verträge verstecken Risiken</div>
+            <div class="stat-card"><span class="stat-number">CHF 1500+</span><br>durchschnittlicher Mietzinsstreit</div>
+            <div class="stat-card"><span class="stat-number">30</span><br>Risikopunkte</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Haftungsausschluss -->
+        <div style="background: linear-gradient(135deg, #1e3a8a, #1e40af); border-radius: 1rem; padding: 1.5rem; margin: -1rem 0 1.5rem 0; text-align: center; font-size: 1rem; line-height: 1.5; color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.15); border: 1px solid #3b82f6;">
+            <div style="font-size: 1.1rem; margin-bottom: 0.75rem;">
+                🔒 <strong>100% lokale Verarbeitung</strong> – Ihr Vertrag verlässt niemals Ihren Browser.
+            </div>
+            <div style="background: rgba(255,255,255,0.12); border-radius: 0.75rem; padding: 1rem; margin-top: 0.5rem;">
+                <strong>⚠️ Wichtiger Haftungsausschluss:</strong> Dieses Tool dient nur zu Informations- und Bildungszwecken. Es ist <strong>KEINE Rechtsberatung</strong>. Deutsche Verträge lösen aufgrund des reichhaltigeren Wortschatzes mehr Warnungen aus; französische und italienische Verträge sind tendenziell standardisierter.<br>
+                <strong>Endgültige Entscheidungen sollten immer mit einem qualifizierten Anwalt oder dem Mieterverband besprochen werden.</strong>
+            </div>
+        </div>
+
+        <!-- Kostenlose Mietvertragsvorlagen -->
+        <div style="background:#f0f9ff; border-radius:1.5rem; padding:1.2rem; margin: 1.5rem 0; border:1px solid #b9d8f3;">
+            <h3 style="margin:0 0 0.5rem 0; display:flex; align-items:center; gap:8px;">
+                <i class="fas fa-file-contract"></i> Kostenlose Mietvertragsvorlagen (Amtssprachen)
+            </h3>
+            <p style="font-size:0.9rem; margin-bottom:1rem;">📄 Laden Sie Beispielverträge in den Schweizer Amtssprachen herunter – nur als Referenz</p>
+            <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                <a href="FrenchContract.pdf" download class="upload-btn" style="text-decoration:none;">
+                    <i class="fas fa-file-pdf"></i> Französisch (Français)
+                </a>
+                <a href="GermanContract.pdf" download class="upload-btn" style="text-decoration:none;">
+                    <i class="fas fa-file-pdf"></i> Deutsch (Deutsch)
+                </a>
+                <a href="ItalianContract.pdf" download class="upload-btn" style="text-decoration:none;">
+                    <i class="fas fa-file-pdf"></i> Italienisch (Italiano)
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="section-title"><i class="fas fa-upload"></i> Mietvertrag importieren (PDF / Text)</h2>
+            <div style="background:#fef9e3; border-left:4px solid #f59e0b; padding:0.75rem 1rem; border-radius:0.75rem; margin-bottom:1rem; font-size:0.9rem;">
+                <i class="fas fa-language"></i> <strong>Sprachunterstützung:</strong> Nur Schweizer Amtssprachen — Deutsch, Französisch, Italienisch. Andere Sprachen werden möglicherweise nicht korrekt erkannt.
+            </div>
+            <div style="background:#f8fafc; border-radius:1rem; padding:1rem 1.2rem; margin-bottom:1.2rem; border-left:4px solid #3b82f6;">
+                <p style="margin:0 0 0.5rem 0; font-weight:700;">
+                    <i class="fas fa-info-circle"></i> 📋 So funktioniert's:
+                </p>
+                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">
+                    Laden Sie Ihren Mietvertrag (Deutsch, Französisch oder Italienisch) hoch oder fügen Sie ihn ein. Unser Tool scannt mit Hilfe von Schlüsselwörtern nach über 30 häufigen rechtlichen Risiken – wie ein zweites Paar Augen, bevor Sie unterschreiben.
+                </p>
+                <p style="margin:0 0 0.5rem 0; font-weight:700; color:#1e3a8a;">
+                    <i class="fas fa-shield-alt"></i> 🔒 Ihre Privatsphäre ist wichtig:
+                </p>
+                <p style="margin:0 0 0.8rem 0; font-size:0.9rem; color:#334155;">
+                    Alles geschieht lokal in Ihrem Browser. Keine Uploads, keine Server, kein Tracking. Ihr Vertrag verlässt nie Ihr Gerät. Scannen Sie ihn, überprüfen Sie die Ergebnisse und schließen Sie die Seite – es bleibt keine Spur zurück.
+                </p>
+                <p style="margin:0; font-size:0.85rem; background:#fef9e3; padding:0.6rem; border-radius:0.75rem; color:#92400e;">
+                    <i class="fas fa-exclamation-triangle"></i> <strong>Denken Sie daran:</strong> Dieses Tool ist KEIN Anwalt. Die Ergebnisse dienen nur als Referenz und erfassen möglicherweise nicht jedes Problem. Im Zweifelsfall konsultieren Sie einen Fachanwalt oder Ihren lokalen Mieterverband.
+                </p>
+            </div>
+
+            <div class="upload-toolbar">
+                <label class="upload-btn">
+                    <input type="file" id="pdfUpload" accept=".pdf">
+                    <i class="fas fa-file-pdf"></i> PDF-Vertrag hochladen
+                </label>
+                <div class="upload-btn" onclick="document.getElementById('contractInput').focus();">
+                    <i class="fas fa-keyboard"></i> Text manuell einfügen
+                </div>
+            </div>
+
+            <div class="scam-alert">
+                <h4><i class="fas fa-exclamation-triangle"></i> Schweizer Mietwarnung – Betrugsalarm</h4>
+                <p>🚫 Niemals vor der Besichtigung bezahlen! Kein Bargeld, keine Western Union, keine "Schlüssel per Post".<br>
+                    ✅ Die Mietkaution muss auf einem Sperrkonto (Mietkautionskonto) auf den Namen des Mieters hinterlegt werden.</p>
+            </div>
+
+            <button class="knowledge-btn" id="showChecklistBtn">
+                <i class="fas fa-list-check"></i> Alle 30 Risikopunkte anzeigen (Vollständige Checkliste)
+            </button>
+
+            <textarea id="contractInput" placeholder="Fügen Sie hier Ihren deutschen, französischen oder italienischen Mietvertrag ein …"></textarea>
+
+            <div style="display:flex;justify-content:space-between;margin:.5rem 0;font-size:0.9rem;">
+                <span id="charCounter">0 Zeichen</span>
+                <span><i class="fas fa-shield-alt"></i> 30 Risikopunkte werden gescannt</span>
+            </div>
+            <button class="primary-btn" id="scanBtn"><i class="fas fa-radar"></i> Mietvertragsrisiken jetzt scannen</button>
+        </div>
+
+        <div id="resultArea" style="display:none;">
+            <div class="card">
+                <h2 class="section-title"><i class="fas fa-exclamation-triangle"></i> Risikobewertungsbericht</h2>
+                <div id="dynamicResults"></div>
+                <div class="button-group">
+                    <button class="action-btn" id="printReportBtn">
+                        <i class="fas fa-print"></i> 🖨️ Aktuelle Risiken drucken
+                    </button>
+                    <button class="action-btn" id="downloadReportPdfBtn">
+                        <i class="fas fa-file-pdf"></i> 📥 Als PDF herunterladen
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Schweizer Mieterschutz – Ein kostenloses Tool von <a href="https://www.welfarecalc.ch/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none;">WelfareCalc.ch</a></p>
+            <p style="margin-top: 0.5rem;">
+                <a href="https://www.welfarecalc.ch/aboutus_de.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">About us</a> •
+                <a href="https://www.welfarecalc.ch/impressum.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Impressum</a> |
+                <a href="https://www.welfarecalc.ch/datenschutz.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Datenschutzerklärung</a> |
+                <a href="https://www.welfarecalc.ch/haftung.html" target="_blank" rel="noopener noreferrer" style="color: #475569; text-decoration: none; margin: 0 0.5rem;">Haftungsausschluss</a>
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.75rem; color: #64748b;">
+                <i class="fas fa-gavel"></i> Basierend auf dem Schweizer Obligationenrecht (OR) | Nur zu Referenzzwecken – KEINE Rechtsberatung. Konsultieren Sie immer den Mieterverband oder einen qualifizierten Anwalt, bevor Sie einen Vertrag unterschreiben.
+            </p>
+        </footer>
+
+        <!-- ========== 博客文章 SEO 引流模块 ========== -->
+        <div style="margin: 3rem 0 1rem 0;">
+            <h3 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fas fa-newspaper" style="color: #dc2626;"></i>
+                Mietrecht Ratgeber & Blog-Artikel
+            </h3>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+
+                <!-- 卡片 1 - 红色 -->
+                <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
+                    <div style="padding: 1.2rem;">
+                        <div style="display: inline-block; background: #dc2626; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
+                            ⚠️ PFLEICHTLEKTÜRE
+                        </div>
+                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Die 10 gefährlichsten Klauseln</h4>
+                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Illegale Kautionshandhabung, "perfekte Reinigung"-Fallstricke, einseitige Mietzinserhöhungen – erkennen Sie die Fallen vor der Unterschrift.</p>
+                        <a href="https://www.welfarecalc.ch/blog/rent/die-10-gefaehrlichsten-klauseln-im-schweizer-mietvertrag-de.html" target="_blank" rel="noopener noreferrer" style="color: #dc2626; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Jetzt die 10 gefährlichsten Klauseln lesen →</a>
+                    </div>
+                </div>
+
+                <!-- 卡片 2 - 橙色 -->
+                <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
+                    <div style="padding: 1.2rem;">
+                        <div style="display: inline-block; background: #f59e0b; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
+                            💰 Kautions-Fallen
+                        </div>
+                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Mietkaution: Häufigste Fallen</h4>
+                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Maximal 3 Monatsmieten? Verzinsung? Barzahlung verboten? So schützen Sie Ihre Kaution vor unfairen Abzügen.</p>
+                        <a href="https://www.welfarecalc.ch/blog/rent/mietkaution-im-schweizer-mietvertrag-die-haeufigsten-fallen-de.html" target="_blank" rel="noopener noreferrer" style="color: #f59e0b; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Mietkaution-Fallen jetzt erkennen →</a>
+                    </div>
+                </div>
+
+                <!-- 卡片 3 - 蓝色 -->
+                <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
+                    <div style="padding: 1.2rem;">
+                        <div style="display: inline-block; background: #3b82f6; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
+                            ⏱️ KÜNDIGUNG & SCHUTZ
+                        </div>
+                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Kündigungsfristen & Kündigungsschutz</h4>
+                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Zu kurze Kündigungsfristen? Automatische Verlängerungsfallen? Kennen Sie die gesetzliche 3-Monatsregel.</p>
+                        <a href="https://www.welfarecalc.ch/blog/rent/kuendigungsfristen-und-kuendigungsschutz-im-mietvertrag-de.html" target="_blank" rel="noopener noreferrer" style="color: #3b82f6; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Kündigungsfristen richtig verstehen →</a>
+                    </div>
+                </div>
+
+                <!-- 卡片 4 - 绿色 -->
+                <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
+                    <div style="padding: 1.2rem;">
+                        <div style="display: inline-block; background: #10b981; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
+                            📈 MIETZINS & REFERENZSATZ
+                        </div>
+                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Mietzins zu hoch oder Erhöhung?</h4>
+                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Unzulässige Verzichtsklauseln, Referenzzinssatz-Senkung (1,25% im 2026), Indexklauseln und versteckte Mieterhöhungen.</p>
+                        <a href="https://www.welfarecalc.ch/blog/rent/mietzins-zu-hoch-oder-erhoehung-schweizer-mietvertrag-de.html" target="_blank" rel="noopener noreferrer" style="color: #10b981; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Mietzins-Erhöhungen prüfen →</a>
+                    </div>
+                </div>
+
+                <!-- 卡片 5 - 紫色 -->
+                <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
+                    <div style="padding: 1.2rem;">
+                        <div style="display: inline-block; background: #8b5cf6; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
+                            🧾 NEBENKOSTEN
+                        </div>
+                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Nebenkostenabrechnung & versteckte Kosten</h4>
+                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Pauschalen ohne Abrechnung? Nicht zulässige Positionen? Recht auf Belegeinsicht – so sparen Sie bares Geld.</p>
+                        <a href="https://www.welfarecalc.ch/blog/rent/nebenkostenabrechnung-im-mietvertrag-versteckte-kosten-pruefen-de.html" target="_blank" rel="noopener noreferrer" style="color: #8b5cf6; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Nebenkosten richtig prüfen →</a>
+                    </div>
+                </div>
+
+                <!-- 卡片 6 - 红色 -->
+                <div style="background: white; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.2s; border: 1px solid #e2e8f0;">
+                    <div style="padding: 1.2rem;">
+                        <div style="display: inline-block; background: #ef4444; color: white; font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.7rem; border-radius: 20px; margin-bottom: 0.8rem;">
+                            🔧 REPARATUREN & MÄNGEL
+                        </div>
+                        <h4 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 0.5rem;">Wohnungsmängel & Vermieterpflichten</h4>
+                        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 1rem; line-height: 1.5;">Wer zahlt für defekte Heizung? Verzicht auf Mietzinsreduktion? Übermässige Kleinreparaturklauseln – schützen Sie sich.</p>
+                        <a href="https://www.welfarecalc.ch/blog/rent/wohnungsmaengel-und-vermieterpflichten-im-mietvertrag-de.html" target="_blank" rel="noopener noreferrer" style="color: #ef4444; font-weight: 600; font-size: 0.85rem; text-decoration: none;">Wohnungsmängel-Check →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 醒目的按钮 -->
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://www.welfarecalc.ch/blog/rent/rent_blog_de.html" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(95deg, #1e3a8a, #2563eb); color: white; padding: 0.9rem 2rem; border-radius: 3rem; font-weight: 700; text-decoration: none; font-size: 1rem; box-shadow: 0 4px 12px rgba(37,99,235,0.3); transition: transform 0.2s;">
+                    <i class="fas fa-book-open"></i> Alle Blog-Artikel anzeigen
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal für 30 Risikopunkte -->
+    <div id="checklistModal" class="modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fas fa-book-skull"></i> 30 Schweizer Mietrisikopunkte</h3>
+                <span style="font-size:2rem;cursor:pointer;" id="closeModalBtn">&times;</span>
+            </div>
+            <div class="modal-body" id="modalChecklistBody"></div>
+            <div style="padding:1rem 1.5rem;background:#f8fafc;border-top:1px solid #e2e8f0;text-align:center;">
+                <button onclick="downloadChecklistPDF()" class="action-btn" style="width:100%;max-width:340px;margin:0 auto;">
+                    <i class="fas fa-download"></i> 30 Risikopunkte als PDF herunterladen
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <div id="loadingMsg" style="margin-top:1rem;">Lade Datenbank und scanne …</div>
+    </div>
 
     <script>
         // ====================== Globale Variablen ======================
@@ -1044,16 +556,7 @@
                 footer { margin-top: 50px; text-align: center; font-size: 0.8rem; color: #6b7280; border-top: 1px solid #e2e8f0; padding-top: 20px; }
                 .disclaimer { background: #dbeafe; padding: 15px; border-radius: 12px; margin-bottom: 20px; font-size: 0.9rem; }
             </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
+            </head>
             <body>
             <h1>Schweizer Mieterschutz - Risikobewertungsbericht</h1>
             <div class="report-date">Erstellt am: ${new Date().toLocaleString('de-CH')}</div>
@@ -1164,17 +667,7 @@
         }
 
         function downloadChecklistPDF() {
-            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Schweizer Mietrisikopunkte</title><style>body{font-family:system-ui;padding:40px;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;}</style>    
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/rentcheck_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head><body><h1>30 Schweizer Mietvertrag-Risikopunkte</h1><div>Nur zu Bildungszwecken – Keine Rechtsberatung</div>`;
+            let pdfContent = `<html><head><meta charset="UTF-8"><title>30 Schweizer Mietrisikopunkte</title><style>body{font-family:system-ui;padding:40px;} .risk-item{margin:25px 0;padding:20px;border-left:6px solid #dc2626;background:#fef9f9;}</style></head><body><h1>30 Schweizer Mietvertrag-Risikopunkte</h1><div>Nur zu Bildungszwecken – Keine Rechtsberatung</div>`;
             for (let id in riskPrompts) {
                 const p = riskPrompts[id].de || {};
                 pdfContent += `<div class="risk-item"><strong>${p.title || id}</strong> (${p.law || "OR"})<br>${p.prompt || ""}</div>`;
