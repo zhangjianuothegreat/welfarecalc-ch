@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorithme de l'aide sociale Canton d'Obwald 2026 | Calcul transparent | welfarecalc.ch</title>
-    <meta name="description" content="Comment l'aide sociale est-elle calculée en 2026 dans le canton d'Obwald (OW) ? Découvrez notre algorithme transparent basé sur les directives SKOS et le droit cantonal.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/OW_2026SH_fr.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/OW_2026SH_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/OW_2026SH_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/OW_2026SH_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/OW_2026SH_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/OW_2026SH_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/OW_2026SH_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/OW_2026SH_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/OW_2026SH_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/OW_2026SH_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/OW_2026SH_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/OW_2026SH_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/OW_2026SH_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcul de l'aide sociale Obwald 2026",
-      "description": "Détail algorithmique du calcul de l'aide sociale dans le canton d'Obwald (OW).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Vérification de l'exemption de patrimoine selon révision SKOS 2026"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcul du minimum vital social selon la taille du ménage"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Prise en compte des frais de logement selon les limites cantonales d'Obwald"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Comparaison du revenu net moins l'abattement pour activité lucrative"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -85,140 +39,334 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
-    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/OW_2026SH_fr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">CONFORME SKOS 2026</div>
-        <h1>Algorithme de l'aide sociale : Canton d'Obwald</h1>
-        <p>Documentation transparente de la logique de calcul du minimum vital social (OW)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AS Obwald 2026 – Aide sociale | welfarecalc.ch
+  </title>
+  <meta content="Calcul de Aide sociale dans le canton de Obwald. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Aide sociale, Canton Obwald, AS, Prestations sociales, Calcul 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_fr.html" rel="canonical"/>
+  <meta content="AS Obwald 2026 – Aide sociale | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcul de Aide sociale dans le canton de Obwald. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/OW_2026SH_fr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AS Obwald 2026 – Aide sociale | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcul de Aide sociale dans le canton de Obwald. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/OW_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Aide sociale Obwald 2026", "description": "Step-by-step guide to calculating Aide sociale in Canton Obwald.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME SKOS 2026
     </div>
-
-    <div class="content">
-        <p>La confiance naît d'une transparence absolue. Nous détaillons ici l'intégralité de l'algorithme qui régit les calculs pour le canton d'Obwald (OW) sur welfarecalc.ch. La logique respecte pleinement les dispositions de la loi sur l'aide sociale d'Obwald (SHG OW) ainsi que les directives SKOS 2026 harmonisées au niveau suisse.</p>
-
-        <h2 class="section-title">1. Vérification du patrimoine (Seuil d'entrée)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Exemption pour personne seule</h4>
-                <div class="param-value">CHF 6'000</div>
-                <p><small>Montant révisé selon SKOS au 01.01.2026 (auparavant CHF 4'000).</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Exemption couples / familles</h4>
-                <div class="param-value">CHF 12'000</div>
-                <p><small>Plus CHF 3'000 par enfant. Plafond maximal de l'exemption fixé à CHF 15'000 par unité d'aide.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Méthodologie de calcul (mensuel)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Besoin de base pour l'entretien (BBE)</h3>
-                <p>Le BBE couvre les dépenses de nourriture, habillement, énergie et gestion du ménage. Il est calculé strictement selon l'unité d'aide SKOS officielle (nombre de personnes vivant sous le même toit) :</p>
-                <table class="data-table">
-                    <tr><th>Taille du ménage</th><th>Montant par mois (SKOS 2026)</th></tr>
-                    <tr><td>1 personne</td><td>CHF 1'061</td></tr>
-                    <tr><td>2 personnes</td><td>CHF 1'624</td></tr>
-                    <tr><td>3 personnes</td><td>CHF 1'954</td></tr>
-                    <tr><td>4 personnes</td><td>CHF 2'240</td></tr>
-                    <tr><td>5 personnes</td><td>CHF 2'526</td></tr>
-                    <tr><td>Chaque personne supplémentaire</td><td>+ CHF 201</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Frais de logement (Plafonds de loyer Canton OW)</h3>
-                <p>Prise en compte du loyer effectif (loyer brut, charges comprises et chauffage) jusqu'au maximum officiel reconnu par le canton :</p>
-                <table class="data-table">
-                    <tr><th>Taille du ménage</th><th>Loyer brut maximum admis (Canton OW)</th></tr>
-                    <tr><td>1 personne</td><td>CHF 1'100</td></tr>
-                    <tr><td>2 personnes</td><td>CHF 1'400</td></tr>
-                    <tr><td>3 personnes</td><td>CHF 1'650</td></tr>
-                    <tr><td>4 personnes</td><td>CHF 1'850</td></tr>
-                    <tr><td>5+ personnes</td><td>CHF 2'000</td></tr>
-                </table>
-                <div class="formula" style="margin-top: 15px;">
-                    Loyer admis = Min(Loyer effectif, Plafond cantonal)
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Frais de santé & Réduction individuelle des primes (RIP)</h3>
-                <p>Les coûts de l'assurance maladie obligatoire (LAMal) sont pris en compte dans le budget. Selon la pratique officielle du canton d'Obwald, la Réduction individuelle des primes (RIP) est directement déduite préalablement :</p>
-                <div class="formula">
-                    Besoin de prime reconnu = Max(0, Prime LAMal - RIP mensuelle)
-                </div>
-                <p><small>*Remarque : Seules la prime de référence cantonale ou la prime effective (si inférieure) sont utilisées.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Revenus & Abattement pour activité lucrative (AAL)</h3>
-                <p>Afin de maintenir l'incitation à la reprise d'une activité professionnelle, un abattement sur le revenu net est accordé aux personnes exerçant un travail. Celui-ci est forfaitaire et calculé comme suit :</p>
-                <div class="formula">
-                    Revenu pris en compte = Revenu net - AAL (Min(400, Max(200, Revenu net × 0.2)))
-                </div>
-                <p><small>Les autres revenus (allocations familiales, rentes de toute nature, pensions alimentaires) ainsi que l'utilisation de la fortune excédentaire sont comptabilisés à 100% comme revenus.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">5</div>
-            <div class="step-body">
-                <h3>Résultat : Droit mensuel à l'aide sociale</h3>
-                <p>Le montant final légal de l'aide sociale dans le canton d'Obwald correspond au déficit de couverture des besoins :</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Droit à l'aide = (BBE + Loyer admis + Besoin santé + AFI*) - (Revenus pris en compte)
-                </div>
-                <p><small>*AFI = Allocation pour encouragement à l'intégration pour les prestations d'intégration ou travail établies (généralement CHF 100 à CHF 300 par mois).</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Consommation de la fortune dans le canton d'Obwald (OW) :</strong><br>
-            Les liquidités et les valeurs patrimoniales qui dépassent les exemptions cantonales lors de l'examen initial doivent être utilisées avant de pouvoir bénéficier légitimement de l'aide sociale économique. En ce qui concerne la propriété foncière, les dispositions cantonales relatives à la garantie hypothécaire et à l'obligation de remboursement s'appliquent.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lancer le calculateur</a>
-            <a href="https://www.rsd-obwalden.ch" target="_blank" class="btn-link">Site officiel Services sociaux régionaux OW</a>
-        </div>
+    <h1>
+     Algorithme de l'aide sociale : Canton d'Obwald
+    </h1>
+    <p>
+     Documentation transparente de la logique de calcul du minimum vital social (OW)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Vérification rapide : Avez-vous droit ?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_fr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Vérifier gratuitement →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La confiance naît d'une transparence absolue. Nous détaillons ici l'intégralité de l'algorithme qui régit les calculs pour le canton d'Obwald (OW) sur welfarecalc.ch. La logique respecte pleinement les dispositions de la loi sur l'aide sociale d'Obwald (SHG OW) ainsi que les directives SKOS 2026 harmonisées au niveau suisse.
+    </p>
+    <h2 class="section-title">
+     1. Vérification du patrimoine (Seuil d'entrée)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Exemption pour personne seule
+      </h4>
+      <div class="param-value">
+       CHF 6'000
+      </div>
+      <p>
+       <small>
+        Montant révisé selon SKOS au 01.01.2026 (auparavant CHF 4'000).
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Exemption couples / familles
+      </h4>
+      <div class="param-value">
+       CHF 12'000
+      </div>
+      <p>
+       <small>
+        Plus CHF 3'000 par enfant. Plafond maximal de l'exemption fixé à CHF 15'000 par unité d'aide.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Sources : Loi sur l'aide sociale du canton d'Obwald (SHG OW) & Directives SKOS 2026</p>
-        <p>© 2026 welfarecalc.ch | Calcul transparent de l'aide sociale</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Méthodologie de calcul (mensuel)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Besoin de base pour l'entretien (BBE)
+      </h3>
+      <p>
+       Le BBE couvre les dépenses de nourriture, habillement, énergie et gestion du ménage. Il est calculé strictement selon l'unité d'aide SKOS officielle (nombre de personnes vivant sous le même toit) :
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Taille du ménage
+        </th>
+        <th>
+         Montant par mois (SKOS 2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 personne
+        </td>
+        <td>
+         CHF 1'061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 personnes
+        </td>
+        <td>
+         CHF 1'624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 personnes
+        </td>
+        <td>
+         CHF 1'954
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 personnes
+        </td>
+        <td>
+         CHF 2'240
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5 personnes
+        </td>
+        <td>
+         CHF 2'526
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Chaque personne supplémentaire
+        </td>
+        <td>
+         + CHF 201
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Frais de logement (Plafonds de loyer Canton OW)
+      </h3>
+      <p>
+       Prise en compte du loyer effectif (loyer brut, charges comprises et chauffage) jusqu'au maximum officiel reconnu par le canton :
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Taille du ménage
+        </th>
+        <th>
+         Loyer brut maximum admis (Canton OW)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 personne
+        </td>
+        <td>
+         CHF 1'100
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 personnes
+        </td>
+        <td>
+         CHF 1'400
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 personnes
+        </td>
+        <td>
+         CHF 1'650
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 personnes
+        </td>
+        <td>
+         CHF 1'850
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5+ personnes
+        </td>
+        <td>
+         CHF 2'000
+        </td>
+       </tr>
+      </table>
+      <div class="formula" style="margin-top: 15px;">
+       Loyer admis = Min(Loyer effectif, Plafond cantonal)
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Frais de santé &amp; Réduction individuelle des primes (RIP)
+      </h3>
+      <p>
+       Les coûts de l'assurance maladie obligatoire (LAMal) sont pris en compte dans le budget. Selon la pratique officielle du canton d'Obwald, la Réduction individuelle des primes (RIP) est directement déduite préalablement :
+      </p>
+      <div class="formula">
+       Besoin de prime reconnu = Max(0, Prime LAMal - RIP mensuelle)
+      </div>
+      <p>
+       <small>
+        *Remarque : Seules la prime de référence cantonale ou la prime effective (si inférieure) sont utilisées.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Revenus &amp; Abattement pour activité lucrative (AAL)
+      </h3>
+      <p>
+       Afin de maintenir l'incitation à la reprise d'une activité professionnelle, un abattement sur le revenu net est accordé aux personnes exerçant un travail. Celui-ci est forfaitaire et calculé comme suit :
+      </p>
+      <div class="formula">
+       Revenu pris en compte = Revenu net - AAL (Min(400, Max(200, Revenu net × 0.2)))
+      </div>
+      <p>
+       <small>
+        Les autres revenus (allocations familiales, rentes de toute nature, pensions alimentaires) ainsi que l'utilisation de la fortune excédentaire sont comptabilisés à 100% comme revenus.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Résultat : Droit mensuel à l'aide sociale
+      </h3>
+      <p>
+       Le montant final légal de l'aide sociale dans le canton d'Obwald correspond au déficit de couverture des besoins :
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Droit à l'aide = (BBE + Loyer admis + Besoin santé + AFI*) - (Revenus pris en compte)
+      </div>
+      <p>
+       <small>
+        *AFI = Allocation pour encouragement à l'intégration pour les prestations d'intégration ou travail établies (généralement CHF 100 à CHF 300 par mois).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Consommation de la fortune dans le canton d'Obwald (OW) :
+     </strong>
+     <br/>
+     Les liquidités et les valeurs patrimoniales qui dépassent les exemptions cantonales lors de l'examen initial doivent être utilisées avant de pouvoir bénéficier légitimement de l'aide sociale économique. En ce qui concerne la propriété foncière, les dispositions cantonales relatives à la garantie hypothécaire et à l'obligation de remboursement s'appliquent.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Lancer le calculateur
+     </a>
+     <a class="btn-link" href="https://www.rsd-obwalden.ch" target="_blank">
+      Site officiel Services sociaux régionaux OW
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Sources : Loi sur l'aide sociale du canton d'Obwald (SHG OW) &amp; Directives SKOS 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Calcul transparent de l'aide sociale
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

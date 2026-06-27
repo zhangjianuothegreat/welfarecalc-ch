@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="ta">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EL Algorithmus Kanton Zürich 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
-  <meta
-    content="2026 ஆம் ஆண்டில் சூரிச் கேண்டனில் கூடுதல் நலன்கள் (EL / Zusatzleistungen) எவ்வாறு கணக்கிடப்படுகின்றன? அதிகாரப்பூர்வ SVA சூரிச் தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_ta.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "சூரிக் 2026 துணைப் பலன்கள் (Zusatzleistungen) கணக்கீடு",
-      "description": "சூரிக் கன்டோனில் அதிகாரப்பூர்வ EL கணக்கீட்டின் விரிவான கணித மற்றும் சட்டப்பூர்வ பகுப்பாய்வு.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "சட்டப்பூர்வமாக அங்கீகரிக்கப்பட்ட செலவுத் தேவையை தீர்மானித்தல் (அடிப்படைத் தேவை, பிராந்திய-குறிப்பிட்ட வாடகை, கட்டுப்படுத்தப்பட்ட சுகாதார காப்பீட்டு பிரீமியம்)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "13வது AHV ஓய்வூதியத்தை நடுநிலையாக்கி, சொத்து நுகர்வைச் சேர்த்து, கணக்கில் கொள்ளக்கூடிய வருமானத்தை கண்டறிதல்"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "ஒப்பீடு மற்றும் EL தொகையின் கணக்கீடு (அங்கீகரிக்கப்பட்ட செலவுகள் கழித்தல் கணக்கில் கொள்ளக்கூடிய வருமானம்)"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -230,222 +188,455 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 cuvis nalan kanakkiTu | 26 kanTankaL + pal pil sariparppu">
-    <meta property="og:description" content="anaittum 26 cuvis kanTankaLilum AVS, AI, PC matRum priimiyam kuRaipukaLai kaNakkiTungkaL. pal pil taNikkaialar matRum vaTakai oppanta sariparppu uLpaTTiyatu. ulaviyil 100% anAmateyam. 11 mozikaL.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/ZH_2026EL_ta.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ta">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   கூப ஸூரிக் 2026 – கூடுதல் பலன்கள் | welfarecalc.ch
+  </title>
+  <meta content="ஸூரிக் கேன்டனில் கூடுதல் பலன்கள் கணக்கிடவும். 2026 அதிகாரப்பூர்வ தரவு, வெளிப்படையான மற்றும் புரிந்துகொள்ளக்கூடியது. இலவசமாக சரிபார்க்கவும்." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="கூடுதல் பலன்கள், ஸூரிக் கேன்டன், கூப, சமூக பலன்கள், கணக்கீடு 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_ta.html" rel="canonical"/>
+  <meta content="கூப ஸூரிக் 2026 – கூடுதல் பலன்கள் | welfarecalc.ch" property="og:title"/>
+  <meta content="ஸூரிக் கேன்டனில் கூடுதல் பலன்கள் கணக்கிடவும். 2026 அதிகாரப்பூர்வ தரவு, வெளிப்படையான மற்றும் புரிந்துகொள்ளக்கூடியது. இலவசமாக சரிபார்க்கவும்." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/ZH_2026EL_ta.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="ta_IN" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="கூப ஸூரிக் 2026 – கூடுதல் பலன்கள் | welfarecalc.ch" name="twitter:title"/>
+  <meta content="ஸூரிக் கேன்டனில் கூடுதல் பலன்கள் கணக்கிடவும். 2026 அதிகாரப்பூர்வ தரவு, வெளிப்படையான மற்றும் புரிந்துகொள்ளக்கூடியது. இலவசமாக சரிபார்க்கவும்." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "கூடுதல் பலன்கள் ஸூரிக் 2026", "description": "Step-by-step guide to calculating கூடுதல் பலன்கள் in Canton ஸூரிக்.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">அதிகாரப்பூர்வ சட்டத் தரவுகள் 2026</div>
-      <h1>EL-அல்காரிதம்: சூரிக் கன்டோன்</h1>
-      <p>2026 ஆம் ஆண்டுக்கான துணைப் பலன் கணக்கீட்டின் (ZLV) வெளிப்படையான மற்றும் கணிதத் துல்லியமான வெளிப்பாடு</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
-        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+   <header>
+    <div class="update-tag">
+     அதிகாரப்பூர்வ சட்டத் தரவுகள் 2026
     </div>
-    
-    <div class="content">
-      <p>உண்மையான வெளிப்படைத்தன்மை அசைக்க முடியாத நம்பிக்கையை உருவாக்குகிறது. துணைப் பலன்கள் (சூரிக் கன்டோனில்
+    <h1>
+     EL-அல்காரிதம்: சூரிக் கன்டோன்
+    </h1>
+    <p>
+     2026 ஆம் ஆண்டுக்கான துணைப் பலன் கணக்கீட்டின் (ZLV) வெளிப்படையான மற்றும் கணிதத் துல்லியமான வெளிப்பாடு
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_ta" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     இலவசமாக சரிபார்க்கவும் →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     உண்மையான வெளிப்படைத்தன்மை அசைக்க முடியாத நம்பிக்கையை உருவாக்குகிறது. துணைப் பலன்கள் (சூரிக் கன்டோனில்
         பெரும்பாலும் Zusatzleistungen என குறிப்பிடப்படுகின்றன) ELG இன் கூட்டாட்சி விதிமுறைகள் மற்றும் SVA சூரிக்கின்
         குறிப்பிட்ட கன்டோனல் வழிகாட்டுதல்களை அடிப்படையாகக் கொண்டவை. இங்கே, ஜனவரி 1, 2026 முதல் சட்டப்பூர்வ நடைமுறையுடன்
-        முழுமையான இணக்கத்தில் எங்கள் சோதனைத் தொகுதியின் மைய கணித தர்க்கத்தை ஆவணப்படுத்துகிறோம்.</p>
-      <h2 class="section-title">1. கூட்டாட்சி விதிப்படி வருடாந்திர அடிப்படைத் தேவை (2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>தனி நபர்</h4>
-          <div class="param-value">CHF 20'670</div>
-          <p><small>ஒரு தனி நபருக்கான மொத்த வாழ்க்கைச் செலவுத் தொகை.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>தம்பதிகள்</h4>
-          <div class="param-value">CHF 31'005</div>
-          <p><small>வாழ்க்கைத் துணைவர்களுக்கான ஒருங்கிணைந்த சட்டப்பூர்வ அடிப்படைத் தேவை.</small></p>
-        </div>
+        முழுமையான இணக்கத்தில் எங்கள் சோதனைத் தொகுதியின் மைய கணித தர்க்கத்தை ஆவணப்படுத்துகிறோம்.
+    </p>
+    <h2 class="section-title">
+     1. கூட்டாட்சி விதிப்படி வருடாந்திர அடிப்படைத் தேவை (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       தனி நபர்
+      </h4>
+      <div class="param-value">
+       CHF 20'670
       </div>
-      <h2 class="section-title">2. துல்லியமான கணக்கீட்டு முறை</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>அங்கீகரிக்கப்பட்ட செலவுகள் (தேவை)</h3>
-          <p>கணக்கிடப்பட்ட மொத்தத் தேவையானது சட்டப்பூர்வமாக பாதுகாக்கப்பட்ட உருப்படிகளைக் கொண்டுள்ளது:</p>
-          <div class="formula">மொத்தத் தேவை = அடிப்படைத் தேவை + அங்கீகரிக்கப்பட்ட வாடகை (தலைவிகிதக் கொள்கை) +
-            அங்கீகரிக்கப்பட்ட சுகாதார காப்பீட்டு பிரீமியம்</div>
-          <h4 style="margin-top:15px; color:var(--official-blue);">வாடகை அதிகபட்சங்கள் 2026 (சூரிக் கன்டோன் பகுதிகள் 1,
-            2 மற்றும் 3 ஐப் பயன்படுத்துகிறது)</h4>
-          <p style="font-size:0.9rem; margin-bottom:5px;"><small>SVA சூரிக் நகராட்சிகளை பகுதிகள் 1 முதல் 3 வரை
+      <p>
+       <small>
+        ஒரு தனி நபருக்கான மொத்த வாழ்க்கைச் செலவுத் தொகை.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       தம்பதிகள்
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        வாழ்க்கைத் துணைவர்களுக்கான ஒருங்கிணைந்த சட்டப்பூர்வ அடிப்படைத் தேவை.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. துல்லியமான கணக்கீட்டு முறை
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       அங்கீகரிக்கப்பட்ட செலவுகள் (தேவை)
+      </h3>
+      <p>
+       கணக்கிடப்பட்ட மொத்தத் தேவையானது சட்டப்பூர்வமாக பாதுகாக்கப்பட்ட உருப்படிகளைக் கொண்டுள்ளது:
+      </p>
+      <div class="formula">
+       மொத்தத் தேவை = அடிப்படைத் தேவை + அங்கீகரிக்கப்பட்ட வாடகை (தலைவிகிதக் கொள்கை) +
+            அங்கீகரிக்கப்பட்ட சுகாதார காப்பீட்டு பிரீமியம்
+      </div>
+      <h4 style="margin-top:15px; color:var(--official-blue);">
+       வாடகை அதிகபட்சங்கள் 2026 (சூரிக் கன்டோன் பகுதிகள் 1,
+            2 மற்றும் 3 ஐப் பயன்படுத்துகிறது)
+      </h4>
+      <p style="font-size:0.9rem; margin-bottom:5px;">
+       <small>
+        SVA சூரிக் நகராட்சிகளை பகுதிகள் 1 முதல் 3 வரை
               ஒதுக்குகிறது. வழிகாட்டுதலின் படி, பதிவு செய்யப்பட்ட பகுதி 4 தானாகவே பகுதி 3 ஆக கருதப்படுகிறது.
-              அதிகபட்சங்களில் ஏற்கனவே அனைத்து துணைச் செலவுகளும் அடங்கும்.</small></p>
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>வீட்டு அளவு</th>
-                <th>பகுதி 1 (எ.கா. சூரிக் நகரம்)</th>
-                <th>பகுதி 2 (நடுத்தரம்)</th>
-                <th>பகுதி 3 (கிராமப்புறம்)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1 நபர் (தனியாக வசிப்பவர்)</td>
-                <td>CHF 1'575 / மாதம்</td>
-                <td>CHF 1'525 / மாதம்</td>
-                <td>CHF 1'390 / மாதம்</td>
-              </tr>
-              <tr>
-                <td>2 நபர்கள் (தம்பதி / 1 குழந்தை)</td>
-                <td>CHF 1'860 / மாதம்</td>
-                <td>CHF 1'810 / மாதம்</td>
-                <td>CHF 1'680 / மாதம்</td>
-              </tr>
-              <tr>
-                <td>3 நபர்கள்</td>
-                <td>CHF 2'065 / மாதம்</td>
-                <td>CHF 1'980 / மாதம்</td>
-                <td>CHF 1'850 / மாதம்</td>
-              </tr>
-              <tr>
-                <td>4 நபர்கள்</td>
-                <td>CHF 2'255 / மாதம்</td>
-                <td>CHF 2'160 / மாதம்</td>
-                <td>CHF 2'000 / மாதம்</td>
-              </tr>
-              <tr>
-                <td>வகுப்புவீடு / கூட்டுவாழ்வில் தனி நபர்</td>
-                <td>CHF 930 / மாதம்</td>
-                <td>CHF 905 / மாதம்</td>
-                <td>CHF 840 / மாதம்</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="alert" style="margin: 10px 0; padding: 10px 15px; font-size:0.9rem;">
-            <strong>தலைவிகிதக் கொள்கை (துல்லியத் திருத்தம்):</strong> EL கணக்கீட்டில் சேர்க்கப்படாத நபர்கள் (எ.கா.,
+              அதிகபட்சங்களில் ஏற்கனவே அனைத்து துணைச் செலவுகளும் அடங்கும்.
+       </small>
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          வீட்டு அளவு
+         </th>
+         <th>
+          பகுதி 1 (எ.கா. சூரிக் நகரம்)
+         </th>
+         <th>
+          பகுதி 2 (நடுத்தரம்)
+         </th>
+         <th>
+          பகுதி 3 (கிராமப்புறம்)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1 நபர் (தனியாக வசிப்பவர்)
+         </td>
+         <td>
+          CHF 1'575 / மாதம்
+         </td>
+         <td>
+          CHF 1'525 / மாதம்
+         </td>
+         <td>
+          CHF 1'390 / மாதம்
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2 நபர்கள் (தம்பதி / 1 குழந்தை)
+         </td>
+         <td>
+          CHF 1'860 / மாதம்
+         </td>
+         <td>
+          CHF 1'810 / மாதம்
+         </td>
+         <td>
+          CHF 1'680 / மாதம்
+         </td>
+        </tr>
+        <tr>
+         <td>
+          3 நபர்கள்
+         </td>
+         <td>
+          CHF 2'065 / மாதம்
+         </td>
+         <td>
+          CHF 1'980 / மாதம்
+         </td>
+         <td>
+          CHF 1'850 / மாதம்
+         </td>
+        </tr>
+        <tr>
+         <td>
+          4 நபர்கள்
+         </td>
+         <td>
+          CHF 2'255 / மாதம்
+         </td>
+         <td>
+          CHF 2'160 / மாதம்
+         </td>
+         <td>
+          CHF 2'000 / மாதம்
+         </td>
+        </tr>
+        <tr>
+         <td>
+          வகுப்புவீடு / கூட்டுவாழ்வில் தனி நபர்
+         </td>
+         <td>
+          CHF 930 / மாதம்
+         </td>
+         <td>
+          CHF 905 / மாதம்
+         </td>
+         <td>
+          CHF 840 / மாதம்
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div class="alert" style="margin: 10px 0; padding: 10px 15px; font-size:0.9rem;">
+       <strong>
+        தலைவிகிதக் கொள்கை (துல்லியத் திருத்தம்):
+       </strong>
+       EL கணக்கீட்டில் சேர்க்கப்படாத நபர்கள் (எ.கா.,
             வகுப்புவீட்டு கூட்டாளிகள், வயது வந்த குழந்தைகள்) வீட்டைப் பகிர்ந்து கொண்டால், துணைச் செலவுகள் உட்பட மொத்த
             வாடகையானது கட்டாயமாக கணித ரீதியாக தலைகளால் வகுக்கப்படும் (மொத்த வாடகை / வீட்டில் உள்ள மொத்த நபர்கள்). இதன்
             விளைவாக வரும் பங்கு, தொடர்புடைய வீட்டு அளவின் அதிகபட்சத்துடன் ஒப்பிடப்படுகிறது.
-          </div>
-          <h4 style="margin-top:15px; color:var(--official-blue);">சுகாதார காப்பீட்டு பிரீமியம் ஒழுங்குமுறை (ELG கட்டுரை
-            11 &amp; SVA ZH வழிகாட்டுதல்)</h4>
-          <p>சட்டப்பூர்வ இருவழி வரம்பு (இரட்டைப் பூட்டு கொள்கை) பொருந்தும்:</p>
-          <div class="formula">அங்கீகரிக்கப்பட்ட பிரீமியம் = Math.min(உண்மையான பிரீமியம், கன்டோனல் சராசரி பிரீமியம்)
-          </div>
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>ஆண்டுக்கான கன்டோனல் அதிகபட்ச தொகைகள் (2026)</th>
-                <th>வயதுவந்தோர்</th>
-                <th>இளம் வயதுவந்தோர் (19-25)</th>
-                <th>குழந்தைகள் (0-18)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>சூரிக் (மொத்த மேல் வரம்பு)</td>
-                <td>CHF 7'680</td>
-                <td>CHF 5'508</td>
-                <td>CHF 1'848</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>கணக்கில் கொள்ளக்கூடிய வருமானம் (வருவாய்)</h3>
-          <p>மாற்றியமைக்கப்பட்ட கணக்கீட்டு விதிகளின்படி அனைத்து வரவுகள் மற்றும் கற்பித சொத்து மதிப்புகள் இங்கே
-            சேர்க்கப்படுகின்றன:</p>
-          <h4 style="margin-top:10px; color:var(--official-blue);">13வது AHV ஓய்வூதிய நடுநிலையாக்கம் (சட்டப்பூர்வ கடமை
-            2026)</h4>
-          <p>திருத்தப்பட்ட ELG இன் படி, 2026 ஆம் ஆண்டில் முதல் முறையாக முழுமையாக வழங்கப்படும் 13வது AHV ஓய்வூதியம்,
+      <h4 style="margin-top:15px; color:var(--official-blue);">
+       சுகாதார காப்பீட்டு பிரீமியம் ஒழுங்குமுறை (ELG கட்டுரை
+            11 &amp; SVA ZH வழிகாட்டுதல்)
+      </h4>
+      <p>
+       சட்டப்பூர்வ இருவழி வரம்பு (இரட்டைப் பூட்டு கொள்கை) பொருந்தும்:
+      </p>
+      <div class="formula">
+       அங்கீகரிக்கப்பட்ட பிரீமியம் = Math.min(உண்மையான பிரீமியம், கன்டோனல் சராசரி பிரீமியம்)
+      </div>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          ஆண்டுக்கான கன்டோனல் அதிகபட்ச தொகைகள் (2026)
+         </th>
+         <th>
+          வயதுவந்தோர்
+         </th>
+         <th>
+          இளம் வயதுவந்தோர் (19-25)
+         </th>
+         <th>
+          குழந்தைகள் (0-18)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          சூரிக் (மொத்த மேல் வரம்பு)
+         </td>
+         <td>
+          CHF 7'680
+         </td>
+         <td>
+          CHF 5'508
+         </td>
+         <td>
+          CHF 1'848
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       கணக்கில் கொள்ளக்கூடிய வருமானம் (வருவாய்)
+      </h3>
+      <p>
+       மாற்றியமைக்கப்பட்ட கணக்கீட்டு விதிகளின்படி அனைத்து வரவுகள் மற்றும் கற்பித சொத்து மதிப்புகள் இங்கே
+            சேர்க்கப்படுகின்றன:
+      </p>
+      <h4 style="margin-top:10px; color:var(--official-blue);">
+       13வது AHV ஓய்வூதிய நடுநிலையாக்கம் (சட்டப்பூர்வ கடமை
+            2026)
+      </h4>
+      <p>
+       திருத்தப்பட்ட ELG இன் படி, 2026 ஆம் ஆண்டில் முதல் முறையாக முழுமையாக வழங்கப்படும் 13வது AHV ஓய்வூதியம்,
             ஓய்வூதியதாரர்கள் தங்கள் உரிமைகோரல்களை இழப்பதிலிருந்து பாதுகாக்க EL கணக்கீட்டில் கணக்கில்
-            எடுத்துக்கொள்ளப்படவில்லை:</p>
-          <div class="formula">கணக்கில் கொள்ளக்கூடிய AHV ஓய்வூதியம் = (பெறப்பட்ட மொத்த வருடாந்திர ஓய்வூதியம் / 13) * 12
-          </div>
-          <h4 style="margin-top:15px; color:var(--official-blue);">வேலை வருமானம்</h4>
-          <p>வேலை வருமானம் ஒரு விலக்குத் தொகையை (தனி நபர்: CHF 1'300, தம்பதிகள்: CHF 1'950) கழிப்பதன் மூலம் சலுகை
-            பெறுகிறது, இறுதியில் சரியாக மூன்றில் இரண்டு பங்கு (2/3) வருமானமாக பதிவு செய்யப்படுகிறது.</p>
-          <h4 style="margin-top:15px; color:var(--official-blue);">துல்லியமான சொத்துக் கணக்கீடு &amp; சொத்து நுகர்வு
-            (திருத்தக் காரணி)</h4>
-          <p>நிகர சொத்து விலக்குத் தொகைகளை மீறினால், ஒரு சட்டப்பூர்வ பங்கு (சொத்து நுகர்வு) வருடாந்திர வருமானத்துடன் மீள
-            முடியாமல் சேர்க்கப்படுகிறது:</p>
-          <div class="formula">கணக்கில் கொள்ளக்கூடிய வருமானம் = குறைக்கப்பட்ட_வேலை_வருமானம் +
-            நடுநிலையாக்கப்பட்ட_ஓய்வூதியங்கள் + சொத்து_வருமானம் + <b>சொத்து_நுகர்வு</b></div>
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>அளவுரு</th>
-                <th>விலக்குத் தொகை (EL கணக்கீடு)</th>
-                <th>உபரியின் கணக்கீட்டு விகிதம் (ஆண்டுக்கு)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>தனி நபர்</td>
-                <td>CHF 30'000</td>
-                <td>1/10 (AHV முதுமை ஓய்வூதியத்திற்கு) / 1/15 (IV ஓய்வூதியத்திற்கு)</td>
-              </tr>
-              <tr>
-                <td>தம்பதிகள்</td>
-                <td>CHF 50'000</td>
-                <td>1/10 (AHV முதுமை ஓய்வூதியத்திற்கு) / 1/15 (IV ஓய்வூதியத்திற்கு)</td>
-              </tr>
-              <tr>
-                <td>சொத்து (சுய-குடியிருப்பு)</td>
-                <td>CHF 112'500 <br /><small>(அல்லது தம்பதிகள்/உதவியற்றோருக்கு CHF 187'500)</small></td>
-                <td>முதன்மையாக விரிவாக்கப்பட்ட விலக்குத் தொகையில் சேர்க்கப்படுகிறது</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="alert"
-            style="margin: 10px 0; padding: 10px 15px; font-size:0.9rem; background-color: #fff3e0; border-left-color: #f39c12;">
-            <strong>சொத்து துறப்பில் கற்பித வருமானம் (WEL 3524.01):</strong> சட்டப்பூர்வ கடமை இல்லாமல் துறக்கப்பட்ட
+            எடுத்துக்கொள்ளப்படவில்லை:
+      </p>
+      <div class="formula">
+       கணக்கில் கொள்ளக்கூடிய AHV ஓய்வூதியம் = (பெறப்பட்ட மொத்த வருடாந்திர ஓய்வூதியம் / 13) * 12
+      </div>
+      <h4 style="margin-top:15px; color:var(--official-blue);">
+       வேலை வருமானம்
+      </h4>
+      <p>
+       வேலை வருமானம் ஒரு விலக்குத் தொகையை (தனி நபர்: CHF 1'300, தம்பதிகள்: CHF 1'950) கழிப்பதன் மூலம் சலுகை
+            பெறுகிறது, இறுதியில் சரியாக மூன்றில் இரண்டு பங்கு (2/3) வருமானமாக பதிவு செய்யப்படுகிறது.
+      </p>
+      <h4 style="margin-top:15px; color:var(--official-blue);">
+       துல்லியமான சொத்துக் கணக்கீடு &amp; சொத்து நுகர்வு
+            (திருத்தக் காரணி)
+      </h4>
+      <p>
+       நிகர சொத்து விலக்குத் தொகைகளை மீறினால், ஒரு சட்டப்பூர்வ பங்கு (சொத்து நுகர்வு) வருடாந்திர வருமானத்துடன் மீள
+            முடியாமல் சேர்க்கப்படுகிறது:
+      </p>
+      <div class="formula">
+       கணக்கில் கொள்ளக்கூடிய வருமானம் = குறைக்கப்பட்ட_வேலை_வருமானம் +
+            நடுநிலையாக்கப்பட்ட_ஓய்வூதியங்கள் + சொத்து_வருமானம் +
+       <b>
+        சொத்து_நுகர்வு
+       </b>
+      </div>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          அளவுரு
+         </th>
+         <th>
+          விலக்குத் தொகை (EL கணக்கீடு)
+         </th>
+         <th>
+          உபரியின் கணக்கீட்டு விகிதம் (ஆண்டுக்கு)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          தனி நபர்
+         </td>
+         <td>
+          CHF 30'000
+         </td>
+         <td>
+          1/10 (AHV முதுமை ஓய்வூதியத்திற்கு) / 1/15 (IV ஓய்வூதியத்திற்கு)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          தம்பதிகள்
+         </td>
+         <td>
+          CHF 50'000
+         </td>
+         <td>
+          1/10 (AHV முதுமை ஓய்வூதியத்திற்கு) / 1/15 (IV ஓய்வூதியத்திற்கு)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          சொத்து (சுய-குடியிருப்பு)
+         </td>
+         <td>
+          CHF 112'500
+          <br/>
+          <small>
+           (அல்லது தம்பதிகள்/உதவியற்றோருக்கு CHF 187'500)
+          </small>
+         </td>
+         <td>
+          முதன்மையாக விரிவாக்கப்பட்ட விலக்குத் தொகையில் சேர்க்கப்படுகிறது
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <div class="alert" style="margin: 10px 0; padding: 10px 15px; font-size:0.9rem; background-color: #fff3e0; border-left-color: #f39c12;">
+       <strong>
+        சொத்து துறப்பில் கற்பித வருமானம் (WEL 3524.01):
+       </strong>
+       சட்டப்பூர்வ கடமை இல்லாமல் துறக்கப்பட்ட
             சொத்து (எ.கா., நன்கொடைகள்) இனி ஒரு நிலையான சதவீத வட்டி சூத்திரத்துடன் தவறாக கணக்கிடப்படாது. அதற்கு பதிலாக,
-            அசல் துறப்புத் தொகை ஆண்டுக்கு <b>CHF 10'000</b> ஆக நேர்கோட்டில் தேய்மானம் செய்யப்பட்டு, மீதமுள்ள கற்பித அசல்
+            அசல் துறப்புத் தொகை ஆண்டுக்கு
+       <b>
+        CHF 10'000
+       </b>
+       ஆக நேர்கோட்டில் தேய்மானம் செய்யப்பட்டு, மீதமுள்ள கற்பித அசல்
             மதிப்பு முழுமையாக நிகர சொத்துடன் சேர்க்கப்படுகிறது, இது அதிகாரப்பூர்வ வருடாந்திர சேமிப்பு வைப்பு சராசரி
             வட்டி விகிதத்தால் (நடப்பு ஆண்டிற்கு 0.29% என மதிப்பிடப்பட்டுள்ளது) நிரப்பப்படுகிறது.
-          </div>
-        </div>
       </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>வருடாந்திர EL இன் இறுதி கணக்கீடு</h3>
-          <p>துணைப் பலன் சட்டப்பூர்வ நிலையான உருப்படிகளுக்கு இடையேயான கணித இடைவெளியை துல்லியமாக நிரப்புகிறது:</p>
-          <div class="formula" style="background: #fff1f2; color: #be123c;">வருடாந்திர EL = Max(0, [அங்கீகரிக்கப்பட்ட
-            செலவுகள்] - [கணக்கில் கொள்ளக்கூடிய வருமானம்])<br />மாதாந்திர செலுத்துத் தொகை = Math.round(வருடாந்திர EL /
-            12)</div>
-        </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       வருடாந்திர EL இன் இறுதி கணக்கீடு
+      </h3>
+      <p>
+       துணைப் பலன் சட்டப்பூர்வ நிலையான உருப்படிகளுக்கு இடையேயான கணித இடைவெளியை துல்லியமாக நிரப்புகிறது:
+      </p>
+      <div class="formula" style="background: #fff1f2; color: #be123c;">
+       வருடாந்திர EL = Max(0, [அங்கீகரிக்கப்பட்ட
+            செலவுகள்] - [கணக்கில் கொள்ளக்கூடிய வருமானம்])
+       <br/>
+       மாதாந்திர செலுத்துத் தொகை = Math.round(வருடாந்திர EL /
+            12)
       </div>
-      <div class="alert">
-        <strong>முக்கியம்: சட்டப்பூர்வ சேரும் வரம்பு (சொத்து வரம்பு)</strong><br />
-        சூரிக் கன்டோனில் EL க்கான பொதுவான சட்டப்பூர்வ உரிமையானது, சரிசெய்யப்பட்ட நிகர சொத்து (சுய-குடியிருப்பு சொத்தின்
-        மதிப்பைத் தவிர்த்து) தனி நபர்களுக்கு <b>CHF 100'000</b> க்கும், தம்பதிகளுக்கு <b>CHF 200'000</b> க்கும்
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      முக்கியம்: சட்டப்பூர்வ சேரும் வரம்பு (சொத்து வரம்பு)
+     </strong>
+     <br/>
+     சூரிக் கன்டோனில் EL க்கான பொதுவான சட்டப்பூர்வ உரிமையானது, சரிசெய்யப்பட்ட நிகர சொத்து (சுய-குடியிருப்பு சொத்தின்
+        மதிப்பைத் தவிர்த்து) தனி நபர்களுக்கு
+     <b>
+      CHF 100'000
+     </b>
+     க்கும், தம்பதிகளுக்கு
+     <b>
+      CHF 200'000
+     </b>
+     க்கும்
         கண்டிப்பாக குறைவாக இருந்தால் மட்டுமே உள்ளது. இந்த கடினமான நுழைவு வரம்பை மீறுவது உடனடி கணக்கீட்டு நிறுத்தத்திற்கு
         வழிவகுக்கிறது (உரிமை = 0).
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
-          திரும்பு</a>
-        <a class="btn-link" href="https://svazurich.ch" target="_blank">அதிகாரப்பூர்வ SVA சூரிக் இணையதளம்</a>
-      </div>
     </div>
-    <footer>
-      <p>ஆதாரம்: SVA சூரிக் வழிகாட்டுதல்கள் 2026, துணைப் பலன்கள் கூட்டாட்சி சட்டம் (ELG) &amp; WEL 2026</p>
-      <p>welfarecalc.ch இன் கால்குலேட்டர் உள்கட்டமைப்பால் வழங்கப்பட்டது | சட்டப்பூர்வ உத்தரவாதமின்றி ஆவணப்படுத்தல்.</p>
-    </footer>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      முகப்புப் பக்கத்திற்குத்
+          திரும்பு
+     </a>
+     <a class="btn-link" href="https://svazurich.ch" target="_blank">
+      அதிகாரப்பூர்வ SVA சூரிக் இணையதளம்
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     ஆதாரம்: SVA சூரிக் வழிகாட்டுதல்கள் 2026, துணைப் பலன்கள் கூட்டாட்சி சட்டம் (ELG) &amp; WEL 2026
+    </p>
+    <p>
+     welfarecalc.ch இன் கால்குலேட்டர் உள்கட்டமைப்பால் வழங்கப்பட்டது | சட்டப்பூர்வ உத்தரவாதமின்றி ஆவணப்படுத்தல்.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

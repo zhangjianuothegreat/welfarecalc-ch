@@ -1,56 +1,10 @@
 <!DOCTYPE html>
 <html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritam socijalne pomoći Kanton Schaffhausen 2026 | Transparentan Izračun | welfarecalc.ch</title>
-    <meta name="description" content="Kako se izračunava socijalna pomoć u Kantonu Schaffhausen (SH) za 2026. godinu? Otkrijte naš transparentni algoritam temeljen na SKOS smjernicama i kantonalnom zakonu.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/SH_2026SH_hr.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SH_2026SH_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SH_2026SH_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SH_2026SH_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SH_2026SH_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SH_2026SH_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SH_2026SH_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SH_2026SH_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SH_2026SH_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SH_2026SH_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SH_2026SH_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SH_2026SH_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SH_2026SH_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Izračun socijalne pomoći Schaffhausen 2026",
-      "description": "Detaljan prikaz algoritma izračuna socijalne pomoći u Kantonu Schaffhausen.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Provjera dopuštene imovine (ulazni prag)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Određivanje osnovnih životnih troškova (GBL 2026)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Izračun regionalnih troškova stanovanja i zdravstvenog osiguranja"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Uračunavanje prihoda i poticaji za zapošljavanje"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -85,122 +39,258 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Svicarskih Naknada 2026 | 26 Kantona + Provjera Racuna">
-    <meta property="og:description" content="Izracunajte AVS, AI, PC i smanjenja premija u svih 26 svicarskih kantona. Ukljucuje reviziju stomatoloskih racuna i provjeru ugovora o najmu. 100% anonimno u pregledniku. 11 jezika.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SH_2026SH_hr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="hr">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">USKLAĐENO SA SKOS 2026</div>
-        <h1>Algoritam socijalne pomoći: Kanton Schaffhausen</h1>
-        <p>Transparentna dokumentacija logike izračuna socijalnog egzistencijalnog minimuma (SH)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
-        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   SP Schaffhausen 2026 – Socijalna pomoć | welfarecalc.ch
+  </title>
+  <meta content="Izračunajte Socijalna pomoć u Kantonu Schaffhausen. Službeni podaci 2026, transparentni i razumljivi. Provjerite besplatno." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Socijalna pomoć, Kanton Schaffhausen, SP, Socijalne naknade, Izračun 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_hr.html" rel="canonical"/>
+  <meta content="SP Schaffhausen 2026 – Socijalna pomoć | welfarecalc.ch" property="og:title"/>
+  <meta content="Izračunajte Socijalna pomoć u Kantonu Schaffhausen. Službeni podaci 2026, transparentni i razumljivi. Provjerite besplatno." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SH_2026SH_hr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="hr_HR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="SP Schaffhausen 2026 – Socijalna pomoć | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Izračunajte Socijalna pomoć u Kantonu Schaffhausen. Službeni podaci 2026, transparentni i razumljivi. Provjerite besplatno." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Socijalna pomoć Schaffhausen 2026", "description": "Step-by-step guide to calculating Socijalna pomoć in Canton Schaffhausen.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     USKLAĐENO SA SKOS 2026
     </div>
-
-    <div class="content">
-        <p>Kako se izračunava socijalna pomoć u Kantonu Schaffhausen? Kako bismo ojačali povjerenje naših korisnika, objavljujemo cjelokupni algoritam platforme welfarecalc.ch. Temelji se na kantonalnom Zakonu o socijalnoj pomoći (SHG) te na SKOS smjernicama za 2026. godinu.</p>
-
-        <h2 class="section-title">1. Provjera imovine (Ulazni prag)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Dopušteni iznos za samca</h4>
-                <div class="param-value">6.000 CHF</div>
-                <p><small>Plus 3.000 CHF po djetetu ili osobi na školovanju.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Dopušteni iznos za parove</h4>
-                <div class="param-value">12.000 CHF</div>
-                <p><small>Maksimalni ukupni dopušteni iznos ograničen na 15.000 CHF po kućanstvu.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Postupak izračuna (Mjesečno)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Osnovni životni troškovi (GBL)</h3>
-                <p>GBL pokriva troškove hrane, odjeće i upravljanja kućanstvom prema SKOS prilagodbi troškova života:</p>
-                <table class="data-table">
-                    <tr><th>Veličina kućanstva</th><th>Iznos mjesečno (2026)</th></tr>
-                    <tr><td>1 osoba</td><td>1.061 CHF</td></tr>
-                    <tr><td>2 osobe</td><td>1.624 CHF</td></tr>
-                    <tr><td>3 osobe</td><td>2.017 CHF</td></tr>
-                    <tr><td>Svaka dodatna osoba</td><td>Prema SKOS ljestvici</td></tr>
-                </table>
-                <p><small>*Napomena: Mlade odrasle osobe na školovanju primjenjuju specifične stope GBL-a ovisno o životnoj situaciji.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Troškovi stanovanja i zdravstvo</h3>
-                <p>Izračun stvarnih troškova stanovanja i premija zdravstvenog osiguranja:</p>
-                <div class="formula">
-                    Priznati troškovi stanovanja = Min(Stvarna najamnina, Regionalni maksimum)
-                </div>
-                <p><small>*Važno: Naš kalkulator koristi diferencirane maksimalne granice najamnine Kantona Schaffhausen (npr. grad Schaffhausen otprilike 1.000 do 1.200 CHF za kućanstva s 1-2 osobe).</small></p>
-                <div class="formula">
-                    Zdravstveno osiguranje = Stvarna premija (KVG) - Individualno smanjenje premije (IPV)
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Izračun prihoda i dodatak za zapošljavanje (EFB)</h3>
-                <p>Od neto zarađenog prihoda oduzima se dodatak kako bi se održali poticaji za rad:</p>
-                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-                    <strong>Prihod koji se uračunava</strong> = Neto prihod - EFB (maks. prema kantonalnim smjernicama)
-                </div>
-                <p><small>Ostali prihodi (poput mirovina, alimentacija ili dnevnih naknada), kao i povlačenje imovine, u potpunosti se uračunavaju kao prihod.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Rezultat: Mjesečno pravo na pomoć</h3>
-                <p>Konačna isplata socijalne pomoći proizlazi iz razlike:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Pravo na pomoć = (GBL + Najamnina + Zdravstveno osiguranje) - (Prihod koji se uračunava)
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Napomena o integraciji i dodatnim beneficijama:</strong><br>
-            Osobe koje ispunjavaju radne obveze ili se aktivno uključuju u društvenu/stručnu integraciju mogu dobiti dodatak za integraciju (IZL). Osim toga, mogu se odobriti situacijske beneficije (SIL) za posebne troškove.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Pokreni kalkulator</a>
-            <a href="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Departement-des-Innern/Sozialamt/Sozialhilfe-1226809-DE.html" target="_blank" class="btn-link">Službena stranica Kantona SH</a>
-        </div>
+    <h1>
+     Algoritam socijalne pomoći: Kanton Schaffhausen
+    </h1>
+    <p>
+     Transparentna dokumentacija logike izračuna socijalnog egzistencijalnog minimuma (SH)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Brza provjera: Imate li pravo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_hr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Provjerite besplatno →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Kako se izračunava socijalna pomoć u Kantonu Schaffhausen? Kako bismo ojačali povjerenje naših korisnika, objavljujemo cjelokupni algoritam platforme welfarecalc.ch. Temelji se na kantonalnom Zakonu o socijalnoj pomoći (SHG) te na SKOS smjernicama za 2026. godinu.
+    </p>
+    <h2 class="section-title">
+     1. Provjera imovine (Ulazni prag)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Dopušteni iznos za samca
+      </h4>
+      <div class="param-value">
+       6.000 CHF
+      </div>
+      <p>
+       <small>
+        Plus 3.000 CHF po djetetu ili osobi na školovanju.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Dopušteni iznos za parove
+      </h4>
+      <div class="param-value">
+       12.000 CHF
+      </div>
+      <p>
+       <small>
+        Maksimalni ukupni dopušteni iznos ograničen na 15.000 CHF po kućanstvu.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Izvori: Zakon o socijalnoj pomoći Kantona Schaffhausen & SKOS smjernice 2026</p>
-        <p>© 2026 welfarecalc.ch | Transparentan izračun socijalne pomoći</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Postupak izračuna (Mjesečno)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Osnovni životni troškovi (GBL)
+      </h3>
+      <p>
+       GBL pokriva troškove hrane, odjeće i upravljanja kućanstvom prema SKOS prilagodbi troškova života:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Veličina kućanstva
+        </th>
+        <th>
+         Iznos mjesečno (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 osoba
+        </td>
+        <td>
+         1.061 CHF
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 osobe
+        </td>
+        <td>
+         1.624 CHF
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 osobe
+        </td>
+        <td>
+         2.017 CHF
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Svaka dodatna osoba
+        </td>
+        <td>
+         Prema SKOS ljestvici
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Napomena: Mlade odrasle osobe na školovanju primjenjuju specifične stope GBL-a ovisno o životnoj situaciji.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Troškovi stanovanja i zdravstvo
+      </h3>
+      <p>
+       Izračun stvarnih troškova stanovanja i premija zdravstvenog osiguranja:
+      </p>
+      <div class="formula">
+       Priznati troškovi stanovanja = Min(Stvarna najamnina, Regionalni maksimum)
+      </div>
+      <p>
+       <small>
+        *Važno: Naš kalkulator koristi diferencirane maksimalne granice najamnine Kantona Schaffhausen (npr. grad Schaffhausen otprilike 1.000 do 1.200 CHF za kućanstva s 1-2 osobe).
+       </small>
+      </p>
+      <div class="formula">
+       Zdravstveno osiguranje = Stvarna premija (KVG) - Individualno smanjenje premije (IPV)
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Izračun prihoda i dodatak za zapošljavanje (EFB)
+      </h3>
+      <p>
+       Od neto zarađenog prihoda oduzima se dodatak kako bi se održali poticaji za rad:
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Prihod koji se uračunava
+       </strong>
+       = Neto prihod - EFB (maks. prema kantonalnim smjernicama)
+      </div>
+      <p>
+       <small>
+        Ostali prihodi (poput mirovina, alimentacija ili dnevnih naknada), kao i povlačenje imovine, u potpunosti se uračunavaju kao prihod.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Rezultat: Mjesečno pravo na pomoć
+      </h3>
+      <p>
+       Konačna isplata socijalne pomoći proizlazi iz razlike:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Pravo na pomoć = (GBL + Najamnina + Zdravstveno osiguranje) - (Prihod koji se uračunava)
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Napomena o integraciji i dodatnim beneficijama:
+     </strong>
+     <br/>
+     Osobe koje ispunjavaju radne obveze ili se aktivno uključuju u društvenu/stručnu integraciju mogu dobiti dodatak za integraciju (IZL). Osim toga, mogu se odobriti situacijske beneficije (SIL) za posebne troškove.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Pokreni kalkulator
+     </a>
+     <a class="btn-link" href="https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Departement-des-Innern/Sozialamt/Sozialhilfe-1226809-DE.html" target="_blank">
+      Službena stranica Kantona SH
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Izvori: Zakon o socijalnoj pomoći Kantona Schaffhausen &amp; SKOS smjernice 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Transparentan izračun socijalne pomoći
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

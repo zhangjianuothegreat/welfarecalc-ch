@@ -1,52 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorytm EL Kanton Genewa 2026 | Przejrzysta kalkulacja | welfarecalc.ch</title>
-    <meta name="description" content="Jak obliczane są świadczenia uzupełniające (EL) w kantonie Genewa (Genève) na 2026 rok? Poznaj nasz przejrzysty algorytm oparty na oficjalnych danych SPC Genewa.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/GE_2026EL_pl.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GE_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GE_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GE_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GE_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GE_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GE_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GE_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GE_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GE_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GE_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GE_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GE_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie świadczeń uzupełniających (EL) w Genewie 2026",
-      "description": "Szczegółowe omówienie algorytmu obliczania EL w kantonie Genewa (SPC).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Określenie uznanych wydatków (podstawowe potrzeby, limity czynszu dla Regionu 1, składki na ubezpieczenie zdrowotne)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Dochód podlegający zaliczeniu i uszczuplenie majątku (specyficzne dla SPC Genewa)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Obliczenie rocznego uprawnienia do EL"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -81,116 +39,284 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/GE_2026EL_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">OFICJALNE DANE 2026</div>
-        <h1>Algorytm EL: Kanton Genewa</h1>
-        <p>Przejrzysta kalkulacja świadczeń uzupełniających (Ergänzungsleistungen) na rok 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   ŚU Genewa 2026 – Świadczenia uzupełniające | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Świadczenia uzupełniające w Kantonie Genewa. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Świadczenia uzupełniające, Kanton Genewa, ŚU, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_pl.html" rel="canonical"/>
+  <meta content="ŚU Genewa 2026 – Świadczenia uzupełniające | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Świadczenia uzupełniające w Kantonie Genewa. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/GE_2026EL_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="ŚU Genewa 2026 – Świadczenia uzupełniające | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Świadczenia uzupełniające w Kantonie Genewa. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GE_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Świadczenia uzupełniające Genewa 2026", "description": "Step-by-step guide to calculating Świadczenia uzupełniające in Canton Genewa.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     OFICJALNE DANE 2026
     </div>
-
-    <div class="content">
-        <p>Przejrzystość buduje zaufanie. Kanton Genewa (Genève) stosuje szczegółowe przepisy kantonowe w ramach federalnych. Tutaj dokumentujemy, w jaki sposób nasz kalkulator określa Twoje uprawnienia do EL w oparciu o oficjalne wytyczne SPC Genewa.</p>
-
-        <h2 class="section-title">1. Roczne podstawowe koszty utrzymania (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Osoba samotna</h4>
-                <div class="param-value">20 670 CHF</div>
-                <p><small>Kwota zharmonizowana na poziomie krajowym na podstawowe potrzeby gospodarstwa domowego.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Małżeństwa / Pary</h4>
-                <div class="param-value">31 005 CHF</div>
-                <p><small>Łączne podstawowe potrzeby obojga partnerów.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Szczegółowy przepływ obliczeń</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Uznane wydatki (potrzeby)</h3>
-                <p>Genewa należy do <strong>Regionu 1</strong> (centra miejskie), który stosuje najwyższe limity czynszu w Szwajcarii:</p>
-                <div class="formula">
-                    Podstawowe potrzeby + Czynsz brutto (do limitu) + Średnia składka na ubezpieczenie zdrowotne
-                </div>
-                <table class="data-table">
-                    <tr><th>Limity czynszu Genewa 2026 (Region 1)</th><th>Kwota roczna</th></tr>
-                    <tr><td>Gospodarstwo 1-osobowe</td><td>17 400 CHF (1 450 CHF/miesiąc)</td></tr>
-                    <tr><td>Gospodarstwo 2-osobowe</td><td>20 400 CHF (1 700 CHF/miesiąc)</td></tr>
-                    <tr><td>Gospodarstwo 3-osobowe</td><td>23 400 CHF (1 950 CHF/miesiąc)</td></tr>
-                </table>
-                <p><small>*Uwaga: Jako region o wysokich kosztach, Genewa stosuje maksymalne wartości kategorii 1.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Dochód podlegający zaliczeniu</h3>
-                <p>Twój dochód jest oceniany zgodnie z zasadami EL SPC Genewa:</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem;">
-                    <li><strong>Renty i emerytury:</strong> AHV lub IV (z wyłączeniem 13. renty AHV).</li>
-                    <li><strong>Uszczuplenie majątku:</strong> (Aktywa netto - kwota wolna) / 10 dla OASI lub / 15 dla DI.</li>
-                    <li><strong>Dochód z pracy:</strong> 2/3 dochodu po odliczeniu ryczałtu (1 300 CHF samotny / 1 950 CHF para).</li>
-                </ul>
-                <table class="data-table">
-                    <tr><th>Kwoty wolne od majątku (Genewa)</th><th>Kwota zwolniona</th></tr>
-                    <tr><td>Osoby samotne</td><td>30 000 CHF</td></tr>
-                    <tr><td>Małżeństwa / Pary</td><td>50 000 CHF</td></tr>
-                    <tr><td>Nieruchomość zajmowana przez właściciela</td><td>112 500 CHF</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Wynik EL</h3>
-                <p>Różnica daje miesięczne uprawnienie:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Roczne EL = [Łączne uznane wydatki] - [Dochód podlegający zaliczeniu]
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Ważne: Próg majątkowy (warunek dostępu)</strong><br>
-            W Genewie EL przysługuje tylko wtedy, gdy aktywa netto (z wyłączeniem wartości zajmowanej nieruchomości) są niższe niż <strong>100 000 CHF</strong> (dla osób samotnych) lub <strong>200 000 CHF</strong> (dla małżeństw/par).
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Powrót do strony głównej</a>
-            <a href="https://www.ocas.ch" target="_blank" class="btn-link">Oficjalna strona SPC Genewa (OCAS)</a>
-        </div>
+    <h1>
+     Algorytm EL: Kanton Genewa
+    </h1>
+    <p>
+     Przejrzysta kalkulacja świadczeń uzupełniających (Ergänzungsleistungen) na rok 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Przejrzystość buduje zaufanie. Kanton Genewa (Genève) stosuje szczegółowe przepisy kantonowe w ramach federalnych. Tutaj dokumentujemy, w jaki sposób nasz kalkulator określa Twoje uprawnienia do EL w oparciu o oficjalne wytyczne SPC Genewa.
+    </p>
+    <h2 class="section-title">
+     1. Roczne podstawowe koszty utrzymania (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Osoba samotna
+      </h4>
+      <div class="param-value">
+       20 670 CHF
+      </div>
+      <p>
+       <small>
+        Kwota zharmonizowana na poziomie krajowym na podstawowe potrzeby gospodarstwa domowego.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Małżeństwa / Pary
+      </h4>
+      <div class="param-value">
+       31 005 CHF
+      </div>
+      <p>
+       <small>
+        Łączne podstawowe potrzeby obojga partnerów.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Źródło: Service des prestations complémentaires (SPC) Genewa & Federalna ustawa o świadczeniach uzupełniających (ELG) 2026</p>
-        <p>Dostarczone przez welfarecalc.ch | Informacje bez gwarancji prawnej.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Szczegółowy przepływ obliczeń
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Uznane wydatki (potrzeby)
+      </h3>
+      <p>
+       Genewa należy do
+       <strong>
+        Regionu 1
+       </strong>
+       (centra miejskie), który stosuje najwyższe limity czynszu w Szwajcarii:
+      </p>
+      <div class="formula">
+       Podstawowe potrzeby + Czynsz brutto (do limitu) + Średnia składka na ubezpieczenie zdrowotne
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Limity czynszu Genewa 2026 (Region 1)
+        </th>
+        <th>
+         Kwota roczna
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Gospodarstwo 1-osobowe
+        </td>
+        <td>
+         17 400 CHF (1 450 CHF/miesiąc)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Gospodarstwo 2-osobowe
+        </td>
+        <td>
+         20 400 CHF (1 700 CHF/miesiąc)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Gospodarstwo 3-osobowe
+        </td>
+        <td>
+         23 400 CHF (1 950 CHF/miesiąc)
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Uwaga: Jako region o wysokich kosztach, Genewa stosuje maksymalne wartości kategorii 1.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Dochód podlegający zaliczeniu
+      </h3>
+      <p>
+       Twój dochód jest oceniany zgodnie z zasadami EL SPC Genewa:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem;">
+       <li>
+        <strong>
+         Renty i emerytury:
+        </strong>
+        AHV lub IV (z wyłączeniem 13. renty AHV).
+       </li>
+       <li>
+        <strong>
+         Uszczuplenie majątku:
+        </strong>
+        (Aktywa netto - kwota wolna) / 10 dla OASI lub / 15 dla DI.
+       </li>
+       <li>
+        <strong>
+         Dochód z pracy:
+        </strong>
+        2/3 dochodu po odliczeniu ryczałtu (1 300 CHF samotny / 1 950 CHF para).
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Kwoty wolne od majątku (Genewa)
+        </th>
+        <th>
+         Kwota zwolniona
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Osoby samotne
+        </td>
+        <td>
+         30 000 CHF
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Małżeństwa / Pary
+        </td>
+        <td>
+         50 000 CHF
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Nieruchomość zajmowana przez właściciela
+        </td>
+        <td>
+         112 500 CHF
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Wynik EL
+      </h3>
+      <p>
+       Różnica daje miesięczne uprawnienie:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Roczne EL = [Łączne uznane wydatki] - [Dochód podlegający zaliczeniu]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Ważne: Próg majątkowy (warunek dostępu)
+     </strong>
+     <br/>
+     W Genewie EL przysługuje tylko wtedy, gdy aktywa netto (z wyłączeniem wartości zajmowanej nieruchomości) są niższe niż
+     <strong>
+      100 000 CHF
+     </strong>
+     (dla osób samotnych) lub
+     <strong>
+      200 000 CHF
+     </strong>
+     (dla małżeństw/par).
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Powrót do strony głównej
+     </a>
+     <a class="btn-link" href="https://www.ocas.ch" target="_blank">
+      Oficjalna strona SPC Genewa (OCAS)
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: Service des prestations complémentaires (SPC) Genewa &amp; Federalna ustawa o świadczeniach uzupełniających (ELG) 2026
+    </p>
+    <p>
+     Dostarczone przez welfarecalc.ch | Informacje bez gwarancji prawnej.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

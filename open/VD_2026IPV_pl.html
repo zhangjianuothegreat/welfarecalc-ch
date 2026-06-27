@@ -1,54 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="pl">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Algorytm IPV Kantonu Vaud 2026 | Przejrzyste Obliczenia (RDU) | welfarecalc.ch</title>
-  <meta
-    content="Jak obliczana jest ulga w składkach (IPV) 2026 w kantonie Vaud? Poznaj oficjalny dwuetapowy model (subsydium zwykłe i szczególne) oparty na RDU."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate" />
-
-  <meta content="summary" name="twitter:card" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie dopłaty do składek Vaud 2026",
-      "description": "Instrukcja krok po kroku określania uprawnień do IPV w kantonie Vaud przy użyciu modelu RDU.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Ustalenie RDU (Revenu déterminant unifié) z doliczeniem filaru 3a i narzutu majątkowego (6,7%)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Obliczenie subsydium zwykłego (Subside ordinaire) za pomocą kantonalnej matematycznej krzywej progresji."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Sprawdzenie i uzupełnienie przez subsydium specyficzne (Subside spécifique), jeśli pozostała składka przekracza 10% RDU."
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -246,174 +202,345 @@
       text-decoration: underline;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026IPV_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   IOŚ Vaud 2026 – Obniżki składek | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Obniżki składek w Kantonie Vaud. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Obniżki składek, Kanton Vaud, IOŚ, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" rel="canonical"/>
+  <meta content="IOŚ Vaud 2026 – Obniżki składek | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Obniżki składek w Kantonie Vaud. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="IOŚ Vaud 2026 – Obniżki składek | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Obniżki składek w Kantonie Vaud. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Indywidualne obniżki składek Vaud 2026", "description": "Step-by-step guide to calculating Indywidualne obniżki składek in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <span class="update-tag">OFICJALNY ALGORYTM 2026</span>
-      <h1>Dopłata do składek Kanton Vaud (VD) 2026</h1>
-      <p>Oficjalny dwuetapowy rdzeń matematyczny do obliczania Subside Ordinaire i Spécifique</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+   <header>
+    <span class="update-tag">
+     OFICJALNY ALGORYTM 2026
+    </span>
+    <h1>
+     Dopłata do składek Kanton Vaud (VD) 2026
+    </h1>
+    <p>
+     Oficjalny dwuetapowy rdzeń matematyczny do obliczania Subside Ordinaire i Spécifique
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     W przeciwieństwie do kantonów ze sztywnymi progami dochodowymi, Kanton Vaud (Waadt) wykorzystuje wysoce
+        rozwinięty, społecznie sprawiedliwy
+     <strong>
+      model RDU (Revenu déterminant unifié)
+     </strong>
+     . Celem kantonu jest
+        pokrycie obciążenia z tytułu obowiązkowego ubezpieczenia zdrowotnego (KVG) do około
+     <strong>
+      10% dochodu
+          ustalającego
+     </strong>
+     .
+    </p>
+    <h2 class="section-title">
+     Parametry kantonalne na 2026 rok
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Maksymalne miesięczne subsydium (dorośli)
+      </h4>
+      <div class="param-value">
+       CHF 331.00 / miesiąc
+      </div>
+     </div>
+     <div class="param-card">
+      <h4>
+       Minimalne miesięczne subsydium (dorośli)
+      </h4>
+      <div class="param-value">
+       CHF 30.00 / miesiąc
+      </div>
+     </div>
+     <div class="param-card">
+      <h4>
+       Stawka narzutu majątkowego (RDU)
+      </h4>
+      <div class="param-value">
+       6.7% (1/15 majątku netto)
+      </div>
+     </div>
+     <div class="param-card">
+      <h4>
+       Górna granica udziału własnego (obciążenie)
+      </h4>
+      <div class="param-value">
+       10.0% RDU
+      </div>
+     </div>
     </div>
-    
-    <div class="content">
-      <p>W przeciwieństwie do kantonów ze sztywnymi progami dochodowymi, Kanton Vaud (Waadt) wykorzystuje wysoce
-        rozwinięty, społecznie sprawiedliwy <strong>model RDU (Revenu déterminant unifié)</strong>. Celem kantonu jest
-        pokrycie obciążenia z tytułu obowiązkowego ubezpieczenia zdrowotnego (KVG) do około <strong>10% dochodu
-          ustalającego</strong>.</p>
-      <h2 class="section-title">Parametry kantonalne na 2026 rok</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Maksymalne miesięczne subsydium (dorośli)</h4>
-          <div class="param-value">CHF 331.00 / miesiąc</div>
-        </div>
-        <div class="param-card">
-          <h4>Minimalne miesięczne subsydium (dorośli)</h4>
-          <div class="param-value">CHF 30.00 / miesiąc</div>
-        </div>
-        <div class="param-card">
-          <h4>Stawka narzutu majątkowego (RDU)</h4>
-          <div class="param-value">6.7% (1/15 majątku netto)</div>
-        </div>
-        <div class="param-card">
-          <h4>Górna granica udziału własnego (obciążenie)</h4>
-          <div class="param-value">10.0% RDU</div>
-        </div>
+    <h2 class="section-title">
+     Oficjalne składki referencyjne 2026 (OVAM)
+    </h2>
+    <p>
+     Obliczenie uwzględnia nie Państwa rzeczywistą luksusową franszyzę lub ubezpieczenia dodatkowe, ale kantonalne
+        składki referencyjne (Primes de référence 2026) ustalone przez Radę Stanu:
+    </p>
+    <table class="parameter-table">
+     <thead>
+      <tr>
+       <th>
+        Grupa wiekowa (Kod)
+       </th>
+       <th>
+        Region 1 (Miejski, np. Lozanna)
+       </th>
+       <th>
+        Region 2 (Wiejski)
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        <strong>
+         Dorośli (od 26 lat)
+        </strong>
+       </td>
+       <td>
+        CHF 4'212 / rok (351.-/mies.)
+       </td>
+       <td>
+        CHF 3'912 / rok (326.-/mies.)
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Młodzi dorośli (19 - 25 lat)
+        </strong>
+       </td>
+       <td>
+        CHF 2'820 / rok (235.-/mies.)
+       </td>
+       <td>
+        CHF 2'580 / rok (215.-/mies.)
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Dzieci (0 - 18 lat)
+        </strong>
+       </td>
+       <td>
+        CHF 1'188 / rok (99.-/mies.)
+       </td>
+       <td>
+        CHF 1'068 / rok (89.-/mies.)
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <h2 class="section-title">
+     Logika obliczeń krok po kroku
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Ustalenie skorygowanego RDU
+      </h3>
+      <p>
+       Kantonalne RDU opiera się na ostatecznym wymiarze podatku, skorygowanym o specyficzne ustawodawstwo Vaud
+            (wyłączenie długów prywatnych i doliczenia):
+      </p>
+      <div class="formula-box">
+       RDU = Dochód netto do opodatkowania
+       <br/>
+       + Odliczenia z tytułu wpłat do filaru 3a
+       <br/>
+       + Odliczone podatkowo składki na ubezpieczenie zdrowotne
+       <br/>
+       + [Dostępny majątek netto - Kwota wolna] × 6.7%
+       <br/>
+       - Odliczenia ryczałtowe (np. odliczenie dla par: CHF 4'400, odliczenie na dziecko: CHF 1'300)
       </div>
-      <h2 class="section-title">Oficjalne składki referencyjne 2026 (OVAM)</h2>
-      <p>Obliczenie uwzględnia nie Państwa rzeczywistą luksusową franszyzę lub ubezpieczenia dodatkowe, ale kantonalne
-        składki referencyjne (Primes de référence 2026) ustalone przez Radę Stanu:</p>
-      <table class="parameter-table">
-        <thead>
-          <tr>
-            <th>Grupa wiekowa (Kod)</th>
-            <th>Region 1 (Miejski, np. Lozanna)</th>
-            <th>Region 2 (Wiejski)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Dorośli (od 26 lat)</strong></td>
-            <td>CHF 4'212 / rok (351.-/mies.)</td>
-            <td>CHF 3'912 / rok (326.-/mies.)</td>
-          </tr>
-          <tr>
-            <td><strong>Młodzi dorośli (19 - 25 lat)</strong></td>
-            <td>CHF 2'820 / rok (235.-/mies.)</td>
-            <td>CHF 2'580 / rok (215.-/mies.)</td>
-          </tr>
-          <tr>
-            <td><strong>Dzieci (0 - 18 lat)</strong></td>
-            <td>CHF 1'188 / rok (99.-/mies.)</td>
-            <td>CHF 1'068 / rok (89.-/mies.)</td>
-          </tr>
-        </tbody>
-      </table>
-      <h2 class="section-title">Logika obliczeń krok po kroku</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Ustalenie skorygowanego RDU</h3>
-          <p>Kantonalne RDU opiera się na ostatecznym wymiarze podatku, skorygowanym o specyficzne ustawodawstwo Vaud
-            (wyłączenie długów prywatnych i doliczenia):</p>
-          <div class="formula-box">
-            RDU = Dochód netto do opodatkowania <br />
-            + Odliczenia z tytułu wpłat do filaru 3a <br />
-            + Odliczone podatkowo składki na ubezpieczenie zdrowotne <br />
-            + [Dostępny majątek netto - Kwota wolna] × 6.7% <br />
-            - Odliczenia ryczałtowe (np. odliczenie dla par: CHF 4'400, odliczenie na dziecko: CHF 1'300)
-          </div>
-          <p><small>*Uwaga: W kantonie Vaud długi prywatne lub hipoteczne NIE są uwzględniane pomniejszająco w teście
-              majątkowym IPV!</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Obliczenie subsydium zwykłego (Subside ordinaire)</h3>
-          <p>Kanton Vaud używa do obliczenia zwykłego uprawnienia logarytmicznie wygładzonej, progresywnej funkcji
+      <p>
+       <small>
+        *Uwaga: W kantonie Vaud długi prywatne lub hipoteczne NIE są uwzględniane pomniejszająco w teście
+              majątkowym IPV!
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Obliczenie subsydium zwykłego (Subside ordinaire)
+      </h3>
+      <p>
+       Kanton Vaud używa do obliczenia zwykłego uprawnienia logarytmicznie wygładzonej, progresywnej funkcji
             krzywoliniowej. Dla standardowych gospodarstw domowych UER obowiązują następujące parametry matematyczne:
-          </p>
-          <div class="formula-box">
-            Jeśli RDU ≤ CHF 16'000 (granica C6): <br />
-              Subside_Ordinaire = Maksymalna składka referencyjna gospodarstwa domowego <br /><br />
-            Jeśli CHF 16'000 &lt; RDU ≤ CHF 40'000 (granica A6): <br />
-              Współczynnik krzywej = P6 (2.3) &amp; Q6 (0.8) <br />
-              Subside_Ordinaire = Obliczone za pomocą zmiennego kantonalnego wzoru krzywej dekompresyjnej. <br /><br />
-            Zastosowanie ustawowych granic minimalnych: <br />
-              Miesięczne zwykłe subsydium na osobę dorosłą ustala się na minimum CHF 30.00, a maksymalnie na CHF 331.00.
-          </div>
-        </div>
+      </p>
+      <div class="formula-box">
+       Jeśli RDU ≤ CHF 16'000 (granica C6):
+       <br/>
+       Subside_Ordinaire = Maksymalna składka referencyjna gospodarstwa domowego
+       <br/>
+       <br/>
+       Jeśli CHF 16'000 &lt; RDU ≤ CHF 40'000 (granica A6):
+       <br/>
+       Współczynnik krzywej = P6 (2.3) &amp; Q6 (0.8)
+       <br/>
+       Subside_Ordinaire = Obliczone za pomocą zmiennego kantonalnego wzoru krzywej dekompresyjnej.
+       <br/>
+       <br/>
+       Zastosowanie ustawowych granic minimalnych:
+       <br/>
+       Miesięczne zwykłe subsydium na osobę dorosłą ustala się na minimum CHF 30.00, a maksymalnie na CHF 331.00.
       </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Siatka bezpieczeństwa: Subsydium specyficzne (Subside spécifique)</h3>
-          <p>Jest to najważniejszy współczynnik korygujący, którego brakuje w standardowych kalkulatorach. Jeśli po
-            odjęciu zwykłego subsydium pozostałe obciążenie składkami gospodarstwa domowego jest nadmiernie wysokie,
-            uruchamiana jest 10% ochrona:</p>
-          <div class="formula-box">
-            Dopuszczalne obciążenie składkami gospodarstwa domowego = Całkowite składki referencyjne gospodarstwa
-            domowego <br />
-            Pozostałe obciążenie = Dopuszczalne obciążenie składkami gospodarstwa domowego - Subside_Ordinaire_Rok
-            <br /><br />
-            Kantonalny próg dopuszczalności = RDU × 10% <br /><br />
-            Jeśli Pozostałe obciążenie &gt; Próg dopuszczalności: <br />
-              Subside_Spécifique = Pozostałe obciążenie - Próg dopuszczalności <br />
-            W przeciwnym razie: <br />
-              Subside_Spécifique = 0
-          </div>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h3>Ostateczne całkowite uprawnienie i limitowanie</h3>
-          <p>Ostateczna kwota wypłaty wynika z dodania obu składników subsydium i jest ograniczona przez rzeczywistą,
-            efektywną składkę ubezpieczonego:</p>
-          <div class="formula-box">
-            Uprawnienie_Absolutne = Subside_Ordinaire + Subside_Spécifique <br />
-            Uprawnienie_Koncowe = Min(Uprawnienie_Absolutne, Efektywna_Składka_Ubezpieczenia_Zdrowotnego_Gospodarstwa)
-          </div>
-          <p><small>Kwoty poniżej CHF 100.00 rocznie nie są wypłacane ze względów efektywnościowych (granica
-              bagatelności).</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Granica wykluczenia majątkowego (górna granica):</strong><br />
-        Jeśli skorygowany majątek netto (bez odliczenia długów) przekracza <strong>CHF 100'000</strong> dla osób
-        samotnych lub <strong>CHF 160'000</strong> dla par małżeńskich, ustawowe prawo do dopłaty do składek w kantonie
-        Vaud wygasa całkowicie – niezależnie od tego, jak niski jest dochód RDU.
-      </div>
-      <div style="text-align: center; margin-top: 2.5rem;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Powrót do strony głównej</a>
-        <a class="btn-link"
-          href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie"
-          target="_blank">Oficjalna strona internetowa Kantonu VD</a>
-      </div>
+     </div>
     </div>
-    <footer>
-      <p>Źródło: Sekretariat Generalny Dyrekcji Generalnej ds. Spójności Społecznej (DGCS) &amp; Office vaudois de
-        l'assurance-maladie (OVAM), Kanton Vaud 2026. Dostarczone przez <a href="https://www.welfarecalc.ch"
-          target="_blank">welfarecalc.ch</a>.</p>
-    </footer>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Siatka bezpieczeństwa: Subsydium specyficzne (Subside spécifique)
+      </h3>
+      <p>
+       Jest to najważniejszy współczynnik korygujący, którego brakuje w standardowych kalkulatorach. Jeśli po
+            odjęciu zwykłego subsydium pozostałe obciążenie składkami gospodarstwa domowego jest nadmiernie wysokie,
+            uruchamiana jest 10% ochrona:
+      </p>
+      <div class="formula-box">
+       Dopuszczalne obciążenie składkami gospodarstwa domowego = Całkowite składki referencyjne gospodarstwa
+            domowego
+       <br/>
+       Pozostałe obciążenie = Dopuszczalne obciążenie składkami gospodarstwa domowego - Subside_Ordinaire_Rok
+       <br/>
+       <br/>
+       Kantonalny próg dopuszczalności = RDU × 10%
+       <br/>
+       <br/>
+       Jeśli Pozostałe obciążenie &gt; Próg dopuszczalności:
+       <br/>
+       Subside_Spécifique = Pozostałe obciążenie - Próg dopuszczalności
+       <br/>
+       W przeciwnym razie:
+       <br/>
+       Subside_Spécifique = 0
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Ostateczne całkowite uprawnienie i limitowanie
+      </h3>
+      <p>
+       Ostateczna kwota wypłaty wynika z dodania obu składników subsydium i jest ograniczona przez rzeczywistą,
+            efektywną składkę ubezpieczonego:
+      </p>
+      <div class="formula-box">
+       Uprawnienie_Absolutne = Subside_Ordinaire + Subside_Spécifique
+       <br/>
+       Uprawnienie_Koncowe = Min(Uprawnienie_Absolutne, Efektywna_Składka_Ubezpieczenia_Zdrowotnego_Gospodarstwa)
+      </div>
+      <p>
+       <small>
+        Kwoty poniżej CHF 100.00 rocznie nie są wypłacane ze względów efektywnościowych (granica
+              bagatelności).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Granica wykluczenia majątkowego (górna granica):
+     </strong>
+     <br/>
+     Jeśli skorygowany majątek netto (bez odliczenia długów) przekracza
+     <strong>
+      CHF 100'000
+     </strong>
+     dla osób
+        samotnych lub
+     <strong>
+      CHF 160'000
+     </strong>
+     dla par małżeńskich, ustawowe prawo do dopłaty do składek w kantonie
+        Vaud wygasa całkowicie – niezależnie od tego, jak niski jest dochód RDU.
+    </div>
+    <div style="text-align: center; margin-top: 2.5rem;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Powrót do strony głównej
+     </a>
+     <a class="btn-link" href="https://www.vd.ch/sante-soins-et-handicap/assurance-maladie/subside-a-lassurance-maladie" target="_blank">
+      Oficjalna strona internetowa Kantonu VD
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: Sekretariat Generalny Dyrekcji Generalnej ds. Spójności Społecznej (DGCS) &amp; Office vaudois de
+        l'assurance-maladie (OVAM), Kanton Vaud 2026. Dostarczone przez
+     <a href="https://www.welfarecalc.ch" target="_blank">
+      welfarecalc.ch
+     </a>
+     .
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

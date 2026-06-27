@@ -1,61 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="pl">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
-    <title>Algorytm zasiłków rodzinnych (FA) Kanton Vaud 2026 | welfarecalc.ch</title>
-    <meta
-        content="Jak obliczane są zasiłki rodzinne (FA) w 2026 roku w kantonie Vaud (VD)? Odkryj nasz przejrzysty algorytm dla zasiłków na dzieci, kształcenie i urodzenie."
-        name="description" />
-    <meta content="index, follow" name="robots" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" rel="canonical" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie zasiłków rodzinnych Vaud 2026",
-      "description": "Instrukcja krok po kroku precyzyjnego matematycznego określania zasiłków rodzinnych w kantonie Vaud (VD) z uwzględnieniem globalnej hierarchii.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Sprawdzenie wieku i statusu w celu określenia kategorii uprawnień (zasiłek na dziecko, edukacyjny lub na dziecko niezdolne do pracy)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Określenie globalnego wskaźnika hierarchii dzieci (ranking według wieku) w całym gospodarstwie domowym."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Przypisanie miesięcznej kwoty na podstawie współczynnika hierarchii (podwyższony od 3. dziecka)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Zastosowanie zasiłków jednorazowych (poród / adopcja) zróżnicowanych dla pojedynczego dziecka lub bliźniąt."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Określenie rocznego uprawnienia i zastosowanie defensywnych walidacji algorytmicznych, takich jak limity dochodowe."
-        }
-      ]
-    }
-    </script>
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -405,232 +354,506 @@
         .step-body ul li {
             margin-bottom: 0.25rem;
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026FA_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="update-tag">ZGODNY Z FAMZG 2026</div>
-            <h1>Algorytm FA: Kanton Vaud (Waadt)</h1>
-            <p>Przejrzysta dokumentacja zasiłków rodzinnych (na dzieci, edukacyjnych i porodowych)</p>
-        </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   ZR Vaud 2026 – Zasiłki rodzinne | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Zasiłki rodzinne w Kantonie Vaud. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Zasiłki rodzinne, Kanton Vaud, ZR, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" rel="canonical"/>
+  <meta content="ZR Vaud 2026 – Zasiłki rodzinne | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Zasiłki rodzinne w Kantonie Vaud. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="ZR Vaud 2026 – Zasiłki rodzinne | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Zasiłki rodzinne w Kantonie Vaud. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Zasiłki rodzinne Vaud 2026", "description": "Step-by-step guide to calculating Zasiłki rodzinne in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Categorize children by age and education status"}, {"@type": "HowToStep", "position": 2, "text": "Apply the specific cantonal rates for each category"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total monthly allowance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     ZGODNY Z FAMZG 2026
     </div>
-    
-        <div class="content">
-            <p>W Szwajcarii zasiłki rodzinne są regulowane ustawowo (FamZG). Nasz kalkulator wykorzystuje szczegółowe
+    <h1>
+     Algorytm FA: Kanton Vaud (Waadt)
+    </h1>
+    <p>
+     Przejrzysta dokumentacja zasiłków rodzinnych (na dzieci, edukacyjnych i porodowych)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     W Szwajcarii zasiłki rodzinne są regulowane ustawowo (FamZG). Nasz kalkulator wykorzystuje szczegółowe
                 przepisy kantonalne kantonu Vaud (VD) na rok 2026, aby precyzyjnie określić Twoje uprawnienia.
                 Algorytm Vaud wyróżnia się globalnym wskaźnikiem gospodarstwa domowego (hierarchia) oraz hojnymi
-                zasiłkami jednorazowymi. Przejrzystość jest dla nas ważna.</p>
-            <h2 class="section-title">1. Stawki miesięczne i kwoty jednorazowe (2026)</h2>
-            <div class="table-responsive">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Rodzaj zasiłku</th>
-                            <th>1. i 2. dziecko (standard)</th>
-                            <th>Od 3. dziecka (podwyższony)</th>
-                            <th>Warunek / granica wieku</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Zasiłek na dziecko</strong></td>
-                            <td>CHF 322 / miesiąc</td>
-                            <td>CHF 365 / miesiąc</td>
-                            <td>Od miesiąca urodzenia do ukończenia 16. roku życia.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Zasiłek edukacyjny</strong></td>
-                            <td>CHF 425 / miesiąc</td>
-                            <td>CHF 468 / miesiąc</td>
-                            <td>Od 16. do maks. 25. roku życia (potwierdzenie kształcenia).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Dzieci niezdolne do pracy</strong></td>
-                            <td>CHF 425 / miesiąc</td>
-                            <td>CHF 468 / miesiąc</td>
-                            <td>Od 16. do maks. 20. roku życia (potwierdzenie choroby/niepełnosprawności).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Zasiłek porodowy</strong></td>
-                            <td colspan="2">CHF 1'617 (jedno dziecko) / CHF 3'234 (na dziecko przy bliźniętach)</td>
-                            <td>Jednorazowo przy żywym urodzeniu lub od 24. tygodnia ciąży.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Zasiłek adopcyjny</strong></td>
-                            <td colspan="2">CHF 1'617 (przypadek pojedynczy) / CHF 3'234 (na dziecko przy adopcji
-                                grupowej)</td>
-                            <td>Jednorazowo przy prawomocnym przyjęciu małoletniego do adopcji.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h2 class="section-title">2. Precyzyjna ścieżka obliczeniowa (logika podstawowa)</h2>
-            <div class="step-box">
-                <div class="step-num">1</div>
-                <div class="step-body">
-                    <h3>Określenie kategorii</h3>
-                    <p>Algorytm sprawdza wiek oraz status zatrudnienia lub zdrowia każdego dziecka:</p>
-                    <ul>
-                        <li><strong>0 do 16 lat:</strong> Przypisanie do kategorii <code>Zasiłek na dziecko</code>.</li>
-                        <li><strong>16 do 25 lat:</strong> Przypisanie do kategorii <code>Zasiłek edukacyjny</code>,
+                zasiłkami jednorazowymi. Przejrzystość jest dla nas ważna.
+    </p>
+    <h2 class="section-title">
+     1. Stawki miesięczne i kwoty jednorazowe (2026)
+    </h2>
+    <div class="table-responsive">
+     <table class="data-table">
+      <thead>
+       <tr>
+        <th>
+         Rodzaj zasiłku
+        </th>
+        <th>
+         1. i 2. dziecko (standard)
+        </th>
+        <th>
+         Od 3. dziecka (podwyższony)
+        </th>
+        <th>
+         Warunek / granica wieku
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <strong>
+          Zasiłek na dziecko
+         </strong>
+        </td>
+        <td>
+         CHF 322 / miesiąc
+        </td>
+        <td>
+         CHF 365 / miesiąc
+        </td>
+        <td>
+         Od miesiąca urodzenia do ukończenia 16. roku życia.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Zasiłek edukacyjny
+         </strong>
+        </td>
+        <td>
+         CHF 425 / miesiąc
+        </td>
+        <td>
+         CHF 468 / miesiąc
+        </td>
+        <td>
+         Od 16. do maks. 25. roku życia (potwierdzenie kształcenia).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Dzieci niezdolne do pracy
+         </strong>
+        </td>
+        <td>
+         CHF 425 / miesiąc
+        </td>
+        <td>
+         CHF 468 / miesiąc
+        </td>
+        <td>
+         Od 16. do maks. 20. roku życia (potwierdzenie choroby/niepełnosprawności).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Zasiłek porodowy
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (jedno dziecko) / CHF 3'234 (na dziecko przy bliźniętach)
+        </td>
+        <td>
+         Jednorazowo przy żywym urodzeniu lub od 24. tygodnia ciąży.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Zasiłek adopcyjny
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (przypadek pojedynczy) / CHF 3'234 (na dziecko przy adopcji
+                                grupowej)
+        </td>
+        <td>
+         Jednorazowo przy prawomocnym przyjęciu małoletniego do adopcji.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h2 class="section-title">
+     2. Precyzyjna ścieżka obliczeniowa (logika podstawowa)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Określenie kategorii
+      </h3>
+      <p>
+       Algorytm sprawdza wiek oraz status zatrudnienia lub zdrowia każdego dziecka:
+      </p>
+      <ul>
+       <li>
+        <strong>
+         0 do 16 lat:
+        </strong>
+        Przypisanie do kategorii
+        <code>
+         Zasiłek na dziecko
+        </code>
+        .
+       </li>
+       <li>
+        <strong>
+         16 do 25 lat:
+        </strong>
+        Przypisanie do kategorii
+        <code>
+         Zasiłek edukacyjny
+        </code>
+        ,
                             o ile istnieje ważne potwierdzenie kształcenia i nie został przekroczony ustawowy limit
-                            dochodów.</li>
-                        <li><strong>16 do 20 lat (Niezdolne do pracy):</strong> Przypisanie do kategorii
-                            <code>Dzieci niezdolne do pracy</code> (wysokość świadczenia odpowiada zasiłkowi
+                            dochodów.
+       </li>
+       <li>
+        <strong>
+         16 do 20 lat (Niezdolne do pracy):
+        </strong>
+        Przypisanie do kategorii
+        <code>
+         Dzieci niezdolne do pracy
+        </code>
+        (wysokość świadczenia odpowiada zasiłkowi
                             edukacyjnemu).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">2</div>
-                <div class="step-body">
-                    <h3>Określenie globalnej hierarchii w gospodarstwie domowym (Rang de l'enfant)</h3>
-                    <p><strong>Krytyczny czynnik algorytmu:</strong> Progresja od 3. dziecka w kantonie
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Określenie globalnej hierarchii w gospodarstwie domowym (Rang de l'enfant)
+      </h3>
+      <p>
+       <strong>
+        Krytyczny czynnik algorytmu:
+       </strong>
+       Progresja od 3. dziecka w kantonie
                         Vaud nie jest obliczana oddzielnie według kategorii. Tworzona jest globalna lista wszystkich
-                        dzieci uprawnionych do zasiłku w gospodarstwie domowym, sortowana malejąco według wieku.</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Przypisanie_Indeksu_Gospodarstwa:</div>
-                        <div class="math-block">
-                            <div class="math-row">Sortuj_Dzieci_według_Wieku(<span
-                                    style="color:#64748b;">Malejąco</span>);</div>
-                            <div class="math-row">Dziecko_1 (Najstarsze) <span class="math-sign">→</span> Indeks 1 <span
-                                    class="math-indent">(Stawka standardowa)</span></div>
-                            <div class="math-row">Dziecko_2           <span class="math-sign">→</span> Indeks 2 <span
-                                    class="math-indent">(Stawka standardowa)</span></div>
-                            <div class="math-row">Dziecko_3           <span class="math-sign">→</span> Indeks 3 <span
-                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Stawka podwyższona od
-                                    3. dziecka)</span></div>
-                            <div class="math-row">Dziecko_n           <span class="math-sign">→</span> Indeks n <span
-                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Stawka podwyższona od
-                                    3. dziecka)</span></div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #475569;"><small><em>Gwarantuje to, że
+                        dzieci uprawnionych do zasiłku w gospodarstwie domowym, sortowana malejąco według wieku.
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Przypisanie_Indeksu_Gospodarstwa:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Sortuj_Dzieci_według_Wieku(
+         <span style="color:#64748b;">
+          Malejąco
+         </span>
+         );
+        </div>
+        <div class="math-row">
+         Dziecko_1 (Najstarsze)
+         <span class="math-sign">
+          →
+         </span>
+         Indeks 1
+         <span class="math-indent">
+          (Stawka standardowa)
+         </span>
+        </div>
+        <div class="math-row">
+         Dziecko_2
+         <span class="math-sign">
+          →
+         </span>
+         Indeks 2
+         <span class="math-indent">
+          (Stawka standardowa)
+         </span>
+        </div>
+        <div class="math-row">
+         Dziecko_3
+         <span class="math-sign">
+          →
+         </span>
+         Indeks 3
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Stawka podwyższona od
+                                    3. dziecka)
+         </span>
+        </div>
+        <div class="math-row">
+         Dziecko_n
+         <span class="math-sign">
+          →
+         </span>
+         Indeks n
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Stawka podwyższona od
+                                    3. dziecka)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569;">
+       <small>
+        <em>
+         Gwarantuje to, że
                                 na przykład trzecie dziecko, które kształci się, otrzyma pełną podwyższoną stawkę
                                 CHF 468, nawet jeśli pierwsze dwoje młodszych dzieci pobiera tylko zasiłki na
-                                dziecko.</em></small></p>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">3</div>
-                <div class="step-body">
-                    <h3>Obliczenie miesięcznej kwoty</h3>
-                    <p>Suma matematyczna tworzona jest dynamicznie na podstawie określonych indeksów:</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Miesięczne_Uprawnienie_Łączne:</div>
-                        <div class="math-block">
-                            <div class="math-row">Miesięczne_Uprawnienie_Łączne = ∑ [ Stawka ( Kategoria, Indeks ) ]
-                            </div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Gdzie:
-                            </div>
-                            <div class="math-row">• Jeśli Indeks ≤ 2:</div>
-                            <div class="math-indent">Zasiłek na dziecko = 322 CHF | Edukacyjny / Niezdolny do pracy =
-                                425 CHF</div>
-                            <div class="math-row">• Jeśli Indeks ≥ 3:</div>
-                            <div class="math-indent" style="color:#b8860b; font-weight:bold;">Zasiłek na dziecko = 365
-                                CHF | Edukacyjny / Niezdolny do pracy = 468 CHF</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">4</div>
-                <div class="step-body">
-                    <h3>Obliczenie zasiłków jednorazowych (poród / adopcja)</h3>
-                    <p>Algorytm sprawdza, czy w roku obliczeniowym miał miejsce poród lub adopcja, i
-                        ściśle rozróżnia między urodzeniem pojedynczym a mnogim:</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Zasiłki_Jednorazowe_Łącznie:</div>
-                        <div class="math-block">
-                            <div class="math-row">Zasiłki_Jednorazowe_Łącznie = Liczba_Dzieci <span
-                                    class="math-sign">×</span> Kwota_Jednorazowa_na_Dziecko</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
-                                Parametry:</div>
-                            <div class="math-row">• Pojedyncze (Liczba_Dzieci == 1):</div>
-                            <div class="math-indent">Kwota_Jednorazowa_na_Dziecko = 1'617 CHF</div>
-                            <div class="math-row">• Bliźnięta (Liczba_Dzieci ≥ 2):</div>
-                            <div class="math-indent">Kwota_Jednorazowa_na_Dziecko = 3'234 CHF <span
-                                    style="color:#64748b; font-weight:normal;">(na dziecko)</span></div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
-                        <em>Przykład: Poród bliźniaczy → 2 × 3'234 CHF = 6'468 CHF Łącznie.<br />
-                            Pojedynczy → 1 × 1'617 CHF = 1'617 CHF Łącznie.</em>
-                    </p>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">5</div>
-                <div class="step-body">
-                    <h3>Określenie rocznego uprawnienia</h3>
-                    <p>Agregacja do rocznego całkowitego uprawnienia wygląda następująco:</p>
-                    <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
-                        <div class="formula-title" style="color:#a855f7;">Obliczenie_Kwoty_Rocznej:</div>
-                        <div class="math-block" style="color:#6b21a8;">
-                            <div class="math-row">Kwota_Roczna = ( Miesięczne_Uprawnienie_Łączne <span
-                                    class="math-sign">×</span> 12 ) <span class="math-sign">+</span>
-                                Zasiłki_Jednorazowe_Łącznie</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="section-title">3. Defensywna walidacja i granice algorytmiczne</h2>
-            <div class="alert"
-                style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
-                <strong>Zintegrowane zabezpieczenia (Walidacja anty-błędna):</strong>
-                <ul>
-                    <li><strong>Limit dochodów dla dzieci w edukacji:</strong> Jeśli dziecko w edukacji
-                        (16-25 lat) osiąga własny dochód podlegający opodatkowaniu przekraczający <strong>CHF 30'240 /
-                            rok</strong> (lub CHF 2'520 / miesiąc), uprawnienie do zasiłku w algorytmie
-                        podstawowym wygasa natychmiast (wynik = 0).</li>
-                    <li><strong>Zakaz jednoczesnego pobierania (zasada wykluczenia):</strong> Dla tego samego dziecka
+                                dziecko.
+        </em>
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Obliczenie miesięcznej kwoty
+      </h3>
+      <p>
+       Suma matematyczna tworzona jest dynamicznie na podstawie określonych indeksów:
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Miesięczne_Uprawnienie_Łączne:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Miesięczne_Uprawnienie_Łączne = ∑ [ Stawka ( Kategoria, Indeks ) ]
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Gdzie:
+        </div>
+        <div class="math-row">
+         • Jeśli Indeks ≤ 2:
+        </div>
+        <div class="math-indent">
+         Zasiłek na dziecko = 322 CHF | Edukacyjny / Niezdolny do pracy =
+                                425 CHF
+        </div>
+        <div class="math-row">
+         • Jeśli Indeks ≥ 3:
+        </div>
+        <div class="math-indent" style="color:#b8860b; font-weight:bold;">
+         Zasiłek na dziecko = 365
+                                CHF | Edukacyjny / Niezdolny do pracy = 468 CHF
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Obliczenie zasiłków jednorazowych (poród / adopcja)
+      </h3>
+      <p>
+       Algorytm sprawdza, czy w roku obliczeniowym miał miejsce poród lub adopcja, i
+                        ściśle rozróżnia między urodzeniem pojedynczym a mnogim:
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Zasiłki_Jednorazowe_Łącznie:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Zasiłki_Jednorazowe_Łącznie = Liczba_Dzieci
+         <span class="math-sign">
+          ×
+         </span>
+         Kwota_Jednorazowa_na_Dziecko
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Parametry:
+        </div>
+        <div class="math-row">
+         • Pojedyncze (Liczba_Dzieci == 1):
+        </div>
+        <div class="math-indent">
+         Kwota_Jednorazowa_na_Dziecko = 1'617 CHF
+        </div>
+        <div class="math-row">
+         • Bliźnięta (Liczba_Dzieci ≥ 2):
+        </div>
+        <div class="math-indent">
+         Kwota_Jednorazowa_na_Dziecko = 3'234 CHF
+         <span style="color:#64748b; font-weight:normal;">
+          (na dziecko)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
+       <em>
+        Przykład: Poród bliźniaczy → 2 × 3'234 CHF = 6'468 CHF Łącznie.
+        <br/>
+        Pojedynczy → 1 × 1'617 CHF = 1'617 CHF Łącznie.
+       </em>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Określenie rocznego uprawnienia
+      </h3>
+      <p>
+       Agregacja do rocznego całkowitego uprawnienia wygląda następująco:
+      </p>
+      <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
+       <div class="formula-title" style="color:#a855f7;">
+        Obliczenie_Kwoty_Rocznej:
+       </div>
+       <div class="math-block" style="color:#6b21a8;">
+        <div class="math-row">
+         Kwota_Roczna = ( Miesięczne_Uprawnienie_Łączne
+         <span class="math-sign">
+          ×
+         </span>
+         12 )
+         <span class="math-sign">
+          +
+         </span>
+         Zasiłki_Jednorazowe_Łącznie
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <h2 class="section-title">
+     3. Defensywna walidacja i granice algorytmiczne
+    </h2>
+    <div class="alert" style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
+     <strong>
+      Zintegrowane zabezpieczenia (Walidacja anty-błędna):
+     </strong>
+     <ul>
+      <li>
+       <strong>
+        Limit dochodów dla dzieci w edukacji:
+       </strong>
+       Jeśli dziecko w edukacji
+                        (16-25 lat) osiąga własny dochód podlegający opodatkowaniu przekraczający
+       <strong>
+        CHF 30'240 /
+                            rok
+       </strong>
+       (lub CHF 2'520 / miesiąc), uprawnienie do zasiłku w algorytmie
+                        podstawowym wygasa natychmiast (wynik = 0).
+      </li>
+      <li>
+       <strong>
+        Zakaz jednoczesnego pobierania (zasada wykluczenia):
+       </strong>
+       Dla tego samego dziecka
                         nigdy nie można
-                        przyznać jednocześnie zasiłku na dziecko i zasiłku edukacyjnego.</li>
-                    <li><strong>Obcięcie granic wieku:</strong> Uprawnienie do zasiłku na dziecko wygasa z końcem
+                        przyznać jednocześnie zasiłku na dziecko i zasiłku edukacyjnego.
+      </li>
+      <li>
+       <strong>
+        Obcięcie granic wieku:
+       </strong>
+       Uprawnienie do zasiłku na dziecko wygasa z końcem
                         miesiąca, w którym dziecko kończy 16. rok życia. Uprawnienie do zasiłku edukacyjnego
-                        wygasa w dniu po ukończeniu 25. roku życia lub po przedwczesnym zakończeniu kształcenia.</li>
-                </ul>
-            </div>
-            <div class="alert">
-                <strong>Uprawnienie zgodnie z prawem federalnym:</strong><br />
-                Tylko jeden rodzic może pobierać zasiłek. Obowiązuje ustawowa kolejność pierwszeństwa zgodnie z art. 12
+                        wygasa w dniu po ukończeniu 25. roku życia lub po przedwczesnym zakończeniu kształcenia.
+      </li>
+     </ul>
+    </div>
+    <div class="alert">
+     <strong>
+      Uprawnienie zgodnie z prawem federalnym:
+     </strong>
+     <br/>
+     Tylko jeden rodzic może pobierać zasiłek. Obowiązuje ustawowa kolejność pierwszeństwa zgodnie z art. 12
                 FamZG, jeśli oboje rodzice są aktywni zawodowo (np. przede wszystkim ten, który ma główne miejsce pracy
                 w
                 kantonie zamieszkania dziecka).
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a aria-label="Przejdź do kalkulatora" class="btn-link btn-home" href="https://www.welfarecalc.ch"
-                    target="_blank">Uruchom kalkulator</a>
-                <a aria-label="Przejdź do oficjalnej strony kantonu Vaud" class="btn-link"
-                    href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales"
-                    target="_blank">Oficjalna
-                    strona CCVD Vaud</a>
-            </div>
-        </div>
-        <footer>
-            <p>Źródło: Caisse cantonale vaudoise de compensation AVS (CCVD) Wytyczne 2026 &amp; Ustawa federalna o
-                zasiłkach rodzinnych (FamZG)</p>
-            <p>© 2026 welfarecalc.ch | Przejrzyste obliczanie zasiłków rodzinnych</p>
-        </footer>
     </div>
-</body>
-
+    <div style="text-align: center; margin-top: 2rem;">
+     <a aria-label="Przejdź do kalkulatora" class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Uruchom kalkulator
+     </a>
+     <a aria-label="Przejdź do oficjalnej strony kantonu Vaud" class="btn-link" href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales" target="_blank">
+      Oficjalna
+                    strona CCVD Vaud
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: Caisse cantonale vaudoise de compensation AVS (CCVD) Wytyczne 2026 &amp; Ustawa federalna o
+                zasiłkach rodzinnych (FamZG)
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Przejrzyste obliczanie zasiłków rodzinnych
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

@@ -1,48 +1,16 @@
 <!DOCTYPE html>
 <html lang="sq">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- TRANSLATE: Meta Tags -->
-    <title>Pyetja e Përfitimeve Sociale | welfarecalc.ch</title>
-    <meta name="description"
-        content="Gjeni algoritmin zyrtar të llogaritjes për ndihmën sociale (SH), përfitimet shtesë (EL), shtesat familjare (FA), zbritjen individuale të primit (IPV) dhe ndihmën emergjente (NH) në kantonin tuaj. Transparent dhe në përputhje me mbrojtjen e të dhënave.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
-    <link rel="alternate" hreflang="de-ch" href="https://www.welfarecalc.ch/open/2026open_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/2026open_en.html">
-    <link rel="alternate" hreflang="fr-ch" href="https://www.welfarecalc.ch/open/2026open_fr.html">
-    <link rel="alternate" hreflang="it-ch" href="https://www.welfarecalc.ch/open/2026open_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/2026open_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/2026open_pt.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/2026open_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/2026open_hr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/2026open_sq.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/2026open_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/2026open_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/2026open_sq.html">
-
-    <!-- Open Graph -->
-
-    <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "welfarecalc.ch",
-      "url": "https://www.welfarecalc.ch",
-      "inLanguage": "sq"
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- TRANSLATE: Meta Tags -->
+  <meta content="index, follow" name="robots"/>
+  <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
+  <!-- Canonical Tag -->
+  <!-- Open Graph -->
+  <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -293,133 +261,276 @@
                 padding: 1.5rem;
             }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Llogaritesi i Perfitimeve Zvicerane 2026 | 26 Kantone + Kontroll Faturash">
-    <meta property="og:description" content="Llogarit AVS, AI, PC dhe uljet e primeve ne te 26 kantonet zvicerane. Perfshin auditorin e faturave dentare dhe kontrolluesin e kontratave te qirase. 100% anonim ne shfletues. 11 gjuhe.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/2026open_sq.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="sq">
-
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <!-- TRANSLATE: Header Section -->
-            <div class="update-tag">🔍 ALGORITME TRANSPARENTE 2026</div>
-            <h1>Pyetja e Përfitimeve Sociale Zvicerane</h1>
-            <p>Gjeni algoritmin zyrtar të llogaritjes për kantonin tuaj</p>
-        </header>
-
-        <div class="hero-search">
-            <div class="search-card">
-                <!-- Dropdown 1: Kanton -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="state">📍 1. Zgjidhni kantonin</label>
-                    <select id="state">
-                        <option value="">📌 Zgjidhni kantonin</option>
-                        <option value="AG">Argovia (AG)</option>
-                        <option value="AI">Appenzell Innerrhoden (AI)</option>
-                        <option value="AR">Appenzell Ausserrhoden (AR)</option>
-                        <option value="BE">Bern (BE)</option>
-                        <option value="BL">Basel-Landschaft (BL)</option>
-                        <option value="BS">Basel-Stadt (BS)</option>
-                        <option value="FR">Friburg (FR)</option>
-                        <option value="GE">Gjeneva (GE)</option>
-                        <option value="GL">Glarus (GL)</option>
-                        <option value="GR">Grisons (GR)</option>
-                        <option value="JU">Jura (JU)</option>
-                        <option value="LU">Luzern (LU)</option>
-                        <option value="NE">Neuchâtel (NE)</option>
-                        <option value="NW">Nidwalden (NW)</option>
-                        <option value="OW">Obwalden (OW)</option>
-                        <option value="SG">St. Gallen (SG)</option>
-                        <option value="SH">Schaffhausen (SH)</option>
-                        <option value="SO">Solothurn (SO)</option>
-                        <option value="SZ">Schwyz (SZ)</option>
-                        <option value="TG">Thurgau (TG)</option>
-                        <option value="TI">Ticino (TI)</option>
-                        <option value="UR">Uri (UR)</option>
-                        <option value="VD">Vaud (VD)</option>
-                        <option value="VS">Valais (VS)</option>
-                        <option value="ZG">Zug (ZG)</option>
-                        <option value="ZH">Zürich (ZH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="state-error" class="error-text">⚠️ Ju lutemi zgjidhni një kanton.</div>
-                </div>
-
-                <!-- Dropdown 2: Leistungsart -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="welfare">📋 2. Zgjidhni kategorinë e përfitimit social</label>
-                    <select id="welfare">
-                        <option value="">📋 Zgjidhni llojin e përfitimit</option>
-                        <option value="SH">🏠 Ndihma Sociale (SH)</option>
-                        <option value="IPV">💊 Zbritja Individuale e Primit (IPV)</option>
-                        <option value="EL">👴 Përfitimet Shtesë (EL)</option>
-                        <option value="FA">👨‍👩‍👧 Shtesat Familjare (FA)</option>
-                        <option value="nothilfe">🚨 Ndihma Emergjente (NH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="welfare-error" class="error-text">⚠️ Ju lutemi zgjidhni një lloj përfitimi.</div>
-                </div>
-
-                <div class="button-group">
-                    <!-- TRANSLATE -->
-                    <button class="action-btn search-button-style" onclick="searchAndRedirect()">🔍 Kërko & Hap algoritmin</button>
-                    <a href="https://www.welfarecalc.ch" class="action-btn home-button-style">🏠 Kthehu te faqja kryesore</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-below">
-            <!-- Info Box -->
-            <div class="info-box">
-                <!-- TRANSLATE: Info Box Content -->
-                <p>🇨🇭 <strong>Rreth welfarecalc.ch</strong></p>
-                <p>Ne jemi një ekip inxhinierësh dhe zhvilluesish me bazë në Zvicër. Qëllimi ynë është t'i bëjmë sistemet komplekse zvicerane të përfitimeve sociale të kuptueshme dhe të arritshme për të gjithë. Kjo platformë është një <strong>projekt jofitimprurës</strong> i krijuar nga bindja për transparencë dhe drejtësi.</p>
-
-                <p>📄 <strong>Si krijohen algoritmet tona</strong><br>
-                    Logjikat tona të llogaritjes bazohen ekskluzivisht në dokumente zyrtare, të disponueshme publikisht – duke përfshirë ligjet kantonalë (SHG, ELG, FamZG, KVG), udhëzimet SKOS dhe rregulloret e zyrave të kompensimit. Çdo algoritëm rrjedh me kujdes nga këto burime dhe dokumentohet në mënyrë transparente.</p>
-
-                <p>🌍 <strong>Shumëgjuhësia & Transparenca</strong><br>
-                    Zvicra është e larmishme. Prandaj, ne i ofrojmë të gjithë algoritmet në <strong>11 gjuhë</strong>: Gjermanisht, Frëngjisht, Italisht, Anglisht, Spanjisht, Portugalisht, Polonisht, Kroatisht, Shqip, Turqisht dhe Tamilisht. Në këtë mënyrë, sa më shumë njerëz të mund të kuptojnë informacionin e rëndësishëm për ta.</p>
-
-                <p>📌 <strong>Si të përdorni këtë faqe</strong><br>
-                    Zgjidhni më lart kantonin tuaj dhe llojin e dëshiruar të përfitimit. Më pas klikoni "Kërko & Hap algoritmin". Do të ridrejtoheni direkt te algoritmi përkatës – në një skedë të re ose në të njëjtën dritare (në varësi të cilësimeve të shfletuesit). Duke përdorur butonin e kuq "Kthehu te faqja kryesore" mund të ktheheni në çdo kohë në faqen kryesore welfarecalc.ch.</p>
-            </div>
-
-            <!-- Rechtlicher Hinweis -->
-            <div class="disclaimer">
-                <!-- TRANSLATE: Disclaimer -->
-                <strong>⚠️ Shënim i rëndësishëm ligjor</strong><br>
-                Algoritmet dhe llogaritjet e paraqitura në këtë faqe interneti bazohen në dokumente zyrtare të disponueshme publikisht dhe janë nxjerrë nga ne me njohuritë dhe ndërgjegjen më të mirë. Për shkak të kompleksitetit të sistemeve të përfitimeve sociale dhe rrethanave individuale (të ardhurat, pasuria, përbërja e familjes, gjendja e banimit, etj.), kërkesat aktuale mund të ndryshojnë në raste individuale. <strong>Të gjitha informacionet janë vetëm për qëllime informimi dhe nuk kanë efekt ligjërisht të detyrueshëm.</strong> Për një informacion të detyrueshëm, ju lutemi kontaktoni autoritetin përkatës (SVA, administrata komunale ose shërbimi social). welfarecalc.ch nuk mban përgjegjësi për vendimet e marra në bazë të këtyre informacioneve.
-            </div>
-        </div>
-
-        <footer>
-            <!-- TRANSLATE: Footer -->
-            <p>© 2026 welfarecalc.ch | Llogaritja transparente e përfitimeve sociale</p>
-            <p>Burimet: Ligjet kantonalë (SHG, ELG, FamZG, KVG), Udhëzimet SKOS 2026, Rregulloret e zyrave të kompensimit</p>
-            <p>Një projekt jofitimprurës nga inxhinierë për transparencë në Zvicër</p>
-        </footer>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   Kërkimi i përfitimeve sociale | 26 Algoritme kantonesh | welfarecalc.ch
+  </title>
+  <meta content="Gjeni algoritmin zyrtar të llogaritjes për ndihmën sociale (SH), përfitimet plotësuese (EL), ndihmën familjare (FA), IPV-në dhe ndihmën emergjente në kantonin tuaj. Transparent dhe në përputhje me privatësinë." name="description"/>
+  <meta content="përfitime sociale, algoritme, kanton, SH, EL, FA, IPV, ndihmë emergjente, ndihmë sociale, përfitime plotësuese, ndihmë familjare, ulje e primeve, welfarecalc.ch" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_sq.html" rel="canonical"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="x-default" rel="alternate"/>
+  <meta content="Kërkimi i përfitimeve sociale | 26 Algoritme kantonesh | welfarecalc.ch" property="og:title"/>
+  <meta content="Gjeni algoritmin zyrtar të llogaritjes për ndihmën sociale (SH), përfitimet plotësuese (EL), ndihmën familjare (FA), IPV-në dhe ndihmën emergjente në kantonin tuaj." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/2026open_sq.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="sq_AL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Kërkimi i përfitimeve sociale | 26 Algoritme kantonesh | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Gjeni algoritmin zyrtar të llogaritjes për ndihmën sociale (SH), përfitimet plotësuese (EL), ndihmën familjare (FA), IPV-në dhe ndihmën emergjente në kantonin tuaj." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "WebSite", "name": "welfarecalc.ch", "url": "https://www.welfarecalc.ch", "description": "Gjeni algoritmin zyrtar të llogaritjes për ndihmën sociale (SH), përfitimet plotësuese (EL), ndihmën familjare (FA), IPV-në dhe ndihmën emergjente në kantonin tuaj. Transparent dhe në përputhje me privatësinë.", "inLanguage": "sq"}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <!-- TRANSLATE: Header Section -->
+    <div class="update-tag">
+     🔍 ALGORITME TRANSPARENTE 2026
     </div>
-
-    <noscript>
-        <div
-            style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
-            ⚠️ JavaScript është i çaktivizuar. Ju lutemi aktivizoni JavaScript për të përdorur funksionin e kërkimit.
-        </div>
-    </noscript>
-
-    <script>
-        // Configuration
+    <h1>
+     Pyetja e Përfitimeve Sociale Zvicerane
+    </h1>
+    <p>
+     Gjeni algoritmin zyrtar të llogaritjes për kantonin tuaj
+    </p>
+   </header>
+   <div class="hero-search">
+    <div class="search-card">
+     <!-- Dropdown 1: Kanton -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="state">
+       📍 1. Zgjidhni kantonin
+      </label>
+      <select id="state">
+       <option value="">
+        📌 Zgjidhni kantonin
+       </option>
+       <option value="AG">
+        Argovia (AG)
+       </option>
+       <option value="AI">
+        Appenzell Innerrhoden (AI)
+       </option>
+       <option value="AR">
+        Appenzell Ausserrhoden (AR)
+       </option>
+       <option value="BE">
+        Bern (BE)
+       </option>
+       <option value="BL">
+        Basel-Landschaft (BL)
+       </option>
+       <option value="BS">
+        Basel-Stadt (BS)
+       </option>
+       <option value="FR">
+        Friburg (FR)
+       </option>
+       <option value="GE">
+        Gjeneva (GE)
+       </option>
+       <option value="GL">
+        Glarus (GL)
+       </option>
+       <option value="GR">
+        Grisons (GR)
+       </option>
+       <option value="JU">
+        Jura (JU)
+       </option>
+       <option value="LU">
+        Luzern (LU)
+       </option>
+       <option value="NE">
+        Neuchâtel (NE)
+       </option>
+       <option value="NW">
+        Nidwalden (NW)
+       </option>
+       <option value="OW">
+        Obwalden (OW)
+       </option>
+       <option value="SG">
+        St. Gallen (SG)
+       </option>
+       <option value="SH">
+        Schaffhausen (SH)
+       </option>
+       <option value="SO">
+        Solothurn (SO)
+       </option>
+       <option value="SZ">
+        Schwyz (SZ)
+       </option>
+       <option value="TG">
+        Thurgau (TG)
+       </option>
+       <option value="TI">
+        Ticino (TI)
+       </option>
+       <option value="UR">
+        Uri (UR)
+       </option>
+       <option value="VD">
+        Vaud (VD)
+       </option>
+       <option value="VS">
+        Valais (VS)
+       </option>
+       <option value="ZG">
+        Zug (ZG)
+       </option>
+       <option value="ZH">
+        Zürich (ZH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="state-error">
+       ⚠️ Ju lutemi zgjidhni një kanton.
+      </div>
+     </div>
+     <!-- Dropdown 2: Leistungsart -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="welfare">
+       📋 2. Zgjidhni kategorinë e përfitimit social
+      </label>
+      <select id="welfare">
+       <option value="">
+        📋 Zgjidhni llojin e përfitimit
+       </option>
+       <option value="SH">
+        🏠 Ndihma Sociale (SH)
+       </option>
+       <option value="IPV">
+        💊 Zbritja Individuale e Primit (IPV)
+       </option>
+       <option value="EL">
+        👴 Përfitimet Shtesë (EL)
+       </option>
+       <option value="FA">
+        👨‍👩‍👧 Shtesat Familjare (FA)
+       </option>
+       <option value="nothilfe">
+        🚨 Ndihma Emergjente (NH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="welfare-error">
+       ⚠️ Ju lutemi zgjidhni një lloj përfitimi.
+      </div>
+     </div>
+     <div class="button-group">
+      <!-- TRANSLATE -->
+      <button class="action-btn search-button-style" onclick="searchAndRedirect()">
+       🔍 Kërko &amp; Hap algoritmin
+      </button>
+      <a class="action-btn home-button-style" href="https://www.welfarecalc.ch">
+       🏠 Kthehu te faqja kryesore
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="content-below">
+    <!-- Info Box -->
+    <div class="info-box">
+     <!-- TRANSLATE: Info Box Content -->
+     <p>
+      🇨🇭
+      <strong>
+       Rreth welfarecalc.ch
+      </strong>
+     </p>
+     <p>
+      Ne jemi një ekip inxhinierësh dhe zhvilluesish me bazë në Zvicër. Qëllimi ynë është t'i bëjmë sistemet komplekse zvicerane të përfitimeve sociale të kuptueshme dhe të arritshme për të gjithë. Kjo platformë është një
+      <strong>
+       projekt jofitimprurës
+      </strong>
+      i krijuar nga bindja për transparencë dhe drejtësi.
+     </p>
+     <p>
+      📄
+      <strong>
+       Si krijohen algoritmet tona
+      </strong>
+      <br/>
+      Logjikat tona të llogaritjes bazohen ekskluzivisht në dokumente zyrtare, të disponueshme publikisht – duke përfshirë ligjet kantonalë (SHG, ELG, FamZG, KVG), udhëzimet SKOS dhe rregulloret e zyrave të kompensimit. Çdo algoritëm rrjedh me kujdes nga këto burime dhe dokumentohet në mënyrë transparente.
+     </p>
+     <p>
+      🌍
+      <strong>
+       Shumëgjuhësia &amp; Transparenca
+      </strong>
+      <br/>
+      Zvicra është e larmishme. Prandaj, ne i ofrojmë të gjithë algoritmet në
+      <strong>
+       11 gjuhë
+      </strong>
+      : Gjermanisht, Frëngjisht, Italisht, Anglisht, Spanjisht, Portugalisht, Polonisht, Kroatisht, Shqip, Turqisht dhe Tamilisht. Në këtë mënyrë, sa më shumë njerëz të mund të kuptojnë informacionin e rëndësishëm për ta.
+     </p>
+     <p>
+      📌
+      <strong>
+       Si të përdorni këtë faqe
+      </strong>
+      <br/>
+      Zgjidhni më lart kantonin tuaj dhe llojin e dëshiruar të përfitimit. Më pas klikoni "Kërko &amp; Hap algoritmin". Do të ridrejtoheni direkt te algoritmi përkatës – në një skedë të re ose në të njëjtën dritare (në varësi të cilësimeve të shfletuesit). Duke përdorur butonin e kuq "Kthehu te faqja kryesore" mund të ktheheni në çdo kohë në faqen kryesore welfarecalc.ch.
+     </p>
+    </div>
+    <!-- Rechtlicher Hinweis -->
+    <div class="disclaimer">
+     <!-- TRANSLATE: Disclaimer -->
+     <strong>
+      ⚠️ Shënim i rëndësishëm ligjor
+     </strong>
+     <br/>
+     Algoritmet dhe llogaritjet e paraqitura në këtë faqe interneti bazohen në dokumente zyrtare të disponueshme publikisht dhe janë nxjerrë nga ne me njohuritë dhe ndërgjegjen më të mirë. Për shkak të kompleksitetit të sistemeve të përfitimeve sociale dhe rrethanave individuale (të ardhurat, pasuria, përbërja e familjes, gjendja e banimit, etj.), kërkesat aktuale mund të ndryshojnë në raste individuale.
+     <strong>
+      Të gjitha informacionet janë vetëm për qëllime informimi dhe nuk kanë efekt ligjërisht të detyrueshëm.
+     </strong>
+     Për një informacion të detyrueshëm, ju lutemi kontaktoni autoritetin përkatës (SVA, administrata komunale ose shërbimi social). welfarecalc.ch nuk mban përgjegjësi për vendimet e marra në bazë të këtyre informacioneve.
+    </div>
+   </div>
+   <footer>
+    <!-- TRANSLATE: Footer -->
+    <p>
+     © 2026 welfarecalc.ch | Llogaritja transparente e përfitimeve sociale
+    </p>
+    <p>
+     Burimet: Ligjet kantonalë (SHG, ELG, FamZG, KVG), Udhëzimet SKOS 2026, Rregulloret e zyrave të kompensimit
+    </p>
+    <p>
+     Një projekt jofitimprurës nga inxhinierë për transparencë në Zvicër
+    </p>
+   </footer>
+  </div>
+  <noscript>
+   <div style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
+    ⚠️ JavaScript është i çaktivizuar. Ju lutemi aktivizoni JavaScript për të përdorur funksionin e kërkimit.
+   </div>
+  </noscript>
+  <script>
+   // Configuration
         const LANG = "sq";
         const BASE_PATH = "https://www.welfarecalc.ch/open/";
 
@@ -480,8 +591,6 @@
 
         if (stateField) stateField.addEventListener('keypress', handleEnterOnSelect);
         if (welfareField) welfareField.addEventListener('keypress', handleEnterOnSelect);
-    </script>
-
-</body>
-
+  </script>
+ </body>
 </html>

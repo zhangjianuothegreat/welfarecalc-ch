@@ -1,55 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Algorytm Pomocy Doraźnej Kanton St. Gallen 2026 | Przejrzyste Obliczenia | welfarecalc.ch</title>
-    <meta name="description"
-        content="Jak obliczana jest pomoc doraźna (Nothilfe) 2026 w Kantonie St. Gallen? Poznaj nasz przejrzysty algorytm oparty na oficjalnych wytycznych kantonalnych i rozporządzeniu azylowym.">
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_en.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pt.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_tr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_sq.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_hr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie pomocy doraźnej St. Gallen 2026",
-      "description": "Instrukcje krok po kroku dotyczące obliczania pomocy doraźnej w Kantonie St. Gallen (zakwaterowanie zbiorowe).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Określenie dziennej stawki dla dorosłych z degresywnym współczynnikiem dla par"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Dodanie kwot dodatku na dziecko"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Ekstrapolacja miesięczna i zaokrąglenie handlowe do 10 centymów (0,10 CHF)"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        /* ============ System stylów zgodny z wersjami AG i AI ============ */
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   /* ============ System stylów zgodny z wersjami AG i AI ============ */
         :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
@@ -359,150 +314,297 @@
                 padding-left: 3rem;
             }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SG_2026nothilfe_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="update-tag">OFICJALNE DANE 2026 · POMOC DORAŹNA SG</div>
-            <h1>Algorytm Pomocy Doraźnej: Kanton St. Gallen</h1>
-            <p>Przejrzyste obliczanie pomocy doraźnej zgodnie z rozporządzeniem azylowym (sGS 381.12) Kantonu St. Gallen 2026</p>
-        </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   PD Sankt Gallen 2026 – Pomoc doraźna | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Pomoc doraźna w Kantonie Sankt Gallen. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Pomoc doraźna, Kanton Sankt Gallen, PD, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html" rel="canonical"/>
+  <meta content="PD Sankt Gallen 2026 – Pomoc doraźna | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Pomoc doraźna w Kantonie Sankt Gallen. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PD Sankt Gallen 2026 – Pomoc doraźna | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Pomoc doraźna w Kantonie Sankt Gallen. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026nothilfe_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Pomoc doraźna Sankt Gallen 2026", "description": "Step-by-step guide to calculating Pomoc doraźna in Canton Sankt Gallen.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine daily emergency aid rate per adult"}, {"@type": "HowToStep", "position": 2, "text": "Add allowances for children with degression"}, {"@type": "HowToStep", "position": 3, "text": "Project monthly amount with rounding"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     OFICJALNE DANE 2026 · POMOC DORAŹNA SG
     </div>
-
-        <div class="content">
-            <p>Zaufanie poprzez przejrzystość. Pomoc doraźna dla osób zobowiązanych do opuszczenia Szwajcarii jest określana w Kantonie St. Gallen zgodnie z precyzyjnymi wymogami prawnymi. Przedstawiamy dostosowany, oficjalny algorytm stanowiący podstawę naszego silnika obliczeniowego.</p>
-
-            <h2 class="section-title">1. Podstawowe parametry pomocy doraźnej (SG 2026)</h2>
-            <div class="grid-params">
-                <div class="param-card">
-                    <h4>Podstawowa stawka dzienna (osoba samotna)</h4>
-                    <div class="param-value">CHF 10.00 / dzień</div>
-                    <p><small>Podstawowe potrzeby osoby samotnej w obiekcie zakwaterowania zbiorowego.</small></p>
-                </div>
-                <div class="param-card">
-                    <h4>Ryczałt dla pary (degresywny)</h4>
-                    <div class="param-value">Współczynnik 1.72 (CHF 17.20 / dzień)</div>
-                    <p><small>Dwie osoby dorosłe w tym samym gospodarstwie domowym otrzymują 172% stawki indywidualnej łącznie.</small></p>
-                </div>
-                <div class="param-card">
-                    <h4>Dodatek na dziecko</h4>
-                    <div class="param-value">Współczynnik 0.55 (CHF 5.50 / dzień)</div>
-                    <p><small>Dodatkowa kwota na dziecko (55% podstawowej stawki dla osoby dorosłej).</small></p>
-                </div>
-            </div>
-
-            <h2 class="section-title">2. Ścieżka obliczeniowa (krok po kroku)</h2>
-
-            <div class="step-box">
-                <div class="step-num">1</div>
-                <div class="step-body">
-                    <h3>Określenie dziennej stawki dla osób dorosłych</h3>
-                    <p>Kanton St. Gallen stosuje model degresywny uwzględniający oszczędności w gospodarstwie domowym:</p>
-                    <div class="formula">
-                        Jeśli osób dorosłych = 1: CHF 10.00 dziennie<br>
-                        Jeśli osób dorosłych = 2: CHF 17.20 dziennie (stawka podstawowa × 1,72)<br>
-                        Jeśli osób dorosłych > 2: CHF 17.20 + (liczba dorosłych - 2) × CHF 7.20 dziennie
-                    </div>
-                    <p><small>Uwaga: Zgodnie z praktyką kantonalną, za każdą dodatkową osobę dorosłą w ramach tej samej jednostki pomocowej dodawana jest degresywna stawka CHF 7.20.</small></p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-num">2</div>
-                <div class="step-body">
-                    <h3>Dodanie dodatku na dziecko</h3>
-                    <p>Dla każdego dziecka (&lt; 18 lat) mieszkającego w gospodarstwie domowym dodawana jest ryczałtowa kwota, która odpowiada dokładnie 55% podstawowej stawki dla osoby dorosłej:</p>
-                    <div class="formula">
-                        Łączna dzienna kwota na dzieci = Liczba dzieci × (10,00 × 0,55) = Liczba dzieci × CHF 5,50 / dzień
-                    </div>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-num">3</div>
-                <div class="step-body">
-                    <h3>Ekstrapolacja miesięczna i zaokrąglenie administracyjne</h3>
-                    <p>Łączne dzienne uprawnienie jest ekstrapolowane przy użyciu współczynnika miesiąca statystycznego (30,42 dni). Zaokrąglenie handlowe (standard w Kantonie SG) odbywa się do najbliższych 10 centymów (0,10 CHF).</p>
-                    <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                        Miesięczna należność = ZAOKR( (Łączna kwota dzienna × 30,42) ; 0,10 )
-                    </div>
-                </div>
-            </div>
-
-            <div class="alert">
-                <strong>Ważne ograniczenia administracyjne w Kantonie SG:</strong><br>
-                • <strong>Pierwszeństwo świadczeń rzeczowych:</strong> Pomoc doraźna w Kantonie St. Gallen jest udzielana przede wszystkim jako świadczenia rzeczowe (zakwaterowanie w strukturach zbiorowych, bezpośrednia dystrybucja żywności lub bony). Obliczona tutaj kwota gotówkowa ma zastosowanie tylko wtedy, gdy świadczenia rzeczowe nie mogą być w pełni zapewnione.<br>
-                • <strong>Brak długoterminowego uprawnienia:</strong> Pomoc doraźna zabezpiecza jedynie przetrwanie z dnia na dzień (Art. 12 BV). Miesięczne lub roczne zaliczki są prawnie wykluczone. Miesięczne obliczenie służy wyłącznie celom statystycznym.
-            </div>
-
-            <h2 class="section-title">3. Źródła danych i podstawa prawna</h2>
-            <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-                <li><strong>Rozporządzenie azylowe Kantonu St. Gallen (AsylV, sGS 381.12)</strong> – Regulacja pomocy doraźnej i zakwaterowania.</li>
-                <li><strong>Ustawa o publicznej pomocy społecznej (Ustawa o pomocy społecznej, sGS 381.1)</strong> – Uzupełniające przepisy kantonalne.</li>
-                <li><strong>Szwajcarska Konstytucja Federalna (Art. 12 BV)</strong> – Konstytucyjne prawo do pomocy w potrzebie.</li>
-                <li><strong>WelfareCalc – Dane otwarte:</strong> Zatwierdzone na rok 2026.</li>
-            </ul>
-
-            <div class="demo-card">
-                <div class="demo-header">🧪 Test przejrzystości: Interaktywny kalkulator pomocy doraźnej SG</div>
-                <div class="demo-body">
-                    <p>Symuluj oficjalne obliczenia dla Kantonu St. Gallen (2026) w czasie rzeczywistym.</p>
-                    <div class="input-group">
-                        <div class="input-item">
-                            <label>👤 Liczba osób dorosłych</label>
-                            <input type="number" id="adultsCount" value="1" min="1" step="1">
-                        </div>
-                        <div class="input-item">
-                            <label>🧒 Liczba dzieci (0-17 lat)</label>
-                            <input type="number" id="childrenCount" value="0" min="0" step="1">
-                        </div>
-                    </div>
-                    <button class="demo-btn" id="runCalcBtn">Wykonaj algorytm</button>
-
-                    <div id="liveResultPanel" class="result-panel">
-                        <h3>📐 Oficjalny zapis obliczeniowy (Kanton SG)</h3>
-                        <div id="stepsDetail" class="calc-steps"></div>
-                        <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span
-                                style="font-size: 0.9rem;">(Miesięczna wartość statystyczna odniesienia, zaokrąglona do 10 centymów)</span></div>
-                        <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Obliczenie symuluje kantonalne maksymalne limity wypłat gotówkowych w zakwaterowaniu zbiorowym.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Powrót do strony głównej</a>
-                <a href="https://www.sg.ch" target="_blank" class="btn-link">Oficjalna strona Kantonu SG</a>
-                <a href="https://www.fedlex.admin.ch/eli/cc/1999/358/de" target="_blank"
-                    class="btn-link">Federalna ustawa azylowa (AsylG)</a>
-            </div>
-        </div>
-
-        <footer>
-            <p>Źródło: Kanton St. Gallen – Departament Spraw Wewnętrznych, Rozporządzenie azylowe (AsylV) 2026</p>
-            <p>Dostarczone przez welfarecalc.ch | Inicjatywa przejrzystości dla otwartych algorytmów administracyjnych w Szwajcarii</p>
-            <p>© 2026 welfarecalc.ch – Inicjatywa Otwartego Algorytmu</p>
-        </footer>
+    <h1>
+     Algorytm Pomocy Doraźnej: Kanton St. Gallen
+    </h1>
+    <p>
+     Przejrzyste obliczanie pomocy doraźnej zgodnie z rozporządzeniem azylowym (sGS 381.12) Kantonu St. Gallen 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Zaufanie poprzez przejrzystość. Pomoc doraźna dla osób zobowiązanych do opuszczenia Szwajcarii jest określana w Kantonie St. Gallen zgodnie z precyzyjnymi wymogami prawnymi. Przedstawiamy dostosowany, oficjalny algorytm stanowiący podstawę naszego silnika obliczeniowego.
+    </p>
+    <h2 class="section-title">
+     1. Podstawowe parametry pomocy doraźnej (SG 2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Podstawowa stawka dzienna (osoba samotna)
+      </h4>
+      <div class="param-value">
+       CHF 10.00 / dzień
+      </div>
+      <p>
+       <small>
+        Podstawowe potrzeby osoby samotnej w obiekcie zakwaterowania zbiorowego.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Ryczałt dla pary (degresywny)
+      </h4>
+      <div class="param-value">
+       Współczynnik 1.72 (CHF 17.20 / dzień)
+      </div>
+      <p>
+       <small>
+        Dwie osoby dorosłe w tym samym gospodarstwie domowym otrzymują 172% stawki indywidualnej łącznie.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Dodatek na dziecko
+      </h4>
+      <div class="param-value">
+       Współczynnik 0.55 (CHF 5.50 / dzień)
+      </div>
+      <p>
+       <small>
+        Dodatkowa kwota na dziecko (55% podstawowej stawki dla osoby dorosłej).
+       </small>
+      </p>
+     </div>
     </div>
-
-    <script>
-        (function () {
+    <h2 class="section-title">
+     2. Ścieżka obliczeniowa (krok po kroku)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Określenie dziennej stawki dla osób dorosłych
+      </h3>
+      <p>
+       Kanton St. Gallen stosuje model degresywny uwzględniający oszczędności w gospodarstwie domowym:
+      </p>
+      <div class="formula">
+       Jeśli osób dorosłych = 1: CHF 10.00 dziennie
+       <br/>
+       Jeśli osób dorosłych = 2: CHF 17.20 dziennie (stawka podstawowa × 1,72)
+       <br/>
+       Jeśli osób dorosłych &gt; 2: CHF 17.20 + (liczba dorosłych - 2) × CHF 7.20 dziennie
+      </div>
+      <p>
+       <small>
+        Uwaga: Zgodnie z praktyką kantonalną, za każdą dodatkową osobę dorosłą w ramach tej samej jednostki pomocowej dodawana jest degresywna stawka CHF 7.20.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Dodanie dodatku na dziecko
+      </h3>
+      <p>
+       Dla każdego dziecka (&lt; 18 lat) mieszkającego w gospodarstwie domowym dodawana jest ryczałtowa kwota, która odpowiada dokładnie 55% podstawowej stawki dla osoby dorosłej:
+      </p>
+      <div class="formula">
+       Łączna dzienna kwota na dzieci = Liczba dzieci × (10,00 × 0,55) = Liczba dzieci × CHF 5,50 / dzień
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Ekstrapolacja miesięczna i zaokrąglenie administracyjne
+      </h3>
+      <p>
+       Łączne dzienne uprawnienie jest ekstrapolowane przy użyciu współczynnika miesiąca statystycznego (30,42 dni). Zaokrąglenie handlowe (standard w Kantonie SG) odbywa się do najbliższych 10 centymów (0,10 CHF).
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Miesięczna należność = ZAOKR( (Łączna kwota dzienna × 30,42) ; 0,10 )
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Ważne ograniczenia administracyjne w Kantonie SG:
+     </strong>
+     <br/>
+     •
+     <strong>
+      Pierwszeństwo świadczeń rzeczowych:
+     </strong>
+     Pomoc doraźna w Kantonie St. Gallen jest udzielana przede wszystkim jako świadczenia rzeczowe (zakwaterowanie w strukturach zbiorowych, bezpośrednia dystrybucja żywności lub bony). Obliczona tutaj kwota gotówkowa ma zastosowanie tylko wtedy, gdy świadczenia rzeczowe nie mogą być w pełni zapewnione.
+     <br/>
+     •
+     <strong>
+      Brak długoterminowego uprawnienia:
+     </strong>
+     Pomoc doraźna zabezpiecza jedynie przetrwanie z dnia na dzień (Art. 12 BV). Miesięczne lub roczne zaliczki są prawnie wykluczone. Miesięczne obliczenie służy wyłącznie celom statystycznym.
+    </div>
+    <h2 class="section-title">
+     3. Źródła danych i podstawa prawna
+    </h2>
+    <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+     <li>
+      <strong>
+       Rozporządzenie azylowe Kantonu St. Gallen (AsylV, sGS 381.12)
+      </strong>
+      – Regulacja pomocy doraźnej i zakwaterowania.
+     </li>
+     <li>
+      <strong>
+       Ustawa o publicznej pomocy społecznej (Ustawa o pomocy społecznej, sGS 381.1)
+      </strong>
+      – Uzupełniające przepisy kantonalne.
+     </li>
+     <li>
+      <strong>
+       Szwajcarska Konstytucja Federalna (Art. 12 BV)
+      </strong>
+      – Konstytucyjne prawo do pomocy w potrzebie.
+     </li>
+     <li>
+      <strong>
+       WelfareCalc – Dane otwarte:
+      </strong>
+      Zatwierdzone na rok 2026.
+     </li>
+    </ul>
+    <div class="demo-card">
+     <div class="demo-header">
+      🧪 Test przejrzystości: Interaktywny kalkulator pomocy doraźnej SG
+     </div>
+     <div class="demo-body">
+      <p>
+       Symuluj oficjalne obliczenia dla Kantonu St. Gallen (2026) w czasie rzeczywistym.
+      </p>
+      <div class="input-group">
+       <div class="input-item">
+        <label>
+         👤 Liczba osób dorosłych
+        </label>
+        <input id="adultsCount" min="1" step="1" type="number" value="1"/>
+       </div>
+       <div class="input-item">
+        <label>
+         🧒 Liczba dzieci (0-17 lat)
+        </label>
+        <input id="childrenCount" min="0" step="1" type="number" value="0"/>
+       </div>
+      </div>
+      <button class="demo-btn" id="runCalcBtn">
+       Wykonaj algorytm
+      </button>
+      <div class="result-panel" id="liveResultPanel">
+       <h3>
+        📐 Oficjalny zapis obliczeniowy (Kanton SG)
+       </h3>
+       <div class="calc-steps" id="stepsDetail">
+       </div>
+       <div>
+        <span class="final-amount" id="monthlyAmountDisplay">
+         0.00 CHF
+        </span>
+        <span style="font-size: 0.9rem;">
+         (Miesięczna wartość statystyczna odniesienia, zaokrąglona do 10 centymów)
+        </span>
+       </div>
+       <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">
+        *Obliczenie symuluje kantonalne maksymalne limity wypłat gotówkowych w zakwaterowaniu zbiorowym.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      ← Powrót do strony głównej
+     </a>
+     <a class="btn-link" href="https://www.sg.ch" target="_blank">
+      Oficjalna strona Kantonu SG
+     </a>
+     <a class="btn-link" href="https://www.fedlex.admin.ch/eli/cc/1999/358/de" target="_blank">
+      Federalna ustawa azylowa (AsylG)
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: Kanton St. Gallen – Departament Spraw Wewnętrznych, Rozporządzenie azylowe (AsylV) 2026
+    </p>
+    <p>
+     Dostarczone przez welfarecalc.ch | Inicjatywa przejrzystości dla otwartych algorytmów administracyjnych w Szwajcarii
+    </p>
+    <p>
+     © 2026 welfarecalc.ch – Inicjatywa Otwartego Algorytmu
+    </p>
+   </footer>
+  </div>
+  <script>
+   (function () {
             // Oficjalnie zatwierdzone parametry dla SG 2026
             const CONFIG = {
                 baseDailyCash: 10.00,       // Stawka podstawowa dla osoby samotnej
@@ -586,7 +688,6 @@
                 childrenField.addEventListener('input', updateDemo);
             }
         })();
-    </script>
-</body>
-
+  </script>
+ </body>
 </html>

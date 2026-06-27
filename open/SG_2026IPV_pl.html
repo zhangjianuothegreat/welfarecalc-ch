@@ -1,58 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorytm IPV Kanton St. Gallen 2026 | Przejrzyste obliczenia | welfarecalc.ch</title>
-    <meta name="description" content="Jak obliczana jest redukcja składki (IPV) na rok 2026 w kantonie St. Gallen? Poznaj nasz przejrzysty algorytm oparty na oficjalnym modelu krzywej S.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026IPV_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026IPV_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026IPV_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026IPV_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026IPV_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026IPV_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026IPV_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026IPV_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie redukcji składki St. Gallen 2026",
-      "description": "Instrukcja krok po kroku ustalania uprawnień do IPV w kantonie SG w oparciu o model krzywej S.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Określenie odpowiedniego dochodu (LNA) wraz z częścią majątkową"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Przypisanie regionalnych składek referencyjnych według miejsca zamieszkania"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Obliczenie dynamicznej stopy obciążenia przy użyciu kantonalnej krzywej S"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Sprawdzenie gwarancji minimalnej dla dzieci i młodych dorosłych"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -89,200 +41,438 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SG_2026IPV_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">OFICJALNE DANE 2026</div>
-        <h1>Algorytm IPV: Kanton St. Gallen</h1>
-        <p>Przejrzyste przedstawienie modelu obliczeniowego krzywej S na rok 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   IOŚ Sankt Gallen 2026 – Obniżki składek | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Obniżki składek w Kantonie Sankt Gallen. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Obniżki składek, Kanton Sankt Gallen, IOŚ, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html" rel="canonical"/>
+  <meta content="IOŚ Sankt Gallen 2026 – Obniżki składek | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Obniżki składek w Kantonie Sankt Gallen. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="IOŚ Sankt Gallen 2026 – Obniżki składek | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Obniżki składek w Kantonie Sankt Gallen. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Indywidualne obniżki składek Sankt Gallen 2026", "description": "Step-by-step guide to calculating Indywidualne obniżki składek in Canton Sankt Gallen.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     OFICJALNE DANE 2026
     </div>
-
-    <div class="content">
-        <p>Zaufanie dzięki matematycznej precyzji. Zgodnie z naszą filozofią otwartych danych, ujawniamy pełną logikę obliczania indywidualnej redukcji składki (IPV) dla kantonu St. Gallen. Nasz rdzeń obliczeniowy działa ściśle według obowiązującego dekretu rządowego na 2026 r. (sGS 331.538).</p>
-
-        <h2 class="section-title">1. Główne parametry (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Dynamiczny udział własny</h4>
-                <div class="param-value">Zmienny (krzywa S)</div>
-                <p><small>W zależności od sytuacji gospodarstwa domowego i dochodu powyżej progu podstawowego.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Udział majątku</h4>
-                <div class="param-value">20,0 %</div>
-                <p><small>Jedna piąta podlegającego opodatkowaniu majątku netto zwiększa odpowiedni dochód.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Oficjalna ścieżka obliczeniowa</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Odpowiedni dochód (LNA)</h3>
-                <p>Wydajność ekonomiczna gospodarstwa domowego opiera się na dochodzie netto powiększonym o udział majątku, pomniejszonym o odliczenia na dzieci:</p>
-                <div class="formula-box">
-                    <strong>LNA</strong> = [Dochód netto] + ([Majątek podlegający opodatkowaniu] × 20%) - ([Liczba dzieci] × CHF 4'000)
-                </div>
-                <p><small>*Uwaga: pewne korekty, takie jak dochody wolne od podatku lub korzyści kapitałowe, są doliczane zgodnie z praktyką kantonalną.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Regionalne składki referencyjne (Region 1 - 3)</h3>
-                <p>Kanton St. Gallen dzieli gminy na trzy regiony składek. Decydujące jest miejsce zamieszkania według prawa cywilnego na dzień 1 stycznia 2026 r.:</p>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Grupa wiekowa</th>
-                            <th>Region 1</th>
-                            <th>Region 2</th>
-                            <th>Region 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Dorośli (wiek 26 i więcej)</strong></td>
-                            <td>CHF 6'285.60</td>
-                            <td>CHF 5'879.40</td>
-                            <td>CHF 5'681.40</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Młodzi dorośli (wiek 19 - 25)</strong></td>
-                            <td>CHF 4'492.80</td>
-                            <td>CHF 4'218.00</td>
-                            <td>CHF 4'063.20</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Dzieci (wiek 0 - 18)</strong></td>
-                            <td>CHF 1'462.80</td>
-                            <td>CHF 1'351.20</td>
-                            <td>CHF 1'306.80</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Krzywa S: Progi podstawowe i współczynniki wzrostu</h3>
-                <p>Rozsądna współpłata (granica obciążenia) zaczyna się od procentu podstawowego i rośnie progresywnie dla każdego dodatkowego franka powyżej progu podstawowego:</p>
-                
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Kategoria (typ gospodarstwa domowego)</th>
-                            <th>Próg podstawowy</th>
-                            <th>Stawka podstawowa</th>
-                            <th>Wzrost na CHF powyżej progu</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Osoba samotna bez dzieci</td>
-                            <td>CHF 18'700</td>
-                            <td>12,16 %</td>
-                            <td>+ 0,00020 punktu procentowego</td>
-                        </tr>
-                        <tr>
-                            <td>Małżeństwo bez dzieci</td>
-                            <td>CHF 28'050</td>
-                            <td>12,16 %</td>
-                            <td>+ 0,00030 punktu procentowego</td>
-                        </tr>
-                        <tr>
-                            <td>Osoba samotna z dziećmi</td>
-                            <td>CHF 18'700 + CHF 5'610 / dziecko</td>
-                            <td>10,96 %</td>
-                            <td>+ 0,00003 punktu procentowego</td>
-                        </tr>
-                        <tr>
-                            <td>Małżeństwo z dziećmi</td>
-                            <td>CHF 28'050 + CHF 5'610 / dziecko</td>
-                            <td>12,41 %</td>
-                            <td>+ 0,00003 punktu procentowego</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>Wzór matematyczny na granicę obciążenia:</p>
-                <div class="formula-box">
-                    Jeśli LNA ≤ Próg podstawowy:<br>
-                    <strong>Granica obciążenia</strong> = Stawka podstawowa<br><br>
-                    Jeśli LNA > Próg podstawowy:<br>
-                    <strong>Granica obciążenia</strong> = Stawka podstawowa + ((LNA - Próg podstawowy) × Współczynnik wzrostu)
-                </div>
-                <div class="formula-box">
-                    <strong>Rozsądny udział własny</strong> = LNA × Granica obciążenia
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Obliczanie uprawnień i gwarancja minimalna</h3>
-                <p>Uprawnienie do IPV jest różnicą między sumą wszystkich kantonalnych składek referencyjnych gospodarstwa domowego a obliczonym udziałem własnym:</p>
-                <div class="formula-box">
-                    <strong>Uprawnienie standardowe</strong> = [Suma składek referencyjnych] - [Rozsądny udział własny]
-                </div>
-                
-                <p>Jeśli LNA jest poniżej określonego progu dochodowego dla rodzin, stosowana jest ustawowa <strong>gwarancja minimalna</strong> dla dzieci i młodych dorosłych w trakcie edukacji:</p>
-                <table class="data-table">
-                    <tr><th>Kategoria</th><th>Gwarantowana część uprawnienia</th></tr>
-                    <tr><td>Dzieci (0-18)</td><td>80% odpowiedniej składki referencyjnej</td></tr>
-                    <tr><td>Młodzi dorośli (19-25 w edukacji)</td><td>50% odpowiedniej składki referencyjnej</td></tr>
-                </table>
-                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
-                    Uprawnienie końcowe = max(Uprawnienie standardowe, Ustawowa gwarancja minimalna)
-                </div>
-            </div>
-        </div>
-
-        <h2 class="section-title">3. Kryteria wykluczenia</h2>
-        <div class="alert">
-            <strong>Górne granice wykluczające uprawnienie (2026):</strong><br>
-            <ul>
-                <li><strong>Limit dochodu:</strong> Jeżeli dochód podlegający opodatkowaniu przekracza kantonalne twarde limity (np. CHF 100 900 dla osoby samotnej z 4 dzieci lub wartości dynamiczne w tabelach SVA), uprawnienie wygasa całkowicie.</li>
-                <li><strong>Próg majątkowy:</strong> Jeżeli podlegający opodatkowaniu majątek netto przekracza <strong>CHF 250 000</strong>, zazwyczaj nie ma prawa do IPV.</li>
-                <li><strong>Próg de minimis:</strong> Jeżeli końcowe obliczenie daje uprawnienie mniejsze niż <strong>CHF 100</strong> rocznie, świadczenie nie jest wypłacane.</li>
-            </ul>
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Powrót do strony głównej</a>
-            <a href="https://www.svasg.ch/ipv" target="_blank" class="btn-link">Oficjalna strona SVA St. Gallen</a>
-        </div>
+    <h1>
+     Algorytm IPV: Kanton St. Gallen
+    </h1>
+    <p>
+     Przejrzyste przedstawienie modelu obliczeniowego krzywej S na rok 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Zaufanie dzięki matematycznej precyzji. Zgodnie z naszą filozofią otwartych danych, ujawniamy pełną logikę obliczania indywidualnej redukcji składki (IPV) dla kantonu St. Gallen. Nasz rdzeń obliczeniowy działa ściśle według obowiązującego dekretu rządowego na 2026 r. (sGS 331.538).
+    </p>
+    <h2 class="section-title">
+     1. Główne parametry (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Dynamiczny udział własny
+      </h4>
+      <div class="param-value">
+       Zmienny (krzywa S)
+      </div>
+      <p>
+       <small>
+        W zależności od sytuacji gospodarstwa domowego i dochodu powyżej progu podstawowego.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Udział majątku
+      </h4>
+      <div class="param-value">
+       20,0 %
+      </div>
+      <p>
+       <small>
+        Jedna piąta podlegającego opodatkowaniu majątku netto zwiększa odpowiedni dochód.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Źródło: SVA St. Gallen / Dekret rządowy w sprawie redukcji składki na 2026 r. (sGS 331.538) | Udostępnia welfarecalc.ch</p>
-        <p>Zastrzeżenie prawne: Opublikowana tutaj logika obliczeniowa służy przejrzystości i celom informacyjnym. Wyłącznie orzeczenia SVA St. Gallen są prawnie wiążące.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Oficjalna ścieżka obliczeniowa
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Odpowiedni dochód (LNA)
+      </h3>
+      <p>
+       Wydajność ekonomiczna gospodarstwa domowego opiera się na dochodzie netto powiększonym o udział majątku, pomniejszonym o odliczenia na dzieci:
+      </p>
+      <div class="formula-box">
+       <strong>
+        LNA
+       </strong>
+       = [Dochód netto] + ([Majątek podlegający opodatkowaniu] × 20%) - ([Liczba dzieci] × CHF 4'000)
+      </div>
+      <p>
+       <small>
+        *Uwaga: pewne korekty, takie jak dochody wolne od podatku lub korzyści kapitałowe, są doliczane zgodnie z praktyką kantonalną.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Regionalne składki referencyjne (Region 1 - 3)
+      </h3>
+      <p>
+       Kanton St. Gallen dzieli gminy na trzy regiony składek. Decydujące jest miejsce zamieszkania według prawa cywilnego na dzień 1 stycznia 2026 r.:
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Grupa wiekowa
+         </th>
+         <th>
+          Region 1
+         </th>
+         <th>
+          Region 2
+         </th>
+         <th>
+          Region 3
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <strong>
+           Dorośli (wiek 26 i więcej)
+          </strong>
+         </td>
+         <td>
+          CHF 6'285.60
+         </td>
+         <td>
+          CHF 5'879.40
+         </td>
+         <td>
+          CHF 5'681.40
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Młodzi dorośli (wiek 19 - 25)
+          </strong>
+         </td>
+         <td>
+          CHF 4'492.80
+         </td>
+         <td>
+          CHF 4'218.00
+         </td>
+         <td>
+          CHF 4'063.20
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Dzieci (wiek 0 - 18)
+          </strong>
+         </td>
+         <td>
+          CHF 1'462.80
+         </td>
+         <td>
+          CHF 1'351.20
+         </td>
+         <td>
+          CHF 1'306.80
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Krzywa S: Progi podstawowe i współczynniki wzrostu
+      </h3>
+      <p>
+       Rozsądna współpłata (granica obciążenia) zaczyna się od procentu podstawowego i rośnie progresywnie dla każdego dodatkowego franka powyżej progu podstawowego:
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Kategoria (typ gospodarstwa domowego)
+         </th>
+         <th>
+          Próg podstawowy
+         </th>
+         <th>
+          Stawka podstawowa
+         </th>
+         <th>
+          Wzrost na CHF powyżej progu
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Osoba samotna bez dzieci
+         </td>
+         <td>
+          CHF 18'700
+         </td>
+         <td>
+          12,16 %
+         </td>
+         <td>
+          + 0,00020 punktu procentowego
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Małżeństwo bez dzieci
+         </td>
+         <td>
+          CHF 28'050
+         </td>
+         <td>
+          12,16 %
+         </td>
+         <td>
+          + 0,00030 punktu procentowego
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Osoba samotna z dziećmi
+         </td>
+         <td>
+          CHF 18'700 + CHF 5'610 / dziecko
+         </td>
+         <td>
+          10,96 %
+         </td>
+         <td>
+          + 0,00003 punktu procentowego
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Małżeństwo z dziećmi
+         </td>
+         <td>
+          CHF 28'050 + CHF 5'610 / dziecko
+         </td>
+         <td>
+          12,41 %
+         </td>
+         <td>
+          + 0,00003 punktu procentowego
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       Wzór matematyczny na granicę obciążenia:
+      </p>
+      <div class="formula-box">
+       Jeśli LNA ≤ Próg podstawowy:
+       <br/>
+       <strong>
+        Granica obciążenia
+       </strong>
+       = Stawka podstawowa
+       <br/>
+       <br/>
+       Jeśli LNA &gt; Próg podstawowy:
+       <br/>
+       <strong>
+        Granica obciążenia
+       </strong>
+       = Stawka podstawowa + ((LNA - Próg podstawowy) × Współczynnik wzrostu)
+      </div>
+      <div class="formula-box">
+       <strong>
+        Rozsądny udział własny
+       </strong>
+       = LNA × Granica obciążenia
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Obliczanie uprawnień i gwarancja minimalna
+      </h3>
+      <p>
+       Uprawnienie do IPV jest różnicą między sumą wszystkich kantonalnych składek referencyjnych gospodarstwa domowego a obliczonym udziałem własnym:
+      </p>
+      <div class="formula-box">
+       <strong>
+        Uprawnienie standardowe
+       </strong>
+       = [Suma składek referencyjnych] - [Rozsądny udział własny]
+      </div>
+      <p>
+       Jeśli LNA jest poniżej określonego progu dochodowego dla rodzin, stosowana jest ustawowa
+       <strong>
+        gwarancja minimalna
+       </strong>
+       dla dzieci i młodych dorosłych w trakcie edukacji:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Kategoria
+        </th>
+        <th>
+         Gwarantowana część uprawnienia
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Dzieci (0-18)
+        </td>
+        <td>
+         80% odpowiedniej składki referencyjnej
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Młodzi dorośli (19-25 w edukacji)
+        </td>
+        <td>
+         50% odpowiedniej składki referencyjnej
+        </td>
+       </tr>
+      </table>
+      <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+       Uprawnienie końcowe = max(Uprawnienie standardowe, Ustawowa gwarancja minimalna)
+      </div>
+     </div>
+    </div>
+    <h2 class="section-title">
+     3. Kryteria wykluczenia
+    </h2>
+    <div class="alert">
+     <strong>
+      Górne granice wykluczające uprawnienie (2026):
+     </strong>
+     <br/>
+     <ul>
+      <li>
+       <strong>
+        Limit dochodu:
+       </strong>
+       Jeżeli dochód podlegający opodatkowaniu przekracza kantonalne twarde limity (np. CHF 100 900 dla osoby samotnej z 4 dzieci lub wartości dynamiczne w tabelach SVA), uprawnienie wygasa całkowicie.
+      </li>
+      <li>
+       <strong>
+        Próg majątkowy:
+       </strong>
+       Jeżeli podlegający opodatkowaniu majątek netto przekracza
+       <strong>
+        CHF 250 000
+       </strong>
+       , zazwyczaj nie ma prawa do IPV.
+      </li>
+      <li>
+       <strong>
+        Próg de minimis:
+       </strong>
+       Jeżeli końcowe obliczenie daje uprawnienie mniejsze niż
+       <strong>
+        CHF 100
+       </strong>
+       rocznie, świadczenie nie jest wypłacane.
+      </li>
+     </ul>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Powrót do strony głównej
+     </a>
+     <a class="btn-link" href="https://www.svasg.ch/ipv" target="_blank">
+      Oficjalna strona SVA St. Gallen
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: SVA St. Gallen / Dekret rządowy w sprawie redukcji składki na 2026 r. (sGS 331.538) | Udostępnia welfarecalc.ch
+    </p>
+    <p>
+     Zastrzeżenie prawne: Opublikowana tutaj logika obliczeniowa służy przejrzystości i celom informacyjnym. Wyłącznie orzeczenia SVA St. Gallen są prawnie wiążące.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

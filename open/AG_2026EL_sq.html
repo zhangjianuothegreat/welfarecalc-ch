@@ -1,52 +1,10 @@
 <!DOCTYPE html>
 <html lang="sq">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritmi i EL në Kantonin Aargau 2026 | Llogaritje Transparente | welfarecalc.ch</title>
-    <meta name="description" content="Si llogariten Përfitimet Plotësuese (EL) në Kantonin e Aargaut për vitin 2026? Zbuloni algoritmin tonë transparent bazuar në të dhënat zyrtare të SVA-së.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/AG_2026EL_sq.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/AG_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/AG_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/AG_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/AG_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/AG_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/AG_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/AG_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/AG_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/AG_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/AG_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/AG_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/AG_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Llogaritja e Përfitimeve Plotësuese (EL) Aargau 2026",
-      "description": "Detaje të hollësishme të algoritmit për llogaritjen e EL në Aargau.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Përcaktimi i nevojave të njohura të shpenzimeve (nevojat bazë, qiraja, sigurimi shëndetësor)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Mbledhja e të ardhurave (pensionet AHV/IV, shterimi i aseteve, të ardhurat nga puna)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Llogaritja e shumës së EL (shpenzimet minus të ardhurat)"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -81,115 +39,272 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Llogaritesi i Perfitimeve Zvicerane 2026 | 26 Kantone + Kontroll Faturash">
-    <meta property="og:description" content="Llogarit AVS, AI, PC dhe uljet e primeve ne te 26 kantonet zvicerane. Perfshin auditorin e faturave dentare dhe kontrolluesin e kontratave te qirase. 100% anonim ne shfletues. 11 gjuhe.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/AG_2026EL_sq.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="sq">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">TË DHËNA ZYRTARE 2026</div>
-        <h1>Algoritmi i EL: Kantoni i Aargaut</h1>
-        <p>Zbërthim transparent i Përfitimeve Plotësuese (EL) për vitin 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Kontroll i shpejtë: A keni të drejtë?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.</p>
-        <a href="https://www.welfarecalc.ch/bus_sq" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Kontrollo falas →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   PP Aargau 2026 – Përfitime plotësuese | welfarecalc.ch
+  </title>
+  <meta content="Llogarit Përfitime plotësuese në Kantonin Aargau. Të dhëna zyrtare 2026, transparente dhe të kuptueshme. Kontrolloni falas." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Përfitime plotësuese, Kantoni Aargau, PP, Përfitime sociale, Llogaritja 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_sq.html" rel="canonical"/>
+  <meta content="PP Aargau 2026 – Përfitime plotësuese | welfarecalc.ch" property="og:title"/>
+  <meta content="Llogarit Përfitime plotësuese në Kantonin Aargau. Të dhëna zyrtare 2026, transparente dhe të kuptueshme. Kontrolloni falas." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/AG_2026EL_sq.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="sq_AL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PP Aargau 2026 – Përfitime plotësuese | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Llogarit Përfitime plotësuese në Kantonin Aargau. Të dhëna zyrtare 2026, transparente dhe të kuptueshme. Kontrolloni falas." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/AG_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Përfitime plotësuese Aargau 2026", "description": "Step-by-step guide to calculating Përfitime plotësuese in Canton Aargau.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     TË DHËNA ZYRTARE 2026
     </div>
-
-    <div class="content">
-        <p>Transparenca ndërton besim. Përfitimet Plotësuese (EL) për AHV/IV janë një fushë komplekse. Këtu dokumentojmë se si llogaritësi ynë përcakton përshtatshmërinë tuaj bazuar në rregulloret federale dhe ato kantonaliste.</p>
-
-        <h2 class="section-title">1. Nevojat Vjetore Bazë (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Persona beqarë</h4>
-                <div class="param-value">CHF 20,670</div>
-                <p><small>Shuma për shpenzimet e përgjithshme të jetesës.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Çifte të martuara</h4>
-                <div class="param-value">CHF 31,005</div>
-                <p><small>Nevojat bazë të kombinuara për të dy bashkëshortët.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Metodologjia e Llogaritjes</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Shpenzimet e Njohura</h3>
-                <p>Së pari, mbledhim të gjitha shpenzimet e njohura ligjërisht:</p>
-                <div class="formula">
-                    Nevojat bazë + Qiraja bruto (deri në kufi) + Primi mesatar i sigurimit shëndetësor
-                </div>
-                <table class="data-table">
-                    <tr><th>Qiraja maksimale 2026 (Kategoria e Rajonit 2)</th><th>Shuma vjetore</th></tr>
-                    <tr><td>Persona beqarë</td><td>CHF 18,300 (CHF 1,525/muaj)</td></tr>
-                    <tr><td>Çifte të martuara</td><td>CHF 21,780 (CHF 1,815/muaj)</td></tr>
-                </table>
-                <p><small>*Shënim: Kufij pak më të ulët zbatohen në rajonet rurale (Rajoni 3) të Aargaut.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Të Ardhurat e Vlerësueshme</h3>
-                <p>Më pas, të ardhurat tuaja kompensohen me shpenzimet:</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem;">
-                    <li><strong>Pensionet:</strong> 12 muaj të AHV ose IV (Pensioni i muajit të 13-të neutralizohet).</li>
-                    <li><strong>Shterimi i aseteve:</strong> (Asetet neto - lejimi) / 10 (për pensionistët e pleqërisë).</li>
-                    <li><strong>Të ardhurat e fituara:</strong> Zbritet një zbritje standarde ligjore.</li>
-                </ul>
-                <table class="data-table">
-                    <tr><th>Lëshimet e aseteve</th><th>Shuma e përjashtuar</th></tr>
-                    <tr><td>Persona beqarë</td><td>CHF 30,000</td></tr>
-                    <tr><td>Çifte të martuara</td><td>CHF 50,000</td></tr>
-                    <tr><td>Pronë e banuar nga pronari</td><td>CHF 112,500</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Llogaritja e Përfitimit EL</h3>
-                <p>EL mbulon hendekun midis shpenzimeve dhe të ardhurave:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    EL vjetore = [Shpenzimet e Njohura] - [Të Ardhurat e Vlerësueshme]
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>E rëndësishme: Pragu i aseteve (Pragu i përshtatshmërisë)</strong><br>
-            Nga viti 2021, e drejta për EL ekziston vetëm nëse asetet neto janë nën <strong>CHF 100,000</strong> (persona beqarë) ose <strong>CHF 200,000</strong> (çifte të martuara). Prona e banuar nga pronari nuk llogaritet në këtë përllogaritje.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Kthehu te Faqja Kryesore</a>
-            <a href="https://www.sva-aargau.ch/el" target="_blank" class="btn-link">Faqja Zyrtare e SVA Aargau</a>
-        </div>
+    <h1>
+     Algoritmi i EL: Kantoni i Aargaut
+    </h1>
+    <p>
+     Zbërthim transparent i Përfitimeve Plotësuese (EL) për vitin 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Kontroll i shpejtë: A keni të drejtë?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Kontrolloni shpejt dhe pa detyrim nëse keni të drejtë për ulje të primeve (IPV), përfitime shtesë ose ndihmë tjetër sociale.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_sq" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Kontrollo falas →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Transparenca ndërton besim. Përfitimet Plotësuese (EL) për AHV/IV janë një fushë komplekse. Këtu dokumentojmë se si llogaritësi ynë përcakton përshtatshmërinë tuaj bazuar në rregulloret federale dhe ato kantonaliste.
+    </p>
+    <h2 class="section-title">
+     1. Nevojat Vjetore Bazë (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Persona beqarë
+      </h4>
+      <div class="param-value">
+       CHF 20,670
+      </div>
+      <p>
+       <small>
+        Shuma për shpenzimet e përgjithshme të jetesës.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Çifte të martuara
+      </h4>
+      <div class="param-value">
+       CHF 31,005
+      </div>
+      <p>
+       <small>
+        Nevojat bazë të kombinuara për të dy bashkëshortët.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Burimi: Udhëzimet e SVA Aargau 2026 & Ligji Federal për Përfitimet Plotësuese (ELG)</p>
-        <p>Ofruar nga welfarecalc.ch | Informacion pa garanci ligjore.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Metodologjia e Llogaritjes
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Shpenzimet e Njohura
+      </h3>
+      <p>
+       Së pari, mbledhim të gjitha shpenzimet e njohura ligjërisht:
+      </p>
+      <div class="formula">
+       Nevojat bazë + Qiraja bruto (deri në kufi) + Primi mesatar i sigurimit shëndetësor
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Qiraja maksimale 2026 (Kategoria e Rajonit 2)
+        </th>
+        <th>
+         Shuma vjetore
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Persona beqarë
+        </td>
+        <td>
+         CHF 18,300 (CHF 1,525/muaj)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Çifte të martuara
+        </td>
+        <td>
+         CHF 21,780 (CHF 1,815/muaj)
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Shënim: Kufij pak më të ulët zbatohen në rajonet rurale (Rajoni 3) të Aargaut.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Të Ardhurat e Vlerësueshme
+      </h3>
+      <p>
+       Më pas, të ardhurat tuaja kompensohen me shpenzimet:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem;">
+       <li>
+        <strong>
+         Pensionet:
+        </strong>
+        12 muaj të AHV ose IV (Pensioni i muajit të 13-të neutralizohet).
+       </li>
+       <li>
+        <strong>
+         Shterimi i aseteve:
+        </strong>
+        (Asetet neto - lejimi) / 10 (për pensionistët e pleqërisë).
+       </li>
+       <li>
+        <strong>
+         Të ardhurat e fituara:
+        </strong>
+        Zbritet një zbritje standarde ligjore.
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Lëshimet e aseteve
+        </th>
+        <th>
+         Shuma e përjashtuar
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Persona beqarë
+        </td>
+        <td>
+         CHF 30,000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Çifte të martuara
+        </td>
+        <td>
+         CHF 50,000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Pronë e banuar nga pronari
+        </td>
+        <td>
+         CHF 112,500
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Llogaritja e Përfitimit EL
+      </h3>
+      <p>
+       EL mbulon hendekun midis shpenzimeve dhe të ardhurave:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       EL vjetore = [Shpenzimet e Njohura] - [Të Ardhurat e Vlerësueshme]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      E rëndësishme: Pragu i aseteve (Pragu i përshtatshmërisë)
+     </strong>
+     <br/>
+     Nga viti 2021, e drejta për EL ekziston vetëm nëse asetet neto janë nën
+     <strong>
+      CHF 100,000
+     </strong>
+     (persona beqarë) ose
+     <strong>
+      CHF 200,000
+     </strong>
+     (çifte të martuara). Prona e banuar nga pronari nuk llogaritet në këtë përllogaritje.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Kthehu te Faqja Kryesore
+     </a>
+     <a class="btn-link" href="https://www.sva-aargau.ch/el" target="_blank">
+      Faqja Zyrtare e SVA Aargau
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Burimi: Udhëzimet e SVA Aargau 2026 &amp; Ligji Federal për Përfitimet Plotësuese (ELG)
+    </p>
+    <p>
+     Ofruar nga welfarecalc.ch | Informacion pa garanci ligjore.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

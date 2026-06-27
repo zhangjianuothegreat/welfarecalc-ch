@@ -1,57 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Aile Ödenekleri (FA) Algoritması Basel-Stadt Kantonu 2026 | welfarecalc.ch</title>
-    <meta name="description" content="2026 yılı Basel-Stadt Kantonu'nda Aile Ödenekleri (FA) nasıl hesaplanır? BS'deki çocuk ve eğitim ödenekleri için şeffaf algoritmamızı keşfedin.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/BS_2026FA_tr.html">
-    
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BS_2026FA_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BS_2026FA_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BS_2026FA_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BS_2026FA_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BS_2026FA_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BS_2026FA_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BS_2026FA_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BS_2026FA_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BS_2026FA_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BS_2026FA_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BS_2026FA_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BS_2026FA_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Basel-Stadt 2026 Aile Ödenekleri Hesaplaması",
-      "description": "Basel-Stadt (BS) Kantonu'nda çocuk ve eğitim ödeneklerinin hesaplanması için adım adım kılavuz.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Her çocuk için hak kriterlerinin doğrulanması (yaş ve eğitim durumu)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Kantona özel 2026 BS oranlarının uygulanması."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Doğum ve evlat edinme ödeneklerinin hariç tutulması (BS Kantonu'nda öngörülmemiştir)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Yıllık toplam hak tutarının hesaplanması."
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -86,119 +39,256 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/BS_2026FA_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">BS'YE ÖZEL 2026</div>
-        <h1>FA-Algoritması: Basel-Stadt Kantonu</h1>
-        <p>BS için Aile Ödenekleri hesaplamasının şeffaf dokümantasyonu</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
-        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AÖ Basel-Stadt 2026 – Aile ödenekleri | welfarecalc.ch
+  </title>
+  <meta content="Basel-Stadt Kantonu'nda Aile ödenekleri hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Aile ödenekleri, Basel-Stadt Kantonu, AÖ, Sosyal yardımlar, Hesaplama 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_tr.html" rel="canonical"/>
+  <meta content="AÖ Basel-Stadt 2026 – Aile ödenekleri | welfarecalc.ch" property="og:title"/>
+  <meta content="Basel-Stadt Kantonu'nda Aile ödenekleri hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/BS_2026FA_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AÖ Basel-Stadt 2026 – Aile ödenekleri | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Basel-Stadt Kantonu'nda Aile ödenekleri hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026FA_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Aile ödenekleri Basel-Stadt 2026", "description": "Step-by-step guide to calculating Aile ödenekleri in Canton Basel-Stadt.", "step": [{"@type": "HowToStep", "position": 1, "text": "Categorize children by age and education status"}, {"@type": "HowToStep", "position": 2, "text": "Apply the specific cantonal rates for each category"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total monthly allowance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     BS'YE ÖZEL 2026
     </div>
-
-    <div class="content">
-        <p>Basel-Stadt Kantonu, İsviçre federal minimumunun oldukça üzerinde aile ödenekleri sağlamaktadır. Algoritmamız, Aile Ödenekleri Federal Yasasını uygulayan kanton yasasına (EG FamZG BS) ve 2026 için güncel oranlara dayanmaktadır.</p>
-
-        <h2 class="section-title">1. BS 2026 Aylık Oranlar</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Çocuk Ödeneği</h4>
-                <div class="param-value">275 CHF / Ay</div>
-                <p><small>Doğum ayından çocuğun 16 yaşını doldurduğu ayın sonuna kadar.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Eğitim Ödeneği</h4>
-                <div class="param-value">325 CHF / Ay</div>
-                <p><small>16 yaşından itibaren eğitim tamamlanana kadar (en fazla 25 yaşına kadar).</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Algoritmik Hesaplama Yolu</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Kategorilendirme ve Yaş Kontrolü</h3>
-                <p>Sistem her çocuk için durumu kontrol eder:</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem;">
-                    <li><strong>Durum A (Çocuk):</strong> Yaş < 16.</li>
-                    <li><strong>Durum B (Eğitim):</strong> Yaş 16–25 + eğitim belgesi.</li>
-                    <li><strong>Çalışamaz durumdaki çocuklar:</strong> 20 yaşına kadar çocuk ödeneği (275 CHF) alma hakkı mümkündür.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Aylık Ödeneğin Hesaplanması</h3>
-                <p>Hesaplama, degresyon veya progresyon olmaksızın doğrusal olarak yapılır:</p>
-                <div class="formula">
-                    Aylık Tutar = (Durum A Sayısı × 275 CHF) + (Durum B Sayısı × 325 CHF)
-                </div>
-                <p><small>*Not: Cenevre veya Waadt gibi kantonların aksine Basel-Stadt, 3. çocuktan itibaren tutarı artırmaz.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Tek Seferlik Ödemelerin Kontrolü</h3>
-                <p>BS algoritmasında diğer kantonlara göre önemli bir fark:</p>
-                <table class="data-table">
-                    <thead><tr><th>Ödenek Türü</th><th>Tutar (BS)</th><th>Açıklama</th></tr></thead>
-                    <tbody>
-                        <tr><td>Doğum Ödeneği</td><td>0 CHF</td><td>BS'de yasal hak yoktur</td></tr>
-                        <tr><td>Evlat Edinme Ödeneği</td><td>0 CHF</td><td>BS'de yasal hak yoktur</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Yıllık Hak Tutarı (Projeksiyon)</h3>
-                <p>Bütçe planlaması için aracımız yıllık değeri hesaplar:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Yıllık Toplam Tutar = Aylık Tutar × 12
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Sınırda çalışanlar için önemli:</strong><br>
-            Basel-Stadt'ta çalışan ancak yurtdışında (örneğin Almanya veya Fransa) ikamet eden işçiler, AB/AET kurallarına göre fark ödemeleri alma hakkına da sahiptir. Algoritmamız, ikametgah girdisinde bunu dikkate alır.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Hesaplayıcıyı Başlat</a>
-            <a href="https://ak-bs.ch/ubersicht/familienzulagen/" target="_blank" class="btn-link">Resmi AK Basel-Stadt Sayfası</a>
-        </div>
+    <h1>
+     FA-Algoritması: Basel-Stadt Kantonu
+    </h1>
+    <p>
+     BS için Aile Ödenekleri hesaplamasının şeffaf dokümantasyonu
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Hızlı Kontrol: Hakkınız var mı?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_tr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Ücretsiz kontrol et →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Basel-Stadt Kantonu, İsviçre federal minimumunun oldukça üzerinde aile ödenekleri sağlamaktadır. Algoritmamız, Aile Ödenekleri Federal Yasasını uygulayan kanton yasasına (EG FamZG BS) ve 2026 için güncel oranlara dayanmaktadır.
+    </p>
+    <h2 class="section-title">
+     1. BS 2026 Aylık Oranlar
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Çocuk Ödeneği
+      </h4>
+      <div class="param-value">
+       275 CHF / Ay
+      </div>
+      <p>
+       <small>
+        Doğum ayından çocuğun 16 yaşını doldurduğu ayın sonuna kadar.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Eğitim Ödeneği
+      </h4>
+      <div class="param-value">
+       325 CHF / Ay
+      </div>
+      <p>
+       <small>
+        16 yaşından itibaren eğitim tamamlanana kadar (en fazla 25 yaşına kadar).
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Kaynak: Ausgleichskasse Basel-Stadt (AKBS) 2026 Yönergeleri ve FamZG</p>
-        <p>© 2026 welfarecalc.ch | Şeffaf İsviçre Sosyal Güvenlik Algoritmaları</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Algoritmik Hesaplama Yolu
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Kategorilendirme ve Yaş Kontrolü
+      </h3>
+      <p>
+       Sistem her çocuk için durumu kontrol eder:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem;">
+       <li>
+        <strong>
+         Durum A (Çocuk):
+        </strong>
+        Yaş &lt; 16.
+       </li>
+       <li>
+        <strong>
+         Durum B (Eğitim):
+        </strong>
+        Yaş 16–25 + eğitim belgesi.
+       </li>
+       <li>
+        <strong>
+         Çalışamaz durumdaki çocuklar:
+        </strong>
+        20 yaşına kadar çocuk ödeneği (275 CHF) alma hakkı mümkündür.
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Aylık Ödeneğin Hesaplanması
+      </h3>
+      <p>
+       Hesaplama, degresyon veya progresyon olmaksızın doğrusal olarak yapılır:
+      </p>
+      <div class="formula">
+       Aylık Tutar = (Durum A Sayısı × 275 CHF) + (Durum B Sayısı × 325 CHF)
+      </div>
+      <p>
+       <small>
+        *Not: Cenevre veya Waadt gibi kantonların aksine Basel-Stadt, 3. çocuktan itibaren tutarı artırmaz.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Tek Seferlik Ödemelerin Kontrolü
+      </h3>
+      <p>
+       BS algoritmasında diğer kantonlara göre önemli bir fark:
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Ödenek Türü
+         </th>
+         <th>
+          Tutar (BS)
+         </th>
+         <th>
+          Açıklama
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Doğum Ödeneği
+         </td>
+         <td>
+          0 CHF
+         </td>
+         <td>
+          BS'de yasal hak yoktur
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Evlat Edinme Ödeneği
+         </td>
+         <td>
+          0 CHF
+         </td>
+         <td>
+          BS'de yasal hak yoktur
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Yıllık Hak Tutarı (Projeksiyon)
+      </h3>
+      <p>
+       Bütçe planlaması için aracımız yıllık değeri hesaplar:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Yıllık Toplam Tutar = Aylık Tutar × 12
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Sınırda çalışanlar için önemli:
+     </strong>
+     <br/>
+     Basel-Stadt'ta çalışan ancak yurtdışında (örneğin Almanya veya Fransa) ikamet eden işçiler, AB/AET kurallarına göre fark ödemeleri alma hakkına da sahiptir. Algoritmamız, ikametgah girdisinde bunu dikkate alır.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Hesaplayıcıyı Başlat
+     </a>
+     <a class="btn-link" href="https://ak-bs.ch/ubersicht/familienzulagen/" target="_blank">
+      Resmi AK Basel-Stadt Sayfası
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Kaynak: Ausgleichskasse Basel-Stadt (AKBS) 2026 Yönergeleri ve FamZG
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Şeffaf İsviçre Sosyal Güvenlik Algoritmaları
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

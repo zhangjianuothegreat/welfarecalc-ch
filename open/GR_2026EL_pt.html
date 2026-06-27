@@ -1,55 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritmo EL Cantão dos Grisões 2026 | Cálculo Transparente | welfarecalc.ch</title>
-    <meta name="description" content="Como são calculados os Complementos de Prestações (EL) 2026 no cantão dos Grisões? Descubra o nosso algoritmo transparente com base nas especificações da SVA GR e da Confederação.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/GR_2026EL_pt.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GR_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GR_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GR_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GR_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GR_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GR_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GR_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GR_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GR_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GR_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GR_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GR_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cálculo de Complementos de Prestações nos Grisões 2026",
-      "description": "Detalhe algorítmico do cálculo das Prestações Complementares (EL) no cantão dos Grisões.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Determinação das despesas reconhecidas",
-          "text": "Determinação das despesas reconhecidas (necessidades básicas, renda, seguro de saúde de acordo com as regiões GR)"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Verificação do rendimento",
-          "text": "Contabilização das pensões AVS/AI (excluindo o 13.º mês), utilização do património e rendimento do trabalho."
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Resultado",
-          "text": "Determinação do direito a EL como a diferença apurada."
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="pt">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -84,116 +39,284 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculadora de Beneficios Suicos 2026 | 26 Cantones + Revisor Dental">
-    <meta property="og:description" content="Calcule AVS, AI, PC e reducoes de premios em todos os 26 cantoes suicos. Inclui revisor de faturas dentarias e verificador de contratos de aluguel. 100% anonimo no navegador. 11 idiomas.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/GR_2026EL_pt.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">DADOS OFICIAIS 2026</div>
-        <h1>Algoritmo EL: Cantão dos Grisões</h1>
-        <p>Detalhe transparente das Prestações Complementares (EL) para o ano de 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
-        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   PC Grisões 2026 – Prestações complementares | welfarecalc.ch
+  </title>
+  <meta content="Calcule Prestações complementares no Cantão de Grisões. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prestações complementares, Cantão Grisões, PC, Prestações sociais, Cálculo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_pt.html" rel="canonical"/>
+  <meta content="PC Grisões 2026 – Prestações complementares | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcule Prestações complementares no Cantão de Grisões. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/GR_2026EL_pt.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_PT" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PC Grisões 2026 – Prestações complementares | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcule Prestações complementares no Cantão de Grisões. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GR_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Prestações complementares Grisões 2026", "description": "Step-by-step guide to calculating Prestações complementares in Canton Grisões.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     DADOS OFICIAIS 2026
     </div>
-
-    <div class="content">
-        <p>A transparência é a base do nosso trabalho em <strong>welfarecalc.ch</strong>. O cantão dos Grisões aplica a Lei Federal sobre Prestações Complementares (ELG) com parâmetros cantonais específicos para a renda e os prémios de seguro de doença. Descubra aqui como o nosso sistema calcula o seu direito.</p>
-
-        <h2 class="section-title">1. Necessidades Básicas Anuais (Taxa Mínima Federal 2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Pessoas singulares</h4>
-                <div class="param-value">CHF 20.670</div>
-                <p><small>Montante anual para despesas gerais de subsistência.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Cônjuges / Casais</h4>
-                <div class="param-value">CHF 31.005</div>
-                <p><small>Abono básico combinado para casais no mesmo agregado familiar.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Etapas Detalhadas do Cálculo</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Passo 1: Despesas Reconhecidas (Necessidades)</h3>
-                <p>Adicionamos todas as componentes de custos legalmente reconhecidas:</p>
-                <div class="formula">
-                    Necessidades básicas + Renda bruta (até limite cantonal) + Prémio fixo do seguro de doença
-                </div>
-                <table class="data-table">
-                    <tr><th>Limites máximos de renda Grisões 2026 (Região 2*)</th><th>Montante anual</th></tr>
-                    <tr><td>Agregado de 1 pessoa</td><td>CHF 18.300 (CHF 1.525/mês)</td></tr>
-                    <tr><td>Agregado de 2 pessoas</td><td>CHF 21.720 (CHF 1.810/mês)</td></tr>
-                    <tr><td>Agregado de 3 pessoas</td><td>CHF 23.760 (CHF 1.980/mês)</td></tr>
-                </table>
-                <p><small>*Nota: Nas zonas rurais dos Grisões (Região 3), aplicam-se limites inferiores (ex: CHF 1.390 para solteiros).</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Passo 2: Rendimento Contabilizável</h3>
-                <p>Os seguintes recursos próprios são deduzidos às despesas:</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem;">
-                    <li><strong>Pensões AVS/AI:</strong> São contabilizadas 12 pensões mensais. O 13.º mês da pensão AVS permanece neutro de acordo com a resolução federal e não reduz o seu direito a EL.</li>
-                    <li><strong>Utilização do património:</strong> (Património líquido - dedução) / 15 (para pensionistas AVS) ou 1/15 (para AI).</li>
-                    <li><strong>Rendimento do trabalho:</strong> Contabilização após dedução da redução forfetária legal e da redução de 1/3.</li>
-                </ul>
-                <table class="data-table">
-                    <tr><th>Deduções sobre o património</th><th>Montante</th></tr>
-                    <tr><td>Pessoas singulares</td><td>CHF 30.000</td></tr>
-                    <tr><td>Cônjuges / Casais</td><td>CHF 50.000</td></tr>
-                    <tr><td>Habitação própria ocupada</td><td>CHF 112.500</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Passo 3: Cálculo do Montante EL</h3>
-                <p>A prestação complementar cobre o défice:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    EL anual = [Soma das despesas reconhecidas] - [Soma do rendimento contabilizável]
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Limiar de património (Condição de acesso)</strong><br>
-            O direito no cantão dos Grisões existe apenas se o património líquido tributável for inferior a <strong>CHF 100.000</strong> (pessoas singulares) ou <strong>CHF 200.000</strong> (casais). O valor da habitação própria ocupada é excluído deste limite.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Voltar à calculadora</a>
-            <a href="https://www.sva.gr.ch/ergaenzungsleistungen-el.html" target="_blank" class="btn-link">Site oficial da SVA Grisões</a>
-        </div>
+    <h1>
+     Algoritmo EL: Cantão dos Grisões
+    </h1>
+    <p>
+     Detalhe transparente das Prestações Complementares (EL) para o ano de 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Verificação rápida: Tem direito?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pt" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Verificar gratuitamente →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     A transparência é a base do nosso trabalho em
+     <strong>
+      welfarecalc.ch
+     </strong>
+     . O cantão dos Grisões aplica a Lei Federal sobre Prestações Complementares (ELG) com parâmetros cantonais específicos para a renda e os prémios de seguro de doença. Descubra aqui como o nosso sistema calcula o seu direito.
+    </p>
+    <h2 class="section-title">
+     1. Necessidades Básicas Anuais (Taxa Mínima Federal 2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Pessoas singulares
+      </h4>
+      <div class="param-value">
+       CHF 20.670
+      </div>
+      <p>
+       <small>
+        Montante anual para despesas gerais de subsistência.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Cônjuges / Casais
+      </h4>
+      <div class="param-value">
+       CHF 31.005
+      </div>
+      <p>
+       <small>
+        Abono básico combinado para casais no mesmo agregado familiar.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Fontes: Diretrizes da SVA Grisões 2026 & Departamento Federal do Seguro Social (BSV)</p>
-        <p>Fornecido por welfarecalc.ch | Todos os cálculos são fornecidos sem garantia legal.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Etapas Detalhadas do Cálculo
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Passo 1: Despesas Reconhecidas (Necessidades)
+      </h3>
+      <p>
+       Adicionamos todas as componentes de custos legalmente reconhecidas:
+      </p>
+      <div class="formula">
+       Necessidades básicas + Renda bruta (até limite cantonal) + Prémio fixo do seguro de doença
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Limites máximos de renda Grisões 2026 (Região 2*)
+        </th>
+        <th>
+         Montante anual
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Agregado de 1 pessoa
+        </td>
+        <td>
+         CHF 18.300 (CHF 1.525/mês)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Agregado de 2 pessoas
+        </td>
+        <td>
+         CHF 21.720 (CHF 1.810/mês)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Agregado de 3 pessoas
+        </td>
+        <td>
+         CHF 23.760 (CHF 1.980/mês)
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Nota: Nas zonas rurais dos Grisões (Região 3), aplicam-se limites inferiores (ex: CHF 1.390 para solteiros).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Passo 2: Rendimento Contabilizável
+      </h3>
+      <p>
+       Os seguintes recursos próprios são deduzidos às despesas:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem;">
+       <li>
+        <strong>
+         Pensões AVS/AI:
+        </strong>
+        São contabilizadas 12 pensões mensais. O 13.º mês da pensão AVS permanece neutro de acordo com a resolução federal e não reduz o seu direito a EL.
+       </li>
+       <li>
+        <strong>
+         Utilização do património:
+        </strong>
+        (Património líquido - dedução) / 15 (para pensionistas AVS) ou 1/15 (para AI).
+       </li>
+       <li>
+        <strong>
+         Rendimento do trabalho:
+        </strong>
+        Contabilização após dedução da redução forfetária legal e da redução de 1/3.
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Deduções sobre o património
+        </th>
+        <th>
+         Montante
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Pessoas singulares
+        </td>
+        <td>
+         CHF 30.000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Cônjuges / Casais
+        </td>
+        <td>
+         CHF 50.000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Habitação própria ocupada
+        </td>
+        <td>
+         CHF 112.500
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Passo 3: Cálculo do Montante EL
+      </h3>
+      <p>
+       A prestação complementar cobre o défice:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       EL anual = [Soma das despesas reconhecidas] - [Soma do rendimento contabilizável]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Limiar de património (Condição de acesso)
+     </strong>
+     <br/>
+     O direito no cantão dos Grisões existe apenas se o património líquido tributável for inferior a
+     <strong>
+      CHF 100.000
+     </strong>
+     (pessoas singulares) ou
+     <strong>
+      CHF 200.000
+     </strong>
+     (casais). O valor da habitação própria ocupada é excluído deste limite.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Voltar à calculadora
+     </a>
+     <a class="btn-link" href="https://www.sva.gr.ch/ergaenzungsleistungen-el.html" target="_blank">
+      Site oficial da SVA Grisões
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fontes: Diretrizes da SVA Grisões 2026 &amp; Departamento Federal do Seguro Social (BSV)
+    </p>
+    <p>
+     Fornecido por welfarecalc.ch | Todos os cálculos são fornecidos sem garantia legal.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

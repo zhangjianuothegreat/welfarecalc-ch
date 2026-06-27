@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Algoritmo EL Cantón de Vaud (VD) 2026 | Cálculo transparente | welfarecalc.ch</title>
-  <meta
-    content="¿Cómo se calculan las prestaciones complementarias (EL/LVPC) 2026 en el Cantón de Vaud? Descubra nuestro algoritmo transparente basado en datos oficiales de la CCVC."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cálculo de las prestaciones complementarias Vaud (VD) 2026",
-      "description": "Desglose algorítmico detallado del cálculo de EL y LVPC en el Cantón de Vaud.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Verificación de los plazos de carencia cantonales / años de residencia según LVPC"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinación de las necesidades de gastos reconocidas (necesidad básica corregida 2026, máximos de alquiler por región, primas del seguro de enfermedad)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinación de los ingresos computables (neutralización de la 13ª renta AVS, consumo de patrimonio con divisores específicos del cantón)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Cálculo del derecho a EL bajo estricta consideración del umbral de entrada legal"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -236,209 +190,443 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculadora de Prestaciones Suizas 2026 | 26 Cantones + Revisor Dental">
-    <meta property="og:description" content="Calcule AVS, AI, PC y reducciones de primas en los 26 cantones suizos. Incluye revisor de facturas dentales y verificador de contratos de alquiler. 100% anonimo en su navegador. 11 idiomas.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026EL_es.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   PC Vaud 2026 – Prestaciones complementarias | welfarecalc.ch
+  </title>
+  <meta content="Calcule Prestaciones complementarias en el Cantón de Vaud. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prestaciones complementarias, Cantón Vaud, PC, Prestaciones sociales, Cálculo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" rel="canonical"/>
+  <meta content="PC Vaud 2026 – Prestaciones complementarias | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcule Prestaciones complementarias en el Cantón de Vaud. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026EL_es.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="es_ES" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PC Vaud 2026 – Prestaciones complementarias | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcule Prestaciones complementarias en el Cantón de Vaud. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Prestaciones complementarias Vaud 2026", "description": "Step-by-step guide to calculating Prestaciones complementarias in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">DATOS OFICIALES 2026</div>
-      <h1>Algoritmo EL: Cantón de Vaud (Vaud)</h1>
-      <p>Desglose transparente de las prestaciones complementarias (EL/LVPC) para el año 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+   <header>
+    <div class="update-tag">
+     DATOS OFICIALES 2026
     </div>
-    
-    <div class="content">
-      <p>La transparencia genera confianza. Las prestaciones complementarias (EL) al AVS/AI, así como las ayudas
+    <h1>
+     Algoritmo EL: Cantón de Vaud (Vaud)
+    </h1>
+    <p>
+     Desglose transparente de las prestaciones complementarias (EL/LVPC) para el año 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Comprobación rápida: ¿Tiene derecho?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_es" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Comprobar gratis ahora →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La transparencia genera confianza. Las prestaciones complementarias (EL) al AVS/AI, así como las ayudas
         cantonales según la LVPC en el Cantón de Vaud, siguen una estructura altamente regulada. Aquí documentamos la
-        lógica matemática y legal con la que nuestra calculadora determina exactamente su derecho.</p>
-      <h2 class="section-title">1. Necesidad básica anual (Estándar federal 2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Personas solas</h4>
-          <div class="param-value">CHF 20'100</div>
-          <p><small>Monto federal legalmente establecido a partir del 1 de enero de 2025/2026.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Parejas casadas</h4>
-          <div class="param-value">CHF 30'150</div>
-          <p><small>Necesidad básica armonizada para parejas que conviven.</small></p>
-        </div>
+        lógica matemática y legal con la que nuestra calculadora determina exactamente su derecho.
+    </p>
+    <h2 class="section-title">
+     1. Necesidad básica anual (Estándar federal 2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Personas solas
+      </h4>
+      <div class="param-value">
+       CHF 20'100
       </div>
-      <h2 class="section-title">2. Verificación previa cantonal (Plazos de carencia según LVPC)</h2>
-      <p>En el Cantón de Vaud, el derecho legal a las prestaciones complementarias cantonales depende en gran medida de
-        la nacionalidad y de la duración ininterrumpida de la residencia en el cantón:</p>
-      <table class="data-table">
-        <tr>
-          <th>Grupo de personas</th>
-          <th>Años mínimos de residencia (VD)</th>
-          <th>Regulaciones especiales</th>
-        </tr>
-        <tr>
-          <td>Nacionales de terceros estados (No UE/AELC)</td>
-          <td>10 años</td>
-          <td>Reducción a 5 años si se demuestra derecho a AI</td>
-        </tr>
-        <tr>
-          <td>Refugiados reconocidos y apátridas</td>
-          <td>5 años</td>
-          <td>Sin otras facilidades cantonales</td>
-        </tr>
-        <tr>
-          <td>Ciudadanos suizos y nacionales UE/AELC</td>
-          <td>0 años</td>
-          <td>Acceso directo si cumplen los criterios federales</td>
-        </tr>
-      </table>
-      <h2 class="section-title">3. El proceso de cálculo en detalle</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Gastos reconocidos (Determinación de la necesidad)</h3>
-          <p>Primero, el sistema suma todas las partidas de gastos legalmente reconocidas y específicas del cantón:</p>
-          <div class="formula">
-            Necesidad básica + Alquiler reconocido (incl. gastos accesorios) + Prima del seguro de enfermedad (+ posible
+      <p>
+       <small>
+        Monto federal legalmente establecido a partir del 1 de enero de 2025/2026.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Parejas casadas
+      </h4>
+      <div class="param-value">
+       CHF 30'150
+      </div>
+      <p>
+       <small>
+        Necesidad básica armonizada para parejas que conviven.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. Verificación previa cantonal (Plazos de carencia según LVPC)
+    </h2>
+    <p>
+     En el Cantón de Vaud, el derecho legal a las prestaciones complementarias cantonales depende en gran medida de
+        la nacionalidad y de la duración ininterrumpida de la residencia en el cantón:
+    </p>
+    <table class="data-table">
+     <tr>
+      <th>
+       Grupo de personas
+      </th>
+      <th>
+       Años mínimos de residencia (VD)
+      </th>
+      <th>
+       Regulaciones especiales
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Nacionales de terceros estados (No UE/AELC)
+      </td>
+      <td>
+       10 años
+      </td>
+      <td>
+       Reducción a 5 años si se demuestra derecho a AI
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Refugiados reconocidos y apátridas
+      </td>
+      <td>
+       5 años
+      </td>
+      <td>
+       Sin otras facilidades cantonales
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Ciudadanos suizos y nacionales UE/AELC
+      </td>
+      <td>
+       0 años
+      </td>
+      <td>
+       Acceso directo si cumplen los criterios federales
+      </td>
+     </tr>
+    </table>
+    <h2 class="section-title">
+     3. El proceso de cálculo en detalle
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Gastos reconocidos (Determinación de la necesidad)
+      </h3>
+      <p>
+       Primero, el sistema suma todas las partidas de gastos legalmente reconocidas y específicas del cantón:
+      </p>
+      <div class="formula">
+       Necesidad básica + Alquiler reconocido (incl. gastos accesorios) + Prima del seguro de enfermedad (+ posible
             suplemento por silla de ruedas)
-          </div>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">Máximos de alquiler 2026 en el Cantón de Vaud
-            (incl. gastos accesorios)</h4>
-          <p><small>Los límites de alquiler dependen de las regiones de código postal oficiales del cantón. Las tarifas
-              legales ya incluyen todos los gastos accesorios:</small></p>
-          <table class="data-table">
-            <tr>
-              <th>Tamaño del hogar</th>
-              <th>Región 1 (ej. Lausana)</th>
-              <th>Región 2 (Centros medianos)</th>
-              <th>Región 3 (Rural / Estándar)</th>
-            </tr>
-            <tr>
-              <td>1 persona</td>
-              <td>CHF 18'300 (CHF 1'525/Mes)</td>
-              <td>CHF 16'680 (CHF 1'390/Mes)</td>
-              <td>CHF 16'680 (CHF 1'390/Mes)</td>
-            </tr>
-            <tr>
-              <td>2 personas</td>
-              <td>CHF 21'720 (CHF 1'810/Mes)</td>
-              <td>CHF 20'160 (CHF 1'680/Mes)</td>
-              <td>CHF 20'160 (CHF 1'680/Mes)</td>
-            </tr>
-            <tr>
-              <td>≥ 5 personas</td>
-              <td>CHF 25'920 (CHF 2'160/Mes)</td>
-              <td>CHF 24'000 (CHF 2'000/Mes)</td>
-              <td>CHF 24'000 (CHF 2'000/Mes)</td>
-            </tr>
-          </table>
-          <p style="margin-top: 0.5rem;"><small><strong>Regla especial de Vaud:</strong> Si se certifica la necesidad de
-              una vivienda accesible para silla de ruedas, el máximo de alquiler anual aumenta automáticamente en una
-              cantidad fija de <strong>CHF 6'900</strong>.</small></p>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">Regulación de la prima del seguro de enfermedad
-          </h4>
-          <p><small>Se computa principalmente la prima efectivamente pagada (hasta un máximo de CHF 30'000 al año). Si
-              no hay valor o es negativo, se aplican las primas medias cantonales (ej. Región 1: CHF 8'388, Región 2:
-              CHF 7'860, Región 3: CHF 7'284 anuales por adulto).</small></p>
-        </div>
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Ingresos computables y consumo de patrimonio</h3>
-          <p>A los gastos se contraponen los ingresos económicos ajustados:</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-            <li><strong>Rentas AVS/AI (Neutralización estricta de la 13ª renta):</strong> Desde la introducción de la
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       Máximos de alquiler 2026 en el Cantón de Vaud
+            (incl. gastos accesorios)
+      </h4>
+      <p>
+       <small>
+        Los límites de alquiler dependen de las regiones de código postal oficiales del cantón. Las tarifas
+              legales ya incluyen todos los gastos accesorios:
+       </small>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Tamaño del hogar
+        </th>
+        <th>
+         Región 1 (ej. Lausana)
+        </th>
+        <th>
+         Región 2 (Centros medianos)
+        </th>
+        <th>
+         Región 3 (Rural / Estándar)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 persona
+        </td>
+        <td>
+         CHF 18'300 (CHF 1'525/Mes)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/Mes)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/Mes)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 personas
+        </td>
+        <td>
+         CHF 21'720 (CHF 1'810/Mes)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/Mes)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/Mes)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         ≥ 5 personas
+        </td>
+        <td>
+         CHF 25'920 (CHF 2'160/Mes)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/Mes)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/Mes)
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 0.5rem;">
+       <small>
+        <strong>
+         Regla especial de Vaud:
+        </strong>
+        Si se certifica la necesidad de
+              una vivienda accesible para silla de ruedas, el máximo de alquiler anual aumenta automáticamente en una
+              cantidad fija de
+        <strong>
+         CHF 6'900
+        </strong>
+        .
+       </small>
+      </p>
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       Regulación de la prima del seguro de enfermedad
+      </h4>
+      <p>
+       <small>
+        Se computa principalmente la prima efectivamente pagada (hasta un máximo de CHF 30'000 al año). Si
+              no hay valor o es negativo, se aplican las primas medias cantonales (ej. Región 1: CHF 8'388, Región 2:
+              CHF 7'860, Región 3: CHF 7'284 anuales por adulto).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Ingresos computables y consumo de patrimonio
+      </h3>
+      <p>
+       A los gastos se contraponen los ingresos económicos ajustados:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         Rentas AVS/AI (Neutralización estricta de la 13ª renta):
+        </strong>
+        Desde la introducción de la
               13ª renta AVS en 2026, el algoritmo filtra matemáticamente este componente de forma limpia. Se aplica:
-              <code>Renta ajustada = (Renta AVS total / 13) * 12</code>. Otros ingresos no AVS permanecen sin reducción
-              al 100%.</li>
-            <li><strong>Ingresos laborales:</strong> Ajustados por la franquicia legal (CHF 1'300 para solteros / CHF
-              1'950 para parejas), luego se computa estándarmente 2/3 del monto restante.</li>
-            <li><strong>Ingresos por alquiler y pensión alimenticia:</strong> Cómputo directo según valores fiscales.
-            </li>
-            <li><strong>Consumo de patrimonio (Divisores cantonales):</strong> Del patrimonio neto se deduce la
+        <code>
+         Renta ajustada = (Renta AVS total / 13) * 12
+        </code>
+        . Otros ingresos no AVS permanecen sin reducción
+              al 100%.
+       </li>
+       <li>
+        <strong>
+         Ingresos laborales:
+        </strong>
+        Ajustados por la franquicia legal (CHF 1'300 para solteros / CHF
+              1'950 para parejas), luego se computa estándarmente 2/3 del monto restante.
+       </li>
+       <li>
+        <strong>
+         Ingresos por alquiler y pensión alimenticia:
+        </strong>
+        Cómputo directo según valores fiscales.
+       </li>
+       <li>
+        <strong>
+         Consumo de patrimonio (Divisores cantonales):
+        </strong>
+        Del patrimonio neto se deduce la
               deducción cantonal por vivienda propia (CHF 112'500 para solteros, CHF 187'500 para parejas casadas con
               vivienda ocupada por el propietario) y la franquicia legal. El resto se divide por el divisor específico.
-              Los activos cedidos ficticiamente (activos renunciados) se incluyen con un rendimiento del 0.29%.</li>
-          </ul>
-          <table class="data-table" style="margin-top: 1rem;">
-            <tr>
-              <th>Franquicias y parámetros (Federal/VD)</th>
-              <th>Monto / Factor</th>
-            </tr>
-            <tr>
-              <td>Franquicia de patrimonio: Personas solas</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>Franquicia de patrimonio: Parejas casadas</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>Franquicia de patrimonio: Por hijo</td>
-              <td>CHF 15'000</td>
-            </tr>
-            <tr>
-              <td>Divisor de patrimonio estándar (Pensionistas AVS por vejez)</td>
-              <td>10 (1/10 por año como ingreso)</td>
-            </tr>
-            <tr>
-              <td>Divisor de patrimonio AI (Pensionistas por invalidez)</td>
-              <td>15 (1/15 por año como ingreso)</td>
-            </tr>
-            <tr>
-              <td>Divisor de patrimonio en hogar (Para estancia en una institución)</td>
-              <td>5 (1/5 por año como ingreso)</td>
-            </tr>
-          </table>
-        </div>
+              Los activos cedidos ficticiamente (activos renunciados) se incluyen con un rendimiento del 0.29%.
+       </li>
+      </ul>
+      <table class="data-table" style="margin-top: 1rem;">
+       <tr>
+        <th>
+         Franquicias y parámetros (Federal/VD)
+        </th>
+        <th>
+         Monto / Factor
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Franquicia de patrimonio: Personas solas
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Franquicia de patrimonio: Parejas casadas
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Franquicia de patrimonio: Por hijo
+        </td>
+        <td>
+         CHF 15'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Divisor de patrimonio estándar (Pensionistas AVS por vejez)
+        </td>
+        <td>
+         10 (1/10 por año como ingreso)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Divisor de patrimonio AI (Pensionistas por invalidez)
+        </td>
+        <td>
+         15 (1/15 por año como ingreso)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Divisor de patrimonio en hogar (Para estancia en una institución)
+        </td>
+        <td>
+         5 (1/5 por año como ingreso)
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Resultado: Cálculo de la EL
+      </h3>
+      <p>
+       La prestación complementaria cierra la brecha exacta entre las dos magnitudes:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Prestación EL anual = Máx(0, [Gastos reconocidos] - [Ingresos computables])
       </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Resultado: Cálculo de la EL</h3>
-          <p>La prestación complementaria cierra la brecha exacta entre las dos magnitudes:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Prestación EL anual = Máx(0, [Gastos reconocidos] - [Ingresos computables])
-          </div>
-          <p><small>El monto de pago mensual corresponde a la EL anual dividida por 12, redondeado comercialmente al
-              franco completo más cercano.</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Importante: El umbral de entrada legal (Umbral de patrimonio)</strong><br />
-        Un derecho legal a las prestaciones complementarias queda absolutamente excluido si el patrimonio neto imponible
+      <p>
+       <small>
+        El monto de pago mensual corresponde a la EL anual dividida por 12, redondeado comercialmente al
+              franco completo más cercano.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Importante: El umbral de entrada legal (Umbral de patrimonio)
+     </strong>
+     <br/>
+     Un derecho legal a las prestaciones complementarias queda absolutamente excluido si el patrimonio neto imponible
         (antes de la deducción de las franquicias, pero excluyendo el valor de una propiedad ocupada por el propietario)
         supera los siguientes umbrales:
-        <ul style="margin-left: 20px; margin-top: 8px;">
-          <li>Personas solas: <strong>CHF 100'000</strong></li>
-          <li>Parejas casadas: <strong>CHF 200'000</strong></li>
-        </ul>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Volver a la página de inicio</a>
-        <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">Sitio oficial CCVD Vaud</a>
-      </div>
+     <ul style="margin-left: 20px; margin-top: 8px;">
+      <li>
+       Personas solas:
+       <strong>
+        CHF 100'000
+       </strong>
+      </li>
+      <li>
+       Parejas casadas:
+       <strong>
+        CHF 200'000
+       </strong>
+      </li>
+     </ul>
     </div>
-    <footer>
-      <p>Fuente: Directrices 2026 de la Caisse cantonale de compensation AVS Vaud (CCVC), LVPC y Ley federal sobre
-        prestaciones complementarias (LPC)</p>
-      <p>Proporcionado por welfarecalc.ch | Documentación algorítmica de alta precisión sin garantía legal.</p>
-    </footer>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Volver a la página de inicio
+     </a>
+     <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">
+      Sitio oficial CCVD Vaud
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fuente: Directrices 2026 de la Caisse cantonale de compensation AVS Vaud (CCVC), LVPC y Ley federal sobre
+        prestaciones complementarias (LPC)
+    </p>
+    <p>
+     Proporcionado por welfarecalc.ch | Documentación algorítmica de alta precisión sin garantía legal.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

@@ -1,48 +1,16 @@
 <!DOCTYPE html>
-<html lang="de-CH">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- TRANSLATE: Meta Tags -->
-    <title>Sozialleistungen Abfrage | welfarecalc.ch</title>
-    <meta name="description"
-        content="Finden Sie den offiziellen Berechnungsalgorithmus für Sozialhilfe (SH), Ergänzungsleistungen (EL), Familienzulagen (FA), Individuelle Prämienverbilligung (IPV) und Nothilfe (NH) in Ihrem Kanton. Transparent und datenschutzkonform.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
-    <link rel="alternate" hreflang="de-ch" href="https://www.welfarecalc.ch/open/2026open_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/2026open_en.html">
-    <link rel="alternate" hreflang="fr-ch" href="https://www.welfarecalc.ch/open/2026open_fr.html">
-    <link rel="alternate" hreflang="it-ch" href="https://www.welfarecalc.ch/open/2026open_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/2026open_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/2026open_pt.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/2026open_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/2026open_hr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/2026open_sq.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/2026open_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/2026open_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Open Graph -->
-
-    <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
-    <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "welfarecalc.ch",
-    "url": "https://www.welfarecalc.ch",
-    "inLanguage": "de"
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- TRANSLATE: Meta Tags -->
+  <meta content="index, follow" name="robots"/>
+  <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
+  <!-- Canonical Tag -->
+  <!-- Open Graph -->
+  <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -293,155 +261,296 @@
                 padding: 1.5rem;
             }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/2026open_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <!-- TRANSLATE: Header Section -->
-            <div class="update-tag">🔍 TRANSPARENTE ALGORITHMEN 2026</div>
-            <h1>Schweizer Sozialleistungen Abfrage</h1>
-            <p>Finden Sie den offiziellen Berechnungsalgorithmus für Ihren Kanton</p>
-        </header>
-
-        <div class="hero-search">
-            <div class="search-card">
-                <!-- Dropdown 1: Kanton -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="state">📍 1. Kanton wählen</label>
-                    <select id="state">
-                        <option value="">📌 Kanton auswählen</option>
-                        <option value="AG">Aargau (AG)</option>
-                        <option value="AI">Appenzell Innerrhoden (AI)</option>
-                        <option value="AR">Appenzell Ausserrhoden (AR)</option>
-                        <option value="BE">Bern (BE)</option>
-                        <option value="BL">Basel-Landschaft (BL)</option>
-                        <option value="BS">Basel-Stadt (BS)</option>
-                        <option value="FR">Freiburg (FR)</option>
-                        <option value="GE">Genf (GE)</option>
-                        <option value="GL">Glarus (GL)</option>
-                        <option value="GR">Graubünden (GR)</option>
-                        <option value="JU">Jura (JU)</option>
-                        <option value="LU">Luzern (LU)</option>
-                        <option value="NE">Neuenburg (NE)</option>
-                        <option value="NW">Nidwalden (NW)</option>
-                        <option value="OW">Obwalden (OW)</option>
-                        <option value="SG">St. Gallen (SG)</option>
-                        <option value="SH">Schaffhausen (SH)</option>
-                        <option value="SO">Solothurn (SO)</option>
-                        <option value="SZ">Schwyz (SZ)</option>
-                        <option value="TG">Thurgau (TG)</option>
-                        <option value="TI">Tessin (TI)</option>
-                        <option value="UR">Uri (UR)</option>
-                        <option value="VD">Waadt (VD)</option>
-                        <option value="VS">Wallis (VS)</option>
-                        <option value="ZG">Zug (ZG)</option>
-                        <option value="ZH">Zürich (ZH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="state-error" class="error-text">⚠️ Bitte wählen Sie einen Kanton aus.</div>
-                </div>
-
-                <!-- Dropdown 2: Leistungsart -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="welfare">📋 2. Kategorie der Sozialleistung wählen</label>
-                    <select id="welfare">
-                        <option value="">📋 Leistungsart auswählen</option>
-                        <option value="SH">🏠 Sozialhilfe (SH)</option>
-                        <option value="IPV">💊 Individuelle Prämienverbilligung (IPV)</option>
-                        <option value="EL">👴 Ergänzungsleistungen (EL)</option>
-                        <option value="FA">👨‍👩‍👧 Familienzulagen (FA)</option>
-                        <option value="nothilfe">🚨 Nothilfe (NH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="welfare-error" class="error-text">⚠️ Bitte wählen Sie eine Leistungsart aus.</div>
-                </div>
-
-                <div class="button-group">
-                    <!-- TRANSLATE -->
-                    <button class="action-btn search-button-style" onclick="searchAndRedirect()">🔍 Suchen & Algorithmus
-                        öffnen</button>
-                    <a href="https://www.welfarecalc.ch" class="action-btn home-button-style">🏠 Zurück zur
-                        Startseite</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-below">
-            <!-- Info Box -->
-            <div class="info-box">
-                <!-- TRANSLATE: Info Box Content -->
-                <p>🇨🇭 <strong>Über welfarecalc.ch</strong></p>
-                <p>Wir sind ein Team von in der Schweiz ansässigen Ingenieuren und Entwicklern. Unser Ziel ist es, die
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   Sozialleistungen Abfrage | 26 Kantone Algorithmen | welfarecalc.ch
+  </title>
+  <meta content="Finden Sie den offiziellen Berechnungsalgorithmus für Sozialhilfe (SH), Ergänzungsleistungen (EL), Familienzulagen (FA), IPV und Nothilfe in Ihrem Kanton. Transparent und datenschutzkonform." name="description"/>
+  <meta content="Sozialleistungen, Algorithmen, Kanton, SH, EL, FA, IPV, Nothilfe, Sozialhilfe, Ergänzungsleistungen, Familienzulagen, Prämienverbilligung, welfarecalc.ch" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" rel="canonical"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="x-default" rel="alternate"/>
+  <meta content="Sozialleistungen Abfrage | 26 Kantone Algorithmen | welfarecalc.ch" property="og:title"/>
+  <meta content="Finden Sie den offiziellen Berechnungsalgorithmus für Sozialhilfe (SH), Ergänzungsleistungen (EL), Familienzulagen (FA), IPV und Nothilfe in Ihrem Kanton. Transparent und datenschutzkonform." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/2026open_de.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="de_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Sozialleistungen Abfrage | 26 Kantone Algorithmen | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Finden Sie den offiziellen Berechnungsalgorithmus für Sozialhilfe (SH), Ergänzungsleistungen (EL), Familienzulagen (FA), IPV und Nothilfe in Ihrem Kanton." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "WebSite", "name": "welfarecalc.ch", "url": "https://www.welfarecalc.ch", "description": "Finden Sie den offiziellen Berechnungsalgorithmus für Sozialhilfe (SH), Ergänzungsleistungen (EL), Familienzulagen (FA), IPV und Nothilfe in Ihrem Kanton. Transparent und datenschutzkonform.", "inLanguage": "de"}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <!-- TRANSLATE: Header Section -->
+    <div class="update-tag">
+     🔍 TRANSPARENTE ALGORITHMEN 2026
+    </div>
+    <h1>
+     Schweizer Sozialleistungen Abfrage
+    </h1>
+    <p>
+     Finden Sie den offiziellen Berechnungsalgorithmus für Ihren Kanton
+    </p>
+   </header>
+   <div class="hero-search">
+    <div class="search-card">
+     <!-- Dropdown 1: Kanton -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="state">
+       📍 1. Kanton wählen
+      </label>
+      <select id="state">
+       <option value="">
+        📌 Kanton auswählen
+       </option>
+       <option value="AG">
+        Aargau (AG)
+       </option>
+       <option value="AI">
+        Appenzell Innerrhoden (AI)
+       </option>
+       <option value="AR">
+        Appenzell Ausserrhoden (AR)
+       </option>
+       <option value="BE">
+        Bern (BE)
+       </option>
+       <option value="BL">
+        Basel-Landschaft (BL)
+       </option>
+       <option value="BS">
+        Basel-Stadt (BS)
+       </option>
+       <option value="FR">
+        Freiburg (FR)
+       </option>
+       <option value="GE">
+        Genf (GE)
+       </option>
+       <option value="GL">
+        Glarus (GL)
+       </option>
+       <option value="GR">
+        Graubünden (GR)
+       </option>
+       <option value="JU">
+        Jura (JU)
+       </option>
+       <option value="LU">
+        Luzern (LU)
+       </option>
+       <option value="NE">
+        Neuenburg (NE)
+       </option>
+       <option value="NW">
+        Nidwalden (NW)
+       </option>
+       <option value="OW">
+        Obwalden (OW)
+       </option>
+       <option value="SG">
+        St. Gallen (SG)
+       </option>
+       <option value="SH">
+        Schaffhausen (SH)
+       </option>
+       <option value="SO">
+        Solothurn (SO)
+       </option>
+       <option value="SZ">
+        Schwyz (SZ)
+       </option>
+       <option value="TG">
+        Thurgau (TG)
+       </option>
+       <option value="TI">
+        Tessin (TI)
+       </option>
+       <option value="UR">
+        Uri (UR)
+       </option>
+       <option value="VD">
+        Waadt (VD)
+       </option>
+       <option value="VS">
+        Wallis (VS)
+       </option>
+       <option value="ZG">
+        Zug (ZG)
+       </option>
+       <option value="ZH">
+        Zürich (ZH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="state-error">
+       ⚠️ Bitte wählen Sie einen Kanton aus.
+      </div>
+     </div>
+     <!-- Dropdown 2: Leistungsart -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="welfare">
+       📋 2. Kategorie der Sozialleistung wählen
+      </label>
+      <select id="welfare">
+       <option value="">
+        📋 Leistungsart auswählen
+       </option>
+       <option value="SH">
+        🏠 Sozialhilfe (SH)
+       </option>
+       <option value="IPV">
+        💊 Individuelle Prämienverbilligung (IPV)
+       </option>
+       <option value="EL">
+        👴 Ergänzungsleistungen (EL)
+       </option>
+       <option value="FA">
+        👨‍👩‍👧 Familienzulagen (FA)
+       </option>
+       <option value="nothilfe">
+        🚨 Nothilfe (NH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="welfare-error">
+       ⚠️ Bitte wählen Sie eine Leistungsart aus.
+      </div>
+     </div>
+     <div class="button-group">
+      <!-- TRANSLATE -->
+      <button class="action-btn search-button-style" onclick="searchAndRedirect()">
+       🔍 Suchen &amp; Algorithmus
+                        öffnen
+      </button>
+      <a class="action-btn home-button-style" href="https://www.welfarecalc.ch">
+       🏠 Zurück zur
+                        Startseite
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="content-below">
+    <!-- Info Box -->
+    <div class="info-box">
+     <!-- TRANSLATE: Info Box Content -->
+     <p>
+      🇨🇭
+      <strong>
+       Über welfarecalc.ch
+      </strong>
+     </p>
+     <p>
+      Wir sind ein Team von in der Schweiz ansässigen Ingenieuren und Entwicklern. Unser Ziel ist es, die
                     komplexen Schweizer Sozialleistungssysteme für alle verständlich und zugänglich zu machen. Diese
-                    Plattform ist ein <strong>Non-Profit-Projekt</strong>, das aus Überzeugung für Transparenz und
-                    Fairness entstanden ist.</p>
-
-                <p>📄 <strong>Wie unsere Algorithmen entstehen</strong><br>
-                    Unsere Berechnungslogiken basieren ausschliesslich auf offiziellen, öffentlich zugänglichen
+                    Plattform ist ein
+      <strong>
+       Non-Profit-Projekt
+      </strong>
+      , das aus Überzeugung für Transparenz und
+                    Fairness entstanden ist.
+     </p>
+     <p>
+      📄
+      <strong>
+       Wie unsere Algorithmen entstehen
+      </strong>
+      <br/>
+      Unsere Berechnungslogiken basieren ausschliesslich auf offiziellen, öffentlich zugänglichen
                     Dokumenten – darunter kantonale Gesetze (SHG, ELG, FamZG, KVG), SKOS-Richtlinien und Verordnungen
                     der Ausgleichskassen. Jeder Algorithmus wird sorgfältig aus diesen Quellen abgeleitet und
-                    transparent dokumentiert.</p>
-
-                <p>🌍 <strong>Mehrsprachigkeit & Transparenz</strong><br>
-                    Die Schweiz ist vielfältig. Deshalb stellen wir alle Algorithmen in <strong>11 Sprachen</strong> zur
+                    transparent dokumentiert.
+     </p>
+     <p>
+      🌍
+      <strong>
+       Mehrsprachigkeit &amp; Transparenz
+      </strong>
+      <br/>
+      Die Schweiz ist vielfältig. Deshalb stellen wir alle Algorithmen in
+      <strong>
+       11 Sprachen
+      </strong>
+      zur
                     Verfügung: Deutsch, Französisch, Italienisch, Englisch, Spanisch, Portugiesisch, Polnisch,
                     Kroatisch, Albanisch, Türkisch und Tamilisch. So können möglichst viele Menschen die für sie
-                    relevanten Informationen verstehen.</p>
-
-                <p>📌 <strong>So nutzen Sie diese Seite</strong><br>
-                    Wählen Sie oben Ihren Kanton und die gewünschte Leistungsart aus. Klicken Sie dann auf „Suchen &
+                    relevanten Informationen verstehen.
+     </p>
+     <p>
+      📌
+      <strong>
+       So nutzen Sie diese Seite
+      </strong>
+      <br/>
+      Wählen Sie oben Ihren Kanton und die gewünschte Leistungsart aus. Klicken Sie dann auf „Suchen &amp;
                     Algorithmus öffnen“. Sie werden direkt zum entsprechenden Algorithmus weitergeleitet – in einem
                     neuen Tab oder im selben Fenster (je nach Browsereinstellung). Über den roten Button „Zurück zur
-                    Startseite“ gelangen Sie jederzeit zur Hauptseite welfarecalc.ch zurück.</p>
-            </div>
-
-            <!-- Rechtlicher Hinweis -->
-            <div class="disclaimer">
-                <!-- TRANSLATE: Disclaimer -->
-                <strong>⚠️ Wichtiger rechtlicher Hinweis</strong><br>
-                Die auf dieser Website dargestellten Algorithmen und Berechnungen basieren auf öffentlich zugänglichen
+                    Startseite“ gelangen Sie jederzeit zur Hauptseite welfarecalc.ch zurück.
+     </p>
+    </div>
+    <!-- Rechtlicher Hinweis -->
+    <div class="disclaimer">
+     <!-- TRANSLATE: Disclaimer -->
+     <strong>
+      ⚠️ Wichtiger rechtlicher Hinweis
+     </strong>
+     <br/>
+     Die auf dieser Website dargestellten Algorithmen und Berechnungen basieren auf öffentlich zugänglichen
                 offiziellen Dokumenten und wurden von uns nach bestem Wissen und Gewissen abgeleitet. Aufgrund der
                 Komplexität der Sozialleistungssysteme und der individuellen Umstände (Einkommen, Vermögen,
                 Familienkonstellation, Wohnsituation etc.) können die tatsächlichen Ansprüche im Einzelfall abweichen.
-                <strong>Alle Angaben dienen ausschliesslich der Information und haben keine rechtsverbindliche
-                    Wirkung.</strong> Für eine verbindliche Auskunft wenden Sie sich bitte an die zuständige Behörde
+     <strong>
+      Alle Angaben dienen ausschliesslich der Information und haben keine rechtsverbindliche
+                    Wirkung.
+     </strong>
+     Für eine verbindliche Auskunft wenden Sie sich bitte an die zuständige Behörde
                 (SVA, Gemeindeverwaltung oder Sozialdienst). welfarecalc.ch übernimmt keine Haftung für Entscheidungen,
                 die auf Basis dieser Informationen getroffen werden.
-            </div>
-        </div>
-
-        <footer>
-            <!-- TRANSLATE: Footer -->
-            <p>© 2026 welfarecalc.ch | Transparente Berechnung von Sozialleistungen</p>
-            <p>Quellen: Kantonale Gesetze (SHG, ELG, FamZG, KVG), SKOS-Richtlinien 2026, Ausgleichskassen-Verordnungen
-            </p>
-            <p>Ein Non-Profit-Projekt von Ingenieuren für Transparenz in der Schweiz</p>
-        </footer>
     </div>
-
-    <noscript>
-        <div
-            style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
-            ⚠️ JavaScript ist deaktiviert. Bitte aktivieren Sie JavaScript, um die Suchfunktion zu nutzen.
-        </div>
-    </noscript>
-
-    <script>
-        // Configuration
+   </div>
+   <footer>
+    <!-- TRANSLATE: Footer -->
+    <p>
+     © 2026 welfarecalc.ch | Transparente Berechnung von Sozialleistungen
+    </p>
+    <p>
+     Quellen: Kantonale Gesetze (SHG, ELG, FamZG, KVG), SKOS-Richtlinien 2026, Ausgleichskassen-Verordnungen
+    </p>
+    <p>
+     Ein Non-Profit-Projekt von Ingenieuren für Transparenz in der Schweiz
+    </p>
+   </footer>
+  </div>
+  <noscript>
+   <div style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
+    ⚠️ JavaScript ist deaktiviert. Bitte aktivieren Sie JavaScript, um die Suchfunktion zu nutzen.
+   </div>
+  </noscript>
+  <script>
+   // Configuration
         const LANG = "de";
         const BASE_PATH = "https://www.welfarecalc.ch/open/";
 
@@ -502,8 +611,6 @@
 
         if (stateField) stateField.addEventListener('keypress', handleEnterOnSelect);
         if (welfareField) welfareField.addEventListener('keypress', handleEnterOnSelect);
-    </script>
-
-</body>
-
+  </script>
+ </body>
 </html>

@@ -1,56 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritmo de Assistência Social Cantão Basel-Landschaft 2026 | Cálculo Transparente | welfarecalc.ch</title>
-    <meta name="description" content="Como é calculada a assistência social em 2026 no cantão de Basel-Landschaft (BL)? Descubra o nosso algoritmo transparente baseado nas diretrizes SKOS e na lei cantonal.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026SH_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026SH_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026SH_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026SH_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026SH_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026SH_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026SH_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026SH_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026SH_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026SH_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cálculo de Assistência Social Basel-Landschaft 2026",
-      "description": "Detalhamento algorítmico do cálculo de assistência social no Cantão BL.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Verificar os limites de património como critério de acesso"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinar o nível mensal de subsistência social (necessidades básicas SKOS, regiões de habitação A/B/C, seguro de saúde menos IPV)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Contabilizar rendimentos do trabalho e outros rendimentos ajustados"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcular o direito mensal à prestação de assistência social"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -85,143 +39,389 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculadora de Beneficios Suicos 2026 | 26 Cantones + Revisor Dental">
-    <meta property="og:description" content="Calcule AVS, AI, PC e reducoes de premios em todos os 26 cantoes suicos. Inclui revisor de faturas dentarias e verificador de contratos de aluguel. 100% anonimo no navegador. 11 idiomas.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/BL_2026SH_pt.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">CONFORME SKOS 2026</div>
-        <h1>Algoritmo de Assistência Social: Cantão de Basel-Landschaft</h1>
-        <p>Documentação transparente da lógica de cálculo do mínimo de subsistência social (BL)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
-        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AS Basileia-Campo 2026 – Assistência social | welfarecalc.ch
+  </title>
+  <meta content="Calcule Assistência social no Cantão de Basileia-Campo. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Assistência social, Cantão Basileia-Campo, AS, Prestações sociais, Cálculo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html" rel="canonical"/>
+  <meta content="AS Basileia-Campo 2026 – Assistência social | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcule Assistência social no Cantão de Basileia-Campo. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/BL_2026SH_pt.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_PT" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AS Basileia-Campo 2026 – Assistência social | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcule Assistência social no Cantão de Basileia-Campo. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Assistência social Basileia-Campo 2026", "description": "Step-by-step guide to calculating Assistência social in Canton Basileia-Campo.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME SKOS 2026
     </div>
-
-    <div class="content">
-        <p>Como é calculada a assistência social no cantão de Basel-Landschaft? Para fortalecer a confiança do utilizador, divulgamos o algoritmo matematicamente preciso por detrás do welfarecalc.ch. Baseia-se na Lei de Assistência Social (SHG BL), na portaria cantonal e nas mais recentes diretrizes SKOS 2026.</p>
-
-        <h2 class="section-title">1. Verificação de Património (Critério de Acesso)</h2>
-        <p style="margin-bottom: 1rem;"><small>Antes de calcular o direito mensal, o sistema verifica os ativos líquidos da unidade de apoio. Existe direito apenas se o critério de limite de património for cumprido:</small></p>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Limite para Pessoa Singular</h4>
-                <div class="param-value">CHF 6'000</div>
-                <p><small>Mais CHF 3'000 por criança ou pessoa em formação/educação.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Limite para Casais / Famílias</h4>
-                <div class="param-value">CHF 12'000</div>
-                <p><small>Limite máximo por unidade de apoio no Cantão BL.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Percurso de Cálculo (Mensal)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Despesas Básicas de Vida (DBV)</h3>
-                <p>As DBV cobrem custos com alimentação, vestuário, energia e gestão doméstica de acordo com as SKOS 2026:</p>
-                <table class="data-table">
-                    <tr><th>Dimensão do agregado</th><th>Valor mensal (2026)</th></tr>
-                    <tr><td>1 pessoa</td><td>CHF 1'061</td></tr>
-                    <tr><td>2 pessoas</td><td>CHF 1'624</td></tr>
-                    <tr><td>3 pessoas</td><td>CHF 2'017</td></tr>
-                    <tr><td>4 pessoas</td><td>CHF 2'320</td></tr>
-                    <tr><td>5 pessoas</td><td>CHF 2'623</td></tr>
-                    <tr><td>A partir de 6 pessoas</td><td>+ CHF 231 por cada pessoa adicional</td></tr>
-                </table>
-                <p style="margin-top: 0.8rem;"><small>*Nota sobre a escala SKOS: O nosso motor principal v3.1 contabiliza automaticamente a redução degressiva para subsídios de criança e juventude de acordo com a prática cantonal para agregados maiores.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Regiões Habitacionais & Limites de Renda</h3>
-                <p>Os custos reais de habitação (renda bruta incluindo despesas acessórias) são reconhecidos até ao respetivo máximo regional:</p>
-                <div class="formula">
-                    Renda Reconhecida = Min(Renda Real, Máximo Regional)
-                </div>
-                <table class="data-table">
-                    <tr><th>Dimensão do agregado</th><th>Região A (Nível elevado)</th><th>Região B (Padrão)</th><th>Região C (Rural)</th></tr>
-                    <tr><td>1 pessoa</td><td>CHF 1'100</td><td>CHF 1'000</td><td>CHF 900</td></tr>
-                    <tr><td>2 pessoas</td><td>CHF 1'300</td><td>CHF 1'200</td><td>CHF 1'100</td></tr>
-                    <tr><td>3 pessoas</td><td>CHF 1'500</td><td>CHF 1'400</td><td>CHF 1'300</td></tr>
-                    <tr><td>4 pessoas</td><td>CHF 1'700</td><td>CHF 1'600</td><td>CHF 1'500</td></tr>
-                    <tr><td>5+ pessoas</td><td>CHF 1'900</td><td>CHF 1'800</td><td>CHF 1'700</td></tr>
-                </table>
-                <p style="margin-top: 0.8rem;"><small>A Região B serve como padrão de recurso no sistema se nenhum município específico for registado.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Custos de Saúde & Compensação IPV Otimizada</h3>
-                <p>O seguro de saúde obrigatório (KVG) é coberto até ao teto cantonal (prémio médio), deduzindo a Redução Individual de Prémios (IPV):</p>
-                <div class="formula">
-                    Necessidade Líquida de Seguro Saúde = Máx(0, Prémio KVG - IPV Mensal)
-                </div>
-                <p><small>Importante: Uma vez que a IPV no Cantão BL é transferida diretamente para a seguradora, o nosso algoritmo elimina quaisquer excedentes de cálculo para evitar rendimentos fictícios.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Contabilização de Rendimentos & Incentivo ao Trabalho (EFB)</h3>
-                <p>Uma dedução de incentivo é aplicada ao rendimento líquido do trabalho para manter a motivação para trabalhar:</p>
-                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace;">
-                    Rendimento Considerado = Salário Líquido - EFB (20% do salário, máx. CHF 400 por mês)
-                </div>
-                <p><small>Outros rendimentos como pensões de alimentos, reformas ou subsídios de família são adicionados ao rendimento a 100%.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">5</div>
-            <div class="step-body">
-                <h3>Resultado: Direito Mensal à Prestação</h3>
-                <p>Ao contrário de estimativas puramente anuais, o nosso sistema calcula estritamente de forma mensal para acompanhar com precisão as flutuações de rendimento:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace;">
-                    Direito Mensal = Máx(0, Necessidade Total - Rendimento Total)
-                </div>
-                <p><small>Onde: Necessidade Total = DBV + Renda + Seguro Saúde Líquido + Suplementos de Integração (IZL)</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Suplementos de emprego e integração (IZL):</strong><br>
-            Para promover a integração profissional e social, a lei do cantão de Basel-Landschaft prevê suplementos mensais de <strong>CHF 100</strong> para pessoas empregadas (sujeito a classificação oficial).
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lançar Calculadora</a>
-            <a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" target="_blank" class="btn-link">Página Oficial do Cantão BL</a>
-        </div>
+    <h1>
+     Algoritmo de Assistência Social: Cantão de Basel-Landschaft
+    </h1>
+    <p>
+     Documentação transparente da lógica de cálculo do mínimo de subsistência social (BL)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Verificação rápida: Tem direito?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pt" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Verificar gratuitamente →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Como é calculada a assistência social no cantão de Basel-Landschaft? Para fortalecer a confiança do utilizador, divulgamos o algoritmo matematicamente preciso por detrás do welfarecalc.ch. Baseia-se na Lei de Assistência Social (SHG BL), na portaria cantonal e nas mais recentes diretrizes SKOS 2026.
+    </p>
+    <h2 class="section-title">
+     1. Verificação de Património (Critério de Acesso)
+    </h2>
+    <p style="margin-bottom: 1rem;">
+     <small>
+      Antes de calcular o direito mensal, o sistema verifica os ativos líquidos da unidade de apoio. Existe direito apenas se o critério de limite de património for cumprido:
+     </small>
+    </p>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Limite para Pessoa Singular
+      </h4>
+      <div class="param-value">
+       CHF 6'000
+      </div>
+      <p>
+       <small>
+        Mais CHF 3'000 por criança ou pessoa em formação/educação.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Limite para Casais / Famílias
+      </h4>
+      <div class="param-value">
+       CHF 12'000
+      </div>
+      <p>
+       <small>
+        Limite máximo por unidade de apoio no Cantão BL.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Fontes: Lei de Assistência Social do Cantão de Basel-Landschaft (SHG) e Diretrizes SKOS 2026</p>
-        <p>© 2026 welfarecalc.ch | Cálculo Transparente da Assistência Social</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Percurso de Cálculo (Mensal)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Despesas Básicas de Vida (DBV)
+      </h3>
+      <p>
+       As DBV cobrem custos com alimentação, vestuário, energia e gestão doméstica de acordo com as SKOS 2026:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Dimensão do agregado
+        </th>
+        <th>
+         Valor mensal (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 pessoa
+        </td>
+        <td>
+         CHF 1'061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 pessoas
+        </td>
+        <td>
+         CHF 1'624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 pessoas
+        </td>
+        <td>
+         CHF 2'017
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 pessoas
+        </td>
+        <td>
+         CHF 2'320
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5 pessoas
+        </td>
+        <td>
+         CHF 2'623
+        </td>
+       </tr>
+       <tr>
+        <td>
+         A partir de 6 pessoas
+        </td>
+        <td>
+         + CHF 231 por cada pessoa adicional
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 0.8rem;">
+       <small>
+        *Nota sobre a escala SKOS: O nosso motor principal v3.1 contabiliza automaticamente a redução degressiva para subsídios de criança e juventude de acordo com a prática cantonal para agregados maiores.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Regiões Habitacionais &amp; Limites de Renda
+      </h3>
+      <p>
+       Os custos reais de habitação (renda bruta incluindo despesas acessórias) são reconhecidos até ao respetivo máximo regional:
+      </p>
+      <div class="formula">
+       Renda Reconhecida = Min(Renda Real, Máximo Regional)
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Dimensão do agregado
+        </th>
+        <th>
+         Região A (Nível elevado)
+        </th>
+        <th>
+         Região B (Padrão)
+        </th>
+        <th>
+         Região C (Rural)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 pessoa
+        </td>
+        <td>
+         CHF 1'100
+        </td>
+        <td>
+         CHF 1'000
+        </td>
+        <td>
+         CHF 900
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 pessoas
+        </td>
+        <td>
+         CHF 1'300
+        </td>
+        <td>
+         CHF 1'200
+        </td>
+        <td>
+         CHF 1'100
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 pessoas
+        </td>
+        <td>
+         CHF 1'500
+        </td>
+        <td>
+         CHF 1'400
+        </td>
+        <td>
+         CHF 1'300
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 pessoas
+        </td>
+        <td>
+         CHF 1'700
+        </td>
+        <td>
+         CHF 1'600
+        </td>
+        <td>
+         CHF 1'500
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5+ pessoas
+        </td>
+        <td>
+         CHF 1'900
+        </td>
+        <td>
+         CHF 1'800
+        </td>
+        <td>
+         CHF 1'700
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 0.8rem;">
+       <small>
+        A Região B serve como padrão de recurso no sistema se nenhum município específico for registado.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Custos de Saúde &amp; Compensação IPV Otimizada
+      </h3>
+      <p>
+       O seguro de saúde obrigatório (KVG) é coberto até ao teto cantonal (prémio médio), deduzindo a Redução Individual de Prémios (IPV):
+      </p>
+      <div class="formula">
+       Necessidade Líquida de Seguro Saúde = Máx(0, Prémio KVG - IPV Mensal)
+      </div>
+      <p>
+       <small>
+        Importante: Uma vez que a IPV no Cantão BL é transferida diretamente para a seguradora, o nosso algoritmo elimina quaisquer excedentes de cálculo para evitar rendimentos fictícios.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Contabilização de Rendimentos &amp; Incentivo ao Trabalho (EFB)
+      </h3>
+      <p>
+       Uma dedução de incentivo é aplicada ao rendimento líquido do trabalho para manter a motivação para trabalhar:
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px; font-family: monospace;">
+       Rendimento Considerado = Salário Líquido - EFB (20% do salário, máx. CHF 400 por mês)
+      </div>
+      <p>
+       <small>
+        Outros rendimentos como pensões de alimentos, reformas ou subsídios de família são adicionados ao rendimento a 100%.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Resultado: Direito Mensal à Prestação
+      </h3>
+      <p>
+       Ao contrário de estimativas puramente anuais, o nosso sistema calcula estritamente de forma mensal para acompanhar com precisão as flutuações de rendimento:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold; font-family: monospace;">
+       Direito Mensal = Máx(0, Necessidade Total - Rendimento Total)
+      </div>
+      <p>
+       <small>
+        Onde: Necessidade Total = DBV + Renda + Seguro Saúde Líquido + Suplementos de Integração (IZL)
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Suplementos de emprego e integração (IZL):
+     </strong>
+     <br/>
+     Para promover a integração profissional e social, a lei do cantão de Basel-Landschaft prevê suplementos mensais de
+     <strong>
+      CHF 100
+     </strong>
+     para pessoas empregadas (sujeito a classificação oficial).
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Lançar Calculadora
+     </a>
+     <a class="btn-link" href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/sozialamt/sozialhilfe-asyl" target="_blank">
+      Página Oficial do Cantão BL
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fontes: Lei de Assistência Social do Cantão de Basel-Landschaft (SHG) e Diretrizes SKOS 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Cálculo Transparente da Assistência Social
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

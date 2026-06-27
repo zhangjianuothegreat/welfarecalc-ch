@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="tr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EL Algoritması Ticino Kantonu 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
-  <meta
-    content="2026 yılında Ticino Kantonu'nda Ek Yardımlar (EL) nasıl hesaplanır? Resmi IAS TI verilerine dayanan şeffaf algoritmamızı keşfedin."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Ticino 2026 Ek Yardımlarının Hesaplanması",
-      "description": "Kanton Ticino'da (TI) kantonun özelliklerini dikkate alarak EL hesaplamasının ayrıntılı algoritmik dökümü.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Kabul edilen harcama ihtiyacının belirlenmesi (Temel ihtiyaç, bölgelere göre kanton brüt kirası, sağlık sigortası götürü bedeli)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Gelirlerin hesaplanması (13. AHV maaşı hariç AHV/IV maaşları, 2/3 hesaplaması ile çalışma geliri, doğru varlık tüketimi)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "EL tutarının belirlenmesi (Toplam giderler eksi hesaplanabilir toplam gelirler)"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -228,157 +186,334 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/TI_2026EL_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   EY Ticino 2026 – Ek yardımlar | welfarecalc.ch
+  </title>
+  <meta content="Ticino Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Ek yardımlar, Ticino Kantonu, EY, Sosyal yardımlar, Hesaplama 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" rel="canonical"/>
+  <meta content="EY Ticino 2026 – Ek yardımlar | welfarecalc.ch" property="og:title"/>
+  <meta content="Ticino Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="EY Ticino 2026 – Ek yardımlar | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Ticino Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Ek yardımlar Ticino 2026", "description": "Step-by-step guide to calculating Ek yardımlar in Canton Ticino.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">RESMİ VERİLER 2026</div>
-      <h1>EL Algoritması: Kanton Ticino (TI)</h1>
-      <p>2026 Yılı Ek Yardımlarının (EL) Şeffaf Dökümü</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
-        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+   <header>
+    <div class="update-tag">
+     RESMİ VERİLER 2026
     </div>
-    
-    <div class="content">
-      <p>Şeffaflık güven yaratır. AHV/IV'ye yönelik Ek Yardımlar (EL) karmaşık bir alandır. Burada, hesaplayıcımızın
+    <h1>
+     EL Algoritması: Kanton Ticino (TI)
+    </h1>
+    <p>
+     2026 Yılı Ek Yardımlarının (EL) Şeffaf Dökümü
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Hızlı Kontrol: Hakkınız var mı?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_tr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Ücretsiz kontrol et →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Şeffaflık güven yaratır. AHV/IV'ye yönelik Ek Yardımlar (EL) karmaşık bir alandır. Burada, hesaplayıcımızın
         Kanton Ticino'daki hakkınızı federal düzenlemelere ve IAS TI (Istituto di Assistenza Sociale) resmi
-        yönergelerine dayanarak nasıl belirlediğini hassas bir şekilde belgeliyoruz.</p>
-      <h2 class="section-title">1. Yıllık Temel İhtiyaç (2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Bekarlar</h4>
-          <div class="param-value">CHF 20'670</div>
-          <p><small>Genel yaşam giderleri için ülke çapında tek tip tutar.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Evli Çiftler</h4>
-          <div class="param-value">CHF 31'005</div>
-          <p><small>Her iki eş için birleştirilmiş yasal temel ihtiyaç.</small></p>
-        </div>
+        yönergelerine dayanarak nasıl belirlediğini hassas bir şekilde belgeliyoruz.
+    </p>
+    <h2 class="section-title">
+     1. Yıllık Temel İhtiyaç (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Bekarlar
+      </h4>
+      <div class="param-value">
+       CHF 20'670
       </div>
-      <h2 class="section-title">2. Hesaplama Yolunun Detayları</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Kabul Edilen Giderler (İhtiyaç)</h3>
-          <p>Öncelikle, yasal olarak tanınan ve kanton tarafından düzenlenen tüm gider kalemlerini topluyoruz:</p>
-          <div class="formula">
-            Temel İhtiyaç + Kabul Edilen Konut Maliyetleri (Brüt Kira/Mülk) + SGK Götürü Primi
-          </div>
-          <p><strong>Ticino'da 2026 Kira Tavanları (Federal Bölgeler 2 ve 3'e göre):</strong></p>
-          <table class="data-table">
-            <tr>
-              <th>Hanehalkı Büyüklüğü</th>
-              <th>Bölge 2 (Kentsel/Aglomerasyon)</th>
-              <th>Bölge 3 (Kırsal Belediyeler)</th>
-            </tr>
-            <tr>
-              <td>1 Kişi</td>
-              <td>CHF 18'300 (CHF 1'525/Ay)</td>
-              <td>CHF 16'680 (CHF 1'390/Ay)</td>
-            </tr>
-            <tr>
-              <td>2 Kişi</td>
-              <td>CHF 21'720 (CHF 1'810/Ay)</td>
-              <td>CHF 20'160 (CHF 1'680/Ay)</td>
-            </tr>
-            <tr>
-              <td>3 Kişi</td>
-              <td>CHF 23'760 (CHF 1'980/Ay)</td>
-              <td>CHF 22'200 (CHF 1'850/Ay)</td>
-            </tr>
-            <tr>
-              <td>4 Kişi</td>
-              <td>CHF 25'920 (CHF 2'160/Ay)</td>
-              <td>CHF 24'000 (CHF 2'000/Ay)</td>
-            </tr>
-          </table>
-          <p style="margin-top: 10px;"><small>*Konut Mülkiyeti Özelliği: Sahibi tarafından kullanılan gayrimenkullerde
-              hayali bir kira değeri kullanılmaz, bunun yerine fiili ipotek faizleri ve ilgili kanton maksimumuna kadar
-              yasal bir bakım götürü bedeli kabul edilir.</small></p>
-        </div>
+      <p>
+       <small>
+        Genel yaşam giderleri için ülke çapında tek tip tutar.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Evli Çiftler
+      </h4>
+      <div class="param-value">
+       CHF 31'005
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Hesaplanabilir Gelirler</h3>
-          <p>Ardından, tüm gelirler 2026 katı ELG reformu kurallarına göre değerlendirilir:</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-            <li><strong>Maaş Tahsilatı (13. AHV Nötralizasyonu):</strong> Yasal AHV veya IV maaşları 12 ay için
-              hesaplanır. Yeni 13. AHV maaşı, federal karara göre tamamen nötralize edilir ve EL kesintisine yol
-              açmamalıdır.</li>
-            <li><strong>Çalışma Geliri (2/3 Hesaplaması):</strong> Brüt çalışma gelirinden önce bir muafiyet tutarı
-              düşülür (Bekarlar için CHF 1'500 / Evli çiftler için CHF 2'250). Kalan miktardan, yasalara tamamen uygun
-              olarak gelirin yalnızca <strong>üçte ikisi (2/3)</strong> gelir olarak hesaplanır.</li>
-            <li><strong>Varlık Tüketimi:</strong> Net varlık muafiyet tutarını (Bekarlar için CHF 30'000 / Evli çiftler
-              için CHF 50'000) aşarsa, muafiyeti aşan kısım matematiksel olarak doğru bir şekilde 10'a (yaşlı emekliler
-              için) veya 15'e (IV emeklileri için) bölünür ve yıllık gelir olarak kaydedilir.</li>
-          </ul>
-          <table class="data-table">
-            <tr>
-              <th>EL Muafiyetleri ve Varlık Değerleri</th>
-              <th>Muafiyet / Sınır Değerler</th>
-            </tr>
-            <tr>
-              <td>Bekarlar için Muafiyet</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>Evli Çiftler için Muafiyet</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>Sahibi Tarafından Kullanılan Gayrimenkul Muafiyeti</td>
-              <td>CHF 112'500 (veya zor durumlarda CHF 300'000)</td>
-            </tr>
-            <li><strong>Vazgeçilen Varlıklar:</strong> Varsayımsal olarak bağışlanan veya feragat edilen varlıklar için
-              2026 yılı için geçerli olan katı federal faiz oranı <strong>%0.29</strong>'dur.</li>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Sonuç: EL Hakkı</h3>
-          <p>EL, tüm yasal koşulların yerine getirilmesi halinde mali açığı kapatır:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Yıllık EL Maaşı = [Kabul Edilen Giderler] - [Hesaplanabilir Gelirler]
-          </div>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Önemli: Yasal Varlık Eşiği (Giriş Eşiği)</strong><br />
-        Vergilendirilebilir net varlığın (sahibi tarafından kullanılan bir gayrimenkulün değeri hariç) bekarlar için
-        <strong>CHF 100'000</strong> veya evli çiftler için <strong>CHF 200'000</strong> olan giriş eşiğini aşması
-        durumunda, Ek Yardımlar için yasal hak kesinlikle hariç tutulur.
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Ana Sayfaya Dön</a>
-        <a class="btn-link" href="https://www4.ti.ch/dss/dipartimento" target="_blank">Resmi IAS Ticino Sayfası</a>
-      </div>
+      <p>
+       <small>
+        Her iki eş için birleştirilmiş yasal temel ihtiyaç.
+       </small>
+      </p>
+     </div>
     </div>
-    <footer>
-      <p>Kaynak: Kanton Ticino Sosyal Sigortalar Enstitüsü (IAS TI) 2026 Yönergeleri ve Ek Yardımlar Federal Yasası
-        (ELG)</p>
-      <p>welfarecalc.ch tarafından sağlanmıştır | Yasal garanti olmaksızın bilgi.</p>
-    </footer>
+    <h2 class="section-title">
+     2. Hesaplama Yolunun Detayları
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Kabul Edilen Giderler (İhtiyaç)
+      </h3>
+      <p>
+       Öncelikle, yasal olarak tanınan ve kanton tarafından düzenlenen tüm gider kalemlerini topluyoruz:
+      </p>
+      <div class="formula">
+       Temel İhtiyaç + Kabul Edilen Konut Maliyetleri (Brüt Kira/Mülk) + SGK Götürü Primi
+      </div>
+      <p>
+       <strong>
+        Ticino'da 2026 Kira Tavanları (Federal Bölgeler 2 ve 3'e göre):
+       </strong>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Hanehalkı Büyüklüğü
+        </th>
+        <th>
+         Bölge 2 (Kentsel/Aglomerasyon)
+        </th>
+        <th>
+         Bölge 3 (Kırsal Belediyeler)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Kişi
+        </td>
+        <td>
+         CHF 18'300 (CHF 1'525/Ay)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/Ay)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Kişi
+        </td>
+        <td>
+         CHF 21'720 (CHF 1'810/Ay)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/Ay)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 Kişi
+        </td>
+        <td>
+         CHF 23'760 (CHF 1'980/Ay)
+        </td>
+        <td>
+         CHF 22'200 (CHF 1'850/Ay)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 Kişi
+        </td>
+        <td>
+         CHF 25'920 (CHF 2'160/Ay)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/Ay)
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 10px;">
+       <small>
+        *Konut Mülkiyeti Özelliği: Sahibi tarafından kullanılan gayrimenkullerde
+              hayali bir kira değeri kullanılmaz, bunun yerine fiili ipotek faizleri ve ilgili kanton maksimumuna kadar
+              yasal bir bakım götürü bedeli kabul edilir.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Hesaplanabilir Gelirler
+      </h3>
+      <p>
+       Ardından, tüm gelirler 2026 katı ELG reformu kurallarına göre değerlendirilir:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         Maaş Tahsilatı (13. AHV Nötralizasyonu):
+        </strong>
+        Yasal AHV veya IV maaşları 12 ay için
+              hesaplanır. Yeni 13. AHV maaşı, federal karara göre tamamen nötralize edilir ve EL kesintisine yol
+              açmamalıdır.
+       </li>
+       <li>
+        <strong>
+         Çalışma Geliri (2/3 Hesaplaması):
+        </strong>
+        Brüt çalışma gelirinden önce bir muafiyet tutarı
+              düşülür (Bekarlar için CHF 1'500 / Evli çiftler için CHF 2'250). Kalan miktardan, yasalara tamamen uygun
+              olarak gelirin yalnızca
+        <strong>
+         üçte ikisi (2/3)
+        </strong>
+        gelir olarak hesaplanır.
+       </li>
+       <li>
+        <strong>
+         Varlık Tüketimi:
+        </strong>
+        Net varlık muafiyet tutarını (Bekarlar için CHF 30'000 / Evli çiftler
+              için CHF 50'000) aşarsa, muafiyeti aşan kısım matematiksel olarak doğru bir şekilde 10'a (yaşlı emekliler
+              için) veya 15'e (IV emeklileri için) bölünür ve yıllık gelir olarak kaydedilir.
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         EL Muafiyetleri ve Varlık Değerleri
+        </th>
+        <th>
+         Muafiyet / Sınır Değerler
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Bekarlar için Muafiyet
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Evli Çiftler için Muafiyet
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Sahibi Tarafından Kullanılan Gayrimenkul Muafiyeti
+        </td>
+        <td>
+         CHF 112'500 (veya zor durumlarda CHF 300'000)
+        </td>
+       </tr>
+       <li>
+        <strong>
+         Vazgeçilen Varlıklar:
+        </strong>
+        Varsayımsal olarak bağışlanan veya feragat edilen varlıklar için
+              2026 yılı için geçerli olan katı federal faiz oranı
+        <strong>
+         %0.29
+        </strong>
+        'dur.
+       </li>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Sonuç: EL Hakkı
+      </h3>
+      <p>
+       EL, tüm yasal koşulların yerine getirilmesi halinde mali açığı kapatır:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Yıllık EL Maaşı = [Kabul Edilen Giderler] - [Hesaplanabilir Gelirler]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Önemli: Yasal Varlık Eşiği (Giriş Eşiği)
+     </strong>
+     <br/>
+     Vergilendirilebilir net varlığın (sahibi tarafından kullanılan bir gayrimenkulün değeri hariç) bekarlar için
+     <strong>
+      CHF 100'000
+     </strong>
+     veya evli çiftler için
+     <strong>
+      CHF 200'000
+     </strong>
+     olan giriş eşiğini aşması
+        durumunda, Ek Yardımlar için yasal hak kesinlikle hariç tutulur.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Ana Sayfaya Dön
+     </a>
+     <a class="btn-link" href="https://www4.ti.ch/dss/dipartimento" target="_blank">
+      Resmi IAS Ticino Sayfası
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Kaynak: Kanton Ticino Sosyal Sigortalar Enstitüsü (IAS TI) 2026 Yönergeleri ve Ek Yardımlar Federal Yasası
+        (ELG)
+    </p>
+    <p>
+     welfarecalc.ch tarafından sağlanmıştır | Yasal garanti olmaksızın bilgi.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

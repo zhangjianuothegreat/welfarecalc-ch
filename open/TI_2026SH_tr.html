@@ -1,57 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="tr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Ticino (Tessin) Kantonu 2026 Sosyal Yardım Algoritması | Şeffaf Hesaplama | welfarecalc.ch</title>
-  <meta
-    content="Ticino (TI) kantonunda 2026 yılı sosyal yardımı nasıl hesaplanır? LAPS, LAS ve SKOS yönergelerine dayalı şeffaf algoritmamızı keşfedin."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="x-default" rel="alternate" />
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Ticino (Ticino) 2026 Sosyal Yardım Hesaplaması",
-      "description": "TI Kantonunda (LAPS/LAS) ekonomik sosyal yardım hesaplamasının ayrıntılı algoritmik dökümü.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "LAS'a göre mal varlığı muafiyetlerinin kontrolü"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Sosyal asgari geçim seviyesinin belirlenmesi (TI temel ihtiyaç, konut, net sağlık sigortası)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Gelir indirimi dahil olmak üzere dikkate alınacak gelirin tespiti"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Aylık hakkın belirlenmesi için fark hesaplaması"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -233,151 +186,299 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/TI_2026SH_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   SY Ticino 2026 – Sosyal yardım | welfarecalc.ch
+  </title>
+  <meta content="Ticino Kantonu'nda Sosyal yardım hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Sosyal yardım, Ticino Kantonu, SY, Sosyal yardımlar, Hesaplama 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" rel="canonical"/>
+  <meta content="SY Ticino 2026 – Sosyal yardım | welfarecalc.ch" property="og:title"/>
+  <meta content="Ticino Kantonu'nda Sosyal yardım hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="SY Ticino 2026 – Sosyal yardım | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Ticino Kantonu'nda Sosyal yardım hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Sosyal yardım Ticino 2026", "description": "Step-by-step guide to calculating Sosyal yardım in Canton Ticino.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">SKOS UYUMLU 2026</div>
-      <h1>Sosyal Yardım Algoritması: Ticino Kantonu</h1>
-      <p>Sosyal asgari geçim seviyesi (TI) için hesaplama mantığının şeffaf dokümantasyonu</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
-        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+   <header>
+    <div class="update-tag">
+     SKOS UYUMLU 2026
     </div>
-    
-    <div class="content">
-      <p>Ticino Kantonunda sosyal yardım nasıl hesaplanır? Kullanıcılarımızın güvenini artırmak için, welfarecalc.ch'nin
+    <h1>
+     Sosyal Yardım Algoritması: Ticino Kantonu
+    </h1>
+    <p>
+     Sosyal asgari geçim seviyesi (TI) için hesaplama mantığının şeffaf dokümantasyonu
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Hızlı Kontrol: Hakkınız var mı?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_tr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Ücretsiz kontrol et →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Ticino Kantonunda sosyal yardım nasıl hesaplanır? Kullanıcılarımızın güvenini artırmak için, welfarecalc.ch'nin
         arkasındaki tam algoritmayı burada açıklıyoruz. Algoritma, kanton mevzuatına (Legge sull'assistenza sociale -
-        LAS TI), LAPS yönergelerine ve uyumlaştırılmış SKOS 2026 yönergelerine dayanmaktadır.</p>
-      <h2 class="section-title">1. Mal Varlığı Kontrolü (Giriş Eşiği)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Birey / Çift Muafiyet Tutarı</h4>
-          <div class="param-value">CHF 6'000 / 12'000</div>
-          <p><small>Çocuk başına ilave CHF 3'000. Toplam azami muafiyet tutarı destek birimi başına CHF 15'000 ile
-              sınırlıdır.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Mal Varlığı Tüketimi</h4>
-          <div class="param-value">Bölen 10 Yıl</div>
-          <p><small>Muafiyet tutarını aşan mal varlığı, 120 ay boyunca doğrusal olarak aylık gelir olarak dikkate
-              alınır.</small></p>
-        </div>
+        LAS TI), LAPS yönergelerine ve uyumlaştırılmış SKOS 2026 yönergelerine dayanmaktadır.
+    </p>
+    <h2 class="section-title">
+     1. Mal Varlığı Kontrolü (Giriş Eşiği)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Birey / Çift Muafiyet Tutarı
+      </h4>
+      <div class="param-value">
+       CHF 6'000 / 12'000
       </div>
-      <h2 class="section-title">2. Hesaplama Yolu (Aylık)</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Geçim İçin Temel İhtiyaç (GBL)</h3>
-          <p>GBL, yiyecek, giyim, enerji ve günlük ev idaresi masraflarını karşılar:</p>
-          <table class="data-table">
-            <tr>
-              <th>Hane Halkı Büyüklüğü</th>
-              <th>Aylık Tutar (2026)</th>
-            </tr>
-            <tr>
-              <td>1 Kişi</td>
-              <td>CHF 1'061</td>
-            </tr>
-            <tr>
-              <td>2 Kişi</td>
-              <td>CHF 1'624</td>
-            </tr>
-            <tr>
-              <td>3 Kişi</td>
-              <td>CHF 1'974</td>
-            </tr>
-            <tr>
-              <td>4 Kişi</td>
-              <td>CHF 2'271</td>
-            </tr>
-            <tr>
-              <td>5 Kişi</td>
-              <td>CHF 2'568</td>
-            </tr>
-            <tr>
-              <td>Sonraki her kişi</td>
-              <td>+ CHF 216</td>
-            </tr>
-          </table>
-          <p><small>*Not: Eğitimdeki genç yetişkinler veya ebeveyn evinde yaşayanlar için Ticino Kantonunda indirimli
-              kanton oranları geçerlidir (Forfait Giovani).</small></p>
-        </div>
+      <p>
+       <small>
+        Çocuk başına ilave CHF 3'000. Toplam azami muafiyet tutarı destek birimi başına CHF 15'000 ile
+              sınırlıdır.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Mal Varlığı Tüketimi
+      </h4>
+      <div class="param-value">
+       Bölen 10 Yıl
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Konut Masrafları &amp; Sağlık Sigortası</h3>
-          <p>Fiili konut ve zorunlu sağlık masraflarının ilgili yasal azami tutara kadar dikkate alınması:</p>
-          <div class="formula">
-            Kabul edilebilir Kira (Brüt) + Net Sağlık Sigortası Primi (KVG)
-          </div>
-          <p><small>*Önemli: TI Kantonunda azami kira limitleri hane halkı büyüklüğüne ve bölgelere/belediyelere göre
+      <p>
+       <small>
+        Muafiyet tutarını aşan mal varlığı, 120 ay boyunca doğrusal olarak aylık gelir olarak dikkate
+              alınır.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. Hesaplama Yolu (Aylık)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Geçim İçin Temel İhtiyaç (GBL)
+      </h3>
+      <p>
+       GBL, yiyecek, giyim, enerji ve günlük ev idaresi masraflarını karşılar:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Hane Halkı Büyüklüğü
+        </th>
+        <th>
+         Aylık Tutar (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Kişi
+        </td>
+        <td>
+         CHF 1'061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Kişi
+        </td>
+        <td>
+         CHF 1'624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 Kişi
+        </td>
+        <td>
+         CHF 1'974
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 Kişi
+        </td>
+        <td>
+         CHF 2'271
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5 Kişi
+        </td>
+        <td>
+         CHF 2'568
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Sonraki her kişi
+        </td>
+        <td>
+         + CHF 216
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Not: Eğitimdeki genç yetişkinler veya ebeveyn evinde yaşayanlar için Ticino Kantonunda indirimli
+              kanton oranları geçerlidir (Forfait Giovani).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Konut Masrafları &amp; Sağlık Sigortası
+      </h3>
+      <p>
+       Fiili konut ve zorunlu sağlık masraflarının ilgili yasal azami tutara kadar dikkate alınması:
+      </p>
+      <div class="formula">
+       Kabul edilebilir Kira (Brüt) + Net Sağlık Sigortası Primi (KVG)
+      </div>
+      <p>
+       <small>
+        *Önemli: TI Kantonunda azami kira limitleri hane halkı büyüklüğüne ve bölgelere/belediyelere göre
               kademelendirilmiştir (1 kişi için yaklaşık CHF 1'100). Sağlık sigortası primlerinde, kanton uygulamasına
               göre olağan kanton prim indirimi (IPV / RIPAM) önceden doğrudan düşülür; azami kanton ortalama prim oranı
-              kabul edilir.</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Gelir Dikkate Alınması &amp; Kazanç İndirimi</h3>
-          <p>Brüt veya net çalışma gelirinden, çalışma teşvikini sürdürebilmek için bir muafiyet tutarı tanınır (gelir
-            indirimi):</p>
-          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-            <strong>Dikkate Alınacak Gelir</strong> = Diğer Gelir + (Net Çalışma Geliri × 80%)
-          </div>
-          <p><small>Çalışma geliri üzerinden %20 oranında götürü bir kazanç indirimi uygulanır. Çocuk yardımları, emekli
-              maaşları (AHV/IV) ve diğer LAPS ödemeleri %100 gelir olarak kabul edilir.</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h3>Sonuç: Aylık Hak</h3>
-          <p>Nihai ekonomik yardım, destek biriminin ihtiyaç açığından ortaya çıkar:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Hak = (GBL + Kira + Net Sağlık Sigortası + IZU*) - (Dikkate Alınacak Gelir + Mal Varlığı Tüketimi)
-          </div>
-          <p><small>*IZU = Entegrasyon Ödeneği. Fiili bir karşılık hizmeti veya çalışma sağlayan kişiler, Ticino
-              Kantonunda aylık götürü CHF 100 tutarında bir entegrasyon ödeneği alabilirler.</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Ticino Kantonunda Yetkili Makam:</strong><br />
-        Koordinasyon ve ödeme <strong>Ufficio del sostegno sociale e dell'inserimento (USSI)</strong> tarafından
-        yapılır.<br />
-        Adres: Viale Officina 6, 6501 Bellinzona | Tel: +41 91 814 70 51 | E-posta: dss-ussi@ti.ch<br />
-        <em>Vezne Çalışma Saatleri:</em> Pazartesi'den Cuma'ya 08:30–11:45 ve öğleden sonra Halk Veznesi'nde 14:00–16:00
-        (Önceden randevu alınması şiddetle tavsiye edilir).
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Hesaplayıcıyı Başlat</a>
-        <a class="btn-link"
-          href="https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps"
-          target="_blank">TI Kantonu Resmi Sayfası (LAPS)</a>
-      </div>
+              kabul edilir.
+       </small>
+      </p>
+     </div>
     </div>
-    <footer>
-      <p>Kaynaklar: Ticino Kantonu (IAS / USSI), Legge sull'assistenza sociale (LAS TI) &amp; SKOS Yönergeleri 2026</p>
-      <p>© 2026 welfarecalc.ch | Şeffaf Sosyal Yardım Hesaplaması</p>
-    </footer>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Gelir Dikkate Alınması &amp; Kazanç İndirimi
+      </h3>
+      <p>
+       Brüt veya net çalışma gelirinden, çalışma teşvikini sürdürebilmek için bir muafiyet tutarı tanınır (gelir
+            indirimi):
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Dikkate Alınacak Gelir
+       </strong>
+       = Diğer Gelir + (Net Çalışma Geliri × 80%)
+      </div>
+      <p>
+       <small>
+        Çalışma geliri üzerinden %20 oranında götürü bir kazanç indirimi uygulanır. Çocuk yardımları, emekli
+              maaşları (AHV/IV) ve diğer LAPS ödemeleri %100 gelir olarak kabul edilir.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Sonuç: Aylık Hak
+      </h3>
+      <p>
+       Nihai ekonomik yardım, destek biriminin ihtiyaç açığından ortaya çıkar:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Hak = (GBL + Kira + Net Sağlık Sigortası + IZU*) - (Dikkate Alınacak Gelir + Mal Varlığı Tüketimi)
+      </div>
+      <p>
+       <small>
+        *IZU = Entegrasyon Ödeneği. Fiili bir karşılık hizmeti veya çalışma sağlayan kişiler, Ticino
+              Kantonunda aylık götürü CHF 100 tutarında bir entegrasyon ödeneği alabilirler.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Ticino Kantonunda Yetkili Makam:
+     </strong>
+     <br/>
+     Koordinasyon ve ödeme
+     <strong>
+      Ufficio del sostegno sociale e dell'inserimento (USSI)
+     </strong>
+     tarafından
+        yapılır.
+     <br/>
+     Adres: Viale Officina 6, 6501 Bellinzona | Tel: +41 91 814 70 51 | E-posta: dss-ussi@ti.ch
+     <br/>
+     <em>
+      Vezne Çalışma Saatleri:
+     </em>
+     Pazartesi'den Cuma'ya 08:30–11:45 ve öğleden sonra Halk Veznesi'nde 14:00–16:00
+        (Önceden randevu alınması şiddetle tavsiye edilir).
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Hesaplayıcıyı Başlat
+     </a>
+     <a class="btn-link" href="https://www4.ti.ch/dss/ias/prestazioni-e-contributi/scheda/p/s/dettaglio/armonizzazione-e-coordinamento-prestazioni-sociali/elenco-degli-sportelli-laps" target="_blank">
+      TI Kantonu Resmi Sayfası (LAPS)
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Kaynaklar: Ticino Kantonu (IAS / USSI), Legge sull'assistenza sociale (LAS TI) &amp; SKOS Yönergeleri 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Şeffaf Sosyal Yardım Hesaplaması
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

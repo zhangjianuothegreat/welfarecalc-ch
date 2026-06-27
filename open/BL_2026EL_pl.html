@@ -1,52 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorytm EL Kanton Bazylea-Okręg 2026 | Przejrzyste Obliczenia | welfarecalc.ch</title>
-    <meta name="description" content="Jak obliczane są świadczenia uzupełniające (EL) w kantonie Bazylea-Okręg na rok 2026? Poznaj nasz przejrzysty algorytm oparty na oficjalnych danych SVA-BL.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/BL_2026EL_pl.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BL_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BL_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BL_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BL_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BL_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BL_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BL_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BL_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BL_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BL_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BL_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BL_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie świadczeń uzupełniających w kantonie Bazylea-Okręg 2026",
-      "description": "Szczegółowe zestawienie algorytmu obliczania EL w kantonie BL.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Ustalenie uznanych wydatków (podstawowe potrzeby, regionalne maksymalne czynsze, składki na ubezpieczenie zdrowotne)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Potrącenie skorygowanego dochodu (wyłączenie 13. renty AHV, odliczenia od dochodu, obciążenie majątkiem)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Określenie wysokości świadczenia EL (całkowite wydatki minus dochód podlegający uwzględnieniu)"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -81,148 +39,337 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/BL_2026EL_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">DANE OFICJALNE 2026</div>
-        <h1>Algorytm EL: Kanton Bazylea-Okręg</h1>
-        <p>Przejrzyste zestawienie świadczeń uzupełniających (EL) dla kantonu BL</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   ŚU Bazylea-Okręg 2026 – Obliczanie | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Świadczenia uzupełniające w Kantonie Bazylea-Okręg. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Świadczenia uzupełniające, Kanton Bazylea-Okręg, ŚU, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_pl.html" rel="canonical"/>
+  <meta content="ŚU Bazylea-Okręg 2026 – Świadczenia uzupełniające | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Świadczenia uzupełniające w Kantonie Bazylea-Okręg. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/BL_2026EL_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="ŚU Bazylea-Okręg 2026 – Świadczenia uzupełniające | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Świadczenia uzupełniające w Kantonie Bazylea-Okręg. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BL_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Świadczenia uzupełniające Bazylea-Okręg 2026", "description": "Step-by-step guide to calculating Świadczenia uzupełniające in Canton Bazylea-Okręg.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     DANE OFICJALNE 2026
     </div>
-
-    <div class="content">
-        <p>Przejrzystość buduje zaufanie. Świadczenia uzupełniające (EL) do AHV/IV wkraczają, gdy podstawowe renty nie pokrywają w pełni kosztów utrzymania. Poniżej precyzyjnie dokumentujemy, w jaki sposób nasz główny silnik oblicza Twoje uprawnienia zgodnie z prawem dla kantonu Bazylea-Okręg.</p>
-
-        <h2 class="section-title">1. Roczne podstawowe potrzeby (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Osoby samotne</h4>
-                <div class="param-value">CHF 20'670</div>
-                <p><small>ZhARMONIZOWANA kwota ryczałtowa na koszty utrzymania.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Pary małżeńskie</h4>
-                <div class="param-value">CHF 31'005</div>
-                <p><small>Połączone ustawowe potrzeby podstawowe dla obojga małżonków.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Oficjalna ścieżka obliczeniowa</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Uznane wydatki (potrzeby)</h3>
-                <p>Nasz algorytm agreguje wszystkie prawnie uznane pozycje wydatków w oparciu o kantonalne maksymalne limity:</p>
-                <div class="formula">
-                    Podstawowe potrzeby + Czynsz (do limitu regionalnego) + Składka na ubezpieczenie zdrowotne (wytyczne ustawowe)
-                </div>
-                
-                <h4 style="margin-top: 15px; color: var(--official-blue);">Maksymalne wartości czynszu na 2026 r. w kantonie BL</h4>
-                <p><small>Kanton Bazylea-Okręg obejmuje regiony 2 i 3 zgodnie z wytycznymi federalnymi. W przypadku niekompletnych danych kodów pocztowych algorytm domyślnie przyjmuje wartość standardową (region 2).</small></p>
-                
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Liczba osób w gospodarstwie domowym</th>
-                            <th>Region 2 (średni) rocznie</th>
-                            <th>Region 3 (wiejski) rocznie</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1 osoba</td>
-                            <td>CHF 18'300 (CHF 1'525/miesiąc)</td>
-                            <td>CHF 16'680 (CHF 1'390/miesiąc)</td>
-                        </tr>
-                        <tr>
-                            <td>2 osoby</td>
-                            <td>CHF 21'720 (CHF 1'810/miesiąc)</td>
-                            <td>CHF 20'160 (CHF 1'680/miesiąc)</td>
-                        </tr>
-                        <tr>
-                            <td>3 osoby</td>
-                            <td>CHF 23'760 (CHF 1'980/miesiąc)</td>
-                            <td>CHF 22'200 (CHF 1'850/miesiąc)</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <h4 style="margin-top: 15px; color: var(--official-blue);">Uznane składki na ubezpieczenie zdrowotne (BL 2026)</h4>
-                <table class="data-table">
-                    <tr><th>Dorośli (26 lat i więcej)</th><td>CHF 4'596 rocznie</td></tr>
-                    <tr><th>Młodzi dorośli (19-25 lat)</th><td>CHF 3'816 rocznie</td></tr>
-                    <tr><th>Dzieci (do 18 lat)</th><td>CHF 1'968 rocznie</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Dochód podlegający uwzględnieniu</h3>
-                <p>Przeciwwagą dla wydatków są skorygowane dochody oraz wartości majątkowe:</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-                    <li><strong>Dochody z rent i reforma 13. renty AHV 2026:</strong> Standardowe renty są wliczane w 100% jako dochód. <em>Ważne:</em> Zgodnie z dekretem federalnym nowo wprowadzona 13. renta AHV (obowiązująca od 2026 r.) jest całkowicie wyłączona z algorytmu EL (nie jest dodawana jako dochód), aby zapobiec redukcji świadczeń uzupełniających.</li>
-                    <li><strong>Dochód z pracy zarobkowej:</strong> Obliczany po odliczeniu kwoty wolnej (CHF 1'000 dla samotnych / CHF 1'500 dla par). Pozostała kwota jest uwzględniana w wysokości 2/3 (współczynnik 0,666667).</li>
-                    <li><strong>Obciążenie majątkiem (dochód umowny):</strong> (Majątek netto + wartość podlegającej opodatkowaniu nieruchomości powyżej kwoty wolnej - kwota zwolniona) / Dzielnik. Dzielnik wynosi 10 dla emerytów (AHV) i 15 dla rencistów IV (inwalidzkich).</li>
-                </ul>
-                
-                <table class="data-table">
-                    <tr><th>Zwolnienia majątkowe (ogólne)</th><th>Kwota</th></tr>
-                    <tr><td>Osoby samotne</td><td>CHF 30'000</td></tr>
-                    <tr><td>Pary małżeńskie</td><td>CHF 50'000</td></tr>
-                    <tr><td>Zwolnienie dla zajmowanej przez właściciela nieruchomości mieszkalnej (standard)</td><td>CHF 112'500</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Wynik: Wysokość świadczenia EL</h3>
-                <p>Różnica określa roczną lub miesięczną kwotę EL:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Roczne EL = Maks(0, Uznane wydatki - Dochód podlegający uwzględnieniu)
-                </div>
-                <p><small>Miesięczna kwota świadczenia jest dzielona przez 12 i zaokrąglana handlowo do najbliższego franka szwajcarskiego.</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Ważne: Próg majątkowy (próg wejścia)</strong><br>
-            Prawo do świadczeń EL w kantonie BL istnieje tylko wtedy, gdy majątek netto (po odliczeniu długów i wartości bazowej zajmowanej przez właściciela nieruchomości mieszkalnej) jest niższy niż <strong>CHF 100'000</strong> dla osób samotnych lub <strong>CHF 200'000</strong> dla par małżeńskich.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Powrót do strony głównej</a>
-            <a href="https://www.sva-bl.ch/de/ausgleichskasse/ergaenzungsleistungen-zur-ahv/iv-el" target="_blank" class="btn-link">Oficjalna strona SVA Bazylea-Okręg</a>
-        </div>
+    <h1>
+     Algorytm EL: Kanton Bazylea-Okręg
+    </h1>
+    <p>
+     Przejrzyste zestawienie świadczeń uzupełniających (EL) dla kantonu BL
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Przejrzystość buduje zaufanie. Świadczenia uzupełniające (EL) do AHV/IV wkraczają, gdy podstawowe renty nie pokrywają w pełni kosztów utrzymania. Poniżej precyzyjnie dokumentujemy, w jaki sposób nasz główny silnik oblicza Twoje uprawnienia zgodnie z prawem dla kantonu Bazylea-Okręg.
+    </p>
+    <h2 class="section-title">
+     1. Roczne podstawowe potrzeby (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Osoby samotne
+      </h4>
+      <div class="param-value">
+       CHF 20'670
+      </div>
+      <p>
+       <small>
+        ZhARMONIZOWANA kwota ryczałtowa na koszty utrzymania.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Pary małżeńskie
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        Połączone ustawowe potrzeby podstawowe dla obojga małżonków.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Źródło: Wytyczne SVA Basel-Landschaft 2026 oraz Ustawa federalna o świadczeniach uzupełniających (ELG)</p>
-        <p>Dostarczone przez welfarecalc.ch | Wszystkie obliczenia mają charakter nieoficjalnych szacunków i nie stanowią gwarancji prawnej.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Oficjalna ścieżka obliczeniowa
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Uznane wydatki (potrzeby)
+      </h3>
+      <p>
+       Nasz algorytm agreguje wszystkie prawnie uznane pozycje wydatków w oparciu o kantonalne maksymalne limity:
+      </p>
+      <div class="formula">
+       Podstawowe potrzeby + Czynsz (do limitu regionalnego) + Składka na ubezpieczenie zdrowotne (wytyczne ustawowe)
+      </div>
+      <h4 style="margin-top: 15px; color: var(--official-blue);">
+       Maksymalne wartości czynszu na 2026 r. w kantonie BL
+      </h4>
+      <p>
+       <small>
+        Kanton Bazylea-Okręg obejmuje regiony 2 i 3 zgodnie z wytycznymi federalnymi. W przypadku niekompletnych danych kodów pocztowych algorytm domyślnie przyjmuje wartość standardową (region 2).
+       </small>
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Liczba osób w gospodarstwie domowym
+         </th>
+         <th>
+          Region 2 (średni) rocznie
+         </th>
+         <th>
+          Region 3 (wiejski) rocznie
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1 osoba
+         </td>
+         <td>
+          CHF 18'300 (CHF 1'525/miesiąc)
+         </td>
+         <td>
+          CHF 16'680 (CHF 1'390/miesiąc)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2 osoby
+         </td>
+         <td>
+          CHF 21'720 (CHF 1'810/miesiąc)
+         </td>
+         <td>
+          CHF 20'160 (CHF 1'680/miesiąc)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          3 osoby
+         </td>
+         <td>
+          CHF 23'760 (CHF 1'980/miesiąc)
+         </td>
+         <td>
+          CHF 22'200 (CHF 1'850/miesiąc)
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <h4 style="margin-top: 15px; color: var(--official-blue);">
+       Uznane składki na ubezpieczenie zdrowotne (BL 2026)
+      </h4>
+      <table class="data-table">
+       <tr>
+        <th>
+         Dorośli (26 lat i więcej)
+        </th>
+        <td>
+         CHF 4'596 rocznie
+        </td>
+       </tr>
+       <tr>
+        <th>
+         Młodzi dorośli (19-25 lat)
+        </th>
+        <td>
+         CHF 3'816 rocznie
+        </td>
+       </tr>
+       <tr>
+        <th>
+         Dzieci (do 18 lat)
+        </th>
+        <td>
+         CHF 1'968 rocznie
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Dochód podlegający uwzględnieniu
+      </h3>
+      <p>
+       Przeciwwagą dla wydatków są skorygowane dochody oraz wartości majątkowe:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         Dochody z rent i reforma 13. renty AHV 2026:
+        </strong>
+        Standardowe renty są wliczane w 100% jako dochód.
+        <em>
+         Ważne:
+        </em>
+        Zgodnie z dekretem federalnym nowo wprowadzona 13. renta AHV (obowiązująca od 2026 r.) jest całkowicie wyłączona z algorytmu EL (nie jest dodawana jako dochód), aby zapobiec redukcji świadczeń uzupełniających.
+       </li>
+       <li>
+        <strong>
+         Dochód z pracy zarobkowej:
+        </strong>
+        Obliczany po odliczeniu kwoty wolnej (CHF 1'000 dla samotnych / CHF 1'500 dla par). Pozostała kwota jest uwzględniana w wysokości 2/3 (współczynnik 0,666667).
+       </li>
+       <li>
+        <strong>
+         Obciążenie majątkiem (dochód umowny):
+        </strong>
+        (Majątek netto + wartość podlegającej opodatkowaniu nieruchomości powyżej kwoty wolnej - kwota zwolniona) / Dzielnik. Dzielnik wynosi 10 dla emerytów (AHV) i 15 dla rencistów IV (inwalidzkich).
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Zwolnienia majątkowe (ogólne)
+        </th>
+        <th>
+         Kwota
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Osoby samotne
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Pary małżeńskie
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Zwolnienie dla zajmowanej przez właściciela nieruchomości mieszkalnej (standard)
+        </td>
+        <td>
+         CHF 112'500
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Wynik: Wysokość świadczenia EL
+      </h3>
+      <p>
+       Różnica określa roczną lub miesięczną kwotę EL:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Roczne EL = Maks(0, Uznane wydatki - Dochód podlegający uwzględnieniu)
+      </div>
+      <p>
+       <small>
+        Miesięczna kwota świadczenia jest dzielona przez 12 i zaokrąglana handlowo do najbliższego franka szwajcarskiego.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Ważne: Próg majątkowy (próg wejścia)
+     </strong>
+     <br/>
+     Prawo do świadczeń EL w kantonie BL istnieje tylko wtedy, gdy majątek netto (po odliczeniu długów i wartości bazowej zajmowanej przez właściciela nieruchomości mieszkalnej) jest niższy niż
+     <strong>
+      CHF 100'000
+     </strong>
+     dla osób samotnych lub
+     <strong>
+      CHF 200'000
+     </strong>
+     dla par małżeńskich.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Powrót do strony głównej
+     </a>
+     <a class="btn-link" href="https://www.sva-bl.ch/de/ausgleichskasse/ergaenzungsleistungen-zur-ahv/iv-el" target="_blank">
+      Oficjalna strona SVA Bazylea-Okręg
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: Wytyczne SVA Basel-Landschaft 2026 oraz Ustawa federalna o świadczeniach uzupełniających (ELG)
+    </p>
+    <p>
+     Dostarczone przez welfarecalc.ch | Wszystkie obliczenia mają charakter nieoficjalnych szacunków i nie stanowią gwarancji prawnej.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

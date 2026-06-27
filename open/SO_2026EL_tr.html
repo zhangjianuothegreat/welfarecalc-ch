@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="tr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EL Algoritması Solothurn Kantonu 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
-  <meta
-    content="2026 yılında Solothurn Kantonu'nda Ek Yardımlar (EL) nasıl hesaplanır? Resmi SVA/AKSO verilerine dayanan şeffaf algoritmamızı keşfedin."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_tr.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/SO_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Solothurn 2026 Ek Yardımlarının Hesaplanması",
-      "description": "Solothurn Kantonu (SO) için 2026 yılı EL hesaplamasının ayrıntılı resmi algoritmik dökümü.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Temel ihtiyaç, Solothurn kira bölgeleri (Bölge 2/3) ve sağlık sigortası yönlendirme primleri dikkate alınarak kabul edilen gider ihtiyacının belirlenmesi."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Yasal kazanç kesintileri (2/3 kuralı) ve 13. AHV maaşının katı bir şekilde nötrleştirilmesi dahil olmak üzere hesaplanabilir gelirlerin hesaplanması."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Varlık eşiğinin kontrol edilmesinden sonra kabul edilen giderler ile hesaplanabilir gelirler arasındaki farktan EL maaşının belirlenmesi."
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -230,180 +188,374 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SO_2026EL_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   EY Solothurn 2026 – Ek yardımlar | welfarecalc.ch
+  </title>
+  <meta content="Solothurn Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Ek yardımlar, Solothurn Kantonu, EY, Sosyal yardımlar, Hesaplama 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_tr.html" rel="canonical"/>
+  <meta content="EY Solothurn 2026 – Ek yardımlar | welfarecalc.ch" property="og:title"/>
+  <meta content="Solothurn Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SO_2026EL_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="EY Solothurn 2026 – Ek yardımlar | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Solothurn Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SO_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Ek yardımlar Solothurn 2026", "description": "Step-by-step guide to calculating Ek yardımlar in Canton Solothurn.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">RESMİ VERİLER 2026</div>
-      <h1>EL Algoritması: Solothurn Kantonu (SO)</h1>
-      <p>2026 yılı için Ek Yardımların (EL) şeffaf ve yasalara uygun dökümü</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
-        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+   <header>
+    <div class="update-tag">
+     RESMİ VERİLER 2026
     </div>
-    
-    <div class="content">
-      <p>Şeffaflık güven yaratır. AHV/IV'ye yönelik Ek Yardımlar (EL), temel ihtiyaçların karşılanmasını garanti eder.
+    <h1>
+     EL Algoritması: Solothurn Kantonu (SO)
+    </h1>
+    <p>
+     2026 yılı için Ek Yardımların (EL) şeffaf ve yasalara uygun dökümü
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Hızlı Kontrol: Hakkınız var mı?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_tr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Ücretsiz kontrol et →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Şeffaflık güven yaratır. AHV/IV'ye yönelik Ek Yardımlar (EL), temel ihtiyaçların karşılanmasını garanti eder.
         Burada, hesaplayıcımızın, federal yönergeler (ELG/ELV) ve AKSO'nun kanton yönergeleri temelinde Solothurn
-        Kantonu'ndaki hakkınızı nasıl belirlediğini eksiksiz ve matematiksel olarak hassas bir şekilde belgeliyoruz.</p>
-      <h2 class="section-title">1. Yıllık Temel İhtiyaç (2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Bekarlar</h4>
-          <div class="param-value">CHF 20'670</div>
-          <p><small>Yaşam giderleri için ülke çapında uyumlaştırılmış toplu ödeme tutarı.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Evli Çiftler</h4>
-          <div class="param-value">CHF 31'005</div>
-          <p><small>Her iki eş için ortak yasal temel ihtiyaç.</small></p>
-        </div>
+        Kantonu'ndaki hakkınızı nasıl belirlediğini eksiksiz ve matematiksel olarak hassas bir şekilde belgeliyoruz.
+    </p>
+    <h2 class="section-title">
+     1. Yıllık Temel İhtiyaç (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Bekarlar
+      </h4>
+      <div class="param-value">
+       CHF 20'670
       </div>
-      <h2 class="section-title">2. Kesin Hesaplama Yöntemi</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Kabul Edilen Giderler (İhtiyaç)</h3>
-          <p>Hesaplama, hanenin yasal olarak kabul edilebilir tüm gider kalemlerini toplar:</p>
-          <div class="formula">
-            Kabul Edilen Giderler = Temel İhtiyaç + Kira (azamiye kadar) + SGK Yönlendirme Primi + Çocuk Zammı
-          </div>
-          <h4 style="margin-top: 15px; color: var(--official-blue);">Solothurn Kantonu'nda Azami Kira (2026)</h4>
-          <p><small>Solothurn Kantonu'ndaki belediyeler Bölge 2 ve 3'e girer. Sistemimiz limitleri posta koduna (PLZ)
-              göre otomatik olarak atar:</small></p>
-          <table class="data-table">
-            <thead>
-              <tr>
-                <th>Hane Büyüklüğü</th>
-                <th>Bölge 2 (Kentsel) yıllık</th>
-                <th>Bölge 3 (Standart/Kırsal) yıllık</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1 Kişi</td>
-                <td>CHF 18'300 (CHF 1'525/Ay)</td>
-                <td>CHF 16'680 (CHF 1'390/Ay)</td>
-              </tr>
-              <tr>
-                <td>2 Kişi</td>
-                <td>CHF 21'720 (CHF 1'810/Ay)</td>
-                <td>CHF 20'160 (CHF 1'680/Ay)</td>
-              </tr>
-              <tr>
-                <td>3 Kişi</td>
-                <td>CHF 23'760 (CHF 1'980/Ay)</td>
-                <td>CHF 22'200 (CHF 1'850/Ay)</td>
-              </tr>
-              <tr>
-                <td>4+ Kişi</td>
-                <td>CHF 25'920 (CHF 2'160/Ay)</td>
-                <td>CHF 24'000 (CHF 2'000/Ay)</td>
-              </tr>
-            </tbody>
-          </table>
-          <p><small>*Özel ek ücretler: Paylaşımlı evlerde (WG) indirimli bir federal hak geçerlidir (Bölge 2: CHF
+      <p>
+       <small>
+        Yaşam giderleri için ülke çapında uyumlaştırılmış toplu ödeme tutarı.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Evli Çiftler
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        Her iki eş için ortak yasal temel ihtiyaç.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. Kesin Hesaplama Yöntemi
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Kabul Edilen Giderler (İhtiyaç)
+      </h3>
+      <p>
+       Hesaplama, hanenin yasal olarak kabul edilebilir tüm gider kalemlerini toplar:
+      </p>
+      <div class="formula">
+       Kabul Edilen Giderler = Temel İhtiyaç + Kira (azamiye kadar) + SGK Yönlendirme Primi + Çocuk Zammı
+      </div>
+      <h4 style="margin-top: 15px; color: var(--official-blue);">
+       Solothurn Kantonu'nda Azami Kira (2026)
+      </h4>
+      <p>
+       <small>
+        Solothurn Kantonu'ndaki belediyeler Bölge 2 ve 3'e girer. Sistemimiz limitleri posta koduna (PLZ)
+              göre otomatik olarak atar:
+       </small>
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Hane Büyüklüğü
+         </th>
+         <th>
+          Bölge 2 (Kentsel) yıllık
+         </th>
+         <th>
+          Bölge 3 (Standart/Kırsal) yıllık
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1 Kişi
+         </td>
+         <td>
+          CHF 18'300 (CHF 1'525/Ay)
+         </td>
+         <td>
+          CHF 16'680 (CHF 1'390/Ay)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2 Kişi
+         </td>
+         <td>
+          CHF 21'720 (CHF 1'810/Ay)
+         </td>
+         <td>
+          CHF 20'160 (CHF 1'680/Ay)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          3 Kişi
+         </td>
+         <td>
+          CHF 23'760 (CHF 1'980/Ay)
+         </td>
+         <td>
+          CHF 22'200 (CHF 1'850/Ay)
+         </td>
+        </tr>
+        <tr>
+         <td>
+          4+ Kişi
+         </td>
+         <td>
+          CHF 25'920 (CHF 2'160/Ay)
+         </td>
+         <td>
+          CHF 24'000 (CHF 2'000/Ay)
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       <small>
+        *Özel ek ücretler: Paylaşımlı evlerde (WG) indirimli bir federal hak geçerlidir (Bölge 2: CHF
               905/Ay, Bölge 3: CHF 840/Ay). Sahip olunan konutlar için yıllık CHF 3'480 toplu ödeme dikkate alınır.
-              Tekerlekli sandalye erişimine uygun daireler yılda CHF 6'900'e kadar ek ücret alır.</small></p>
-          <h4 style="margin-top: 15px; color: var(--official-blue);">Solothurn 2026 Sağlık Sigortası Yönlendirme
-            Primleri</h4>
-          <p><small>Gerçek prim, ancak en fazla kanton ortalama primi (yönlendirme primi) dikkate alınır:</small></p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
-            <li><strong>Yetişkinler (26 yaş ve üzeri):</strong> maks. CHF 7'224 yıllık</li>
-            <li><strong>Genç Yetişkinler (19-25 yaş):</strong> maks. CHF 5'220 yıllık</li>
-            <li><strong>Çocuklar (18 yaşına kadar):</strong> maks. CHF 1'668 yıllık</li>
-          </ul>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Hesaplanabilir Gelirler</h3>
-          <p>İhtiyaca, ELG kriterlerine göre değiştirilmiş gelirler karşılaştırılır:</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 10px;">
-            <li><strong>13. AHV Maaşı Nötrleştirmesi:</strong> 2026 yılında 13. AHV maaşının uygulamaya konmasından bu
-              yana, bu anayasaya uygun olarak izole edilir ve gelir olarak <strong>hesaplanmaz</strong>. Hesaplamaya
+              Tekerlekli sandalye erişimine uygun daireler yılda CHF 6'900'e kadar ek ücret alır.
+       </small>
+      </p>
+      <h4 style="margin-top: 15px; color: var(--official-blue);">
+       Solothurn 2026 Sağlık Sigortası Yönlendirme
+            Primleri
+      </h4>
+      <p>
+       <small>
+        Gerçek prim, ancak en fazla kanton ortalama primi (yönlendirme primi) dikkate alınır:
+       </small>
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 5px;">
+       <li>
+        <strong>
+         Yetişkinler (26 yaş ve üzeri):
+        </strong>
+        maks. CHF 7'224 yıllık
+       </li>
+       <li>
+        <strong>
+         Genç Yetişkinler (19-25 yaş):
+        </strong>
+        maks. CHF 5'220 yıllık
+       </li>
+       <li>
+        <strong>
+         Çocuklar (18 yaşına kadar):
+        </strong>
+        maks. CHF 1'668 yıllık
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Hesaplanabilir Gelirler
+      </h3>
+      <p>
+       İhtiyaca, ELG kriterlerine göre değiştirilmiş gelirler karşılaştırılır:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; margin-top: 10px;">
+       <li>
+        <strong>
+         13. AHV Maaşı Nötrleştirmesi:
+        </strong>
+        2026 yılında 13. AHV maaşının uygulamaya konmasından bu
+              yana, bu anayasaya uygun olarak izole edilir ve gelir olarak
+        <strong>
+         hesaplanmaz
+        </strong>
+        . Hesaplamaya
               yalnızca normal 12 aylık maaşlar dahil edilir. Diğer emeklilik maaşı türleri (BVG/Emeklilik Fonu) tam
-              olarak kaydedilir.</li>
-            <li><strong>Yasal Çalışma Geliri Düzenlemesi:</strong> Brüt çalışma gelirine tamamen dokunulmaz. Yasal bir
+              olarak kaydedilir.
+       </li>
+       <li>
+        <strong>
+         Yasal Çalışma Geliri Düzenlemesi:
+        </strong>
+        Brüt çalışma gelirine tamamen dokunulmaz. Yasal bir
               kesinti yapılır (Bekarlar için CHF 1'000, Evli çiftler için CHF 1'500). Kalan miktarın **yalnızca 2/3'ü
-              (%66,67)** gelir olarak hesaplanır.</li>
-            <li><strong>Varlık Tüketimi (Muafiyet Kesintisi):</strong> Net safi varlıklardan adil muafiyetler düşülür.
-              Kalan, yasal bölene bölünür (AHV emeklileri için 1/10, IV emeklileri için 1/15):</li>
-          </ul>
-          <table class="data-table" style="margin-top: 15px;">
-            <thead>
-              <tr>
-                <th>Kategori</th>
-                <th>Muafiyet (Gelir Azaltımı)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Bekarlar</td>
-                <td>CHF 30'000</td>
-              </tr>
-              <tr>
-                <td>Evli Çiftler</td>
-                <td>CHF 50'000</td>
-              </tr>
-              <tr>
-                <td>Çocuklar (çocuk başına)</td>
-                <td>CHF 15'000</td>
-              </tr>
-              <tr>
-                <td>Sahip Olunan Konut (Standart)</td>
-                <td>CHF 112'500 <small>(Evli çiftler/IV emeklilerinde CHF 300'000'e yükseltilebilir)</small></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+              (%66,67)** gelir olarak hesaplanır.
+       </li>
+       <li>
+        <strong>
+         Varlık Tüketimi (Muafiyet Kesintisi):
+        </strong>
+        Net safi varlıklardan adil muafiyetler düşülür.
+              Kalan, yasal bölene bölünür (AHV emeklileri için 1/10, IV emeklileri için 1/15):
+       </li>
+      </ul>
+      <table class="data-table" style="margin-top: 15px;">
+       <thead>
+        <tr>
+         <th>
+          Kategori
+         </th>
+         <th>
+          Muafiyet (Gelir Azaltımı)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Bekarlar
+         </td>
+         <td>
+          CHF 30'000
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Evli Çiftler
+         </td>
+         <td>
+          CHF 50'000
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Çocuklar (çocuk başına)
+         </td>
+         <td>
+          CHF 15'000
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Sahip Olunan Konut (Standart)
+         </td>
+         <td>
+          CHF 112'500
+          <small>
+           (Evli çiftler/IV emeklilerinde CHF 300'000'e yükseltilebilir)
+          </small>
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Sonuç: Yıllık EL Maaşı
+      </h3>
+      <p>
+       Yasal Ek Yardım, matematiksel finansman açığını tam olarak kapatır:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Yıllık EL Maaşı = [Kabul Edilen Giderler] - [Hesaplanabilir Gelirler]
       </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Sonuç: Yıllık EL Maaşı</h3>
-          <p>Yasal Ek Yardım, matematiksel finansman açığını tam olarak kapatır:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Yıllık EL Maaşı = [Kabul Edilen Giderler] - [Hesaplanabilir Gelirler]
-          </div>
-          <p><small>Sonuç sıfırın üzerindeyse ve tüm giriş eşikleri karşılanmışsa, yasal bir hak mevcuttur. Ödeme aylık
-              olarak yapılır (Yıllık EL / 12).</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Önemli: Yasal Varlık Eşiği (Giriş Eşiği)</strong><br />
-        Ek Yardımlar hakkı, temel olarak, düzeltilmiş net varlıkların (sahip olunan konutun değeri hariç) bekarlar için
+      <p>
+       <small>
+        Sonuç sıfırın üzerindeyse ve tüm giriş eşikleri karşılanmışsa, yasal bir hak mevcuttur. Ödeme aylık
+              olarak yapılır (Yıllık EL / 12).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Önemli: Yasal Varlık Eşiği (Giriş Eşiği)
+     </strong>
+     <br/>
+     Ek Yardımlar hakkı, temel olarak, düzeltilmiş net varlıkların (sahip olunan konutun değeri hariç) bekarlar için
         **CHF 100'000** veya evli çiftler için **CHF 200'000**'in altında olması durumunda mevcuttur. Çocuklar için bu
         eşik her biri için CHF 50'000 artar.
-      </div>
-      <div style="text-align: center; margin-top: 2rem;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Ana Sayfaya Dön</a>
-        <a class="btn-link" href="https://www.akso.ch/dienstleistungen/ergaenzungsleistungen-el" target="_blank">Resmi
-          SVA/AKSO Solothurn Sayfası</a>
-      </div>
     </div>
-    <footer>
-      <p>Kaynak: Solothurn Denkleştirme Fonu (AKSO) 2026 Uygulama Yönetmelikleri &amp; Ek Yardımlar Federal Yasası (ELG)
-      </p>
-      <p>welfarecalc.ch tarafından sağlanmıştır | Tüm hesaplamalar yasal garanti olmaksızın yapılır.</p>
-    </footer>
+    <div style="text-align: center; margin-top: 2rem;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Ana Sayfaya Dön
+     </a>
+     <a class="btn-link" href="https://www.akso.ch/dienstleistungen/ergaenzungsleistungen-el" target="_blank">
+      Resmi
+          SVA/AKSO Solothurn Sayfası
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Kaynak: Solothurn Denkleştirme Fonu (AKSO) 2026 Uygulama Yönetmelikleri &amp; Ek Yardımlar Federal Yasası (ELG)
+    </p>
+    <p>
+     welfarecalc.ch tarafından sağlanmıştır | Tüm hesaplamalar yasal garanti olmaksızın yapılır.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

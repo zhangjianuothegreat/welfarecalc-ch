@@ -1,61 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="it">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
-    <title>Assegni familiari (AF) Algoritmo Cantone Vaud 2026 | welfarecalc.ch</title>
-    <meta
-        content="Come vengono calcolati gli assegni familiari (AF) 2026 nel Cantone Vaud (VD)? Scoprite il nostro algoritmo trasparente per assegni per figli, di formazione e di nascita."
-        name="description" />
-    <meta content="index, follow" name="robots" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" rel="canonical" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcolo degli assegni familiari Vaud 2026",
-      "description": "Guida passo-passo per la determinazione matematica precisa degli assegni familiari nel Cantone Vaud (VD) tenendo conto dell'ordine di priorità globale.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Verifica dell'età e dello stato per determinare la categoria di diritto (assegno per figli, di formazione o per incapacità lavorativa)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinazione dell'indice di rango globale del figlio (ordine per età) nell'intero nucleo familiare."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Assegnazione dell'importo mensile basato sul coefficiente di rango (aumentato a partire dal 3° figlio)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Applicazione di assegni unici (nascita / adozione) differenziati per parto singolo o multiplo."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinazione del diritto annuale e applicazione di validazioni algoritmiche difensive come i limiti di reddito."
-        }
-      ]
-    }
-    </script>
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -405,241 +354,513 @@
         .step-body ul li {
             margin-bottom: 0.25rem;
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
-    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026FA_it.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="it">
-
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="update-tag">CONFORME LAFam 2026</div>
-            <h1>Algoritmo AF: Cantone Vaud (VD)</h1>
-            <p>Documentazione trasparente degli assegni familiari (assegni per figli, di formazione e di nascita)</p>
-        </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
-        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AF Vaud 2026 – Assegni familiari | welfarecalc.ch
+  </title>
+  <meta content="Calcolo di Assegni familiari nel Cantone Vaud. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Assegni familiari, Cantone Vaud, AF, Prestazioni sociali, Calcolo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" rel="canonical"/>
+  <meta content="AF Vaud 2026 – Assegni familiari | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcolo di Assegni familiari nel Cantone Vaud. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026FA_it.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="it_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AF Vaud 2026 – Assegni familiari | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcolo di Assegni familiari nel Cantone Vaud. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Assegni familiari Vaud 2026", "description": "Step-by-step guide to calculating Assegni familiari in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Categorize children by age and education status"}, {"@type": "HowToStep", "position": 2, "text": "Apply the specific cantonal rates for each category"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total monthly allowance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME LAFam 2026
     </div>
-    
-        <div class="content">
-            <p>In Svizzera, gli assegni familiari sono regolati per legge (LAFam). Il nostro calcolatore utilizza le
+    <h1>
+     Algoritmo AF: Cantone Vaud (VD)
+    </h1>
+    <p>
+     Documentazione trasparente degli assegni familiari (assegni per figli, di formazione e di nascita)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Verifica rapida: Hai diritto?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_it" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Verifica gratis ora →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     In Svizzera, gli assegni familiari sono regolati per legge (LAFam). Il nostro calcolatore utilizza le
                 specifiche
                 norme cantonali del Cantone Vaud (VD) per il 2026 per determinare con precisione il vostro diritto.
                 L'algoritmo
                 vodese si distingue per un indice globale del nucleo familiare (ordine di rango) e assegni unici
-                generosi. La trasparenza è importante per noi.</p>
-            <h2 class="section-title">1. Importi mensili e importi unici (2026)</h2>
-            <div class="table-responsive">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Tipo di assegno</th>
-                            <th>1° &amp; 2° figlio (Standard)</th>
-                            <th>Dal 3° figlio (Aumentato)</th>
-                            <th>Requisito / Limite d'età</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Assegno per figli</strong></td>
-                            <td>CHF 322 / mese</td>
-                            <td>CHF 365 / mese</td>
-                            <td>Dal mese di nascita fino al compimento del 16° anno d'età.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Assegno di formazione</strong></td>
-                            <td>CHF 425 / mese</td>
-                            <td>CHF 468 / mese</td>
-                            <td>Dal 16° fino al massimo 25° anno d'età (prova della formazione).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Figli incapaci al lavoro</strong></td>
-                            <td>CHF 425 / mese</td>
-                            <td>CHF 468 / mese</td>
-                            <td>Dal 16° fino al massimo 20° anno d'età (prova di malattia/invalidità).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Assegno di nascita</strong></td>
-                            <td colspan="2">CHF 1'617 (parto singolo) / CHF 3'234 (per figlio in caso di parti multipli)
-                            </td>
-                            <td>Una tantum per nascita viva o dalla 24a settimana di gravidanza.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Assegno di adozione</strong></td>
-                            <td colspan="2">CHF 1'617 (caso singolo) / CHF 3'234 (per figlio in caso di adozione di
-                                gruppo)</td>
-                            <td>Una tantum per l'accoglienza giuridicamente valida di minori a scopo di adozione.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h2 class="section-title">2. Il percorso di calcolo preciso (Logica principale)</h2>
-            <div class="step-box">
-                <div class="step-num">1</div>
-                <div class="step-body">
-                    <h3>Determinazione della categoria</h3>
-                    <p>L'algoritmo verifica l'età e lo stato occupazionale o di salute di ogni figlio:</p>
-                    <ul>
-                        <li><strong>Da 0 a 16 anni:</strong> Assegnazione alla categoria <code>Assegno per figli</code>.
-                        </li>
-                        <li><strong>Da 16 a 25 anni:</strong> Assegnazione alla categoria
-                            <code>Assegno di formazione</code>,
+                generosi. La trasparenza è importante per noi.
+    </p>
+    <h2 class="section-title">
+     1. Importi mensili e importi unici (2026)
+    </h2>
+    <div class="table-responsive">
+     <table class="data-table">
+      <thead>
+       <tr>
+        <th>
+         Tipo di assegno
+        </th>
+        <th>
+         1° &amp; 2° figlio (Standard)
+        </th>
+        <th>
+         Dal 3° figlio (Aumentato)
+        </th>
+        <th>
+         Requisito / Limite d'età
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <strong>
+          Assegno per figli
+         </strong>
+        </td>
+        <td>
+         CHF 322 / mese
+        </td>
+        <td>
+         CHF 365 / mese
+        </td>
+        <td>
+         Dal mese di nascita fino al compimento del 16° anno d'età.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Assegno di formazione
+         </strong>
+        </td>
+        <td>
+         CHF 425 / mese
+        </td>
+        <td>
+         CHF 468 / mese
+        </td>
+        <td>
+         Dal 16° fino al massimo 25° anno d'età (prova della formazione).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Figli incapaci al lavoro
+         </strong>
+        </td>
+        <td>
+         CHF 425 / mese
+        </td>
+        <td>
+         CHF 468 / mese
+        </td>
+        <td>
+         Dal 16° fino al massimo 20° anno d'età (prova di malattia/invalidità).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Assegno di nascita
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (parto singolo) / CHF 3'234 (per figlio in caso di parti multipli)
+        </td>
+        <td>
+         Una tantum per nascita viva o dalla 24a settimana di gravidanza.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Assegno di adozione
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (caso singolo) / CHF 3'234 (per figlio in caso di adozione di
+                                gruppo)
+        </td>
+        <td>
+         Una tantum per l'accoglienza giuridicamente valida di minori a scopo di adozione.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h2 class="section-title">
+     2. Il percorso di calcolo preciso (Logica principale)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Determinazione della categoria
+      </h3>
+      <p>
+       L'algoritmo verifica l'età e lo stato occupazionale o di salute di ogni figlio:
+      </p>
+      <ul>
+       <li>
+        <strong>
+         Da 0 a 16 anni:
+        </strong>
+        Assegnazione alla categoria
+        <code>
+         Assegno per figli
+        </code>
+        .
+       </li>
+       <li>
+        <strong>
+         Da 16 a 25 anni:
+        </strong>
+        Assegnazione alla categoria
+        <code>
+         Assegno di formazione
+        </code>
+        ,
                             a condizione che sia presente un valido certificato di formazione e che il limite di reddito
                             legale non
-                            venga superato.</li>
-                        <li><strong>Da 16 a 20 anni (Incapacità lavorativa):</strong> Assegnazione alla categoria
-                            <code>Figli incapaci al lavoro</code> (l'importo del diritto corrisponde all'assegno di
+                            venga superato.
+       </li>
+       <li>
+        <strong>
+         Da 16 a 20 anni (Incapacità lavorativa):
+        </strong>
+        Assegnazione alla categoria
+        <code>
+         Figli incapaci al lavoro
+        </code>
+        (l'importo del diritto corrisponde all'assegno di
                             formazione).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">2</div>
-                <div class="step-body">
-                    <h3>Determinazione dell'ordine di rango globale del nucleo familiare (Rang de l'enfant)</h3>
-                    <p><strong>Fattore algoritmico critico:</strong> La progressione a partire dal 3° figlio non viene
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Determinazione dell'ordine di rango globale del nucleo familiare (Rang de l'enfant)
+      </h3>
+      <p>
+       <strong>
+        Fattore algoritmico critico:
+       </strong>
+       La progressione a partire dal 3° figlio non viene
                         calcolata separatamente per categorie nel Cantone Vaud. Viene creata una lista globale di tutti
                         i
-                        figli aventi diritto agli assegni nel nucleo familiare e ordinata per età decrescente.</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Assegnazione_Indice_Nucleo:</div>
-                        <div class="math-block">
-                            <div class="math-row">Ordina_Figli_per_Età(<span style="color:#64748b;">Decrescente</span>);
-                            </div>
-                            <div class="math-row">Figlio_1 (Il più anziano) <span class="math-sign">→</span> Indice 1
-                                <span class="math-indent">(Tariffa standard)</span></div>
-                            <div class="math-row">Figlio_2           <span class="math-sign">→</span> Indice 2 <span
-                                    class="math-indent">(Tariffa standard)</span></div>
-                            <div class="math-row">Figlio_3           <span class="math-sign">→</span> Indice 3 <span
-                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Tariffa aumentata dal
-                                    3° figlio)</span></div>
-                            <div class="math-row">Figlio_n           <span class="math-sign">→</span> Indice n <span
-                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Tariffa aumentata dal
-                                    3° figlio)</span></div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #475569;"><small><em>Ciò garantisce che, ad esempio,
+                        figli aventi diritto agli assegni nel nucleo familiare e ordinata per età decrescente.
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Assegnazione_Indice_Nucleo:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Ordina_Figli_per_Età(
+         <span style="color:#64748b;">
+          Decrescente
+         </span>
+         );
+        </div>
+        <div class="math-row">
+         Figlio_1 (Il più anziano)
+         <span class="math-sign">
+          →
+         </span>
+         Indice 1
+         <span class="math-indent">
+          (Tariffa standard)
+         </span>
+        </div>
+        <div class="math-row">
+         Figlio_2
+         <span class="math-sign">
+          →
+         </span>
+         Indice 2
+         <span class="math-indent">
+          (Tariffa standard)
+         </span>
+        </div>
+        <div class="math-row">
+         Figlio_3
+         <span class="math-sign">
+          →
+         </span>
+         Indice 3
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Tariffa aumentata dal
+                                    3° figlio)
+         </span>
+        </div>
+        <div class="math-row">
+         Figlio_n
+         <span class="math-sign">
+          →
+         </span>
+         Indice n
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Tariffa aumentata dal
+                                    3° figlio)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569;">
+       <small>
+        <em>
+         Ciò garantisce che, ad esempio,
                                 un terzo figlio che segue una formazione riceva l'intero importo maggiorato
                                 di CHF 468, anche se i primi due figli più piccoli ricevono solo assegni per
-                                figli.</em></small></p>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">3</div>
-                <div class="step-body">
-                    <h3>Calcolo dell'importo mensile</h3>
-                    <p>La somma matematica si forma dinamicamente in base agli indici determinati:</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Diritto_Mensile_Totale:</div>
-                        <div class="math-block">
-                            <div class="math-row">Diritto_Mensile_Totale = ∑ [ Tariffa ( Categoria, Indice ) ]</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Dove
-                                vale:</div>
-                            <div class="math-row">• Se Indice ≤ 2:</div>
-                            <div class="math-indent">Assegno per figli = 322 CHF | Formazione / Incapacità = 425 CHF
-                            </div>
-                            <div class="math-row">• Se Indice ≥ 3:</div>
-                            <div class="math-indent" style="color:#b8860b; font-weight:bold;">Assegno per figli = 365
-                                CHF | Formazione / Incapacità = 468 CHF</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">4</div>
-                <div class="step-body">
-                    <h3>Calcolo degli assegni unici (Nascita / Adozione)</h3>
-                    <p>L'algoritmo verifica se nell'anno di calcolo è avvenuta una nascita o un'adozione e
-                        distingue rigorosamente tra parti singoli e multipli:</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Totale_Assegni_Unici:</div>
-                        <div class="math-block">
-                            <div class="math-row">Totale_Assegni_Unici = Numero_Figli <span class="math-sign">×</span>
-                                Importo_Unico_per_Figlio</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
-                                Parametri:</div>
-                            <div class="math-row">• Parto singolo (Numero_Figli == 1):</div>
-                            <div class="math-indent">Importo_Unico_per_Figlio = 1'617 CHF</div>
-                            <div class="math-row">• Parti multipli (Numero_Figli ≤ 2):</div>
-                            <div class="math-indent">Importo_Unico_per_Figlio = 3'234 CHF <span
-                                    style="color:#64748b; font-weight:normal;">(per figlio)</span></div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
-                        <em>Esempio: Parto gemellare → 2 × 3'234 CHF = 6'468 CHF Totale.<br />
-                            Parto singolo → 1 × 1'617 CHF = 1'617 CHF Totale.</em>
-                    </p>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">5</div>
-                <div class="step-body">
-                    <h3>Determinazione del diritto annuale</h3>
-                    <p>L'aggregazione al diritto annuale totale è la seguente:</p>
-                    <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
-                        <div class="formula-title" style="color:#a855f7;">Calcolo_Importo_Annuale:</div>
-                        <div class="math-block" style="color:#6b21a8;">
-                            <div class="math-row">Importo_Annuale = ( Diritto_Mensile_Totale <span
-                                    class="math-sign">×</span> 12 ) <span class="math-sign">+</span>
-                                Totale_Assegni_Unici</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="section-title">3. Validazione difensiva e limiti algoritmici</h2>
-            <div class="alert"
-                style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
-                <strong>Barriere di sicurezza integrate (Validazione anti-errore):</strong>
-                <ul>
-                    <li><strong>Limite di reddito per figli in formazione:</strong> Se un figlio in formazione
-                        (16-25 anni) guadagna un reddito da lavoro proprio imponibile superiore a <strong>CHF 30'240 /
-                            anno</strong> (o CHF 2'520 / mese), il diritto all'assegno decade
-                        immediatamente nell'algoritmo del motore principale (Risultato = 0).</li>
-                    <li><strong>Divieto di percezione simultanea (Principio di esclusione):</strong> Per lo stesso
+                                figli.
+        </em>
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Calcolo dell'importo mensile
+      </h3>
+      <p>
+       La somma matematica si forma dinamicamente in base agli indici determinati:
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Diritto_Mensile_Totale:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Diritto_Mensile_Totale = ∑ [ Tariffa ( Categoria, Indice ) ]
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Dove
+                                vale:
+        </div>
+        <div class="math-row">
+         • Se Indice ≤ 2:
+        </div>
+        <div class="math-indent">
+         Assegno per figli = 322 CHF | Formazione / Incapacità = 425 CHF
+        </div>
+        <div class="math-row">
+         • Se Indice ≥ 3:
+        </div>
+        <div class="math-indent" style="color:#b8860b; font-weight:bold;">
+         Assegno per figli = 365
+                                CHF | Formazione / Incapacità = 468 CHF
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Calcolo degli assegni unici (Nascita / Adozione)
+      </h3>
+      <p>
+       L'algoritmo verifica se nell'anno di calcolo è avvenuta una nascita o un'adozione e
+                        distingue rigorosamente tra parti singoli e multipli:
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Totale_Assegni_Unici:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Totale_Assegni_Unici = Numero_Figli
+         <span class="math-sign">
+          ×
+         </span>
+         Importo_Unico_per_Figlio
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Parametri:
+        </div>
+        <div class="math-row">
+         • Parto singolo (Numero_Figli == 1):
+        </div>
+        <div class="math-indent">
+         Importo_Unico_per_Figlio = 1'617 CHF
+        </div>
+        <div class="math-row">
+         • Parti multipli (Numero_Figli ≤ 2):
+        </div>
+        <div class="math-indent">
+         Importo_Unico_per_Figlio = 3'234 CHF
+         <span style="color:#64748b; font-weight:normal;">
+          (per figlio)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
+       <em>
+        Esempio: Parto gemellare → 2 × 3'234 CHF = 6'468 CHF Totale.
+        <br/>
+        Parto singolo → 1 × 1'617 CHF = 1'617 CHF Totale.
+       </em>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Determinazione del diritto annuale
+      </h3>
+      <p>
+       L'aggregazione al diritto annuale totale è la seguente:
+      </p>
+      <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
+       <div class="formula-title" style="color:#a855f7;">
+        Calcolo_Importo_Annuale:
+       </div>
+       <div class="math-block" style="color:#6b21a8;">
+        <div class="math-row">
+         Importo_Annuale = ( Diritto_Mensile_Totale
+         <span class="math-sign">
+          ×
+         </span>
+         12 )
+         <span class="math-sign">
+          +
+         </span>
+         Totale_Assegni_Unici
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <h2 class="section-title">
+     3. Validazione difensiva e limiti algoritmici
+    </h2>
+    <div class="alert" style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
+     <strong>
+      Barriere di sicurezza integrate (Validazione anti-errore):
+     </strong>
+     <ul>
+      <li>
+       <strong>
+        Limite di reddito per figli in formazione:
+       </strong>
+       Se un figlio in formazione
+                        (16-25 anni) guadagna un reddito da lavoro proprio imponibile superiore a
+       <strong>
+        CHF 30'240 /
+                            anno
+       </strong>
+       (o CHF 2'520 / mese), il diritto all'assegno decade
+                        immediatamente nell'algoritmo del motore principale (Risultato = 0).
+      </li>
+      <li>
+       <strong>
+        Divieto di percezione simultanea (Principio di esclusione):
+       </strong>
+       Per lo stesso
                         figlio non può mai
-                        essere concesso contemporaneamente un assegno per figli e un assegno di formazione.</li>
-                    <li><strong>Limitazione dei limiti d'età:</strong> Il diritto all'assegno per figli decade alla fine
+                        essere concesso contemporaneamente un assegno per figli e un assegno di formazione.
+      </li>
+      <li>
+       <strong>
+        Limitazione dei limiti d'età:
+       </strong>
+       Il diritto all'assegno per figli decade alla fine
                         del
                         mese in cui il figlio compie il 16° anno di vita. Il diritto all'assegno di formazione
                         decade il giorno dopo il compimento del 25° anno di vita o al termine anticipato della
-                        formazione.</li>
-                </ul>
-            </div>
-            <div class="alert">
-                <strong>Diritto secondo il diritto federale:</strong><br />
-                Solo un genitore può percepire l'assegno. Vige un ordine di priorità legale secondo l'art. 12
+                        formazione.
+      </li>
+     </ul>
+    </div>
+    <div class="alert">
+     <strong>
+      Diritto secondo il diritto federale:
+     </strong>
+     <br/>
+     Solo un genitore può percepire l'assegno. Vige un ordine di priorità legale secondo l'art. 12
                 LAFam, se entrambi i genitori sono lavorativamente attivi (ad es. principalmente colui che esercita
                 l'attività principale nel
                 cantone di domicilio del figlio).
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a aria-label="Vai al calcolatore" class="btn-link btn-home" href="https://www.welfarecalc.ch"
-                    target="_blank">Avvia calcolatore</a>
-                <a aria-label="Vai al sito ufficiale del Cantone Vaud" class="btn-link"
-                    href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales"
-                    target="_blank">Pagina
-                    ufficiale CCVD Vaud</a>
-            </div>
-        </div>
-        <footer>
-            <p>Fonte: Direttive 2026 della Cassa cantonale di compensazione AVS del Vaud (CCVD) &amp; Legge federale
-                sugli
-                assegni familiari (LAFam)</p>
-            <p>© 2026 welfarecalc.ch | Calcolo trasparente degli assegni familiari</p>
-        </footer>
     </div>
-</body>
-
+    <div style="text-align: center; margin-top: 2rem;">
+     <a aria-label="Vai al calcolatore" class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Avvia calcolatore
+     </a>
+     <a aria-label="Vai al sito ufficiale del Cantone Vaud" class="btn-link" href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales" target="_blank">
+      Pagina
+                    ufficiale CCVD Vaud
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fonte: Direttive 2026 della Cassa cantonale di compensazione AVS del Vaud (CCVD) &amp; Legge federale
+                sugli
+                assegni familiari (LAFam)
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Calcolo trasparente degli assegni familiari
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

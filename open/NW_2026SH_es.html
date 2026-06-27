@@ -1,60 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritmo de Asistencia Social Cantón Nidwalden 2026 | Cálculo Transparente | welfarecalc.ch</title>
-    <meta name="description" content="¿Cómo se calcula la asistencia social en el Cantón de Nidwalden (NW) para 2026? Descubra nuestro algoritmo transparente basado en las directrices SKOS y la ley cantonal.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/NW_2026SH_es.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NW_2026SH_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NW_2026SH_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NW_2026SH_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NW_2026SH_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NW_2026SH_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NW_2026SH_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NW_2026SH_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NW_2026SH_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NW_2026SH_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NW_2026SH_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NW_2026SH_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NW_2026SH_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cálculo de Asistencia Social Nidwalden 2026",
-      "description": "Desglose algorítmico detallado del cálculo de asistencia social en el Cantón NW.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Verificar el límite de activos (umbral de entrada)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinar las necesidades básicas de vida (BLN 2026)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinar los costos de vivienda hasta el límite cantonal de alquiler"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcular las primas del seguro de salud después de deducir la IPV"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Comparar ingresos, subsidio por trabajo y amortización de activos"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -91,143 +41,351 @@
         .btn-home:hover { background: #b91c0c; }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculadora de Prestaciones Suizas 2026 | 26 Cantones + Revisor Dental">
-    <meta property="og:description" content="Calcule AVS, AI, PC y reducciones de primas en los 26 cantones suizos. Incluye revisor de facturas dentales y verificador de contratos de alquiler. 100% anonimo en su navegador. 11 idiomas.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/NW_2026SH_es.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">CONFORME A SKOS 2026</div>
-        <h1>Algoritmo de Asistencia Social: Cantón de Nidwalden</h1>
-        <p>Documentación transparente de la lógica de cálculo del mínimo vital social (NW)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AS Nidwalden 2026 – Asistencia social | welfarecalc.ch
+  </title>
+  <meta content="Calcule Asistencia social en el Cantón de Nidwalden. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Asistencia social, Cantón Nidwalden, AS, Prestaciones sociales, Cálculo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_es.html" rel="canonical"/>
+  <meta content="AS Nidwalden 2026 – Asistencia social | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcule Asistencia social en el Cantón de Nidwalden. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/NW_2026SH_es.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="es_ES" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AS Nidwalden 2026 – Asistencia social | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcule Asistencia social en el Cantón de Nidwalden. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NW_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Asistencia social Nidwalden 2026", "description": "Step-by-step guide to calculating Asistencia social in Canton Nidwalden.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME A SKOS 2026
     </div>
-
-    <div class="content">
-        <p>¿Cómo se calcula la asistencia social en Nidwalden? Para fortalecer la confianza del usuario, divulgamos el algoritmo completo detrás de welfarecalc.ch. Se basa en la Ley de Asistencia Social del Cantón de Nidwalden (SHG NW) y las directrices SKOS 2026.</p>
-
-        <h2 class="section-title">1. Verificación de Activos (El Umbral de Entrada)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Subsidio para Persona Sola</h4>
-                <div class="param-value">CHF 6'000</div>
-                <p><small>Más CHF 3'000 por hijo o persona en formación/educación.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Subsidio para Parejas Casadas</h4>
-                <div class="param-value">CHF 12'000</div>
-                <p><small>El subsidio total máximo está limitado a CHF 15'000 por unidad de asistencia.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Ruta de Cálculo (Mensual)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Necesidades Básicas de Vida (BLN)</h3>
-                <p>El BLN 2026 en el Cantón NW cubre los costos de alimentación, vestimenta y gestión del hogar:</p>
-                <table class="data-table">
-                    <thead><tr><th>Tamaño del hogar / Categoría</th><th>Importe mensual (2026)</th></tr></thead>
-                    <tbody>
-                        <tr><td>1 Persona (soltero/a)</td><td>CHF 1'061</td></tr>
-                        <tr><td>2 Personas (pareja)</td><td>CHF 1'624</td></tr>
-                        <tr><td>Adulto adicional en el hogar</td><td>CHF 400</td></tr>
-                        <tr><td>Menor de 11 años</td><td>CHF 391</td></tr>
-                        <tr><td>Menor de 11 a 15 años</td><td>CHF 699</td></tr>
-                        <tr><td>Mayor de 15 años / aprendiz</td><td>CHF 1'061</td></tr>
-                    </tbody>
-                </table>
-                <p><small>Las necesidades básicas se calculan de forma aditiva según la composición real del hogar.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Costos de Vivienda (Límites de Alquiler)</h3>
-                <p>Reconocimiento del alquiler real, incluidos los costos accesorios, hasta el máximo cantonal:</p>
-                <table class="data-table">
-                    <thead><tr><th>Tamaño del hogar</th><th>Alquiler bruto máximo reconocido</th></tr></thead>
-                    <tbody>
-                        <tr><td>1 Persona</td><td>CHF 1'000</td></tr>
-                        <tr><td>2 Personas</td><td>CHF 1'200</td></tr>
-                        <tr><td>3 Personas</td><td>CHF 1'400</td></tr>
-                        <tr><td>4 Personas</td><td>CHF 1'600</td></tr>
-                        <tr><td>5+ Personas</td><td>CHF 1'800</td></tr>
-                    </tbody>
-                </table>
-                <p><small>*Nota: Solo el alquiler real hasta el límite superior se reconoce como necesidad (los costos más altos no se consideran).</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Costos de Salud y Seguro Médico (después de IPV)</h3>
-                <p>La prima mensual del seguro médico (seguro básico KVG) se reconoce, deduciendo primero la Reducción Individual de Primas (IPV):</p>
-                <div class="formula">
-                    Costos de seguro médico reconocidos = Prima KVG (máx. prima promedio) - Contribución IPV
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Reconocimiento de Ingresos y Deducciones</h3>
-                <p>Se otorga un subsidio por trabajo sobre los ingresos laborales para mantener incentivos laborales. Este es estándar del 20% del salario bruto:</p>
-                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-                    <strong>Ingreso computable</strong> = Ingreso neto del trabajo - subsidio laboral (20%)
-                </div>
-                <p><small>Otros ingresos (como pensiones alimenticias, asignaciones familiares o pensiones), así como la IPV residual y las prestaciones complementarias (EL), se cuentan íntegramente como ingresos.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">5</div>
-            <div class="step-body">
-                <h3>Resultado: Derecho Mensual</h3>
-                <p>El pago final de asistencia social resulta de la diferencia entre las necesidades totales y los recursos computables:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Derecho = (BLN + Alquiler + Seguro Salud + IE*) - (Ingreso computable + Amortización de activos)
-                </div>
-                <p><small>*IE = Subsidio de integración. Los adultos empleados en el Cantón NW reciben un subsidio de CHF 100 por mes.</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Amortización de activos en el Cantón NW:</strong><br>
-            Los activos que excedan los subsidios se amortizan linealmente durante un período de 10 años y se cuentan como ingreso mensual:<br>
-            <code>Amortización mensual de activos = Activos excedentes / 120</code>
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lanzar Calculadora</a>
-            <a href="https://www.nw.ch/sozialdienst" target="_blank" class="btn-link">Sitio Oficial Cantón NW</a>
-        </div>
+    <h1>
+     Algoritmo de Asistencia Social: Cantón de Nidwalden
+    </h1>
+    <p>
+     Documentación transparente de la lógica de cálculo del mínimo vital social (NW)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Comprobación rápida: ¿Tiene derecho?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_es" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Comprobar gratis ahora →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     ¿Cómo se calcula la asistencia social en Nidwalden? Para fortalecer la confianza del usuario, divulgamos el algoritmo completo detrás de welfarecalc.ch. Se basa en la Ley de Asistencia Social del Cantón de Nidwalden (SHG NW) y las directrices SKOS 2026.
+    </p>
+    <h2 class="section-title">
+     1. Verificación de Activos (El Umbral de Entrada)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Subsidio para Persona Sola
+      </h4>
+      <div class="param-value">
+       CHF 6'000
+      </div>
+      <p>
+       <small>
+        Más CHF 3'000 por hijo o persona en formación/educación.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Subsidio para Parejas Casadas
+      </h4>
+      <div class="param-value">
+       CHF 12'000
+      </div>
+      <p>
+       <small>
+        El subsidio total máximo está limitado a CHF 15'000 por unidad de asistencia.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Fuentes: Ley de Asistencia Social del Cantón de Nidwalden (SHG NW) y directrices SKOS 2026</p>
-        <p>© 2026 welfarecalc.ch | Cálculo Transparente de Asistencia Social</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Ruta de Cálculo (Mensual)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Necesidades Básicas de Vida (BLN)
+      </h3>
+      <p>
+       El BLN 2026 en el Cantón NW cubre los costos de alimentación, vestimenta y gestión del hogar:
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Tamaño del hogar / Categoría
+         </th>
+         <th>
+          Importe mensual (2026)
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1 Persona (soltero/a)
+         </td>
+         <td>
+          CHF 1'061
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2 Personas (pareja)
+         </td>
+         <td>
+          CHF 1'624
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Adulto adicional en el hogar
+         </td>
+         <td>
+          CHF 400
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Menor de 11 años
+         </td>
+         <td>
+          CHF 391
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Menor de 11 a 15 años
+         </td>
+         <td>
+          CHF 699
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Mayor de 15 años / aprendiz
+         </td>
+         <td>
+          CHF 1'061
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       <small>
+        Las necesidades básicas se calculan de forma aditiva según la composición real del hogar.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Costos de Vivienda (Límites de Alquiler)
+      </h3>
+      <p>
+       Reconocimiento del alquiler real, incluidos los costos accesorios, hasta el máximo cantonal:
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Tamaño del hogar
+         </th>
+         <th>
+          Alquiler bruto máximo reconocido
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          1 Persona
+         </td>
+         <td>
+          CHF 1'000
+         </td>
+        </tr>
+        <tr>
+         <td>
+          2 Personas
+         </td>
+         <td>
+          CHF 1'200
+         </td>
+        </tr>
+        <tr>
+         <td>
+          3 Personas
+         </td>
+         <td>
+          CHF 1'400
+         </td>
+        </tr>
+        <tr>
+         <td>
+          4 Personas
+         </td>
+         <td>
+          CHF 1'600
+         </td>
+        </tr>
+        <tr>
+         <td>
+          5+ Personas
+         </td>
+         <td>
+          CHF 1'800
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       <small>
+        *Nota: Solo el alquiler real hasta el límite superior se reconoce como necesidad (los costos más altos no se consideran).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Costos de Salud y Seguro Médico (después de IPV)
+      </h3>
+      <p>
+       La prima mensual del seguro médico (seguro básico KVG) se reconoce, deduciendo primero la Reducción Individual de Primas (IPV):
+      </p>
+      <div class="formula">
+       Costos de seguro médico reconocidos = Prima KVG (máx. prima promedio) - Contribución IPV
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Reconocimiento de Ingresos y Deducciones
+      </h3>
+      <p>
+       Se otorga un subsidio por trabajo sobre los ingresos laborales para mantener incentivos laborales. Este es estándar del 20% del salario bruto:
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Ingreso computable
+       </strong>
+       = Ingreso neto del trabajo - subsidio laboral (20%)
+      </div>
+      <p>
+       <small>
+        Otros ingresos (como pensiones alimenticias, asignaciones familiares o pensiones), así como la IPV residual y las prestaciones complementarias (EL), se cuentan íntegramente como ingresos.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Resultado: Derecho Mensual
+      </h3>
+      <p>
+       El pago final de asistencia social resulta de la diferencia entre las necesidades totales y los recursos computables:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Derecho = (BLN + Alquiler + Seguro Salud + IE*) - (Ingreso computable + Amortización de activos)
+      </div>
+      <p>
+       <small>
+        *IE = Subsidio de integración. Los adultos empleados en el Cantón NW reciben un subsidio de CHF 100 por mes.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Amortización de activos en el Cantón NW:
+     </strong>
+     <br/>
+     Los activos que excedan los subsidios se amortizan linealmente durante un período de 10 años y se cuentan como ingreso mensual:
+     <br/>
+     <code>
+      Amortización mensual de activos = Activos excedentes / 120
+     </code>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Lanzar Calculadora
+     </a>
+     <a class="btn-link" href="https://www.nw.ch/sozialdienst" target="_blank">
+      Sitio Oficial Cantón NW
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fuentes: Ley de Asistencia Social del Cantón de Nidwalden (SHG NW) y directrices SKOS 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Cálculo Transparente de Asistencia Social
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

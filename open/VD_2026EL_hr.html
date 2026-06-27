@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="hr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EL Algoritam Kanton Vaud (VD) 2026 | Transparentni izračun | welfarecalc.ch</title>
-  <meta
-    content="Kako se izračunavaju doplatne naknade (EL/LVPC) 2026. u kantonu Vaud? Otkrijte naš transparentni algoritam temeljen na službenim CCVC podacima."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Izračun doplataka Vaud (VD) 2026",
-      "description": "Detaljna algoritamska raščlamba izračuna EL i LVPC u kantonu Vaud.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Provjera kantonalnih razdoblja čekanja / godina boravka prema LVPC"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Određivanje priznatih potreba za izdacima (korigirane osnovne potrebe 2026, najamni maksimumi po regijama, premije zdravstvenog osiguranja)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Utvrđivanje prihoda koji se mogu uračunati (neutralizacija 13. AHV mirovine, trošenje imovine s kantonalnim djeliteljima)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Izračun prava na EL uz strogo poštivanje zakonskog praga za pristup"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -236,206 +190,442 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Svicarskih Naknada 2026 | 26 Kantona + Provjera Racuna">
-    <meta property="og:description" content="Izracunajte AVS, AI, PC i smanjenja premija u svih 26 svicarskih kantona. Ukljucuje reviziju stomatoloskih racuna i provjeru ugovora o najmu. 100% anonimno u pregledniku. 11 jezika.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026EL_hr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="hr">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   DN Vaud 2026 – Dopunske naknade | welfarecalc.ch
+  </title>
+  <meta content="Izračunajte Dopunske naknade u Kantonu Vaud. Službeni podaci 2026, transparentni i razumljivi. Provjerite besplatno." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Dopunske naknade, Kanton Vaud, DN, Socijalne naknade, Izračun 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" rel="canonical"/>
+  <meta content="DN Vaud 2026 – Dopunske naknade | welfarecalc.ch" property="og:title"/>
+  <meta content="Izračunajte Dopunske naknade u Kantonu Vaud. Službeni podaci 2026, transparentni i razumljivi. Provjerite besplatno." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="hr_HR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="DN Vaud 2026 – Dopunske naknade | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Izračunajte Dopunske naknade u Kantonu Vaud. Službeni podaci 2026, transparentni i razumljivi. Provjerite besplatno." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Dopunske naknade Vaud 2026", "description": "Step-by-step guide to calculating Dopunske naknade in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">SLUŽBENI PODACI 2026</div>
-      <h1>EL Algoritam: Kanton Vaud (Vaud)</h1>
-      <p>Transparentna raščlamba doplataka (EL/LVPC) za godinu 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Brza provjera: Imate li pravo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.</p>
-        <a href="https://www.welfarecalc.ch/bus_hr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Provjerite besplatno →</a>
+   <header>
+    <div class="update-tag">
+     SLUŽBENI PODACI 2026
     </div>
-    
-    <div class="content">
-      <p>Transparentnost gradi povjerenje. Doplatci (EL) uz AHV/IV kao i kantonalne potpore prema LVPC u kantonu Vaud
+    <h1>
+     EL Algoritam: Kanton Vaud (Vaud)
+    </h1>
+    <p>
+     Transparentna raščlamba doplataka (EL/LVPC) za godinu 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Brza provjera: Imate li pravo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Provjerite brzo i bez obveze imate li pravo na smanjenje premija (IPV), dopunske beneficije ili drugu socijalnu pomoć.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_hr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Provjerite besplatno →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Transparentnost gradi povjerenje. Doplatci (EL) uz AHV/IV kao i kantonalne potpore prema LVPC u kantonu Vaud
         slijede visoko reguliranu strukturu. Ovdje dokumentiramo matematičku i pravnu logiku kojom naš kalkulator točno
-        utvrđuje vaše pravo.</p>
-      <h2 class="section-title">1. Godišnje osnovne potrebe (Savezni standard 2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Samci</h4>
-          <div class="param-value">CHF 20'100</div>
-          <p><small>Zakonski propisani savezni iznos od 1. siječnja 2025./2026.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Bračni parovi</h4>
-          <div class="param-value">CHF 30'150</div>
-          <p><small>Usklađene osnovne potrebe za partnere koji žive zajedno.</small></p>
-        </div>
+        utvrđuje vaše pravo.
+    </p>
+    <h2 class="section-title">
+     1. Godišnje osnovne potrebe (Savezni standard 2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Samci
+      </h4>
+      <div class="param-value">
+       CHF 20'100
       </div>
-      <h2 class="section-title">2. Kantonalna provjera (Razdoblja čekanja prema LVPC)</h2>
-      <p>U kantonu Vaud pravno pravo na kantonalne dodatne naknade značajno ovisi o državljanstvu i neprekidnom trajanju
-        boravka u kantonu:</p>
-      <table class="data-table">
-        <tr>
-          <th>Skupina osoba</th>
-          <th>Minimalne godine boravka (VD)</th>
-          <th>Posebni propisi</th>
-        </tr>
-        <tr>
-          <td>Državljani trećih zemalja (izvan EU/EFTA)</td>
-          <td>10 godina</td>
-          <td>Skraćenje na 5 godina uz dokazano pravo na IV</td>
-        </tr>
-        <tr>
-          <td>Priznate izbjeglice i osobe bez državljanstva</td>
-          <td>5 godina</td>
-          <td>Bez dodatnih kantonalnih olakšica</td>
-        </tr>
-        <tr>
-          <td>Švicarski državljani i državljani EU/EFTA</td>
-          <td>0 godina</td>
-          <td>Izravan pristup uz ispunjavanje saveznih kriterija</td>
-        </tr>
-      </table>
-      <h2 class="section-title">3. Put izračuna u detaljima</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Priznati izdaci (Utvrđivanje potreba)</h3>
-          <p>Sustav prvo zbraja sve pravno priznate i kantonalno specifične stavke izdataka:</p>
-          <div class="formula">
-            Osnovne potrebe + Priznati najam (uklj. sporedne troškove) + Premija zdravstvenog osiguranja (+ eventualni
+      <p>
+       <small>
+        Zakonski propisani savezni iznos od 1. siječnja 2025./2026.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Bračni parovi
+      </h4>
+      <div class="param-value">
+       CHF 30'150
+      </div>
+      <p>
+       <small>
+        Usklađene osnovne potrebe za partnere koji žive zajedno.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. Kantonalna provjera (Razdoblja čekanja prema LVPC)
+    </h2>
+    <p>
+     U kantonu Vaud pravno pravo na kantonalne dodatne naknade značajno ovisi o državljanstvu i neprekidnom trajanju
+        boravka u kantonu:
+    </p>
+    <table class="data-table">
+     <tr>
+      <th>
+       Skupina osoba
+      </th>
+      <th>
+       Minimalne godine boravka (VD)
+      </th>
+      <th>
+       Posebni propisi
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Državljani trećih zemalja (izvan EU/EFTA)
+      </td>
+      <td>
+       10 godina
+      </td>
+      <td>
+       Skraćenje na 5 godina uz dokazano pravo na IV
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Priznate izbjeglice i osobe bez državljanstva
+      </td>
+      <td>
+       5 godina
+      </td>
+      <td>
+       Bez dodatnih kantonalnih olakšica
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Švicarski državljani i državljani EU/EFTA
+      </td>
+      <td>
+       0 godina
+      </td>
+      <td>
+       Izravan pristup uz ispunjavanje saveznih kriterija
+      </td>
+     </tr>
+    </table>
+    <h2 class="section-title">
+     3. Put izračuna u detaljima
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Priznati izdaci (Utvrđivanje potreba)
+      </h3>
+      <p>
+       Sustav prvo zbraja sve pravno priznate i kantonalno specifične stavke izdataka:
+      </p>
+      <div class="formula">
+       Osnovne potrebe + Priznati najam (uklj. sporedne troškove) + Premija zdravstvenog osiguranja (+ eventualni
             dodatak za invalidska kolica)
-          </div>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">Maksimalni iznosi najma 2026 u kantonu Vaud (uklj.
-            sporedne troškove)</h4>
-          <p><small>Najamni limiti ovise o službenim PLZ regijama kantona. Zakonski paušali već uključuju sve sporedne
-              troškove:</small></p>
-          <table class="data-table">
-            <tr>
-              <th>Veličina kućanstva</th>
-              <th>Regija 1 (npr. Lausanne)</th>
-              <th>Regija 2 (Srednja središta)</th>
-              <th>Regija 3 (Ruralno / Standardno)</th>
-            </tr>
-            <tr>
-              <td>1 osoba</td>
-              <td>CHF 18'300 (CHF 1'525/mj)</td>
-              <td>CHF 16'680 (CHF 1'390/mj)</td>
-              <td>CHF 16'680 (CHF 1'390/mj)</td>
-            </tr>
-            <tr>
-              <td>2 osobe</td>
-              <td>CHF 21'720 (CHF 1'810/mj)</td>
-              <td>CHF 20'160 (CHF 1'680/mj)</td>
-              <td>CHF 20'160 (CHF 1'680/mj)</td>
-            </tr>
-            <tr>
-              <td>≥ 5 osoba</td>
-              <td>CHF 25'920 (CHF 2'160/mj)</td>
-              <td>CHF 24'000 (CHF 2'000/mj)</td>
-              <td>CHF 24'000 (CHF 2'000/mj)</td>
-            </tr>
-          </table>
-          <p style="margin-top: 0.5rem;"><small><strong>Posebno pravilo kantona Vaud:</strong> Uz certificiranu potrebu
-              za stambenim prostorom prilagođenim invalidskim kolicima, godišnji najamni maksimum automatski se povećava
-              za paušalni iznos od <strong>CHF 6'900</strong>.</small></p>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">Propis o premijama zdravstvenog osiguranja</h4>
-          <p><small>Primarno se uračunava stvarno plaćena premija (do maksimalno CHF 30'000 godišnje). Ako vrijednost ne
-              postoji ili je negativna, primjenjuju se kantonalne prosječne premije (npr. Regija 1: CHF 8'388, Regija 2:
-              CHF 7'860, Regija 3: CHF 7'284 godišnje po odrasloj osobi).</small></p>
-        </div>
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Prihodi koji se mogu uračunati i trošenje imovine</h3>
-          <p>Izdacima se suprotstavljaju prilagođeni ekonomski prihodi:</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-            <li><strong>AHV/IV mirovine (Stroga neutralizacija 13. mirovine):</strong> Od uvođenja 13. AHV mirovine
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       Maksimalni iznosi najma 2026 u kantonu Vaud (uklj.
+            sporedne troškove)
+      </h4>
+      <p>
+       <small>
+        Najamni limiti ovise o službenim PLZ regijama kantona. Zakonski paušali već uključuju sve sporedne
+              troškove:
+       </small>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Veličina kućanstva
+        </th>
+        <th>
+         Regija 1 (npr. Lausanne)
+        </th>
+        <th>
+         Regija 2 (Srednja središta)
+        </th>
+        <th>
+         Regija 3 (Ruralno / Standardno)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 osoba
+        </td>
+        <td>
+         CHF 18'300 (CHF 1'525/mj)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/mj)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/mj)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 osobe
+        </td>
+        <td>
+         CHF 21'720 (CHF 1'810/mj)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/mj)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/mj)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         ≥ 5 osoba
+        </td>
+        <td>
+         CHF 25'920 (CHF 2'160/mj)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/mj)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/mj)
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 0.5rem;">
+       <small>
+        <strong>
+         Posebno pravilo kantona Vaud:
+        </strong>
+        Uz certificiranu potrebu
+              za stambenim prostorom prilagođenim invalidskim kolicima, godišnji najamni maksimum automatski se povećava
+              za paušalni iznos od
+        <strong>
+         CHF 6'900
+        </strong>
+        .
+       </small>
+      </p>
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       Propis o premijama zdravstvenog osiguranja
+      </h4>
+      <p>
+       <small>
+        Primarno se uračunava stvarno plaćena premija (do maksimalno CHF 30'000 godišnje). Ako vrijednost ne
+              postoji ili je negativna, primjenjuju se kantonalne prosječne premije (npr. Regija 1: CHF 8'388, Regija 2:
+              CHF 7'860, Regija 3: CHF 7'284 godišnje po odrasloj osobi).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Prihodi koji se mogu uračunati i trošenje imovine
+      </h3>
+      <p>
+       Izdacima se suprotstavljaju prilagođeni ekonomski prihodi:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         AHV/IV mirovine (Stroga neutralizacija 13. mirovine):
+        </strong>
+        Od uvođenja 13. AHV mirovine
               2026. godine, algoritam matematički čisto filtrira ovu komponentu. Vrijedi:
-              <code>Prilagođena mirovina = (Ukupna AHV mirovina / 13) * 12</code>. Ostali, ne-AHV prihodi ostaju 100%
-              neumanjeni.</li>
-            <li><strong>Dohodak od rada:</strong> Umanjen za zakonski neoporezivi iznos (CHF 1'300 za samce / CHF 1'950
-              za parove), nakon čega se standardno uračunava 2/3 preostalog iznosa.</li>
-            <li><strong>Prihodi od najma i uzdržavanje:</strong> Izravno uračunavanje prema poreznim vrijednostima.</li>
-            <li><strong>Trošenje imovine (Kantonalni djelitelji):</strong> Od neto imovine oduzima se kantonalni odbitak
+        <code>
+         Prilagođena mirovina = (Ukupna AHV mirovina / 13) * 12
+        </code>
+        . Ostali, ne-AHV prihodi ostaju 100%
+              neumanjeni.
+       </li>
+       <li>
+        <strong>
+         Dohodak od rada:
+        </strong>
+        Umanjen za zakonski neoporezivi iznos (CHF 1'300 za samce / CHF 1'950
+              za parove), nakon čega se standardno uračunava 2/3 preostalog iznosa.
+       </li>
+       <li>
+        <strong>
+         Prihodi od najma i uzdržavanje:
+        </strong>
+        Izravno uračunavanje prema poreznim vrijednostima.
+       </li>
+       <li>
+        <strong>
+         Trošenje imovine (Kantonalni djelitelji):
+        </strong>
+        Od neto imovine oduzima se kantonalni odbitak
               za vlastitu nekretninu (CHF 112'500 za samce, CHF 187'500 za bračne parove kod vlastitog stambenog
               prostora) i zakonski neoporezivi iznos. Ostatak se dijeli specifičnim djeliteljem. Fiktivno otuđene
-              imovinske vrijednosti (odricanje od imovine) uključuju se s prinosom od 0.29%.</li>
-          </ul>
-          <table class="data-table" style="margin-top: 1rem;">
-            <tr>
-              <th>Neoporezivi iznosi i parametri (Savez/VD)</th>
-              <th>Iznos / Faktor</th>
-            </tr>
-            <tr>
-              <td>Neoporezivi iznos imovine: Samci</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>Neoporezivi iznos imovine: Bračni parovi</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>Neoporezivi iznos imovine: Po djetetu</td>
-              <td>CHF 15'000</td>
-            </tr>
-            <tr>
-              <td>Standardni djelitelj imovine (AHV starosni umirovljenici)</td>
-              <td>10 (1/10 godišnje kao prihod)</td>
-            </tr>
-            <tr>
-              <td>IV djelitelj imovine (Invalidski umirovljenici)</td>
-              <td>15 (1/15 godišnje kao prihod)</td>
-            </tr>
-            <tr>
-              <td>Djelitelj imovine za domove (Za boravak u instituciji)</td>
-              <td>5 (1/5 godišnje kao prihod)</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Rezultat: Izračun EL</h3>
-          <p>Doplatak zatvara točan jaz između ove dvije veličine:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Godišnja EL naknada = Max(0, [Priznati izdaci] - [Prihodi koji se mogu uračunati])
-          </div>
-          <p><small>Mjesečni iznos isplate odgovara godišnjem EL-u podijeljenom s 12, poslovno zaokruženom na sljedeći
-              puni franak.</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Važno: Zakonski prag za pristup (Imovinski prag)</strong><br />
-        Pravno pravo na doplatke je apsolutno isključeno ako oporeziva neto imovina (prije odbitka neoporezivih iznosa,
-        ali isključujući vrijednost vlastite nekretnine) prelazi sljedeće pragove:
-        <ul style="margin-left: 20px; margin-top: 8px;">
-          <li>Samci: <strong>CHF 100'000</strong></li>
-          <li>Vjenčani bračni parovi: <strong>CHF 200'000</strong></li>
-        </ul>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Natrag na početnu stranicu</a>
-        <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">Službena stranica CCVD Vaud</a>
-      </div>
+              imovinske vrijednosti (odricanje od imovine) uključuju se s prinosom od 0.29%.
+       </li>
+      </ul>
+      <table class="data-table" style="margin-top: 1rem;">
+       <tr>
+        <th>
+         Neoporezivi iznosi i parametri (Savez/VD)
+        </th>
+        <th>
+         Iznos / Faktor
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Neoporezivi iznos imovine: Samci
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Neoporezivi iznos imovine: Bračni parovi
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Neoporezivi iznos imovine: Po djetetu
+        </td>
+        <td>
+         CHF 15'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Standardni djelitelj imovine (AHV starosni umirovljenici)
+        </td>
+        <td>
+         10 (1/10 godišnje kao prihod)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         IV djelitelj imovine (Invalidski umirovljenici)
+        </td>
+        <td>
+         15 (1/15 godišnje kao prihod)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Djelitelj imovine za domove (Za boravak u instituciji)
+        </td>
+        <td>
+         5 (1/5 godišnje kao prihod)
+        </td>
+       </tr>
+      </table>
+     </div>
     </div>
-    <footer>
-      <p>Izvor: Caisse cantonale de compensation AVS Vaud (CCVC) smjernice 2026, LVPC &amp; Savezni zakon o doplatcima
-        (ELG)</p>
-      <p>Omogućeno od strane welfarecalc.ch | Visoko precizna algoritamska dokumentacija bez pravne garancije.</p>
-    </footer>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Rezultat: Izračun EL
+      </h3>
+      <p>
+       Doplatak zatvara točan jaz između ove dvije veličine:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Godišnja EL naknada = Max(0, [Priznati izdaci] - [Prihodi koji se mogu uračunati])
+      </div>
+      <p>
+       <small>
+        Mjesečni iznos isplate odgovara godišnjem EL-u podijeljenom s 12, poslovno zaokruženom na sljedeći
+              puni franak.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Važno: Zakonski prag za pristup (Imovinski prag)
+     </strong>
+     <br/>
+     Pravno pravo na doplatke je apsolutno isključeno ako oporeziva neto imovina (prije odbitka neoporezivih iznosa,
+        ali isključujući vrijednost vlastite nekretnine) prelazi sljedeće pragove:
+     <ul style="margin-left: 20px; margin-top: 8px;">
+      <li>
+       Samci:
+       <strong>
+        CHF 100'000
+       </strong>
+      </li>
+      <li>
+       Vjenčani bračni parovi:
+       <strong>
+        CHF 200'000
+       </strong>
+      </li>
+     </ul>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Natrag na početnu stranicu
+     </a>
+     <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">
+      Službena stranica CCVD Vaud
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Izvor: Caisse cantonale de compensation AVS Vaud (CCVC) smjernice 2026, LVPC &amp; Savezni zakon o doplatcima
+        (ELG)
+    </p>
+    <p>
+     Omogućeno od strane welfarecalc.ch | Visoko precizna algoritamska dokumentacija bez pravne garancije.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

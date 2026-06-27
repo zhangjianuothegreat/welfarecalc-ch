@@ -1,66 +1,10 @@
 <!DOCTYPE html>
-<html lang="it-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    
-    <title>Algoritmo IPV Canton Basilea Città 2026 | Calcolo Trasparente | welfarecalc.ch</title>
-    <meta name="description" content="Come viene calcolata la riduzione dei premi (IPV) per il 2026 nel Canton Basilea Città? Scopri il nostro algoritmo open-source trasparente basato sulle linee guida ufficiali dell'ordinanza KVO di Basilea Città.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BS_2026IPV_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BS_2026IPV_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BS_2026IPV_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BS_2026IPV_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BS_2026IPV_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BS_2026IPV_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BS_2026IPV_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BS_2026IPV_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BS_2026IPV_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Calcolo della riduzione dei premi Basilea Città 2026",
-        "description": "Guida passo-passo alla determinazione matematica del diritto all'IPV nel Canton Basilea Città per l'anno 2026.",
-        "step": [
-            {
-                "@type": "HowToStep",
-                "position": 1,
-                "name": "Determinazione della franchigia patrimoniale",
-                "text": "Detrazione di CHF 50'000 per i single o CHF 100'000 per le coppie sposate dal patrimonio netto."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 2,
-                "name": "Calcolo del reddito determinante (LNA)",
-                "text": "LNA = Reddito netto + 10% del patrimonio eccedente - alimenti."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 3,
-                "name": "Assegnazione al gruppo di reddito",
-                "text": "Classificazione del nucleo familiare in uno dei 22 gruppi di reddito standardizzati cantonali."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 4,
-                "name": "Determinazione del contributo forfettario",
-                "text": "Lettura dei contributi cantonali mensili forfettari per adulti, giovani adulti e bambini."
-            }
-        ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -137,138 +81,313 @@
         .param-table-wrapper::-webkit-scrollbar { height: 6px; }
         .param-table-wrapper::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 4px; }
         .param-table-wrapper::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
-    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/BS_2026IPV_it.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="it">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">CANTON BASILEA CITTÀ (BS) · ORDINANZA KVO 2026 UFFICIALE</div>
-        <h1>Algoritmo IPV: Canton Basilea Città</h1>
-        <p>Calcolo trasparente della vostra riduzione dei premi per l'anno 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
-        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   RIP Basilea-Città 2026 – Calcolo | welfarecalc.ch
+  </title>
+  <meta content="Calcolo di Riduzione dei premi nel Cantone Basilea-Città. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Riduzione dei premi, Cantone Basilea-Città, RIP, Prestazioni sociali, Calcolo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html" rel="canonical"/>
+  <meta content="RIP Basilea-Città 2026 – Riduzione dei premi | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcolo di Riduzione dei premi nel Cantone Basilea-Città. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/BS_2026IPV_it.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="it_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="RIP Basilea-Città 2026 – Riduzione dei premi | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcolo di Riduzione dei premi nel Cantone Basilea-Città. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Riduzione individuale dei premi Basilea-Città 2026", "description": "Step-by-step guide to calculating Riduzione individuale dei premi in Canton Basilea-Città.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CANTON BASILEA CITTÀ (BS) · ORDINANZA KVO 2026 UFFICIALE
     </div>
-
-    <div class="content">
-        <p>Fiducia attraverso la trasparenza. Qui vi spieghiamo come il nostro calcolatore determina la vostra potenziale riduzione dei premi (IPV) nel Canton Basilea Città. Questo algoritmo si basa rigorosamente sulle disposizioni legali dell'ordinanza KVO di Basilea Città.</p>
-
-        <h2 class="section-title">1. Parametri chiave (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Prelevamento patrimonio</h4>
-                <div class="param-value">10.0 %</div>
-                <p><small>Quota del patrimonio netto (>franchigia) aggiunta al reddito.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Gruppi di reddito</h4>
-                <div class="param-value">22 livelli</div>
-                <p><small>Scala degressiva dei contributi IPV.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Il percorso di calcolo</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Determinazione della franchigia patrimoniale</h3>
-                <p>Prima di tutto viene analizzato il patrimonio netto imponibile del nucleo familiare. Se il patrimonio supera le franchigie legali per l'anno 2026, l'importo eccedente viene parzialmente aggiunto al reddito.</p>
-                
-                <div class="param-table-wrapper">
-                    <table class="data-table">
-                        <thead>
-                            <tr><th>Tipo di nucleo familiare</th><th>Franchigia (2026)</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Persona singola</td><td>CHF 50'000</td></tr>
-                            <tr><td>Coniugi / Unione domestica registrata</td><td>CHF 100'000</td></tr>
-                            <tr><td>Supplemento per figlio / persona in formazione iniziale</td><td>+ CHF 15'000</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Calcolo del reddito determinante (LNA)</h3>
-                <p>Il reddito rilevante per la riduzione dei premi (LNA) si calcola come reddito netto più un prelevamento del 10% del patrimonio eccedente, meno gli alimenti effettivamente pagati e documentati.</p>
-                
-                <div class="formula-box">
-                    PatrimonioEccedente = Max(0, PatrimonioImponibile - Franchigia)<br>
-                    LNA = RedditoNetto + (PatrimonioEccedente × 10%) - AlimentiPagati
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Classificazione nei 22 gruppi di reddito</h3>
-                <p>A seconda del LNA calcolato e dell'esatta dimensione del nucleo familiare (numero di adulti + bambini), l'unità abitativa viene inserita in una tabella degressiva (gruppo 1 fino al massimo gruppo 22). Le soglie degli intervalli aumentano uniformemente di CHF 1'250 per gruppo.</p>
-                
-                <div class="param-table-wrapper">
-                    <table class="data-table">
-                        <thead>
-                            <tr><th>Dimensione nucleo (persone)</th><th>Soglia reddito Gruppo 1</th><th>Soglia reddito Gruppo 22</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>1 persona (es. single)</td><td>CHF 23'125</td><td>CHF 49'375</td></tr>
-                            <tr><td>2 persone (es. coppia)</td><td>CHF 37'000</td><td>CHF 63'250</td></tr>
-                            <tr><td>3 persone</td><td>CHF 47'000</td><td>CHF 73'250</td></tr>
-                            <tr><td>4 persone</td><td>CHF 55'000</td><td>CHF 81'250</td></tr>
-                            <tr><td>5+ persone (scalare progressivo)</td><td>+ CHF 6'000 / pers.</td><td>+ CHF 6'000 / pers.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Determinazione del contributo forfettario cantonale</h3>
-                <p>Il diritto non viene ridotto in base alla cassa malati effettivamente scelta, ma viene accreditato come contributo fisso cantonale (importo forfettario). Questo funge da sistema di incentivazione per la scelta di modelli assicurativi a basso costo (HMO/medico di famiglia).</p>
-                
-                <div class="formula-box">
-                    SussidioMensile_Totale = (Adulti × Importo_A) + (InFormazione × Importo_B) + (Bambini × Importo_C)
-                </div>
-                <p><small>*Nota: Se il LNA calcolato supera la soglia massima del gruppo 22, il diritto all'IPV per l'anno 2026 decade completamente (diritto = CHF 0).</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Particolarità importante nel Canton Basilea Città:</strong><br>
-            Il sistema di Basilea Città è fortemente degressivo. I nuclei familiari nel gruppo 1 ricevono il contributo massimo ai premi standard (fino al 100% del premio di base standardizzato), mentre le classi di reddito medio ricevono un sostegno scalare inferiore, fino alla completa perdita del diritto a partire dal gruppo 22.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" rel="noopener noreferrer" class="btn-link btn-home">Torna alla home page</a>
-            <a href="https://www.bs.ch/themen/finanzielle-hilfe/leistungen/praemienverbilligung" target="_blank" rel="noopener noreferrer" class="btn-link btn-official">Visita il sito ufficiale dell'Ufficio contributi sociali</a>
-        </div>
+    <h1>
+     Algoritmo IPV: Canton Basilea Città
+    </h1>
+    <p>
+     Calcolo trasparente della vostra riduzione dei premi per l'anno 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Verifica rapida: Hai diritto?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_it" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Verifica gratis ora →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Fiducia attraverso la trasparenza. Qui vi spieghiamo come il nostro calcolatore determina la vostra potenziale riduzione dei premi (IPV) nel Canton Basilea Città. Questo algoritmo si basa rigorosamente sulle disposizioni legali dell'ordinanza KVO di Basilea Città.
+    </p>
+    <h2 class="section-title">
+     1. Parametri chiave (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Prelevamento patrimonio
+      </h4>
+      <div class="param-value">
+       10.0 %
+      </div>
+      <p>
+       <small>
+        Quota del patrimonio netto (&gt;franchigia) aggiunta al reddito.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Gruppi di reddito
+      </h4>
+      <div class="param-value">
+       22 livelli
+      </div>
+      <p>
+       <small>
+        Scala degressiva dei contributi IPV.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Fonte: Ufficio contributi sociali del Canton Basilea Città (Ordinanza sull'assicurazione malattie KVO) | Fornito da welfarecalc.ch</p>
-        <p>Questo riepilogo è a scopo informativo e non è giuridicamente vincolante.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Il percorso di calcolo
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Determinazione della franchigia patrimoniale
+      </h3>
+      <p>
+       Prima di tutto viene analizzato il patrimonio netto imponibile del nucleo familiare. Se il patrimonio supera le franchigie legali per l'anno 2026, l'importo eccedente viene parzialmente aggiunto al reddito.
+      </p>
+      <div class="param-table-wrapper">
+       <table class="data-table">
+        <thead>
+         <tr>
+          <th>
+           Tipo di nucleo familiare
+          </th>
+          <th>
+           Franchigia (2026)
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Persona singola
+          </td>
+          <td>
+           CHF 50'000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Coniugi / Unione domestica registrata
+          </td>
+          <td>
+           CHF 100'000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Supplemento per figlio / persona in formazione iniziale
+          </td>
+          <td>
+           + CHF 15'000
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Calcolo del reddito determinante (LNA)
+      </h3>
+      <p>
+       Il reddito rilevante per la riduzione dei premi (LNA) si calcola come reddito netto più un prelevamento del 10% del patrimonio eccedente, meno gli alimenti effettivamente pagati e documentati.
+      </p>
+      <div class="formula-box">
+       PatrimonioEccedente = Max(0, PatrimonioImponibile - Franchigia)
+       <br/>
+       LNA = RedditoNetto + (PatrimonioEccedente × 10%) - AlimentiPagati
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Classificazione nei 22 gruppi di reddito
+      </h3>
+      <p>
+       A seconda del LNA calcolato e dell'esatta dimensione del nucleo familiare (numero di adulti + bambini), l'unità abitativa viene inserita in una tabella degressiva (gruppo 1 fino al massimo gruppo 22). Le soglie degli intervalli aumentano uniformemente di CHF 1'250 per gruppo.
+      </p>
+      <div class="param-table-wrapper">
+       <table class="data-table">
+        <thead>
+         <tr>
+          <th>
+           Dimensione nucleo (persone)
+          </th>
+          <th>
+           Soglia reddito Gruppo 1
+          </th>
+          <th>
+           Soglia reddito Gruppo 22
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           1 persona (es. single)
+          </td>
+          <td>
+           CHF 23'125
+          </td>
+          <td>
+           CHF 49'375
+          </td>
+         </tr>
+         <tr>
+          <td>
+           2 persone (es. coppia)
+          </td>
+          <td>
+           CHF 37'000
+          </td>
+          <td>
+           CHF 63'250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           3 persone
+          </td>
+          <td>
+           CHF 47'000
+          </td>
+          <td>
+           CHF 73'250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           4 persone
+          </td>
+          <td>
+           CHF 55'000
+          </td>
+          <td>
+           CHF 81'250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           5+ persone (scalare progressivo)
+          </td>
+          <td>
+           + CHF 6'000 / pers.
+          </td>
+          <td>
+           + CHF 6'000 / pers.
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Determinazione del contributo forfettario cantonale
+      </h3>
+      <p>
+       Il diritto non viene ridotto in base alla cassa malati effettivamente scelta, ma viene accreditato come contributo fisso cantonale (importo forfettario). Questo funge da sistema di incentivazione per la scelta di modelli assicurativi a basso costo (HMO/medico di famiglia).
+      </p>
+      <div class="formula-box">
+       SussidioMensile_Totale = (Adulti × Importo_A) + (InFormazione × Importo_B) + (Bambini × Importo_C)
+      </div>
+      <p>
+       <small>
+        *Nota: Se il LNA calcolato supera la soglia massima del gruppo 22, il diritto all'IPV per l'anno 2026 decade completamente (diritto = CHF 0).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Particolarità importante nel Canton Basilea Città:
+     </strong>
+     <br/>
+     Il sistema di Basilea Città è fortemente degressivo. I nuclei familiari nel gruppo 1 ricevono il contributo massimo ai premi standard (fino al 100% del premio di base standardizzato), mentre le classi di reddito medio ricevono un sostegno scalare inferiore, fino alla completa perdita del diritto a partire dal gruppo 22.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" rel="noopener noreferrer" target="_blank">
+      Torna alla home page
+     </a>
+     <a class="btn-link btn-official" href="https://www.bs.ch/themen/finanzielle-hilfe/leistungen/praemienverbilligung" rel="noopener noreferrer" target="_blank">
+      Visita il sito ufficiale dell'Ufficio contributi sociali
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fonte: Ufficio contributi sociali del Canton Basilea Città (Ordinanza sull'assicurazione malattie KVO) | Fornito da welfarecalc.ch
+    </p>
+    <p>
+     Questo riepilogo è a scopo informativo e non è giuridicamente vincolante.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

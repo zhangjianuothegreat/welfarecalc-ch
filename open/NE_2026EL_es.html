@@ -1,52 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritmo EL Cantón de Neuchâtel 2026 | Cálculo Transparente | welfarecalc.ch</title>
-    <meta name="description" content="¿Cómo se calculan las Prestaciones Complementarias (EL) 2026 en el Cantón de Neuchâtel (NE)? Descubra nuestro algoritmo transparente basado en datos oficiales de la Caja AVS NE.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/NE_2026EL_es.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NE_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NE_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NE_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NE_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NE_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NE_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NE_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NE_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NE_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NE_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NE_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NE_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cálculo de Prestaciones Complementarias Neuchâtel 2026",
-      "description": "Desglose algorítmico detallado del cálculo de EL en el Cantón de NE.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Determinar las necesidades de gasto reconocidas (diferenciación Región 2/3)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcular los ingresos computables incluida la neutralización de la 13ª AVS"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinar el importe de las EL (cobertura del déficit)"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -81,116 +39,292 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculadora de Prestaciones Suizas 2026 | 26 Cantones + Revisor Dental">
-    <meta property="og:description" content="Calcule AVS, AI, PC y reducciones de primas en los 26 cantones suizos. Incluye revisor de facturas dentales y verificador de contratos de alquiler. 100% anonimo en su navegador. 11 idiomas.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/NE_2026EL_es.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">DATOS OFICIALES 2026</div>
-        <h1>Algoritmo EL: Cantón de Neuchâtel (NE)</h1>
-        <p>Desglose transparente de las Prestaciones Complementarias (EL) para el año 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Comprobación rápida: ¿Tiene derecho?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_es" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Comprobar gratis ahora →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   PC Neuchâtel 2026 – Cálculo | welfarecalc.ch
+  </title>
+  <meta content="Calcule Prestaciones complementarias en el Cantón de Neuchâtel. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prestaciones complementarias, Cantón Neuchâtel, PC, Prestaciones sociales, Cálculo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_es.html" rel="canonical"/>
+  <meta content="PC Neuchâtel 2026 – Prestaciones complementarias | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcule Prestaciones complementarias en el Cantón de Neuchâtel. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/NE_2026EL_es.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="es_ES" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PC Neuchâtel 2026 – Prestaciones complementarias | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcule Prestaciones complementarias en el Cantón de Neuchâtel. Datos oficiales 2026, transparentes y comprensibles. Compruebe gratis." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Prestaciones complementarias Neuchâtel 2026", "description": "Step-by-step guide to calculating Prestaciones complementarias in Canton Neuchâtel.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     DATOS OFICIALES 2026
     </div>
-
-    <div class="content">
-        <p>La transparencia es el núcleo de nuestro trabajo. Aquí documentamos con precisión cómo nuestra calculadora determina el derecho a las EL para el Cantón de Neuchâtel, teniendo en cuenta la asignación regional cantonal y las nuevas regulaciones federales de 2026.</p>
-
-        <h2 class="section-title">1. Necesidades Básicas Anuales (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Personas solas</h4>
-                <div class="param-value">CHF 20'670</div>
-                <p><small>Importe armonizado a nivel nacional a partir de 2026.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Parejas casadas</h4>
-                <div class="param-value">CHF 31'005</div>
-                <p><small>Necesidades básicas para parejas en el mismo hogar.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Metodología de Cálculo en el Cantón de Neuchâtel</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Gastos Reconocidos (Necesidades)</h3>
-                <p>El Cantón de Neuchâtel está dividido en diferentes regiones de alquiler. Nuestro algoritmo reconoce esto automáticamente:</p>
-                <div class="formula">
-                    Necesidades básicas + Alquiler (hasta el límite) + Suma global del seguro de enfermedad
-                </div>
-                <table class="data-table">
-                    <tr><th>Máximos de alquiler NE 2026</th><th>Región 2 (ej. Ciudad de NE)</th><th>Región 3 (Rural)</th></tr>
-                    <tr><td>1 persona</td><td>CHF 1'525 / mes</td><td>CHF 1'390 / mes</td></tr>
-                    <tr><td>2 personas</td><td>CHF 1'810 / mes</td><td>CHF 1'680 / mes</td></tr>
-                    <tr><td>3 personas</td><td>CHF 1'980 / mes</td><td>CHF 1'850 / mes</td></tr>
-                </table>
-                <p><small>*Recargo por vivienda accesible para sillas de ruedas: CHF 6'900 al año.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Ingresos Computables</h3>
-                <p>Característica especial 2026: La introducción de la 13ª renta AVS se trata de manera neutral en el cálculo de las EL.</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem;">
-                    <li><strong>Rentas:</strong> Prestaciones AVS/AI (se ignora la 13ª renta).</li>
-                    <li><strong>Reducción de activos:</strong> (Activos netos - exención) / 10 (pensión de vejez) o 1/15 (seguro de invalidez).</li>
-                    <li><strong>Ingresos del trabajo:</strong> Se computan 2/3 de los ingresos después de deducir las asignaciones.</li>
-                </ul>
-                <table class="data-table">
-                    <tr><th>Exenciones (Activos netos)</th><th>Importe</th></tr>
-                    <tr><td>Personas solas</td><td>CHF 30'000</td></tr>
-                    <tr><td>Parejas casadas</td><td>CHF 50'000</td></tr>
-                    <tr><td>Adicional por hijo</td><td>CHF 15'000</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Prestación Final EL</h3>
-                <p>Las EL se calculan como una garantía de déficit:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    EL anual = [Suma de gastos reconocidos] - [Suma de ingresos computables]
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Importante: Umbral de activos</strong><br>
-            El derecho existe solo si los activos netos (excluyendo la propiedad ocupada por el propietario) son inferiores a <strong>CHF 100'000</strong> (personas solas) o <strong>CHF 200'000</strong> (parejas casadas).
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Volver a la página de inicio</a>
-            <a href="https://www.caisseavsne.ch" target="_blank" class="btn-link">Sitio web oficial de la Caja AVS NE</a>
-        </div>
+    <h1>
+     Algoritmo EL: Cantón de Neuchâtel (NE)
+    </h1>
+    <p>
+     Desglose transparente de las Prestaciones Complementarias (EL) para el año 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Comprobación rápida: ¿Tiene derecho?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Compruebe rápida y sin compromiso si tiene derecho a la reducción de primas (IPV), prestaciones complementarias u otras ayudas sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_es" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Comprobar gratis ahora →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La transparencia es el núcleo de nuestro trabajo. Aquí documentamos con precisión cómo nuestra calculadora determina el derecho a las EL para el Cantón de Neuchâtel, teniendo en cuenta la asignación regional cantonal y las nuevas regulaciones federales de 2026.
+    </p>
+    <h2 class="section-title">
+     1. Necesidades Básicas Anuales (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Personas solas
+      </h4>
+      <div class="param-value">
+       CHF 20'670
+      </div>
+      <p>
+       <small>
+        Importe armonizado a nivel nacional a partir de 2026.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Parejas casadas
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        Necesidades básicas para parejas en el mismo hogar.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Fuente: Directrices de la Caja AVS NE 2026 y Ley Federal de Prestaciones Complementarias (ELG)</p>
-        <p>Proporcionado por welfarecalc.ch | Información sin garantía legal.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Metodología de Cálculo en el Cantón de Neuchâtel
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Gastos Reconocidos (Necesidades)
+      </h3>
+      <p>
+       El Cantón de Neuchâtel está dividido en diferentes regiones de alquiler. Nuestro algoritmo reconoce esto automáticamente:
+      </p>
+      <div class="formula">
+       Necesidades básicas + Alquiler (hasta el límite) + Suma global del seguro de enfermedad
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Máximos de alquiler NE 2026
+        </th>
+        <th>
+         Región 2 (ej. Ciudad de NE)
+        </th>
+        <th>
+         Región 3 (Rural)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 persona
+        </td>
+        <td>
+         CHF 1'525 / mes
+        </td>
+        <td>
+         CHF 1'390 / mes
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 personas
+        </td>
+        <td>
+         CHF 1'810 / mes
+        </td>
+        <td>
+         CHF 1'680 / mes
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 personas
+        </td>
+        <td>
+         CHF 1'980 / mes
+        </td>
+        <td>
+         CHF 1'850 / mes
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Recargo por vivienda accesible para sillas de ruedas: CHF 6'900 al año.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Ingresos Computables
+      </h3>
+      <p>
+       Característica especial 2026: La introducción de la 13ª renta AVS se trata de manera neutral en el cálculo de las EL.
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem;">
+       <li>
+        <strong>
+         Rentas:
+        </strong>
+        Prestaciones AVS/AI (se ignora la 13ª renta).
+       </li>
+       <li>
+        <strong>
+         Reducción de activos:
+        </strong>
+        (Activos netos - exención) / 10 (pensión de vejez) o 1/15 (seguro de invalidez).
+       </li>
+       <li>
+        <strong>
+         Ingresos del trabajo:
+        </strong>
+        Se computan 2/3 de los ingresos después de deducir las asignaciones.
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Exenciones (Activos netos)
+        </th>
+        <th>
+         Importe
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Personas solas
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Parejas casadas
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Adicional por hijo
+        </td>
+        <td>
+         CHF 15'000
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Prestación Final EL
+      </h3>
+      <p>
+       Las EL se calculan como una garantía de déficit:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       EL anual = [Suma de gastos reconocidos] - [Suma de ingresos computables]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Importante: Umbral de activos
+     </strong>
+     <br/>
+     El derecho existe solo si los activos netos (excluyendo la propiedad ocupada por el propietario) son inferiores a
+     <strong>
+      CHF 100'000
+     </strong>
+     (personas solas) o
+     <strong>
+      CHF 200'000
+     </strong>
+     (parejas casadas).
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Volver a la página de inicio
+     </a>
+     <a class="btn-link" href="https://www.caisseavsne.ch" target="_blank">
+      Sitio web oficial de la Caja AVS NE
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fuente: Directrices de la Caja AVS NE 2026 y Ley Federal de Prestaciones Complementarias (ELG)
+    </p>
+    <p>
+     Proporcionado por welfarecalc.ch | Información sin garantía legal.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

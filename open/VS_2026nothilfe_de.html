@@ -1,54 +1,10 @@
 <!DOCTYPE html>
-<html lang="de-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Nothilfe Algorithmus Kanton Wallis 2026 | Transparente Berechnung | welfarecalc.ch</title>
-    <meta name="description" content="Wie wird die Nothilfe 2026 im Kanton Wallis (VS) berechnet? Entdecken Sie unseren transparenten Algorithmus basierend auf den offiziellen kantonalen Richtlinien.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_en.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_pt.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_tr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_sq.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_hr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Berechnung der Nothilfe Wallis 2026",
-      "description": "Schritt-für-Schritt-Anleitung zur gesetzlichen Berechnung der Nothilfe im Kanton Wallis (VS).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Ermittlung des Erwachsenen-Tagessatzes unter Berücksichtigung des Paarfaktors"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Addition der Kinder-Zusatzbeträge pro Kind"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Monatliche Hochrechnung mit dem Faktor 30.42 und kaufmännische Rundung"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        /* ============ 与 AG / AI 页面完全一致的核心专业样式体系 ============ */
+<html lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   /* ============ 与 AG / AI 页面完全一致的核心专业样式体系 ============ */
         :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
@@ -110,160 +66,281 @@
             .step-box { padding-left: 0; padding-top: 3.5rem; }
             .step-num { left: 0; top: 0; }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VS_2026nothilfe_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <span class="update-tag">Kantonale Richtlinien 2026</span>
-        <h1>Nothilfe-Berechnungsalgorithmus</h1>
-        <p>Transparente und quelloffene Berechnungslogik für den Kanton Wallis (VS)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
-        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   Nothilfe Wallis 2026 – Nothilfe | welfarecalc.ch
+  </title>
+  <meta content="Berechnung der Nothilfe im Kanton Wallis. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Nothilfe, Kanton Wallis, Nothilfe, Sozialleistungen, Berechnung 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html" rel="canonical"/>
+  <meta content="Nothilfe Wallis 2026 – Nothilfe | welfarecalc.ch" property="og:title"/>
+  <meta content="Berechnung der Nothilfe im Kanton Wallis. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="de_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Nothilfe Wallis 2026 – Nothilfe | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Berechnung der Nothilfe im Kanton Wallis. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026nothilfe_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Nothilfe Wallis 2026", "description": "Step-by-step guide to calculating Nothilfe in Canton Wallis.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine daily emergency aid rate per adult"}, {"@type": "HowToStep", "position": 2, "text": "Add allowances for children with degression"}, {"@type": "HowToStep", "position": 3, "text": "Project monthly amount with rounding"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <span class="update-tag">
+     Kantonale Richtlinien 2026
+    </span>
+    <h1>
+     Nothilfe-Berechnungsalgorithmus
+    </h1>
+    <p>
+     Transparente und quelloffene Berechnungslogik für den Kanton Wallis (VS)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Schneller Check: Haben Sie Anspruch?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_de" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Jetzt kostenlos prüfen →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Aus Gründen der Transparenz und des Vertrauens legen wir hier den genauen mathematischen Algorithmus offen, mit dem unser System die gesetzliche Nothilfe für den Kanton Wallis (VS) im Jahr 2026 ermittelt. Diese Berechnung basiert auf Art. 12 der Bundesverfassung sowie den kantonalen Ausführungsbestimmungen zur kollektiven Unterbringung.
+    </p>
+    <h3 class="section-title">
+     1. Systemparameter für den Kanton Wallis (VS)
+    </h3>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Tägliche Barleistung (Basis)
+      </h4>
+      <div class="param-value">
+       CHF 9.25
+      </div>
+      <p style="font-size:0.8rem; color:#64748b; margin-top:0.3rem;">
+       Grundbetrag für eine alleinstehende Person pro Tag.
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Paarfaktor (Erwachsene)
+      </h4>
+      <div class="param-value">
+       1.70
+      </div>
+      <p style="font-size:0.8rem; color:#64748b; margin-top:0.3rem;">
+       Degressionskoeffizient ab der zweiten erwachsenen Person.
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Kinder-Zusatzfaktor
+      </h4>
+      <div class="param-value">
+       0.54
+      </div>
+      <p style="font-size:0.8rem; color:#64748b; margin-top:0.3rem;">
+       Multiplikator bezogen auf das Basisguthaben pro Kind.
+      </p>
+     </div>
     </div>
-
-    <div class="content">
-        <p>Aus Gründen der Transparenz und des Vertrauens legen wir hier den genauen mathematischen Algorithmus offen, mit dem unser System die gesetzliche Nothilfe für den Kanton Wallis (VS) im Jahr 2026 ermittelt. Diese Berechnung basiert auf Art. 12 der Bundesverfassung sowie den kantonalen Ausführungsbestimmungen zur kollektiven Unterbringung.</p>
-
-        <h3 class="section-title">1. Systemparameter für den Kanton Wallis (VS)</h3>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Tägliche Barleistung (Basis)</h4>
-                <div class="param-value">CHF 9.25</div>
-                <p style="font-size:0.8rem; color:#64748b; margin-top:0.3rem;">Grundbetrag für eine alleinstehende Person pro Tag.</p>
-            </div>
-            <div class="param-card">
-                <h4>Paarfaktor (Erwachsene)</h4>
-                <div class="param-value">1.70</div>
-                <p style="font-size:0.8rem; color:#64748b; margin-top:0.3rem;">Degressionskoeffizient ab der zweiten erwachsenen Person.</p>
-            </div>
-            <div class="param-card">
-                <h4>Kinder-Zusatzfaktor</h4>
-                <div class="param-value">0.54</div>
-                <p style="font-size:0.8rem; color:#64748b; margin-top:0.3rem;">Multiplikator bezogen auf das Basisguthaben pro Kind.</p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Hinweis zum Kinderguthaben:</strong> Im Kanton Wallis existiert im Gegensatz zu einigen anderen Kantonen kein progressiver Bonus ab dem 3. Kind. Jedes Kind wird linear mit dem Faktor 0.54 berechnet.
-        </div>
-
-        <h3 class="section-title">2. Schritt-für-Schritt-Berechnungslogik</h3>
-        
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h4>Berechnung des Erwachsenen-Tagessatzes</h4>
-                <p>Wenn sich eine einzelne erwachsene Person im Haushalt befindet, entspricht der Satz dem Basisbetrag. Bei mehreren Erwachsenen greift der Paarfaktor (Degression):</p>
-                <div class="formula">
-                    Alleinstehend: AdultDaily = CHF 9.25 <br>
-                    Mehrere Erwachsene: AdultDaily = 9.25 + (Anzahl Erwachsene - 1) * 9.25 * 0.70
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h4>Berechnung des Kinderzuschlags</h4>
-                <p>Der Zuschlag für Kinder wird linear auf Basis des Kinderguthabensfaktors aufsummiert:</p>
-                <div class="formula">
-                    ChildDaily = Anzahl Kinder * (9.25 * 0.54)
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h4>Gesamttagessatz und monatliche Hochrechnung</h4>
-                <p>Der Gesamttagessatz ergibt sich aus der Summe der Erwachsenen- und Kindersätze. Dieser Wert wird mit dem statistischen Monatsfaktor von 30.42 Tagen multipliziert und kaufmännisch gerundet:</p>
-                <div class="formula">
-                    TotalDaily = AdultDaily + ChildDaily <br>
-                    Monatlicher Betrag = Round(TotalDaily * 30.42)
-                </div>
-            </div>
-        </div>
-
-        <h3 class="section-title">3. Interaktive Live-Demo (VS Core Engine)</h3>
-        <p>Testen Sie den Algorithmus direkt mit Ihren Werten. Die Berechnungen werden im Client exakt nach der oben beschriebenen Kern-Logik ausgeführt.</p>
-        
-        <div class="demo-card">
-            <div class="demo-header">💾 Live-Rechner nach kantonalen Vorgaben (VS)</div>
-            <div class="demo-body">
-                <div class="input-group">
-                    <div class="input-item">
-                        <label for="adultsCount">Anzahl Erwachsene im Haushalt</label>
-                        <input type="number" id="adultsCount" value="1" min="1" max="10">
-                    </div>
-                    <div class="input-item">
-                        <label for="childrenCount">Anzahl Kinder (unter 18)</label>
-                        <input type="number" id="childrenCount" value="0" min="0" max="15">
-                    </div>
-                </div>
-                <button type="button" class="demo-btn" id="runCalcBtn">Algorithmus ausführen</button>
-
-                <div class="result-panel" id="liveResultPanel" style="display: none;">
-                    <div class="result-title">✅ Berechnetes Endergebnis (Monatsanspruch):</div>
-                    <div class="result-amount" id="monthlyAmountDisplay">0.00 CHF</div>
-                    <div class="steps-detail" id="stepsDetail">
-                        </div>
-                </div>
-            </div>
-        </div>
-
-        <h3 class="section-title">4. Rechtliche Grundlagen & Referenzen</h3>
-        <p>Dieser Algorithmus implementiert die gesetzlichen Minimalvorgaben gemäss:</p>
-        <table class="data-table">
-            <thead>
-                <tr>
-                    <th>Rechtsquelle</th>
-                    <th>Ebene</th>
-                    <th>Link / Referenz</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Art. 12 Bundesverfassung (BV)</td>
-                    <td>Bund</td>
-                    <td><a href="https://www.fedlex.admin.ch/eli/cc/1999/358/de" target="_blank" rel="noopener">Fedlex Verfassungsrecht</a></td>
-                </tr>
-                <tr>
-                    <td>Kantonales Gesetz über die Sozialhilfe (Wallis)</td>
-                    <td>Kanton (VS)</td>
-                    <td><a href="https://www.vs.ch/web/sas/" target="_blank" rel="noopener">Dienststelle für Sozialwesen (SAS)</a></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div style="text-align: center; margin-top: 3rem;">
-            <a href="https://www.welfarecalc.ch" class="btn-link btn-home">« Zurück zu WelfareCalc.ch</a>
-            <a href="https://www.vs.ch" class="btn-link">Offizielle Webseite des Kantons Wallis</a>
-        </div>
+    <div class="alert">
+     <strong>
+      Hinweis zum Kinderguthaben:
+     </strong>
+     Im Kanton Wallis existiert im Gegensatz zu einigen anderen Kantonen kein progressiver Bonus ab dem 3. Kind. Jedes Kind wird linear mit dem Faktor 0.54 berechnet.
     </div>
-
-    <footer>
-        <p>&copy; 2026 welfarecalc.ch — Alle Berechnungen sind unverbindlich und dienen der Transparenz. Sämtliche Rechte vorbehalten.</p>
-    </footer>
-</div>
-
-<script>
-    (() => {
+    <h3 class="section-title">
+     2. Schritt-für-Schritt-Berechnungslogik
+    </h3>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h4>
+       Berechnung des Erwachsenen-Tagessatzes
+      </h4>
+      <p>
+       Wenn sich eine einzelne erwachsene Person im Haushalt befindet, entspricht der Satz dem Basisbetrag. Bei mehreren Erwachsenen greift der Paarfaktor (Degression):
+      </p>
+      <div class="formula">
+       Alleinstehend: AdultDaily = CHF 9.25
+       <br/>
+       Mehrere Erwachsene: AdultDaily = 9.25 + (Anzahl Erwachsene - 1) * 9.25 * 0.70
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h4>
+       Berechnung des Kinderzuschlags
+      </h4>
+      <p>
+       Der Zuschlag für Kinder wird linear auf Basis des Kinderguthabensfaktors aufsummiert:
+      </p>
+      <div class="formula">
+       ChildDaily = Anzahl Kinder * (9.25 * 0.54)
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h4>
+       Gesamttagessatz und monatliche Hochrechnung
+      </h4>
+      <p>
+       Der Gesamttagessatz ergibt sich aus der Summe der Erwachsenen- und Kindersätze. Dieser Wert wird mit dem statistischen Monatsfaktor von 30.42 Tagen multipliziert und kaufmännisch gerundet:
+      </p>
+      <div class="formula">
+       TotalDaily = AdultDaily + ChildDaily
+       <br/>
+       Monatlicher Betrag = Round(TotalDaily * 30.42)
+      </div>
+     </div>
+    </div>
+    <h3 class="section-title">
+     3. Interaktive Live-Demo (VS Core Engine)
+    </h3>
+    <p>
+     Testen Sie den Algorithmus direkt mit Ihren Werten. Die Berechnungen werden im Client exakt nach der oben beschriebenen Kern-Logik ausgeführt.
+    </p>
+    <div class="demo-card">
+     <div class="demo-header">
+      💾 Live-Rechner nach kantonalen Vorgaben (VS)
+     </div>
+     <div class="demo-body">
+      <div class="input-group">
+       <div class="input-item">
+        <label for="adultsCount">
+         Anzahl Erwachsene im Haushalt
+        </label>
+        <input id="adultsCount" max="10" min="1" type="number" value="1"/>
+       </div>
+       <div class="input-item">
+        <label for="childrenCount">
+         Anzahl Kinder (unter 18)
+        </label>
+        <input id="childrenCount" max="15" min="0" type="number" value="0"/>
+       </div>
+      </div>
+      <button class="demo-btn" id="runCalcBtn" type="button">
+       Algorithmus ausführen
+      </button>
+      <div class="result-panel" id="liveResultPanel" style="display: none;">
+       <div class="result-title">
+        ✅ Berechnetes Endergebnis (Monatsanspruch):
+       </div>
+       <div class="result-amount" id="monthlyAmountDisplay">
+        0.00 CHF
+       </div>
+       <div class="steps-detail" id="stepsDetail">
+       </div>
+      </div>
+     </div>
+    </div>
+    <h3 class="section-title">
+     4. Rechtliche Grundlagen &amp; Referenzen
+    </h3>
+    <p>
+     Dieser Algorithmus implementiert die gesetzlichen Minimalvorgaben gemäss:
+    </p>
+    <table class="data-table">
+     <thead>
+      <tr>
+       <th>
+        Rechtsquelle
+       </th>
+       <th>
+        Ebene
+       </th>
+       <th>
+        Link / Referenz
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        Art. 12 Bundesverfassung (BV)
+       </td>
+       <td>
+        Bund
+       </td>
+       <td>
+        <a href="https://www.fedlex.admin.ch/eli/cc/1999/358/de" rel="noopener" target="_blank">
+         Fedlex Verfassungsrecht
+        </a>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        Kantonales Gesetz über die Sozialhilfe (Wallis)
+       </td>
+       <td>
+        Kanton (VS)
+       </td>
+       <td>
+        <a href="https://www.vs.ch/web/sas/" rel="noopener" target="_blank">
+         Dienststelle für Sozialwesen (SAS)
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <div style="text-align: center; margin-top: 3rem;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch">
+      « Zurück zu WelfareCalc.ch
+     </a>
+     <a class="btn-link" href="https://www.vs.ch">
+      Offizielle Webseite des Kantons Wallis
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     © 2026 welfarecalc.ch — Alle Berechnungen sind unverbindlich und dienen der Transparenz. Sämtliche Rechte vorbehalten.
+    </p>
+   </footer>
+  </div>
+  <script>
+   (() => {
         "use strict";
 
         // 瓦莱州官方 2026 核心算法静态配置项
@@ -343,6 +420,6 @@
         document.getElementById('adultsCount').addEventListener('input', autoTrigger);
         document.getElementById('childrenCount').addEventListener('input', autoTrigger);
     })();
-</script>
-</body>
+  </script>
+ </body>
 </html>

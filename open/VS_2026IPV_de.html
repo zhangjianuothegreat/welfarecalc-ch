@@ -1,71 +1,14 @@
 <!DOCTYPE html>
-<html lang="de-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO 基础配置 -->
-    <title>IPV Algorithmus Kanton Wallis 2026 | Transparente Berechnung | welfarecalc.ch</title>
-    <meta name="description" content="Wie wird die Prämienverbilligung (IPV) 2026 im Kanton Wallis (VS) berechnet? Entdecken Sie unseren transparenten Algorithmus basierend auf offiziellen CCVS-Daten.">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical & 多语言交替标签 (hreflang) - 核心 SEO 项 -->
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/VS_2026IPV_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/VS_2026IPV_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/VS_2026IPV_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/VS_2026IPV_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/VS_2026IPV_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/VS_2026IPV_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/VS_2026IPV_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/VS_2026IPV_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/VS_2026IPV_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/VS_2026IPV_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html">
-
-    <!-- Open Graph / 社交分享 SEO -->
-
-    <meta name="twitter:card" content="summary">
-
-    <!-- Schema 结构化数据 (JSON-LD) - 提高搜索结果丰富度 -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Berechnung der Prämienverbilligung Wallis 2026",
-      "description": "Schritt-für-Schritt-Anleitung zur Berechnung der IPV im Kanton Wallis (VS).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Prüfung der harten Vermögensgrenze"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Ermittlung des massgebenden Einkommens (RD)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Kinder- und Jugendabzüge (Familien-Freibeträge)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Bestimmung des Subventionssatzes (Barème 2026)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Anwendung der kantonalen Richtprämien 2026"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Finaler Berechnungsanspruch & Deckelung"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- SEO 基础配置 -->
+  <!-- Canonical & 多语言交替标签 (hreflang) - 核心 SEO 项 -->
+  <!-- Open Graph / 社交分享 SEO -->
+  <!-- Schema 结构化数据 (JSON-LD) - 提高搜索结果丰富度 -->
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -100,154 +43,454 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VS_2026IPV_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">OFFIZIELLE DATEN 2026</div>
-        <h1>IPV-Algorithmus: Kanton Wallis (VS)</h1>
-        <p>Transparente Offenlegung der Berechnungslogik für das Jahr 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
-        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   IPV Wallis 2026 – Prämienverbilligung | welfarecalc.ch
+  </title>
+  <meta content="Berechnung der Prämienverbilligung im Kanton Wallis. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prämienverbilligung, Kanton Wallis, IPV, Sozialleistungen, Berechnung 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" rel="canonical"/>
+  <meta content="IPV Wallis 2026 – Prämienverbilligung | welfarecalc.ch" property="og:title"/>
+  <meta content="Berechnung der Prämienverbilligung im Kanton Wallis. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="de_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="IPV Wallis 2026 – Prämienverbilligung | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Berechnung der Prämienverbilligung im Kanton Wallis. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VS_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Individuelle Prämienverbilligung Wallis 2026", "description": "Step-by-step guide to calculating Individuelle Prämienverbilligung in Canton Wallis.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     OFFIZIELLE DATEN 2026
     </div>
-
-    <div class="content">
-        <p>In Übereinstimmung mit unserer Philosophie der Transparenz legen wir hier die mathematische Grundlage für den IPV-Rechner des Kantons Wallis offen. Dieser Algorithmus basiert strikt auf den gesetzlichen Vorgaben der CCVS (Kantonale Ausgleichskasse Wallis).</p>
-
-        <h2 class="section-title">1. Kernparameter (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Vermögenszuschlag (RD)</h4>
-                <div class="param-value">5.0 %</div>
-                <p><small>Anteil des Reinvermögens, der zum steuerbaren Einkommen addiert wird.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Garantie Kinder / Jugendliche</h4>
-                <div class="param-value">80 %</div>
-                <p><small>Fester Verbilligungssatz der Richtprämie (unabhängig vom Subventionssatz der Eltern).</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Der Berechnungsweg</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Harte Vermögensgrenze</h3>
-                <p>Bevor eine Einkommensprüfung stattfindet, prüft das Gesetz das bereinigte Reinvermögen des Haushalts. Liegt dieses über den gesetzlichen Grenzwerten, entfällt der Anspruch auf IPV komplett:</p>
-                <table class="data-table">
-                    <tr><th>Kategorie</th><th>Maximales Reinvermögen</th></tr>
-                    <tr><td>Alleinstehende Personen</td><td>CHF 100'000</td></tr>
-                    <tr><td>Verheiratete / Familien</td><td>CHF 150'000</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Massgebendes Einkommen (RD)</h3>
-                <p>Das massgebende Einkommen (Revenu déterminant, RD) basiert auf der definitiven Steuerveranlagung des Jahres 2024. Im Wallis wird das Vermögen durch einen gesetzlichen Aufrechnungssatz (5%) direkt als Einkommenskomponente hinzugerechnet:</p>
-                <div class="formula-box">
-                    RD = Steuerbares Einkommen + (Reinvermögen × 5%) + Negative Liegenschaftserträge + Abzüge Säule 3a - Bezahlte Alimente/Unterhaltsleistungen
-                </div>
-                <p><small>*Hinweis: Negative Einkünfte aus Liegenschaften sowie getätigte Einzahlungen in die gebundene Selbstvorsorge (Säule 3a) werden dem Einkommen wieder hinzugerechnet, um die soziale Gerechtigkeit zu wahren.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Kinder- und Jugendabzüge (Familien-Freibeträge)</h3>
-                <p>Vom berechneten massgebenden Einkommen (RD) werden Freibeträge abgezogen, je nachdem, wie viele unterstützungspflichtige Kinder oder junge Erwachsene in Ausbildung im Haushalt leben (degressiver Abzug):</p>
-                <table class="data-table">
-                    <tr><th>Kategorie</th><th>Freibetrag vom RD (jährlich)</th></tr>
-                    <tr><td>1. Kind / junger Erwachsener</td><td>CHF 12'000</td></tr>
-                    <tr><td>2. Kind / junger Erwachsener</td><td>CHF 10'000</td></tr>
-                    <tr><td>3. Kind / junger Erwachsener</td><td>CHF 8'000</td></tr>
-                    <tr><td>Ab 4. Kind / junger Erwachsener</td><td>CHF 6'000 pro Person</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Subventionssatz (Barème 2026)</h3>
-                <p>Nach Abzug der Freibeträge bestimmt das finale bereinigte RD die Subventionsstufe für die Erwachsenen. Der Kanton Wallis kennt 7 Stufen von 70% bis 5% Subvention:</p>
-                <table class="data-table">
-                    <tr><th>Bereinigtes RD (Alleinstehend)</th><th>Bereinigtes RD (Verheiratet/Paar)</th><th>Subventionssatz (Erwachsene)</th></tr>
-                    <tr><td>bis CHF 24'200</td><td>bis CHF 37'100</td><td><strong>70%</strong></td></tr>
-                    <tr><td>CHF 24'201 – 27'200</td><td>CHF 37'101 – 41'400</td><td><strong>50%</strong></td></tr>
-                    <tr><td>CHF 27'201 – 30'200</td><td>CHF 41'401 – 45'700</td><td><strong>40%</strong></td></tr>
-                    <tr><td>CHF 30'201 – 33'200</td><td>CHF 45'701 – 50'000</td><td><strong>30%</strong></td></tr>
-                    <tr><td>CHF 33'201 – 36'200</td><td>CHF 50'001 – 54'300</td><td><strong>20%</strong></td></tr>
-                    <tr><td>CHF 36'201 – 39'200</td><td>CHF 54'301 – 58'600</td><td><strong>10%</strong></td></tr>
-                    <tr><td>CHF 39'201 – 42'200</td><td>CHF 58'601 – 62'900</td><td><strong>5%</strong></td></tr>
-                    <tr><td>über CHF 42'200</td><td>über CHF 62'900</td><td><strong>0% (Kein Anspruch)</strong></td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">5</div>
-            <div class="step-body">
-                <h3>Kantonale Richtprämien 2026</h3>
-                <p>Der Subventionssatz wird nicht auf Ihre effektive reale Krankenkassenprämie angewendet, sondern auf die vom Staatsrat festgelegte durchschnittliche kantonale Richtprämie (Primes de référence). Für den gesamten Kanton Wallis gelten 2026 folgende Werte:</p>
-                <table class="data-table">
-                    <tr><th>Personenkategorie</th><th>Richtprämie pro Jahr (CHF)</th></tr>
-                    <tr><td>Erwachsene (ab 26 Jahren)</td><td>CHF 5'340</td></tr>
-                    <tr><td>Junge Erwachsene (19–25 Jahre)</td><td>CHF 4'128</td></tr>
-                    <tr><td>Kinder (0–18 Jahre)</td><td>CHF 1'248</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">6</div>
-            <div class="step-body">
-                <h3>Finaler Anspruch & Deckelung</h3>
-                <p>Die Subvention berechnet sich pro Person im Haushalt:</p>
-                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
-                    Subvention Erwachsene = Richtprämie × ermittelter Subventionssatz (5% – 70%)<br>
-                    Subvention Kinder = Richtprämie × 80% (gesetzliche Fixgarantie)
-                </div>
-                <p><strong>Deckelungsregel:</strong> Der resultierende Betrag wird mit der effektiv an die Krankenkasse gezahlten Prämie verglichen. Die Subvention darf die tatsächliche Prämie niemals übersteigen (Begrenzung auf Effektivprämie).</p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Besonderheit im Kanton Wallis (Bundesvorgabe für Kinder):</strong><br>
-            Gemäss Art. 65 Abs. 1bis KVG gewährt der Kanton Wallis Kindern und jungen Erwachsenen in Ausbildung bei tiefen und mittleren Einkommen einen festen Verbilligungssatz von <strong>80% der Richtprämie</strong>, unabhängig davon, ob die Eltern eine tiefere Stufe (z.B. 10% oder 20%) erhalten.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Zurück zur Startseite</a>
-            <a href="https://www.ahvwallis.ch/de/Versicherungen/IPV-Pramienverbilligungen-in-der-Krankenversicherung/Pramienverbilligung/Praemienverbilligung.html" target="_blank" class="btn-link">Offizielle CCVS-Webseite besuchen</a>
-        </div>
+    <h1>
+     IPV-Algorithmus: Kanton Wallis (VS)
+    </h1>
+    <p>
+     Transparente Offenlegung der Berechnungslogik für das Jahr 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Schneller Check: Haben Sie Anspruch?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_de" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Jetzt kostenlos prüfen →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     In Übereinstimmung mit unserer Philosophie der Transparenz legen wir hier die mathematische Grundlage für den IPV-Rechner des Kantons Wallis offen. Dieser Algorithmus basiert strikt auf den gesetzlichen Vorgaben der CCVS (Kantonale Ausgleichskasse Wallis).
+    </p>
+    <h2 class="section-title">
+     1. Kernparameter (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Vermögenszuschlag (RD)
+      </h4>
+      <div class="param-value">
+       5.0 %
+      </div>
+      <p>
+       <small>
+        Anteil des Reinvermögens, der zum steuerbaren Einkommen addiert wird.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Garantie Kinder / Jugendliche
+      </h4>
+      <div class="param-value">
+       80 %
+      </div>
+      <p>
+       <small>
+        Fester Verbilligungssatz der Richtprämie (unabhängig vom Subventionssatz der Eltern).
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Quelle: Kantonale Ausgleichskasse Wallis (CCVS) & Departement für Gesundheit, Soziales und Kultur (DGSK) 2026 | welfarecalc.ch</p>
-        <p>Diese Zusammenfassung dient der Information und ist rechtlich nicht bindend.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Der Berechnungsweg
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Harte Vermögensgrenze
+      </h3>
+      <p>
+       Bevor eine Einkommensprüfung stattfindet, prüft das Gesetz das bereinigte Reinvermögen des Haushalts. Liegt dieses über den gesetzlichen Grenzwerten, entfällt der Anspruch auf IPV komplett:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Kategorie
+        </th>
+        <th>
+         Maximales Reinvermögen
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Alleinstehende Personen
+        </td>
+        <td>
+         CHF 100'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Verheiratete / Familien
+        </td>
+        <td>
+         CHF 150'000
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Massgebendes Einkommen (RD)
+      </h3>
+      <p>
+       Das massgebende Einkommen (Revenu déterminant, RD) basiert auf der definitiven Steuerveranlagung des Jahres 2024. Im Wallis wird das Vermögen durch einen gesetzlichen Aufrechnungssatz (5%) direkt als Einkommenskomponente hinzugerechnet:
+      </p>
+      <div class="formula-box">
+       RD = Steuerbares Einkommen + (Reinvermögen × 5%) + Negative Liegenschaftserträge + Abzüge Säule 3a - Bezahlte Alimente/Unterhaltsleistungen
+      </div>
+      <p>
+       <small>
+        *Hinweis: Negative Einkünfte aus Liegenschaften sowie getätigte Einzahlungen in die gebundene Selbstvorsorge (Säule 3a) werden dem Einkommen wieder hinzugerechnet, um die soziale Gerechtigkeit zu wahren.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Kinder- und Jugendabzüge (Familien-Freibeträge)
+      </h3>
+      <p>
+       Vom berechneten massgebenden Einkommen (RD) werden Freibeträge abgezogen, je nachdem, wie viele unterstützungspflichtige Kinder oder junge Erwachsene in Ausbildung im Haushalt leben (degressiver Abzug):
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Kategorie
+        </th>
+        <th>
+         Freibetrag vom RD (jährlich)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1. Kind / junger Erwachsener
+        </td>
+        <td>
+         CHF 12'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2. Kind / junger Erwachsener
+        </td>
+        <td>
+         CHF 10'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3. Kind / junger Erwachsener
+        </td>
+        <td>
+         CHF 8'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Ab 4. Kind / junger Erwachsener
+        </td>
+        <td>
+         CHF 6'000 pro Person
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Subventionssatz (Barème 2026)
+      </h3>
+      <p>
+       Nach Abzug der Freibeträge bestimmt das finale bereinigte RD die Subventionsstufe für die Erwachsenen. Der Kanton Wallis kennt 7 Stufen von 70% bis 5% Subvention:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Bereinigtes RD (Alleinstehend)
+        </th>
+        <th>
+         Bereinigtes RD (Verheiratet/Paar)
+        </th>
+        <th>
+         Subventionssatz (Erwachsene)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         bis CHF 24'200
+        </td>
+        <td>
+         bis CHF 37'100
+        </td>
+        <td>
+         <strong>
+          70%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CHF 24'201 – 27'200
+        </td>
+        <td>
+         CHF 37'101 – 41'400
+        </td>
+        <td>
+         <strong>
+          50%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CHF 27'201 – 30'200
+        </td>
+        <td>
+         CHF 41'401 – 45'700
+        </td>
+        <td>
+         <strong>
+          40%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CHF 30'201 – 33'200
+        </td>
+        <td>
+         CHF 45'701 – 50'000
+        </td>
+        <td>
+         <strong>
+          30%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CHF 33'201 – 36'200
+        </td>
+        <td>
+         CHF 50'001 – 54'300
+        </td>
+        <td>
+         <strong>
+          20%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CHF 36'201 – 39'200
+        </td>
+        <td>
+         CHF 54'301 – 58'600
+        </td>
+        <td>
+         <strong>
+          10%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         CHF 39'201 – 42'200
+        </td>
+        <td>
+         CHF 58'601 – 62'900
+        </td>
+        <td>
+         <strong>
+          5%
+         </strong>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         über CHF 42'200
+        </td>
+        <td>
+         über CHF 62'900
+        </td>
+        <td>
+         <strong>
+          0% (Kein Anspruch)
+         </strong>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Kantonale Richtprämien 2026
+      </h3>
+      <p>
+       Der Subventionssatz wird nicht auf Ihre effektive reale Krankenkassenprämie angewendet, sondern auf die vom Staatsrat festgelegte durchschnittliche kantonale Richtprämie (Primes de référence). Für den gesamten Kanton Wallis gelten 2026 folgende Werte:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Personenkategorie
+        </th>
+        <th>
+         Richtprämie pro Jahr (CHF)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Erwachsene (ab 26 Jahren)
+        </td>
+        <td>
+         CHF 5'340
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Junge Erwachsene (19–25 Jahre)
+        </td>
+        <td>
+         CHF 4'128
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Kinder (0–18 Jahre)
+        </td>
+        <td>
+         CHF 1'248
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      6
+     </div>
+     <div class="step-body">
+      <h3>
+       Finaler Anspruch &amp; Deckelung
+      </h3>
+      <p>
+       Die Subvention berechnet sich pro Person im Haushalt:
+      </p>
+      <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+       Subvention Erwachsene = Richtprämie × ermittelter Subventionssatz (5% – 70%)
+       <br/>
+       Subvention Kinder = Richtprämie × 80% (gesetzliche Fixgarantie)
+      </div>
+      <p>
+       <strong>
+        Deckelungsregel:
+       </strong>
+       Der resultierende Betrag wird mit der effektiv an die Krankenkasse gezahlten Prämie verglichen. Die Subvention darf die tatsächliche Prämie niemals übersteigen (Begrenzung auf Effektivprämie).
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Besonderheit im Kanton Wallis (Bundesvorgabe für Kinder):
+     </strong>
+     <br/>
+     Gemäss Art. 65 Abs. 1bis KVG gewährt der Kanton Wallis Kindern und jungen Erwachsenen in Ausbildung bei tiefen und mittleren Einkommen einen festen Verbilligungssatz von
+     <strong>
+      80% der Richtprämie
+     </strong>
+     , unabhängig davon, ob die Eltern eine tiefere Stufe (z.B. 10% oder 20%) erhalten.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Zurück zur Startseite
+     </a>
+     <a class="btn-link" href="https://www.ahvwallis.ch/de/Versicherungen/IPV-Pramienverbilligungen-in-der-Krankenversicherung/Pramienverbilligung/Praemienverbilligung.html" target="_blank">
+      Offizielle CCVS-Webseite besuchen
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Quelle: Kantonale Ausgleichskasse Wallis (CCVS) &amp; Departement für Gesundheit, Soziales und Kultur (DGSK) 2026 | welfarecalc.ch
+    </p>
+    <p>
+     Diese Zusammenfassung dient der Information und ist rechtlich nicht bindend.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

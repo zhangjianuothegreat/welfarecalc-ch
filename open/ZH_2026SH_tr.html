@@ -1,61 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="tr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Zürih Kantonu 2026 Sosyal Yardım Algoritması | Şeffaf Hesaplama | welfarecalc.ch</title>
-  <meta
-    content="Zürih Kantonu'nda 2026 yılı sosyal yardımı nasıl hesaplanır? SKOS yönergeleri ve kanton yasasına (SHG ZH) dayalı şeffaf algoritmamızı keşfedin."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_tr.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_de.html" hreflang="x-default" rel="alternate" />
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Zürih 2026 Sosyal Yardım Hesaplaması",
-      "description": "Zürih Kantonu'ndaki sosyal yardım hesaplamasının ayrıntılı algoritmik dökümü.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Varlık muafiyetinin kontrolü (Giriş engeli)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Hanehalkı büyüklüğüne göre Temel Yaşam Giderinin (GBL) belirlenmesi"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Üç kira bölgesine (A, B, C) göre gerçek konut maliyetlerinin kontrolü"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Bireysel Prim İndirimi (IPV) düşüldükten sonra net sağlık sigortası primlerinin hesaplanması"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Kazanç geliri kesintisi dikkate alınarak dikkate alınabilir gelirlerin karşılaştırılması"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -237,183 +186,367 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/ZH_2026SH_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   SY Zürih 2026 – Sosyal yardım | welfarecalc.ch
+  </title>
+  <meta content="Zürih Kantonu'nda Sosyal yardım hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Sosyal yardım, Zürih Kantonu, SY, Sosyal yardımlar, Hesaplama 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_tr.html" rel="canonical"/>
+  <meta content="SY Zürih 2026 – Sosyal yardım | welfarecalc.ch" property="og:title"/>
+  <meta content="Zürih Kantonu'nda Sosyal yardım hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/ZH_2026SH_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="SY Zürih 2026 – Sosyal yardım | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Zürih Kantonu'nda Sosyal yardım hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZH_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Sosyal yardım Zürih 2026", "description": "Step-by-step guide to calculating Sosyal yardım in Canton Zürih.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">SKOS UYUMLU 2026</div>
-      <h1>Sosyal Yardım Algoritması: Zürih Kantonu</h1>
-      <p>Sosyal asgari geçim seviyesi (ZH) için hesaplama mantığının şeffaf dokümantasyonu</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
-        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+   <header>
+    <div class="update-tag">
+     SKOS UYUMLU 2026
     </div>
-    
-    <div class="content">
-      <p>Zürih Kantonu'nda sosyal yardım nasıl hesaplanır? Kullanıcılarımızın güvenini artırmak için, welfarecalc.ch'nin
+    <h1>
+     Sosyal Yardım Algoritması: Zürih Kantonu
+    </h1>
+    <p>
+     Sosyal asgari geçim seviyesi (ZH) için hesaplama mantığının şeffaf dokümantasyonu
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Hızlı Kontrol: Hakkınız var mı?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_tr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Ücretsiz kontrol et →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Zürih Kantonu'nda sosyal yardım nasıl hesaplanır? Kullanıcılarımızın güvenini artırmak için, welfarecalc.ch'nin
         arkasındaki tam algoritmayı burada açıklıyoruz. Algoritma, Zürih Kantonu Sosyal Yardım Yasası (SHG ZH) ve 2026
-        SKOS yönergelerine dayanmaktadır.</p>
-      <h2 class="section-title">1. Varlık Kontrolü (Giriş Engeli)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Bekar Muafiyeti</h4>
-          <div class="param-value">CHF 6'000</div>
-          <p><small>Çocuk başına veya eğitimdeki kişi başına ek CHF 3'000.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Evli Çift Muafiyeti</h4>
-          <div class="param-value">CHF 12'000</div>
-          <p><small>Hane başına azami toplam muafiyet CHF 15'000 ile sınırlıdır.</small></p>
-        </div>
+        SKOS yönergelerine dayanmaktadır.
+    </p>
+    <h2 class="section-title">
+     1. Varlık Kontrolü (Giriş Engeli)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Bekar Muafiyeti
+      </h4>
+      <div class="param-value">
+       CHF 6'000
       </div>
-      <h2 class="section-title">2. Hesaplama Yöntemi (Aylık)</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Temel Yaşam Gideri (GBL)</h3>
-          <p>GBL, yiyecek, giyim ve ev idaresi masraflarını karşılar:</p>
-          <table class="data-table">
-            <tr>
-              <th>Hanehalkı Büyüklüğü</th>
-              <th>Aylık Tutar (2026)</th>
-            </tr>
-            <tr>
-              <td>1 Kişi</td>
-              <td>CHF 1'061</td>
-            </tr>
-            <tr>
-              <td>2 Kişi</td>
-              <td>CHF 1'624</td>
-            </tr>
-            <tr>
-              <td>3 Kişi (Örn. Çift + 11 yaş altı 1 çocuk)</td>
-              <td>CHF 2'015</td>
-            </tr>
-            <tr>
-              <td>Hanede Ek Yetişkin</td>
-              <td>+ CHF 400</td>
-            </tr>
-            <tr>
-              <td>Çocuk Kademelendirmesi (Yaşa göre)</td>
-              <td>CHF 391 - CHF 1'061</td>
-            </tr>
-          </table>
-        </div>
+      <p>
+       <small>
+        Çocuk başına veya eğitimdeki kişi başına ek CHF 3'000.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Evli Çift Muafiyeti
+      </h4>
+      <div class="param-value">
+       CHF 12'000
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Kira Bölgelerine Göre Konut Maliyetleri</h3>
-          <p>Üç posta kodu bölgesine göre kanton maksimumuna kadar olan gerçek kira maliyetlerinin (yan giderler dahil)
-            dikkate alınması:</p>
-          <div class="formula">
-            Tanınan Kira = Min(Gerçek Kira, Bölgesel Maksimum)
-          </div>
-          <table class="data-table">
-            <tr>
-              <th>Hanehalkı Büyüklüğü</th>
-              <th>Bölge A (Zürih Şehri/Winterthur)</th>
-              <th>Bölge B (Yığılma)</th>
-              <th>Bölge C (Kırsal)</th>
-            </tr>
-            <tr>
-              <td>1 Kişi</td>
-              <td>CHF 1'400</td>
-              <td>CHF 1'300</td>
-              <td>CHF 1'200</td>
-            </tr>
-            <tr>
-              <td>2 Kişi</td>
-              <td>CHF 1'700</td>
-              <td>CHF 1'600</td>
-              <td>CHF 1'500</td>
-            </tr>
-            <tr>
-              <td>3 Kişi</td>
-              <td>CHF 2'000</td>
-              <td>CHF 1'900</td>
-              <td>CHF 1'800</td>
-            </tr>
-            <tr>
-              <td>4 Kişi</td>
-              <td>CHF 2'300</td>
-              <td>CHF 2'200</td>
-              <td>CHF 2'100</td>
-            </tr>
-            <tr>
-              <td>5+ Kişi</td>
-              <td>CHF 2'600</td>
-              <td>CHF 2'500</td>
-              <td>CHF 2'400</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Sağlık Sigortası &amp; IPV Mahsubu</h3>
-          <p>Zorunlu sağlık sigortası (KVG) dikkate alınır ve kanton Bireysel Prim İndirimi (IPV) doğrudan düşülür:</p>
-          <div class="formula">
-            Tanınan Sağlık Sigortası Primi = Maks(0, Gerçek Prim - Aylık IPV)
-          </div>
-          <p><small>*Not: Kalan IPV fazlası, gelir tarafında tamamen gelir olarak dikkate alınır.</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h3>Gelir Dikkate Alınması &amp; Kazanç Geliri Kesintisi</h3>
-          <p>SKOS'a göre çalışma teşviğini korumak için net kazanç gelirinden bir muafiyet düşülür:</p>
-          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-            <strong>Dikkate Alınabilir Gelir</strong> = Net Gelir - Kazanç Geliri Kesintisi (%20)
-          </div>
-          <p><small>Emekli maaşı, nafaka veya çocuk parası gibi diğer gelirler %100 oranında gelir olarak kabul
-              edilir.</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">5</div>
-        <div class="step-body">
-          <h3>Sonuç: Aylık Hak</h3>
-          <p>Nihai sosyal yardım ödemesi, matematiksel ihtiyaç açığından ortaya çıkar:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Hak = Maks(0, [GBL + Kira + Sağlık Sigortası + Entegrasyon Ödeneği] - [Gelir + Varlık Tüketimi])
-          </div>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Entegrasyon ve Varlık Tüketimi Hakkında Not:</strong><br />
-        - Çalışan veya entegrasyon hizmeti sunan kişiler, CHF 100 tutarında Entegrasyon Ödeneği (IZU) alabilir.<br />
-        - Muafiyeti aşan varlıklar, 10 yıllık bir zaman dilimi (bölen 120) üzerinden doğrusal olarak aylık varlık
-        tüketimi olarak dikkate alınır.
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Hesaplayıcıyı Başlat</a>
-        <a class="btn-link" href="https://www.zh.ch/de/soziales/sozialhilfe.html" target="_blank">ZH Kantonu Resmi
-          Sayfası</a>
-      </div>
+      <p>
+       <small>
+        Hane başına azami toplam muafiyet CHF 15'000 ile sınırlıdır.
+       </small>
+      </p>
+     </div>
     </div>
-    <footer>
-      <p>Kaynaklar: Zürih Kantonu Sosyal Dairesi (SHG ZH) &amp; SKOS Yönergeleri 2026</p>
-      <p>© 2026 welfarecalc.ch | Şeffaf Sosyal Yardım Hesaplaması</p>
-    </footer>
+    <h2 class="section-title">
+     2. Hesaplama Yöntemi (Aylık)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Temel Yaşam Gideri (GBL)
+      </h3>
+      <p>
+       GBL, yiyecek, giyim ve ev idaresi masraflarını karşılar:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Hanehalkı Büyüklüğü
+        </th>
+        <th>
+         Aylık Tutar (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Kişi
+        </td>
+        <td>
+         CHF 1'061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Kişi
+        </td>
+        <td>
+         CHF 1'624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 Kişi (Örn. Çift + 11 yaş altı 1 çocuk)
+        </td>
+        <td>
+         CHF 2'015
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Hanede Ek Yetişkin
+        </td>
+        <td>
+         + CHF 400
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Çocuk Kademelendirmesi (Yaşa göre)
+        </td>
+        <td>
+         CHF 391 - CHF 1'061
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Kira Bölgelerine Göre Konut Maliyetleri
+      </h3>
+      <p>
+       Üç posta kodu bölgesine göre kanton maksimumuna kadar olan gerçek kira maliyetlerinin (yan giderler dahil)
+            dikkate alınması:
+      </p>
+      <div class="formula">
+       Tanınan Kira = Min(Gerçek Kira, Bölgesel Maksimum)
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Hanehalkı Büyüklüğü
+        </th>
+        <th>
+         Bölge A (Zürih Şehri/Winterthur)
+        </th>
+        <th>
+         Bölge B (Yığılma)
+        </th>
+        <th>
+         Bölge C (Kırsal)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Kişi
+        </td>
+        <td>
+         CHF 1'400
+        </td>
+        <td>
+         CHF 1'300
+        </td>
+        <td>
+         CHF 1'200
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Kişi
+        </td>
+        <td>
+         CHF 1'700
+        </td>
+        <td>
+         CHF 1'600
+        </td>
+        <td>
+         CHF 1'500
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 Kişi
+        </td>
+        <td>
+         CHF 2'000
+        </td>
+        <td>
+         CHF 1'900
+        </td>
+        <td>
+         CHF 1'800
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 Kişi
+        </td>
+        <td>
+         CHF 2'300
+        </td>
+        <td>
+         CHF 2'200
+        </td>
+        <td>
+         CHF 2'100
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5+ Kişi
+        </td>
+        <td>
+         CHF 2'600
+        </td>
+        <td>
+         CHF 2'500
+        </td>
+        <td>
+         CHF 2'400
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Sağlık Sigortası &amp; IPV Mahsubu
+      </h3>
+      <p>
+       Zorunlu sağlık sigortası (KVG) dikkate alınır ve kanton Bireysel Prim İndirimi (IPV) doğrudan düşülür:
+      </p>
+      <div class="formula">
+       Tanınan Sağlık Sigortası Primi = Maks(0, Gerçek Prim - Aylık IPV)
+      </div>
+      <p>
+       <small>
+        *Not: Kalan IPV fazlası, gelir tarafında tamamen gelir olarak dikkate alınır.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Gelir Dikkate Alınması &amp; Kazanç Geliri Kesintisi
+      </h3>
+      <p>
+       SKOS'a göre çalışma teşviğini korumak için net kazanç gelirinden bir muafiyet düşülür:
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Dikkate Alınabilir Gelir
+       </strong>
+       = Net Gelir - Kazanç Geliri Kesintisi (%20)
+      </div>
+      <p>
+       <small>
+        Emekli maaşı, nafaka veya çocuk parası gibi diğer gelirler %100 oranında gelir olarak kabul
+              edilir.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Sonuç: Aylık Hak
+      </h3>
+      <p>
+       Nihai sosyal yardım ödemesi, matematiksel ihtiyaç açığından ortaya çıkar:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Hak = Maks(0, [GBL + Kira + Sağlık Sigortası + Entegrasyon Ödeneği] - [Gelir + Varlık Tüketimi])
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Entegrasyon ve Varlık Tüketimi Hakkında Not:
+     </strong>
+     <br/>
+     - Çalışan veya entegrasyon hizmeti sunan kişiler, CHF 100 tutarında Entegrasyon Ödeneği (IZU) alabilir.
+     <br/>
+     - Muafiyeti aşan varlıklar, 10 yıllık bir zaman dilimi (bölen 120) üzerinden doğrusal olarak aylık varlık
+        tüketimi olarak dikkate alınır.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Hesaplayıcıyı Başlat
+     </a>
+     <a class="btn-link" href="https://www.zh.ch/de/soziales/sozialhilfe.html" target="_blank">
+      ZH Kantonu Resmi
+          Sayfası
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Kaynaklar: Zürih Kantonu Sosyal Dairesi (SHG ZH) &amp; SKOS Yönergeleri 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Şeffaf Sosyal Yardım Hesaplaması
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

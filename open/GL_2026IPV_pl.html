@@ -1,54 +1,10 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorytm IPV Kanton Glarus 2026 | Przejrzyste Obliczenia | welfarecalc.ch</title>
-    <meta name="description" content="Jak obliczana jest redukcja składek (IPV) na rok 2026 w kantonie Glarus? Poznaj nasz przejrzysty algorytm oparty na oficjalnych wytycznych kantonu GL.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/GL_2026IPV_pl.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/GL_2026IPV_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/GL_2026IPV_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/GL_2026IPV_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/GL_2026IPV_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/GL_2026IPV_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/GL_2026IPV_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/GL_2026IPV_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/GL_2026IPV_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/GL_2026IPV_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/GL_2026IPV_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/GL_2026IPV_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/GL_2026IPV_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Obliczanie redukcji składki Glarus 2026",
-      "description": "Szczegółowy przewodnik obliczania IPV w kantonie Glarus (GL).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Obliczenie dochodu istotnego (LNA) z uwzględnieniem wykorzystania majątku."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Określenie stawki potrącenia w zależności od poziomu dochodu."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Zastosowanie ustawowej gwarancji minimalnej dla dzieci i młodzieży."
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -85,132 +41,352 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Swiadczen Szwajcarskich 2026 | 26 Kantonow + Kontrola Rachunkow">
-    <meta property="og:description" content="Oblicz AVS, AI, PC i redukcje skladek we wszystkich 26 szwajcarskich kantonach. Z audytorem rachunkow dentystycznych i sprawdzaczem umow najmu. 100% anonimowo w przegladarce. 11 jezykow.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/GL_2026IPV_pl.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pl">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">OFICJALNE DANE 2026</div>
-        <h1>Algorytm IPV: Kanton Glarus (GL)</h1>
-        <p>Przejrzyste przedstawienie logiki obliczania indywidualnej redukcji składki (IPV) dla regionu Glarus</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Szybka kontrola: Czy masz prawo?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.</p>
-        <a href="https://www.welfarecalc.ch/bus_pl" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Sprawdź za darmo →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   IOŚ Glarus 2026 – Obniżki składek | welfarecalc.ch
+  </title>
+  <meta content="Oblicz Obniżki składek w Kantonie Glarus. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Obniżki składek, Kanton Glarus, IOŚ, Świadczenia społeczne, Obliczenia 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_pl.html" rel="canonical"/>
+  <meta content="IOŚ Glarus 2026 – Obniżki składek | welfarecalc.ch" property="og:title"/>
+  <meta content="Oblicz Obniżki składek w Kantonie Glarus. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/GL_2026IPV_pl.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pl_PL" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="IOŚ Glarus 2026 – Obniżki składek | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Oblicz Obniżki składek w Kantonie Glarus. Oficjalne dane 2026, przejrzyste i zrozumiałe. Sprawdź za darmo." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/GL_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Indywidualne obniżki składek Glarus 2026", "description": "Step-by-step guide to calculating Indywidualne obniżki składek in Canton Glarus.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     OFICJALNE DANE 2026
     </div>
-
-    <div class="content">
-        <p>W kantonie Glarus indywidualna redukcja składki (IPV) opiera się na zdolności ekonomicznej. Poniżej ujawniamy kroki matematyczne, które nasz kalkulator stosuje do określenia uprawnień.</p>
-
-        <h2 class="section-title">1. Główne parametry (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Obciążenie dochodem</h4>
-                <div class="param-value">9.0 % — 14.0 %</div>
-                <p><small>Stawka progresywna w zależności od dochodu istotnego.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Uwzględnienie majątku</h4>
-                <div class="param-value">10.0 %</div>
-                <p><small>Udział podlegających opodatkowaniu aktywów netto (powyżej zwolnienia).</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Ścieżka obliczeniowa</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Dochód istotny (LNA)</h3>
-                <p>LNA jest określany bardzo precyzyjnie w kantonie GL:</p>
-                <div class="formula-box">
-                    <strong>Dochód netto</strong> + <strong>10% (Majątek - Kwota wolna*)</strong> + <strong>Korekty**</strong> - <strong>Odliczenia na dzieci</strong>
-                </div>
-                <p><small>*Kwota wolna: 50 000 CHF (osoby samotne) / 100 000 CHF (małżeństwa).</small><br>
-                <small>**Korekty: obejmują wartość użytkową lokalu, odsetki od kredytu hipotecznego i alimenty.</small></p>
-                <table class="data-table">
-                    <tr><th>Kategoria</th><th>Odliczenie od dochodu</th></tr>
-                    <tr><td>Na dziecko / kształcenie zawodowe</td><td>5 000 CHF</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Składki referencyjne 2026</h3>
-                <p>Te kantonalne wartości bazowe stanowią podstawę do obliczenia ulgi:</p>
-                <table class="data-table">
-                    <tr><td>Dorośli</td><td>5 447 CHF / rok</td></tr>
-                    <tr><td>Młodzi dorośli (19-25)</td><td>3 896 CHF / rok</td></tr>
-                    <tr><td>Dzieci (0-18)</td><td>1 500 CHF / rok</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Określenie stawki potrącenia</h3>
-                <p>Dopuszczalny osobisty wkład wzrasta wraz z LNA:</p>
-                <table class="data-table">
-                    </tr><th>Próg LNA (CHF)</th><th>Stawka (%)</th></tr>
-                    <tr><td>do 40 000</td><td>9.0 %</td></tr>
-                    <tr><td>40 001 - 50 000</td><td>10.0 %</td></tr>
-                    <tr><td>50 001 - 60 000</td><td>11.0 %</td></tr>
-                    <tr><td>60 001 - 70 000</td><td>12.0 %</td></tr>
-                    <tr><td>70 001 - 80 000</td><td>13.0 %</td></tr>
-                    <tr><td>powyżej 80 000</td><td>14.0 %</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Ostateczne uprawnienie i gwarancja minimalna</h3>
-                <p>Najpierw obliczana jest różnica:</p>
-                <div class="formula-box">
-                    Uprawnienie podstawowe = [Łączne składki referencyjne] - ([LNA] × Stawka)
-                </div>
-                <p>Dla rodzin z dochodem poniżej 85 000 CHF obowiązuje <strong>gwarancja minimalna</strong>:</p>
-                <table class="data-table">
-                    <tr><th>Kategoria</th><th>Gwarancja</th></tr>
-                    <tr><td>Dzieci</td><td>80% składki referencyjnej</td></tr>
-                    <tr><td>Młodzież w trakcie nauki</td><td>50% składki referencyjnej</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Ważne progi:</strong><br>
-            Kwoty poniżej <strong>100 CHF</strong> rocznie nie są wypłacane w kantonie GL. Ponadto uprawnienie jest zawsze ograniczone faktycznie naliczoną składką.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Powrót do strony głównej</a>
-            <a href="https://my.gl.ch/Pages/Services/Catalog.aspx" target="_blank" class="btn-link">Oficjalna strona kantonu</a>
-        </div>
+    <h1>
+     Algorytm IPV: Kanton Glarus (GL)
+    </h1>
+    <p>
+     Przejrzyste przedstawienie logiki obliczania indywidualnej redukcji składki (IPV) dla regionu Glarus
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Szybka kontrola: Czy masz prawo?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Sprawdź szybko i bez zobowiązań, czy masz prawo do obniżki składek (IPV), świadczeń uzupełniających lub innej pomocy społecznej.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pl" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Sprawdź za darmo →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     W kantonie Glarus indywidualna redukcja składki (IPV) opiera się na zdolności ekonomicznej. Poniżej ujawniamy kroki matematyczne, które nasz kalkulator stosuje do określenia uprawnień.
+    </p>
+    <h2 class="section-title">
+     1. Główne parametry (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Obciążenie dochodem
+      </h4>
+      <div class="param-value">
+       9.0 % — 14.0 %
+      </div>
+      <p>
+       <small>
+        Stawka progresywna w zależności od dochodu istotnego.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Uwzględnienie majątku
+      </h4>
+      <div class="param-value">
+       10.0 %
+      </div>
+      <p>
+       <small>
+        Udział podlegających opodatkowaniu aktywów netto (powyżej zwolnienia).
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Źródło: Administracja podatkowa kantonu Glarus - Departament IPV 2026 | welfarecalc.ch</p>
-        <p>Uwaga: Niniejsze przedstawienie algorytmu ma na celu przejrzystość i nie jest wiążące prawnie.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Ścieżka obliczeniowa
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Dochód istotny (LNA)
+      </h3>
+      <p>
+       LNA jest określany bardzo precyzyjnie w kantonie GL:
+      </p>
+      <div class="formula-box">
+       <strong>
+        Dochód netto
+       </strong>
+       +
+       <strong>
+        10% (Majątek - Kwota wolna*)
+       </strong>
+       +
+       <strong>
+        Korekty**
+       </strong>
+       -
+       <strong>
+        Odliczenia na dzieci
+       </strong>
+      </div>
+      <p>
+       <small>
+        *Kwota wolna: 50 000 CHF (osoby samotne) / 100 000 CHF (małżeństwa).
+       </small>
+       <br/>
+       <small>
+        **Korekty: obejmują wartość użytkową lokalu, odsetki od kredytu hipotecznego i alimenty.
+       </small>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Kategoria
+        </th>
+        <th>
+         Odliczenie od dochodu
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Na dziecko / kształcenie zawodowe
+        </td>
+        <td>
+         5 000 CHF
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Składki referencyjne 2026
+      </h3>
+      <p>
+       Te kantonalne wartości bazowe stanowią podstawę do obliczenia ulgi:
+      </p>
+      <table class="data-table">
+       <tr>
+        <td>
+         Dorośli
+        </td>
+        <td>
+         5 447 CHF / rok
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Młodzi dorośli (19-25)
+        </td>
+        <td>
+         3 896 CHF / rok
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Dzieci (0-18)
+        </td>
+        <td>
+         1 500 CHF / rok
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Określenie stawki potrącenia
+      </h3>
+      <p>
+       Dopuszczalny osobisty wkład wzrasta wraz z LNA:
+      </p>
+      <table class="data-table">
+       <th>
+        Próg LNA (CHF)
+       </th>
+       <th>
+        Stawka (%)
+       </th>
+       <tr>
+        <td>
+         do 40 000
+        </td>
+        <td>
+         9.0 %
+        </td>
+       </tr>
+       <tr>
+        <td>
+         40 001 - 50 000
+        </td>
+        <td>
+         10.0 %
+        </td>
+       </tr>
+       <tr>
+        <td>
+         50 001 - 60 000
+        </td>
+        <td>
+         11.0 %
+        </td>
+       </tr>
+       <tr>
+        <td>
+         60 001 - 70 000
+        </td>
+        <td>
+         12.0 %
+        </td>
+       </tr>
+       <tr>
+        <td>
+         70 001 - 80 000
+        </td>
+        <td>
+         13.0 %
+        </td>
+       </tr>
+       <tr>
+        <td>
+         powyżej 80 000
+        </td>
+        <td>
+         14.0 %
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Ostateczne uprawnienie i gwarancja minimalna
+      </h3>
+      <p>
+       Najpierw obliczana jest różnica:
+      </p>
+      <div class="formula-box">
+       Uprawnienie podstawowe = [Łączne składki referencyjne] - ([LNA] × Stawka)
+      </div>
+      <p>
+       Dla rodzin z dochodem poniżej 85 000 CHF obowiązuje
+       <strong>
+        gwarancja minimalna
+       </strong>
+       :
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Kategoria
+        </th>
+        <th>
+         Gwarancja
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Dzieci
+        </td>
+        <td>
+         80% składki referencyjnej
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Młodzież w trakcie nauki
+        </td>
+        <td>
+         50% składki referencyjnej
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Ważne progi:
+     </strong>
+     <br/>
+     Kwoty poniżej
+     <strong>
+      100 CHF
+     </strong>
+     rocznie nie są wypłacane w kantonie GL. Ponadto uprawnienie jest zawsze ograniczone faktycznie naliczoną składką.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Powrót do strony głównej
+     </a>
+     <a class="btn-link" href="https://my.gl.ch/Pages/Services/Catalog.aspx" target="_blank">
+      Oficjalna strona kantonu
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Źródło: Administracja podatkowa kantonu Glarus - Departament IPV 2026 | welfarecalc.ch
+    </p>
+    <p>
+     Uwaga: Niniejsze przedstawienie algorytmu ma na celu przejrzystość i nie jest wiążące prawnie.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

@@ -1,62 +1,10 @@
 <!DOCTYPE html>
-<html lang="de-CH">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-    <title>Familienzulagen (FA) Algorithmus Kanton Waadt 2026 | welfarecalc.ch</title>
-    <meta name="description"
-        content="Wie werden die Familienzulagen (FA) 2026 im Kanton Waadt (VD) berechnet? Entdecken Sie unseren transparenten Algorithmus für Kinder-, Ausbildungs- und Geburtszulagen.">
-    <meta name="robots" content="index, follow">
-
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/VD_2026FA_de.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/VD_2026FA_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/VD_2026FA_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/VD_2026FA_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/VD_2026FA_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/VD_2026FA_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Berechnung der Familienzulagen Waadt 2026",
-      "description": "Schritt-für-Schritt-Anleitung zur präzisen mathematischen Ermittlung der Familienzulagen im Kanton Waadt (VD) unter Berücksichtigung der globalen Rangordnung.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Alters- und Statusprüfung zur Bestimmung der Anspruchskategorie (Kinder-, Ausbildungs- oder Erwerbsunfähigenzulage)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Ermittlung des globalen Kinderraing-Index (Rangordnung nach Alter) im gesamten Haushalt."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Zuweisung des Monatsbetrags basierend auf dem Rangordnungskoeffizienten (ab dem 3. Kind erhöht)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Anwendung von Einmalzulagen (Geburt / Adoption) differenziert nach Einling oder Mehrling."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Jahresanspruchsermittlung und Anwendung defensiver algorithmischer Validierungen wie Einkommensgrenzen."
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -399,230 +347,499 @@
         .step-body ul li {
             margin-bottom: 0.25rem;
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026FA_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <div class="update-tag">FAMZG-KONFORM 2026</div>
-            <h1>FA-Algorithmus: Kanton Waadt (Vaud)</h1>
-            <p>Transparente Dokumentation der Familienzulagen (Kinder-, Ausbildungs- und Geburtszulagen)</p>
-        </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
-        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   FA Waadt 2026 – Familienzulagen | welfarecalc.ch
+  </title>
+  <meta content="Berechnung der Familienzulagen im Kanton Waadt. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Familienzulagen, Kanton Waadt, FA, Sozialleistungen, Berechnung 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" rel="canonical"/>
+  <meta content="FA Waadt 2026 – Familienzulagen | welfarecalc.ch" property="og:title"/>
+  <meta content="Berechnung der Familienzulagen im Kanton Waadt. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026FA_de.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="de_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="FA Waadt 2026 – Familienzulagen | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Berechnung der Familienzulagen im Kanton Waadt. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Familienzulagen Waadt 2026", "description": "Step-by-step guide to calculating Familienzulagen in Canton Waadt.", "step": [{"@type": "HowToStep", "position": 1, "text": "Categorize children by age and education status"}, {"@type": "HowToStep", "position": 2, "text": "Apply the specific cantonal rates for each category"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total monthly allowance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     FAMZG-KONFORM 2026
     </div>
-
-        <div class="content">
-            <p>In der Schweiz sind Familienzulagen gesetzlich geregelt (FamZG). Unser Rechner nutzt die spezifischen
+    <h1>
+     FA-Algorithmus: Kanton Waadt (Vaud)
+    </h1>
+    <p>
+     Transparente Dokumentation der Familienzulagen (Kinder-, Ausbildungs- und Geburtszulagen)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Schneller Check: Haben Sie Anspruch?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_de" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Jetzt kostenlos prüfen →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     In der Schweiz sind Familienzulagen gesetzlich geregelt (FamZG). Unser Rechner nutzt die spezifischen
                 kantonalen Regelungen des Kantons Waadt (VD) für 2026, um Ihren Anspruch präzise zu ermitteln. Der
                 Waadtländer Algorithmus zeichnet sich durch einen globalen Haushaltsindex (Rangordnung) und großzügige
-                Einmalzulagen aus. Transparenz ist uns wichtig.</p>
-
-            <h2 class="section-title">1. Monatssätze und Einmalbeträge (2026)</h2>
-            <div class="table-responsive">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Zulagenart</th>
-                            <th>1. &amp; 2. Kind (Standard)</th>
-                            <th>Ab 3. Kind (Erhöht)</th>
-                            <th>Voraussetzung / Altersgrenze</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Kinderzulage</strong></td>
-                            <td>CHF 322 / Monat</td>
-                            <td>CHF 365 / Monat</td>
-                            <td>Ab Geburtsmonat bis zum vollendeten 16. Altersjahr.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Ausbildungszulage</strong></td>
-                            <td>CHF 425 / Monat</td>
-                            <td>CHF 468 / Monat</td>
-                            <td>Vom 16. bis max. 25. Altersjahr (Nachweis der Ausbildung).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Erwerbsunfähige Kinder</strong></td>
-                            <td>CHF 425 / Monat</td>
-                            <td>CHF 468 / Monat</td>
-                            <td>Vom 16. bis max. 20. Altersjahr (Krankheits-/Invaliditätsnachweis).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Geburtszulage</strong></td>
-                            <td colspan="2">CHF 1'617 (Einling) / CHF 3'234 (pro Kind bei Mehrlingen)</td>
-                            <td>Einmalig bei Lebendgeburt oder ab der 24. Schwangerschaftswoche.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Adoptionszulage</strong></td>
-                            <td colspan="2">CHF 1'617 (Einzelfall) / CHF 3'234 (pro Kind bei Gruppenadoption)</td>
-                            <td>Einmalig bei rechtskräftiger Aufnahme von Minderjährigen zur Adoption.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="section-title">2. Der präzise Berechnungsweg (Core-Logik)</h2>
-
-            <div class="step-box">
-                <div class="step-num">1</div>
-                <div class="step-body">
-                    <h3>Bestimmung der Kategorie</h3>
-                    <p>Der Algorithmus prüft das Alter und den Beschäftigungs- bzw. Gesundheitsstatus jedes Kindes:</p>
-                    <ul>
-                        <li><strong>0 bis 16 Jahre:</strong> Zuweisung zur Kategorie <code>Kinderzulage</code>.</li>
-                        <li><strong>16 bis 25 Jahre:</strong> Zuweisung zur Kategorie <code>Ausbildungszulage</code>,
+                Einmalzulagen aus. Transparenz ist uns wichtig.
+    </p>
+    <h2 class="section-title">
+     1. Monatssätze und Einmalbeträge (2026)
+    </h2>
+    <div class="table-responsive">
+     <table class="data-table">
+      <thead>
+       <tr>
+        <th>
+         Zulagenart
+        </th>
+        <th>
+         1. &amp; 2. Kind (Standard)
+        </th>
+        <th>
+         Ab 3. Kind (Erhöht)
+        </th>
+        <th>
+         Voraussetzung / Altersgrenze
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <strong>
+          Kinderzulage
+         </strong>
+        </td>
+        <td>
+         CHF 322 / Monat
+        </td>
+        <td>
+         CHF 365 / Monat
+        </td>
+        <td>
+         Ab Geburtsmonat bis zum vollendeten 16. Altersjahr.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Ausbildungszulage
+         </strong>
+        </td>
+        <td>
+         CHF 425 / Monat
+        </td>
+        <td>
+         CHF 468 / Monat
+        </td>
+        <td>
+         Vom 16. bis max. 25. Altersjahr (Nachweis der Ausbildung).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Erwerbsunfähige Kinder
+         </strong>
+        </td>
+        <td>
+         CHF 425 / Monat
+        </td>
+        <td>
+         CHF 468 / Monat
+        </td>
+        <td>
+         Vom 16. bis max. 20. Altersjahr (Krankheits-/Invaliditätsnachweis).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Geburtszulage
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (Einling) / CHF 3'234 (pro Kind bei Mehrlingen)
+        </td>
+        <td>
+         Einmalig bei Lebendgeburt oder ab der 24. Schwangerschaftswoche.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Adoptionszulage
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (Einzelfall) / CHF 3'234 (pro Kind bei Gruppenadoption)
+        </td>
+        <td>
+         Einmalig bei rechtskräftiger Aufnahme von Minderjährigen zur Adoption.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h2 class="section-title">
+     2. Der präzise Berechnungsweg (Core-Logik)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Bestimmung der Kategorie
+      </h3>
+      <p>
+       Der Algorithmus prüft das Alter und den Beschäftigungs- bzw. Gesundheitsstatus jedes Kindes:
+      </p>
+      <ul>
+       <li>
+        <strong>
+         0 bis 16 Jahre:
+        </strong>
+        Zuweisung zur Kategorie
+        <code>
+         Kinderzulage
+        </code>
+        .
+       </li>
+       <li>
+        <strong>
+         16 bis 25 Jahre:
+        </strong>
+        Zuweisung zur Kategorie
+        <code>
+         Ausbildungszulage
+        </code>
+        ,
                             sofern ein gültiger Ausbildungsnachweis vorliegt und die gesetzliche Einkommensgrenze nicht
-                            überschritten wird.</li>
-                        <li><strong>16 bis 20 Jahre (Erwerbsunfähig):</strong> Zuweisung zur Kategorie
-                            <code>Erwerbsunfähige Kinder</code> (Anspruchshöhe entspricht der Ausbildungszulage).</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-num">2</div>
-                <div class="step-body">
-                    <h3>Ermittlung der globalen Haushalts-Rangordnung (Rang de l'enfant)</h3>
-                    <p><strong>Kritischer Algorithmus-Faktor:</strong> Die Staffelung ab dem 3. Kind wird im Kanton
+                            überschritten wird.
+       </li>
+       <li>
+        <strong>
+         16 bis 20 Jahre (Erwerbsunfähig):
+        </strong>
+        Zuweisung zur Kategorie
+        <code>
+         Erwerbsunfähige Kinder
+        </code>
+        (Anspruchshöhe entspricht der Ausbildungszulage).
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Ermittlung der globalen Haushalts-Rangordnung (Rang de l'enfant)
+      </h3>
+      <p>
+       <strong>
+        Kritischer Algorithmus-Faktor:
+       </strong>
+       Die Staffelung ab dem 3. Kind wird im Kanton
                         Waadt nicht getrennt nach Kategorien berechnet. Es wird eine globale Liste aller
-                        zulagenberechtigten Kinder im Haushalt erstellt und nach Alter absteigend sortiert.</p>
-                    
-                    <div class="formula-container">
-                        <div class="formula-title">Haushalts_Index_Zuweisung:</div>
-                        <div class="math-block">
-                            <div class="math-row">Sortiere_Kinder_nach_Alter(<span style="color:#64748b;">Absteigend</span>);</div>
-                            <div class="math-row">Kind_1 (Ältestes) <span class="math-sign">&rarr;</span> Index 1 <span class="math-indent">(Standardtarif)</span></div>
-                            <div class="math-row">Kind_2 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="math-sign">&rarr;</span> Index 2 <span class="math-indent">(Standardtarif)</span></div>
-                            <div class="math-row">Kind_3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="math-sign">&rarr;</span> Index 3 <span class="math-indent" style="color:#b8860b; font-weight:bold;">(Erhöhter Tarif ab 3. Kind)</span></div>
-                            <div class="math-row">Kind_n &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="math-sign">&rarr;</span> Index n <span class="math-indent" style="color:#b8860b; font-weight:bold;">(Erhöhter Tarif ab 3. Kind)</span></div>
-                        </div>
-                    </div>
-                    
-                    <p style="font-size: 0.9rem; color: #475569;"><small><em>Dadurch wird sichergestellt, dass
+                        zulagenberechtigten Kinder im Haushalt erstellt und nach Alter absteigend sortiert.
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Haushalts_Index_Zuweisung:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Sortiere_Kinder_nach_Alter(
+         <span style="color:#64748b;">
+          Absteigend
+         </span>
+         );
+        </div>
+        <div class="math-row">
+         Kind_1 (Ältestes)
+         <span class="math-sign">
+          →
+         </span>
+         Index 1
+         <span class="math-indent">
+          (Standardtarif)
+         </span>
+        </div>
+        <div class="math-row">
+         Kind_2
+         <span class="math-sign">
+          →
+         </span>
+         Index 2
+         <span class="math-indent">
+          (Standardtarif)
+         </span>
+        </div>
+        <div class="math-row">
+         Kind_3
+         <span class="math-sign">
+          →
+         </span>
+         Index 3
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Erhöhter Tarif ab 3. Kind)
+         </span>
+        </div>
+        <div class="math-row">
+         Kind_n
+         <span class="math-sign">
+          →
+         </span>
+         Index n
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Erhöhter Tarif ab 3. Kind)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569;">
+       <small>
+        <em>
+         Dadurch wird sichergestellt, dass
                                 beispielsweise ein drittes Kind, welches in Ausbildung steht, den vollen erhöhten Satz
                                 von CHF 468 erhält, selbst wenn die ersten beiden jüngeren Kinder nur Kinderzulagen
-                                beziehen.</em></small></p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-num">3</div>
-                <div class="step-body">
-                    <h3>Berechnung des monatlichen Betrags</h3>
-                    <p>Die mathematische Summe bildet sich dynamisch anhand der ermittelten Indizes:</p>
-                    
-                    <div class="formula-container">
-                        <div class="formula-title">Monatlicher_Gesamtanspruch:</div>
-                        <div class="math-block">
-                            <div class="math-row">Monatlicher_Gesamtanspruch = &sum; [ Tarif ( Kategorie, Index ) ]</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Wobei gilt:</div>
-                            <div class="math-row">&bull; Wenn Index &le; 2:</div>
-                            <div class="math-indent">Kinderzulage = 322 CHF | Ausbildung / Erwerbsunfähig = 425 CHF</div>
-                            <div class="math-row">&bull; Wenn Index &ge; 3:</div>
-                            <div class="math-indent" style="color:#b8860b; font-weight:bold;">Kinderzulage = 365 CHF | Ausbildung / Erwerbsunfähig = 468 CHF</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-num">4</div>
-                <div class="step-body">
-                    <h3>Berechnung von Einmalzulagen (Geburt / Adoption)</h3>
-                    <p>Der Algorithmus prüft, ob im Berechnungsjahr eine Geburt oder Adoption stattfand, und
-                        unterscheidet strikt zwischen Einlings- und Mehrlingsgeburten:</p>
-                    
-                    <div class="formula-container">
-                        <div class="formula-title">Einmalzulagen_Gesamt:</div>
-                        <div class="math-block">
-                            <div class="math-row">Einmalzulagen_Gesamt = Anzahl_Kinder <span class="math-sign">&times;</span> Einmalbetrag_pro_Kind</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Parameter:</div>
-                            <div class="math-row">&bull; Einling (Anzahl_Kinder == 1):</div>
-                            <div class="math-indent">Einmalbetrag_pro_Kind = 1'617 CHF</div>
-                            <div class="math-row">&bull; Mehrlinge (Anzahl_Kinder &le; 2):</div>
-                            <div class="math-indent">Einmalbetrag_pro_Kind = 3'234 CHF <span style="color:#64748b; font-weight:normal;">(pro Kind)</span></div>
-                        </div>
-                    </div>
-                    
-                    <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
-                        <em>Beispiel: Doppelgeburt &rarr; 2 &times; 3'234 CHF = 6'468 CHF Gesamt.<br>
-                            Einling &rarr; 1 &times; 1'617 CHF = 1'617 CHF Gesamt.</em>
-                    </p>
-                </div>
-            </div>
-
-            <div class="step-box">
-                <div class="step-num">5</div>
-                <div class="step-body">
-                    <h3>Ermittlung des Jahresanspruchs</h3>
-                    <p>Die Aggregation zum jährlichen Gesamtanspruch lautet:</p>
-                    
-                    <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
-                        <div class="formula-title" style="color:#a855f7;">Jahresbetrag_Berechnung:</div>
-                        <div class="math-block" style="color:#6b21a8;">
-                            <div class="math-row">Jahresbetrag = ( Monatlicher_Gesamtanspruch <span class="math-sign">&times;</span> 12 ) <span class="math-sign">+</span> Einmalzulagen_Gesamt</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="section-title">3. Defensive Validierung und algorithmische Grenzen</h2>
-            <div class="alert"
-                style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
-                <strong>Integrierte Sicherheits-Schranken (Anti-Fehler-Validierung):</strong>
-                <ul>
-                    <li><strong>Einkommensgrenze für Kinder in Ausbildung:</strong> Verdient ein Kind in Ausbildung
-                        (16-25 Jahre) ein eigenes steuerbares Erwerbseinkommen von mehr als <strong>CHF 30'240 /
-                            Jahr</strong> (bzw. CHF 2'520 / Monat), erlischt der Zulagenanspruch im
-                        Core-Engine-Algorithmus sofort (Ergebnis = 0).</li>
-                    <li><strong>Gleichzeitiges Bezugsverbot (Ausschlussprinzip):</strong> Für dasselbe Kind kann niemals
-                        gleichzeitig eine Kinderzulage und eine Ausbildungszulage gewährt werden.</li>
-                    <li><strong>Altersgrenzen-Kappung:</strong> Der Anspruch auf Kinderzulage erlischt am Ende des
+                                beziehen.
+        </em>
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Berechnung des monatlichen Betrags
+      </h3>
+      <p>
+       Die mathematische Summe bildet sich dynamisch anhand der ermittelten Indizes:
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Monatlicher_Gesamtanspruch:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Monatlicher_Gesamtanspruch = ∑ [ Tarif ( Kategorie, Index ) ]
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Wobei gilt:
+        </div>
+        <div class="math-row">
+         • Wenn Index ≤ 2:
+        </div>
+        <div class="math-indent">
+         Kinderzulage = 322 CHF | Ausbildung / Erwerbsunfähig = 425 CHF
+        </div>
+        <div class="math-row">
+         • Wenn Index ≥ 3:
+        </div>
+        <div class="math-indent" style="color:#b8860b; font-weight:bold;">
+         Kinderzulage = 365 CHF | Ausbildung / Erwerbsunfähig = 468 CHF
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Berechnung von Einmalzulagen (Geburt / Adoption)
+      </h3>
+      <p>
+       Der Algorithmus prüft, ob im Berechnungsjahr eine Geburt oder Adoption stattfand, und
+                        unterscheidet strikt zwischen Einlings- und Mehrlingsgeburten:
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Einmalzulagen_Gesamt:
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Einmalzulagen_Gesamt = Anzahl_Kinder
+         <span class="math-sign">
+          ×
+         </span>
+         Einmalbetrag_pro_Kind
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Parameter:
+        </div>
+        <div class="math-row">
+         • Einling (Anzahl_Kinder == 1):
+        </div>
+        <div class="math-indent">
+         Einmalbetrag_pro_Kind = 1'617 CHF
+        </div>
+        <div class="math-row">
+         • Mehrlinge (Anzahl_Kinder ≤ 2):
+        </div>
+        <div class="math-indent">
+         Einmalbetrag_pro_Kind = 3'234 CHF
+         <span style="color:#64748b; font-weight:normal;">
+          (pro Kind)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
+       <em>
+        Beispiel: Doppelgeburt → 2 × 3'234 CHF = 6'468 CHF Gesamt.
+        <br/>
+        Einling → 1 × 1'617 CHF = 1'617 CHF Gesamt.
+       </em>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Ermittlung des Jahresanspruchs
+      </h3>
+      <p>
+       Die Aggregation zum jährlichen Gesamtanspruch lautet:
+      </p>
+      <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
+       <div class="formula-title" style="color:#a855f7;">
+        Jahresbetrag_Berechnung:
+       </div>
+       <div class="math-block" style="color:#6b21a8;">
+        <div class="math-row">
+         Jahresbetrag = ( Monatlicher_Gesamtanspruch
+         <span class="math-sign">
+          ×
+         </span>
+         12 )
+         <span class="math-sign">
+          +
+         </span>
+         Einmalzulagen_Gesamt
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <h2 class="section-title">
+     3. Defensive Validierung und algorithmische Grenzen
+    </h2>
+    <div class="alert" style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
+     <strong>
+      Integrierte Sicherheits-Schranken (Anti-Fehler-Validierung):
+     </strong>
+     <ul>
+      <li>
+       <strong>
+        Einkommensgrenze für Kinder in Ausbildung:
+       </strong>
+       Verdient ein Kind in Ausbildung
+                        (16-25 Jahre) ein eigenes steuerbares Erwerbseinkommen von mehr als
+       <strong>
+        CHF 30'240 /
+                            Jahr
+       </strong>
+       (bzw. CHF 2'520 / Monat), erlischt der Zulagenanspruch im
+                        Core-Engine-Algorithmus sofort (Ergebnis = 0).
+      </li>
+      <li>
+       <strong>
+        Gleichzeitiges Bezugsverbot (Ausschlussprinzip):
+       </strong>
+       Für dasselbe Kind kann niemals
+                        gleichzeitig eine Kinderzulage und eine Ausbildungszulage gewährt werden.
+      </li>
+      <li>
+       <strong>
+        Altersgrenzen-Kappung:
+       </strong>
+       Der Anspruch auf Kinderzulage erlischt am Ende des
                         Monats, in dem das Kind das 16. Lebensjahr vollendet. Der Anspruch auf Ausbildungszulage
                         erlischt am Tag nach dem vollendeten 25. Lebensjahr bzw. bei vorzeitigem Abschluss der
-                        Ausbildung.</li>
-                </ul>
-            </div>
-
-            <div class="alert">
-                <strong>Anspruchsberechtigung nach Bundesrecht:</strong><br>
-                Nur ein Elternteil kann die Zulage beziehen. Es gilt eine gesetzliche Prioritätsordnung nach Art. 12
+                        Ausbildung.
+      </li>
+     </ul>
+    </div>
+    <div class="alert">
+     <strong>
+      Anspruchsberechtigung nach Bundesrecht:
+     </strong>
+     <br/>
+     Nur ein Elternteil kann die Zulage beziehen. Es gilt eine gesetzliche Prioritätsordnung nach Art. 12
                 FamZG, wenn beide Elternteile erwerbstätig sind (z. B. primär derjenige mit dem Haupterwerb im
                 Wohnsitzkanton des Kindes).
-            </div>
-
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home"
-                    aria-label="Zum Rechner">Rechner starten</a>
-                <a href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales"
-                    target="_blank" class="btn-link" aria-label="Zur offiziellen Website des Kantons Waadt">Offizielle
-                    CCVD Waadt Seite</a>
-            </div>
-        </div>
-
-        <footer>
-            <p>Quelle: Caisse cantonale vaudoise de compensation AVS (CCVD) Richtlinien 2026 &amp; Bundesgesetz über die
-                Familienzulagen (FamZG)</p>
-            <p>© 2026 welfarecalc.ch | Transparente Familienzulagen-Berechnung</p>
-        </footer>
     </div>
-
-</body>
-
+    <div style="text-align: center; margin-top: 2rem;">
+     <a aria-label="Zum Rechner" class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Rechner starten
+     </a>
+     <a aria-label="Zur offiziellen Website des Kantons Waadt" class="btn-link" href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales" target="_blank">
+      Offizielle
+                    CCVD Waadt Seite
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Quelle: Caisse cantonale vaudoise de compensation AVS (CCVD) Richtlinien 2026 &amp; Bundesgesetz über die
+                Familienzulagen (FamZG)
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Transparente Familienzulagen-Berechnung
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

@@ -1,56 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algoritmo de Apoio Social Cantão de Neuchâtel 2026 | Cálculo Transparente | welfarecalc.ch</title>
-    <meta name="description" content="Como é calculado o apoio social no Cantão de Neuchâtel (NE) para 2026? Descubra o nosso algoritmo transparente baseado nas diretrizes SKOS e na LASoc NE.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/NE_2026SH_pt.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NE_2026SH_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NE_2026SH_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NE_2026SH_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NE_2026SH_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NE_2026SH_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NE_2026SH_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NE_2026SH_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NE_2026SH_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NE_2026SH_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NE_2026SH_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NE_2026SH_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NE_2026SH_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Cálculo do Apoio Social Neuchâtel 2026",
-      "description": "Detalhamento algorítmico do cálculo do apoio social no Cantão de Neuchâtel.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Verificação do limite de ativos conforme a lei cantonal"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinação das despesas básicas de subsistência (GBL 2026) e composição do agregado familiar"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Consideração dos custos de habitação e dedução do IPV"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Cálculo do rendimento tributável considerando deduções relacionadas com o trabalho"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -85,121 +39,271 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculadora de Beneficios Suicos 2026 | 26 Cantones + Revisor Dental">
-    <meta property="og:description" content="Calcule AVS, AI, PC e reducoes de premios em todos os 26 cantoes suicos. Inclui revisor de faturas dentarias e verificador de contratos de aluguel. 100% anonimo no navegador. 11 idiomas.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/NE_2026SH_pt.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">CONFORME AS SKOS 2026</div>
-        <h1>Algoritmo de Apoio Social: Cantão de Neuchâtel</h1>
-        <p>Documentação transparente da lógica de cálculo do mínimo de subsistência social (NE)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verificação rápida: Tem direito?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.</p>
-        <a href="https://www.welfarecalc.ch/bus_pt" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verificar gratuitamente →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AS Neuchâtel 2026 – Assistência social | welfarecalc.ch
+  </title>
+  <meta content="Calcule Assistência social no Cantão de Neuchâtel. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Assistência social, Cantão Neuchâtel, AS, Prestações sociais, Cálculo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_pt.html" rel="canonical"/>
+  <meta content="AS Neuchâtel 2026 – Assistência social | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcule Assistência social no Cantão de Neuchâtel. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/NE_2026SH_pt.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_PT" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AS Neuchâtel 2026 – Assistência social | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcule Assistência social no Cantão de Neuchâtel. Dados oficiais 2026, transparentes e compreensíveis. Verifique grátis." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Assistência social Neuchâtel 2026", "description": "Step-by-step guide to calculating Assistência social in Canton Neuchâtel.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME AS SKOS 2026
     </div>
-
-    <div class="content">
-        <p>A transparência é a base da confiança. Nesta página, divulgamos o algoritmo completo que orienta os cálculos para o Cantão de Neuchâtel (Neuchâtel) no welfarecalc.ch. A lógica baseia-se na legislação cantonal (LASoc) e nas diretrizes SKOS 2026.</p>
-
-        <h2 class="section-title">1. Verificação de Ativos (Limiar Inicial)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Limite para Pessoa Singular</h4>
-                <div class="param-value">CHF 6.000</div>
-                <p><small>Mais CHF 3.000 por criança ou pessoa em formação/educação.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Limite para Casais</h4>
-                <div class="param-value">CHF 12.000</div>
-                <p><small>Limite máximo total de CHF 15.000 por agregado familiar.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Método de Cálculo (Mensal)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Despesas Básicas de Subsistência (DBS)</h3>
-                <p>As DBS 2026 no Cantão de NE incorporam o ajuste do custo de vida das SKOS:</p>
-                <table class="data-table">
-                    <tr><th>Composição do Agregado</th><th>Valor por Mês (2026)</th></tr>
-                    <tr><td>1 Pessoa</td><td>CHF 1.061</td></tr>
-                    <tr><td>2 Pessoas</td><td>CHF 1.624</td></tr>
-                    <tr><td>Adulto adicional</td><td>CHF 400</td></tr>
-                    <tr><td>Criança até 10 anos</td><td>CHF 391</td></tr>
-                    <tr><td>Criança 11 - 15 anos</td><td>CHF 699</td></tr>
-                    <tr><td>Jovem com mais de 15 anos / em formação</td><td>CHF 1.061</td></tr>
-                 </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Custos de Habitação e Seguro de Saúde</h3>
-                <p>Os custos reais são considerados até ao máximo cantonal. No Cantão de NE, o princípio do IPV (redução individual de prémios) tem precedência:</p>
-                <div class="formula">
-                    Necessidade Reconhecida = Renda (até limite máx.) + (Prémio Seguro Saúde - Contribuição IPV)
-                </div>
-                <p><small>*Nota: A nossa calculadora utiliza os limites cantonais de renda (ex., aprox. CHF 1.200 para 1 pessoa).</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Avaliação do Rendimento e Dedução Relacionada com o Trabalho</h3>
-                <p>Para promover a integração profissional, parte do rendimento não é contabilizada:</p>
-                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-                    <strong>Rendimento Tributável</strong> = Rendimento líquido - Dedução relacionada com o trabalho (20%)
-                </div>
-                <p><small>Subsídios de integração (IZU) de CHF 100/mês são adicionalmente concedidos para o exercício de atividade remunerada.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Resultado: Direito Mensal</h3>
-                <p>A cobertura das necessidades é determinada pelo cálculo da diferença:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Direito = Necessidade Total - (Rendimento + Utilização de Ativos*)
-                </div>
-                <p><small>*Os ativos excedentes são contabilizados usando um divisor de 120 meses (10 anos).</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Caraterística especial no Cantão de NE:</strong><br>
-            A redução individual de prémios (IPV) é diretamente integrada no cálculo no Cantão de Neuchâtel. Apenas os restantes custos de seguro de saúde são reconhecidos como necessidade no orçamento.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lançar Calculadora</a>
-            <a href="https://www.ne.ch/themes/social" target="_blank" class="btn-link">Site Oficial do Cantão de NE</a>
-        </div>
+    <h1>
+     Algoritmo de Apoio Social: Cantão de Neuchâtel
+    </h1>
+    <p>
+     Documentação transparente da lógica de cálculo do mínimo de subsistência social (NE)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Verificação rápida: Tem direito?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Verifique rápida e sem compromisso se tem direito à redução de prémios (IPV), prestações complementares ou outros apoios sociais.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_pt" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Verificar gratuitamente →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     A transparência é a base da confiança. Nesta página, divulgamos o algoritmo completo que orienta os cálculos para o Cantão de Neuchâtel (Neuchâtel) no welfarecalc.ch. A lógica baseia-se na legislação cantonal (LASoc) e nas diretrizes SKOS 2026.
+    </p>
+    <h2 class="section-title">
+     1. Verificação de Ativos (Limiar Inicial)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Limite para Pessoa Singular
+      </h4>
+      <div class="param-value">
+       CHF 6.000
+      </div>
+      <p>
+       <small>
+        Mais CHF 3.000 por criança ou pessoa em formação/educação.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Limite para Casais
+      </h4>
+      <div class="param-value">
+       CHF 12.000
+      </div>
+      <p>
+       <small>
+        Limite máximo total de CHF 15.000 por agregado familiar.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Fontes: Loi sur l’action sociale (LASoc NE) & Diretrizes SKOS 2026</p>
-        <p>© 2026 welfarecalc.ch | Cálculo Transparente do Apoio Social</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Método de Cálculo (Mensal)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Despesas Básicas de Subsistência (DBS)
+      </h3>
+      <p>
+       As DBS 2026 no Cantão de NE incorporam o ajuste do custo de vida das SKOS:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Composição do Agregado
+        </th>
+        <th>
+         Valor por Mês (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Pessoa
+        </td>
+        <td>
+         CHF 1.061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Pessoas
+        </td>
+        <td>
+         CHF 1.624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Adulto adicional
+        </td>
+        <td>
+         CHF 400
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Criança até 10 anos
+        </td>
+        <td>
+         CHF 391
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Criança 11 - 15 anos
+        </td>
+        <td>
+         CHF 699
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Jovem com mais de 15 anos / em formação
+        </td>
+        <td>
+         CHF 1.061
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Custos de Habitação e Seguro de Saúde
+      </h3>
+      <p>
+       Os custos reais são considerados até ao máximo cantonal. No Cantão de NE, o princípio do IPV (redução individual de prémios) tem precedência:
+      </p>
+      <div class="formula">
+       Necessidade Reconhecida = Renda (até limite máx.) + (Prémio Seguro Saúde - Contribuição IPV)
+      </div>
+      <p>
+       <small>
+        *Nota: A nossa calculadora utiliza os limites cantonais de renda (ex., aprox. CHF 1.200 para 1 pessoa).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Avaliação do Rendimento e Dedução Relacionada com o Trabalho
+      </h3>
+      <p>
+       Para promover a integração profissional, parte do rendimento não é contabilizada:
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Rendimento Tributável
+       </strong>
+       = Rendimento líquido - Dedução relacionada com o trabalho (20%)
+      </div>
+      <p>
+       <small>
+        Subsídios de integração (IZU) de CHF 100/mês são adicionalmente concedidos para o exercício de atividade remunerada.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Resultado: Direito Mensal
+      </h3>
+      <p>
+       A cobertura das necessidades é determinada pelo cálculo da diferença:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Direito = Necessidade Total - (Rendimento + Utilização de Ativos*)
+      </div>
+      <p>
+       <small>
+        *Os ativos excedentes são contabilizados usando um divisor de 120 meses (10 anos).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Caraterística especial no Cantão de NE:
+     </strong>
+     <br/>
+     A redução individual de prémios (IPV) é diretamente integrada no cálculo no Cantão de Neuchâtel. Apenas os restantes custos de seguro de saúde são reconhecidos como necessidade no orçamento.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Lançar Calculadora
+     </a>
+     <a class="btn-link" href="https://www.ne.ch/themes/social" target="_blank">
+      Site Oficial do Cantão de NE
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fontes: Loi sur l’action sociale (LASoc NE) &amp; Diretrizes SKOS 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Cálculo Transparente do Apoio Social
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

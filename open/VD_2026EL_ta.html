@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="ta">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EL Algorithmus Kanton Waadt (VD) 2026 | வெளிப்படையான கணக்கீடு | welfarecalc.ch</title>
-  <meta
-    content="2026 ஆம் ஆண்டில் Waadt (VD) மண்டலத்தில் Ergänzungsleistungen (EL/LVPC) எவ்வாறு கணக்கிடப்படுகிறது? அதிகாரப்பூர்வ CCVC தரவுகளின் அடிப்படையில் எங்கள் வெளிப்படையான அல்காரிதத்தைக் கண்டறியவும்."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Berechnung der Ergänzungsleistungen Waadt (VD) 2026",
-      "description": "Detaillierte algorithmische Aufschlüsselung der EL- und LVPC-Berechnung im Kanton Waadt.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Prüfung der kantonalen Karenzfristen / Aufenthaltsjahre nach LVPC"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Bestimmung des anerkannten Ausgabenbedarfs (korrigierter Grundbedarf 2026, Mietmaxima nach Regionen, Krankenkassen-Prämien)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Ermittlung der anrechenbaren Einnahmen (Neutralisierung der 13. AHV-Rente, Vermögensverzehr mit kantonsspezifischen Teilern)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Berechnung des EL-Anspruchs unter strikter Berücksichtigung der gesetzlichen Beitrittsschwelle"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -236,211 +190,447 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 cuvis nalan kanakkiTu | 26 kanTankaL + pal pil sariparppu">
-    <meta property="og:description" content="anaittum 26 cuvis kanTankaLilum AVS, AI, PC matRum priimiyam kuRaipukaLai kaNakkiTungkaL. pal pil taNikkaialar matRum vaTakai oppanta sariparppu uLpaTTiyatu. ulaviyil 100% anAmateyam. 11 mozikaL.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026EL_ta.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ta">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   கூப வாட் 2026 – கூடுதல் பலன்கள் | welfarecalc.ch
+  </title>
+  <meta content="வாட் கேன்டனில் கூடுதல் பலன்கள் கணக்கிடவும். 2026 அதிகாரப்பூர்வ தரவு, வெளிப்படையான மற்றும் புரிந்துகொள்ளக்கூடியது. இலவசமாக சரிபார்க்கவும்." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="கூடுதல் பலன்கள், வாட் கேன்டன், கூப, சமூக பலன்கள், கணக்கீடு 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" rel="canonical"/>
+  <meta content="கூப வாட் 2026 – கூடுதல் பலன்கள் | welfarecalc.ch" property="og:title"/>
+  <meta content="வாட் கேன்டனில் கூடுதல் பலன்கள் கணக்கிடவும். 2026 அதிகாரப்பூர்வ தரவு, வெளிப்படையான மற்றும் புரிந்துகொள்ளக்கூடியது. இலவசமாக சரிபார்க்கவும்." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="ta_IN" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="கூப வாட் 2026 – கூடுதல் பலன்கள் | welfarecalc.ch" name="twitter:title"/>
+  <meta content="வாட் கேன்டனில் கூடுதல் பலன்கள் கணக்கிடவும். 2026 அதிகாரப்பூர்வ தரவு, வெளிப்படையான மற்றும் புரிந்துகொள்ளக்கூடியது. இலவசமாக சரிபார்க்கவும்." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "கூடுதல் பலன்கள் வாட் 2026", "description": "Step-by-step guide to calculating கூடுதல் பலன்கள் in Canton வாட்.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">அதிகாரப்பூர்வ தரவு 2026</div>
-      <h1>EL-அல்காரிதம்: கான்டன் வாட் (Vaud)</h1>
-      <p>2026 ஆம் ஆண்டிற்கான துணை நலன்களின் (EL/LVPC) வெளிப்படையான பகுப்பாய்வு</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.</p>
-        <a href="https://www.welfarecalc.ch/bus_ta" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">இலவசமாக சரிபார்க்கவும் →</a>
+   <header>
+    <div class="update-tag">
+     அதிகாரப்பூர்வ தரவு 2026
     </div>
-    
-    <div class="content">
-      <p>வெளிப்படைத்தன்மை நம்பிக்கையை உருவாக்குகிறது. AHV/IV க்கான துணை நலன்கள் (EL) மற்றும் கான்டன் வாட் இல் LVPC இன்
+    <h1>
+     EL-அல்காரிதம்: கான்டன் வாட் (Vaud)
+    </h1>
+    <p>
+     2026 ஆம் ஆண்டிற்கான துணை நலன்களின் (EL/LVPC) வெளிப்படையான பகுப்பாய்வு
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     விரைவான சரிபார்ப்பு: உங்களுக்கு உரிமை உள்ளதா?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     காப்பீட்டுக் கட்டணக் குறைப்பு (IPV), கூடுதல் நலன்கள் அல்லது பிற சமூக உதவிகளுக்கு உங்களுக்கு உரிமை உள்ளதா என விரைவாகச் சரிபார்க்கவும்.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_ta" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     இலவசமாக சரிபார்க்கவும் →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     வெளிப்படைத்தன்மை நம்பிக்கையை உருவாக்குகிறது. AHV/IV க்கான துணை நலன்கள் (EL) மற்றும் கான்டன் வாட் இல் LVPC இன்
         படியான கான்டோனல் உதவிகள் மிகவும் கட்டுப்படுத்தப்பட்ட கட்டமைப்பைப் பின்பற்றுகின்றன. எங்கள் கால்குலேட்டர் உங்கள்
         உரிமையை எவ்வாறு துல்லியமாக தீர்மானிக்கிறது என்பதற்கான கணித மற்றும் சட்டரீதியான தர்க்கத்தை இங்கே
-        ஆவணப்படுத்துகிறோம்.</p>
-      <h2 class="section-title">1. வருடாந்திர அடிப்படைத் தேவை (2026 மத்திய அரசு தரநிலை)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>தனி நபர்கள்</h4>
-          <div class="param-value">CHF 20'100</div>
-          <p><small>ஜனவரி 1, 2025/2026 முதல் சட்டப்பூர்வமாக நிர்ணயிக்கப்பட்ட மத்திய அரசு தொகை.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>தம்பதிகள்</h4>
-          <div class="param-value">CHF 30'150</div>
-          <p><small>ஒன்றாக வசிக்கும் கூட்டாளர்களுக்கான ஒருங்கிணைக்கப்பட்ட அடிப்படைத் தேவை.</small></p>
-        </div>
+        ஆவணப்படுத்துகிறோம்.
+    </p>
+    <h2 class="section-title">
+     1. வருடாந்திர அடிப்படைத் தேவை (2026 மத்திய அரசு தரநிலை)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       தனி நபர்கள்
+      </h4>
+      <div class="param-value">
+       CHF 20'100
       </div>
-      <h2 class="section-title">2. கான்டோனல் முன் சரிபார்ப்பு (LVPC இன் படி காத்திருப்பு காலங்கள்)</h2>
-      <p>கான்டன் வாட் இல், கான்டோனல் கூடுதல் நலன்களுக்கான சட்டப்பூர்வ உரிமையானது, தேசியம் மற்றும் கான்டனில் தடையின்றி
-        வசிக்கும் காலத்தைப் பொறுத்து பெரிதும் மாறுபடும்:</p>
-      <table class="data-table">
-        <tr>
-          <th>நபர்களின் குழு</th>
-          <th>குறைந்தபட்ச வசிப்பு ஆண்டுகள் (VD)</th>
-          <th>சிறப்பு விதிகள்</th>
-        </tr>
-        <tr>
-          <td>மூன்றாம் நாட்டு குடிமக்கள் (EU/EFTA அல்லாதவர்)</td>
-          <td>10 ஆண்டுகள்</td>
-          <td>IV உரிமை நிரூபிக்கப்பட்டால் 5 ஆண்டுகளாக குறைப்பு</td>
-        </tr>
-        <tr>
-          <td>அங்கீகரிக்கப்பட்ட அகதிகள் &amp; நாடற்றோர்</td>
-          <td>5 ஆண்டுகள்</td>
-          <td>மேலும் கான்டோனல் சலுகைகள் இல்லை</td>
-        </tr>
-        <tr>
-          <td>சுவிஸ் குடிமக்கள் &amp; EU/EFTA குடிமக்கள்</td>
-          <td>0 ஆண்டுகள்</td>
-          <td>மத்திய அரசு அளவுகோல்களை பூர்த்தி செய்தால் நேரடி அணுகல்</td>
-        </tr>
-      </table>
-      <h2 class="section-title">3. கணக்கீட்டு முறை விரிவாக</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>அங்கீகரிக்கப்பட்ட செலவுகள் (தேவை நிர்ணயம்)</h3>
-          <p>முதலில், கணினி அனைத்து சட்டப்பூர்வமாக அங்கீகரிக்கப்பட்ட மற்றும் கான்டன் சார்ந்த செலவு உருப்படிகளைச்
-            சேர்க்கிறது:</p>
-          <div class="formula">
-            அடிப்படைத் தேவை + அங்கீகரிக்கப்பட்ட வாடகை (துணைச் செலவுகள் உட்பட) + சுகாதார காப்பீட்டு பிரீமியம் (+ சக்கர
+      <p>
+       <small>
+        ஜனவரி 1, 2025/2026 முதல் சட்டப்பூர்வமாக நிர்ணயிக்கப்பட்ட மத்திய அரசு தொகை.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       தம்பதிகள்
+      </h4>
+      <div class="param-value">
+       CHF 30'150
+      </div>
+      <p>
+       <small>
+        ஒன்றாக வசிக்கும் கூட்டாளர்களுக்கான ஒருங்கிணைக்கப்பட்ட அடிப்படைத் தேவை.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. கான்டோனல் முன் சரிபார்ப்பு (LVPC இன் படி காத்திருப்பு காலங்கள்)
+    </h2>
+    <p>
+     கான்டன் வாட் இல், கான்டோனல் கூடுதல் நலன்களுக்கான சட்டப்பூர்வ உரிமையானது, தேசியம் மற்றும் கான்டனில் தடையின்றி
+        வசிக்கும் காலத்தைப் பொறுத்து பெரிதும் மாறுபடும்:
+    </p>
+    <table class="data-table">
+     <tr>
+      <th>
+       நபர்களின் குழு
+      </th>
+      <th>
+       குறைந்தபட்ச வசிப்பு ஆண்டுகள் (VD)
+      </th>
+      <th>
+       சிறப்பு விதிகள்
+      </th>
+     </tr>
+     <tr>
+      <td>
+       மூன்றாம் நாட்டு குடிமக்கள் (EU/EFTA அல்லாதவர்)
+      </td>
+      <td>
+       10 ஆண்டுகள்
+      </td>
+      <td>
+       IV உரிமை நிரூபிக்கப்பட்டால் 5 ஆண்டுகளாக குறைப்பு
+      </td>
+     </tr>
+     <tr>
+      <td>
+       அங்கீகரிக்கப்பட்ட அகதிகள் &amp; நாடற்றோர்
+      </td>
+      <td>
+       5 ஆண்டுகள்
+      </td>
+      <td>
+       மேலும் கான்டோனல் சலுகைகள் இல்லை
+      </td>
+     </tr>
+     <tr>
+      <td>
+       சுவிஸ் குடிமக்கள் &amp; EU/EFTA குடிமக்கள்
+      </td>
+      <td>
+       0 ஆண்டுகள்
+      </td>
+      <td>
+       மத்திய அரசு அளவுகோல்களை பூர்த்தி செய்தால் நேரடி அணுகல்
+      </td>
+     </tr>
+    </table>
+    <h2 class="section-title">
+     3. கணக்கீட்டு முறை விரிவாக
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       அங்கீகரிக்கப்பட்ட செலவுகள் (தேவை நிர்ணயம்)
+      </h3>
+      <p>
+       முதலில், கணினி அனைத்து சட்டப்பூர்வமாக அங்கீகரிக்கப்பட்ட மற்றும் கான்டன் சார்ந்த செலவு உருப்படிகளைச்
+            சேர்க்கிறது:
+      </p>
+      <div class="formula">
+       அடிப்படைத் தேவை + அங்கீகரிக்கப்பட்ட வாடகை (துணைச் செலவுகள் உட்பட) + சுகாதார காப்பீட்டு பிரீமியம் (+ சக்கர
             நாற்காலி கொடுப்பனவு)
-          </div>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">2026 ஆம் ஆண்டிற்கான கான்டன் வாட் இல் அதிகபட்ச வாடகை
-            (துணைச் செலவுகள் உட்பட)</h4>
-          <p><small>வாடகை வரம்புகள் கான்டனின் அதிகாரப்பூர்வ PLZ பகுதிகளைப் பொறுத்தது. சட்டப்பூர்வ மொத்த தொகைகளில்
-              ஏற்கனவே அனைத்து துணைச் செலவுகளும் அடங்கும்:</small></p>
-          <table class="data-table">
-            <tr>
-              <th>வீட்டு அளவு</th>
-              <th>பகுதி 1 (எ.கா. Lausanne)</th>
-              <th>பகுதி 2 (நடுத்தர மையங்கள்)</th>
-              <th>பகுதி 3 (கிராமப்புறம் / நிலையானது)</th>
-            </tr>
-            <tr>
-              <td>1 நபர்</td>
-              <td>CHF 18'300 (CHF 1'525/மாதம்)</td>
-              <td>CHF 16'680 (CHF 1'390/மாதம்)</td>
-              <td>CHF 16'680 (CHF 1'390/மாதம்)</td>
-            </tr>
-            <tr>
-              <td>2 நபர்கள்</td>
-              <td>CHF 21'720 (CHF 1'810/மாதம்)</td>
-              <td>CHF 20'160 (CHF 1'680/மாதம்)</td>
-              <td>CHF 20'160 (CHF 1'680/மாதம்)</td>
-            </tr>
-            <tr>
-              <td>≥ 5 நபர்கள்</td>
-              <td>CHF 25'920 (CHF 2'160/மாதம்)</td>
-              <td>CHF 24'000 (CHF 2'000/மாதம்)</td>
-              <td>CHF 24'000 (CHF 2'000/மாதம்)</td>
-            </tr>
-          </table>
-          <p style="margin-top: 0.5rem;"><small><strong>வாட் சிறப்பு விதி:</strong> சக்கர நாற்காலி அணுகக்கூடிய
-              வீட்டுக்கான சான்றளிக்கப்பட்ட தேவை ஏற்பட்டால், வருடாந்திர அதிகபட்ச வாடகை தானாகவே மொத்தமாக <strong>CHF
-                6'900</strong> அதிகரிக்கும்.</small></p>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">சுகாதார காப்பீட்டு பிரீமியம் ஒழுங்குமுறை</h4>
-          <p><small>செலுத்தப்பட்ட உண்மையான பிரீமியம் முதன்மையாக கணக்கில் எடுத்துக்கொள்ளப்படுகிறது (அதிகபட்சம் CHF 30'000
+      </div>
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       2026 ஆம் ஆண்டிற்கான கான்டன் வாட் இல் அதிகபட்ச வாடகை
+            (துணைச் செலவுகள் உட்பட)
+      </h4>
+      <p>
+       <small>
+        வாடகை வரம்புகள் கான்டனின் அதிகாரப்பூர்வ PLZ பகுதிகளைப் பொறுத்தது. சட்டப்பூர்வ மொத்த தொகைகளில்
+              ஏற்கனவே அனைத்து துணைச் செலவுகளும் அடங்கும்:
+       </small>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         வீட்டு அளவு
+        </th>
+        <th>
+         பகுதி 1 (எ.கா. Lausanne)
+        </th>
+        <th>
+         பகுதி 2 (நடுத்தர மையங்கள்)
+        </th>
+        <th>
+         பகுதி 3 (கிராமப்புறம் / நிலையானது)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 நபர்
+        </td>
+        <td>
+         CHF 18'300 (CHF 1'525/மாதம்)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/மாதம்)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/மாதம்)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 நபர்கள்
+        </td>
+        <td>
+         CHF 21'720 (CHF 1'810/மாதம்)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/மாதம்)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/மாதம்)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         ≥ 5 நபர்கள்
+        </td>
+        <td>
+         CHF 25'920 (CHF 2'160/மாதம்)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/மாதம்)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/மாதம்)
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 0.5rem;">
+       <small>
+        <strong>
+         வாட் சிறப்பு விதி:
+        </strong>
+        சக்கர நாற்காலி அணுகக்கூடிய
+              வீட்டுக்கான சான்றளிக்கப்பட்ட தேவை ஏற்பட்டால், வருடாந்திர அதிகபட்ச வாடகை தானாகவே மொத்தமாக
+        <strong>
+         CHF
+                6'900
+        </strong>
+        அதிகரிக்கும்.
+       </small>
+      </p>
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       சுகாதார காப்பீட்டு பிரீமியம் ஒழுங்குமுறை
+      </h4>
+      <p>
+       <small>
+        செலுத்தப்பட்ட உண்மையான பிரீமியம் முதன்மையாக கணக்கில் எடுத்துக்கொள்ளப்படுகிறது (அதிகபட்சம் CHF 30'000
               p.a. வரை). எந்த மதிப்பும் இல்லை அல்லது எதிர்மறையாக இருந்தால், கான்டோனல் சராசரி பிரீமியங்கள்
               பயன்படுத்தப்படும் (எ.கா. பகுதி 1: CHF 8'388, பகுதி 2: CHF 7'860, பகுதி 3: CHF 7'284 வருடத்திற்கு ஒரு வயது
-              வந்தோருக்கு).</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>கணக்கிடத்தக்க வருமானம் &amp; சொத்து நுகர்வு</h3>
-          <p>செலவுகளுக்கு எதிராக சரிசெய்யப்பட்ட பொருளாதார வருமானம் வைக்கப்படுகிறது:</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-            <li><strong>AHV/IV ஓய்வூதியங்கள் (கடுமையான 13வது ஓய்வூதிய நடுநிலைப்படுத்தல்):</strong> 2026 இல் 13வது AHV
+              வந்தோருக்கு).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       கணக்கிடத்தக்க வருமானம் &amp; சொத்து நுகர்வு
+      </h3>
+      <p>
+       செலவுகளுக்கு எதிராக சரிசெய்யப்பட்ட பொருளாதார வருமானம் வைக்கப்படுகிறது:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         AHV/IV ஓய்வூதியங்கள் (கடுமையான 13வது ஓய்வூதிய நடுநிலைப்படுத்தல்):
+        </strong>
+        2026 இல் 13வது AHV
               ஓய்வூதியம் அறிமுகப்படுத்தப்பட்டதிலிருந்து, அல்காரிதம் இந்த கூறுகளை கணித ரீதியாக துல்லியமாக வடிகட்டுகிறது.
-              இது பொருந்தும்: <code>சரிசெய்யப்பட்ட ஓய்வூதியம் = (மொத்த AHV ஓய்வூதியம் / 13) * 12</code>. மற்ற, AHV
-              அல்லாத வருமானங்கள் 100% குறைக்கப்படாமல் இருக்கும்.</li>
-            <li><strong>வேலை வருமானம்:</strong> சட்டப்பூர்வ விலக்கு தொகையால் சரிசெய்யப்பட்டது (தனி நபர்களுக்கு CHF 1'300
-              / தம்பதிகளுக்கு CHF 1'950), அதன் பிறகு மீதமுள்ள தொகையில் 2/3 நிலையான முறையில் கணக்கிடப்படும்.</li>
-            <li><strong>வாடகை வருமானம் &amp; ஜீவனாம்சம்:</strong> வரி மதிப்புகளின் படி நேரடி கணக்கீடு.</li>
-            <li><strong>சொத்து நுகர்வு (கான்டோனல் வகுப்பிகள்):</strong> நிகர சொத்தில் இருந்து, கான்டோனல் வீட்டு உடைமை
+              இது பொருந்தும்:
+        <code>
+         சரிசெய்யப்பட்ட ஓய்வூதியம் = (மொத்த AHV ஓய்வூதியம் / 13) * 12
+        </code>
+        . மற்ற, AHV
+              அல்லாத வருமானங்கள் 100% குறைக்கப்படாமல் இருக்கும்.
+       </li>
+       <li>
+        <strong>
+         வேலை வருமானம்:
+        </strong>
+        சட்டப்பூர்வ விலக்கு தொகையால் சரிசெய்யப்பட்டது (தனி நபர்களுக்கு CHF 1'300
+              / தம்பதிகளுக்கு CHF 1'950), அதன் பிறகு மீதமுள்ள தொகையில் 2/3 நிலையான முறையில் கணக்கிடப்படும்.
+       </li>
+       <li>
+        <strong>
+         வாடகை வருமானம் &amp; ஜீவனாம்சம்:
+        </strong>
+        வரி மதிப்புகளின் படி நேரடி கணக்கீடு.
+       </li>
+       <li>
+        <strong>
+         சொத்து நுகர்வு (கான்டோனல் வகுப்பிகள்):
+        </strong>
+        நிகர சொத்தில் இருந்து, கான்டோனல் வீட்டு உடைமை
               விலக்கு (சுயமாக வசிக்கும் வீட்டுக்கு தனி நபர்களுக்கு CHF 112'500, தம்பதிகளுக்கு CHF 187'500) மற்றும்
               சட்டப்பூர்வ விலக்கு தொகை கழிக்கப்படுகிறது. மீதமுள்ளவை குறிப்பிட்ட வகுப்பியால் வகுக்கப்படுகிறது. கற்பனையாக
-              வழங்கப்பட்ட சொத்து மதிப்புகள் (துறப்பு சொத்துக்கள்) 0.29% வருமானத்துடன் சேர்க்கப்படுகின்றன.</li>
-          </ul>
-          <table class="data-table" style="margin-top: 1rem;">
-            <tr>
-              <th>விலக்குகள் &amp; அளவுருக்கள் (மத்திய/VD)</th>
-              <th>தொகை / காரணி</th>
-            </tr>
-            <tr>
-              <td>சொத்து விலக்கு: தனி நபர்கள்</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>சொத்து விலக்கு: தம்பதிகள்</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>சொத்து விலக்கு: ஒரு குழந்தைக்கு</td>
-              <td>CHF 15'000</td>
-            </tr>
-            <tr>
-              <td>நிலையான சொத்து வகுப்பி (AHV வயதான ஓய்வூதியதாரர்கள்)</td>
-              <td>10 (வருமானமாக ஆண்டுக்கு 1/10)</td>
-            </tr>
-            <tr>
-              <td>IV சொத்து வகுப்பி (ஊனமுற்றோர் ஓய்வூதியதாரர்கள்)</td>
-              <td>15 (வருமானமாக ஆண்டுக்கு 1/15)</td>
-            </tr>
-            <tr>
-              <td>இல்ல சொத்து வகுப்பி (நிறுவனத்தில் தங்கியிருந்தால்)</td>
-              <td>5 (வருமானமாக ஆண்டுக்கு 1/5)</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>முடிவு: EL கணக்கீடு</h3>
-          <p>துணை நலன் இரண்டு அளவுகளுக்கு இடையே உள்ள சரியான இடைவெளியை நிரப்புகிறது:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            வருடாந்திர EL நலன் = Max(0, [அங்கீகரிக்கப்பட்ட செலவுகள்] - [கணக்கிடத்தக்க வருமானம்])
-          </div>
-          <p><small>மாதாந்திர செலுத்தும் தொகையானது, வருடாந்திர EL ஐ 12 ஆல் வகுத்து, அடுத்த முழு பிராங்கிற்கு வணிக
-              ரீதியாக வட்டமிடப்பட்டதற்கு சமம்.</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>முக்கியம்: சட்டப்பூர்வ சேரும் வரம்பு (சொத்து வரம்பு)</strong><br />
-        வரி விதிக்கக்கூடிய நிகர சொத்து (விலக்குகளுக்கு முன், ஆனால் சுயமாக வசிக்கும் சொத்தின் மதிப்பைத் தவிர்த்து)
-        பின்வரும் வரம்புகளை மீறினால், துணை நலன்களுக்கான சட்டப்பூர்வ உரிமை முற்றிலும் நிராகரிக்கப்படும்:
-        <ul style="margin-left: 20px; margin-top: 8px;">
-          <li>தனி நபர்கள்: <strong>CHF 100'000</strong></li>
-          <li>திருமணமான தம்பதிகள்: <strong>CHF 200'000</strong></li>
-        </ul>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">முகப்புப் பக்கத்திற்குத்
-          திரும்பு</a>
-        <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">அதிகாரப்பூர்வ CCVD வாட் பக்கம்</a>
-      </div>
+              வழங்கப்பட்ட சொத்து மதிப்புகள் (துறப்பு சொத்துக்கள்) 0.29% வருமானத்துடன் சேர்க்கப்படுகின்றன.
+       </li>
+      </ul>
+      <table class="data-table" style="margin-top: 1rem;">
+       <tr>
+        <th>
+         விலக்குகள் &amp; அளவுருக்கள் (மத்திய/VD)
+        </th>
+        <th>
+         தொகை / காரணி
+        </th>
+       </tr>
+       <tr>
+        <td>
+         சொத்து விலக்கு: தனி நபர்கள்
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         சொத்து விலக்கு: தம்பதிகள்
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         சொத்து விலக்கு: ஒரு குழந்தைக்கு
+        </td>
+        <td>
+         CHF 15'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         நிலையான சொத்து வகுப்பி (AHV வயதான ஓய்வூதியதாரர்கள்)
+        </td>
+        <td>
+         10 (வருமானமாக ஆண்டுக்கு 1/10)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         IV சொத்து வகுப்பி (ஊனமுற்றோர் ஓய்வூதியதாரர்கள்)
+        </td>
+        <td>
+         15 (வருமானமாக ஆண்டுக்கு 1/15)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         இல்ல சொத்து வகுப்பி (நிறுவனத்தில் தங்கியிருந்தால்)
+        </td>
+        <td>
+         5 (வருமானமாக ஆண்டுக்கு 1/5)
+        </td>
+       </tr>
+      </table>
+     </div>
     </div>
-    <footer>
-      <p>ஆதாரம்: Caisse cantonale de compensation AVS Vaud (CCVC) வழிகாட்டுதல்கள் 2026, LVPC &amp; துணை நலன்கள் குறித்த
-        மத்திய சட்டம் (ELG)</p>
-      <p>welfarecalc.ch ஆல் வழங்கப்பட்டது | சட்டப்பூர்வ உத்தரவாதம் இல்லாமல் மிகவும் துல்லியமான வழிமுறை ஆவணப்படுத்தல்.
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       முடிவு: EL கணக்கீடு
+      </h3>
+      <p>
+       துணை நலன் இரண்டு அளவுகளுக்கு இடையே உள்ள சரியான இடைவெளியை நிரப்புகிறது:
       </p>
-    </footer>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       வருடாந்திர EL நலன் = Max(0, [அங்கீகரிக்கப்பட்ட செலவுகள்] - [கணக்கிடத்தக்க வருமானம்])
+      </div>
+      <p>
+       <small>
+        மாதாந்திர செலுத்தும் தொகையானது, வருடாந்திர EL ஐ 12 ஆல் வகுத்து, அடுத்த முழு பிராங்கிற்கு வணிக
+              ரீதியாக வட்டமிடப்பட்டதற்கு சமம்.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      முக்கியம்: சட்டப்பூர்வ சேரும் வரம்பு (சொத்து வரம்பு)
+     </strong>
+     <br/>
+     வரி விதிக்கக்கூடிய நிகர சொத்து (விலக்குகளுக்கு முன், ஆனால் சுயமாக வசிக்கும் சொத்தின் மதிப்பைத் தவிர்த்து)
+        பின்வரும் வரம்புகளை மீறினால், துணை நலன்களுக்கான சட்டப்பூர்வ உரிமை முற்றிலும் நிராகரிக்கப்படும்:
+     <ul style="margin-left: 20px; margin-top: 8px;">
+      <li>
+       தனி நபர்கள்:
+       <strong>
+        CHF 100'000
+       </strong>
+      </li>
+      <li>
+       திருமணமான தம்பதிகள்:
+       <strong>
+        CHF 200'000
+       </strong>
+      </li>
+     </ul>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      முகப்புப் பக்கத்திற்குத்
+          திரும்பு
+     </a>
+     <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">
+      அதிகாரப்பூர்வ CCVD வாட் பக்கம்
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     ஆதாரம்: Caisse cantonale de compensation AVS Vaud (CCVC) வழிகாட்டுதல்கள் 2026, LVPC &amp; துணை நலன்கள் குறித்த
+        மத்திய சட்டம் (ELG)
+    </p>
+    <p>
+     welfarecalc.ch ஆல் வழங்கப்பட்டது | சட்டப்பூர்வ உத்தரவாதம் இல்லாமல் மிகவும் துல்லியமான வழிமுறை ஆவணப்படுத்தல்.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

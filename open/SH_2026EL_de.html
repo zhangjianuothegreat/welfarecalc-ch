@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-<html lang="de-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>EL Algorithmus Kanton Schaffhausen 2026 | Transparente Berechnung | welfarecalc.ch</title>
-    <meta name="description" content="Wie werden die Ergänzungsleistungen (EL) 2026 im Kanton Schaffhausen berechnet? Entdecken Sie unseren transparenten Algorithmus basierend auf offiziellen SVA-SH-Daten.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/SH_2026EL_de.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SH_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SH_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SH_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SH_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SH_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SH_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SH_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SH_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SH_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SH_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SH_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SH_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Berechnung der Ergänzungsleistungen Schaffhausen 2026",
-      "description": "Detaillierte algorithmische Aufschlüsselung der EL-Berechnung im Kanton Schaffhausen.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Bestimmung des anerkannten Ausgabenbedarfs (Grundbedarf, Mietzinsmaxima Region 3, Krankenkassen-Pauschale)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Anrechnung der Einnahmen unter Berücksichtigung des gesetzlichen Abzugs für Erwerbseinkommen und des Vermögensverzehrs"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Ermittlung des EL-Betrags durch Gegenüberstellung von anerkannten Ausgaben und anrechenbaren Einnahmen"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -81,134 +39,382 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SH_2026EL_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">OFFIZIELLE DATEN 2026</div>
-        <h1>EL-Algorithmus: Kanton Schaffhausen</h1>
-        <p>Transparente Aufschlüsselung der Ergänzungsleistungen (EL) für den Kanton SH</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
-        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   EL Schaffhausen 2026 – Ergänzungsleistungen | welfarecalc.ch
+  </title>
+  <meta content="Berechnung der Ergänzungsleistungen im Kanton Schaffhausen. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Ergänzungsleistungen, Kanton Schaffhausen, EL, Sozialleistungen, Berechnung 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_de.html" rel="canonical"/>
+  <meta content="EL Schaffhausen 2026 – Ergänzungsleistungen | welfarecalc.ch" property="og:title"/>
+  <meta content="Berechnung der Ergänzungsleistungen im Kanton Schaffhausen. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SH_2026EL_de.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="de_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="EL Schaffhausen 2026 – Ergänzungsleistungen | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Berechnung der Ergänzungsleistungen im Kanton Schaffhausen. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SH_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Ergänzungsleistungen Schaffhausen 2026", "description": "Step-by-step guide to calculating Ergänzungsleistungen in Canton Schaffhausen.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     OFFIZIELLE DATEN 2026
     </div>
-
-    <div class="content">
-        <p>Transparenz schafft Vertrauen. Die Ergänzungsleistungen (EL) zur AHV/IV garantieren die Deckung des Existenzbedarfs. Unser Berechnungsmodell für den Kanton Schaffhausen basiert strikt auf dem Bundesgesetz über Ergänzungsleistungen (ELG 2021-2026) und den offiziellen kantonalen Richtlinien der SVA Schaffhausen.</p>
-
-        <h2 class="section-title">1. Jährlicher Grundbedarf (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Alleinstehende</h4>
-                <div class="param-value">CHF 20'670</div>
-                <p><small>Bundesweit einheitlicher Betrag ab Januar 2026 für allgemeine Lebenshaltungskosten.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Ehepaare</h4>
-                <div class="param-value">CHF 31'005</div>
-                <p><small>Kombinierter Grundbedarf für gemeinsam lebende Ehepaare.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Der Berechnungsweg im Detail</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Anerkannte Ausgaben (Bedarf)</h3>
-                <p>Zuerst summieren wir alle gesetzlich anerkannten Ausgabepositionen des Kantons Schaffhausen:</p>
-                <div class="formula">
-                    Anerkannte Ausgaben = Grundbedarf + Anerkannter Mietzins (bis Limit) + Krankenkassen-Pauschale
-                </div>
-                
-                <h4 style="margin-top: 15px; color: var(--official-blue);">Mietzinsmaxima 2026 (Kanton SH gilt fest als Region 3)</h4>
-                <table class="data-table">
-                    <tr><th>Haushaltsgrösse</th><th>Monatliches Limit</th><th>Jährliches Limit</th></tr>
-                    <tr><td>1 Person</td><td>CHF 1'390</td><td>CHF 16'680</td></tr>
-                    <tr><td>2 Personen</td><td>CHF 1'680</td><td>CHF 20'160</td></tr>
-                    <tr><td>3 Personen</td><td>CHF 1'850</td><td>CHF 22'200</td></tr>
-                    <tr><td>4 Personen</td><td>CHF 2'000</td><td>CHF 24'000</td></tr>
-                    <tr><td>5+ Personen</td><td>CHF 2'000</td><td>CHF 24'000</td></tr>
-                </table>
-                
-                <h4 style="margin-top: 15px; color: var(--official-blue);">Kantonale Krankenkassen-Pauschale (SVA SH 2026)</h4>
-                <p><small>In der EL-Berechnung wird die kantonale Durchschnittsprämie als feste Pauschale voll angerechnet:</small></p>
-                <table class="data-table">
-                    <tr><th>Personengruppe</th><th>Betrag p.a.</th><th>Betrag pro Monat</th></tr>
-                    <tr><td>Erwachsene (ab 26 Jahren)</td><td>CHF 5'808</td><td>CHF 484</td></tr>
-                    <tr><td>Junge Erwachsene (18–25 Jahre)</td><td>CHF 4'344</td><td>CHF 362</td></tr>
-                    <tr><td>Kinder (bis 17 Jahre)</td><td>CHF 1'380</td><td>CHF 115</td></tr>
-                </table>
-                <p style="margin-top: 10px;"><small>*Hinweis für Hauseigentümer: Als anerkannte jährliche Nebenkostenpauschale wird bei selbstbewohntem Wohneigentum ein fixer Betrag von CHF 3'480 angerechnet.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Anrechenbare Einnahmen</h3>
-                <p>Hier werden alle Einkünfte nach den rechtskonformen EL-Regeln bewertet:</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-                    <li><strong>Rentenbezug (AHV/IV):</strong> 12 Monate reguläre Rentenbezüge. Die gesetzliche 13. AHV-Rente bleibt bei der EL-Berechnung gemäss Bundesbeschluss vollkommen neutralisiert und wird nicht als Einnahme angerechnet.</li>
-                    <li><strong>Erwerbseinkommen:</strong> Bereinigt um den gesetzlichen Freibetrag (CHF 1'500 für Alleinstehende / CHF 2'250 für Ehepaare). Nur 2/3 des den Freibetrag übersteigenden Einkommens werden als Einnahme angerechnet.</li>
-                    <li><strong>Vermögensverzehr:</strong> Ein fixer Anteil des Reinvermögens nach Abzug des Freibetrags:
-                        <div class="formula">Vermögensverzehr = max(0, (Reinvermögen - Vermögensfreibetrag) / Divisor)</div>
-                        <small>Divisor: Altersrentner (AHV) = 10 | Invalidenrentner (IV) = 15.</small>
-                    </li>
-                </ul>
-                
-                <table class="data-table">
-                    <tr><th>EL-Freibeträge (Vermögen)</th><th>Betrag</th></tr>
-                    <tr><td>Alleinstehende</td><td>CHF 30'000</td></tr>
-                    <tr><td>Ehepaare</td><td>CHF 50'000</td></tr>
-                    <tr><td>Selbstbewohntes Wohneigentum (Liegenschaft)</td><td>CHF 112'500</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Resultat: Gesetzlicher EL-Anspruch</h3>
-                <p>Die EL deckt die mathematische Lücke zwischen Ihren anerkannten Bedürfnissen und den anrechenbaren Einnahmen ab:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Jährliche EL-Rente = [Anerkannte Ausgaben] - [Anrechenbare Einnahmen]
-                </div>
-                <p><small>Der monatliche Zahlungsbetrag entspricht der jährlichen EL-Rente geteilt durch 12, kaufmännisch gerundet auf den nächsten Franken.</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Wichtig: Die Vermögensschwelle (Eintrittsschwelle)</strong><br>
-            Ein gesetzlicher Anspruch auf Ergänzungsleistungen besteht nur, wenn das steuerbare Reinvermögen unter <strong>CHF 100'000</strong> (for Alleinstehende) bzw. <strong>CHF 200'000</strong> (für Ehepaare) liegt. Der Wert einer selbstbewohnten Liegenschaft wird bei dieser Eintrittsschwelle nicht mitgerechnet.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Zurück zur Startseite</a>
-            <a href="https://www.svash.ch/el" target="_blank" class="btn-link">Offizielle SVA Schaffhausen Seite</a>
-        </div>
+    <h1>
+     EL-Algorithmus: Kanton Schaffhausen
+    </h1>
+    <p>
+     Transparente Aufschlüsselung der Ergänzungsleistungen (EL) für den Kanton SH
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Schneller Check: Haben Sie Anspruch?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_de" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Jetzt kostenlos prüfen →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Transparenz schafft Vertrauen. Die Ergänzungsleistungen (EL) zur AHV/IV garantieren die Deckung des Existenzbedarfs. Unser Berechnungsmodell für den Kanton Schaffhausen basiert strikt auf dem Bundesgesetz über Ergänzungsleistungen (ELG 2021-2026) und den offiziellen kantonalen Richtlinien der SVA Schaffhausen.
+    </p>
+    <h2 class="section-title">
+     1. Jährlicher Grundbedarf (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Alleinstehende
+      </h4>
+      <div class="param-value">
+       CHF 20'670
+      </div>
+      <p>
+       <small>
+        Bundesweit einheitlicher Betrag ab Januar 2026 für allgemeine Lebenshaltungskosten.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Ehepaare
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        Kombinierter Grundbedarf für gemeinsam lebende Ehepaare.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Quelle: SVA Schaffhausen Richtlinien 2026 & Bundesgesetz über Ergänzungsleistungen (ELG)</p>
-        <p>Bereitgestellt von welfarecalc.ch | Information ohne rechtliche Gewähr.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Der Berechnungsweg im Detail
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Anerkannte Ausgaben (Bedarf)
+      </h3>
+      <p>
+       Zuerst summieren wir alle gesetzlich anerkannten Ausgabepositionen des Kantons Schaffhausen:
+      </p>
+      <div class="formula">
+       Anerkannte Ausgaben = Grundbedarf + Anerkannter Mietzins (bis Limit) + Krankenkassen-Pauschale
+      </div>
+      <h4 style="margin-top: 15px; color: var(--official-blue);">
+       Mietzinsmaxima 2026 (Kanton SH gilt fest als Region 3)
+      </h4>
+      <table class="data-table">
+       <tr>
+        <th>
+         Haushaltsgrösse
+        </th>
+        <th>
+         Monatliches Limit
+        </th>
+        <th>
+         Jährliches Limit
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Person
+        </td>
+        <td>
+         CHF 1'390
+        </td>
+        <td>
+         CHF 16'680
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Personen
+        </td>
+        <td>
+         CHF 1'680
+        </td>
+        <td>
+         CHF 20'160
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 Personen
+        </td>
+        <td>
+         CHF 1'850
+        </td>
+        <td>
+         CHF 22'200
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 Personen
+        </td>
+        <td>
+         CHF 2'000
+        </td>
+        <td>
+         CHF 24'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5+ Personen
+        </td>
+        <td>
+         CHF 2'000
+        </td>
+        <td>
+         CHF 24'000
+        </td>
+       </tr>
+      </table>
+      <h4 style="margin-top: 15px; color: var(--official-blue);">
+       Kantonale Krankenkassen-Pauschale (SVA SH 2026)
+      </h4>
+      <p>
+       <small>
+        In der EL-Berechnung wird die kantonale Durchschnittsprämie als feste Pauschale voll angerechnet:
+       </small>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Personengruppe
+        </th>
+        <th>
+         Betrag p.a.
+        </th>
+        <th>
+         Betrag pro Monat
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Erwachsene (ab 26 Jahren)
+        </td>
+        <td>
+         CHF 5'808
+        </td>
+        <td>
+         CHF 484
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Junge Erwachsene (18–25 Jahre)
+        </td>
+        <td>
+         CHF 4'344
+        </td>
+        <td>
+         CHF 362
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Kinder (bis 17 Jahre)
+        </td>
+        <td>
+         CHF 1'380
+        </td>
+        <td>
+         CHF 115
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 10px;">
+       <small>
+        *Hinweis für Hauseigentümer: Als anerkannte jährliche Nebenkostenpauschale wird bei selbstbewohntem Wohneigentum ein fixer Betrag von CHF 3'480 angerechnet.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Anrechenbare Einnahmen
+      </h3>
+      <p>
+       Hier werden alle Einkünfte nach den rechtskonformen EL-Regeln bewertet:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         Rentenbezug (AHV/IV):
+        </strong>
+        12 Monate reguläre Rentenbezüge. Die gesetzliche 13. AHV-Rente bleibt bei der EL-Berechnung gemäss Bundesbeschluss vollkommen neutralisiert und wird nicht als Einnahme angerechnet.
+       </li>
+       <li>
+        <strong>
+         Erwerbseinkommen:
+        </strong>
+        Bereinigt um den gesetzlichen Freibetrag (CHF 1'500 für Alleinstehende / CHF 2'250 für Ehepaare). Nur 2/3 des den Freibetrag übersteigenden Einkommens werden als Einnahme angerechnet.
+       </li>
+       <li>
+        <strong>
+         Vermögensverzehr:
+        </strong>
+        Ein fixer Anteil des Reinvermögens nach Abzug des Freibetrags:
+        <div class="formula">
+         Vermögensverzehr = max(0, (Reinvermögen - Vermögensfreibetrag) / Divisor)
+        </div>
+        <small>
+         Divisor: Altersrentner (AHV) = 10 | Invalidenrentner (IV) = 15.
+        </small>
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         EL-Freibeträge (Vermögen)
+        </th>
+        <th>
+         Betrag
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Alleinstehende
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Ehepaare
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Selbstbewohntes Wohneigentum (Liegenschaft)
+        </td>
+        <td>
+         CHF 112'500
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Resultat: Gesetzlicher EL-Anspruch
+      </h3>
+      <p>
+       Die EL deckt die mathematische Lücke zwischen Ihren anerkannten Bedürfnissen und den anrechenbaren Einnahmen ab:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Jährliche EL-Rente = [Anerkannte Ausgaben] - [Anrechenbare Einnahmen]
+      </div>
+      <p>
+       <small>
+        Der monatliche Zahlungsbetrag entspricht der jährlichen EL-Rente geteilt durch 12, kaufmännisch gerundet auf den nächsten Franken.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Wichtig: Die Vermögensschwelle (Eintrittsschwelle)
+     </strong>
+     <br/>
+     Ein gesetzlicher Anspruch auf Ergänzungsleistungen besteht nur, wenn das steuerbare Reinvermögen unter
+     <strong>
+      CHF 100'000
+     </strong>
+     (for Alleinstehende) bzw.
+     <strong>
+      CHF 200'000
+     </strong>
+     (für Ehepaare) liegt. Der Wert einer selbstbewohnten Liegenschaft wird bei dieser Eintrittsschwelle nicht mitgerechnet.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Zurück zur Startseite
+     </a>
+     <a class="btn-link" href="https://www.svash.ch/el" target="_blank">
+      Offizielle SVA Schaffhausen Seite
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Quelle: SVA Schaffhausen Richtlinien 2026 &amp; Bundesgesetz über Ergänzungsleistungen (ELG)
+    </p>
+    <p>
+     Bereitgestellt von welfarecalc.ch | Information ohne rechtliche Gewähr.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

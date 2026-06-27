@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>EL Algorithm Canton Vaud (VD) 2026 | Transparent Calculation | welfarecalc.ch</title>
-  <meta
-    content="How are supplementary benefits (EL/LVPC) 2026 calculated in the Canton of Vaud? Discover our transparent algorithm based on official CCVC data."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calculation of Supplementary Benefits Vaud (VD) 2026",
-      "description": "Detailed algorithmic breakdown of the EL and LVPC calculation in the Canton of Vaud.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Check of cantonal waiting periods / years of residence according to LVPC"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determination of recognized expenditure needs (adjusted basic needs 2026, rent maxima by region, health insurance premiums)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determination of creditable income (neutralization of the 13th AHV pension, asset consumption with canton-specific divisors)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calculation of the EL entitlement under strict consideration of the statutory entry threshold"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -236,206 +190,441 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Swiss Benefits Calculator 2026 | 26 Cantons + Dental Bill Checker">
-    <meta property="og:description" content="Calculate AHV, IV, EL and premium reductions across all 26 Swiss cantons. Includes dental bill auditor and rental contract checker. 100% anonymous, runs locally in your browser. 11 languages.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026EL_en.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   SB Vaud 2026 – Supplementary Benefits | welfarecalc.ch
+  </title>
+  <meta content="Calculate Supplementary Benefits in Canton Vaud. Official 2026 data, transparent and understandable. Check for free." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Supplementary Benefits, Canton Vaud, SB, Social benefits, Calculation 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" rel="canonical"/>
+  <meta content="SB Vaud 2026 – Supplementary Benefits | welfarecalc.ch" property="og:title"/>
+  <meta content="Calculate Supplementary Benefits in Canton Vaud. Official 2026 data, transparent and understandable. Check for free." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026EL_en.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="SB Vaud 2026 – Supplementary Benefits | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calculate Supplementary Benefits in Canton Vaud. Official 2026 data, transparent and understandable. Check for free." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Supplementary Benefits Vaud 2026", "description": "Step-by-step guide to calculating Supplementary Benefits in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">OFFICIAL DATA 2026</div>
-      <h1>EL Algorithm: Canton of Vaud (Vaud)</h1>
-      <p>Transparent breakdown of supplementary benefits (EL/LVPC) for the year 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
-        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+   <header>
+    <div class="update-tag">
+     OFFICIAL DATA 2026
     </div>
-    
-    <div class="content">
-      <p>Transparency builds trust. The supplementary benefits (EL) to AHV/IV as well as the cantonal benefits according
+    <h1>
+     EL Algorithm: Canton of Vaud (Vaud)
+    </h1>
+    <p>
+     Transparent breakdown of supplementary benefits (EL/LVPC) for the year 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Quick Check: Are You Eligible?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_en" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Check for free now →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Transparency builds trust. The supplementary benefits (EL) to AHV/IV as well as the cantonal benefits according
         to LVPC in the Canton of Vaud follow a highly regulated structure. Here we document the mathematical and legal
-        logic with which our calculator precisely determines your entitlement.</p>
-      <h2 class="section-title">1. Annual Basic Needs (2026 Federal Standard)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Single Persons</h4>
-          <div class="param-value">CHF 20'100</div>
-          <p><small>Legally mandated federal amount as of January 1, 2025/2026.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Married Couples</h4>
-          <div class="param-value">CHF 30'150</div>
-          <p><small>Harmonized basic needs for cohabiting partners.</small></p>
-        </div>
+        logic with which our calculator precisely determines your entitlement.
+    </p>
+    <h2 class="section-title">
+     1. Annual Basic Needs (2026 Federal Standard)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Single Persons
+      </h4>
+      <div class="param-value">
+       CHF 20'100
       </div>
-      <h2 class="section-title">2. Cantonal Preliminary Check (Waiting Periods according to LVPC)</h2>
-      <p>In the Canton of Vaud, the legal entitlement to cantonal additional benefits depends heavily on nationality and
-        uninterrupted residence in the canton:</p>
-      <table class="data-table">
-        <tr>
-          <th>Person Group</th>
-          <th>Minimum Years of Residence (VD)</th>
-          <th>Special Regulations</th>
-        </tr>
-        <tr>
-          <td>Third-country nationals (Non-EU/EFTA)</td>
-          <td>10 years</td>
-          <td>Reduction to 5 years with proven IV entitlement</td>
-        </tr>
-        <tr>
-          <td>Recognized Refugees &amp; Stateless Persons</td>
-          <td>5 years</td>
-          <td>No further cantonal facilitations</td>
-        </tr>
-        <tr>
-          <td>Swiss Citizens &amp; EU/EFTA Nationals</td>
-          <td>0 years</td>
-          <td>Direct access upon fulfillment of federal criteria</td>
-        </tr>
-      </table>
-      <h2 class="section-title">3. The Calculation Path in Detail</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Recognized Expenditure (Needs Assessment)</h3>
-          <p>First, the system adds up all legally recognized and canton-specific expenditure items:</p>
-          <div class="formula">
-            Basic Needs + Recognized Rent (incl. ancillary costs) + Health Insurance Premium (+ possibly wheelchair
+      <p>
+       <small>
+        Legally mandated federal amount as of January 1, 2025/2026.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Married Couples
+      </h4>
+      <div class="param-value">
+       CHF 30'150
+      </div>
+      <p>
+       <small>
+        Harmonized basic needs for cohabiting partners.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. Cantonal Preliminary Check (Waiting Periods according to LVPC)
+    </h2>
+    <p>
+     In the Canton of Vaud, the legal entitlement to cantonal additional benefits depends heavily on nationality and
+        uninterrupted residence in the canton:
+    </p>
+    <table class="data-table">
+     <tr>
+      <th>
+       Person Group
+      </th>
+      <th>
+       Minimum Years of Residence (VD)
+      </th>
+      <th>
+       Special Regulations
+      </th>
+     </tr>
+     <tr>
+      <td>
+       Third-country nationals (Non-EU/EFTA)
+      </td>
+      <td>
+       10 years
+      </td>
+      <td>
+       Reduction to 5 years with proven IV entitlement
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Recognized Refugees &amp; Stateless Persons
+      </td>
+      <td>
+       5 years
+      </td>
+      <td>
+       No further cantonal facilitations
+      </td>
+     </tr>
+     <tr>
+      <td>
+       Swiss Citizens &amp; EU/EFTA Nationals
+      </td>
+      <td>
+       0 years
+      </td>
+      <td>
+       Direct access upon fulfillment of federal criteria
+      </td>
+     </tr>
+    </table>
+    <h2 class="section-title">
+     3. The Calculation Path in Detail
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Recognized Expenditure (Needs Assessment)
+      </h3>
+      <p>
+       First, the system adds up all legally recognized and canton-specific expenditure items:
+      </p>
+      <div class="formula">
+       Basic Needs + Recognized Rent (incl. ancillary costs) + Health Insurance Premium (+ possibly wheelchair
             supplement)
-          </div>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">Rent Maxima 2026 in the Canton of Vaud (incl.
-            ancillary costs)</h4>
-          <p><small>The rent limits depend on the official postal code regions of the canton. The statutory flat rates
-              already include all ancillary costs:</small></p>
-          <table class="data-table">
-            <tr>
-              <th>Household Size</th>
-              <th>Region 1 (e.g., Lausanne)</th>
-              <th>Region 2 (Medium Centers)</th>
-              <th>Region 3 (Rural / Standard)</th>
-            </tr>
-            <tr>
-              <td>1 Person</td>
-              <td>CHF 18'300 (CHF 1'525/Month)</td>
-              <td>CHF 16'680 (CHF 1'390/Month)</td>
-              <td>CHF 16'680 (CHF 1'390/Month)</td>
-            </tr>
-            <tr>
-              <td>2 Persons</td>
-              <td>CHF 21'720 (CHF 1'810/Month)</td>
-              <td>CHF 20'160 (CHF 1'680/Month)</td>
-              <td>CHF 20'160 (CHF 1'680/Month)</td>
-            </tr>
-            <tr>
-              <td>≥ 5 Persons</td>
-              <td>CHF 25'920 (CHF 2'160/Month)</td>
-              <td>CHF 24'000 (CHF 2'000/Month)</td>
-              <td>CHF 24'000 (CHF 2'000/Month)</td>
-            </tr>
-          </table>
-          <p style="margin-top: 0.5rem;"><small><strong>Vaud Special Rule:</strong> For certified need for
-              wheelchair-accessible housing, the annual rent maximum automatically increases by a flat rate of
-              <strong>CHF 6'900</strong>.</small></p>
-          <h4 style="margin-top: 1rem; color: var(--official-blue);">Health Insurance Premium Regulation</h4>
-          <p><small>Primarily, the effectively paid premium is credited (up to a maximum of CHF 30'000 p.a.). If no
-              value is available or it is negative, the cantonal average premiums apply (e.g., Region 1: CHF 8'388,
-              Region 2: CHF 7'860, Region 3: CHF 7'284 annually per adult).</small></p>
-        </div>
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Creditable Income &amp; Asset Consumption</h3>
-          <p>The adjusted economic income is compared to the expenditure:</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-            <li><strong>AHV/IV Pensions (Strict 13th Pension Neutralization):</strong> Since the introduction of the
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       Rent Maxima 2026 in the Canton of Vaud (incl.
+            ancillary costs)
+      </h4>
+      <p>
+       <small>
+        The rent limits depend on the official postal code regions of the canton. The statutory flat rates
+              already include all ancillary costs:
+       </small>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Household Size
+        </th>
+        <th>
+         Region 1 (e.g., Lausanne)
+        </th>
+        <th>
+         Region 2 (Medium Centers)
+        </th>
+        <th>
+         Region 3 (Rural / Standard)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Person
+        </td>
+        <td>
+         CHF 18'300 (CHF 1'525/Month)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/Month)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/Month)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Persons
+        </td>
+        <td>
+         CHF 21'720 (CHF 1'810/Month)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/Month)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/Month)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         ≥ 5 Persons
+        </td>
+        <td>
+         CHF 25'920 (CHF 2'160/Month)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/Month)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/Month)
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 0.5rem;">
+       <small>
+        <strong>
+         Vaud Special Rule:
+        </strong>
+        For certified need for
+              wheelchair-accessible housing, the annual rent maximum automatically increases by a flat rate of
+        <strong>
+         CHF 6'900
+        </strong>
+        .
+       </small>
+      </p>
+      <h4 style="margin-top: 1rem; color: var(--official-blue);">
+       Health Insurance Premium Regulation
+      </h4>
+      <p>
+       <small>
+        Primarily, the effectively paid premium is credited (up to a maximum of CHF 30'000 p.a.). If no
+              value is available or it is negative, the cantonal average premiums apply (e.g., Region 1: CHF 8'388,
+              Region 2: CHF 7'860, Region 3: CHF 7'284 annually per adult).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Creditable Income &amp; Asset Consumption
+      </h3>
+      <p>
+       The adjusted economic income is compared to the expenditure:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         AHV/IV Pensions (Strict 13th Pension Neutralization):
+        </strong>
+        Since the introduction of the
               13th AHV pension in 2026, the algorithm mathematically filters out this component cleanly. The rule is:
-              <code>Adjusted Pension = (Total AHV Pension / 13) * 12</code>. Other, non-AHV income remains 100%
-              uneducted.</li>
-            <li><strong>Employment Income:</strong> Adjusted for the statutory allowance (CHF 1'300 for single persons /
-              CHF 1'950 for couples), then 2/3 of the remaining amount is standardly credited.</li>
-            <li><strong>Rental Income &amp; Alimony:</strong> Direct crediting according to tax values.</li>
-            <li><strong>Asset Consumption (Cantonal Divisors):</strong> The cantonal home ownership deduction (CHF
+        <code>
+         Adjusted Pension = (Total AHV Pension / 13) * 12
+        </code>
+        . Other, non-AHV income remains 100%
+              uneducted.
+       </li>
+       <li>
+        <strong>
+         Employment Income:
+        </strong>
+        Adjusted for the statutory allowance (CHF 1'300 for single persons /
+              CHF 1'950 for couples), then 2/3 of the remaining amount is standardly credited.
+       </li>
+       <li>
+        <strong>
+         Rental Income &amp; Alimony:
+        </strong>
+        Direct crediting according to tax values.
+       </li>
+       <li>
+        <strong>
+         Asset Consumption (Cantonal Divisors):
+        </strong>
+        The cantonal home ownership deduction (CHF
               112'500 for single persons, CHF 187'500 for married couples for owner-occupied residential property) and
               the statutory allowance are deducted from net assets. The remainder is divided by the specific divisor.
-              Fictitiously transferred assets (waived assets) are included with a return of 0.29%.</li>
-          </ul>
-          <table class="data-table" style="margin-top: 1rem;">
-            <tr>
-              <th>Allowances &amp; Parameters (Federal/VD)</th>
-              <th>Amount / Factor</th>
-            </tr>
-            <tr>
-              <td>Asset Allowance: Single Persons</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>Asset Allowance: Married Couples</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>Asset Allowance: Per Child</td>
-              <td>CHF 15'000</td>
-            </tr>
-            <tr>
-              <td>Standard Asset Divisor (AHV Old-Age Pensioners)</td>
-              <td>10 (1/10 per year as income)</td>
-            </tr>
-            <tr>
-              <td>IV Asset Divisor (Disability Pensioners)</td>
-              <td>15 (1/15 per year as income)</td>
-            </tr>
-            <tr>
-              <td>Institutional Asset Divisor (For stay in an institution)</td>
-              <td>5 (1/5 per year as income)</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Result: EL Calculation</h3>
-          <p>The supplementary benefit closes the exact gap between the two figures:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Annual EL Benefit = Max(0, [Recognized Expenditure] - [Creditable Income])
-          </div>
-          <p><small>The monthly payout amount corresponds to the annual EL divided by 12, rounded commercially to the
-              nearest whole franc.</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Important: The statutory entry threshold (Asset threshold)</strong><br />
-        A legal entitlement to supplementary benefits is absolutely excluded if the taxable net assets (before deduction
-        of allowances, but excluding the value of an owner-occupied property) exceed the following thresholds:
-        <ul style="margin-left: 20px; margin-top: 8px;">
-          <li>Single Persons: <strong>CHF 100'000</strong></li>
-          <li>Married Couples: <strong>CHF 200'000</strong></li>
-        </ul>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Back to Homepage</a>
-        <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">Official CCVD Vaud Page</a>
-      </div>
+              Fictitiously transferred assets (waived assets) are included with a return of 0.29%.
+       </li>
+      </ul>
+      <table class="data-table" style="margin-top: 1rem;">
+       <tr>
+        <th>
+         Allowances &amp; Parameters (Federal/VD)
+        </th>
+        <th>
+         Amount / Factor
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Asset Allowance: Single Persons
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Asset Allowance: Married Couples
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Asset Allowance: Per Child
+        </td>
+        <td>
+         CHF 15'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Standard Asset Divisor (AHV Old-Age Pensioners)
+        </td>
+        <td>
+         10 (1/10 per year as income)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         IV Asset Divisor (Disability Pensioners)
+        </td>
+        <td>
+         15 (1/15 per year as income)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Institutional Asset Divisor (For stay in an institution)
+        </td>
+        <td>
+         5 (1/5 per year as income)
+        </td>
+       </tr>
+      </table>
+     </div>
     </div>
-    <footer>
-      <p>Source: Caisse cantonale de compensation AVS Vaud (CCVC) Guidelines 2026, LVPC &amp; Federal Act on
-        Supplementary Benefits (ELG)</p>
-      <p>Provided by welfarecalc.ch | High-precision algorithmic documentation without legal guarantee.</p>
-    </footer>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Result: EL Calculation
+      </h3>
+      <p>
+       The supplementary benefit closes the exact gap between the two figures:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Annual EL Benefit = Max(0, [Recognized Expenditure] - [Creditable Income])
+      </div>
+      <p>
+       <small>
+        The monthly payout amount corresponds to the annual EL divided by 12, rounded commercially to the
+              nearest whole franc.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Important: The statutory entry threshold (Asset threshold)
+     </strong>
+     <br/>
+     A legal entitlement to supplementary benefits is absolutely excluded if the taxable net assets (before deduction
+        of allowances, but excluding the value of an owner-occupied property) exceed the following thresholds:
+     <ul style="margin-left: 20px; margin-top: 8px;">
+      <li>
+       Single Persons:
+       <strong>
+        CHF 100'000
+       </strong>
+      </li>
+      <li>
+       Married Couples:
+       <strong>
+        CHF 200'000
+       </strong>
+      </li>
+     </ul>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Back to Homepage
+     </a>
+     <a class="btn-link" href="https://www.caisseavsvaud.ch" target="_blank">
+      Official CCVD Vaud Page
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Source: Caisse cantonale de compensation AVS Vaud (CCVC) Guidelines 2026, LVPC &amp; Federal Act on
+        Supplementary Benefits (ELG)
+    </p>
+    <p>
+     Provided by welfarecalc.ch | High-precision algorithmic documentation without legal guarantee.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

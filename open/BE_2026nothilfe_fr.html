@@ -1,57 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorithme d'aide d'urgence Canton de Berne 2026 | Calcul transparent | welfarecalc.ch</title>
-    <meta name="description" content="Comment l'aide d'urgence 2026 est-elle calculée dans le Canton de Berne ? Découvrez notre algorithme transparent basé sur les directives et lois cantonales officielles (EG AIG et AsylG).">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_fr.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_en.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_pt.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_tr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_sq.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_hr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BE_2026nothilfe_de.html">
-
-    <!-- Open Graph / partage social -->
-
-    <meta name="twitter:card" content="summary">
-
-    <!-- Données structurées Schema (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcul de l'aide d'urgence Canton de Berne 2026",
-      "description": "Guide étape par étape pour calculer l'aide d'urgence dans le Canton de Berne avec dégressivité par ménage.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Détermination du nombre total de personnes (adultes + enfants)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Application de la matrice de dégressivité (montant journalier par personne selon la taille du ménage)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Projection mensuelle (30.42 jours) et arrondi à 0.05 CHF"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        /* ============ Style identique aux versions AG/AI ============ */
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- Open Graph / partage social -->
+  <!-- Données structurées Schema (JSON-LD) -->
+  <style>
+   /* ============ Style identique aux versions AG/AI ============ */
         :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
@@ -109,156 +64,322 @@
             .content { padding: 1.5rem; }
             .step-box { padding-left: 3rem; }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
-    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/BE_2026nothilfe_fr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
-
-</head>
-<body>
-<div class="container">
-    <header>
-        <div class="update-tag">DONNÉES OFFICIELLES 2026 · Aide d'urgence BE</div>
-        <h1>Algorithme de l'aide d'urgence : Canton de Berne</h1>
-        <p>Présentation transparente de la logique de calcul selon les directives cantonales 2026 (modèle dégressif)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AE Berne 2026 – Aide d'urgence | welfarecalc.ch
+  </title>
+  <meta content="Calcul de Aide d'urgence dans le canton de Berne. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Aide d'urgence, Canton Berne, AE, Prestations sociales, Calcul 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_fr.html" rel="canonical"/>
+  <meta content="AE Berne 2026 – Aide d'urgence | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcul de Aide d'urgence dans le canton de Berne. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/BE_2026nothilfe_fr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AE Berne 2026 – Aide d'urgence | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcul de Aide d'urgence dans le canton de Berne. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BE_2026nothilfe_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Aide d'urgence Berne 2026", "description": "Step-by-step guide to calculating Aide d'urgence in Canton Berne.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine daily emergency aid rate per adult"}, {"@type": "HowToStep", "position": 2, "text": "Add allowances for children with degression"}, {"@type": "HowToStep", "position": 3, "text": "Project monthly amount with rounding"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     DONNÉES OFFICIELLES 2026 · Aide d'urgence BE
     </div>
-
-    <div class="content">
-        <p>La confiance grâce à la transparence. L'aide d'urgence pour les personnes ayant fait l'objet d'une décision de renvoi est calculée dans le canton de Berne selon un modèle dégressif par ménage. Nous dévoilons ici l'algorithme complet pour l'année 2026 – basé sur l'EG AIG et la loi sur l'asile ainsi que les informations spécialisées du Bureau de coordination pour les questions d'asile et de réfugiés.</p>
-
-        <h2 class="section-title">1. Paramètres système & tarifs 2026</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Montant journalier de base (N ≤ 3)</h4>
-                <div class="param-value">CHF 10.00 / jour par personne</div>
-                <p><small>Pour les ménages de 1 à 3 personnes (pas de dégressivité).</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Dégressivité dès la 4e personne</h4>
-                <div class="param-value">- CHF 0.50 par personne supplémentaire</div>
-                <p><small>À partir de 4 personnes, le tarif journalier par personne diminue progressivement.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Tarif limite (N ≥ 8)</h4>
-                <div class="param-value">+ CHF 4.00 par personne supplémentaire</div>
-                <p><small>Base pour 7 personnes CHF 56.00, puis augmentation dégressive.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. La méthode de calcul (étape par étape)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Déterminer la taille du ménage</h3>
-                <p>Le calcul repose sur le nombre total de personnes bénéficiant d’un soutien (adultes + enfants) dans la même unité d’hébergement. Les enfants sont comptés comme des adultes, car le canton de Berne applique un système forfaitaire dégressif pour l’aide d’urgence.</p>
-                <div class="formula">
-                    N = nombre d’adultes + nombre d’enfants
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Appliquer la matrice de dégressivité (montant journalier)</h3>
-                <p>Selon la taille du ménage, le montant total quotidien est calculé selon la règle publique suivante :</p>
-                <div class="formula">
-                    Si N ≤ 3 : montant journalier = N × 10.00<br>
-                    Si 4 ≤ N ≤ 7 : montant journalier = N × (10.00 - (N - 3) × 0.50)<br>
-                    Si N ≥ 8 : montant journalier = 56.00 + (N - 7) × 4.00
-                </div>
-                <p><small>Exemple 4 personnes → 4 × CHF 9.50 = CHF 38.00/jour ; 5 personnes → 5 × CHF 9.00 = CHF 45.00/jour ; 8 personnes → CHF 56.00 + 4.00 = CHF 60.00/jour.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Projection mensuelle et arrondi</h3>
-                <p>Le montant total journalier est multiplié par 30.42 (nombre moyen de jours par mois). Ensuite, l’arrondi commercial à 0.05 CHF (5 centimes) est appliqué, comme c’est l’usage dans l’exécution de l’aide sociale suisse.</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Montant mensuel = ARRONDI( (Montant journalier total × 30.42) ; 0.05 )
-                </div>
-                <table class="data-table">
-                    <thead><tr><th>Règle d’arrondi</th><th>Exemple</th></tr></thead>
-                    <tbody>
-                        <tr><td>À 5 centimes près (0.05 CHF)</td><td>247.83 → 247.85 CHF</td></tr>
-                        <tr><td>Arrondi inférieur sous 0.025</td><td>312.52 → 312.50 CHF</td></tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Informations complémentaires importantes concernant l’aide d’urgence dans le canton de Berne :</strong><br>
-            • L’aide d’urgence est principalement fournie sous forme de prestations en nature (logement, nourriture) ; le montant en espèces est réduit au minimum.<br>
-            • Dans le canton de Berne, pour les ménages de plus de 7 personnes, une règle spéciale s’applique (base pour 7 personnes CHF 56.00/jour, puis CHF 4.00 par personne supplémentaire).<br>
-            • Les personnes sans autorisation de séjour avec décision de renvoi exécutoire n’ont droit qu’à l’aide d’urgence, et non à l’aide sociale ordinaire.
-        </div>
-
-        <h2 class="section-title">3. Sources des données & bases juridiques</h2>
-        <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-            <li><strong>Droit cantonal :</strong> Loi sur l’aide sociale dans le domaine de l’asile et des réfugiés (LSA) et loi d’introduction à la loi fédérale sur les étrangers et l’intégration ainsi qu’à la loi sur l’asile (EG AIG et AsylG).</li>
-            <li><strong>Pratique d’exécution :</strong> Directives et informations spécialisées du Bureau de coordination pour les questions d’asile et de réfugiés du canton de Berne (KKF).</li>
-            <li><strong>Subsidiarité :</strong> Les soins médicaux de base et l’hébergement matériel (prestations en nature) sont directement fournis par des organisations mandatées au sein du centre de retour.</li>
-            <li><strong>WelfareCalc – État des données :</strong> Janvier 2026, tous les paramètres vérifiés par les autorités.</li>
-        </ul>
-
-        <!-- Démo interactive (calculateur) -->
-        <div class="demo-card">
-            <div class="demo-header">🧪 Vérification transparente : Testez le calculateur d’aide d’urgence du canton de Berne</div>
-            <div class="demo-body">
-                <p>Simulez le calcul selon l’algorithme officiel (modèle dégressif) pour le canton de Berne (2026).</p>
-                <div class="input-group">
-                    <div class="input-item">
-                        <label>👤 Nombre d’adultes</label>
-                        <input type="number" id="adultsCount" value="1" min="1" step="1">
-                    </div>
-                    <div class="input-item">
-                        <label>🧒 Nombre d’enfants (0-17 ans)</label>
-                        <input type="number" id="childrenCount" value="0" min="0" step="1">
-                    </div>
-                </div>
-                <button class="demo-btn" id="runCalcBtn">Lancer l’algorithme</button>
-                
-                <div id="liveResultPanel" class="result-panel">
-                    <h3>📐 Preuve de calcul (selon étapes 1–3)</h3>
-                    <div id="stepsDetail" class="calc-steps"></div>
-                    <div><span class="final-amount" id="monthlyAmountDisplay">0.00 CHF</span> <span style="font-size: 0.9rem;">(montant mensuel de l’aide d’urgence, arrondi à 5 centimes)</span></div>
-                    <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">*Basé sur un hébergement collectif, dégressivité par ménage. Le calcul définitif est effectué par l’autorité compétente.</p>
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 2rem;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">← Page d’accueil</a>
-            <a href="https://www.be.ch/fr/start" target="_blank" class="btn-link">Site officiel du canton de Berne</a>
-            <a href="https://www.skos.ch" target="_blank" class="btn-link">Directives CSIAS</a>
-        </div>
+    <h1>
+     Algorithme de l'aide d'urgence : Canton de Berne
+    </h1>
+    <p>
+     Présentation transparente de la logique de calcul selon les directives cantonales 2026 (modèle dégressif)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Vérification rapide : Avez-vous droit ?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_fr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Vérifier gratuitement →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La confiance grâce à la transparence. L'aide d'urgence pour les personnes ayant fait l'objet d'une décision de renvoi est calculée dans le canton de Berne selon un modèle dégressif par ménage. Nous dévoilons ici l'algorithme complet pour l'année 2026 – basé sur l'EG AIG et la loi sur l'asile ainsi que les informations spécialisées du Bureau de coordination pour les questions d'asile et de réfugiés.
+    </p>
+    <h2 class="section-title">
+     1. Paramètres système &amp; tarifs 2026
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Montant journalier de base (N ≤ 3)
+      </h4>
+      <div class="param-value">
+       CHF 10.00 / jour par personne
+      </div>
+      <p>
+       <small>
+        Pour les ménages de 1 à 3 personnes (pas de dégressivité).
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Dégressivité dès la 4e personne
+      </h4>
+      <div class="param-value">
+       - CHF 0.50 par personne supplémentaire
+      </div>
+      <p>
+       <small>
+        À partir de 4 personnes, le tarif journalier par personne diminue progressivement.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Tarif limite (N ≥ 8)
+      </h4>
+      <div class="param-value">
+       + CHF 4.00 par personne supplémentaire
+      </div>
+      <p>
+       <small>
+        Base pour 7 personnes CHF 56.00, puis augmentation dégressive.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Source : Canton de Berne – EG AIG et AsylG, directives KKF Asile et réfugiés 2026</p>
-        <p>Fourni par welfarecalc.ch | Ces informations servent à la transparence et ne remplacent pas un conseil juridique contraignant.</p>
-        <p>© 2026 welfarecalc.ch – Algorithmes ouverts pour la Suisse</p>
-    </footer>
-</div>
-
-<script>
-    (function() {
+    <h2 class="section-title">
+     2. La méthode de calcul (étape par étape)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Déterminer la taille du ménage
+      </h3>
+      <p>
+       Le calcul repose sur le nombre total de personnes bénéficiant d’un soutien (adultes + enfants) dans la même unité d’hébergement. Les enfants sont comptés comme des adultes, car le canton de Berne applique un système forfaitaire dégressif pour l’aide d’urgence.
+      </p>
+      <div class="formula">
+       N = nombre d’adultes + nombre d’enfants
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Appliquer la matrice de dégressivité (montant journalier)
+      </h3>
+      <p>
+       Selon la taille du ménage, le montant total quotidien est calculé selon la règle publique suivante :
+      </p>
+      <div class="formula">
+       Si N ≤ 3 : montant journalier = N × 10.00
+       <br/>
+       Si 4 ≤ N ≤ 7 : montant journalier = N × (10.00 - (N - 3) × 0.50)
+       <br/>
+       Si N ≥ 8 : montant journalier = 56.00 + (N - 7) × 4.00
+      </div>
+      <p>
+       <small>
+        Exemple 4 personnes → 4 × CHF 9.50 = CHF 38.00/jour ; 5 personnes → 5 × CHF 9.00 = CHF 45.00/jour ; 8 personnes → CHF 56.00 + 4.00 = CHF 60.00/jour.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Projection mensuelle et arrondi
+      </h3>
+      <p>
+       Le montant total journalier est multiplié par 30.42 (nombre moyen de jours par mois). Ensuite, l’arrondi commercial à 0.05 CHF (5 centimes) est appliqué, comme c’est l’usage dans l’exécution de l’aide sociale suisse.
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 15px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Montant mensuel = ARRONDI( (Montant journalier total × 30.42) ; 0.05 )
+      </div>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Règle d’arrondi
+         </th>
+         <th>
+          Exemple
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          À 5 centimes près (0.05 CHF)
+         </td>
+         <td>
+          247.83 → 247.85 CHF
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Arrondi inférieur sous 0.025
+         </td>
+         <td>
+          312.52 → 312.50 CHF
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Informations complémentaires importantes concernant l’aide d’urgence dans le canton de Berne :
+     </strong>
+     <br/>
+     • L’aide d’urgence est principalement fournie sous forme de prestations en nature (logement, nourriture) ; le montant en espèces est réduit au minimum.
+     <br/>
+     • Dans le canton de Berne, pour les ménages de plus de 7 personnes, une règle spéciale s’applique (base pour 7 personnes CHF 56.00/jour, puis CHF 4.00 par personne supplémentaire).
+     <br/>
+     • Les personnes sans autorisation de séjour avec décision de renvoi exécutoire n’ont droit qu’à l’aide d’urgence, et non à l’aide sociale ordinaire.
+    </div>
+    <h2 class="section-title">
+     3. Sources des données &amp; bases juridiques
+    </h2>
+    <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+     <li>
+      <strong>
+       Droit cantonal :
+      </strong>
+      Loi sur l’aide sociale dans le domaine de l’asile et des réfugiés (LSA) et loi d’introduction à la loi fédérale sur les étrangers et l’intégration ainsi qu’à la loi sur l’asile (EG AIG et AsylG).
+     </li>
+     <li>
+      <strong>
+       Pratique d’exécution :
+      </strong>
+      Directives et informations spécialisées du Bureau de coordination pour les questions d’asile et de réfugiés du canton de Berne (KKF).
+     </li>
+     <li>
+      <strong>
+       Subsidiarité :
+      </strong>
+      Les soins médicaux de base et l’hébergement matériel (prestations en nature) sont directement fournis par des organisations mandatées au sein du centre de retour.
+     </li>
+     <li>
+      <strong>
+       WelfareCalc – État des données :
+      </strong>
+      Janvier 2026, tous les paramètres vérifiés par les autorités.
+     </li>
+    </ul>
+    <!-- Démo interactive (calculateur) -->
+    <div class="demo-card">
+     <div class="demo-header">
+      🧪 Vérification transparente : Testez le calculateur d’aide d’urgence du canton de Berne
+     </div>
+     <div class="demo-body">
+      <p>
+       Simulez le calcul selon l’algorithme officiel (modèle dégressif) pour le canton de Berne (2026).
+      </p>
+      <div class="input-group">
+       <div class="input-item">
+        <label>
+         👤 Nombre d’adultes
+        </label>
+        <input id="adultsCount" min="1" step="1" type="number" value="1"/>
+       </div>
+       <div class="input-item">
+        <label>
+         🧒 Nombre d’enfants (0-17 ans)
+        </label>
+        <input id="childrenCount" min="0" step="1" type="number" value="0"/>
+       </div>
+      </div>
+      <button class="demo-btn" id="runCalcBtn">
+       Lancer l’algorithme
+      </button>
+      <div class="result-panel" id="liveResultPanel">
+       <h3>
+        📐 Preuve de calcul (selon étapes 1–3)
+       </h3>
+       <div class="calc-steps" id="stepsDetail">
+       </div>
+       <div>
+        <span class="final-amount" id="monthlyAmountDisplay">
+         0.00 CHF
+        </span>
+        <span style="font-size: 0.9rem;">
+         (montant mensuel de l’aide d’urgence, arrondi à 5 centimes)
+        </span>
+       </div>
+       <p style="margin-top: 0.8rem; font-size: 0.85rem; color: #475569;">
+        *Basé sur un hébergement collectif, dégressivité par ménage. Le calcul définitif est effectué par l’autorité compétente.
+       </p>
+      </div>
+     </div>
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      ← Page d’accueil
+     </a>
+     <a class="btn-link" href="https://www.be.ch/fr/start" target="_blank">
+      Site officiel du canton de Berne
+     </a>
+     <a class="btn-link" href="https://www.skos.ch" target="_blank">
+      Directives CSIAS
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Source : Canton de Berne – EG AIG et AsylG, directives KKF Asile et réfugiés 2026
+    </p>
+    <p>
+     Fourni par welfarecalc.ch | Ces informations servent à la transparence et ne remplacent pas un conseil juridique contraignant.
+    </p>
+    <p>
+     © 2026 welfarecalc.ch – Algorithmes ouverts pour la Suisse
+    </p>
+   </footer>
+  </div>
+  <script>
+   (function() {
         // Calcul selon la matrice de dégressivité BE (identique à l'original)
         function computeBENothilfe(adults, children) {
             const totalPersons = adults + children;
@@ -340,6 +461,6 @@
             childrenField.addEventListener('input', autoUpdate);
         }
     })();
-</script>
-</body>
+  </script>
+ </body>
 </html>

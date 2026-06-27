@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Algorithme PC Canton de Zoug 2026 | Calcul transparent | welfarecalc.ch</title>
-  <meta
-    content="Comment sont calculées les prestations complémentaires (PC) 2026 dans le canton de Zoug ? Découvrez notre algorithme transparent basé sur les données officielles de l'AK Zoug."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcul des Prestations Complémentaires Zoug 2026",
-      "description": "Ventilation algorithmique détaillée du calcul des PC dans le canton de Zoug (Région 2).",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Détermination des besoins de dépenses reconnus (besoin de base, loyer région 2, prime d'assurance maladie)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Imputation des revenus sous stricte neutralisation de la 13e rente AVS et consommation de la fortune"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcul de la rente PC (Dépenses reconnues moins Revenus imputables)"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -228,187 +186,378 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
-    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/ZG_2026EL_fr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   PC Zoug 2026 – Prestations complémentaires | welfarecalc.ch
+  </title>
+  <meta content="Calcul de Prestations complémentaires dans le canton de Zoug. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prestations complémentaires, Canton Zoug, PC, Prestations sociales, Calcul 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" rel="canonical"/>
+  <meta content="PC Zoug 2026 – Prestations complémentaires | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcul de Prestations complémentaires dans le canton de Zoug. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PC Zoug 2026 – Prestations complémentaires | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcul de Prestations complémentaires dans le canton de Zoug. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/ZG_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Prestations complémentaires Zoug 2026", "description": "Step-by-step guide to calculating Prestations complémentaires in Canton Zoug.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
-      <h1>Algorithme PC : Canton de Zoug</h1>
-      <p>Ventilation transparente des Prestations Complémentaires (PC) pour l'année 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+   <header>
+    <div class="update-tag">
+     DONNÉES OFFICIELLES 2026
     </div>
-    
-    <div class="content">
-      <p>La transparence crée la confiance. Les Prestations Complémentaires (PC) à l'AVS/AI sont un système précisément
+    <h1>
+     Algorithme PC : Canton de Zoug
+    </h1>
+    <p>
+     Ventilation transparente des Prestations Complémentaires (PC) pour l'année 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Vérification rapide : Avez-vous droit ?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_fr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Vérifier gratuitement →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La transparence crée la confiance. Les Prestations Complémentaires (PC) à l'AVS/AI sont un système précisément
         réglementé. Nous documentons ici mathématiquement et juridiquement avec exactitude comment notre calculateur
         détermine votre droit dans le canton de Zoug conformément à la LPC, l'OPC et les directives de la Caisse de
-        compensation de Zoug (AK Zoug).</p>
-      <h2 class="section-title">1. Besoin de base annuel (2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Personne seule</h4>
-          <div class="param-value">CHF 20'670</div>
-          <p><small>Montant forfaitaire uniforme au niveau fédéral pour les besoins vitaux.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Couples mariés</h4>
-          <div class="param-value">CHF 31'005</div>
-          <p><small>Besoin de base uniforme au niveau fédéral pour les couples mariés.</small></p>
-        </div>
+        compensation de Zoug (AK Zoug).
+    </p>
+    <h2 class="section-title">
+     1. Besoin de base annuel (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Personne seule
+      </h4>
+      <div class="param-value">
+       CHF 20'670
       </div>
-      <h2 class="section-title">2. Le mode de calcul dans le canton de Zoug</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Dépenses reconnues (Besoin)</h3>
-          <p>La somme mathématique des postes de dépenses légalement reconnus :</p>
-          <div class="formula">
-            Dépenses totales = Besoin de base + Loyer reconnu + Prime d'assurance maladie
-          </div>
-          <h4>Loyer reconnu (Le canton de Zoug est entièrement considéré comme Région 2)</h4>
-          <table class="data-table">
-            <tr>
-              <th>Taille du ménage</th>
-              <th>Montant maximum mensuel</th>
-              <th>Limite annuelle p.a.</th>
-            </tr>
-            <tr>
-              <td>1 personne</td>
-              <td>CHF 1'525</td>
-              <td>CHF 18'300</td>
-            </tr>
-            <tr>
-              <td>2 personnes</td>
-              <td>CHF 1'810</td>
-              <td>CHF 21'720</td>
-            </tr>
-            <tr>
-              <td>3 personnes</td>
-              <td>CHF 1'980</td>
-              <td>CHF 23'760</td>
-            </tr>
-            <tr>
-              <td>4+ personnes</td>
-              <td>CHF 2'160</td>
-              <td>CHF 25'920</td>
-            </tr>
-          </table>
-          <p><small>*Règlements spéciaux : Pour les colocations (WG), un montant maximum fixe de CHF 905/mois
-              s'applique. Pour la propriété du logement, un forfait de frais accessoires de CHF 3'480/an est
-              imputé.</small></p>
-          <h4 style="margin-top: 1.2rem;">Primes d'assurance maladie reconnues (Logique de priorité)</h4>
-          <p>Notre algorithme calcule l'assurance maladie strictement selon le principe du minimum légal :</p>
-          <div class="formula">
-            Prime imputée = Math.min(Prime réelle, Prime moyenne cantonale)
-          </div>
-          <table class="data-table">
-            <tr>
-              <th>Groupe d'âge (Canton de Zoug 2026)</th>
-              <th>Prime moyenne cantonale p.a.</th>
-            </tr>
-            <tr>
-              <td>Adultes (dès 26 ans)</td>
-              <td>CHF 5'028</td>
-            </tr>
-            <tr>
-              <td>Jeunes adultes (11-25 ans)</td>
-              <td>CHF 3'636</td>
-            </tr>
-            <tr>
-              <td>Enfants (0-10 ans)</td>
-              <td>CHF 1'194</td>
-            </tr>
-          </table>
-        </div>
+      <p>
+       <small>
+        Montant forfaitaire uniforme au niveau fédéral pour les besoins vitaux.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Couples mariés
+      </h4>
+      <div class="param-value">
+       CHF 31'005
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Revenus imputables</h3>
-          <p>La comparaison des revenus ajustés se fait selon des directives légales claires :</p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; margin-bottom: 1rem;">
-            <li><strong>13e rente AVS (Neutralisation) :</strong> Étant donné que la 13e rente AVS ne doit pas avoir
-              d'effet sur les PC à partir de 2026, notre algorithme impute les revenus de rente strictement sur la base
-              d'un maximum de 12 rentes mensuelles (neutralisation légale complète).</li>
-            <li><strong>Revenu d'activité lucrative :</strong> Imputation des 2/3 du montant qui dépasse le montant
-              exonéré (CHF 1'300 pour une personne seule / CHF 1'950 pour les couples mariés).</li>
-            <li><strong>Consommation de la fortune :</strong> (Fortune nette ajustée moins montant exonéré) divisé par
-              le diviseur 10 (pour les rentiers AVS) ou 15 (pour les rentiers AI).</li>
-          </ul>
-          <table class="data-table">
-            <tr>
-              <th>Montants exonérés PC pour la consommation de fortune</th>
-              <th>Montant exonéré</th>
-            </tr>
-            <tr>
-              <td>Personnes seules</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>Couples mariés</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>Immeuble occupé par le propriétaire (Standard)</td>
-              <td>CHF 112'500</td>
-            </tr>
-            <tr>
-              <td>Immeuble occupé par le propriétaire (pour couples mariés / allocation pour impotent)</td>
-              <td>CHF 187'500</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Résultat : Calcul de la rente PC</h3>
-          <p>S'il existe un découvert, le droit annuel en découle :</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            PC annuelle = Math.max(0, [Dépenses reconnues] - [Revenus imputables])
-          </div>
-          <p>Le montant de versement mensuel correspond à la PC annuelle divisée par 12, arrondi commercialement au
-            franc supérieur.</p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Important : Le seuil de fortune légal (seuil d'octroi)</strong><br />
-        Un droit général aux Prestations Complémentaires est légalement exclu si la fortune nette (sans la valeur d'un
-        immeuble occupé par le propriétaire) dépasse les seuils suivants :
-        <ul style="margin-left: 20px; margin-top: 5px;">
-          <li><strong>CHF 100'000</strong> pour les personnes seules</li>
-          <li><strong>CHF 200'000</strong> pour les couples mariés</li>
-        </ul>
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Retour à la page d'accueil</a>
-        <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/ergaenzungsleistungen" target="_blank">Site
-          officiel AK Zoug</a>
-      </div>
+      <p>
+       <small>
+        Besoin de base uniforme au niveau fédéral pour les couples mariés.
+       </small>
+      </p>
+     </div>
     </div>
-    <footer>
-      <p>Source : Office fédéral des assurances sociales (OFAS), Loi fédérale sur les prestations complémentaires (LPC)
-        &amp; directives cantonales de la Caisse de compensation de Zoug (AK Zoug) 2026</p>
-      <p>Fourni par welfarecalc.ch | Algorithmes transparents sans garantie légale.</p>
-    </footer>
+    <h2 class="section-title">
+     2. Le mode de calcul dans le canton de Zoug
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Dépenses reconnues (Besoin)
+      </h3>
+      <p>
+       La somme mathématique des postes de dépenses légalement reconnus :
+      </p>
+      <div class="formula">
+       Dépenses totales = Besoin de base + Loyer reconnu + Prime d'assurance maladie
+      </div>
+      <h4>
+       Loyer reconnu (Le canton de Zoug est entièrement considéré comme Région 2)
+      </h4>
+      <table class="data-table">
+       <tr>
+        <th>
+         Taille du ménage
+        </th>
+        <th>
+         Montant maximum mensuel
+        </th>
+        <th>
+         Limite annuelle p.a.
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 personne
+        </td>
+        <td>
+         CHF 1'525
+        </td>
+        <td>
+         CHF 18'300
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 personnes
+        </td>
+        <td>
+         CHF 1'810
+        </td>
+        <td>
+         CHF 21'720
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 personnes
+        </td>
+        <td>
+         CHF 1'980
+        </td>
+        <td>
+         CHF 23'760
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4+ personnes
+        </td>
+        <td>
+         CHF 2'160
+        </td>
+        <td>
+         CHF 25'920
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Règlements spéciaux : Pour les colocations (WG), un montant maximum fixe de CHF 905/mois
+              s'applique. Pour la propriété du logement, un forfait de frais accessoires de CHF 3'480/an est
+              imputé.
+       </small>
+      </p>
+      <h4 style="margin-top: 1.2rem;">
+       Primes d'assurance maladie reconnues (Logique de priorité)
+      </h4>
+      <p>
+       Notre algorithme calcule l'assurance maladie strictement selon le principe du minimum légal :
+      </p>
+      <div class="formula">
+       Prime imputée = Math.min(Prime réelle, Prime moyenne cantonale)
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         Groupe d'âge (Canton de Zoug 2026)
+        </th>
+        <th>
+         Prime moyenne cantonale p.a.
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Adultes (dès 26 ans)
+        </td>
+        <td>
+         CHF 5'028
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Jeunes adultes (11-25 ans)
+        </td>
+        <td>
+         CHF 3'636
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Enfants (0-10 ans)
+        </td>
+        <td>
+         CHF 1'194
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Revenus imputables
+      </h3>
+      <p>
+       La comparaison des revenus ajustés se fait selon des directives légales claires :
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; margin-bottom: 1rem;">
+       <li>
+        <strong>
+         13e rente AVS (Neutralisation) :
+        </strong>
+        Étant donné que la 13e rente AVS ne doit pas avoir
+              d'effet sur les PC à partir de 2026, notre algorithme impute les revenus de rente strictement sur la base
+              d'un maximum de 12 rentes mensuelles (neutralisation légale complète).
+       </li>
+       <li>
+        <strong>
+         Revenu d'activité lucrative :
+        </strong>
+        Imputation des 2/3 du montant qui dépasse le montant
+              exonéré (CHF 1'300 pour une personne seule / CHF 1'950 pour les couples mariés).
+       </li>
+       <li>
+        <strong>
+         Consommation de la fortune :
+        </strong>
+        (Fortune nette ajustée moins montant exonéré) divisé par
+              le diviseur 10 (pour les rentiers AVS) ou 15 (pour les rentiers AI).
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Montants exonérés PC pour la consommation de fortune
+        </th>
+        <th>
+         Montant exonéré
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Personnes seules
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Couples mariés
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Immeuble occupé par le propriétaire (Standard)
+        </td>
+        <td>
+         CHF 112'500
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Immeuble occupé par le propriétaire (pour couples mariés / allocation pour impotent)
+        </td>
+        <td>
+         CHF 187'500
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Résultat : Calcul de la rente PC
+      </h3>
+      <p>
+       S'il existe un découvert, le droit annuel en découle :
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       PC annuelle = Math.max(0, [Dépenses reconnues] - [Revenus imputables])
+      </div>
+      <p>
+       Le montant de versement mensuel correspond à la PC annuelle divisée par 12, arrondi commercialement au
+            franc supérieur.
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Important : Le seuil de fortune légal (seuil d'octroi)
+     </strong>
+     <br/>
+     Un droit général aux Prestations Complémentaires est légalement exclu si la fortune nette (sans la valeur d'un
+        immeuble occupé par le propriétaire) dépasse les seuils suivants :
+     <ul style="margin-left: 20px; margin-top: 5px;">
+      <li>
+       <strong>
+        CHF 100'000
+       </strong>
+       pour les personnes seules
+      </li>
+      <li>
+       <strong>
+        CHF 200'000
+       </strong>
+       pour les couples mariés
+      </li>
+     </ul>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Retour à la page d'accueil
+     </a>
+     <a class="btn-link" href="https://www.akzug.ch/dienstleistungen/ergaenzungsleistungen" target="_blank">
+      Site
+          officiel AK Zoug
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Source : Office fédéral des assurances sociales (OFAS), Loi fédérale sur les prestations complémentaires (LPC)
+        &amp; directives cantonales de la Caisse de compensation de Zoug (AK Zoug) 2026
+    </p>
+    <p>
+     Fourni par welfarecalc.ch | Algorithmes transparents sans garantie légale.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

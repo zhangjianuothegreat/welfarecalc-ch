@@ -1,48 +1,16 @@
 <!DOCTYPE html>
-<html lang="it-CH">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- TRANSLATE: Meta Tags -->
-    <title>Consulta Prestazioni Sociali | welfarecalc.ch</title>
-    <meta name="description"
-        content="Trova l'algoritmo di calcolo ufficiale per l'assistenza sociale (SH), le prestazioni complementari (EL), gli assegni familiari (FA), la riduzione individuale dei premi (IPV) e l'aiuto d'emergenza (NH) nel tuo Cantone. Trasparente e conforme alla protezione dei dati.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
-    <link rel="alternate" hreflang="de-ch" href="https://www.welfarecalc.ch/open/2026open_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/2026open_en.html">
-    <link rel="alternate" hreflang="fr-ch" href="https://www.welfarecalc.ch/open/2026open_fr.html">
-    <link rel="alternate" hreflang="it-ch" href="https://www.welfarecalc.ch/open/2026open_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/2026open_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/2026open_pt.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/2026open_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/2026open_hr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/2026open_sq.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/2026open_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/2026open_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/2026open_it.html">
-
-    <!-- Open Graph -->
-
-    <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "welfarecalc.ch",
-      "url": "https://www.welfarecalc.ch",
-      "inLanguage": "it"
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="it">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- TRANSLATE: Meta Tags -->
+  <meta content="index, follow" name="robots"/>
+  <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
+  <!-- Canonical Tag -->
+  <!-- Open Graph -->
+  <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -293,154 +261,295 @@
                 padding: 1.5rem;
             }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
-    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/2026open_it.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="it">
-
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <!-- TRANSLATE: Header Section -->
-            <div class="update-tag">🔍 ALGORITMI TRASPARENTI 2026</div>
-            <h1>Consulta delle Prestazioni Sociali Svizzere</h1>
-            <p>Trova l'algoritmo di calcolo ufficiale per il tuo Cantone</p>
-        </header>
-
-        <div class="hero-search">
-            <div class="search-card">
-                <!-- Dropdown 1: Kanton -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="state">📍 1. Seleziona il Cantone</label>
-                    <select id="state">
-                        <option value="">📌 Seleziona Cantone</option>
-                        <option value="AG">Argovia (AG)</option>
-                        <option value="AI">Appenzello Interno (AI)</option>
-                        <option value="AR">Appenzello Esterno (AR)</option>
-                        <option value="BE">Berna (BE)</option>
-                        <option value="BL">Basilea Campagna (BL)</option>
-                        <option value="BS">Basilea Città (BS)</option>
-                        <option value="FR">Friburgo (FR)</option>
-                        <option value="GE">Ginevra (GE)</option>
-                        <option value="GL">Glarona (GL)</option>
-                        <option value="GR">Grigioni (GR)</option>
-                        <option value="JU">Giura (JU)</option>
-                        <option value="LU">Lucerna (LU)</option>
-                        <option value="NE">Neuchâtel (NE)</option>
-                        <option value="NW">Nidvaldo (NW)</option>
-                        <option value="OW">Obvaldo (OW)</option>
-                        <option value="SG">San Gallo (SG)</option>
-                        <option value="SH">Sciaffusa (SH)</option>
-                        <option value="SO">Soletta (SO)</option>
-                        <option value="SZ">Svitto (SZ)</option>
-                        <option value="TG">Turgovia (TG)</option>
-                        <option value="TI">Ticino (TI)</option>
-                        <option value="UR">Uri (UR)</option>
-                        <option value="VD">Vaud (VD)</option>
-                        <option value="VS">Vallese (VS)</option>
-                        <option value="ZG">Zugo (ZG)</option>
-                        <option value="ZH">Zurigo (ZH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="state-error" class="error-text">⚠️ Seleziona un Cantone.</div>
-                </div>
-
-                <!-- Dropdown 2: Leistungsart -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="welfare">📋 2. Seleziona la categoria della prestazione sociale</label>
-                    <select id="welfare">
-                        <option value="">📋 Seleziona tipo di prestazione</option>
-                        <option value="SH">🏠 Assistenza sociale (SH)</option>
-                        <option value="IPV">💊 Riduzione individuale dei premi (IPV)</option>
-                        <option value="EL">👴 Prestazioni complementari (EL)</option>
-                        <option value="FA">👨‍👩‍👧 Assegni familiari (FA)</option>
-                        <option value="nothilfe">🚨 Aiuto d'emergenza (NH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="welfare-error" class="error-text">⚠️ Seleziona un tipo di prestazione.</div>
-                </div>
-
-                <div class="button-group">
-                    <!-- TRANSLATE -->
-                    <button class="action-btn search-button-style" onclick="searchAndRedirect()">🔍 Cerca & apri
-                        algoritmo</button>
-                    <a href="https://www.welfarecalc.ch" class="action-btn home-button-style">🏠 Torna alla home</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-below">
-            <!-- Info Box -->
-            <div class="info-box">
-                <!-- TRANSLATE: Info Box Content -->
-                <p>🇨🇭 <strong>Informazioni su welfarecalc.ch</strong></p>
-                <p>Siamo un team di ingegneri e sviluppatori con sede in Svizzera. Il nostro obiettivo è rendere i
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   Ricerca prestazioni sociali | 26 Algoritmi cantonali | welfarecalc.ch
+  </title>
+  <meta content="Trova l'algoritmo di calcolo ufficiale per l'assistenza sociale (SH), le prestazioni complementari (EL), gli assegni familiari (FA), la RIP e l'aiuto d'emergenza nel tuo Cantone. Trasparente e conforme alla privacy." name="description"/>
+  <meta content="prestazioni sociali, algoritmi, Cantone, SH, EL, FA, RIP, aiuto d'emergenza, assistenza sociale, prestazioni complementari, assegni familiari, riduzione dei premi, welfarecalc.ch" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_it.html" rel="canonical"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="x-default" rel="alternate"/>
+  <meta content="Ricerca prestazioni sociali | 26 Algoritmi cantonali | welfarecalc.ch" property="og:title"/>
+  <meta content="Trova l'algoritmo di calcolo ufficiale per l'assistenza sociale (SH), le prestazioni complementari (EL), gli assegni familiari (FA), la RIP e l'aiuto d'emergenza nel tuo Cantone." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/2026open_it.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="it_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Ricerca prestazioni sociali | 26 Algoritmi cantonali | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Trova l'algoritmo di calcolo ufficiale per l'assistenza sociale (SH), le prestazioni complementari (EL), gli assegni familiari (FA), la RIP e l'aiuto d'emergenza nel tuo Cantone." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "WebSite", "name": "welfarecalc.ch", "url": "https://www.welfarecalc.ch", "description": "Trova l'algoritmo di calcolo ufficiale per l'assistenza sociale (SH), le prestazioni complementari (EL), gli assegni familiari (FA), la RIP e l'aiuto d'emergenza nel tuo Cantone. Trasparente e conforme alla privacy.", "inLanguage": "it"}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <!-- TRANSLATE: Header Section -->
+    <div class="update-tag">
+     🔍 ALGORITMI TRASPARENTI 2026
+    </div>
+    <h1>
+     Consulta delle Prestazioni Sociali Svizzere
+    </h1>
+    <p>
+     Trova l'algoritmo di calcolo ufficiale per il tuo Cantone
+    </p>
+   </header>
+   <div class="hero-search">
+    <div class="search-card">
+     <!-- Dropdown 1: Kanton -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="state">
+       📍 1. Seleziona il Cantone
+      </label>
+      <select id="state">
+       <option value="">
+        📌 Seleziona Cantone
+       </option>
+       <option value="AG">
+        Argovia (AG)
+       </option>
+       <option value="AI">
+        Appenzello Interno (AI)
+       </option>
+       <option value="AR">
+        Appenzello Esterno (AR)
+       </option>
+       <option value="BE">
+        Berna (BE)
+       </option>
+       <option value="BL">
+        Basilea Campagna (BL)
+       </option>
+       <option value="BS">
+        Basilea Città (BS)
+       </option>
+       <option value="FR">
+        Friburgo (FR)
+       </option>
+       <option value="GE">
+        Ginevra (GE)
+       </option>
+       <option value="GL">
+        Glarona (GL)
+       </option>
+       <option value="GR">
+        Grigioni (GR)
+       </option>
+       <option value="JU">
+        Giura (JU)
+       </option>
+       <option value="LU">
+        Lucerna (LU)
+       </option>
+       <option value="NE">
+        Neuchâtel (NE)
+       </option>
+       <option value="NW">
+        Nidvaldo (NW)
+       </option>
+       <option value="OW">
+        Obvaldo (OW)
+       </option>
+       <option value="SG">
+        San Gallo (SG)
+       </option>
+       <option value="SH">
+        Sciaffusa (SH)
+       </option>
+       <option value="SO">
+        Soletta (SO)
+       </option>
+       <option value="SZ">
+        Svitto (SZ)
+       </option>
+       <option value="TG">
+        Turgovia (TG)
+       </option>
+       <option value="TI">
+        Ticino (TI)
+       </option>
+       <option value="UR">
+        Uri (UR)
+       </option>
+       <option value="VD">
+        Vaud (VD)
+       </option>
+       <option value="VS">
+        Vallese (VS)
+       </option>
+       <option value="ZG">
+        Zugo (ZG)
+       </option>
+       <option value="ZH">
+        Zurigo (ZH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="state-error">
+       ⚠️ Seleziona un Cantone.
+      </div>
+     </div>
+     <!-- Dropdown 2: Leistungsart -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="welfare">
+       📋 2. Seleziona la categoria della prestazione sociale
+      </label>
+      <select id="welfare">
+       <option value="">
+        📋 Seleziona tipo di prestazione
+       </option>
+       <option value="SH">
+        🏠 Assistenza sociale (SH)
+       </option>
+       <option value="IPV">
+        💊 Riduzione individuale dei premi (IPV)
+       </option>
+       <option value="EL">
+        👴 Prestazioni complementari (EL)
+       </option>
+       <option value="FA">
+        👨‍👩‍👧 Assegni familiari (FA)
+       </option>
+       <option value="nothilfe">
+        🚨 Aiuto d'emergenza (NH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="welfare-error">
+       ⚠️ Seleziona un tipo di prestazione.
+      </div>
+     </div>
+     <div class="button-group">
+      <!-- TRANSLATE -->
+      <button class="action-btn search-button-style" onclick="searchAndRedirect()">
+       🔍 Cerca &amp; apri
+                        algoritmo
+      </button>
+      <a class="action-btn home-button-style" href="https://www.welfarecalc.ch">
+       🏠 Torna alla home
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="content-below">
+    <!-- Info Box -->
+    <div class="info-box">
+     <!-- TRANSLATE: Info Box Content -->
+     <p>
+      🇨🇭
+      <strong>
+       Informazioni su welfarecalc.ch
+      </strong>
+     </p>
+     <p>
+      Siamo un team di ingegneri e sviluppatori con sede in Svizzera. Il nostro obiettivo è rendere i
                     complessi sistemi di previdenza sociale svizzeri comprensibili e accessibili a tutti. Questa
-                    piattaforma è un <strong>progetto non-profit</strong> nato dalla convinzione della trasparenza e
-                    dell'equità.</p>
-
-                <p>📄 <strong>Come nascono i nostri algoritmi</strong><br>
-                    Le nostre logiche di calcolo si basano esclusivamente su documenti ufficiali pubblicamente
+                    piattaforma è un
+      <strong>
+       progetto non-profit
+      </strong>
+      nato dalla convinzione della trasparenza e
+                    dell'equità.
+     </p>
+     <p>
+      📄
+      <strong>
+       Come nascono i nostri algoritmi
+      </strong>
+      <br/>
+      Le nostre logiche di calcolo si basano esclusivamente su documenti ufficiali pubblicamente
                     accessibili, tra cui leggi cantonali (SHG, ELG, FamZG, KVG), le direttive SKOS e le ordinanze delle
                     casse di compensazione. Ogni algoritmo è accuratamente derivato da queste fonti e documentato in
-                    modo trasparente.</p>
-
-                <p>🌍 <strong>Multilinguismo e trasparenza</strong><br>
-                    La Svizzera è diversificata. Per questo motivo mettiamo a disposizione tutti gli algoritmi in
-                    <strong>11 lingue</strong>: tedesco, francese, italiano, inglese, spagnolo, portoghese, polacco,
+                    modo trasparente.
+     </p>
+     <p>
+      🌍
+      <strong>
+       Multilinguismo e trasparenza
+      </strong>
+      <br/>
+      La Svizzera è diversificata. Per questo motivo mettiamo a disposizione tutti gli algoritmi in
+      <strong>
+       11 lingue
+      </strong>
+      : tedesco, francese, italiano, inglese, spagnolo, portoghese, polacco,
                     croato, albanese, turco e tamil. In questo modo il maggior numero possibile di persone può capire
-                    le informazioni rilevanti per loro.</p>
-
-                <p>📌 <strong>Come utilizzare questa pagina</strong><br>
-                    Seleziona sopra il tuo Cantone e il tipo di prestazione desiderata. Poi clicca su "Cerca & apri
+                    le informazioni rilevanti per loro.
+     </p>
+     <p>
+      📌
+      <strong>
+       Come utilizzare questa pagina
+      </strong>
+      <br/>
+      Seleziona sopra il tuo Cantone e il tipo di prestazione desiderata. Poi clicca su "Cerca &amp; apri
                     algoritmo". Verrai reindirizzato direttamente all'algoritmo corrispondente, in una nuova scheda o
                     nella stessa finestra (a seconda delle impostazioni del browser). Con il pulsante rosso "Torna alla
-                    home" puoi sempre tornare alla pagina principale welfarecalc.ch.</p>
-            </div>
-
-            <!-- Rechtlicher Hinweis -->
-            <div class="disclaimer">
-                <!-- TRANSLATE: Disclaimer -->
-                <strong>⚠️ Importante avviso legale</strong><br>
-                Gli algoritmi e i calcoli presentati su questo sito si basano su documenti ufficiali pubblicamente
+                    home" puoi sempre tornare alla pagina principale welfarecalc.ch.
+     </p>
+    </div>
+    <!-- Rechtlicher Hinweis -->
+    <div class="disclaimer">
+     <!-- TRANSLATE: Disclaimer -->
+     <strong>
+      ⚠️ Importante avviso legale
+     </strong>
+     <br/>
+     Gli algoritmi e i calcoli presentati su questo sito si basano su documenti ufficiali pubblicamente
                 accessibili e sono stati da noi derivati con la massima cura e diligenza. A causa della complessità dei
                 sistemi di previdenza sociale e delle circostanze individuali (reddito, patrimonio, situazione
                 familiare, condizioni abitative, ecc.), i diritti effettivi possono variare da caso a caso.
-                <strong>Queste informazioni hanno esclusivamente scopo informativo e non hanno valore legalmente
-                    vincolante.</strong> Per una consulenza vincolante, si prega di contattare l'autorità competente
+     <strong>
+      Queste informazioni hanno esclusivamente scopo informativo e non hanno valore legalmente
+                    vincolante.
+     </strong>
+     Per una consulenza vincolante, si prega di contattare l'autorità competente
                 (Cassa di compensazione, amministrazione comunale o servizio sociale). welfarecalc.ch non si assume
                 alcuna responsabilità per le decisioni prese sulla base di queste informazioni.
-            </div>
-        </div>
-
-        <footer>
-            <!-- TRANSLATE: Footer -->
-            <p>© 2026 welfarecalc.ch | Calcolo trasparente delle prestazioni sociali</p>
-            <p>Fonti: Leggi cantonali (SHG, ELG, FamZG, KVG), Direttive SKOS 2026, Ordinanze delle casse di
-                compensazione</p>
-            <p>Un progetto non-profit di ingegneri per la trasparenza in Svizzera</p>
-        </footer>
     </div>
-
-    <noscript>
-        <div
-            style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
-            ⚠️ JavaScript è disattivato. Attiva JavaScript per utilizzare la funzione di ricerca.
-        </div>
-    </noscript>
-
-    <script>
-        // Configuration
+   </div>
+   <footer>
+    <!-- TRANSLATE: Footer -->
+    <p>
+     © 2026 welfarecalc.ch | Calcolo trasparente delle prestazioni sociali
+    </p>
+    <p>
+     Fonti: Leggi cantonali (SHG, ELG, FamZG, KVG), Direttive SKOS 2026, Ordinanze delle casse di
+                compensazione
+    </p>
+    <p>
+     Un progetto non-profit di ingegneri per la trasparenza in Svizzera
+    </p>
+   </footer>
+  </div>
+  <noscript>
+   <div style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
+    ⚠️ JavaScript è disattivato. Attiva JavaScript per utilizzare la funzione di ricerca.
+   </div>
+  </noscript>
+  <script>
+   // Configuration
         const LANG = "it";
         const BASE_PATH = "https://www.welfarecalc.ch/open/";
 
@@ -501,8 +610,6 @@
 
         if (stateField) stateField.addEventListener('keypress', handleEnterOnSelect);
         if (welfareField) welfareField.addEventListener('keypress', handleEnterOnSelect);
-    </script>
-
-</body>
-
+  </script>
+ </body>
 </html>

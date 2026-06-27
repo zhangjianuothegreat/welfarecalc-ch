@@ -1,53 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Social Assistance Algorithm Canton of Vaud 2026 | Transparent Calculation | welfarecalc.ch</title>
-  <meta
-    content="How is the Revenu d'insertion (RI) 2026 calculated in the Canton of Vaud (VD)? Discover our transparent algorithm based on LAS and SKOS guidelines."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_en.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="x-default" rel="alternate" />
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calculation of Social Welfare Vaud (RI) 2026",
-      "description": "Detailed algorithmic breakdown of the social welfare calculation (Revenu d'insertion) in the Canton of Vaud.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Check of asset allowances (entry threshold according to law)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determination of the social subsistence minimum (basic needs according to SKOS scale 2026, rent and health insurance)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Comparison and crediting of optimized income minus the earnings allowance"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -229,147 +186,287 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Swiss Benefits Calculator 2026 | 26 Cantons + Dental Bill Checker">
-    <meta property="og:description" content="Calculate AHV, IV, EL and premium reductions across all 26 Swiss cantons. Includes dental bill auditor and rental contract checker. 100% anonymous, runs locally in your browser. 11 languages.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026SH_en.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   SA Vaud 2026 – Social Assistance | welfarecalc.ch
+  </title>
+  <meta content="Calculate Social Assistance in Canton Vaud. Official 2026 data, transparent and understandable. Check for free." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Social Assistance, Canton Vaud, SA, Social benefits, Calculation 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_en.html" rel="canonical"/>
+  <meta content="SA Vaud 2026 – Social Assistance | welfarecalc.ch" property="og:title"/>
+  <meta content="Calculate Social Assistance in Canton Vaud. Official 2026 data, transparent and understandable. Check for free." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026SH_en.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="en_US" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="SA Vaud 2026 – Social Assistance | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calculate Social Assistance in Canton Vaud. Official 2026 data, transparent and understandable. Check for free." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Social Assistance Vaud 2026", "description": "Step-by-step guide to calculating Social Assistance in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">SKOS-COMPLIANT 2026</div>
-      <h1>Social Welfare Algorithm: Canton of Vaud (VD)</h1>
-      <p>Transparent documentation of the calculation logic for the Revenu d'insertion (RI)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Quick Check: Are You Eligible?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.</p>
-        <a href="https://www.welfarecalc.ch/bus_en" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Check for free now →</a>
+   <header>
+    <div class="update-tag">
+     SKOS-COMPLIANT 2026
     </div>
-    
-    <div class="content">
-      <p>How is the Revenu d'insertion (RI) calculated in the Canton of Vaud? To strengthen the trust of our users, we
+    <h1>
+     Social Welfare Algorithm: Canton of Vaud (VD)
+    </h1>
+    <p>
+     Transparent documentation of the calculation logic for the Revenu d'insertion (RI)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Quick Check: Are You Eligible?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Check quickly and without obligation if you qualify for premium subsidies (IPV), supplementary benefits, or other social welfare.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_en" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Check for free now →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     How is the Revenu d'insertion (RI) calculated in the Canton of Vaud? To strengthen the trust of our users, we
         disclose here the complete algorithm behind welfarecalc.ch. It is based on the legal foundation of the Loi sur
-        l'action sociale (LAS VD), the associated ordinance (RRI) as well as the national SKOS guidelines 2026.</p>
-      <h2 class="section-title">1. Asset Check (The Entry Threshold)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Allowance Individual</h4>
-          <div class="param-value">CHF 6'000</div>
-          <p><small>Plus CHF 3'000 per child or person in education.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Allowance Couples</h4>
-          <div class="param-value">CHF 12'000</div>
-          <p><small>No absolute cap for large RI households.</small></p>
-        </div>
+        l'action sociale (LAS VD), the associated ordinance (RRI) as well as the national SKOS guidelines 2026.
+    </p>
+    <h2 class="section-title">
+     1. Asset Check (The Entry Threshold)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Allowance Individual
+      </h4>
+      <div class="param-value">
+       CHF 6'000
       </div>
-      <h2 class="section-title">2. The Calculation Path (Monthly)</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Basic Needs for Living (GBL)</h3>
-          <p>The GBL is strictly based on the standardized SKOS scale 2026 for household size:</p>
-          <table class="data-table">
-            <tr>
-              <th>Household Size</th>
-              <th>Amount per Month (2026)</th>
-            </tr>
-            <tr>
-              <td>1 Person</td>
-              <td>CHF 1'061</td>
-            </tr>
-            <tr>
-              <td>2 Persons</td>
-              <td>CHF 1'624</td>
-            </tr>
-            <tr>
-              <td>3 Persons</td>
-              <td>CHF 2'017</td>
-            </tr>
-            <tr>
-              <td>4 Persons</td>
-              <td>CHF 2'320</td>
-            </tr>
-            <tr>
-              <td>5 Persons</td>
-              <td>CHF 2'623</td>
-            </tr>
-            <tr>
-              <td>Each additional person</td>
-              <td>+ CHF 213</td>
-            </tr>
-          </table>
-        </div>
+      <p>
+       <small>
+        Plus CHF 3'000 per child or person in education.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Allowance Couples
+      </h4>
+      <div class="param-value">
+       CHF 12'000
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Housing Costs &amp; Health (Net Principle)</h3>
-          <p>Crediting of housing costs up to the cantonal maximum. For health insurance, the strict net principle
-            applies in Vaud to avoid double counting:</p>
-          <div class="formula">
-            Recognized Rent = Min(Actual Rent, Cantonal Maximum)<br />
-            Recognized Health Insurance = Max(0, KVG Premium - Individual Premium Reduction IPV)
-          </div>
-          <p><small>*Note: Since the IPV in the Canton of Vaud flows directly to the insurer, our algorithm deducts the
-              IPV directly on the expenditure side. The maximum rent guideline for 1 person is CHF 1'200 at the cantonal
-              level.</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Income Crediting &amp; Earnings Allowance (Franchise)</h3>
-          <p>To maintain work incentives, a statutory allowance according to RRI VD is deducted from gross or net earned
-            income:</p>
-          <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-            <strong>Creditable Income</strong> = (Net Earned Income - 20% Allowance) + Alimony + Unemployment Benefits +
-            Other Pensions
-          </div>
-          <p><small>Important: Unemployment insurance is correctly declared as ALV (Unemployment Insurance) and credited
-              as income at 100%. A direct IPV refund is not counted again as income here.</small></p>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h3>Result: Monthly Entitlement</h3>
-          <p>The final social welfare payment (Revenu d'insertion) is determined by covering the shortfall:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Entitlement = (GBL + Recognized Rent + Recognized Health Insurance + IZU*) - Creditable Income
-          </div>
-          <p><small>*IZU = Integration Allowance (Allowance for proven participation in integration or employment
-              measures).</small></p>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Important note on legal compliance:</strong><br />
-        Unlike supplementary benefits (EL), Vaud social welfare law (LAS) does not provide for a gradual, percentage
-        asset depletion when the entry threshold is exceeded. If liquid assets exceed the allowance, <strong>by law
-          there is no entitlement</strong> to social welfare until the assets fall below the limit.
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Start Calculator</a>
-        <a class="btn-link"
-          href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/revenu-dinsertion-ri"
-          target="_blank">Official Page Canton VD (RI)</a>
-      </div>
+      <p>
+       <small>
+        No absolute cap for large RI households.
+       </small>
+      </p>
+     </div>
     </div>
-    <footer>
-      <p>Sources: Canton of Vaud DGCS, Loi sur l'action sociale (LAS) &amp; SKOS Guidelines 2026</p>
-      <p>© 2026 welfarecalc.ch | Transparent Social Welfare Calculation</p>
-    </footer>
+    <h2 class="section-title">
+     2. The Calculation Path (Monthly)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Basic Needs for Living (GBL)
+      </h3>
+      <p>
+       The GBL is strictly based on the standardized SKOS scale 2026 for household size:
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Household Size
+        </th>
+        <th>
+         Amount per Month (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 Person
+        </td>
+        <td>
+         CHF 1'061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 Persons
+        </td>
+        <td>
+         CHF 1'624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 Persons
+        </td>
+        <td>
+         CHF 2'017
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 Persons
+        </td>
+        <td>
+         CHF 2'320
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5 Persons
+        </td>
+        <td>
+         CHF 2'623
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Each additional person
+        </td>
+        <td>
+         + CHF 213
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Housing Costs &amp; Health (Net Principle)
+      </h3>
+      <p>
+       Crediting of housing costs up to the cantonal maximum. For health insurance, the strict net principle
+            applies in Vaud to avoid double counting:
+      </p>
+      <div class="formula">
+       Recognized Rent = Min(Actual Rent, Cantonal Maximum)
+       <br/>
+       Recognized Health Insurance = Max(0, KVG Premium - Individual Premium Reduction IPV)
+      </div>
+      <p>
+       <small>
+        *Note: Since the IPV in the Canton of Vaud flows directly to the insurer, our algorithm deducts the
+              IPV directly on the expenditure side. The maximum rent guideline for 1 person is CHF 1'200 at the cantonal
+              level.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Income Crediting &amp; Earnings Allowance (Franchise)
+      </h3>
+      <p>
+       To maintain work incentives, a statutory allowance according to RRI VD is deducted from gross or net earned
+            income:
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Creditable Income
+       </strong>
+       = (Net Earned Income - 20% Allowance) + Alimony + Unemployment Benefits +
+            Other Pensions
+      </div>
+      <p>
+       <small>
+        Important: Unemployment insurance is correctly declared as ALV (Unemployment Insurance) and credited
+              as income at 100%. A direct IPV refund is not counted again as income here.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Result: Monthly Entitlement
+      </h3>
+      <p>
+       The final social welfare payment (Revenu d'insertion) is determined by covering the shortfall:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Entitlement = (GBL + Recognized Rent + Recognized Health Insurance + IZU*) - Creditable Income
+      </div>
+      <p>
+       <small>
+        *IZU = Integration Allowance (Allowance for proven participation in integration or employment
+              measures).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Important note on legal compliance:
+     </strong>
+     <br/>
+     Unlike supplementary benefits (EL), Vaud social welfare law (LAS) does not provide for a gradual, percentage
+        asset depletion when the entry threshold is exceeded. If liquid assets exceed the allowance,
+     <strong>
+      by law
+          there is no entitlement
+     </strong>
+     to social welfare until the assets fall below the limit.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Start Calculator
+     </a>
+     <a class="btn-link" href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/revenu-dinsertion-ri" target="_blank">
+      Official Page Canton VD (RI)
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Sources: Canton of Vaud DGCS, Loi sur l'action sociale (LAS) &amp; SKOS Guidelines 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Transparent Social Welfare Calculation
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

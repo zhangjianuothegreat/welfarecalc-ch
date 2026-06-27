@@ -1,66 +1,10 @@
 <!DOCTYPE html>
-<html lang="de-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    
-    <title>IPV Algorithmus Kanton Basel-Stadt 2026 | Transparente Berechnung | welfarecalc.ch</title>
-    <meta name="description" content="Wie wird die Prämienverbilligung (IPV) 2026 im Kanton Basel-Stadt berechnet? Entdecken Sie unseren transparenten Open-Source-Algorithmus basierend auf offiziellen Gesetzesrichtlinien der KVO Basel-Stadt.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/BS_2026IPV_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/BS_2026IPV_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/BS_2026IPV_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/BS_2026IPV_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/BS_2026IPV_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/BS_2026IPV_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/BS_2026IPV_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/BS_2026IPV_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/BS_2026IPV_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "HowTo",
-        "name": "Berechnung der Prämienverbilligung Basel-Stadt 2026",
-        "description": "Schritt-für-Schritt-Anleitung zur mathematischen Ermittlung des IPV-Anspruchs im Kanton Basel-Stadt für das Jahr 2026.",
-        "step": [
-            {
-                "@type": "HowToStep",
-                "position": 1,
-                "name": "Ermittlung des Vermögensfreibetrags",
-                "text": "Abzug von 50'000 CHF für Alleinstehende bzw. 100'000 CHF für Ehepaare vom Reinvermögen."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 2,
-                "name": "Berechnung des anrechenbaren Einkommens (LNA)",
-                "text": "LNA = Nettoeinkommen + 10% des übersteigenden Vermögens - Alimente."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 3,
-                "name": "Zuweisung der Einkommensgruppe",
-                "text": "Einstufung des Haushalts in eine der 22 standardisierten kantonale Einkommensgruppen."
-            },
-            {
-                "@type": "HowToStep",
-                "position": 4,
-                "name": "Festlegung der Pauschalsubvention",
-                "text": "Auslesung der monatlichen kantonalen Pauschalbeiträge für Erwachsene, junge Erwachsene und Kinder."
-            }
-        ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="de">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -137,138 +81,313 @@
         .param-table-wrapper::-webkit-scrollbar { height: 6px; }
         .param-table-wrapper::-webkit-scrollbar-track { background: #e2e8f0; border-radius: 4px; }
         .param-table-wrapper::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 4px; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="AHV/IV/EL-Rechner 2026 | 26 Kantone + Zahn-Checker + Mietvertrag">
-    <meta property="og:description" content="Schweizer Sozialleistungen praezise berechnen: AHV, IV, EL und Praemienverbilligung. Inkl. Zahnrechnungs-Auditor und Mietvertrag-Checker. 100% anonym im Browser. 11 Sprachen.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/BS_2026IPV_de.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="de">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">KANTON BASEL-STADT (BS) · OFFIZIELLE KVO 2026</div>
-        <h1>IPV-Algorithmus: Kanton Basel-Stadt</h1>
-        <p>Transparente Berechnung Ihrer Prämienverbilligung für das Jahr 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Schneller Check: Haben Sie Anspruch?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.</p>
-        <a href="https://www.welfarecalc.ch/bus_de" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Jetzt kostenlos prüfen →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   IPV Basel-Stadt 2026 – Prämienverbilligung | welfarecalc.ch
+  </title>
+  <meta content="Berechnung der Prämienverbilligung im Kanton Basel-Stadt. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prämienverbilligung, Kanton Basel-Stadt, IPV, Sozialleistungen, Berechnung 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html" rel="canonical"/>
+  <meta content="IPV Basel-Stadt 2026 – Prämienverbilligung | welfarecalc.ch" property="og:title"/>
+  <meta content="Berechnung der Prämienverbilligung im Kanton Basel-Stadt. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/BS_2026IPV_de.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="de_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="IPV Basel-Stadt 2026 – Prämienverbilligung | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Berechnung der Prämienverbilligung im Kanton Basel-Stadt. Offizielle Daten 2026, transparent und verständlich. Jetzt kostenlos prüfen." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/BS_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Individuelle Prämienverbilligung Basel-Stadt 2026", "description": "Step-by-step guide to calculating Individuelle Prämienverbilligung in Canton Basel-Stadt.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     KANTON BASEL-STADT (BS) · OFFIZIELLE KVO 2026
     </div>
-
-    <div class="content">
-        <p>Vertrauen durch Transparenz. Hier legen wir offen, wie unser Rechner Ihre potenzielle Prämienverbilligung im Kanton Basel-Stadt ermittelt. Dieser Algorithmus basiert strikt auf den gesetzlichen Vorgaben der KVO Basel-Stadt.</p>
-
-        <h2 class="section-title">1. Kernparameter (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Vermögensverzehr</h4>
-                <div class="param-value">10.0 %</div>
-                <p><small>Anteil des Reinvermögens (>Freibetrag), der zum Einkommen addiert wird.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Einkommensgruppen</h4>
-                <div class="param-value">22 Stufen</div>
-                <p><small>Degressive Staffelung der IPV-Beiträge.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Der Berechnungsweg</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Ermittlung des Vermögensfreibetrags</h3>
-                <p>Zuerst wird das steuerbare Reinvermögen des Haushalts analysiert. Übersteigt das Vermögen die gesetzlichen Freibeträge für das Jahr 2026, wird der übersteigende Betrag anteilig dem Einkommen hinzugerechnet.</p>
-                
-                <div class="param-table-wrapper">
-                    <table class="data-table">
-                        <thead>
-                            <tr><th>Haushaltstyp</th><th>Freibetrag (2026)</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>Alleinstehende Person</td><td>CHF 50'000</td></tr>
-                            <tr><td>Ehepaare / Eingetragene Partnerships</td><td>CHF 100'000</td></tr>
-                            <tr><td>Zuschlag pro Kind / Person in Erstausbildung</td><td>+ CHF 15'000</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Berechnung des massgeblichen Einkommens (LNA)</h3>
-                <p>Das prämienverbilligungsrelevante Einkommen (LNA) errechnet sich aus dem Nettoeinkommen plus einem 10%-igen Verzehr des übersteigenden Vermögens, abzüglich nachweisbar bezahlter Alimente.</p>
-                
-                <div class="formula-box">
-                    AssetSurplus = Max(0, SteuerbaresVermögen - Freibetrag)<br>
-                    LNA = Nettoeinkommen + (AssetSurplus × 10%) - BezahlteAlimente
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Einstufung in die 22 Einkommensgruppen</h3>
-                <p>Je nach berechnetem LNA und der exakten Haushaltsgrösse (Anzahl Erwachsene + Kinder) wird die Wohneinheit in eine degressive Tabelle eingestuft (Gruppe 1 bis maximal Gruppe 22). Die Intervall-Schwellenwerte steigen gleichmässig um jeweils CHF 1'250 pro Gruppe an.</p>
-                
-                <div class="param-table-wrapper">
-                    <table class="data-table">
-                        <thead>
-                            <tr><th>Haushaltsgrösse (Personen)</th><th>Einkommensgrenze Gruppe 1</th><th>Einkommensgrenze Gruppe 22</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>1 Person (z.B. Alleinstehend)</td><td>CHF 23'125</td><td>CHF 49'375</td></tr>
-                            <tr><td>2 Personen (z.B. Paar)</td><td>CHF 37'000</td><td>CHF 63'250</td></tr>
-                            <tr><td>3 Personen</td><td>CHF 47'000</td><td>CHF 73'250</td></tr>
-                            <tr><td>4 Personen</td><td>CHF 55'000</td><td>CHF 81'250</td></tr>
-                            <tr><td>5+ Personen (Fortlaufend gestaffelt)</td><td>+ CHF 6'000 / Pers.</td><td>+ CHF 6'000 / Pers.</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Festlegung des kantonalen Pauschalbeitrags</h3>
-                <p>Der Anspruch wird nicht individuell anhand der effektiv gewählten Kasse gekürzt, sondern als fester Kantonsbeitrag (Pauschalbetrag) gutgeschrieben. Dies fungiert als Anreizsystem zur Wahl kostengünstiger Versicherungsmodelle (HMO/Hausarzt).</p>
-                
-                <div class="formula-box">
-                    Monatssubvention_Total = (Erwachsene × Satz_A) + (In_Ausbildung × Satz_B) + (Kinder × Satz_C)
-                </div>
-                <p><small>*Hinweis: Liegt das berechnete LNA über der maximalen Grenze der Gruppe 22, erlischt der IPV-Anspruch für das Jahr 2026 komplett (Anspruch = CHF 0).</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Wichtige Besonderheit im Kanton BS:</strong><br>
-            Das System in Basel-Stadt ist stark degressiv ausgestaltet. Haushalte in Gruppe 1 erhalten den maximalen Richtprämienzuschuss (bis zu 100% der standardisierten Grundprämie), während mittlere Einkommensklassen gestaffelt weniger Unterstützung erhalten, bis der Anspruch ab Gruppe 22 komplett entfällt.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" rel="noopener noreferrer" class="btn-link btn-home">Zurück zur Startseite</a>
-            <a href="https://www.bs.ch/themen/finanzielle-hilfe/leistungen/praemienverbilligung" target="_blank" rel="noopener noreferrer" class="btn-link btn-official">Offizielle Webseite des Amtes für Sozialbeiträge besuchen</a>
-        </div>
+    <h1>
+     IPV-Algorithmus: Kanton Basel-Stadt
+    </h1>
+    <p>
+     Transparente Berechnung Ihrer Prämienverbilligung für das Jahr 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Schneller Check: Haben Sie Anspruch?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prüfen Sie schnell und unverbindlich, ob Sie Anspruch auf Prämienverbilligung (IPV), Ergänzungsleistungen oder andere Sozialleistungen haben.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_de" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Jetzt kostenlos prüfen →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Vertrauen durch Transparenz. Hier legen wir offen, wie unser Rechner Ihre potenzielle Prämienverbilligung im Kanton Basel-Stadt ermittelt. Dieser Algorithmus basiert strikt auf den gesetzlichen Vorgaben der KVO Basel-Stadt.
+    </p>
+    <h2 class="section-title">
+     1. Kernparameter (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Vermögensverzehr
+      </h4>
+      <div class="param-value">
+       10.0 %
+      </div>
+      <p>
+       <small>
+        Anteil des Reinvermögens (&gt;Freibetrag), der zum Einkommen addiert wird.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Einkommensgruppen
+      </h4>
+      <div class="param-value">
+       22 Stufen
+      </div>
+      <p>
+       <small>
+        Degressive Staffelung der IPV-Beiträge.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Quelle: Amt für Sozialbeiträge des Kantons Basel-Stadt (Verordnung über die Krankenversicherung KVO) | Bereitgestellt von welfarecalc.ch</p>
-        <p>Diese Zusammenfassung dient der Information und ist rechtlich nicht bindend.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Der Berechnungsweg
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Ermittlung des Vermögensfreibetrags
+      </h3>
+      <p>
+       Zuerst wird das steuerbare Reinvermögen des Haushalts analysiert. Übersteigt das Vermögen die gesetzlichen Freibeträge für das Jahr 2026, wird der übersteigende Betrag anteilig dem Einkommen hinzugerechnet.
+      </p>
+      <div class="param-table-wrapper">
+       <table class="data-table">
+        <thead>
+         <tr>
+          <th>
+           Haushaltstyp
+          </th>
+          <th>
+           Freibetrag (2026)
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           Alleinstehende Person
+          </td>
+          <td>
+           CHF 50'000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Ehepaare / Eingetragene Partnerships
+          </td>
+          <td>
+           CHF 100'000
+          </td>
+         </tr>
+         <tr>
+          <td>
+           Zuschlag pro Kind / Person in Erstausbildung
+          </td>
+          <td>
+           + CHF 15'000
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Berechnung des massgeblichen Einkommens (LNA)
+      </h3>
+      <p>
+       Das prämienverbilligungsrelevante Einkommen (LNA) errechnet sich aus dem Nettoeinkommen plus einem 10%-igen Verzehr des übersteigenden Vermögens, abzüglich nachweisbar bezahlter Alimente.
+      </p>
+      <div class="formula-box">
+       AssetSurplus = Max(0, SteuerbaresVermögen - Freibetrag)
+       <br/>
+       LNA = Nettoeinkommen + (AssetSurplus × 10%) - BezahlteAlimente
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Einstufung in die 22 Einkommensgruppen
+      </h3>
+      <p>
+       Je nach berechnetem LNA und der exakten Haushaltsgrösse (Anzahl Erwachsene + Kinder) wird die Wohneinheit in eine degressive Tabelle eingestuft (Gruppe 1 bis maximal Gruppe 22). Die Intervall-Schwellenwerte steigen gleichmässig um jeweils CHF 1'250 pro Gruppe an.
+      </p>
+      <div class="param-table-wrapper">
+       <table class="data-table">
+        <thead>
+         <tr>
+          <th>
+           Haushaltsgrösse (Personen)
+          </th>
+          <th>
+           Einkommensgrenze Gruppe 1
+          </th>
+          <th>
+           Einkommensgrenze Gruppe 22
+          </th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+          <td>
+           1 Person (z.B. Alleinstehend)
+          </td>
+          <td>
+           CHF 23'125
+          </td>
+          <td>
+           CHF 49'375
+          </td>
+         </tr>
+         <tr>
+          <td>
+           2 Personen (z.B. Paar)
+          </td>
+          <td>
+           CHF 37'000
+          </td>
+          <td>
+           CHF 63'250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           3 Personen
+          </td>
+          <td>
+           CHF 47'000
+          </td>
+          <td>
+           CHF 73'250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           4 Personen
+          </td>
+          <td>
+           CHF 55'000
+          </td>
+          <td>
+           CHF 81'250
+          </td>
+         </tr>
+         <tr>
+          <td>
+           5+ Personen (Fortlaufend gestaffelt)
+          </td>
+          <td>
+           + CHF 6'000 / Pers.
+          </td>
+          <td>
+           + CHF 6'000 / Pers.
+          </td>
+         </tr>
+        </tbody>
+       </table>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Festlegung des kantonalen Pauschalbeitrags
+      </h3>
+      <p>
+       Der Anspruch wird nicht individuell anhand der effektiv gewählten Kasse gekürzt, sondern als fester Kantonsbeitrag (Pauschalbetrag) gutgeschrieben. Dies fungiert als Anreizsystem zur Wahl kostengünstiger Versicherungsmodelle (HMO/Hausarzt).
+      </p>
+      <div class="formula-box">
+       Monatssubvention_Total = (Erwachsene × Satz_A) + (In_Ausbildung × Satz_B) + (Kinder × Satz_C)
+      </div>
+      <p>
+       <small>
+        *Hinweis: Liegt das berechnete LNA über der maximalen Grenze der Gruppe 22, erlischt der IPV-Anspruch für das Jahr 2026 komplett (Anspruch = CHF 0).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Wichtige Besonderheit im Kanton BS:
+     </strong>
+     <br/>
+     Das System in Basel-Stadt ist stark degressiv ausgestaltet. Haushalte in Gruppe 1 erhalten den maximalen Richtprämienzuschuss (bis zu 100% der standardisierten Grundprämie), während mittlere Einkommensklassen gestaffelt weniger Unterstützung erhalten, bis der Anspruch ab Gruppe 22 komplett entfällt.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" rel="noopener noreferrer" target="_blank">
+      Zurück zur Startseite
+     </a>
+     <a class="btn-link btn-official" href="https://www.bs.ch/themen/finanzielle-hilfe/leistungen/praemienverbilligung" rel="noopener noreferrer" target="_blank">
+      Offizielle Webseite des Amtes für Sozialbeiträge besuchen
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Quelle: Amt für Sozialbeiträge des Kantons Basel-Stadt (Verordnung über die Krankenversicherung KVO) | Bereitgestellt von welfarecalc.ch
+    </p>
+    <p>
+     Diese Zusammenfassung dient der Information und ist rechtlich nicht bindend.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

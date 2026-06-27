@@ -1,58 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorithme IPV Canton de St-Gall 2026 | Calcul Transparent | welfarecalc.ch</title>
-    <meta name="description" content="Comment est calculée la réduction des primes d'assurance maladie (IPV) 2026 dans le canton de St-Gall ? Découvrez notre algorithme transparent basé sur le modèle officiel de la courbe en S.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026IPV_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026IPV_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026IPV_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026IPV_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026IPV_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026IPV_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026IPV_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026IPV_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html">
-
-    <meta name="twitter:card" content="summary">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcul de la réduction des primes (IPV) St-Gall 2026",
-      "description": "Guide étape par étape pour déterminer le droit à l'IPV dans le canton de SG basé sur le modèle de courbe en S.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Détermination du revenu déterminant (LNA) incluant la part de la fortune"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Attribution des primes régionales de référence selon le lieu de résidence"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcul du taux de charge dynamique au moyen de la courbe en S cantonale"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Vérification de la garantie minimale pour les enfants et les jeunes adultes"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -89,200 +41,438 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
-    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SG_2026IPV_fr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">DONNÉES OFFICIELLES 2026</div>
-        <h1>Algorithme IPV : Canton de St-Gall</h1>
-        <p>Divulgation transparente du modèle de calcul à courbe en S pour l'année 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   RIP Saint-Gall 2026 – Réduction des primes | welfarecalc.ch
+  </title>
+  <meta content="Calcul de Réduction des primes dans le canton de Saint-Gall. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Réduction des primes, Canton Saint-Gall, RIP, Prestations sociales, Calcul 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html" rel="canonical"/>
+  <meta content="RIP Saint-Gall 2026 – Réduction des primes | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcul de Réduction des primes dans le canton de Saint-Gall. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="RIP Saint-Gall 2026 – Réduction des primes | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcul de Réduction des primes dans le canton de Saint-Gall. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026IPV_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Réduction individuelle des primes Saint-Gall 2026", "description": "Step-by-step guide to calculating Réduction individuelle des primes in Canton Saint-Gall.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine household composition and income"}, {"@type": "HowToStep", "position": 2, "text": "Calculate the cantonal premium reduction formula"}, {"@type": "HowToStep", "position": 3, "text": "Apply federal and cantonal caps"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     DONNÉES OFFICIELLES 2026
     </div>
-
-    <div class="content">
-        <p>La confiance par la précision mathématique. Conformément à notre philosophie Open Data, nous divulguons ici la logique de calcul complète de la réduction individuelle des primes (IPV) pour le canton de St-Gall. Notre noyau de calcul fonctionne strictement selon la décision gouvernementale en vigueur 2026 (sGS 331.538).</p>
-
-        <h2 class="section-title">1. Paramètres clés (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Franchise dynamique</h4>
-                <div class="param-value">Variable (Courbe en S)</div>
-                <p><small>Dépend du statut du ménage et du revenu au-delà du seuil de base.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Prise en compte de la fortune</h4>
-                <div class="param-value">20.0 %</div>
-                <p><small>Un cinquième de la fortune imposable nette augmente le revenu déterminant.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. La voie de calcul officielle</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Revenu déterminant (LNA)</h3>
-                <p>La capacité économique du ménage est basée sur le revenu net, augmenté de la part de la fortune, moins les déductions pour enfants :</p>
-                <div class="formula-box">
-                    <strong>LNA</strong> = [Revenu net] + ([Fortune imposable] × 20%) - ([Nombre d'enfants] × CHF 4'000)
-                </div>
-                <p><small>*Remarque : Certaines corrections comme les revenus exonérés d'impôt ou les prestations en capital sont ajoutées selon la pratique cantonale.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Primes régionales de référence (Région 1 - 3)</h3>
-                <p>Le canton de St-Gall divise les communes en trois régions de primes. Le domicile civil au 1er janvier 2026 est déterminant :</p>
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Groupe d'âge</th>
-                            <th>Région 1</th>
-                            <th>Région 2</th>
-                            <th>Région 3</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Adultes (dès 26 ans)</strong></td>
-                            <td>CHF 6'285.60</td>
-                            <td>CHF 5'879.40</td>
-                            <td>CHF 5'681.40</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Jeunes adultes (19 - 25 ans)</strong></td>
-                            <td>CHF 4'492.80</td>
-                            <td>CHF 4'218.00</td>
-                            <td>CHF 4'063.20</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Enfants (0 - 18 ans)</strong></td>
-                            <td>CHF 1'462.80</td>
-                            <td>CHF 1'351.20</td>
-                            <td>CHF 1'306.80</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Courbe en S : Seuils de base et coefficients d'augmentation</h3>
-                <p>La part supportable (limite de charge) commence par un pourcentage de base et augmente progressivement pour chaque franc supplémentaire au-delà du seuil de base :</p>
-                
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Catégorie (Type de ménage)</th>
-                            <th>Seuil de base</th>
-                            <th>Taux de base</th>
-                            <th>Augmentation par CHF au-dessus du seuil</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Célibataires sans enfants</td>
-                            <td>CHF 18'700</td>
-                            <td>12.16 %</td>
-                            <td>+ 0.00020 point de pourcentage</td>
-                        </tr>
-                        <tr>
-                            <td>Couples mariés sans enfants</td>
-                            <td>CHF 28'050</td>
-                            <td>12.16 %</td>
-                            <td>+ 0.00030 point de pourcentage</td>
-                        </tr>
-                        <tr>
-                            <td>Célibataires avec enfants</td>
-                            <td>CHF 18'700 + CHF 5'610 / enfant</td>
-                            <td>10.96 %</td>
-                            <td>+ 0.00003 point de pourcentage</td>
-                        </tr>
-                        <tr>
-                            <td>Couples mariés avec enfants</td>
-                            <td>CHF 28'050 + CHF 5'610 / enfant</td>
-                            <td>12.41 %</td>
-                            <td>+ 0.00003 point de pourcentage</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <p>La formule mathématique pour la limite de charge est :</p>
-                <div class="formula-box">
-                    Si LNA ≤ Seuil de base :<br>
-                    <strong>Limite de charge</strong> = Taux de base<br><br>
-                    Si LNA > Seuil de base :<br>
-                    <strong>Limite de charge</strong> = Taux de base + ((LNA - Seuil de base) × Coefficient d'augmentation)
-                </div>
-                <div class="formula-box">
-                    <strong>Franchise personnelle supportable</strong> = LNA × Limite de charge
-                </div>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Calcul du droit à l'aide et garantie minimale</h3>
-                <p>Le droit IPV régulier est la différence entre la somme de toutes les primes de référence cantonales du ménage et la franchise calculée :</p>
-                <div class="formula-box">
-                    <strong>Droit régulier</strong> = [Total des primes de référence] - [Franchise personnelle supportable]
-                </div>
-                
-                <p>Si le LNA est inférieur au seuil de revenu défini pour les familles, la <strong>garantie minimale</strong> légale s'applique pour les enfants et les jeunes adultes en formation :</p>
-                <table class="data-table">
-                    <tr><th>Catégorie</th><th>Part de prime garantie</th></tr>
-                    <tr><td>Enfants (0-18)</td><td>80 % de la prime de référence respective</td></tr>
-                    <tr><td>Jeunes adultes (19-25 en formation)</td><td>50 % de la prime de référence respective</td></tr>
-                </table>
-                <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
-                    Droit final = Max(Droit régulier, Garantie minimale légale)
-                </div>
-            </div>
-        </div>
-
-        <h2 class="section-title">3. Critères d'exclusion</h2>
-        <div class="alert">
-            <strong>Plafonds stricts pour l'exclusion du droit (2026) :</strong><br>
-            <ul>
-                <li><strong>Plafond de revenu :</strong> Si le revenu imposable dépasse les limites cantonales strictes (p. ex. CHF 100'900 pour un célibataire avec 4 enfants ou les valeurs dynamiques des tableaux de la SVA), le droit s'éteint complètement.</li>
-                <li><strong>Limite de fortune :</strong> Si la fortune imposable nette dépasse <strong>CHF 250'000</strong>, il n'y a généralement pas droit à l'IPV.</li>
-                <li><strong>Seuil de minime importance :</strong> Si le calcul final aboutit à un droit inférieur à <strong>CHF 100</strong> par an, aucun versement n'est effectué.</li>
-            </ul>
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Retour à la page d'accueil</a>
-            <a href="https://www.svasg.ch/ipv" target="_blank" class="btn-link">Visiter le site officiel SVA St-Gall</a>
-        </div>
+    <h1>
+     Algorithme IPV : Canton de St-Gall
+    </h1>
+    <p>
+     Divulgation transparente du modèle de calcul à courbe en S pour l'année 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Vérification rapide : Avez-vous droit ?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_fr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Vérifier gratuitement →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La confiance par la précision mathématique. Conformément à notre philosophie Open Data, nous divulguons ici la logique de calcul complète de la réduction individuelle des primes (IPV) pour le canton de St-Gall. Notre noyau de calcul fonctionne strictement selon la décision gouvernementale en vigueur 2026 (sGS 331.538).
+    </p>
+    <h2 class="section-title">
+     1. Paramètres clés (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Franchise dynamique
+      </h4>
+      <div class="param-value">
+       Variable (Courbe en S)
+      </div>
+      <p>
+       <small>
+        Dépend du statut du ménage et du revenu au-delà du seuil de base.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Prise en compte de la fortune
+      </h4>
+      <div class="param-value">
+       20.0 %
+      </div>
+      <p>
+       <small>
+        Un cinquième de la fortune imposable nette augmente le revenu déterminant.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Source : SVA St-Gall / Décision gouvernementale concernant la réduction des primes 2026 (sGS 331.538) | Fourni par welfarecalc.ch</p>
-        <p>Avertissement légal : La logique de calcul publiée ici sert la transparence et l'information. Seules les décisions de la SVA St-Gall font foi juridiquement.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. La voie de calcul officielle
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Revenu déterminant (LNA)
+      </h3>
+      <p>
+       La capacité économique du ménage est basée sur le revenu net, augmenté de la part de la fortune, moins les déductions pour enfants :
+      </p>
+      <div class="formula-box">
+       <strong>
+        LNA
+       </strong>
+       = [Revenu net] + ([Fortune imposable] × 20%) - ([Nombre d'enfants] × CHF 4'000)
+      </div>
+      <p>
+       <small>
+        *Remarque : Certaines corrections comme les revenus exonérés d'impôt ou les prestations en capital sont ajoutées selon la pratique cantonale.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Primes régionales de référence (Région 1 - 3)
+      </h3>
+      <p>
+       Le canton de St-Gall divise les communes en trois régions de primes. Le domicile civil au 1er janvier 2026 est déterminant :
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Groupe d'âge
+         </th>
+         <th>
+          Région 1
+         </th>
+         <th>
+          Région 2
+         </th>
+         <th>
+          Région 3
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          <strong>
+           Adultes (dès 26 ans)
+          </strong>
+         </td>
+         <td>
+          CHF 6'285.60
+         </td>
+         <td>
+          CHF 5'879.40
+         </td>
+         <td>
+          CHF 5'681.40
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Jeunes adultes (19 - 25 ans)
+          </strong>
+         </td>
+         <td>
+          CHF 4'492.80
+         </td>
+         <td>
+          CHF 4'218.00
+         </td>
+         <td>
+          CHF 4'063.20
+         </td>
+        </tr>
+        <tr>
+         <td>
+          <strong>
+           Enfants (0 - 18 ans)
+          </strong>
+         </td>
+         <td>
+          CHF 1'462.80
+         </td>
+         <td>
+          CHF 1'351.20
+         </td>
+         <td>
+          CHF 1'306.80
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Courbe en S : Seuils de base et coefficients d'augmentation
+      </h3>
+      <p>
+       La part supportable (limite de charge) commence par un pourcentage de base et augmente progressivement pour chaque franc supplémentaire au-delà du seuil de base :
+      </p>
+      <table class="data-table">
+       <thead>
+        <tr>
+         <th>
+          Catégorie (Type de ménage)
+         </th>
+         <th>
+          Seuil de base
+         </th>
+         <th>
+          Taux de base
+         </th>
+         <th>
+          Augmentation par CHF au-dessus du seuil
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td>
+          Célibataires sans enfants
+         </td>
+         <td>
+          CHF 18'700
+         </td>
+         <td>
+          12.16 %
+         </td>
+         <td>
+          + 0.00020 point de pourcentage
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Couples mariés sans enfants
+         </td>
+         <td>
+          CHF 28'050
+         </td>
+         <td>
+          12.16 %
+         </td>
+         <td>
+          + 0.00030 point de pourcentage
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Célibataires avec enfants
+         </td>
+         <td>
+          CHF 18'700 + CHF 5'610 / enfant
+         </td>
+         <td>
+          10.96 %
+         </td>
+         <td>
+          + 0.00003 point de pourcentage
+         </td>
+        </tr>
+        <tr>
+         <td>
+          Couples mariés avec enfants
+         </td>
+         <td>
+          CHF 28'050 + CHF 5'610 / enfant
+         </td>
+         <td>
+          12.41 %
+         </td>
+         <td>
+          + 0.00003 point de pourcentage
+         </td>
+        </tr>
+       </tbody>
+      </table>
+      <p>
+       La formule mathématique pour la limite de charge est :
+      </p>
+      <div class="formula-box">
+       Si LNA ≤ Seuil de base :
+       <br/>
+       <strong>
+        Limite de charge
+       </strong>
+       = Taux de base
+       <br/>
+       <br/>
+       Si LNA &gt; Seuil de base :
+       <br/>
+       <strong>
+        Limite de charge
+       </strong>
+       = Taux de base + ((LNA - Seuil de base) × Coefficient d'augmentation)
+      </div>
+      <div class="formula-box">
+       <strong>
+        Franchise personnelle supportable
+       </strong>
+       = LNA × Limite de charge
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Calcul du droit à l'aide et garantie minimale
+      </h3>
+      <p>
+       Le droit IPV régulier est la différence entre la somme de toutes les primes de référence cantonales du ménage et la franchise calculée :
+      </p>
+      <div class="formula-box">
+       <strong>
+        Droit régulier
+       </strong>
+       = [Total des primes de référence] - [Franchise personnelle supportable]
+      </div>
+      <p>
+       Si le LNA est inférieur au seuil de revenu défini pour les familles, la
+       <strong>
+        garantie minimale
+       </strong>
+       légale s'applique pour les enfants et les jeunes adultes en formation :
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Catégorie
+        </th>
+        <th>
+         Part de prime garantie
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Enfants (0-18)
+        </td>
+        <td>
+         80 % de la prime de référence respective
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Jeunes adultes (19-25 en formation)
+        </td>
+        <td>
+         50 % de la prime de référence respective
+        </td>
+       </tr>
+      </table>
+      <div class="formula-box" style="background: #fff1f2; color: #be123c; font-weight: bold;">
+       Droit final = Max(Droit régulier, Garantie minimale légale)
+      </div>
+     </div>
+    </div>
+    <h2 class="section-title">
+     3. Critères d'exclusion
+    </h2>
+    <div class="alert">
+     <strong>
+      Plafonds stricts pour l'exclusion du droit (2026) :
+     </strong>
+     <br/>
+     <ul>
+      <li>
+       <strong>
+        Plafond de revenu :
+       </strong>
+       Si le revenu imposable dépasse les limites cantonales strictes (p. ex. CHF 100'900 pour un célibataire avec 4 enfants ou les valeurs dynamiques des tableaux de la SVA), le droit s'éteint complètement.
+      </li>
+      <li>
+       <strong>
+        Limite de fortune :
+       </strong>
+       Si la fortune imposable nette dépasse
+       <strong>
+        CHF 250'000
+       </strong>
+       , il n'y a généralement pas droit à l'IPV.
+      </li>
+      <li>
+       <strong>
+        Seuil de minime importance :
+       </strong>
+       Si le calcul final aboutit à un droit inférieur à
+       <strong>
+        CHF 100
+       </strong>
+       par an, aucun versement n'est effectué.
+      </li>
+     </ul>
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Retour à la page d'accueil
+     </a>
+     <a class="btn-link" href="https://www.svasg.ch/ipv" target="_blank">
+      Visiter le site officiel SVA St-Gall
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Source : SVA St-Gall / Décision gouvernementale concernant la réduction des primes 2026 (sGS 331.538) | Fourni par welfarecalc.ch
+    </p>
+    <p>
+     Avertissement légal : La logique de calcul publiée ici sert la transparence et l'information. Seules les décisions de la SVA St-Gall font foi juridiquement.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

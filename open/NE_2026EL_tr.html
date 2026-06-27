@@ -1,52 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>EL Algoritması Neuchâtel Kantonu 2026 | Şeffaf Hesaplama | welfarecalc.ch</title>
-    <meta name="description" content="Neuchâtel (NE) Kantonunda 2026 yılı Ek Ödemeler (EL) nasıl hesaplanır? Resmi Caisse AVS NE verilerine dayanan şeffaf algoritmamızı keşfedin.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/NE_2026EL_tr.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/NE_2026EL_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/NE_2026EL_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/NE_2026EL_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/NE_2026EL_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/NE_2026EL_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/NE_2026EL_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/NE_2026EL_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/NE_2026EL_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/NE_2026EL_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/NE_2026EL_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/NE_2026EL_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/NE_2026EL_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Neuchâtel 2026 Ek Ödemeler Hesaplaması",
-      "description": "NE Kantonunda EL hesaplamasının ayrıntılı algoritmik dökümü.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Tanınan harcama ihtiyaçlarını belirle (Bölge 2/3 farklılaştırması)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "13. AHV nötrleştirmesi dahil hesaplanabilir geliri hesapla"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "EL tutarını belirle (açık karşılama)"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -81,116 +39,292 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/NE_2026EL_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">RESMİ VERİ 2026</div>
-        <h1>EL Algoritması: Neuchâtel Kantonu (NE)</h1>
-        <p>2026 yılı için Ek Ödemelerin (EL) şeffaf dökümü</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Hızlı Kontrol: Hakkınız var mı?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.</p>
-        <a href="https://www.welfarecalc.ch/bus_tr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Ücretsiz kontrol et →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   EY Neuchâtel 2026 – Ek yardımlar | welfarecalc.ch
+  </title>
+  <meta content="Neuchâtel Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Ek yardımlar, Neuchâtel Kantonu, EY, Sosyal yardımlar, Hesaplama 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_tr.html" rel="canonical"/>
+  <meta content="EY Neuchâtel 2026 – Ek yardımlar | welfarecalc.ch" property="og:title"/>
+  <meta content="Neuchâtel Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/NE_2026EL_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="EY Neuchâtel 2026 – Ek yardımlar | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Neuchâtel Kantonu'nda Ek yardımlar hesaplayın. 2026 resmi verileri, şeffaf ve anlaşılır. Ücretsiz kontrol edin." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/NE_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Ek yardımlar Neuchâtel 2026", "description": "Step-by-step guide to calculating Ek yardımlar in Canton Neuchâtel.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     RESMİ VERİ 2026
     </div>
-
-    <div class="content">
-        <p>Şeffaflık çalışmalarımızın merkezindedir. Burada, hesaplayıcımızın Neuchâtel Kantonu için EL hakkını tam olarak nasıl belirlediğini, kantonal bölge tahsisi ve 2026 yeni federal düzenlemelerini dikkate alarak belgeliyoruz.</p>
-
-        <h2 class="section-title">1. Yıllık Temel İhtiyaçlar (2026)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Bekar kişiler</h4>
-                <div class="param-value">CHF 20'670</div>
-                <p><small>2026 itibarıyla ulusal olarak uyumlaştırılmış tutar.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Evli çiftler</h4>
-                <div class="param-value">CHF 31'005</div>
-                <p><small>Aynı hanede yaşayan çiftler için temel ihtiyaçlar.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Neuchâtel Kantonunda Hesaplama Metodolojisi</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Tanınan Harcamalar (İhtiyaçlar)</h3>
-                <p>Neuchâtel Kantonu farklı kira bölgelerine ayrılmıştır. Algoritmamız bunu otomatik olarak tanır:</p>
-                <div class="formula">
-                    Temel ihtiyaçlar + Kira (azami limite kadar) + Sağlık sigortası toplu primi
-                </div>
-                <table class="data-table">
-                    <tr><th>NE 2026 Azami Kira Sınırları</th><th>Bölge 2 (örn. Neuchâtel Şehri)</th><th>Bölge 3 (Kırsal)</th></tr>
-                    <tr><td>1 kişi</td><td>CHF 1'525 / ay</td><td>CHF 1'390 / ay</td></tr>
-                    <tr><td>2 kişi</td><td>CHF 1'810 / ay</td><td>CHF 1'680 / ay</td></tr>
-                    <tr><td>3 kişi</td><td>CHF 1'980 / ay</td><td>CHF 1'850 / ay</td></tr>
-                </table>
-                <p><small>*Tekerlekli sandalye erişimli konut için ek ücret: CHF 6'900 yıllık.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Hesaplanabilir Gelir</h3>
-                <p>2026 özel durumu: 13. AHV maaşının uygulanması, EL hesaplamasında nötr olarak işlenir.</p>
-                <ul style="margin-left: 20px; font-size: 0.95rem;">
-                    <li><strong>Maaşlar:</strong> AHV/IV yardımları (13. maaş dikkate alınmaz).</li>
-                    <li><strong>Varlık eritme:</strong> (Net varlıklar - muafiyet) / 10 (yaşlılık maaşı) veya 1/15 (engellilik sigortası).</li>
-                    <li><strong>Kazanılan gelir:</strong> Kesintilerden sonra gelirin 2/3'ü sayılır.</li>
-                </ul>
-                <table class="data-table">
-                    <tr><th>Muafiyetler (Net varlıklar)</th><th>Tutar</th></tr>
-                    <tr><td>Bekar kişiler</td><td>CHF 30'000</td></tr>
-                    <tr><td>Evli çiftler</td><td>CHF 50'000</td></tr>
-                    <tr><td>Çocuk başına ek</td><td>CHF 15'000</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Nihai EL Yardımı</h3>
-                <p>EL, bir açık garantisi olarak hesaplanır:</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Yıllık EL = [Tanınan harcamaların toplamı] - [Hesaplanabilir gelir toplamı]
-                </div>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Önemli: Varlık eşiği</strong><br>
-            Hak, net varlıkların (sahip olunan konut hariç) <strong>CHF 100'000</strong> (bekar kişiler) veya <strong>CHF 200'000</strong>'in (evli çiftler) altında olması durumunda mevcuttur.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Ana Sayfaya Dön</a>
-            <a href="https://www.caisseavsne.ch" target="_blank" class="btn-link">Resmi Caisse AVS NE Web Sitesi</a>
-        </div>
+    <h1>
+     EL Algoritması: Neuchâtel Kantonu (NE)
+    </h1>
+    <p>
+     2026 yılı için Ek Ödemelerin (EL) şeffaf dökümü
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Hızlı Kontrol: Hakkınız var mı?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Prim indirimi (IPV), tamamlayıcı yardımlar veya diğer sosyal yardımlara uygun olup olmadığınızı hızlıca kontrol edin.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_tr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Ücretsiz kontrol et →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Şeffaflık çalışmalarımızın merkezindedir. Burada, hesaplayıcımızın Neuchâtel Kantonu için EL hakkını tam olarak nasıl belirlediğini, kantonal bölge tahsisi ve 2026 yeni federal düzenlemelerini dikkate alarak belgeliyoruz.
+    </p>
+    <h2 class="section-title">
+     1. Yıllık Temel İhtiyaçlar (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Bekar kişiler
+      </h4>
+      <div class="param-value">
+       CHF 20'670
+      </div>
+      <p>
+       <small>
+        2026 itibarıyla ulusal olarak uyumlaştırılmış tutar.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Evli çiftler
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        Aynı hanede yaşayan çiftler için temel ihtiyaçlar.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Kaynak: Caisse AVS NE Yönergeleri 2026 ve Ek Ödemeler Federal Yasası (ELG)</p>
-        <p>welfarecalc.ch tarafından sağlanmıştır | Bilgiler yasal garanti olmaksızın sunulmuştur.</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Neuchâtel Kantonunda Hesaplama Metodolojisi
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Tanınan Harcamalar (İhtiyaçlar)
+      </h3>
+      <p>
+       Neuchâtel Kantonu farklı kira bölgelerine ayrılmıştır. Algoritmamız bunu otomatik olarak tanır:
+      </p>
+      <div class="formula">
+       Temel ihtiyaçlar + Kira (azami limite kadar) + Sağlık sigortası toplu primi
+      </div>
+      <table class="data-table">
+       <tr>
+        <th>
+         NE 2026 Azami Kira Sınırları
+        </th>
+        <th>
+         Bölge 2 (örn. Neuchâtel Şehri)
+        </th>
+        <th>
+         Bölge 3 (Kırsal)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 kişi
+        </td>
+        <td>
+         CHF 1'525 / ay
+        </td>
+        <td>
+         CHF 1'390 / ay
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 kişi
+        </td>
+        <td>
+         CHF 1'810 / ay
+        </td>
+        <td>
+         CHF 1'680 / ay
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 kişi
+        </td>
+        <td>
+         CHF 1'980 / ay
+        </td>
+        <td>
+         CHF 1'850 / ay
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Tekerlekli sandalye erişimli konut için ek ücret: CHF 6'900 yıllık.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Hesaplanabilir Gelir
+      </h3>
+      <p>
+       2026 özel durumu: 13. AHV maaşının uygulanması, EL hesaplamasında nötr olarak işlenir.
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem;">
+       <li>
+        <strong>
+         Maaşlar:
+        </strong>
+        AHV/IV yardımları (13. maaş dikkate alınmaz).
+       </li>
+       <li>
+        <strong>
+         Varlık eritme:
+        </strong>
+        (Net varlıklar - muafiyet) / 10 (yaşlılık maaşı) veya 1/15 (engellilik sigortası).
+       </li>
+       <li>
+        <strong>
+         Kazanılan gelir:
+        </strong>
+        Kesintilerden sonra gelirin 2/3'ü sayılır.
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Muafiyetler (Net varlıklar)
+        </th>
+        <th>
+         Tutar
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Bekar kişiler
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Evli çiftler
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Çocuk başına ek
+        </td>
+        <td>
+         CHF 15'000
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Nihai EL Yardımı
+      </h3>
+      <p>
+       EL, bir açık garantisi olarak hesaplanır:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Yıllık EL = [Tanınan harcamaların toplamı] - [Hesaplanabilir gelir toplamı]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Önemli: Varlık eşiği
+     </strong>
+     <br/>
+     Hak, net varlıkların (sahip olunan konut hariç)
+     <strong>
+      CHF 100'000
+     </strong>
+     (bekar kişiler) veya
+     <strong>
+      CHF 200'000
+     </strong>
+     'in (evli çiftler) altında olması durumunda mevcuttur.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Ana Sayfaya Dön
+     </a>
+     <a class="btn-link" href="https://www.caisseavsne.ch" target="_blank">
+      Resmi Caisse AVS NE Web Sitesi
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Kaynak: Caisse AVS NE Yönergeleri 2026 ve Ek Ödemeler Federal Yasası (ELG)
+    </p>
+    <p>
+     welfarecalc.ch tarafından sağlanmıştır | Bilgiler yasal garanti olmaksızın sunulmuştur.
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

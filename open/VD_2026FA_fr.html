@@ -1,61 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="fr">
-
-<head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport" />
-    <title>Allocations familiales (AF) Algorithme Canton de Vaud 2026 | welfarecalc.ch</title>
-    <meta
-        content="Comment sont calculées les allocations familiales (AF) 2026 dans le canton de Vaud (VD) ? Découvrez notre algorithme transparent pour les allocations pour enfants, de formation et de naissance."
-        name="description" />
-    <meta content="index, follow" name="robots" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" rel="canonical" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate" />
-    <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate" />
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcul des allocations familiales Vaud 2026",
-      "description": "Guide étape par étape pour la détermination mathématique précise des allocations familiales dans le canton de Vaud (VD) en tenant compte du rang global.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Vérification de l'âge et du statut pour déterminer la catégorie de droit (allocation pour enfant, de formation ou pour enfant invalide)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Détermination de l'indice de rang global de l'enfant (classement par âge) dans l'ensemble du ménage."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Attribution du montant mensuel basé sur le coefficient de rang (augmenté à partir du 3ème enfant)."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Application des allocations uniques (naissance / adoption) différenciées selon qu'il s'agit d'un enfant unique ou de multiples."
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcul du droit annuel et application de validations algorithmiques défensives telles que les limites de revenu."
-        }
-      ]
-    }
-    </script>
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -405,240 +354,511 @@
         .step-body ul li {
             margin-bottom: 0.25rem;
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
-    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/VD_2026FA_fr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
-
-</head>
-
-<body>
-    <div class="container">
-        <header>
-            <div class="update-tag">CONFORME LAFam 2026</div>
-            <h1>Algorithme FA : Canton de Vaud (Vaud)</h1>
-            <p>Documentation transparente des allocations familiales (allocations pour enfants, de formation et de
-                naissance)</p>
-        </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AF Vaud 2026 – Allocations familiales | welfarecalc.ch
+  </title>
+  <meta content="Calcul de Allocations familiales dans le canton de Vaud. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Allocations familiales, Canton Vaud, AF, Prestations sociales, Calcul 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" rel="canonical"/>
+  <meta content="AF Vaud 2026 – Allocations familiales | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcul de Allocations familiales dans le canton de Vaud. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AF Vaud 2026 – Allocations familiales | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcul de Allocations familiales dans le canton de Vaud. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/VD_2026FA_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Allocations familiales Vaud 2026", "description": "Step-by-step guide to calculating Allocations familiales in Canton Vaud.", "step": [{"@type": "HowToStep", "position": 1, "text": "Categorize children by age and education status"}, {"@type": "HowToStep", "position": 2, "text": "Apply the specific cantonal rates for each category"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total monthly allowance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME LAFam 2026
     </div>
-    
-        <div class="content">
-            <p>En Suisse, les allocations familiales sont régies par la loi (LAFam). Notre calculateur utilise les
+    <h1>
+     Algorithme FA : Canton de Vaud (Vaud)
+    </h1>
+    <p>
+     Documentation transparente des allocations familiales (allocations pour enfants, de formation et de
+                naissance)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Vérification rapide : Avez-vous droit ?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_fr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Vérifier gratuitement →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     En Suisse, les allocations familiales sont régies par la loi (LAFam). Notre calculateur utilise les
                 réglementations cantonales spécifiques du canton de Vaud (VD) pour 2026 afin de déterminer précisément
                 votre droit. L'algorithme vaudois se caractérise par un indice global du ménage (rang) et des
-                allocations uniques généreuses. La transparence est importante pour nous.</p>
-            <h2 class="section-title">1. Montants mensuels et montants uniques (2026)</h2>
-            <div class="table-responsive">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Type d'allocation</th>
-                            <th>1er &amp; 2ème enfant (Standard)</th>
-                            <th>Dès le 3ème enfant (Majoré)</th>
-                            <th>Condition / Limite d'âge</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Allocation pour enfant</strong></td>
-                            <td>CHF 322 / mois</td>
-                            <td>CHF 365 / mois</td>
-                            <td>Dès le mois de la naissance jusqu'à l'âge de 16 ans révolus.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Allocation de formation</strong></td>
-                            <td>CHF 425 / mois</td>
-                            <td>CHF 468 / mois</td>
-                            <td>De 16 à 25 ans max. (preuve de formation).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Enfants incapables de travailler</strong></td>
-                            <td>CHF 425 / mois</td>
-                            <td>CHF 468 / mois</td>
-                            <td>De 16 à 20 ans max. (preuve de maladie/invalidité).</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Allocation de naissance</strong></td>
-                            <td colspan="2">CHF 1'617 (enfant unique) / CHF 3'234 (par enfant en cas de naissances
-                                multiples)</td>
-                            <td>Unique en cas de naissance vivante ou dès la 24ème semaine de grossesse.</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Allocation d'adoption</strong></td>
-                            <td colspan="2">CHF 1'617 (cas individuel) / CHF 3'234 (par enfant en cas d'adoption
-                                groupée)</td>
-                            <td>Unique lors de l'accueil en vue d'adoption d'un mineur par décision de justice.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <h2 class="section-title">2. Le chemin de calcul précis (Logique centrale)</h2>
-            <div class="step-box">
-                <div class="step-num">1</div>
-                <div class="step-body">
-                    <h3>Détermination de la catégorie</h3>
-                    <p>L'algorithme vérifie l'âge et le statut d'emploi ou de santé de chaque enfant :</p>
-                    <ul>
-                        <li><strong>0 à 16 ans :</strong> Attribution à la catégorie
-                            <code>Allocation pour enfant</code>.</li>
-                        <li><strong>16 à 25 ans :</strong> Attribution à la catégorie
-                            <code>Allocation de formation</code>,
+                allocations uniques généreuses. La transparence est importante pour nous.
+    </p>
+    <h2 class="section-title">
+     1. Montants mensuels et montants uniques (2026)
+    </h2>
+    <div class="table-responsive">
+     <table class="data-table">
+      <thead>
+       <tr>
+        <th>
+         Type d'allocation
+        </th>
+        <th>
+         1er &amp; 2ème enfant (Standard)
+        </th>
+        <th>
+         Dès le 3ème enfant (Majoré)
+        </th>
+        <th>
+         Condition / Limite d'âge
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         <strong>
+          Allocation pour enfant
+         </strong>
+        </td>
+        <td>
+         CHF 322 / mois
+        </td>
+        <td>
+         CHF 365 / mois
+        </td>
+        <td>
+         Dès le mois de la naissance jusqu'à l'âge de 16 ans révolus.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Allocation de formation
+         </strong>
+        </td>
+        <td>
+         CHF 425 / mois
+        </td>
+        <td>
+         CHF 468 / mois
+        </td>
+        <td>
+         De 16 à 25 ans max. (preuve de formation).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Enfants incapables de travailler
+         </strong>
+        </td>
+        <td>
+         CHF 425 / mois
+        </td>
+        <td>
+         CHF 468 / mois
+        </td>
+        <td>
+         De 16 à 20 ans max. (preuve de maladie/invalidité).
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Allocation de naissance
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (enfant unique) / CHF 3'234 (par enfant en cas de naissances
+                                multiples)
+        </td>
+        <td>
+         Unique en cas de naissance vivante ou dès la 24ème semaine de grossesse.
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <strong>
+          Allocation d'adoption
+         </strong>
+        </td>
+        <td colspan="2">
+         CHF 1'617 (cas individuel) / CHF 3'234 (par enfant en cas d'adoption
+                                groupée)
+        </td>
+        <td>
+         Unique lors de l'accueil en vue d'adoption d'un mineur par décision de justice.
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <h2 class="section-title">
+     2. Le chemin de calcul précis (Logique centrale)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Détermination de la catégorie
+      </h3>
+      <p>
+       L'algorithme vérifie l'âge et le statut d'emploi ou de santé de chaque enfant :
+      </p>
+      <ul>
+       <li>
+        <strong>
+         0 à 16 ans :
+        </strong>
+        Attribution à la catégorie
+        <code>
+         Allocation pour enfant
+        </code>
+        .
+       </li>
+       <li>
+        <strong>
+         16 à 25 ans :
+        </strong>
+        Attribution à la catégorie
+        <code>
+         Allocation de formation
+        </code>
+        ,
                             à condition qu'une preuve de formation valide soit fournie et que la limite de revenu légale
-                            ne soit pas dépassée.</li>
-                        <li><strong>16 à 20 ans (Incapacité de travail) :</strong> Attribution à la catégorie
-                            <code>Enfants incapables de travailler</code> (le montant du droit correspond à l'allocation
+                            ne soit pas dépassée.
+       </li>
+       <li>
+        <strong>
+         16 à 20 ans (Incapacité de travail) :
+        </strong>
+        Attribution à la catégorie
+        <code>
+         Enfants incapables de travailler
+        </code>
+        (le montant du droit correspond à l'allocation
                             de formation).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">2</div>
-                <div class="step-body">
-                    <h3>Détermination du rang global du ménage (Rang de l'enfant)</h3>
-                    <p><strong>Facteur algorithmique critique :</strong> La progressivité à partir du 3ème enfant n'est
+       </li>
+      </ul>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Détermination du rang global du ménage (Rang de l'enfant)
+      </h3>
+      <p>
+       <strong>
+        Facteur algorithmique critique :
+       </strong>
+       La progressivité à partir du 3ème enfant n'est
                         pas
                         calculée séparément par catégorie dans le canton de Vaud. Une liste globale de tous les enfants
-                        ayant droit aux allocations dans le ménage est établie et triée par âge décroissant.</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Attribution_Index_Ménage :</div>
-                        <div class="math-block">
-                            <div class="math-row">Trier_Enfants_par_Âge(<span
-                                    style="color:#64748b;">Décroissant</span>);</div>
-                            <div class="math-row">Enfant_1 (Le plus âgé) <span class="math-sign">→</span> Index 1 <span
-                                    class="math-indent">(Tarif standard)</span></div>
-                            <div class="math-row">Enfant_2           <span class="math-sign">→</span> Index 2 <span
-                                    class="math-indent">(Tarif standard)</span></div>
-                            <div class="math-row">Enfant_3           <span class="math-sign">→</span> Index 3 <span
-                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Tarif majoré dès le
-                                    3ème enfant)</span></div>
-                            <div class="math-row">Enfant_n           <span class="math-sign">→</span> Index n <span
-                                    class="math-indent" style="color:#b8860b; font-weight:bold;">(Tarif majoré dès le
-                                    3ème enfant)</span></div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #475569;"><small><em>Cela garantit que, par exemple,
+                        ayant droit aux allocations dans le ménage est établie et triée par âge décroissant.
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Attribution_Index_Ménage :
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Trier_Enfants_par_Âge(
+         <span style="color:#64748b;">
+          Décroissant
+         </span>
+         );
+        </div>
+        <div class="math-row">
+         Enfant_1 (Le plus âgé)
+         <span class="math-sign">
+          →
+         </span>
+         Index 1
+         <span class="math-indent">
+          (Tarif standard)
+         </span>
+        </div>
+        <div class="math-row">
+         Enfant_2
+         <span class="math-sign">
+          →
+         </span>
+         Index 2
+         <span class="math-indent">
+          (Tarif standard)
+         </span>
+        </div>
+        <div class="math-row">
+         Enfant_3
+         <span class="math-sign">
+          →
+         </span>
+         Index 3
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Tarif majoré dès le
+                                    3ème enfant)
+         </span>
+        </div>
+        <div class="math-row">
+         Enfant_n
+         <span class="math-sign">
+          →
+         </span>
+         Index n
+         <span class="math-indent" style="color:#b8860b; font-weight:bold;">
+          (Tarif majoré dès le
+                                    3ème enfant)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569;">
+       <small>
+        <em>
+         Cela garantit que, par exemple,
                                 un troisième enfant en formation reçoive le taux majoré complet de CHF 468, même si les
                                 deux premiers enfants plus jeunes ne perçoivent que des allocations pour
-                                enfant.</em></small></p>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">3</div>
-                <div class="step-body">
-                    <h3>Calcul du montant mensuel</h3>
-                    <p>La somme mathématique se forme dynamiquement en fonction des indices déterminés :</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Droit_Total_Mensuel :</div>
-                        <div class="math-block">
-                            <div class="math-row">Droit_Total_Mensuel = ∑ [ Tarif ( Catégorie, Index ) ]</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">Où :
-                            </div>
-                            <div class="math-row">• Si Index ≤ 2 :</div>
-                            <div class="math-indent">Allocation enfant = 322 CHF | Formation / Incapacité = 425 CHF
-                            </div>
-                            <div class="math-row">• Si Index ≥ 3 :</div>
-                            <div class="math-indent" style="color:#b8860b; font-weight:bold;">Allocation enfant = 365
-                                CHF | Formation / Incapacité = 468 CHF</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">4</div>
-                <div class="step-body">
-                    <h3>Calcul des allocations uniques (Naissance / Adoption)</h3>
-                    <p>L'algorithme vérifie si une naissance ou une adoption a eu lieu dans l'année de calcul et
-                        distingue strictement entre les naissances uniques et multiples :</p>
-                    <div class="formula-container">
-                        <div class="formula-title">Total_Allocations_Uniques :</div>
-                        <div class="math-block">
-                            <div class="math-row">Total_Allocations_Uniques = Nombre_Enfants <span
-                                    class="math-sign">×</span> Montant_Unique_Par_Enfant</div>
-                            <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
-                                Paramètres :</div>
-                            <div class="math-row">• Enfant unique (Nombre_Enfants == 1) :</div>
-                            <div class="math-indent">Montant_Unique_Par_Enfant = 1'617 CHF</div>
-                            <div class="math-row">• Naissances multiples (Nombre_Enfants ≤ 2) :</div>
-                            <div class="math-indent">Montant_Unique_Par_Enfant = 3'234 CHF <span
-                                    style="color:#64748b; font-weight:normal;">(par enfant)</span></div>
-                        </div>
-                    </div>
-                    <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
-                        <em>Exemple : Naissance gémellaire → 2 × 3'234 CHF = 6'468 CHF Total.<br />
-                            Enfant unique → 1 × 1'617 CHF = 1'617 CHF Total.</em>
-                    </p>
-                </div>
-            </div>
-            <div class="step-box">
-                <div class="step-num">5</div>
-                <div class="step-body">
-                    <h3>Détermination du droit annuel</h3>
-                    <p>L'agrégation pour obtenir le droit annuel total est :</p>
-                    <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
-                        <div class="formula-title" style="color:#a855f7;">Calcul_Montant_Annuel :</div>
-                        <div class="math-block" style="color:#6b21a8;">
-                            <div class="math-row">Montant_Annuel = ( Droit_Total_Mensuel <span
-                                    class="math-sign">×</span> 12 ) <span class="math-sign">+</span>
-                                Total_Allocations_Uniques</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h2 class="section-title">3. Validation défensive et limites algorithmiques</h2>
-            <div class="alert"
-                style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
-                <strong>Barrières de sécurité intégrées (Validation anti-erreur) :</strong>
-                <ul>
-                    <li><strong>Limite de revenu pour les enfants en formation :</strong> Si un enfant en formation
-                        (16-25 ans) gagne un revenu professionnel imposable personnel supérieur à <strong>CHF 30'240 /
-                            an</strong> (soit CHF 2'520 / mois), le droit à l'allocation s'éteint immédiatement dans
-                        l'algorithme du moteur central (Résultat = 0).</li>
-                    <li><strong>Interdiction de perception simultanée (Principe d'exclusion) :</strong> Pour un même
+                                enfant.
+        </em>
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Calcul du montant mensuel
+      </h3>
+      <p>
+       La somme mathématique se forme dynamiquement en fonction des indices déterminés :
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Droit_Total_Mensuel :
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Droit_Total_Mensuel = ∑ [ Tarif ( Catégorie, Index ) ]
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Où :
+        </div>
+        <div class="math-row">
+         • Si Index ≤ 2 :
+        </div>
+        <div class="math-indent">
+         Allocation enfant = 322 CHF | Formation / Incapacité = 425 CHF
+        </div>
+        <div class="math-row">
+         • Si Index ≥ 3 :
+        </div>
+        <div class="math-indent" style="color:#b8860b; font-weight:bold;">
+         Allocation enfant = 365
+                                CHF | Formation / Incapacité = 468 CHF
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Calcul des allocations uniques (Naissance / Adoption)
+      </h3>
+      <p>
+       L'algorithme vérifie si une naissance ou une adoption a eu lieu dans l'année de calcul et
+                        distingue strictement entre les naissances uniques et multiples :
+      </p>
+      <div class="formula-container">
+       <div class="formula-title">
+        Total_Allocations_Uniques :
+       </div>
+       <div class="math-block">
+        <div class="math-row">
+         Total_Allocations_Uniques = Nombre_Enfants
+         <span class="math-sign">
+          ×
+         </span>
+         Montant_Unique_Par_Enfant
+        </div>
+        <div class="math-row" style="margin-top:0.6rem; color:#64748b; font-size:0.85rem;">
+         Paramètres :
+        </div>
+        <div class="math-row">
+         • Enfant unique (Nombre_Enfants == 1) :
+        </div>
+        <div class="math-indent">
+         Montant_Unique_Par_Enfant = 1'617 CHF
+        </div>
+        <div class="math-row">
+         • Naissances multiples (Nombre_Enfants ≤ 2) :
+        </div>
+        <div class="math-indent">
+         Montant_Unique_Par_Enfant = 3'234 CHF
+         <span style="color:#64748b; font-weight:normal;">
+          (par enfant)
+         </span>
+        </div>
+       </div>
+      </div>
+      <p style="font-size: 0.9rem; color: #475569; margin-top: 0.75rem;">
+       <em>
+        Exemple : Naissance gémellaire → 2 × 3'234 CHF = 6'468 CHF Total.
+        <br/>
+        Enfant unique → 1 × 1'617 CHF = 1'617 CHF Total.
+       </em>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      5
+     </div>
+     <div class="step-body">
+      <h3>
+       Détermination du droit annuel
+      </h3>
+      <p>
+       L'agrégation pour obtenir le droit annuel total est :
+      </p>
+      <div class="formula-container" style="background:#faf5ff; border-left-color:#a855f7;">
+       <div class="formula-title" style="color:#a855f7;">
+        Calcul_Montant_Annuel :
+       </div>
+       <div class="math-block" style="color:#6b21a8;">
+        <div class="math-row">
+         Montant_Annuel = ( Droit_Total_Mensuel
+         <span class="math-sign">
+          ×
+         </span>
+         12 )
+         <span class="math-sign">
+          +
+         </span>
+         Total_Allocations_Uniques
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <h2 class="section-title">
+     3. Validation défensive et limites algorithmiques
+    </h2>
+    <div class="alert" style="background: #f0fdf4; border: 1px solid #dcfce7; border-left: 5px solid #22c55e; color: #14532d; margin-top: 0;">
+     <strong>
+      Barrières de sécurité intégrées (Validation anti-erreur) :
+     </strong>
+     <ul>
+      <li>
+       <strong>
+        Limite de revenu pour les enfants en formation :
+       </strong>
+       Si un enfant en formation
+                        (16-25 ans) gagne un revenu professionnel imposable personnel supérieur à
+       <strong>
+        CHF 30'240 /
+                            an
+       </strong>
+       (soit CHF 2'520 / mois), le droit à l'allocation s'éteint immédiatement dans
+                        l'algorithme du moteur central (Résultat = 0).
+      </li>
+      <li>
+       <strong>
+        Interdiction de perception simultanée (Principe d'exclusion) :
+       </strong>
+       Pour un même
                         enfant, une
                         allocation pour enfant et une allocation de formation ne peuvent jamais être accordées
-                        simultanément.</li>
-                    <li><strong>Plafonnement par limite d'âge :</strong> Le droit à l'allocation pour enfant s'éteint à
+                        simultanément.
+      </li>
+      <li>
+       <strong>
+        Plafonnement par limite d'âge :
+       </strong>
+       Le droit à l'allocation pour enfant s'éteint à
                         la fin du
                         mois au cours duquel l'enfant atteint l'âge de 16 ans. Le droit à l'allocation de formation
                         s'éteint le lendemain du 25ème anniversaire ou en cas d'achèvement anticipé de la formation.
-                    </li>
-                </ul>
-            </div>
-            <div class="alert">
-                <strong>Droit selon le droit fédéral :</strong><br />
-                Un seul parent peut percevoir l'allocation. Un ordre de priorité légal s'applique selon l'art. 12
+      </li>
+     </ul>
+    </div>
+    <div class="alert">
+     <strong>
+      Droit selon le droit fédéral :
+     </strong>
+     <br/>
+     Un seul parent peut percevoir l'allocation. Un ordre de priorité légal s'applique selon l'art. 12
                 LAFam si les deux parents exercent une activité lucrative (par ex., en priorité celui qui a l'activité
                 principale
                 dans le canton de résidence de l'enfant).
-            </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a aria-label="Accéder au calculateur" class="btn-link btn-home" href="https://www.welfarecalc.ch"
-                    target="_blank">Lancer le calculateur</a>
-                <a aria-label="Vers le site officiel du canton de Vaud" class="btn-link"
-                    href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales"
-                    target="_blank">Page officielle
-                    CCVD Vaud</a>
-            </div>
-        </div>
-        <footer>
-            <p>Source : Directives 2026 de la Caisse cantonale vaudoise de compensation AVS (CCVD) &amp; Loi fédérale
-                sur les
-                allocations familiales (LAFam)</p>
-            <p>© 2026 welfarecalc.ch | Calcul transparent des allocations familiales</p>
-        </footer>
     </div>
-</body>
-
+    <div style="text-align: center; margin-top: 2rem;">
+     <a aria-label="Accéder au calculateur" class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Lancer le calculateur
+     </a>
+     <a aria-label="Vers le site officiel du canton de Vaud" class="btn-link" href="https://www.vd.ch/aides-financieres-et-soutien-social/aides-financieres-et-comment-les-demander/allocations-familiales" target="_blank">
+      Page officielle
+                    CCVD Vaud
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Source : Directives 2026 de la Caisse cantonale vaudoise de compensation AVS (CCVD) &amp; Loi fédérale
+                sur les
+                allocations familiales (LAFam)
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Calcul transparent des allocations familiales
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

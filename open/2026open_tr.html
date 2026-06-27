@@ -1,47 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- TRANSLATE: Meta Tags -->
-    <title>Sosyal Yardım Sorgulama | welfarecalc.ch</title>
-    <meta name="description"
-        content="Kantonunuzdaki Sosyal Yardım (SH), Ek Ödemeler (EL), Aile Ödenekleri (FA), Bireysel Prim İndirimi (IPV) ve Acil Yardım (NH) için resmi hesaplama algoritmasını bulun. Şeffaf ve veri gizliliğine uygun.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
-    <link rel="alternate" hreflang="de-ch" href="https://www.welfarecalc.ch/open/2026open_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/2026open_en.html">
-    <link rel="alternate" hreflang="fr-ch" href="https://www.welfarecalc.ch/open/2026open_fr.html">
-    <link rel="alternate" hreflang="it-ch" href="https://www.welfarecalc.ch/open/2026open_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/2026open_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/2026open_pt.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/2026open_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/2026open_hr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/2026open_sq.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/2026open_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/2026open_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/2026open_tr.html">
-
-    <!-- Open Graph -->
-
-    <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "welfarecalc.ch",
-      "url": "https://www.welfarecalc.ch",
-      "inLanguage": "tr"
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- TRANSLATE: Meta Tags -->
+  <meta content="index, follow" name="robots"/>
+  <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
+  <!-- Canonical Tag -->
+  <!-- Open Graph -->
+  <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -292,133 +261,276 @@
                 padding: 1.5rem;
             }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="2026 Isvicre Yardim Hesaplayicisi | 26 Kanton + Dis Faturasi Denetimi">
-    <meta property="og:description" content="26 Isvicre kantonunun tamaminda AVS, AI, PC ve prim indirimlerini hesaplayin. Dis faturasi denetleyicisi ve kira sozlesmesi kontrolu dahil. Tarayicinizda %100 anonim. 11 dil.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/2026open_tr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="tr">
-
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <!-- TRANSLATE: Header Section -->
-            <div class="update-tag">🔍 ŞEFFAF ALGORİTMALAR 2026</div>
-            <h1>İsviçre Sosyal Yardım Sorgulama</h1>
-            <p>Kantonunuz için resmi hesaplama algoritmasını bulun</p>
-        </header>
-
-        <div class="hero-search">
-            <div class="search-card">
-                <!-- Dropdown 1: Kanton -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="state">📍 1. Kanton seçin</label>
-                    <select id="state">
-                        <option value="">📌 Kanton seçin</option>
-                        <option value="AG">Aargau (AG)</option>
-                        <option value="AI">Appenzell Innerrhoden (AI)</option>
-                        <option value="AR">Appenzell Ausserrhoden (AR)</option>
-                        <option value="BE">Bern (BE)</option>
-                        <option value="BL">Basel-Landschaft (BL)</option>
-                        <option value="BS">Basel-Stadt (BS)</option>
-                        <option value="FR">Freiburg (FR)</option>
-                        <option value="GE">Cenevre (GE)</option>
-                        <option value="GL">Glarus (GL)</option>
-                        <option value="GR">Graubünden (GR)</option>
-                        <option value="JU">Jura (JU)</option>
-                        <option value="LU">Luzern (LU)</option>
-                        <option value="NE">Neuchâtel (NE)</option>
-                        <option value="NW">Nidwalden (NW)</option>
-                        <option value="OW">Obwalden (OW)</option>
-                        <option value="SG">St. Gallen (SG)</option>
-                        <option value="SH">Schaffhausen (SH)</option>
-                        <option value="SO">Solothurn (SO)</option>
-                        <option value="SZ">Schwyz (SZ)</option>
-                        <option value="TG">Thurgau (TG)</option>
-                        <option value="TI">Ticino (TI)</option>
-                        <option value="UR">Uri (UR)</option>
-                        <option value="VD">Vaud (VD)</option>
-                        <option value="VS">Valais (VS)</option>
-                        <option value="ZG">Zug (ZG)</option>
-                        <option value="ZH">Zürih (ZH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="state-error" class="error-text">⚠️ Lütfen bir kanton seçin.</div>
-                </div>
-
-                <!-- Dropdown 2: Leistungsart -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="welfare">📋 2. Sosyal yardım kategorisini seçin</label>
-                    <select id="welfare">
-                        <option value="">📋 Yardım türünü seçin</option>
-                        <option value="SH">🏠 Sosyal Yardım (SH)</option>
-                        <option value="IPV">💊 Bireysel Prim İndirimi (IPV)</option>
-                        <option value="EL">👴 Ek Ödemeler (EL)</option>
-                        <option value="FA">👨‍👩‍👧 Aile Ödenekleri (FA)</option>
-                        <option value="nothilfe">🚨 Acil Yardım (NH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="welfare-error" class="error-text">⚠️ Lütfen bir yardım türü seçin.</div>
-                </div>
-
-                <div class="button-group">
-                    <!-- TRANSLATE -->
-                    <button class="action-btn search-button-style" onclick="searchAndRedirect()">🔍 Ara & Algoritmayı Aç</button>
-                    <a href="https://www.welfarecalc.ch" class="action-btn home-button-style">🏠 Ana Sayfaya Dön</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-below">
-            <!-- Info Box -->
-            <div class="info-box">
-                <!-- TRANSLATE: Info Box Content -->
-                <p>🇨🇭 <strong>welfarecalc.ch Hakkında</strong></p>
-                <p>İsviçre'de yaşayan mühendisler ve geliştiricilerden oluşan bir ekibiz. Amacımız, karmaşık İsviçre sosyal yardım sistemlerini herkes için anlaşılır ve erişilebilir kılmaktır. Bu platform, şeffaflık ve adalet inancıyla oluşturulmuş <strong>kâr amacı gütmeyen bir projedir</strong>.</p>
-
-                <p>📄 <strong>Algoritmalarımız Nasıl Oluşuyor</strong><br>
-                    Hesaplama mantığımız yalnızca resmi, halka açık belgelere dayanmaktadır – kanton yasaları (SHG, ELG, FamZG, KVG), SKOS yönergeleri ve denkleştirme fonu yönetmelikleri dahil. Her algoritma bu kaynaklardan titizlikle türetilir ve şeffaf bir şekilde belgelenir.</p>
-
-                <p>🌍 <strong>Çok Dillilik ve Şeffaflık</strong><br>
-                    İsviçre çeşitlilik gösterir. Bu nedenle tüm algoritmaları <strong>11 dilde</strong> sunuyoruz: Almanca, Fransızca, İtalyanca, İngilizce, İspanyolca, Portekizce, Lehçe, Hırvatça, Arnavutça, Türkçe ve Tamilce. Böylece mümkün olduğunca çok kişi kendileriyle ilgili bilgileri anlayabilir.</p>
-
-                <p>📌 <strong>Bu Sayfayı Nasıl Kullanırsınız</strong><br>
-                    Yukarıdan kantonunuzu ve istediğiniz yardım türünü seçin. Ardından “Ara & Algoritmayı Aç” butonuna tıklayın. İlgili algoritmaya yeni bir sekmede veya aynı pencerede (tarayıcı ayarlarınıza bağlı olarak) yönlendirileceksiniz. Kırmızı “Ana Sayfaya Dön” butonu ile istediğiniz zaman welfarecalc.ch ana sayfasına geri dönebilirsiniz.</p>
-            </div>
-
-            <!-- Rechtlicher Hinweis -->
-            <div class="disclaimer">
-                <!-- TRANSLATE: Disclaimer -->
-                <strong>⚠️ Önemli Yasal Uyarı</strong><br>
-                Bu web sitesinde sunulan algoritmalar ve hesaplamalar, halka açık resmi belgelere dayanmakta olup tarafımızca en iyi bilgi ve vicdani kanaatimize göre türetilmiştir. Sosyal yardım sistemlerinin karmaşıklığı ve bireysel koşullar (gelir, varlıklar, aile yapısı, yaşam durumu vb.) nedeniyle, fiili haklar somut durumda farklılık gösterebilir. <strong>Tüm bilgiler yalnızca bilgilendirme amaçlıdır ve bağlayıcı bir yasal etkisi yoktur.</strong> Bağlayıcı bir bilgi için lütfen ilgili makama (Sosyal Güvenlik Kurumu, belediye idaresi veya sosyal hizmetler) başvurun. welfarecalc.ch, bu bilgilere dayanarak alınan kararlardan dolayı herhangi bir sorumluluk kabul etmez.
-            </div>
-        </div>
-
-        <footer>
-            <!-- TRANSLATE: Footer -->
-            <p>© 2026 welfarecalc.ch | Sosyal yardımların şeffaf hesaplanması</p>
-            <p>Kaynaklar: Kanton yasaları (SHG, ELG, FamZG, KVG), SKOS yönergeleri 2026, Denkleştirme fonu yönetmelikleri</p>
-            <p>İsviçre'de şeffaflık için mühendisler tarafından oluşturulmuş kâr amacı gütmeyen bir proje</p>
-        </footer>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   Sosyal yardım sorgulama | 26 Kanton Algoritması | welfarecalc.ch
+  </title>
+  <meta content="Kantonunuzdaki sosyal yardım (SH), ek yardımlar (EL), aile ödenekleri (FA), IPV ve acil yardım için resmi hesaplama algoritmasını bulun. Şeffaf ve gizliliğe uygun." name="description"/>
+  <meta content="sosyal yardımlar, algoritmalar, kanton, SH, EL, FA, IPV, acil yardım, sosyal yardım, ek yardımlar, aile ödenekleri, prim indirimi, welfarecalc.ch" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_tr.html" rel="canonical"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="x-default" rel="alternate"/>
+  <meta content="Sosyal yardım sorgulama | 26 Kanton Algoritması | welfarecalc.ch" property="og:title"/>
+  <meta content="Kantonunuzdaki sosyal yardım (SH), ek yardımlar (EL), aile ödenekleri (FA), IPV ve acil yardım için resmi hesaplama algoritmasını bulun." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/2026open_tr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="tr_TR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Sosyal yardım sorgulama | 26 Kanton Algoritması | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Kantonunuzdaki sosyal yardım (SH), ek yardımlar (EL), aile ödenekleri (FA), IPV ve acil yardım için resmi hesaplama algoritmasını bulun." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "WebSite", "name": "welfarecalc.ch", "url": "https://www.welfarecalc.ch", "description": "Kantonunuzdaki sosyal yardım (SH), ek yardımlar (EL), aile ödenekleri (FA), IPV ve acil yardım için resmi hesaplama algoritmasını bulun. Şeffaf ve gizliliğe uygun.", "inLanguage": "tr"}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <!-- TRANSLATE: Header Section -->
+    <div class="update-tag">
+     🔍 ŞEFFAF ALGORİTMALAR 2026
     </div>
-
-    <noscript>
-        <div
-            style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
-            ⚠️ JavaScript devre dışı. Arama fonksiyonunu kullanmak için lütfen JavaScript'i etkinleştirin.
-        </div>
-    </noscript>
-
-    <script>
-        // Configuration
+    <h1>
+     İsviçre Sosyal Yardım Sorgulama
+    </h1>
+    <p>
+     Kantonunuz için resmi hesaplama algoritmasını bulun
+    </p>
+   </header>
+   <div class="hero-search">
+    <div class="search-card">
+     <!-- Dropdown 1: Kanton -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="state">
+       📍 1. Kanton seçin
+      </label>
+      <select id="state">
+       <option value="">
+        📌 Kanton seçin
+       </option>
+       <option value="AG">
+        Aargau (AG)
+       </option>
+       <option value="AI">
+        Appenzell Innerrhoden (AI)
+       </option>
+       <option value="AR">
+        Appenzell Ausserrhoden (AR)
+       </option>
+       <option value="BE">
+        Bern (BE)
+       </option>
+       <option value="BL">
+        Basel-Landschaft (BL)
+       </option>
+       <option value="BS">
+        Basel-Stadt (BS)
+       </option>
+       <option value="FR">
+        Freiburg (FR)
+       </option>
+       <option value="GE">
+        Cenevre (GE)
+       </option>
+       <option value="GL">
+        Glarus (GL)
+       </option>
+       <option value="GR">
+        Graubünden (GR)
+       </option>
+       <option value="JU">
+        Jura (JU)
+       </option>
+       <option value="LU">
+        Luzern (LU)
+       </option>
+       <option value="NE">
+        Neuchâtel (NE)
+       </option>
+       <option value="NW">
+        Nidwalden (NW)
+       </option>
+       <option value="OW">
+        Obwalden (OW)
+       </option>
+       <option value="SG">
+        St. Gallen (SG)
+       </option>
+       <option value="SH">
+        Schaffhausen (SH)
+       </option>
+       <option value="SO">
+        Solothurn (SO)
+       </option>
+       <option value="SZ">
+        Schwyz (SZ)
+       </option>
+       <option value="TG">
+        Thurgau (TG)
+       </option>
+       <option value="TI">
+        Ticino (TI)
+       </option>
+       <option value="UR">
+        Uri (UR)
+       </option>
+       <option value="VD">
+        Vaud (VD)
+       </option>
+       <option value="VS">
+        Valais (VS)
+       </option>
+       <option value="ZG">
+        Zug (ZG)
+       </option>
+       <option value="ZH">
+        Zürih (ZH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="state-error">
+       ⚠️ Lütfen bir kanton seçin.
+      </div>
+     </div>
+     <!-- Dropdown 2: Leistungsart -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="welfare">
+       📋 2. Sosyal yardım kategorisini seçin
+      </label>
+      <select id="welfare">
+       <option value="">
+        📋 Yardım türünü seçin
+       </option>
+       <option value="SH">
+        🏠 Sosyal Yardım (SH)
+       </option>
+       <option value="IPV">
+        💊 Bireysel Prim İndirimi (IPV)
+       </option>
+       <option value="EL">
+        👴 Ek Ödemeler (EL)
+       </option>
+       <option value="FA">
+        👨‍👩‍👧 Aile Ödenekleri (FA)
+       </option>
+       <option value="nothilfe">
+        🚨 Acil Yardım (NH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="welfare-error">
+       ⚠️ Lütfen bir yardım türü seçin.
+      </div>
+     </div>
+     <div class="button-group">
+      <!-- TRANSLATE -->
+      <button class="action-btn search-button-style" onclick="searchAndRedirect()">
+       🔍 Ara &amp; Algoritmayı Aç
+      </button>
+      <a class="action-btn home-button-style" href="https://www.welfarecalc.ch">
+       🏠 Ana Sayfaya Dön
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="content-below">
+    <!-- Info Box -->
+    <div class="info-box">
+     <!-- TRANSLATE: Info Box Content -->
+     <p>
+      🇨🇭
+      <strong>
+       welfarecalc.ch Hakkında
+      </strong>
+     </p>
+     <p>
+      İsviçre'de yaşayan mühendisler ve geliştiricilerden oluşan bir ekibiz. Amacımız, karmaşık İsviçre sosyal yardım sistemlerini herkes için anlaşılır ve erişilebilir kılmaktır. Bu platform, şeffaflık ve adalet inancıyla oluşturulmuş
+      <strong>
+       kâr amacı gütmeyen bir projedir
+      </strong>
+      .
+     </p>
+     <p>
+      📄
+      <strong>
+       Algoritmalarımız Nasıl Oluşuyor
+      </strong>
+      <br/>
+      Hesaplama mantığımız yalnızca resmi, halka açık belgelere dayanmaktadır – kanton yasaları (SHG, ELG, FamZG, KVG), SKOS yönergeleri ve denkleştirme fonu yönetmelikleri dahil. Her algoritma bu kaynaklardan titizlikle türetilir ve şeffaf bir şekilde belgelenir.
+     </p>
+     <p>
+      🌍
+      <strong>
+       Çok Dillilik ve Şeffaflık
+      </strong>
+      <br/>
+      İsviçre çeşitlilik gösterir. Bu nedenle tüm algoritmaları
+      <strong>
+       11 dilde
+      </strong>
+      sunuyoruz: Almanca, Fransızca, İtalyanca, İngilizce, İspanyolca, Portekizce, Lehçe, Hırvatça, Arnavutça, Türkçe ve Tamilce. Böylece mümkün olduğunca çok kişi kendileriyle ilgili bilgileri anlayabilir.
+     </p>
+     <p>
+      📌
+      <strong>
+       Bu Sayfayı Nasıl Kullanırsınız
+      </strong>
+      <br/>
+      Yukarıdan kantonunuzu ve istediğiniz yardım türünü seçin. Ardından “Ara &amp; Algoritmayı Aç” butonuna tıklayın. İlgili algoritmaya yeni bir sekmede veya aynı pencerede (tarayıcı ayarlarınıza bağlı olarak) yönlendirileceksiniz. Kırmızı “Ana Sayfaya Dön” butonu ile istediğiniz zaman welfarecalc.ch ana sayfasına geri dönebilirsiniz.
+     </p>
+    </div>
+    <!-- Rechtlicher Hinweis -->
+    <div class="disclaimer">
+     <!-- TRANSLATE: Disclaimer -->
+     <strong>
+      ⚠️ Önemli Yasal Uyarı
+     </strong>
+     <br/>
+     Bu web sitesinde sunulan algoritmalar ve hesaplamalar, halka açık resmi belgelere dayanmakta olup tarafımızca en iyi bilgi ve vicdani kanaatimize göre türetilmiştir. Sosyal yardım sistemlerinin karmaşıklığı ve bireysel koşullar (gelir, varlıklar, aile yapısı, yaşam durumu vb.) nedeniyle, fiili haklar somut durumda farklılık gösterebilir.
+     <strong>
+      Tüm bilgiler yalnızca bilgilendirme amaçlıdır ve bağlayıcı bir yasal etkisi yoktur.
+     </strong>
+     Bağlayıcı bir bilgi için lütfen ilgili makama (Sosyal Güvenlik Kurumu, belediye idaresi veya sosyal hizmetler) başvurun. welfarecalc.ch, bu bilgilere dayanarak alınan kararlardan dolayı herhangi bir sorumluluk kabul etmez.
+    </div>
+   </div>
+   <footer>
+    <!-- TRANSLATE: Footer -->
+    <p>
+     © 2026 welfarecalc.ch | Sosyal yardımların şeffaf hesaplanması
+    </p>
+    <p>
+     Kaynaklar: Kanton yasaları (SHG, ELG, FamZG, KVG), SKOS yönergeleri 2026, Denkleştirme fonu yönetmelikleri
+    </p>
+    <p>
+     İsviçre'de şeffaflık için mühendisler tarafından oluşturulmuş kâr amacı gütmeyen bir proje
+    </p>
+   </footer>
+  </div>
+  <noscript>
+   <div style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
+    ⚠️ JavaScript devre dışı. Arama fonksiyonunu kullanmak için lütfen JavaScript'i etkinleştirin.
+   </div>
+  </noscript>
+  <script>
+   // Configuration
         const LANG = "tr";
         const BASE_PATH = "https://www.welfarecalc.ch/open/";
 
@@ -479,8 +591,6 @@
 
         if (stateField) stateField.addEventListener('keypress', handleEnterOnSelect);
         if (welfareField) welfareField.addEventListener('keypress', handleEnterOnSelect);
-    </script>
-
-</body>
-
+  </script>
+ </body>
 </html>

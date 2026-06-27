@@ -1,56 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr-CH">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Algorithme de l'aide sociale Canton de Saint-Gall 2026 | Calcul transparent | welfarecalc.ch</title>
-    <meta name="description" content="Comment l'aide sociale 2026 est-elle calculée dans le Canton de Saint-Gall (SG) ? Découvrez notre algorithme transparent basé sur les directives SKOS et le droit cantonal.">
-    <meta name="robots" content="index, follow">
-    
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/SG_2026SH_fr.html">
-    <link rel="alternate" hreflang="de" href="https://www.welfarecalc.ch/open/SG_2026SH_de.html">
-    <link rel="alternate" hreflang="fr" href="https://www.welfarecalc.ch/open/SG_2026SH_fr.html">
-    <link rel="alternate" hreflang="it" href="https://www.welfarecalc.ch/open/SG_2026SH_it.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/SG_2026SH_en.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/SG_2026SH_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/SG_2026SH_pt.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/SG_2026SH_sq.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/SG_2026SH_hr.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/SG_2026SH_pl.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/SG_2026SH_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/SG_2026SH_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/SG_2026SH_de.html">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcul de l'aide sociale Saint-Gall 2026",
-      "description": "Détail algorithmique du calcul de l'aide sociale dans le Canton de SG.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Vérification de la déduction d'épargne (seuil d'entrée)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Détermination du besoin de base pour l'entretien (GBL)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Intégration des limites de loyer et des primes d'assurance-maladie nettes selon l'IPV"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Comparaison des revenus imposables après déductions forfaitaires"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        :root {
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -85,125 +39,279 @@
         .btn-home { background: var(--swiss-red); }
 
         footer { text-align: center; padding: 3rem 1.5rem; background: #f8fafc; color: #64748b; font-size: 0.9rem; border-top: 1px solid #e2e8f0; }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calculateur AVS/AI/PC 2026 | 26 Cantons + Verificateur Factures Dentaires">
-    <meta property="og:description" content="Calculez precisement vos prestations sociales suisses: AVS, AI, PC et reduction des primes. Avec verificateur de factures dentaires et analyseur de baux. 100% anonyme dans le navigateur. 11 langues.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/SG_2026SH_fr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="fr">
-
-</head>
-<body>
-
-<div class="container">
-    <header>
-        <div class="update-tag">CONFORME SKOS 2026</div>
-        <h1>Algorithme de l'aide sociale : Canton de Saint-Gall</h1>
-        <p>Documentation transparente de la logique de calcul du minimum vital social (SG)</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Vérification rapide : Avez-vous droit ?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.</p>
-        <a href="https://www.welfarecalc.ch/bus_fr" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Vérifier gratuitement →</a>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   AS Saint-Gall 2026 – Aide sociale | welfarecalc.ch
+  </title>
+  <meta content="Calcul de Aide sociale dans le canton de Saint-Gall. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Aide sociale, Canton Saint-Gall, AS, Prestations sociales, Calcul 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_fr.html" rel="canonical"/>
+  <meta content="AS Saint-Gall 2026 – Aide sociale | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcul de Aide sociale dans le canton de Saint-Gall. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/SG_2026SH_fr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="fr_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="AS Saint-Gall 2026 – Aide sociale | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcul de Aide sociale dans le canton de Saint-Gall. Données officielles 2026, transparentes et compréhensibles. Vérifiez gratuitement." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/SG_2026SH_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Aide sociale Saint-Gall 2026", "description": "Step-by-step guide to calculating Aide sociale in Canton Saint-Gall.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine basic social assistance rate"}, {"@type": "HowToStep", "position": 2, "text": "Add housing and health insurance costs"}, {"@type": "HowToStep", "position": 3, "text": "Calculate total social assistance"}]}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <div class="update-tag">
+     CONFORME SKOS 2026
     </div>
-
-    <div class="content">
-        <p>Comment l'aide sociale est-elle calculée dans le Canton de Saint-Gall ? Pour renforcer la confiance de nos utilisateurs, nous divulguons ici l'algorithme de calcul complet qui se cache derrière welfarecalc.ch. Il est basé sur la loi saint-galloise sur l'aide sociale (SHG) ainsi que sur les directives SKOS 2026.</p>
-
-        <h2 class="section-title">1. Contrôle des avoirs (Seuil d'entrée)</h2>
-        <div class="grid-params">
-            <div class="param-card">
-                <h4>Déduction pour personne seule</h4>
-                <div class="param-value">CHF 6'000</div>
-                <p><small>Plus CHF 3'000 par enfant ou personne en formation.</small></p>
-            </div>
-            <div class="param-card">
-                <h4>Déduction pour couples mariés</h4>
-                <div class="param-value">CHF 12'000</div>
-                <p><small>Déduction totale maximale plafonnée à CHF 15'000 par unité d'aide.</small></p>
-            </div>
-        </div>
-
-        <h2 class="section-title">2. Le chemin de calcul (Mensuel)</h2>
-
-        <div class="step-box">
-            <div class="step-num">1</div>
-            <div class="step-body">
-                <h3>Besoin de base pour l'entretien (GBL)</h3>
-                <p>Le GBL couvre les frais de nourriture, d'habillement, d'énergie et de ménage :</p>
-                <table class="data-table">
-                    <tr><th>Taille du ménage</th><th>Montant par mois (2026)</th></tr>
-                    <tr><td>1 personne</td><td>CHF 1'061</td></tr>
-                    <tr><td>2 personnes</td><td>CHF 1'624</td></tr>
-                    <tr><td>3 personnes</td><td>CHF 1'974</td></tr>
-                    <tr><td>4 personnes</td><td>CHF 2'271</td></tr>
-                    <tr><td>5 personnes</td><td>CHF 2'568</td></tr>
-                    <tr><td>Chaque personne supplémentaire</td><td>+ CHF 216</td></tr>
-                </table>
-                <p><small>*Particularité SG : Pour les jeunes adultes vivant dans leur propre logement ou en formation, des dégressions SKOS spécifiques s'appliquent (p. ex. CHF 400 pour d'autres adultes dans le même ménage).</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">2</div>
-            <div class="step-body">
-                <h3>Logement & santé (Principe du montant net)</h3>
-                <p>Prise en compte des coûts effectifs de logement et d'assurance-maladie jusqu'au plafond cantonal ou communal :</p>
-                <div class="formula">
-                    Loyer reconnu = Min(Loyer effectif, Limite communale du loyer)
-                </div>
-                <div class="formula">
-                    Assurance-maladie nette = Prime effective (LAMal) - Réduction individuelle des primes (IPV)
-                </div>
-                <p><small>*Remarque : Dans le Canton de SG, les maxima de loyer varient selon la commune (valeur indicative pour 1 personne dans le segment moyen est d'environ CHF 1'100 brut). L'IPV est directement déduite de la prime.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">3</div>
-            <div class="step-body">
-                <h3>Imputation du revenu & Déduction pour revenu d'activité lucrative (EFB)</h3>
-                <p>Du revenu net d'activité lucrative, une déduction forfaitaire est soustraite pour maintenir la motivation au travail :</p>
-                <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
-                    <strong>Revenu imputable</strong> = Revenu net - EFB (maximum CHF 400 par personne)
-                </div>
-                <p><small>Les autres revenus tels que les allocations familiales, les contributions d'entretien (pensions alimentaires) ou les rentes sont comptés à 100% comme revenus.</small></p>
-            </div>
-        </div>
-
-        <div class="step-box">
-            <div class="step-num">4</div>
-            <div class="step-body">
-                <h3>Résultat : Droit économique mensuel</h3>
-                <p>Le calcul différentiel détermine l'aide financière mensuelle :</p>
-                <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-                    Droit = (GBL + Loyer reconnu + Assurance-maladie nette + IZU*) - (Revenus imputables)
-                </div>
-                <p><small>*IZU = Allocation d'intégration pour les prestations d'intégration justifiées ou l'activité lucrative (valeur indicative : CHF 100 par personne active).</small></p>
-            </div>
-        </div>
-
-        <div class="alert">
-            <strong>Remarque importante concernant les avoirs et la récupération :</strong><br>
-            Si les avoirs liquides dépassent la déduction autorisée lors du contrôle initial, il n'existe aucun droit à l'aide sociale selon la loi. Les avoirs non directement réalisables (p. ex. biens immobiliers) peuvent donner lieu à une garantie par gage immobilier ou à une obligation de récupération contractuelle.
-        </div>
-
-        <div style="text-align: center;">
-            <a href="https://www.welfarecalc.ch" target="_blank" class="btn-link btn-home">Lancer le calculateur</a>
-            <a href="https://www.sg.ch/gesundheit-soziales/soziales/sozialhilfe.html" target="_blank" class="btn-link">Site officiel du Canton de SG</a>
-        </div>
+    <h1>
+     Algorithme de l'aide sociale : Canton de Saint-Gall
+    </h1>
+    <p>
+     Documentation transparente de la logique de calcul du minimum vital social (SG)
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Vérification rapide : Avez-vous droit ?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Vérifiez rapidement et sans engagement si vous avez droit à la réduction de primes (RIP), aux prestations complémentaires ou à d'autres aides sociales.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_fr" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Vérifier gratuitement →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     Comment l'aide sociale est-elle calculée dans le Canton de Saint-Gall ? Pour renforcer la confiance de nos utilisateurs, nous divulguons ici l'algorithme de calcul complet qui se cache derrière welfarecalc.ch. Il est basé sur la loi saint-galloise sur l'aide sociale (SHG) ainsi que sur les directives SKOS 2026.
+    </p>
+    <h2 class="section-title">
+     1. Contrôle des avoirs (Seuil d'entrée)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Déduction pour personne seule
+      </h4>
+      <div class="param-value">
+       CHF 6'000
+      </div>
+      <p>
+       <small>
+        Plus CHF 3'000 par enfant ou personne en formation.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Déduction pour couples mariés
+      </h4>
+      <div class="param-value">
+       CHF 12'000
+      </div>
+      <p>
+       <small>
+        Déduction totale maximale plafonnée à CHF 15'000 par unité d'aide.
+       </small>
+      </p>
+     </div>
     </div>
-
-    <footer>
-        <p>Sources : Loi saint-galloise sur l'aide sociale (SHG) & Directives SKOS 2026</p>
-        <p>© 2026 welfarecalc.ch | Calcul transparent de l'aide sociale</p>
-    </footer>
-</div>
-
-</body>
+    <h2 class="section-title">
+     2. Le chemin de calcul (Mensuel)
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Besoin de base pour l'entretien (GBL)
+      </h3>
+      <p>
+       Le GBL couvre les frais de nourriture, d'habillement, d'énergie et de ménage :
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Taille du ménage
+        </th>
+        <th>
+         Montant par mois (2026)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 personne
+        </td>
+        <td>
+         CHF 1'061
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 personnes
+        </td>
+        <td>
+         CHF 1'624
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 personnes
+        </td>
+        <td>
+         CHF 1'974
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 personnes
+        </td>
+        <td>
+         CHF 2'271
+        </td>
+       </tr>
+       <tr>
+        <td>
+         5 personnes
+        </td>
+        <td>
+         CHF 2'568
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Chaque personne supplémentaire
+        </td>
+        <td>
+         + CHF 216
+        </td>
+       </tr>
+      </table>
+      <p>
+       <small>
+        *Particularité SG : Pour les jeunes adultes vivant dans leur propre logement ou en formation, des dégressions SKOS spécifiques s'appliquent (p. ex. CHF 400 pour d'autres adultes dans le même ménage).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Logement &amp; santé (Principe du montant net)
+      </h3>
+      <p>
+       Prise en compte des coûts effectifs de logement et d'assurance-maladie jusqu'au plafond cantonal ou communal :
+      </p>
+      <div class="formula">
+       Loyer reconnu = Min(Loyer effectif, Limite communale du loyer)
+      </div>
+      <div class="formula">
+       Assurance-maladie nette = Prime effective (LAMal) - Réduction individuelle des primes (IPV)
+      </div>
+      <p>
+       <small>
+        *Remarque : Dans le Canton de SG, les maxima de loyer varient selon la commune (valeur indicative pour 1 personne dans le segment moyen est d'environ CHF 1'100 brut). L'IPV est directement déduite de la prime.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Imputation du revenu &amp; Déduction pour revenu d'activité lucrative (EFB)
+      </h3>
+      <p>
+       Du revenu net d'activité lucrative, une déduction forfaitaire est soustraite pour maintenir la motivation au travail :
+      </p>
+      <div style="background: #eef2ff; padding: 15px; margin: 10px 0; border-radius: 6px;">
+       <strong>
+        Revenu imputable
+       </strong>
+       = Revenu net - EFB (maximum CHF 400 par personne)
+      </div>
+      <p>
+       <small>
+        Les autres revenus tels que les allocations familiales, les contributions d'entretien (pensions alimentaires) ou les rentes sont comptés à 100% comme revenus.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      4
+     </div>
+     <div class="step-body">
+      <h3>
+       Résultat : Droit économique mensuel
+      </h3>
+      <p>
+       Le calcul différentiel détermine l'aide financière mensuelle :
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Droit = (GBL + Loyer reconnu + Assurance-maladie nette + IZU*) - (Revenus imputables)
+      </div>
+      <p>
+       <small>
+        *IZU = Allocation d'intégration pour les prestations d'intégration justifiées ou l'activité lucrative (valeur indicative : CHF 100 par personne active).
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Remarque importante concernant les avoirs et la récupération :
+     </strong>
+     <br/>
+     Si les avoirs liquides dépassent la déduction autorisée lors du contrôle initial, il n'existe aucun droit à l'aide sociale selon la loi. Les avoirs non directement réalisables (p. ex. biens immobiliers) peuvent donner lieu à une garantie par gage immobilier ou à une obligation de récupération contractuelle.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Lancer le calculateur
+     </a>
+     <a class="btn-link" href="https://www.sg.ch/gesundheit-soziales/soziales/sozialhilfe.html" target="_blank">
+      Site officiel du Canton de SG
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Sources : Loi saint-galloise sur l'aide sociale (SHG) &amp; Directives SKOS 2026
+    </p>
+    <p>
+     © 2026 welfarecalc.ch | Calcul transparent de l'aide sociale
+    </p>
+   </footer>
+  </div>
+ </body>
 </html>

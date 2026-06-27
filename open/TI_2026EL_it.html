@@ -1,52 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="it">
-
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Algoritmo EL Cantone Ticino 2026 | Calcolo trasparente | welfarecalc.ch</title>
-  <meta
-    content="Come vengono calcolate le prestazioni complementari (PC) 2026 nel Cantone Ticino? Scopri il nostro algoritmo trasparente basato sui dati ufficiali IAS TI."
-    name="description" />
-  <meta content="index, follow" name="robots" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_it.html" rel="canonical" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="de" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_fr.html" hreflang="fr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_it.html" hreflang="it" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_en.html" hreflang="en" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_es.html" hreflang="es" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pt.html" hreflang="pt" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_sq.html" hreflang="sq" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_hr.html" hreflang="hr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pl.html" hreflang="pl" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" hreflang="tr" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_ta.html" hreflang="ta" rel="alternate" />
-  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="x-default" rel="alternate" />
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      "name": "Calcolo delle Prestazioni Complementari Ticino 2026",
-      "description": "Analisi algoritmica dettagliata del calcolo delle PC nel Canton Ticino (TI) tenendo conto delle specificità cantonali.",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "text": "Determinazione del fabbisogno di spesa riconosciuto (fabbisogno di base, affitto lordo cantonale per regioni, premio cassa malati forfettario)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Calcolo dei redditi (rendite AVS/AI senza 13ª rendita AVS, reddito da lavoro con calcolo 2/3, consumo patrimoniale corretto)"
-        },
-        {
-          "@type": "HowToStep",
-          "text": "Determinazione dell'importo delle PC (spese totali meno redditi totali computabili)"
-        }
-      ]
-    }
-    </script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <style>
-    :root {
+   :root {
       --swiss-red: #e62117;
       --official-blue: #003366;
       --accent-gold: #b8860b;
@@ -228,161 +186,336 @@
       border-top: 1px solid #e2e8f0;
     }
   </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Calcolatore AVS/AI/PC 2026 | 26 Cantoni + Controllo Fatture Dentali">
-    <meta property="og:description" content="Calcola le prestazioni sociali svizzere: AVS, AI, PC e riduzioni dei premi in tutti i 26 cantoni. Include revisore di fatture dentistiche e controllo contratti d'affitto. 100% anonimo nel browser. 11 lingue.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/TI_2026EL_it.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="it">
-
-</head>
-
-<body>
+  <!-- Open Graph Tags -->
+  <title>
+   PC Ticino 2026 – Prestazioni complementari | welfarecalc.ch
+  </title>
+  <meta content="Calcolo di Prestazioni complementari nel Cantone Ticino. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." name="description"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Prestazioni complementari, Cantone Ticino, PC, Prestazioni sociali, Calcolo 2026" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_it.html" rel="canonical"/>
+  <meta content="PC Ticino 2026 – Prestazioni complementari | welfarecalc.ch" property="og:title"/>
+  <meta content="Calcolo di Prestazioni complementari nel Cantone Ticino. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/TI_2026EL_it.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="it_CH" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="PC Ticino 2026 – Prestazioni complementari | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Calcolo di Prestazioni complementari nel Cantone Ticino. Dati ufficiali 2026, trasparenti e comprensibili. Verifica gratuitamente." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/TI_2026EL_de.html" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "HowTo", "name": "Prestazioni complementari Ticino 2026", "description": "Step-by-step guide to calculating Prestazioni complementari in Canton Ticino.", "step": [{"@type": "HowToStep", "position": 1, "text": "Determine recognized expenses (basic needs, rent, health insurance)"}, {"@type": "HowToStep", "position": 2, "text": "Calculate deductible income (pensions, asset consumption)"}, {"@type": "HowToStep", "position": 3, "text": "Calculate EL amount (expenses minus income)"}]}
+  </script>
+ </head>
+ <body>
   <div class="container">
-    <header>
-      <div class="update-tag">DATI UFFICIALI 2026</div>
-      <h1>Algoritmo PC: Canton Ticino (TI)</h1>
-      <p>Analisi trasparente delle Prestazioni Complementari (PC) per l'anno 2026</p>
-    </header>
-
-    <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
-        <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">⚡</span>
-        <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">Verifica rapida: Hai diritto?</h3>
-        <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.</p>
-        <a href="https://www.welfarecalc.ch/bus_it" target="_blank" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;">Verifica gratis ora →</a>
+   <header>
+    <div class="update-tag">
+     DATI UFFICIALI 2026
     </div>
-    
-    <div class="content">
-      <p>La trasparenza crea fiducia. Le Prestazioni Complementari (PC) all'AVS/AI sono un campo complesso. Qui
+    <h1>
+     Algoritmo PC: Canton Ticino (TI)
+    </h1>
+    <p>
+     Analisi trasparente delle Prestazioni Complementari (PC) per l'anno 2026
+    </p>
+   </header>
+   <div class="welfare-cta-card" style="background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 100%); border-radius: 12px; padding: 1.5rem 2rem; margin: 1.5rem 2rem; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid #e62117;">
+    <span style="font-size: 1.8rem; display: block; margin-bottom: 0.5rem;">
+     ⚡
+    </span>
+    <h3 style="font-size: 1.2rem; margin: 0 0 0.5rem 0; color: #003366;">
+     Verifica rapida: Hai diritto?
+    </h3>
+    <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #334155; max-width: 600px; margin-left: auto; margin-right: auto;">
+     Verifica rapidamente e senza impegno se hai diritto alla riduzione dei premi (RIP), alle prestazioni complementari o ad altri aiuti sociali.
+    </p>
+    <a href="https://www.welfarecalc.ch/bus_it" style="display: inline-block; background: #e62117; color: white; padding: 8px 24px; border-radius: 4px; text-decoration: none; font-weight: bold; font-size: 0.85rem;" target="_blank">
+     Verifica gratis ora →
+    </a>
+   </div>
+   <div class="content">
+    <p>
+     La trasparenza crea fiducia. Le Prestazioni Complementari (PC) all'AVS/AI sono un campo complesso. Qui
         documentiamo con precisione come il nostro calcolatore determina il suo diritto nel Canton Ticino sulla base
-        delle direttive federali e delle linee guida ufficiali dell'IAS TI (Istituto di Assistenza Sociale).</p>
-      <h2 class="section-title">1. Fabbisogno annuale di base (2026)</h2>
-      <div class="grid-params">
-        <div class="param-card">
-          <h4>Singoli</h4>
-          <div class="param-value">CHF 20'670</div>
-          <p><small>Importo uniforme a livello federale per il mantenimento generale.</small></p>
-        </div>
-        <div class="param-card">
-          <h4>Coppie</h4>
-          <div class="param-value">CHF 31'005</div>
-          <p><small>Fabbisogno di base legale combinato per entrambi i coniugi.</small></p>
-        </div>
+        delle direttive federali e delle linee guida ufficiali dell'IAS TI (Istituto di Assistenza Sociale).
+    </p>
+    <h2 class="section-title">
+     1. Fabbisogno annuale di base (2026)
+    </h2>
+    <div class="grid-params">
+     <div class="param-card">
+      <h4>
+       Singoli
+      </h4>
+      <div class="param-value">
+       CHF 20'670
       </div>
-      <h2 class="section-title">2. Il percorso di calcolo in dettaglio</h2>
-      <div class="step-box">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h3>Spese riconosciute (Fabbisogno)</h3>
-          <p>Per prima cosa sommiamo tutte le voci di spesa legalmente riconosciute e regolate a livello cantonale:</p>
-          <div class="formula">
-            Fabbisogno di base + Costi abitativi riconosciuti (Affitto lordo/Proprietà) + Premio forfettario cassa
+      <p>
+       <small>
+        Importo uniforme a livello federale per il mantenimento generale.
+       </small>
+      </p>
+     </div>
+     <div class="param-card">
+      <h4>
+       Coppie
+      </h4>
+      <div class="param-value">
+       CHF 31'005
+      </div>
+      <p>
+       <small>
+        Fabbisogno di base legale combinato per entrambi i coniugi.
+       </small>
+      </p>
+     </div>
+    </div>
+    <h2 class="section-title">
+     2. Il percorso di calcolo in dettaglio
+    </h2>
+    <div class="step-box">
+     <div class="step-num">
+      1
+     </div>
+     <div class="step-body">
+      <h3>
+       Spese riconosciute (Fabbisogno)
+      </h3>
+      <p>
+       Per prima cosa sommiamo tutte le voci di spesa legalmente riconosciute e regolate a livello cantonale:
+      </p>
+      <div class="formula">
+       Fabbisogno di base + Costi abitativi riconosciuti (Affitto lordo/Proprietà) + Premio forfettario cassa
             malati
-          </div>
-          <p><strong>Massimali d'affitto 2026 in Ticino (Secondo le regioni federali 2 &amp; 3):</strong></p>
-          <table class="data-table">
-            <tr>
-              <th>Dimensione nucleo familiare</th>
-              <th>Regione 2 (Urbana/Agglomerazione)</th>
-              <th>Regione 3 (Comuni rurali)</th>
-            </tr>
-            <tr>
-              <td>1 persona</td>
-              <td>CHF 18'300 (CHF 1'525/mese)</td>
-              <td>CHF 16'680 (CHF 1'390/mese)</td>
-            </tr>
-            <tr>
-              <td>2 persone</td>
-              <td>CHF 21'720 (CHF 1'810/mese)</td>
-              <td>CHF 20'160 (CHF 1'680/mese)</td>
-            </tr>
-            <tr>
-              <td>3 persone</td>
-              <td>CHF 23'760 (CHF 1'980/mese)</td>
-              <td>CHF 22'200 (CHF 1'850/mese)</td>
-            </tr>
-            <tr>
-              <td>4 persone</td>
-              <td>CHF 25'920 (CHF 2'160/mese)</td>
-              <td>CHF 24'000 (CHF 2'000/mese)</td>
-            </tr>
-          </table>
-          <p style="margin-top: 10px;"><small>*Particolarità proprietà abitativa: Per gli immobili di proprietà abitati
-              dal proprietario, non viene utilizzato un valore locativo fittizio, ma vengono riconosciuti gli interessi
-              ipotecari effettivi e una forchetta di manutenzione legale fino al rispettivo massimo cantonale.</small>
-          </p>
-        </div>
       </div>
-      <div class="step-box">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h3>Redditi computabili</h3>
-          <p>Successivamente, tutti i redditi vengono valutati secondo le rigide disposizioni della riforma LPC 2026:
-          </p>
-          <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
-            <li><strong>Percezione di rendite (Neutralizzazione 13ª AVS):</strong> Le rendite legali AVS o AI vengono
+      <p>
+       <strong>
+        Massimali d'affitto 2026 in Ticino (Secondo le regioni federali 2 &amp; 3):
+       </strong>
+      </p>
+      <table class="data-table">
+       <tr>
+        <th>
+         Dimensione nucleo familiare
+        </th>
+        <th>
+         Regione 2 (Urbana/Agglomerazione)
+        </th>
+        <th>
+         Regione 3 (Comuni rurali)
+        </th>
+       </tr>
+       <tr>
+        <td>
+         1 persona
+        </td>
+        <td>
+         CHF 18'300 (CHF 1'525/mese)
+        </td>
+        <td>
+         CHF 16'680 (CHF 1'390/mese)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         2 persone
+        </td>
+        <td>
+         CHF 21'720 (CHF 1'810/mese)
+        </td>
+        <td>
+         CHF 20'160 (CHF 1'680/mese)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3 persone
+        </td>
+        <td>
+         CHF 23'760 (CHF 1'980/mese)
+        </td>
+        <td>
+         CHF 22'200 (CHF 1'850/mese)
+        </td>
+       </tr>
+       <tr>
+        <td>
+         4 persone
+        </td>
+        <td>
+         CHF 25'920 (CHF 2'160/mese)
+        </td>
+        <td>
+         CHF 24'000 (CHF 2'000/mese)
+        </td>
+       </tr>
+      </table>
+      <p style="margin-top: 10px;">
+       <small>
+        *Particolarità proprietà abitativa: Per gli immobili di proprietà abitati
+              dal proprietario, non viene utilizzato un valore locativo fittizio, ma vengono riconosciuti gli interessi
+              ipotecari effettivi e una forchetta di manutenzione legale fino al rispettivo massimo cantonale.
+       </small>
+      </p>
+     </div>
+    </div>
+    <div class="step-box">
+     <div class="step-num">
+      2
+     </div>
+     <div class="step-body">
+      <h3>
+       Redditi computabili
+      </h3>
+      <p>
+       Successivamente, tutti i redditi vengono valutati secondo le rigide disposizioni della riforma LPC 2026:
+      </p>
+      <ul style="margin-left: 20px; font-size: 0.95rem; line-height: 1.8;">
+       <li>
+        <strong>
+         Percezione di rendite (Neutralizzazione 13ª AVS):
+        </strong>
+        Le rendite legali AVS o AI vengono
               computate per 12 mesi. La nuova 13ª rendita AVS rimane completamente neutralizzata secondo la decisione
-              federale e non può portare a una riduzione delle PC.</li>
-            <li><strong>Reddito da lavoro (Calcolo 2/3):</strong> Dal reddito da lavoro lordo viene prima dedotto un
+              federale e non può portare a una riduzione delle PC.
+       </li>
+       <li>
+        <strong>
+         Reddito da lavoro (Calcolo 2/3):
+        </strong>
+        Dal reddito da lavoro lordo viene prima dedotto un
               importo esente (CHF 1'500 per i singoli / CHF 2'250 per le coppie). Dall'importo residuo, in piena
-              conformità legale, viene computato come reddito solo <strong>due terzi (2/3)</strong>.</li>
-            <li><strong>Consumo patrimoniale:</strong> Se il patrimonio netto supera l'importo esente (CHF 30'000
+              conformità legale, viene computato come reddito solo
+        <strong>
+         due terzi (2/3)
+        </strong>
+        .
+       </li>
+       <li>
+        <strong>
+         Consumo patrimoniale:
+        </strong>
+        Se il patrimonio netto supera l'importo esente (CHF 30'000
               singoli / CHF 50'000 coppie), la parte eccedente l'importo esente viene divisa matematicamente
               correttamente per 10 (per i pensionati di vecchiaia) o per 15 (per i pensionati AI) e contabilizzata come
-              reddito annuale.</li>
-          </ul>
-          <table class="data-table">
-            <tr>
-              <th>Importi esenti PC &amp; Valori patrimoniali</th>
-              <th>Importo esente / Valori soglia</th>
-            </tr>
-            <tr>
-              <td>Importo esente singoli</td>
-              <td>CHF 30'000</td>
-            </tr>
-            <tr>
-              <td>Importo esente coppie</td>
-              <td>CHF 50'000</td>
-            </tr>
-            <tr>
-              <td>Importo esente proprietà abitativa abitata dal proprietario</td>
-              <td>CHF 112'500 (oppure CHF 300'000 in casi di rigore)</td>
-            </tr>
-            <li><strong>Patrimonio di dismissione:</strong> Per i valori patrimoniali ipoteticamente donati o rinunciati
-              si applica il tasso di interesse federale maggiorato dello <strong>0.29%</strong> per l'anno 2026.</li>
-          </table>
-        </div>
-      </div>
-      <div class="step-box">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h3>Risultato: Diritto alle PC</h3>
-          <p>Le PC colmano il divario finanziario, a condizione che siano soddisfatti tutti i presupposti legali:</p>
-          <div
-            style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
-            Rendita PC annuale = [Spese riconosciute] - [Redditi computabili]
-          </div>
-        </div>
-      </div>
-      <div class="alert">
-        <strong>Importante: La soglia patrimoniale legale (Soglia di accesso)</strong><br />
-        Un diritto legale alle Prestazioni Complementari è assolutamente escluso se il patrimonio netto imponibile
-        (escluso il valore di un immobile di proprietà abitato dal proprietario) supera la soglia di accesso di
-        <strong>CHF 100'000</strong> per i singoli o <strong>CHF 200'000</strong> per le coppie.
-      </div>
-      <div style="text-align: center;">
-        <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">Torna alla pagina iniziale</a>
-        <a class="btn-link" href="https://www4.ti.ch/dss/dipartimento" target="_blank">Sito ufficiale IAS Ticino</a>
-      </div>
+              reddito annuale.
+       </li>
+      </ul>
+      <table class="data-table">
+       <tr>
+        <th>
+         Importi esenti PC &amp; Valori patrimoniali
+        </th>
+        <th>
+         Importo esente / Valori soglia
+        </th>
+       </tr>
+       <tr>
+        <td>
+         Importo esente singoli
+        </td>
+        <td>
+         CHF 30'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Importo esente coppie
+        </td>
+        <td>
+         CHF 50'000
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Importo esente proprietà abitativa abitata dal proprietario
+        </td>
+        <td>
+         CHF 112'500 (oppure CHF 300'000 in casi di rigore)
+        </td>
+       </tr>
+       <li>
+        <strong>
+         Patrimonio di dismissione:
+        </strong>
+        Per i valori patrimoniali ipoteticamente donati o rinunciati
+              si applica il tasso di interesse federale maggiorato dello
+        <strong>
+         0.29%
+        </strong>
+        per l'anno 2026.
+       </li>
+      </table>
+     </div>
     </div>
-    <footer>
-      <p>Fonte: Linee guida 2026 dell'Istituto delle Assicurazioni Sociali del Canton Ticino (IAS TI) &amp; Legge
-        federale sulle Prestazioni Complementari (LPC)</p>
-      <p>Fornito da welfarecalc.ch | Informazioni senza garanzia legale.</p>
-    </footer>
+    <div class="step-box">
+     <div class="step-num">
+      3
+     </div>
+     <div class="step-body">
+      <h3>
+       Risultato: Diritto alle PC
+      </h3>
+      <p>
+       Le PC colmano il divario finanziario, a condizione che siano soddisfatti tutti i presupposti legali:
+      </p>
+      <div style="background: #fff1f2; padding: 15px; margin: 10px 0; border-radius: 6px; color: #be123c; font-weight: bold;">
+       Rendita PC annuale = [Spese riconosciute] - [Redditi computabili]
+      </div>
+     </div>
+    </div>
+    <div class="alert">
+     <strong>
+      Importante: La soglia patrimoniale legale (Soglia di accesso)
+     </strong>
+     <br/>
+     Un diritto legale alle Prestazioni Complementari è assolutamente escluso se il patrimonio netto imponibile
+        (escluso il valore di un immobile di proprietà abitato dal proprietario) supera la soglia di accesso di
+     <strong>
+      CHF 100'000
+     </strong>
+     per i singoli o
+     <strong>
+      CHF 200'000
+     </strong>
+     per le coppie.
+    </div>
+    <div style="text-align: center;">
+     <a class="btn-link btn-home" href="https://www.welfarecalc.ch" target="_blank">
+      Torna alla pagina iniziale
+     </a>
+     <a class="btn-link" href="https://www4.ti.ch/dss/dipartimento" target="_blank">
+      Sito ufficiale IAS Ticino
+     </a>
+    </div>
+   </div>
+   <footer>
+    <p>
+     Fonte: Linee guida 2026 dell'Istituto delle Assicurazioni Sociali del Canton Ticino (IAS TI) &amp; Legge
+        federale sulle Prestazioni Complementari (LPC)
+    </p>
+    <p>
+     Fornito da welfarecalc.ch | Informazioni senza garanzia legale.
+    </p>
+   </footer>
   </div>
-</body>
-
+ </body>
 </html>

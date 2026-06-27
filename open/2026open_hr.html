@@ -1,48 +1,16 @@
 <!DOCTYPE html>
 <html lang="hr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- TRANSLATE: Meta Tags -->
-    <title>Upit za socijalne naknade | welfarecalc.ch</title>
-    <meta name="description"
-        content="Pronađite službeni algoritam za izračun socijalne pomoći (SH), dodatnih naknada (EL), obiteljskih doplataka (FA), individualnog sniženja premija (IPV) i nužne pomoći (NH) u vašem kantonu. Transparentno i uz zaštitu podataka.">
-    <meta name="robots" content="index, follow">
-
-    <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
-    <link rel="alternate" hreflang="de-ch" href="https://www.welfarecalc.ch/open/2026open_de.html">
-    <link rel="alternate" hreflang="en" href="https://www.welfarecalc.ch/open/2026open_en.html">
-    <link rel="alternate" hreflang="fr-ch" href="https://www.welfarecalc.ch/open/2026open_fr.html">
-    <link rel="alternate" hreflang="it-ch" href="https://www.welfarecalc.ch/open/2026open_it.html">
-    <link rel="alternate" hreflang="es" href="https://www.welfarecalc.ch/open/2026open_es.html">
-    <link rel="alternate" hreflang="pt" href="https://www.welfarecalc.ch/open/2026open_pt.html">
-    <link rel="alternate" hreflang="pl" href="https://www.welfarecalc.ch/open/2026open_pl.html">
-    <link rel="alternate" hreflang="hr" href="https://www.welfarecalc.ch/open/2026open_hr.html">
-    <link rel="alternate" hreflang="sq" href="https://www.welfarecalc.ch/open/2026open_sq.html">
-    <link rel="alternate" hreflang="tr" href="https://www.welfarecalc.ch/open/2026open_tr.html">
-    <link rel="alternate" hreflang="ta" href="https://www.welfarecalc.ch/open/2026open_ta.html">
-    <link rel="alternate" hreflang="x-default" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://www.welfarecalc.ch/open/2026open_de.html">
-
-    <!-- Open Graph -->
-
-    <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "welfarecalc.ch",
-      "url": "https://www.welfarecalc.ch",
-      "inLanguage": "hr"
-    }
-    </script>
-
-    <style>
-        :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!-- TRANSLATE: Meta Tags -->
+  <meta content="index, follow" name="robots"/>
+  <!-- Hreflang Tags für 11 Sprachen (Optimiert für CH-Regionen) -->
+  <!-- Canonical Tag -->
+  <!-- Open Graph -->
+  <!-- Structured Data (Dynamisch anpassbar für andere Sprachen) -->
+  <style>
+   :root {
             --swiss-red: #e62117;
             --official-blue: #003366;
             --accent-gold: #b8860b;
@@ -293,133 +261,276 @@
                 padding: 1.5rem;
             }
         }
-    </style>
-
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Kalkulator Svicarskih Naknada 2026 | 26 Kantona + Provjera Racuna">
-    <meta property="og:description" content="Izracunajte AVS, AI, PC i smanjenja premija u svih 26 svicarskih kantona. Ukljucuje reviziju stomatoloskih racuna i provjeru ugovora o najmu. 100% anonimno u pregledniku. 11 jezika.">
-    <meta property="og:image" content="https://www.welfarecalc.ch/images/placeholder.jpg">
-    <meta property="og:url" content="https://www.welfarecalc.ch/2026open_hr.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="hr">
-
-</head>
-
-<body>
-
-    <div class="container">
-        <header>
-            <!-- TRANSLATE: Header Section -->
-            <div class="update-tag">🔍 TRANSPARENTNI ALGORITMI 2026</div>
-            <h1>Upit za švicarske socijalne naknade</h1>
-            <p>Pronađite službeni algoritam za izračun za vaš kanton</p>
-        </header>
-
-        <div class="hero-search">
-            <div class="search-card">
-                <!-- Dropdown 1: Kanton -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="state">📍 1. Odaberite kanton</label>
-                    <select id="state">
-                        <option value="">📌 Odaberite kanton</option>
-                        <option value="AG">Aargau (AG)</option>
-                        <option value="AI">Appenzell Innerrhoden (AI)</option>
-                        <option value="AR">Appenzell Ausserrhoden (AR)</option>
-                        <option value="BE">Bern (BE)</option>
-                        <option value="BL">Basel-Landschaft (BL)</option>
-                        <option value="BS">Basel-Stadt (BS)</option>
-                        <option value="FR">Freiburg (FR)</option>
-                        <option value="GE">Ženeva (GE)</option>
-                        <option value="GL">Glarus (GL)</option>
-                        <option value="GR">Graubünden (GR)</option>
-                        <option value="JU">Jura (JU)</option>
-                        <option value="LU">Luzern (LU)</option>
-                        <option value="NE">Neuchâtel (NE)</option>
-                        <option value="NW">Nidwalden (NW)</option>
-                        <option value="OW">Obwalden (OW)</option>
-                        <option value="SG">St. Gallen (SG)</option>
-                        <option value="SH">Schaffhausen (SH)</option>
-                        <option value="SO">Solothurn (SO)</option>
-                        <option value="SZ">Schwyz (SZ)</option>
-                        <option value="TG">Thurgau (TG)</option>
-                        <option value="TI">Ticino (TI)</option>
-                        <option value="UR">Uri (UR)</option>
-                        <option value="VD">Vaud (VD)</option>
-                        <option value="VS">Valais (VS)</option>
-                        <option value="ZG">Zug (ZG)</option>
-                        <option value="ZH">Zürich (ZH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="state-error" class="error-text">⚠️ Molimo odaberite kanton.</div>
-                </div>
-
-                <!-- Dropdown 2: Leistungsart -->
-                <div class="search-row">
-                    <!-- TRANSLATE -->
-                    <label for="welfare">📋 2. Odaberite kategoriju socijalne naknade</label>
-                    <select id="welfare">
-                        <option value="">📋 Odaberite vrstu naknade</option>
-                        <option value="SH">🏠 Socijalna pomoć (SH)</option>
-                        <option value="IPV">💊 Individualno sniženje premije (IPV)</option>
-                        <option value="EL">👴 Dodatne naknade (EL)</option>
-                        <option value="FA">👨‍👩‍👧 Obiteljski doplatci (FA)</option>
-                        <option value="nothilfe">🚨 Nužna pomoć (NH)</option>
-                    </select>
-                    <!-- TRANSLATE: Error message -->
-                    <div id="welfare-error" class="error-text">⚠️ Molimo odaberite vrstu naknade.</div>
-                </div>
-
-                <div class="button-group">
-                    <!-- TRANSLATE -->
-                    <button class="action-btn search-button-style" onclick="searchAndRedirect()">🔍 Pretraži i otvori algoritam</button>
-                    <a href="https://www.welfarecalc.ch" class="action-btn home-button-style">🏠 Povratak na početnu stranicu</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-below">
-            <!-- Info Box -->
-            <div class="info-box">
-                <!-- TRANSLATE: Info Box Content -->
-                <p>🇨🇭 <strong>O welfarecalc.ch</strong></p>
-                <p>Mi smo tim inženjera i programera s boravištem u Švicarskoj. Naš je cilj učiniti složene švicarske sustave socijalnih naknada razumljivima i dostupnima svima. Ova platforma je <strong>neprofitni projekt</strong> nastao iz uvjerenja u transparentnost i poštenje.</p>
-
-                <p>📄 <strong>Kako nastaju naši algoritmi</strong><br>
-                    Naše logike izračuna temelje se isključivo na službenim, javno dostupnim dokumentima – uključujući kantonalne zakone (SHG, ELG, FamZG, KVG), SKOS smjernice i uredbe fondova za izravnanje. Svaki se algoritam pažljivo izvodi iz tih izvora i transparentno dokumentira.</p>
-
-                <p>🌍 <strong>Višejezičnost i transparentnost</strong><br>
-                    Švicarska je raznolika. Zato sve algoritme nudimo na <strong>11 jezika</strong>: njemačkom, francuskom, talijanskom, engleskom, španjolskom, portugalskom, poljskom, hrvatskom, albanskom, turskom i tamilskom. Tako što više ljudi može razumjeti informacije koje su za njih relevantne.</p>
-
-                <p>📌 <strong>Kako koristiti ovu stranicu</strong><br>
-                    Gore odaberite svoj kanton i željenu vrstu naknade. Zatim kliknite na "Pretraži i otvori algoritam". Bit ćete izravno preusmjereni na odgovarajući algoritam – u novoj kartici ili u istom prozoru (ovisno o postavkama preglednika). Pomoću crvenog gumba "Povratak na početnu stranicu" uvijek se možete vratiti na glavnu stranicu welfarecalc.ch.</p>
-            </div>
-
-            <!-- Rechtlicher Hinweis -->
-            <div class="disclaimer">
-                <!-- TRANSLATE: Disclaimer -->
-                <strong>⚠️ Važna pravna napomena</strong><br>
-                Algoritmi i izračuni prikazani na ovim stranicama temelje se na javno dostupnim službenim dokumentima i izvedeni su prema našem najboljem znanju i uvjerenju. Zbog složenosti sustava socijalnih naknada i individualnih okolnosti (prihodi, imovina, obiteljska konstelacija, stambena situacija itd.), stvarna prava u pojedinačnom slučaju mogu odstupati. <strong>Sve informacije služe isključivo u informativne svrhe i nemaju pravno obvezujući učinak.</strong> Za obvezujuće informacije obratite se nadležnom tijelu (SVA, općinskoj upravi ili socijalnoj službi). welfarecalc.ch ne preuzima odgovornost za odluke donesene na temelju ovih informacija.
-            </div>
-        </div>
-
-        <footer>
-            <!-- TRANSLATE: Footer -->
-            <p>© 2026 welfarecalc.ch | Transparentni izračun socijalnih naknada</p>
-            <p>Izvori: Kantonalni zakoni (SHG, ELG, FamZG, KVG), SKOS smjernice 2026, Uredbe fondova za izravnanje</p>
-            <p>Neprofitni projekt inženjera za transparentnost u Švicarskoj</p>
-        </footer>
+  </style>
+  <!-- Open Graph Tags -->
+  <title>
+   Pretraga socijalnih naknada | 26 Kantonskih algoritama | welfarecalc.ch
+  </title>
+  <meta content="Pronađite službeni algoritam za izračun socijalne pomoći (SH), dopunskih naknada (EL), obiteljskih naknada (FA), IPV-a i hitne pomoći u svom kantonu. Transparentno i u skladu s privatnošću." name="description"/>
+  <meta content="socijalne naknade, algoritmi, kanton, SH, EL, FA, IPV, hitna pomoć, socijalna pomoć, dopunske naknade, obiteljske naknade, smanjenje premija, welfarecalc.ch" name="keywords"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_hr.html" rel="canonical"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="de" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_en.html" hreflang="en" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_fr.html" hreflang="fr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_it.html" hreflang="it" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_es.html" hreflang="es" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pt.html" hreflang="pt" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_pl.html" hreflang="pl" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_hr.html" hreflang="hr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_sq.html" hreflang="sq" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_tr.html" hreflang="tr" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_ta.html" hreflang="ta" rel="alternate"/>
+  <link href="https://www.welfarecalc.ch/open/2026open_de.html" hreflang="x-default" rel="alternate"/>
+  <meta content="Pretraga socijalnih naknada | 26 Kantonskih algoritama | welfarecalc.ch" property="og:title"/>
+  <meta content="Pronađite službeni algoritam za izračun socijalne pomoći (SH), dopunskih naknada (EL), obiteljskih naknada (FA), IPV-a i hitne pomoći u svom kantonu." property="og:description"/>
+  <meta content="https://www.welfarecalc.ch/open/2026open_hr.html" property="og:url"/>
+  <meta content="website" property="og:type"/>
+  <meta content="hr_HR" property="og:locale"/>
+  <meta content="welfarecalc.ch" property="og:site_name"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Pretraga socijalnih naknada | 26 Kantonskih algoritama | welfarecalc.ch" name="twitter:title"/>
+  <meta content="Pronađite službeni algoritam za izračun socijalne pomoći (SH), dopunskih naknada (EL), obiteljskih naknada (FA), IPV-a i hitne pomoći u svom kantonu." name="twitter:description"/>
+  <meta content="https://www.welfarecalc.ch/images/placeholder.jpg" name="twitter:image"/>
+  <meta content="@welfarecalc" name="twitter:site"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "WebSite", "name": "welfarecalc.ch", "url": "https://www.welfarecalc.ch", "description": "Pronađite službeni algoritam za izračun socijalne pomoći (SH), dopunskih naknada (EL), obiteljskih naknada (FA), IPV-a i hitne pomoći u svom kantonu. Transparentno i u skladu s privatnošću.", "inLanguage": "hr"}
+  </script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <!-- TRANSLATE: Header Section -->
+    <div class="update-tag">
+     🔍 TRANSPARENTNI ALGORITMI 2026
     </div>
-
-    <noscript>
-        <div
-            style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
-            ⚠️ JavaScript je onemogućen. Molimo omogućite JavaScript za korištenje funkcije pretraživanja.
-        </div>
-    </noscript>
-
-    <script>
-        // Configuration
+    <h1>
+     Upit za švicarske socijalne naknade
+    </h1>
+    <p>
+     Pronađite službeni algoritam za izračun za vaš kanton
+    </p>
+   </header>
+   <div class="hero-search">
+    <div class="search-card">
+     <!-- Dropdown 1: Kanton -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="state">
+       📍 1. Odaberite kanton
+      </label>
+      <select id="state">
+       <option value="">
+        📌 Odaberite kanton
+       </option>
+       <option value="AG">
+        Aargau (AG)
+       </option>
+       <option value="AI">
+        Appenzell Innerrhoden (AI)
+       </option>
+       <option value="AR">
+        Appenzell Ausserrhoden (AR)
+       </option>
+       <option value="BE">
+        Bern (BE)
+       </option>
+       <option value="BL">
+        Basel-Landschaft (BL)
+       </option>
+       <option value="BS">
+        Basel-Stadt (BS)
+       </option>
+       <option value="FR">
+        Freiburg (FR)
+       </option>
+       <option value="GE">
+        Ženeva (GE)
+       </option>
+       <option value="GL">
+        Glarus (GL)
+       </option>
+       <option value="GR">
+        Graubünden (GR)
+       </option>
+       <option value="JU">
+        Jura (JU)
+       </option>
+       <option value="LU">
+        Luzern (LU)
+       </option>
+       <option value="NE">
+        Neuchâtel (NE)
+       </option>
+       <option value="NW">
+        Nidwalden (NW)
+       </option>
+       <option value="OW">
+        Obwalden (OW)
+       </option>
+       <option value="SG">
+        St. Gallen (SG)
+       </option>
+       <option value="SH">
+        Schaffhausen (SH)
+       </option>
+       <option value="SO">
+        Solothurn (SO)
+       </option>
+       <option value="SZ">
+        Schwyz (SZ)
+       </option>
+       <option value="TG">
+        Thurgau (TG)
+       </option>
+       <option value="TI">
+        Ticino (TI)
+       </option>
+       <option value="UR">
+        Uri (UR)
+       </option>
+       <option value="VD">
+        Vaud (VD)
+       </option>
+       <option value="VS">
+        Valais (VS)
+       </option>
+       <option value="ZG">
+        Zug (ZG)
+       </option>
+       <option value="ZH">
+        Zürich (ZH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="state-error">
+       ⚠️ Molimo odaberite kanton.
+      </div>
+     </div>
+     <!-- Dropdown 2: Leistungsart -->
+     <div class="search-row">
+      <!-- TRANSLATE -->
+      <label for="welfare">
+       📋 2. Odaberite kategoriju socijalne naknade
+      </label>
+      <select id="welfare">
+       <option value="">
+        📋 Odaberite vrstu naknade
+       </option>
+       <option value="SH">
+        🏠 Socijalna pomoć (SH)
+       </option>
+       <option value="IPV">
+        💊 Individualno sniženje premije (IPV)
+       </option>
+       <option value="EL">
+        👴 Dodatne naknade (EL)
+       </option>
+       <option value="FA">
+        👨‍👩‍👧 Obiteljski doplatci (FA)
+       </option>
+       <option value="nothilfe">
+        🚨 Nužna pomoć (NH)
+       </option>
+      </select>
+      <!-- TRANSLATE: Error message -->
+      <div class="error-text" id="welfare-error">
+       ⚠️ Molimo odaberite vrstu naknade.
+      </div>
+     </div>
+     <div class="button-group">
+      <!-- TRANSLATE -->
+      <button class="action-btn search-button-style" onclick="searchAndRedirect()">
+       🔍 Pretraži i otvori algoritam
+      </button>
+      <a class="action-btn home-button-style" href="https://www.welfarecalc.ch">
+       🏠 Povratak na početnu stranicu
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="content-below">
+    <!-- Info Box -->
+    <div class="info-box">
+     <!-- TRANSLATE: Info Box Content -->
+     <p>
+      🇨🇭
+      <strong>
+       O welfarecalc.ch
+      </strong>
+     </p>
+     <p>
+      Mi smo tim inženjera i programera s boravištem u Švicarskoj. Naš je cilj učiniti složene švicarske sustave socijalnih naknada razumljivima i dostupnima svima. Ova platforma je
+      <strong>
+       neprofitni projekt
+      </strong>
+      nastao iz uvjerenja u transparentnost i poštenje.
+     </p>
+     <p>
+      📄
+      <strong>
+       Kako nastaju naši algoritmi
+      </strong>
+      <br/>
+      Naše logike izračuna temelje se isključivo na službenim, javno dostupnim dokumentima – uključujući kantonalne zakone (SHG, ELG, FamZG, KVG), SKOS smjernice i uredbe fondova za izravnanje. Svaki se algoritam pažljivo izvodi iz tih izvora i transparentno dokumentira.
+     </p>
+     <p>
+      🌍
+      <strong>
+       Višejezičnost i transparentnost
+      </strong>
+      <br/>
+      Švicarska je raznolika. Zato sve algoritme nudimo na
+      <strong>
+       11 jezika
+      </strong>
+      : njemačkom, francuskom, talijanskom, engleskom, španjolskom, portugalskom, poljskom, hrvatskom, albanskom, turskom i tamilskom. Tako što više ljudi može razumjeti informacije koje su za njih relevantne.
+     </p>
+     <p>
+      📌
+      <strong>
+       Kako koristiti ovu stranicu
+      </strong>
+      <br/>
+      Gore odaberite svoj kanton i željenu vrstu naknade. Zatim kliknite na "Pretraži i otvori algoritam". Bit ćete izravno preusmjereni na odgovarajući algoritam – u novoj kartici ili u istom prozoru (ovisno o postavkama preglednika). Pomoću crvenog gumba "Povratak na početnu stranicu" uvijek se možete vratiti na glavnu stranicu welfarecalc.ch.
+     </p>
+    </div>
+    <!-- Rechtlicher Hinweis -->
+    <div class="disclaimer">
+     <!-- TRANSLATE: Disclaimer -->
+     <strong>
+      ⚠️ Važna pravna napomena
+     </strong>
+     <br/>
+     Algoritmi i izračuni prikazani na ovim stranicama temelje se na javno dostupnim službenim dokumentima i izvedeni su prema našem najboljem znanju i uvjerenju. Zbog složenosti sustava socijalnih naknada i individualnih okolnosti (prihodi, imovina, obiteljska konstelacija, stambena situacija itd.), stvarna prava u pojedinačnom slučaju mogu odstupati.
+     <strong>
+      Sve informacije služe isključivo u informativne svrhe i nemaju pravno obvezujući učinak.
+     </strong>
+     Za obvezujuće informacije obratite se nadležnom tijelu (SVA, općinskoj upravi ili socijalnoj službi). welfarecalc.ch ne preuzima odgovornost za odluke donesene na temelju ovih informacija.
+    </div>
+   </div>
+   <footer>
+    <!-- TRANSLATE: Footer -->
+    <p>
+     © 2026 welfarecalc.ch | Transparentni izračun socijalnih naknada
+    </p>
+    <p>
+     Izvori: Kantonalni zakoni (SHG, ELG, FamZG, KVG), SKOS smjernice 2026, Uredbe fondova za izravnanje
+    </p>
+    <p>
+     Neprofitni projekt inženjera za transparentnost u Švicarskoj
+    </p>
+   </footer>
+  </div>
+  <noscript>
+   <div style="margin: 20px; padding: 15px; background: #fee2e2; border-radius: 6px; text-align: center; font-weight: bold;">
+    ⚠️ JavaScript je onemogućen. Molimo omogućite JavaScript za korištenje funkcije pretraživanja.
+   </div>
+  </noscript>
+  <script>
+   // Configuration
         const LANG = "hr";
         const BASE_PATH = "https://www.welfarecalc.ch/open/";
 
@@ -480,8 +591,6 @@
 
         if (stateField) stateField.addEventListener('keypress', handleEnterOnSelect);
         if (welfareField) welfareField.addEventListener('keypress', handleEnterOnSelect);
-    </script>
-
-</body>
-
+  </script>
+ </body>
 </html>
